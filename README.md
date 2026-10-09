@@ -4,7 +4,7 @@
 
 Typhon is an experimental robotics harness built for the October 2026 Humanoid internship challenge. It connects personally recorded tabletop demonstrations, reproducible Franka Panda scenes, X-VLA adaptation, controller telemetry, explicit execution guards and independently scored rollouts.
 
-[Dashboard](https://natslabs.com/typhon-robotics) · [Verified results](evidence/m7/) · [Controller/harness audit](evidence/harness/SERVICE_REPORT.txt) · [Dataset provenance](evidence/m0/) · [Reproduction](#reproduce)
+[Dashboard](https://natslabs.com/typhon-robotics) · [Video library](https://www.natslabs.com/typhon-robotics/videos.html) · [Verified results](evidence/m7/) · [Controller/harness audit](evidence/harness/SERVICE_REPORT.txt) · [Dataset provenance](evidence/m0/) · [Reproduction](#reproduce)
 
 ![Typhon experiment dashboard](docs/dashboard.png)
 
@@ -105,7 +105,7 @@ python3 dashboard/server.py --help
 
 The dashboard server observes local experiment directories; an empty checkout does not invent live runs. A portable recorded snapshot is included in `demo/`. The tiny classifier is included at `models/goal-classifier/model.npz`; its interface is documented in `supervisor/planning/simple_goal_classifier.py`.
 
-Full X-VLA checkpoints, raw phone videos and bulk training tensors are not bundled in Git. Scripts preserve the original experiment layout and may require archived inputs; the evidence-only check and geometric demo above are the minimal entry points. Public media links are added separately when uploads are verified.
+Full X-VLA checkpoints, raw phone videos and bulk training tensors are not bundled in Git. Scripts preserve the original experiment layout and may require archived inputs; the evidence-only check and geometric demo above are the minimal entry points. Verified public video URLs, checksums, source identities and outcome labels are recorded in [MEDIA_MANIFEST.json](MEDIA_MANIFEST.json). The [video library](https://www.natslabs.com/typhon-robotics/videos.html) distinguishes phone observations, expert replays and learned-policy evaluations; it retains failed outcomes. The paired phone clips are temporally trimmed takes, with separate marked variants; no spatial-crop or frame-to-robot-action alignment is claimed.
 
 ## Data and geometry limitations
 
