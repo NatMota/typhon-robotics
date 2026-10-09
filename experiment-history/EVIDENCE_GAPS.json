@@ -1,0 +1,138 @@
+{
+  "schema": "typhon-experiment-history-gaps-v1",
+  "experiment_snapshot_utc": "2026-10-09T22:55:00Z",
+  "documentation_status": "Finalized after the 9 October planning cutoff for the explicitly authorized separate history folder; this does not assert the official submission deadline.",
+  "scored_evaluation_status": {
+    "common_suites": 12,
+    "common_episodes": 96,
+    "four_second_diagnostic_suites": 4,
+    "four_second_diagnostic_episodes": 32,
+    "total_scored_episodes": 128,
+    "unfinished_successes": 0,
+    "counted_success_type": "Already-completed preservation only",
+    "trained_but_not_common_evaluated": [
+      "V1-M5",
+      "V1-M6",
+      "V2-M5",
+      "V2-M6"
+    ],
+    "infrastructure_partials": "Retained separately. V4-M5 final aggregate reused one valid original row plus seven isolated scene processes; V3-M6 ran a separate complete retry. Partials are not extra independent trials."
+  },
+  "gaps": [
+    {
+      "id": "real_robot",
+      "status": "not_demonstrated",
+      "finding": "All robot rollouts were simulated. Original human footage is real, but does not contain a physical robot execution.",
+      "claim_precluded": "Real-robot deployment, factory qualification, sim-to-real success or physical sensor validation."
+    },
+    {
+      "id": "phone_to_robot_actions",
+      "status": "not_established",
+      "finding": "Phone-view synchronization was audited, and simulated RGB/action ordering was checked separately. Human intermediate actions and pauses were not aligned one-for-one to measured robot commands.",
+      "claim_precluded": "Direct measured human-video-to-robot-action imitation or native robot-action labels for the human clips."
+    },
+    {
+      "id": "physical_dimensions",
+      "status": "proxy_or_catalogue_only",
+      "finding": "Early proxy geometry/mass and later catalogue appearance values were declared simulator inputs, not measurements of the filmed object. The homography was dimensionless.",
+      "claim_precluded": "Measured real-object size, mass, friction, contact force or physical camera calibration."
+    },
+    {
+      "id": "initial_ppo_scope",
+      "status": "distinguished",
+      "finding": "The original small task selector did run behavioural cloning and PPO. Personal X-VLA adaptation and V4 aggregation did not run PPO or Q-learning.",
+      "claim_precluded": "Either a global claim that PPO was never run or a claim that V4 was reinforcement learning."
+    },
+    {
+      "id": "selector_controls",
+      "status": "no_demonstrated_advantage",
+      "finding": "The shuffled-label control recovered after PPO; history and disturbed-source conditions did not establish an advantage on held-out compositions.",
+      "claim_precluded": "Demonstration-specific or history-specific benefit from the initial selector pilot."
+    },
+    {
+      "id": "personal_synthetic_ablation",
+      "status": "confounded",
+      "finding": "Personal and synthetic conditions differed in layouts/goals and shared appearance. Later data versions changed several supervision and cue choices.",
+      "claim_precluded": "An isolated causal estimate of personal versus synthetic data quality."
+    },
+    {
+      "id": "adaptation_ablation",
+      "status": "confounded",
+      "finding": "Prompt/head/LoRA changes and later base-checkpoint/domain/loss changes were not all held fixed. Original M5/M6 each used one source trajectory.",
+      "claim_precluded": "A clean ranking of LoRA versus full tuning or a claim that all personal demonstrations trained those checkpoints."
+    },
+    {
+      "id": "temporal_abstraction",
+      "status": "components_implemented_advantage_unproved",
+      "finding": "Actual V3 added causal sparse history and physical-time anchors, with timing audits and expert replays. Runtime requests remained externally supplied; mean-pooled history compressed temporal information.",
+      "claim_precluded": "A validated online learned subgoal selector, learned-value planning or task success caused by temporal abstraction."
+    },
+    {
+      "id": "held_state_and_randomization",
+      "status": "limited",
+      "finding": "Held-state cues, camera candidates, balancing and scene variation existed. Privileged annotations were distinguished from runtime unknowns.",
+      "claim_precluded": "A deployable held-state estimator or general robustness to unseen cameras, lighting, objects and dynamics."
+    },
+    {
+      "id": "dagger_failure_semantics",
+      "status": "bounded_one_round",
+      "finding": "Accepted teacher additions followed unfinished six-second student prefixes. This does not establish irrecoverable failure. Three explicit empty-grasp attempts yielded no clean accepted empty-grasp correction.",
+      "claim_precluded": "Repeated autonomous failure discovery, guaranteed recovery supervision, or an established benefit from DAgger."
+    },
+    {
+      "id": "evaluation_generality",
+      "status": "small_shared_frozen_suite",
+      "finding": "Models shared the same eight cases. The common 1.5-second and separate four-second conditions are different protocols. Four trained V1/V2 M5/M6 combinations were unevaluated in the common set.",
+      "claim_precluded": "Independent-trial interpretation of all rows, all sixteen branches evaluated, broad statistical generalization or a pooled cross-horizon success rate."
+    },
+    {
+      "id": "strongest_partial",
+      "status": "overall_failure_with_measured_progress",
+      "finding": "V4-M6 personal_demo_0006 grasped, lifted about 161.4 mm, moved about 246.3 mm and released stably inside target. Position error 11.36 mm passed; yaw error 85.06 degrees was the sole failed final criterion.",
+      "claim_precluded": "Completed manipulation or orientation correction, and conversely a claim that no learned policy ever grasped or transported an object."
+    },
+    {
+      "id": "qwen_semantics",
+      "status": "known_false_positive_and_schema_failures",
+      "finding": "Qwen confidently accepted a reversed numeral in one live case; another wrong-yaw case produced malformed/truncated JSON. Independent RGB and stateful guards were added.",
+      "claim_precluded": "Reliable general completion judgment or conflating assisted service outcomes with unassisted policy scores."
+    },
+    {
+      "id": "classifier_scope",
+      "status": "narrow_synthetic_confirmation",
+      "finding": "The fixed-overhead feeding classifier had no false completions in a 336-image confirmation and abstained on 91 images. Its softmax is uncalibrated. Loading is unsupported.",
+      "claim_precluded": "Zero deployment false-positive rate, calibrated confidence, real-camera accuracy, arbitrary-camera operation or validated fine angular-boundary performance."
+    },
+    {
+      "id": "visual_physical_completion",
+      "status": "requires_separate_gates",
+      "finding": "The classifier supplies visual evidence; the service additionally checks measured gripper opening and fresh-frame translation stability. A coarse direction class does not measure two-degree continuous yaw stability, support height or physical contact.",
+      "claim_precluded": "An image alone certifies every physical task-success or safety criterion."
+    },
+    {
+      "id": "harness_completion",
+      "status": "recognition_pass_source_attempt_failed",
+      "finding": "Three precompleted placements were recognized with no policy actions. Wrong orientations were rejected and an opaque image stayed unknown. The 500-decision source attempt executed 49 actions and did not finish.",
+      "claim_precluded": "Harness-assisted learned source completion or treating 500 service decisions as 1500 executed control steps."
+    },
+    {
+      "id": "guard_and_latency_limits",
+      "status": "bounded_simulator_diagnostic",
+      "finding": "Candidate filtering and per-step checks were bounded. Telemetry reports simulator state and actuator torque. The simulator paused during inference; many classifier calls took quick unknown branches.",
+      "claim_precluded": "A generally safe whole-arm controller, real force measurements, calibrated physical robot latency or real-time end-to-end throughput."
+    },
+    {
+      "id": "publication_recovery",
+      "status": "explicitly_reconstructed",
+      "finding": "The first 51,332-byte history and 57-source index were saved and verified, then the host became unreachable. This publication copy was reconstructed from the reviewed notes. Original hashes are retained where known; missing paths/hashes are null instead of invented.",
+      "claim_precluded": "Byte identity with the first history, recovery of all original source copies or independent rereading of the final evaluation summary after the outage.",
+      "follow_up": "When access returns, reconcile against the preserved first history/source index and mirror any missing final evidence without changing the experiments."
+    },
+    {
+      "id": "media_inventory",
+      "status": "intentional_frozen_subset",
+      "finding": "The final local index contained 64 videos; the earlier public release was frozen at 56 and excluded the final two local suites.",
+      "claim_precluded": "The earlier public media gallery is the complete final evaluation inventory."
+    }
+  ]
+}

@@ -1,0 +1,560 @@
+{
+  "schema": "typhon-experiment-history-source-index-v1",
+  "documentation_finalized_at_utc": "2026-10-09T23:10:14.744337+00:00",
+  "public_repository": "https://github.com/NatMota/typhon-robotics",
+  "checked_public_commit": "1a2be36b1df6140b41a2653ebf7e58138da9fac0",
+  "recovery_note": "Text-only reconstruction from previously inspected sources and retained notes after original host became unreachable. This file does not replace or pretend to reproduce the complete original 57-source index. No reason for the host outage is asserted.",
+  "original_staging": {
+    "full_history_sha256": "3da04227d0cb70351b836cb73d6155b95855550473b00e12d60207e93e491ef7",
+    "full_history_bytes": 51332,
+    "compact_insert_sha256": "30a0e011e07e15faa1b9a312df8a41d92e4c04afa26f84ffd4338fcaba12ae45",
+    "evidence_gaps_sha256": "88696a5cfdb055d07a938ef2b4d28df4c263717eaf0a3014a29bb44ee40c1482",
+    "source_index_sha256": "375e3b20e15ec5182abbaeccd850bc09b45c1e80c12fee9695262f6335bf801c",
+    "frozen_source_copies": 57,
+    "modification_policy": "Original experiments, results and checkpoints remain untouched."
+  },
+  "model_artifacts": [
+    {
+      "name": "Earlier M6 FT3000",
+      "relative_path": "results/personal-m6-joint-20261009/training/final.pt",
+      "sha256": "03a55fa46088368da0b8d92091ec3a4a5a539ae2772bf2cfd4c592b92b745a85"
+    },
+    {
+      "name": "Final small goal classifier",
+      "relative_path": "typhon-goal-classifier-20261009/model.npz",
+      "sha256": "bc15b4519f7787aecb5078df08029984ba3e9297ca4af48caba1620b0530ae0b"
+    }
+  ],
+  "sources": [
+    {
+      "id": "MINT",
+      "title": "Initial learned-selector pilot",
+      "original_relative_path": "results/mint-20261007/README.md",
+      "original_sha256": "32703f4f5835cda5a1b769071c10d852c1bd4c6cbb47f6ed279575a99119360b",
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "MACRO",
+      "title": "Four-hundred-outcome RGB macro surrogate",
+      "original_relative_path": "results/mint-20261007/runs/evaluation/RESULTS.md",
+      "original_sha256": "bc52ab1f15c75e3cda941afe4cf0f674bf15bf4509aec0376a4628e8a80e6e8d",
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "PHYSICAL",
+      "title": "Two-hundred-forty-trial physical simulation",
+      "original_relative_path": "results/mint-20261007/runs/physical-evaluation/review-summary.csv",
+      "original_sha256": "5d26d4f53ecf44ee6335fe6103b0e2bd5599284efc42a6472adb7d44868a040f",
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "MINT-CLEAN",
+      "title": "Clean selector training",
+      "original_relative_path": "results/mint-20261007/runs/clean_s17/summary.json",
+      "original_sha256": "92608074cf9848706d5e0f7ba05b840891b749618c2665942c1924d4a1c52258",
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "MINT-DISTURBED",
+      "title": "Disturbed selector training",
+      "original_relative_path": "results/mint-20261007/runs/disturbed_s17/summary.json",
+      "original_sha256": "e9638977ac3e21229b8ab4a8ef13ac5a17d2455ede351f58389fb49d357d6f8b",
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "MINT-NOHISTORY",
+      "title": "Retrained history ablation",
+      "original_relative_path": "results/mint-20261007/runs/disturbed_no_history_s17/summary.json",
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "MINT-SHUFFLED",
+      "title": "Shuffled demonstration-label control",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "UCL",
+      "title": "Simulator and GPU readiness report",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "M0",
+      "title": "Personal recording curation and provenance",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": "evidence/m0/M0_report.txt",
+      "public_copy": {
+        "sha256": "24d950dc9dae2c5db460e8bc04a916ed192555230ce81e3b1d8f843436475e59",
+        "bytes": 9936,
+        "verified_at_commit": "1a2be36b1df6140b41a2653ebf7e58138da9fac0"
+      }
+    },
+    {
+      "id": "M1",
+      "title": "Initial feeding/loading simulator and expert",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "M15",
+      "title": "Personal and synthetic task reconstruction",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": "evidence/m15/M15_report.txt",
+      "public_copy": {
+        "sha256": "b79fbc46f40f29b52b9adace53eb3aea48911adb2118bdc8fb3ec0ca9430d5c3",
+        "bytes": 9059,
+        "verified_at_commit": "1a2be36b1df6140b41a2653ebf7e58138da9fac0"
+      }
+    },
+    {
+      "id": "M16",
+      "title": "Asymmetric visual appearance and replay equivalence",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "M2",
+      "title": "Unchanged pretrained policy baseline",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "M30",
+      "title": "Observation/crop/action/training plumbing qualification",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "M3",
+      "title": "Original prompt adaptation",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": "evidence/m3/M3_report.txt",
+      "public_copy": {
+        "sha256": "b91539cd17beb599710514d251057794d1e8ecbaf4b052a6011742fb915caea0",
+        "bytes": 11226,
+        "verified_at_commit": "1a2be36b1df6140b41a2653ebf7e58138da9fac0"
+      }
+    },
+    {
+      "id": "M4",
+      "title": "Original ordinary versus correction continuation",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": "evidence/m4/M4_report.txt",
+      "public_copy": {
+        "sha256": "eef73dba06e0ee07658ca202fd9cac2129d9fc79acff25ebb2b08314491c6b90",
+        "bytes": 9019,
+        "verified_at_commit": "1a2be36b1df6140b41a2653ebf7e58138da9fac0"
+      }
+    },
+    {
+      "id": "MOTION",
+      "title": "Action execution and motion diagnostics",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "M5",
+      "title": "Original head and LoRA adaptation",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": "evidence/m5/M5_report.txt",
+      "public_copy": {
+        "sha256": "b67242da0b36187d7b87717302a9abd1fa835c09bdf125d9152a4647d007ad98",
+        "bytes": 6323,
+        "verified_at_commit": "1a2be36b1df6140b41a2653ebf7e58138da9fac0"
+      }
+    },
+    {
+      "id": "M6",
+      "title": "Original full joint adaptation",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": "evidence/m6/M6_report.txt",
+      "public_copy": {
+        "sha256": "865dfec20d9c6e1cbd940429dce3192a429ea828ec87ee782477e93f606c2d43",
+        "bytes": 5999,
+        "verified_at_commit": "1a2be36b1df6140b41a2653ebf7e58138da9fac0"
+      }
+    },
+    {
+      "id": "COVERAGE",
+      "title": "Source data coverage audit",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "ENRICHMENT",
+      "title": "Personal video enrichment and grasp-state provenance",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "CATALOG",
+      "title": "V1/V2 and placeholder V3/V4 catalogue comparison",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "CATALOG-STEERING",
+      "title": "Exporter cue and held-state steering",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "RUN3",
+      "title": "Physical-time sparse-history preparation",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "SYNC",
+      "title": "Phone pair synchronization and simulator image/action alignment",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "TIMING",
+      "title": "Action timing and geometric-expert replay audit",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "TRAINING-HOLD",
+      "title": "Training hold pending data semantics review",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "NATIVE-SMOKE",
+      "title": "Native H100 joint-training checkpoint qualification",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "RUN4-DATA",
+      "title": "One-round matching-student aggregation",
+      "original_relative_path": "results/personal-m7-data-prep-20261009/run4-aggregate-v2/RUN4_DATA_PREPARATION_REPORT.md",
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "RUN4-TRAINING",
+      "title": "Run4 continuation and retained/quarantined suffixes",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "RUN4-STATUS",
+      "title": "Final V4 training status",
+      "original_relative_path": "results/personal-m7-training-20261009/run4-dagger-20261009/v4-status.json",
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "V12-STATUS",
+      "title": "Final V1 and V2 training status",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "V34-STATUS",
+      "title": "Final V3 training status",
+      "original_relative_path": "results/personal-m7-training-20261009/temporal-run3-20261009-v2/v3-status.json",
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "M7-PILOT",
+      "title": "Initial common V1/V2 evaluation",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": "evidence/m7/M7_pilot_report.txt",
+      "public_copy": {
+        "sha256": "cf633844998a0bb8b446012ec856505ac6e62e6d3ef186c2ec6597398d2d69f6",
+        "bytes": 6122,
+        "verified_at_commit": "1a2be36b1df6140b41a2653ebf7e58138da9fac0"
+      }
+    },
+    {
+      "id": "M7-FOLLOWUP",
+      "title": "Follow-up common and four-second comparisons",
+      "original_relative_path": "results/personal-m7-training-20261009/powerglide-pilots-20261009/M7_followup_report.txt",
+      "original_sha256": null,
+      "public_path": "evidence/m7/M7_followup_report.txt",
+      "public_copy": {
+        "sha256": "3677ff3333a25be25ab049a6dbfa56e1160c54e7d30b412ca4de5b5c1e1c4aed",
+        "bytes": 1442,
+        "verified_at_commit": "1a2be36b1df6140b41a2653ebf7e58138da9fac0"
+      }
+    },
+    {
+      "id": "M7-SUMMARY",
+      "title": "Machine-readable follow-up suites",
+      "original_relative_path": "results/personal-m7-training-20261009/powerglide-pilots-20261009/followup_summary.json",
+      "original_sha256": null,
+      "public_path": "evidence/m7/followup_summary.json",
+      "public_copy": {
+        "sha256": "d39e8d633db94c31fa6552b904b427b29cc403064bd4c2610a774af8106b9055",
+        "bytes": 15598,
+        "verified_at_commit": "1a2be36b1df6140b41a2653ebf7e58138da9fac0"
+      }
+    },
+    {
+      "id": "QWEN-BRIDGE",
+      "title": "Qwen text-planner and frozen M6 bridge",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "QWEN-MANIFEST",
+      "title": "Qwen bridge checkpoint and request provenance",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "QWEN-SERVICE",
+      "title": "Stateful Qwen service validation",
+      "original_relative_path": "results/personal-m7-service-20261009/final-validation/SERVICE_REPORT.txt",
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "MODEL-ADVICE",
+      "title": "Proposed alternative-model advice and access outcome",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "CLASSIFIER",
+      "title": "Final small classifier model and development evaluation",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": "evidence/goal-classifier/",
+      "public_copy": null
+    },
+    {
+      "id": "CLASSIFIER-CONFIRM",
+      "title": "Post-freeze 336-image confirmation",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": "evidence/goal-classifier/",
+      "public_copy": null
+    },
+    {
+      "id": "HARNESS",
+      "title": "Earlier frozen M6 and real classifier live service",
+      "original_relative_path": "typhon-harness-20261009/live-v2/SERVICE_REPORT.txt",
+      "original_sha256": null,
+      "public_path": "evidence/harness/SERVICE_REPORT.txt",
+      "public_copy": {
+        "sha256": "e16c5911bf939e31d31a5c91981a7048633b50d09a3b71fcf31bffaf5f75915b",
+        "bytes": 5793,
+        "verified_at_commit": "1a2be36b1df6140b41a2653ebf7e58138da9fac0"
+      }
+    },
+    {
+      "id": "HARNESS-AUDIT",
+      "title": "Frozen hashes, live cases, telemetry and audit",
+      "original_relative_path": "typhon-harness-20261009/live-v2/audit.json",
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "CODE-MINT-PPO",
+      "title": "Initial selector PPO implementation",
+      "original_relative_path": "supervisor/train.py",
+      "original_sha256": "4a6c87b1ecfd9e2ed7a8c95978405054bf8622fd795cb81b593819a6efc2bfda",
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "CODE-M7-TRAIN",
+      "title": "M7 temporal and adaptation training source",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "CODE-M7-TIMING",
+      "title": "Physical-time window/action source",
+      "original_relative_path": null,
+      "original_sha256": null,
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "CODE-CLASSIFIER",
+      "title": "Small classifier implementation",
+      "original_relative_path": "supervisor/planning/simple_goal_classifier.py",
+      "original_sha256": "609dd72b1f21b6fc2fc8e535b9cbb279ce66b311473a294d6a4f5d7abe8ffa61",
+      "public_path": "supervisor/planning/simple_goal_classifier.py",
+      "public_copy": {
+        "sha256": "609dd72b1f21b6fc2fc8e535b9cbb279ce66b311473a294d6a4f5d7abe8ffa61",
+        "bytes": 9158,
+        "verified_at_commit": "1a2be36b1df6140b41a2653ebf7e58138da9fac0"
+      }
+    },
+    {
+      "id": "CODE-SUPERVISOR",
+      "title": "Qwen/default supervisor and guarded prefix execution",
+      "original_relative_path": "supervisor/planning/m7_service.py",
+      "original_sha256": null,
+      "public_path": "supervisor/planning/m7_service.py",
+      "public_copy": {
+        "sha256": "cde97584c50bc224009cee1de0078170adb83922aaa974d09e7b535b983227fd",
+        "bytes": 20477,
+        "verified_at_commit": "1a2be36b1df6140b41a2653ebf7e58138da9fac0"
+      }
+    },
+    {
+      "id": "CODE-TYPHON",
+      "title": "Classifier-primary wrapper",
+      "original_relative_path": "supervisor/planning/typhon_service.py",
+      "original_sha256": null,
+      "public_path": "supervisor/planning/typhon_service.py",
+      "public_copy": {
+        "sha256": "21549669da08dc010c90f5980d87a07ce408f451f72cdf6a98191cc9bc4b12bf",
+        "bytes": 3874,
+        "verified_at_commit": "1a2be36b1df6140b41a2653ebf7e58138da9fac0"
+      }
+    },
+    {
+      "id": "CODE-TELEMETRY",
+      "title": "Measured simulator telemetry publisher",
+      "original_relative_path": "supervisor/planning/m7_telemetry.py",
+      "original_sha256": null,
+      "public_path": "supervisor/planning/m7_telemetry.py",
+      "public_copy": {
+        "sha256": "7955bfbb56f9b9bfa94be51f5d9af82b665ff655b27320b3b1f89564cb2f6440",
+        "bytes": 7251,
+        "verified_at_commit": "1a2be36b1df6140b41a2653ebf7e58138da9fac0"
+      }
+    },
+    {
+      "id": "H100-V3M5",
+      "title": "V3-M5 common complete eight-case summary",
+      "original_relative_path": "v3-m5-pilot-v1/summary.json",
+      "original_sha256": "0d6321052585d565d349a86d8c6ee5b43caa819cf17d01ea4f4c0d0de456ab87",
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "H100-V4M6",
+      "title": "V4-M6 common complete eight-case summary",
+      "original_relative_path": "v4-m6-pilot-v1/summary.json",
+      "original_sha256": "94a6b0e4a71bf7bbfde2b59886e2ba32e80a5f121838967b18ddcfc07c08d6c8",
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "H100-V4M6-DIAGNOSTICS",
+      "title": "V4-M6 contact/lift/transport and arithmetic audit",
+      "original_relative_path": "v4-m6-pilot-v1-diagnostics.json",
+      "original_sha256": "b0e147736d4adca69ead0f9492c4f25225fb32cac2e274a7c73d17401d10cbff",
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "H100-V4M6-EPISODE",
+      "title": "Exact personal_demo_0006 episode",
+      "original_relative_path": "v4-m6-pilot-v1/m7-personal_demo_0006/episode.json",
+      "original_sha256": "e9218e77717135652bd26d2d32cab07b824f6a9a9823f29394c051c568ea611c",
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "H100-V4M5",
+      "title": "V4-M5 recovered eight-case aggregate",
+      "original_relative_path": "v4-m5-pilot-isolated-v2/summary.json",
+      "original_sha256": "0de640aeb4f4050a9f06615dca8cc07f833544b751f20070de315a8eafa4537d",
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "H100-V4M5-DIAGNOSTICS",
+      "title": "V4-M5 isolated recovery and arithmetic audit",
+      "original_relative_path": "v4-m5-pilot-isolated-v2-diagnostics.json",
+      "original_sha256": "f2dda389829253358a3186e5b36ba3876ddc90833d2d663f539ac8bee49fc335",
+      "public_path": null,
+      "public_copy": null
+    },
+    {
+      "id": "DEADLINE",
+      "title": "Final 128-episode evaluation summary",
+      "original_relative_path": "results/personal-m7-training-20261009/powerglide-pilots-20261009/deadline_evaluation_summary.json",
+      "original_sha256": "389d4dfd9ee276d2628fc1d66067f0512aff73f04803230d16316f871a9caf26",
+      "public_path": null,
+      "public_copy": null,
+      "evidence_review": "Final summary hash and finalized outcomes supplied by the evaluation agent after the documentation agent lost host access; not independently re-read in this recovery."
+    }
+  ],
+  "entry_conventions": {
+    "evidence_review": "Original sources were reviewed during the first history preparation and exact copies were retained there. DEADLINE explicitly records the later agent handoff.",
+    "null_original_path": "Exact original path was not retained in recovered context; none is invented.",
+    "null_original_sha256": "Original SHA-256 was not retained in recovered context; any public_copy.sha256 identifies only that published copy.",
+    "null_public_path": "Original evidence remains archived but is not linked in the initial public snapshot.",
+    "public_copy_commit": "Every public_copy hash was independently recomputed from the pinned initial public commit."
+  },
+  "experiment_results_snapshot_utc": "2026-10-09T22:55:00Z",
+  "planning_cutoff_note": "The 9 October cutoff was the working evaluation plan; it is not asserted to be the official submission deadline. DEADLINE is an archival evidence identifier."
+}

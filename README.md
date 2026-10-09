@@ -4,7 +4,7 @@
 
 Typhon is an experimental robotics harness built for the October 2026 Humanoid internship challenge. It connects personally recorded tabletop demonstrations, reproducible Franka Panda scenes, X-VLA adaptation, controller telemetry, explicit execution guards and independently scored rollouts.
 
-[Dashboard](https://natslabs.com/typhon-robotics) · [Video library](https://www.natslabs.com/typhon-robotics/media-library.html) · [Verified results](evidence/m7/) · [Controller/harness audit](evidence/harness/SERVICE_REPORT.txt) · [Dataset provenance](evidence/m0/) · [Reproduction](#reproduce)
+[Dashboard](https://natslabs.com/typhon-robotics) · [Video library](https://www.natslabs.com/typhon-robotics/media-library.html) · [Verified results](evidence/m7/) · [Controller/harness audit](evidence/harness/SERVICE_REPORT.txt) · [Dataset provenance](evidence/m0/) · [Experiment history](experiment-history/) · [Reproduction](#reproduce)
 
 ![Typhon experiment dashboard](docs/dashboard.png)
 
