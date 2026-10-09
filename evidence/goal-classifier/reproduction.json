@@ -1,0 +1,7 @@
+{
+  "working_directory": "$PROJECT",
+  "generate": "MUJOCO_GL=egl PYOPENGL_PLATFORM=egl OPENBLAS_NUM_THREADS=1 .venv-sim/bin/python scripts/train_simple_goal_classifier.py generate",
+  "fit_cpu": "CUDA_VISIBLE_DEVICES= OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=4 .venv-xvla/bin/python scripts/train_simple_goal_classifier.py fit",
+  "evaluate_only": "OPENBLAS_NUM_THREADS=1 .venv-sim/bin/python scripts/train_simple_goal_classifier.py evaluate",
+  "notes": "Use a fresh output directory by changing module OUT to avoid overwriting this frozen artifact; confirmatory generation uses OUT/confirmation, COUNTS={test:288}, SEEDS={test:2026100955}, and copies frozen model; no fit. Training script includes corrected local occlusion refresh."
+}

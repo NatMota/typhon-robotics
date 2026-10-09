@@ -1,0 +1,228 @@
+{
+  "scheduled": 8,
+  "recorded": 8,
+  "by_group": {
+    "completed": {
+      "evaluated": 2,
+      "successes": 2,
+      "blocked_or_execution_error": 0
+    },
+    "correction": {
+      "evaluated": 1,
+      "successes": 0,
+      "blocked_or_execution_error": 0
+    },
+    "heldout_personal": {
+      "evaluated": 2,
+      "successes": 0,
+      "blocked_or_execution_error": 0
+    },
+    "heldout_synthetic": {
+      "evaluated": 2,
+      "successes": 0,
+      "blocked_or_execution_error": 0
+    },
+    "source": {
+      "evaluated": 1,
+      "successes": 0,
+      "blocked_or_execution_error": 0
+    }
+  },
+  "results": [
+    {
+      "scenario_id": "m7-personal_demo_0001",
+      "group": "source",
+      "status": "evaluated",
+      "success": false,
+      "position_error_mm": 478.31238371726124,
+      "yaw_error_deg": 54.48100682117106,
+      "policy_actions_executed": 1436,
+      "grasp_attempts": 88,
+      "controller_exceptions": [],
+      "artifact_errors": [],
+      "evaluation_errors": [],
+      "wall_duration_s": 26.85574263401213,
+      "final_criteria": {
+        "position": false,
+        "orientation": false,
+        "marked_face_up": true,
+        "footprint_inside_target": false,
+        "placement_height": true,
+        "released": false,
+        "stable": false
+      },
+      "video_saved": true
+    },
+    {
+      "scenario_id": "m7-personal_demo_0006",
+      "group": "heldout_personal",
+      "status": "evaluated",
+      "success": false,
+      "position_error_mm": 230.2291132854623,
+      "yaw_error_deg": 173.77659337742412,
+      "policy_actions_executed": 1436,
+      "grasp_attempts": 47,
+      "controller_exceptions": [],
+      "artifact_errors": [],
+      "evaluation_errors": [],
+      "wall_duration_s": 25.768126665003365,
+      "final_criteria": {
+        "position": false,
+        "orientation": false,
+        "marked_face_up": true,
+        "footprint_inside_target": false,
+        "placement_height": true,
+        "released": true,
+        "stable": true
+      },
+      "video_saved": true
+    },
+    {
+      "scenario_id": "m7-personal_demo_0014",
+      "group": "heldout_personal",
+      "status": "evaluated",
+      "success": false,
+      "position_error_mm": 248.0308424133387,
+      "yaw_error_deg": 46.475290297800655,
+      "policy_actions_executed": 1436,
+      "grasp_attempts": 47,
+      "controller_exceptions": [],
+      "artifact_errors": [],
+      "evaluation_errors": [],
+      "wall_duration_s": 25.95549541900982,
+      "final_criteria": {
+        "position": false,
+        "orientation": false,
+        "marked_face_up": true,
+        "footprint_inside_target": false,
+        "placement_height": true,
+        "released": true,
+        "stable": true
+      },
+      "video_saved": false
+    },
+    {
+      "scenario_id": "m7-synthetic_generated_007",
+      "group": "heldout_synthetic",
+      "status": "evaluated",
+      "success": false,
+      "position_error_mm": 86.22716438620735,
+      "yaw_error_deg": 126.58889223261075,
+      "policy_actions_executed": 1436,
+      "grasp_attempts": 47,
+      "controller_exceptions": [],
+      "artifact_errors": [],
+      "evaluation_errors": [],
+      "wall_duration_s": 25.58822488199803,
+      "final_criteria": {
+        "position": false,
+        "orientation": false,
+        "marked_face_up": true,
+        "footprint_inside_target": false,
+        "placement_height": true,
+        "released": true,
+        "stable": true
+      },
+      "video_saved": false
+    },
+    {
+      "scenario_id": "m7-synthetic_generated_009",
+      "group": "heldout_synthetic",
+      "status": "evaluated",
+      "success": false,
+      "position_error_mm": 256.0119164293744,
+      "yaw_error_deg": 39.7606246049333,
+      "policy_actions_executed": 1436,
+      "grasp_attempts": 48,
+      "controller_exceptions": [],
+      "artifact_errors": [],
+      "evaluation_errors": [],
+      "wall_duration_s": 26.239142956997966,
+      "final_criteria": {
+        "position": false,
+        "orientation": false,
+        "marked_face_up": true,
+        "footprint_inside_target": false,
+        "placement_height": true,
+        "released": true,
+        "stable": true
+      },
+      "video_saved": false
+    },
+    {
+      "scenario_id": "recovery-wrong_orientation-01",
+      "group": "correction",
+      "status": "evaluated",
+      "success": false,
+      "position_error_mm": 5.000000000000004,
+      "yaw_error_deg": 89.99999999999999,
+      "policy_actions_executed": 1436,
+      "grasp_attempts": 47,
+      "controller_exceptions": [],
+      "artifact_errors": [],
+      "evaluation_errors": [],
+      "wall_duration_s": 25.71888328899513,
+      "final_criteria": {
+        "position": true,
+        "orientation": false,
+        "marked_face_up": true,
+        "footprint_inside_target": true,
+        "placement_height": true,
+        "released": true,
+        "stable": true
+      },
+      "video_saved": true
+    },
+    {
+      "scenario_id": "recovery-already_completed-01",
+      "group": "completed",
+      "status": "evaluated",
+      "success": true,
+      "position_error_mm": 0.0,
+      "yaw_error_deg": 5.756937560437642e-29,
+      "policy_actions_executed": 1436,
+      "grasp_attempts": 47,
+      "controller_exceptions": [],
+      "artifact_errors": [],
+      "evaluation_errors": [],
+      "wall_duration_s": 26.487242258008337,
+      "final_criteria": {
+        "position": true,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": true,
+        "placement_height": true,
+        "released": true,
+        "stable": true
+      },
+      "video_saved": true
+    },
+    {
+      "scenario_id": "recovery-already_completed-03",
+      "group": "completed",
+      "status": "evaluated",
+      "success": true,
+      "position_error_mm": 0.0,
+      "yaw_error_deg": 6.542045341592369e-29,
+      "policy_actions_executed": 1436,
+      "grasp_attempts": 47,
+      "controller_exceptions": [],
+      "artifact_errors": [],
+      "evaluation_errors": [],
+      "wall_duration_s": 26.30373041299754,
+      "final_criteria": {
+        "position": true,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": true,
+        "placement_height": true,
+        "released": true,
+        "stable": true
+      },
+      "video_saved": false
+    }
+  ],
+  "evidence_type": "learned-policy rollout",
+  "teacher_replay_successes_counted": 0,
+  "completed_metric": "goal preservation, not recognition"
+}

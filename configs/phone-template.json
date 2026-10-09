@@ -1,0 +1,18 @@
+{
+  "clips": [
+    {
+      "id": "source-load-01", "video": "load-01.mp4", "events": "load-01.csv",
+      "workflow": "A", "session": "source-session-01", "split": "train",
+      "surface_corners_pixels": [[100,100],[1000,100],[1000,900],[100,900]],
+      "required": [true,false,false,false],
+      "goals": [[0.65,0.25],[0.85,0.25],[0.65,0.70],[0.85,0.70]]
+    },
+    {
+      "id": "target-kit-01", "video": "kit-01.mp4", "events": "kit-01.csv",
+      "workflow": "C", "session": "target-session-02", "split": "test",
+      "surface_corners_pixels": [[100,100],[1000,100],[1000,900],[100,900]],
+      "required": [true,true,false,false],
+      "goals": [[0.65,0.25],[0.85,0.25],[0.65,0.70],[0.85,0.70]]
+    }
+  ]
+}

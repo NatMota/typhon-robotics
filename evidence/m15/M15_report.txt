@@ -1,0 +1,103 @@
+# M15 — personal observations to Panda execution
+
+M0 supplies observed resting object state, target geometry, directed numeral orientation and category. M1 supplies an unchanged privileged geometric expert. M15 adds the same initial completion check and open-gripper return to rest for both cohorts, clearing the final overhead view. Robot actions are generated in simulation; no policy is trained on these videos.
+
+| Cohort | Executed | Successes | Mean position error | Mean yaw error |
+|---|---:|---:|---:|---:|
+| personal | 15 | 13 | 17.780 mm | 15.282° |
+| synthetic | 15 | 8 | 76.867 mm | 10.868° |
+
+Imported 15/16 curated examples. Excluded M0 example6/demo0017 remains preserved in M0 and is never imported.
+
+## Mapping and geometry
+
+M0 raw-pixel centroids are projected through its saved target-square homography. The resulting coordinates are dimensionless. One target unit is assigned the existing M1 100mm staging-square size. A common declared translation and rotation place the layout in the Panda workspace. This is a virtual scenario reconstruction, not calibrated physical metres. Projected corners, CSV agreement, inverse mapping and directed180° yaw were checked before execution.
+
+The user confirmed the catalogue identification as DUPLO part31110pb074 (blue2): catalogue envelope32×32×43mm and mass12.7g. Printed-face-up simulation uses a32×43×32mm solid box at12.7g. These are catalogue estimates, not measurements of this specimen. Studs, hollow underside, exact inertia and friction remain approximations. The original M1 provisional50×35×30mm/80g model and outputs remain unchanged. Source: https://www.bricklink.com/v2/catalog/catalogitem.page?P=31110pb074
+
+Only two consecutive supported stationary samples within1.75s of each endpoint are eligible. Initial state never comes from a later post-placement frame. Visible centroids lie above the tabletop; perspective, manual target corners and5° template quantization limit accuracy. Reported millimetre errors describe the simulation only.
+
+## Categories and exclusions
+
+- demo_0001 (normal_feeding): success.
+- demo_0002 (normal_feeding): success.
+- demo_0003 (normal_feeding): success.
+- demo_0004 (normal_feeding): unreconstructable: no reliable stationary initial position-and-yaw pair within1.75s.
+- demo_0005 (normal_feeding): success.
+- demo_0006 (normal_feeding): success.
+- demo_0007 (orientation_correction): success.
+- demo_0009 (orientation_correction): success.
+- demo_0011 (orientation_correction): failure: orientation,no_verified_lift.
+- demo_0012 (awkward_pause_resume_feeding): success.
+- demo_0013 (awkward_pause_resume_feeding): success.
+- demo_0014 (awkward_pause_resume_feeding): success.
+- demo_0015 (awkward_pause_resume_feeding): failure: position,orientation,footprint_inside_target,no_verified_lift.
+- demo_0016 (normal_feeding): success.
+- demo_0018 (already_completed): success.
+- demo_0019 (already_completed): success.
+
+Corrections are yaw-recovery scenarios only where initial incorrect and final corrected orientations are observed. Already-completed cases pass a common independent terminal-state/stability check before any grasp; open-gripper observation holds are logged. Awkward/pause-resume labels preserve user intent and observed initial states. Pause times are unknown, so a human pause is not converted into a robot action.
+
+## Matched control and interpretation
+
+The synthetic control draws independent starts, goals and yaw from declared workspace ranges with fixed seed151509. It matches usable personal examples by category, robot, geometry, controller, tolerances and step budget; it does not copy their pose values. Correction draws start near the goal with incorrect yaw; completed draws start within goal tolerance. Feasibility differences are scenario-distribution effects, not evidence that the robot learned from demonstrations. Sample counts are small. See comparisons.csv, initial_distributions.csv and all failure diagnostics in episodes.jsonl.
+
+## Provenance and artifacts
+
+source_provenance.json links each scenario to original source hashes, paired clip timestamps, take ID and exact M0 tracking inputs. Each episode retains requested states, actual truth, controller diagnostics, 20Hz normalized robot actions and joint states, paired5Hz RGB trajectories with timestamps and videos. These generated robot action labels stay distinct from observed human object states.
+
+Side-by-side videos show original canonical human footage left and generated Panda execution right at native timing; the shorter side holds its last frame. They are task comparisons, not matched human/robot motion imitation.
+
+training_suitability.json identifies usable observation-level examples, failed generated trajectories and insufficient initial-state evidence. Successful expert trajectories may support subsequent simulated supervision under the declared proxy assumptions. These videos do not provide calibrated3D human motor trajectories or measured pause timing.
+
+## Reproduction
+
+Use the isolated m15-personal-reconstruction worktree and existing Powerglide .venv-sim. Choose a fresh output directory for preparation; execution resumes only fully saved episode records.
+
+```bash
+.venv-sim/bin/python scripts/m15_prepare.py --m0-root ../humanoid-task-supervisor --m1-root ../humanoid-task-supervisor-m1 --output results/personal-m15-reproduction
+MUJOCO_GL=egl PYOPENGL_PLATFORM=egl .venv-sim/bin/python scripts/m15_execute.py --output results/personal-m15-reproduction
+```
+
+Acceptance complete: True. M0/M1 preservation: True (2273 files checked).
+
+## Independent validation
+
+Extended validation passed: True. All saved videos decoded, initial XY/yaw checked against requested states (2mm/2° bound), source-code freeze checked, and M1 controller files compared with the original. Four representative scenarios were repeated in fresh environments; see extended_validation.json for exact action, RGB and terminal-state comparisons. Runtime and dependency versions are in runtime_manifest.json.
+
+Run after execution:
+
+```bash
+.venv-sim/bin/python scripts/m15_validate.py --output results/personal-m15-20261009
+```
+
+Open review.html for all original-versus-Panda comparison videos.
+
+RGB repeat checks: personal_demo_0001: 4 of 176160768 channel values changed, maximum 1 intensity level(s). The one-level rendering tolerance was introduced after inspecting the original one-frame/four-channel difference. It does not affect physics, scoring or comparative results. Exact pixel identity remains reported separately.
+
+## Initial-state distribution comparison
+
+| Cohort | Initial X range (m) | Initial Y range (m) | Mean initial-goal distance (m) | Initial yaw circular resultant |
+|---|---|---|---:|---:|
+| personal | -0.308 to 0.299 | -0.254 to 0.103 | 0.196 | 0.234 |
+| synthetic | -0.261 to 0.237 | -0.181 to 0.231 | 0.189 | 0.287 |
+
+Personal goals share the observed layout and upright numeral convention. Synthetic goals and yaw are independently sampled from the declared ranges. Counts and categories are matched, but pose difficulty is not identical; this comparison establishes feasibility and exposes controller limits, not superiority of personal data. Lower circular resultant means less concentration around a single direction.
+
+## Observed failures
+
+- personal_demo_0011: orientation, no_verified_lift. Attempts retained: 2.
+- personal_demo_0015: position, orientation, footprint_inside_target, no_verified_lift. Attempts retained: 2.
+- synthetic_demo_0003: position, orientation, footprint_inside_target, no_verified_lift. Attempts retained: 2.
+- synthetic_demo_0005: position, orientation, footprint_inside_target, no_verified_lift. Attempts retained: 2.
+- synthetic_demo_0006: position, footprint_inside_target. Attempts retained: 1.
+- synthetic_demo_0007: position, footprint_inside_target. Attempts retained: 1.
+- synthetic_demo_0011: position, footprint_inside_target. Attempts retained: 1.
+- synthetic_demo_0014: position, footprint_inside_target. Attempts retained: 1.
+- synthetic_demo_0015: position. Attempts retained: 1.
+
+## Visual observability limitation
+
+The inherited M1 seven-segment numeral 2 and rectangular box are symmetric under a180° yaw turn. Geometry signatures confirmed this during review; the M1 source comment describing the glyph as asymmetric is incorrect. Studs are not modelled. The privileged controller and evaluator retain directed yaw, but a180°-wrong block can look identical in RGB to a correct one. This does not invalidate the logged physical execution or source-state mapping; it prevents treating these renders as sufficient RGB-only supervision for full directed orientation. Add faithful asymmetric stud or numeral geometry in a separately versioned subsequent dataset before that training claim. M1 originals and this completed batch remain unchanged. See visual_review.json and training_suitability.json.
+
+The 56 frozen Mint/UCL pilot artifacts also match their saved baseline hashes. A source bundle, exact package inventory and commands.sh are included with this result.

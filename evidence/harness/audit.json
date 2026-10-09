@@ -1,0 +1,236 @@
+{
+  "passed": true,
+  "checkpoint_sha256": "03a55fa46088368da0b8d92091ec3a4a5a539ae2772bf2cfd4c592b92b745a85",
+  "classifier_sha256": "bc15b4519f7787aecb5078df08029984ba3e9297ca4af48caba1620b0530ae0b",
+  "recorded_source_hashes_unchanged": true,
+  "actual_rgb_cpu_replays": 7,
+  "measured_q_dq_eef_finger_torque_verified": true,
+  "total_decision_wall": {
+    "count": 539,
+    "min_s": 0.0012618080072570592,
+    "median_s": 0.001875591988209635,
+    "p95_s": 0.18769928120018448,
+    "max_s": 0.3015871119860094
+  },
+  "classifier_cpu_wall": {
+    "count": 494,
+    "min_s": 0.000340436992701143,
+    "median_s": 0.0005005505081498995,
+    "p95_s": 0.0010354270125390026,
+    "max_s": 0.022175366000737995
+  },
+  "decisions_with_M6_candidates": {
+    "count": 41,
+    "min_s": 0.1864767519873567,
+    "median_s": 0.1887130709947087,
+    "p95_s": 0.2009617550065741,
+    "max_s": 0.3015871119860094
+  },
+  "individual_M6_candidates": {
+    "count": 123,
+    "min_s": 0.060630913998465985,
+    "median_s": 0.061726665997412056,
+    "p95_s": 0.06882007828098721,
+    "max_s": 0.17207010800484568
+  },
+  "visible_classifier_complete_or_incomplete": {
+    "count": 56,
+    "min_s": 0.0006930370000191033,
+    "median_s": 0.0009192970028379932,
+    "p95_s": 0.0022112490187282674,
+    "max_s": 0.022175366000737995
+  },
+  "cases": [
+    {
+      "scenario_id": "typhon-correct-center",
+      "first_classifier_status": "complete",
+      "completion_claim": true,
+      "false_completion": false,
+      "decisions": 5,
+      "candidate_proposals": 0,
+      "candidate_rejections": 0,
+      "executed_control_steps": 0,
+      "stop_reason": "visual_completion_confirmed",
+      "run_wall_s": 1.085130745981587,
+      "evaluator_success": true,
+      "position_error_m": 0.0,
+      "orientation_error_deg": 2.632167345216136e-30,
+      "decision_reasons": {
+        "verify_completion_again": 4,
+        "consecutive_visual_completion": 1
+      },
+      "execution_rejections": {},
+      "classifier_reasons": {
+        "learned_directed_numeral_and_declared_target_checks": 5
+      },
+      "cpu_replay_status": "complete",
+      "measured_samples": 13,
+      "first_classifier_score": 0.9999102354049683,
+      "classifier_threshold": 0.8
+    },
+    {
+      "scenario_id": "typhon-correct-offset-x8mm",
+      "first_classifier_status": "complete",
+      "completion_claim": true,
+      "false_completion": false,
+      "decisions": 5,
+      "candidate_proposals": 0,
+      "candidate_rejections": 0,
+      "executed_control_steps": 0,
+      "stop_reason": "visual_completion_confirmed",
+      "run_wall_s": 1.0727653070061933,
+      "evaluator_success": true,
+      "position_error_m": 0.008000000000000007,
+      "orientation_error_deg": 2.632167345216136e-30,
+      "decision_reasons": {
+        "verify_completion_again": 4,
+        "consecutive_visual_completion": 1
+      },
+      "execution_rejections": {},
+      "classifier_reasons": {
+        "learned_directed_numeral_and_declared_target_checks": 5
+      },
+      "cpu_replay_status": "complete",
+      "measured_samples": 13,
+      "first_classifier_score": 0.9998157620429993,
+      "classifier_threshold": 0.8
+    },
+    {
+      "scenario_id": "typhon-correct-offset-y8mm",
+      "first_classifier_status": "complete",
+      "completion_claim": true,
+      "false_completion": false,
+      "decisions": 5,
+      "candidate_proposals": 0,
+      "candidate_rejections": 0,
+      "executed_control_steps": 0,
+      "stop_reason": "visual_completion_confirmed",
+      "run_wall_s": 1.046854458982125,
+      "evaluator_success": true,
+      "position_error_m": 0.008000000000000007,
+      "orientation_error_deg": 2.4273920975572985e-30,
+      "decision_reasons": {
+        "verify_completion_again": 4,
+        "consecutive_visual_completion": 1
+      },
+      "execution_rejections": {},
+      "classifier_reasons": {
+        "learned_directed_numeral_and_declared_target_checks": 5
+      },
+      "cpu_replay_status": "complete",
+      "measured_samples": 13,
+      "first_classifier_score": 0.99989914894104,
+      "classifier_threshold": 0.8
+    },
+    {
+      "scenario_id": "typhon-wrong-yaw180",
+      "first_classifier_status": "incomplete",
+      "completion_claim": false,
+      "false_completion": false,
+      "decisions": 8,
+      "candidate_proposals": 24,
+      "candidate_rejections": 0,
+      "executed_control_steps": 24,
+      "stop_reason": "decision_budget_exhausted",
+      "run_wall_s": 3.1669380370003637,
+      "evaluator_success": false,
+      "position_error_m": 0.0,
+      "orientation_error_deg": 180.0,
+      "decision_reasons": {
+        "admissible_prefix": 8
+      },
+      "execution_rejections": {},
+      "classifier_reasons": {
+        "learned_wrong_directed_orientation": 8
+      },
+      "cpu_replay_status": "incomplete",
+      "measured_samples": 32,
+      "first_classifier_score": 0.9998816251754761,
+      "classifier_threshold": 0.8
+    },
+    {
+      "scenario_id": "typhon-wrong-yaw90",
+      "first_classifier_status": "incomplete",
+      "completion_claim": false,
+      "false_completion": false,
+      "decisions": 8,
+      "candidate_proposals": 24,
+      "candidate_rejections": 0,
+      "executed_control_steps": 24,
+      "stop_reason": "decision_budget_exhausted",
+      "run_wall_s": 3.0791864010097925,
+      "evaluator_success": false,
+      "position_error_m": 0.0,
+      "orientation_error_deg": 89.99999999999999,
+      "decision_reasons": {
+        "admissible_prefix": 8
+      },
+      "execution_rejections": {},
+      "classifier_reasons": {
+        "learned_wrong_directed_orientation": 8
+      },
+      "cpu_replay_status": "incomplete",
+      "measured_samples": 32,
+      "first_classifier_score": 0.9998807907104492,
+      "classifier_threshold": 0.8
+    },
+    {
+      "scenario_id": "typhon-occluded",
+      "first_classifier_status": "unknown",
+      "completion_claim": false,
+      "false_completion": false,
+      "decisions": 8,
+      "candidate_proposals": 0,
+      "candidate_rejections": 0,
+      "executed_control_steps": 0,
+      "stop_reason": "decision_budget_exhausted",
+      "run_wall_s": 0.4468274810060393,
+      "evaluator_success": true,
+      "position_error_m": 0.0,
+      "orientation_error_deg": 2.544402556385794e-30,
+      "decision_reasons": {
+        "visual_uncertainty": 8
+      },
+      "execution_rejections": {},
+      "classifier_reasons": {
+        "orange_object_missing_or_ambiguous": 8
+      },
+      "cpu_replay_status": "unknown",
+      "measured_samples": 24,
+      "first_classifier_score": 0.0,
+      "classifier_threshold": 0.8
+    },
+    {
+      "scenario_id": "m5-source-01",
+      "first_classifier_status": "incomplete",
+      "completion_claim": false,
+      "false_completion": false,
+      "decisions": 500,
+      "candidate_proposals": 75,
+      "candidate_rejections": 0,
+      "executed_control_steps": 49,
+      "stop_reason": "decision_budget_exhausted",
+      "run_wall_s": 84.20519509699079,
+      "evaluator_success": false,
+      "position_error_m": 0.47831238371726126,
+      "orientation_error_deg": 54.48100682117106,
+      "decision_reasons": {
+        "admissible_prefix": 25,
+        "measured_joint_limit": 45,
+        "visual_uncertainty": 430
+      },
+      "execution_rejections": {
+        "measured_joint_limit": 15
+      },
+      "classifier_reasons": {
+        "learned_wrong_directed_orientation": 25,
+        "numeral_unobservable": 430
+      },
+      "cpu_replay_status": "incomplete",
+      "measured_samples": 1499,
+      "first_classifier_score": 0.9996974468231201,
+      "classifier_threshold": 0.8
+    }
+  ],
+  "timing_context": "isolated RTX4090 frozen M6 worker; CPU classifier; inference pauses simulator"
+}

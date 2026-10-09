@@ -1,0 +1,12 @@
+{
+  "command": ".venv-sim/bin/python -m unittest tests.test_m7_telemetry -v",
+  "passed": 3,
+  "failed": 0,
+  "checks": [
+    "actual observation and separate command atomic snapshot",
+    "unavailable torque and publisher failure do not change controller",
+    "opt-in only"
+  ],
+  "test_source_sha256": "6968d139f97e40f377a36eab0983a68e25c6c3f9424eb418fe1250736dc02b47",
+  "latest_verified_close_hook": true
+}

@@ -1,0 +1,39 @@
+M6: separate foundation full-weight joint fine-tuning
+
+Fixed primary comparison: Pt-custom-init versus Pt-FT3000, 16 episodes. Additional unchanged released-Pt/domain3 diagnostic:8 episodes, outside primary denominator.
+
+MODEL / GROUP / STRICT SUCCESS / BILATERAL CONTACT / SUPPORTED LIFT
+custom-init / seen_source / 0/3 / 0/3 / 0/3
+custom-init / development_validation / 0/3 / 0/3 / 0/3
+custom-init / already_completed / 1/2 / 0/2 / 0/2
+FT3000 / seen_source / 0/3 / 0/3 / 0/3
+FT3000 / development_validation / 0/3 / 0/3 / 0/3
+FT3000 / already_completed / 2/2 / 0/2 / 0/2
+vanilla-domain3 / seen_source / 0/3 / 0/3 / 0/3
+vanilla-domain3 / development_validation / 0/3 / 0/3 / 0/3
+vanilla-domain3 / already_completed / 0/2 / 0/2 / 0/2
+
+Training uses2toINF/X-VLA-Pt revisionc1c4a64a7e03ac5b95c468bf1578f3d03651b53b, separate from every earlier checkpoint. The pinned native forward and loss are used; this is full-weight adaptation of original VLM and action backbone, not LoRA.
+Domain29 prompt/action heads initialized independently with pinned initializer distributions; inactive domain rows hash-unchanged. First1000 updates train prompt/heads; next1000 ramp all four parameter groups; final1000 hold peak learning rates. AdamW(0.9,0.95),eps1e-8,clip1,wd0.01(active domain row only for tables),VLM/prompt peak1e-5,action core/heads1e-4. FP32 weights/gradients/moments with BF16 autocast; microbatch1 x accumulation4.
+Data:one personal-derived source simulation configuration, personal_demo_0001; 48 complete30-step windows, seed17, 3000updates,12000window presentations. Robot labels came from a geometric expert, not human robot-action measurements. No held-out data used for fitting. Development-validation configurations were previously inspected and are not untouched confirmatory tests.
+M6 converts labels, input proprio and native outputs consistently to generic interleaved6D rotation. Physical XYZ remains world metres, 20-dimensional single-arm-plus-dummy contract. The existing concatenated-column OSC decoder is unchanged; the worker permutes back at that boundary. Existing M0-M5 arrays and results are unchanged.
+O2:two full RGBviews and RGB-only detail crop, masked where unreliable. H30,10denoising steps,20Hz. Initial measured robot pose then previous-command history. Existing controller/scorer, no completion guard, wrist projection or expert rescue. Simulator pauses for inference.
+The untouched released-Pt/domain3 diagnostic keeps released weights and uses the LIBERO-style concatenated-column adapter. It is a custom-scene diagnostic, not a native LIBERO benchmark. Pt-custom-init loads the saved pretraining domain tables and is not labelled untouched vanilla.
+The encoder embedding missing-key warning is resolved by restoring shared Parameter identity to the serialized shared embedding, with exact safetensors equality checked. No randomly initialized missing encoder tensor is used.
+
+Measured training wall time, including final save/probe/hash: 978.51s. Mean optimizer step: 0.2606s. Peak allocated GPU memory: 17.782GB.
+Full model and optimizer saved and reloaded in a fresh process with zero denoised-action discrepancy. Shared weights were hash-unchanged and had zero Adam state during warmup. VLM and core have nonzero gradients throughout joint stages; changed tensors and inactive-row hashes are recorded.
+Both feeding and loading geometric-expert decoder replays succeeded; maximum command roundtrip error2.22e-16. These qualify the interface, not the learned policy.
+
+Interpretation:lower training loss does not establish manipulation skill. Source fitting may memorize command history. Completed-state preservation does not establish completion recognition. The arm may move while the block remains in the target; traces and displacement/path metrics expose that distinction. Closing commands are not grasps; supported lift requires10mm rise with simultaneous bilateral contact for3consecutive20Hzsteps. Small denominators and one training seed do not support broad transfer or reliability claims.
+M6 differs from M5 in base checkpoint, custom-domain initialization, rotation ordering and XYZ loss weighting as well as optimizer scope. This is not an isolated causal comparison of full-weight versus LoRA. This truncated3000-update run does not reproduce the paper benchmark training budget.
+
+Evidence:comparisons.csv,episode_diagnostics.json,independent_score_audit.json,training_phase_audit.json,training/final.reload.json,video_validation.json,visual_review/*.jpg. All24video files fully decoded; representative visual inspection recorded separately.
+Reproduction commands:handoff/M6_RUN_PLAN.txt; scripts/m6_after_training.sh; source hashes in execution_source_sha256.json. Fresh result directories required. This dated experiment has an explicit training cutoff; future reproductions must record a new budget.
+Final backup and visual findings are recorded separately after verification.
+
+OBSERVED OUTCOME
+All three conditions completed0/3source and0/3development tasks. Completed-state preservation was custom-init1/2,FT3000 2/2,unchangedPt/domain3 0/2. No condition achieved supported lift. Full-weight training did not establish useful manipulation.
+The trained source policy approaches above the block but stalls without a grasp. Expert-observation probes produce a close command in the close phase, but reveal significant XYZ/chunk-transition errors. This supports investigating phase transitions and execution-distribution drift; it does not justify assuming more iterations alone will fix the problem.
+Representative completed01 frames show custom-init pushing the brick off its goal and unchangedPt displacing/rotating it, whileFT3000 preserves it. FT3000 still averages2.136mof EEFtravel on completed cases. No completion-recognition claim is warranted.
+Training scope clarification:full-weight refers to VLM/action-backbone parameters. This run fitted one normal source trajectory, not all16curated personal examples or all disturbance categories.

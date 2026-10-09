@@ -1,0 +1,91 @@
+# Personal manipulation dataset — M0, 9 October 2026
+
+This milestone inventories, synchronizes, segments and annotates the supplied phone recordings on Powerglide. It does not train a policy, change a simulator or publish the repository.
+
+## Measured milestone results
+
+| Metric | Result |
+|---|---:|
+| Raw recordings | 8 |
+| Matched camera pairs | 4 |
+| Curated task episodes | 16 |
+| Explicitly excluded candidates, preserved separately | 1 |
+| Total preserved candidate episodes | 17 |
+| Curated manipulation attempts | 14 |
+| Preserved excluded manipulation attempts | 1 |
+| Ordinary feeding category | 7 |
+| Awkward/pause-resume feeding category | 4 |
+| Feeding candidates with unresolved category | 0 |
+| Corrective demonstrations | 3 |
+| Already-completed static demonstrations | 2 |
+| Incomplete demonstrations | 0 observed |
+| Failed visible-goal outcomes within retained episodes | 0 |
+| Successfully synchronized demonstrations | 16 |
+| Tracking coverage, all source samples | 916/990 (92.53%) |
+| Heuristic detection confidence ≥0.65 | 804/990 (81.21%) |
+| Primary orientation observable | 408/488 (83.61%) |
+| Tracking coverage within retained episodes | 499/526 (94.87%) |
+| Primary orientation observable within retained episodes | 229/264 (86.74%) |
+| Correct visible final placements/states | 16/16 |
+| Unknown or ambiguous final outcomes | 0 |
+| Feeding candidates awaiting scenario labels | 0 |
+| Task semantics review | reviewed |
+
+These observed counts describe the curated intervals, with excluded candidates separately preserved. Task semantics review status is **reviewed**; annotation acceptance is **True**. Structural checks establish hashes and timestamps, not correct scenario labels or intended trial grouping. Candidate clips remain preserved while semantic questions are resolved; individual transports, releases or pauses are not automatically separate intended task demonstrations.
+
+The user's initial reported task counts are recorded separately, without changing observations to match them:
+
+| User-reported category | Count |
+|---|---:|
+| Ordinary feeding | 6 |
+| Orientation correction | 3 |
+| Awkward/pause-resume feeding | 4 |
+| Already completed | 2 |
+
+The resolved selected-count expectations are {"already_completed": 2, "awkward_pause_resume_feeding": 4, "normal_feeding": 7, "orientation_correction": 3}. They are checked against the curated annotations rather than substituted for measured counts. The user's clarification identifies source 0008 example 5 as ordinary feeding and excludes example 6 because its pause is too brief for the intended teaching set. This increases curated ordinary feeds relative to the initial report while retaining four awkward/pause-resume examples.
+
+Excluded episode IDs: demo_0017. Their original bounds, reviewed annotations, both derivative clips and exact sampled tracking remain under `data/personal/m0/excluded_demonstrations/`, linked by `excluded_demo_manifest.json` to the explicit user selection provenance. Exclusion from the curated teaching set is not a failed attempt and does not remove the raw recording or historical evidence.
+
+Unresolved recording IDs: none. Explicit per-episode labels, user-requested exclusions and the review status are reproducible inputs in `review/task_semantics_review.json`.
+
+ The 2 setup/reset movements outside clap-defined takes remain in raw sources and archived preliminary segments where available; they are not independently counted as demonstrations or policy failures. `excluded_setup_annotations.csv` retains their source intervals and optional archived clip paths; fresh reproduction derives these intervals from the saved clap configuration. A static already-completed episode contains no manipulation.
+
+The first feeding take in recording 0005 has no observed beginning clap, so its boundary falls back to the stationary recording start. The last correction take in recording 0007 has no observed ending clap, so its boundary falls back to the recording end. The shared camera overlap may clamp a requested boundary. All markers, fallback methods, buffer sizes and temporal uncertainty remain in each metadata record and `segmentation_config.json`; the clap audit evidence is preserved under `review/`.
+
+## Source preservation and synchronization
+
+All eight supplied WhatsApp-export originals are preserved byte-for-byte, with SHA-256 hashes in `source_checksums.sha256` and filenames, sizes, durations, resolutions, frame rates and audio presence in `raw_manifest.csv`. No reliable acquisition timestamp survived these exports; export filenames are not acquisition-time evidence. Camera identities were reviewed from actual perspectives: recordings 0001–0004 are secondary and 0005–0008 are primary.
+
+`camera_pairs.csv` records offsets, uncertainty, confidence and method. The signed convention is **secondary source time = primary source time + offset**. Common movements and audio transients support pairing; raw-view side-by-side previews retain source timestamps. Phone audio/video latency was not independently calibrated. The static pair has no manipulation event, so its confidence rests on audio support rather than an invented visual alignment.
+
+The user confirmed that the canonical primary observation is the derived **90° counterclockwise** view. This makes the intended blue 2 upright and the studs point upward. Raw originals, raw source timestamps and raw pixel measurements remain unchanged. Every primary clip declares its transform; the nearby arrow does not define object orientation.
+
+## Measurements, annotations and calibration
+
+The baseline uses orange/blue HSV segmentation, connected components, declared size thresholds, a small temporal candidate preference and a disclosed blue-2 rotation template. Target corners are four agent-reviewed points on the hand-drawn square. Their planar homography yields dimensionless target-square coordinates only. Elevated block points violate the plane assumption; no physical scale, full 3D trajectory or millimetre accuracy is reported.
+
+Source tracker CSV rows are copied exactly into each trial's `tracking.csv` and aggregate `trajectories.csv`, with only demo/view/clip-time fields appended. Actual decoded source timestamps are retained at approximately 2 Hz. Missing object positions and unknown orientation remain blank; no long-occlusion interpolation occurs. Bounding boxes describe visible regions, not the complete object. A centroid over the square does not establish the full contact footprint. Stud direction is separately reviewed visually, with medium confidence in low-resolution examples, rather than numerically inferred from the arrow.
+
+`manual_annotations` and scenario tags remain separate from `observation_measurements`. The final-pose review, whole-recording scenario review and the two specific human-confirmed examples are saved as inputs. Human confirmation of a source frame does not certify every frame of every trial. The limitation example may be outside a retained take; it still documents a detector limitation without becoming a trial failure.
+
+## Quality and usable recordings
+
+Coverage above is a **detection rate, not validated accuracy**. Its denominator includes every source sample, including resets and the stationary pair. Orange can overlap skin, partially hidden blue glyphs can fail template matching, perspective alters outlines, and 2 Hz sampling can miss short events. Absence cannot distinguish complete occlusion, departure from the image and detector failure. Complete-occlusion labels therefore remain unknown where evidence is insufficient. A review crop selecting skin instead of the block is retained as a concrete limitation.
+
+Recordings 0005/0001 provide paired ordinary feeding observations. Pair 0008/0003 contains feeding motion candidates that the user associates with awkward-position and pause/resume examples; unresolved categories or grouping remain explicit until the task semantics review is complete. Pair 0007/0002 provides target-local correction sequences and requires its context; it must not be flattened into ordinary successful imitation. Pair 0006/0004 supplies separately clap-delimited already-completed no-action examples. Use `usable_records`, semantic review status and per-trial quality records before subsequent experiments. A deliberate pause/resume is not automatically a failed task or an external human disturbance. No broad interruption absence or robustness claim follows from these annotations. There is no automatic training/test split at M0.
+
+## Reproduction and checkpoints
+
+Use the existing `.venv-sim` on Powerglide and retained source files plus the saved review/configuration JSON inputs. Exact commands and runtime versions are in `finalization_commands.json`, `runtime_versions.json`, `commands.json`, tracker calibration/configuration, synchronization evidence and segmentation configuration. Source filenames and camera-pair offsets are not rediscovered from filenames. Reproduction requires the declared review inputs, including the clap-boundary audit. Finalization regenerates the review page before computing artifact hashes.
+
+```bash
+.venv-sim/bin/python scripts/m0_prepare.py
+.venv-sim/bin/python scripts/m0_sync.py
+.venv-sim/bin/python scripts/m0_segment.py
+.venv-sim/bin/python scripts/m0_track.py
+.venv-sim/bin/python scripts/m0_tracking_previews.py
+.venv-sim/bin/python scripts/m0_finalize.py
+.venv-sim/bin/python scripts/m0_validate.py
+```
+
+Checkpoint A: eight-source inventory and hashes saved. Checkpoint B: paired, clap-reviewed clips and source bounds saved. Checkpoint C: exact sampled tracking, annotations, quality rows and reviewed examples saved. Checkpoint D: final manifests and this report assembled; independent validation determines the final status in `validation_summary.json`. Frozen Mint and UCL evidence is checked against its Git HEAD content in `frozen_integrity.json`; it is not overwritten.

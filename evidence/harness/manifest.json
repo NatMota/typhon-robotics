@@ -1,0 +1,50 @@
+{
+  "mode": "typhon_image_classifier_primary",
+  "checkpoint": "$PROJECT/results/personal-m6-joint-20261009/training/final.pt",
+  "checkpoint_sha256": "03a55fa46088368da0b8d92091ec3a4a5a539ae2772bf2cfd4c592b92b745a85",
+  "classifier_model": "/var/tmp/typhon-goal-classifier-20261009/model.npz",
+  "classifier_sha256": "bc15b4519f7787aecb5078df08029984ba3e9297ca4af48caba1620b0530ae0b",
+  "protocol_sha256": "b9c4113612f58cdaeb1fb3ed575bd7ad91f181a085bfd87d658b93e715040e93",
+  "code_sha256": {
+    "scripts/typhon_harness.py": "600a589dfc2f2296a21d2d70afa5a1bcecc01e93c897687a82f61d25aba6c77b",
+    "supervisor/planning/m7_service.py": "cde97584c50bc224009cee1de0078170adb83922aaa974d09e7b535b983227fd",
+    "supervisor/planning/typhon_service.py": "21549669da08dc010c90f5980d87a07ce408f451f72cdf6a98191cc9bc4b12bf",
+    "supervisor/planning/simple_goal_classifier.py": "609dd72b1f21b6fc2fc8e535b9cbb279ce66b311473a294d6a4f5d7abe8ffa61",
+    "supervisor/planning/m7_telemetry.py": "7955bfbb56f9b9bfa94be51f5d9af82b665ff655b27320b3b1f89564cb2f6440"
+  },
+  "frozen_model": "M6-FT3000 earlier today; excludes all new H100 models",
+  "qwen_dependency": false,
+  "no_training": true,
+  "actor_truth": false,
+  "expert_rescue": false,
+  "completion_rule": "native classifier status + current measured open fingers + image position drift <=2mm + 5 fresh frames spanning >=0.4s; classifier-native thresholds",
+  "candidate_rule": "3 unchanged M6 proposals; admissibility guard then shortest/smoothest EEF path; execute <=3 actions and reobserve",
+  "confidence_semantics": "uncalibrated classifier score, not success probability",
+  "inference_pauses_simulation": true,
+  "argv": [
+    "scripts/typhon_harness.py",
+    "--output",
+    "/var/tmp/typhon-harness-20261009/live-v2",
+    "--classifier-ready-file",
+    "/var/tmp/typhon-goal-classifier-20261009/HARNESS_READY.json",
+    "--source-wall-s",
+    "220",
+    "--source-decisions",
+    "500",
+    "--baseline-decisions",
+    "8"
+  ],
+  "created_timestamp_unix": 1791584994.9995294,
+  "policy_load": {
+    "ready": true,
+    "load_time_s": 3.385698367987061,
+    "checkpoint": "$PROJECT/results/personal-m6-joint-20261009/training/final.pt",
+    "version": "O2",
+    "inference_configuration": {
+      "parameter_requires_grad": "allTrue",
+      "module_mode": "eval",
+      "execution": "torch.inference_mode",
+      "dtype": "bf16"
+    }
+  }
+}

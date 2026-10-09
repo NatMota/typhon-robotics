@@ -1,0 +1,93 @@
+# M3 — matched X-VLA feeding adaptation and loading evaluation
+
+The frozen comparison is complete: 120 primary F/P17/S17 runs and 80 second-seed replication runs. None of the 200 evaluated episodes completed the strict manipulation task. The tested adaptation did not produce successful feeding or loading under the declared held-out goal/layout shifts. This does not establish an absence of feeding capability at the training goal.
+
+Across the 200 model–scenario runs on 40 shared scenarios, 0 runs recorded block contact and 0 moved the object more than 1 mm. The observed breakdown precedes grasping and placement. These traces do not diagnose whether grasp geometry, orientation alignment or fixture insertion would fail after contact. Observation/domain compatibility, generated trajectories and interface/adaptation limitations remain possible explanations; no single cause is established.
+
+| Method | Feeding | Loading |
+|---|---:|---:|
+| F | 0/20 | 0/20 |
+| P17 | 0/20 | 0/20 |
+| S17 | 0/20 | 0/20 |
+| P29 | 0/20 | 0/20 |
+| S29 | 0/20 | 0/20 |
+
+Each cell has 20 fixed scenarios. The two training seeds reuse the same 20 scenarios and are not 40 independent test cases. [Paired gains/losses](paired_comparisons.csv) and [per-task Wilson intervals and errors](final-audit/comparisons.csv) retain the denominators. Blocked executions are reported separately; none are silently replaced by failure scores.
+
+## Frozen experiment
+
+O2 uses two full 512×512 context images and a current-RGB orange-detector-centred 96×96 third crop, processed by the pinned checkpoint to 224×224. Missing/ambiguous crops are masked. Neither hidden object poses nor future frames enter policy inference. Occluded examples remain in training. M1.6v2 appearance is explicit; the canonical body remains M2's provisional 50×35×30 mm, 80 g geometry. Controller, scoring, original 40 scenario poses/goals and limits remain unchanged. Nominal privileged-expert feeding/loading regressions exactly reproduced frozen M2 states, scores and actions.
+
+Base model: `2toINF/X-VLA-Libero@129e71460678b7236cee6fc9707f09d9fa0c3590`, weight SHA256 `260cc58869125b826e93bcaa60bca3ea37bcc7aaf893d368a991ca14fde9f0c8`. Prompt-only native flow-objective adaptation changes 32768 domain 3 entries within the 983040-entry exposed tensor. All other parameters and 29 prompt rows remain unchanged. No feature cache, PPO, LoRA, controller replacement or rendering optimization was used.
+
+P_train: personal0001/0002/0003/0005/0012/0013. S_train: independent synthetic001–006; synthetic generation retained two failures among 11 attempts. Both have 6 accepted trajectories,48 distinct complete 30-command windows per trajectory, uniform trajectory/window sampling, batch 4, 1000 updates, AdamW lr 0.001, no weight decay, clipping 1. Each run contains 4000 correlated window presentations, not 4000 independent demonstrations. Scientific checkpoints are the final update, fixed before evaluation; seeds 17 and 29 start from the original model. [Checkpoint hashes](frozen_checkpoints.json), [data ledger](data-canonical/dataset.json) and [pre-outcome experiment plan](experiment_manifest.json) are retained.
+
+The accepted [M3.0 gate report](M30_report.md) and [four-orientation, three-position processed-image sheet](canonical-processor/O2/four-orientations-three-positions.png) document the M1.6 integration and crop decision.
+
+## Training and diagnostic validation
+
+| Run | Training loop seconds | Mean update seconds | Effective changed parameters | Exact reload error |
+|---|---:|---:|---:|---:|
+| P17 | 145.62 | 0.1282 | 32768 | 0.0 |
+| S17 | 145.81 | 0.1283 | 32768 | 0.0 |
+| P29 | 145.68 | 0.1284 | 32768 | 0.0 |
+| S29 | 146.17 | 0.1284 | 32768 | 0.0 |
+
+Times above cover the measured training loop, not initial model/data loading, validation, hashing or checkpoint reload. Native image preprocessing is included in loop wall time. Three intermediate checkpoints per run support recovery only; they were not selected by outcomes. Failed exact-reload diagnostics remain retained; matching the unchanged worker's requires_grad configuration restored exact reload predictions in the tested setup. This is not a cross-hardware reproducibility claim.
+
+Every model uses the same six-trajectory validation panel: personal0006/0014/0016 and synthetic007/009/010, four complete windows per take. Native fixed-noise component losses, generated chunks and original-decoder checks are saved under each training run. The validation panel never selected a checkpoint.
+
+| Run | Validation group | XYZ RMSE before → after (mm) | Rotation error before → after (deg) | Gripper agreement before → after |
+|---|---|---:|---:|---:|
+| P17 | P_validation | 204.31 → 59.94 | 10.15 → 9.75 | 0.467 → 0.761 |
+| P17 | S_validation | 193.31 → 76.18 | 6.32 → 7.47 | 0.500 → 0.692 |
+| S17 | P_validation | 204.31 → 71.59 | 10.15 → 12.07 | 0.467 → 0.722 |
+| S17 | S_validation | 193.31 → 69.49 | 6.32 → 8.91 | 0.500 → 0.753 |
+| P29 | P_validation | 204.31 → 61.46 | 10.15 → 9.60 | 0.467 → 0.875 |
+| P29 | S_validation | 193.31 → 87.50 | 6.32 → 6.23 | 0.500 → 0.853 |
+| S29 | P_validation | 204.31 → 55.62 | 10.15 → 11.14 | 0.467 → 0.692 |
+| S29 | S_validation | 193.31 → 55.86 | 6.32 → 7.31 | 0.500 → 0.844 |
+
+These are generated absolute command errors against expert targets, not realized placement errors. Offline clipping diagnostics use the common window-initial command-history pose; actual live-state clipping is measured separately from execution traces.
+
+## Closed-loop behavior under held-out goal/layout shifts
+
+- F: 1920/1920 policy observation times had a valid detail crop; episode wall total 752.0s; peak allocated CUDA 3.717GB.
+- P17: 1893/1920 policy observation times had a valid detail crop; episode wall total 755.9s; peak allocated CUDA 3.717GB.
+- S17: 1803/1920 policy observation times had a valid detail crop; episode wall total 753.8s; peak allocated CUDA 3.717GB.
+- P29: 1920/1920 policy observation times had a valid detail crop; episode wall total 751.2s; peak allocated CUDA 3.717GB.
+- S29: 1919/1920 policy observation times had a valid detail crop; episode wall total 758.6s; peak allocated CUDA 3.717GB.
+
+| Method | Episodes with block contact | Episodes moving block >1 mm | Gripper closing-command edges |
+|---|---:|---:|---:|
+| F | 0/40 | 0/40 | 1917 |
+| P17 | 0/40 | 0/40 | 1 |
+| S17 | 0/40 | 0/40 | 1017 |
+| P29 | 0/40 | 0/40 | 101 |
+| S29 | 0/40 | 0/40 | 1014 |
+
+Equal zero-success counts do not establish behavioral equivalence. Closing-command edges are commands, not verified grasps. A reduction in empty-space gripper toggling does not establish task improvement.
+
+[Episode diagnostics](final-audit/episode_diagnostics.csv) include minimum EE–block distance, object displacement/lift, contact, clipping and failure criteria. Gripper closing-command edges are reported separately from contact and verified 70 mm lifts; toggling alone does not prove a grasp or intended retry. False completion is not applicable because this model has no completion-declaration head. Inference pauses simulation; no real-time operational throughput or human-interaction safety claim is made. The unchanged 30-command horizon corresponds to 1.5 simulated seconds between replanning observations.
+
+## Attribution and limitations
+
+The phone observations configured initial object states and task goals. The shared privileged geometric expert generated every robot action label. This is adaptation on personal-derived reconstructed robot trajectories, not direct learning of human joint/hand trajectories. All conditions share the visual asset derived from personal footage; P versus S isolates the declared trajectory/scenario distributions, not the absence of all personal information. Source poses were normalized-image/target-unit observations retargeted to virtual geometry, not calibrated millimetres. P versus S compares the two declared dataset-construction strategies and does not isolate personal-data provenance independently of spatial coverage. P and S have different pose/goal distributions; these and the custom overhead/oblique cameras differ from native LIBERO. Small numbers of source takes, correlated windows and shared recording sessions limit generalization claims.
+
+The report does not infer that loss reduction establishes successful manipulation, nor identify a single cause for failures. No loading outcomes changed M3 or predeclared M4 settings. P17 is the predetermined M4 parent, irrespective of results.
+
+The [distribution audit](distribution_audit.json) exposes an important additional limitation: P training goals are fixed at [0.125,-0.120]m, whereas the frozen feeding-test goals are 177–204mm from that point (159–185mm from the nearest S training goal). Loading goals are 260–284mm from P's training goal. Thus the feeding test also measures substantial goal/layout generalization; it does not isolate in-distribution feeding competence. The suite remains unchanged and these differences are not used to retune models. Loading combines a task change with a goal/layout change, so it does not isolate job transfer alone. A closed-loop feeding benchmark at the training goal is missing from this frozen design; M4 is not a retrospective replacement for it.
+
+## Reproduction and evidence
+
+On Powerglide, the repository uses the preserved `.venv-sim` MuJoCo/robosuite environment and `.venv-xvla` pinned model environment. Package versions remain in the M2 environment manifest. A fresh results checkout with the supplied canonical data can run `bash scripts/run-m3-training.sh` then `bash scripts/run-m3-evaluation.sh`. Existing output directories deliberately refuse destructive overwrite. For a single fresh evaluation directory: `.venv-sim/bin/python scripts/m3_evaluate.py --protocol results/personal-m3-20261009/protocol --output results/m3-reproduction-P17 --label P17 --checkpoint results/personal-m3-20261009/training/P17/prompt.pt`.
+
+All 200 scores were independently recomputed from saved truth, bounded applied-action traces and horizons checked, and all policy inputs retained as RGB plus robot proprioception. Video decode and final backup/preservation audits are reported separately when complete. The canonical data backup contains 334 files / 1,986,344,164 bytes with no checksum mismatches. Original M0/M1/M1.5/M1.6/M2 outputs are preserved.
+
+Representative videos use the same predeclared case for every method:
+
+- [F: feeding standard01](evaluation/F/feeding-standard-01/rollout.mp4) and [loading standard01](evaluation/F/loading-standard-01/rollout.mp4).
+- [P17: feeding standard01](evaluation/P17/feeding-standard-01/rollout.mp4) and [loading standard01](evaluation/P17/loading-standard-01/rollout.mp4).
+- [S17: feeding standard01](evaluation/S17/feeding-standard-01/rollout.mp4) and [loading standard01](evaluation/S17/loading-standard-01/rollout.mp4).
+- [P29: feeding standard01](evaluation/P29/feeding-standard-01/rollout.mp4) and [loading standard01](evaluation/P29/loading-standard-01/rollout.mp4).
+- [S29: feeding standard01](evaluation/S29/feeding-standard-01/rollout.mp4) and [loading standard01](evaluation/S29/loading-standard-01/rollout.mp4).

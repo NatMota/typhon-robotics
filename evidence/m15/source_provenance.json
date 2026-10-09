@@ -1,0 +1,521 @@
+{
+  "curated_sources": [
+    {
+      "category": "normal_feeding",
+      "metadata_sha256": "159f2e479566a1b837d490a2d4fc07458a392ccc424313749e4ef2311b7734e6",
+      "observation_policy": "only M0 camera_a observed rows supply reconstruction; human trajectory is not robot action data",
+      "scenario_id": "personal_demo_0001",
+      "source_demo_id": "demo_0001",
+      "source_recordings": {
+        "camera_a": {
+          "clip": "data/personal/m0/demonstrations/demo_0001/camera_a.mp4",
+          "clip_transform": "rotate_90_degrees_counterclockwise",
+          "end_s": 12.75,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+          "recording_id": "recording_0005",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+          "start_s": 0
+        },
+        "camera_b": {
+          "clip": "data/personal/m0/demonstrations/demo_0001/camera_b.mp4",
+          "clip_transform": "none",
+          "end_s": 17.33,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+          "recording_id": "recording_0001",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+          "start_s": 4.58
+        }
+      },
+      "take_id": 1,
+      "tracking_path": "data/personal/m0/demonstrations/demo_0001/tracking.csv",
+      "tracking_sha256": "4b2677ff6741d426152571722c3f97924db0c4e5661a5e2b181dbc05df567c28"
+    },
+    {
+      "category": "normal_feeding",
+      "metadata_sha256": "3fd82a7b75d7f3fd11b325d3758e2f45a861e47da1d67cebd427497e77062769",
+      "observation_policy": "only M0 camera_a observed rows supply reconstruction; human trajectory is not robot action data",
+      "scenario_id": "personal_demo_0002",
+      "source_demo_id": "demo_0002",
+      "source_recordings": {
+        "camera_a": {
+          "clip": "data/personal/m0/demonstrations/demo_0002/camera_a.mp4",
+          "clip_transform": "rotate_90_degrees_counterclockwise",
+          "end_s": 29.15,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+          "recording_id": "recording_0005",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+          "start_s": 20.85
+        },
+        "camera_b": {
+          "clip": "data/personal/m0/demonstrations/demo_0002/camera_b.mp4",
+          "clip_transform": "none",
+          "end_s": 33.73,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+          "recording_id": "recording_0001",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+          "start_s": 25.43
+        }
+      },
+      "take_id": 2,
+      "tracking_path": "data/personal/m0/demonstrations/demo_0002/tracking.csv",
+      "tracking_sha256": "27e4a95cf8007873b0dafbc994235883780bd5cda1703977765c33b54a824709"
+    },
+    {
+      "category": "normal_feeding",
+      "metadata_sha256": "a0b4ee9d7c22cab7b4e1d546cdea412a2a90a3df0acfacfda0e2ba952d6bb2eb",
+      "observation_policy": "only M0 camera_a observed rows supply reconstruction; human trajectory is not robot action data",
+      "scenario_id": "personal_demo_0003",
+      "source_demo_id": "demo_0003",
+      "source_recordings": {
+        "camera_a": {
+          "clip": "data/personal/m0/demonstrations/demo_0003/camera_a.mp4",
+          "clip_transform": "rotate_90_degrees_counterclockwise",
+          "end_s": 47.69,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+          "recording_id": "recording_0005",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+          "start_s": 40.08
+        },
+        "camera_b": {
+          "clip": "data/personal/m0/demonstrations/demo_0003/camera_b.mp4",
+          "clip_transform": "none",
+          "end_s": 52.269999999999996,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+          "recording_id": "recording_0001",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+          "start_s": 44.66
+        }
+      },
+      "take_id": 3,
+      "tracking_path": "data/personal/m0/demonstrations/demo_0003/tracking.csv",
+      "tracking_sha256": "eb7ce84b9f4ea1b3691132258026c93b065fceb9011ba087341088f1e8d33dc4"
+    },
+    {
+      "category": "normal_feeding",
+      "metadata_sha256": "188991ad1b58117222ffb34963932bfb32de0a10d7763338c72ce6fab68816cb",
+      "observation_policy": "only M0 camera_a observed rows supply reconstruction; human trajectory is not robot action data",
+      "scenario_id": "personal_demo_0004",
+      "source_demo_id": "demo_0004",
+      "source_recordings": {
+        "camera_a": {
+          "clip": "data/personal/m0/demonstrations/demo_0004/camera_a.mp4",
+          "clip_transform": "rotate_90_degrees_counterclockwise",
+          "end_s": 63.66,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+          "recording_id": "recording_0005",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+          "start_s": 55.6
+        },
+        "camera_b": {
+          "clip": "data/personal/m0/demonstrations/demo_0004/camera_b.mp4",
+          "clip_transform": "none",
+          "end_s": 68.24,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+          "recording_id": "recording_0001",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+          "start_s": 60.18
+        }
+      },
+      "take_id": 4,
+      "tracking_path": "data/personal/m0/demonstrations/demo_0004/tracking.csv",
+      "tracking_sha256": "3be36b045f99769bdacb3360c3f775fd45f5d244feec0d8fbfc914f6e0f30ad9"
+    },
+    {
+      "category": "normal_feeding",
+      "metadata_sha256": "fcd62decbffc81659f621ec5260b0b10970256d5c21d78238fe8ce5835ffa44a",
+      "observation_policy": "only M0 camera_a observed rows supply reconstruction; human trajectory is not robot action data",
+      "scenario_id": "personal_demo_0005",
+      "source_demo_id": "demo_0005",
+      "source_recordings": {
+        "camera_a": {
+          "clip": "data/personal/m0/demonstrations/demo_0005/camera_a.mp4",
+          "clip_transform": "rotate_90_degrees_counterclockwise",
+          "end_s": 77.29,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+          "recording_id": "recording_0005",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+          "start_s": 69.47
+        },
+        "camera_b": {
+          "clip": "data/personal/m0/demonstrations/demo_0005/camera_b.mp4",
+          "clip_transform": "none",
+          "end_s": 81.87,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+          "recording_id": "recording_0001",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+          "start_s": 74.05
+        }
+      },
+      "take_id": 5,
+      "tracking_path": "data/personal/m0/demonstrations/demo_0005/tracking.csv",
+      "tracking_sha256": "99b8c1da2bcff54c8cc5b854ad29955623ae55f320aab9173ce90fa94a2a96d6"
+    },
+    {
+      "category": "normal_feeding",
+      "metadata_sha256": "940abe312b27d3e8b7bac2035459664ed61213b2656e704781480363f842e9c3",
+      "observation_policy": "only M0 camera_a observed rows supply reconstruction; human trajectory is not robot action data",
+      "scenario_id": "personal_demo_0006",
+      "source_demo_id": "demo_0006",
+      "source_recordings": {
+        "camera_a": {
+          "clip": "data/personal/m0/demonstrations/demo_0006/camera_a.mp4",
+          "clip_transform": "rotate_90_degrees_counterclockwise",
+          "end_s": 90.62,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+          "recording_id": "recording_0005",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+          "start_s": 82.95
+        },
+        "camera_b": {
+          "clip": "data/personal/m0/demonstrations/demo_0006/camera_b.mp4",
+          "clip_transform": "none",
+          "end_s": 95.2,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+          "recording_id": "recording_0001",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+          "start_s": 87.53
+        }
+      },
+      "take_id": 6,
+      "tracking_path": "data/personal/m0/demonstrations/demo_0006/tracking.csv",
+      "tracking_sha256": "086e328a03bb2d5d60d4bd28693e76e6f9cf8092d696dececa6a387b518087d7"
+    },
+    {
+      "category": "orientation_correction",
+      "metadata_sha256": "08bdd251134880dec3be8d2e6d30608211caabbe540771f75be0ab9304d1523a",
+      "observation_policy": "only M0 camera_a observed rows supply reconstruction; human trajectory is not robot action data",
+      "scenario_id": "personal_demo_0007",
+      "source_demo_id": "demo_0007",
+      "source_recordings": {
+        "camera_a": {
+          "clip": "data/personal/m0/demonstrations/demo_0007/camera_a.mp4",
+          "clip_transform": "rotate_90_degrees_counterclockwise",
+          "end_s": 12.77,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.50.mp4",
+          "recording_id": "recording_0007",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "c387aff4b2ee77cb56ce9933ffee0e5684046513cda1cc3a1b212652a288064a",
+          "start_s": 5.17
+        },
+        "camera_b": {
+          "clip": "data/personal/m0/demonstrations/demo_0007/camera_b.mp4",
+          "clip_transform": "none",
+          "end_s": 10.33,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.26.mp4",
+          "recording_id": "recording_0002",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "8afb4b0796615f56fba8fc1382ab9f047ad10585e32e356836ef5d3d61786cde",
+          "start_s": 2.73
+        }
+      },
+      "take_id": 1,
+      "tracking_path": "data/personal/m0/demonstrations/demo_0007/tracking.csv",
+      "tracking_sha256": "2ec64adeaa04e659e26be3f46c649c4f552f2466691dc23858de266a6d96ff87"
+    },
+    {
+      "category": "orientation_correction",
+      "metadata_sha256": "6f75cc356de84628aa0a92024ca739fcf82fc4246ea6f6a65c6d2a76616e013a",
+      "observation_policy": "only M0 camera_a observed rows supply reconstruction; human trajectory is not robot action data",
+      "scenario_id": "personal_demo_0009",
+      "source_demo_id": "demo_0009",
+      "source_recordings": {
+        "camera_a": {
+          "clip": "data/personal/m0/demonstrations/demo_0009/camera_a.mp4",
+          "clip_transform": "rotate_90_degrees_counterclockwise",
+          "end_s": 26.23,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.50.mp4",
+          "recording_id": "recording_0007",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "c387aff4b2ee77cb56ce9933ffee0e5684046513cda1cc3a1b212652a288064a",
+          "start_s": 19.18
+        },
+        "camera_b": {
+          "clip": "data/personal/m0/demonstrations/demo_0009/camera_b.mp4",
+          "clip_transform": "none",
+          "end_s": 23.79,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.26.mp4",
+          "recording_id": "recording_0002",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "8afb4b0796615f56fba8fc1382ab9f047ad10585e32e356836ef5d3d61786cde",
+          "start_s": 16.74
+        }
+      },
+      "take_id": 2,
+      "tracking_path": "data/personal/m0/demonstrations/demo_0009/tracking.csv",
+      "tracking_sha256": "716fc88cd6d6a45af73b5a64e59f9cd27ba2d26925e1830bc57853ec43347e50"
+    },
+    {
+      "category": "orientation_correction",
+      "metadata_sha256": "1cc0587e5a8766f1b46626bb5cd4274a49e98996dfe62b35c2344ce059bbf870",
+      "observation_policy": "only M0 camera_a observed rows supply reconstruction; human trajectory is not robot action data",
+      "scenario_id": "personal_demo_0011",
+      "source_demo_id": "demo_0011",
+      "source_recordings": {
+        "camera_a": {
+          "clip": "data/personal/m0/demonstrations/demo_0011/camera_a.mp4",
+          "clip_transform": "rotate_90_degrees_counterclockwise",
+          "end_s": 38.289967,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.50.mp4",
+          "recording_id": "recording_0007",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "c387aff4b2ee77cb56ce9933ffee0e5684046513cda1cc3a1b212652a288064a",
+          "start_s": 32.3
+        },
+        "camera_b": {
+          "clip": "data/personal/m0/demonstrations/demo_0011/camera_b.mp4",
+          "clip_transform": "none",
+          "end_s": 35.849967,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.26.mp4",
+          "recording_id": "recording_0002",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "8afb4b0796615f56fba8fc1382ab9f047ad10585e32e356836ef5d3d61786cde",
+          "start_s": 29.859999999999996
+        }
+      },
+      "take_id": 3,
+      "tracking_path": "data/personal/m0/demonstrations/demo_0011/tracking.csv",
+      "tracking_sha256": "e1de5c814b9bcb9d4cef42ca0c88f2208920d54cdabe20ff9dd99e5dce30c97b"
+    },
+    {
+      "category": "awkward_pause_resume_feeding",
+      "metadata_sha256": "3705664ef2ea43acc5cfbc7145ae2deab23838fb3ee5d32f6ceccf30a1aa886c",
+      "observation_policy": "only M0 camera_a observed rows supply reconstruction; human trajectory is not robot action data",
+      "scenario_id": "personal_demo_0012",
+      "source_demo_id": "demo_0012",
+      "source_recordings": {
+        "camera_a": {
+          "clip": "data/personal/m0/demonstrations/demo_0012/camera_a.mp4",
+          "clip_transform": "rotate_90_degrees_counterclockwise",
+          "end_s": 13.44,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.51.mp4",
+          "recording_id": "recording_0008",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "f78f7b81ae9791c8bf5be18a0f1840f038cf227be4fb53ee5d3d663f401d7855",
+          "start_s": 3.38
+        },
+        "camera_b": {
+          "clip": "data/personal/m0/demonstrations/demo_0012/camera_b.mp4",
+          "clip_transform": "none",
+          "end_s": 12.03,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.41.mp4",
+          "recording_id": "recording_0003",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "f3d665338680d107c0c261b21b5f01ca0ae1eddf7e00f968984b43026dbb5be1",
+          "start_s": 1.97
+        }
+      },
+      "take_id": 1,
+      "tracking_path": "data/personal/m0/demonstrations/demo_0012/tracking.csv",
+      "tracking_sha256": "3cebc7e720f04be43d0356ea442e73dfe9b406f9b636ccc248baae0eed703cd4"
+    },
+    {
+      "category": "awkward_pause_resume_feeding",
+      "metadata_sha256": "325c463ffc867534305174b3c7cfad7a3af0ce9f7bb79d3596a29d4763a88e72",
+      "observation_policy": "only M0 camera_a observed rows supply reconstruction; human trajectory is not robot action data",
+      "scenario_id": "personal_demo_0013",
+      "source_demo_id": "demo_0013",
+      "source_recordings": {
+        "camera_a": {
+          "clip": "data/personal/m0/demonstrations/demo_0013/camera_a.mp4",
+          "clip_transform": "rotate_90_degrees_counterclockwise",
+          "end_s": 28.57,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.51.mp4",
+          "recording_id": "recording_0008",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "f78f7b81ae9791c8bf5be18a0f1840f038cf227be4fb53ee5d3d663f401d7855",
+          "start_s": 19.02
+        },
+        "camera_b": {
+          "clip": "data/personal/m0/demonstrations/demo_0013/camera_b.mp4",
+          "clip_transform": "none",
+          "end_s": 27.16,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.41.mp4",
+          "recording_id": "recording_0003",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "f3d665338680d107c0c261b21b5f01ca0ae1eddf7e00f968984b43026dbb5be1",
+          "start_s": 17.61
+        }
+      },
+      "take_id": 2,
+      "tracking_path": "data/personal/m0/demonstrations/demo_0013/tracking.csv",
+      "tracking_sha256": "67c8f7c83e4387a00b5327149bc7d28d9e6a1b818e0b00f99722298de2c7ca77"
+    },
+    {
+      "category": "awkward_pause_resume_feeding",
+      "metadata_sha256": "564755e01ad0724c1a7357690e33058c81b66955e8f9c193183186f159a87e5e",
+      "observation_policy": "only M0 camera_a observed rows supply reconstruction; human trajectory is not robot action data",
+      "scenario_id": "personal_demo_0014",
+      "source_demo_id": "demo_0014",
+      "source_recordings": {
+        "camera_a": {
+          "clip": "data/personal/m0/demonstrations/demo_0014/camera_a.mp4",
+          "clip_transform": "rotate_90_degrees_counterclockwise",
+          "end_s": 43.23,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.51.mp4",
+          "recording_id": "recording_0008",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "f78f7b81ae9791c8bf5be18a0f1840f038cf227be4fb53ee5d3d663f401d7855",
+          "start_s": 35.13
+        },
+        "camera_b": {
+          "clip": "data/personal/m0/demonstrations/demo_0014/camera_b.mp4",
+          "clip_transform": "none",
+          "end_s": 41.82,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.41.mp4",
+          "recording_id": "recording_0003",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "f3d665338680d107c0c261b21b5f01ca0ae1eddf7e00f968984b43026dbb5be1",
+          "start_s": 33.720000000000006
+        }
+      },
+      "take_id": 3,
+      "tracking_path": "data/personal/m0/demonstrations/demo_0014/tracking.csv",
+      "tracking_sha256": "8b227ac4933731e26c60705ccf5de6e4baa9ad52dc19a6f7b388d07c026506cf"
+    },
+    {
+      "category": "awkward_pause_resume_feeding",
+      "metadata_sha256": "0adecae27be7e759958da0118dfc38c898f2af3cd01fc39a0d82f5030a795424",
+      "observation_policy": "only M0 camera_a observed rows supply reconstruction; human trajectory is not robot action data",
+      "scenario_id": "personal_demo_0015",
+      "source_demo_id": "demo_0015",
+      "source_recordings": {
+        "camera_a": {
+          "clip": "data/personal/m0/demonstrations/demo_0015/camera_a.mp4",
+          "clip_transform": "rotate_90_degrees_counterclockwise",
+          "end_s": 56.45,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.51.mp4",
+          "recording_id": "recording_0008",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "f78f7b81ae9791c8bf5be18a0f1840f038cf227be4fb53ee5d3d663f401d7855",
+          "start_s": 48.15
+        },
+        "camera_b": {
+          "clip": "data/personal/m0/demonstrations/demo_0015/camera_b.mp4",
+          "clip_transform": "none",
+          "end_s": 55.040000000000006,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.41.mp4",
+          "recording_id": "recording_0003",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "f3d665338680d107c0c261b21b5f01ca0ae1eddf7e00f968984b43026dbb5be1",
+          "start_s": 46.74
+        }
+      },
+      "take_id": 4,
+      "tracking_path": "data/personal/m0/demonstrations/demo_0015/tracking.csv",
+      "tracking_sha256": "6a3396eabf840b03876902336b795b21fcfd8b405c63f1c2efb6b9965cd65f3d"
+    },
+    {
+      "category": "normal_feeding",
+      "metadata_sha256": "86c4f8866d3248a8d587525a66a2b653356b9f1c2d77c4010278eff829931a3a",
+      "observation_policy": "only M0 camera_a observed rows supply reconstruction; human trajectory is not robot action data",
+      "scenario_id": "personal_demo_0016",
+      "source_demo_id": "demo_0016",
+      "source_recordings": {
+        "camera_a": {
+          "clip": "data/personal/m0/demonstrations/demo_0016/camera_a.mp4",
+          "clip_transform": "rotate_90_degrees_counterclockwise",
+          "end_s": 68.67,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.51.mp4",
+          "recording_id": "recording_0008",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "f78f7b81ae9791c8bf5be18a0f1840f038cf227be4fb53ee5d3d663f401d7855",
+          "start_s": 61.73
+        },
+        "camera_b": {
+          "clip": "data/personal/m0/demonstrations/demo_0016/camera_b.mp4",
+          "clip_transform": "none",
+          "end_s": 67.26,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.41.mp4",
+          "recording_id": "recording_0003",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "f3d665338680d107c0c261b21b5f01ca0ae1eddf7e00f968984b43026dbb5be1",
+          "start_s": 60.32
+        }
+      },
+      "take_id": 5,
+      "tracking_path": "data/personal/m0/demonstrations/demo_0016/tracking.csv",
+      "tracking_sha256": "e61007f78a23ed7074880df48c4ababa684f829192165a74fee123b4822674ab"
+    },
+    {
+      "category": "already_completed",
+      "metadata_sha256": "18d5b7d8f1515ab56121fc0ee7a858459080da0bc315ad3830e91de6d60133a3",
+      "observation_policy": "only M0 camera_a observed rows supply reconstruction; human trajectory is not robot action data",
+      "scenario_id": "personal_demo_0018",
+      "source_demo_id": "demo_0018",
+      "source_recordings": {
+        "camera_a": {
+          "clip": "data/personal/m0/demonstrations/demo_0018/camera_a.mp4",
+          "clip_transform": "rotate_90_degrees_counterclockwise",
+          "end_s": 15.86,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.50 (2).mp4",
+          "recording_id": "recording_0006",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "1a4e0e31265722bd2c98369ed0ef240fbc69706601f54b7af3069f8cfc20c65f",
+          "start_s": 4.8
+        },
+        "camera_b": {
+          "clip": "data/personal/m0/demonstrations/demo_0018/camera_b.mp4",
+          "clip_transform": "none",
+          "end_s": 14.299999999999999,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.48.mp4",
+          "recording_id": "recording_0004",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "253f5b77f6725ffe063ff3567e6d9c498dd03dadb841dd7f3195be10ab6cb6d2",
+          "start_s": 3.2399999999999998
+        }
+      },
+      "take_id": 1,
+      "tracking_path": "data/personal/m0/demonstrations/demo_0018/tracking.csv",
+      "tracking_sha256": "60c9125ed733bfef8f200aebef3a55c0cd3a240fd869059effe787e300a8ba7e"
+    },
+    {
+      "category": "already_completed",
+      "metadata_sha256": "54ee89fa440fcecb9d55d365d82fc2cfdc72dcb73a16764d19e1dba54a58407f",
+      "observation_policy": "only M0 camera_a observed rows supply reconstruction; human trajectory is not robot action data",
+      "scenario_id": "personal_demo_0019",
+      "source_demo_id": "demo_0019",
+      "source_recordings": {
+        "camera_a": {
+          "clip": "data/personal/m0/demonstrations/demo_0019/camera_a.mp4",
+          "clip_transform": "rotate_90_degrees_counterclockwise",
+          "end_s": 24.38,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.50 (2).mp4",
+          "recording_id": "recording_0006",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "1a4e0e31265722bd2c98369ed0ef240fbc69706601f54b7af3069f8cfc20c65f",
+          "start_s": 19.68
+        },
+        "camera_b": {
+          "clip": "data/personal/m0/demonstrations/demo_0019/camera_b.mp4",
+          "clip_transform": "none",
+          "end_s": 22.82,
+          "filename": "WhatsApp Video 2026-10-09 at 00.50.48.mp4",
+          "recording_id": "recording_0004",
+          "source_coordinates": "original_decoded_image",
+          "source_sha256": "253f5b77f6725ffe063ff3567e6d9c498dd03dadb841dd7f3195be10ab6cb6d2",
+          "start_s": 18.12
+        }
+      },
+      "take_id": 2,
+      "tracking_path": "data/personal/m0/demonstrations/demo_0019/tracking.csv",
+      "tracking_sha256": "5732d1e3c47d5a902c071d49d4b171bf1b4bd4bfebed213d96b62a699daf6973"
+    }
+  ],
+  "excluded_example": {
+    "demo_id": "demo_0017",
+    "metadata_sha256": "d5249c63feef0a78e179eac0af71904658490c08606da5a5b3b3b002540766fb",
+    "reason": "user excluded short pause; retained unchanged in M0"
+  }
+}

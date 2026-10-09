@@ -1,0 +1,127 @@
+{
+  "model_sha256": "bc15b4519f7787aecb5078df08029984ba3e9297ca4af48caba1620b0530ae0b",
+  "threshold": 0.8,
+  "splits": {
+    "validation": {
+      "count": 280,
+      "confusion": {
+        "complete": {
+          "complete": 85,
+          "incomplete": 0,
+          "unknown": 10
+        },
+        "incomplete": {
+          "complete": 0,
+          "incomplete": 120,
+          "unknown": 5
+        },
+        "unknown": {
+          "complete": 0,
+          "incomplete": 0,
+          "unknown": 60
+        }
+      },
+      "by_category": {
+        "correct": {
+          "complete->complete": 60
+        },
+        "varied_placement": {
+          "incomplete->incomplete": 19,
+          "complete->complete": 1
+        },
+        "outside": {
+          "incomplete->incomplete": 20
+        },
+        "wrong180": {
+          "incomplete->incomplete": 20
+        },
+        "wrong90": {
+          "incomplete->incomplete": 20
+        },
+        "wrong_angle": {
+          "incomplete->incomplete": 20
+        },
+        "tilted": {
+          "incomplete->incomplete": 20
+        },
+        "partial_readable": {
+          "complete->complete": 20
+        },
+        "position_boundary": {
+          "complete->unknown": 10,
+          "incomplete->unknown": 5,
+          "complete->complete": 4,
+          "incomplete->incomplete": 1
+        },
+        "occluded": {
+          "unknown->unknown": 60
+        }
+      }
+    },
+    "test": {
+      "count": 420,
+      "confusion": {
+        "complete": {
+          "complete": 124,
+          "incomplete": 0,
+          "unknown": 17
+        },
+        "incomplete": {
+          "complete": 0,
+          "incomplete": 178,
+          "unknown": 11
+        },
+        "unknown": {
+          "complete": 0,
+          "incomplete": 0,
+          "unknown": 90
+        }
+      },
+      "by_category": {
+        "correct": {
+          "complete->complete": 90
+        },
+        "varied_placement": {
+          "incomplete->incomplete": 29,
+          "complete->complete": 1
+        },
+        "outside": {
+          "incomplete->incomplete": 30
+        },
+        "wrong180": {
+          "incomplete->incomplete": 30
+        },
+        "wrong90": {
+          "incomplete->incomplete": 30
+        },
+        "wrong_angle": {
+          "incomplete->incomplete": 29,
+          "incomplete->unknown": 1
+        },
+        "tilted": {
+          "incomplete->incomplete": 28,
+          "incomplete->unknown": 2
+        },
+        "partial_readable": {
+          "complete->complete": 30
+        },
+        "position_boundary": {
+          "complete->unknown": 17,
+          "incomplete->unknown": 8,
+          "complete->complete": 3,
+          "incomplete->incomplete": 2
+        },
+        "occluded": {
+          "unknown->unknown": 90
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Synthetic native overhead DUPLO v2 only; no real-camera calibration claim.",
+    "No current pose/contact truth at inference.",
+    "Single-view image cannot establish physical release/contact or angular/3D stability.",
+    "Known gray partial occluders; arbitrary out-of-distribution occlusion may fail.",
+    "Near visual position boundary abstains. Loading returns unknown."
+  ]
+}

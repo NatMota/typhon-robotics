@@ -1,0 +1,447 @@
+{
+  "generated_at_utc": "2026-10-09T22:41:14.644811+00:00",
+  "runs": [
+    {
+      "run_id": "v1-m3-pilot-v1",
+      "model": "v1-m3",
+      "evidence_scope": "common_1.5s",
+      "requested_duration_s": 1.5,
+      "request_distribution_limit": "Full-intent wording is copied from semantic training. Native-contiguous V1 used single/continue-task wording; full-intent at 1.5 s is a common-interface distribution-shift pilot, not a definitive variant ranking.",
+      "scheduled": 8,
+      "recorded": 8,
+      "fully_recorded": true,
+      "successes": 0,
+      "unfinished_successes": 0,
+      "unfinished_recorded": 6,
+      "completed_preserved": 0,
+      "completed_recorded": 2,
+      "by_group": {
+        "completed": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "correction": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_personal": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_synthetic": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "source": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        }
+      },
+      "checkpoint_sha256": "ba568083abf52bc3b4b6b967bc7cb5a0282e72ee2b363a2ac99f2a633b8a4591",
+      "annotation_conditioned_v2": false,
+      "evidence_directory": "/var/tmp/humanoid-m7-live-evaluation-20261009/v1-m3-pilot-v1"
+    },
+    {
+      "run_id": "v1-m4-pilot-v1",
+      "model": "v1-m4",
+      "evidence_scope": "common_1.5s",
+      "requested_duration_s": 1.5,
+      "request_distribution_limit": "Full-intent wording is copied from semantic training. Native-contiguous V1 used single/continue-task wording; full-intent at 1.5 s is a common-interface distribution-shift pilot, not a definitive variant ranking.",
+      "scheduled": 8,
+      "recorded": 8,
+      "fully_recorded": true,
+      "successes": 2,
+      "unfinished_successes": 0,
+      "unfinished_recorded": 6,
+      "completed_preserved": 2,
+      "completed_recorded": 2,
+      "by_group": {
+        "completed": {
+          "evaluated": 2,
+          "successes": 2,
+          "blocked_or_execution_error": 0
+        },
+        "correction": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_personal": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_synthetic": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "source": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        }
+      },
+      "checkpoint_sha256": "05e13ff476459cd8d29c9b89e9d1575b38757f36afeca55da9a0b41e9dc94f96",
+      "annotation_conditioned_v2": false,
+      "evidence_directory": "/var/tmp/humanoid-m7-live-evaluation-20261009/v1-m4-pilot-v1"
+    },
+    {
+      "run_id": "v2-m3-pilot-v1",
+      "model": "v2-m3",
+      "evidence_scope": "common_1.5s",
+      "requested_duration_s": 1.5,
+      "request_distribution_limit": "Full-intent wording is copied from semantic training. Native-contiguous V1 used single/continue-task wording; full-intent at 1.5 s is a common-interface distribution-shift pilot, not a definitive variant ranking.",
+      "scheduled": 8,
+      "recorded": 8,
+      "fully_recorded": true,
+      "successes": 0,
+      "unfinished_successes": 0,
+      "unfinished_recorded": 6,
+      "completed_preserved": 0,
+      "completed_recorded": 2,
+      "by_group": {
+        "completed": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "correction": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_personal": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_synthetic": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "source": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        }
+      },
+      "checkpoint_sha256": "2b29aa0e5d7c2e950ab7e71117038b79e6e06a3411aab8c65dec8a78ddcf401b",
+      "annotation_conditioned_v2": true,
+      "evidence_directory": "/var/tmp/humanoid-m7-live-evaluation-20261009/v2-m3-pilot-v1"
+    },
+    {
+      "run_id": "v2-m4-pilot-v1",
+      "model": "v2-m4",
+      "evidence_scope": "common_1.5s",
+      "requested_duration_s": 1.5,
+      "request_distribution_limit": "Full-intent wording is copied from semantic training. Native-contiguous V1 used single/continue-task wording; full-intent at 1.5 s is a common-interface distribution-shift pilot, not a definitive variant ranking.",
+      "scheduled": 8,
+      "recorded": 8,
+      "fully_recorded": true,
+      "successes": 2,
+      "unfinished_successes": 0,
+      "unfinished_recorded": 6,
+      "completed_preserved": 2,
+      "completed_recorded": 2,
+      "by_group": {
+        "completed": {
+          "evaluated": 2,
+          "successes": 2,
+          "blocked_or_execution_error": 0
+        },
+        "correction": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_personal": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_synthetic": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "source": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        }
+      },
+      "checkpoint_sha256": "58ed30f98262a8749c1ca94190bc3d9da533fdcb15e114b16f44306f26f1f8b6",
+      "annotation_conditioned_v2": true,
+      "evidence_directory": "/var/tmp/humanoid-m7-live-evaluation-20261009/v2-m4-pilot-v1"
+    },
+    {
+      "run_id": "v3-m3-four-second-diagnostic-v1",
+      "model": "v3-m3",
+      "evidence_scope": "separate_4s_contract_diagnostic",
+      "requested_duration_s": 4.0,
+      "request_distribution_limit": "Run3 temporal-abstraction contract diagnostic: fixed externally requested full intent,4seconds with30rounded native20Hz anchor ticks, reconstructed to80control targets. Still no online subgoal selector. These outcomes must not replace or be pooled with common1.5second pilot scores.",
+      "scheduled": 8,
+      "recorded": 8,
+      "fully_recorded": true,
+      "successes": 0,
+      "unfinished_successes": 0,
+      "unfinished_recorded": 6,
+      "completed_preserved": 0,
+      "completed_recorded": 2,
+      "by_group": {
+        "completed": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "correction": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_personal": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_synthetic": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "source": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        }
+      },
+      "checkpoint_sha256": "2e40239ea5e1f49d587c92329cd317965ce8f7bf753035c1a727580b32ef4ed1",
+      "annotation_conditioned_v2": true,
+      "evidence_directory": "/var/tmp/humanoid-m7-live-evaluation-20261009/v3-m3-four-second-diagnostic-v1"
+    },
+    {
+      "run_id": "v3-m3-pilot-v1",
+      "model": "v3-m3",
+      "evidence_scope": "common_1.5s",
+      "requested_duration_s": 1.5,
+      "request_distribution_limit": "Full-intent wording is copied from semantic training. Native-contiguous V1 used single/continue-task wording; full-intent at 1.5 s is a common-interface distribution-shift pilot, not a definitive variant ranking.",
+      "scheduled": 8,
+      "recorded": 8,
+      "fully_recorded": true,
+      "successes": 0,
+      "unfinished_successes": 0,
+      "unfinished_recorded": 6,
+      "completed_preserved": 0,
+      "completed_recorded": 2,
+      "by_group": {
+        "completed": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "correction": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_personal": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_synthetic": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "source": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        }
+      },
+      "checkpoint_sha256": "2e40239ea5e1f49d587c92329cd317965ce8f7bf753035c1a727580b32ef4ed1",
+      "annotation_conditioned_v2": true,
+      "evidence_directory": "/var/tmp/humanoid-m7-live-evaluation-20261009/v3-m3-pilot-v1"
+    },
+    {
+      "run_id": "v3-m4-four-second-diagnostic-v1",
+      "model": "v3-m4",
+      "evidence_scope": "separate_4s_contract_diagnostic",
+      "requested_duration_s": 4.0,
+      "request_distribution_limit": "Run3 temporal-abstraction contract diagnostic: fixed externally requested full intent,4seconds with30rounded native20Hz anchor ticks, reconstructed to80control targets. Still no online subgoal selector. These outcomes must not replace or be pooled with common1.5second pilot scores.",
+      "scheduled": 8,
+      "recorded": 8,
+      "fully_recorded": true,
+      "successes": 1,
+      "unfinished_successes": 0,
+      "unfinished_recorded": 6,
+      "completed_preserved": 1,
+      "completed_recorded": 2,
+      "by_group": {
+        "completed": {
+          "evaluated": 2,
+          "successes": 1,
+          "blocked_or_execution_error": 0
+        },
+        "correction": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_personal": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_synthetic": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "source": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        }
+      },
+      "checkpoint_sha256": "0adb1dfff00289952013fcdeb026c9ac730f6bdcfd24c67b10e4b0b2ab7aab15",
+      "annotation_conditioned_v2": true,
+      "evidence_directory": "/var/tmp/humanoid-m7-live-evaluation-20261009/v3-m4-four-second-diagnostic-v1"
+    },
+    {
+      "run_id": "v3-m4-pilot-v1",
+      "model": "v3-m4",
+      "evidence_scope": "common_1.5s",
+      "requested_duration_s": 1.5,
+      "request_distribution_limit": "Full-intent wording is copied from semantic training. Native-contiguous V1 used single/continue-task wording; full-intent at 1.5 s is a common-interface distribution-shift pilot, not a definitive variant ranking.",
+      "scheduled": 8,
+      "recorded": 8,
+      "fully_recorded": true,
+      "successes": 2,
+      "unfinished_successes": 0,
+      "unfinished_recorded": 6,
+      "completed_preserved": 2,
+      "completed_recorded": 2,
+      "by_group": {
+        "completed": {
+          "evaluated": 2,
+          "successes": 2,
+          "blocked_or_execution_error": 0
+        },
+        "correction": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_personal": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_synthetic": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "source": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        }
+      },
+      "checkpoint_sha256": "0adb1dfff00289952013fcdeb026c9ac730f6bdcfd24c67b10e4b0b2ab7aab15",
+      "annotation_conditioned_v2": true,
+      "evidence_directory": "/var/tmp/humanoid-m7-live-evaluation-20261009/v3-m4-pilot-v1"
+    },
+    {
+      "run_id": "v4-m3-pilot-v1",
+      "model": "v4-m3",
+      "evidence_scope": "common_1.5s",
+      "requested_duration_s": 1.5,
+      "request_distribution_limit": "Full-intent wording is copied from semantic training. Native-contiguous V1 used single/continue-task wording; full-intent at 1.5 s is a common-interface distribution-shift pilot, not a definitive variant ranking.",
+      "scheduled": 8,
+      "recorded": 4,
+      "fully_recorded": false,
+      "successes": 0,
+      "unfinished_successes": 0,
+      "unfinished_recorded": 4,
+      "completed_preserved": 0,
+      "completed_recorded": 0,
+      "by_group": {
+        "heldout_personal": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_synthetic": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "source": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        }
+      },
+      "checkpoint_sha256": "8cc2fb93dc2a8cb0ea51364febfa22dc453577a1b0ae1932ecd05ad47229f33b",
+      "annotation_conditioned_v2": true,
+      "evidence_directory": "/var/tmp/humanoid-m7-live-evaluation-20261009/v4-m3-pilot-v1"
+    },
+    {
+      "run_id": "v4-m4-pilot-v1",
+      "model": "v4-m4",
+      "evidence_scope": "common_1.5s",
+      "requested_duration_s": 1.5,
+      "request_distribution_limit": "Full-intent wording is copied from semantic training. Native-contiguous V1 used single/continue-task wording; full-intent at 1.5 s is a common-interface distribution-shift pilot, not a definitive variant ranking.",
+      "scheduled": 8,
+      "recorded": 8,
+      "fully_recorded": true,
+      "successes": 2,
+      "unfinished_successes": 0,
+      "unfinished_recorded": 6,
+      "completed_preserved": 2,
+      "completed_recorded": 2,
+      "by_group": {
+        "completed": {
+          "evaluated": 2,
+          "successes": 2,
+          "blocked_or_execution_error": 0
+        },
+        "correction": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_personal": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "heldout_synthetic": {
+          "evaluated": 2,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        },
+        "source": {
+          "evaluated": 1,
+          "successes": 0,
+          "blocked_or_execution_error": 0
+        }
+      },
+      "checkpoint_sha256": "7d80bc0fbbb13c2f6c21b6871f00d1e4919ea96707b656b6eb0b2536c7f411a5",
+      "annotation_conditioned_v2": true,
+      "evidence_directory": "/var/tmp/humanoid-m7-live-evaluation-20261009/v4-m4-pilot-v1"
+    }
+  ],
+  "completed_run_count": 9,
+  "note": "Common 1.5 s and separate 4 s outcomes are not pooled. Completed starts measure goal preservation, not recognition. V2/V3 use explicitly privileged causal held cues. Partial runs have fully_recorded=false."
+}

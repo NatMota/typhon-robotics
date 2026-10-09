@@ -1,0 +1,109 @@
+{
+  "schema": "typhon-simple-goal-classifier-v1",
+  "status": "frozen_after_validation_then_new_seed_confirmation",
+  "model_path": "/var/tmp/typhon-goal-classifier-20261009/model.npz",
+  "model_sha256": "bc15b4519f7787aecb5078df08029984ba3e9297ca4af48caba1620b0530ae0b",
+  "model_bytes": 423697,
+  "architecture": "1732 RGB mask/statistic features ->64 ReLU->3 classes",
+  "parameter_count": 111107,
+  "threshold": 0.8,
+  "classes": [
+    "directed_upright",
+    "wrong_orientation",
+    "unobservable"
+  ],
+  "confidence": "uncalibrated neural softmax; threshold picked on validation only",
+  "runtime_dependencies": {
+    "python": "3.11.12",
+    "numpy": "1.26.4",
+    "opencv": "4.11.0"
+  },
+  "runtime_inputs": [
+    "current uint8 overhead RGB",
+    "declared task family and target yaw",
+    "declared target region size and position tolerance",
+    "optional declared goal polygon/reference RGB for target location",
+    "declared camera/table/object heights"
+  ],
+  "runtime_forbidden_inputs": [
+    "current object pose",
+    "simulator contacts",
+    "task success truth",
+    "future trajectory",
+    "ground-truth held state"
+  ],
+  "learned_component": "111107-parameter MLP trained on RGB-derived blue/orange 24x24 masks plus4inspectable statistics. Full-object blue canvas retains occlusion evidence; no exact image-template matching.",
+  "geometric_component": "Detect green staging polygon and orange silhouette; use declared plane-height correction and region scale; compare center to configured tolerance and silhouette to region. 1.25px center uncertainty and1px footprint margin abstain.",
+  "completion_scope": "Visual evidence only. Measured release, fresh-frame image-position stability, and controller limits remain separate mandatory gates.",
+  "dataset_counts": {
+    "train": 1380,
+    "validation": 280,
+    "test": 420
+  },
+  "dataset_feature_rows": 1889,
+  "seeds": {
+    "train": 2026100911,
+    "validation": 2026100922,
+    "exploratory_test": 2026100933,
+    "post_freeze_confirmation": 2026100955,
+    "geometry1_seed_offset": 100000,
+    "train_augmentation": 810929,
+    "validation_augmentation": 820929,
+    "test_augmentation": 830929,
+    "network_training": 401091
+  },
+  "split_unit": "Original rendered scene/config seed. Derived occlusions remain in the source split.",
+  "offline_label_source": "Commanded simulation geometry and known synthetic occlusion. Truth used only offline for labels and external evaluation; never inference.",
+  "existing_pilot_data_used": false,
+  "frozen_M0_M7_results_modified": false,
+  "training_labels_correction": "Initial global-blue occluder could target robot pixels. All original occluded-category examples discarded; corrected object-local glyph occlusions regenerated. Original manifest retained. Earlier test reports exploratory; final confirmatory images generated only after model freeze.",
+  "evaluation": {
+    "exploratory": "/var/tmp/typhon-goal-classifier-20261009/evaluation.json",
+    "post_freeze_confirmation": "/var/tmp/typhon-goal-classifier-20261009/confirmation/evaluation.json",
+    "post_freeze_confusion": {
+      "complete": {
+        "complete": 101,
+        "incomplete": 0,
+        "unknown": 10
+      },
+      "incomplete": {
+        "complete": 0,
+        "incomplete": 144,
+        "unknown": 9
+      },
+      "unknown": {
+        "complete": 0,
+        "incomplete": 0,
+        "unknown": 72
+      }
+    },
+    "latency": {
+      "cpu_numpy_cv2": true,
+      "threads": "OPENBLAS_NUM_THREADS=1",
+      "samples": 100,
+      "median_ms": 0.5495185032486916,
+      "p95_ms": 0.5650532970321365,
+      "max_ms": 0.6620569911319762
+    }
+  },
+  "limitations": [
+    "Supports native overhead simulation DUPLO v2 feeding only. Loading returns unknown.",
+    "Fixed downward camera axis; scale/translation/fovy and bounded lighting variation tested, arbitrary viewpoint not validated.",
+    "Simulator image tests do not establish real-video accuracy or physical safety.",
+    "Fine yaw/tilt boundaries are not separately calibrated; classifier does not estimate continuous yaw.",
+    "Single overhead RGB cannot prove actual release, no contact, height, or full3D stability.",
+    "Colored clutter, severe color shifts, unseen occluders, camera tilt or new brick textures may be out of distribution.",
+    "Boundary abstentions are intended; visual success alone never completes the physical task."
+  ],
+  "source_files": {
+    "supervisor/planning/simple_goal_classifier.py": "609dd72b1f21b6fc2fc8e535b9cbb279ce66b311473a294d6a4f5d7abe8ffa61",
+    "scripts/train_simple_goal_classifier.py": "02d6df29d7ff0bf11e8beb404f6aca9be74f5bcaf1101e7a7fb9211663d4c89e"
+  },
+  "artifact_sha256": {
+    "data_manifest.jsonl": "84608fec1bbe20acbe9667fcf699e44e4c9cc18b127528deba788fd34522fd04",
+    "features.npz": "c20c893e77ffbbf6721db8bff72e85eb0a504902b28ef54ef3f152116d2bc2b8",
+    "augmentation_manifest.jsonl": "45908d455fb9ab590d1f3023f5ea92339e3b267fee0f3ae7b29edc747a19592b",
+    "protocol_before_generation.json": "faa9b307e6b2dfdac357163ca3082e9caec4080032884aed952fd2799570e327",
+    "confirmation/data_manifest.jsonl": "29a3dc403fc05f36c5dd5340a919b643565e3e5bf4de80a7bc01076269fe18ff"
+  }
+}

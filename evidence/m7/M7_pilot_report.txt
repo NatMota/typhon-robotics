@@ -1,0 +1,40 @@
+M7 new checkpoint fixed-pilot evidence, 9 October 2026
+
+All four assigned M3/M4 checkpoints were copied directly from their training pods to Powerglide /var/tmp and SHA-256 verified. Each completed1000updates.32actual learned-policy episodes executed; no expert replay successes are counted. M0-M6 frozen artifacts and training files remain unchanged.
+
+Model | all-goal criteria | unfinished/correction success | completed-state preservation | mean inference s | p95 inference s
+v1-m3 | 0/8 | 0/6 | 0/2 | 0.246 | 0.255
+v1-m4 | 2/8 | 0/6 | 2/2 | 0.246 | 0.255
+v2-m3 | 0/8 | 0/6 | 0/2 | 0.274 | 0.291
+v2-m4 | 2/8 | 0/6 | 2/2 | 0.274 | 0.291
+
+Interpretation
+Neither M3 nor M4 completed any of the six unfinished/correction cases. Both M4 variants preserved the two already-completed states; they have no completion head and still issued1436actions, so this is preservation, not task recognition. Both M3 variants disturbed both completed states (approximately29-40mm peak displacement), with contact and no substantial lift: possible pushing/dragging.
+
+Across all32episodes, every predicted Cartesian position was outside the declared controller workspace. For V1-M4 source, predictedz=.617-.711m versus workspace minimum.805m; expert training source targets span.820-1.080m. The controller consequently clamps translation. Saved timed-waypoint reconstruction, XYZ-to-OSC conversion and workspace-clamp arithmetic match within1e-6. This narrows the symptom to predicted targets upstream of clipping; it does not prove a particular training root cause. No bilateral grasp or verified70mm lift occurred. Gripper closing events do not count as grasps.
+
+All32runs have zero controller, artifact, or scoring exceptions. Request text152-155tokens is below the256limit. Native strict checkpoint restore and finite30x20 prediction passed. The historical base-model cache is pinned X-VLA-Pt, not LIBERO.
+
+Limits
+This is a small frozen development pilot, not an unseen final test. Each scene has one prescribed seed. Fixed common full-intent instruction at1.5seconds is a request-distribution shift, especially for native-contiguousV1 trained with single/continue-task wording. Results do not establish a definitive ranking or the outcome of M5/M6 still training. V2 is explicitly annotation-conditioned and receives the privileged causal ternary held cue used for green crosshairs; do not label it pure image-only. Simulation pauses during inference, so these latency numbers are not operational throughput claims.
+
+Evidence locations
+/var/tmp/humanoid-m7-live-evaluation-20261009
+Durable small summaries/diagnostics: $PROJECT/results/personal-m7-training-20261009/powerglide-pilots-20261009
+Videos: videos.json; all per-episode raw predictions, RGB inputs, requested/applied actions, scores and failure traces remain in the /var/tmp run directories. Startup integration failures are retained separately as v1-m4, v1-m4-r2 and v1-m4-r3 and are not scored episodes.
+
+Reproduce (fresh output directory required):
+PYTHONDONTWRITEBYTECODE=1 .venv-sim/bin/python scripts/m7_evaluate.py --checkpoint /var/tmp/humanoid-m7-checkpoints-20261009/v1-m4.pt --protocol /var/tmp/humanoid-m7-live-evaluation-20261009/preflight/protocol.json --output /var/tmp/NEW-v1-m4-pilot
+For V2 append --annotation-conditioned-v2. Select corresponding checkpoint for each model. Run scripts/m7_pilot_diagnostics.py --pilot-root RUN --output NEW.json for read-only arithmetic/motion diagnostics.
+
+Optional observer telemetry: set M7_LIVE_DIR=/var/tmp/humanoid-m7-live-evaluation-20261009/live. It publishes measured simulated q/dq, EEF/gripper state, simulated actuator torques from qfrc_actuator, separate requested/applied commands and actual current RGB. No object truth enters the actor. Temperature is unavailable. Consumers must respect capture age and live:false when finished. Three unit tests passed; the separate assisted diagnostic supplies live runtime verification.
+
+Separate assisted diagnostic with NEW V1-M4 checkpoint (excluded from the32unassisted episodes):
+m7-personal_demo_0001: completion_claim=False, executed_policy_steps=0, proposals=12, rejections=12, false_completion=False, object_displacement_mm=0.000
+recovery-already_completed-01: completion_claim=True, executed_policy_steps=0, proposals=0, rejections=0, false_completion=False, object_displacement_mm=0.000
+recovery-wrong_orientation-01: completion_claim=False, executed_policy_steps=0, proposals=0, rejections=0, false_completion=False, object_displacement_mm=0.000
+Decision wall latency range0.692-1.592s, median0.888s. Simulation pauses during inference.
+Already-completed state was recognized after3distinct visual observations, with no candidate or robot manipulation. This is a Qwen+fixed-cameraRGB-reference+measured-open-gripper service decision, not a learned X-VLA completion head. Unfinished source proposals were rejected by deterministic constraints. Incorrect90degreeorientation is held as UNKNOWN: Qwen generated overlong JSON truncated at192tokens in all4queries. The independentRGBnumeral check separately measured a mismatch. This is a successful fallback, not successful Qwen orientation recognition. Some Qwen evidence prose is contradictory; subjectiveconfidence is not calibrated. Qwen alone is not a safety or completion authority; earlier confidently wrong180degree response is preserved in the service report.
+Actual new-model service run verified atomic RGB and controller telemetry, with no publisher errors. Seven measured simulated joint positions/velocities and seven generalized actuator torques present. Temperature remains unavailable. Feed ends with live:false; it is now a replay snapshot.
+Command: M7_LIVE_DIR=/var/tmp/humanoid-m7-live-evaluation-20261009/live PYTHONDONTWRITEBYTECODE=1 .venv-sim/bin/python scripts/m7_assisted_diagnostic.py --checkpoint /var/tmp/humanoid-m7-checkpoints-20261009/v1-m4.pt --protocol /var/tmp/humanoid-m7-live-evaluation-20261009/preflight/protocol.json --output /var/tmp/NEW-assisted
+Assisted videos and all Qwen text/candidate rejection events: /var/tmp/humanoid-m7-live-evaluation-20261009/v1-m4-assisted-v1

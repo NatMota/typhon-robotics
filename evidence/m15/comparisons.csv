@@ -1,0 +1,11 @@
+cohort,category,attempted_episodes,successes,success_rate,mean_position_error_m,mean_yaw_error_deg,initial_completion_recognized,unnecessary_manipulation,failure_modes
+personal,all,15,13,0.8666666666666667,0.017780225411367995,15.282311711859158,2,0,"{""footprint_inside_target"": 1, ""no_verified_lift"": 2, ""orientation"": 2, ""position"": 1}"
+personal,normal_feeding,6,6,1.0,0.005759511808584288,0.15334156898298892,0,0,{}
+personal,awkward_pause_resume_feeding,4,3,0.75,0.05212202832453532,10.875300149095725,0,0,"{""footprint_inside_target"": 1, ""no_verified_lift"": 1, ""orientation"": 1, ""position"": 1}"
+personal,orientation_correction,3,2,0.6666666666666666,0.0035249813583598986,60.03901640441254,0,0,"{""no_verified_lift"": 1, ""orientation"": 1}"
+personal,already_completed,2,2,1.0,0.006541626472896606,2.348188227184435,2,0,{}
+synthetic,all,15,8,0.5333333333333333,0.07686731359878653,10.868092271981652,2,0,"{""footprint_inside_target"": 6, ""no_verified_lift"": 2, ""orientation"": 2, ""position"": 7}"
+synthetic,normal_feeding,6,3,0.5,0.1138141954516373,25.045276370221405,0,0,"{""footprint_inside_target"": 3, ""no_verified_lift"": 2, ""orientation"": 2, ""position"": 3}"
+synthetic,awkward_pause_resume_feeding,4,2,0.5,0.019360090907466328,1.8408834241011212,0,0,"{""footprint_inside_target"": 1, ""position"": 2}"
+synthetic,orientation_correction,3,1,0.3333333333333333,0.12761529890108178,0.8727440508183629,0,0,"{""footprint_inside_target"": 2, ""position"": 2}"
+synthetic,already_completed,2,2,1.0,0.004919135469431936,1.3839800047683666,2,0,{}

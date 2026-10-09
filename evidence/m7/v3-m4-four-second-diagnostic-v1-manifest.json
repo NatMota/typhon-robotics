@@ -1,0 +1,13 @@
+{
+  "protocol_sha256": "f324505dfa439e049a83e54c76074c2e89dbc3dd702c9140d932cb6b31600484",
+  "checkpoint": "/var/tmp/humanoid-m7-checkpoints-20261009/v3-m4.pt",
+  "checkpoint_sha256": "0adb1dfff00289952013fcdeb026c9ac730f6bdcfd24c67b10e4b0b2ab7aab15",
+  "annotation_conditioned_v2": true,
+  "learned_evaluation": true,
+  "source_code_sha256": {
+    "scripts/m7_evaluate.py": "79fd27adf51ef5ab2fb839e2f3e49ec9ba9766fa4a16f6742feef0893182d276",
+    "supervisor/adaptation/m7_eval_worker.py": "6eb119e4e44342a0ab713d694a738180fbb1d3444aa8a295ff99c3ec0116f161",
+    "supervisor/adaptation/m7_training.py": "f48451cfaf940fb5d358a694cbc77165919734fefb8d4a658609f02cf9324e0c",
+    "supervisor/adaptation/m7_timing.py": "2f449e7eb70987f09296411235082efe8b5ec9642c5e8584f24e99a08af9dd6c"
+  }
+}

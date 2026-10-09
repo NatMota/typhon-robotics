@@ -1,0 +1,22 @@
+{
+  "seed": 17,
+  "history": 8,
+  "width": 64,
+  "heads": 4,
+  "layers": 2,
+  "bc_epochs": 60,
+  "ppo_steps": 16384,
+  "rollout_steps": 256,
+  "ppo_epochs": 4,
+  "batch_size": 128,
+  "learning_rate": 0.0003,
+  "gamma": 0.97,
+  "gae_lambda": 0.95,
+  "clip": 0.2,
+  "entropy": 0.01,
+  "eval_trials_per_cell": 20,
+  "max_decisions": 32,
+  "training_goal_sizes": [1, 2],
+  "heldout_goal_sizes": [3, 4],
+  "failure_modes": ["background", "occlusion", "relocation", "precompleted", "grasp_failure", "unavailable", "protected"]
+}

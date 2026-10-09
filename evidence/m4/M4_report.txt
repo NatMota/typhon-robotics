@@ -1,0 +1,86 @@
+# M4 — fixed ordinary-versus-correction continuation
+
+The predeclared M4 comparison is complete: two 500-update branches from P17 and 160 new scored episodes. No method completed an initially incomplete recovery-suite task. The fixed experiment therefore does not demonstrate learned recovery.
+
+PN means P+N, continued on ordinary personal-derived feeding takes 0001/0002. PR means P+R, continued on successful correction-derived takes 0007/0009. Both start from exactly the predetermined P17 checkpoint, use fresh AdamW state, seed 17, batch 4, lr 0.001, no weight decay, clipping 1, and 48 complete windows from each of two trajectories. Each processes 2000 correlated window presentations. Failed correction 0011 remains excluded from successful motor targets and preserved as a limitation. No new model architecture, controller or preprocessing was introduced.
+
+## Initially incomplete recovery cases
+
+| Method | Wrong orientation | Misplacement | Post-empty-grasp | Displacement | Incomplete cases total |
+|---|---:|---:|---:|---:|---:|
+| F | 0/4 | 0/4 | 0/4 | 0/4 | 0/16 |
+| P17 | 0/4 | 0/4 | 0/4 | 0/4 | 0/16 |
+| PN | 0/4 | 0/4 | 0/4 | 0/4 | 0/16 |
+| PR | 0/4 | 0/4 | 0/4 | 0/4 | 0/16 |
+
+Observed gripper–block contact during each episode is reported separately from successful completion:
+
+| Method | Wrong orientation | Misplacement | Post-empty-grasp | Displacement |
+|---|---:|---:|---:|---:|
+| F | 0/4 | 0/4 | 2/4 | 2/4 |
+| P17 | 0/4 | 0/4 | 0/4 | 0/4 |
+| PN | 0/4 | 0/4 | 0/4 | 0/4 |
+| PR | 2/4 | 1/4 | 1/4 | 0/4 |
+
+Contact alone does not establish a secure grasp or verified lift; the displacement category includes an externally supplied relocation. The 70 mm lift threshold is this experiment's configured diagnostic, not a universal definition of a grasp. Task outcomes use the unchanged task scorer.
+
+Each method receives the same 16 initially incomplete cases, four per category. [Paired gains/losses](paired_comparisons.csv), [category intervals/errors](recovery-audit/comparisons.csv) and [full execution diagnostics](recovery-audit/episode_diagnostics.csv) retain every outcome.
+
+The post-empty-grasp category is an engineered starting condition. A fixed 98-step prefix closes and lifts in empty space; no object contact or lift occurred in setup. The prefix was supplied, not necessarily observed by the model, and no hidden failure flag was given. Actual last-command history initializes policy control. The learned horizon is shorter by those 98 steps, equally for every method in that category. All 12 cross-method handovers exactly matched F's state and command history. Instrumentation fix `e907a7f` initializes the closing-edge counter from the actual gripper command at handover, preventing a fabricated close when the engineered prefix already left it closed. Applied commands are unchanged; ordinary open-reset M3 counting is unchanged. Prefix events are separate from learned-phase counts. These cases do not establish recovery from the policy's own failed grasp.
+
+Displacement is a scripted simulator-state relocation after exactly four completed 30-action chunks (step 160), independent of policy behavior. Pre/post object and contact/gripper states are logged. Both actual camera images change in setup validation. It is not a physically simulated human intervention; trace displacement metrics for this category include the supplied relocation and must not all be attributed to policy action.
+
+## Already-completed cases: preservation, not recovery
+
+| Method | Final object-goal preservation | Strict M1 score | Contact-free cases |
+|---|---:|---:|---:|
+| F | 4/4 | 4/4 | 4/4 |
+| P17 | 4/4 | 4/4 | 4/4 |
+| PN | 4/4 | 4/4 | 4/4 |
+| PR | 2/4 | 2/4 | 2/4 |
+
+Final object-goal preservation uses the original object position/orientation/footprint/height and physical stability tolerances plus no final block contact. It does not require an empty gripper elsewhere in the scene to be open. The unchanged strict M1 score still includes its original open-gripper criterion and is shown separately. [Per-case displacement, contact, gripper events and EE path length](already_completed.csv) expose unnecessary activity.
+
+- F: 0/4 cases moved the block more than 1 mm; maximum observed displacement 0.00 mm.
+- P17: 0/4 cases moved the block more than 1 mm; maximum observed displacement 0.00 mm.
+- PN: 0/4 cases moved the block more than 1 mm; maximum observed displacement 0.00 mm.
+- PR: 2/4 cases moved the block more than 1 mm; maximum observed displacement 39.08 mm.
+
+PR versus F: 0 preservation gains and 2 losses among 4 matched cases. PR versus P17: 0 preservation gains and 2 losses among 4 matched cases. PR versus PN: 0 preservation gains and 2 losses among 4 matched cases.
+
+These are observed adverse effects in one continuation seed, one parent checkpoint and two correction-training takes. They do not establish that correction training generally harms manipulation.
+
+All four cases run the ordinary horizon; there is no truth-based early completion stop or shared success wrapper. An inactive policy can preserve a completed arrangement while failing every unfinished task. Goal preservation is not evidence of completion recognition. False completion is **not applicable**, not zero, because there is no completion-declaration head.
+
+## Ordinary feeding and loading regression
+
+| Method | Feeding | Loading |
+|---|---:|---:|
+| P17 | 0/20 | 0/20 |
+| PN | 0/20 | 0/20 |
+| PR | 0/20 | 0/20 |
+
+P17's values are the saved M3 results on exactly the same 40 cases. PN/PR each receive 40 new evaluations. Loading demonstrations and loading outcomes did not select continuation data, settings or checkpoints. The M4 suite, branch data and budget were fixed before M3 evaluation outcomes were inspected.
+
+The M4 recovery goals are near the personal training goal. M3 feeding uses held-out goal locations, while M3 loading combines a task and goal/layout change. Compare F/P17/PN/PR within matched M4 cases; differences between M3 and M4 success rates cannot be attributed to recovery improvement. M4 provides additional negative evidence in engineered states near the personal training goal, but does not fill the missing ordinary, in-distribution feeding benchmark. Neither a goal-shift-only explanation for M3 failure nor an absence of ordinary feeding capability at the training goal is established.
+
+## Runtime and validation
+
+- PN: 72.02s measured training loop; 0.1267s mean update; 4.977GB peak allocated CUDA; exact reload difference 0.0.
+- PR: 72.55s measured training loop; 0.1274s mean update; 4.977GB peak allocated CUDA; exact reload difference 0.0.
+
+Recovery episode wall totals: {"F": 375.8961024870223, "P17": 376.70389766499284, "PN": 375.87824904106674, "PR": 374.40301133695175} seconds. Ordinary-suite wall totals are saved in [M4_summary.json](M4_summary.json). Training-loop figures exclude initial loading, validation, hashing and reload. Inference pauses simulation; no real-time throughput claim is made. The unchanged 20 Hz/30-command execution horizon replans every 1.5 simulated seconds.
+
+All 160 new final scores were independently recomputed, action bounds and horizon lengths checked, and all setup states/interventions validated. Prompt-only isolation and saved-checkpoint reload checks passed. Video decode, prior-artifact preservation and final backup hashes are separate final validation artifacts. All source failures and diagnostic failures remain retained.
+
+## Interpretation and reproduction
+
+The preceding [M3 report](../personal-m3-20261009/M3_report.md) documents the common observation/action contract, training/goal distributions and first-stage outcomes.
+
+PR versus PN compares two previously unused correction-derived trajectories against further use of two ordinary trajectories. Novelty and starting-state distributions are not perfectly controlled; this does not isolate an abstract correction mechanism. Robot action targets come from the privileged geometric expert, while personal recordings supply source configurations and appearance. Source take counts are small, windows overlap, recording sessions overlap, and the shared visual asset contains personal information in every condition. Lower native loss or improved generated-action error does not substitute for closed-loop success.
+
+In a fresh results checkout with the pinned environments, prepared canonical data, frozen M3 parent, protocol and setup validation, run `bash scripts/run-m4.sh`. It refuses destructive overwrite of training outputs and retains every episode. The authoritative scripts, exact protocol hashes, checkpoint hashes and source provenance accompany the results. No expert rescues a learned rollout.
+
+Representative matched videos are under `recovery/<method>/recovery-<category>-01/rollout.mp4`, with separate setup-prefix videos for the empty-grasp cases; all ordinary-suite videos remain under `original/<method>/<scenario_id>/rollout.mp4`.
+
+Stop boundary: M4 ends this requested experiment. No publication or application submission is performed.

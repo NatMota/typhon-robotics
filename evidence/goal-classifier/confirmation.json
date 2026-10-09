@@ -1,0 +1,91 @@
+{
+  "model_sha256": "bc15b4519f7787aecb5078df08029984ba3e9297ca4af48caba1620b0530ae0b",
+  "threshold": 0.8,
+  "splits": {
+    "validation": {
+      "count": 0,
+      "confusion": {
+        "complete": {
+          "complete": 0,
+          "incomplete": 0,
+          "unknown": 0
+        },
+        "incomplete": {
+          "complete": 0,
+          "incomplete": 0,
+          "unknown": 0
+        },
+        "unknown": {
+          "complete": 0,
+          "incomplete": 0,
+          "unknown": 0
+        }
+      },
+      "by_category": {}
+    },
+    "test": {
+      "count": 336,
+      "confusion": {
+        "complete": {
+          "complete": 101,
+          "incomplete": 0,
+          "unknown": 10
+        },
+        "incomplete": {
+          "complete": 0,
+          "incomplete": 144,
+          "unknown": 9
+        },
+        "unknown": {
+          "complete": 0,
+          "incomplete": 0,
+          "unknown": 72
+        }
+      },
+      "by_category": {
+        "correct": {
+          "complete->complete": 72
+        },
+        "varied_placement": {
+          "incomplete->incomplete": 22,
+          "complete->complete": 2
+        },
+        "outside": {
+          "incomplete->incomplete": 24
+        },
+        "wrong180": {
+          "incomplete->incomplete": 24
+        },
+        "wrong90": {
+          "incomplete->incomplete": 24
+        },
+        "wrong_angle": {
+          "incomplete->incomplete": 24
+        },
+        "tilted": {
+          "incomplete->incomplete": 23,
+          "incomplete->unknown": 1
+        },
+        "partial_readable": {
+          "complete->complete": 24
+        },
+        "position_boundary": {
+          "complete->unknown": 10,
+          "incomplete->unknown": 8,
+          "complete->complete": 3,
+          "incomplete->incomplete": 3
+        },
+        "occluded": {
+          "unknown->unknown": 72
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Synthetic native overhead DUPLO v2 only; no real-camera calibration claim.",
+    "No current pose/contact truth at inference.",
+    "Single-view image cannot establish physical release/contact or angular/3D stability.",
+    "Known gray partial occluders; arbitrary out-of-distribution occlusion may fail.",
+    "Near visual position boundary abstains. Loading returns unknown."
+  ]
+}

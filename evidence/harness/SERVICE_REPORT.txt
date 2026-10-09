@@ -1,0 +1,42 @@
+Typhon classifier-primary harness: actual frozen M6 validation
+
+PASS: seven actual simulator cases, 25 CPU guard/adapter checks, seven saved-RGB CPU replays.
+Frozen earlier-today M6-FT3000 checkpoint: $PROJECT/results/personal-m6-joint-20261009/training/final.pt
+M6 SHA256: 03a55fa46088368da0b8d92091ec3a4a5a539ae2772bf2cfd4c592b92b745a85
+Classifier SHA256: bc15b4519f7787aecb5078df08029984ba3e9297ca4af48caba1620b0530ae0b
+Classifier snapshot: /var/tmp/typhon-harness-20261009/live-v2/goal-classifier-frozen.npz
+
+Completion uses learned directed-numeral evidence, declared 15mm target tolerance/full footprint, measured finger opening, image position drift <=2mm, and five fresh frames spanning >=0.4s. Classifier native threshold is 0.8; softmax values are uncalibrated.
+Qwen is not loaded or called. The previous Qwen/reference mode remains the default of the original supervisor.
+Each incomplete observation allows up to three unchanged M6 samples; guards reject inadmissible EEF paths/current joints; shortest/smoothest admissible path wins; at most three steps execute with fresh measured checks.
+There is no expert rescue, action repair, training, object-truth actor input, or replacement with tonight's H100 models.
+
+typhon-correct-center: image=complete; completion=True; evaluator_success=True; decisions=5; candidates=0; rejected_candidates=0; executed_policy_steps=0; false_completion=False; stop=visual_completion_confirmed
+typhon-correct-offset-x8mm: image=complete; completion=True; evaluator_success=True; decisions=5; candidates=0; rejected_candidates=0; executed_policy_steps=0; false_completion=False; stop=visual_completion_confirmed
+typhon-correct-offset-y8mm: image=complete; completion=True; evaluator_success=True; decisions=5; candidates=0; rejected_candidates=0; executed_policy_steps=0; false_completion=False; stop=visual_completion_confirmed
+typhon-wrong-yaw180: image=incomplete; completion=False; evaluator_success=False; decisions=8; candidates=24; rejected_candidates=0; executed_policy_steps=24; false_completion=False; stop=decision_budget_exhausted
+typhon-wrong-yaw90: image=incomplete; completion=False; evaluator_success=False; decisions=8; candidates=24; rejected_candidates=0; executed_policy_steps=24; false_completion=False; stop=decision_budget_exhausted
+typhon-occluded: image=unknown; completion=False; evaluator_success=True; decisions=8; candidates=0; rejected_candidates=0; executed_policy_steps=0; false_completion=False; stop=decision_budget_exhausted
+m5-source-01: image=incomplete; completion=False; evaluator_success=False; decisions=500; candidates=75; rejected_candidates=0; executed_policy_steps=49; false_completion=False; stop=decision_budget_exhausted
+
+Source outcome: unfinished. The 500-decision bound was reached after 75 proposals and 49 executed policy steps. Joint-limit holds and later visually occluded/uncertain observations prevented further execution. It did not finish the task and was never reported complete.
+The source bound is a complete 500-decision harness attempt, not the full original 1500-control-step policy rollout.
+The occlusion case is an explicitly labelled opaque camera/sensor-fault diagnostic; the underlying simulator object remains correctly placed. Its evaluator success does not constitute visual success.
+
+Classifier CPU latency: {"count": 494, "min_s": 0.000340436992701143, "median_s": 0.0005005505081498995, "p95_s": 0.0010354270125390026, "max_s": 0.022175366000737995}
+Total decision latency (includes very fast pre-inference guard holds): {"count": 539, "min_s": 0.0012618080072570592, "median_s": 0.001875591988209635, "p95_s": 0.18769928120018448, "max_s": 0.3015871119860094}
+Decisions performing three M6 proposals: {"count": 41, "min_s": 0.1864767519873567, "median_s": 0.1887130709947087, "p95_s": 0.2009617550065741, "max_s": 0.3015871119860094}
+Individual M6 candidate inference: {"count": 123, "min_s": 0.060630913998465985, "median_s": 0.061726665997412056, "p95_s": 0.06882007828098721, "max_s": 0.17207010800484568}
+Classifier on visibly complete/incomplete frames: {"count": 56, "min_s": 0.0006930370000191033, "median_s": 0.0009192970028379932, "p95_s": 0.0022112490187282674, "max_s": 0.022175366000737995}
+Timing is isolated diagnostics with simulator paused for inference, not real-time robot throughput.
+
+Evidence: manifest/protocol; source-labelled primary/secondary PNGs and timestamps; all raw M6 predictions/candidates/selected prefixes; execution rejections; current measured q/dq/EEF/finger positions and MuJoCo actuator torques; evaluator-only truth trajectories, terminal score, videos; audit.json.
+Limitations: known overhead DUPLO v2 camera/task family only; loading returns unknown. Continuous visual yaw, physical contact/release, depth/height, and whole-arm collision prediction are not established by this single-view classifier. Measured open fingers plus image position stability are required, but remain distinct from independent truth scoring.
+
+Launch from $PROJECT:
+M7_LIVE_DIR=/var/tmp/humanoid-m7-live-evaluation-20261009/live PYTHONDONTWRITEBYTECODE=1 .venv-sim/bin/python scripts/typhon_harness.py --output /var/tmp/typhon-harness-20261009/NEW-RUN --classifier-model /var/tmp/typhon-harness-20261009/live-v2/goal-classifier-frozen.npz --source-wall-s 220 --source-decisions 500 --baseline-decisions 8
+Use a new output name and reserve the GPU/shared observer feed before launch. The supplied run directory is never overwritten.
+CPU audit: .venv-sim/bin/python scripts/typhon_harness_audit.py --run /var/tmp/typhon-harness-20261009/live-v2
+CPU gate checks: .venv-sim/bin/python -m unittest tests.test_m7_service tests.test_typhon_service
+
+The earlier preload-only live-v1 folder is retained with an explicit STOP_REASON; no simulator episodes ran there.

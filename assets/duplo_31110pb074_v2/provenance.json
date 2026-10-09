@@ -1,0 +1,16 @@
+{
+  "visual_version": "duplo_31110pb074_v2",
+  "source_asset": "../humanoid-task-supervisor/results/personal-m0-20261009/tracking_sources/orientation_template_upright.png",
+  "source_sha256": "1148242f688b77bb2b14c27f05500c3d9dd987e98aa9cc72bb6d77b7dc3c0122",
+  "source_recording": "recording_0005",
+  "source_frame": "frame_000020.jpg (~10s)",
+  "derivation": "Frozen M0 blue colour segmentation, largest component, aspect-preserving normalization and 90deg CCW canonical rotation; mask copied byte-for-byte.",
+  "face_frame": {
+    "printed_side_normal": "+Z",
+    "numeral_up_and_stud_axis": "+Y",
+    "right": "+X"
+  },
+  "rendering": "Opaque blue scanline rectangles on the printed face; no UV mapping or external font. Geometry is body-local.",
+  "studs": "Four visual-only studs on +Y end; nominal proportions only, not measured CAD.",
+  "physics": "Original envelope collision, mass, inertia and friction retained; all added appearance geoms have zero mass and no contact."
+}

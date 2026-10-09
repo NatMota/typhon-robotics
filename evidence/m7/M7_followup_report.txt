@@ -1,0 +1,19 @@
+M7 checkpoint follow-up evidence
+
+Common 1.5-second pilot and four-second contract diagnostics remain separate. Counts below include every recorded outcome; partial runs are explicitly labelled.
+
+Run | recorded | unfinished/correction success | completed-state preservation
+v1-m3-pilot-v1 | 8/8 | 0/6 | 0/2
+v1-m4-pilot-v1 | 8/8 | 0/6 | 2/2
+v2-m3-pilot-v1 | 8/8 | 0/6 | 0/2
+v2-m4-pilot-v1 | 8/8 | 0/6 | 2/2
+v3-m3-four-second-diagnostic-v1 | 8/8 | 0/6 | 0/2
+v3-m3-pilot-v1 | 8/8 | 0/6 | 0/2
+v3-m4-four-second-diagnostic-v1 | 8/8 | 0/6 | 1/2
+v3-m4-pilot-v1 | 8/8 | 0/6 | 2/2
+v4-m3-pilot-v1 | 4/8 | 0/4 | 0/0 (partial)
+v4-m4-pilot-v1 | 8/8 | 0/6 | 2/2
+
+The four-second protocol was declared before Run3 outcomes. It uses the same eight scenes and full-intent instruction, 30 rounded native 20 Hz anchors and 80 reconstructed control targets. It does not use teacher phase labels or future timings at inference. It is a separate training-contract diagnostic, not a replacement for the common comparison.
+All V2/V3 runs consume an explicitly privileged causal held-state cue for trained green crosshairs. Simulation pauses during inference. No successful expert replay is counted as learned-policy performance.
+Each run directory contains exact checkpoint/protocol hashes, copied protocol, run_scope.json, raw actor inputs/actions, simulator action traces, independent scores, and representative videos. Evidence remains in /var/tmp on Powerglide.
