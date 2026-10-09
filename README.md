@@ -14,6 +14,64 @@ The dashboard shows recorded experiments and controller measurements. Successful
 
 We tested dense video, chopped trajectories, temporal abstraction and expert-guided corrections across 128 simulation episodes using scenarios derived from personally recorded demonstrations. The strongest rollout picked up the brick and released it inside the target, but left it rotated by 85°, so no unfinished task met every success criterion. A separate completion guard recognised all three tested correct configurations without moving the brick, showing that the harness can prevent unnecessary actions while learned orientation control still needs work.
 
+## Why feeding and loading
+
+The starting point was a customer problem: a robot becomes more useful if the next workstation can reuse what it has already learned. Repeating a successful motion at one station is only part of that job. The robot also needs to notice when a part has moved, a grasp has failed or someone has already completed a step.
+
+Schaeffler gave this question a concrete setting. Humanoid's published proof of concept describes picking metal bearing rings from cluttered bins, moving them to a buffer table and moving between stations. It identifies reuse across ring types and correcting grasps as intended advantages. That made feeding a useful source task and loading a useful next task to test. [Humanoid's Schaeffler account](https://thehumanoid.ai/humanoid-and-schaeffler-successfully-completed-proof-of-concept-for-bin-picking-with-pre-alpha-robot/)
+
+The tabletop experiment reduces that workflow to one orange block, a staging square and a shallow fixture. It tests a small part of the manipulation problem. It does not reproduce bearing-ring handling, production machinery or Schaeffler's operating conditions.
+
+| Task | Likely repetition | Economic opportunity | Downside of failure |
+|---|---|---|---|
+| Box and tote handling | High | Medium to high | Dropped loads, delays and possible injury |
+| Feeding | High | High | Incorrect parts and production stoppage |
+| Part loading | High | High | Machine damage, scrap and downtime |
+| Assembly | Medium to high | High | Defective assemblies, rework and potentially latent faults |
+| Inspection | High | Depends strongly on defect costs | Missed defects, recalls and possible safety consequences |
+| Packaging | High | Medium | Damaged goods and incorrect shipments |
+
+These are qualitative planning judgements. They explain the choice of tasks; they are not measured risk scores or customer ROI. The [research assumptions](docs/research/schaeffler-motivation-and-study-plan.md) retain the original illustrative workstation and value model.
+
+The original opportunity model assumed 25,000 workstations. These figures are illustrative, with no verified Schaeffler operating data or supporting cost model.
+
+| Task | Assumed share | Assumed workstations | Assumed annual operations | Assumed net value per robot per year |
+|---|---:|---:|---:|---:|
+| Box and tote handling | 30% | 7,500 | 375 million | €13,200 |
+| Feeding | 20% | 5,000 | 750 million | €20,000 |
+| Part loading | 20% | 5,000 | 500 million | €19,900 |
+| Assembly | 10% | 2,500 | 156 million | €9,100 |
+| Inspection | 10% | 2,500 | 188 million | −€15,700 |
+| Packaging | 10% | 2,500 | 94 million | €13,200 |
+| Total | 100% | 25,000 | 2,063 million, approximately 2.06 billion | No aggregate specified |
+
+### The physical reference
+
+The orange DUPLO block and hand-drawn staging target made the task easy to record and inspect. The blue 2 provides a visible direction, so placement means getting both position and orientation right.
+
+| Block reference | Feeding workspace |
+|---|---|
+| ![Orange block with a blue 2 and two studs](docs/research/media/orange-block-reference.png) | ![Orange block beside a hand-drawn staging square and direction arrow](docs/research/media/feeding-workspace-reference.png) |
+
+![Two camera views of the tabletop recording setup](docs/research/media/recording-setup.png)
+
+The photos show the source setup. They do not provide a calibrated scale or measured material properties.
+
+### The original study plan
+
+The initial collection target was 60 feeding demonstrations: 40 normal examples, 10 with human interference and 10 with other disturbances. The planned transfer test introduced machine loading with a new workstation specification, fixture state, available skills and readiness constraints. A QR code was one proposed way to supply the workstation specification. Loading demonstrations were to remain outside the training set.
+
+The proposed evaluation had 20 unfamiliar feeding layouts, 20 normal loading trials and 20 loading trials with human interference, with a rule-based baseline on the same cases. Those counts describe the plan, not the completed dataset or benchmark. The actual data, methods and results are reported below and in the versioned evidence. [Original collection and evaluation proposal](docs/research/schaeffler-motivation-and-study-plan.md)
+
+### A deployment goal: NVIDIA Jetson Thor
+
+The goal was to keep the eventual inference system small enough to run on NVIDIA Jetson Thor. Humanoid reports using Thor in its HMND 01 alpha platforms, which made onboard compute a relevant constraint. Development and experiments used a Franka Panda simulation and an RTX 4090. [Humanoid's NVIDIA integration](https://thehumanoid.ai/humanoid-deploys-nvidia-technologies-to-power-advanced-humanoid-robots/)
+
+Thor deployment remains a target. This repository does not establish a working Thor build, measured latency, power use or sustained control performance on that hardware. Model weights fitting in memory would be only the first check; camera processing, inference buffers, the controller and other onboard services also need room and time to run.
+
+The [VLA research shortlist](docs/research/pretrained-vla-extensions.md) covers small adaptation modules, corrective data, memory, planning and inference optimisation. It separates ideas for later experiments from components already implemented here.
+
+
 ## What was built
 
 ```text
