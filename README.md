@@ -4,11 +4,15 @@
 
 Typhon is an experimental robotics harness built for the October 2026 Humanoid internship challenge. It connects personally recorded tabletop demonstrations, reproducible Franka Panda scenes, X-VLA adaptation, controller telemetry, explicit execution guards and independently scored rollouts.
 
-[Dashboard](https://natslabs.com/typhon-robotics) · [Video library](https://www.natslabs.com/typhon-robotics/videos.html) · [Verified results](evidence/m7/) · [Controller/harness audit](evidence/harness/SERVICE_REPORT.txt) · [Dataset provenance](evidence/m0/) · [Reproduction](#reproduce)
+[Dashboard](https://natslabs.com/typhon-robotics) · [Video library](https://www.natslabs.com/typhon-robotics/media-library.html) · [Verified results](evidence/m7/) · [Controller/harness audit](evidence/harness/SERVICE_REPORT.txt) · [Dataset provenance](evidence/m0/) · [Reproduction](#reproduce)
 
 ![Typhon experiment dashboard](docs/dashboard.png)
 
-The dashboard shows recorded experiments and controller measurements. A public snapshot is a replay, not a live connection to a university workstation. Successful completion recognition and successful manipulation are reported separately.
+The dashboard shows recorded experiments and controller measurements. Successful completion recognition and successful manipulation are reported separately.
+
+## TL;DR
+
+We tested dense video, chopped trajectories, temporal abstraction and expert-guided corrections across 128 simulation episodes using scenarios derived from personally recorded demonstrations. The strongest rollout picked up the brick and released it inside the target, but left it rotated by 85°, so no unfinished task met every success criterion. A separate completion guard recognised all three tested correct configurations without moving the brick, showing that the harness can prevent unnecessary actions while learned orientation control still needs work.
 
 ## What was built
 
@@ -105,7 +109,7 @@ python3 dashboard/server.py --help
 
 The dashboard server observes local experiment directories; an empty checkout does not invent live runs. A portable recorded snapshot is included in `demo/`. The tiny classifier is included at `models/goal-classifier/model.npz`; its interface is documented in `supervisor/planning/simple_goal_classifier.py`.
 
-Full X-VLA checkpoints, raw phone videos and bulk training tensors are not bundled in Git. Scripts preserve the original experiment layout and may require archived inputs; the evidence-only check and geometric demo above are the minimal entry points. Verified public video URLs, checksums, source identities and outcome labels are recorded in [MEDIA_MANIFEST.json](MEDIA_MANIFEST.json). The [video library](https://www.natslabs.com/typhon-robotics/videos.html) distinguishes phone observations, expert replays and learned-policy evaluations; it retains failed outcomes. The paired phone clips are temporally trimmed takes, with separate marked variants; no spatial-crop or frame-to-robot-action alignment is claimed.
+Full X-VLA checkpoints, raw phone videos and bulk training tensors are not bundled in Git. Scripts preserve the original experiment layout and may require archived inputs; the evidence-only check and geometric demo above are the minimal entry points. Verified public video URLs, checksums, source identities and outcome labels are recorded in [MEDIA_MANIFEST.json](MEDIA_MANIFEST.json). The [video library](https://www.natslabs.com/typhon-robotics/media-library.html) distinguishes phone observations, expert replays and learned-policy evaluations; it retains failed outcomes. The paired phone clips are temporally trimmed takes, with separate marked variants; no spatial-crop or frame-to-robot-action alignment is claimed.
 
 ## Data and geometry limitations
 
