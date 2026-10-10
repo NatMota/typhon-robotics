@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "expert_cases": 40,
+  "expert_successes": 36,
+  "successful_expert_paths_vetoed": 0,
+  "guard_enforced_replay_successes": 36,
+  "guard_enforced_replay_attempts": 36,
+  "guard_enforced_rejections": 0,
+  "positive_single_command_checks": 7552,
+  "positive_chunk_checks": 2526,
+  "all_single_command_checks": 9529,
+  "all_chunk_checks": 3187,
+  "unit_tests_passed": 29,
+  "original_evaluation_source_hashes_unchanged": {
+    "scripts/typhon_ab_evaluate.py": true,
+    "scripts/typhon_ab_parallel.py": true,
+    "scripts/typhon_harness.py": true,
+    "scripts/typhon_policy.py": true,
+    "scripts/m7_evaluate.py": true,
+    "supervisor/planning/m7_service.py": true,
+    "supervisor/planning/typhon_service.py": true,
+    "supervisor/planning/simple_goal_classifier.py": true
+  },
+  "matched_guard_configs_in_original_evaluation": 200,
+  "diagnostic_source_sha256": {
+    "scripts/typhon_expert_guard_audit.py": "676559c533314a409d814645185541f51174f08fe1b34ab54d17692b080ae0fe",
+    "supervisor/planning/m7_service.py": "d2edb8864113d086dd462c00d9c0bdc4f778a8fcb15e533e8d8447d205dfecc3",
+    "supervisor/adaptation/actions.py": "87aa36d9edb708b113e8ec9666ccef054a947d445c3ec98952f0f2d9046c58cb",
+    "supervisor/baseline/xvla.py": "d17b67cdbb138421d18d3cb521a15a3457384427c5ed77dec2c2d379a33907ae",
+    "supervisor/baseline/benchmark.py": "5f5b89d83b65859b69bdc3337ddb44b279e350f3b96141e4ac826f29e97370a7",
+    "supervisor/feeding_loading/environment.py": "1f790260461ba79b03875602ecd7f17a4ca888596b8ed10772a2aefa90dd180c",
+    "supervisor/feeding_loading/runner.py": "3e9138dee890bb9f6bafd45e5a56102e6a13e4521d86d491baca2b464da3fd58",
+    "scripts/typhon_expert_guard_replay.py": "af29a3e7bbd1bece0c9979489f83a7b3f6b8fc91779e4547ac13869aeaa735d3"
+  },
+  "scope": "movement guards; excludes visual classifier and wall-clock episode cutoff",
+  "raw_audit_path": "/var/tmp/typhon-expert-guard-audit-20261010-v3",
+  "raw_replay_path": "/var/tmp/typhon-expert-guard-enforced-20261010-v1",
+  "failed_start_attempt": {
+    "path": "/var/tmp/typhon-expert-guard-audit-20261010-v1",
+    "reason": "forked EGL context initialization failed before robot commands; excluded from outcome counts; replaced with spawn workers"
+  }
+}
