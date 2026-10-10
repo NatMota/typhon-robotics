@@ -1,0 +1,14 @@
+{
+  "command": ".venv-sim/bin/python -u scripts/typhon_ab_parallel.py --output /var/tmp/typhon-ab40-30s-parallel-20261010-v2 --workers 3 --shards 4 --harness-wall-s 30",
+  "status": "running",
+  "no_ttc_candidate_selection": true,
+  "model_and_action_contract": "Unchanged frozen final M6 checkpoints and released vanilla; one proposal per observation, native30-action chunks and harness prefix3.",
+  "user_changes": "Whole harness episode actor cutoff reduced180s to30s. Parallel independent episodes on Powerglide4090.",
+  "setup_and_scoring": "Outside the actor cutoff, as in preceding benchmark.",
+  "coverage": "400 episodes: 5 models x40 original scenarios x2 execution modes. Twenty disjoint jobs with5 feeding+5 loading scenes each; paired initial-state hashes checked.",
+  "encoding": "PNG compression level1; verified decoded RGB is byte-identical. All actor-observation frames retained.",
+  "tests": "29 focused service/history checks passed; runtime coverage assertion proves400 unique scheduled identities; shard balance and lossless image roundtrip checked.",
+  "artifacts": "/var/tmp/typhon-ab40-30s-parallel-20261010-v2",
+  "shared_home_compact_receipts": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-evaluation-receipts/typhon-ab40-30s-parallel-20261010-v2",
+  "storage": "No media or checkpoints stored on Mac. Existing frozen experiment outputs unchanged."
+}

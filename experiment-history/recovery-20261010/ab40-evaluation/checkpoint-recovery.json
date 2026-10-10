@@ -1,0 +1,24 @@
+{
+  "verified_unix": 1791657472.756118,
+  "pods": [
+    {
+      "id": "2wna7xnq3gk5ak",
+      "desiredStatus": "EXITED",
+      "runtime": null
+    },
+    {
+      "id": "qtme9srdf7llsh",
+      "desiredStatus": "EXITED",
+      "runtime": null
+    },
+    {
+      "id": "9outqvjcpp9dmp",
+      "desiredStatus": "EXITED",
+      "runtime": null
+    }
+  ],
+  "recovered_checkpoint": "/var/tmp/humanoid-m7-checkpoints-20261009/v4-m6.pt",
+  "checkpoint_sha256": "c884e5052bc2734c1edf7d33498497cb26b27d88db1b32e3289fc46ea2e453dc",
+  "compute": "Powerglide evaluation only; retained Runpod compute stopped after checksum verification",
+  "retained_volumes": "Not deleted; V4-M5 remains on retained pod volume"
+}

@@ -76,7 +76,7 @@ def metrics(folder, model, mode):
         runtime_errors=errors, initial_state_sha256=digest(initial), source_scenario_sha256=digest(sc), evidence_directory=str(folder))
 
 
-def summarize(root, rows):
+def summarize(root, rows, planned=400, task_planned=None):
     summary=[]
     for model in sorted({r['model'] for r in rows}):
         for task in ('feeding', 'loading'):
@@ -84,7 +84,7 @@ def summarize(root, rows):
                 rr=[r for r in rows if (r['model'],r['task'],r['mode']) == (model,task,mode)]
                 if not rr: continue
                 fractions=[r['yaw_fraction_closed'] for r in rr if r['yaw_fraction_closed'] is not None]
-                summary.append(dict(model=model,task=task,mode=mode,n=len(rr),planned=20,
+                summary.append(dict(model=model,task=task,mode=mode,n=len(rr),planned=(task_planned or {'feeding':20,'loading':20})[task],
                     successes=sum(r['success'] for r in rr),pickups=sum(r['pickup'] for r in rr),
                     placements=sum(r['placement_without_yaw'] for r in rr),orientation_correct=sum(r['orientation_correct'] for r in rr),
                     mean_initial_yaw_gap_deg=statistics.mean(r['initial_yaw_gap_deg'] for r in rr),
@@ -98,28 +98,36 @@ def summarize(root, rows):
         if data:
             with (root/name).open('w') as stream:
                 writer=csv.DictWriter(stream,fieldnames=list(data[0]),lineterminator='\n');writer.writeheader();writer.writerows(data)
-    save(root/'progress.json',dict(completed=len(rows),planned=400,updated_unix=time.time(),summary=summary))
+    save(root/'progress.json',dict(completed=len(rows),planned=planned,updated_unix=time.time(),summary=summary))
 
 
 def main(args):
-    scenarios=protocol(); root=args.output.resolve(); root.mkdir(parents=True,exist_ok=True)
+    scenarios=protocol()
+    scenarios=[s for i,s in enumerate(scenarios) if (i//2)%args.shards==args.shard_index]
+    root=args.output.resolve(); root.mkdir(parents=True,exist_ok=True)
+    models=args.models or ['vanilla-pt-domain3','v1-m6','v2-m6','v3-m6','v4-m6']
+    planned=2*len(models)*len(scenarios)
+    task_planned={task:sum(s['task']==task for s in scenarios) for task in ('feeding','loading')}
     original=ROOT/'frozen_results/personal-m3-20261009/protocol/scenarios.json'
     weights=Path('/var/tmp/humanoid-m7-checkpoints-20261009')
     checkpoints={f'v{i}-m6':weights/f'v{i}-m6.pt' for i in range(1,5)}
     expected={m:json.loads(p.with_suffix('.verified.json').read_text())['sha256'] for m,p in checkpoints.items() if p.with_suffix('.verified.json').exists()}
     expected['v4-m6']='c884e5052bc2734c1edf7d33498497cb26b27d88db1b32e3289fc46ea2e453dc'
-    plan=dict(schema='typhon-original-ab40-v1',scenarios=scenarios,source_protocol=str(original),source_sha256=sha(original),
-        models=['vanilla-pt-domain3','v1-m6','v2-m6','v3-m6','v4-m6'],checkpoints={m:str(p) for m,p in checkpoints.items()},checkpoint_sha256=expected,
+    plan=dict(schema='typhon-original-ab40-v2',scenarios=scenarios,source_protocol=str(original),source_sha256=sha(original),
+        models=models,checkpoints={m:str(p) for m,p in checkpoints.items()},checkpoint_sha256=expected,
         vanilla='Pinned released X-VLA-Pt domain3, native action contract, O2 images; unchanged foundation weights, no trained temporal projection.',
         native='Original 1500 total control steps, including reset40 and terminal24; 20Hz; 30 commands/chunk.',
-        harness='One proposal, no ranking/resampling; prefix3; current joint/workspace/no-go guards; frozen classifier with declared feeding/loading goal projection; sole policy-execution cutoff 180 wall seconds after setup, no per-inference deadline or artificial simulated-time budget.',
+        harness=f'One proposal, no ranking/resampling; prefix3; current joint/workspace/no-go guards; frozen classifier with declared feeding/loading goal projection; sole policy-execution cutoff {args.harness_wall_s:g} wall seconds after setup, no per-inference deadline or artificial simulated-time budget.',
         score='Original physical scorer, 15mm position and 10degree directed yaw plus release/support/stability.',
-        timing='Simulation pauses during inference; 180s is a wall-clock precaution, not a robot real-time throughput claim. Setup and terminal scoring outside cutoff.',
+        timing=f'Simulation pauses during inference; {args.harness_wall_s:g}s is a wall-clock precaution, not a robot real-time throughput claim. Setup and terminal scoring outside cutoff.',
         request=fixed_request(),trained_models_with_causal_held_annotation=['v2-m6','v3-m6','v4-m6'],
         no_training=True,no_expert_rescue=True,no_best_checkpoint_selection=True,
+        execution=dict(harness_wall_s=args.harness_wall_s,shards=args.shards,shard_index=args.shard_index,
+            planned_concurrency=args.concurrency,png_compress_level=args.png_compress_level,
+            cpu_thread_limits={k:os.environ.get(k) for k in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','OPENCV_FOR_THREADS_NUM')}),
         comparison_limit='Matched starting scenes and scoring; harness changes execution/control budget. This tests the deployed harness package, not an isolated equal-compute intervention.',
         classifier_sha256=sha(Path('/var/tmp/typhon-goal-classifier-20261009/model.npz')))
-    sources=['scripts/typhon_ab_evaluate.py','scripts/typhon_harness.py','scripts/typhon_policy.py','scripts/m7_evaluate.py','supervisor/planning/m7_service.py','supervisor/planning/typhon_service.py','supervisor/planning/simple_goal_classifier.py']
+    sources=['scripts/typhon_ab_evaluate.py','scripts/typhon_ab_parallel.py','scripts/typhon_harness.py','scripts/typhon_policy.py','scripts/m7_evaluate.py','supervisor/planning/m7_service.py','supervisor/planning/typhon_service.py','supervisor/planning/simple_goal_classifier.py']
     plan['code_sha256']={p:sha(ROOT/p) for p in sources}
     if (root/'plan.json').exists(): assert json.loads((root/'plan.json').read_text())==plan,'Frozen plan changed; new output required'
     else:save(root/'plan.json',plan)
@@ -129,8 +137,8 @@ def main(args):
             for mode in ('native','harness'):
                 folder=root/model/mode/s['scenario_id']
                 if (folder/'metrics.json').exists(): rows.append(json.loads((folder/'metrics.json').read_text()))
-    summarize(root,rows)
-    for model in args.models or plan['models']:
+    summarize(root,rows,planned,task_planned)
+    for model in plan['models']:
         checkpoint=checkpoints.get(model); policy=None
         if checkpoint and not checkpoint.exists():
             print(json.dumps({'pending_model':model,'reason':'checkpoint_not_present','path':str(checkpoint)}),flush=True);continue
@@ -161,22 +169,27 @@ def main(args):
                         settings=SimpleNamespace(output=root,checkpoint=checkpoint or ROOT/'.cache-xvla/checkpoint',
                             policy='m7' if checkpoint else 'm6',horizon_s=1.5,annotation_conditioned_v2=annotation,
                             max_candidates=1,execution_prefix=3,max_target_step_m=.12,decision_budget_s=None,
-                            source_decisions=1000000,baseline_decisions=1000000,source_wall_s=180.,
+                            source_decisions=1000000,baseline_decisions=1000000,source_wall_s=args.harness_wall_s,png_compress_level=args.png_compress_level,
                             episode_cutoff_only=True,calibrated_goal=True)
                         result=run_case(s,destination,classifier,policy,settings)
                     row=metrics(destination,model,mode)
                     # Both paths reset the exact same original scenario and seed.
                     other=next((r for r in rows if r['model']==model and r['scenario_id']==scenario['scenario_id'] and r['mode']!=mode),None)
                     if other:assert row['initial_state_sha256']==other['initial_state_sha256']
-                    save(destination/'metrics.json',row);rows.append(row);summarize(root,rows)
-                    print(json.dumps({'finished':model,'mode':mode,'scenario':scenario['scenario_id'],'success':row['success'],'wall_s':row['wall_seconds'],'completed':len(rows),'planned':400}),flush=True)
+                    save(destination/'metrics.json',row);rows.append(row);summarize(root,rows,planned,task_planned)
+                    print(json.dumps({'finished':model,'mode':mode,'scenario':scenario['scenario_id'],'success':row['success'],'wall_s':row['wall_seconds'],'completed':len(rows),'planned':planned}),flush=True)
         finally:
             if policy:policy.close()
     assert sha(original)==plan['source_sha256']
-    save(root/'validation.json',dict(completed=len(rows),planned=400,complete=len(rows)==400,
+    save(root/'validation.json',dict(completed=len(rows),planned=planned,complete=len(rows)==planned,
         counts={m:sum(r['model']==m for r in rows) for m in plan['models']},frozen_protocol_unchanged=True))
 
 
 if __name__=='__main__':
     ap=argparse.ArgumentParser();ap.add_argument('--output',type=Path,required=True);ap.add_argument('--models',nargs='*')
-    main(ap.parse_args())
+    ap.add_argument('--harness-wall-s',type=float,default=180.)
+    ap.add_argument('--shards',type=int,default=1);ap.add_argument('--shard-index',type=int,default=0)
+    ap.add_argument('--concurrency',type=int,default=1);ap.add_argument('--png-compress-level',type=int,default=6)
+    args=ap.parse_args()
+    if not (0<=args.shard_index<args.shards and args.harness_wall_s>0 and 0<=args.png_compress_level<=9):ap.error('invalid execution settings')
+    main(args)

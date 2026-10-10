@@ -1,0 +1,126 @@
+{
+  "schema": "typhon-ab40-parallel-v2",
+  "jobs": [
+    {
+      "id": "v4-m6-s0",
+      "model": "v4-m6",
+      "shard": 0
+    },
+    {
+      "id": "v1-m6-s0",
+      "model": "v1-m6",
+      "shard": 0
+    },
+    {
+      "id": "v2-m6-s0",
+      "model": "v2-m6",
+      "shard": 0
+    },
+    {
+      "id": "v3-m6-s0",
+      "model": "v3-m6",
+      "shard": 0
+    },
+    {
+      "id": "vanilla-pt-domain3-s0",
+      "model": "vanilla-pt-domain3",
+      "shard": 0
+    },
+    {
+      "id": "v4-m6-s1",
+      "model": "v4-m6",
+      "shard": 1
+    },
+    {
+      "id": "v1-m6-s1",
+      "model": "v1-m6",
+      "shard": 1
+    },
+    {
+      "id": "v2-m6-s1",
+      "model": "v2-m6",
+      "shard": 1
+    },
+    {
+      "id": "v3-m6-s1",
+      "model": "v3-m6",
+      "shard": 1
+    },
+    {
+      "id": "vanilla-pt-domain3-s1",
+      "model": "vanilla-pt-domain3",
+      "shard": 1
+    },
+    {
+      "id": "v4-m6-s2",
+      "model": "v4-m6",
+      "shard": 2
+    },
+    {
+      "id": "v1-m6-s2",
+      "model": "v1-m6",
+      "shard": 2
+    },
+    {
+      "id": "v2-m6-s2",
+      "model": "v2-m6",
+      "shard": 2
+    },
+    {
+      "id": "v3-m6-s2",
+      "model": "v3-m6",
+      "shard": 2
+    },
+    {
+      "id": "vanilla-pt-domain3-s2",
+      "model": "vanilla-pt-domain3",
+      "shard": 2
+    },
+    {
+      "id": "v4-m6-s3",
+      "model": "v4-m6",
+      "shard": 3
+    },
+    {
+      "id": "v1-m6-s3",
+      "model": "v1-m6",
+      "shard": 3
+    },
+    {
+      "id": "v2-m6-s3",
+      "model": "v2-m6",
+      "shard": 3
+    },
+    {
+      "id": "v3-m6-s3",
+      "model": "v3-m6",
+      "shard": 3
+    },
+    {
+      "id": "vanilla-pt-domain3-s3",
+      "model": "vanilla-pt-domain3",
+      "shard": 3
+    }
+  ],
+  "workers": 3,
+  "shards": 4,
+  "harness_wall_s": 30.0,
+  "planned_episodes": 400,
+  "candidate_count": 1,
+  "candidate_selection": false,
+  "policy_weights_unchanged": true,
+  "scenario_sha256": "6f525601c6e34fc1fe0047109e62671bcaacc733b7adc359cb853bb4908f4b98",
+  "code_sha256": {
+    "scripts/typhon_ab_evaluate.py": "abe2d758aeef4d8bec9046e7a34e29a8863d1a1212abbb955ee83540fa7b8c82",
+    "scripts/typhon_ab_parallel.py": "bc394d0ab1965e1bbba0cbd7e7c99b4803734014a108bcd9e070144dfe6c6f75",
+    "scripts/typhon_harness.py": "74b24f00fb40693c7d5bc9b2f88047a830483caba301b09871221120e68bae1e",
+    "scripts/typhon_policy.py": "3609291bb26c63f9041b0323fe971dca7f177dc37af6c833f9df52fcaaf14056",
+    "scripts/m7_evaluate.py": "79fd27adf51ef5ab2fb839e2f3e49ec9ba9766fa4a16f6742feef0893182d276",
+    "supervisor/planning/m7_service.py": "d2edb8864113d086dd462c00d9c0bdc4f778a8fcb15e533e8d8447d205dfecc3",
+    "supervisor/planning/typhon_service.py": "75c03298d4a5178c865c705ae4b61a1e1c5541eaa959a34098e17aeffa69c8e7",
+    "supervisor/planning/simple_goal_classifier.py": "449f01abf928e7b606fa377c88eaeedff188259528eb362c7307b2b2bf77ee4d"
+  },
+  "png_compression": "lossless PNG level1; same recorded RGB pixels",
+  "comparison_limit": "Wall-limited episodes share GPU/CPU and may execute different numbers of actions; report actual actions and sim/wall time. Native uses original1500 steps.",
+  "supersedes": "/var/tmp/typhon-ab40-20261010-v1; old results retained separately"
+}

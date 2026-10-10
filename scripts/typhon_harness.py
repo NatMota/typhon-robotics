@@ -162,7 +162,7 @@ def run_case(scenario,output,classifier,policy,args):
             frames={}
             for camera,rgb in observation['rgb'].items():
                 path=output/f'{index:04d}-{camera}.png'
-                imageio.imwrite(path,rgb)
+                imageio.imwrite(path,rgb,compress_level=getattr(args,'png_compress_level',6))
                 frames[camera]={'path':path.name,'sha256_rgb':hashlib.sha256(rgb.tobytes()).hexdigest(),
                     'source':'opaque sensor-fault diagnostic from current render' if occluded else 'current MuJoCo camera render',
                     'camera':camera,'capture_timestamp_unix':captured_unix,'control_step':env.steps}
