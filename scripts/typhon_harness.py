@@ -26,7 +26,7 @@ from supervisor.feeding_loading.environment import FeedingLoadingEnv
 from supervisor.feeding_loading.evaluation import score_episode
 from supervisor.planning.m7_service import ServiceConfig, SupervisorService, log_value
 from supervisor.planning.m7_telemetry import attach_live, mark_finished
-from supervisor.planning.typhon_service import TyphonGoalChecker
+from supervisor.planning.typhon_service import TyphonGoalChecker, calibrated_goal_context
 
 CHECKPOINT=ROOT/'results/personal-m6-joint-20261009/training/final.pt'
 PROTOCOL=ROOT/'results/personal-m6-joint-20261009/evaluation_protocol.json'
@@ -92,14 +92,20 @@ def run_case(scenario,output,classifier,policy,args):
     save(output/'scenario.json',scenario)
     reference=goal_reference(scenario)
     for camera,rgb in reference.items(): imageio.imwrite(output/f'goal-{camera}.png',rgb)
-    config=scenario['config']
-    context={'task_family':config['task']['type'],'target_yaw_rad':config['task']['target_yaw_rad'],
+    config=copy.deepcopy(scenario['config'])
+    cutoff_only=getattr(args,'episode_cutoff_only',False)
+    if cutoff_only:
+        # User requested a wall-clock precaution, not an artificial simulated-time limit.
+        config['control']['max_steps']=100000000
+    context=calibrated_goal_context(config) if getattr(args,'calibrated_goal',False) else {
+        'task_family':config['task']['type'],'target_yaw_rad':config['task']['target_yaw_rad'],
         'visual_version':config['object']['visual_version'],
         'position_tolerance_m':config['evaluation']['position_tolerance_m'],
         'target_region_size_m':config['task']['target_region_size_m'],
         'stability_position_tolerance_m':config['evaluation']['stability_position_tolerance_m'],
         'camera_height_m':config['cameras']['overhead']['position_m'][2],
         'table_height_m':config['workspace']['table_z_m'],'object_height_m':config['object']['height_m']}
+    save(output/'runtime-config.json',config)
     checker=TyphonGoalChecker(classifier,context)
     env=FeedingLoadingEnv(config)
     writer=recorder=live=telemetry=None
@@ -128,7 +134,8 @@ def run_case(scenario,output,classifier,policy,args):
         service_config=ServiceConfig(config['control']['workspace_bounds_m'],limits,
             no_go_boxes_m=([[-.48,-.40],[.30,.40],[.82,1.30]],),max_candidates=args.max_candidates,execution_prefix=args.execution_prefix,
             max_chunk_steps=round(args.horizon_s*20),max_target_step_m=args.max_target_step_m,
-            decision_budget_s=args.decision_budget_s,observation_max_age_s=args.decision_budget_s,
+            decision_budget_s=None if cutoff_only else args.decision_budget_s,
+            observation_max_age_s=None if cutoff_only else args.decision_budget_s,
             completion_frames=config['evaluation']['minimum_stability_samples'],
             completion_min_span_s=config['evaluation']['minimum_stability_duration_s'],
             visual_success_authority='simple_image_classifier')
@@ -139,8 +146,10 @@ def run_case(scenario,output,classifier,policy,args):
             policy.bind(env,output)
             policy.observe_step(first,env.steps)
         source=scenario.get('group') not in ('completed','generated_classifier_harness_diagnostic')
-        max_decisions=args.source_decisions if source else args.baseline_decisions
-        wall_budget=args.source_wall_s if source else 90.
+        max_decisions=1000000 if cutoff_only else (args.source_decisions if source else args.baseline_decisions)
+        wall_budget=args.source_wall_s if (source or cutoff_only) else 90.
+        start=time.monotonic()  # Model loading and scene setup are outside the precaution cutoff.
+        episode_deadline=start+wall_budget
         hold_steps=2
         for index in range(max_decisions):
             if time.monotonic()-start>=wall_budget:
@@ -159,7 +168,7 @@ def run_case(scenario,output,classifier,policy,args):
                     'camera':camera,'capture_timestamp_unix':captured_unix,'control_step':env.steps}
             telemetry.write(json.dumps(log_value({'type':'observation',**measured(env,observation),'frames':frames}))+'\n')
             if live: live.publish(env,observation,phase='classifier_check',force=True)
-            decision=service.step(observation,reference,env.steps,observed_at)
+            decision=service.step(observation,reference,env.steps,observed_at,episode_deadline=episode_deadline if cutoff_only else None)
             decision['event']['frames']=frames
             events.append(decision['event'])
             if live: live.publish(env,observation,phase='typhon_decision',status=decision['status'],
@@ -227,7 +236,8 @@ def run_case(scenario,output,classifier,policy,args):
             'classifier_wall_s':[e['checker']['wall_s'] for e in events if e.get('checker')],
             'stop_reason':stop_reason,'run_wall_s':time.monotonic()-start,
             'object_displacement_m':float(np.linalg.norm(np.array(final_truth['object_position_m'])-initial_truth['object_position_m'])),
-            'source_attempt_bound':{'max_decisions':max_decisions,'wall_s':wall_budget,'max_control_steps':config['control']['max_steps']},
+            'source_attempt_bound':{'max_decisions':None if cutoff_only else max_decisions,'wall_s':wall_budget,'max_control_steps':None if cutoff_only else config['control']['max_steps']},
+            'per_decision_deadline_enabled':not cutoff_only,
             'goal_context':context,'inference_pauses_simulation':True,'no_training':True,'expert_rescue':False,
             'guards_scope':'current measured joints/speeds; proposed swept EEF workspace and no-go segments; no whole-arm prediction',
             'image_stability_scope':'fresh repeated visual status and image position; continuous visual yaw not estimated',
@@ -266,6 +276,8 @@ def main():
     parser.add_argument('--protocol',type=Path,default=PROTOCOL)
     parser.add_argument('--horizon-s',type=float,choices=[1.5,4.0],default=1.5)
     parser.add_argument('--annotation-conditioned-v2',action='store_true')
+    parser.add_argument('--episode-cutoff-only',action='store_true',help='Only the whole-episode wall cutoff applies; no per-call or simulated-time limit.')
+    parser.add_argument('--calibrated-goal',action='store_true',help='Use supplied goal and camera calibration for feeding/loading target regions.')
     parser.add_argument('--max-candidates',type=int,default=1,help='Default: one proposal without ranking. Values >1 opt into legacy candidate selection.')
     parser.add_argument('--execution-prefix',type=int,default=3)
     parser.add_argument('--max-target-step-m',type=float,default=.12)

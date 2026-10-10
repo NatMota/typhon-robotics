@@ -144,8 +144,8 @@ class ServiceConfig:
     max_candidates: int = 1
     execution_prefix: int = 3
     max_chunk_steps: int = 30
-    decision_budget_s: float = 6.
-    observation_max_age_s: float = 6.
+    decision_budget_s: float | None = 6.
+    observation_max_age_s: float | None = 6.
     completion_frames: int = 3
     completion_min_span_s: float = .1
     completion_confidence: float = .8
@@ -164,8 +164,11 @@ class ServiceConfig:
                 raise ValueError('no_go_box')
         if not 1 <= self.max_candidates <= 8 or not 1 <= self.execution_prefix <= 30 or self.completion_frames < 2 or not 1 <= self.max_chunk_steps <= 80:
             raise ValueError('invalid_count_budget')
-        if not all(math.isfinite(v) for v in (self.decision_budget_s, self.observation_max_age_s, self.max_target_step_m, self.max_joint_speed_rad_s, self.clearance_m, self.completion_min_span_s, self.completion_confidence)) or min(self.decision_budget_s, self.observation_max_age_s, self.max_target_step_m, self.max_joint_speed_rad_s) <= 0 or self.clearance_m < 0 or self.completion_min_span_s < 0 or not 0 <= self.completion_confidence <= 1:
+        if not all(math.isfinite(v) for v in (self.max_target_step_m, self.max_joint_speed_rad_s, self.clearance_m, self.completion_min_span_s, self.completion_confidence)) or min(self.max_target_step_m, self.max_joint_speed_rad_s) <= 0 or self.clearance_m < 0 or self.completion_min_span_s < 0 or not 0 <= self.completion_confidence <= 1:
             raise ValueError('invalid_budget_or_margin')
+        for budget in (self.decision_budget_s, self.observation_max_age_s):
+            if budget is not None and (not math.isfinite(budget) or budget <= 0):
+                raise ValueError('invalid_optional_time_budget')
 
 
 class Guard:
@@ -243,9 +246,11 @@ class SupervisorService:
             return 'action_deadline'
         return self.guard.candidate(np.asarray([target]), observation)
 
-    def step(self, observation, reference, frame_id, observed_at):
+    def step(self, observation, reference, frame_id, observed_at, episode_deadline=None):
         start = self.clock()
-        deadline = min(start + self.config.decision_budget_s, observed_at + self.config.observation_max_age_s)
+        deadline = min(start + (self.config.decision_budget_s if self.config.decision_budget_s is not None else math.inf),
+                       observed_at + (self.config.observation_max_age_s if self.config.observation_max_age_s is not None else math.inf),
+                       episode_deadline if episode_deadline is not None else math.inf)
         event = {'type': 'decision', 'episode_id': self.episode_id, 'index': self.decisions,
                  'frame_id': str(frame_id), 'observation_age_s': start-observed_at,
                  'image_sha256': {k: hashlib.sha256(np.asarray(v).tobytes()).hexdigest() for k, v in observation['rgb'].items()},

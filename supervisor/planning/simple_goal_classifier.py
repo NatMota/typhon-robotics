@@ -90,7 +90,10 @@ class GoalSuccessClassifier:
         result={'status':'unknown','confidence':0.,'score':0.,'threshold':self.threshold,
                 'reason':'unsupported_goal','model_sha256':self.model_sha256,
                 'evidence':{},'visual_checks':{},'confidence_type':'uncalibrated softmax; validation-selected abstention threshold'}
-        if context.get('task_family',context.get('type','feeding'))!='feeding':return result
+        task_family = context.get('task_family', context.get('type', 'feeding'))
+        if task_family not in ('feeding', 'loading'): return result
+        if task_family == 'loading' and context.get('target_polygon_px') is None:
+            result['reason'] = 'loading_requires_declared_fixture_projection'; return result
         if context.get('visual_version','duplo_31110pb074_v2')!='duplo_31110pb074_v2':return result
         if context.get('camera','overhead') not in ('primary','overhead'):return result
         try:

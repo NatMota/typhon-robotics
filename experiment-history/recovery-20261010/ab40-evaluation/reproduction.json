@@ -1,0 +1,12 @@
+{
+  "cwd": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010",
+  "command": ".venv-sim/bin/python -u scripts/typhon_ab_evaluate.py --output /var/tmp/typhon-ab40-20261010-v1",
+  "status": "in_progress",
+  "result_root": "/var/tmp/typhon-ab40-20261010-v1",
+  "planned_episodes": 400,
+  "scope": "Released X-VLA-Pt domain3 plus V1/V2/V3/V4 final M6; original 20 feeding and 20 loading cases each; paired native and single-proposal harness.",
+  "setup_checks": "29 focused service tests; 14 rendering/classifier checks across feeding/loading, directed orientations, rotated goals and outside-target cases.",
+  "budget_note": "Harness is cut off after 180 wall seconds, including inference and evidence logging, after model/scene setup. Native retains the original 1500-step control budget. This is an end-to-end package comparison with unequal compute budgets.",
+  "timeout_note": "A model call interrupted by the whole-episode deadline is retained in raw runtime_errors. Distinguish that expected cutoff from an integration exception.",
+  "outputs": "plan.json, per-episode metrics/action and evaluator trajectories/RGB videos, incremental episode-metrics.csv, comparison.csv, progress.json, final validation.json"
+}

@@ -72,6 +72,20 @@ class ServiceTests(unittest.TestCase):
         self.assertEqual(result['reason'], 'decision_deadline')
         self.assertIsNone(result['actions'])
 
+    def test_episode_cutoff_without_per_decision_timeout(self):
+        self.config.decision_budget_s = None
+        self.config.observation_max_age_s = None
+        def proposer(observation, deadline):
+            self.assertEqual(deadline, 190.)
+            self.clock[0] += 40.
+            return self.actions
+        service = self.make(proposer=proposer)
+        result = service.step(self.observation, {}, 1, 10., episode_deadline=190.)
+        self.assertEqual(result['status'], 'execute')
+        self.assertEqual(result['valid_until'], 190.)
+        self.clock[0] = 190.
+        self.assertEqual(service.check_execution(self.actions[0], self.observation, result['valid_until']), 'action_deadline')
+
     def test_target_and_joint_boundaries(self):
         guard = Guard(self.config)
         actions = self.actions.copy()

@@ -9,6 +9,31 @@ import numpy as np
 from supervisor.planning.m7_service import log_value
 
 
+def calibrated_goal_context(config):
+    """Project supplied goal geometry, never observed object truth, into overhead RGB."""
+    camera, task, workspace = config['cameras']['overhead'], config['task'], config['workspace']
+    if not np.allclose(camera.get('quat_wxyz'), [1, 0, 0, 0]):
+        raise ValueError('Goal projection supports the declared vertical overhead camera only')
+    loading = task['type'] == 'loading'
+    surface = workspace['table_z_m'] + (workspace['fixture_floor_height_m'] if loading else 0.)
+    size = workspace['fixture_inner_size_m'] if loading else task['target_region_size_m']
+    cx, cy, cz = camera['position_m']; yaw = task['target_yaw_rad']
+    co, si = math.cos(yaw), math.sin(yaw)
+    rotation = np.array([[co, -si], [si, co]])
+    corners = np.array([[-1, -1], [1, -1], [1, 1], [-1, 1]]) * size / 2
+    corners = corners @ rotation.T + np.array(task['target_position_xy_m'])
+    focal = .5 * camera['height'] / math.tan(math.radians(camera['fovy_deg']) / 2)
+    principal = np.array([(camera['width'] - 1) / 2, (camera['height'] - 1) / 2])
+    pixels = (corners - [cx, cy]) * focal / (cz - surface) * [1, -1] + principal
+    return dict(task_family=task['type'], target_yaw_rad=yaw,
+        visual_version=config['object']['visual_version'],
+        position_tolerance_m=config['evaluation']['position_tolerance_m'], target_region_size_m=size,
+        stability_position_tolerance_m=config['evaluation']['stability_position_tolerance_m'],
+        camera_height_m=cz, table_height_m=surface, object_height_m=config['object']['height_m'],
+        target_polygon_px=pixels.tolist(),
+        target_geometry_source='supplied task goal, dimensions and fixed-camera calibration; no observed object truth')
+
+
 class TyphonGoalChecker:
     def __init__(self, classifier, goal_context):
         self.classifier = classifier
