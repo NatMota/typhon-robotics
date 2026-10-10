@@ -124,9 +124,9 @@ This is fixed-camera, coloured-brick, overhead **feeding** evidence. Loading ret
 
 ### Execution service
 
-The service can sample up to three X-VLA proposals, reject paths outside configured end-effector regions, check measured joint limits/speeds, rank remaining candidates by path length and second-difference cost, and execute a short prefix before observing again. It records measured joint position/velocity, gripper and end-effector state, simulated actuator torque, commands, rejections and image timestamps.
+The current default requests one X-VLA proposal per decision, checks configured end-effector regions and measured joint limits/speeds, and executes a short prefix before observing again. Candidate ranking and within-decision resampling are disabled; a rejected proposal causes a hold. To reproduce earlier three-candidate experiments, explicitly pass `--max-candidates 3`. It records measured joint position/velocity, gripper and end-effector state, simulated actuator torque, commands, rejections and image timestamps.
 
-This is bounded candidate selection, not learned-value search or simulator lookahead. End-effector zone checks are not whole-arm collision checking. The simulator pauses during inference. Qwen3-VL integration is available experimentally; the validated completion path uses the small classifier because Qwen produced contradictory outputs in these tests.
+The optional legacy mode uses bounded candidate selection; neither mode performs learned-value search or simulator lookahead. End-effector zone checks are not whole-arm collision checking. The simulator pauses during inference. Qwen3-VL integration is available experimentally; the validated completion path uses the small classifier because Qwen produced contradictory outputs in these tests.
 
 ## Training matrix
 

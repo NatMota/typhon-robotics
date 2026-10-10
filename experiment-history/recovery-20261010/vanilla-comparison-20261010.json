@@ -1,0 +1,426 @@
+{
+  "created_utc": "2026-10-10T17:00:28.015901+00:00",
+  "task_definitions": {
+    "A": "feeding: move block into staging square with correct orientation",
+    "B": "loading: seat staged block in shallow fixture"
+  },
+  "metric": "Strict full task success; already-completed preservation is excluded from unfinished-task success",
+  "matched_original_A_B": [
+    {
+      "model": "M3-F",
+      "task": "feeding",
+      "successes": 0,
+      "episodes": 20,
+      "success_rate_percent": 0.0,
+      "vanilla_success_rate_percent": 0.0,
+      "improvement_percentage_points": 0.0,
+      "relative_success_improvement_percent": null,
+      "relative_improvement_reason": "Undefined: vanilla success rate is zero",
+      "mean_position_error_mm": 146.5288219779758,
+      "mean_yaw_error_deg": 84.75000000013577,
+      "position_error_reduction_percent": 0.0,
+      "yaw_error_reduction_percent": 0.0
+    },
+    {
+      "model": "M3-F",
+      "task": "loading",
+      "successes": 0,
+      "episodes": 20,
+      "success_rate_percent": 0.0,
+      "vanilla_success_rate_percent": 0.0,
+      "improvement_percentage_points": 0.0,
+      "relative_success_improvement_percent": null,
+      "relative_improvement_reason": "Undefined: vanilla success rate is zero",
+      "mean_position_error_mm": 360.50967422664803,
+      "mean_yaw_error_deg": 84.75000000004097,
+      "position_error_reduction_percent": 0.0,
+      "yaw_error_reduction_percent": 0.0
+    },
+    {
+      "model": "M3-P17",
+      "task": "feeding",
+      "successes": 0,
+      "episodes": 20,
+      "success_rate_percent": 0.0,
+      "vanilla_success_rate_percent": 0.0,
+      "improvement_percentage_points": 0.0,
+      "relative_success_improvement_percent": null,
+      "relative_improvement_reason": "Undefined: vanilla success rate is zero",
+      "mean_position_error_mm": 146.52882197577065,
+      "mean_yaw_error_deg": 84.75000000052071,
+      "position_error_reduction_percent": 1.5049292963729717e-09,
+      "yaw_error_reduction_percent": -4.542107758404427e-10
+    },
+    {
+      "model": "M3-P17",
+      "task": "loading",
+      "successes": 0,
+      "episodes": 20,
+      "success_rate_percent": 0.0,
+      "vanilla_success_rate_percent": 0.0,
+      "improvement_percentage_points": 0.0,
+      "relative_success_improvement_percent": null,
+      "relative_improvement_reason": "Undefined: vanilla success rate is zero",
+      "mean_position_error_mm": 360.50967422664803,
+      "mean_yaw_error_deg": 84.75000000004097,
+      "position_error_reduction_percent": 0.0,
+      "yaw_error_reduction_percent": 0.0
+    },
+    {
+      "model": "M3-P29",
+      "task": "feeding",
+      "successes": 0,
+      "episodes": 20,
+      "success_rate_percent": 0.0,
+      "vanilla_success_rate_percent": 0.0,
+      "improvement_percentage_points": 0.0,
+      "relative_success_improvement_percent": null,
+      "relative_improvement_reason": "Undefined: vanilla success rate is zero",
+      "mean_position_error_mm": 146.52882197577065,
+      "mean_yaw_error_deg": 84.75000000052071,
+      "position_error_reduction_percent": 1.5049292963729717e-09,
+      "yaw_error_reduction_percent": -4.542107758404427e-10
+    },
+    {
+      "model": "M3-P29",
+      "task": "loading",
+      "successes": 0,
+      "episodes": 20,
+      "success_rate_percent": 0.0,
+      "vanilla_success_rate_percent": 0.0,
+      "improvement_percentage_points": 0.0,
+      "relative_success_improvement_percent": null,
+      "relative_improvement_reason": "Undefined: vanilla success rate is zero",
+      "mean_position_error_mm": 360.50967422664803,
+      "mean_yaw_error_deg": 84.75000000004097,
+      "position_error_reduction_percent": 0.0,
+      "yaw_error_reduction_percent": 0.0
+    },
+    {
+      "model": "M3-S17",
+      "task": "feeding",
+      "successes": 0,
+      "episodes": 20,
+      "success_rate_percent": 0.0,
+      "vanilla_success_rate_percent": 0.0,
+      "improvement_percentage_points": 0.0,
+      "relative_success_improvement_percent": null,
+      "relative_improvement_reason": "Undefined: vanilla success rate is zero",
+      "mean_position_error_mm": 146.52882197577065,
+      "mean_yaw_error_deg": 84.75000000052071,
+      "position_error_reduction_percent": 1.5049292963729717e-09,
+      "yaw_error_reduction_percent": -4.542107758404427e-10
+    },
+    {
+      "model": "M3-S17",
+      "task": "loading",
+      "successes": 0,
+      "episodes": 20,
+      "success_rate_percent": 0.0,
+      "vanilla_success_rate_percent": 0.0,
+      "improvement_percentage_points": 0.0,
+      "relative_success_improvement_percent": null,
+      "relative_improvement_reason": "Undefined: vanilla success rate is zero",
+      "mean_position_error_mm": 360.50967422664803,
+      "mean_yaw_error_deg": 84.75000000004097,
+      "position_error_reduction_percent": 0.0,
+      "yaw_error_reduction_percent": 0.0
+    },
+    {
+      "model": "M3-S29",
+      "task": "feeding",
+      "successes": 0,
+      "episodes": 20,
+      "success_rate_percent": 0.0,
+      "vanilla_success_rate_percent": 0.0,
+      "improvement_percentage_points": 0.0,
+      "relative_success_improvement_percent": null,
+      "relative_improvement_reason": "Undefined: vanilla success rate is zero",
+      "mean_position_error_mm": 146.52882197577065,
+      "mean_yaw_error_deg": 84.75000000052071,
+      "position_error_reduction_percent": 1.5049292963729717e-09,
+      "yaw_error_reduction_percent": -4.542107758404427e-10
+    },
+    {
+      "model": "M3-S29",
+      "task": "loading",
+      "successes": 0,
+      "episodes": 20,
+      "success_rate_percent": 0.0,
+      "vanilla_success_rate_percent": 0.0,
+      "improvement_percentage_points": 0.0,
+      "relative_success_improvement_percent": null,
+      "relative_improvement_reason": "Undefined: vanilla success rate is zero",
+      "mean_position_error_mm": 360.50967422664803,
+      "mean_yaw_error_deg": 84.75000000004097,
+      "position_error_reduction_percent": 0.0,
+      "yaw_error_reduction_percent": 0.0
+    },
+    {
+      "model": "M4-PN",
+      "task": "feeding",
+      "successes": 0,
+      "episodes": 20,
+      "success_rate_percent": 0.0,
+      "vanilla_success_rate_percent": 0.0,
+      "improvement_percentage_points": 0.0,
+      "relative_success_improvement_percent": null,
+      "relative_improvement_reason": "Undefined: vanilla success rate is zero",
+      "mean_position_error_mm": 146.52882197729167,
+      "mean_yaw_error_deg": 84.74999999987244,
+      "position_error_reduction_percent": 4.668972004716486e-10,
+      "yaw_error_reduction_percent": 3.1071048716492186e-10
+    },
+    {
+      "model": "M4-PN",
+      "task": "loading",
+      "successes": 0,
+      "episodes": 20,
+      "success_rate_percent": 0.0,
+      "vanilla_success_rate_percent": 0.0,
+      "improvement_percentage_points": 0.0,
+      "relative_success_improvement_percent": null,
+      "relative_improvement_reason": "Undefined: vanilla success rate is zero",
+      "mean_position_error_mm": 360.50967422664803,
+      "mean_yaw_error_deg": 84.75000000004097,
+      "position_error_reduction_percent": 0.0,
+      "yaw_error_reduction_percent": 0.0
+    },
+    {
+      "model": "M4-PR",
+      "task": "feeding",
+      "successes": 0,
+      "episodes": 20,
+      "success_rate_percent": 0.0,
+      "vanilla_success_rate_percent": 0.0,
+      "improvement_percentage_points": 0.0,
+      "relative_success_improvement_percent": null,
+      "relative_improvement_reason": "Undefined: vanilla success rate is zero",
+      "mean_position_error_mm": 161.08744568425212,
+      "mean_yaw_error_deg": 79.33779521401938,
+      "position_error_reduction_percent": -9.935672388374595,
+      "yaw_error_reduction_percent": 6.386082343489934
+    },
+    {
+      "model": "M4-PR",
+      "task": "loading",
+      "successes": 0,
+      "episodes": 20,
+      "success_rate_percent": 0.0,
+      "vanilla_success_rate_percent": 0.0,
+      "improvement_percentage_points": 0.0,
+      "relative_success_improvement_percent": null,
+      "relative_improvement_reason": "Undefined: vanilla success rate is zero",
+      "mean_position_error_mm": 360.50967422664803,
+      "mean_yaw_error_deg": 84.75000000004097,
+      "position_error_reduction_percent": 0.0,
+      "yaw_error_reduction_percent": 0.0
+    }
+  ],
+  "later_original_M5_M6": [
+    {
+      "phase": "m5",
+      "model": "F",
+      "task": "feeding",
+      "unfinished_successes": 0,
+      "unfinished_episodes": 6,
+      "loading_evaluated": false,
+      "baseline_note": "M5 uses F (Libero); M6 primary comparator custom-init and separate vanilla-domain3 diagnostic. Not a common cross-phase baseline."
+    },
+    {
+      "phase": "m5",
+      "model": "C3000",
+      "task": "feeding",
+      "unfinished_successes": 0,
+      "unfinished_episodes": 6,
+      "loading_evaluated": false,
+      "baseline_note": "M5 uses F (Libero); M6 primary comparator custom-init and separate vanilla-domain3 diagnostic. Not a common cross-phase baseline."
+    },
+    {
+      "phase": "m5",
+      "model": "A3000",
+      "task": "feeding",
+      "unfinished_successes": 0,
+      "unfinished_episodes": 6,
+      "loading_evaluated": false,
+      "baseline_note": "M5 uses F (Libero); M6 primary comparator custom-init and separate vanilla-domain3 diagnostic. Not a common cross-phase baseline."
+    },
+    {
+      "phase": "m6",
+      "model": "custom-init",
+      "task": "feeding",
+      "unfinished_successes": 0,
+      "unfinished_episodes": 6,
+      "loading_evaluated": false,
+      "baseline_note": "M5 uses F (Libero); M6 primary comparator custom-init and separate vanilla-domain3 diagnostic. Not a common cross-phase baseline."
+    },
+    {
+      "phase": "m6",
+      "model": "FT3000",
+      "task": "feeding",
+      "unfinished_successes": 0,
+      "unfinished_episodes": 6,
+      "loading_evaluated": false,
+      "baseline_note": "M5 uses F (Libero); M6 primary comparator custom-init and separate vanilla-domain3 diagnostic. Not a common cross-phase baseline."
+    },
+    {
+      "phase": "m6",
+      "model": "vanilla-domain3",
+      "task": "feeding",
+      "unfinished_successes": 0,
+      "unfinished_episodes": 6,
+      "loading_evaluated": false,
+      "baseline_note": "M5 uses F (Libero); M6 primary comparator custom-init and separate vanilla-domain3 diagnostic. Not a common cross-phase baseline."
+    }
+  ],
+  "latest_four_runs_common_1_5s": [
+    {
+      "model": "v1-m3",
+      "unfinished_feeding_successes": 0,
+      "unfinished_feeding_episodes": 6,
+      "loading_evaluated": false,
+      "matched_vanilla_evaluated": false,
+      "improvement_vs_matched_vanilla_percent": null
+    },
+    {
+      "model": "v1-m4",
+      "unfinished_feeding_successes": 0,
+      "unfinished_feeding_episodes": 6,
+      "loading_evaluated": false,
+      "matched_vanilla_evaluated": false,
+      "improvement_vs_matched_vanilla_percent": null
+    },
+    {
+      "model": "v1-m5",
+      "unfinished_feeding_successes": 0,
+      "unfinished_feeding_episodes": 6,
+      "loading_evaluated": false,
+      "matched_vanilla_evaluated": false,
+      "improvement_vs_matched_vanilla_percent": null
+    },
+    {
+      "model": "v1-m6",
+      "unfinished_feeding_successes": 0,
+      "unfinished_feeding_episodes": 6,
+      "loading_evaluated": false,
+      "matched_vanilla_evaluated": false,
+      "improvement_vs_matched_vanilla_percent": null
+    },
+    {
+      "model": "v2-m3",
+      "unfinished_feeding_successes": 0,
+      "unfinished_feeding_episodes": 6,
+      "loading_evaluated": false,
+      "matched_vanilla_evaluated": false,
+      "improvement_vs_matched_vanilla_percent": null
+    },
+    {
+      "model": "v2-m4",
+      "unfinished_feeding_successes": 0,
+      "unfinished_feeding_episodes": 6,
+      "loading_evaluated": false,
+      "matched_vanilla_evaluated": false,
+      "improvement_vs_matched_vanilla_percent": null
+    },
+    {
+      "model": "v2-m5",
+      "unfinished_feeding_successes": 0,
+      "unfinished_feeding_episodes": 6,
+      "loading_evaluated": false,
+      "matched_vanilla_evaluated": false,
+      "improvement_vs_matched_vanilla_percent": null
+    },
+    {
+      "model": "v2-m6",
+      "unfinished_feeding_successes": 0,
+      "unfinished_feeding_episodes": 6,
+      "loading_evaluated": false,
+      "matched_vanilla_evaluated": false,
+      "improvement_vs_matched_vanilla_percent": null
+    },
+    {
+      "model": "v3-m3",
+      "unfinished_feeding_successes": 0,
+      "unfinished_feeding_episodes": 6,
+      "loading_evaluated": false,
+      "matched_vanilla_evaluated": false,
+      "improvement_vs_matched_vanilla_percent": null
+    },
+    {
+      "model": "v3-m4",
+      "unfinished_feeding_successes": 0,
+      "unfinished_feeding_episodes": 6,
+      "loading_evaluated": false,
+      "matched_vanilla_evaluated": false,
+      "improvement_vs_matched_vanilla_percent": null
+    },
+    {
+      "model": "v3-m5",
+      "unfinished_feeding_successes": 0,
+      "unfinished_feeding_episodes": 6,
+      "loading_evaluated": false,
+      "matched_vanilla_evaluated": false,
+      "improvement_vs_matched_vanilla_percent": null
+    },
+    {
+      "model": "v3-m6",
+      "unfinished_feeding_successes": 0,
+      "unfinished_feeding_episodes": 6,
+      "loading_evaluated": false,
+      "matched_vanilla_evaluated": false,
+      "improvement_vs_matched_vanilla_percent": null
+    },
+    {
+      "model": "v4-m3",
+      "unfinished_feeding_successes": 0,
+      "unfinished_feeding_episodes": 6,
+      "loading_evaluated": false,
+      "matched_vanilla_evaluated": false,
+      "improvement_vs_matched_vanilla_percent": null
+    },
+    {
+      "model": "v4-m4",
+      "unfinished_feeding_successes": 0,
+      "unfinished_feeding_episodes": 6,
+      "loading_evaluated": false,
+      "matched_vanilla_evaluated": false,
+      "improvement_vs_matched_vanilla_percent": null
+    },
+    {
+      "model": "v4-m5",
+      "unfinished_feeding_successes": 0,
+      "unfinished_feeding_episodes": 6,
+      "loading_evaluated": false,
+      "matched_vanilla_evaluated": false,
+      "improvement_vs_matched_vanilla_percent": null
+    },
+    {
+      "model": "v4-m6",
+      "unfinished_feeding_successes": 0,
+      "unfinished_feeding_episodes": 6,
+      "loading_evaluated": false,
+      "matched_vanilla_evaluated": false,
+      "improvement_vs_matched_vanilla_percent": null
+    }
+  ],
+  "source_sha256": {
+    "frozen_results/personal-m3-20261009/evaluation/F/summary.json": "d8a3f4ab0376fa9f724e2faa6e2129e80650a29c18fb51584bc4592babbfa1eb",
+    "frozen_results/personal-m3-20261009/evaluation/P17/summary.json": "b73fdd092d1a9421d65eab29a42daa71217ae9b863051dc8e9be5b4fbc52fcfb",
+    "frozen_results/personal-m3-20261009/evaluation/P29/summary.json": "136aae9c2211445d1f5cf3894957030881312b5f684bd5ae58cb62ed612b9188",
+    "frozen_results/personal-m3-20261009/evaluation/S17/summary.json": "4fe64313c6cf4521c8149e8005b916fe4d45629583dead84bc65874713122952",
+    "frozen_results/personal-m3-20261009/evaluation/S29/summary.json": "211b3783bebb2bf020477a2cfd835baf365b8b767426372f74700822e00d006e",
+    "frozen_results/personal-m4-20261009/original/PN/summary.json": "912f3dfbfc9f18009b5b1fd40ec56e1aa984a8123f2fc96247713a5fc0cb3bdc",
+    "frozen_results/personal-m4-20261009/original/PR/summary.json": "2efa8d480c9077e6f574199c85c74426524feedfadfb808d675b13cd9b96e4a1",
+    "evidence/m5/comparisons.csv": "708cb74fd00aaa6028ce376d2b97950a0bfc207885dbd8a86b4fde3075c3aed3",
+    "evidence/m6/comparisons.csv": "07a1763a33fc33b53ce83256963505b5531594f4e3c7ca919f9148f339e1d09b",
+    "experiment-history/recovery-20261010/frozen-motion-audit.csv": "ddf2ece6778e9b472da248cb73447d35ad211cdc0e5d4f75cecda49670109d4b",
+    "experiment-history/recovery-20261010/episodes.csv": "57c8a49dd3c1fef54f4e31b6ec83ee759ac8bae3f172fb0a6c999c896dbf9fbd"
+  },
+  "change_validation": {
+    "single_proposal_default": true,
+    "ranking_disabled_for_single_proposal": true,
+    "within_decision_resampling_disabled": true,
+    "focused_unit_tests_passed": 30,
+    "new_robot_rollouts_run": false
+  }
+}

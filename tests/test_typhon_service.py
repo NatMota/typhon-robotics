@@ -57,7 +57,7 @@ class TyphonTests(unittest.TestCase):
     def test_native_incomplete_proposes_without_subjective_confidence_gate(self):
         decision = self.step(self.service(['incomplete']),0)
         self.assertEqual(decision['status'], 'execute')
-        self.assertEqual(len(self.calls),3)
+        self.assertEqual(len(self.calls),1)
 
     def test_qwen_result_cannot_claim_classifier_authority(self):
         self.assertEqual(self.step(self.service(['complete'], kind='qwen'),0)['reason'], 'checker_error')

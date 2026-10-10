@@ -141,7 +141,7 @@ class ServiceConfig:
     clearance_m: float = .015
     max_joint_speed_rad_s: float = 3.
     max_target_step_m: float = .12
-    max_candidates: int = 3
+    max_candidates: int = 1
     execution_prefix: int = 3
     max_chunk_steps: int = 30
     decision_budget_s: float = 6.
@@ -318,9 +318,11 @@ class SupervisorService:
                 item = {'index': index, 'actions': log_actions, 'rejection': reason, 'latency_s': self.clock()-at}
                 event['candidates'].append(item)
                 if reason is None:
-                    path = np.vstack([observation['proprio']['eef_position_m'], actions[:, :3]])
-                    score = float(np.linalg.norm(np.diff(path, axis=0), axis=1).sum() + 2*np.linalg.norm(np.diff(path, n=2, axis=0), axis=1).sum())
-                    item['smoothness_cost'] = score
+                    score = 0.
+                    if self.config.max_candidates > 1:
+                        path = np.vstack([observation['proprio']['eef_position_m'], actions[:, :3]])
+                        score = float(np.linalg.norm(np.diff(path, axis=0), axis=1).sum() + 2*np.linalg.norm(np.diff(path, n=2, axis=0), axis=1).sum())
+                        item['smoothness_cost'] = score
                     accepted.append((score, index, actions))
             except Exception as exc:
                 event['candidates'].append({'index': index, 'error': str(exc), 'latency_s': self.clock()-at})
@@ -330,9 +332,13 @@ class SupervisorService:
             return finish('hold', 'decision_deadline')
         if not accepted:
             return finish('hold', 'no_admissible_candidate')
-        _, chosen, actions = min(accepted, key=lambda value: value[0])
+        if self.config.max_candidates == 1:
+            _, chosen, actions = accepted[0]
+            event['selection_rule'] = 'single proposal; no candidate ranking or resampling'
+        else:
+            _, chosen, actions = min(accepted, key=lambda value: value[0])
+            event['selection_rule'] = 'shortest and smoothest admissible EEF path; no learned value or imagined rollout'
         event['selected_candidate'] = chosen
-        event['selection_rule'] = 'shortest and smoothest admissible EEF path; no learned value or imagined rollout'
         return finish('execute', 'admissible_prefix', actions[:self.config.execution_prefix].copy())
 
 

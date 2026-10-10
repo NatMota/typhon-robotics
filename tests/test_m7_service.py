@@ -64,6 +64,7 @@ class ServiceTests(unittest.TestCase):
         self.assertEqual(self.make(checker=lambda *args: {}).step(self.observation, {}, 1, 10.)['reason'], 'checker_error')
 
     def test_proposal_overrun_discards_previously_valid_candidate(self):
+        self.config.max_candidates = 2
         def proposer(*args):
             self.clock[0] += 4.
             return self.actions
@@ -95,6 +96,23 @@ class ServiceTests(unittest.TestCase):
         self.assertEqual(guard.candidate(actions, self.observation), 'degenerate_rotation')
         actions[0, 0] = np.nan
         self.assertEqual(guard.candidate(actions, self.observation), 'invalid_action_chunk')
+
+    def test_default_single_proposal_never_ranks_or_resamples(self):
+        for rejected in (False, True):
+            with self.subTest(rejected=rejected):
+                self.calls.clear()
+                self.actions[0, 0] = 1.1 if rejected else 0.
+                result = self.make().step(self.observation, {}, 1, 10.)
+                self.assertEqual(len(self.calls), 1)
+                self.assertEqual(len(result['event']['candidates']), 1)
+                self.assertNotIn('smoothness_cost', result['event']['candidates'][0])
+                self.assertEqual(result['status'], 'hold' if rejected else 'execute')
+                if rejected:
+                    self.assertEqual(result['reason'], 'no_admissible_candidate')
+                    self.assertIsNone(result['actions'])
+                else:
+                    self.assertEqual(result['event']['selection_rule'], 'single proposal; no candidate ranking or resampling')
+                    np.testing.assert_array_equal(result['actions'], self.actions[:self.config.execution_prefix])
 
     def test_reranking_selects_smooth_candidate(self):
         self.config.max_candidates = 2

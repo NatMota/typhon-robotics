@@ -266,7 +266,7 @@ def main():
     parser.add_argument('--protocol',type=Path,default=PROTOCOL)
     parser.add_argument('--horizon-s',type=float,choices=[1.5,4.0],default=1.5)
     parser.add_argument('--annotation-conditioned-v2',action='store_true')
-    parser.add_argument('--max-candidates',type=int,default=3)
+    parser.add_argument('--max-candidates',type=int,default=1,help='Default: one proposal without ranking. Values >1 opt into legacy candidate selection.')
     parser.add_argument('--execution-prefix',type=int,default=3)
     parser.add_argument('--max-target-step-m',type=float,default=.12)
     parser.add_argument('--classifier-model',type=Path,default=Path('/var/tmp/typhon-goal-classifier-20261009/model.npz'))
@@ -316,7 +316,7 @@ def main():
         'max_target_step_m':args.max_target_step_m,
         'qwen_dependency':False,'no_training':True,'actor_truth':args.annotation_conditioned_v2,'expert_rescue':False,
         'completion_rule':'native classifier status + current measured open fingers + image position drift <=2mm + 5 fresh frames spanning >=0.4s; classifier-native thresholds',
-        'candidate_rule':f'{args.max_candidates} frozen-policy proposals; full-horizon guard then shortest/smoothest EEF path; execute <={args.execution_prefix} actions and reobserve',
+        'candidate_rule':(('single frozen-policy proposal; no ranking or resampling; full-horizon guard' if args.max_candidates == 1 else f'{args.max_candidates} frozen-policy proposals; full-horizon guard then shortest/smoothest EEF path') + f'; execute <={args.execution_prefix} actions and reobserve'),
         'confidence_semantics':'uncalibrated classifier score, not success probability','inference_pauses_simulation':True,
         'argv':sys.argv,'created_timestamp_unix':time.time()}
     save(args.output/'manifest.json',manifest)
