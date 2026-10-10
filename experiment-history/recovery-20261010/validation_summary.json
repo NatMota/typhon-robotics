@@ -1,0 +1,395 @@
+{
+  "schema": "typhon-recovery-review-v1",
+  "native_common_1_5s": [
+    {
+      "run": "v1-m5-native-panel-v3",
+      "unfinished_successes": 0,
+      "unfinished_count": 6,
+      "preserved": 2,
+      "completed_count": 2,
+      "execution_errors": 0
+    },
+    {
+      "run": "v1-m6-native-panel-v3",
+      "unfinished_successes": 0,
+      "unfinished_count": 6,
+      "preserved": 2,
+      "completed_count": 2,
+      "execution_errors": 0
+    },
+    {
+      "run": "v2-m5-native-panel-v3",
+      "unfinished_successes": 0,
+      "unfinished_count": 6,
+      "preserved": 0,
+      "completed_count": 2,
+      "execution_errors": 0
+    },
+    {
+      "run": "v2-m6-native-panel-v3",
+      "unfinished_successes": 0,
+      "unfinished_count": 6,
+      "preserved": 0,
+      "completed_count": 2,
+      "execution_errors": 0
+    }
+  ],
+  "supervised_panels": [
+    {
+      "run": "v3-m6-4s-live-v3",
+      "requested_horizon_s": 4.0,
+      "scenario_id": "m7-personal_demo_0001",
+      "group": "source",
+      "success": false,
+      "position_error_mm": 478.31238371726124,
+      "yaw_error_deg": 54.48100682117106,
+      "policy_actions": 0,
+      "completion_claim": false,
+      "false_completion": false,
+      "stop_reason": "wall_budget_exhausted",
+      "runtime_errors": [],
+      "reasons": {
+        "other": 2,
+        "no_admissible_candidate": 364
+      },
+      "mean_inference_latency_s": null
+    },
+    {
+      "run": "v3-m6-4s-live-v3",
+      "requested_horizon_s": 4.0,
+      "scenario_id": "m7-personal_demo_0006",
+      "group": "heldout_personal",
+      "success": false,
+      "position_error_mm": 199.52613321173575,
+      "yaw_error_deg": 160.52028245896508,
+      "policy_actions": 1092,
+      "completion_claim": false,
+      "false_completion": false,
+      "stop_reason": "wall_budget_exhausted",
+      "runtime_errors": [],
+      "reasons": {
+        "other": 2,
+        "admissible_prefix": 364
+      },
+      "mean_inference_latency_s": null
+    },
+    {
+      "run": "v3-m6-4s-live-v3",
+      "requested_horizon_s": 4.0,
+      "scenario_id": "recovery-wrong_orientation-01",
+      "group": "correction",
+      "success": false,
+      "position_error_mm": 5.000000000000004,
+      "yaw_error_deg": 89.99999999999999,
+      "policy_actions": 6,
+      "completion_claim": false,
+      "false_completion": false,
+      "stop_reason": "wall_budget_exhausted",
+      "runtime_errors": [],
+      "reasons": {
+        "other": 2,
+        "admissible_prefix": 2,
+        "no_admissible_candidate": 370
+      },
+      "mean_inference_latency_s": null
+    },
+    {
+      "run": "v3-m6-4s-live-v3",
+      "requested_horizon_s": 4.0,
+      "scenario_id": "recovery-already_completed-01",
+      "group": "completed",
+      "success": true,
+      "position_error_mm": 0.0,
+      "yaw_error_deg": 2.632167345216136e-30,
+      "policy_actions": 0,
+      "completion_claim": true,
+      "false_completion": false,
+      "stop_reason": "visual_completion_confirmed",
+      "runtime_errors": [],
+      "reasons": {
+        "other": 2,
+        "verify_completion_again": 4,
+        "consecutive_visual_completion": 1
+      },
+      "mean_inference_latency_s": null
+    },
+    {
+      "run": "v3-m6-tuned-live-v2",
+      "requested_horizon_s": 4.0,
+      "scenario_id": "m7-personal_demo_0001",
+      "group": "source",
+      "success": false,
+      "position_error_mm": 478.31238371726124,
+      "yaw_error_deg": 54.48100682117106,
+      "policy_actions": 34,
+      "completion_claim": false,
+      "false_completion": false,
+      "stop_reason": "decision_budget_exhausted",
+      "runtime_errors": [],
+      "reasons": {
+        "other": 2,
+        "admissible_prefix": 7,
+        "measured_joint_limit": 37,
+        "visual_uncertainty": 112
+      },
+      "mean_inference_latency_s": 0.11553279014125499
+    },
+    {
+      "run": "v3-m6-tuned-live-v2",
+      "requested_horizon_s": 4.0,
+      "scenario_id": "m7-personal_demo_0006",
+      "group": "heldout_personal",
+      "success": false,
+      "position_error_mm": 199.52613321173575,
+      "yaw_error_deg": 160.52028245896508,
+      "policy_actions": 1436,
+      "completion_claim": false,
+      "false_completion": false,
+      "stop_reason": "control_budget_reserved_for_independent_stability",
+      "runtime_errors": [],
+      "reasons": {
+        "other": 2,
+        "admissible_prefix": 72
+      },
+      "mean_inference_latency_s": 0.126772490152689
+    },
+    {
+      "run": "v3-m6-tuned-live-v2",
+      "requested_horizon_s": 4.0,
+      "scenario_id": "recovery-wrong_orientation-01",
+      "group": "correction",
+      "success": false,
+      "position_error_mm": 5.000000000000004,
+      "yaw_error_deg": 89.99999999999999,
+      "policy_actions": 40,
+      "completion_claim": false,
+      "false_completion": false,
+      "stop_reason": "decision_budget_exhausted",
+      "runtime_errors": [],
+      "reasons": {
+        "other": 2,
+        "admissible_prefix": 2,
+        "visual_uncertainty": 148
+      },
+      "mean_inference_latency_s": 0.08187759599968558
+    },
+    {
+      "run": "v3-m6-tuned-live-v2",
+      "requested_horizon_s": 4.0,
+      "scenario_id": "recovery-already_completed-01",
+      "group": "completed",
+      "success": true,
+      "position_error_mm": 0.0,
+      "yaw_error_deg": 2.632167345216136e-30,
+      "policy_actions": 0,
+      "completion_claim": true,
+      "false_completion": false,
+      "stop_reason": "visual_completion_confirmed",
+      "runtime_errors": [],
+      "reasons": {
+        "other": 2,
+        "verify_completion_again": 4,
+        "consecutive_visual_completion": 1
+      },
+      "mean_inference_latency_s": null
+    },
+    {
+      "run": "v2-m6-supervised-live-v1",
+      "requested_horizon_s": 1.5,
+      "scenario_id": "m7-personal_demo_0001",
+      "group": "source",
+      "success": false,
+      "position_error_mm": 478.31238371726124,
+      "yaw_error_deg": 54.48100682117106,
+      "policy_actions": 0,
+      "completion_claim": false,
+      "false_completion": false,
+      "stop_reason": "wall_budget_exhausted",
+      "runtime_errors": [],
+      "reasons": {
+        "other": 2,
+        "no_admissible_candidate": 102
+      },
+      "mean_inference_latency_s": 0.24097870759490678
+    },
+    {
+      "run": "v2-m6-supervised-live-v1",
+      "requested_horizon_s": 1.5,
+      "scenario_id": "recovery-wrong_orientation-01",
+      "group": "correction",
+      "success": false,
+      "position_error_mm": 5.000000000000004,
+      "yaw_error_deg": 89.99999999999999,
+      "policy_actions": 12,
+      "completion_claim": false,
+      "false_completion": false,
+      "stop_reason": "wall_budget_exhausted",
+      "runtime_errors": [],
+      "reasons": {
+        "other": 2,
+        "no_admissible_candidate": 93,
+        "admissible_prefix": 10,
+        "proposed_target_jump": 9
+      },
+      "mean_inference_latency_s": 0.24106977257268575
+    },
+    {
+      "run": "v2-m6-supervised-live-v1",
+      "requested_horizon_s": 1.5,
+      "scenario_id": "recovery-already_completed-01",
+      "group": "completed",
+      "success": true,
+      "position_error_mm": 0.0,
+      "yaw_error_deg": 2.632167345216136e-30,
+      "policy_actions": 0,
+      "completion_claim": true,
+      "false_completion": false,
+      "stop_reason": "visual_completion_confirmed",
+      "runtime_errors": [],
+      "reasons": {
+        "other": 2,
+        "verify_completion_again": 4,
+        "consecutive_visual_completion": 1
+      },
+      "mean_inference_latency_s": null
+    },
+    {
+      "run": "v2-m6-supervised-live-v1",
+      "requested_horizon_s": 1.5,
+      "scenario_id": "recovery-already_completed-03",
+      "group": "completed",
+      "success": true,
+      "position_error_mm": 0.0,
+      "yaw_error_deg": 2.632167345216136e-30,
+      "policy_actions": 0,
+      "completion_claim": true,
+      "false_completion": false,
+      "stop_reason": "visual_completion_confirmed",
+      "runtime_errors": [],
+      "reasons": {
+        "other": 2,
+        "verify_completion_again": 4,
+        "consecutive_visual_completion": 1
+      },
+      "mean_inference_latency_s": null
+    }
+  ],
+  "privileged_expert_diagnostic": {
+    "results": [
+      {
+        "scenario_id": "m7-personal_demo_0001",
+        "group": "source",
+        "status": "evaluated",
+        "success": true,
+        "position_error_mm": 11.579242774351915,
+        "yaw_error_deg": 0.26706200928217033,
+        "controller_exceptions": [],
+        "artifact_errors": [],
+        "evaluation_errors": [],
+        "wall_duration_s": 3.4059458000047016
+      },
+      {
+        "scenario_id": "m7-personal_demo_0006",
+        "group": "heldout_personal",
+        "status": "evaluated",
+        "success": true,
+        "position_error_mm": 5.612590067999764,
+        "yaw_error_deg": 0.004078159666764487,
+        "controller_exceptions": [],
+        "artifact_errors": [],
+        "evaluation_errors": [],
+        "wall_duration_s": 2.9640794020015164
+      },
+      {
+        "scenario_id": "recovery-wrong_orientation-01",
+        "group": "correction",
+        "status": "evaluated",
+        "success": true,
+        "position_error_mm": 2.9580362641957896,
+        "yaw_error_deg": 0.31308145867774767,
+        "controller_exceptions": [],
+        "artifact_errors": [],
+        "evaluation_errors": [],
+        "wall_duration_s": 2.455709284004115
+      }
+    ],
+    "evidence_type": "privileged geometric expert reachability diagnostic"
+  },
+  "frozen_motion_review": {
+    "episodes": 128,
+    "ledger_sha256": "389d4dfd9ee276d2628fc1d66067f0512aff73f04803230d16316f871a9caf26",
+    "scopes": {
+      "common_1.5s": {
+        "episodes": 96,
+        "unfinished_successes": 0,
+        "unfinished_count": 72,
+        "preserved_complete": 13,
+        "complete_count": 24,
+        "motion_classes": {
+          "no object contact": 45,
+          "contact without substantial lift": 18,
+          "completed placement criteria violated": 11,
+          "position satisfied; orientation uncorrected": 7,
+          "completed task conditions preserved": 13,
+          "grasp and lift; placement incomplete": 1,
+          "placed and released; wrong orientation": 1
+        },
+        "completed_eef_path_m_median": 3.9452086083391436
+      },
+      "separate_4s": {
+        "episodes": 32,
+        "unfinished_successes": 0,
+        "unfinished_count": 24,
+        "preserved_complete": 3,
+        "complete_count": 8,
+        "motion_classes": {
+          "no object contact": 12,
+          "contact without substantial lift": 10,
+          "completed placement criteria violated": 4,
+          "position satisfied; orientation uncorrected": 2,
+          "placement retained; release/stability condition failed": 1,
+          "completed task conditions preserved": 3
+        },
+        "completed_eef_path_m_median": 3.9912583318710713
+      }
+    },
+    "recommendation_evidence": "Task outcomes, actual object contact/motion and requested commands; no robot-policy training or artifact modification."
+  },
+  "inputs_sha256": {
+    "v1-m5-native-panel-v3/summary.json": "94cf9662de88cbd2c20fffd63a73641f18bec451ae39f69ed5e2af9636e58b03",
+    "v1-m6-native-panel-v3/summary.json": "34dba68301ec733123978ef1f82af4d19295f68daf79d6096a68a99c37c14ab2",
+    "v2-m5-native-panel-v3/summary.json": "fd5c4c35f6045c82ae5871bd8dea9abb5f1ec184ef714dd4faee01f6624c4f3a",
+    "v2-m6-native-panel-v3/summary.json": "0027e8f0dc38df2786a18fc1528e20173db1eae6850bf60e6e8ccb40e9f1033a",
+    "v3-m6-4s-live-v3/summary.json": "dabac40441bd3446fc53e9f03ea9662ceb7bcc87814eab5d8eaa1ec48967e688",
+    "v3-m6-4s-live-v3/manifest.json": "0071e92ea0f08996f01fbf537760a4ab26304397b611305d74045b1a38ff6c7e",
+    "v3-m6-4s-live-v3/m7-personal_demo_0001/scenario.json": "e3f315916b7737eb43aa87dbe2f47e2fe3547a601b52b469b54567d68cd79f2e",
+    "v3-m6-4s-live-v3/m7-personal_demo_0006/scenario.json": "177828fb288e2acfe3c409d5f3a8d67edf3ec99ab9e5d07a9194d00688b637e3",
+    "v3-m6-4s-live-v3/recovery-wrong_orientation-01/scenario.json": "cb8fd58e6dd1019a33c1d7a3e798ead378a8c27d303d6c414dfb0144d0fad9cd",
+    "v3-m6-4s-live-v3/recovery-already_completed-01/scenario.json": "6d2363ce515fcad4667ea675fa5422ce9daee79c28baa3c9f060f5d0666214e4",
+    "v3-m6-tuned-live-v2/summary.json": "e05851612534cac197d4503865ffdb1b90bf364a53bebc0cbb21ef1d1d7b3c0e",
+    "v3-m6-tuned-live-v2/manifest.json": "0d08d8f30eba8c2d4fc6b51eb68dc0fe5fd958b3a91788a401b7d6f0d7c25338",
+    "v3-m6-tuned-live-v2/m7-personal_demo_0001/scenario.json": "e3f315916b7737eb43aa87dbe2f47e2fe3547a601b52b469b54567d68cd79f2e",
+    "v3-m6-tuned-live-v2/m7-personal_demo_0006/scenario.json": "177828fb288e2acfe3c409d5f3a8d67edf3ec99ab9e5d07a9194d00688b637e3",
+    "v3-m6-tuned-live-v2/recovery-wrong_orientation-01/scenario.json": "cb8fd58e6dd1019a33c1d7a3e798ead378a8c27d303d6c414dfb0144d0fad9cd",
+    "v3-m6-tuned-live-v2/recovery-already_completed-01/scenario.json": "6d2363ce515fcad4667ea675fa5422ce9daee79c28baa3c9f060f5d0666214e4",
+    "v2-m6-supervised-live-v1/summary.json": "d64252b1d78712d634113ebccc2332e8cb6f1fff5046e496f1b68467e9a20bba",
+    "v2-m6-supervised-live-v1/manifest.json": "07df84cf08a604d1f77308a10d44fb83d26518a0841eb43b18f232a2a468e4b6",
+    "v2-m6-supervised-live-v1/m7-personal_demo_0001/scenario.json": "e3f315916b7737eb43aa87dbe2f47e2fe3547a601b52b469b54567d68cd79f2e",
+    "v2-m6-supervised-live-v1/recovery-wrong_orientation-01/scenario.json": "cb8fd58e6dd1019a33c1d7a3e798ead378a8c27d303d6c414dfb0144d0fad9cd",
+    "v2-m6-supervised-live-v1/recovery-already_completed-01/scenario.json": "6d2363ce515fcad4667ea675fa5422ce9daee79c28baa3c9f060f5d0666214e4",
+    "v2-m6-supervised-live-v1/recovery-already_completed-03/scenario.json": "f8e2b704a3b7a390fc32e1519ee90b5b236193a8dcd8ebba3e6da08d0de45ab5",
+    "expert-reachability-v1/summary.json": "b9e696d7a4c70643d5ec2679533af16bf515355de2e77510116bf21bca7c84c8",
+    "motion-review-v3/validation_summary.json": "b3ba8d23a666b715be2b21fccc20c65281192c0da8cd3c26f0fc21ee06345d90"
+  },
+  "protocol_limit": "Common 1.5-second full-intent requests can differ from a variant training request distribution. Four-second diagnostics are separate. Completed scenes measure preservation, not manipulation.",
+  "data_limit": "Personal observations configure scenarios. The action-supervised RGB/action pairs are robot simulation plus geometric expert; raw phone frames are not directly aligned robot-action supervision.",
+  "excluded_technical_attempts": [
+    "v1-m5-native-panel-v1: missing PEFT",
+    "v1-m5-native-panel-v2: PEFT version incompatible with strict checkpoint keys",
+    "v3-m6-4s-live-v1: privileged cue not enabled",
+    "v3-m6-4s-live-v2: reset observation clock mismatch",
+    "v3-m6-tuned-live-v1: terminal control budget overrun"
+  ],
+  "no_training": true,
+  "simulation_pauses_during_inference": true
+}

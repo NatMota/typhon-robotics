@@ -1,7 +1,9 @@
-"""Run the earlier frozen M6 policy with a CPU image-success classifier.
+"""Run an explicitly selected M6 or M7 policy with the CPU image-success classifier.
 
 All artifact paths must be new. Evaluator truth stays in evaluator artifacts and
-never enters either model, the classifier, candidate selection, or completion.
+never enters the classifier, candidate selection, or completion. M7 variants may
+consume the explicitly enabled causal held-state annotation; this privileged
+auxiliary channel is recorded separately and provides no object pose or future.
 """
 import os
 os.environ.setdefault('MUJOCO_GL','egl')
@@ -13,6 +15,7 @@ import json
 from pathlib import Path
 import sys
 import time
+from datetime import datetime, timezone
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 import imageio.v2 as imageio
@@ -37,8 +40,13 @@ def sha(path):
     return digest.hexdigest()
 
 
-def cases():
-    protocol=json.loads(PROTOCOL.read_text())
+def cases(protocol_path=PROTOCOL):
+    protocol=json.loads(protocol_path.read_text())
+    if "pilot" in protocol:
+        rows=copy.deepcopy(protocol["pilot"])
+        for row in rows:
+            row["diagnostic"]={"rgb_occlusion":False, "expected_visual_status":"complete" if row["group"]=="completed" else "incomplete"}
+        return rows
     base=next(s for s in protocol['core'] if s['scenario_id']=='recovery-already_completed-01')
     rows=[]
     for name,offset,yaw in [('correct-center',(0.,0.),0.),('correct-offset-x8mm',(.008,0.),0.),
@@ -98,9 +106,11 @@ def run_case(scenario,output,classifier,policy,args):
     recorder_finished=False
     events,executions,stability=[],[],[]
     start=time.monotonic()
+    started_at_utc=datetime.now(timezone.utc).isoformat()
     stop_reason='decision_budget_exhausted'
     try:
         first=env.reset(scenario['seed'])
+        imageio.imwrite(output/'initial.png',np.concatenate([first['rgb']['primary'],first['rgb']['secondary']],axis=1))
         initial_truth=env.truth()  # Evaluator only.
         recorder=Recorder(env,output/'evaluator-trajectory.jsonl.gz')
         telemetry=(output/'measured-telemetry.jsonl').open('w')
@@ -110,12 +120,14 @@ def run_case(scenario,output,classifier,policy,args):
             rgb=observation_for_actor(scene,occluded)['rgb']
             writer.append_data(np.concatenate([rgb['primary'],rgb['secondary']],axis=1))
         env.capture_callback=capture
-        live=attach_live(env,args.output.name,'frozen M6-FT3000 earlier today + Typhon CPU classifier',scenario['scenario_id'])
+        live=attach_live(env,args.output.name,str(args.checkpoint)+' + Typhon CPU classifier',scenario['scenario_id'])
         policy.live=live
+        if live: live.privileged_held_cue=args.annotation_conditioned_v2
         robot=env.env.robots[0]
         limits=env.env.sim.model.jnt_range[[env.env.sim.model.joint_name2id(n) for n in robot.robot_model.joints]].tolist()
         service_config=ServiceConfig(config['control']['workspace_bounds_m'],limits,
-            no_go_boxes_m=([[-.48,-.40],[.30,.40],[.82,1.30]],),max_candidates=3,execution_prefix=3,
+            no_go_boxes_m=([[-.48,-.40],[.30,.40],[.82,1.30]],),max_candidates=args.max_candidates,execution_prefix=args.execution_prefix,
+            max_chunk_steps=round(args.horizon_s*20),max_target_step_m=args.max_target_step_m,
             decision_budget_s=args.decision_budget_s,observation_max_age_s=args.decision_budget_s,
             completion_frames=config['evaluation']['minimum_stability_samples'],
             completion_min_span_s=config['evaluation']['minimum_stability_duration_s'],
@@ -123,14 +135,17 @@ def run_case(scenario,output,classifier,policy,args):
         service=SupervisorService(service_config,checker,policy.propose,output/'events.jsonl')
         service.reset(scenario['scenario_id'])
         policy.reset(scenario['seed'])
-        source=scenario['scenario_id']=='m5-source-01'
+        if args.policy == 'm7':
+            policy.bind(env,output)
+            policy.observe_step(first,env.steps)
+        source=scenario.get('group') not in ('completed','generated_classifier_harness_diagnostic')
         max_decisions=args.source_decisions if source else args.baseline_decisions
         wall_budget=args.source_wall_s if source else 90.
         hold_steps=2
         for index in range(max_decisions):
             if time.monotonic()-start>=wall_budget:
                 stop_reason='wall_budget_exhausted'; break
-            if env.steps>=config['control']['max_steps']-30:
+            if env.steps>=config['control']['max_steps']-24:
                 stop_reason='control_budget_reserved_for_independent_stability'; break
             observation=observation_for_actor(env,occluded)
             observed_at=time.monotonic()
@@ -151,7 +166,8 @@ def run_case(scenario,output,classifier,policy,args):
                 guard={'reason':decision['reason'],'event':decision['event']},force=True)
             executed=[]
             if decision['status']=='execute':
-                for target in decision['actions']:
+                remaining=config['control']['max_steps']-24-env.steps
+                for target in decision['actions'][:remaining]:
                     current=observation_for_actor(env,occluded)
                     violation=service.check_execution(target,current,decision['valid_until'])
                     if violation:
@@ -162,6 +178,7 @@ def run_case(scenario,output,classifier,policy,args):
                     if live: live.set_target(target)
                     env.step(command)
                     policy.commit(target)
+                    if args.policy == 'm7': policy.observe_step(observation_for_actor(env,occluded),env.steps)
                     after=measured(env,observation_for_actor(env,occluded))
                     item={'type':'executed_policy_action','target_20':target,'requested_osc_action':command,
                         'applied_osc_action':live.applied if live else None,'before':before,'after':after}
@@ -170,11 +187,12 @@ def run_case(scenario,output,classifier,policy,args):
             elif decision['status']=='complete':
                 stop_reason='visual_completion_confirmed'; break
             else:
-                for _ in range(hold_steps):
+                for _ in range(min(hold_steps,config['control']['max_steps']-24-env.steps)):
                     current=observation_for_actor(env,occluded)
                     command=np.r_[np.zeros(6),env.last_grip]
                     before=measured(env,current)
                     env.step(command)
+                    if args.policy == 'm7': policy.observe_step(observation_for_actor(env,occluded),env.steps)
                     telemetry.write(json.dumps(log_value({'type':'hold_reobserve','requested_osc_action':command,
                         'before':before,'after':measured(env,observation_for_actor(env,occluded))}))+'\n')
             executions.append({'decision_index':index,'selected_candidate':decision['event'].get('selected_candidate'),
@@ -194,7 +212,10 @@ def run_case(scenario,output,classifier,policy,args):
         evaluation=score_episode(initial_truth,final_truth,stability,env.episode_config,recorder.observed_attempts)
         assessments=[e.get('checker',{}).get('assessment') for e in events]
         result={'scenario_id':scenario['scenario_id'],'mode':'typhon_image_classifier_primary',
+            'started_at_utc':started_at_utc,
+            'mean_inference_latency_s':float(np.mean([c['latency_s'] for e in events for c in e['candidates']])) if any(e['candidates'] for e in events) else None,
             'completion_claim':service.complete,'evaluation':evaluation,
+            'runtime_errors':[c['error'] for e in events for c in e['candidates'] if c.get('error')],
             'false_completion':bool(service.complete and not evaluation['success']),
             'expected_initial_visual_status':scenario['diagnostic']['expected_visual_status'],
             'first_classifier_status':next((a['status'] for a in assessments if a),None),
@@ -216,7 +237,10 @@ def run_case(scenario,output,classifier,policy,args):
         save(output/'decisions-with-frames.json',events)
         save(output/'evaluator-final.json',{'initial_truth':initial_truth,'final_truth':final_truth,'stability_truths':stability})
         imageio.imwrite(output/'final.png',np.concatenate(list(observation_for_actor(env,occluded)['rgb'].values()),axis=1))
-        np.savez_compressed(output/'raw-m6-predictions.npz',chunks=np.asarray(policy.raw_chunks),
+        save(output/'policy-inferences.json',policy.inferences)
+        if args.policy == 'm7':
+            save(output/'timed-predictions.json',policy.timed_predictions)
+        np.savez_compressed(output/'raw-policy-predictions.npz',chunks=np.asarray(policy.raw_chunks),
             histories=np.asarray([np.full(20,np.nan) if h is None else h for h in policy.histories]))
         print(json.dumps({k:result[k] for k in ['scenario_id','completion_claim','false_completion','decisions',
             'candidate_proposals','candidate_rejections','executed_control_steps','stop_reason']}),flush=True)
@@ -225,13 +249,26 @@ def run_case(scenario,output,classifier,policy,args):
         if telemetry: telemetry.close()
         if recorder and not recorder_finished: recorder.finish()
         if writer: writer.close()
-        if live: mark_finished(live)
+        if live:
+            # Terminal stability steps publish fresh joints; retain the last supervisor decision too.
+            if events:
+                live.publish(env,observation_for_actor(env,occluded),phase='supervisor_terminal',status='finished',
+                    guard={'reason':stop_reason,'event':events[-1]},force=True)
         env.close()
+        if live: mark_finished(live)
 
 
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--output',type=Path,required=True)
+    parser.add_argument('--policy',choices=['m6','m7'],default='m6')
+    parser.add_argument('--checkpoint',type=Path,default=CHECKPOINT)
+    parser.add_argument('--protocol',type=Path,default=PROTOCOL)
+    parser.add_argument('--horizon-s',type=float,choices=[1.5,4.0],default=1.5)
+    parser.add_argument('--annotation-conditioned-v2',action='store_true')
+    parser.add_argument('--max-candidates',type=int,default=3)
+    parser.add_argument('--execution-prefix',type=int,default=3)
+    parser.add_argument('--max-target-step-m',type=float,default=.12)
     parser.add_argument('--classifier-model',type=Path,default=Path('/var/tmp/typhon-goal-classifier-20261009/model.npz'))
     parser.add_argument('--baseline-decisions',type=int,default=8)
     parser.add_argument('--source-decisions',type=int,default=500)
@@ -241,13 +278,18 @@ def main():
     parser.add_argument('--classifier-ready-file',type=Path)
     args=parser.parse_args()
     args.output=args.output.resolve()
-    if not str(args.output).startswith('/var/tmp/typhon-harness-20261009/'):
-        raise ValueError('new Typhon evidence belongs under /var/tmp/typhon-harness-20261009/')
+    if args.policy == 'm6' and (args.horizon_s != 1.5 or args.annotation_conditioned_v2):
+        parser.error('M6 uses its original 1.5-second raw observation contract')
+    args.checkpoint=args.checkpoint.resolve()
+    args.protocol=args.protocol.resolve()
+    if not args.checkpoint.is_file() or not args.protocol.is_file():
+        parser.error('checkpoint and protocol must exist')
     args.output.mkdir(parents=True,exist_ok=False)
     preloaded=None
     if args.classifier_ready_file:
         # Optional development handoff: load frozen actor while CPU classifier fitting finishes.
-        preloaded=DeadlinePolicy('FT3000',CHECKPOINT,args.output/'m6-worker.log')
+        if args.policy != 'm6': parser.error('classifier handoff is only supported with M6')
+        preloaded=DeadlinePolicy('FT3000',args.checkpoint,args.output/'m6-worker.log')
         print('FROZEN_M6_READY waiting for classifier handoff',flush=True)
         until=time.monotonic()+180.
         while not args.classifier_ready_file.exists():
@@ -263,25 +305,39 @@ def main():
     classifier=GoalSuccessClassifier(str(args.classifier_model))
     os.environ.setdefault('M7_LIVE_DIR',str(args.output/'live'))
     sources=[Path(__file__),ROOT/'supervisor/planning/m7_service.py',ROOT/'supervisor/planning/typhon_service.py',
-        ROOT/'supervisor/planning/simple_goal_classifier.py',ROOT/'supervisor/planning/m7_telemetry.py']
-    manifest={'mode':'typhon_image_classifier_primary','checkpoint':str(CHECKPOINT),
-        'checkpoint_sha256':sha(CHECKPOINT),'classifier_model':str(args.classifier_model),
-        'classifier_sha256':sha(args.classifier_model),'protocol_sha256':sha(PROTOCOL),
+        ROOT/'supervisor/planning/simple_goal_classifier.py',ROOT/'supervisor/planning/m7_telemetry.py',
+        ROOT/'scripts/typhon_policy.py',ROOT/'scripts/m7_evaluate.py']
+    manifest={'mode':'typhon_image_classifier_primary','checkpoint':str(args.checkpoint),
+        'checkpoint_sha256':sha(args.checkpoint),'classifier_model':str(args.classifier_model),
+        'classifier_sha256':sha(args.classifier_model),'protocol_sha256':sha(args.protocol),
         'code_sha256':{str(p.relative_to(ROOT)):sha(p) for p in sources},
-        'frozen_model':'M6-FT3000 earlier today; excludes all new H100 models',
-        'qwen_dependency':False,'no_training':True,'actor_truth':False,'expert_rescue':False,
+        'frozen_model':args.policy, 'horizon_s':args.horizon_s,
+        'uses_privileged_causal_held_annotation':args.annotation_conditioned_v2,
+        'max_target_step_m':args.max_target_step_m,
+        'qwen_dependency':False,'no_training':True,'actor_truth':args.annotation_conditioned_v2,'expert_rescue':False,
         'completion_rule':'native classifier status + current measured open fingers + image position drift <=2mm + 5 fresh frames spanning >=0.4s; classifier-native thresholds',
-        'candidate_rule':'3 unchanged M6 proposals; admissibility guard then shortest/smoothest EEF path; execute <=3 actions and reobserve',
+        'candidate_rule':f'{args.max_candidates} frozen-policy proposals; full-horizon guard then shortest/smoothest EEF path; execute <={args.execution_prefix} actions and reobserve',
         'confidence_semantics':'uncalibrated classifier score, not success probability','inference_pauses_simulation':True,
         'argv':sys.argv,'created_timestamp_unix':time.time()}
     save(args.output/'manifest.json',manifest)
-    selected=[s for s in cases() if not args.cases or s['scenario_id'] in args.cases]
+    selected=[s for s in cases(args.protocol) if not args.cases or s['scenario_id'] in args.cases]
+    if not selected: parser.error('no matching scenarios')
     save(args.output/'protocol.json',selected)
     policy=None
     summaries=[]
     try:
-        policy=preloaded or DeadlinePolicy('FT3000',CHECKPOINT,args.output/'m6-worker.log')
+        if args.policy == 'm7':
+            from typhon_policy import SupervisedM7Policy
+            from m7_evaluate import fixed_request
+            request=fixed_request()
+            if args.horizon_s == 4.:
+                request.update(anchor_times_s=(np.rint(np.linspace(0,79,30))/20).tolist(),duration_s=4.,aligned_duration_s=4.)
+            policy=SupervisedM7Policy(args.checkpoint,args.output/'m7-worker.log',request=request,
+                annotation_conditioned_v2=args.annotation_conditioned_v2)
+        else:
+            policy=preloaded or DeadlinePolicy('FT3000',args.checkpoint,args.output/'m6-worker.log')
         manifest['policy_load']=policy.load_info
+        manifest['policy_contract']=policy.model_manifest
         save(args.output/'manifest.json',manifest)
         for scenario in selected:
             summaries.append(run_case(scenario,args.output/scenario['scenario_id'],classifier,policy,args))

@@ -14,3 +14,12 @@ frozen_results/
 data/
 .DS_Store
 ._*
+
+/.m7-deps
+
+# Local links to existing environments and frozen data are not source files.
+/.venv-sim
+/.venv-xvla
+/.cache-xvla
+/.cache-xvla-pt
+/frozen_results

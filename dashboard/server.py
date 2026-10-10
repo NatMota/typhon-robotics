@@ -7,6 +7,7 @@ import mimetypes
 import os
 import re
 import time
+from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, unquote, urlsplit
@@ -53,11 +54,36 @@ def training_jobs(tree, timestamp):
     return jobs
 
 
+def harness_row(folder, value):
+    """Normalize saved harness evidence; recognition remains separate from scoring."""
+    scenario = read_json(folder / 'scenario.json')
+    score = value.get('evaluation', {})
+    manifest = read_json(folder.parent/'manifest.json')
+    stamp=value.get('started_at_utc')
+    if not stamp and (folder/'measured-telemetry.jsonl').is_file():
+        with (folder/'measured-telemetry.jsonl').open() as f:
+            first=json.loads(next(f))
+        stamp=datetime.fromtimestamp(first['timestamp_unix'],timezone.utc).isoformat()
+    return dict(value, group=scenario.get('group'),started_at_utc=stamp,
+        grasp_attempts=score.get('grasp_attempt_count'),failed_grasps=score.get('failed_grasp_count'),
+        simulated_duration_s=score.get('sim_time_s'),
+        mean_inference_latency_s=value.get('mean_inference_latency_s'),
+        provenance={'model':manifest.get('policy_contract',{}),'m7':{'checkpoint_sha256':manifest.get('checkpoint_sha256')}},
+        completion_claimed=value.get('completion_claim'), success=score.get('success'),
+        status='integration_error' if value.get('runtime_errors') else 'evaluated', position_error_mm=1000*score['position_error_m'] if score.get('position_error_m') is not None else None,
+        yaw_error_deg=score.get('orientation_error_deg'),
+        policy_actions_executed=value.get('executed_control_steps'),
+        wall_duration_s=value.get('run_wall_s'), final_criteria=score.get('criteria', {}),
+        video_saved=(folder/'rollout.mp4').is_file())
+
 def state():
     now = time.time()
     runs = []
     for path in sorted(EVIDENCE.glob('*/summary.json')):
         summary = read_json(path)
+        if isinstance(summary, list):
+            summary = {'results': [harness_row(path.parent/row['scenario_id'], row) for row in summary],
+                       'evidence_type': 'live policy + supervised completion/guards'}
         if not isinstance(summary, dict) or not summary.get('results'):
             continue
         cp = read_json(path.parent / 'checkpoint_load.json')
@@ -81,6 +107,7 @@ def state():
         live['age_s'] = max(0, now - stamp)
         live['fresh'] = live['age_s'] < 15 and live.get('live', True) is not False
         live['available'] = (LIVE / 'latest.jpg').is_file()
+    runs.sort(key=lambda r:r['evidence_type'].startswith('privileged'))
     return {'server_epoch': now, 'runs': runs, 'training': sorted(training, key=lambda j: j['id']),
             'run4_status': watcher3.get('hold', {}).get('state') or watcher3.get('phase', 'pending'), 'live': live,
             'observer_only': True, 'schema': 'm7-observer-v1'}
@@ -88,15 +115,21 @@ def state():
 def episode(run, case):
     folder = within(EVIDENCE, run, case)
     data = read_json(folder / 'episode.json')
+    harness = read_json(folder / 'summary.json')
+    if not data and isinstance(harness, dict) and 'completion_claim' in harness:
+        data = harness_row(folder, harness)
+        truth = read_json(folder/'evaluator-final.json')
+        data.update(initial_truth=truth.get('initial_truth'), final_truth=truth.get('final_truth'),
+                    evaluation=harness['evaluation'], completion_claimed=harness['completion_claim'])
     if not data:
         raise FileNotFoundError('Episode not available')
     scenario = read_json(folder / 'scenario.json')
-    keys = ['scenario_id', 'group', 'task', 'seed', 'started_at_utc', 'provenance', 'success', 'status',
+    keys = ['scenario_id', 'group', 'task', 'method', 'seed', 'started_at_utc', 'provenance', 'success', 'status',
             'initial_truth', 'final_truth', 'position_error_mm', 'yaw_error_deg', 'grasp_attempts',
             'failed_grasps', 'recovery_attempts', 'recovery_success', 'controller_exceptions',
             'episode_steps', 'total_control_steps', 'simulated_duration_s', 'wall_duration_s',
             'mean_inference_latency_s', 'policy_actions_executed', 'artifact_errors', 'evaluation_errors',
-            'inference_pauses_simulation', 'move_events']
+            'inference_pauses_simulation', 'move_events', 'completion_claimed', 'false_completion', 'stop_reason']
     result = {k: data.get(k) for k in keys}
     result['evaluation'] = {k: v for k, v in data.get('evaluation', {}).items() if k != 'attempts'}
     result['attempts'] = data.get('attempts', [])
@@ -163,6 +196,8 @@ class Handler(BaseHTTPRequestHandler):
                 if url.path == '/api/episode':
                     return self.json(episode(run, case))
                 path = within(EVIDENCE, run, case, 'trajectory.jsonl.gz')
+                if not path.exists():
+                    path = within(EVIDENCE, run, case, 'evaluator-trajectory.jsonl.gz')
                 with gzip.open(path, 'rt') as stream:
                     return self.json([json.loads(line) for line in stream])
             if url.path == '/live/latest.jpg':
@@ -171,7 +206,12 @@ class Handler(BaseHTTPRequestHandler):
                 parts = unquote(url.path).split('/')[2:]
                 if len(parts) != 3 or parts[-1] not in ('rollout.mp4', 'initial.png', 'final.png', 'episode.json', 'scenario.json', 'trajectory.jsonl.gz'):
                     raise FileNotFoundError('Unknown evidence file')
-                return self.file(within(EVIDENCE, *parts))
+                path=within(EVIDENCE,*parts)
+                if not path.exists() and parts[-1]=='episode.json':
+                    return self.json(episode(parts[0],parts[1]))
+                if not path.exists() and parts[-1]=='trajectory.jsonl.gz':
+                    path=within(EVIDENCE,parts[0],parts[1],'evaluator-trajectory.jsonl.gz')
+                return self.file(path)
             if url.path in ('/', '/index.html', '/app.js', '/styles.css'):
                 return self.file(HERE / ('index.html' if url.path == '/' else url.path[1:]))
             raise FileNotFoundError('Unknown endpoint')

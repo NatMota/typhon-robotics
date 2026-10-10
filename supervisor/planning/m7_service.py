@@ -143,6 +143,7 @@ class ServiceConfig:
     max_target_step_m: float = .12
     max_candidates: int = 3
     execution_prefix: int = 3
+    max_chunk_steps: int = 30
     decision_budget_s: float = 6.
     observation_max_age_s: float = 6.
     completion_frames: int = 3
@@ -161,7 +162,7 @@ class ServiceConfig:
             a = np.asarray(box, float)
             if a.shape != (3, 2) or not np.isfinite(a).all() or np.any(a[:, 0] >= a[:, 1]):
                 raise ValueError('no_go_box')
-        if not 1 <= self.max_candidates <= 8 or not 1 <= self.execution_prefix <= 30 or self.completion_frames < 2:
+        if not 1 <= self.max_candidates <= 8 or not 1 <= self.execution_prefix <= 30 or self.completion_frames < 2 or not 1 <= self.max_chunk_steps <= 80:
             raise ValueError('invalid_count_budget')
         if not all(math.isfinite(v) for v in (self.decision_budget_s, self.observation_max_age_s, self.max_target_step_m, self.max_joint_speed_rad_s, self.clearance_m, self.completion_min_span_s, self.completion_confidence)) or min(self.decision_budget_s, self.observation_max_age_s, self.max_target_step_m, self.max_joint_speed_rad_s) <= 0 or self.clearance_m < 0 or self.completion_min_span_s < 0 or not 0 <= self.completion_confidence <= 1:
             raise ValueError('invalid_budget_or_margin')
@@ -195,7 +196,7 @@ class Guard:
         if reason:
             return reason
         a = np.asarray(actions, float)
-        if a.ndim != 2 or a.shape[1] != 20 or not 1 <= len(a) <= 30 or not np.isfinite(a).all():
+        if a.ndim != 2 or a.shape[1] != 20 or not 1 <= len(a) <= self.config.max_chunk_steps or not np.isfinite(a).all():
             return 'invalid_action_chunk'
         if np.any(a[:, 9] < 0) or np.any(a[:, 9] > 1):
             return 'invalid_gripper_probability'

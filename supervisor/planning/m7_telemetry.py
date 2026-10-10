@@ -28,6 +28,7 @@ class LiveTelemetry:
         self.sequence = 0
         self.requested = self.applied = self.target = None
         self.last_error = None
+        self.last_guard = None
 
     def set_target(self, target):
         self.target = np.asarray(target).copy()
@@ -42,6 +43,8 @@ class LiveTelemetry:
         if not force and time.monotonic()-self.last_update < self.interval_s:
             return
         try:
+            if guard is not None:
+                self.last_guard = finite(guard)
             observation = observation if observation is not None else env.observe()
             # Only policy-observable proprio/camera channels plus simulator actuator telemetry.
             p = observation['proprio']
@@ -79,7 +82,9 @@ class LiveTelemetry:
                     'units': '7 normalized OSC components: dx,dy,dz,rotation vector xyz,gripper; each in [-1,1]',
                     'translation_step_m': env.config['control']['translation_step_m'],
                     'rotation_step_rad': env.config['control']['rotation_step_rad']},
-                'guard': guard, 'evaluator_truth_in_actor': False, 'object_truth': None,
+                'guard': guard, 'evaluator_truth_in_actor': bool(getattr(self,'privileged_held_cue',False)),
+                'actor_auxiliary_annotation': 'causal simulator held label only' if getattr(self,'privileged_held_cue',False) else None,
+                'object_truth': None,
                 'note': 'Camera and robot telemetry only. Evaluation success must come from separately labelled evaluator results.'})
             self._atomic('latest.jpg', imageio.imwrite('<bytes>', frame, format='jpg', quality=85))
             encoded = (json.dumps(payload, indent=2, allow_nan=False)+'\n').encode()
@@ -113,7 +118,7 @@ def attach_live(env, run_id, model, scenario_id):
     if hasattr(env, 'close'):
         raw_close = env.close
         def close():
-            publisher.publish(env, phase='finished', status='finished', force=True)
+            publisher.publish(env, phase='finished', status='finished', guard=publisher.last_guard, force=True)
             return raw_close()
         env.close = close
     publisher.publish(env, phase='initial', force=True)

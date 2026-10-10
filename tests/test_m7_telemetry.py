@@ -36,7 +36,12 @@ class TelemetryTests(unittest.TestCase):
             self.assertIsNone(payload['object_truth']);self.assertEqual((Path(folder)/'frame.json').read_bytes(),(Path(folder)/'latest.json').read_bytes())
             self.assertGreater((Path(folder)/'latest.jpg').stat().st_size,100);self.assertFalse(list(Path(folder).glob('*.tmp')))
             np.testing.assert_array_equal(q,obs['proprio']['joint_position_rad'])
+            guard={'reason':'visual_completion_confirmed','event':{'status':'complete'}}
+            live.publish(env,guard=guard,force=True)
+            env.step(command)  # Ordinary telemetry must not erase the terminal supervisor decision.
             env.close();mark_finished(live);payload=json.loads((Path(folder)/'latest.json').read_text());self.assertFalse(payload['live']);self.assertEqual(payload['phase'],'finished')
+            self.assertEqual(payload['guard'],guard)
+            self.assertEqual(payload['evaluation_status'],'evaluated')
 
     def test_no_torque_is_unknown_and_publisher_failure_does_not_change_control(self):
         with tempfile.TemporaryDirectory() as folder,patch.dict(os.environ,{'M7_LIVE_DIR':folder}):
