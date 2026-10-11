@@ -1,7 +1,7 @@
 {
   "created_utc": "2026-10-11T09:19:11.097365+00:00",
   "scope": "13-question Powerglide RTX4090 research programme; no paid pods; Mint storage only",
-  "status": "local experiments and reviews complete; Luna authentication pending; final backups in progress",
+  "status": "local experiments and reviews complete; all branch backups verified; Luna API execution remains blocked by missing authentication",
   "starting_commit": "d52b94aa477655177282111ee8797f0a72295b0f",
   "sections": [
     {
@@ -167,5 +167,8 @@
   "planner_review": "planner-final-review-20261011.txt",
   "independent_review": "research-comparison/FINAL_REVIEW.txt",
   "errata": "REPORT_ERRATA.json",
-  "next_experiments": "NEXT_EXPERIMENTS.txt"
+  "next_experiments": "NEXT_EXPERIMENTS.txt",
+  "closed_utc": "2026-10-11T09:53:45.472980+00:00",
+  "backup_root": "/media/nm/Fast Drive/Typhon/research-20261011",
+  "backup_status": "all branch weights, resume states, and experimental evidence verified; root packaging recorded separately"
 }
