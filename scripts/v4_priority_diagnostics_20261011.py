@@ -49,10 +49,13 @@ def prepare_inputs(out):
   # Use the observed object transform as well, before the last integration.
   q[:3]=sim.data.body_xpos[env.env.cube_body_id]
   q[3:]=sim.data.body_xquat[env.env.cube_body_id]
+  rerender_errors=[]
   for delta in [0,90]:
    changed=q.copy();r=Rotation.from_euler('z',delta,degrees=True)*Rotation.from_quat(q[[4,5,6,3]])
    qr=r.as_quat();changed[3:]=qr[[3,0,1,2]];sim.data.set_joint_qpos(env.env.cube.joints[0],changed);sim.data.set_joint_qvel(env.env.cube.joints[0],v);sim.forward()
    current=env.observe();variants[delta]=[current['rgb']['primary'],current['rgb']['secondary']]
+   if delta==0:
+    rerender_errors=[{'camera':i,'changed_pixels':int(np.count_nonzero(np.any(a!=b,axis=-1))),'mean_absolute_rgb_delta':float(np.mean(abs(a.astype(float)-b.astype(float))))} for i,(a,b) in enumerate(zip(variants[0],base['images']))]
    # Transforming only object pose must not alter the robot state.
    for key in ['eef_position_m','eef_quat_xyzw']:
     np.testing.assert_allclose(current['proprio'][key],obs['proprio'][key],atol=1e-6)
@@ -81,7 +84,7 @@ def prepare_inputs(out):
  sheet=Image.new('RGB',(1344,250*4),'white')
  for i,t in enumerate(tiles):sheet.paste(t,((i%2)*672,(i//2)*250))
  sheet.save(out/'inputs-contact-sheet.jpg',quality=92)
- save(out/'input-preparation.json',{'prepared':8,'initial_saved_rgb_exactly_reproduced':True,'protocol_sha256':sha(out/'protocol.json')})
+ save(out/'input-preparation.json',{'prepared':8,'initial_saved_rgb_exactly_reproduced':True,'post_forward_delta0_vs_saved':rerender_errors,'protocol_sha256':sha(out/'protocol.json')})
 
 def infer(out):
  from m7_evaluate import M7Policy
@@ -164,6 +167,8 @@ def replays(out):
 def run(root,out):
  assert (root/'comparison-complete.json').exists(),'Comparison first'
  assert (root/'ordered-work-complete.json').exists(),'Fresh V4 search first'
+ assert read(root/'ordered-work-complete.json')['search_exit_code']==0,'Search integration failure needs inspection'
+ assert read(root/'v4-search/progress.json')['status'] in ['ten_verified_grasps','09:00_London_deadline'],'Search has not reached its authorized stop'
  p=read(out/'protocol.json');assert p['script_sha256']==sha(Path(__file__))
  source=Path(p['source']);assert p['source_episode_sha256']==sha(source/'episode.json') and p['source_proposal_sha256']==sha(source/'policy_io.npz')
  prepare_inputs(out)
