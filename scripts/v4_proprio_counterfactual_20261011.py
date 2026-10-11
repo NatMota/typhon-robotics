@@ -18,16 +18,21 @@ def run(root,out):
  grasp=np.array(audit['measured_v4_grasp_matrix_R_GO'])
  goal=Rotation.from_euler('z',scenario['config']['task']['target_yaw_rad']).as_matrix()
  bounds=np.array(scenario['config']['control']['workspace_bounds_m'])
- cases=[{'id':k} for k in ['C','X','R','M']]
+ bounded_audit=read(root/'diagnostics-v4/command-history-audit/audit.json')['query2']
+ np.testing.assert_array_equal(np.asarray(bounded_audit['raw_target'][:9],np.float32),base['proprio'][:9])
+ bounded=np.asarray(bounded_audit['bounded_command_target'])
+ canonical=matrix(base['proprio'])
+ cases=[{'id':k} for k in ['C','N','B','M']]
  save(out/'protocol.json',{'cases':cases,'seeds':SEEDS,'parent_protocol_sha256':sha(parent/'protocol.json'),
-  'definitions':{'C':'original commanded-target pose','X':'measured XYZ, commanded rotation','R':'commanded XYZ, measured rotation','M':'measured XYZ and rotation'},
+  'definitions':{'C':'original commanded-target pose','N':'same XYZ and decoded orientation, canonical unit rotation columns','B':'target reconstructed from previous bounded normalized command before environment workspace clamp','M':'measured XYZ and rotation'},
   'source':'exact saved release-generating query; simulator-derived robot pose only, no object-truth input',
   'actual_grasp_fixed_for_evaluation':True,'reused_C_responses':3,'new_generations':9,'physical_rollouts':0,'code_sha256':sha(Path(__file__))})
  (out/'diagnostic-source.py').write_bytes(Path(__file__).read_bytes())
  for c in cases:
   p=copy.deepcopy(base);k=c['id']
-  if k in ['X','M']:p['proprio'][:3]=meta['measured_eef_position_m']
-  if k in ['R','M']:p['proprio'][3:9]=np.r_[measured[:,0],measured[:,1]]
+  if k=='N':p['proprio'][3:9]=np.r_[canonical[:,0],canonical[:,1]]
+  if k=='B':p['proprio'][:9]=bounded[:9]
+  if k=='M':p['proprio'][:9]=np.r_[meta['measured_eef_position_m'],measured[:,0],measured[:,1]]
   assert all(pickle.dumps(p[key],protocol=4)==pickle.dumps(base[key],protocol=4) for key in p if key!='proprio')
   np.testing.assert_array_equal(p['proprio'][9:],base['proprio'][9:])
   folder=out/'inputs'/k;folder.mkdir(parents=True)
@@ -40,11 +45,21 @@ def run(root,out):
   assert set(actual.files)==set(reference.files)
   for key in actual.files:
    if key!='proprio' or c['id']=='C':np.testing.assert_array_equal(actual[key],reference[key])
+ n=load_payload(out/'inputs/N/payload.pkl.gz')['proprio']
+ equivalence_deg=math.degrees(Rotation.from_matrix(matrix(n)@canonical.T).magnitude())
+ assert equivalence_deg<1e-4,('Canonical encoding changes decoded orientation',equivalence_deg)
+ save(out/'qualification.json',{'N_vs_C_decoded_rotation_difference_deg_after_float32':equivalence_deg,
+  'actual_input_dtype':str(reference['proprio'].dtype),'bounded_vs_measured_rotation_deg':math.degrees(Rotation.from_matrix(matrix(bounded)@measured.T).magnitude()),
+  'bounded_vs_measured_position_mm':float(np.linalg.norm(bounded[:3]-meta['measured_eef_position_m'])*1000),
+  'bounded_command_stage':'after normalized XYZ/rotvec component clipping, before workspace clamp; both stages identical at selected command',
+  'contrasts':'C-N representation; N-B bounded versus raw target; B-M target versus achieved; sequential, not independent factorial effects'})
  from m7_evaluate import M7Policy
  from supervisor.adaptation.m6_contract import reorder
  policy=None;records=[]
  try:
-  policy=M7Policy(Path('/var/tmp/humanoid-m7-checkpoints-20261009/v4-m6.pt'),out/'worker.log',annotation_conditioned_v2=True)
+  checkpoint=Path('/var/tmp/humanoid-m7-checkpoints-20261009/v4-m6.pt')
+  assert sha(checkpoint)==read(root/'suite.json')['checkpoint_sha256']['v4-m6']
+  policy=M7Policy(checkpoint,out/'worker.log',annotation_conditioned_v2=True)
   save(out/'policy-load.json',policy.load_info)
   for c in cases:
    p=load_payload(out/'inputs'/c['id']/'payload.pkl.gz')
