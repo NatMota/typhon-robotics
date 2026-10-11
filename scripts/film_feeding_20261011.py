@@ -256,8 +256,19 @@ def alarm(*_):raise TimeoutError('Overnight search reached 09:00 Europe/London')
 def run_one(root,scenario,policy,policy_seed,run_id,deadline=False):
     destination=root/run_id
     policy.policy_seed=policy_seed;policy.audit_out=destination
+    telemetry=None
     def setup(env,out):
+        nonlocal telemetry
         bind=policy.bind(env,out) if isinstance(policy,M7Policy) else None
+        telemetry=gzip.open(out/'joint-telemetry.jsonl.gz','wt',compresslevel=1)
+        robot=env.env.robots[0];original_step=env.step
+        def recorded_step(action):
+            original_step(action);sim=env.env.sim
+            telemetry.write(json.dumps({'control_step':env.steps,
+                'joint_position_rad':sim.data.qpos[robot._ref_joint_pos_indexes].tolist(),
+                'joint_velocity_rad_s':sim.data.qvel[robot._ref_joint_vel_indexes].tolist(),
+                'eef_rotation_matrix':sim.data.site_xmat[robot.eef_site_id].tolist()})+'\n')
+        env.step=recorded_step
         if deadline:
             original=env.step
             def step(action):check_deadline();return original(action)
@@ -266,7 +277,10 @@ def run_one(root,scenario,policy,policy_seed,run_id,deadline=False):
     provenance={'suite_sha256':sha(root.parent/'suite.json'),'model':policy.model_manifest,
         'policy_seed':policy_seed,'simulator_seed':scenario['seed'],'config_sha256':scenario['config_sha256'],
         'raw_worker_requests_saved':isinstance(policy,EvidencePolicy),'harness':False,'expert_rescue':False}
-    result=run_episode(scenario,'pretrained',destination,policy,provenance,episode_setup=setup)
+    try:
+        result=run_episode(scenario,'pretrained',destination,policy,provenance,episode_setup=setup)
+    finally:
+        if telemetry:telemetry.close()
     if isinstance(policy,M7Policy):save(destination/'timed-predictions.json',policy.timed_predictions)
     if result.get('evaluation'):
         row=metrics(destination,'v4-m6' if deadline else policy.run_model,'native')
