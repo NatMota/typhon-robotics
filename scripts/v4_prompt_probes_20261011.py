@@ -2,7 +2,6 @@
 import argparse, copy, gzip, hashlib, json, math, pickle, sys, time
 from pathlib import Path
 import numpy as np
-from scipy.spatial.transform import Rotation
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 SEEDS=[61601,61602,61603]
 PRIMITIVES={
@@ -78,6 +77,7 @@ def prepare(bank,out):
  print(json.dumps({'prepared':225,'out':str(out)}))
 
 def describe(actions,metadata,payload):
+ from scipy.spatial.transform import Rotation
  actual=np.array(metadata['measured_eef_position_m']);actual_r=Rotation.from_quat(metadata['measured_eef_quat_xyzw']).as_matrix()
  rows=[]
  for i,a in enumerate(actions):
