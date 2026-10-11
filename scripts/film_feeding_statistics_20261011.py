@@ -22,7 +22,7 @@ def paired(a,b,families,seed=61117):
  observed=abs(float(delta.sum()))
  signs=rng.choice([-1.,1.],size=(50000,k))
  extreme=np.count_nonzero(np.abs(signs@sums)>=observed-1e-12)
- return {'mean_difference':float(delta.mean()),'cluster_bootstrap_95ci':interval(effects),
+ return {'mean_difference':float(delta.mean()),'equal_family_mean_difference_descriptive':float(np.mean(sums/sizes)),'cluster_bootstrap_95ci':interval(effects),
    'cluster_signflip_p':float((extreme+1)/50001),'paired_scenarios':len(delta),'independent_clusters_assumed':k}
 def holm(rows,key='cluster_signflip_p'):
  ordered=sorted(range(len(rows)),key=lambda i:rows[i][key]);last=0.
@@ -56,7 +56,7 @@ def main(root):
    complete=[r for r in rows if r['category']=='already_completed']
    initial=sum(r['initial_yaw_gap_deg'] for r in unfinished)
    summary.append({'model':model,'cohort':cohort,'n':len(rows),'complete_task_successes':sum(r['success'] for r in rows),
-    'unfinished_n':len(unfinished),'verified_pickups_70mm':sum(r['pickup'] for r in unfinished),
+    'unfinished_n':len(unfinished),'unfinished_task_successes':sum(r['success'] for r in unfinished),'verified_pickups_70mm':sum(r['pickup'] for r in unfinished),
     'final_placement_without_yaw':sum(r['placement_without_yaw'] for r in rows),
     'unfinished_final_placement_without_yaw':sum(r['placement_without_yaw'] for r in unfinished),
     'orientation_correct':sum(r['orientation_correct'] for r in rows),
@@ -81,12 +81,13 @@ def main(root):
    secondary.append({'model_a':a,'model_b':b,'endpoint':key,**values,'confirmatory':False})
  holm(primary)
  out=root/'analysis';out.mkdir(exist_ok=True)
+ (out/'analysis-source.py').write_bytes(Path(__file__).read_bytes())
  csvwrite(out/'model-cohort-summary.csv',summary)
  csvwrite(out/'primary-paired-comparisons.csv',primary)
  csvwrite(out/'exploratory-subgoal-comparisons.csv',secondary)
  allrows=[data[m][sid] for m in models for sid in ids]
  csvwrite(out/'all-775-episode-metrics.csv',allrows)
- report={'complete':True,'rollouts':775,'scenes':155,'models':5,'cohort_counts':{g:sum(s['cohort']==g for s in scenarios.values()) for g in groups if g!='all'},
+ report={'analysis_code_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'suite_sha256':hashlib.sha256((root/'suite.json').read_bytes()).hexdigest(),'complete':True,'rollouts':775,'scenes':155,'models':5,'cohort_counts':{g:sum(s['cohort']==g for s in scenarios.values()) for g in groups if g!='all'},
   'paired_initial_states_identical':True,'paired_configs_identical':True,'integration_failures':0,'primary_comparisons':primary,
   'primary_significant_pairs_holm_05':[(r['model_a'],r['model_b']) for r in primary if r['holm_p']<.05],
   'statistics':{'bootstrap_resamples':5000,'cluster_signflip_draws':50000,'random_seed':61117,
@@ -103,7 +104,8 @@ def main(root):
   if r['cohort']=='all':lines.append(f"| {r['model']} | {r['complete_task_successes']}/155 | {r['verified_pickups_70mm']}/{r['unfinished_n']} | {r['final_placement_without_yaw']}/155 | {r['mean_final_yaw_error_deg']:.2f}° | {r['mean_yaw_gap_closed_deg']:.2f}° |")
  lines+=['','The signed yaw improvement is wrapped angular error at the start minus wrapped angular error at the end. Positive means closer to the requested orientation. Aggregate normalized progress divides summed improvement by summed initial angular gap over unfinished scenes.',
  '', 'A verified pickup requires bilateral contact with at least70mm supported lift and an observed verified grasp attempt. Contact alone is reported in individual traces. A block initially in the square can finish inside without a new placement; category/cohort tables separate completed-state preservation and unnecessary contact/movement.',
- '', 'Primary paired comparisons use cluster sign-flip tests with Holm adjustment across10 model pairs.95% intervals use5000 paired family-cluster bootstrap resamples. Near-film variations share the original film parent cluster. Statistical significance is not guaranteed. Secondary subgoals are exploratory.',
+ '', 'Primary paired comparisons use cluster sign-flip tests with Holm adjustment across10 model pairs.95% intervals use5000 paired family-cluster bootstrap resamples. Near-film variations share the original film parent cluster. The primary effect weights each scenario equally; the CSV also reports an equal-family descriptive effect. Statistical significance is not guaranteed. Secondary subgoals are exploratory.',
+ '', 'Vanilla here is the pinned X-VLA-Pt checkpoint using domain3 and the declared observation adapter, not the separately released X-VLA-Libero checkpoint or the best possible zero-shot interface. The domain3 rotation order follows the official LIBERO client; generic M7 rotations are converted to the same controller convention.',
  '', 'Legacy and personal scenes were previously inspected. New synthetic cases remain within the same familiar task, geometry and cameras.30 near-film perturbations are not30 independent task families. Models V2–V4 use the declared causal simulator held-state crosshair condition; these comparisons evaluate complete variant recipes, not isolated architecture differences.',
  '', 'See model-cohort-summary.csv, primary-paired-comparisons.csv, exploratory-subgoal-comparisons.csv and all-775-episode-metrics.csv for all outcomes and uncertainty.']
  (out/'comparison-report.md').write_text('\n'.join(lines)+'\n')
