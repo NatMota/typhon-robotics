@@ -317,7 +317,8 @@ def search(root):
         n=0
         while sum(r['counted_grasp'] for r in rows)<10:
             check_deadline()
-            if shutil.disk_usage(root).free<8*1024**3:stop='storage_reserve_reached';break
+            while shutil.disk_usage(root).free<8*1024**3:
+                progress('waiting_for_verified_backup_space');check_deadline();time.sleep(20)
             lap,index=divmod(n,len(choices));s=choices[index]
             run_id=f"attempt-{n+1:04d}-{s['source_demo_id']}"
             n+=1
