@@ -1,0 +1,15 @@
+NEXT EXPERIMENTS — proposals, not launched
+
+Reviewed with GPT Pro in Hm challeng p2 on11 October2026. Full response: planner-final-review-20261011.txt.
+
+1. Map local competence of broad Pt12k. Freeze two source-parent choices using geometric criteria; test exact start,20mm inward,20mm outward and15degree yaw perturbation under two paired seeds (16 rollouts proposed). Keep target, reset, appearance, native inputs/H30 and scores fixed. Inspect predicted approach location, descent, closure, grasp relation and transport as well as success. Existing heldouts remain unchanged. This distinguishes useful local skill from dependence on exact source starts without another training run.
+
+2. Repair the object observer in passive replay on TRAIN-only trajectories. Separate physical hypotheses (tabletop/carried/uncertain) from the declared task phase; do not let an approach label force a resting-plane estimate after lifting. Use qualified RGB and measured telemetry, estimated grasp transform, uncertainty/slip handling, empty-close counterexamples, and separate release readiness from stable completion. No veto authority until it passes frozen transition tests. Do not merely relax12mm to20mm on known validation failures.
+
+3. Compare identical grasp-relative correction controllers with simulator-known versus estimated transforms on at most two source-derived held states. Use the full transform T_WG_goal = T_WO_goal inverse(T_GO), including translation. Match timing/path/control/termination and all original scoring. If privileged succeeds but estimated fails, estimation is implicated; if both fail, diagnose feasibility/contact/control. If both succeed, qualify on more source states before collecting supervised correction labels. The six validation recovery states remain quarantined.
+
+Keep V4/H30 as the release-failure diagnostic reference, broadPt12k as the source-competence reference, and the historical V3 comparator rather than substituting an unmatched panel. The new study does not rank all historical models.
+
+Only after these gates: training-only qualified DAgger-style interventions, then an explicitly compared supervised residual versus bounded residual-RL branch. Full PPO is not a shortcut around observation, state-distribution or controller failures.
+
+Limits: initial-XY hull coverage is not full training trajectory-state coverage; nearest XY/yaw neighbours may differ. H10 changes action commitment and observed state, not only amount of perception. Current images losing a legible2 does not prove earlier/history features carry no cue.

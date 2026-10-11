@@ -1,0 +1,115 @@
+{
+  "schema": "typhon-research-programme-20261011-v1",
+  "created_utc": "2026-10-11T07:42:27.784998+00:00",
+  "starting_commit": "d52b94aa477655177282111ee8797f0a72295b0f",
+  "compute": "UCL Powerglide RTX4090 only; Mint storage only; no paid pods",
+  "output_root": "/var/tmp/typhon-research-20261011",
+  "tasks": [
+    {
+      "id": "release-causality",
+      "directory": "release-prompts",
+      "owner": "release_and_prompts",
+      "question": "Raw policy rotation/gripper versus command bounds, measured wrist, actual object pose around release."
+    },
+    {
+      "id": "language-actions",
+      "directory": "release-prompts",
+      "owner": "release_and_prompts",
+      "question": "Fixed-image/state/noise instruction interventions; commanded direction audit before execution."
+    },
+    {
+      "id": "broader-pt",
+      "directory": "broad-pt",
+      "owner": "broad_pt_training",
+      "question": "New Pt full-weight adaptation on all six frozen P_train takes; 3000 and12000 immutable checkpoints; unchanged holdouts."
+    },
+    {
+      "id": "replan-30-vs-10",
+      "directory": "replanning-candidates",
+      "owner": "replanning_candidates",
+      "question": "Same V4 checkpoint and scene/seed pairs; execute30 versus10 before fresh observation."
+    },
+    {
+      "id": "candidate-oracle",
+      "directory": "replanning-candidates",
+      "owner": "replanning_candidates",
+      "question": "Eight stochastic proposals on six archived packets; simulator truth only offline scoring, no policy truth input."
+    },
+    {
+      "id": "phase-harness",
+      "directory": "hierarchy",
+      "owner": "subgoals_reasoning",
+      "question": "Explicit observable phase transitions versus unchanged V4 and deterministic primitives."
+    },
+    {
+      "id": "human-expert-timeline",
+      "directory": "human-timeline-retarget",
+      "owner": "runpod_node_a",
+      "question": "Align one human correction clip and generated robot trajectory by observable events, preserving timing/embodiment differences."
+    },
+    {
+      "id": "recovery-oracle",
+      "directory": "recovery-oracle",
+      "owner": "recovery_oracle",
+      "question": "Qualify privileged recovery from exact replayed V4 failure states; quarantine corrections, no repair training."
+    },
+    {
+      "id": "human-retarget",
+      "directory": "human-timeline-retarget",
+      "owner": "runpod_node_a",
+      "question": "Constrained robot retarget of observable object endpoints, not recovered human 3D commands."
+    },
+    {
+      "id": "ghost-critic",
+      "directory": "ghost-critic",
+      "owner": "xvla_qwen_service",
+      "question": "Blue translucent candidate arms; Luna Decisions visual choices, UNKNOWN allowed; API credential pending."
+    },
+    {
+      "id": "primitive-interface",
+      "directory": "hierarchy",
+      "owner": "subgoals_reasoning",
+      "question": "Explicit approach/align/grasp/release adapter; continuous X-VLA is not native function calling."
+    },
+    {
+      "id": "phase-predictor",
+      "directory": "hierarchy",
+      "owner": "subgoals_reasoning",
+      "question": "P_train-only phase predictor; heldout timing and predeclared deployment confidence gate."
+    },
+    {
+      "id": "hierarchy-rl-review",
+      "directory": "research-comparison",
+      "owner": "runpod_node_b",
+      "question": "Primary-source hierarchy/DAgger/residual/offline-critic/PPO/Q-learning comparison and protocol review."
+    }
+  ],
+  "preservation": "All frozen M0/M1/M15/M16/M3-M7 data, checkpoints, split membership, and prior results unchanged. New outputs and unique diagnostic scripts only.",
+  "training_split": {
+    "P_train": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "P_validation": [
+      "demo_0006",
+      "demo_0014",
+      "demo_0016"
+    ]
+  },
+  "analysis_rules": [
+    "Report grasp, lift, target-region placement, yaw residual, full-pose marked-face orientation, release, stable strict success separately.",
+    "Report required initial angle and final residual; orientation improvement does not imply placement success.",
+    "Repeated seeds and near-variants are clustered within source scene families, not independent demonstrations.",
+    "Fixed panels are diagnostic and do not establish statistically general superiority.",
+    "Simulator truth can score and drive explicitly privileged expert/oracle branches; it must not enter purported observable critic/harness features.",
+    "V4 original privileged held marker remains disclosed; input-channel changes are separate interventions.",
+    "Human object observations are scenario provenance; generated robot actions retain independent provenance.",
+    "No repair/PPO training requested within the recovery qualification branch.",
+    "No external publication."
+  ],
+  "gpu_schedule": "One full-weight trainer plus at most one inference model and bounded rendering, with measured free memory >0.8GiB. CPU analysis in parallel. Trainer is not killed to make space."
+}

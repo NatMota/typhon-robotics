@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-11T09:29:44.162081+00:00",
+  "physical_outcomes_changed": false,
+  "items": [
+    {
+      "id": "gripper-slot",
+      "details": "An exploratory broad-model command counter used unused arm slot19. Corrected to active slot9 and checked against every controller request; invalid diagnostics retained under broad-pt/invalidated-diagnostics. Training, model calls, physical scores and existing native fit metrics were unaffected."
+    },
+    {
+      "id": "strict-placement-definition",
+      "details": "Broad EVALUATION_REPORT opening metric gloss omits centre tolerance when describing additional strict constraints. Correct definition includes original15mm centre as well as10degree directed orientation, face up, full footprint, height, release and stability. Numerical scores and root report use all original criteria."
+    },
+    {
+      "id": "secondary-visual-goal",
+      "details": "The visual-goal secondary comparison was selected after simulated outcomes were known, then frozen before any Luna call. It is a development rubric-alignment analysis, not a preregistered physical comparison. Original strict scores remain unchanged."
+    },
+    {
+      "id": "yaw-normalization-cutoff",
+      "details": "One hierarchy ratio helper uses5degrees rather than the analysis plan10degree original orientation tolerance for eligibility. Current initial errors4.47,46.48,140.22,160.52degrees fall identically on either side, so no present count, eligibility or reported ratio changes. Root convention is10degrees; do not reuse the5degree helper as the frozen general definition."
+    },
+    {
+      "id": "simulation-terminology",
+      "details": "Physical execution in branch reports means physics-based MuJoCo rollout, not real robot hardware."
+    }
+  ]
+}

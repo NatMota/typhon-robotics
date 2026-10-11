@@ -1,0 +1,27 @@
+REPRODUCTION AND ARTIFACT MAP
+
+Powerglide repository: /cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010
+Full experiment root: /var/tmp/typhon-research-20261011
+Canonical backup root: /media/nm/Fast Drive/Typhon/research-20261011 on Mint
+
+Start with index.html, RESULTS.txt, RESEARCH_SUMMARY.json and REPORT_ERRATA.json. Branch reports link their frozen protocols, raw model targets/requests, RGB, controller traces, scorer outputs, failed versions and reproduction commands. ENVIRONMENT.json records both Python environments and installed distribution versions. FINAL_CODE_VALIDATION.json records the60 research scripts and their hashes; all parsed under Python3.11.
+
+GPU reproduction is environment-pinned and uses existing frozen dependencies/checkpoints; it is not claimed as a one-click portable installer. Run from the repository root. Use .venv-sim for MuJoCo/render/aggregation and .venv-xvla for model processes as specified by each driver. MUJOCO_GL=egl and PYOPENGL_PLATFORM=egl are required here; the official model cache is pinned/offline. Do not launch all experiments together: full-weight training uses about18GiB; inference workers about5.6GiB each. Assign a measured GPU slot before execution.
+
+Branch entry points and authoritative command locations:
+- Broad training: scripts/exp20261011_train_broad_pt.py; broad-pt/TRAINING_REPORT.md. Fixed step3000/step12000 plus full optimizer/RNG recovery checkpoint.
+- Broad evaluation: exp20261011_train_eval.py and exp20261011_train_eval_worker.py; broad-pt/EVALUATION_REPORT.md.
+- Posthoc source competence: exp20261011_train_source_competence.py; broad-pt/source-competence/SOURCE_COMPETENCE_REPORT.md.
+- Release/prompt/proprio probes: exp20261011_prompt_*.py; release-prompts branch reports.
+- H30/H10 and8candidate probes: exp20261011_replan_candidates.py; replanning-candidates/REPORT.md. Use a fresh --output destination; occupied evidence paths intentionally refuse overwrite.
+- Hierarchy: exp20261011_hierarchy_compare_v2.py and frozen runtime_v3; hierarchy/paired-panel-v2/commands.txt. Do not promote the failed guard to production.
+- Recovery: exp20261011_recovery_oracle.py and exp20261011_recovery_validate.py; recovery-oracle/REPORT.md.
+- Human timeline/retarget: exp20261011_human_timeline.py and exp20261011_human_retarget.py; human-timeline-retarget/REPORT.md.
+- Observation audit: exp20261011_human_orientation_audit.py; orientation-input-audit/REPORT.md.
+- Ghost/Luna: exp20261011_ghost_critic_v2.py; ghost-critic-v2 protocol/report. No API call is complete. Supply an authorized API credential using the documented environment/service interface; never put it in repository files.
+
+Replaying a frozen plan in a NEW output directory regenerates outcomes; aggregation commands generally consume existing raw episodes. Review the individual command contract before rerunning because several diagnostic scripts intentionally use the recorded absolute source paths. Do not overwrite a frozen directory to make a reproduction convenient. Failed runs and invalidated diagnostics are evidence, not disposable caches.
+
+Mint layout: broad-pt/artifacts holds analysis, raw evaluations and source snapshots; step3000.pt,step12000.pt and resume-step12000.pt are at broad-pt root. Hierarchy backups are preserved as immutable tranche1,2,3 and4-final folders, with independent primitive/IK audits under hierarchy/. The Mint index rewrites links to these verified destinations. All other branches retain their named root directories.
+
+All current executions are simulations; source phone clips were not converted into validated per-frame Franka supervision. Reports preserve the distinction between human observations, reconstructed scenarios, generated teacher commands, native VLA predictions and controller-applied actions.

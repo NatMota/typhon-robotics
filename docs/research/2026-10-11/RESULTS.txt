@@ -1,0 +1,200 @@
+TYPHON RESEARCH RESULTS — 11 OCTOBER 2026
+
+All requested local diagnostics and the fixed3k/12k adaptation are complete. Luna execution still needs authentication. Independent review and GPT Pro planner review are complete; final backup verification is in progress.
+
+All robot executions are MuJoCo simulations; no real robot hardware was tested.
+
+Main finding: the broad model performs on familiar starts, but fails the extrapolating heldout starts. V4 release also reflects a wrong grasp-relative rotation target. The tested short-horizon and phase-guard changes reduced grasping rather than improving it.
+
+1. Why V4 released before correcting orientation
+Complete: command and execution audit
+
+The policy requested opening. In film-demo_0006, seed7417, P(close) fell from 0.7874 to 0.2683 at 3.60 s. The controller passed OPEN through unchanged. At that instant raw/bounded wrist yaw was 93.00 degrees, measured wrist yaw 81.02 degrees, and brick-to-goal yaw residual 93.52 degrees. Under the actual gripper-to-object transform, the required wrist yaw was about 174.15 degrees. The final raw target itself implied 79.34 degrees remaining; an archived keep-closed intervention through that same chunk still ended 80.27 degrees wrong. Delaying release alone does not supply the missing rotation.
+
+Training and inference use previous-command proprioception after initialization: all 111 inspected noninitial M6 cache frames verified. Training targets encode bounded commands; inference retains raw predictions. The release query's previous raw target was 51.23 degrees / 55.14 mm from measured EEF; bounded reconstruction reduced the rotational discrepancy to 25.08 degrees. Fixed-noise input ablations opened at action11 for raw/bounded/normalization-only inputs versus13–14 for measured EEF, but every condition still implied roughly79–85 degrees error. These offline proposals do not validate a measured-proprio deployment fix.
+
+Exact observation preprocessing also exposes limited current orientation evidence: selected blue-2 fragments become2x1 or2x2 pixels at224 resolution, and the optional overhead crop is absent while held. Full camera views and causal history remain. Marker ablation did not change detected blue pixels or crop decisions in checked inputs. This motivates a controlled visibility test, not a claim that resizing caused the failure or that V4 cannot recognize a numeral.
+
+Evidence:
+  release-prompts/release-audit/REPORT.md
+  release-prompts/proprio-contract-audit/REPORT.md
+  release-prompts/release-proprio-ablation/REPORT.md
+  release-prompts/release-proprio-normalization-only/REPORT.md
+  orientation-input-audit/REPORT.md
+
+2. Can prompts produce simple arm actions?
+Complete: command-only controlled tests
+
+The initial36 chunks tested baseline, +X, -X, approach and extension instructions under fixed saved observations/noise. The expanded180 chunks tested ten conditions, two states and three noise tensors for each of vanilla, V3 and V4. Each model achieved0/18 paired opposite-axis reversals and0/6 paired open/close reversals. Wording can change predictions, but these tests do not establish reliable primitive control. V4's pregrasp closure probability stayed about0.956 under both open and close instructions. No literal extension or unqualified directional command was physically executed. Vanilla and adapted models retain different native observation/domain contracts, so this is not proof that fine-tuning destroyed language grounding.
+
+Evidence:
+  release-prompts/prompt-directions/REPORT.md
+  release-prompts/prompt-controls-vanilla-v3-v4/REPORT.md
+
+3. Does six-take full-weight Pt adaptation fix narrow M6?
+Complete: fixed3k/12k training and evaluation
+
+A fresh pinned X-VLA-Pt adaptation completed12,000 updates in64.01 minutes. All six frozen P_train takes0001,0002,0003,0005,0012,0013 contributed439 complete windows; each take received8,000 sampled draws. The first1,000 updates train active prompts/heads; the next1,000 ramp joint learning rates, followed by full shared-weight joint adaptation. This is not LoRA, new foundation pretraining, or reproduction of the paper's full benchmark budget. Both predetermined3k and12k checkpoints are retained and independently reload-validated. Original holdouts0006,0014,0016 remain unchanged.
+
+Primary comparison: narrowM6-3k, broadPt-3k and broadPt-12k each ran three held-out development families with two seeds. Every model scored0/6 grasps,0/6 placements and0/6 strict completion. Both broad models command closure on0014 without reaching/contacting the brick; neither closes on0006/0016. Their failure occurs before grasp, not at final release. An initial exploratory command counter used unused arm slot19; corrected slot9 counters now agree with every controller request. Invalid diagnostics and the correction are preserved; physical results and training were unaffected.
+
+Expert-conditioned per-take mean XYZ error on the six-source pool improved141.4→34.9→11.7 mm. Holdout error improved173.9→120.6→119.5 mm; heldout wrist error46.8→30.6→31.5 degrees. Only source0001 was seen by narrowM6, so the whole six-take pool is not its training set. Extra optimization improves source fit much more than holdout fit.
+
+A separately frozen post-hoc source-competence check of broad12k on the six exact training starts achieved6/6 bilateral supported lifts,5/6 stable released placements inside the square and4/6 strict completions. Take0001 holds the brick away from the goal;0005 is correctly oriented inside the square but at15.80 mm misses the unchanged15 mm centre tolerance. These familiar-source successes establish an operational action interface; they are not held-out improvement or a paired comparison against broad3k.
+
+All three heldout initial XY positions lie outside the convex hull of the six training starts. Nearest source XY distances are119.9,51.9 and313.7 mm; separately nearest source-yaw differences69.7,2.18 and85.7 degrees. This descriptive coverage gap qualifies the generalisation task; it neither establishes causality nor justifies changing holdouts. The data still contain six successful generated expert paths, not learner-state failures or human correction timing.
+
+Evidence:
+  broad-pt/TRAINING_REPORT.md
+  broad-pt/EVALUATION_REPORT.md
+  broad-pt/source-competence/SOURCE_COMPETENCE_REPORT.md
+  broad-pt/state-coverage.json
+  broad-pt/invalidated-diagnostics/CORRECTION.json
+
+4. Execute30 versus10 before reobserving
+Complete:24 matched physics-simulation rollouts
+
+Same V4 weights, same requested30-action forecast, six scenes from three source families, two noise seeds, H30 versusH10. All12 initial images/full forecasts and first10 executed commands/poses matched exactly;576 shared-timestep noise tensors matched. At20Hz, H30 executes1.5 s andH10 executes0.5 s before another observation.
+
+H30:2/12 verified pickups,2/12 stable released in-square placements ignoring yaw/centre,0/12 strict. H10:0/12 pickups/placements/strict. The two H30 pickups repeat film0006, not two independent source families. Mean wall time22.76 versus43.94 s;48 versus144 inference calls per episode. Both retain the same1500-step total simulation budget. Inference pauses simulated time, so these are not real-time operational throughput claims.
+
+Retain H30 for this checkpoint. More frequent replanning lost the known grasp. H10 does eventually command closure; the result cannot be reduced to 'it never closes' or prove that longer horizons are generally superior.
+
+Evidence:
+  replanning-candidates/REPORT.md
+  replanning-candidates/replanning/paired-input-noise-prefix-audit.json
+
+5. Can multiple proposals improve performance?
+Complete:64 proposals and privileged offline branches
+
+Primary48 proposals: eight each on six saved initial/pregrasp states. Empirical uniform-random single-candidate approach progress was72.9%; offline best-of-eight availability83.3%. Grasp-support coverage remained1/6 states for both: all eight proposals grasped in one state and none did in the other five. A ranker cannot select a grasp absent from this sampled set. This is limited candidate support, not a learned critic result or full episode success.
+
+The eight successful grasps were83–88 degrees from one canonical expert gripper-object transform; that is distinct from task yaw. A separate16-proposal held-state supplement reveals useful continuation capability: from V4's own off-axis held state, all eight settle inside the square but remain about85 degrees wrong. From a different near-expert held state acquired by V3, V4 gives seven stable, correctly oriented in-square placements. All sixteen fail the original strict benchmark: seven good placements have18–20 mm centre residual, while the sole centred near-expert candidate briefly exceeds the unchanged stability threshold. Differences in state/history/family prevent isolating grasp angle as the sole cause.
+
+Oracle scoring and simulated futures are privileged offline diagnostics. They were not fed to the evaluated V4 policy or represented as deployable TTC improvement.
+
+Evidence:
+  replanning-candidates/REPORT.md
+  replanning-candidates-supplement/REPORT.md
+
+6. Observable step-based harness
+Complete:24 paired route episodes; harmful guard rejected
+
+The frozen main panel compares unchanged V4, V4 plus observable phase guards, and deterministic observable primitives, each on six unfinished-task trials plus two already-completed trials. All routes score0/6 strict new completions and preserve2/2 already-completed cases.
+
+Unmodified V4 makes2/6 pickups and2/6 in-square placements, both film0006 repetitions with about85 degrees yaw remaining. The guarded route makes0/6 pickups or placements. It vetoes1,126 closing control steps and destroys both legitimate baseline grasps; there are zero opening vetoes or unknown-pose holds on that route. The deterministic route picks up2/6 on film0016 but never places, with2,616 unknown-pose hold steps. Do not deploy this guard as an improvement.
+
+The matched missed-grasp audit identifies coupled phase/pose assumptions: last visible pre-contact XY separation17–20 mm exceeds the12 mm gate; contact occurs before/around the next5Hz observer update. The observer later indicates holding but remains in approach and uses the resting plane for a lifted object, generating112–345 mm apparent errors. This is a measured gate failure, not inability of baseline V4 to grasp. No thresholds were tuned on those outcomes.
+
+Separate training-only development fixed a post-open projection plane: same-image error16–19 mm fell below0.7 mm; physical primitive successes stayed3/6, but recognition improved0/3→2/3. A two-axis endpoint IK selector was rejected after3/6→1/6 success; endpoint feasibility did not force the operational-space controller to execute the solved joint posture. Failed versions are preserved.
+
+Added guards use raw RGB and measured robot telemetry plus supplied geometry/calibration. The V4 actor still retains its original privileged held cue and last-target proprio; this does not make the entire system RGB-only.
+
+Evidence:
+  hierarchy/REPORT-final.txt
+  hierarchy/paired-panel-v2/paired-subgoals.json
+  hierarchy/paired-panel-v2/missed-valid-grasp-audit.json
+  hierarchy/independent-primitive-audit-v1/REPORT.md
+  hierarchy/two-axis-ik-qualification-v2/REPORT.md
+
+7. Synchronized human-video/expert timeline
+Complete:one reviewed event alignment
+
+The7.6 s correction clip demo0007 and its paired phone views are synchronized with estimated uncertainty±0.25 s and aligned to generated Panda events. Native-time and event-warped comparison videos are saved. The warp is a presentation device, not a validated frame-to-action identity. Human lift/rotation overlap and apparently supported pre-release holding have timing not reproduced or learned by the serial geometric teacher. Both already contain named lift/rotate/place/release phases. This single alignment is explicitly ineligible as direct motor-training labels.
+
+Evidence:
+  human-timeline-retarget/REPORT.md
+  human-timeline-retarget/review.html
+  human-timeline-retarget/event_table.csv
+  human-timeline-retarget/time_warp.json
+  human-timeline-retarget/missing_teaching_phases.json
+
+8. Live repair / DAgger prerequisite
+Complete:12 recovery branches; repair training deferred as requested
+
+Six exact replayed V4 failure states were handed off without reset or teleport to a nominal and a grasp-transform-aware expert. Strict recovery improves2/6→3/6, including repair of the off-axis held failure at4.36 mm /1.02 degrees residual. Three other states remain failures and hit joint limits; that does not prove global infeasibility. Independent scorer parity, exact handoff, stability and provenance were validated.
+
+Five successful branch suffixes contain1,211 generated actions. All examples remain quarantined because these are selected validation/development states. The teacher is not reliable enough to label arbitrary failure states automatically. Next collect separately qualified learner-visited TRAIN states; do not import this evaluation panel into adaptation. No DAgger or RL training was run in this branch.
+
+Evidence:
+  recovery-oracle/REPORT.md
+  recovery-oracle/independent-validation.json
+
+9. Human observations into Panda actions
+Complete:one constrained virtual-scale retarget
+
+Observable resting endpoints from the same short correction sequence were retargeted under Panda kinematic constraints. Seven waypoint IK checks passed, with minimum joint margin0.302 rad; sampled execution had no forbidden contacts and no attachment/teleport. The resulting simulated Panda execution succeeds at2.46 mm /0.081 degrees against the observed virtual endpoint and7.79 mm /4.25 degrees against the original supplied task goal. The mapped marker/goal shift9.107 virtual mm /4.333 degrees is disclosed.
+
+There is no reliable physical metric calibration or airborne human3D trajectory. Table scale, robot clearance/path/timing are supplied engineering choices. These are generated robot actions informed by observed object endpoints, not recovered human Franka commands, forces, or continuous collision-safety proof.
+
+Evidence:
+  human-timeline-retarget/REPORT.md
+  human-timeline-retarget/retarget_plan.json
+  human-timeline-retarget/provenance_manifest.json
+
+10. Blue ghost futures and Luna critic
+Prepared and validated; API execution blocked by missing authentication
+
+Blue translucent robot-arm/finger futures, actual future RGB, typed candidate choices and original unmarked current observations are prepared for64 candidates in32 slates across the primary and held-state supplement. Both visualization modes use actual simulator lookahead and are privileged; they are not a learned world model. The interface permits A–H, NONE_ADEQUATE and INSUFFICIENT_EVIDENCE, with refusal/API errors separate.
+
+Luna Decisions API calls remain ZERO. The configured key/service location was requested from Nat; no credential was available. No substitute judge is called Luna and no selection benefit/accuracy/latency is claimed.
+
+A separately versioned development comparison, chosen after physical outcomes were seen and frozen before any Luna call, matches the prompt's inside-square/upright/stable goal by excluding only the stricter15 mm centre criterion. It recognizes7/8 adequate futures in the near-expert held state and0/8 in the off-axis state, while preserving the original strict0/16. This avoids marking a visually valid choice wrong for a hidden centre requirement. No other scoring threshold changed.
+
+Evidence:
+  ghost-critic-v2/GHOST_CRITIC_V2_REPORT.txt
+  ghost-critic-supplement-v2/secondary_visual_goal_v3/SECONDARY_VISUAL_GOAL_REPORT.txt
+
+11. Explicit primitive/tool interface
+Complete:adapter plus deterministic comparison
+
+The external adapter validates named approach, align, grasp, lift, orient, place, release, retreat and hold requests with numeric robot targets. X-VLA still predicts continuous actions; it does not emit native function calls or reasoning tokens. The primitive route was physically evaluated in the same24-episode hierarchy panel and failed all six unfinished tasks, despite two pickups. Interface correctness is not skill reliability.
+
+Evidence:
+  hierarchy/REPORT-final.txt
+  hierarchy/paired-panel-v2/runtime-contract.json
+
+12. Phase/reasoning predictor
+Complete:trained offline; deployment gate failed
+
+A causal supervised phase classifier trained on six P_train takes reaches63.7% held-out frame accuracy and0.592 macro-F1 on179 frames from three takes. It predicts release early on22 frames and sustained release up to9.8 s before the teacher command. Teacher timing is a command label, not independent physical phase truth. No training-take cross-validation threshold achieves the predetermined90% selective-accuracy gate; admitted coverage is zero, so the head remains disabled online. This is a phase classifier, not LLM-style chain-of-thought or a learned hierarchy.
+
+Evidence:
+  hierarchy/REPORT-final.txt
+  hierarchy/phase-head-v1/transition-analysis.json
+
+13. Other hierarchy and RL variants
+Complete:primary-source/code review; new RL training not claimed
+
+Verified learner-state imitation is the nearest useful next learning step. DAgger addresses learner-distribution states via qualified teacher labels, but the current3/6 recovery oracle must improve first. Preserve family-level splits and failed suffixes; train only on separate training interventions.
+
+Options/phase learning needs initiation, termination and competent low-level skills; today's failed phase classifier and guard do not meet that gate. Candidate ranking is worthwhile only when acceptable alternatives exist and must separate candidate availability from ranker accuracy. CQL/IQL can help structure offline value learning but do not create missing action support.
+
+A bounded pose residual plus explicit release control is a smaller first RL problem than unrestricted30x20 action chunks, once the base controller/recovery domain is usable. Compare residual supervised correction against residual RL to isolate reinforcement benefits. Full PPO needs stochastic policy likelihoods, advantages, rewards and interaction; supervised flow matching is not PPO. DPPO provides a specialized denoising-policy approach, not a drop-in X-VLA switch.
+
+The paper's30 anchors over the next4 seconds are future-action preprocessing. They are separate from local visual history density and fromH10/H30 execution prefixes. No new PPO, Q-learning, learned critic or options training was performed here.
+
+Evidence:
+  research-comparison/REVIEW.txt
+  research-comparison/sources.json
+  research-comparison/REVIEW_NOTES.txt
+
+Interpretation and preservation limits
+- Selected development families, not untouched confirmatory tests. Seeds, windows and near-variants are correlated within source families.
+- Already-complete preservation is separate from new manipulation.
+- Strict completion retains all original geometry/orientation/centre/release/stability criteria.
+- Observed human endpoints and generated robot actions retain different provenance.
+- Frozen simulator geometry remains provisional50x35x30mm/80g, not a new physical measurement.
+- Original M0/M1/M15/M16/M3-M7 inputs and earlier results unchanged. No repository publication.
+
+Orientation metrics: required=abs(wrap(goal-initial)); remaining=abs(wrap(goal-final)); signed improvement=required-remaining. Normalize only when initial error exceeds the original tolerance. Keep wrist angle, object yaw and gripper-object transform discrepancy distinct.
+
+Excluded user review candidate6 remains demo0017, not demo0006. See curation-id-audit.
+
+
+Recommended next experiments (not launched)
+1. Freeze a small local-position/yaw robustness panel around two broadPt12k training starts, without changing existing holdouts.
+2. Repair tabletop/carried/uncertain pose estimation independently of task phase, then qualify it in passive replay on training trajectories before restoring veto authority.
+3. Compare identical recovery control with simulator-known versus observable estimated full grasp transforms on source-derived states.
+
+Full protocols proposed by the planner are in NEXT_EXPERIMENTS.txt; no extra training, RL or deployment is implied. Review corrections and precise score definitions are in REPORT_ERRATA.json.

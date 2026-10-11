@@ -1,0 +1,21 @@
+{
+  "accessed_utc_date": "2026-10-11",
+  "sources": [
+    {"id":"xvla_paper","title":"X-VLA: Soft-Prompted Transformer as Scalable Cross-Embodiment Vision-Language-Action Model","url":"https://arxiv.org/html/2510.10274v1","primary":true,"sections":"4.1, 4.2.1, 4.2.2","supports":"Foundation pretraining versus adaptation; future30anchor4second trajectory abstraction; multimodal policy."},
+    {"id":"xvla_train","title":"Official X-VLA train.py","url":"https://github.com/2toinf/X-VLA/blob/6bc2513f5f1cbec715cc668b414392a6cae5c671/train.py","raw_url":"https://raw.githubusercontent.com/2toinf/X-VLA/6bc2513f5f1cbec715cc668b414392a6cae5c671/train.py","primary":true,"supports":"Parameter groups and conditional scheduler; current implementation differs from simple paper schedule shorthand."},
+    {"id":"xvla_model","title":"Official X-VLA modeling_xvla.py","url":"https://github.com/2toinf/X-VLA/blob/6bc2513f5f1cbec715cc668b414392a6cae5c671/models/modeling_xvla.py","raw_url":"https://raw.githubusercontent.com/2toinf/X-VLA/6bc2513f5f1cbec715cc668b414392a6cae5c671/models/modeling_xvla.py","primary":true,"supports":"Multiview encoder; continuous generation interface; no phase planner/log-probability interface."},
+    {"id":"foundation","title":"X-VLA-Pt pinned foundation checkpoint","url":"https://huggingface.co/2toINF/X-VLA-Pt/tree/c1c4a64a7e03ac5b95c468bf1578f3d03651b53b","primary":true,"access":"Local pinned model/config/manifest inspected; web model-file fetch unavailable."},
+    {"id":"options","title":"The Option-Critic Architecture","url":"https://arxiv.org/pdf/1609.05140","primary":true,"supports":"Option initiation/policy/termination definitions and joint learning of policy and termination."},
+    {"id":"dagger","title":"A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning","url":"https://proceedings.mlr.press/v15/ross11a.html","primary":true,"supports":"Learning on learner-induced state distribution through iterative expert-labelled aggregation."},
+    {"id":"residual_rl","title":"Residual Reinforcement Learning for Robot Control","url":"https://arxiv.org/abs/1812.03201","primary":true,"supports":"Conventional feedback control plus learned residual."},
+    {"id":"cql","title":"Conservative Q-Learning for Offline Reinforcement Learning","url":"https://arxiv.org/abs/2006.04779","primary":true,"supports":"Offline distribution shift/value overestimation and conservative value regularization."},
+    {"id":"iql","title":"Offline Reinforcement Learning with Implicit Q-Learning","url":"https://arxiv.org/abs/2110.06169","primary":true,"supports":"Offline value estimation avoiding querying unseen actions; advantage-weighted behavior cloning extraction."},
+    {"id":"ppo","title":"Proximal Policy Optimization Algorithms","url":"https://arxiv.org/abs/1707.06347","primary":true,"supports":"Environment sampling and policy-gradient surrogate optimization."},
+    {"id":"dppo","title":"Diffusion Policy Policy Optimization","url":"https://arxiv.org/html/2409.00588v3","primary":true,"sections":"1.1,4.1,4.2,C.6","supports":"Denoising/environment two-layer MDP, explicit stochastic likelihoods; specialized diffusion-policy PPO mechanism."},
+    {"id":"statistics","title":"Deep Reinforcement Learning at the Edge of the Statistical Precipice","url":"https://arxiv.org/abs/2108.13264","primary":true,"supports":"Interval estimates and uncertainty-aware aggregate evaluation; family-specific design recommendations are this review's inference."}
+  ],
+  "access_limits": [
+    {"url":"https://openreview.net/pdf?id=kt51kZH4aG","result":"Verification challenge; not relied upon as read full text."},
+    {"url":"https://www.sciencedirect.com/science/article/pii/S0004370299000521","result":"403; options definition instead verified in Option-Critic primary paper."}
+  ]
+}

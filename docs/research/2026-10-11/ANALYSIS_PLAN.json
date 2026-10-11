@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-10-11T08:18:31.724222+00:00",
+  "status": "Frozen before broad-checkpoint, replanning, and V4-hierarchy panels begin; preliminary candidate, recovery, and deterministic prototype outcomes already observed.",
+  "units": {
+    "broad_pt": "3 development take families x 2 inference seeds x 3 checkpoints = 18 episodes",
+    "replanning": "3 film families, each original plus one near variation, x 2 seeds x 2 execution lengths = 24 episodes",
+    "hierarchy": "3 unfinished development families + 1 already-complete family x 2 seeds x 3 routes = 24 episodes per frozen implementation"
+  },
+  "primary_outcomes": [
+    "strict stable complete feeding success, separated from already-complete preservation",
+    "bilateral grasp with at least70mm lift",
+    "new placement inside target region",
+    "final directed yaw residual and marked-face/upright residual"
+  ],
+  "orientation": {
+    "required": "absolute wrapped(target_yaw - initial_yaw)",
+    "remaining": "absolute wrapped(target_yaw - final_yaw)",
+    "signed_improvement": "required - remaining; may be negative",
+    "fractional_improvement": "signed_improvement / required only when required exceeds the original yaw tolerance; otherwise NA",
+    "eligibility": "Report unmanipulated, touched, and verified-pickup cases separately. A small yaw residual alone is not placement or full-pose success."
+  },
+  "comparison": {
+    "paired": "Retain scene/seed pairs and per-family results; raw numerator/denominator first.",
+    "broad3k_vs_narrow3k": "Changed data recipe including breadth, complete-window coverage and balanced sampling. Matched initialization/native code/schedule; not isolate take count alone.",
+    "broad12k_vs_broad3k": "Same continuing training seed/run, additional optimization; not independent trained replicates.",
+    "replan30_vs10": "Same30-action model output, execute prefix30 or10. More frequent fresh observations; no changed weights or candidate oracle.",
+    "guard_vs_v4": "Any gains belong to hybrid controller, retain inherited privileged held cue and target-proprio disclosure.",
+    "prototype_fixes": "Never combine a failed frozen implementation with a corrected implementation. Version and report development qualification separately."
+  },
+  "uncertainty": "These3-4 development families have already been inspected. Report descriptive paired effects and raw family outcomes; do not claim statistical general superiority or treat frames/seeds/near-variants as independent human demonstrations.",
+  "candidate_metrics": [
+    "candidate availability per state",
+    "uniform random single-candidate expected progress",
+    "offline oracle best-of-eight progress",
+    "Luna selection conditional on available adequate options",
+    "selected physical progress/outcome",
+    "abstention type and API/schema failures"
+  ],
+  "teacher_labels": "Recovery diagnostic validation states and all failed suffixes remain quarantined from training. Full state/action/data provenance retained.",
+  "timing": "Wall inference, simulator steps/time, number of queries and total runtime reported separately. No artificial real-time wait.",
+  "no_posthoc_changes": [
+    "No heldout threshold tuning",
+    "No selecting3k/12k by outcomes",
+    "No excluding failed or stalled episodes",
+    "No claiming Luna execution without successful authenticated API calls"
+  ]
+}

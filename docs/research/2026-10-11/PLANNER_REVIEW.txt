@@ -1,0 +1,220 @@
+## Nat: we now have a source-competent policy—not yet a transferable one
+
+**The broad 12k result is a substantial positive finding:** six verified grasps and lifts from six training starts, five stable released placements inside the square, and four original-strict completions. That supersedes “the Pt adaptation cannot perform the source task.”
+
+**The equally important negative finding is that this ability did not transfer to the three development configurations.** The guard and H10 interventions then show that adding supervision or more frequent replanning can suppress existing competence when their assumptions do not match the policy’s behavior.
+
+My recommended next three experiments are:
+
+1. **Measure the spatial neighborhood in which the broad policy remains competent.**
+2. **Repair and qualify the phase-independent object observer in passive replay, before allowing it to gate actions.**
+3. **Test an observable grasp-relative correction against its privileged counterpart.**
+
+These are descriptive proposals for Nat to choose from—not additions to the completed programme.
+
+---
+
+## 1. Source 6/6 versus held-out 0/6: the central interpretation
+
+| Evaluation | Broad 12k result | What it establishes |
+|---|---:|---|
+| Six P_train starts, one fixed seed each | **6/6 pickups and supported lifts** | Actual learned source manipulation |
+| Same source panel | **5/6 stable, released, inside-square placements** | Placement competence under those source conditions |
+| Same source panel | **4/6 original-strict completions** | All original criteria can be achieved by this checkpoint |
+| Three P_validation starts, two seeds each | **0/6 pickups, placements or strict completions** | No demonstrated transfer on these three development configurations |
+
+The source panel is **post-hoc, separately frozen evidence**. It does not change the original 18-rollout evaluation or the historical 775 comparison.
+
+### The coverage audit changes the meaning of the negative result
+
+All three validation **initial XY positions** lie outside the six training starts’ convex hull. Their nearest-source distances are approximately **120 mm, 52 mm and 314 mm**. This is not an ordinary test of small variations around demonstrated starts.
+
+A better conclusion is:
+
+> **The broad model acquired closed-loop competence at its source starts but failed the tested initial-position extrapolations, with substantial initial-yaw coverage gaps in two cases.**
+
+Two qualifications are important.
+
+First, **initial-state coverage is not full trajectory-state coverage**. The audit does not establish that every validation observation lies outside all states encountered during training.
+
+Second, the nearest XY neighbor and nearest-yaw neighbor may be different demonstrations. Report them separately rather than implying that one nearby example matches both. For circular yaw, “coverage gap” is clearer than unqualified “extrapolation.”
+
+This is consistent with a general imitation-learning problem: actions take the robot into its own evolving observation distribution, which may differ from expert training trajectories. But the literature does not establish that distribution shift is the sole cause of this particular failure. [Proceedings of Machine Learning Research](https://proceedings.mlr.press/v15/ross11a.html)
+
+### More optimization improved fitting, not measured transfer
+
+From broad 3k to broad 12k, the reported six-take-pool XYZ error falls from **34.93 to 11.7 mm**, while validation error changes from **120.60 to 119.5 mm**.
+
+That supports **diminishing benefit on this fixed development panel**, not “further optimization can never help.” It also does not establish when source competence appeared: without matched source rollouts at broad 3k, we cannot attribute its acquisition specifically to the extra 9,000 updates.
+
+Likewise, narrow-to-broad comparisons change the data recipe as well as coverage. The narrow model’s error over the six-take pool is not its training-set error: it saw only take0001.
+
+**The corrected close-command counts matter.** Broad models sometimes close repeatedly on take0014 without contact; on the other two validation starts they do not close. The failure is therefore not uniformly “the policy never requests a grasp.” It is failure to reach and execute a physically useful grasp sequence.
+
+Training and evaluation objectives need to remain distinct; this is also a central finding of systematic robot-imitation studies. [arXiv](https://arxiv.org/abs/2108.03298)
+
+## 2. The harmful guard and H10 results
+
+### The guard has an identified structural failure—not merely a bad threshold
+
+The missed-grasp audit reveals this loop:
+
+**Approach phase → resting-plane pose estimate → distance fails the gate → phase cannot advance → resting-plane estimate retained even after lifting.**
+
+That explains how a moderate precontact discrepancy becomes a **112–345 mm pose error** after the block leaves the table. The observer later reports holding, but the phase logic prevents the geometric interpretation from catching up.
+
+**Do not repair this by merely increasing 12 mm to 20 mm.** That could unblock the observed examples while preserving the circular dependency.
+
+The current evidence supports disabling this guard. It does not support the broader claim that phase-based control is inherently harmful. The projection correction improving recognition without improving physical outcomes is also informative: **fixing an observer’s output does not automatically fix the action policy or controller.**
+
+The phase head likewise remains unsuitable for online gating. Its accuracy and early release predictions do not provide a reliable readiness decision.
+
+### H10 is worse here, but this is not “more observation is harmful”
+
+H10 changed more than observation frequency: it **discarded the remaining 20 actions and replaced them with a new proposal**. That changes action commitment and phase timing. Receding-horizon policies explicitly involve both sequence prediction and a choice of how much of that sequence to execute. [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/)
+
+A plausible explanation is repeated postponement of actions lying later in the chunk, or inconsistency between successive proposals. **Neither mechanism is established by the aggregate counts.**
+
+The defensible result is:
+
+> **For this checkpoint and matched panel, H10 eliminated the two H30 pickups while increasing queries and wall time. Retain H30 as the reference.**
+
+Because inference pauses simulation, do not attribute the physical failures to increased wall-clock latency alone.
+
+## 3. Other causal conclusions that need tightening
+
+| Claim | Assessment |
+|---|---|
+| **V4’s target is wrong for its acquired grasp** | Supported by the measured transform and fixed-grasp implications |
+| **The controller caused the premature opening** | Rejected in the audited episode: V4 generates opening and the controller passes it through |
+| **Tracking error explains the orientation failure** | Insufficient. Even achieving the selected target would leave substantial yaw error |
+| **Delaying opening repairs the behavior** | Rejected for the tested saved sequence |
+| **Measured-state or canonicalized proprioception is a validated fix** | Not supported; none of the packet substitutions produced the required correction |
+| **The models are language-insensitive** | Too broad. Wording changes motion, but the tested opposing primitives do not provide useful signed control |
+| **The policies cannot see the numeral** | Too broad. Earlier controlled edits established local numeral dependence; correct directional use under occlusion remains unresolved |
+| **The grasp-aware expert is a reliable recovery oracle** | Not established by 3/6 strict success; joint-limit failures remain |
+| **An eight-candidate critic should solve grasping** | Not in candidate sets containing no successful grasp |
+| **The human video has been converted into measured robot actions** | Incorrect. One observed-endpoint retargeting succeeded; robot path, timing and clearance were supplied |
+
+For the recovery comparison, retain paired gains and losses, not just **2/6 → 3/6**. And preserve all five successful suffixes as quarantined development-derived data. DAgger is specifically about appropriate supervision on learner-visited states; it does not justify importing inspected evaluation failures into the training set. [Proceedings of Machine Learning Research](https://proceedings.mlr.press/v15/ross11a.html)
+
+### Keep three different reference models
+
+I would adjust your baseline recommendation:
+
+- **V3/H30:** strongest manipulation reference from the 775 development comparison.
+- **V4/H30:** principal reference for the diagnosed off-axis grasp and continuation behavior.
+- **Broad Pt-12k:** source-competent reference for coverage and generalization.
+
+Do not declare broad Pt better than V3 from unmatched panels, or demote V3 merely because subsequent diagnostics concentrated on V4.
+
+---
+
+## 4. Ranked next three engineering experiments
+
+| Rank | Proposed experiment | Smallest useful scope | Principal decision |
+|---:|---|---|---|
+| **1** | **Local spatial robustness of broad Pt-12k** | Two source parents × four controlled start conditions × two paired seeds: **16 rollouts** | Does competence survive small changes, and does the proposal follow the moved object? |
+| **2** | **Phase-independent observer, evaluated passively** | Existing train-only recorded trajectories; no action vetoes initially | Can the observer track tabletop → grasped → released transitions without phase lock-in or truth leakage? |
+| **3** | **Observable versus privileged grasp-relative correction** | At most two source-derived held states × two matched controller variants | Is usable recovery limited by pose estimation or by physical control? |
+
+### 1. Map the useful neighborhood around learned starts
+
+This is my first choice because it directly investigates the new **source-success/validation-failure split** without training another model.
+
+Select two source parents by a frozen geometric rule, preferably training-start hull vertices. For each, predeclare:
+
+| Condition | Change |
+|---|---|
+| Original | Exact source reconstruction |
+| Inward translation | Small displacement toward the training-start hull interior |
+| Outward translation | Equal-size displacement away from that hull |
+| Yaw change | Small yaw perturbation at the original XY |
+
+A **20 mm XY displacement and 15° yaw change** are reasonable proposed scales, subject to pre-outcome geometry and collision checks. Keep the robot reset, target, appearance, instruction, H30 and scoring unchanged. Use original plus one additional paired seed.
+
+Record not only success, but **the first departure from the source behavior**: approach target, descent, closure position, acquired grasp, and transport.
+
+**Decision branches:**
+
+- Success survives local changes but not the distant validation starts: evidence of a useful local skill with limited coverage.
+- A small object shift leaves the proposal near the old absolute approach location: evidence consistent with insufficient object-relative adaptation.
+- XY shifts work but yaw changes fail: orientation/grasp coverage becomes the sharper issue.
+- Raw targets adapt appropriately but execution fails: investigate physical approach/grasp feasibility rather than assume visual blindness.
+
+This is a mechanistic development panel, not a replacement holdout. Keep the original validation configurations unchanged.
+
+### 2. Repair the observer before giving it control authority
+
+Run the old and revised observers **in shadow mode on the same recorded train-only trajectories**. The observer reports what it believes; it cannot veto actions.
+
+The key architectural change is:
+
+> **Estimated physical state must not be determined solely by the supervisor’s declared task phase.**
+
+Maintain alternatives such as tabletop, carried and uncertain. Use only qualified visual evidence and measured robot/gripper signals to update them. A commanded close is not proof of holding; an unadvanced task phase is not proof that the object remains on the table.
+
+For carried-pose propagation, use an estimated acquired transform:
+
+\[
+\widehat T_{WO}(t)
+=
+T_{WG}^{\mathrm{measured}}(t)\,\widehat T_{GO}.
+\]
+
+This follows rigid-transform composition, but it is only useful while the estimated grasp relationship remains credible. [Modern Robotics](https://modernrobotics.northwestern.edu/nu-gm-book-resource/3-3-1-homogeneous-transformation-matrices/) In-hand tracking under occlusion is a genuine estimation problem; robot motion alone cannot guarantee that the object did not slip. [arXiv](https://arxiv.org/abs/2002.12160)
+
+**Qualification requirements:**
+
+- No simulator object pose or simulator-held crosshair as an undeclared observable input.
+- No resting-plane projection applied to a confidently lifted object.
+- No full-confidence carried pose after unobserved regrasp or suspected slip.
+- Separate **ready to release** from **released and stable**.
+- Record uncertainty and bounded “unknown” outcomes rather than indefinite blocking.
+
+An RGB-selected crop can support this observer, but its detector must remain observable. Do not simultaneously alter the VLA’s native inputs in the first shadow test.
+
+**Decision gate:** only consider a small paired physical gate evaluation if the passive observer correctly handles the recorded transitions, including empty closes and necessary holds—not merely the successful releases. Freeze it before returning to development cases.
+
+### 3. Test estimated grasp-relative recovery against its oracle counterpart
+
+The valuable next step is not another demonstration that simulator truth can recover demo0006. It is testing whether the relevant transform can be estimated well enough to make that correction useful.
+
+Use at most two **source-derived, learner-visited held states** with differing grasp relationships. Reuse existing source records or states from experiment 1. If no suitable off-axis source state exists, record that gap; do not silently convert demo0006’s development suffix into training material.
+
+Compare the same correction controller using:
+
+| Variant | Object-to-gripper relationship |
+|---|---|
+| Privileged diagnostic | Measured simulator transform |
+| Observable candidate | Estimated transform from the qualified observer |
+
+Keep trajectory construction, speed limits, control, horizon and release procedure the same. Use the complete pose relationship, including translation where relevant:
+
+\[
+T_{WG}^{*}
+=
+T_{WO}^{*}\left(T_{GO}\right)^{-1}.
+\]
+
+An orientation change can move the object centre when its grasp offset is nonzero; rotation-only correction need not preserve placement. [Modern Robotics](https://modernrobotics.northwestern.edu/nu-gm-book-resource/3-3-1-homogeneous-transformation-matrices/)
+
+**Decision gate:**
+
+- Oracle succeeds, estimated version fails: estimation is the immediate bottleneck.
+- Both fail similarly: investigate path, posture and contact feasibility; do not collect those actions as successful teaching targets.
+- Both succeed: there is a candidate observable correction component worth further validation.
+
+This remains an explicitly hybrid-controller experiment, not a newly learned VLA success. Training on qualified source-only corrections can be considered later, not assumed now.
+
+---
+
+## 5. Final synthesis and remaining blocker
+
+**Luna remains untested, not unsuccessful.** The 16 held-state candidates come from **two starting states**, not 16 independent states. Its planned visual-goal endpoint and original strict endpoint should remain separate. Executed simulator futures are privileged lookahead, even when the API receives only images.
+
+The candidate result already tells us the likely role: **select when useful alternatives exist, and reject or abstain when they do not**. It cannot repair proposal support merely by ranking it.
+
+The final report should preserve the counter correction prominently: unused-arm slot19 produced an invalid diagnostic; corrected slot9 counts agree with executed gripper commands. Physical scores are unchanged. Likewise, declare the human-retarget goal shift and retain both endpoint comparisons.
+
+**My final interpretation is: we have demonstrated learned source competence, narrow state-dependent manipulation elsewhere, and several informative failures of proposed improvements. The next leverage is understanding the policy’s spatial operating region and repairing observable grasp-state estimation—not another blind increase in training, more prompt paraphrases, or deploying the failed guard.**
