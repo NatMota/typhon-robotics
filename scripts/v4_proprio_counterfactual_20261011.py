@@ -5,6 +5,8 @@ import numpy as np
 from scipy.spatial.transform import Rotation
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from v4_prompt_probes_20261011 import read,save,sha,load_payload,matrix,describe,SEEDS
+from supervisor.baseline.xvla import to_action
+from supervisor.adaptation.actions import absolute_target
 
 def run(root,out):
  parent=root/'diagnostics-v4/priority-bundle'
@@ -21,7 +23,14 @@ def run(root,out):
  bounded_audit=read(root/'diagnostics-v4/command-history-audit/audit.json')['query2']
  np.testing.assert_array_equal(np.asarray(bounded_audit['raw_target'][:9],np.float32),base['proprio'][:9])
  bounded=np.asarray(bounded_audit['bounded_command_target'])
- canonical=matrix(base['proprio'])
+ # Use the real deployment decoder and training encoder. The diagnostic
+ # scales below ensure clipping cannot intervene in this algebraic roundtrip.
+ identity_obs={'proprio':{'eef_position_m':[0.,0.,0.],'eef_quat_xyzw':[0.,0.,0.,1.]}}
+ roundtrip_cfg={'control':{'translation_step_m':100.,'rotation_step_rad':10.}}
+ decoded_command=to_action(base['proprio'],identity_obs,roundtrip_cfg)
+ assert np.max(np.abs(decoded_command[:6]))<1.
+ encoded=absolute_target(decoded_command,identity_obs,roundtrip_cfg)
+ canonical=Rotation.from_rotvec(decoded_command[3:6]*10.).as_matrix()
  cases=[{'id':k} for k in ['C','N','B','M']]
  save(out/'protocol.json',{'cases':cases,'seeds':SEEDS,'parent_protocol_sha256':sha(parent/'protocol.json'),
   'definitions':{'C':'original commanded-target pose','N':'same XYZ and decoded orientation, canonical unit rotation columns','B':'target reconstructed from previous bounded normalized command before environment workspace clamp','M':'measured XYZ and rotation'},
@@ -30,7 +39,7 @@ def run(root,out):
  (out/'diagnostic-source.py').write_bytes(Path(__file__).read_bytes())
  for c in cases:
   p=copy.deepcopy(base);k=c['id']
-  if k=='N':p['proprio'][3:9]=np.r_[canonical[:,0],canonical[:,1]]
+  if k=='N':p['proprio'][3:9]=encoded[3:9]
   if k=='B':p['proprio'][:9]=bounded[:9]
   if k=='M':p['proprio'][:9]=np.r_[meta['measured_eef_position_m'],measured[:,0],measured[:,1]]
   assert all(pickle.dumps(p[key],protocol=4)==pickle.dumps(base[key],protocol=4) for key in p if key!='proprio')
@@ -46,10 +55,11 @@ def run(root,out):
   for key in actual.files:
    if key!='proprio' or c['id']=='C':np.testing.assert_array_equal(actual[key],reference[key])
  n=load_payload(out/'inputs/N/payload.pkl.gz')['proprio']
- equivalence_deg=math.degrees(Rotation.from_matrix(matrix(n)@canonical.T).magnitude())
+ decoded_n=to_action(n,identity_obs,roundtrip_cfg)
+ equivalence_deg=math.degrees(Rotation.from_matrix(Rotation.from_rotvec(decoded_n[3:6]*10.).as_matrix()@canonical.T).magnitude())
  assert equivalence_deg<1e-4,('Canonical encoding changes decoded orientation',equivalence_deg)
  save(out/'qualification.json',{'N_vs_C_decoded_rotation_difference_deg_after_float32':equivalence_deg,
-  'actual_input_dtype':str(reference['proprio'].dtype),'bounded_vs_measured_rotation_deg':math.degrees(Rotation.from_matrix(matrix(bounded)@measured.T).magnitude()),
+  'roundtrip_uses_executed_decoder_and_training_encoder':True,'decoder_file_sha256':sha(ROOT/'supervisor/baseline/xvla.py'),'encoder_file_sha256':sha(ROOT/'supervisor/adaptation/actions.py'),'actual_input_dtype':str(reference['proprio'].dtype),'bounded_vs_measured_rotation_deg':math.degrees(Rotation.from_matrix(matrix(bounded)@measured.T).magnitude()),
   'bounded_vs_measured_position_mm':float(np.linalg.norm(bounded[:3]-meta['measured_eef_position_m'])*1000),
   'bounded_command_stage':'after normalized XYZ/rotvec component clipping, before workspace clamp; both stages identical at selected command',
   'contrasts':'C-N representation; N-B bounded versus raw target; B-M target versus achieved; sequential, not independent factorial effects'})
