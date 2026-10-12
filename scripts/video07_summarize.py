@@ -2,9 +2,6 @@
 from pathlib import Path
 import argparse,json,math
 import cv2,numpy as np
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
 def save(p,x):Path(p).write_text(json.dumps(x,indent=2,allow_nan=False)+'\n')
 p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--phase-notes',type=Path,required=True);a=p.parse_args();root=a.root;out=root/'summary-v1';out.mkdir(parents=True,exist_ok=False);cp=root/'comparison-v2';native=root/'native-v1';idx=json.loads((native/'index.json').read_text());pairs=json.loads((cp/'pair-measurements.json').read_text());windows=json.loads((cp/'window-measurements.json').read_text());ss=json.loads((cp/'summary.json').read_text());results={};vframes=0
 for kind in ['held','stationary_control']:
@@ -30,8 +27,7 @@ for r in pairs:
   assert r['baseline_qualified']==r['native_qualified'],r
 save(out/'results.json',results);save(out/'validation.json',{'native_videos_decoded':12,'native_preview_frames':vframes,'identical_two_frame_inputs_have_same_qualification':True,'baseline_gap_correction_preserved':True,'phase_notes_not_training_labels':True})
 labels=['Held frame pairs','Held 0.6s windows','Stationary frame pairs','Stationary 0.6s windows'];counts=[(results['held']['baseline_qualified_pairs'],results['held']['native_qualified_pairs'],results['held']['pairs']),(results['held']['baseline_qualified_windows'],results['held']['native_qualified_windows'],results['held']['windows']),(results['stationary_control']['baseline_qualified_pairs'],results['stationary_control']['native_qualified_pairs'],results['stationary_control']['pairs']),(results['stationary_control']['baseline_qualified_windows'],results['stationary_control']['native_qualified_windows'],results['stationary_control']['windows'])]
-fig,ax=plt.subplots(figsize=(10,5));y=np.arange(4);ax.barh(y-.18,[b/n*100 for b,k,n in counts],height=.32,label='10 Hz',color='#526981');ax.barh(y+.18,[k/n*100 for b,k,n in counts],height=.32,label='Native (~30 Hz)',color='#13806a')
-for j,(b,k,n)in enumerate(counts):
- ax.text(b/n*100+1,j-.18,f'{b}/{n}',va='center',fontsize=10);ax.text(k/n*100+1,j+.18,f'{k}/{n}',va='center',fontsize=10)
-ax.set_yticks(y,labels);ax.invert_yaxis();ax.set_xlim(0,116);ax.set_xlabel('Intervals with sufficient feature-tracking support (%)');ax.set_title('More observed frames preserve more held-object correspondences');ax.spines[['top','right']].set_visible(False);ax.legend(loc='lower left');fig.text(.02,.02,'Six previously inspected takes; matched endpoints. Correlated intervals; support is not pose accuracy or robot success.',fontsize=9);fig.tight_layout(rect=(0,.05,1,1));fig.savefig(out/'cadence-comparison.png',dpi=180);fig.savefig(out/'cadence-comparison.svg');plt.close(fig)
+table=['| Interval type | 10 Hz supported | Native supported |','|---|---:|---:|']
+for label,(b,k,n)in zip(labels,counts):table.append(f'|{label}|{b}/{n}|{k}/{n}|')
+(out/'cadence-table.md').write_text('\n'.join(table)+'\n\nSix previously inspected takes; matched endpoints. Correlated intervals; support is not pose accuracy or robot success.\n')
 print(json.dumps({'results':results,'preview_frames':vframes},indent=2))
