@@ -55,14 +55,18 @@ Current images already solve the easy labelled interiors. This panel does not es
 
 ### View and recording changes
 
-| Fit → evaluation | Full image held recall | Temporal fusion held recall |
-|---|---:|---:|
-| Primary only → secondary, validation takes | 3/28 | 23/28 |
-| Secondary only → primary, validation takes | 28/28, with 2 false positives | 28/28, no false positives |
-| Normal-session sources → awkward-session validation | 50/50 | 50/50 |
-| Awkward-session sources → normal validation | 6/6 | 6/6 |
+Each cell reports true held / labelled held, then false held / labelled not-held. The full ablation matters: changing camera and changing recording session are different tests.
 
-The temporal fusion helps the primary-to-secondary transfer diagnostic, but 23/28 is below 90% recall. These are two known recording sessions with the same object/setup, not broad environment transfer. On the primary view, hand presence alone already gets all 28 annotated positives; a more elaborate model is not needed to explain that easy subpanel.
+| Fit → evaluation | Full image | Full + crop | Current fusion | Temporal fusion |
+|---|---:|---:|---:|---:|
+| Primary → secondary | 3/28; 0/49 FP | 28/28; 0/49 FP | 28/28; 0/49 FP | 23/28; 0/49 FP |
+| Secondary → primary | 28/28; 2/50 FP | 28/28; 0/50 FP | 28/28; 0/50 FP | 28/28; 0/50 FP |
+| Normal-session sources → awkward-session validation | 50/50; 0/55 FP | 50/50; 12/55 FP | 50/50; 12/55 FP | 50/50; 0/55 FP |
+| Awkward-session sources → normal validation | 6/6; 0/44 FP | 6/6; 0/44 FP | 6/6; 0/44 FP | 6/6; 0/44 FP |
+
+The crop accounts for the primary-to-secondary gain: current full+crop detects 28/28, while adding history reduces this to 23/28. Conversely, on normal-to-awkward recording transfer, temporal fusion removes 12 false positives from current fusion, but the simple full-image probe already has zero. There is no uniformly superior representation in these small panels.
+
+These are two known recording sessions with the same object/setup, not broad environment transfer. On primary-view validation, hand presence alone already gets all 28 annotated positives; a more elaborate model is not needed to explain that easy subpanel.
 
 All 296 scored frame-views from the two already-completed takes remain not held for the image and fusion probes. This is consistency with stationary completion footage, not a task-completion classifier.
 
@@ -88,13 +92,17 @@ A concrete failure is demo_0006's approach: the hand is visibly separated from t
 
 ## What this supports and rules out
 
-**Supported:** the personal footage and reviewed labels can directly train a small observation component, without geometric-expert actions. Combining local object detail and scene context is worth retaining. A causal history helps one camera-transfer diagnostic.
+**Supported:** the personal footage and reviewed labels can directly train a small observation component, without geometric-expert actions. Combining local object detail and scene context is worth retaining. Cropping helps the camera-change panel; history helps one recording-change panel but hurts primary-to-secondary recall relative to current fusion. Neither has established general superiority.
 
 **Not supported:** treating the original 100% interior score as grasp recognition, contact sensing, reliable event timing or a signal allowed to release a robot gripper. The probes and hand-presence baseline fail at clear hand-present/non-grasp transitions. Cropping and temporal features do not repair the missing negative supervision by themselves.
 
 **Next experiment:** annotate hand-present/non-grasp, light contact, supported lift, held pause, placement-with-contact, release and failed-grasp cases on training takes only, with explicit unknowns. Freeze genuinely new transition events before fitting an updated observer. Add qualified robot-side support evidence separately. Do not reuse this challenge as both tuning data and a fresh test. Short correction intervals need better timing evidence rather than label expansion.
 
 Metric height/depth, physical camera calibration and the Panda adapter are still separate unresolved work. No simulated expert trajectory was substituted for missing human motion.
+
+## Interpretation revision
+
+The initial report compared full image with temporal fusion without displaying the intervening crop/current-fusion ablations. This revision adds the complete comparison and removes the unsupported attribution of the camera-transfer gain to history. No predictions, thresholds, labels or models were changed. The first report is preserved as REPORT-initial-interpretation.md for audit.
 
 ## Validation and reproduction
 
