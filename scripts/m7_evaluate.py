@@ -184,7 +184,7 @@ class M7Policy(XvlaPolicy):
         minimum = self.step-round(self.config['history_seconds']*20)
         self.frames = [entry for entry in self.frames if entry['step'] >= minimum]
 
-    def predict(self, observation):
+    def request_payload(self, observation):
         if set(observation) - {'rgb', 'proprio', 'task', 'cameras'}:
             raise ValueError('Evaluator truth is forbidden in model observation')
         if self.proprio is None:
@@ -199,9 +199,13 @@ class M7Policy(XvlaPolicy):
         history = [{'images': entry['images'], 'time_s': (entry['step']-self.step)/20,
                     'annotation': annotation(entry['step'])} for entry in select_history(self.frames, self.step, self.config['history_mode'], self.config['history_seconds'])]
         self._remember(observation)
-        result = self._request({'op': 'predict', 'images': [observation['rgb'][key] for key in ['primary', 'secondary']],
+        return {'op': 'predict', 'images': [observation['rgb'][key] for key in ['primary', 'secondary']],
             'instruction': task_prompt(observation['task']), 'proprio': self.proprio.copy(), 'request': self.request,
-            'history': history, 'annotation': annotation(self.step), 'camera_variant': self.camera_variant})
+            'history': history, 'annotation': annotation(self.step), 'camera_variant': self.camera_variant}
+
+    def predict(self, observation):
+        payload = self.request_payload(observation)
+        result = self._request(payload)
         timed = result.pop('timed')
         from supervisor.adaptation.m7_timing import reconstruct_20hz
         reconstructed = reconstruct_20hz(timed, oracle_replay=False)
@@ -211,7 +215,7 @@ class M7Policy(XvlaPolicy):
         if actions.shape != (expected_steps, 20) or not np.isfinite(actions).all():
             raise ValueError('Unexpected reconstructed requested 20Hz action horizon')
         self.timed_predictions.append(timed)
-        result.update(control_step=self.step, request=self.request, history_frames=len(history), future_history_frames=0,
+        result.update(control_step=self.step, request=self.request, history_frames=len(payload['history']), future_history_frames=0,
                       execution_contract='timing-aware20Hz', executed_horizon=expected_steps)
         self.inferences.append(result)
         return actions
