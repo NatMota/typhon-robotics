@@ -1,0 +1,44 @@
+{
+  "schema": "video03-blinded-transition-review-v1",
+  "reviewer": "Codex root agent; viewed paired -0.3,0,+0.3 s raw frames before reading individual prediction scores",
+  "review_type": "post-hoc agent visual review, not human-confirmed contact sensors",
+  "samples": [
+    {
+      "review_id": "demo_0006-approach",
+      "held_label": 0,
+      "confidence": "high visual separation",
+      "reason": "At centre frames fingers remain visibly separated from the block; block rests on table."
+    },
+    {
+      "review_id": "demo_0006-withdrawal",
+      "held_label": 0,
+      "confidence": "high visual separation",
+      "reason": "At centre frames hand has withdrawn and a visible gap separates it from the stationary block."
+    },
+    {
+      "review_id": "demo_0014-approach",
+      "held_label": null,
+      "confidence": "unknown",
+      "reason": "Finger/block proximity is too close to exclude contact/support confidently at available resolution; retain unknown."
+    },
+    {
+      "review_id": "demo_0014-withdrawal",
+      "held_label": 0,
+      "confidence": "high visual separation",
+      "reason": "At centre frames hand is away from the stationary target block; oblique view supports separation."
+    },
+    {
+      "review_id": "demo_0016-approach",
+      "held_label": null,
+      "confidence": "unknown",
+      "reason": "Hand is near the block and possible contact is not sufficiently resolved; retain unknown."
+    },
+    {
+      "review_id": "demo_0016-withdrawal",
+      "held_label": 0,
+      "confidence": "high visual separation",
+      "reason": "At centre frames open fingers have a clear gap from the resting block."
+    }
+  ],
+  "model_refit": false
+}
