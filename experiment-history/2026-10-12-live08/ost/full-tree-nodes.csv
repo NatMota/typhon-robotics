@@ -199,134 +199,134 @@ RUN / COMPLETE",sol_recovery_0,1134,15952.0,#3C3926
 result_10999,result,"Guard/service audit completed with 27 tests passing. Measured 7 joint positions/velocities, finite inputs, installed joint ranges, workspace and 15 mm-expanded no-go AABB checked; proposedEEFsegments checked. Historical 36 successful expert replays had 0 rejections. These checks do not certify whole-arm collisions or executedIKfeasibility. Separate recovery stress found executed joint-limit excursions; preserve violation logs. ",exp_10999,1504,15776.0,#303840
 exp_11026,experiment,"Qualify executed commands
 LIVE06 · #11026
-RUN / COMPLETE",sol_recovery_0,1134,16378.0,#3C3926
-result_11026,result,"Nine V4 trials restore the known pickup/placement, still85.33deg yaw error. Eight experts pass; new check admits1714ticks versus304old vetoes.11negative tests pass. First570control records match; no full-trace identity claim.",exp_11026,1504,16312.0,#3C382D
-sol_recovery_1,solution,Qualified primitives and recovery experts,opp_recovery,764,16668,#30353D
+RUN / COMPLETE",sol_recovery_0,1134,16356.0,#3C3926
+result_11026,result,"Nine V4 trials restore pickup/placement, with 85.33 deg yaw error. Eight experts pass. New check admits 1,714 ticks; old check vetoed 304. Eleven negative tests pass. First 570 control records match.",exp_11026,1504,16312.0,#3C382D
+sol_recovery_1,solution,Qualified primitives and recovery experts,opp_recovery,764,16624,#30353D
 exp_10971,experiment,"Two-axis IK endpoint selector
 R06c · #10971
-RUN / COMPLETE",sol_recovery_1,1134,16701.0,#3C3926
-result_10971,result,"On six training takes, success drops from 3/6 to 1/6. A reachable inverse-kinematics endpoint does not ensure a feasible executed path. Selector rejected.",exp_10971,1504,16668.0,#403034
+RUN / COMPLETE",sol_recovery_1,1134,16657.0,#3C3926
+result_10971,result,"On six training takes, success drops from 3/6 to 1/6. A reachable inverse-kinematics endpoint does not ensure a feasible executed path. Selector rejected.",exp_10971,1504,16624.0,#403034
 exp_10973,experiment,"Expert recovery from V4 failures
 R08 · #10973
-RUN / COMPLETE",sol_recovery_1,1134,16962.0,#3C3926
-result_10973,result,Six exact failure states × two experts. Nominal recovery 2/6; grasp-aware 3/6. Original off-axis case repaired. Five successful suffixes kept out of training.,exp_10973,1504,16940.0,#3C382D
+RUN / COMPLETE",sol_recovery_1,1134,16918.0,#3C3926
+result_10973,result,Six exact failure states × two experts. Nominal recovery 2/6; grasp-aware 3/6. Original off-axis case repaired. Five successful suffixes kept out of training.,exp_10973,1504,16896.0,#3C382D
 exp_10976,experiment,"Explicit primitive-call adapter
 R11 · #10976
-RUN / COMPLETE",sol_recovery_1,1134,17212.0,#3C3926
-result_10976,result,"External typed primitive adapter works. Skill route: 2/6 pickups, 0/6 new completions. X-VLA still emits continuous actions; it does not natively call tools.",exp_10976,1504,17190.0,#3C382D
+RUN / COMPLETE",sol_recovery_1,1134,17168.0,#3C3926
+result_10976,result,"External typed primitive adapter works. Skill route: 2/6 pickups, 0/6 new completions. X-VLA still emits continuous actions; it does not natively call tools.",exp_10976,1504,17146.0,#3C382D
 exp_11004,experiment,"Live controller + harness hookup
 LIVE01 · #11004
-REVIEW",sol_recovery_1,1134,17583.0,#3C3926
-result_11004,result,"Telemetry/guard tests pass and a current asynchronous Decisions integration smoke ran end-to-end on broad 12 k with full commands/RGB/joint traces. Both smoke modes failed task success; delayed-prefix eligibility rejected many commands. This is infrastructure evidence, not a qualified live harness or matched unmodifiedV 4 comparison. Keep deployment gated on LIVE 04 and observation reliability.",exp_11004,1504,17440.0,#38323E
-sol_recovery_2,solution,Confidence-gated phase prediction,opp_recovery,764,17950,#30353D
+REVIEW",sol_recovery_1,1134,17539.0,#3C3926
+result_11004,result,"Telemetry/guard tests pass and a current asynchronous Decisions integration smoke ran end-to-end on broad 12 k with full commands/RGB/joint traces. Both smoke modes failed task success; delayed-prefix eligibility rejected many commands. This is infrastructure evidence, not a qualified live harness or matched unmodifiedV 4 comparison. Keep deployment gated on LIVE 04 and observation reliability.",exp_11004,1504,17396.0,#38323E
+sol_recovery_2,solution,Confidence-gated phase prediction,opp_recovery,764,17906,#30353D
 exp_10977,experiment,"Causal phase predictor
 R12 · #10977
-RUN / COMPLETE",sol_recovery_2,1134,17994.0,#3C3926
-result_10977,result,"347 training / 179 validation frames. Accuracy 63.7%, macro-F1 0.592, including early release errors. The 90% selective-accuracy gate fails; predictor disabled.",exp_10977,1504,17950.0,#403034
+RUN / COMPLETE",sol_recovery_2,1134,17950.0,#3C3926
+result_10977,result,"347 training / 179 validation frames. Accuracy 63.7%, macro-F1 0.592, including early release errors. The 90% selective-accuracy gate fails; predictor disabled.",exp_10977,1504,17906.0,#403034
 exp_11000,experiment,"High-level skill selector
 HIER01 · #11000
-BLOCKED · PREREQUISITE FAILED",sol_recovery_2,1134,18321.0,#3C3926
-result_11000,result,Proceed decision: do not train a skill selector yet. Candidate primitives/phase observer remain unqualified and staged recovery 1/6. A learned high-level selector would confound selection quality with inability to execute/recognise completion. Resume after CTRL 01/NEXT 02 pass. No hierarchical selector training claimed.,exp_11000,1504,18222.0,#38323E
-sol_recovery_3,solution,Learner-state correction and bounded residual repair,opp_recovery,764,18644,#30353D
+BLOCKED · PREREQUISITE FAILED",sol_recovery_2,1134,18277.0,#3C3926
+result_11000,result,Proceed decision: do not train a skill selector yet. Candidate primitives/phase observer remain unqualified and staged recovery 1/6. A learned high-level selector would confound selection quality with inability to execute/recognise completion. Resume after CTRL 01/NEXT 02 pass. No hierarchical selector training claimed.,exp_11000,1504,18178.0,#38323E
+sol_recovery_3,solution,Learner-state correction and bounded residual repair,opp_recovery,764,18600,#30353D
 exp_10978,experiment,"Hierarchical / RL method review
 R13 · #10978
-RUN / COMPLETE",sol_recovery_3,1134,18666.0,#3C3926
-result_10978,result,"DAgger, options, residual RL, offline Q and PPO reviewed. Qualify expert recovery before correction training. No new RL training was performed.",exp_10978,1504,18644.0,#303840
+RUN / COMPLETE",sol_recovery_3,1134,18622.0,#3C3926
+result_10978,result,"DAgger, options, residual RL, offline Q and PPO reviewed. Qualify expert recovery before correction training. No new RL training was performed.",exp_10978,1504,18600.0,#303840
 exp_11001,experiment,"Learner-state imitation / DAgger
 REL01 · #11001
-RUN / COMPLETE",sol_recovery_3,1134,19081.0,#3C3926
-result_11001,result,"One separate offline DAgger-style aggregation iteration completed: four qualified correction paths from two P_train families plus six nominal paths;3,000 joint updates from broad 12 k. Four quarantined demo 0006 handoffs: recovery 0/4 strict, all three controls also 0/4. No teacher at evaluation; no RL. The six-state original stress set was narrowed to four because other states overlap source training families. Preserve failed cases and expand qualified correction coverage before scaling. ",exp_11001,1504,18894.0,#403034
+RUN / COMPLETE",sol_recovery_3,1134,19037.0,#3C3926
+result_11001,result,"One separate offline DAgger-style aggregation iteration completed: four qualified correction paths from two P_train families plus six nominal paths;3,000 joint updates from broad 12 k. Four quarantined demo 0006 handoffs: recovery 0/4 strict, all three controls also 0/4. No teacher at evaluation; no RL. The six-state original stress set was narrowed to four because other states overlap source training families. Preserve failed cases and expand qualified correction coverage before scaling. ",exp_11001,1504,18850.0,#403034
 exp_11002,experiment,"Residual repair learning
 REL02 · #11002
-BLOCKED · PREREQUISITE FAILED",sol_recovery_3,1134,19595.0,#3C3926
-result_11002,result,"Proceed decision: supervised correction was tested first under REL 01 and scored 0/4 quarantined states. Current observers and recovery primitives fail qualification. Do not launch residualRLon an unqualified baseline; first establish supported residual actions, reliable state/reward interface and source-disjoint recovery coverage. No residualRLrun claimed.",exp_11002,1504,19474.0,#38323E
+BLOCKED · PREREQUISITE FAILED",sol_recovery_3,1134,19551.0,#3C3926
+result_11002,result,"Proceed decision: supervised correction was tested first under REL 01 and scored 0/4 quarantined states. Current observers and recovery primitives fail qualification. Do not launch residualRLon an unqualified baseline; first establish supported residual actions, reliable state/reward interface and source-disjoint recovery coverage. No residualRLrun claimed.",exp_11002,1504,19430.0,#38323E
 exp_11003,experiment,"Offline Q / PPO / DPPO
 REL03 · #11003
-BLOCKED · PREREQUISITE FAILED",sol_recovery_3,1134,20032.0,#3C3926
-result_11003,result,Proceed decision: offline candidate oracle has weak grasp availability and narrow state support; live ranking has no qualified gain. PPO/DPPO is not a drop-in replacement for this flow action model. NoQ/PPOtraining launched. Require a frozen supported-action/reward protocol and qualified execution before this comparison.,exp_11003,1504,19922.0,#38323E
-opp_compute,opportunity,I need extra inference to produce better actions,outcome,394,20406,#2D3831
-sol_compute_0,solution,Multiple candidate action chunks,opp_compute,764,20406,#30353D
+BLOCKED · PREREQUISITE FAILED",sol_recovery_3,1134,19988.0,#3C3926
+result_11003,result,Proceed decision: offline candidate oracle has weak grasp availability and narrow state support; live ranking has no qualified gain. PPO/DPPO is not a drop-in replacement for this flow action model. NoQ/PPOtraining launched. Require a frozen supported-action/reward protocol and qualified execution before this comparison.,exp_11003,1504,19878.0,#38323E
+opp_compute,opportunity,I need extra inference to produce better actions,outcome,394,20362,#2D3831
+sol_compute_0,solution,Multiple candidate action chunks,opp_compute,764,20362,#30353D
 exp_10967,experiment,"Best-of-eight offline oracle
 R05 · #10967
-RUN / COMPLETE",sol_compute_0,1134,20461.0,#3C3926
-result_10967,result,48 proposals over six states. Random-to-best-of-eight oracle approach availability: 72.9% → 83.3%. Grasp-capable states remain 1/6. Privileged offline scoring only.,exp_10967,1504,20406.0,#3C382D
-sol_compute_1,solution,Visual critic over projected futures,opp_compute,764,20718,#30353D
+RUN / COMPLETE",sol_compute_0,1134,20417.0,#3C3926
+result_10967,result,48 proposals over six states. Random-to-best-of-eight oracle approach availability: 72.9% → 83.3%. Grasp-capable states remain 1/6. Privileged offline scoring only.,exp_10967,1504,20362.0,#3C382D
+sol_compute_1,solution,Visual critic over projected futures,opp_compute,764,20674,#30353D
 exp_10975,experiment,"Blue ghosts + typed critic inputs
 R10a · #10975
-RUN / COMPLETE",sol_compute_1,1134,20740.0,#3C3926
-result_10975,result,"64 simulated candidate futures / 32 blue-ghost slates prepared with typed choices. Luna calls: 0. This validates critic inputs, not ranking quality.",exp_10975,1504,20718.0,#303840
-exp_10982,experiment,"Luna visual ranking
+RUN / COMPLETE",sol_compute_1,1134,20696.0,#3C3926
+result_10975,result,"64 simulated candidate futures / 32 blue-ghost slates prepared with typed choices. Luna calls: 0. This validates critic inputs, not ranking quality.",exp_10975,1504,20674.0,#303840
+exp_10982,experiment,"First frozen ghost / future-RGB ranking
 R10 · #10982
-RUN / COMPLETE",sol_compute_1,1134,21221.0,#3C3926
-result_10982,result,"Frozen Decisions API ranking finished using the user-authorized credential, with no secret in artifacts.32 choice requests plus 32 separate reason requests over original/supplement panels. Six original states: ghost 2/3 adequate selections with 9 abstentions; futureRGB 5/5 with 7 abstentions; median 857 ms/1466 ms. Many abstentions occurred despite adequate candidates. Supplemental held-state strict adequacy 0/8 in each state; visual-goal sufficiency is scored separately. Simulator future images are privileged lookahead, not a deployable world model. Conditional chosen accuracy does not establish",exp_10982,1504,20968.0,#303840
+RUN / COMPLETE",sol_compute_1,1134,20979.0,#3C3926
+result_10982,result,"First batch: 32 choices on eight saved states. Primary ghosts select 3/12; future RGB selects 5/12. Selected adequacy is 2/3 and 5/5, with frequent abstention. Privileged futures; no proven control benefit. LIVE09 repeats this panel.",exp_10982,1504,20924.0,#3C382D
 exp_11014,experiment,"Live Decisions handoff
 LIVE04 · #11014
-RUN / COMPLETE",sol_compute_1,1134,21735.0,#3C3926
-result_11014,result,"Nine V4 trials: 3 API choices execute 62 targets, including two full chunks. Reference grasps and places 1/2 manipulation scenes; both boundary routes 0/2. All 0/2 strict. All preserve completed case. No benefit; isolate waiting, sampling and guards.",exp_11014,1504,21658.0,#3C382D
+RUN / COMPLETE",sol_compute_1,1134,21317.0,#3C3926
+result_11014,result,"Nine V4 trials: 3 API choices execute 62 targets, including two full chunks. Reference grasps and places 1/2 manipulation scenes; both boundary routes 0/2. All 0/2 strict. All preserve completed case. No benefit; isolate waiting, sampling and guards.",exp_11014,1504,21240.0,#3C382D
 exp_11025,experiment,"Isolate waiting, seeds and guards
 LIVE05 · #11025
-RUN / COMPLETE",sol_compute_1,1134,22040.0,#3C3926
-result_11025,result,30 V4 trials: both sampling schemes preserve the known pickup at0/0.1/2s without intervention. Guard enforcement loses it even atzero wait. Most preview paths overlap; exact-render limits retained.,exp_11025,1504,21996.0,#3C382D
+RUN / COMPLETE",sol_compute_1,1134,21633.0,#3C3926
+result_11025,result,30 V4 trials: both sampling schemes preserve the known pickup at 0 / 0.1 / 2 s without intervention. Guard enforcement loses it even at zero wait. Preview paths mostly overlap; exact-render limits retained.,exp_11025,1504,21578.0,#3C382D
 exp_11027,experiment,"Integrate corrected live execution
 LIVE07 · #11027
-RUN / COMPLETE",sol_compute_1,1134,22345.0,#3C3926
-result_11027,result,"Nine live/development trials: first-admissible restores pickup/placement,79.46deg yaw. Ranked route misses. One API choice actually executes; one activates with zero actions.44regressions pass.",exp_11027,1504,22290.0,#3C382D
+RUN / COMPLETE",sol_compute_1,1134,21938.0,#3C3926
+result_11027,result,"Nine development trials: first-admissible restores pickup/placement, with 79.46 deg yaw error. Ranked route misses. One API choice executes; one activates with zero actions. 44 regressions pass.",exp_11027,1504,21894.0,#3C382D
 exp_11028,experiment,"Separate first choice from waiting
 LIVE08 · #11028
-RUN / COMPLETE",sol_compute_1,1134,22639.0,#3C3926
-result_11028,result,"Same first four proposals: A grasps and places at both40/41tick waits; C neither. Eight empty attempts per C case. All4strict fail; one inspected scene, no generalisation.",exp_11028,1504,22606.0,#403034
-exp_11029,experiment,"Run blue-ghost / future-RGB critic
+RUN / COMPLETE",sol_compute_1,1134,22221.0,#3C3926
+result_11028,result,Same first four proposals: A grasps and places at both 40 / 41 tick waits; C at neither. Eight empty attempts per C case. All four fail strict success. One inspected scene only.,exp_11028,1504,22188.0,#403034
+exp_11029,experiment,"Repeat R10 + response consistency
 LIVE09 · #11029
-RUN / COMPLETE",sol_compute_1,1134,22933.0,#3C3926
-result_11029,result,"32API choices: primary futureRGB selects5/12, all5proxy-adequate, but7abstentions and only2/6order-stable states. Unsuitable held-state selections persist. Both modes use privileged lookahead.",exp_11029,1504,22878.0,#3C382D
-opp_evidence,opportunity,I need comparable results that show what actually worked,outcome,394,23252,#2D3831
-sol_evidence_0,solution,Matched evaluations with explicit limitations,opp_evidence,764,23252,#30353D
+RUN / COMPLETE",sol_compute_1,1134,22515.0,#3C3926
+result_11029,result,Repeat of R10: all 32 choice and 32 categorical-reason responses match. Zero independent states added. Future-RGB selection remains order-sensitive and accepts unsuitable held-state options. Privileged lookahead only.,exp_11029,1504,22460.0,#303840
+opp_evidence,opportunity,I need comparable results that show what actually worked,outcome,394,22834,#2D3831
+sol_evidence_0,solution,Matched evaluations with explicit limitations,opp_evidence,764,22834,#30353D
 exp_10995,experiment,"Earlier 775-rollout comparison
 EVAL01 · #10995
-RUN / COMPLETE",sol_evidence_0,1134,23318.0,#3C3926
-result_10995,result,"775 feeding trials reconciled:155 scenes x 5 models, no harness/TTC. On 137 unfinished scenes,70 mm pickups vanilla/V 1/V 2/V 3/V 4=0/0/0/10/1; new upright stable placements=0/0/0/5/1. Original strict passes all started complete.",exp_10995,1504,23252.0,#303840
+RUN / COMPLETE",sol_evidence_0,1134,22900.0,#3C3926
+result_10995,result,"775 feeding trials reconciled:155 scenes x 5 models, no harness/TTC. On 137 unfinished scenes,70 mm pickups vanilla/V 1/V 2/V 3/V 4=0/0/0/10/1; new upright stable placements=0/0/0/5/1. Original strict passes all started complete.",exp_10995,1504,22834.0,#303840
 exp_10997,experiment,"Earlier A/B harness comparison
 EVAL03 · #10997
-RUN / COMPLETE",sol_evidence_0,1134,23711.0,#3C3926
-result_10997,result,Historical 400 AB rows reconciled:5 models x 2 modes x 20 A/20 B. All strict/pickup/place outcomes 0. Matched initial-state/config hashes retained. Harness had 30 s wall cap and one candidate; noTTC. Budget stops are separated from runtime errors in report/historical-ab 400.json. This synthetic panel is distinct from 775 feeding and the new 136+160 panels. ,exp_10997,1504,23590.0,#303840
+RUN / COMPLETE",sol_evidence_0,1134,23293.0,#3C3926
+result_10997,result,Historical 400 AB rows reconciled:5 models x 2 modes x 20 A/20 B. All strict/pickup/place outcomes 0. Matched initial-state/config hashes retained. Harness had 30 s wall cap and one candidate; noTTC. Budget stops are separated from runtime errors in report/historical-ab 400.json. This synthetic panel is distinct from 775 feeding and the new 136+160 panels. ,exp_10997,1504,23172.0,#303840
 exp_10996,experiment,"204 paired rollouts: vanilla / broad 12k / intervention
 EVAL02 · #10996
-REVIEW",sol_evidence_0,1134,24291.0,#3C3926
-result_10996,result,"The two baseline arms completed 136 rollouts across 34 frozen layouts x 2 seeds. Broad 12 k near-personal:31/40 supported grasps,22/40 stable placements,17/40 strict; vanilla 0/40. Broader starts:both 0/20. Already-completed preservation:broad 8/8 strict,vanilla 1/8; broad still moved the arm. Native domain/input contracts differ, so whole-recipe comparison. Family-bootstrap uncertainty saved; not 136 independent humans. Planned 68 intervention rollouts were not run because observer qualification failed. Two invalid boundary layouts were clipped 1.64/2.82 mm before any policy action under a versioned protocol. ",exp_10996,1504,24038.0,#38323E
+REVIEW",sol_evidence_0,1134,23873.0,#3C3926
+result_10996,result,"The two baseline arms completed 136 rollouts across 34 frozen layouts x 2 seeds. Broad 12 k near-personal:31/40 supported grasps,22/40 stable placements,17/40 strict; vanilla 0/40. Broader starts:both 0/20. Already-completed preservation:broad 8/8 strict,vanilla 1/8; broad still moved the arm. Native domain/input contracts differ, so whole-recipe comparison. Family-bootstrap uncertainty saved; not 136 independent humans. Planned 68 intervention rollouts were not run because observer qualification failed. Two invalid boundary layouts were clipped 1.64/2.82 mm before any policy action under a versioned protocol. ",exp_10996,1504,23620.0,#38323E
 exp_10980,experiment,"Research report + independent review
 OPS03 · #10980
-RUN / COMPLETE",sol_evidence_0,1134,24772.0,#3C3926
-result_10980,result,"13 research requests reconciled with independent and planner review. Model identities, denominator limits and errata documented.",exp_10980,1504,24750.0,#303840
-sol_evidence_1,solution,Reproducible artifact and model registry,opp_evidence,764,25018,#30353D
+RUN / COMPLETE",sol_evidence_0,1134,24354.0,#3C3926
+result_10980,result,"13 research requests reconciled with independent and planner review. Model identities, denominator limits and errata documented.",exp_10980,1504,24332.0,#303840
+sol_evidence_1,solution,Reproducible artifact and model registry,opp_evidence,764,24600,#30353D
 exp_10979,experiment,"Weights, traces and recovery backup
 OPS02 · #10979
-RUN / COMPLETE",sol_evidence_1,1134,25040.0,#3C3926
-result_10979,result,"Weights, traces and recovery states preserved with SHA-256 verification on Mint Fast Drive. Backup evidence; no new model-performance result.",exp_10979,1504,25018.0,#303840
+RUN / COMPLETE",sol_evidence_1,1134,24622.0,#3C3926
+result_10979,result,"Weights, traces and recovery states preserved with SHA-256 verification on Mint Fast Drive. Backup evidence; no new model-performance result.",exp_10979,1504,24600.0,#303840
 exp_10956,experiment,"Research ledger
 OPS01 · #10956
-RUN / COMPLETE",sol_evidence_1,1134,25301.0,#3C3926
-result_10956,result,"58 original work items recorded with requests, findings, limitations and follow-ups. Administrative evidence; no robot-performance result.",exp_10956,1504,25268.0,#303840
+RUN / COMPLETE",sol_evidence_1,1134,24883.0,#3C3926
+result_10956,result,"58 original work items recorded with requests, findings, limitations and follow-ups. Administrative evidence; no robot-performance result.",exp_10956,1504,24850.0,#303840
 exp_10986,experiment,"Exact model and dataset registry
 DATA01 · #10986
-RUN / COMPLETE",sol_evidence_1,1134,25584.0,#3C3926
-result_10986,result,"Checkpoint and dataset registry saved.19 headers verified, historical M 6 hashes reconciled and three new continuations recorded. V 4 continues V 3; broad-Pt 12 k starts fresh. Native RGB and privileged held/history contracts distinguished.",exp_10986,1504,25518.0,#303840
+RUN / COMPLETE",sol_evidence_1,1134,25166.0,#3C3926
+result_10986,result,"Checkpoint and dataset registry saved.19 headers verified, historical M 6 hashes reconciled and three new continuations recorded. V 4 continues V 3; broad-Pt 12 k starts fresh. Native RGB and privileged held/history contracts distinguished.",exp_10986,1504,25100.0,#303840
 exp_11007,experiment,"Dashboard + video evidence
 DEL01 · #11007
-REVIEW",sol_evidence_1,1134,25988.0,#3C3926
-result_11007,result,"Media provenance inventory checked:419 existingR 2 entries, including 64 training videos=32 trimmed+32 marked, not spatially cropped. Tested personal/M 3 pilot URLs work; two V 4 M 6 pilot URLs return 404. Local evaluated videos remain archived. No newDrive upload/public publishing in this sweep. Repair missing media URLs separately; dashboard release remains private. ",exp_11007,1504,25856.0,#38323E
+REVIEW",sol_evidence_1,1134,25570.0,#3C3926
+result_11007,result,"Media provenance inventory checked:419 existingR 2 entries, including 64 training videos=32 trimmed+32 marked, not spatially cropped. Tested personal/M 3 pilot URLs work; two V 4 M 6 pilot URLs return 404. Local evaluated videos remain archived. No newDrive upload/public publishing in this sweep. Repair missing media URLs separately; dashboard release remains private. ",exp_11007,1504,25438.0,#38323E
 exp_11008,experiment,"Matched video, subgoals, release timeline and four case cards
 DEL02 · #11008
-REVIEW",sol_evidence_1,1134,26392.0,#3C3926
-result_11008,result,"Private research report and model registry prepared: 296 new scored episodes, model identities, negative results, matched-state checks, family uncertainty and reproduction. Public demonstration and broken-media-link repair remain separate; no publication.",exp_11008,1504,26326.0,#38323E
+REVIEW",sol_evidence_1,1134,25974.0,#3C3926
+result_11008,result,"Private research report and model registry prepared: 296 new scored episodes, model identities, negative results, matched-state checks, family uncertainty and reproduction. Public demonstration and broken-media-link repair remain separate; no publication.",exp_11008,1504,25908.0,#38323E
 exp_11012,experiment,"Draw and verify the research OST
 OPS05 · #11012
-RUN / COMPLETE",sol_evidence_1,1134,26730.0,#3C3926
-result_11012,result,Five-column OST verified with experiment/result alignment and all historical work retained. Updated12October to include the authorised24-hour plan and B/loading diagnosis.,exp_11012,1504,26686.0,#303840
-opp_parked,opportunity,I need deferred ideas kept separate from the active scope,outcome,394,27038,#2D3831
-sol_parked_0,solution,Withdrawn or deferred approaches,opp_parked,764,27038,#30353D
+RUN / COMPLETE",sol_evidence_1,1134,26312.0,#3C3926
+result_11012,result,Five-column OST verified with experiment/result alignment and all historical work retained. Updated12October to include the authorised24-hour plan and B/loading diagnosis.,exp_11012,1504,26268.0,#303840
+opp_parked,opportunity,I need deferred ideas kept separate from the active scope,outcome,394,26620,#2D3831
+sol_parked_0,solution,Withdrawn or deferred approaches,opp_parked,764,26620,#30353D
 exp_11009,experiment,"Set-of-Mark object labels
 PARK01 · #11009
-PARKED",sol_parked_0,1134,27038.0,#3C3926
+PARKED",sol_parked_0,1134,26620.0,#3C3926
 exp_11010,experiment,"Platform / simulator expansion
 PARK02 · #11010
-PARKED",sol_parked_0,1134,27222.0,#3C3926
+PARKED",sol_parked_0,1134,26804.0,#3C3926

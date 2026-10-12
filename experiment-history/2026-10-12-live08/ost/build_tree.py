@@ -178,12 +178,14 @@ def render(page,title,nodes,edges,height):
 
 results[11014]='Nine V4 trials: 3 API choices execute 62 targets, including two full chunks. Reference grasps and places 1/2 manipulation scenes; both boundary routes 0/2. All 0/2 strict. All preserve completed case. No benefit; isolate waiting, sampling and guards.'
 
-results[11025]='30 V4 trials: both sampling schemes preserve the known pickup at0/0.1/2s without intervention. Guard enforcement loses it even atzero wait. Most preview paths overlap; exact-render limits retained.'
-results[11026]='Nine V4 trials restore the known pickup/placement, still85.33deg yaw error. Eight experts pass; new check admits1714ticks versus304old vetoes.11negative tests pass. First570control records match; no full-trace identity claim.'
+results[11025]='30 V4 trials: both sampling schemes preserve the known pickup at 0 / 0.1 / 2 s without intervention. Guard enforcement loses it even at zero wait. Preview paths mostly overlap; exact-render limits retained.'
+results[11026]='Nine V4 trials restore pickup/placement, with 85.33 deg yaw error. Eight experts pass. New check admits 1,714 ticks; old check vetoed 304. Eleven negative tests pass. First 570 control records match.'
 
-results[11027]='Nine live/development trials: first-admissible restores pickup/placement,79.46deg yaw. Ranked route misses. One API choice actually executes; one activates with zero actions.44regressions pass.'
-results[11028]='Same first four proposals: A grasps and places at both40/41tick waits; C neither. Eight empty attempts per C case. All4strict fail; one inspected scene, no generalisation.'
-results[11029]='32API choices: primary futureRGB selects5/12, all5proxy-adequate, but7abstentions and only2/6order-stable states. Unsuitable held-state selections persist. Both modes use privileged lookahead.'
+results[11027]='Nine development trials: first-admissible restores pickup/placement, with 79.46 deg yaw error. Ranked route misses. One API choice executes; one activates with zero actions. 44 regressions pass.'
+results[11028]='Same first four proposals: A grasps and places at both 40 / 41 tick waits; C at neither. Eight empty attempts per C case. All four fail strict success. One inspected scene only.'
+results[11029]='Repeat of R10: all 32 choice and 32 categorical-reason responses match. Zero independent states added. Future-RGB selection remains order-sensitive and accepts unsuitable held-state options. Privileged lookahead only.'
+
+results[10982]='First batch: 32 choices on eight saved states. Primary ghosts select 3/12; future RGB selects 5/12. Selected adequacy is 2/3 and 5/5, with frequent abstention. Privileged futures; no proven control benefit. LIVE09 repeats this panel.'
 
 # Overview is selected evidence; complete tree and detail pages cover every board item.
 selected={10983,11013,10974,10954,10994,10996,10957,10966,10969,10998,11001,10967,10982,11014,11025,11026,11027,11028,11029,11015,11008}
