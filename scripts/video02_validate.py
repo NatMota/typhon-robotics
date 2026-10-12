@@ -8,6 +8,8 @@ def sha(p):
   for b in iter(lambda:f.read(8*1024*1024),b''):h.update(b)
  return h.hexdigest()
 def main(a):
+ from video02_decode_verify import verify
+ decode=verify(a.data,a.project_root)
  d=a.data;idx=json.loads((d/'source-index.json').read_text());rows=idx['samples'];config=json.loads((d/'protocol.json').read_text());manifest=json.loads((d/'input-manifest.json').read_text())
  raw={r['recording_id']:r for r in manifest['raw']};assert len(raw)==8
  for r in raw.values():assert sha(a.project_root/r['relative_path'])==r['sha256']
@@ -46,7 +48,7 @@ def main(a):
  assert circ_diff(1,359)==2
  assert make_anchors([{'clip_time_s':x}for x in [0,1,2,3,4]],0,4,30)is None
  assert not valid_pairs([{'valid_xy':True,'clip_time_s':0},{'valid_xy':True,'clip_time_s':.3}])
- checks={'raw_recordings_unchanged':8,'frame_hashes_verified':len(rows),'source_PTS_and_take_bounds_verified':True,'feature_ID_alignment_verified':True,'excluded_take_absent':True,'split_assignments_preserved':True,'unique_noninterpolated_30_point_windows':len(windows),'missing_contact_and_depth_preserved':True,'same_metrics_after_preview_layout_fix':True,'h264_previews_verified':6,'goal_references_train_only_and_self_excluded':True,'regression_checks_passed':3,'human_take_count':16,'recording_pair_count':4,'agent_visual_review':'initial/middle/final primary contact sheet and actual224px full/crop sheet inspected; six examples, not pointwise annotation accuracy','human_review_newly_obtained':False,'qualified_for_robot_action_training':False}
+ checks={'raw_recordings_unchanged':8,'frame_hashes_verified':len(rows),'sequential_raw_frame_content_verified':decode['frames_checked'],'frame_content_mismatches':decode['mismatch_count'],'source_PTS_and_take_bounds_verified':True,'feature_ID_alignment_verified':True,'excluded_take_absent':True,'split_assignments_preserved':True,'unique_noninterpolated_30_point_windows':len(windows),'missing_contact_and_depth_preserved':True,'same_metrics_after_preview_layout_fix':True,'h264_previews_verified':6,'goal_references_train_only_and_self_excluded':True,'regression_checks_passed':3,'human_take_count':16,'recording_pair_count':4,'agent_visual_review':'initial/middle/final primary contact sheet and actual224px full/crop sheet inspected; six examples, not pointwise annotation accuracy','human_review_newly_obtained':False,'qualified_for_robot_action_training':False}
  (d/'validation.json').write_text(json.dumps(checks,indent=2)+'\n');print(json.dumps(checks),flush=True)
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--data',type=Path,required=True);p.add_argument('--project-root',type=Path,required=True);main(p.parse_args())

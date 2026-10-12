@@ -47,13 +47,15 @@ def extract(a):
             selected=nearest_indices(pts,start,end,config['sample_hz'])
             path=a.project_root/records[rid]['relative_path'];cap=cv2.VideoCapture(str(path))
             assert cap.isOpened()
-            cap.set(cv2.CAP_PROP_POS_FRAMES,selected[0]);wanted=set(selected)
+            # Raw VFR sources: seeking can return earlier frames while reporting the requested index.
+            # Decode from zero so each image has the actual ffprobe presentation-order index.
+            wanted=set(selected)
             folder=a.output/'frames'/d['demo_id']/view;folder.mkdir(parents=True)
             H=np.asarray(calibration['recordings'][rid]['image_to_target_unit_square_homography'])
             corners=np.asarray(calibration['recordings'][rid]['corner_pixels'])
             previous=None;prev_t=None;count=0
             with vision.HandLandmarker.create_from_options(model_options) as detector:
-                for frame_id in range(selected[0],selected[-1]+1):
+                for frame_id in range(selected[-1]+1):
                     ok,im=cap.read();assert ok,(rid,frame_id)
                     if frame_id not in wanted:continue
                     t=float(pts[frame_id]);clip_t=t-start;raw_h,raw_w=im.shape[:2]

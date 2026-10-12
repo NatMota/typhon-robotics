@@ -1,0 +1,69 @@
+{
+  "schema": "video02-dense-v2",
+  "created_before_extraction": true,
+  "source_index_sha256": "74597c111c6aa292ef6f3e8de36c5d543c6d44e8e6b16ead5b771880e9a368c4",
+  "sample_hz": 10,
+  "horizon_s": 4,
+  "anchors": 30,
+  "window_stride_s": 1,
+  "tracking_confidence": 0.65,
+  "maximum_gap_s": 0.25,
+  "crop_side_bbox_multiplier": 3,
+  "seed": 121222,
+  "feature_batch": 8,
+  "source_methods": "same pinned M0 colour/glyph observer and MediaPipe0.10.21; no geometric expert",
+  "feature_methods": [
+    "full_rgb",
+    "current_observed_object_square_crop"
+  ],
+  "fitting": false,
+  "robot_execution": false,
+  "endpoint_control": "nearest last-P_train released image in the same view; descriptive orientation/visibility probe, not completion authority",
+  "temporal_controls": [
+    "reversed",
+    "100 seeded within-take shuffles",
+    "repeated-first-frame",
+    "first-and-last only"
+  ],
+  "splits": {
+    "P_train": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "P_validation": [
+      "demo_0006",
+      "demo_0014",
+      "demo_0016"
+    ],
+    "R_train": [
+      "demo_0007",
+      "demo_0009"
+    ],
+    "other_observation_only": [
+      "demo_0004",
+      "demo_0011",
+      "demo_0015",
+      "demo_0018",
+      "demo_0019"
+    ],
+    "excluded": [
+      "demo_0017"
+    ]
+  },
+  "claims": "Exploratory representation study on previously inspected footage. Correction and completed classes occupy distinct recording sessions; no session-generalisation claim. Cross-view matching searches the entire paired take and is offline. Global depth and contact stay unknown.",
+  "adapter_gate": [
+    "measured physical scale",
+    "camera intrinsics/extrinsics or qualified metric pose",
+    "observed height/lift",
+    "contact/gripper timing",
+    "robot feasibility separately verified"
+  ],
+  "observer_sha256": "3a9b9d11bbd80059be6debed931756583a4ea5b4406fd432cfd347b02bfa4a46",
+  "decode_method": "Sequential raw decode from frame zero; no CAP_PROP_POS_FRAMES seeks",
+  "revision_reason": "Independent sequential check found 906 image/index mismatches in dense-v1 random-seek extraction. Recompute all results; preserve v1 unchanged.",
+  "parent_protocol": "protocol.json"
+}

@@ -1,92 +1,126 @@
 {
-  "dense-v1-launch.json": {
-    "pid": 1101808,
-    "command": [
+  "extraction": {
+    "argv": [
       "/var/tmp/typhon-video-representation-20261012/.venv-hand/bin/python",
-      "-u",
       "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_dense.py",
       "--source-index",
-      "/var/tmp/typhon-video-representation-20261012/source-index.json",
+      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/experiment-history/2026-10-12-video02/parent-source-index.json",
       "--project-root",
       "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor",
       "--hand-model",
       "/var/tmp/typhon-video-representation-20261012/hand_landmarker.task",
       "--protocol",
-      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/configs/experiments/video02/protocol.json",
+      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/configs/experiments/video02/protocol-v2.json",
       "--output",
-      "/var/tmp/typhon-video-representation-20261012/dense-v1"
-    ]
-  },
-  "dense-v1-features-launch.json": {
-    "pid": 1103996,
-    "command": [
-      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-xvla/bin/python",
-      "-u",
-      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_features.py",
-      "--data",
-      "/var/tmp/typhon-video-representation-20261012/dense-v1",
-      "--base-model",
-      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-visual-features/.cache-video/video01_pt_frozen",
-      "--output",
-      "/var/tmp/typhon-video-representation-20261012/dense-v1/features"
-    ]
-  },
-  "dense-v1-analysis-launch.json": {
-    "pid": 1104604,
-    "command": [
-      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-sim/bin/python",
-      "-u",
-      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_analyze.py",
-      "--data",
-      "/var/tmp/typhon-video-representation-20261012/dense-v1",
-      "--features",
-      "/var/tmp/typhon-video-representation-20261012/dense-v1/features/features.npz",
-      "--output",
-      "/var/tmp/typhon-video-representation-20261012/dense-v1/analysis"
-    ]
-  },
-  "dense-v1-analysis-retry-launch.json": {
-    "pid": 1105364,
-    "command": [
-      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-sim/bin/python",
-      "-u",
-      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_analyze.py",
-      "--data",
-      "/var/tmp/typhon-video-representation-20261012/dense-v1",
-      "--features",
-      "/var/tmp/typhon-video-representation-20261012/dense-v1/features/features.npz",
-      "--output",
-      "/var/tmp/typhon-video-representation-20261012/dense-v1/analysis"
+      "/var/tmp/typhon-video-representation-20261012/dense-v2"
     ],
-    "previous_attempt": "analysis-failed-system-encoder"
+    "pid": 1114288,
+    "created_utc": "2026-10-12T17:09:01.686422+00:00"
   },
-  "dense-v1-preprocessing-launch.json": {
-    "pid": 1105893,
-    "command": [
-      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-xvla/bin/python",
-      "-u",
-      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_preprocessing.py",
-      "--data",
-      "/var/tmp/typhon-video-representation-20261012/dense-v1",
-      "--base-model",
-      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-visual-features/.cache-video/video01_pt_frozen",
-      "--output",
-      "/var/tmp/typhon-video-representation-20261012/dense-v1/preprocessing"
-    ]
-  },
-  "dense-v1-analysis-v2-launch.json": {
-    "pid": 1106841,
-    "command": [
-      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-sim/bin/python",
-      "-u",
-      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_analyze.py",
-      "--data",
-      "/var/tmp/typhon-video-representation-20261012/dense-v1",
-      "--features",
-      "/var/tmp/typhon-video-representation-20261012/dense-v1/features/features.npz",
-      "--output",
-      "/var/tmp/typhon-video-representation-20261012/dense-v1/analysis-v2"
+  "pipeline": {
+    "commands": [
+      [
+        "/var/tmp/typhon-video-representation-20261012/.venv-hand/bin/python",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_decode_verify.py",
+        "--data",
+        "/var/tmp/typhon-video-representation-20261012/dense-v2",
+        "--project-root",
+        "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor"
+      ],
+      [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-xvla/bin/python",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_features.py",
+        "--data",
+        "/var/tmp/typhon-video-representation-20261012/dense-v2",
+        "--base-model",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-visual-features/.cache-video/video01_pt_frozen",
+        "--output",
+        "/var/tmp/typhon-video-representation-20261012/dense-v2/features"
+      ],
+      [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-sim/bin/python",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_analyze.py",
+        "--data",
+        "/var/tmp/typhon-video-representation-20261012/dense-v2",
+        "--features",
+        "/var/tmp/typhon-video-representation-20261012/dense-v2/features/features.npz",
+        "--output",
+        "/var/tmp/typhon-video-representation-20261012/dense-v2/analysis"
+      ],
+      [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-sim/bin/python",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_analyze.py",
+        "--data",
+        "/var/tmp/typhon-video-representation-20261012/dense-v2",
+        "--features",
+        "/var/tmp/typhon-video-representation-20261012/dense-v2/features/features.npz",
+        "--output",
+        "/var/tmp/typhon-video-representation-20261012/dense-v2/analysis-v2"
+      ],
+      [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-xvla/bin/python",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_preprocessing.py",
+        "--data",
+        "/var/tmp/typhon-video-representation-20261012/dense-v2",
+        "--base-model",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-visual-features/.cache-video/video01_pt_frozen",
+        "--output",
+        "/var/tmp/typhon-video-representation-20261012/dense-v2/preprocessing"
+      ],
+      [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-sim/bin/python",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_goal_probe.py",
+        "--data",
+        "/var/tmp/typhon-video-representation-20261012/dense-v2",
+        "--output",
+        "/var/tmp/typhon-video-representation-20261012/dense-v2/goal-probe"
+      ],
+      [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-sim/bin/python",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_validate.py",
+        "--data",
+        "/var/tmp/typhon-video-representation-20261012/dense-v2",
+        "--project-root",
+        "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor"
+      ]
     ],
-    "purpose": "QA header layout only; compare unchanged numeric outcomes to analysis"
+    "created_utc": "2026-10-12T17:10:39.394921+00:00",
+    "completed": [
+      {
+        "step": 0,
+        "returncode": 0,
+        "seconds": 3.0721954900072888
+      },
+      {
+        "step": 1,
+        "returncode": 0,
+        "seconds": 38.76719381599105
+      },
+      {
+        "step": 2,
+        "returncode": 0,
+        "seconds": 1.4603298759902827
+      },
+      {
+        "step": 3,
+        "returncode": 0,
+        "seconds": 1.328093746007653
+      },
+      {
+        "step": 4,
+        "returncode": 0,
+        "seconds": 7.850565984990681
+      },
+      {
+        "step": 5,
+        "returncode": 0,
+        "seconds": 0.2371166909870226
+      },
+      {
+        "step": 6,
+        "returncode": 0,
+        "seconds": 3.9695599600090645
+      }
+    ]
   }
 }

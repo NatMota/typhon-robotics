@@ -1,0 +1,286 @@
+{
+  "matching": [
+    {
+      "method": "full_rgb",
+      "scope": "all_frames",
+      "queries": 1322,
+      "mean_error": 2.0897048888048406,
+      "within075": 477,
+      "shuffle_error": 2.9275910171406965
+    },
+    {
+      "method": "full_rgb",
+      "scope": "both_object_visible",
+      "queries": 1250,
+      "mean_error": 2.1920285151999996,
+      "within075": 415,
+      "shuffle_error": 3.0269810077679993
+    },
+    {
+      "method": "current_observed_object_square_crop",
+      "scope": "all_frames",
+      "queries": 1322,
+      "mean_error": 2.2076844667170956,
+      "within075": 503,
+      "shuffle_error": 2.8891147052723145
+    },
+    {
+      "method": "current_observed_object_square_crop",
+      "scope": "both_object_visible",
+      "queries": 1250,
+      "mean_error": 2.3830908087999996,
+      "within075": 441,
+      "shuffle_error": 3.007804918192
+    },
+    {
+      "method": "equal_full_plus_crop",
+      "scope": "all_frames",
+      "queries": 1322,
+      "mean_error": 1.2054380733736763,
+      "within075": 693
+    },
+    {
+      "method": "equal_full_plus_crop",
+      "scope": "both_object_visible",
+      "queries": 1250,
+      "mean_error": 1.3177764103999998,
+      "within075": 627
+    }
+  ],
+  "retrieval": [
+    {
+      "method": "full_rgb",
+      "summary": "pooled",
+      "top1": 1,
+      "total": 16
+    },
+    {
+      "method": "full_rgb",
+      "summary": "ordered_8_bins",
+      "top1": 7,
+      "total": 16
+    },
+    {
+      "method": "full_rgb",
+      "summary": "endpoints",
+      "top1": 3,
+      "total": 16
+    },
+    {
+      "method": "full_rgb",
+      "summary": "first_frame",
+      "top1": 1,
+      "total": 16
+    },
+    {
+      "method": "current_observed_object_square_crop",
+      "summary": "pooled",
+      "top1": 1,
+      "total": 16
+    },
+    {
+      "method": "current_observed_object_square_crop",
+      "summary": "ordered_8_bins",
+      "top1": 2,
+      "total": 16
+    },
+    {
+      "method": "current_observed_object_square_crop",
+      "summary": "endpoints",
+      "top1": 2,
+      "total": 16
+    },
+    {
+      "method": "current_observed_object_square_crop",
+      "summary": "first_frame",
+      "top1": 2,
+      "total": 16
+    }
+  ],
+  "fusion_improved_takes": 13,
+  "selected_trajectories": [
+    {
+      "demo_id": "demo_0004",
+      "view": "camera_a",
+      "manual_category": "normal_feeding",
+      "split": "other_observation_only",
+      "samples": 81,
+      "valid_xy": 26,
+      "known_yaw": 20,
+      "samples_with_hand": 17,
+      "valid_adjacent_edges": 24,
+      "path_length_image_units": 0.19284446134109512,
+      "shuffle_path_length_median": 1.882996713250533,
+      "static_path_length": 0.0,
+      "initial_xy": null,
+      "final_xy": [
+        0.5686494117647058,
+        0.38835355648535563
+      ],
+      "endpoint_displacement": null,
+      "observed_yaw_extent_deg": 0.0,
+      "initial_yaw_deg": null,
+      "final_yaw_deg": 355.0,
+      "endpoint_directed_yaw_change_deg": null,
+      "hand_near_object_edges": 1,
+      "hand_near_moving_object_edges": 1,
+      "contact_confirmed": null,
+      "metric_depth": null
+    },
+    {
+      "demo_id": "demo_0007",
+      "view": "camera_a",
+      "manual_category": "orientation_correction",
+      "split": "R_train",
+      "samples": 76,
+      "valid_xy": 76,
+      "known_yaw": 76,
+      "samples_with_hand": 38,
+      "valid_adjacent_edges": 75,
+      "path_length_image_units": 0.1792991134383083,
+      "shuffle_path_length_median": 1.150014805014051,
+      "static_path_length": 0.0,
+      "initial_xy": [
+        0.5570611764705883,
+        0.39245815899581593
+      ],
+      "final_xy": [
+        0.5618670588235294,
+        0.39174686192468616
+      ],
+      "endpoint_displacement": 0.004858235143929173,
+      "observed_yaw_extent_deg": 95.0,
+      "initial_yaw_deg": 85.0,
+      "final_yaw_deg": 355.0,
+      "endpoint_directed_yaw_change_deg": -90.0,
+      "hand_near_object_edges": 30,
+      "hand_near_moving_object_edges": 15,
+      "contact_confirmed": null,
+      "metric_depth": null
+    },
+    {
+      "demo_id": "demo_0009",
+      "view": "camera_a",
+      "manual_category": "orientation_correction",
+      "split": "R_train",
+      "samples": 71,
+      "valid_xy": 67,
+      "known_yaw": 42,
+      "samples_with_hand": 35,
+      "valid_adjacent_edges": 65,
+      "path_length_image_units": 0.32460464328320354,
+      "shuffle_path_length_median": 2.077121289324871,
+      "static_path_length": 0.0,
+      "initial_xy": [
+        0.566764705882353,
+        0.39618200836820083
+      ],
+      "final_xy": [
+        0.55562,
+        0.3967489539748954
+      ],
+      "endpoint_displacement": 0.011159117192910137,
+      "observed_yaw_extent_deg": 185.0,
+      "initial_yaw_deg": 180.0,
+      "final_yaw_deg": 355.0,
+      "endpoint_directed_yaw_change_deg": 175.0,
+      "hand_near_object_edges": 24,
+      "hand_near_moving_object_edges": 14,
+      "contact_confirmed": null,
+      "metric_depth": null
+    },
+    {
+      "demo_id": "demo_0011",
+      "view": "camera_a",
+      "manual_category": "orientation_correction",
+      "split": "other_observation_only",
+      "samples": 60,
+      "valid_xy": 60,
+      "known_yaw": 48,
+      "samples_with_hand": 34,
+      "valid_adjacent_edges": 59,
+      "path_length_image_units": 0.3038100643647446,
+      "shuffle_path_length_median": 1.833695301083048,
+      "static_path_length": 0.0,
+      "initial_xy": [
+        0.5616047058823529,
+        0.40340167364016744
+      ],
+      "final_xy": [
+        0.5712588235294117,
+        0.39881171548117156
+      ],
+      "endpoint_displacement": 0.010689700811743292,
+      "observed_yaw_extent_deg": 185.0,
+      "initial_yaw_deg": 180.0,
+      "final_yaw_deg": 357.85736504552773,
+      "endpoint_directed_yaw_change_deg": 177.85736504552773,
+      "hand_near_object_edges": 27,
+      "hand_near_moving_object_edges": 17,
+      "contact_confirmed": null,
+      "metric_depth": null
+    },
+    {
+      "demo_id": "demo_0018",
+      "view": "camera_a",
+      "manual_category": "already_completed",
+      "split": "other_observation_only",
+      "samples": 111,
+      "valid_xy": 111,
+      "known_yaw": 111,
+      "samples_with_hand": 0,
+      "valid_adjacent_edges": 110,
+      "path_length_image_units": 0.014504963550289143,
+      "shuffle_path_length_median": 0.02194300201885719,
+      "static_path_length": 0.0,
+      "initial_xy": [
+        0.5599811764705882,
+        0.3973284518828452
+      ],
+      "final_xy": [
+        0.5600117647058823,
+        0.3972426778242678
+      ],
+      "endpoint_displacement": 9.106497275708176e-05,
+      "observed_yaw_extent_deg": 5.0,
+      "initial_yaw_deg": 356.42801606128756,
+      "final_yaw_deg": 357.14263495447227,
+      "endpoint_directed_yaw_change_deg": 0.7146188931847064,
+      "hand_near_object_edges": 0,
+      "hand_near_moving_object_edges": 0,
+      "contact_confirmed": null,
+      "metric_depth": null
+    },
+    {
+      "demo_id": "demo_0019",
+      "view": "camera_a",
+      "manual_category": "already_completed",
+      "split": "other_observation_only",
+      "samples": 47,
+      "valid_xy": 47,
+      "known_yaw": 47,
+      "samples_with_hand": 0,
+      "valid_adjacent_edges": 46,
+      "path_length_image_units": 0.005147293043902065,
+      "shuffle_path_length_median": 0.007570115816190843,
+      "static_path_length": 0.0,
+      "initial_xy": [
+        0.5600117647058823,
+        0.3972133891213389
+      ],
+      "final_xy": [
+        0.5600305882352942,
+        0.39725523012552294
+      ],
+      "endpoint_displacement": 4.5880223306416714e-05,
+      "observed_yaw_extent_deg": 5.0,
+      "initial_yaw_deg": 358.57198393871244,
+      "final_yaw_deg": 355.0,
+      "endpoint_directed_yaw_change_deg": -3.5719839387124352,
+      "hand_near_object_edges": 0,
+      "hand_near_moving_object_edges": 0,
+      "contact_confirmed": null,
+      "metric_depth": null
+    }
+  ]
+}
