@@ -79,3 +79,5 @@ Fixed initial A/C choice × 40/41 holding ticks on the same inspected V4 scene. 
 [Report and full choice table](https://github.com/NatMota/typhon-robotics/blob/research/live09-ghost-decisions/experiment-history/2026-10-12-live09/REPORT.md)
 
 32 choice calls plus 32 reason calls on the previously frozen R10 cards. Primary ghost-only selects 3/12, with 2/3 proxy-adequate; future RGB selects 5/12, with 5/5 adequate, but abstains 7/12 and changes decisions under reordering in 4/6 states. Future RGB also selects from the unsuitable V4 held state. Both modes contain privileged simulator lookahead. Secondary regional completions are separate from strict success, and supplied held states receive no new-pickup credit. No live-control benefit demonstrated. OST #11029; use LIVE09_BACKUP_RECEIPT.json for bulk verification.
+
+Provenance correction (13 October): LIVE09 repeats the completed R10 batch from 12 October morning. All 32 choices and 32 categorical-reason responses match; it supplies no additional independent scenes. See the LIVE09 REPEAT_AUDIT.md and repeat_audit.json. LIVE07 and LIVE08 remain new controller/causal investigations.
