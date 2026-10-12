@@ -39,21 +39,21 @@ result_10990,result,"Historical phone held export verified on Mint:16 takes,32 v
 sol_data_3,solution,"Object, hand and temporal visual representations",opp_data,764,3744,#30353D
 exp_11015,experiment,"Video-derived representation and robot adapter
 VIDEO01 · #11015
-ACTIVE · RESULTS PENDING",sol_data_3,1134,3788.0,#3C3926
-result_11015,result,Three phone methods and dense follow-up completed. Full+crop features improve offline camera matching; corrections and no-op clips retain different observed motion. No validated metric depth/contact or Panda action decoder.,exp_11015,1504,3744.0,#38323E
+ACTIVE · RESULTS PENDING",sol_data_3,1134,3799.0,#3C3926
+result_11015,result,Three phone methods and corrected dense follow-up completed. Full+crop features improve offline camera matching; corrections and no-op clips retain different observed motion. No validated metric depth/contact or Panda action decoder.,exp_11015,1504,3744.0,#38323E
 exp_11016,experiment,"Object motion from phone frames
 VIDEO01-A · #11016
-REVIEW",sol_data_3,1134,4115.0,#3C3926
-result_11016,result,"440/526 centres and 227/264 primary directed-yaw estimates pass confidence filters. Actual 2D paths, missing masks and shuffle/static controls saved. Coverage is not accuracy; no physical 3D or grasp inference.",exp_11016,1504,4060.0,#303840
+REVIEW",sol_data_3,1134,4137.0,#3C3926
+result_11016,result,"440/526 centres and 227/264 primary directed-yaw estimates pass confidence filters. Actual 2D paths, missing masks and shuffle/static controls saved. Coverage is not accuracy; no physical 3D or grasp inference.",exp_11016,1504,4082.0,#303840
 exp_11017,experiment,"Hand/pinch motion from phone frames
 VIDEO01-B · #11017
-REVIEW",sol_data_3,1134,4431.0,#3C3926
-result_11017,result,"Hands detected in 175/526 sampled frames. Pinch midpoint/aperture and hand-centred landmarks saved; grasp/global depth remain unknown. Static no-hand frames are expected, so this is not recall.",exp_11017,1504,4376.0,#303840
+REVIEW",sol_data_3,1134,4453.0,#3C3926
+result_11017,result,"Hands detected in 175/526 sampled frames. Pinch midpoint/aperture and hand-centred landmarks saved; grasp/global depth remain unknown. Static no-hand frames are expected, so this is not recall.",exp_11017,1504,4398.0,#303840
 exp_11018,experiment,"Frozen visual features across views
 VIDEO01-C · #11018
-REVIEW",sol_data_3,1134,4747.0,#3C3926
-result_11018,result,Frozen Pt backbone: 526 x 1024 descriptors; pooled paired-take retrieval 1/16. Frame timing and shuffle/reversal controls saved. Offline future-aware comparison; pooled features do not encode temporal order.,exp_11018,1504,4692.0,#3C382D
+REVIEW",sol_data_3,1134,4769.0,#3C3926
+result_11018,result,Frozen Pt backbone: 526 x 1024 descriptors; pooled paired-take retrieval 1/16. Frame timing and shuffle/reversal controls saved. Offline future-aware comparison; pooled features do not encode temporal order.,exp_11018,1504,4714.0,#3C382D
 exp_11019,experiment,"Dense video, crops and ordered observations
 VIDEO02 · #11019
-RUN / COMPLETE",sol_data_3,1134,5063.0,#3C3926
-result_11019,result,"2,644 phone frames;147 four-second view-windows. Full+crop timing error2.09 to1.20s;13/16takes improve. Ordered matching6/16 versus pooled1/16.0robot-action labels; calibration/contact still unknown.",exp_11019,1504,5008.0,#3C382D
+RUN / COMPLETE",sol_data_3,1134,5096.0,#3C3926
+result_11019,result,"Corrected v2: 2,644 frames verified against raw decoding; 147 four-second windows. Full+crop timing error 2.09 to 1.21 s; 13/16 takes improve. Ordered retrieval 7/16 vs pooled 1/16. Earlier frame-index bug preserved and fixed. No robot-action labels.",exp_11019,1504,5030.0,#3C382D
