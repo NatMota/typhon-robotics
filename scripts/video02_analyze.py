@@ -2,6 +2,7 @@
 import argparse,collections,csv,hashlib,json,math,subprocess
 from pathlib import Path
 import cv2,numpy as np
+import imageio_ffmpeg
 
 def save(p,x):p.write_text(json.dumps(x,indent=2,allow_nan=False)+'\n')
 def circ_diff(a,b):return float((a-b+180)%360-180)
@@ -88,7 +89,7 @@ def main(a):
         for r in [aa[0],aa[len(aa)//2],aa[-1]]:panels.append(annotated(a.data,r))
         sheets.append(np.hstack(panels))
         path=previews/(did+'-paired.mp4')
-        ff=subprocess.Popen(['ffmpeg','-y','-v','error','-f','rawvideo','-pix_fmt','bgr24','-s','800x260','-r','10','-i','-','-an','-c:v','libx264','-crf','23','-pix_fmt','yuv420p','-movflags','+faststart',str(path)],stdin=subprocess.PIPE)
+        ff=subprocess.Popen([imageio_ffmpeg.get_ffmpeg_exe(),'-y','-v','error','-f','rawvideo','-pix_fmt','bgr24','-s','800x260','-r','10','-i','-','-an','-c:v','libx264','-crf','23','-pix_fmt','yuv420p','-movflags','+faststart',str(path)],stdin=subprocess.PIPE)
         deltas=[]
         for r in aa:
             j=int(np.abs(times-r['clip_time_s']).argmin());other=bb[j];deltas.append(abs(other['clip_time_s']-r['clip_time_s']))
