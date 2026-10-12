@@ -1,0 +1,82 @@
+{
+  "schema": "live09-v1",
+  "frozen_unix": 1791845110.2146115,
+  "model": "gpt-6-luna",
+  "endpoint": "https://api.openai.com/v1/decisions",
+  "jobs": [
+    {
+      "id": "primary-ghost_only",
+      "set": "primary",
+      "mode": "ghost_only",
+      "slates": [
+        "slates/film-demo_0002-q0/ghost_only/order0/manifest.json",
+        "slates/film-demo_0002-q0/ghost_only/order1/manifest.json",
+        "slates/film-demo_0002-q1/ghost_only/order0/manifest.json",
+        "slates/film-demo_0002-q1/ghost_only/order1/manifest.json",
+        "slates/film-demo_0003-q0/ghost_only/order0/manifest.json",
+        "slates/film-demo_0003-q0/ghost_only/order1/manifest.json",
+        "slates/film-demo_0003-q1/ghost_only/order0/manifest.json",
+        "slates/film-demo_0003-q1/ghost_only/order1/manifest.json",
+        "slates/film-demo_0006-q0/ghost_only/order0/manifest.json",
+        "slates/film-demo_0006-q0/ghost_only/order1/manifest.json",
+        "slates/film-demo_0006-q1/ghost_only/order0/manifest.json",
+        "slates/film-demo_0006-q1/ghost_only/order1/manifest.json"
+      ]
+    },
+    {
+      "id": "primary-future_rgb",
+      "set": "primary",
+      "mode": "future_rgb",
+      "slates": [
+        "slates/film-demo_0002-q0/future_rgb/order0/manifest.json",
+        "slates/film-demo_0002-q0/future_rgb/order1/manifest.json",
+        "slates/film-demo_0002-q1/future_rgb/order0/manifest.json",
+        "slates/film-demo_0002-q1/future_rgb/order1/manifest.json",
+        "slates/film-demo_0003-q0/future_rgb/order0/manifest.json",
+        "slates/film-demo_0003-q0/future_rgb/order1/manifest.json",
+        "slates/film-demo_0003-q1/future_rgb/order0/manifest.json",
+        "slates/film-demo_0003-q1/future_rgb/order1/manifest.json",
+        "slates/film-demo_0006-q0/future_rgb/order0/manifest.json",
+        "slates/film-demo_0006-q0/future_rgb/order1/manifest.json",
+        "slates/film-demo_0006-q1/future_rgb/order0/manifest.json",
+        "slates/film-demo_0006-q1/future_rgb/order1/manifest.json"
+      ]
+    },
+    {
+      "id": "supplement-ghost_only",
+      "set": "supplement",
+      "mode": "ghost_only",
+      "slates": [
+        "slates/v3-m6-film-demo_0002-q2/ghost_only/order0/manifest.json",
+        "slates/v3-m6-film-demo_0002-q2/ghost_only/order1/manifest.json",
+        "slates/v4-m6-film-demo_0006-q2/ghost_only/order0/manifest.json",
+        "slates/v4-m6-film-demo_0006-q2/ghost_only/order1/manifest.json"
+      ]
+    },
+    {
+      "id": "supplement-future_rgb",
+      "set": "supplement",
+      "mode": "future_rgb",
+      "slates": [
+        "slates/v3-m6-film-demo_0002-q2/future_rgb/order0/manifest.json",
+        "slates/v3-m6-film-demo_0002-q2/future_rgb/order1/manifest.json",
+        "slates/v4-m6-film-demo_0006-q2/future_rgb/order0/manifest.json",
+        "slates/v4-m6-film-demo_0006-q2/future_rgb/order1/manifest.json"
+      ]
+    }
+  ],
+  "max_choice_calls": 32,
+  "max_reason_calls": 32,
+  "concurrent_workers": 4,
+  "no_transport_retries": true,
+  "prompt_and_rubric": "Exact frozen R10 v2 request builder, unchanged; original primary and supplementary protocols retained.",
+  "scope": "Offline ranking of privileged executed simulator futures. No actions executed; no training, physical deployment or learned-world-model claim.",
+  "metrics": "Original strict physical scores and frozen secondary visual-goal supplement remain separate. Multiple orders are not independent states; insufficiency is not automatically wrong when oracle candidates exist.",
+  "source_inventory_sha256": "355382de61077eeca92fa2df99d71264dfbaed19c8e0287f6234333eddbadb5b",
+  "code_sha256": {
+    "scripts/live09_ghost_decisions.py": "e0b8e393f283d3a71a688c67de149678fd7009184e0781af393eccdacc624cea",
+    "scripts/exp20261011_ghost_critic_v2.py": "73a2c2f7558da528e9eb1141a8b8063c602bd541f99c28b27d89e6635ec2a039",
+    "scripts/exp20261011_ghost_critic.py": "42e1465ea1c6548222c3b876a3b019f028afdab7a21465b56f58f63b11d86343",
+    "scripts/exp20261011_ghost_visual_goal_compare_v3.py": "a9fa60588f1714e159d725ef6c4f6751149297a071e39a921c27342038fd3d8b"
+  }
+}

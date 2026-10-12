@@ -1,0 +1,50 @@
+{
+  "unix": 1791845110.233405,
+  "worktree": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/live09-ghost-decisions",
+  "jobs": [
+    {
+      "id": "primary-ghost_only",
+      "pid": 1218790,
+      "command": [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/live09-ghost-decisions/.venv-sim/bin/python",
+        "-u",
+        "scripts/live09_ghost_decisions.py",
+        "run",
+        "primary-ghost_only"
+      ]
+    },
+    {
+      "id": "primary-future_rgb",
+      "pid": 1218791,
+      "command": [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/live09-ghost-decisions/.venv-sim/bin/python",
+        "-u",
+        "scripts/live09_ghost_decisions.py",
+        "run",
+        "primary-future_rgb"
+      ]
+    },
+    {
+      "id": "supplement-ghost_only",
+      "pid": 1218792,
+      "command": [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/live09-ghost-decisions/.venv-sim/bin/python",
+        "-u",
+        "scripts/live09_ghost_decisions.py",
+        "run",
+        "supplement-ghost_only"
+      ]
+    },
+    {
+      "id": "supplement-future_rgb",
+      "pid": 1218793,
+      "command": [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/live09-ghost-decisions/.venv-sim/bin/python",
+        "-u",
+        "scripts/live09_ghost_decisions.py",
+        "run",
+        "supplement-future_rgb"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,947 @@
+{
+  "frozen_protocol_sha256": "867b160ec3d38203f89cabcb5f3ea8813adc1bff8fac71a18d091d465334fccb",
+  "original_source_files_unchanged": 389,
+  "choice_calls": 32,
+  "reason_calls": 32,
+  "all_jobs_complete": true,
+  "sets": {
+    "primary": {
+      "states": 6,
+      "choice_records": 24,
+      "by_mode": {
+        "ghost_only": {
+          "model_decisions": 12,
+          "selected_candidates": 3,
+          "selected_adequate_given_availability": {
+            "numerator": 2,
+            "denominator": 3
+          },
+          "rejection_classes": {
+            "NONE_ADEQUATE": {
+              "count": 0,
+              "with_oracle_adequate_available": 0
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "count": 9,
+              "with_oracle_adequate_available": 7
+            }
+          },
+          "nondecision_errors": {},
+          "ordering_consistency": [
+            {
+              "state": "film-demo_0002-q0",
+              "same_decision": true
+            },
+            {
+              "state": "film-demo_0002-q1",
+              "same_decision": true
+            },
+            {
+              "state": "film-demo_0003-q0",
+              "same_decision": true
+            },
+            {
+              "state": "film-demo_0003-q1",
+              "same_decision": false
+            },
+            {
+              "state": "film-demo_0006-q0",
+              "same_decision": false
+            },
+            {
+              "state": "film-demo_0006-q1",
+              "same_decision": true
+            }
+          ],
+          "median_wall_seconds": 0.8052342729934026,
+          "state_uniform_random_adequate_probability_mean": 0.7291666666666666,
+          "state_oracle_any_adequate_fraction": 0.8333333333333334
+        },
+        "future_rgb": {
+          "model_decisions": 12,
+          "selected_candidates": 5,
+          "selected_adequate_given_availability": {
+            "numerator": 5,
+            "denominator": 5
+          },
+          "rejection_classes": {
+            "NONE_ADEQUATE": {
+              "count": 0,
+              "with_oracle_adequate_available": 0
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "count": 7,
+              "with_oracle_adequate_available": 5
+            }
+          },
+          "nondecision_errors": {},
+          "ordering_consistency": [
+            {
+              "state": "film-demo_0002-q0",
+              "same_decision": false
+            },
+            {
+              "state": "film-demo_0002-q1",
+              "same_decision": true
+            },
+            {
+              "state": "film-demo_0003-q0",
+              "same_decision": false
+            },
+            {
+              "state": "film-demo_0003-q1",
+              "same_decision": true
+            },
+            {
+              "state": "film-demo_0006-q0",
+              "same_decision": false
+            },
+            {
+              "state": "film-demo_0006-q1",
+              "same_decision": false
+            }
+          ],
+          "median_wall_seconds": 1.5866149020002922,
+          "state_uniform_random_adequate_probability_mean": 0.7291666666666666,
+          "state_oracle_any_adequate_fraction": 0.8333333333333334
+        }
+      },
+      "selected_labels": {
+        "INSUFFICIENT_EVIDENCE": 16,
+        "A": 6,
+        "B": 2
+      },
+      "reason_codes": {
+        "OBJECT_OUTCOME_NOT_SHOWN": 17,
+        "APPROACH_ALIGN": 7
+      }
+    },
+    "supplement": {
+      "states": 2,
+      "choice_records": 8,
+      "by_mode": {
+        "ghost_only": {
+          "model_decisions": 4,
+          "selected_candidates": 1,
+          "selected_adequate_given_availability": {
+            "numerator": 0,
+            "denominator": 0
+          },
+          "rejection_classes": {
+            "NONE_ADEQUATE": {
+              "count": 0,
+              "with_oracle_adequate_available": 0
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "count": 3,
+              "with_oracle_adequate_available": 0
+            }
+          },
+          "nondecision_errors": {},
+          "ordering_consistency": [
+            {
+              "state": "v3-m6-film-demo_0002-q2",
+              "same_decision": false
+            },
+            {
+              "state": "v4-m6-film-demo_0006-q2",
+              "same_decision": true
+            }
+          ],
+          "median_wall_seconds": 0.9105275324982358,
+          "state_uniform_random_adequate_probability_mean": 0.0,
+          "state_oracle_any_adequate_fraction": 0
+        },
+        "future_rgb": {
+          "model_decisions": 4,
+          "selected_candidates": 4,
+          "selected_adequate_given_availability": {
+            "numerator": 0,
+            "denominator": 0
+          },
+          "rejection_classes": {
+            "NONE_ADEQUATE": {
+              "count": 0,
+              "with_oracle_adequate_available": 0
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "count": 0,
+              "with_oracle_adequate_available": 0
+            }
+          },
+          "nondecision_errors": {},
+          "ordering_consistency": [
+            {
+              "state": "v3-m6-film-demo_0002-q2",
+              "same_decision": false
+            },
+            {
+              "state": "v4-m6-film-demo_0006-q2",
+              "same_decision": false
+            }
+          ],
+          "median_wall_seconds": 1.6296983385109343,
+          "state_uniform_random_adequate_probability_mean": 0.0,
+          "state_oracle_any_adequate_fraction": 0
+        }
+      },
+      "selected_labels": {
+        "A": 5,
+        "INSUFFICIENT_EVIDENCE": 3
+      },
+      "reason_codes": {
+        "APPROACH_ALIGN": 1,
+        "OBJECT_OUTCOME_NOT_SHOWN": 5,
+        "SUPPORTED_PLACE_RELEASE": 2
+      }
+    }
+  },
+  "no_robot_actions_or_training": true,
+  "secondary_visual_goal": {
+    "schema": "luna-ghost-critic-secondary-visual-goal-v3",
+    "at_utc": "2026-10-12T22:47:58.885790+00:00",
+    "protocol_sha256": "b1e558760b4b8666f8838e51c1d7d80afaa77a9fb58bb37451e1419cb1b91425",
+    "secondary_only": true,
+    "states": {
+      "v3-m6-film-demo_0002-q2": {
+        "candidate_count": 8,
+        "visual_goal_complete_count": 7,
+        "original_strict_success_count": 0,
+        "original_v2_adequate_count": 0,
+        "secondary_next_subgoal_adequate_count": 7,
+        "uniform_random_expectation": {
+          "visual_goal_complete_probability": 0.875,
+          "secondary_next_subgoal_adequate_probability": 0.875,
+          "original_strict_success_probability": 0.0
+        },
+        "oracle_any_visual_goal_completion": true,
+        "oracle_any_adequate_next_subgoal": true,
+        "oracle_best_candidates": [
+          "seed752004",
+          "seed752001",
+          "seed752005",
+          "seed752006",
+          "seed752007",
+          "seed752008",
+          "seed752002"
+        ],
+        "candidates": {
+          "seed752004": {
+            "visual_goal_complete": true,
+            "original_strict_success": false,
+            "original_v2_adequate_proxy": false,
+            "secondary_next_subgoal_adequate": true,
+            "secondary_rank": [
+              1,
+              4,
+              0.0
+            ],
+            "existing_criteria": {
+              "position": false,
+              "orientation": true,
+              "marked_face_up": true,
+              "footprint_inside_target": true,
+              "placement_height": true,
+              "released": true,
+              "stable": true
+            },
+            "position_error_mm": 19.328490307436844,
+            "yaw_error_deg": 0.7621929577371827,
+            "initially_held": true,
+            "new_pickup_credit": false
+          },
+          "seed752001": {
+            "visual_goal_complete": true,
+            "original_strict_success": false,
+            "original_v2_adequate_proxy": false,
+            "secondary_next_subgoal_adequate": true,
+            "secondary_rank": [
+              1,
+              4,
+              0.0
+            ],
+            "existing_criteria": {
+              "position": false,
+              "orientation": true,
+              "marked_face_up": true,
+              "footprint_inside_target": true,
+              "placement_height": true,
+              "released": true,
+              "stable": true
+            },
+            "position_error_mm": 19.552931348461218,
+            "yaw_error_deg": 0.06799107413473494,
+            "initially_held": true,
+            "new_pickup_credit": false
+          },
+          "seed752005": {
+            "visual_goal_complete": true,
+            "original_strict_success": false,
+            "original_v2_adequate_proxy": false,
+            "secondary_next_subgoal_adequate": true,
+            "secondary_rank": [
+              1,
+              4,
+              0.0
+            ],
+            "existing_criteria": {
+              "position": false,
+              "orientation": true,
+              "marked_face_up": true,
+              "footprint_inside_target": true,
+              "placement_height": true,
+              "released": true,
+              "stable": true
+            },
+            "position_error_mm": 19.298312365690315,
+            "yaw_error_deg": 0.7048678260852295,
+            "initially_held": true,
+            "new_pickup_credit": false
+          },
+          "seed752006": {
+            "visual_goal_complete": true,
+            "original_strict_success": false,
+            "original_v2_adequate_proxy": false,
+            "secondary_next_subgoal_adequate": true,
+            "secondary_rank": [
+              1,
+              4,
+              0.0
+            ],
+            "existing_criteria": {
+              "position": false,
+              "orientation": true,
+              "marked_face_up": true,
+              "footprint_inside_target": true,
+              "placement_height": true,
+              "released": true,
+              "stable": true
+            },
+            "position_error_mm": 18.123080649050657,
+            "yaw_error_deg": 0.7795342384654071,
+            "initially_held": true,
+            "new_pickup_credit": false
+          },
+          "seed752007": {
+            "visual_goal_complete": true,
+            "original_strict_success": false,
+            "original_v2_adequate_proxy": false,
+            "secondary_next_subgoal_adequate": true,
+            "secondary_rank": [
+              1,
+              4,
+              0.0
+            ],
+            "existing_criteria": {
+              "position": false,
+              "orientation": true,
+              "marked_face_up": true,
+              "footprint_inside_target": true,
+              "placement_height": true,
+              "released": true,
+              "stable": true
+            },
+            "position_error_mm": 18.2221141840652,
+            "yaw_error_deg": 0.39636764132495816,
+            "initially_held": true,
+            "new_pickup_credit": false
+          },
+          "seed752008": {
+            "visual_goal_complete": true,
+            "original_strict_success": false,
+            "original_v2_adequate_proxy": false,
+            "secondary_next_subgoal_adequate": true,
+            "secondary_rank": [
+              1,
+              4,
+              0.0
+            ],
+            "existing_criteria": {
+              "position": false,
+              "orientation": true,
+              "marked_face_up": true,
+              "footprint_inside_target": true,
+              "placement_height": true,
+              "released": true,
+              "stable": true
+            },
+            "position_error_mm": 20.205556970510976,
+            "yaw_error_deg": 0.07043462559588881,
+            "initially_held": true,
+            "new_pickup_credit": false
+          },
+          "seed752002": {
+            "visual_goal_complete": true,
+            "original_strict_success": false,
+            "original_v2_adequate_proxy": false,
+            "secondary_next_subgoal_adequate": true,
+            "secondary_rank": [
+              1,
+              4,
+              0.0
+            ],
+            "existing_criteria": {
+              "position": false,
+              "orientation": true,
+              "marked_face_up": true,
+              "footprint_inside_target": true,
+              "placement_height": true,
+              "released": true,
+              "stable": true
+            },
+            "position_error_mm": 19.440268796580924,
+            "yaw_error_deg": 0.46518134787681087,
+            "initially_held": true,
+            "new_pickup_credit": false
+          },
+          "seed752003": {
+            "visual_goal_complete": false,
+            "original_strict_success": false,
+            "original_v2_adequate_proxy": false,
+            "secondary_next_subgoal_adequate": false,
+            "secondary_rank": [
+              0,
+              -1,
+              0.0
+            ],
+            "existing_criteria": {
+              "position": true,
+              "orientation": true,
+              "marked_face_up": true,
+              "footprint_inside_target": true,
+              "placement_height": true,
+              "released": true,
+              "stable": false
+            },
+            "position_error_mm": 14.43319864877691,
+            "yaw_error_deg": 0.9141004064428402,
+            "initially_held": true,
+            "new_pickup_credit": false
+          }
+        }
+      },
+      "v4-m6-film-demo_0006-q2": {
+        "candidate_count": 8,
+        "visual_goal_complete_count": 0,
+        "original_strict_success_count": 0,
+        "original_v2_adequate_count": 0,
+        "secondary_next_subgoal_adequate_count": 0,
+        "uniform_random_expectation": {
+          "visual_goal_complete_probability": 0.0,
+          "secondary_next_subgoal_adequate_probability": 0.0,
+          "original_strict_success_probability": 0.0
+        },
+        "oracle_any_visual_goal_completion": false,
+        "oracle_any_adequate_next_subgoal": false,
+        "oracle_best_candidates": [
+          "seed752007",
+          "seed752002",
+          "seed752006",
+          "seed752005",
+          "seed752008",
+          "seed752003",
+          "seed752004",
+          "seed752001"
+        ],
+        "candidates": {
+          "seed752007": {
+            "visual_goal_complete": false,
+            "original_strict_success": false,
+            "original_v2_adequate_proxy": false,
+            "secondary_next_subgoal_adequate": false,
+            "secondary_rank": [
+              0,
+              -1,
+              0.0
+            ],
+            "existing_criteria": {
+              "position": true,
+              "orientation": false,
+              "marked_face_up": true,
+              "footprint_inside_target": true,
+              "placement_height": true,
+              "released": true,
+              "stable": true
+            },
+            "position_error_mm": 11.127361272798518,
+            "yaw_error_deg": 85.2014416619125,
+            "initially_held": true,
+            "new_pickup_credit": false
+          },
+          "seed752002": {
+            "visual_goal_complete": false,
+            "original_strict_success": false,
+            "original_v2_adequate_proxy": false,
+            "secondary_next_subgoal_adequate": false,
+            "secondary_rank": [
+              0,
+              -1,
+              0.0
+            ],
+            "existing_criteria": {
+              "position": true,
+              "orientation": false,
+              "marked_face_up": true,
+              "footprint_inside_target": true,
+              "placement_height": true,
+              "released": true,
+              "stable": true
+            },
+            "position_error_mm": 11.433098311182071,
+            "yaw_error_deg": 85.25384334282938,
+            "initially_held": true,
+            "new_pickup_credit": false
+          },
+          "seed752006": {
+            "visual_goal_complete": false,
+            "original_strict_success": false,
+            "original_v2_adequate_proxy": false,
+            "secondary_next_subgoal_adequate": false,
+            "secondary_rank": [
+              0,
+              -1,
+              0.0
+            ],
+            "existing_criteria": {
+              "position": true,
+              "orientation": false,
+              "marked_face_up": true,
+              "footprint_inside_target": true,
+              "placement_height": true,
+              "released": true,
+              "stable": true
+            },
+            "position_error_mm": 11.398619091541384,
+            "yaw_error_deg": 85.10318431449276,
+            "initially_held": true,
+            "new_pickup_credit": false
+          },
+          "seed752005": {
+            "visual_goal_complete": false,
+            "original_strict_success": false,
+            "original_v2_adequate_proxy": false,
+            "secondary_next_subgoal_adequate": false,
+            "secondary_rank": [
+              0,
+              -1,
+              0.0
+            ],
+            "existing_criteria": {
+              "position": true,
+              "orientation": false,
+              "marked_face_up": true,
+              "footprint_inside_target": true,
+              "placement_height": true,
+              "released": true,
+              "stable": true
+            },
+            "position_error_mm": 11.383268869989797,
+            "yaw_error_deg": 85.12149151076696,
+            "initially_held": true,
+            "new_pickup_credit": false
+          },
+          "seed752008": {
+            "visual_goal_complete": false,
+            "original_strict_success": false,
+            "original_v2_adequate_proxy": false,
+            "secondary_next_subgoal_adequate": false,
+            "secondary_rank": [
+              0,
+              -1,
+              0.0
+            ],
+            "existing_criteria": {
+              "position": true,
+              "orientation": false,
+              "marked_face_up": true,
+              "footprint_inside_target": true,
+              "placement_height": true,
+              "released": true,
+              "stable": true
+            },
+            "position_error_mm": 11.28001391729173,
+            "yaw_error_deg": 85.2304291624005,
+            "initially_held": true,
+            "new_pickup_credit": false
+          },
+          "seed752003": {
+            "visual_goal_complete": false,
+            "original_strict_success": false,
+            "original_v2_adequate_proxy": false,
+            "secondary_next_subgoal_adequate": false,
+            "secondary_rank": [
+              0,
+              -1,
+              0.0
+            ],
+            "existing_criteria": {
+              "position": true,
+              "orientation": false,
+              "marked_face_up": true,
+              "footprint_inside_target": true,
+              "placement_height": true,
+              "released": true,
+              "stable": true
+            },
+            "position_error_mm": 10.657086933763816,
+            "yaw_error_deg": 85.26157009378055,
+            "initially_held": true,
+            "new_pickup_credit": false
+          },
+          "seed752004": {
+            "visual_goal_complete": false,
+            "original_strict_success": false,
+            "original_v2_adequate_proxy": false,
+            "secondary_next_subgoal_adequate": false,
+            "secondary_rank": [
+              0,
+              -1,
+              0.0
+            ],
+            "existing_criteria": {
+              "position": true,
+              "orientation": false,
+              "marked_face_up": true,
+              "footprint_inside_target": true,
+              "placement_height": true,
+              "released": true,
+              "stable": true
+            },
+            "position_error_mm": 11.1957715715785,
+            "yaw_error_deg": 85.18217444552481,
+            "initially_held": true,
+            "new_pickup_credit": false
+          },
+          "seed752001": {
+            "visual_goal_complete": false,
+            "original_strict_success": false,
+            "original_v2_adequate_proxy": false,
+            "secondary_next_subgoal_adequate": false,
+            "secondary_rank": [
+              0,
+              -1,
+              0.0
+            ],
+            "existing_criteria": {
+              "position": true,
+              "orientation": false,
+              "marked_face_up": true,
+              "footprint_inside_target": true,
+              "placement_height": true,
+              "released": true,
+              "stable": true
+            },
+            "position_error_mm": 10.95105198126704,
+            "yaw_error_deg": 85.28874723714024,
+            "initially_held": true,
+            "new_pickup_credit": false
+          }
+        }
+      }
+    },
+    "rows": [
+      {
+        "state": "v3-m6-film-demo_0002-q2",
+        "mode": "future_rgb",
+        "repeat": 0,
+        "choice": "A",
+        "status": "valid",
+        "source_candidate": "seed752004",
+        "any_adequate_next_subgoal": true,
+        "selected_physical_outcome": {
+          "visual_goal_complete": true,
+          "original_strict_success": false,
+          "original_v2_adequate_proxy": false,
+          "secondary_next_subgoal_adequate": true,
+          "secondary_rank": [
+            1,
+            4,
+            0.0
+          ],
+          "existing_criteria": {
+            "position": false,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": true,
+            "placement_height": true,
+            "released": true,
+            "stable": true
+          },
+          "position_error_mm": 19.328490307436844,
+          "yaw_error_deg": 0.7621929577371827,
+          "initially_held": true,
+          "new_pickup_credit": false
+        },
+        "selected_oracle_best": true,
+        "uniform_random_expectation": {
+          "visual_goal_complete_probability": 0.875,
+          "secondary_next_subgoal_adequate_probability": 0.875,
+          "original_strict_success_probability": 0.0
+        }
+      },
+      {
+        "state": "v3-m6-film-demo_0002-q2",
+        "mode": "future_rgb",
+        "repeat": 1,
+        "choice": "A",
+        "status": "valid",
+        "source_candidate": "seed752005",
+        "any_adequate_next_subgoal": true,
+        "selected_physical_outcome": {
+          "visual_goal_complete": true,
+          "original_strict_success": false,
+          "original_v2_adequate_proxy": false,
+          "secondary_next_subgoal_adequate": true,
+          "secondary_rank": [
+            1,
+            4,
+            0.0
+          ],
+          "existing_criteria": {
+            "position": false,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": true,
+            "placement_height": true,
+            "released": true,
+            "stable": true
+          },
+          "position_error_mm": 19.298312365690315,
+          "yaw_error_deg": 0.7048678260852295,
+          "initially_held": true,
+          "new_pickup_credit": false
+        },
+        "selected_oracle_best": true,
+        "uniform_random_expectation": {
+          "visual_goal_complete_probability": 0.875,
+          "secondary_next_subgoal_adequate_probability": 0.875,
+          "original_strict_success_probability": 0.0
+        }
+      },
+      {
+        "state": "v3-m6-film-demo_0002-q2",
+        "mode": "ghost_only",
+        "repeat": 0,
+        "choice": "INSUFFICIENT_EVIDENCE",
+        "status": "valid",
+        "source_candidate": null,
+        "any_adequate_next_subgoal": true,
+        "selected_physical_outcome": null,
+        "selected_oracle_best": null,
+        "uniform_random_expectation": {
+          "visual_goal_complete_probability": 0.875,
+          "secondary_next_subgoal_adequate_probability": 0.875,
+          "original_strict_success_probability": 0.0
+        }
+      },
+      {
+        "state": "v3-m6-film-demo_0002-q2",
+        "mode": "ghost_only",
+        "repeat": 1,
+        "choice": "A",
+        "status": "valid",
+        "source_candidate": "seed752005",
+        "any_adequate_next_subgoal": true,
+        "selected_physical_outcome": {
+          "visual_goal_complete": true,
+          "original_strict_success": false,
+          "original_v2_adequate_proxy": false,
+          "secondary_next_subgoal_adequate": true,
+          "secondary_rank": [
+            1,
+            4,
+            0.0
+          ],
+          "existing_criteria": {
+            "position": false,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": true,
+            "placement_height": true,
+            "released": true,
+            "stable": true
+          },
+          "position_error_mm": 19.298312365690315,
+          "yaw_error_deg": 0.7048678260852295,
+          "initially_held": true,
+          "new_pickup_credit": false
+        },
+        "selected_oracle_best": true,
+        "uniform_random_expectation": {
+          "visual_goal_complete_probability": 0.875,
+          "secondary_next_subgoal_adequate_probability": 0.875,
+          "original_strict_success_probability": 0.0
+        }
+      },
+      {
+        "state": "v4-m6-film-demo_0006-q2",
+        "mode": "future_rgb",
+        "repeat": 0,
+        "choice": "A",
+        "status": "valid",
+        "source_candidate": "seed752007",
+        "any_adequate_next_subgoal": false,
+        "selected_physical_outcome": {
+          "visual_goal_complete": false,
+          "original_strict_success": false,
+          "original_v2_adequate_proxy": false,
+          "secondary_next_subgoal_adequate": false,
+          "secondary_rank": [
+            0,
+            -1,
+            0.0
+          ],
+          "existing_criteria": {
+            "position": true,
+            "orientation": false,
+            "marked_face_up": true,
+            "footprint_inside_target": true,
+            "placement_height": true,
+            "released": true,
+            "stable": true
+          },
+          "position_error_mm": 11.127361272798518,
+          "yaw_error_deg": 85.2014416619125,
+          "initially_held": true,
+          "new_pickup_credit": false
+        },
+        "selected_oracle_best": true,
+        "uniform_random_expectation": {
+          "visual_goal_complete_probability": 0.0,
+          "secondary_next_subgoal_adequate_probability": 0.0,
+          "original_strict_success_probability": 0.0
+        }
+      },
+      {
+        "state": "v4-m6-film-demo_0006-q2",
+        "mode": "future_rgb",
+        "repeat": 1,
+        "choice": "A",
+        "status": "valid",
+        "source_candidate": "seed752003",
+        "any_adequate_next_subgoal": false,
+        "selected_physical_outcome": {
+          "visual_goal_complete": false,
+          "original_strict_success": false,
+          "original_v2_adequate_proxy": false,
+          "secondary_next_subgoal_adequate": false,
+          "secondary_rank": [
+            0,
+            -1,
+            0.0
+          ],
+          "existing_criteria": {
+            "position": true,
+            "orientation": false,
+            "marked_face_up": true,
+            "footprint_inside_target": true,
+            "placement_height": true,
+            "released": true,
+            "stable": true
+          },
+          "position_error_mm": 10.657086933763816,
+          "yaw_error_deg": 85.26157009378055,
+          "initially_held": true,
+          "new_pickup_credit": false
+        },
+        "selected_oracle_best": true,
+        "uniform_random_expectation": {
+          "visual_goal_complete_probability": 0.0,
+          "secondary_next_subgoal_adequate_probability": 0.0,
+          "original_strict_success_probability": 0.0
+        }
+      },
+      {
+        "state": "v4-m6-film-demo_0006-q2",
+        "mode": "ghost_only",
+        "repeat": 0,
+        "choice": "INSUFFICIENT_EVIDENCE",
+        "status": "valid",
+        "source_candidate": null,
+        "any_adequate_next_subgoal": false,
+        "selected_physical_outcome": null,
+        "selected_oracle_best": null,
+        "uniform_random_expectation": {
+          "visual_goal_complete_probability": 0.0,
+          "secondary_next_subgoal_adequate_probability": 0.0,
+          "original_strict_success_probability": 0.0
+        }
+      },
+      {
+        "state": "v4-m6-film-demo_0006-q2",
+        "mode": "ghost_only",
+        "repeat": 1,
+        "choice": "INSUFFICIENT_EVIDENCE",
+        "status": "valid",
+        "source_candidate": null,
+        "any_adequate_next_subgoal": false,
+        "selected_physical_outcome": null,
+        "selected_oracle_best": null,
+        "uniform_random_expectation": {
+          "visual_goal_complete_probability": 0.0,
+          "secondary_next_subgoal_adequate_probability": 0.0,
+          "original_strict_success_probability": 0.0
+        }
+      }
+    ],
+    "by_mode": {
+      "ghost_only": {
+        "decision_records": 4,
+        "status": "observed",
+        "selected_candidates": 1,
+        "adequate_selection_given_available": {
+          "numerator": 1,
+          "denominator": 1
+        },
+        "selected_visual_goal_completions": 1,
+        "selected_original_strict_successes": 0,
+        "rejection_classes": {
+          "NONE_ADEQUATE": 0,
+          "INSUFFICIENT_EVIDENCE": 3
+        },
+        "nondecision_errors": {},
+        "random_visual_goal_probability_state_mean": 0.4375,
+        "oracle_visual_goal_available_state_fraction": 0.5
+      },
+      "future_rgb": {
+        "decision_records": 4,
+        "status": "observed",
+        "selected_candidates": 4,
+        "adequate_selection_given_available": {
+          "numerator": 2,
+          "denominator": 2
+        },
+        "selected_visual_goal_completions": 2,
+        "selected_original_strict_successes": 0,
+        "rejection_classes": {
+          "NONE_ADEQUATE": 0,
+          "INSUFFICIENT_EVIDENCE": 0
+        },
+        "nondecision_errors": {},
+        "random_visual_goal_probability_state_mean": 0.4375,
+        "oracle_visual_goal_available_state_fraction": 0.5
+      }
+    },
+    "actual_choice_records": 8
+  },
+  "latency_seconds": {
+    "choice": {
+      "n": 32,
+      "median": 1.0943729130085558,
+      "p95": 2.3376447213551725
+    },
+    "reason": {
+      "n": 32,
+      "median": 0.7716753169952426,
+      "p95": 1.566478103295958
+    }
+  },
+  "limitations": [
+    "Eight inspected archived states, not independent rollout trials; two orders per mode",
+    "Both modes use privileged physically simulated lookahead",
+    "Operational proxy cannot judge whether images establish enough evidence; insufficiency is not automatically wrong",
+    "No live control benefit or deployment conclusion",
+    "Initial held supplement cases never count as new pickups",
+    "Original strict metric and secondary regional visual goal remain distinct"
+  ]
+}
