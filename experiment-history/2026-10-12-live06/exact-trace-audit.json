@@ -1,0 +1,360 @@
+{
+  "different_rows": 230,
+  "first_difference": {
+    "index": 570,
+    "left": {
+      "step": 611,
+      "requested_action": [
+        0.08144583822846635,
+        -0.1461371516693219,
+        -0.42182659968791336,
+        0.001301630480573811,
+        0.00025609269486058024,
+        -0.07632058489347879,
+        -1.0
+      ],
+      "applied_action": [
+        0.08144583822846635,
+        -0.1461371516693219,
+        -0.42182659968791336,
+        0.001301630480573811,
+        0.00025609269486058024,
+        -0.07632058489347879,
+        -1.0
+      ],
+      "truth": {
+        "object_position_m": [
+          0.1360445822329035,
+          -0.12292206777770384,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.7353193258091963,
+          3.189780018650716e-17,
+          -2.6228349200859684e-17,
+          -0.6777208046766079
+        ],
+        "object_yaw_rad": -1.4893171802427068,
+        "object_linear_velocity_m_s": [
+          1.4743865708699594e-17,
+          1.1629801212268157e-18,
+          2.1618300087977246e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -9.05592067142427e-17,
+          1.1223096146359986e-15,
+          1.119897889504115e-31
+        ],
+        "eef_position_m": [
+          0.10998631237552668,
+          -0.09995505083740062,
+          0.9705619204540393
+        ],
+        "gripper_joint_position_m": [
+          0.03999317785163356,
+          -0.040000927715354455
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 611,
+        "sim_time_s": 30.55
+      }
+    },
+    "right": {
+      "step": 611,
+      "requested_action": [
+        0.08144583822846635,
+        -0.1461371516693219,
+        -0.42182659968791336,
+        0.001331069471364105,
+        0.00025700244543495345,
+        -0.07632058551617828,
+        -1.0
+      ],
+      "applied_action": [
+        0.08144583822846635,
+        -0.1461371516693219,
+        -0.42182659968791336,
+        0.001331069471364105,
+        0.00025700244543495345,
+        -0.07632058551617828,
+        -1.0
+      ],
+      "truth": {
+        "object_position_m": [
+          0.1360445822329035,
+          -0.12292206777770384,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.7353193258091963,
+          2.924794097520695e-17,
+          -2.2834140059910855e-17,
+          -0.6777208046766079
+        ],
+        "object_yaw_rad": -1.4893171802427068,
+        "object_linear_velocity_m_s": [
+          1.2932352181145524e-17,
+          1.2369023842459177e-18,
+          2.1618300087977246e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -7.081057622251819e-17,
+          9.161637424582426e-16,
+          -2.2694797619217845e-31
+        ],
+        "eef_position_m": [
+          0.10998632999780454,
+          -0.09995456415331885,
+          0.9705618911067362
+        ],
+        "gripper_joint_position_m": [
+          0.039993179151179545,
+          -0.040000927176449874
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 611,
+        "sim_time_s": 30.55
+      }
+    }
+  },
+  "queries": [
+    {
+      "name": "query-0000.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0001.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0002.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0003.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0004.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0005.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0006.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0007.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0008.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0009.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0010.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0011.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0012.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0013.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0014.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0015.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0016.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0017.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0018.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0
+    },
+    {
+      "name": "query-0019.pkl.gz",
+      "images_equal": [
+        true,
+        true
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0078125
+    },
+    {
+      "name": "query-0020.pkl.gz",
+      "images_equal": [
+        false,
+        false
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0078125
+    },
+    {
+      "name": "query-0021.pkl.gz",
+      "images_equal": [
+        false,
+        false
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0078125
+    },
+    {
+      "name": "query-0022.pkl.gz",
+      "images_equal": [
+        false,
+        false
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0078125
+    },
+    {
+      "name": "query-0023.pkl.gz",
+      "images_equal": [
+        false,
+        false
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0078125
+    },
+    {
+      "name": "query-0024.pkl.gz",
+      "images_equal": [
+        false,
+        false
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0078125
+    },
+    {
+      "name": "query-0025.pkl.gz",
+      "images_equal": [
+        false,
+        false
+      ],
+      "noise_equal": true,
+      "max_action_error": 0.0078125
+    }
+  ]
+}

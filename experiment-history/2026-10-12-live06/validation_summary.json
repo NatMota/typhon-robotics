@@ -1,0 +1,138 @@
+{
+  "v4_episodes": 9,
+  "expert_shadow_episodes": 8,
+  "expert_successes": 8,
+  "expert_total_checked_ticks": 1714,
+  "expert_old_reasons": {
+    "proposed_target_jump": 304,
+    "admissible": 1410
+  },
+  "expert_new_reasons": {
+    "admissible": 1714
+  },
+  "expert_same_criteria_as_prior": true,
+  "known_grasp_pickup_and_placement_restored": true,
+  "known_grasp_full_trace_exact": false,
+  "known_grasp_exact_control_prefix": 570,
+  "object_position_max_error_m": 0.0,
+  "object_yaw_max_error_rad": 0.0,
+  "negative_and_contract_tests_passed": 11,
+  "v4_results": [
+    {
+      "route": "native_reference",
+      "scene": "film-demo_0002",
+      "pickup": false,
+      "placement_without_yaw": false,
+      "footprint_inside_target": false,
+      "strict_success": false,
+      "remaining_yaw_error_deg": 44.297177521050024,
+      "yaw_gap_closed_deg": 0.0,
+      "policy_targets": 776,
+      "guard_holds": 0
+    },
+    {
+      "route": "native_reference",
+      "scene": "film-demo_0006",
+      "pickup": true,
+      "placement_without_yaw": true,
+      "footprint_inside_target": true,
+      "strict_success": false,
+      "remaining_yaw_error_deg": 85.33158878423161,
+      "yaw_gap_closed_deg": 75.18869367473347,
+      "policy_targets": 776,
+      "guard_holds": 0
+    },
+    {
+      "route": "native_reference",
+      "scene": "film-demo_0018",
+      "pickup": false,
+      "placement_without_yaw": true,
+      "footprint_inside_target": true,
+      "strict_success": true,
+      "remaining_yaw_error_deg": 4.472586902959647,
+      "yaw_gap_closed_deg": 0.0,
+      "policy_targets": 776,
+      "guard_holds": 0
+    },
+    {
+      "route": "original_guard",
+      "scene": "film-demo_0002",
+      "pickup": false,
+      "placement_without_yaw": false,
+      "footprint_inside_target": false,
+      "strict_success": false,
+      "remaining_yaw_error_deg": 44.297177521050024,
+      "yaw_gap_closed_deg": 0.0,
+      "policy_targets": 776,
+      "guard_holds": 0
+    },
+    {
+      "route": "original_guard",
+      "scene": "film-demo_0006",
+      "pickup": false,
+      "placement_without_yaw": false,
+      "footprint_inside_target": false,
+      "strict_success": false,
+      "remaining_yaw_error_deg": 160.52028245896508,
+      "yaw_gap_closed_deg": 0.0,
+      "policy_targets": 774,
+      "guard_holds": 2
+    },
+    {
+      "route": "original_guard",
+      "scene": "film-demo_0018",
+      "pickup": false,
+      "placement_without_yaw": true,
+      "footprint_inside_target": true,
+      "strict_success": true,
+      "remaining_yaw_error_deg": 4.472586902959647,
+      "yaw_gap_closed_deg": 0.0,
+      "policy_targets": 776,
+      "guard_holds": 0
+    },
+    {
+      "route": "execution_guard",
+      "scene": "film-demo_0002",
+      "pickup": false,
+      "placement_without_yaw": false,
+      "footprint_inside_target": false,
+      "strict_success": false,
+      "remaining_yaw_error_deg": 44.297177521050024,
+      "yaw_gap_closed_deg": 0.0,
+      "policy_targets": 776,
+      "guard_holds": 0
+    },
+    {
+      "route": "execution_guard",
+      "scene": "film-demo_0006",
+      "pickup": true,
+      "placement_without_yaw": true,
+      "footprint_inside_target": true,
+      "strict_success": false,
+      "remaining_yaw_error_deg": 85.33158878423161,
+      "yaw_gap_closed_deg": 75.18869367473347,
+      "policy_targets": 776,
+      "guard_holds": 0
+    },
+    {
+      "route": "execution_guard",
+      "scene": "film-demo_0018",
+      "pickup": false,
+      "placement_without_yaw": true,
+      "footprint_inside_target": true,
+      "strict_success": true,
+      "remaining_yaw_error_deg": 4.472586902959647,
+      "yaw_gap_closed_deg": 0.0,
+      "policy_targets": 776,
+      "guard_holds": 0
+    }
+  ],
+  "limits": [
+    "Three inspected development scenes",
+    "Zero waiting and no Decisions ranking",
+    "Causal held-state oracle retained fromV4",
+    "Prospective admission unchanged; execution helper is for already admitted paths or verified expert primitives",
+    "No physical-safety certification or broad generalisation claim",
+    "Stationary-scene renderer repeatability limitation fromLIVE05 persists"
+  ]
+}
