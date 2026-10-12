@@ -1,0 +1,446 @@
+[
+  {
+    "panel": "goal",
+    "method": "base12k",
+    "group": "original_source",
+    "n": 12,
+    "strict": 7,
+    "supported_grasp_10mm": 10,
+    "operational_place": 10,
+    "median_final_position_mm": 13.570204649131075,
+    "median_final_yaw_deg": 0.875275720514608,
+    "median_yaw_reduction_deg": 30.78027473662307,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 6,
+      "family_balanced_mean": 0.5833333333333334,
+      "percentile95": [
+        0.25,
+        0.9166666666666666
+      ],
+      "scope": "Exploratory source-family bootstrap,10000 replicates; fixed fitted weights and simulation settings; no across-training-seed uncertainty."
+    }
+  },
+  {
+    "panel": "goal",
+    "method": "base12k",
+    "group": "new_start_goal_combination",
+    "n": 12,
+    "strict": 0,
+    "supported_grasp_10mm": 10,
+    "operational_place": 0,
+    "median_final_position_mm": 179.40489240605837,
+    "median_final_yaw_deg": 0.914086154634685,
+    "median_yaw_reduction_deg": 30.88231155424147,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 6,
+      "family_balanced_mean": 0,
+      "percentile95": [
+        0.0,
+        0.0
+      ],
+      "scope": "Exploratory source-family bootstrap,10000 replicates; fixed fitted weights and simulation settings; no across-training-seed uncertainty."
+    }
+  },
+  {
+    "panel": "goal",
+    "method": "base12k",
+    "group": "loading_transfer_no_B_labels",
+    "n": 12,
+    "strict": 0,
+    "supported_grasp_10mm": 12,
+    "operational_place": 0,
+    "median_final_position_mm": 276.0594842326071,
+    "median_final_yaw_deg": 0.9766521926281508,
+    "median_yaw_reduction_deg": 44.012284901612205,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 6,
+      "family_balanced_mean": 0,
+      "percentile95": [
+        0.0,
+        0.0
+      ],
+      "scope": "Exploratory source-family bootstrap,10000 replicates; fixed fitted weights and simulation settings; no across-training-seed uncertainty."
+    }
+  },
+  {
+    "panel": "goal",
+    "method": "fixed",
+    "group": "original_source",
+    "n": 12,
+    "strict": 7,
+    "supported_grasp_10mm": 12,
+    "operational_place": 9,
+    "median_final_position_mm": 13.776796605076989,
+    "median_final_yaw_deg": 0.7103985394890193,
+    "median_yaw_reduction_deg": 30.583239440325833,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 6,
+      "family_balanced_mean": 0.5833333333333334,
+      "percentile95": [
+        0.3333333333333333,
+        0.8333333333333334
+      ],
+      "scope": "Exploratory source-family bootstrap,10000 replicates; fixed fitted weights and simulation settings; no across-training-seed uncertainty."
+    }
+  },
+  {
+    "panel": "goal",
+    "method": "fixed",
+    "group": "new_start_goal_combination",
+    "n": 12,
+    "strict": 0,
+    "supported_grasp_10mm": 12,
+    "operational_place": 0,
+    "median_final_position_mm": 163.67578417034275,
+    "median_final_yaw_deg": 0.8589589122336154,
+    "median_yaw_reduction_deg": 30.466580139204268,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 6,
+      "family_balanced_mean": 0,
+      "percentile95": [
+        0.0,
+        0.0
+      ],
+      "scope": "Exploratory source-family bootstrap,10000 replicates; fixed fitted weights and simulation settings; no across-training-seed uncertainty."
+    }
+  },
+  {
+    "panel": "goal",
+    "method": "fixed",
+    "group": "loading_transfer_no_B_labels",
+    "n": 12,
+    "strict": 0,
+    "supported_grasp_10mm": 12,
+    "operational_place": 0,
+    "median_final_position_mm": 277.3163643744962,
+    "median_final_yaw_deg": 0.7693240992083794,
+    "median_yaw_reduction_deg": 43.484701591265875,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 6,
+      "family_balanced_mean": 0,
+      "percentile95": [
+        0.0,
+        0.0
+      ],
+      "scope": "Exploratory source-family bootstrap,10000 replicates; fixed fitted weights and simulation settings; no across-training-seed uncertainty."
+    }
+  },
+  {
+    "panel": "goal",
+    "method": "recovery",
+    "group": "original_source",
+    "n": 12,
+    "strict": 9,
+    "supported_grasp_10mm": 12,
+    "operational_place": 9,
+    "median_final_position_mm": 5.263611931383261,
+    "median_final_yaw_deg": 0.48080406619092186,
+    "median_yaw_reduction_deg": 17.717593325435317,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 6,
+      "family_balanced_mean": 0.75,
+      "percentile95": [
+        0.4166666666666667,
+        1.0
+      ],
+      "scope": "Exploratory source-family bootstrap,10000 replicates; fixed fitted weights and simulation settings; no across-training-seed uncertainty."
+    }
+  },
+  {
+    "panel": "goal",
+    "method": "recovery",
+    "group": "new_start_goal_combination",
+    "n": 12,
+    "strict": 0,
+    "supported_grasp_10mm": 11,
+    "operational_place": 0,
+    "median_final_position_mm": 181.39983897300056,
+    "median_final_yaw_deg": 0.36530343900518086,
+    "median_yaw_reduction_deg": 30.91977018308988,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 6,
+      "family_balanced_mean": 0,
+      "percentile95": [
+        0.0,
+        0.0
+      ],
+      "scope": "Exploratory source-family bootstrap,10000 replicates; fixed fitted weights and simulation settings; no across-training-seed uncertainty."
+    }
+  },
+  {
+    "panel": "goal",
+    "method": "recovery",
+    "group": "loading_transfer_no_B_labels",
+    "n": 12,
+    "strict": 0,
+    "supported_grasp_10mm": 10,
+    "operational_place": 0,
+    "median_final_position_mm": 269.57524737543935,
+    "median_final_yaw_deg": 0.4140309782810241,
+    "median_yaw_reduction_deg": 31.064844436488702,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 6,
+      "family_balanced_mean": 0,
+      "percentile95": [
+        0.0,
+        0.0
+      ],
+      "scope": "Exploratory source-family bootstrap,10000 replicates; fixed fitted weights and simulation settings; no across-training-seed uncertainty."
+    }
+  },
+  {
+    "panel": "goal",
+    "method": "varied",
+    "group": "original_source",
+    "n": 12,
+    "strict": 10,
+    "supported_grasp_10mm": 12,
+    "operational_place": 10,
+    "median_final_position_mm": 6.7311302855571595,
+    "median_final_yaw_deg": 1.3172534389578145,
+    "median_yaw_reduction_deg": 47.179698049143504,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 6,
+      "family_balanced_mean": 0.8333333333333334,
+      "percentile95": [
+        0.5,
+        1.0
+      ],
+      "scope": "Exploratory source-family bootstrap,10000 replicates; fixed fitted weights and simulation settings; no across-training-seed uncertainty."
+    }
+  },
+  {
+    "panel": "goal",
+    "method": "varied",
+    "group": "new_start_goal_combination",
+    "n": 12,
+    "strict": 10,
+    "supported_grasp_10mm": 12,
+    "operational_place": 10,
+    "median_final_position_mm": 6.962580091099184,
+    "median_final_yaw_deg": 0.9306867658153308,
+    "median_yaw_reduction_deg": 30.198614030398076,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 6,
+      "family_balanced_mean": 0.8333333333333334,
+      "percentile95": [
+        0.5,
+        1.0
+      ],
+      "scope": "Exploratory source-family bootstrap,10000 replicates; fixed fitted weights and simulation settings; no across-training-seed uncertainty."
+    }
+  },
+  {
+    "panel": "goal",
+    "method": "varied",
+    "group": "loading_transfer_no_B_labels",
+    "n": 12,
+    "strict": 0,
+    "supported_grasp_10mm": 12,
+    "operational_place": 0,
+    "median_final_position_mm": 269.4145786680017,
+    "median_final_yaw_deg": 1.52139744471412,
+    "median_yaw_reduction_deg": 47.11095918358241,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 6,
+      "family_balanced_mean": 0,
+      "percentile95": [
+        0.0,
+        0.0
+      ],
+      "scope": "Exploratory source-family bootstrap,10000 replicates; fixed fitted weights and simulation settings; no across-training-seed uncertainty."
+    }
+  },
+  {
+    "panel": "recovery",
+    "method": "base12k",
+    "group": "quarantined_failure_state",
+    "n": 4,
+    "strict": 0,
+    "supported_grasp_10mm": 0,
+    "operational_place": 2,
+    "median_final_position_mm": 14.901594321192626,
+    "median_final_yaw_deg": 60.57137635343643,
+    "median_yaw_reduction_deg": 2.029153219475951,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 1,
+      "interval": null
+    }
+  },
+  {
+    "panel": "recovery",
+    "method": "fixed",
+    "group": "quarantined_failure_state",
+    "n": 4,
+    "strict": 0,
+    "supported_grasp_10mm": 0,
+    "operational_place": 2,
+    "median_final_position_mm": 12.525739591592709,
+    "median_final_yaw_deg": 43.89281022937934,
+    "median_yaw_reduction_deg": 19.934735180796572,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 1,
+      "interval": null
+    }
+  },
+  {
+    "panel": "recovery",
+    "method": "recovery",
+    "group": "quarantined_failure_state",
+    "n": 4,
+    "strict": 0,
+    "supported_grasp_10mm": 0,
+    "operational_place": 1,
+    "median_final_position_mm": 33.372447683129174,
+    "median_final_yaw_deg": 61.22086664294809,
+    "median_yaw_reduction_deg": 1.3796629299642902,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 1,
+      "interval": null
+    }
+  },
+  {
+    "panel": "recovery",
+    "method": "varied",
+    "group": "quarantined_failure_state",
+    "n": 4,
+    "strict": 0,
+    "supported_grasp_10mm": 0,
+    "operational_place": 2,
+    "median_final_position_mm": 11.381592674283866,
+    "median_final_yaw_deg": 62.84806267866449,
+    "median_yaw_reduction_deg": 0.0,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 1,
+      "interval": null
+    }
+  },
+  {
+    "panel": "baselines",
+    "method": "broad-Pt-12000",
+    "group": "near_personal",
+    "n": 40,
+    "strict": 17,
+    "supported_grasp_10mm": 31,
+    "operational_place": 22,
+    "median_final_position_mm": 15.97164029071265,
+    "median_final_yaw_deg": 1.24675668048832,
+    "median_yaw_reduction_deg": 26.65062762482269,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 6,
+      "family_balanced_mean": 0.41666666666666663,
+      "percentile95": [
+        0.2222222222222222,
+        0.5555555555555556
+      ],
+      "scope": "Exploratory source-family bootstrap,10000 replicates; fixed fitted weights and simulation settings; no across-training-seed uncertainty."
+    }
+  },
+  {
+    "panel": "baselines",
+    "method": "broad-Pt-12000",
+    "group": "broader_starts",
+    "n": 20,
+    "strict": 0,
+    "supported_grasp_10mm": 0,
+    "operational_place": 0,
+    "median_final_position_mm": 201.46490714922174,
+    "median_final_yaw_deg": 66.54499271704925,
+    "median_yaw_reduction_deg": 0.0,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 1,
+      "interval": null
+    }
+  },
+  {
+    "panel": "baselines",
+    "method": "broad-Pt-12000",
+    "group": "already_completed",
+    "n": 8,
+    "strict": 8,
+    "supported_grasp_10mm": 0,
+    "operational_place": 8,
+    "median_final_position_mm": 3.0000000000000027,
+    "median_final_yaw_deg": 2.4999999999993667,
+    "median_yaw_reduction_deg": 2.220446049250313e-16,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 1,
+      "interval": null
+    }
+  },
+  {
+    "panel": "baselines",
+    "method": "vanilla-Pt-native",
+    "group": "near_personal",
+    "n": 40,
+    "strict": 0,
+    "supported_grasp_10mm": 0,
+    "operational_place": 0,
+    "median_final_position_mm": 329.8747847713988,
+    "median_final_yaw_deg": 46.04717256646679,
+    "median_yaw_reduction_deg": 0.0,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 6,
+      "family_balanced_mean": 0,
+      "percentile95": [
+        0.0,
+        0.0
+      ],
+      "scope": "Exploratory source-family bootstrap,10000 replicates; fixed fitted weights and simulation settings; no across-training-seed uncertainty."
+    }
+  },
+  {
+    "panel": "baselines",
+    "method": "vanilla-Pt-native",
+    "group": "broader_starts",
+    "n": 20,
+    "strict": 0,
+    "supported_grasp_10mm": 0,
+    "operational_place": 0,
+    "median_final_position_mm": 225.84881436492935,
+    "median_final_yaw_deg": 54.93665909610374,
+    "median_yaw_reduction_deg": 0.0,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 1,
+      "interval": null
+    }
+  },
+  {
+    "panel": "baselines",
+    "method": "vanilla-Pt-native",
+    "group": "already_completed",
+    "n": 8,
+    "strict": 1,
+    "supported_grasp_10mm": 0,
+    "operational_place": 4,
+    "median_final_position_mm": 24.059451284962734,
+    "median_final_yaw_deg": 36.26453472089234,
+    "median_yaw_reduction_deg": -33.43419096600279,
+    "runtime_errors": 0,
+    "strict_family_bootstrap": {
+      "families": 1,
+      "interval": null
+    }
+  }
+]

@@ -1,0 +1,266 @@
+{
+  "rows": 400,
+  "groups": [
+    {
+      "model": "v1-m6",
+      "mode": "native",
+      "task": "feeding",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 0,
+      "stop_reasons": {
+        "evaluated": 20
+      }
+    },
+    {
+      "model": "v1-m6",
+      "mode": "native",
+      "task": "loading",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 0,
+      "stop_reasons": {
+        "evaluated": 20
+      }
+    },
+    {
+      "model": "v1-m6",
+      "mode": "harness",
+      "task": "feeding",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 10,
+      "stop_reasons": {
+        "wall_budget_exhausted": 20
+      }
+    },
+    {
+      "model": "v1-m6",
+      "mode": "harness",
+      "task": "loading",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 16,
+      "stop_reasons": {
+        "wall_budget_exhausted": 20
+      }
+    },
+    {
+      "model": "v2-m6",
+      "mode": "native",
+      "task": "feeding",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 0,
+      "stop_reasons": {
+        "evaluated": 20
+      }
+    },
+    {
+      "model": "v2-m6",
+      "mode": "native",
+      "task": "loading",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 0,
+      "stop_reasons": {
+        "evaluated": 20
+      }
+    },
+    {
+      "model": "v2-m6",
+      "mode": "harness",
+      "task": "feeding",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 10,
+      "stop_reasons": {
+        "wall_budget_exhausted": 20
+      }
+    },
+    {
+      "model": "v2-m6",
+      "mode": "harness",
+      "task": "loading",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 20,
+      "stop_reasons": {
+        "wall_budget_exhausted": 20
+      }
+    },
+    {
+      "model": "v3-m6",
+      "mode": "native",
+      "task": "feeding",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 0,
+      "stop_reasons": {
+        "evaluated": 20
+      }
+    },
+    {
+      "model": "v3-m6",
+      "mode": "native",
+      "task": "loading",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 0,
+      "stop_reasons": {
+        "evaluated": 20
+      }
+    },
+    {
+      "model": "v3-m6",
+      "mode": "harness",
+      "task": "feeding",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 12,
+      "stop_reasons": {
+        "wall_budget_exhausted": 20
+      }
+    },
+    {
+      "model": "v3-m6",
+      "mode": "harness",
+      "task": "loading",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 16,
+      "stop_reasons": {
+        "wall_budget_exhausted": 20
+      }
+    },
+    {
+      "model": "v4-m6",
+      "mode": "native",
+      "task": "feeding",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 0,
+      "stop_reasons": {
+        "evaluated": 20
+      }
+    },
+    {
+      "model": "v4-m6",
+      "mode": "native",
+      "task": "loading",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 0,
+      "stop_reasons": {
+        "evaluated": 20
+      }
+    },
+    {
+      "model": "v4-m6",
+      "mode": "harness",
+      "task": "feeding",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 16,
+      "stop_reasons": {
+        "wall_budget_exhausted": 20
+      }
+    },
+    {
+      "model": "v4-m6",
+      "mode": "harness",
+      "task": "loading",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 16,
+      "stop_reasons": {
+        "wall_budget_exhausted": 20
+      }
+    },
+    {
+      "model": "vanilla-pt-domain3",
+      "mode": "native",
+      "task": "feeding",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 0,
+      "stop_reasons": {
+        "evaluated": 20
+      }
+    },
+    {
+      "model": "vanilla-pt-domain3",
+      "mode": "native",
+      "task": "loading",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 0,
+      "stop_reasons": {
+        "evaluated": 20
+      }
+    },
+    {
+      "model": "vanilla-pt-domain3",
+      "mode": "harness",
+      "task": "feeding",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 12,
+      "stop_reasons": {
+        "wall_budget_exhausted": 20
+      }
+    },
+    {
+      "model": "vanilla-pt-domain3",
+      "mode": "harness",
+      "task": "loading",
+      "n": 20,
+      "strict": 0,
+      "pickup": 0,
+      "placement": 0,
+      "runtime_error_rows": 16,
+      "stop_reasons": {
+        "wall_budget_exhausted": 20
+      }
+    }
+  ],
+  "scope": "Historical synthetic A/B40 permodel/mode; harness30s wall limit, single proposal, noTTC; separate from film775. Do not conflate a budget stop with software crash."
+}

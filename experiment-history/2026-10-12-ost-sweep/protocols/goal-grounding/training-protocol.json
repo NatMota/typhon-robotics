@@ -1,0 +1,45 @@
+{
+  "created_before_training": 1791795845.3963509,
+  "base": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/research-checkpoints/broad-pt-20261011/step12000.pt",
+  "base_sha256": "59eb9e502c057d639e278e7f84d06c8fa8e3e513e52522dae47089a97b5c3736",
+  "initialization": "same full broad-Pt12k, fresh optimizer, local3000 joint continuation updates",
+  "variants": [
+    "fixed",
+    "varied"
+  ],
+  "steps": 3000,
+  "batch": 4,
+  "seed": 121221,
+  "checkpoints": [
+    3000
+  ],
+  "learning_rates": "same existing m6_joint full-joint peak values, constant; inactive domain rows frozen",
+  "sampling": "two virtual goal cells per source, independently reshuffled windows inside cell; same shuffled cell schedule; exactly2000 exposures/source,1000/cell",
+  "training_sources": [
+    "personal_demo_0001-goal0",
+    "personal_demo_0001-goal2",
+    "personal_demo_0002-goal0",
+    "personal_demo_0002-goal1",
+    "personal_demo_0003-goal0",
+    "personal_demo_0003-goal2",
+    "personal_demo_0005-goal0",
+    "personal_demo_0005-goal1",
+    "personal_demo_0012-goal0",
+    "personal_demo_0012-goal2",
+    "personal_demo_0013-goal0",
+    "personal_demo_0013-goal1"
+  ],
+  "combination_holdouts": [
+    "personal_demo_0001-goal1",
+    "personal_demo_0002-goal2",
+    "personal_demo_0003-goal1",
+    "personal_demo_0005-goal2",
+    "personal_demo_0012-goal1",
+    "personal_demo_0013-goal2"
+  ],
+  "evaluation": "new combinations6x2seeds plus loading6x2seeds per model; no loading labels. Fixed original source evaluations separate.",
+  "strict_qualified_teacher_count": 18,
+  "model_selection": "final update only, no choice by held-out outcome",
+  "data_hash": "7077d5476423554a07ed97c9a0ef11360facfd7ad4e0f1d690c6513dfe699b4a",
+  "source_hash": "043e03deadf5b45e799f2c7eaa84c84b7f935ddc019b3390b5d6186bec100155"
+}

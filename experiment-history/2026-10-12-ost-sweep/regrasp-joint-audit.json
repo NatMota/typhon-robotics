@@ -1,0 +1,71 @@
+[
+  {
+    "case": "missed_grasp",
+    "initial_joint_margin_rad": 0.2785457801844031,
+    "minimum_executed_margin_rad": -0.0013541027726562405,
+    "steps_checked": 13,
+    "strict": false,
+    "exception": {
+      "type": "RuntimeError",
+      "message": "executed_joint_limit_violation"
+    },
+    "already_outside_at_handoff": false
+  },
+  {
+    "case": "offaxis_held",
+    "initial_joint_margin_rad": 1.092481333420141,
+    "minimum_executed_margin_rad": -0.0040329112350310226,
+    "steps_checked": 171,
+    "strict": false,
+    "exception": {
+      "type": "RuntimeError",
+      "message": "executed_joint_limit_violation"
+    },
+    "already_outside_at_handoff": false
+  },
+  {
+    "case": "otherfamily_held",
+    "initial_joint_margin_rad": -9.469056610811322e-06,
+    "minimum_executed_margin_rad": -0.00037361732529728187,
+    "steps_checked": 136,
+    "strict": false,
+    "exception": {
+      "type": "RuntimeError",
+      "message": "executed_joint_limit_violation"
+    },
+    "already_outside_at_handoff": true
+  },
+  {
+    "case": "released_wrongface",
+    "initial_joint_margin_rad": 0.8380709788647442,
+    "minimum_executed_margin_rad": -0.008476581118471611,
+    "steps_checked": 112,
+    "strict": false,
+    "exception": {
+      "type": "RuntimeError",
+      "message": "executed_joint_limit_violation"
+    },
+    "already_outside_at_handoff": false
+  },
+  {
+    "case": "released_wrongyaw",
+    "initial_joint_margin_rad": 0.9942272809593407,
+    "minimum_executed_margin_rad": 0.5484757562591385,
+    "steps_checked": 263,
+    "strict": true,
+    "exception": null,
+    "already_outside_at_handoff": false
+  },
+  {
+    "case": "sideface_held",
+    "initial_joint_margin_rad": 1.033494504982385,
+    "minimum_executed_margin_rad": -0.006140802260286182,
+    "steps_checked": 246,
+    "strict": false,
+    "exception": {
+      "type": "RuntimeError",
+      "message": "executed_joint_limit_violation"
+    },
+    "already_outside_at_handoff": false
+  }
+]
