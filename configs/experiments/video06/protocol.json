@@ -98,5 +98,36 @@
   "no_control_authority": true,
   "references": [
     "https://docs.opencv.org/4.13.0/d4/dee/tutorial_optical_flow.html"
-  ]
+  ],
+  "reviewed_spatial_masks": {
+    "camera_a": {
+      "glyph_roi_normalized": [
+        0.12,
+        0,
+        0.85,
+        0.6
+      ],
+      "background_roi_normalized": [
+        0.62,
+        0.62,
+        0.98,
+        0.98
+      ]
+    },
+    "camera_b": {
+      "glyph_roi_normalized": [
+        0,
+        0,
+        0.92,
+        0.43
+      ],
+      "background_roi_normalized": [
+        0.04,
+        0.64,
+        0.95,
+        0.98
+      ]
+    },
+    "review": "Agent-reviewed full first/mid/last panels before flow measurements. Broad static workspace search; glyph selection does not use old orange centroid/bbox or previous flow. Largest blue component area>=10px; dilate3px for corners. Masks stored separately from original tracking."
+  }
 }
