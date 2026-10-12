@@ -1,0 +1,73 @@
+{
+  "workers": [
+    {
+      "part": 0,
+      "pid": 1238306,
+      "command": [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs06-aperture/.venv-sim/bin/python",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs06-aperture/scripts/obs06_aperture.py",
+        "run",
+        "--protocol",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs06-aperture/configs/experiments/obs06/protocol.json",
+        "--out",
+        "/var/tmp/typhon-obs06-aperture-20261013",
+        "--part",
+        "0",
+        "--parts",
+        "4"
+      ]
+    },
+    {
+      "part": 1,
+      "pid": 1238307,
+      "command": [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs06-aperture/.venv-sim/bin/python",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs06-aperture/scripts/obs06_aperture.py",
+        "run",
+        "--protocol",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs06-aperture/configs/experiments/obs06/protocol.json",
+        "--out",
+        "/var/tmp/typhon-obs06-aperture-20261013",
+        "--part",
+        "1",
+        "--parts",
+        "4"
+      ]
+    },
+    {
+      "part": 2,
+      "pid": 1238308,
+      "command": [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs06-aperture/.venv-sim/bin/python",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs06-aperture/scripts/obs06_aperture.py",
+        "run",
+        "--protocol",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs06-aperture/configs/experiments/obs06/protocol.json",
+        "--out",
+        "/var/tmp/typhon-obs06-aperture-20261013",
+        "--part",
+        "2",
+        "--parts",
+        "4"
+      ]
+    },
+    {
+      "part": 3,
+      "pid": 1238309,
+      "command": [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs06-aperture/.venv-sim/bin/python",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs06-aperture/scripts/obs06_aperture.py",
+        "run",
+        "--protocol",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs06-aperture/configs/experiments/obs06/protocol.json",
+        "--out",
+        "/var/tmp/typhon-obs06-aperture-20261013",
+        "--part",
+        "3",
+        "--parts",
+        "4"
+      ]
+    }
+  ],
+  "git_head": "f9025c613b37df3a1bd2c74a0520d010cd64dab3"
+}

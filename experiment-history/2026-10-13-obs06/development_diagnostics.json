@@ -1,0 +1,70 @@
+{
+  "samples": 1219,
+  "metrics": {
+    "legacy": {
+      "bilateral_contact": {
+        "tp": 184,
+        "fp": 8,
+        "fn": 8,
+        "precision": 0.9583333333333334,
+        "recall": 0.9583333333333334
+      },
+      "supported_lift": {
+        "tp": 158,
+        "fp": 34,
+        "fn": 1,
+        "precision": 0.8229166666666666,
+        "recall": 0.9937106918238994
+      }
+    },
+    "aperture": {
+      "bilateral_contact": {
+        "tp": 184,
+        "fp": 5,
+        "fn": 8,
+        "precision": 0.9735449735449735,
+        "recall": 0.9583333333333334
+      },
+      "supported_lift": {
+        "tp": 158,
+        "fp": 31,
+        "fn": 1,
+        "precision": 0.8359788359788359,
+        "recall": 0.9937106918238994
+      }
+    },
+    "opening": {
+      "bilateral_contact": {
+        "tp": 184,
+        "fp": 1,
+        "fn": 8,
+        "precision": 0.9945945945945946,
+        "recall": 0.9583333333333334
+      },
+      "supported_lift": {
+        "tp": 158,
+        "fp": 27,
+        "fn": 1,
+        "precision": 0.8540540540540541,
+        "recall": 0.9937106918238994
+      }
+    },
+    "both": {
+      "bilateral_contact": {
+        "tp": 184,
+        "fp": 0,
+        "fn": 8,
+        "precision": 1.0,
+        "recall": 0.9583333333333334
+      },
+      "supported_lift": {
+        "tp": 158,
+        "fp": 26,
+        "fn": 1,
+        "precision": 0.8586956521739131,
+        "recall": 0.9937106918238994
+      }
+    }
+  },
+  "scope": "Previously inspected OBS05 development data; not qualification evidence."
+}
