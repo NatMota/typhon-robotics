@@ -1,0 +1,252 @@
+{
+  "demonstrations": [
+    {
+      "demo_id": "demo_0001",
+      "observations": [
+        {
+          "interval_primary_s": [
+            5.987,
+            6.687
+          ],
+          "description": "Held transport towards the square and lowering. No release or distinct pause established inside this selected interval."
+        }
+      ],
+      "transition_brackets": [],
+      "contact_release": "Unknown; interval ends while fingers remain on the block.",
+      "review_frame_keys": {
+        "camera_a": [
+          "recording_0005/176",
+          "recording_0005/181",
+          "recording_0005/186",
+          "recording_0005/192",
+          "recording_0005/197"
+        ],
+        "camera_b": [
+          "recording_0001/317",
+          "recording_0001/322",
+          "recording_0001/327",
+          "recording_0001/333",
+          "recording_0001/338"
+        ]
+      }
+    },
+    {
+      "demo_id": "demo_0004",
+      "observations": [
+        {
+          "interval_primary_s": [
+            4.008,
+            4.708
+          ],
+          "description": "Transport and lowering; numeral appearance/view orientation changes. Do not infer physical yaw from that alone."
+        }
+      ],
+      "transition_brackets": [],
+      "contact_release": "Unknown; grasp/release onsets are outside or not established by this panel.",
+      "review_frame_keys": {
+        "camera_a": [
+          "recording_0005/1785",
+          "recording_0005/1790",
+          "recording_0005/1795",
+          "recording_0005/1801",
+          "recording_0005/1806"
+        ],
+        "camera_b": [
+          "recording_0001/1926",
+          "recording_0001/1931",
+          "recording_0001/1936",
+          "recording_0001/1942",
+          "recording_0001/1947"
+        ]
+      }
+    },
+    {
+      "demo_id": "demo_0012",
+      "observations": [
+        {
+          "interval_primary_s": [
+            3.514,
+            5.013
+          ],
+          "description": "Held beside the square with small adjustments and little task progress; consistent with intentional pause, not exact stillness."
+        },
+        {
+          "interval_primary_s": [
+            5.013,
+            5.513
+          ],
+          "description": "Transport resumes towards the square with lowering."
+        }
+      ],
+      "transition_brackets": [
+        {
+          "phase_change": "held pause/adjustment to transport",
+          "earliest_primary_s": 5.013,
+          "latest_primary_s": 5.513
+        }
+      ],
+      "contact_release": "Unknown; no new contact boundary label.",
+      "review_frame_keys": {
+        "camera_a": [
+          "recording_0008/204",
+          "recording_0008/219",
+          "recording_0008/234",
+          "recording_0008/249",
+          "recording_0008/264"
+        ],
+        "camera_b": [
+          "recording_0003/164",
+          "recording_0003/179",
+          "recording_0003/194",
+          "recording_0003/209",
+          "recording_0003/224"
+        ]
+      }
+    },
+    {
+      "demo_id": "demo_0013",
+      "observations": [
+        {
+          "interval_primary_s": [
+            3.003,
+            4.503
+          ],
+          "description": "Transport with visible tilt/orientation change."
+        },
+        {
+          "interval_primary_s": [
+            4.503,
+            5.27
+          ],
+          "description": "Reduced task progress while visibly held, with small changes."
+        },
+        {
+          "interval_primary_s": [
+            5.27,
+            6.003
+          ],
+          "description": "Further lowering and reorientation."
+        }
+      ],
+      "transition_brackets": [
+        {
+          "phase_change": "transport to reduced progress",
+          "earliest_primary_s": 3.737,
+          "latest_primary_s": 4.503
+        },
+        {
+          "phase_change": "reduced progress to lowering/reorientation",
+          "earliest_primary_s": 5.27,
+          "latest_primary_s": 6.003
+        }
+      ],
+      "contact_release": "Unknown; final fingertip contact is visible, physical support transition not labelled.",
+      "review_frame_keys": {
+        "camera_a": [
+          "recording_0008/658",
+          "recording_0008/680",
+          "recording_0008/703",
+          "recording_0008/726",
+          "recording_0008/748"
+        ],
+        "camera_b": [
+          "recording_0003/618",
+          "recording_0003/640",
+          "recording_0003/663",
+          "recording_0003/686",
+          "recording_0003/708"
+        ]
+      }
+    },
+    {
+      "demo_id": "demo_0014",
+      "observations": [
+        {
+          "interval_primary_s": [
+            2.49,
+            3.823
+          ],
+          "description": "Transport and lowering towards the target."
+        },
+        {
+          "interval_primary_s": [
+            3.823,
+            4.523
+          ],
+          "description": "Reduced task progress while held; small motion remains."
+        },
+        {
+          "interval_primary_s": [
+            4.523,
+            5.189
+          ],
+          "description": "Further lowering/reorientation."
+        }
+      ],
+      "transition_brackets": [
+        {
+          "phase_change": "lowering to reduced progress",
+          "earliest_primary_s": 3.156,
+          "latest_primary_s": 3.823
+        },
+        {
+          "phase_change": "reduced progress to lowering/reorientation",
+          "earliest_primary_s": 4.523,
+          "latest_primary_s": 5.189
+        }
+      ],
+      "contact_release": "Unknown; not a release demonstration within this selected interval.",
+      "review_frame_keys": {
+        "camera_a": [
+          "recording_0008/1126",
+          "recording_0008/1146",
+          "recording_0008/1166",
+          "recording_0008/1187",
+          "recording_0008/1207"
+        ],
+        "camera_b": [
+          "recording_0003/1087",
+          "recording_0003/1107",
+          "recording_0003/1127",
+          "recording_0003/1148",
+          "recording_0003/1168"
+        ]
+      }
+    },
+    {
+      "demo_id": "demo_0015",
+      "observations": [
+        {
+          "interval_primary_s": [
+            3,
+            4.999
+          ],
+          "description": "Held movement and reorientation are visible across the panel. A long distinct pause is not established in this selected interval; brief slowdowns may still occur."
+        }
+      ],
+      "transition_brackets": [],
+      "contact_release": "Unknown; preserve original awkward/pause-resume intent category.",
+      "review_frame_keys": {
+        "camera_a": [
+          "recording_0008/1532",
+          "recording_0008/1547",
+          "recording_0008/1562",
+          "recording_0008/1577",
+          "recording_0008/1592"
+        ],
+        "camera_b": [
+          "recording_0003/1492",
+          "recording_0003/1507",
+          "recording_0003/1522",
+          "recording_0003/1537",
+          "recording_0003/1552"
+        ]
+      }
+    }
+  ],
+  "reviewer": "Codex agent visual review; not new human approval",
+  "method": "Five exact native samples per held interval and view; fixed crop within each view. Post-hoc qualitative inspection, not fitted labels or independently scored truth. Transition brackets are coarse sample brackets, not event timestamps.",
+  "minimum_timing_uncertainty_s": 0.25,
+  "training_eligible": false,
+  "original_annotations_changed": false
+}

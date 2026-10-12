@@ -1,0 +1,151 @@
+{
+  "demonstrations": [
+    {
+      "demo_id": "demo_0001",
+      "observations": [
+        {
+          "interval_primary_s": [
+            5.987,
+            6.687
+          ],
+          "description": "Held transport towards the square and lowering. No release or distinct pause established inside this selected interval."
+        }
+      ],
+      "transition_brackets": [],
+      "contact_release": "Unknown; interval ends while fingers remain on the block."
+    },
+    {
+      "demo_id": "demo_0004",
+      "observations": [
+        {
+          "interval_primary_s": [
+            4.008,
+            4.708
+          ],
+          "description": "Transport and lowering; numeral appearance/view orientation changes. Do not infer physical yaw from that alone."
+        }
+      ],
+      "transition_brackets": [],
+      "contact_release": "Unknown; grasp/release onsets are outside or not established by this panel."
+    },
+    {
+      "demo_id": "demo_0012",
+      "observations": [
+        {
+          "interval_primary_s": [
+            3.514,
+            5.013
+          ],
+          "description": "Held beside the square with small adjustments and little task progress; consistent with intentional pause, not exact stillness."
+        },
+        {
+          "interval_primary_s": [
+            5.013,
+            5.513
+          ],
+          "description": "Transport resumes towards the square with lowering."
+        }
+      ],
+      "transition_brackets": [
+        {
+          "phase_change": "held pause/adjustment to transport",
+          "earliest_primary_s": 5.013,
+          "latest_primary_s": 5.513
+        }
+      ],
+      "contact_release": "Unknown; no new contact boundary label."
+    },
+    {
+      "demo_id": "demo_0013",
+      "observations": [
+        {
+          "interval_primary_s": [
+            3.003,
+            4.503
+          ],
+          "description": "Transport with visible tilt/orientation change."
+        },
+        {
+          "interval_primary_s": [
+            4.503,
+            5.27
+          ],
+          "description": "Reduced task progress while visibly held, with small changes."
+        },
+        {
+          "interval_primary_s": [
+            5.27,
+            6.003
+          ],
+          "description": "Further lowering and reorientation."
+        }
+      ],
+      "transition_brackets": [
+        {
+          "phase_change": "transport to reduced progress",
+          "earliest_primary_s": 3.737,
+          "latest_primary_s": 4.503
+        },
+        {
+          "phase_change": "reduced progress to lowering/reorientation",
+          "earliest_primary_s": 5.27,
+          "latest_primary_s": 6.003
+        }
+      ],
+      "contact_release": "Unknown; final fingertip contact is visible, physical support transition not labelled."
+    },
+    {
+      "demo_id": "demo_0014",
+      "observations": [
+        {
+          "interval_primary_s": [
+            2.49,
+            3.823
+          ],
+          "description": "Transport and lowering towards the target."
+        },
+        {
+          "interval_primary_s": [
+            3.823,
+            4.523
+          ],
+          "description": "Reduced task progress while held; small motion remains."
+        },
+        {
+          "interval_primary_s": [
+            4.523,
+            5.189
+          ],
+          "description": "Further lowering/reorientation."
+        }
+      ],
+      "transition_brackets": [
+        {
+          "phase_change": "lowering to reduced progress",
+          "earliest_primary_s": 3.156,
+          "latest_primary_s": 3.823
+        },
+        {
+          "phase_change": "reduced progress to lowering/reorientation",
+          "earliest_primary_s": 4.523,
+          "latest_primary_s": 5.189
+        }
+      ],
+      "contact_release": "Unknown; not a release demonstration within this selected interval."
+    },
+    {
+      "demo_id": "demo_0015",
+      "observations": [
+        {
+          "interval_primary_s": [
+            3,
+            4.999
+          ],
+          "description": "Held movement and reorientation are visible across the panel. A long distinct pause is not established in this selected interval; brief slowdowns may still occur."
+        }
+      ],
+      "transition_brackets": [],
+      "contact_release": "Unknown; preserve original awkward/pause-resume intent category."
+    }
+  ]
+}

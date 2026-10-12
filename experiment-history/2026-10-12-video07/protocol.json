@@ -1,0 +1,44 @@
+{
+  "schema": "video07-native-cadence-v1",
+  "base_commit": "460dc905c672ed4a06a406fc428a092bb646912a",
+  "input_data": "/var/tmp/typhon-video-representation-20261012/dense-v2",
+  "source_index_sha256": "a7f7afafe32ac33ebdce29f8ee84846bd97e12e497c2047b738665ee1e34a370",
+  "raw_project_root": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor",
+  "previous_root": "/var/tmp/typhon-video-motion-20261012",
+  "motion_script_sha256": "c78c0d09435a6b8b62038a2405f6b48c68a41a75dc55fe1f742f08907e4ae56f",
+  "selection": "Exact VIDEO06 six takes x two views x held/control intervals,24 sequences. Same common start/end frames for both arms. All outcomes retained.",
+  "native": "Every actual raw decoded frame between each frozen first/last frame; sequential decode from frame zero, no seeking, duplicate filling, timestamp interpolation or motion smoothing.",
+  "jpeg_quality": 92,
+  "arms": [
+    "frozen_10hz",
+    "native_frames"
+  ],
+  "method": "VIDEO06 masks/features/LK/FB/support gates unchanged. Native path starts with same feature identities and carries them through extra frames; no reseeding inside compared intervals.",
+  "windows": "Every adjacent10Hz pair plus every VIDEO06~0.6s rolling window. Both methods measured over identical endpoints; qualified support and endpoint agreement reported separately. Never count native substeps as extra independent trials.",
+  "background_reference_v2": {
+    "camera_a": [
+      0.91,
+      0,
+      0.999,
+      0.62
+    ],
+    "camera_b": [
+      0.04,
+      0.64,
+      0.95,
+      0.98
+    ],
+    "basis": "Agent inspection of frozen VIDEO06 raw first/mid/last panels: primary right-hand table/window edge excludes hand/block workspace. Secondary unchanged. Separate ancillary comparison with old background mask; no change to glyph arm or qualification thresholds."
+  },
+  "phase_audit": "Review full fixed held intervals and frame-by-frame glyph/hand context. Retain original intentional-pause categories, annotate slowdown/sway/transport/lowering only where observed. Do not convert human pause duration into robot commands.",
+  "limits": [
+    "Previously inspected takes/sessions; exploratory",
+    "No new model training, GE trajectories, robot action labels, depth or physical contact measurements",
+    "Native cadence may reduce per-step displacement but may also accumulate drift and loss",
+    "Higher coverage is not accuracy; agreement is only consistency"
+  ],
+  "no_training": true,
+  "no_robot_execution": true,
+  "no_GE": true,
+  "no_control_authority": true
+}

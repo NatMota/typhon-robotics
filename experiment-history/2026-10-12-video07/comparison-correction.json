@@ -1,0 +1,6 @@
+{
+  "issue": "The inherited VIDEO06 adjacent-pair function had no max-gap check, whereas persistent native flow did. One stationary query is raw frame0->1 across a real0.1554s timestamp gap; no intermediate frames exist. V1 incorrectly described its support loss as a cadence effect.",
+  "fix": "Apply the same0.15s per-observed-step guard to both arms; retain baseline_existing_code_qualified for exact VIDEO06 reproduction. Authoritative comparison-v2: stationary baseline95/96 vs native94/96; held counts unchanged.",
+  "parameters_unchanged": true,
+  "v1_preserved": true
+}

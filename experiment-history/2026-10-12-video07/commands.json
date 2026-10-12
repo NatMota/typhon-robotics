@@ -1,0 +1,20 @@
+{
+  "worktree": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video07-native-cadence",
+  "branch": "research/video07-native-cadence",
+  "python": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-xvla/bin/python",
+  "authoritative": [
+    "native-v1",
+    "comparison-v2",
+    "summary-v1"
+  ],
+  "retained": [
+    "comparison-v1",
+    "comparison-v2-reproduction"
+  ],
+  "no_training": true,
+  "commands": [
+    "scripts/video07_extract.py --protocol configs/experiments/video07/protocol.json --output /var/tmp/typhon-video-native-20261012/native-v1",
+    "scripts/video07_compare.py --protocol configs/experiments/video07/protocol.json --data /var/tmp/typhon-video-native-20261012/native-v1 --output /var/tmp/typhon-video-native-20261012/comparison-v2",
+    "scripts/video07_summarize.py --root /var/tmp/typhon-video-native-20261012 --phase-notes /var/tmp/typhon-video-native-20261012/phase-notes.json"
+  ]
+}
