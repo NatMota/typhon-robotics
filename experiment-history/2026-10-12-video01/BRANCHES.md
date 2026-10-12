@@ -5,3 +5,10 @@
 - [visual-features](https://github.com/NatMota/typhon-robotics/tree/research/video01-visual-features) — `d1e7a7f88db2cf71b77f834fac4b76abf3f1b6f7`
 
 Code, source checksums, small derived observations/feature matrices, reports and configs are versioned. Full media, model weights and raw rollouts are on Mint. These initial diagnostics do not validate a video-to-robot action adapter.
+
+## Dense continuation — VIDEO02
+
+- [Dense observations and temporal/crop validation](https://github.com/NatMota/typhon-robotics/tree/research/video01-temporal-validation)
+- [Results and reproduction](https://github.com/NatMota/typhon-robotics/blob/research/video01-temporal-validation/experiment-history/2026-10-12-video02/REPORT.md)
+
+2,644 phone observations;147 four-second view-windows; six paired previews. Frozen full+crop features improve offline matching, not robot execution. All2,712new files verified on Mint. Calibration/contact and the Panda action adapter remain unresolved.
