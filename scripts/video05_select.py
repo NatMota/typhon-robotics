@@ -2,14 +2,18 @@
 from pathlib import Path
 import argparse,json,hashlib,cv2,numpy as np
 ROOT=Path(__file__).resolve().parents[1]
-p=argparse.ArgumentParser();p.add_argument('--protocol',type=Path,required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--protocol',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--focus',action='store_true');a=p.parse_args()
 cfg=json.loads(a.protocol.read_text());d=Path(cfg['input_data']);out=a.output;out.mkdir(parents=True,exist_ok=False)
 assert hashlib.sha256((d/'source-index.json').read_bytes()).hexdigest()==cfg['source_index_sha256']
 rows=json.loads((d/'source-index.json').read_text())['samples']
 review=json.loads((ROOT/'experiment-history/2026-10-12-video03/inputs/held_review.json').read_text())['demonstrations']
 selection=[];panels=[]
 def tile(i,label):
- r=rows[i];im=cv2.imread(str(d/r['frame_path']));canvas=np.full((230,320,3),18,np.uint8)
+ r=rows[i];im=cv2.imread(str(d/r['frame_path']))
+ if a.focus and r['crop_xyxy']is not None:
+  x0,y0,x1,y1=r['crop_xyxy'];cx=(x0+x1)/2;cy=(y0+y1)/2;half=max(x1-x0,y1-y0)*.85
+  xa=max(0,int(cx-half));xb=min(im.shape[1],int(cx+half));ya=max(0,int(cy-half));yb=min(im.shape[0],int(cy+half));im=im[ya:yb,xa:xb]
+ canvas=np.full((230,320,3),18,np.uint8)
  scale=min(320/im.shape[1],192/im.shape[0]);im=cv2.resize(im,(round(im.shape[1]*scale),round(im.shape[0]*scale)))
  y=38+(192-im.shape[0])//2;x=(320-im.shape[1])//2;canvas[y:y+im.shape[0],x:x+im.shape[1]]=im
  cv2.putText(canvas,label,(4,15),cv2.FONT_HERSHEY_SIMPLEX,.43,(240,240,240),1)

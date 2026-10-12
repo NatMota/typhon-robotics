@@ -1,0 +1,66 @@
+{
+  "schema": "video05-precontact-pause-v1",
+  "input_data": "/var/tmp/typhon-video-representation-20261012/dense-v2",
+  "source_index_sha256": "a7f7afafe32ac33ebdce29f8ee84846bd97e12e497c2047b738665ee1e34a370",
+  "train_takes": [
+    "demo_0001",
+    "demo_0002",
+    "demo_0003",
+    "demo_0005",
+    "demo_0012",
+    "demo_0013"
+  ],
+  "validation_takes": [
+    "demo_0006",
+    "demo_0014",
+    "demo_0016"
+  ],
+  "extra_validation_takes": [
+    "demo_0004",
+    "demo_0015"
+  ],
+  "label_boundary_margin_s": 0.25,
+  "history_s": 0.5,
+  "maximum_gap_s": 0.25,
+  "seed": 121205,
+  "threshold": 0.5,
+  "logistic_l2": 0.01,
+  "max_iterations": 200,
+  "train_feature_standard_deviation_floor": 0.001,
+  "models": [
+    "full_crop_current",
+    "fusion_current",
+    "fusion_causal_history"
+  ],
+  "training_arms": [
+    "added_precontact_original_weighting",
+    "added_precontact_balanced_negative_regimes"
+  ],
+  "selection": "Score-blind paired samples from last old negative endpoint + fixed offsets, capped at held start -0.25. All samples reviewed, not only model errors. Held midpoint \u00b1.3 s audit on four awkward takes.",
+  "annotation": "Known separated hand plus block -> negative; hand absent separately flagged and not added; possible contact unknown. Held-pause state visually audited, no new positive training labels. Training-only additions.",
+  "weights": "Original equal take/class/view versus equal negative weight among old interiors, old VIDEO04 withdrawal events and newly reviewed pre-contact events, within each take/class/view.",
+  "evaluation": "All previous panels plus newly selected excluded-take pre-contact samples and held midpoint low-motion panels. Previously inspected takes and source sessions; exploratory, correlated frames, no independent event/session success claim.",
+  "qualification": "Must reduce false-held transition errors without erasing labelled held recall. Results are observation diagnostics only. Never confer motor control authority.",
+  "no_GE": true,
+  "no_VLA_motor_update": true,
+  "control_authority": false,
+  "base_branch_sha": "955952c86b106ace1888984b0b22a3275f5cd2f2",
+  "approach_offsets_s": [
+    0,
+    0.3,
+    0.6,
+    0.9,
+    1.2
+  ],
+  "pause_takes": [
+    "demo_0012",
+    "demo_0013",
+    "demo_0014",
+    "demo_0015"
+  ],
+  "pause_context_s": [
+    -0.3,
+    0,
+    0.3
+  ]
+}

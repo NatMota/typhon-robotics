@@ -1,0 +1,766 @@
+{
+  "schema": "video05-view-specific-blinded-review-v1",
+  "reviewer": "Codex root agent; inspected full and focused paired sheets before prediction scores or fitting",
+  "review_type": "Agent visual labels, not new human approval or contact sensors",
+  "notes": [
+    "Annotations apply to central individual view frames, not the entire interval.",
+    "View timestamps may differ and earlier synchronization is uncertain; do not force matching contact labels.",
+    "A=easy no-hand negative, N=clear hand-gap negative, U=unknown contact. Only new N frames from training takes can be added.",
+    "Focused sheets contain the same selected source frames, enlarged only for review; fitted descriptors are unchanged.",
+    "Held midpoint audit adds no positive labels and separates low motion from visible lowering."
+  ],
+  "samples": [
+    {
+      "review_id": "demo_0001-precontact-0",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0001-precontact-1",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0001-precontact-2",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0001-precontact-3",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0001-precontact-4",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0002-precontact-0",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0002-precontact-1",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0002-precontact-2",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0002-precontact-3",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0002-precontact-4",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0003-precontact-0",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0003-precontact-1",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0003-precontact-2",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0003-precontact-3",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0003-precontact-4",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0005-precontact-0",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0005-precontact-1",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0005-precontact-2",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0005-precontact-3",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0005-precontact-4",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0012-precontact-0",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0012-precontact-1",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0012-precontact-2",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0012-precontact-3",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0012-precontact-4",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0013-precontact-0",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0013-precontact-1",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0013-precontact-2",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0013-precontact-3",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0013-precontact-4",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0004-precontact-0",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0004-precontact-1",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": false,
+          "confidence": "clear visual non-contact",
+          "reason": "No hand at the visible resting block; retain as easy negative, do not add to hard-negative training."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0004-precontact-2",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0004-precontact-3",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0004-precontact-4",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0015-precontact-0",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0015-precontact-1",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": 0,
+          "hand_visible": true,
+          "confidence": "clear visual non-contact",
+          "reason": "Visible hand and block are separated by a clear gap in this view."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0015-precontact-2",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0015-precontact-3",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0015-precontact-4",
+      "kind": "precontact",
+      "views": {
+        "camera_a": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        },
+        "camera_b": {
+          "held_label": null,
+          "hand_visible": true,
+          "confidence": "unknown contact/support",
+          "reason": "Fingers near or at the block; do not infer held or not-held."
+        }
+      }
+    },
+    {
+      "review_id": "demo_0012-held-midpoint",
+      "kind": "held_midpoint",
+      "held_label": 1,
+      "motion_review": "held with little visible motion over shown 0.6 s; exact zero velocity not established",
+      "confidence": "paired visual evidence",
+      "reason": "Fingers continue supporting the block; the oblique view shows lifted/pinched state across the sampled context. No new positive fitting labels."
+    },
+    {
+      "review_id": "demo_0013-held-midpoint",
+      "kind": "held_midpoint",
+      "held_label": 1,
+      "motion_review": "held with little visible motion over shown 0.6 s; exact zero velocity not established",
+      "confidence": "paired visual evidence",
+      "reason": "Fingers continue supporting the block; the oblique view shows lifted/pinched state across the sampled context. No new positive fitting labels."
+    },
+    {
+      "review_id": "demo_0014-held-midpoint",
+      "kind": "held_midpoint",
+      "held_label": 1,
+      "motion_review": "held with visible lowering, not a pause",
+      "confidence": "paired visual evidence",
+      "reason": "Fingers continue supporting the block; the oblique view shows lifted/pinched state across the sampled context. No new positive fitting labels."
+    },
+    {
+      "review_id": "demo_0015-held-midpoint",
+      "kind": "held_midpoint",
+      "held_label": 1,
+      "motion_review": "held with little visible motion over shown 0.6 s; exact zero velocity not established",
+      "confidence": "paired visual evidence",
+      "reason": "Fingers continue supporting the block; the oblique view shows lifted/pinched state across the sampled context. No new positive fitting labels."
+    }
+  ]
+}
