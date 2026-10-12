@@ -1,0 +1,19 @@
+{
+  "verified_unix": 1791844895.0025685,
+  "source": "powerglide:/var/tmp/typhon-live08-choice-timing-20261012",
+  "destination": "/media/nm/Fast Drive/Typhon/research-20261012/live08",
+  "copy_command": [
+    "rsync",
+    "-a",
+    "--partial",
+    "-e",
+    "ssh -F /home/nm/.config/typhon-backup-20261010/config",
+    "powerglide-backup:/var/tmp/typhon-live08-choice-timing-20261012/",
+    "/media/nm/Fast Drive/Typhon/research-20261012/live08/"
+  ],
+  "files": 114,
+  "bytes": 134433160,
+  "manifest_sha256": "fbc5796110acf37d4f9cab875b53f8c9923accb0ded51685acf741b360763133",
+  "all_sha256_match": true,
+  "no_extra_or_missing_files": true
+}
