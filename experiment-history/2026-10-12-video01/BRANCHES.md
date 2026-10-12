@@ -16,3 +16,7 @@ Code, source checksums, small derived observations/feature matrices, reports and
 ## Held-state continuation — VIDEO03
 
 [Results and reproduction](https://github.com/NatMota/typhon-robotics/blob/research/video03-held-probe/experiment-history/2026-10-12-video03/REPORT.md). Thirty-five small observation probes from unmarked personal footage. Perfect conservative-interior agreement did not survive hand-present transition checks: 5/8 false held views for full images, 2/8 with crop/fusion. No motor-policy update or control authority. All results and fresh reproduction are verified on Mint.
+
+## VIDEO04 — Training-only contact negatives
+
+Private branch: [research/video04-contact-negatives](https://github.com/NatMota/typhon-robotics/tree/research/video04-contact-negatives). [Report and full results](https://github.com/NatMota/typhon-robotics/blob/research/video04-contact-negatives/experiment-history/2026-10-12-video04/REPORT.md). Six small observation probes, with new labels committed before scores. Withdrawal error improves; the extra panel still has the same failing approach event (1/3). All 90 conservative held positives retained. No motor-policy change or contact authority. OST #11021.
