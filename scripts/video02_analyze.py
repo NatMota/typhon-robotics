@@ -33,8 +33,8 @@ def annotated(data,r):
     for hand in r['hands']:
         arr=np.array(hand['image_landmarks_normalized'])
         for q in arr:cv2.circle(im,(int(q[0]*im.shape[1]),int(q[1]*im.shape[0])),2,(255,190,80),-1)
-    im=tile(im);text=f"{r['demo_id']} {r['view']} t={r['clip_time_s']:.2f}"
-    cv2.rectangle(im,(0,0),(400,46),(18,18,18),-1)
+    shown=tile(im,size=(400,220));im=np.full((260,400,3),18,np.uint8);im[40:]=shown;text=f"{r['demo_id']} {r['view']} t={r['clip_time_s']:.2f}"
+    cv2.rectangle(im,(0,0),(400,39),(18,18,18),-1)
     cv2.putText(im,text,(6,16),cv2.FONT_HERSHEY_SIMPLEX,.42,(240,240,240),1)
     cv2.putText(im,f"yaw={r['yaw_clockwise_deg']} / contact UNKNOWN",(6,35),cv2.FONT_HERSHEY_SIMPLEX,.40,(235,235,235),1)
     return im
