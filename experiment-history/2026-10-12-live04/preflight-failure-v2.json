@@ -1,0 +1,7 @@
+{
+  "before_rollouts": true,
+  "evaluated_episodes": 0,
+  "reason": "qualification compared raw gripper probabilities to reconstructed binary commands",
+  "fix": "compare raw timed predictions with raw reference; separately compare timing adapter output including binary gripper channels",
+  "no_model_or_execution_math_change": true
+}

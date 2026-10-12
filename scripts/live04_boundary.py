@@ -16,7 +16,7 @@ from supervisor.planning.decisions_ranker import DecisionsRanker,ENDPOINT,MODEL
 from supervisor.planning.m7_service import ServiceConfig
 from supervisor.planning.boundary_handoff import held_target,boundary_actions
 from typhon_ab_evaluate import metrics as native_metrics
-OUT=Path('/var/tmp/typhon-live04-boundary-20261012-v2')
+OUT=Path('/var/tmp/typhon-live04-boundary-20261012-v3')
 CKPT=Path('/var/tmp/humanoid-m7-checkpoints-20261009/v4-m6.pt')
 SOURCE=Path('/var/tmp/typhon-film-feeding-20261011-v3')
 BUDGET=2.;STEPS=800;COUNT=4
@@ -83,11 +83,15 @@ def qualify(policy):
  req=copy.deepcopy(payload);req['candidate_seeds']=[61601,61602,61603,61604]
  multiple=decode(XvlaPolicy._request(policy,req))
  np.testing.assert_array_equal(single['initial_noise'][0],np.load(ref/'noise/seed61601.npy')[0])
- np.testing.assert_allclose(single['actions'][0],expected,atol=1e-6,rtol=0)
+ from supervisor.adaptation.m6_contract import reorder
+ raw=reorder(np.asarray([p['target_generic_interleaved'] for p in single['timed']['waypoints']]),True)
+ np.testing.assert_allclose(raw,expected,atol=1e-6,rtol=0)
+ expected_executed=expected.copy();expected_executed[:,[9,19]]=(expected_executed[:,[9,19]]>.5).astype(float)
+ np.testing.assert_array_equal(single['actions'][0],expected_executed)
  np.testing.assert_array_equal(single['actions'][0],multiple['actions'][0])
  np.testing.assert_array_equal(single['initial_noise'][0],multiple['initial_noise'][0])
  pack(OUT/'worker-qualification.pkl.gz',{'payload':payload,'single':single,'multiple':multiple})
- save(OUT/'worker-qualification.json',{'passed':True,'reference':str(ref),'max_action_error':float(np.max(np.abs(single['actions'][0]-expected))),
+ save(OUT/'worker-qualification.json',{'passed':True,'reference':str(ref),'max_raw_action_error':float(np.max(np.abs(raw-expected))),'reconstructed_action_error':float(np.max(np.abs(single['actions'][0]-expected_executed))),
   'candidate0_matches_single_exactly':True,'single_preprocess_inference_s':single['preprocess_and_inference_s'],'four_preprocess_inference_s':multiple['preprocess_and_inference_s'],'no_new_inference_equations':True})
 
 def live_run(mode,scenario,policy):
