@@ -11,4 +11,4 @@ Code, source checksums, small derived observations/feature matrices, reports and
 - [Dense observations and temporal/crop validation](https://github.com/NatMota/typhon-robotics/tree/research/video01-temporal-validation)
 - [Results and reproduction](https://github.com/NatMota/typhon-robotics/blob/research/video01-temporal-validation/experiment-history/2026-10-12-video02/REPORT.md)
 
-2,644 phone observations;147 four-second view-windows; six paired previews. Frozen full+crop features improve offline matching, not robot execution. All2,712new files verified on Mint. Calibration/contact and the Panda action adapter remain unresolved.
+2,644 phone observations;147 four-second view-windows; six paired previews. Frozen full+crop features improve offline matching, not robot execution. The corrected dense-v2 export passes all 2,644 raw sequential frame hashes; 2,710 files verified on Mint. Superseded dense-v1 and its frame-index failure remain preserved. Calibration/contact and the Panda action adapter remain unresolved.
