@@ -2,7 +2,7 @@
   "experiment_id": "VIDEO01",
   "arm": "visual-features",
   "description": "Frozen visual features and temporal/cross-view correspondence",
-  "status": "protocol_saved_extraction_not_yet_run",
+  "status": "initial_extraction_and_offline_diagnostics_complete",
   "shared_source_commit": "fcb82d719f32f96c516effcc0c2a952445bbadf3",
   "source_root": "~/Projects/humanoid-task-supervisor/data/personal/m0",
   "source_read_only": true,
@@ -10,5 +10,9 @@
   "mint_backup_root": "/media/nm/Fast Drive/Typhon/research-20261012/video01/visual-features",
   "allow_geometric_expert_trajectory_labels": false,
   "metric_depth_available": false,
-  "protocol": "experiment-history/2026-10-12-video01/PROTOCOL.md"
+  "protocol": "experiment-history/2026-10-12-video01/PROTOCOL.md",
+  "robot_action_adapter_validated": false,
+  "source_index_sha256": "74597c111c6aa292ef6f3e8de36c5d543c6d44e8e6b16ead5b771880e9a368c4",
+  "result_summary": "experiment-history/2026-10-12-video01/visual-features/summary.json",
+  "base_model_sha256": "433acffc992f457b1737d35ae20f81a895521f38eadaf03c736b6c0b0af1c93e"
 }
