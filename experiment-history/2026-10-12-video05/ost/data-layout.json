@@ -1,0 +1,1093 @@
+{
+  "nodes": [
+    {
+      "id": "outcome",
+      "type": "outcome",
+      "label": "Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer",
+      "parent_id": "",
+      "x": 24,
+      "y": 128,
+      "color": "#2D3831",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Personally recorded",
+        "manipulation data drives",
+        "reliable Panda feeding and",
+        "measured loading transfer"
+      ],
+      "prefix": "Outcome",
+      "ticket_id": null
+    },
+    {
+      "id": "opp_data",
+      "type": "opportunity",
+      "label": "I need my recordings to contribute to robot behaviour with traceable supervision",
+      "parent_id": "outcome",
+      "x": 394,
+      "y": 128,
+      "color": "#2D3831",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "I need my recordings to",
+        "contribute to robot",
+        "behaviour with traceable",
+        "supervision"
+      ],
+      "prefix": "Opportunity",
+      "ticket_id": null
+    },
+    {
+      "id": "sol_data_0",
+      "type": "solution",
+      "label": "Traceable curation and explicit calibration",
+      "parent_id": "opp_data",
+      "x": 764,
+      "y": 128,
+      "color": "#30353D",
+      "width": 280,
+      "height": 112,
+      "lines": [
+        "Traceable curation and",
+        "explicit calibration"
+      ],
+      "prefix": "Solution",
+      "ticket_id": null
+    },
+    {
+      "id": "exp_10981",
+      "type": "experiment",
+      "label": "Excluded-take provenance audit\nOPS04 · #10981\nRUN / COMPLETE",
+      "parent_id": "sol_data_0",
+      "x": 1134,
+      "y": 150.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Excluded-take provenance",
+        "audit",
+        "OPS04 · #10981",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Audit",
+      "ticket_id": 10981,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "result_10981",
+      "type": "result",
+      "label": "Excluded review candidate 6 is demo0017, not successful demo0006. Candidate 5 is normal demo0016. Source clips and hashes preserved.",
+      "parent_id": "exp_10981",
+      "x": 1504,
+      "y": 128.0,
+      "color": "#303840",
+      "width": 280,
+      "height": 200,
+      "lines": [
+        "Excluded review candidate",
+        "6 is demo0017, not",
+        "successful demo0006.",
+        "Candidate 5 is normal",
+        "demo0016. Source clips and",
+        "hashes preserved."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10981,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "exp_10991",
+      "type": "experiment",
+      "label": "Physical DUPLO + calibration\nDATA06 · #10991\nBLOCKED · PREREQUISITE FAILED",
+      "parent_id": "sol_data_0",
+      "x": 1134,
+      "y": 499.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 178,
+      "lines": [
+        "Physical DUPLO +",
+        "calibration",
+        "DATA06 · #10991",
+        "BLOCKED · PREREQUISITE",
+        "FAILED"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 10991,
+      "status": "Blocked",
+      "result_type": "review"
+    },
+    {
+      "id": "result_10991",
+      "type": "result",
+      "label": "Calibration/proxy mismatch explicitly reconciled: frozen training 50 x 35 x 30 mm,80 g versus catalogue 32 x 43 x 32 mm,12.7 g; target square virtual 100 mm. Actual measurements and paired-camera metric calibration remain missing. Do not silently replace geometry or call virtual units physical accuracy. Waiting for measurement/calibration evidence; original results unchanged. ",
+      "parent_id": "exp_10991",
+      "x": 1504,
+      "y": 378.0,
+      "color": "#38323E",
+      "width": 280,
+      "height": 420,
+      "lines": [
+        "Calibration/proxy mismatch",
+        "explicitly reconciled: frozen",
+        "training 50 x 35 x 30",
+        "mm,80 g versus catalogue",
+        "32 x 43 x 32 mm,12.7 g;",
+        "target square virtual 100",
+        "mm. Actual measurements",
+        "and paired-camera metric",
+        "calibration remain missing.",
+        "Do not silently replace",
+        "geometry or call virtual",
+        "units physical accuracy.",
+        "Waiting for",
+        "measurement/calibration",
+        "evidence; original results",
+        "unchanged."
+      ],
+      "prefix": "Result · review",
+      "ticket_id": 10991,
+      "status": "Blocked",
+      "result_type": "review"
+    },
+    {
+      "id": "sol_data_1",
+      "type": "solution",
+      "label": "Event alignment and constrained retargeting",
+      "parent_id": "opp_data",
+      "x": 764,
+      "y": 866,
+      "color": "#30353D",
+      "width": 280,
+      "height": 112,
+      "lines": [
+        "Event alignment and",
+        "constrained retargeting"
+      ],
+      "prefix": "Solution",
+      "ticket_id": null
+    },
+    {
+      "id": "exp_10972",
+      "type": "experiment",
+      "label": "Human / expert event timeline\nR07 · #10972\nRUN / COMPLETE",
+      "parent_id": "sol_data_1",
+      "x": 1134,
+      "y": 888.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Human / expert event",
+        "timeline",
+        "R07 · #10972",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 10972,
+      "status": "Done",
+      "result_type": "mixed"
+    },
+    {
+      "id": "result_10972",
+      "type": "result",
+      "label": "One 7.6 s human correction aligned by events; camera sync uncertainty ±0.25 s. Human lift/rotation overlap differs from the teacher. Not valid motor-action labels.",
+      "parent_id": "exp_10972",
+      "x": 1504,
+      "y": 866.0,
+      "color": "#3C382D",
+      "width": 280,
+      "height": 200,
+      "lines": [
+        "One 7.6 s human correction",
+        "aligned by events; camera",
+        "sync uncertainty ±0.25 s.",
+        "Human lift/rotation overlap",
+        "differs from the teacher. Not",
+        "valid motor-action labels."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10972,
+      "status": "Done",
+      "result_type": "mixed"
+    },
+    {
+      "id": "exp_10974",
+      "type": "experiment",
+      "label": "Human endpoint retargeting\nR09 · #10974\nRUN / COMPLETE",
+      "parent_id": "sol_data_1",
+      "x": 1134,
+      "y": 1160.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Human endpoint",
+        "retargeting",
+        "R09 · #10974",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 10974,
+      "status": "Done",
+      "result_type": "positive"
+    },
+    {
+      "id": "result_10974",
+      "type": "result",
+      "label": "One endpoint-derived, constrained Panda execution succeeds: 2.46 mm / 0.081° from the mapped endpoint. Virtual scale and supplied path/timing; not recovered human 3D actions.",
+      "parent_id": "exp_10974",
+      "x": 1504,
+      "y": 1116.0,
+      "color": "#293D37",
+      "width": 280,
+      "height": 244,
+      "lines": [
+        "One endpoint-derived,",
+        "constrained Panda",
+        "execution succeeds: 2.46",
+        "mm / 0.081° from the",
+        "mapped endpoint. Virtual",
+        "scale and supplied",
+        "path/timing; not recovered",
+        "human 3D actions."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10974,
+      "status": "Done",
+      "result_type": "positive"
+    },
+    {
+      "id": "exp_10989",
+      "type": "experiment",
+      "label": "Phone-to-Panda action alignment\nDATA04 · #10989\nBLOCKED · PREREQUISITE FAILED",
+      "parent_id": "sol_data_1",
+      "x": 1134,
+      "y": 1619.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 178,
+      "lines": [
+        "Phone-to-Panda action",
+        "alignment",
+        "DATA04 · #10989",
+        "BLOCKED · PREREQUISITE",
+        "FAILED"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 10989,
+      "status": "Blocked",
+      "result_type": "review"
+    },
+    {
+      "id": "result_10989",
+      "type": "result",
+      "label": "Phone-to-robot alignment audit completed; full direct supervision remains blocked. Existing one-clip event alignment has 7.6 s duration and+-0.25 s sync uncertainty; human lift/rotation overlap differs from teacher phase timing. Endpoint retarget succeeds with supplied path/height/timing; it is not full recovered 3 D. SixP_train tracking sources audited for observable segments, but grasp/release correspondence and metric lift are not established. Proposed reusable object-motion/contact representation recorded; no invented per-frame motor labels.",
+      "parent_id": "exp_10989",
+      "x": 1504,
+      "y": 1410.0,
+      "color": "#38323E",
+      "width": 280,
+      "height": 596,
+      "lines": [
+        "Phone-to-robot alignment",
+        "audit completed; full direct",
+        "supervision remains",
+        "blocked. Existing one-clip",
+        "event alignment has 7.6 s",
+        "duration and+-0.25 s sync",
+        "uncertainty; human",
+        "lift/rotation overlap differs",
+        "from teacher phase timing.",
+        "Endpoint retarget succeeds",
+        "with supplied",
+        "path/height/timing; it is not",
+        "full recovered 3 D.",
+        "SixP_train tracking sources",
+        "audited for observable",
+        "segments, but",
+        "grasp/release",
+        "correspondence and metric",
+        "lift are not established.",
+        "Proposed reusable",
+        "object-motion/contact",
+        "representation recorded; no",
+        "invented per-frame motor",
+        "labels."
+      ],
+      "prefix": "Result · review",
+      "ticket_id": 10989,
+      "status": "Blocked",
+      "result_type": "review"
+    },
+    {
+      "id": "sol_data_2",
+      "type": "solution",
+      "label": "Balanced phase, horizon and view mixtures",
+      "parent_id": "opp_data",
+      "x": 764,
+      "y": 2074,
+      "color": "#30353D",
+      "width": 280,
+      "height": 112,
+      "lines": [
+        "Balanced phase, horizon",
+        "and view mixtures"
+      ],
+      "prefix": "Solution",
+      "ticket_id": null
+    },
+    {
+      "id": "exp_10987",
+      "type": "experiment",
+      "label": "Phase chunks + 4 s intentions\nDATA02 · #10987\nRUN / COMPLETE",
+      "parent_id": "sol_data_2",
+      "x": 1134,
+      "y": 2250.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Phase chunks + 4 s",
+        "intentions",
+        "DATA02 · #10987",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 10987,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "result_10987",
+      "type": "result",
+      "label": "Actual chunk/target audit completed. V 2 has 632 rows=316 semantic chunks x 2 view orders; V 3 has 776/388. Future durations vary, and four-second history is not four-second future supervision. Broad-Pt and new continuations predict 30 actions at 20 Hz=1.5 s. Human footage remains without validated frame-to-Franka-action labels. Missing held sidecars use validity masks. Proceed with explicitly versioned physical-time contracts; do not claim uniform four-second intention targets. ",
+      "parent_id": "exp_10987",
+      "x": 1504,
+      "y": 2074.0,
+      "color": "#303840",
+      "width": 280,
+      "height": 508,
+      "lines": [
+        "Actual chunk/target audit",
+        "completed. V 2 has 632",
+        "rows=316 semantic chunks",
+        "x 2 view orders; V 3 has",
+        "776/388. Future durations",
+        "vary, and four-second",
+        "history is not four-second",
+        "future supervision. Broad-Pt",
+        "and new continuations",
+        "predict 30 actions at 20",
+        "Hz=1.5 s. Human footage",
+        "remains without validated",
+        "frame-to-Franka-action",
+        "labels. Missing held",
+        "sidecars use validity masks.",
+        "Proceed with explicitly",
+        "versioned physical-time",
+        "contracts; do not claim",
+        "uniform four-second",
+        "intention targets."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10987,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "exp_10988",
+      "type": "experiment",
+      "label": "Balanced data randomisation\nDATA03 · #10988\nRUN / COMPLETE",
+      "parent_id": "sol_data_2",
+      "x": 1134,
+      "y": 2808.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Balanced data",
+        "randomisation",
+        "DATA03 · #10988",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 10988,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "result_10988",
+      "type": "result",
+      "label": "Sampling audit completed: broad 12 k all 439 windows,48,000 exposures,8,000/source. V 1/V 2 historical aggregate logs cover declared sources; V 2 semantic/view copies and category balancing do not imply uniform source weighting. Historical V 3 per-update consumption remains unverified. New fixed/varied/recovery runs retain every sample identity and exact 2,000/source exposure, independently shuffled window queues and a shared shuffled cell schedule. ",
+      "parent_id": "exp_10988",
+      "x": 1504,
+      "y": 2632.0,
+      "color": "#303840",
+      "width": 280,
+      "height": 508,
+      "lines": [
+        "Sampling audit completed:",
+        "broad 12 k all 439",
+        "windows,48,000",
+        "exposures,8,000/source. V",
+        "1/V 2 historical aggregate",
+        "logs cover declared",
+        "sources; V 2 semantic/view",
+        "copies and category",
+        "balancing do not imply",
+        "uniform source weighting.",
+        "Historical V 3 per-update",
+        "consumption remains",
+        "unverified. New",
+        "fixed/varied/recovery runs",
+        "retain every sample identity",
+        "and exact 2,000/source",
+        "exposure, independently",
+        "shuffled window queues",
+        "and a shared shuffled cell",
+        "schedule."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10988,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "exp_10990",
+      "type": "experiment",
+      "label": "Held crosshair + separate labels\nDATA05 · #10990\nRUN / COMPLETE",
+      "parent_id": "sol_data_2",
+      "x": 1134,
+      "y": 3355.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Held crosshair + separate",
+        "labels",
+        "DATA05 · #10990",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 10990,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "result_10990",
+      "type": "result",
+      "label": "Historical phone held export verified on Mint:16 takes,32 views,7,904 view-frames;1,024 held,3,598 notheld,3,282 unknown;768 green-on frames. Unknown/off is not a negative held label. Marker is a pseudo 3 Dimage bracket, not metric 3 D. Source timestamps/audio retained; frame-level labels are agent-reviewed, not all human-confirmed. Export predates the later evaluation exclusion. No direct Franka labels attach to phone frames. ",
+      "parent_id": "exp_10990",
+      "x": 1504,
+      "y": 3190.0,
+      "color": "#303840",
+      "width": 280,
+      "height": 486,
+      "lines": [
+        "Historical phone held export",
+        "verified on Mint:16 takes,32",
+        "views,7,904",
+        "view-frames;1,024",
+        "held,3,598 notheld,3,282",
+        "unknown;768 green-on",
+        "frames. Unknown/off is not",
+        "a negative held label.",
+        "Marker is a pseudo 3",
+        "Dimage bracket, not metric",
+        "3 D. Source",
+        "timestamps/audio retained;",
+        "frame-level labels are",
+        "agent-reviewed, not all",
+        "human-confirmed. Export",
+        "predates the later",
+        "evaluation exclusion. No",
+        "direct Franka labels attach",
+        "to phone frames."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10990,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "sol_data_3",
+      "type": "solution",
+      "label": "Object, hand and temporal visual representations",
+      "parent_id": "opp_data",
+      "x": 764,
+      "y": 3744,
+      "color": "#30353D",
+      "width": 280,
+      "height": 112,
+      "lines": [
+        "Object, hand and temporal",
+        "visual representations"
+      ],
+      "prefix": "Solution",
+      "ticket_id": null
+    },
+    {
+      "id": "exp_11015",
+      "type": "experiment",
+      "label": "Video-derived representation and robot adapter\nVIDEO01 · #11015\nACTIVE · RESULTS PENDING",
+      "parent_id": "sol_data_3",
+      "x": 1134,
+      "y": 3799.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 178,
+      "lines": [
+        "Video-derived",
+        "representation and robot",
+        "adapter",
+        "VIDEO01 · #11015",
+        "ACTIVE · RESULTS PENDING"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 11015,
+      "status": "In Progress",
+      "result_type": "review"
+    },
+    {
+      "id": "result_11015",
+      "type": "result",
+      "label": "Three phone representations, dense alignment and held-state probes tested. Video can supervise a small observation head; transition false positives remain. No qualified metric/contact stream or Panda action decoder.",
+      "parent_id": "exp_11015",
+      "x": 1504,
+      "y": 3744.0,
+      "color": "#38323E",
+      "width": 280,
+      "height": 288,
+      "lines": [
+        "Three phone",
+        "representations, dense",
+        "alignment and held-state",
+        "probes tested. Video can",
+        "supervise a small",
+        "observation head; transition",
+        "false positives remain. No",
+        "qualified metric/contact",
+        "stream or Panda action",
+        "decoder."
+      ],
+      "prefix": "Interim result",
+      "ticket_id": 11015,
+      "status": "In Progress",
+      "result_type": "review"
+    },
+    {
+      "id": "exp_11016",
+      "type": "experiment",
+      "label": "Object motion from phone frames\nVIDEO01-A · #11016\nREVIEW",
+      "parent_id": "sol_data_3",
+      "x": 1134,
+      "y": 4137.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Object motion from phone",
+        "frames",
+        "VIDEO01-A · #11016",
+        "REVIEW"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 11016,
+      "status": "Review",
+      "result_type": "evidence"
+    },
+    {
+      "id": "result_11016",
+      "type": "result",
+      "label": "440/526 centres and 227/264 primary directed-yaw estimates pass confidence filters. Actual 2D paths, missing masks and shuffle/static controls saved. Coverage is not accuracy; no physical 3D or grasp inference.",
+      "parent_id": "exp_11016",
+      "x": 1504,
+      "y": 4082.0,
+      "color": "#303840",
+      "width": 280,
+      "height": 266,
+      "lines": [
+        "440/526 centres and",
+        "227/264 primary",
+        "directed-yaw estimates",
+        "pass confidence filters.",
+        "Actual 2D paths, missing",
+        "masks and shuffle/static",
+        "controls saved. Coverage is",
+        "not accuracy; no physical",
+        "3D or grasp inference."
+      ],
+      "prefix": "Result · review",
+      "ticket_id": 11016,
+      "status": "Review",
+      "result_type": "evidence"
+    },
+    {
+      "id": "exp_11017",
+      "type": "experiment",
+      "label": "Hand/pinch motion from phone frames\nVIDEO01-B · #11017\nREVIEW",
+      "parent_id": "sol_data_3",
+      "x": 1134,
+      "y": 4453.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Hand/pinch motion from",
+        "phone frames",
+        "VIDEO01-B · #11017",
+        "REVIEW"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 11017,
+      "status": "Review",
+      "result_type": "evidence"
+    },
+    {
+      "id": "result_11017",
+      "type": "result",
+      "label": "Hands detected in 175/526 sampled frames. Pinch midpoint/aperture and hand-centred landmarks saved; grasp/global depth remain unknown. Static no-hand frames are expected, so this is not recall.",
+      "parent_id": "exp_11017",
+      "x": 1504,
+      "y": 4398.0,
+      "color": "#303840",
+      "width": 280,
+      "height": 266,
+      "lines": [
+        "Hands detected in 175/526",
+        "sampled frames. Pinch",
+        "midpoint/aperture and",
+        "hand-centred landmarks",
+        "saved; grasp/global depth",
+        "remain unknown. Static",
+        "no-hand frames are",
+        "expected, so this is not",
+        "recall."
+      ],
+      "prefix": "Result · review",
+      "ticket_id": 11017,
+      "status": "Review",
+      "result_type": "evidence"
+    },
+    {
+      "id": "exp_11018",
+      "type": "experiment",
+      "label": "Frozen visual features across views\nVIDEO01-C · #11018\nREVIEW",
+      "parent_id": "sol_data_3",
+      "x": 1134,
+      "y": 4769.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Frozen visual features",
+        "across views",
+        "VIDEO01-C · #11018",
+        "REVIEW"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 11018,
+      "status": "Review",
+      "result_type": "mixed"
+    },
+    {
+      "id": "result_11018",
+      "type": "result",
+      "label": "Frozen Pt backbone: 526 x 1024 descriptors; pooled paired-take retrieval 1/16. Frame timing and shuffle/reversal controls saved. Offline future-aware comparison; pooled features do not encode temporal order.",
+      "parent_id": "exp_11018",
+      "x": 1504,
+      "y": 4714.0,
+      "color": "#3C382D",
+      "width": 280,
+      "height": 266,
+      "lines": [
+        "Frozen Pt backbone: 526 x",
+        "1024 descriptors; pooled",
+        "paired-take retrieval 1/16.",
+        "Frame timing and",
+        "shuffle/reversal controls",
+        "saved. Offline future-aware",
+        "comparison; pooled",
+        "features do not encode",
+        "temporal order."
+      ],
+      "prefix": "Result · review",
+      "ticket_id": 11018,
+      "status": "Review",
+      "result_type": "mixed"
+    },
+    {
+      "id": "exp_11019",
+      "type": "experiment",
+      "label": "Dense video, crops and ordered observations\nVIDEO02 · #11019\nRUN / COMPLETE",
+      "parent_id": "sol_data_3",
+      "x": 1134,
+      "y": 5096.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Dense video, crops and",
+        "ordered observations",
+        "VIDEO02 · #11019",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 11019,
+      "status": "Done",
+      "result_type": "mixed"
+    },
+    {
+      "id": "result_11019",
+      "type": "result",
+      "label": "Corrected v2: 2,644 frames verified against raw decoding; 147 four-second windows. Full+crop timing error 2.09 to 1.21 s; 13/16 takes improve. Ordered retrieval 7/16 vs pooled 1/16. Earlier frame-index bug preserved and fixed. No robot-action labels.",
+      "parent_id": "exp_11019",
+      "x": 1504,
+      "y": 5030.0,
+      "color": "#3C382D",
+      "width": 280,
+      "height": 288,
+      "lines": [
+        "Corrected v2: 2,644 frames",
+        "verified against raw",
+        "decoding; 147 four-second",
+        "windows. Full+crop timing",
+        "error 2.09 to 1.21 s; 13/16",
+        "takes improve. Ordered",
+        "retrieval 7/16 vs pooled",
+        "1/16. Earlier frame-index",
+        "bug preserved and fixed. No",
+        "robot-action labels."
+      ],
+      "prefix": "Result",
+      "ticket_id": 11019,
+      "status": "Done",
+      "result_type": "mixed"
+    },
+    {
+      "id": "exp_11020",
+      "type": "experiment",
+      "label": "Predict held state from unmarked phone video\nVIDEO03 · #11020\nRUN / COMPLETE",
+      "parent_id": "sol_data_3",
+      "x": 1134,
+      "y": 5423.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Predict held state from",
+        "unmarked phone video",
+        "VIDEO03 · #11020",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 11020,
+      "status": "Done",
+      "result_type": "mixed"
+    },
+    {
+      "id": "result_11020",
+      "type": "result",
+      "label": "35 small probes; 155/155 known interiors agree. Transition false-held: full 5/8, crop 2/8. Cross-view recall: crop 28/28, +history 23/28; history helps a different session panel. Missing hard negatives; no control authority.",
+      "parent_id": "exp_11020",
+      "x": 1504,
+      "y": 5368.0,
+      "color": "#3C382D",
+      "width": 280,
+      "height": 266,
+      "lines": [
+        "35 small probes; 155/155",
+        "known interiors agree.",
+        "Transition false-held: full",
+        "5/8, crop 2/8. Cross-view",
+        "recall: crop 28/28, +history",
+        "23/28; history helps a",
+        "different session panel.",
+        "Missing hard negatives; no",
+        "control authority."
+      ],
+      "prefix": "Result",
+      "ticket_id": 11020,
+      "status": "Done",
+      "result_type": "mixed"
+    },
+    {
+      "id": "exp_11021",
+      "type": "experiment",
+      "label": "Test training-only hand-present negatives\nVIDEO04 · #11021\nRUN / COMPLETE",
+      "parent_id": "sol_data_3",
+      "x": 1134,
+      "y": 5750.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Test training-only",
+        "hand-present negatives",
+        "VIDEO04 · #11021",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 11021,
+      "status": "Done",
+      "result_type": "mixed"
+    },
+    {
+      "id": "result_11021",
+      "type": "result",
+      "label": "12 training-only withdrawal views added; 90/90 held interiors retained. Extra negatives 2/6 to 1/6 view errors, same 1/3 approach event still fails. Reused challenge 2/4 to 1/4 failing events. Weight/history adds no gain; no control authority.",
+      "parent_id": "exp_11021",
+      "x": 1504,
+      "y": 5684.0,
+      "color": "#3C382D",
+      "width": 280,
+      "height": 288,
+      "lines": [
+        "12 training-only withdrawal",
+        "views added; 90/90 held",
+        "interiors retained. Extra",
+        "negatives 2/6 to 1/6 view",
+        "errors, same 1/3 approach",
+        "event still fails. Reused",
+        "challenge 2/4 to 1/4 failing",
+        "events. Weight/history adds",
+        "no gain; no control",
+        "authority."
+      ],
+      "prefix": "Result",
+      "ticket_id": 11021,
+      "status": "Done",
+      "result_type": "mixed"
+    },
+    {
+      "id": "exp_11022",
+      "type": "experiment",
+      "label": "Add pre-contact negatives and audit held pauses\nVIDEO05 · #11022\nRUN / COMPLETE",
+      "parent_id": "sol_data_3",
+      "x": 1134,
+      "y": 6088.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Add pre-contact negatives",
+        "and audit held pauses",
+        "VIDEO05 · #11022",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 11022,
+      "status": "Done",
+      "result_type": "mixed"
+    },
+    {
+      "id": "result_11022",
+      "type": "result",
+      "label": "13 training pre-contact views added. Old challenge 1/8 to 0/8 false held; new views 2/5 to 1/5 with current features, history stays 2/5. Same excluded take still fails. 90/90 held interiors retained. Held-pause qualification incomplete.",
+      "parent_id": "exp_11022",
+      "x": 1504,
+      "y": 6022.0,
+      "color": "#3C382D",
+      "width": 280,
+      "height": 288,
+      "lines": [
+        "13 training pre-contact",
+        "views added. Old challenge",
+        "1/8 to 0/8 false held; new",
+        "views 2/5 to 1/5 with",
+        "current features, history",
+        "stays 2/5. Same excluded",
+        "take still fails. 90/90 held",
+        "interiors retained.",
+        "Held-pause qualification",
+        "incomplete."
+      ],
+      "prefix": "Result",
+      "ticket_id": 11022,
+      "status": "Done",
+      "result_type": "mixed"
+    },
+    {
+      "id": "exp_11023",
+      "type": "experiment",
+      "label": "Check observed motion through occlusion\nVIDEO06 · #11023\nNEXT · NOT RUN",
+      "parent_id": "sol_data_3",
+      "x": 1134,
+      "y": 6360.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Check observed motion",
+        "through occlusion",
+        "VIDEO06 · #11023",
+        "NEXT · NOT RUN"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 11023,
+      "status": "Next",
+      "result_type": "pending"
+    }
+  ],
+  "edges": [
+    [
+      "outcome",
+      "opp_data"
+    ],
+    [
+      "opp_data",
+      "sol_data_0"
+    ],
+    [
+      "sol_data_0",
+      "exp_10981"
+    ],
+    [
+      "exp_10981",
+      "result_10981"
+    ],
+    [
+      "sol_data_0",
+      "exp_10991"
+    ],
+    [
+      "exp_10991",
+      "result_10991"
+    ],
+    [
+      "opp_data",
+      "sol_data_1"
+    ],
+    [
+      "sol_data_1",
+      "exp_10972"
+    ],
+    [
+      "exp_10972",
+      "result_10972"
+    ],
+    [
+      "sol_data_1",
+      "exp_10974"
+    ],
+    [
+      "exp_10974",
+      "result_10974"
+    ],
+    [
+      "sol_data_1",
+      "exp_10989"
+    ],
+    [
+      "exp_10989",
+      "result_10989"
+    ],
+    [
+      "opp_data",
+      "sol_data_2"
+    ],
+    [
+      "sol_data_2",
+      "exp_10987"
+    ],
+    [
+      "exp_10987",
+      "result_10987"
+    ],
+    [
+      "sol_data_2",
+      "exp_10988"
+    ],
+    [
+      "exp_10988",
+      "result_10988"
+    ],
+    [
+      "sol_data_2",
+      "exp_10990"
+    ],
+    [
+      "exp_10990",
+      "result_10990"
+    ],
+    [
+      "opp_data",
+      "sol_data_3"
+    ],
+    [
+      "sol_data_3",
+      "exp_11015"
+    ],
+    [
+      "exp_11015",
+      "result_11015"
+    ],
+    [
+      "sol_data_3",
+      "exp_11016"
+    ],
+    [
+      "exp_11016",
+      "result_11016"
+    ],
+    [
+      "sol_data_3",
+      "exp_11017"
+    ],
+    [
+      "exp_11017",
+      "result_11017"
+    ],
+    [
+      "sol_data_3",
+      "exp_11018"
+    ],
+    [
+      "exp_11018",
+      "result_11018"
+    ],
+    [
+      "sol_data_3",
+      "exp_11019"
+    ],
+    [
+      "exp_11019",
+      "result_11019"
+    ],
+    [
+      "sol_data_3",
+      "exp_11020"
+    ],
+    [
+      "exp_11020",
+      "result_11020"
+    ],
+    [
+      "sol_data_3",
+      "exp_11021"
+    ],
+    [
+      "exp_11021",
+      "result_11021"
+    ],
+    [
+      "sol_data_3",
+      "exp_11022"
+    ],
+    [
+      "exp_11022",
+      "result_11022"
+    ],
+    [
+      "sol_data_3",
+      "exp_11023"
+    ]
+  ],
+  "width": 1808,
+  "height": 6660
+}
