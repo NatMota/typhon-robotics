@@ -40,3 +40,10 @@ Branch: research/video07-native-cadence.
 Report: https://github.com/NatMota/typhon-robotics/blob/research/video07-native-cadence/experiment-history/2026-10-12-video07/REPORT.md
 
 969 native frames, 342 identical query frames. Held pair support 194/222 to 212/222; 0.6s tracks 104/162 to 138/162, with one stationary-control support loss. Extract motion before temporal abstraction, retaining unknowns. Coarse phase notes are not robot-action labels. No training or controller change. Bulk 1,128 files / 205,661,664 bytes SHA-verified on Mint. Next independent experiment: LIVE04 #11014 delayed candidate handoff.
+
+## LIVE04 — Live candidate handoff
+
+Branch: research/live04-boundary-handoff.
+Report: https://github.com/NatMota/typhon-robotics/blob/research/live04-boundary-handoff/experiment-history/2026-10-12-live04/REPORT.md
+
+Nine V4 development rollouts. Three API choices executed 62 exact saved targets, including two complete chunks; one late reply was rejected. Original V4 grasped and placed on its known scene but retained 85.33 degrees yaw error. Both boundary routes lost that grasp; all preserved the already-completed case. Fixed two-second waiting is diagnostic and has no demonstrated benefit. Twelve regressions and exact model replay pass. LIVE05 #11025 separates waiting, sampling and guard effects. Bulk v1/v2 preflights and v3 episodes are retained on Mint; use LIVE04_BACKUP_RECEIPT.json for verification.
