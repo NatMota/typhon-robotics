@@ -1,0 +1,7 @@
+{
+  "frozen_unix": 1791840970.3852649,
+  "purpose": "Test whether unmodified canonical run_episode reproduces LIVE04 film-demo_0002 under repeated fresh renderer contexts. Triggered by one-pixel input drift in LIVE05 wrapper; no model or metric changes.",
+  "episodes": 2,
+  "reference": "/var/tmp/typhon-live04-boundary-20261012-v3/native_reference/film-demo_0002",
+  "method": "Exact original LIVE04 Policy + canonical benchmark run_episode, same scene, seed, model and camera."
+}

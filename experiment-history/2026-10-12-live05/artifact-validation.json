@@ -1,0 +1,543 @@
+{
+  "episodes": [
+    {
+      "route": "c0_shadow",
+      "scenario": "film-demo_0002",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": {
+        "max_truth_error": 0.0001473335770787454,
+        "per_field": {
+          "object_position_m": 0.0,
+          "object_quat_wxyz": 2.2973087848478712e-18,
+          "object_yaw_rad": 0.0,
+          "object_linear_velocity_m_s": 5.5511151231238894e-18,
+          "object_angular_velocity_rad_s": 4.276420529872813e-16,
+          "eef_position_m": 0.0001473335770787454,
+          "gripper_joint_position_m": 9.267601359941313e-08,
+          "gripper_open": 0.0,
+          "grasp_contact": 0.0,
+          "bilateral_grasp_contact": 0.0,
+          "control_steps": 0.0,
+          "sim_time_s": 0.0
+        },
+        "passed": false,
+        "first_noise_exact": true,
+        "first_prediction_max_error": 0.0
+      }
+    },
+    {
+      "route": "c0_shadow",
+      "scenario": "film-demo_0006",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": {
+        "max_truth_error": 0.0,
+        "per_field": {
+          "object_position_m": 0.0,
+          "object_quat_wxyz": 0.0,
+          "object_yaw_rad": 0.0,
+          "object_linear_velocity_m_s": 0.0,
+          "object_angular_velocity_rad_s": 0.0,
+          "eef_position_m": 0.0,
+          "gripper_joint_position_m": 0.0,
+          "gripper_open": 0.0,
+          "grasp_contact": 0.0,
+          "bilateral_grasp_contact": 0.0,
+          "control_steps": 0.0,
+          "sim_time_s": 0.0
+        },
+        "passed": true,
+        "first_noise_exact": true,
+        "first_prediction_max_error": 0.0
+      }
+    },
+    {
+      "route": "c0_shadow",
+      "scenario": "film-demo_0018",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": {
+        "max_truth_error": 0.0,
+        "per_field": {
+          "object_position_m": 0.0,
+          "object_quat_wxyz": 0.0,
+          "object_yaw_rad": 0.0,
+          "object_linear_velocity_m_s": 0.0,
+          "object_angular_velocity_rad_s": 0.0,
+          "eef_position_m": 0.0,
+          "gripper_joint_position_m": 0.0,
+          "gripper_open": 0.0,
+          "grasp_contact": 0.0,
+          "bilateral_grasp_contact": 0.0,
+          "control_steps": 0.0,
+          "sim_time_s": 0.0
+        },
+        "passed": true,
+        "first_noise_exact": true,
+        "first_prediction_max_error": 0.0
+      }
+    },
+    {
+      "route": "r0_shadow",
+      "scenario": "film-demo_0002",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "r0_shadow",
+      "scenario": "film-demo_0006",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "r0_shadow",
+      "scenario": "film-demo_0018",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "cshort_shadow",
+      "scenario": "film-demo_0002",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "cshort_shadow",
+      "scenario": "film-demo_0006",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "cshort_shadow",
+      "scenario": "film-demo_0018",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "rshort_shadow",
+      "scenario": "film-demo_0002",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "rshort_shadow",
+      "scenario": "film-demo_0006",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "rshort_shadow",
+      "scenario": "film-demo_0018",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "c40_shadow",
+      "scenario": "film-demo_0002",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "c40_shadow",
+      "scenario": "film-demo_0006",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "c40_shadow",
+      "scenario": "film-demo_0018",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "r40_shadow",
+      "scenario": "film-demo_0002",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "r40_shadow",
+      "scenario": "film-demo_0006",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "r40_shadow",
+      "scenario": "film-demo_0018",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "c0_enforce",
+      "scenario": "film-demo_0002",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "c0_enforce",
+      "scenario": "film-demo_0006",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "c0_enforce",
+      "scenario": "film-demo_0018",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "c40_enforce",
+      "scenario": "film-demo_0002",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "c40_enforce",
+      "scenario": "film-demo_0006",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "c40_enforce",
+      "scenario": "film-demo_0018",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "r40_enforce",
+      "scenario": "film-demo_0002",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "r40_enforce",
+      "scenario": "film-demo_0006",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "r40_enforce",
+      "scenario": "film-demo_0018",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "r40_four_enforce",
+      "scenario": "film-demo_0002",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "r40_four_enforce",
+      "scenario": "film-demo_0006",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    },
+    {
+      "route": "r40_four_enforce",
+      "scenario": "film-demo_0018",
+      "score_recomputed": true,
+      "initial_state_matched": true,
+      "steps": 800,
+      "executed_targets_exact": true,
+      "no_skipped_prefix": true,
+      "first_input_noise_prediction_matched": true,
+      "reference_reproduction": null
+    }
+  ],
+  "videos": [
+    {
+      "path": "c0_shadow/film-demo_0006/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "c0_shadow/film-demo_0002/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "c0_shadow/film-demo_0018/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "r0_shadow/film-demo_0002/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "r0_shadow/film-demo_0018/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "r0_shadow/film-demo_0006/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "cshort_shadow/film-demo_0006/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "cshort_shadow/film-demo_0018/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "cshort_shadow/film-demo_0002/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "rshort_shadow/film-demo_0002/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "rshort_shadow/film-demo_0018/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "rshort_shadow/film-demo_0006/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "c40_shadow/film-demo_0006/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "c40_shadow/film-demo_0002/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "c40_shadow/film-demo_0018/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "r40_shadow/film-demo_0002/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "r40_shadow/film-demo_0018/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "r40_shadow/film-demo_0006/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "c0_enforce/film-demo_0006/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "c0_enforce/film-demo_0018/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "c0_enforce/film-demo_0002/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "c40_enforce/film-demo_0002/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "c40_enforce/film-demo_0018/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "c40_enforce/film-demo_0006/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "r40_enforce/film-demo_0006/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "r40_enforce/film-demo_0002/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "r40_enforce/film-demo_0018/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "r40_four_enforce/film-demo_0002/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "r40_four_enforce/film-demo_0018/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "path": "r40_four_enforce/film-demo_0006/rollout.mp4",
+      "passed": true,
+      "stderr": ""
+    }
+  ]
+}

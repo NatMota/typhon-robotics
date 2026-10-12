@@ -1,0 +1,55 @@
+{
+  "scenario_id": "film-demo_0006",
+  "passed_exact_truth_replay": true,
+  "steps": 800,
+  "policy_actions": 776,
+  "truth_differences": [],
+  "chunk_reasons": {
+    "admissible": 26
+  },
+  "tick_reasons": {
+    "admissible": 768,
+    "proposed_target_jump": 8
+  },
+  "first_rejected_chunk": null,
+  "first_rejected_tick": {
+    "type": "tick",
+    "index": 2,
+    "step": 42,
+    "reason": "proposed_target_jump",
+    "first_target_distance_m": 0.13344657445676214,
+    "maximum_target_step_m": 0.13344657445676214,
+    "maximum_measured_joint_speed_rad_s": 1.0870199437135943
+  },
+  "original_outcome": {
+    "model": "v4-m6",
+    "mode": "native",
+    "scenario_id": "film-demo_0006",
+    "task": "feeding",
+    "seed": 7417,
+    "success": false,
+    "pickup": true,
+    "placement_without_yaw": true,
+    "orientation_correct": false,
+    "initial_yaw_gap_deg": 160.52028245896508,
+    "remaining_yaw_error_deg": 85.33158878423161,
+    "yaw_gap_closed_deg": 75.18869367473347,
+    "yaw_fraction_closed": 0.4684061884450925,
+    "initial_position_error_mm": 199.52613321173575,
+    "final_position_error_mm": 11.424590880940235,
+    "peak_lift_mm": 161.65134623248133,
+    "object_displacement_max_mm": 246.39683606065117,
+    "contact_steps": 44,
+    "policy_actions": 776,
+    "simulated_seconds": 40.0,
+    "wall_seconds": 12.58637988800183,
+    "stop_reason": "evaluated",
+    "completion_claim": null,
+    "false_completion": false,
+    "runtime_errors": [],
+    "initial_state_sha256": "d70e2edbd8f6633cf82ae7b78ea1e7fc594bd65d69f11d9c4e5bb2d3408e526a",
+    "source_scenario_sha256": "6f1a114b9d7bf7909299d330fbfc57120bf9751382a70f7fb1fe6506245f789d",
+    "evidence_directory": "/var/tmp/typhon-live04-boundary-20261012-v3/native_reference/film-demo_0006"
+  },
+  "evidence": "Shadow audit does not change the recorded original actions."
+}

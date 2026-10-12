@@ -1,0 +1,120 @@
+{
+  "first_guard_event": {
+    "type": "tick_guard",
+    "step": 42,
+    "policy_step": 2,
+    "origin": "proposal",
+    "identity": {
+      "query": 0,
+      "candidate": 0,
+      "index": 2
+    },
+    "reason": "proposed_target_jump",
+    "first_target_distance_m": 0.13344657445676214,
+    "maximum_target_step_m": 0.13344657445676214,
+    "maximum_measured_joint_speed_rad_s": 1.0870199437135943
+  },
+  "first_trajectory_divergence_index": 2,
+  "trace_prefix_exact_until_guard": true,
+  "native_first_gripper_close_index": 34,
+  "native_first_bilateral_contact_index": 41,
+  "vetoed_reference_steps": [
+    {
+      "index": 2,
+      "raw_target_distance_m": 0.13344657445676214,
+      "executed_eef_displacement_m": 0.019210089123964852,
+      "normalized_translation_command": [
+        1.0,
+        1.0,
+        -1.0
+      ],
+      "maximum_joint_speed_rad_s": 1.0870199437135943
+    },
+    {
+      "index": 3,
+      "raw_target_distance_m": 0.13662547000090303,
+      "executed_eef_displacement_m": 0.020131191923806028,
+      "normalized_translation_command": [
+        1.0,
+        1.0,
+        -1.0
+      ],
+      "maximum_joint_speed_rad_s": 1.2394086022564006
+    },
+    {
+      "index": 4,
+      "raw_target_distance_m": 0.14367739017692188,
+      "executed_eef_displacement_m": 0.02062560795918803,
+      "normalized_translation_command": [
+        1.0,
+        1.0,
+        -1.0
+      ],
+      "maximum_joint_speed_rad_s": 1.3172862897843856
+    },
+    {
+      "index": 5,
+      "raw_target_distance_m": 0.14426002646585312,
+      "executed_eef_displacement_m": 0.0208892181102466,
+      "normalized_translation_command": [
+        1.0,
+        1.0,
+        -1.0
+      ],
+      "maximum_joint_speed_rad_s": 1.385528842667211
+    },
+    {
+      "index": 6,
+      "raw_target_distance_m": 0.1408623822493139,
+      "executed_eef_displacement_m": 0.01959254391143056,
+      "normalized_translation_command": [
+        1.0,
+        1.0,
+        -0.6913520676755525
+      ],
+      "maximum_joint_speed_rad_s": 1.4528254545785595
+    },
+    {
+      "index": 7,
+      "raw_target_distance_m": 0.13534068815081568,
+      "executed_eef_displacement_m": 0.016963147068688688,
+      "normalized_translation_command": [
+        1.0,
+        1.0,
+        -0.4105880471695089
+      ],
+      "maximum_joint_speed_rad_s": 1.4300317105496863
+    },
+    {
+      "index": 8,
+      "raw_target_distance_m": 0.1275926316620343,
+      "executed_eef_displacement_m": 0.014216019494727181,
+      "normalized_translation_command": [
+        0.9047522378939088,
+        1.0,
+        -0.18207036299489054
+      ],
+      "maximum_joint_speed_rad_s": 1.3516007090459514
+    },
+    {
+      "index": 9,
+      "raw_target_distance_m": 0.12311117847194533,
+      "executed_eef_displacement_m": 0.011999097183986692,
+      "normalized_translation_command": [
+        0.7561102050286206,
+        1.0,
+        -0.00326502910666715
+      ],
+      "maximum_joint_speed_rad_s": 1.2639531895911078
+    }
+  ],
+  "late_reseed_placement_criteria": {
+    "position": false,
+    "orientation": false,
+    "marked_face_up": true,
+    "footprint_inside_target": true,
+    "placement_height": true,
+    "released": true,
+    "stable": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "audit": "Geometry of the exact accepted candidate paths shown to LIVE04; no API calls, future simulator outcome scores or new candidate generation.",
+  "metric": "Mean/max per-timepoint projected EEF separation at320px thumbnail size, plus gripper information actually transmitted.",
+  "diagnostic_reference_px": 2,
+  "interpretation": "2px is a display-scale diagnostic, not a psychometric or API-discrimination threshold. Near-overlapping paths do not establish equivalent physical outcome.",
+  "limitations": [
+    "Only tool trajectories were displayed, not ghost arms or simulated object futures",
+    "No independent labels of candidate usefulness",
+    "Prompt gives gripper command atfirst/middle/last, not validated contact",
+    "Need controlled feasible-vs-infeasible calibration before interpreting UNKNOWN as model failure"
+  ]
+}
