@@ -17,10 +17,12 @@ def analyze(root):
     m=read(folder/'metrics.json');ep=read(folder/'episode.json')
     row={k:m[k] for k in ['scenario_id','pickup','placement_without_yaw','initial_yaw_gap_deg','remaining_yaw_error_deg','yaw_gap_closed_deg']}
     row.update(mode=mode,strict_success=m['success'],actions_executed=m['policy_actions'],guard_holds=0,api_selected_chunks=0,activated_chunks=len(ep['inference_measurements']),wall_s=m['wall_seconds'])
-    statehashes[sid].append(m['initial_state_sha256']);assert not m['runtime_errors']
+    statehashes[sid].append(hashlib.sha256(json.dumps(ep['initial_truth'],sort_keys=True,separators=(',',':')).encode()).hexdigest());assert not m['runtime_errors']
+    row.update(square_footprint_inside=ep['evaluation']['criteria']['footprint_inside_target'],position_tolerance_met=ep['evaluation']['criteria']['position'])
    else:
-    m=read(folder/'summary.json');statehashes[sid].append(m['initial_state_sha256'])
+    m=read(folder/'summary.json');statehashes[sid].append(hashlib.sha256(json.dumps(m['initial_truth'],sort_keys=True,separators=(',',':')).encode()).hexdigest())
     row={k:m[k] for k in ['mode','scenario_id','strict_success','pickup','placement_without_yaw','initial_yaw_gap_deg','remaining_yaw_error_deg','yaw_gap_closed_deg','guard_holds','api_selected_chunks','activated_chunks','wall_s']}
+    row.update(square_footprint_inside=m['evaluation']['criteria']['footprint_inside_target'],position_tolerance_met=m['evaluation']['criteria']['position'])
     e=lines(folder/'events.jsonl');re=lines(folder/'ranking/events.jsonl')
     with gzip.open(folder/'execution.jsonl.gz','rt') as f:ex=[json.loads(s) for s in f]
     assert len(ex)==protocol['steps_after_reset']
@@ -71,7 +73,7 @@ def analyze(root):
   'api_results':dict(collections.Counter((r['status']+':'+r['choice']) for r in ranks)),'same_initial_truth_each_route':True,
   'execution_identity_checks':checks,'not_confirmatory':True,'no_new_training':True}
  (root/'validation_summary.json').write_text(json.dumps(summary,indent=2)+'\n')
- cols=['mode','scenario_id','strict_success','pickup','placement_without_yaw','initial_yaw_gap_deg','remaining_yaw_error_deg','yaw_gap_closed_deg','actions_executed','api_selected_chunks','guard_holds','wall_s']
+ cols=['mode','scenario_id','strict_success','pickup','placement_without_yaw','square_footprint_inside','position_tolerance_met','initial_yaw_gap_deg','remaining_yaw_error_deg','yaw_gap_closed_deg','actions_executed','api_selected_chunks','guard_holds','wall_s']
  with (root/'comparisons.csv').open('w') as f:
   w=csv.DictWriter(f,cols,extrasaction='ignore');w.writeheader();w.writerows(rows)
  print(json.dumps({k:summary[k] for k in ['by_route','latency_seconds','api_results','same_initial_truth_each_route']},indent=2))

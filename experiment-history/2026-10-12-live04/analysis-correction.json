@@ -1,0 +1,5 @@
+{
+  "reason": "native and live summaries used different JSON whitespace when hashing initial state",
+  "verification": "all three initial-truth dictionaries equal exactly in every field before standardizing hash serialization",
+  "rollouts_or_scores_changed": false
+}
