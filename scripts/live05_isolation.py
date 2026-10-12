@@ -144,7 +144,7 @@ def episode(route,scenario,policy):
   for i in range(24):
    env.step(np.r_[np.zeros(6),env.last_grip]);truths.append(env.truth());counts['stability_hold']+=1
    if i%2==1:stable.append(env.truth())
-   recorder.finish();attempts=recorder.observed_attempts;recorder=None
+  recorder.finish();attempts=recorder.observed_attempts;recorder=None
   final=env.truth();score=score_episode(initial,final,stable,env.episode_config,attempts);c=score['criteria']
   initial_gap=math.degrees(angle_error(initial['object_yaw_rad'],scenario['config']['task']['target_yaw_rad']))
   contact_lift=any(t['bilateral_grasp_contact'] and t['object_position_m'][2]-initial['object_position_m'][2]>=.07 for t in truths)
