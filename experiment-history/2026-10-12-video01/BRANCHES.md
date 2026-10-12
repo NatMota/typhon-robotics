@@ -32,3 +32,11 @@ Branch: research/video06-motion-audit.
 Report: https://github.com/NatMota/typhon-robotics/blob/research/video06-motion-audit/experiment-history/2026-10-12-video06/REPORT.md
 
 Six phone takes and 342 verified frames. Glyph flow supports 194/222 held frame pairs, including 53 where the old contour lacked motion; 28 remain unsupported. Demo0015 midpoint has real image movement in both cameras. Small held sway is distinct from exact stillness; no strict stationary-held panel qualifies. 28 numeric/provenance files reproduce exactly. No robot-action labels, VLA update or control authority. VIDEO07 #11024 tests native cadence and phase timing. Bulk 204 files / 67,572,407 bytes checksum-verified on Mint.
+
+
+## VIDEO07 — Native cadence
+
+Branch: research/video07-native-cadence.
+Report: https://github.com/NatMota/typhon-robotics/blob/research/video07-native-cadence/experiment-history/2026-10-12-video07/REPORT.md
+
+969 native frames, 342 identical query frames. Held pair support 194/222 to 212/222; 0.6s tracks 104/162 to 138/162, with one stationary-control support loss. Extract motion before temporal abstraction, retaining unknowns. Coarse phase notes are not robot-action labels. No training or controller change. Bulk 1,128 files / 205,661,664 bytes SHA-verified on Mint. Next independent experiment: LIVE04 #11014 delayed candidate handoff.
