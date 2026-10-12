@@ -1,8 +1,8 @@
-# LIVE09 — Decisions over prepared blue-ghost and future-RGB candidates
+# LIVE09 — Repeat of R10 blue-ghost and future-RGB Decisions
 
 Actual future object images improved the conditional quality of selected motions on the six-state primary panel, but the critic abstained frequently, was sensitive to candidate order, and still selected proposals from the unsuitable held-brick state. It is not qualified for control authority.
 
-This completes the API portion previously left unrun in R10a/R10. The original zero-call reports and artifacts remain unchanged; this new run is separately versioned.
+**Provenance correction:** R10 had already completed the same panel earlier on 12 October. LIVE09 is a repeat, with all 32 choices and 32 categorical-reason responses matching that batch. It adds no independent states or robot rollouts. See [the correction and repeatability audit](REPEAT_AUDIT.md). Original preparation artifacts and both batches remain preserved.
 
 ## Frozen protocol and inputs
 

@@ -1,4 +1,4 @@
-"""Finish frozen R10 visual critic calls in a new LIVE09 archive, never control."""
+"""Repeat frozen R10 visual critic calls in a new LIVE09 archive, never control."""
 import sys,os,json,time,shutil,hashlib,subprocess
 from pathlib import Path
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R/'scripts'))
