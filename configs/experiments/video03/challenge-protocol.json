@@ -1,0 +1,9 @@
+{
+  "schema": "video03-hand-present-challenge-v1",
+  "post_hoc": true,
+  "selection": "For each of the three fixed validation takes, select earliest primary-view hand-detected unknown between initial not-held and first held interval; select latest primary-view hand-detected unknown between last held and final not-held interval. No prediction score participates in selection.",
+  "presentation": "Paired raw views at -0.3,0,+0.3s; no scores/labels shown to agent reviewer. Review can abstain. Future frames are for offline annotation only, never model input.",
+  "purpose": "Test hand-presence shortcut on existing unknown transition frames. Agent visual review is not new human confirmation or contact sensor ground truth.",
+  "model_change": false,
+  "refitting": false
+}
