@@ -1,0 +1,6 @@
+{
+  "before_model_load": true,
+  "evaluated_episodes": 0,
+  "reason": "timing helper imported scipy inside torch-only worker",
+  "fix": "parent simulation environment performs unchanged reconstruct_20hz; no dependency installation"
+}

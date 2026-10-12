@@ -14,7 +14,6 @@ def main():
         from transformers import AutoProcessor
         from supervisor.adaptation.m7_training import load_checkpoint,generate_requested,HISTORY_AUDIT
         from supervisor.adaptation.m7_eval_worker import prepare_inputs
-        from supervisor.adaptation.m7_timing import reconstruct_20hz
         t=time.perf_counter();model,projection,restored=load_checkpoint(a.checkpoint,ROOT/'.cache-xvla/checkpoint')
         config=restored['config'];assert config['condition']=='crosshair' and config['history_mode']=='sparse' and restored['domain_id']==29
         metadata=json.loads(json.dumps({k:restored[k] for k in ['schema','base_revision','step','config']},default=str));del restored
@@ -44,9 +43,7 @@ def main():
                         timed=local(model,projection,inputs,payload['request'],held,valid,steps=10)
                     torch.cuda.synchronize();assert proxy.calls==1
                     latencies.append(time.perf_counter()-begin);timed_all.append(timed);noise_all.append(noise.cpu().numpy())
-                actions=np.stack([reconstruct_20hz(v,oracle_replay=False)['targets'] for v in timed_all]).astype(np.float32)
-                assert actions.shape==(len(timed_all),30,20)
-                reply({'timed':timed_all[0],'timed_candidates':timed_all,'actions':actions,'initial_noise':np.concatenate(noise_all),
+                reply({'timed':timed_all[0],'timed_candidates':timed_all,'initial_noise':np.concatenate(noise_all),
                     'inference_s':sum(latencies),'candidate_inference_s':latencies,'preprocess_and_inference_s':time.perf_counter()-start,
                     'image_mask':inputs['image_mask'].cpu().tolist(),'input_shapes':{k:list(v.shape) for k,v in inputs.items()},
                     'history_times_s':inputs.get('history_times_s',torch.tensor([])).cpu().tolist(),'history_camera_ids':inputs.get('history_camera_ids',torch.tensor([])).cpu().tolist(),

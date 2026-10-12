@@ -16,7 +16,7 @@ from supervisor.planning.decisions_ranker import DecisionsRanker,ENDPOINT,MODEL
 from supervisor.planning.m7_service import ServiceConfig
 from supervisor.planning.boundary_handoff import held_target,boundary_actions
 from typhon_ab_evaluate import metrics as native_metrics
-OUT=Path('/var/tmp/typhon-live04-boundary-20261012')
+OUT=Path('/var/tmp/typhon-live04-boundary-20261012-v2')
 CKPT=Path('/var/tmp/humanoid-m7-checkpoints-20261009/v4-m6.pt')
 SOURCE=Path('/var/tmp/typhon-film-feeding-20261011-v3')
 BUDGET=2.;STEPS=800;COUNT=4
@@ -28,6 +28,10 @@ def sha(p):
 def pack(p,obj):
  with gzip.open(p,'wb',compresslevel=1) as f:pickle.dump(obj,f,protocol=4)
 def read(p):return json.loads(Path(p).read_text())
+def decode(result):
+ from supervisor.adaptation.m7_timing import reconstruct_20hz
+ result['actions']=np.stack([reconstruct_20hz(t,oracle_replay=False)['targets'] for t in result['timed_candidates']]).astype(np.float32)
+ return result
 def digest(x):return hashlib.sha256(json.dumps(x,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 
 class Policy(M7Policy):
@@ -75,9 +79,9 @@ def qualify(policy):
  with gzip.open(ref/'inputs'/state/'payload.pkl.gz','rb') as f:payload=pickle.load(f)
  expected=np.load(ref/'v4-m6'/state/'seed61601/actions.npz')['actions']
  XvlaPolicy._request(policy,{'op':'reset','seed':61601})
- single=XvlaPolicy._request(policy,copy.deepcopy(payload))
+ single=decode(XvlaPolicy._request(policy,copy.deepcopy(payload)))
  req=copy.deepcopy(payload);req['candidate_seeds']=[61601,61602,61603,61604]
- multiple=XvlaPolicy._request(policy,req)
+ multiple=decode(XvlaPolicy._request(policy,req))
  np.testing.assert_array_equal(single['initial_noise'][0],np.load(ref/'noise/seed61601.npy')[0])
  np.testing.assert_allclose(single['actions'][0],expected,atol=1e-6,rtol=0)
  np.testing.assert_array_equal(single['actions'][0],multiple['actions'][0])
@@ -108,7 +112,7 @@ def live_run(mode,scenario,policy):
    now=time.monotonic();ticks.append({'step':env.steps,'wall_s':now-started,'lateness_s':max(0.,now-next_tick)});next_tick=max(next_tick+.05,now)
    obs=env.observe();context=scenario['scenario_id']+':'+str(generation)
    if inflight is not None and inflight['future'].done():
-    result=inflight['future'].result()
+    result=decode(inflight['future'].result())
     pack(folder/f"proposal-{inflight['index']:04d}.pkl.gz",{'payload':inflight['payload'],'response':result})
     event('proposals',index=inflight['index'],generation_s=now-inflight['created'],inference_s=result['inference_s'],preprocess_inference_s=result['preprocess_and_inference_s'])
     if packet is not None and packet['index']==inflight['index']:
