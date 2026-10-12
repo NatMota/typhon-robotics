@@ -25,3 +25,9 @@ A backup is complete only when a receipt confirms transferred file counts and SH
 4. Recreate the documented Python environment, configure read-only paths to data and model caches, and run into a new output directory.
 
 Do not put credentials, environments, model files or bulk media into Git. `.gitignore` excludes common forms; explicit file selection is still required. GitHub rejects regular Git files over 100 MiB; LFS is a separate storage service with per-file and billing limits. We are not enabling paid LFS here.
+
+## Verified 12 October backup
+
+The new OST sweep has 4,907 files (29,566,551,543 bytes) verified byte-for-byte on Mint, including all three new checkpoints. VIDEO01 has 622 verified input files (137,240,303 bytes), preserving raw/curated/excluded M0 media, plus 25 verified extraction/code artifacts (27,958,500 bytes). The code archive passed a bare-clone restore and Git fsck. Read the receipts and per-file manifests in `experiment-history/2026-10-12-ost-sweep/backup/`. No Powerglide source files were removed.
+
+Powerglide reservation AAE1BB6A was checked against the live UCL service on 12 October: scheduled end is Tuesday 13 October 2026 at 01:00 BST. This is the access deadline, not a guarantee about file retention.

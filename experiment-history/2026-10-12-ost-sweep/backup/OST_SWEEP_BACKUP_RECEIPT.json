@@ -1,0 +1,28 @@
+{
+  "verified": true,
+  "files": 4907,
+  "bytes": 29566551543,
+  "source": "powerglide:/var/tmp/typhon-ost-sweep-20261012",
+  "destination": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012",
+  "manifest_sha256": "00db871526531a80f2b3fda4ad90651b327c47f8c77eee1e488291b737133da4",
+  "verified_unix_s": 1791805533.1028464,
+  "models": [
+    {
+      "path": "goal-grounding/train-fixed/step3000.pt",
+      "sha256": "007892426a061fe903e188d41f26b7432830becdfd583435e3373df728029fdd",
+      "bytes": 10765961010
+    },
+    {
+      "path": "goal-grounding/train-varied/step3000.pt",
+      "sha256": "d5449244d96e55e60c3342af9fffe2ae64362b74cdf9c3d41e39b74995c9bcdb",
+      "bytes": 3729340908
+    },
+    {
+      "path": "recovery-learning/train-recovery/step3000.pt",
+      "sha256": "5f3e4dde3e664d0a384a58742262380164902aafea75ee7560fa5b091c0870e4",
+      "bytes": 3729341228
+    }
+  ],
+  "mac_bulk_storage": false,
+  "source_files_deleted": false
+}
