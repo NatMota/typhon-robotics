@@ -1,0 +1,1193 @@
+{
+  "schema": "m7-real-held-crosshair-v1",
+  "source_manifest_sha256": "8f15b6a4b2afea6f6ea949194a2ef83e8814b9fdfd986caee6e1e5e93928927a",
+  "review_sha256": "40a935b553086bcf97702be0e62fc1b35e71e8d4e8e0f2d96e1c7831194f5685",
+  "detector_sha256": "3a9b9d11bbd80059be6debed931756583a4ea5b4406fd432cfd347b02bfa4a46",
+  "script_sha256": "3e68979741e7be0269899b077390a2433ee8f0472a6e9b761686410eea3e5f9b",
+  "renderer_sha256": "87b4fc931730191ecef4c9356fef7de3b04300dec19fdf5de8718d75daa3cf65",
+  "style_version": "green-extruded-four-arm-v1",
+  "raw_and_frozen_sources_unchanged": true,
+  "training_started": false,
+  "visual_style": "four thick neon-green extruded arms outside observed block bbox; fixed camera-plane style, not calibrated 3D",
+  "unknown_rule": "held_manipulation=null is rendered OFF; OFF is not a negative label",
+  "source_type": "real personally recorded phone-video derivatives, not simulator RGB",
+  "videos": [
+    {
+      "demo_id": "demo_0001",
+      "view": "camera_a",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0001/camera_a.mp4",
+      "source_clip_sha256": "2f91c0f8ef58ac3f90e3962a2d0fbe4ba5859639bf1b6ca66fe62cafef38e01e",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0001/camera_a.mp4",
+        "clip_transform": "rotate_90_degrees_counterclockwise",
+        "end_s": 12.75,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+        "recording_id": "recording_0005",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+        "start_s": 0
+      },
+      "frame_count": 383,
+      "fps": "30",
+      "counts": {
+        "off": 360,
+        "held_false": 180,
+        "held_unknown": 180,
+        "on": 23,
+        "held_true": 23
+      },
+      "output": "demo_0001/camera_a-held-crosshair.mp4",
+      "output_sha256": "26c35240883a948402e521810505242f2279a8f6a83645370d79a4fd6c550fb7",
+      "sidecar": "demo_0001/camera_a-held-trajectory.csv",
+      "sidecar_sha256": "cd9533131575297adcea6be8338460d962b6c4cffefe432c3fb0eed14ac50bb0",
+      "samples": {
+        "OFF-KNOWN": "camera_a-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_a-OFF-UNKNOWN-f0075.jpg",
+        "ON": "camera_a-ON-f0180.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0001",
+      "view": "camera_b",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0001/camera_b.mp4",
+      "source_clip_sha256": "dff5c95bac5dd5fa668b420a13c5b24a4ef04e47a75509d328edfe5238d7739f",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0001/camera_b.mp4",
+        "clip_transform": "none",
+        "end_s": 17.33,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+        "recording_id": "recording_0001",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+        "start_s": 4.58
+      },
+      "frame_count": 383,
+      "fps": "30",
+      "counts": {
+        "off": 382,
+        "held_false": 180,
+        "held_unknown": 180,
+        "held_true": 23,
+        "true_but_localization_unknown": 22,
+        "on": 1
+      },
+      "output": "demo_0001/camera_b-held-crosshair.mp4",
+      "output_sha256": "604c5f3e696c3fdd3a25f241a1325c22955ea42e8650287621deeaa72e71069f",
+      "sidecar": "demo_0001/camera_b-held-trajectory.csv",
+      "sidecar_sha256": "2b03e863c93147f33149c66176ed70e549e744868acb2e39c6a666f601992861",
+      "samples": {
+        "OFF-KNOWN": "camera_b-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_b-OFF-UNKNOWN-f0075.jpg",
+        "ON": "camera_b-ON-f0182.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0002",
+      "view": "camera_a",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0002/camera_a.mp4",
+      "source_clip_sha256": "b387ddb0b0929bc41609208c306e8bdfd022974305ce75ba824c69bbbaabed1a",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0002/camera_a.mp4",
+        "clip_transform": "rotate_90_degrees_counterclockwise",
+        "end_s": 29.15,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+        "recording_id": "recording_0005",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+        "start_s": 20.85
+      },
+      "frame_count": 249,
+      "fps": "30",
+      "counts": {
+        "off": 219,
+        "held_false": 129,
+        "held_unknown": 90,
+        "on": 30,
+        "held_true": 30
+      },
+      "output": "demo_0002/camera_a-held-crosshair.mp4",
+      "output_sha256": "90551ed4d879451ada46f565cad113afb7abfce060c72c85b9500629d3f6e2d4",
+      "sidecar": "demo_0002/camera_a-held-trajectory.csv",
+      "sidecar_sha256": "c4ab6e1ee95a7022e67f220de6514dd42c9b7964f68847502f5185ed5fe2a287",
+      "samples": {
+        "OFF-KNOWN": "camera_a-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_a-OFF-UNKNOWN-f0060.jpg",
+        "ON": "camera_a-ON-f0105.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0002",
+      "view": "camera_b",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0002/camera_b.mp4",
+      "source_clip_sha256": "cc30ad71d2a192f743305bc67a3a3bc6f117efcbb8a0de14f76290904a225f3b",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0002/camera_b.mp4",
+        "clip_transform": "none",
+        "end_s": 33.73,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+        "recording_id": "recording_0001",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+        "start_s": 25.43
+      },
+      "frame_count": 249,
+      "fps": "30",
+      "counts": {
+        "off": 236,
+        "held_false": 129,
+        "held_unknown": 90,
+        "held_true": 30,
+        "true_but_localization_unknown": 17,
+        "on": 13
+      },
+      "output": "demo_0002/camera_b-held-crosshair.mp4",
+      "output_sha256": "7f58e797451264c7c155fb90cdd19793e0e4397a93b1be0ee298101f517305ae",
+      "sidecar": "demo_0002/camera_b-held-trajectory.csv",
+      "sidecar_sha256": "828458cb8577a5d992a109fdc850612acb449bfe0854e63108cd4c82afb900db",
+      "samples": {
+        "OFF-KNOWN": "camera_b-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_b-OFF-UNKNOWN-f0060.jpg",
+        "ON": "camera_b-ON-f0110.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0003",
+      "view": "camera_a",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0003/camera_a.mp4",
+      "source_clip_sha256": "9d2b1ef275474e753e31d569ed1493bb0e15dd1e389cba768d1b4352cff6e3c8",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0003/camera_a.mp4",
+        "clip_transform": "rotate_90_degrees_counterclockwise",
+        "end_s": 47.69,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+        "recording_id": "recording_0005",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+        "start_s": 40.08
+      },
+      "frame_count": 229,
+      "fps": "30",
+      "counts": {
+        "off": 199,
+        "held_false": 87,
+        "held_unknown": 112,
+        "on": 30,
+        "held_true": 30
+      },
+      "output": "demo_0003/camera_a-held-crosshair.mp4",
+      "output_sha256": "e9b0cc6a80c2d80ac25c60c01ad71e83bc2a80d70be8d5e41d8b3e6871b00851",
+      "sidecar": "demo_0003/camera_a-held-trajectory.csv",
+      "sidecar_sha256": "d58c6f1a3e4b7cee52f146ddfa7dba1addf7c9df6da46c210f33ab3d99f341e5",
+      "samples": {
+        "OFF-KNOWN": "camera_a-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_a-OFF-UNKNOWN-f0038.jpg",
+        "ON": "camera_a-ON-f0090.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0003",
+      "view": "camera_b",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0003/camera_b.mp4",
+      "source_clip_sha256": "626dcc68c2adda74fdf6762961b7746a85c60ef6b53cef7677ca5d3ce84a2803",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0003/camera_b.mp4",
+        "clip_transform": "none",
+        "end_s": 52.269999999999996,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+        "recording_id": "recording_0001",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+        "start_s": 44.66
+      },
+      "frame_count": 229,
+      "fps": "30",
+      "counts": {
+        "off": 209,
+        "held_false": 87,
+        "held_unknown": 112,
+        "held_true": 30,
+        "true_but_localization_unknown": 10,
+        "on": 20
+      },
+      "output": "demo_0003/camera_b-held-crosshair.mp4",
+      "output_sha256": "839aab620be97e0c24e1dda7435339e7313e2cd856b6485214cfd740b10f93dc",
+      "sidecar": "demo_0003/camera_b-held-trajectory.csv",
+      "sidecar_sha256": "f58fc77ded22c58d9bd8d03c9aaae9074a6673c3abcd04eb9d8092d4fe233575",
+      "samples": {
+        "OFF-KNOWN": "camera_b-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_b-OFF-UNKNOWN-f0038.jpg",
+        "ON": "camera_b-ON-f0095.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0004",
+      "view": "camera_a",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0004/camera_a.mp4",
+      "source_clip_sha256": "be5bb1644348e79edd2de8d47718434aa2d87f8680dbd7dcef8958bfae8765dd",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0004/camera_a.mp4",
+        "clip_transform": "rotate_90_degrees_counterclockwise",
+        "end_s": 63.66,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+        "recording_id": "recording_0005",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+        "start_s": 55.6
+      },
+      "frame_count": 242,
+      "fps": "30",
+      "counts": {
+        "off": 228,
+        "held_false": 85,
+        "held_unknown": 134,
+        "held_true": 23,
+        "true_but_localization_unknown": 9,
+        "on": 14
+      },
+      "output": "demo_0004/camera_a-held-crosshair.mp4",
+      "output_sha256": "ce1bd76ae1df604695a3ef35934ea8dc117b7a2fb5723530071d539c056ce85e",
+      "sidecar": "demo_0004/camera_a-held-trajectory.csv",
+      "sidecar_sha256": "a79ebca75a2b0daa8bf74c31158eb074471aad5c3d1cba38a7e9f98d0901aa46",
+      "samples": {
+        "OFF-KNOWN": "camera_a-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_a-OFF-UNKNOWN-f0038.jpg",
+        "ON": "camera_a-ON-f0125.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0004",
+      "view": "camera_b",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0004/camera_b.mp4",
+      "source_clip_sha256": "f174876352a3ff63911b524257bb8e744fbdc454b0e3b796ce0b28cff3572a58",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0004/camera_b.mp4",
+        "clip_transform": "none",
+        "end_s": 68.24,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+        "recording_id": "recording_0001",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+        "start_s": 60.18
+      },
+      "frame_count": 242,
+      "fps": "30",
+      "counts": {
+        "off": 234,
+        "held_false": 85,
+        "held_unknown": 134,
+        "held_true": 23,
+        "true_but_localization_unknown": 15,
+        "on": 8
+      },
+      "output": "demo_0004/camera_b-held-crosshair.mp4",
+      "output_sha256": "6bf04f98c48b58d8b4a41d0849ca16cd2aab93caec54ede40198f031c13320a3",
+      "sidecar": "demo_0004/camera_b-held-trajectory.csv",
+      "sidecar_sha256": "bb95b3139441dfad4be4fae8b9e3c91d4fc33e1ab0d375f0a015adfd8cd90a59",
+      "samples": {
+        "OFF-KNOWN": "camera_b-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_b-OFF-UNKNOWN-f0038.jpg",
+        "ON": "camera_b-ON-f0134.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0005",
+      "view": "camera_a",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0005/camera_a.mp4",
+      "source_clip_sha256": "3289f5ca617aadb7a140050c656e807f220fd5202e1deea5ce258f3c17d396bc",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0005/camera_a.mp4",
+        "clip_transform": "rotate_90_degrees_counterclockwise",
+        "end_s": 77.29,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+        "recording_id": "recording_0005",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+        "start_s": 69.47
+      },
+      "frame_count": 235,
+      "fps": "30",
+      "counts": {
+        "off": 212,
+        "held_false": 100,
+        "held_unknown": 112,
+        "on": 23,
+        "held_true": 23
+      },
+      "output": "demo_0005/camera_a-held-crosshair.mp4",
+      "output_sha256": "3c472b88e428312eae24d0db3959311530e8a92cc11ebd5cbead3c7ff5076cee",
+      "sidecar": "demo_0005/camera_a-held-trajectory.csv",
+      "sidecar_sha256": "09998a1e2d573882797a36e5254d7cf74428a647aa194ecda64956464a5616a9",
+      "samples": {
+        "OFF-KNOWN": "camera_a-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_a-OFF-UNKNOWN-f0038.jpg",
+        "ON": "camera_a-ON-f0105.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0005",
+      "view": "camera_b",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0005/camera_b.mp4",
+      "source_clip_sha256": "36278a8ca1d95b6b05156e9ac54bea911906aa1051b783e3336972982c8127a2",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0005/camera_b.mp4",
+        "clip_transform": "none",
+        "end_s": 81.87,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+        "recording_id": "recording_0001",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+        "start_s": 74.05
+      },
+      "frame_count": 235,
+      "fps": "30",
+      "counts": {
+        "off": 212,
+        "held_false": 100,
+        "held_unknown": 112,
+        "on": 23,
+        "held_true": 23
+      },
+      "output": "demo_0005/camera_b-held-crosshair.mp4",
+      "output_sha256": "24022d7b4e1486dcf78360be0e7ed672fe2ed4fbb04db3cce44ebe3a3ca52ca3",
+      "sidecar": "demo_0005/camera_b-held-trajectory.csv",
+      "sidecar_sha256": "5a6aa9f12e86f1648bfc44a4f5ea189c977c727df3efa12ec83edae692b5cb7c",
+      "samples": {
+        "OFF-KNOWN": "camera_b-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_b-OFF-UNKNOWN-f0038.jpg",
+        "ON": "camera_b-ON-f0105.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0006",
+      "view": "camera_a",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0006/camera_a.mp4",
+      "source_clip_sha256": "85a0b76fbd4ef9c33f9b953b59e1796f95a78f75cc1dfa9df03c52467c513877",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0006/camera_a.mp4",
+        "clip_transform": "rotate_90_degrees_counterclockwise",
+        "end_s": 90.62,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+        "recording_id": "recording_0005",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+        "start_s": 82.95
+      },
+      "frame_count": 231,
+      "fps": "30",
+      "counts": {
+        "off": 208,
+        "held_false": 96,
+        "held_unknown": 112,
+        "on": 23,
+        "held_true": 23
+      },
+      "output": "demo_0006/camera_a-held-crosshair.mp4",
+      "output_sha256": "c06782a1011ee8f9bf7076488ff8411efc2d763f99c0416ffd61b64b1f4cdbfa",
+      "sidecar": "demo_0006/camera_a-held-trajectory.csv",
+      "sidecar_sha256": "c8409f86264428985958dc09aabd824ef6680a598f8e5d88a9e3377e1b3d3972",
+      "samples": {
+        "OFF-KNOWN": "camera_a-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_a-OFF-UNKNOWN-f0045.jpg",
+        "ON": "camera_a-ON-f0090.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0006",
+      "view": "camera_b",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0006/camera_b.mp4",
+      "source_clip_sha256": "0ac39c4e941e699a55aedbc41518de35a1a565b0af0b880080cc9fc390d5e071",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0006/camera_b.mp4",
+        "clip_transform": "none",
+        "end_s": 95.2,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+        "recording_id": "recording_0001",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+        "start_s": 87.53
+      },
+      "frame_count": 231,
+      "fps": "30",
+      "counts": {
+        "off": 225,
+        "held_false": 96,
+        "held_unknown": 112,
+        "held_true": 23,
+        "true_but_localization_unknown": 17,
+        "on": 6
+      },
+      "output": "demo_0006/camera_b-held-crosshair.mp4",
+      "output_sha256": "f89c217bf98a1d3dfb0c82d22c3c70ac4768d7fb7c95a00055e92cdbef374e75",
+      "sidecar": "demo_0006/camera_b-held-trajectory.csv",
+      "sidecar_sha256": "6af7a8044e69a6e61246ac6ebe95d266229ca466853d4bc4dfb8720e00d42b7e",
+      "samples": {
+        "OFF-KNOWN": "camera_b-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_b-OFF-UNKNOWN-f0045.jpg",
+        "ON": "camera_b-ON-f0102.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0007",
+      "view": "camera_a",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0007/camera_a.mp4",
+      "source_clip_sha256": "61e679e9a24745c6051fd2e199f1aff9a9427cea9ab6f1ca12e6dae90844f777",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0007/camera_a.mp4",
+        "clip_transform": "rotate_90_degrees_counterclockwise",
+        "end_s": 12.77,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.50.mp4",
+        "recording_id": "recording_0007",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "c387aff4b2ee77cb56ce9933ffee0e5684046513cda1cc3a1b212652a288064a",
+        "start_s": 5.17
+      },
+      "frame_count": 228,
+      "fps": "30",
+      "counts": {
+        "off": 213,
+        "held_false": 90,
+        "held_unknown": 123,
+        "on": 15,
+        "held_true": 15
+      },
+      "output": "demo_0007/camera_a-held-crosshair.mp4",
+      "output_sha256": "831339a5a22bbb4ea9a1c25680ba2048a7662f129777328ed02ac2633fc345a1",
+      "sidecar": "demo_0007/camera_a-held-trajectory.csv",
+      "sidecar_sha256": "40a19185366dea0edccc6d55201fb9a21766d2dd3fd8d0f755c64cfb14f16664",
+      "samples": {
+        "OFF-KNOWN": "camera_a-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_a-OFF-UNKNOWN-f0030.jpg",
+        "ON": "camera_a-ON-f0098.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0007",
+      "view": "camera_b",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0007/camera_b.mp4",
+      "source_clip_sha256": "0f3491c8aaa8c8cde9adf24e826d4f00d04d8a14977aa58a67adf3e0bcb4b4d0",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0007/camera_b.mp4",
+        "clip_transform": "none",
+        "end_s": 10.33,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.26.mp4",
+        "recording_id": "recording_0002",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "8afb4b0796615f56fba8fc1382ab9f047ad10585e32e356836ef5d3d61786cde",
+        "start_s": 2.73
+      },
+      "frame_count": 228,
+      "fps": "30",
+      "counts": {
+        "off": 214,
+        "held_false": 90,
+        "held_unknown": 123,
+        "on": 14,
+        "held_true": 15,
+        "true_but_localization_unknown": 1
+      },
+      "output": "demo_0007/camera_b-held-crosshair.mp4",
+      "output_sha256": "28562913ebb9d0d9406183d985382acd7e151e1a0698aca89a398351b81681c6",
+      "sidecar": "demo_0007/camera_b-held-trajectory.csv",
+      "sidecar_sha256": "7b9eaa1221afb3db58d793f58fb33407c8ed5648d076c7bf4e0145dabc8ac7a6",
+      "samples": {
+        "OFF-KNOWN": "camera_b-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_b-OFF-UNKNOWN-f0030.jpg",
+        "ON": "camera_b-ON-f0098.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0009",
+      "view": "camera_a",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0009/camera_a.mp4",
+      "source_clip_sha256": "8cda58bd9e85e20f12aa9ca12a9f6e323468d6dea1fa7e12d8d346b52b4b6860",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0009/camera_a.mp4",
+        "clip_transform": "rotate_90_degrees_counterclockwise",
+        "end_s": 26.23,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.50.mp4",
+        "recording_id": "recording_0007",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "c387aff4b2ee77cb56ce9933ffee0e5684046513cda1cc3a1b212652a288064a",
+        "start_s": 19.18
+      },
+      "frame_count": 212,
+      "fps": "30",
+      "counts": {
+        "off": 197,
+        "held_false": 85,
+        "held_unknown": 112,
+        "on": 15,
+        "held_true": 15
+      },
+      "output": "demo_0009/camera_a-held-crosshair.mp4",
+      "output_sha256": "5bbeaa1154dd342abd51d9059708f482a34a5e1c535150719751b7b313f568b0",
+      "sidecar": "demo_0009/camera_a-held-trajectory.csv",
+      "sidecar_sha256": "7beb915f9a76c0ae04e1b0a414ce5805ea6858b3da60fbecdced28c621119c01",
+      "samples": {
+        "OFF-KNOWN": "camera_a-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_a-OFF-UNKNOWN-f0038.jpg",
+        "ON": "camera_a-ON-f0098.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0009",
+      "view": "camera_b",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0009/camera_b.mp4",
+      "source_clip_sha256": "b9f0b4e730d779b8c1b1613dcbe13c905da8302bc692f1810095bb175ac24422",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0009/camera_b.mp4",
+        "clip_transform": "none",
+        "end_s": 23.79,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.26.mp4",
+        "recording_id": "recording_0002",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "8afb4b0796615f56fba8fc1382ab9f047ad10585e32e356836ef5d3d61786cde",
+        "start_s": 16.74
+      },
+      "frame_count": 212,
+      "fps": "30",
+      "counts": {
+        "off": 204,
+        "held_false": 85,
+        "held_unknown": 112,
+        "on": 8,
+        "held_true": 15,
+        "true_but_localization_unknown": 7
+      },
+      "output": "demo_0009/camera_b-held-crosshair.mp4",
+      "output_sha256": "de198127a274cca32660cad17c63faa2085e03574986297ce87a7731281027c3",
+      "sidecar": "demo_0009/camera_b-held-trajectory.csv",
+      "sidecar_sha256": "ccdf7893ff1e8ad6430d9448a13fe7ee9a7cbdb690979cf4d3d4676673987103",
+      "samples": {
+        "OFF-KNOWN": "camera_b-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_b-OFF-UNKNOWN-f0038.jpg",
+        "ON": "camera_b-ON-f0098.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0011",
+      "view": "camera_a",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0011/camera_a.mp4",
+      "source_clip_sha256": "016108cb70f3bc05dba6a9f096721badb49d129c6e2e680ffbef73a9be545f7a",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0011/camera_a.mp4",
+        "clip_transform": "rotate_90_degrees_counterclockwise",
+        "end_s": 38.289967,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.50.mp4",
+        "recording_id": "recording_0007",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "c387aff4b2ee77cb56ce9933ffee0e5684046513cda1cc3a1b212652a288064a",
+        "start_s": 32.3
+      },
+      "frame_count": 180,
+      "fps": "30",
+      "counts": {
+        "off": 165,
+        "held_false": 67,
+        "held_unknown": 98,
+        "on": 15,
+        "held_true": 15
+      },
+      "output": "demo_0011/camera_a-held-crosshair.mp4",
+      "output_sha256": "5c49bd1de486a1ea267c5a6653755f82345d5b3762c9742d36aca11221bcd769",
+      "sidecar": "demo_0011/camera_a-held-trajectory.csv",
+      "sidecar_sha256": "d75489328c599b3a5aa53f6420b5082a4d9049f9fcabf8cd4e306bb025a4448a",
+      "samples": {
+        "OFF-KNOWN": "camera_a-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_a-OFF-UNKNOWN-f0030.jpg",
+        "ON": "camera_a-ON-f0075.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0011",
+      "view": "camera_b",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0011/camera_b.mp4",
+      "source_clip_sha256": "049b1be7a01d8503daa70fb3c177308c01c61451bed398ca2738d9f45295d2fb",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0011/camera_b.mp4",
+        "clip_transform": "none",
+        "end_s": 35.849967,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.26.mp4",
+        "recording_id": "recording_0002",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "8afb4b0796615f56fba8fc1382ab9f047ad10585e32e356836ef5d3d61786cde",
+        "start_s": 29.859999999999996
+      },
+      "frame_count": 180,
+      "fps": "30",
+      "counts": {
+        "off": 174,
+        "held_false": 67,
+        "held_unknown": 98,
+        "held_true": 15,
+        "true_but_localization_unknown": 9,
+        "on": 6
+      },
+      "output": "demo_0011/camera_b-held-crosshair.mp4",
+      "output_sha256": "0584886fa5b479ba36cb2f35b740ba07aab44351fe374901c57d8587afbf3d61",
+      "sidecar": "demo_0011/camera_b-held-trajectory.csv",
+      "sidecar_sha256": "680e3a3977f6a5eec5c317e8466e35359a5de42fcd43cfcaeda44e7f1a6db50d",
+      "samples": {
+        "OFF-KNOWN": "camera_b-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_b-OFF-UNKNOWN-f0030.jpg",
+        "ON": "camera_b-ON-f0079.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0012",
+      "view": "camera_a",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0012/camera_a.mp4",
+      "source_clip_sha256": "898925fbd4ac03fdbeb0b61862f3d5e380f1e6faf0ef09647627251e769d51ac",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0012/camera_a.mp4",
+        "clip_transform": "rotate_90_degrees_counterclockwise",
+        "end_s": 13.44,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.51.mp4",
+        "recording_id": "recording_0008",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "f78f7b81ae9791c8bf5be18a0f1840f038cf227be4fb53ee5d3d663f401d7855",
+        "start_s": 3.38
+      },
+      "frame_count": 302,
+      "fps": "30",
+      "counts": {
+        "off": 242,
+        "held_false": 115,
+        "held_unknown": 127,
+        "on": 60,
+        "held_true": 60
+      },
+      "output": "demo_0012/camera_a-held-crosshair.mp4",
+      "output_sha256": "3eaa7dcad3d3997337096c2148a7c38b503e4d333993a35a4b8a3de1660ef598",
+      "sidecar": "demo_0012/camera_a-held-trajectory.csv",
+      "sidecar_sha256": "a34e2fbd0f3d59de7ab57e7c6c502b0a524edbc11e26b76a4440d891c260e763",
+      "samples": {
+        "OFF-KNOWN": "camera_a-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_a-OFF-UNKNOWN-f0038.jpg",
+        "ON": "camera_a-ON-f0105.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0012",
+      "view": "camera_b",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0012/camera_b.mp4",
+      "source_clip_sha256": "0b329630214f94a0d4016652caa731e7d896b76024977fba47a5e0dad67442e0",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0012/camera_b.mp4",
+        "clip_transform": "none",
+        "end_s": 12.03,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.41.mp4",
+        "recording_id": "recording_0003",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "f3d665338680d107c0c261b21b5f01ca0ae1eddf7e00f968984b43026dbb5be1",
+        "start_s": 1.97
+      },
+      "frame_count": 302,
+      "fps": "30",
+      "counts": {
+        "off": 252,
+        "held_false": 115,
+        "held_unknown": 127,
+        "on": 50,
+        "held_true": 60,
+        "true_but_localization_unknown": 10
+      },
+      "output": "demo_0012/camera_b-held-crosshair.mp4",
+      "output_sha256": "b74c3c5e3e2cbafcd072b38d7785c0c244c28b32fb92a4fa548644033b4420ca",
+      "sidecar": "demo_0012/camera_b-held-trajectory.csv",
+      "sidecar_sha256": "c1754eb61a48f352cb79c136c2ecdda7be287b3344f103f5d2e386a33c4e8851",
+      "samples": {
+        "OFF-KNOWN": "camera_b-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_b-OFF-UNKNOWN-f0038.jpg",
+        "ON": "camera_b-ON-f0105.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0013",
+      "view": "camera_a",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0013/camera_a.mp4",
+      "source_clip_sha256": "56fb8b84ae592c029c8c0a6e71a0bc3886771319829776a702a2aec5761d8c9d",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0013/camera_a.mp4",
+        "clip_transform": "rotate_90_degrees_counterclockwise",
+        "end_s": 28.57,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.51.mp4",
+        "recording_id": "recording_0008",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "f78f7b81ae9791c8bf5be18a0f1840f038cf227be4fb53ee5d3d663f401d7855",
+        "start_s": 19.02
+      },
+      "frame_count": 287,
+      "fps": "30",
+      "counts": {
+        "off": 201,
+        "held_false": 85,
+        "held_unknown": 112,
+        "on": 86,
+        "held_true": 90,
+        "true_but_localization_unknown": 4
+      },
+      "output": "demo_0013/camera_a-held-crosshair.mp4",
+      "output_sha256": "6c58e835adaf8da6a3d49c324af3f6d5d525d138dbd310430f1b61ad8b73bca4",
+      "sidecar": "demo_0013/camera_a-held-trajectory.csv",
+      "sidecar_sha256": "5bb23b84241a581be7fe4d45da3e16155f646ab93f7ee6ac9b9805f8342d0738",
+      "samples": {
+        "OFF-KNOWN": "camera_a-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_a-OFF-UNKNOWN-f0038.jpg",
+        "ON": "camera_a-ON-f0090.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0013",
+      "view": "camera_b",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0013/camera_b.mp4",
+      "source_clip_sha256": "4aba519122f6100145d043517c8efc1423f2cfadb2d4f70f9ce1f40eeac1ee69",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0013/camera_b.mp4",
+        "clip_transform": "none",
+        "end_s": 27.16,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.41.mp4",
+        "recording_id": "recording_0003",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "f3d665338680d107c0c261b21b5f01ca0ae1eddf7e00f968984b43026dbb5be1",
+        "start_s": 17.61
+      },
+      "frame_count": 287,
+      "fps": "30",
+      "counts": {
+        "off": 227,
+        "held_false": 85,
+        "held_unknown": 112,
+        "held_true": 90,
+        "true_but_localization_unknown": 30,
+        "on": 60
+      },
+      "output": "demo_0013/camera_b-held-crosshair.mp4",
+      "output_sha256": "7820c12d8b6e5138de8ec0459a8ff2d0926a43ce0b07d3c7168c79125143c4c8",
+      "sidecar": "demo_0013/camera_b-held-trajectory.csv",
+      "sidecar_sha256": "1972bb2bb5241abf97439494ca8af4a9395ea8991913a035984f90aaed68a3e7",
+      "samples": {
+        "OFF-KNOWN": "camera_b-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_b-OFF-UNKNOWN-f0038.jpg",
+        "ON": "camera_b-ON-f0115.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0014",
+      "view": "camera_a",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0014/camera_a.mp4",
+      "source_clip_sha256": "945b9c49ed4f4dfbbb7ac193ee5d282ba6f1cc326e59401f47f594394d878152",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0014/camera_a.mp4",
+        "clip_transform": "rotate_90_degrees_counterclockwise",
+        "end_s": 43.23,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.51.mp4",
+        "recording_id": "recording_0008",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "f78f7b81ae9791c8bf5be18a0f1840f038cf227be4fb53ee5d3d663f401d7855",
+        "start_s": 35.13
+      },
+      "frame_count": 243,
+      "fps": "30",
+      "counts": {
+        "off": 160,
+        "held_false": 63,
+        "held_unknown": 97,
+        "on": 83,
+        "held_true": 83
+      },
+      "output": "demo_0014/camera_a-held-crosshair.mp4",
+      "output_sha256": "e1f438f5e9db8e8602e74e954191346d853d5518417670117e22a51e99b25df1",
+      "sidecar": "demo_0014/camera_a-held-trajectory.csv",
+      "sidecar_sha256": "a0757b8dd915fb430855684f731bce2d63428bf8e91458eaaf5e5a19bbc396d1",
+      "samples": {
+        "OFF-KNOWN": "camera_a-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_a-OFF-UNKNOWN-f0030.jpg",
+        "ON": "camera_a-ON-f0075.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0014",
+      "view": "camera_b",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0014/camera_b.mp4",
+      "source_clip_sha256": "01f6864ab1df420a6ef882bc00e7fc9cf5f3bf9a3b8afee8f0f5018eec6df5bc",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0014/camera_b.mp4",
+        "clip_transform": "none",
+        "end_s": 41.82,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.41.mp4",
+        "recording_id": "recording_0003",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "f3d665338680d107c0c261b21b5f01ca0ae1eddf7e00f968984b43026dbb5be1",
+        "start_s": 33.720000000000006
+      },
+      "frame_count": 243,
+      "fps": "30",
+      "counts": {
+        "off": 191,
+        "held_false": 63,
+        "held_unknown": 97,
+        "held_true": 83,
+        "true_but_localization_unknown": 31,
+        "on": 52
+      },
+      "output": "demo_0014/camera_b-held-crosshair.mp4",
+      "output_sha256": "54d8b086dffbf8c13d106752c3bb8110cdb07ff0d5655d9b9bf73580cb215d2a",
+      "sidecar": "demo_0014/camera_b-held-trajectory.csv",
+      "sidecar_sha256": "b5fa3b3fb451a96589d95f4fb2bac47acff863f870b001b7c1d96e72d604e246",
+      "samples": {
+        "OFF-KNOWN": "camera_b-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_b-OFF-UNKNOWN-f0030.jpg",
+        "ON": "camera_b-ON-f0106.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0015",
+      "view": "camera_a",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0015/camera_a.mp4",
+      "source_clip_sha256": "629559f3b375ba743bdc2d2e49200901ffe599b806bbdf1300cfd023a3d22c83",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0015/camera_a.mp4",
+        "clip_transform": "rotate_90_degrees_counterclockwise",
+        "end_s": 56.45,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.51.mp4",
+        "recording_id": "recording_0008",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "f78f7b81ae9791c8bf5be18a0f1840f038cf227be4fb53ee5d3d663f401d7855",
+        "start_s": 48.15
+      },
+      "frame_count": 249,
+      "fps": "30",
+      "counts": {
+        "off": 189,
+        "held_false": 62,
+        "held_unknown": 127,
+        "on": 60,
+        "held_true": 60
+      },
+      "output": "demo_0015/camera_a-held-crosshair.mp4",
+      "output_sha256": "94eb999ef10c203805f8b752249b6c426d4d38a4e385b2ef8bc892337241a7c6",
+      "sidecar": "demo_0015/camera_a-held-trajectory.csv",
+      "sidecar_sha256": "96ab3b5018a42404f0d41f0c67be6b4c1929ac3a81349b658c625ed4256c331a",
+      "samples": {
+        "OFF-KNOWN": "camera_a-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_a-OFF-UNKNOWN-f0038.jpg",
+        "ON": "camera_a-ON-f0090.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0015",
+      "view": "camera_b",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0015/camera_b.mp4",
+      "source_clip_sha256": "6870308b420cd79b015233cf1e0c0c63c0c86d2c3f07ce99a3b9e646a0d980d6",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0015/camera_b.mp4",
+        "clip_transform": "none",
+        "end_s": 55.040000000000006,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.41.mp4",
+        "recording_id": "recording_0003",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "f3d665338680d107c0c261b21b5f01ca0ae1eddf7e00f968984b43026dbb5be1",
+        "start_s": 46.74
+      },
+      "frame_count": 249,
+      "fps": "30",
+      "counts": {
+        "off": 249,
+        "held_false": 62,
+        "held_unknown": 127,
+        "held_true": 60,
+        "true_but_localization_unknown": 60
+      },
+      "output": "demo_0015/camera_b-held-crosshair.mp4",
+      "output_sha256": "e2d55763c844705608ab236e1f45845f8a3ebe370db965aab5b56b52feb12770",
+      "sidecar": "demo_0015/camera_b-held-trajectory.csv",
+      "sidecar_sha256": "d60442668161148ba8cfa074e9e91bb76fa69379874831dc89fd58f5288bf9d2",
+      "samples": {
+        "OFF-KNOWN": "camera_b-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_b-OFF-UNKNOWN-f0038.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0016",
+      "view": "camera_a",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0016/camera_a.mp4",
+      "source_clip_sha256": "d306156e75803e5d5f480340d54bb02cff34b31e4a0d9636045ab19bc2ed5c80",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0016/camera_a.mp4",
+        "clip_transform": "rotate_90_degrees_counterclockwise",
+        "end_s": 68.67,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.51.mp4",
+        "recording_id": "recording_0008",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "f78f7b81ae9791c8bf5be18a0f1840f038cf227be4fb53ee5d3d663f401d7855",
+        "start_s": 61.73
+      },
+      "frame_count": 209,
+      "fps": "30",
+      "counts": {
+        "off": 187,
+        "held_false": 82,
+        "held_unknown": 105,
+        "on": 22,
+        "held_true": 22
+      },
+      "output": "demo_0016/camera_a-held-crosshair.mp4",
+      "output_sha256": "8d607bb3f331b063985abbc042637527e27a110d44769e22179433613dc0757c",
+      "sidecar": "demo_0016/camera_a-held-trajectory.csv",
+      "sidecar_sha256": "f989e950a058977df7b626c3ea4e97d1fec982bfdedfb4828779a9713e237d98",
+      "samples": {
+        "OFF-KNOWN": "camera_a-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_a-OFF-UNKNOWN-f0038.jpg",
+        "ON": "camera_a-ON-f0083.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0016",
+      "view": "camera_b",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0016/camera_b.mp4",
+      "source_clip_sha256": "4d4f184e0af958bc1a28e1cf0844239aa182d8ab5bba5f26405dd9c85395773a",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0016/camera_b.mp4",
+        "clip_transform": "none",
+        "end_s": 67.26,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.41.mp4",
+        "recording_id": "recording_0003",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "f3d665338680d107c0c261b21b5f01ca0ae1eddf7e00f968984b43026dbb5be1",
+        "start_s": 60.32
+      },
+      "frame_count": 209,
+      "fps": "30",
+      "counts": {
+        "off": 201,
+        "held_false": 82,
+        "held_unknown": 105,
+        "held_true": 22,
+        "true_but_localization_unknown": 14,
+        "on": 8
+      },
+      "output": "demo_0016/camera_b-held-crosshair.mp4",
+      "output_sha256": "2d0f3fcb1b0d4478ecc85a42a90e3fe82b6e949618f8a0c492cc50d11cf43d77",
+      "sidecar": "demo_0016/camera_b-held-trajectory.csv",
+      "sidecar_sha256": "6a6f43f774cc9ad9900372f0ea18d4cefdce2f55401d8d821d9adde6558529ad",
+      "samples": {
+        "OFF-KNOWN": "camera_b-OFF-KNOWN-f0000.jpg",
+        "OFF-UNKNOWN": "camera_b-OFF-UNKNOWN-f0038.jpg",
+        "ON": "camera_b-ON-f0088.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0018",
+      "view": "camera_a",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0018/camera_a.mp4",
+      "source_clip_sha256": "a0313d0e5a11889a5933d7adcd74b10fdf604b4ea5e12420f80f069cfb03ed9a",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0018/camera_a.mp4",
+        "clip_transform": "rotate_90_degrees_counterclockwise",
+        "end_s": 15.86,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.50 (2).mp4",
+        "recording_id": "recording_0006",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "1a4e0e31265722bd2c98369ed0ef240fbc69706601f54b7af3069f8cfc20c65f",
+        "start_s": 4.8
+      },
+      "frame_count": 332,
+      "fps": "30",
+      "counts": {
+        "off": 332,
+        "held_false": 332
+      },
+      "output": "demo_0018/camera_a-held-crosshair.mp4",
+      "output_sha256": "5fbac4111751c67253b16fa8eca5f352364e52dd345a817892c67410fb945656",
+      "sidecar": "demo_0018/camera_a-held-trajectory.csv",
+      "sidecar_sha256": "0e7415825f03806638a93447c9458df87a6341ff9afe08a0bd63586e0dcff55b",
+      "samples": {
+        "OFF-KNOWN": "camera_a-OFF-KNOWN-f0000.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0018",
+      "view": "camera_b",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0018/camera_b.mp4",
+      "source_clip_sha256": "3bd7468a0884748babc4003f7e793ba86e7754f933c80dcbfcb41e0d28491019",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0018/camera_b.mp4",
+        "clip_transform": "none",
+        "end_s": 14.299999999999999,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.48.mp4",
+        "recording_id": "recording_0004",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "253f5b77f6725ffe063ff3567e6d9c498dd03dadb841dd7f3195be10ab6cb6d2",
+        "start_s": 3.2399999999999998
+      },
+      "frame_count": 332,
+      "fps": "30",
+      "counts": {
+        "off": 332,
+        "held_false": 332
+      },
+      "output": "demo_0018/camera_b-held-crosshair.mp4",
+      "output_sha256": "c2012858fd8cd0388885de59d23ea9045dfe55cd54847a7128fc340caece6811",
+      "sidecar": "demo_0018/camera_b-held-trajectory.csv",
+      "sidecar_sha256": "052a99942c3bfb32668f2bdf1ae4512136645e87ee928f44073af2a617da4c80",
+      "samples": {
+        "OFF-KNOWN": "camera_b-OFF-KNOWN-f0000.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0019",
+      "view": "camera_a",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0019/camera_a.mp4",
+      "source_clip_sha256": "2d7b6a087bda4e9440d5afb97c50757f79ca5328b2cc465edf4cda11cb82d94d",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0019/camera_a.mp4",
+        "clip_transform": "rotate_90_degrees_counterclockwise",
+        "end_s": 24.38,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.50 (2).mp4",
+        "recording_id": "recording_0006",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "1a4e0e31265722bd2c98369ed0ef240fbc69706601f54b7af3069f8cfc20c65f",
+        "start_s": 19.68
+      },
+      "frame_count": 141,
+      "fps": "30",
+      "counts": {
+        "off": 141,
+        "held_false": 141
+      },
+      "output": "demo_0019/camera_a-held-crosshair.mp4",
+      "output_sha256": "2865fac64af1a191e103fa30df5158f2ca89c33d94b7a4edc126187f886c22ea",
+      "sidecar": "demo_0019/camera_a-held-trajectory.csv",
+      "sidecar_sha256": "7a0264e27a63dbc5222b01c695aeb3bdfae113f0f6ed69014a21b24f80c6316b",
+      "samples": {
+        "OFF-KNOWN": "camera_a-OFF-KNOWN-f0000.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    },
+    {
+      "demo_id": "demo_0019",
+      "view": "camera_b",
+      "source_clip": "../humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0019/camera_b.mp4",
+      "source_clip_sha256": "da45c3ab078c8819e45b4f14202385b471f43067c8da05630a2dcf12aaa81538",
+      "source_recording": {
+        "clip": "data/personal/m0/demonstrations/demo_0019/camera_b.mp4",
+        "clip_transform": "none",
+        "end_s": 22.82,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.48.mp4",
+        "recording_id": "recording_0004",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "253f5b77f6725ffe063ff3567e6d9c498dd03dadb841dd7f3195be10ab6cb6d2",
+        "start_s": 18.12
+      },
+      "frame_count": 141,
+      "fps": "30",
+      "counts": {
+        "off": 141,
+        "held_false": 141
+      },
+      "output": "demo_0019/camera_b-held-crosshair.mp4",
+      "output_sha256": "af2fcc9c74aa06ef548dada5492bb5ef4a02a6ac14df941bb51cc53130c36779",
+      "sidecar": "demo_0019/camera_b-held-trajectory.csv",
+      "sidecar_sha256": "fee67a4c6cde759af8f31293104fae8b4096667e03cbfaa4dc1d976c1d0463ce",
+      "samples": {
+        "OFF-KNOWN": "camera_b-OFF-KNOWN-f0000.jpg"
+      },
+      "pts_preserved": true,
+      "object_pixels_untouched_before_encoding": true,
+      "no_overlay_on_unknown": true
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "schema": "m7-real-held-interval-review-v1",
+  "reviewer": "Codex visual-enrichment agent; visual review, not human confirmation",
+  "timebase": "clip seconds, shared synchronized views; original source time from M0 metadata",
+  "annotation_scope": "conservative clearly-held interiors, definite hands-away OFF, ambiguous boundary/contact remains UNKNOWN",
+  "sampling_interval_s": 0.5,
+  "demonstrations": {
+    "demo_0001": {
+      "held_intervals_clip_s": [
+        [
+          6.0,
+          6.75
+        ]
+      ],
+      "not_held_intervals_clip_s": [
+        [
+          0,
+          2.5
+        ],
+        [
+          9.25,
+          12.75
+        ]
+      ],
+      "evidence_id": "demo_0001-paired-contact.jpg",
+      "confidence": "medium; sampled paired-view review",
+      "notes": "Selected interior shows block lifted and transported between fingers in temporal paired views. Closing/contact alone is not a held label. Other periods left unknown."
+    },
+    "demo_0002": {
+      "held_intervals_clip_s": [
+        [
+          3.5,
+          4.5
+        ]
+      ],
+      "not_held_intervals_clip_s": [
+        [
+          0,
+          2.0
+        ],
+        [
+          6.0,
+          8.3
+        ]
+      ],
+      "evidence_id": "demo_0002-paired-contact.jpg",
+      "confidence": "medium; sampled paired-view review",
+      "notes": "Selected interior shows block lifted and transported between fingers in temporal paired views. Closing/contact alone is not a held label. Other periods left unknown."
+    },
+    "demo_0003": {
+      "held_intervals_clip_s": [
+        [
+          3.0,
+          4.0
+        ]
+      ],
+      "not_held_intervals_clip_s": [
+        [
+          0,
+          1.25
+        ],
+        [
+          6.0,
+          7.61
+        ]
+      ],
+      "evidence_id": "demo_0003-paired-contact.jpg",
+      "confidence": "medium; sampled paired-view review",
+      "notes": "Selected interior shows block lifted and transported between fingers in temporal paired views. Closing/contact alone is not a held label. Other periods left unknown."
+    },
+    "demo_0004": {
+      "held_intervals_clip_s": [
+        [
+          4.0,
+          4.75
+        ]
+      ],
+      "not_held_intervals_clip_s": [
+        [
+          0,
+          1.25
+        ],
+        [
+          6.5,
+          8.06
+        ]
+      ],
+      "evidence_id": "demo_0004-paired-contact.jpg",
+      "confidence": "medium; sampled paired-view review",
+      "notes": "Selected interior shows block lifted and transported between fingers in temporal paired views. Closing/contact alone is not a held label. Other periods left unknown."
+    },
+    "demo_0005": {
+      "held_intervals_clip_s": [
+        [
+          3.5,
+          4.25
+        ]
+      ],
+      "not_held_intervals_clip_s": [
+        [
+          0,
+          1.25
+        ],
+        [
+          5.75,
+          7.82
+        ]
+      ],
+      "evidence_id": "demo_0005-paired-contact.jpg",
+      "confidence": "medium; sampled paired-view review",
+      "notes": "Selected interior shows block lifted and transported between fingers in temporal paired views. Closing/contact alone is not a held label. Other periods left unknown."
+    },
+    "demo_0006": {
+      "held_intervals_clip_s": [
+        [
+          3.0,
+          3.75
+        ]
+      ],
+      "not_held_intervals_clip_s": [
+        [
+          0,
+          1.5
+        ],
+        [
+          6.0,
+          7.67
+        ]
+      ],
+      "evidence_id": "demo_0006-paired-contact.jpg",
+      "confidence": "medium; sampled paired-view review",
+      "notes": "Selected interior shows block lifted and transported between fingers in temporal paired views. Closing/contact alone is not a held label. Other periods left unknown."
+    },
+    "demo_0007": {
+      "held_intervals_clip_s": [
+        [
+          3.25,
+          3.75
+        ]
+      ],
+      "not_held_intervals_clip_s": [
+        [
+          0,
+          1.0
+        ],
+        [
+          5.5,
+          7.5
+        ]
+      ],
+      "evidence_id": "demo_0007-paired-contact.jpg",
+      "confidence": "medium; sampled paired-view review",
+      "reviewer": "Codex root agent",
+      "notes": "Conservative clearly held interior; ambiguous contact/onset/release remains unknown. All samples reviewed at0.5s; label interpolation inside interval is an explicit annotation assumption."
+    },
+    "demo_0009": {
+      "held_intervals_clip_s": [
+        [
+          3.25,
+          3.75
+        ]
+      ],
+      "not_held_intervals_clip_s": [
+        [
+          0,
+          1.25
+        ],
+        [
+          5.5,
+          7.05
+        ]
+      ],
+      "evidence_id": "demo_0009-paired-contact.jpg",
+      "confidence": "medium; sampled paired-view review",
+      "reviewer": "Codex visual-enrichment agent",
+      "notes": "Conservative clearly held interior; ambiguous contact/onset/release remains unknown. All samples reviewed at0.5s; label interpolation inside interval is an explicit annotation assumption."
+    },
+    "demo_0011": {
+      "held_intervals_clip_s": [
+        [
+          2.5,
+          3.0
+        ]
+      ],
+      "not_held_intervals_clip_s": [
+        [
+          0,
+          1.0
+        ],
+        [
+          4.75,
+          5.99
+        ]
+      ],
+      "evidence_id": "demo_0011-paired-contact.jpg",
+      "confidence": "medium; sampled paired-view review",
+      "reviewer": "Codex visual-enrichment agent",
+      "notes": "Conservative clearly held interior; ambiguous contact/onset/release remains unknown. All samples reviewed at0.5s; label interpolation inside interval is an explicit annotation assumption."
+    },
+    "demo_0012": {
+      "held_intervals_clip_s": [
+        [
+          3.5,
+          5.5
+        ]
+      ],
+      "not_held_intervals_clip_s": [
+        [
+          0,
+          1.25
+        ],
+        [
+          7.5,
+          10.06
+        ]
+      ],
+      "evidence_id": "demo_0012-paired-contact.jpg",
+      "confidence": "medium; sampled paired-view review",
+      "reviewer": "Codex visual-enrichment agent",
+      "notes": "Conservative clearly held interior; ambiguous contact/onset/release remains unknown. All samples reviewed at0.5s; label interpolation inside interval is an explicit annotation assumption. Includes clearly-held pause in midair; zero speed does NOT disable held signal."
+    },
+    "demo_0013": {
+      "held_intervals_clip_s": [
+        [
+          3.0,
+          6.0
+        ]
+      ],
+      "not_held_intervals_clip_s": [
+        [
+          0,
+          1.25
+        ],
+        [
+          8.0,
+          9.55
+        ]
+      ],
+      "evidence_id": "demo_0013-paired-contact.jpg",
+      "confidence": "medium; sampled paired-view review",
+      "reviewer": "Codex visual-enrichment agent",
+      "notes": "Conservative clearly held interior; ambiguous contact/onset/release remains unknown. All samples reviewed at0.5s; label interpolation inside interval is an explicit annotation assumption. Includes clearly-held pause in midair; zero speed does NOT disable held signal."
+    },
+    "demo_0014": {
+      "held_intervals_clip_s": [
+        [
+          2.5,
+          5.25
+        ]
+      ],
+      "not_held_intervals_clip_s": [
+        [
+          0,
+          1.0
+        ],
+        [
+          7.0,
+          8.1
+        ]
+      ],
+      "evidence_id": "demo_0014-paired-contact.jpg",
+      "confidence": "medium; sampled paired-view review",
+      "reviewer": "Codex visual-enrichment agent",
+      "notes": "Conservative clearly held interior; ambiguous contact/onset/release remains unknown. All samples reviewed at0.5s; label interpolation inside interval is an explicit annotation assumption. Includes clearly-held pause in midair; zero speed does NOT disable held signal."
+    },
+    "demo_0015": {
+      "held_intervals_clip_s": [
+        [
+          3.0,
+          5.0
+        ]
+      ],
+      "not_held_intervals_clip_s": [
+        [
+          0,
+          1.25
+        ],
+        [
+          7.5,
+          8.3
+        ]
+      ],
+      "evidence_id": "demo_0015-paired-contact.jpg",
+      "confidence": "medium; sampled paired-view review",
+      "reviewer": "Codex visual-enrichment agent",
+      "notes": "Conservative clearly held interior; ambiguous contact/onset/release remains unknown. All samples reviewed at0.5s; label interpolation inside interval is an explicit annotation assumption. Includes clearly-held pause in midair; zero speed does NOT disable held signal."
+    },
+    "demo_0016": {
+      "held_intervals_clip_s": [
+        [
+          2.75,
+          3.5
+        ]
+      ],
+      "not_held_intervals_clip_s": [
+        [
+          0,
+          1.25
+        ],
+        [
+          5.5,
+          6.94
+        ]
+      ],
+      "evidence_id": "demo_0016-paired-contact.jpg",
+      "confidence": "medium; sampled paired-view review",
+      "reviewer": "Codex visual-enrichment agent",
+      "notes": "Conservative clearly held interior; ambiguous contact/onset/release remains unknown. All samples reviewed at0.5s; label interpolation inside interval is an explicit annotation assumption."
+    },
+    "demo_0018": {
+      "held_intervals_clip_s": [],
+      "not_held_intervals_clip_s": [
+        [
+          0,
+          11.06
+        ]
+      ],
+      "evidence_id": "demo_0018-paired-contact.jpg",
+      "confidence": "medium; sampled paired-view review",
+      "reviewer": "Codex visual-enrichment agent",
+      "notes": "All sampled paired-view frames stationary with no hand holding block; consistent with frozenM0 human-confirmed already-completed category and prior whole-recording visualreview."
+    },
+    "demo_0019": {
+      "held_intervals_clip_s": [],
+      "not_held_intervals_clip_s": [
+        [
+          0,
+          4.7
+        ]
+      ],
+      "evidence_id": "demo_0019-paired-contact.jpg",
+      "confidence": "medium; sampled paired-view review",
+      "reviewer": "Codex visual-enrichment agent",
+      "notes": "All sampled paired-view frames stationary with no hand holding block; consistent with frozenM0 human-confirmed already-completed category and prior whole-recording visualreview."
+    }
+  },
+  "limitations": [
+    "Labels are conservative sampled agent review, not contact sensors or frame-exact event boundaries.",
+    "Video frame timing remains original; held intervals are annotation sidecars, not invented robot controls.",
+    "Knownheldbutunlocalized frames renderOFF with invalidfeaturemask, not negativeheldlabels.",
+    "Phoneclips have no20D robot actiontargets; they can supervise separate observation/intention/held tasks, not nativeX-VLA motor loss unchanged."
+  ]
+}
