@@ -1,0 +1,98 @@
+{
+  "schema": "video04-score-blind-event-review-v1",
+  "reviewer": "Codex root agent, visually inspected all four paired-context sheets before model scores",
+  "source": "unmarked dense-v2 phone footage",
+  "review_type": "Agent visual review; not new human approval or contact sensor measurement",
+  "notes": [
+    "Labels apply only to central frames, not full context intervals.",
+    "Future +0.3 s context is for offline annotation only, never fitted features.",
+    "Five selected training approaches remain unknown. No sample was chosen by classifier score.",
+    "All new training negatives are withdrawal events; report this directional coverage gap."
+  ],
+  "samples": [
+    {
+      "review_id": "demo_0001-approach",
+      "held_label": null,
+      "confidence": "unknown",
+      "reason": "At the central frame fingers are near or touching the block; support/contact cannot be established confidently. Do not label as a negative."
+    },
+    {
+      "review_id": "demo_0001-withdrawal",
+      "held_label": 0,
+      "confidence": "clear visible gap",
+      "reason": "At both central views the open hand has withdrawn from the resting block, with visible separation."
+    },
+    {
+      "review_id": "demo_0002-approach",
+      "held_label": null,
+      "confidence": "unknown",
+      "reason": "At the central frame fingers are near or touching the block; support/contact cannot be established confidently. Do not label as a negative."
+    },
+    {
+      "review_id": "demo_0002-withdrawal",
+      "held_label": 0,
+      "confidence": "clear visible gap",
+      "reason": "At both central views the open hand has withdrawn from the resting block, with visible separation."
+    },
+    {
+      "review_id": "demo_0003-withdrawal",
+      "held_label": 0,
+      "confidence": "clear visible gap",
+      "reason": "At both central views the open hand has withdrawn from the resting block, with visible separation."
+    },
+    {
+      "review_id": "demo_0005-approach",
+      "held_label": null,
+      "confidence": "unknown",
+      "reason": "At the central frame fingers are near or touching the block; support/contact cannot be established confidently. Do not label as a negative."
+    },
+    {
+      "review_id": "demo_0005-withdrawal",
+      "held_label": 0,
+      "confidence": "clear visible gap",
+      "reason": "At both central views the open hand has withdrawn from the resting block, with visible separation."
+    },
+    {
+      "review_id": "demo_0012-approach",
+      "held_label": null,
+      "confidence": "unknown",
+      "reason": "At the central frame fingers are near or touching the block; support/contact cannot be established confidently. Do not label as a negative."
+    },
+    {
+      "review_id": "demo_0012-withdrawal",
+      "held_label": 0,
+      "confidence": "clear visible gap",
+      "reason": "At both central views the open hand has withdrawn from the resting block, with visible separation."
+    },
+    {
+      "review_id": "demo_0013-approach",
+      "held_label": null,
+      "confidence": "unknown",
+      "reason": "At the central frame fingers are near or touching the block; support/contact cannot be established confidently. Do not label as a negative."
+    },
+    {
+      "review_id": "demo_0013-withdrawal",
+      "held_label": 0,
+      "confidence": "clear visible gap",
+      "reason": "At both central views the open hand has withdrawn from the resting block, with visible separation."
+    },
+    {
+      "review_id": "demo_0004-withdrawal",
+      "held_label": 0,
+      "confidence": "clear visible gap",
+      "reason": "At both central views the hand is away from the stationary block after release."
+    },
+    {
+      "review_id": "demo_0015-approach",
+      "held_label": 0,
+      "confidence": "clear visible gap",
+      "reason": "At both central views a visible gap separates the approaching hand from the resting block."
+    },
+    {
+      "review_id": "demo_0015-withdrawal",
+      "held_label": 0,
+      "confidence": "clear visible gap",
+      "reason": "At both central views the hand is away from the stationary block after release."
+    }
+  ]
+}

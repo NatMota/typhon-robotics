@@ -1,0 +1,47 @@
+{
+  "schema": "video04-contact-negatives-v1",
+  "input_data": "/var/tmp/typhon-video-representation-20261012/dense-v2",
+  "source_index_sha256": "a7f7afafe32ac33ebdce29f8ee84846bd97e12e497c2047b738665ee1e34a370",
+  "train_takes": [
+    "demo_0001",
+    "demo_0002",
+    "demo_0003",
+    "demo_0005",
+    "demo_0012",
+    "demo_0013"
+  ],
+  "validation_takes": [
+    "demo_0006",
+    "demo_0014",
+    "demo_0016"
+  ],
+  "extra_validation_takes": [
+    "demo_0004",
+    "demo_0015"
+  ],
+  "label_boundary_margin_s": 0.25,
+  "history_s": 0.5,
+  "maximum_gap_s": 0.25,
+  "seed": 121204,
+  "threshold": 0.5,
+  "logistic_l2": 0.01,
+  "max_iterations": 200,
+  "train_feature_standard_deviation_floor": 0.001,
+  "models": [
+    "full_crop_current",
+    "fusion_current",
+    "fusion_causal_history"
+  ],
+  "training_arms": [
+    "added_negatives_original_weighting",
+    "added_negatives_balanced_negative_regimes"
+  ],
+  "selection": "Earliest hand-detected ambiguous approach and latest hand-detected ambiguous withdrawal per take; same rule as VIDEO03, no score-driven selection; paired views and \u00b10.3s offline annotation context.",
+  "annotation": "Only clearly not-held central event times are negative. Possible contact remains unknown. Per-view timing mismatches remain unknown. No positive labels added; old eroded labels retained.",
+  "weights": "Original VIDEO03 equal take/class/view weights versus splitting each negative take/class/view weight equally between old interiors and new hard negatives when both available.",
+  "evaluation": "Report old P_validation interiors, old post-hoc challenge, extra-take interiors and new extra-take events separately; whole takes excluded from training. Extra takes share known sessions and were automatically scored earlier; not new independent holdout.",
+  "qualification": "Must reduce false-held transition errors without erasing labelled held recall. Results are observation diagnostics only. Never confer motor control authority.",
+  "no_GE": true,
+  "no_VLA_motor_update": true,
+  "control_authority": false
+}
