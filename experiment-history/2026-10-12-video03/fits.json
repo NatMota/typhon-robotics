@@ -1,0 +1,611 @@
+[
+  {
+    "model": "both_views__full_current",
+    "dimension": 1024,
+    "closure_calls": 39,
+    "seconds": 0.3363740009954199,
+    "train_samples": 451,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "both_views__full_crop_current",
+    "dimension": 2048,
+    "closure_calls": 45,
+    "seconds": 0.10936278698500246,
+    "train_samples": 451,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "both_views__hand_object",
+    "dimension": 21,
+    "closure_calls": 35,
+    "seconds": 0.04453688199282624,
+    "train_samples": 451,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "both_views__fusion_current",
+    "dimension": 2069,
+    "closure_calls": 53,
+    "seconds": 0.10479338001459837,
+    "train_samples": 451,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "both_views__fusion_causal_history",
+    "dimension": 6165,
+    "closure_calls": 58,
+    "seconds": 0.1741920780041255,
+    "train_samples": 451,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "both_views__clock_only",
+    "dimension": 2,
+    "closure_calls": 10,
+    "seconds": 0.01168970501748845,
+    "train_samples": 451,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "both_views__shuffled_fusion",
+    "dimension": 6165,
+    "closure_calls": 144,
+    "seconds": 0.9693199410103261,
+    "train_samples": 451,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_primary_only__full_current",
+    "dimension": 1024,
+    "closure_calls": 35,
+    "seconds": 0.07537280998076312,
+    "train_samples": 224,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a"
+    ]
+  },
+  {
+    "model": "train_primary_only__full_crop_current",
+    "dimension": 2048,
+    "closure_calls": 40,
+    "seconds": 0.08411009897827171,
+    "train_samples": 224,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a"
+    ]
+  },
+  {
+    "model": "train_primary_only__hand_object",
+    "dimension": 21,
+    "closure_calls": 21,
+    "seconds": 0.028312696987995878,
+    "train_samples": 224,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a"
+    ]
+  },
+  {
+    "model": "train_primary_only__fusion_current",
+    "dimension": 2069,
+    "closure_calls": 37,
+    "seconds": 0.0967539259872865,
+    "train_samples": 224,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a"
+    ]
+  },
+  {
+    "model": "train_primary_only__fusion_causal_history",
+    "dimension": 6165,
+    "closure_calls": 46,
+    "seconds": 0.11089660902507603,
+    "train_samples": 224,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a"
+    ]
+  },
+  {
+    "model": "train_primary_only__clock_only",
+    "dimension": 2,
+    "closure_calls": 10,
+    "seconds": 0.011835421988507733,
+    "train_samples": 224,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a"
+    ]
+  },
+  {
+    "model": "train_primary_only__shuffled_fusion",
+    "dimension": 6165,
+    "closure_calls": 125,
+    "seconds": 0.8240747649979312,
+    "train_samples": 224,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a"
+    ]
+  },
+  {
+    "model": "train_secondary_only__full_current",
+    "dimension": 1024,
+    "closure_calls": 34,
+    "seconds": 0.0761028149863705,
+    "train_samples": 227,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_secondary_only__full_crop_current",
+    "dimension": 2048,
+    "closure_calls": 42,
+    "seconds": 0.10143219801830128,
+    "train_samples": 227,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_secondary_only__hand_object",
+    "dimension": 21,
+    "closure_calls": 18,
+    "seconds": 0.02745213298476301,
+    "train_samples": 227,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_secondary_only__fusion_current",
+    "dimension": 2069,
+    "closure_calls": 52,
+    "seconds": 0.11274666199460626,
+    "train_samples": 227,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_secondary_only__fusion_causal_history",
+    "dimension": 6165,
+    "closure_calls": 48,
+    "seconds": 0.14473374499357305,
+    "train_samples": 227,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_secondary_only__clock_only",
+    "dimension": 2,
+    "closure_calls": 10,
+    "seconds": 0.01307935401564464,
+    "train_samples": 227,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_secondary_only__shuffled_fusion",
+    "dimension": 6165,
+    "closure_calls": 153,
+    "seconds": 1.1159456089953892,
+    "train_samples": 227,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_normal_session_only__full_current",
+    "dimension": 1024,
+    "closure_calls": 96,
+    "seconds": 0.2541794989956543,
+    "train_samples": 279,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_normal_session_only__full_crop_current",
+    "dimension": 2048,
+    "closure_calls": 60,
+    "seconds": 0.2032401610049419,
+    "train_samples": 279,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_normal_session_only__hand_object",
+    "dimension": 21,
+    "closure_calls": 22,
+    "seconds": 0.034696908987825736,
+    "train_samples": 279,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_normal_session_only__fusion_current",
+    "dimension": 2069,
+    "closure_calls": 70,
+    "seconds": 0.20370741799706593,
+    "train_samples": 279,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_normal_session_only__fusion_causal_history",
+    "dimension": 6165,
+    "closure_calls": 90,
+    "seconds": 0.323575210000854,
+    "train_samples": 279,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_normal_session_only__clock_only",
+    "dimension": 2,
+    "closure_calls": 12,
+    "seconds": 0.01452449700445868,
+    "train_samples": 279,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_normal_session_only__shuffled_fusion",
+    "dimension": 6165,
+    "closure_calls": 145,
+    "seconds": 1.0310765479807742,
+    "train_samples": 279,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_awkward_session_only__full_current",
+    "dimension": 1024,
+    "closure_calls": 28,
+    "seconds": 0.0595244980067946,
+    "train_samples": 172,
+    "train_takes": [
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_awkward_session_only__full_crop_current",
+    "dimension": 2048,
+    "closure_calls": 46,
+    "seconds": 0.07788438801071607,
+    "train_samples": 172,
+    "train_takes": [
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_awkward_session_only__hand_object",
+    "dimension": 21,
+    "closure_calls": 20,
+    "seconds": 0.024410418001934886,
+    "train_samples": 172,
+    "train_takes": [
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_awkward_session_only__fusion_current",
+    "dimension": 2069,
+    "closure_calls": 35,
+    "seconds": 0.07351528300205246,
+    "train_samples": 172,
+    "train_takes": [
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_awkward_session_only__fusion_causal_history",
+    "dimension": 6165,
+    "closure_calls": 33,
+    "seconds": 0.07579828801681288,
+    "train_samples": 172,
+    "train_takes": [
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_awkward_session_only__clock_only",
+    "dimension": 2,
+    "closure_calls": 15,
+    "seconds": 0.01611239300109446,
+    "train_samples": 172,
+    "train_takes": [
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "train_awkward_session_only__shuffled_fusion",
+    "dimension": 6165,
+    "closure_calls": 137,
+    "seconds": 0.9370540080126375,
+    "train_samples": 172,
+    "train_takes": [
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  }
+]

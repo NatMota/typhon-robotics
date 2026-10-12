@@ -1,0 +1,64 @@
+{
+  "schema": "video03-held-probe-v1",
+  "created_before_fit": true,
+  "input_data": "/var/tmp/typhon-video-representation-20261012/dense-v2",
+  "base_branch_sha": "4a088ff6f79428c576b77a436298e6e7da314e90",
+  "source_index_sha256": "a7f7afafe32ac33ebdce29f8ee84846bd97e12e497c2047b738665ee1e34a370",
+  "held_review_sha256": "40a935b553086bcf97702be0e62fc1b35e71e8d4e8e0f2d96e1c7831194f5685",
+  "held_manifest_sha256": "585f153baf220cf4ef4309d3600035d39031cad8812e0eb8940bfde7fc62a27d",
+  "train_takes": [
+    "demo_0001",
+    "demo_0002",
+    "demo_0003",
+    "demo_0005",
+    "demo_0012",
+    "demo_0013"
+  ],
+  "validation_takes": [
+    "demo_0006",
+    "demo_0014",
+    "demo_0016"
+  ],
+  "label_boundary_margin_s": 0.25,
+  "history_s": 0.5,
+  "maximum_gap_s": 0.25,
+  "seed": 121203,
+  "models": [
+    "full_current",
+    "full_crop_current",
+    "hand_object",
+    "fusion_current",
+    "fusion_causal_history",
+    "clock_only",
+    "shuffled_fusion"
+  ],
+  "threshold": 0.5,
+  "logistic_l2": 0.01,
+  "max_iterations": 200,
+  "train_feature_standard_deviation_floor": 0.001,
+  "weighting": "Equal total weight per training take and known class within take, split equally across available views; no frame-level class weighting across test data",
+  "panels": [
+    "both_views",
+    "train_primary_only",
+    "train_secondary_only",
+    "train_normal_session_only",
+    "train_awkward_session_only"
+  ],
+  "fit": "Frozen X-VLA-Pt per-frame descriptors; fit only tiny linear sigmoid probes. No model/action-head/soft-prompt or robot-policy update.",
+  "negative_controls": "Hand presence and fixed near-hand baseline; always not-held; time-only quadratic confound; seeded label permutation within each training take/view.",
+  "qualification_for_next_observation_test": {
+    "held_precision_min": 0.95,
+    "held_recall_min": 0.9,
+    "macro_f1_gain_over_hand_presence_min": 0.05,
+    "requires_both_views_and_cross_recording_validation": true
+  },
+  "control_authority": false,
+  "robot_training_eligible": false,
+  "limitations": [
+    "Intervals were visually reviewed at 0.5s by prior agents; not new human-verified contact events.",
+    "\u00b10.25s boundary eroding may remove all known positive samples from short correction intervals. Report missing support, do not turn unknown into negative.",
+    "Known negatives mostly hands-away; performance may reflect hand presence. Unknown transition frames are unscored and require separate review.",
+    "Recorded sessions/category/camera share backgrounds. Previously inspected footage is exploratory; no broad contact, new-session or robot transfer claim.",
+    "No absolute time, future image, category, source/take ID, task label or crosshair input to deployable probes; clock-only arm is an explicit shortcut diagnostic."
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "examples": [
+    {
+      "review_id": "demo_0006-approach",
+      "sample_id": "demo_0006/camera_a/2536",
+      "held_label": 0,
+      "predictions": {
+        "both_views__full_current": 0.9503956437110901,
+        "both_views__full_crop_current": 0.9331467151641846,
+        "both_views__hand_object": 0.9995679259300232,
+        "both_views__fusion_current": 0.9450097680091858,
+        "both_views__fusion_causal_history": 0.8726727962493896,
+        "both_views__shuffled_fusion": 7.807603833498433e-05,
+        "hand_present": 1.0,
+        "near_hand": 0.0
+      }
+    },
+    {
+      "review_id": "demo_0006-approach",
+      "sample_id": "demo_0006/camera_b/2677",
+      "held_label": 0,
+      "predictions": {
+        "both_views__full_current": 0.8764609694480896,
+        "both_views__full_crop_current": 0.21169807016849518,
+        "both_views__hand_object": 0.011190581135451794,
+        "both_views__fusion_current": 0.18614904582500458,
+        "both_views__fusion_causal_history": 0.046605102717876434,
+        "both_views__shuffled_fusion": 0.026257392019033432,
+        "hand_present": 0.0,
+        "near_hand": 0.0
+      }
+    },
+    {
+      "review_id": "demo_0006-withdrawal",
+      "sample_id": "demo_0006/camera_a/2653",
+      "held_label": 0,
+      "predictions": {
+        "both_views__full_current": 0.37848854064941406,
+        "both_views__full_crop_current": 0.02149127423763275,
+        "both_views__hand_object": 1.0,
+        "both_views__fusion_current": 0.0473768450319767,
+        "both_views__fusion_causal_history": 0.02209635265171528,
+        "both_views__shuffled_fusion": 1.0,
+        "hand_present": 1.0,
+        "near_hand": 0.0
+      }
+    },
+    {
+      "review_id": "demo_0006-withdrawal",
+      "sample_id": "demo_0006/camera_b/2794",
+      "held_label": 0,
+      "predictions": {
+        "both_views__full_current": 0.9072135090827942,
+        "both_views__full_crop_current": 0.6489917039871216,
+        "both_views__hand_object": 0.9999951124191284,
+        "both_views__fusion_current": 0.7537994384765625,
+        "both_views__fusion_causal_history": 0.5019481182098389,
+        "both_views__shuffled_fusion": 1.0,
+        "hand_present": 1.0,
+        "near_hand": 0.0
+      }
+    },
+    {
+      "review_id": "demo_0014-approach",
+      "sample_id": "demo_0014/camera_a/1090",
+      "held_label": null,
+      "predictions": {
+        "both_views__full_current": 0.6497814655303955,
+        "both_views__full_crop_current": 0.7671417593955994,
+        "both_views__hand_object": 0.999138355255127,
+        "both_views__fusion_current": 0.8147761225700378,
+        "both_views__fusion_causal_history": 0.48617085814476013,
+        "both_views__shuffled_fusion": 0.030706996098160744,
+        "hand_present": 1.0,
+        "near_hand": 1.0
+      }
+    },
+    {
+      "review_id": "demo_0014-approach",
+      "sample_id": "demo_0014/camera_b/1051",
+      "held_label": null,
+      "predictions": {
+        "both_views__full_current": 0.0029263989999890327,
+        "both_views__full_crop_current": 0.028453150764107704,
+        "both_views__hand_object": 0.5686389207839966,
+        "both_views__fusion_current": 0.027740411460399628,
+        "both_views__fusion_causal_history": 0.009277190081775188,
+        "both_views__shuffled_fusion": 0.0076473429799079895,
+        "hand_present": 0.0,
+        "near_hand": 0.0
+      }
+    },
+    {
+      "review_id": "demo_0014-withdrawal",
+      "sample_id": "demo_0014/camera_a/1255",
+      "held_label": 0,
+      "predictions": {
+        "both_views__full_current": 0.3575202524662018,
+        "both_views__full_crop_current": 0.012491446919739246,
+        "both_views__hand_object": 1.0,
+        "both_views__fusion_current": 0.028324086219072342,
+        "both_views__fusion_causal_history": 0.02194487676024437,
+        "both_views__shuffled_fusion": 1.0,
+        "hand_present": 1.0,
+        "near_hand": 0.0
+      }
+    },
+    {
+      "review_id": "demo_0014-withdrawal",
+      "sample_id": "demo_0014/camera_b/1216",
+      "held_label": 0,
+      "predictions": {
+        "both_views__full_current": 0.27309849858283997,
+        "both_views__full_crop_current": 0.009128185920417309,
+        "both_views__hand_object": 0.03141700103878975,
+        "both_views__fusion_current": 0.008789160288870335,
+        "both_views__fusion_causal_history": 0.01711129955947399,
+        "both_views__shuffled_fusion": 6.542644115370422e-08,
+        "hand_present": 0.0,
+        "near_hand": 0.0
+      }
+    },
+    {
+      "review_id": "demo_0016-approach",
+      "sample_id": "demo_0016/camera_a/1894",
+      "held_label": null,
+      "predictions": {
+        "both_views__full_current": 0.8490259051322937,
+        "both_views__full_crop_current": 0.981622576713562,
+        "both_views__hand_object": 0.9962202906608582,
+        "both_views__fusion_current": 0.9842867255210876,
+        "both_views__fusion_causal_history": 0.9138292670249939,
+        "both_views__shuffled_fusion": 0.008431467227637768,
+        "hand_present": 1.0,
+        "near_hand": 1.0
+      }
+    },
+    {
+      "review_id": "demo_0016-approach",
+      "sample_id": "demo_0016/camera_b/1855",
+      "held_label": null,
+      "predictions": {
+        "both_views__full_current": 0.045178819447755814,
+        "both_views__full_crop_current": 0.11349377036094666,
+        "both_views__hand_object": 0.5686389207839966,
+        "both_views__fusion_current": 0.10839620232582092,
+        "both_views__fusion_causal_history": 0.02399297058582306,
+        "both_views__shuffled_fusion": 0.7487406134605408,
+        "hand_present": 0.0,
+        "near_hand": 0.0
+      }
+    },
+    {
+      "review_id": "demo_0016-withdrawal",
+      "sample_id": "demo_0016/camera_a/2003",
+      "held_label": 0,
+      "predictions": {
+        "both_views__full_current": 0.8758851885795593,
+        "both_views__full_crop_current": 0.08667881041765213,
+        "both_views__hand_object": 0.9999997615814209,
+        "both_views__fusion_current": 0.16017714142799377,
+        "both_views__fusion_causal_history": 0.053419239819049835,
+        "both_views__shuffled_fusion": 0.9997952580451965,
+        "hand_present": 1.0,
+        "near_hand": 0.0
+      }
+    },
+    {
+      "review_id": "demo_0016-withdrawal",
+      "sample_id": "demo_0016/camera_b/1963",
+      "held_label": 0,
+      "predictions": {
+        "both_views__full_current": 0.6334069967269897,
+        "both_views__full_crop_current": 0.027922194451093674,
+        "both_views__hand_object": 0.9999982118606567,
+        "both_views__fusion_current": 0.0470421202480793,
+        "both_views__fusion_causal_history": 0.036879148334264755,
+        "both_views__shuffled_fusion": 0.9999998807907104,
+        "hand_present": 1.0,
+        "near_hand": 0.0
+      }
+    }
+  ],
+  "summary": [
+    {
+      "model": "both_views__full_current",
+      "view": "camera_a",
+      "known_negatives": 4,
+      "false_held": 2
+    },
+    {
+      "model": "both_views__full_current",
+      "view": "camera_b",
+      "known_negatives": 4,
+      "false_held": 3
+    },
+    {
+      "model": "both_views__full_current",
+      "view": "both",
+      "known_negatives": 8,
+      "false_held": 5
+    },
+    {
+      "model": "both_views__full_crop_current",
+      "view": "camera_a",
+      "known_negatives": 4,
+      "false_held": 1
+    },
+    {
+      "model": "both_views__full_crop_current",
+      "view": "camera_b",
+      "known_negatives": 4,
+      "false_held": 1
+    },
+    {
+      "model": "both_views__full_crop_current",
+      "view": "both",
+      "known_negatives": 8,
+      "false_held": 2
+    },
+    {
+      "model": "both_views__hand_object",
+      "view": "camera_a",
+      "known_negatives": 4,
+      "false_held": 4
+    },
+    {
+      "model": "both_views__hand_object",
+      "view": "camera_b",
+      "known_negatives": 4,
+      "false_held": 2
+    },
+    {
+      "model": "both_views__hand_object",
+      "view": "both",
+      "known_negatives": 8,
+      "false_held": 6
+    },
+    {
+      "model": "both_views__fusion_current",
+      "view": "camera_a",
+      "known_negatives": 4,
+      "false_held": 1
+    },
+    {
+      "model": "both_views__fusion_current",
+      "view": "camera_b",
+      "known_negatives": 4,
+      "false_held": 1
+    },
+    {
+      "model": "both_views__fusion_current",
+      "view": "both",
+      "known_negatives": 8,
+      "false_held": 2
+    },
+    {
+      "model": "both_views__fusion_causal_history",
+      "view": "camera_a",
+      "known_negatives": 4,
+      "false_held": 1
+    },
+    {
+      "model": "both_views__fusion_causal_history",
+      "view": "camera_b",
+      "known_negatives": 4,
+      "false_held": 1
+    },
+    {
+      "model": "both_views__fusion_causal_history",
+      "view": "both",
+      "known_negatives": 8,
+      "false_held": 2
+    },
+    {
+      "model": "both_views__shuffled_fusion",
+      "view": "camera_a",
+      "known_negatives": 4,
+      "false_held": 3
+    },
+    {
+      "model": "both_views__shuffled_fusion",
+      "view": "camera_b",
+      "known_negatives": 4,
+      "false_held": 2
+    },
+    {
+      "model": "both_views__shuffled_fusion",
+      "view": "both",
+      "known_negatives": 8,
+      "false_held": 5
+    },
+    {
+      "model": "hand_present",
+      "view": "camera_a",
+      "known_negatives": 4,
+      "false_held": 4
+    },
+    {
+      "model": "hand_present",
+      "view": "camera_b",
+      "known_negatives": 4,
+      "false_held": 2
+    },
+    {
+      "model": "hand_present",
+      "view": "both",
+      "known_negatives": 8,
+      "false_held": 6
+    },
+    {
+      "model": "near_hand",
+      "view": "camera_a",
+      "known_negatives": 4,
+      "false_held": 0
+    },
+    {
+      "model": "near_hand",
+      "view": "camera_b",
+      "known_negatives": 4,
+      "false_held": 0
+    },
+    {
+      "model": "near_hand",
+      "view": "both",
+      "known_negatives": 8,
+      "false_held": 0
+    }
+  ],
+  "decision": "Post-hoc difficulty check against blinded agent-reviewed labels; no refitting or threshold changes."
+}

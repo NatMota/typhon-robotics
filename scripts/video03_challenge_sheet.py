@@ -1,7 +1,8 @@
 from pathlib import Path
-import json,numpy as np,cv2
-w=Path.home()/'Projects/typhon-experiments/video03-held-probe'
-d=Path('/var/tmp/typhon-video-representation-20261012/dense-v2');out=Path('/var/tmp/typhon-video-held-20261012/probe-v1')
+import argparse,json,numpy as np,cv2
+w=Path(__file__).resolve().parents[1]
+parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,required=True);out=parser.parse_args().output
+d=Path(json.loads((out/'protocol.json').read_text())['input_data'])
 rows=json.loads((d/'source-index.json').read_text())['samples'];review=json.loads((w/'experiment-history/2026-10-12-video03/inputs/held_review.json').read_text())['demonstrations']
 pred=np.load(out/'predictions.npz');ys=pred['labels'];selections=[];panels=[]
 for did in ['demo_0006','demo_0014','demo_0016']:
