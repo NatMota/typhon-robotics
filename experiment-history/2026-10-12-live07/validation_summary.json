@@ -1,0 +1,458 @@
+{
+  "all_frozen_episodes_evaluated": true,
+  "rows": [
+    {
+      "scenario_id": "film-demo_0002",
+      "pickup": false,
+      "placement_without_yaw": false,
+      "initial_yaw_gap_deg": 44.297177521050024,
+      "remaining_yaw_error_deg": 44.297177521050024,
+      "yaw_gap_closed_deg": 0.0,
+      "mode": "native_reference",
+      "strict_success": false,
+      "actions_executed": 776,
+      "guard_holds": 0,
+      "api_selected_chunks": 0,
+      "activated_chunks": 26,
+      "wall_s": 13.557180695002899,
+      "square_footprint_inside": false,
+      "position_tolerance_met": false,
+      "api_actually_executed_chunks": 0,
+      "api_selected_but_zero_actions": 0
+    },
+    {
+      "mode": "first_admissible",
+      "scenario_id": "film-demo_0002",
+      "strict_success": false,
+      "pickup": false,
+      "placement_without_yaw": false,
+      "initial_yaw_gap_deg": 44.297177521050024,
+      "remaining_yaw_error_deg": 44.297177521050024,
+      "yaw_gap_closed_deg": 0.0,
+      "guard_holds": 0,
+      "api_selected_chunks": 0,
+      "activated_chunks": 10,
+      "wall_s": 40.04761396299,
+      "square_footprint_inside": false,
+      "position_tolerance_met": false,
+      "actions_executed": 288,
+      "boundary_hold_steps": 488,
+      "fully_executed_chunks": 9,
+      "started_chunks": 10,
+      "handoff_rejections": {
+        "scene_changed_while_waiting": 4,
+        "robot_drift_while_waiting": 4
+      },
+      "api_requests": 0,
+      "rank_deadlines": 0,
+      "api_actually_executed_chunks": 0,
+      "api_selected_but_zero_actions": 0
+    },
+    {
+      "mode": "decisions",
+      "scenario_id": "film-demo_0002",
+      "strict_success": false,
+      "pickup": false,
+      "placement_without_yaw": false,
+      "initial_yaw_gap_deg": 44.297177521050024,
+      "remaining_yaw_error_deg": 44.297177521050024,
+      "yaw_gap_closed_deg": 0.0,
+      "guard_holds": 0,
+      "api_selected_chunks": 0,
+      "activated_chunks": 10,
+      "wall_s": 40.0847375660087,
+      "square_footprint_inside": false,
+      "position_tolerance_met": false,
+      "actions_executed": 290,
+      "boundary_hold_steps": 486,
+      "fully_executed_chunks": 9,
+      "started_chunks": 10,
+      "handoff_rejections": {
+        "scene_changed_while_waiting": 4,
+        "robot_drift_while_waiting": 4
+      },
+      "api_requests": 12,
+      "rank_deadlines": 0,
+      "api_actually_executed_chunks": 0,
+      "api_selected_but_zero_actions": 0
+    },
+    {
+      "scenario_id": "film-demo_0006",
+      "pickup": true,
+      "placement_without_yaw": true,
+      "initial_yaw_gap_deg": 160.52028245896508,
+      "remaining_yaw_error_deg": 85.33158878423161,
+      "yaw_gap_closed_deg": 75.18869367473347,
+      "mode": "native_reference",
+      "strict_success": false,
+      "actions_executed": 776,
+      "guard_holds": 0,
+      "api_selected_chunks": 0,
+      "activated_chunks": 26,
+      "wall_s": 13.401231261988869,
+      "square_footprint_inside": true,
+      "position_tolerance_met": true,
+      "api_actually_executed_chunks": 0,
+      "api_selected_but_zero_actions": 0
+    },
+    {
+      "mode": "first_admissible",
+      "scenario_id": "film-demo_0006",
+      "strict_success": false,
+      "pickup": true,
+      "placement_without_yaw": true,
+      "initial_yaw_gap_deg": 160.52028245896508,
+      "remaining_yaw_error_deg": 79.45516789166403,
+      "yaw_gap_closed_deg": 81.06511456730105,
+      "guard_holds": 0,
+      "api_selected_chunks": 0,
+      "activated_chunks": 11,
+      "wall_s": 40.03198127599899,
+      "square_footprint_inside": true,
+      "position_tolerance_met": true,
+      "actions_executed": 300,
+      "boundary_hold_steps": 476,
+      "fully_executed_chunks": 10,
+      "started_chunks": 10,
+      "handoff_rejections": {
+        "scene_changed_while_waiting": 4
+      },
+      "api_requests": 0,
+      "rank_deadlines": 0,
+      "api_actually_executed_chunks": 0,
+      "api_selected_but_zero_actions": 0
+    },
+    {
+      "mode": "decisions",
+      "scenario_id": "film-demo_0006",
+      "strict_success": false,
+      "pickup": false,
+      "placement_without_yaw": false,
+      "initial_yaw_gap_deg": 160.52028245896508,
+      "remaining_yaw_error_deg": 163.14854339667266,
+      "yaw_gap_closed_deg": -2.62826093770758,
+      "guard_holds": 0,
+      "api_selected_chunks": 2,
+      "activated_chunks": 11,
+      "wall_s": 40.09180595501675,
+      "square_footprint_inside": false,
+      "position_tolerance_met": false,
+      "actions_executed": 300,
+      "boundary_hold_steps": 476,
+      "fully_executed_chunks": 10,
+      "started_chunks": 10,
+      "handoff_rejections": {
+        "scene_changed_while_waiting": 4
+      },
+      "api_requests": 12,
+      "rank_deadlines": 0,
+      "api_actually_executed_chunks": 1,
+      "api_selected_but_zero_actions": 1
+    },
+    {
+      "scenario_id": "film-demo_0018",
+      "pickup": false,
+      "placement_without_yaw": true,
+      "initial_yaw_gap_deg": 4.472586902959647,
+      "remaining_yaw_error_deg": 4.472586902959647,
+      "yaw_gap_closed_deg": 0.0,
+      "mode": "native_reference",
+      "strict_success": true,
+      "actions_executed": 776,
+      "guard_holds": 0,
+      "api_selected_chunks": 0,
+      "activated_chunks": 26,
+      "wall_s": 13.455182728997897,
+      "square_footprint_inside": true,
+      "position_tolerance_met": true,
+      "api_actually_executed_chunks": 0,
+      "api_selected_but_zero_actions": 0
+    },
+    {
+      "mode": "first_admissible",
+      "scenario_id": "film-demo_0018",
+      "strict_success": true,
+      "pickup": false,
+      "placement_without_yaw": true,
+      "initial_yaw_gap_deg": 4.472586902959647,
+      "remaining_yaw_error_deg": 4.472586902959647,
+      "yaw_gap_closed_deg": 0.0,
+      "guard_holds": 0,
+      "api_selected_chunks": 0,
+      "activated_chunks": 11,
+      "wall_s": 40.048485503997654,
+      "square_footprint_inside": true,
+      "position_tolerance_met": true,
+      "actions_executed": 329,
+      "boundary_hold_steps": 447,
+      "fully_executed_chunks": 10,
+      "started_chunks": 11,
+      "handoff_rejections": {},
+      "api_requests": 0,
+      "rank_deadlines": 0,
+      "api_actually_executed_chunks": 0,
+      "api_selected_but_zero_actions": 0
+    },
+    {
+      "mode": "decisions",
+      "scenario_id": "film-demo_0018",
+      "strict_success": true,
+      "pickup": false,
+      "placement_without_yaw": true,
+      "initial_yaw_gap_deg": 4.472586902959647,
+      "remaining_yaw_error_deg": 4.472586902959647,
+      "yaw_gap_closed_deg": 0.0,
+      "guard_holds": 0,
+      "api_selected_chunks": 0,
+      "activated_chunks": 11,
+      "wall_s": 40.06229753099615,
+      "square_footprint_inside": true,
+      "position_tolerance_met": true,
+      "actions_executed": 329,
+      "boundary_hold_steps": 447,
+      "fully_executed_chunks": 10,
+      "started_chunks": 11,
+      "handoff_rejections": {},
+      "api_requests": 11,
+      "rank_deadlines": 0,
+      "api_actually_executed_chunks": 0,
+      "api_selected_but_zero_actions": 0
+    }
+  ],
+  "by_route": {
+    "native_reference": {
+      "strict_success": 1,
+      "pickup": 1,
+      "placement_without_yaw": 2,
+      "episodes": 3,
+      "manipulation_episodes": 2,
+      "manipulation_strict_success": 0,
+      "completed_preserved": 1,
+      "api_selected_chunks": 0,
+      "actions_executed": 2328,
+      "api_actually_executed_chunks": 0,
+      "api_selected_but_zero_actions": 0
+    },
+    "first_admissible": {
+      "strict_success": 1,
+      "pickup": 1,
+      "placement_without_yaw": 2,
+      "episodes": 3,
+      "manipulation_episodes": 2,
+      "manipulation_strict_success": 0,
+      "completed_preserved": 1,
+      "api_selected_chunks": 0,
+      "actions_executed": 917,
+      "api_actually_executed_chunks": 0,
+      "api_selected_but_zero_actions": 0
+    },
+    "decisions": {
+      "strict_success": 1,
+      "pickup": 0,
+      "placement_without_yaw": 1,
+      "episodes": 3,
+      "manipulation_episodes": 2,
+      "manipulation_strict_success": 0,
+      "completed_preserved": 1,
+      "api_selected_chunks": 2,
+      "actions_executed": 919,
+      "api_actually_executed_chunks": 1,
+      "api_selected_but_zero_actions": 1
+    }
+  },
+  "latency_seconds": {
+    "candidate_generation": {
+      "p50": 0.39121966499078553,
+      "p95": 0.6407536324564717
+    },
+    "preview": {
+      "p50": 0.026814568002009764,
+      "p95": 0.031135617705876934
+    },
+    "api_transport": {
+      "p50": 0.2854178049892653,
+      "p95": 1.054793779895408
+    },
+    "observation_to_activation": {
+      "p50": 2.054816759991809,
+      "p95": 2.0632912815533926
+    }
+  },
+  "api_results": {
+    "valid:UNKNOWN": 33,
+    "valid:C": 1,
+    "valid:B": 1
+  },
+  "same_initial_truth_each_route": true,
+  "execution_identity_checks": [
+    {
+      "mode": "first_admissible",
+      "scenario": "film-demo_0002",
+      "every_executed_target_equals_saved_candidate": true,
+      "no_skipped_or_duplicate_prefix": true,
+      "started_chunks": 10,
+      "full_chunks": 9
+    },
+    {
+      "mode": "decisions",
+      "scenario": "film-demo_0002",
+      "every_executed_target_equals_saved_candidate": true,
+      "no_skipped_or_duplicate_prefix": true,
+      "started_chunks": 10,
+      "full_chunks": 9
+    },
+    {
+      "mode": "first_admissible",
+      "scenario": "film-demo_0006",
+      "every_executed_target_equals_saved_candidate": true,
+      "no_skipped_or_duplicate_prefix": true,
+      "started_chunks": 10,
+      "full_chunks": 10
+    },
+    {
+      "mode": "decisions",
+      "scenario": "film-demo_0006",
+      "every_executed_target_equals_saved_candidate": true,
+      "no_skipped_or_duplicate_prefix": true,
+      "started_chunks": 10,
+      "full_chunks": 10
+    },
+    {
+      "mode": "first_admissible",
+      "scenario": "film-demo_0018",
+      "every_executed_target_equals_saved_candidate": true,
+      "no_skipped_or_duplicate_prefix": true,
+      "started_chunks": 11,
+      "full_chunks": 10
+    },
+    {
+      "mode": "decisions",
+      "scenario": "film-demo_0018",
+      "every_executed_target_equals_saved_candidate": true,
+      "no_skipped_or_duplicate_prefix": true,
+      "started_chunks": 11,
+      "full_chunks": 10
+    }
+  ],
+  "not_confirmatory": true,
+  "no_new_training": true,
+  "activation_count_caveat": "Legacy api_selected_chunks counts activated queues, including queues cleared during the final stability hold. api_actually_executed_chunks requires at least one executed proposal target.",
+  "execution_contract_audit": [
+    {
+      "mode": "first_admissible",
+      "scene": "film-demo_0002",
+      "old_jump_veto_avoided": 0,
+      "proposed_jump_veto_avoided": 0,
+      "execution_reasons": {},
+      "handoff_reasons": {
+        "scene_changed_while_waiting": 4,
+        "robot_drift_while_waiting": 4
+      },
+      "rank_result_status": {},
+      "late_results": 0
+    },
+    {
+      "mode": "first_admissible",
+      "scene": "film-demo_0006",
+      "old_jump_veto_avoided": 8,
+      "proposed_jump_veto_avoided": 8,
+      "execution_reasons": {},
+      "handoff_reasons": {
+        "scene_changed_while_waiting": 4
+      },
+      "rank_result_status": {},
+      "late_results": 0
+    },
+    {
+      "mode": "first_admissible",
+      "scene": "film-demo_0018",
+      "old_jump_veto_avoided": 0,
+      "proposed_jump_veto_avoided": 0,
+      "execution_reasons": {},
+      "handoff_reasons": {},
+      "rank_result_status": {},
+      "late_results": 0
+    },
+    {
+      "mode": "decisions",
+      "scene": "film-demo_0002",
+      "old_jump_veto_avoided": 0,
+      "proposed_jump_veto_avoided": 0,
+      "execution_reasons": {},
+      "handoff_reasons": {
+        "scene_changed_while_waiting": 4,
+        "robot_drift_while_waiting": 4
+      },
+      "rank_result_status": {
+        "submitted": 12,
+        "no_selection": 12
+      },
+      "late_results": 0
+    },
+    {
+      "mode": "decisions",
+      "scene": "film-demo_0006",
+      "old_jump_veto_avoided": 9,
+      "proposed_jump_veto_avoided": 9,
+      "execution_reasons": {},
+      "handoff_reasons": {
+        "scene_changed_while_waiting": 4
+      },
+      "rank_result_status": {
+        "submitted": 12,
+        "selected": 2,
+        "no_selection": 10
+      },
+      "late_results": 0
+    },
+    {
+      "mode": "decisions",
+      "scene": "film-demo_0018",
+      "old_jump_veto_avoided": 0,
+      "proposed_jump_veto_avoided": 0,
+      "execution_reasons": {},
+      "handoff_reasons": {},
+      "rank_result_status": {
+        "submitted": 11,
+        "no_selection": 11
+      },
+      "late_results": 0
+    }
+  ],
+  "api_identity_audit": [
+    {
+      "scene": "film-demo_0006",
+      "api_request": 0,
+      "proposal": 0,
+      "candidate": "C",
+      "source_images_and_candidate_hashes_match": true,
+      "api_choice_matches": true,
+      "activated": true,
+      "executed_targets": 30,
+      "fully_executed": true,
+      "handoff_rejections": []
+    },
+    {
+      "scene": "film-demo_0006",
+      "api_request": 11,
+      "proposal": 11,
+      "candidate": "B",
+      "source_images_and_candidate_hashes_match": true,
+      "api_choice_matches": true,
+      "activated": true,
+      "executed_targets": 0,
+      "fully_executed": false,
+      "handoff_rejections": []
+    }
+  ],
+  "guard_integration_status": "Qualified simulated execution helper; production wrappers updated, complete perception/completion deployment not qualified.",
+  "limitations": [
+    "V4 causal held labels are privileged simulator annotation, unchanged from old contract",
+    "provisional frozen block dimensions retained",
+    "projected tool paths cannot establish object outcomes or whole-arm collision clearance",
+    "fixed2s boundary holds are a diagnostic, not smooth-motion deployment",
+    "only3 inspected development scenes per arm",
+    "LIVE05 found most projected candidate paths nearly overlap. UNKNOWN remains legitimate; no API-capability or critic-accuracy conclusion without distinguishable useful alternatives.",
+    "Two concurrent policy/simulator workers on one RTX4090; timing measures this shared-load pilot, not isolated API capacity. Native reference pauses simulation for inference; live arms use real wall deadlines."
+  ]
+}

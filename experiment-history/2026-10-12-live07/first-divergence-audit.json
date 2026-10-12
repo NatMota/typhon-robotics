@@ -1,0 +1,127 @@
+{
+  "scene": "film-demo_0006",
+  "initial_candidate_sets_and_noises_match_exactly": true,
+  "identical_control_and_truth_prefix_steps": 41,
+  "first_divergence_control_index": 41,
+  "first_divergence_simulator_step": 82,
+  "first_selected_live_api_result": {
+    "choice": "C",
+    "status": "valid",
+    "probabilities": [
+      {
+        "value": "A",
+        "probability": 0.13
+      },
+      {
+        "value": "B",
+        "probability": 0.04
+      },
+      {
+        "value": "C",
+        "probability": 0.38
+      },
+      {
+        "value": "D",
+        "probability": 0.08
+      },
+      {
+        "value": "UNKNOWN",
+        "probability": 0.37
+      }
+    ],
+    "confidence": 0.22,
+    "api_seconds": 0.3309148990083486,
+    "preview_seconds": 0.03058900000178255,
+    "usage": {
+      "input_tokens": 1817,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1817
+    },
+    "worker_seconds": 0.3617056119837798
+  },
+  "A_C_target_xyz_separation_mm": {
+    "median": 6.2371473759412766,
+    "max": 18.925229087471962
+  },
+  "A_C_all_first_chunk_gripper_commands_equal": true,
+  "initial_activated": [
+    {
+      "event": "activated",
+      "step": 81,
+      "policy_step": 41,
+      "wall_s": 2.0661768809950445,
+      "reason": "first_admissible_control",
+      "candidate": "A",
+      "proposal": 0,
+      "start_index": 0,
+      "remaining_steps": 30,
+      "held_steps": 41,
+      "stability_check": {
+        "eef_drift_m": 0.0005525537979892564,
+        "wrist_drift_deg": 0.0923606058406546,
+        "finger_drift_m": 0.0003365379731739143,
+        "changed_rgb_fraction": {
+          "primary": 0.00531005859375,
+          "secondary": 0.00103759765625
+        }
+      }
+    },
+    {
+      "event": "activated",
+      "step": 81,
+      "policy_step": 41,
+      "wall_s": 2.0655962089949753,
+      "reason": "decisions_api",
+      "candidate": "C",
+      "proposal": 0,
+      "start_index": 0,
+      "remaining_steps": 30,
+      "held_steps": 41,
+      "stability_check": {
+        "eef_drift_m": 0.0005525537979892564,
+        "wrist_drift_deg": 0.0923606058406546,
+        "finger_drift_m": 0.0003365379731739143,
+        "changed_rgb_fraction": {
+          "primary": 0.00531005859375,
+          "secondary": 0.00103759765625
+        }
+      }
+    }
+  ],
+  "activation_wait_ticks": {
+    "first_admissible": [
+      41,
+      42,
+      41,
+      41,
+      41,
+      40,
+      41,
+      41,
+      40,
+      41,
+      41
+    ],
+    "decisions": [
+      41,
+      41,
+      40,
+      40,
+      40,
+      40,
+      41,
+      40,
+      41,
+      41,
+      41
+    ]
+  },
+  "interpretation": "First actual control divergence follows the executed A versus C choice with an identical prior trajectory. Later wait schedules differ; final success causality still needs fixed-timing intervention. Low API confidence is descriptive and no threshold was fitted."
+}

@@ -1,0 +1,121 @@
+{
+  "episodes": [
+    {
+      "mode": "native_reference",
+      "scene": "film-demo_0002",
+      "control_steps": 800,
+      "score_recomputed": true,
+      "initial_rgb_proprio_noise_candidate0_match": true
+    },
+    {
+      "mode": "first_admissible",
+      "scene": "film-demo_0002",
+      "control_steps": 800,
+      "score_recomputed": true,
+      "initial_rgb_proprio_noise_candidate0_match": true
+    },
+    {
+      "mode": "decisions",
+      "scene": "film-demo_0002",
+      "control_steps": 800,
+      "score_recomputed": true,
+      "initial_rgb_proprio_noise_candidate0_match": true
+    },
+    {
+      "mode": "native_reference",
+      "scene": "film-demo_0006",
+      "control_steps": 800,
+      "score_recomputed": true,
+      "initial_rgb_proprio_noise_candidate0_match": true
+    },
+    {
+      "mode": "first_admissible",
+      "scene": "film-demo_0006",
+      "control_steps": 800,
+      "score_recomputed": true,
+      "initial_rgb_proprio_noise_candidate0_match": true
+    },
+    {
+      "mode": "decisions",
+      "scene": "film-demo_0006",
+      "control_steps": 800,
+      "score_recomputed": true,
+      "initial_rgb_proprio_noise_candidate0_match": true
+    },
+    {
+      "mode": "native_reference",
+      "scene": "film-demo_0018",
+      "control_steps": 800,
+      "score_recomputed": true,
+      "initial_rgb_proprio_noise_candidate0_match": true
+    },
+    {
+      "mode": "first_admissible",
+      "scene": "film-demo_0018",
+      "control_steps": 800,
+      "score_recomputed": true,
+      "initial_rgb_proprio_noise_candidate0_match": true
+    },
+    {
+      "mode": "decisions",
+      "scene": "film-demo_0018",
+      "control_steps": 800,
+      "score_recomputed": true,
+      "initial_rgb_proprio_noise_candidate0_match": true
+    }
+  ],
+  "videos": [
+    {
+      "path": "native_reference/film-demo_0002/rollout.mp4",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "path": "native_reference/film-demo_0006/rollout.mp4",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "path": "native_reference/film-demo_0018/rollout.mp4",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "path": "first_admissible/film-demo_0002/rollout.mp4",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "path": "first_admissible/film-demo_0006/rollout.mp4",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "path": "first_admissible/film-demo_0018/rollout.mp4",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "path": "decisions/film-demo_0002/rollout.mp4",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "path": "decisions/film-demo_0006/rollout.mp4",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "path": "decisions/film-demo_0018/rollout.mp4",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "path": "visual-review/live-integration-comparison.mp4",
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "comparison_frames": 200,
+  "same_initial_inputs_and_first_candidate": true
+}
