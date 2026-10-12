@@ -178,7 +178,7 @@ def run_case(scenario,output,classifier,policy,args):
                 remaining=config['control']['max_steps']-24-env.steps
                 for target in decision['actions'][:remaining]:
                     current=observation_for_actor(env,occluded)
-                    violation=service.check_execution(target,current,decision['valid_until'])
+                    violation=service.check_execution(target,current,decision['valid_until'],translation_step_m=env.episode_config['control']['translation_step_m'])
                     if violation:
                         service.record({'type':'execution_rejection','reason':violation,'control_step':env.steps})
                         break

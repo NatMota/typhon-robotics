@@ -84,7 +84,7 @@ class ServiceTests(unittest.TestCase):
         self.assertEqual(result['status'], 'execute')
         self.assertEqual(result['valid_until'], 190.)
         self.clock[0] = 190.
-        self.assertEqual(service.check_execution(self.actions[0], self.observation, result['valid_until']), 'action_deadline')
+        self.assertEqual(service.check_execution(self.actions[0], self.observation, result['valid_until'], translation_step_m=.05), 'action_deadline')
 
     def test_target_and_joint_boundaries(self):
         guard = Guard(self.config)
@@ -152,7 +152,7 @@ class ServiceTests(unittest.TestCase):
         service = self.make()
         result = service.step(self.observation, {}, 1, 10.)
         self.clock[0] = result['valid_until'] + .001
-        self.assertEqual(service.check_execution(result['actions'][0], self.observation, result['valid_until']), 'action_deadline')
+        self.assertEqual(service.check_execution(result['actions'][0], self.observation, result['valid_until'], translation_step_m=.05), 'action_deadline')
 
     def test_nonfinite_proprio_is_rejected_and_logged(self):
         self.observation['proprio']['eef_position_m'][0] = np.nan

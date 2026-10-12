@@ -108,7 +108,7 @@ def run_case(scenario, output, checker, policy, max_decisions, budget):
                 for target in decision['actions']:
                     # Live proprio is checked at EVERY executed control step.
                     current = env.observe()
-                    violation = service.check_execution(target, current, decision['valid_until'])
+                    violation = service.check_execution(target, current, decision['valid_until'], translation_step_m=env.episode_config['control']['translation_step_m'])
                     if violation:
                         service.record({'type': 'execution_rejection', 'reason': violation, 'control_step': env.steps})
                         break

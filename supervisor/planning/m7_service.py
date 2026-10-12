@@ -241,10 +241,11 @@ class SupervisorService:
         self.last_frame, self.decisions, self.bound_goal = None, 0, None
         self.record({'type': 'reset', 'episode_id': self.episode_id, 'config': asdict(self.config)})
 
-    def check_execution(self, target, observation, valid_until):
+    def check_execution(self, target, observation, valid_until, *, translation_step_m):
         if not math.isfinite(valid_until) or self.clock() >= valid_until:
             return 'action_deadline'
-        return self.guard.candidate(np.asarray([target]), observation)
+        from .execution_guard import execution_violation
+        return execution_violation(self.guard, target, observation, translation_step_m)
 
     def step(self, observation, reference, frame_id, observed_at, episode_deadline=None):
         start = self.clock()

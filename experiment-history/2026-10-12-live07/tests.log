@@ -1,0 +1,49 @@
+test_observable_scene_change_veto (tests.test_boundary_handoff.HandoffChecks.test_observable_scene_change_veto) ... ok
+test_request_extraction_identical_to_frozen_v4 (tests.test_boundary_handoff.HandoffChecks.test_request_extraction_identical_to_frozen_v4) ... ok
+test_robot_drift_and_existing_guard_still_apply (tests.test_boundary_handoff.HandoffChecks.test_robot_drift_and_existing_guard_still_apply) ... ok
+test_waiting_preserves_first_grip_transition_and_all_actions (tests.test_boundary_handoff.HandoffChecks.test_waiting_preserves_first_grip_transition_and_all_actions) ... ok
+test_camera_projection_convention (tests.test_decisions_ranker.RankingChecks.test_camera_projection_convention) ... ok
+test_consumed_prefix_is_removed (tests.test_decisions_ranker.RankingChecks.test_consumed_prefix_is_removed) ... ok
+test_guard_rechecked_after_selection (tests.test_decisions_ranker.RankingChecks.test_guard_rechecked_after_selection) ... ok
+test_invalid_candidates_and_answer (tests.test_decisions_ranker.RankingChecks.test_invalid_candidates_and_answer) ... ok
+test_late_reply_discarded (tests.test_decisions_ranker.RankingChecks.test_late_reply_discarded) ... ok
+test_live_controller_not_blocked_and_exact_copy (tests.test_decisions_ranker.RankingChecks.test_live_controller_not_blocked_and_exact_copy) ... ok
+test_skipped_gripper_phase_is_rejected (tests.test_decisions_ranker.RankingChecks.test_skipped_gripper_phase_is_rejected) ... ok
+test_stale_context_stays_discarded (tests.test_decisions_ranker.RankingChecks.test_stale_context_stays_discarded) ... ok
+test_full_raw_no_go_ray_preserved (tests.test_execution_guard.ExecutionContract.test_full_raw_no_go_ray_preserved) ... ok
+test_input_never_mutated (tests.test_execution_guard.ExecutionContract.test_input_never_mutated) ... ok
+test_invalid_controller_scale (tests.test_execution_guard.ExecutionContract.test_invalid_controller_scale) ... ok
+test_invalid_gripper (tests.test_execution_guard.ExecutionContract.test_invalid_gripper) ... ok
+test_invalid_rotation (tests.test_execution_guard.ExecutionContract.test_invalid_rotation) ... ok
+test_joint_limit_preserved (tests.test_execution_guard.ExecutionContract.test_joint_limit_preserved) ... ok
+test_joint_speed_preserved (tests.test_execution_guard.ExecutionContract.test_joint_speed_preserved) ... ok
+test_lag_is_not_an_executed_jump (tests.test_execution_guard.ExecutionContract.test_lag_is_not_an_executed_jump) ... ok
+test_nonfinite (tests.test_execution_guard.ExecutionContract.test_nonfinite) ... ok
+test_prospective_chunk_unchanged (tests.test_execution_guard.ExecutionContract.test_prospective_chunk_unchanged) ... ok
+test_raw_workspace_preserved (tests.test_execution_guard.ExecutionContract.test_raw_workspace_preserved) ... ok
+test_service_execution_preserves_full_no_go_ray (tests.test_execution_guard.ExecutionContract.test_service_execution_preserves_full_no_go_ray) ... ok
+test_service_execution_uses_clipped_adapter_but_admission_is_unchanged (tests.test_execution_guard.ExecutionContract.test_service_execution_uses_clipped_adapter_but_admission_is_unchanged) ... ok
+test_already_completed_requires_distinct_frames_then_latches (tests.test_m7_service.ServiceTests.test_already_completed_requires_distinct_frames_then_latches) ... ok
+test_checker_timeout_and_invalid_output_hold (tests.test_m7_service.ServiceTests.test_checker_timeout_and_invalid_output_hold) ... ok
+test_closed_gripper_prevents_completion (tests.test_m7_service.ServiceTests.test_closed_gripper_prevents_completion) ... ok
+test_completion_latch_cannot_leak_to_a_changed_goal (tests.test_m7_service.ServiceTests.test_completion_latch_cannot_leak_to_a_changed_goal) ... ok
+test_default_single_proposal_never_ranks_or_resamples (tests.test_m7_service.ServiceTests.test_default_single_proposal_never_ranks_or_resamples) ... ok
+test_degenerate_rotation_and_nonfinite_rejected (tests.test_m7_service.ServiceTests.test_degenerate_rotation_and_nonfinite_rejected) ... ok
+test_duplicate_does_not_count_as_more_evidence (tests.test_m7_service.ServiceTests.test_duplicate_does_not_count_as_more_evidence) ... ok
+test_episode_cutoff_without_per_decision_timeout (tests.test_m7_service.ServiceTests.test_episode_cutoff_without_per_decision_timeout) ... ok
+test_expired_selected_action_cannot_execute (tests.test_m7_service.ServiceTests.test_expired_selected_action_cannot_execute) ... ok
+test_no_go_crossing_detected_with_both_endpoints_outside (tests.test_m7_service.ServiceTests.test_no_go_crossing_detected_with_both_endpoints_outside) ... ok
+test_nonfinite_proprio_is_rejected_and_logged (tests.test_m7_service.ServiceTests.test_nonfinite_proprio_is_rejected_and_logged) ... ok
+test_proposal_overrun_discards_previously_valid_candidate (tests.test_m7_service.ServiceTests.test_proposal_overrun_discards_previously_valid_candidate) ... ok
+test_reference_veto_overrides_confident_qwen_complete (tests.test_m7_service.ServiceTests.test_reference_veto_overrides_confident_qwen_complete) ... ok
+test_reranking_selects_smooth_candidate (tests.test_m7_service.ServiceTests.test_reranking_selects_smooth_candidate) ... ok
+test_schema_rejects_false_release_and_nan_confidence (tests.test_m7_service.ServiceTests.test_schema_rejects_false_release_and_nan_confidence) ... ok
+test_stale_frame_holds_before_inference (tests.test_m7_service.ServiceTests.test_stale_frame_holds_before_inference) ... ok
+test_target_and_joint_boundaries (tests.test_m7_service.ServiceTests.test_target_and_joint_boundaries) ... ok
+test_uncertainty_breaks_completion_streak (tests.test_m7_service.ServiceTests.test_uncertainty_breaks_completion_streak) ... ok
+test_unknown_and_low_confidence_never_move (tests.test_m7_service.ServiceTests.test_unknown_and_low_confidence_never_move) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.119s
+
+OK

@@ -1,6 +1,7 @@
-import unittest,copy
+import unittest,copy,tempfile
+from pathlib import Path
 import numpy as np
-from supervisor.planning.m7_service import Guard,ServiceConfig
+from supervisor.planning.m7_service import Guard,ServiceConfig,SupervisorService
 from supervisor.planning.execution_guard import execution_violation,ExecutionGuard
 
 class ExecutionContract(unittest.TestCase):
@@ -43,4 +44,18 @@ class ExecutionContract(unittest.TestCase):
  def test_input_never_mutated(self):
   expected=self.a.copy();execution_violation(self.guard,self.a,self.obs,.05)
   np.testing.assert_array_equal(expected,self.a)
+
+ def test_service_execution_uses_clipped_adapter_but_admission_is_unchanged(self):
+  with tempfile.TemporaryDirectory() as folder:
+   service=SupervisorService(self.config,None,None,Path(folder)/'events.jsonl',clock=lambda:10.)
+   self.assertEqual(service.guard.candidate([self.a],self.obs),'proposed_target_jump')
+   self.assertIsNone(service.check_execution(self.a,self.obs,11.,translation_step_m=.05))
+   self.assertEqual(service.check_execution(self.a,self.obs,10.,translation_step_m=.05),'action_deadline')
+   self.assertEqual(service.guard.candidate([self.a],self.obs),'proposed_target_jump')
+ def test_service_execution_preserves_full_no_go_ray(self):
+  self.config.no_go_boxes_m=([ [.08,.09],[-.02,.02],[.98,1.02] ],)
+  with tempfile.TemporaryDirectory() as folder:
+   service=SupervisorService(self.config,None,None,Path(folder)/'events.jsonl',clock=lambda:10.)
+   self.assertEqual(service.check_execution(self.a,self.obs,11.,translation_step_m=.05),'proposed_no_go_crossing')
+
 if __name__=='__main__':unittest.main()
