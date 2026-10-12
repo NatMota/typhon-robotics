@@ -1,0 +1,39 @@
+{
+  "git_head": "68681a95dde86e9ce452c257611769f62df0fcd7",
+  "workers": [
+    {
+      "pid": 1231806,
+      "part": 0,
+      "command": [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs05-feature-motion/.venv-sim/bin/python",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs05-feature-motion/scripts/obs05_feature_motion.py",
+        "run",
+        "--protocol",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs05-feature-motion/configs/experiments/obs05/protocol.json",
+        "--out",
+        "/var/tmp/typhon-obs05-feature-motion-20261013",
+        "--part",
+        "0",
+        "--parts",
+        "2"
+      ]
+    },
+    {
+      "pid": 1231807,
+      "part": 1,
+      "command": [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs05-feature-motion/.venv-sim/bin/python",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs05-feature-motion/scripts/obs05_feature_motion.py",
+        "run",
+        "--protocol",
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/obs05-feature-motion/configs/experiments/obs05/protocol.json",
+        "--out",
+        "/var/tmp/typhon-obs05-feature-motion-20261013",
+        "--part",
+        "1",
+        "--parts",
+        "2"
+      ]
+    }
+  ]
+}

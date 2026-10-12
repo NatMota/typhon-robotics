@@ -1,0 +1,1501 @@
+{
+  "sample_count": 1219,
+  "independent_metric_recalculation_passed": true,
+  "label_formula_checked": true,
+  "legacy_supported_false_positives": {
+    "bilateral_contact_below_lift_threshold": 26,
+    "no_bilateral_contact": 8
+  },
+  "false_contact_events": [
+    {
+      "case": "broad-local-demo_0002-original-seed7417",
+      "index": 49,
+      "step": 236,
+      "previous_sample_contact": true,
+      "any_contact_in_case": true,
+      "context": [
+        {
+          "index": 47,
+          "step": 228,
+          "sim_time_s": 11.4,
+          "contact": true,
+          "supported_lift": true,
+          "lift_mm": 13.04185751536302,
+          "span_mm": 34.525778477448924,
+          "object_position_m": [
+            0.11971968121359938,
+            -0.12153071753101442,
+            0.8278263466749289
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": true,
+            "glyph_fresh": true
+          },
+          "motion_positive": {
+            "contour": true,
+            "glyph": true
+          }
+        },
+        {
+          "index": 48,
+          "step": 232,
+          "sim_time_s": 11.6,
+          "contact": true,
+          "supported_lift": false,
+          "lift_mm": 9.339957462816685,
+          "span_mm": 35.301728700143634,
+          "object_position_m": [
+            0.1259991095682274,
+            -0.1239963906454838,
+            0.8241244466223826
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": true,
+            "glyph_fresh": true
+          },
+          "motion_positive": {
+            "contour": true,
+            "glyph": true
+          }
+        },
+        {
+          "index": 49,
+          "step": 236,
+          "sim_time_s": 11.8,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": -1.2310266714149476,
+          "span_mm": 51.48206495050567,
+          "object_position_m": [
+            0.1294207563928928,
+            -0.12545413480608095,
+            0.813553462488151
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": true,
+            "glyph_fresh": true
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        },
+        {
+          "index": 50,
+          "step": 240,
+          "sim_time_s": 12.0,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": -0.06745437214117356,
+          "span_mm": 74.77658108121291,
+          "object_position_m": [
+            0.1293550510189883,
+            -0.1254718887132339,
+            0.8147170347874247
+          ],
+          "held": {
+            "contour_legacy": false,
+            "contour_fresh": false,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        },
+        {
+          "index": 51,
+          "step": 244,
+          "sim_time_s": 12.2,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": -0.004169826514521802,
+          "span_mm": 77.68523132915725,
+          "object_position_m": [
+            0.1293516900118452,
+            -0.12547280443668862,
+            0.8147803193330514
+          ],
+          "held": {
+            "contour_legacy": false,
+            "contour_fresh": false,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        }
+      ]
+    },
+    {
+      "case": "broad-local-demo_0003-yawplus15deg-seed7417",
+      "index": 60,
+      "step": 280,
+      "previous_sample_contact": false,
+      "any_contact_in_case": false,
+      "context": [
+        {
+          "index": 58,
+          "step": 272,
+          "sim_time_s": 13.6,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": 3.552713678800501e-12,
+          "span_mm": 77.70801437927133,
+          "object_position_m": [
+            -0.07478323044120819,
+            0.1031926877036551,
+            0.8147844891595695
+          ],
+          "held": {
+            "contour_legacy": false,
+            "contour_fresh": false,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        },
+        {
+          "index": 59,
+          "step": 276,
+          "sim_time_s": 13.8,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": 3.552713678800501e-12,
+          "span_mm": 50.284742998350204,
+          "object_position_m": [
+            -0.07478323044120819,
+            0.1031926877036551,
+            0.8147844891595695
+          ],
+          "held": {
+            "contour_legacy": false,
+            "contour_fresh": false,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": true,
+            "glyph": false
+          }
+        },
+        {
+          "index": 60,
+          "step": 280,
+          "sim_time_s": 14.0,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": 3.552713678800501e-12,
+          "span_mm": 13.143967812373987,
+          "object_position_m": [
+            -0.07478323044120819,
+            0.1031926877036551,
+            0.8147844891595695
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": true,
+            "glyph": false
+          }
+        },
+        {
+          "index": 61,
+          "step": 284,
+          "sim_time_s": 14.2,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": 3.552713678800501e-12,
+          "span_mm": 22.229295863761706,
+          "object_position_m": [
+            -0.07478323044120819,
+            0.1031926877036551,
+            0.8147844891595695
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        },
+        {
+          "index": 62,
+          "step": 288,
+          "sim_time_s": 14.4,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": 3.552713678800501e-12,
+          "span_mm": 58.71009098766579,
+          "object_position_m": [
+            -0.07478323044120819,
+            0.1031926877036551,
+            0.8147844891595695
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        }
+      ]
+    },
+    {
+      "case": "broad-local-demo_0003-yawplus15deg-seed7417",
+      "index": 61,
+      "step": 284,
+      "previous_sample_contact": false,
+      "any_contact_in_case": false,
+      "context": [
+        {
+          "index": 59,
+          "step": 276,
+          "sim_time_s": 13.8,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": 3.552713678800501e-12,
+          "span_mm": 50.284742998350204,
+          "object_position_m": [
+            -0.07478323044120819,
+            0.1031926877036551,
+            0.8147844891595695
+          ],
+          "held": {
+            "contour_legacy": false,
+            "contour_fresh": false,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": true,
+            "glyph": false
+          }
+        },
+        {
+          "index": 60,
+          "step": 280,
+          "sim_time_s": 14.0,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": 3.552713678800501e-12,
+          "span_mm": 13.143967812373987,
+          "object_position_m": [
+            -0.07478323044120819,
+            0.1031926877036551,
+            0.8147844891595695
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": true,
+            "glyph": false
+          }
+        },
+        {
+          "index": 61,
+          "step": 284,
+          "sim_time_s": 14.2,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": 3.552713678800501e-12,
+          "span_mm": 22.229295863761706,
+          "object_position_m": [
+            -0.07478323044120819,
+            0.1031926877036551,
+            0.8147844891595695
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        },
+        {
+          "index": 62,
+          "step": 288,
+          "sim_time_s": 14.4,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": 3.552713678800501e-12,
+          "span_mm": 58.71009098766579,
+          "object_position_m": [
+            -0.07478323044120819,
+            0.1031926877036551,
+            0.8147844891595695
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        },
+        {
+          "index": 63,
+          "step": 292,
+          "sim_time_s": 14.6,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": 3.552713678800501e-12,
+          "span_mm": 76.05849042169322,
+          "object_position_m": [
+            -0.07478323044120819,
+            0.1031926877036551,
+            0.8147844891595695
+          ],
+          "held": {
+            "contour_legacy": false,
+            "contour_fresh": false,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        }
+      ]
+    },
+    {
+      "case": "broad-local-demo_0003-yawplus15deg-seed7417",
+      "index": 62,
+      "step": 288,
+      "previous_sample_contact": false,
+      "any_contact_in_case": false,
+      "context": [
+        {
+          "index": 60,
+          "step": 280,
+          "sim_time_s": 14.0,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": 3.552713678800501e-12,
+          "span_mm": 13.143967812373987,
+          "object_position_m": [
+            -0.07478323044120819,
+            0.1031926877036551,
+            0.8147844891595695
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": true,
+            "glyph": false
+          }
+        },
+        {
+          "index": 61,
+          "step": 284,
+          "sim_time_s": 14.2,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": 3.552713678800501e-12,
+          "span_mm": 22.229295863761706,
+          "object_position_m": [
+            -0.07478323044120819,
+            0.1031926877036551,
+            0.8147844891595695
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        },
+        {
+          "index": 62,
+          "step": 288,
+          "sim_time_s": 14.4,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": 3.552713678800501e-12,
+          "span_mm": 58.71009098766579,
+          "object_position_m": [
+            -0.07478323044120819,
+            0.1031926877036551,
+            0.8147844891595695
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        },
+        {
+          "index": 63,
+          "step": 292,
+          "sim_time_s": 14.6,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": 3.552713678800501e-12,
+          "span_mm": 76.05849042169322,
+          "object_position_m": [
+            -0.07478323044120819,
+            0.1031926877036551,
+            0.8147844891595695
+          ],
+          "held": {
+            "contour_legacy": false,
+            "contour_fresh": false,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        },
+        {
+          "index": 64,
+          "step": 296,
+          "sim_time_s": 14.8,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": 3.552713678800501e-12,
+          "span_mm": 66.9430140192631,
+          "object_position_m": [
+            -0.07478323044120819,
+            0.1031926877036551,
+            0.8147844891595695
+          ],
+          "held": {
+            "contour_legacy": false,
+            "contour_fresh": false,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        }
+      ]
+    },
+    {
+      "case": "expert-personal_demo_0002",
+      "index": 52,
+      "step": 248,
+      "previous_sample_contact": true,
+      "any_contact_in_case": true,
+      "context": [
+        {
+          "index": 50,
+          "step": 240,
+          "sim_time_s": 12.0,
+          "contact": true,
+          "supported_lift": false,
+          "lift_mm": 7.30521080750024,
+          "span_mm": 34.524977480729824,
+          "object_position_m": [
+            0.12077006338148887,
+            -0.12018568419949081,
+            0.8220896999670662
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": true,
+            "glyph_fresh": true
+          },
+          "motion_positive": {
+            "contour": true,
+            "glyph": true
+          }
+        },
+        {
+          "index": 51,
+          "step": 244,
+          "sim_time_s": 12.2,
+          "contact": true,
+          "supported_lift": false,
+          "lift_mm": 8.13589678902671,
+          "span_mm": 35.30192925363933,
+          "object_position_m": [
+            0.12500767623289966,
+            -0.12099426152636028,
+            0.8229203859485926
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": true,
+            "glyph_fresh": true
+          },
+          "motion_positive": {
+            "contour": true,
+            "glyph": true
+          }
+        },
+        {
+          "index": 52,
+          "step": 248,
+          "sim_time_s": 12.4,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": -1.0193280273159688,
+          "span_mm": 51.48385894705265,
+          "object_position_m": [
+            0.12654557239672187,
+            -0.12107434637320479,
+            0.81376516113225
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": true,
+            "glyph_fresh": true
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        },
+        {
+          "index": 53,
+          "step": 252,
+          "sim_time_s": 12.6,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": -0.05683757442032089,
+          "span_mm": 74.77681282938583,
+          "object_position_m": [
+            0.1264813364083575,
+            -0.12105036237547927,
+            0.8147276515851456
+          ],
+          "held": {
+            "contour_legacy": false,
+            "contour_fresh": false,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        },
+        {
+          "index": 54,
+          "step": 256,
+          "sim_time_s": 12.8,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": -0.0035172117992532392,
+          "span_mm": 77.68524343348007,
+          "object_position_m": [
+            0.12647800190000635,
+            -0.12104910596315217,
+            0.8147809719477667
+          ],
+          "held": {
+            "contour_legacy": false,
+            "contour_fresh": false,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        }
+      ]
+    },
+    {
+      "case": "expert-personal_demo_0003",
+      "index": 52,
+      "step": 248,
+      "previous_sample_contact": true,
+      "any_contact_in_case": true,
+      "context": [
+        {
+          "index": 50,
+          "step": 240,
+          "sim_time_s": 12.0,
+          "contact": true,
+          "supported_lift": false,
+          "lift_mm": 8.042702853857996,
+          "span_mm": 34.52526497550175,
+          "object_position_m": [
+            0.12269315777186372,
+            -0.11966934454765991,
+            0.8228271920134239
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": true,
+            "glyph_fresh": true
+          },
+          "motion_positive": {
+            "contour": true,
+            "glyph": true
+          }
+        },
+        {
+          "index": 51,
+          "step": 244,
+          "sim_time_s": 12.2,
+          "contact": true,
+          "supported_lift": false,
+          "lift_mm": 8.253557493964724,
+          "span_mm": 35.303380562421665,
+          "object_position_m": [
+            0.1264276200413119,
+            -0.12067172168993649,
+            0.8230380466535306
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": true,
+            "glyph_fresh": true
+          },
+          "motion_positive": {
+            "contour": true,
+            "glyph": true
+          }
+        },
+        {
+          "index": 52,
+          "step": 248,
+          "sim_time_s": 12.4,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": -0.9111579887990384,
+          "span_mm": 51.48421038943216,
+          "object_position_m": [
+            0.12746134410165702,
+            -0.12085585039503212,
+            0.8138733311707669
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": true,
+            "glyph_fresh": true
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        },
+        {
+          "index": 53,
+          "step": 252,
+          "sim_time_s": 12.6,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": -0.05138947411598149,
+          "span_mm": 74.77685236430328,
+          "object_position_m": [
+            0.127455068147374,
+            -0.12087650298273236,
+            0.8147330996854499
+          ],
+          "held": {
+            "contour_legacy": false,
+            "contour_fresh": false,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        },
+        {
+          "index": 54,
+          "step": 256,
+          "sim_time_s": 12.8,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": -0.0031820389732040155,
+          "span_mm": 77.68525461476911,
+          "object_position_m": [
+            0.12745473870745666,
+            -0.12087759582618629,
+            0.8147813071205927
+          ],
+          "held": {
+            "contour_legacy": false,
+            "contour_fresh": false,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        }
+      ]
+    },
+    {
+      "case": "expert-personal_demo_0005",
+      "index": 50,
+      "step": 240,
+      "previous_sample_contact": true,
+      "any_contact_in_case": true,
+      "context": [
+        {
+          "index": 48,
+          "step": 232,
+          "sim_time_s": 11.6,
+          "contact": true,
+          "supported_lift": false,
+          "lift_mm": 6.755391046739168,
+          "span_mm": 34.52498316600652,
+          "object_position_m": [
+            0.11976640037756159,
+            -0.11976674675214666,
+            0.8215398802063051
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": true,
+            "glyph_fresh": true
+          },
+          "motion_positive": {
+            "contour": true,
+            "glyph": true
+          }
+        },
+        {
+          "index": 49,
+          "step": 236,
+          "sim_time_s": 11.8,
+          "contact": true,
+          "supported_lift": false,
+          "lift_mm": 6.82916216389895,
+          "span_mm": 34.948692038161866,
+          "object_position_m": [
+            0.12470313274027194,
+            -0.12088085763997405,
+            0.8216136513234649
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": true,
+            "glyph_fresh": true
+          },
+          "motion_positive": {
+            "contour": true,
+            "glyph": true
+          }
+        },
+        {
+          "index": 50,
+          "step": 240,
+          "sim_time_s": 12.0,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": -1.9413792346070213,
+          "span_mm": 43.94916215365188,
+          "object_position_m": [
+            0.12713051903743183,
+            -0.12094136910302114,
+            0.8128431099249589
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": true,
+            "glyph_fresh": true
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        },
+        {
+          "index": 51,
+          "step": 244,
+          "sim_time_s": 12.2,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": -0.1035634689063869,
+          "span_mm": 72.23856503522491,
+          "object_position_m": [
+            0.12705506649736287,
+            -0.12099095728316109,
+            0.8146809256906595
+          ],
+          "held": {
+            "contour_legacy": false,
+            "contour_fresh": false,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        },
+        {
+          "index": 52,
+          "step": 248,
+          "sim_time_s": 12.4,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": -0.006378663050643496,
+          "span_mm": 77.4368361717925,
+          "object_position_m": [
+            0.12705102580368152,
+            -0.12099351236533233,
+            0.8147781104965153
+          ],
+          "held": {
+            "contour_legacy": false,
+            "contour_fresh": false,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        }
+      ]
+    },
+    {
+      "case": "expert-personal_demo_0013",
+      "index": 49,
+      "step": 236,
+      "previous_sample_contact": true,
+      "any_contact_in_case": true,
+      "context": [
+        {
+          "index": 47,
+          "step": 228,
+          "sim_time_s": 11.4,
+          "contact": true,
+          "supported_lift": false,
+          "lift_mm": 8.037313327728167,
+          "span_mm": 34.52513888793805,
+          "object_position_m": [
+            0.12177745064022032,
+            -0.11976963695989887,
+            0.8228218024872941
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": true,
+            "glyph_fresh": true
+          },
+          "motion_positive": {
+            "contour": true,
+            "glyph": true
+          }
+        },
+        {
+          "index": 48,
+          "step": 232,
+          "sim_time_s": 11.6,
+          "contact": true,
+          "supported_lift": false,
+          "lift_mm": 8.16210574386622,
+          "span_mm": 34.948232349090375,
+          "object_position_m": [
+            0.12679192164982095,
+            -0.12084463774458931,
+            0.8229465949034321
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": true,
+            "glyph_fresh": true
+          },
+          "motion_positive": {
+            "contour": true,
+            "glyph": true
+          }
+        },
+        {
+          "index": 49,
+          "step": 236,
+          "sim_time_s": 11.8,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": -2.102455649808488,
+          "span_mm": 43.94973213308033,
+          "object_position_m": [
+            0.12855181579647545,
+            -0.12122207614608203,
+            0.8126820335097574
+          ],
+          "held": {
+            "contour_legacy": true,
+            "contour_fresh": true,
+            "glyph_legacy": true,
+            "glyph_fresh": true
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        },
+        {
+          "index": 50,
+          "step": 240,
+          "sim_time_s": 12.0,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": -0.11186760068293555,
+          "span_mm": 72.23862274003176,
+          "object_position_m": [
+            0.12855528756980883,
+            -0.12106027158876495,
+            0.814672621558883
+          ],
+          "held": {
+            "contour_legacy": false,
+            "contour_fresh": false,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        },
+        {
+          "index": 51,
+          "step": 244,
+          "sim_time_s": 12.2,
+          "contact": false,
+          "supported_lift": false,
+          "lift_mm": -0.006883858371775631,
+          "span_mm": 77.43684106179047,
+          "object_position_m": [
+            0.12855545699234042,
+            -0.12105176606105943,
+            0.8147776053011941
+          ],
+          "held": {
+            "contour_legacy": false,
+            "contour_fresh": false,
+            "glyph_legacy": false,
+            "glyph_fresh": false
+          },
+          "motion_positive": {
+            "contour": false,
+            "glyph": false
+          }
+        }
+      ]
+    }
+  ],
+  "per_case": [
+    {
+      "case": "broad-local-demo_0002-original-seed7417",
+      "samples": 366,
+      "contact_samples": 25,
+      "lift_samples": 23,
+      "contour_legacy": {
+        "bilateral_contact": {
+          "tp": 25,
+          "fp": 1,
+          "fn": 0
+        },
+        "supported_lift": {
+          "tp": 23,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "contour_fresh": {
+        "bilateral_contact": {
+          "tp": 25,
+          "fp": 1,
+          "fn": 0
+        },
+        "supported_lift": {
+          "tp": 23,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "glyph_legacy": {
+        "bilateral_contact": {
+          "tp": 12,
+          "fp": 1,
+          "fn": 13
+        },
+        "supported_lift": {
+          "tp": 11,
+          "fp": 2,
+          "fn": 12
+        }
+      },
+      "glyph_fresh": {
+        "bilateral_contact": {
+          "tp": 11,
+          "fp": 1,
+          "fn": 14
+        },
+        "supported_lift": {
+          "tp": 10,
+          "fp": 2,
+          "fn": 13
+        }
+      }
+    },
+    {
+      "case": "broad-local-demo_0003-yawplus15deg-seed7417",
+      "samples": 366,
+      "contact_samples": 0,
+      "lift_samples": 0,
+      "contour_legacy": {
+        "bilateral_contact": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        },
+        "supported_lift": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "contour_fresh": {
+        "bilateral_contact": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        },
+        "supported_lift": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "glyph_legacy": {
+        "bilateral_contact": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "supported_lift": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "glyph_fresh": {
+        "bilateral_contact": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "supported_lift": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "case": "expert-personal_demo_0001",
+      "samples": 113,
+      "contact_samples": 46,
+      "lift_samples": 41,
+      "contour_legacy": {
+        "bilateral_contact": {
+          "tp": 42,
+          "fp": 0,
+          "fn": 4
+        },
+        "supported_lift": {
+          "tp": 40,
+          "fp": 2,
+          "fn": 1
+        }
+      },
+      "contour_fresh": {
+        "bilateral_contact": {
+          "tp": 25,
+          "fp": 0,
+          "fn": 21
+        },
+        "supported_lift": {
+          "tp": 23,
+          "fp": 2,
+          "fn": 18
+        }
+      },
+      "glyph_legacy": {
+        "bilateral_contact": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 34
+        },
+        "supported_lift": {
+          "tp": 10,
+          "fp": 2,
+          "fn": 31
+        }
+      },
+      "glyph_fresh": {
+        "bilateral_contact": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 35
+        },
+        "supported_lift": {
+          "tp": 9,
+          "fp": 2,
+          "fn": 32
+        }
+      }
+    },
+    {
+      "case": "expert-personal_demo_0002",
+      "samples": 77,
+      "contact_samples": 28,
+      "lift_samples": 23,
+      "contour_legacy": {
+        "bilateral_contact": {
+          "tp": 27,
+          "fp": 1,
+          "fn": 1
+        },
+        "supported_lift": {
+          "tp": 23,
+          "fp": 5,
+          "fn": 0
+        }
+      },
+      "contour_fresh": {
+        "bilateral_contact": {
+          "tp": 24,
+          "fp": 1,
+          "fn": 4
+        },
+        "supported_lift": {
+          "tp": 22,
+          "fp": 3,
+          "fn": 1
+        }
+      },
+      "glyph_legacy": {
+        "bilateral_contact": {
+          "tp": 10,
+          "fp": 1,
+          "fn": 18
+        },
+        "supported_lift": {
+          "tp": 8,
+          "fp": 3,
+          "fn": 15
+        }
+      },
+      "glyph_fresh": {
+        "bilateral_contact": {
+          "tp": 10,
+          "fp": 1,
+          "fn": 18
+        },
+        "supported_lift": {
+          "tp": 8,
+          "fp": 3,
+          "fn": 15
+        }
+      }
+    },
+    {
+      "case": "expert-personal_demo_0003",
+      "samples": 77,
+      "contact_samples": 21,
+      "lift_samples": 16,
+      "contour_legacy": {
+        "bilateral_contact": {
+          "tp": 21,
+          "fp": 1,
+          "fn": 0
+        },
+        "supported_lift": {
+          "tp": 16,
+          "fp": 6,
+          "fn": 0
+        }
+      },
+      "contour_fresh": {
+        "bilateral_contact": {
+          "tp": 20,
+          "fp": 1,
+          "fn": 1
+        },
+        "supported_lift": {
+          "tp": 15,
+          "fp": 6,
+          "fn": 1
+        }
+      },
+      "glyph_legacy": {
+        "bilateral_contact": {
+          "tp": 18,
+          "fp": 1,
+          "fn": 3
+        },
+        "supported_lift": {
+          "tp": 16,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "glyph_fresh": {
+        "bilateral_contact": {
+          "tp": 7,
+          "fp": 1,
+          "fn": 14
+        },
+        "supported_lift": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 11
+        }
+      }
+    },
+    {
+      "case": "expert-personal_demo_0005",
+      "samples": 75,
+      "contact_samples": 25,
+      "lift_samples": 20,
+      "contour_legacy": {
+        "bilateral_contact": {
+          "tp": 25,
+          "fp": 1,
+          "fn": 0
+        },
+        "supported_lift": {
+          "tp": 20,
+          "fp": 6,
+          "fn": 0
+        }
+      },
+      "contour_fresh": {
+        "bilateral_contact": {
+          "tp": 24,
+          "fp": 1,
+          "fn": 1
+        },
+        "supported_lift": {
+          "tp": 19,
+          "fp": 6,
+          "fn": 1
+        }
+      },
+      "glyph_legacy": {
+        "bilateral_contact": {
+          "tp": 15,
+          "fp": 1,
+          "fn": 10
+        },
+        "supported_lift": {
+          "tp": 13,
+          "fp": 3,
+          "fn": 7
+        }
+      },
+      "glyph_fresh": {
+        "bilateral_contact": {
+          "tp": 9,
+          "fp": 1,
+          "fn": 16
+        },
+        "supported_lift": {
+          "tp": 7,
+          "fp": 3,
+          "fn": 13
+        }
+      }
+    },
+    {
+      "case": "expert-personal_demo_0012",
+      "samples": 71,
+      "contact_samples": 23,
+      "lift_samples": 18,
+      "contour_legacy": {
+        "bilateral_contact": {
+          "tp": 23,
+          "fp": 0,
+          "fn": 0
+        },
+        "supported_lift": {
+          "tp": 18,
+          "fp": 5,
+          "fn": 0
+        }
+      },
+      "contour_fresh": {
+        "bilateral_contact": {
+          "tp": 23,
+          "fp": 0,
+          "fn": 0
+        },
+        "supported_lift": {
+          "tp": 18,
+          "fp": 5,
+          "fn": 0
+        }
+      },
+      "glyph_legacy": {
+        "bilateral_contact": {
+          "tp": 21,
+          "fp": 0,
+          "fn": 2
+        },
+        "supported_lift": {
+          "tp": 18,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "glyph_fresh": {
+        "bilateral_contact": {
+          "tp": 16,
+          "fp": 0,
+          "fn": 7
+        },
+        "supported_lift": {
+          "tp": 13,
+          "fp": 3,
+          "fn": 5
+        }
+      }
+    },
+    {
+      "case": "expert-personal_demo_0013",
+      "samples": 74,
+      "contact_samples": 24,
+      "lift_samples": 18,
+      "contour_legacy": {
+        "bilateral_contact": {
+          "tp": 21,
+          "fp": 1,
+          "fn": 3
+        },
+        "supported_lift": {
+          "tp": 18,
+          "fp": 4,
+          "fn": 0
+        }
+      },
+      "contour_fresh": {
+        "bilateral_contact": {
+          "tp": 20,
+          "fp": 1,
+          "fn": 4
+        },
+        "supported_lift": {
+          "tp": 18,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "glyph_legacy": {
+        "bilateral_contact": {
+          "tp": 10,
+          "fp": 1,
+          "fn": 14
+        },
+        "supported_lift": {
+          "tp": 8,
+          "fp": 3,
+          "fn": 10
+        }
+      },
+      "glyph_fresh": {
+        "bilateral_contact": {
+          "tp": 10,
+          "fp": 1,
+          "fn": 14
+        },
+        "supported_lift": {
+          "tp": 8,
+          "fp": 3,
+          "fn": 10
+        }
+      }
+    }
+  ],
+  "units": "Samples at 5 Hz; correlated observations, not independent trials.",
+  "visuals": [
+    {
+      "file": "empty-grasp.jpg",
+      "case": "broad-local-demo_0003-yawplus15deg-seed7417",
+      "sample_index": 60,
+      "step": 280,
+      "selection": "post-hoc diagnostic example"
+    },
+    {
+      "file": "release-lag.jpg",
+      "case": "expert-personal_demo_0002",
+      "sample_index": 52,
+      "step": 248,
+      "selection": "post-hoc diagnostic example"
+    },
+    {
+      "file": "missed-lift.jpg",
+      "case": "broad-local-demo_0002-original-seed7417",
+      "sample_index": 31,
+      "step": 164,
+      "selection": "post-hoc diagnostic example"
+    }
+  ]
+}
