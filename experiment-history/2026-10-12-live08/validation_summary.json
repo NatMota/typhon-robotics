@@ -1,0 +1,320 @@
+{
+  "all_four_frozen_cells_complete": true,
+  "results": [
+    {
+      "route": "A_wait40",
+      "first_preference": "A",
+      "boundary_hold_ticks": 40,
+      "pickup": true,
+      "placement_without_yaw": true,
+      "footprint_inside_target": true,
+      "strict_success": false,
+      "remaining_yaw_error_deg": 79.11948330971532,
+      "yaw_gap_closed_deg": 81.40079914924976,
+      "centre_error_mm": 14.967177215582836,
+      "grasp_attempts": 1,
+      "verified_lifts": 1,
+      "maximum_recorded_lift_mm": 177.97211280763315,
+      "policy_actions": 300,
+      "queries": 12,
+      "wall_s": 11.185046354017686,
+      "execution_counts": {
+        "boundary_hold": 475,
+        "proposal": 300,
+        "guard_hold": 1,
+        "stability_hold": 24
+      },
+      "admitted_candidates": [
+        {
+          "query": 0,
+          "candidate": "A"
+        },
+        {
+          "query": 2,
+          "candidate": "A"
+        },
+        {
+          "query": 3,
+          "candidate": "A"
+        },
+        {
+          "query": 4,
+          "candidate": "A"
+        },
+        {
+          "query": 5,
+          "candidate": "A"
+        },
+        {
+          "query": 6,
+          "candidate": "A"
+        },
+        {
+          "query": 7,
+          "candidate": "A"
+        },
+        {
+          "query": 8,
+          "candidate": "A"
+        },
+        {
+          "query": 9,
+          "candidate": "A"
+        },
+        {
+          "query": 10,
+          "candidate": "A"
+        },
+        {
+          "query": 11,
+          "candidate": "A"
+        }
+      ],
+      "boundary_rejections": {
+        "admissible": 11,
+        "scene_changed_while_waiting": 4
+      }
+    },
+    {
+      "route": "C_wait40",
+      "first_preference": "C",
+      "boundary_hold_ticks": 40,
+      "pickup": false,
+      "placement_without_yaw": false,
+      "footprint_inside_target": false,
+      "strict_success": false,
+      "remaining_yaw_error_deg": 164.57824624898612,
+      "yaw_gap_closed_deg": -4.057963790021034,
+      "centre_error_mm": 194.72342110390912,
+      "grasp_attempts": 8,
+      "verified_lifts": 0,
+      "maximum_recorded_lift_mm": 0.16930042723839467,
+      "policy_actions": 294,
+      "queries": 12,
+      "wall_s": 11.031271701009246,
+      "execution_counts": {
+        "boundary_hold": 480,
+        "proposal": 294,
+        "guard_hold": 2,
+        "stability_hold": 24
+      },
+      "admitted_candidates": [
+        {
+          "query": 0,
+          "candidate": "C"
+        },
+        {
+          "query": 2,
+          "candidate": "A"
+        },
+        {
+          "query": 3,
+          "candidate": "A"
+        },
+        {
+          "query": 4,
+          "candidate": "A"
+        },
+        {
+          "query": 5,
+          "candidate": "A"
+        },
+        {
+          "query": 6,
+          "candidate": "A"
+        },
+        {
+          "query": 7,
+          "candidate": "A"
+        },
+        {
+          "query": 9,
+          "candidate": "A"
+        },
+        {
+          "query": 10,
+          "candidate": "A"
+        },
+        {
+          "query": 11,
+          "candidate": "A"
+        }
+      ],
+      "boundary_rejections": {
+        "admissible": 10,
+        "scene_changed_while_waiting": 8
+      }
+    },
+    {
+      "route": "A_wait41",
+      "first_preference": "A",
+      "boundary_hold_ticks": 41,
+      "pickup": true,
+      "placement_without_yaw": true,
+      "footprint_inside_target": true,
+      "strict_success": false,
+      "remaining_yaw_error_deg": 81.41656481931723,
+      "yaw_gap_closed_deg": 79.10371763964785,
+      "centre_error_mm": 14.62544173258219,
+      "grasp_attempts": 1,
+      "verified_lifts": 1,
+      "maximum_recorded_lift_mm": 176.598134630364,
+      "policy_actions": 300,
+      "queries": 12,
+      "wall_s": 10.580145257001277,
+      "execution_counts": {
+        "boundary_hold": 475,
+        "proposal": 300,
+        "guard_hold": 1,
+        "stability_hold": 24
+      },
+      "admitted_candidates": [
+        {
+          "query": 0,
+          "candidate": "A"
+        },
+        {
+          "query": 2,
+          "candidate": "A"
+        },
+        {
+          "query": 3,
+          "candidate": "A"
+        },
+        {
+          "query": 4,
+          "candidate": "A"
+        },
+        {
+          "query": 5,
+          "candidate": "A"
+        },
+        {
+          "query": 6,
+          "candidate": "A"
+        },
+        {
+          "query": 7,
+          "candidate": "A"
+        },
+        {
+          "query": 8,
+          "candidate": "A"
+        },
+        {
+          "query": 9,
+          "candidate": "A"
+        },
+        {
+          "query": 10,
+          "candidate": "A"
+        },
+        {
+          "query": 11,
+          "candidate": "A"
+        }
+      ],
+      "boundary_rejections": {
+        "admissible": 11,
+        "scene_changed_while_waiting": 4
+      }
+    },
+    {
+      "route": "C_wait41",
+      "first_preference": "C",
+      "boundary_hold_ticks": 41,
+      "pickup": false,
+      "placement_without_yaw": false,
+      "footprint_inside_target": false,
+      "strict_success": false,
+      "remaining_yaw_error_deg": 162.89147084790264,
+      "yaw_gap_closed_deg": -2.3711883889375542,
+      "centre_error_mm": 195.5354480924794,
+      "grasp_attempts": 8,
+      "verified_lifts": 0,
+      "maximum_recorded_lift_mm": 0.18589922118805724,
+      "policy_actions": 300,
+      "queries": 12,
+      "wall_s": 10.404839274997357,
+      "execution_counts": {
+        "boundary_hold": 475,
+        "proposal": 300,
+        "guard_hold": 1,
+        "stability_hold": 24
+      },
+      "admitted_candidates": [
+        {
+          "query": 0,
+          "candidate": "C"
+        },
+        {
+          "query": 2,
+          "candidate": "A"
+        },
+        {
+          "query": 3,
+          "candidate": "A"
+        },
+        {
+          "query": 4,
+          "candidate": "A"
+        },
+        {
+          "query": 5,
+          "candidate": "A"
+        },
+        {
+          "query": 6,
+          "candidate": "A"
+        },
+        {
+          "query": 7,
+          "candidate": "A"
+        },
+        {
+          "query": 8,
+          "candidate": "A"
+        },
+        {
+          "query": 9,
+          "candidate": "A"
+        },
+        {
+          "query": 10,
+          "candidate": "A"
+        },
+        {
+          "query": 11,
+          "candidate": "A"
+        }
+      ],
+      "boundary_rejections": {
+        "admissible": 11,
+        "scene_changed_while_waiting": 4
+      }
+    }
+  ],
+  "within_wait_contrasts": [
+    {
+      "wait_ticks": 40,
+      "exact_control_and_truth_prefix": 40,
+      "first_difference_at_choice": true
+    },
+    {
+      "wait_ticks": 41,
+      "exact_control_and_truth_prefix": 41,
+      "first_difference_at_choice": true
+    }
+  ],
+  "initial_RGB_noise_and_four_proposals_match_LIVE07": true,
+  "api_calls": 0,
+  "no_training": true,
+  "limits": [
+    "One inspected development scene, one seed per cell; no statistical generalisation",
+    "Fresh camera rendering repeatability limits recorded inLIVE05/06",
+    "Privileged causal held annotation retained",
+    "Actual selected indices and skipped prefixes audited; preferences do not bypass admissibility",
+    "No claim about general Decisions model capability or physical robot safety",
+    "Fixed40/41 tick experiment differs from variable wall scheduler; no claim of exact full LIVE07 reproduction"
+  ]
+}

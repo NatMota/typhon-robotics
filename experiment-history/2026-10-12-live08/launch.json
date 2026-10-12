@@ -1,0 +1,31 @@
+{
+  "unix": 1791844482.493674,
+  "worktree": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/live08-choice-timing",
+  "commit": "4e60005d03efb4c4335356ceac52c2d3d4b38a52",
+  "jobs": [
+    {
+      "shard": 0,
+      "pid": 1214742,
+      "command": [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/live08-choice-timing/.venv-sim/bin/python",
+        "-u",
+        "scripts/live08_choice_timing.py",
+        "run",
+        "--shard",
+        "0"
+      ]
+    },
+    {
+      "shard": 1,
+      "pid": 1214743,
+      "command": [
+        "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/live08-choice-timing/.venv-sim/bin/python",
+        "-u",
+        "scripts/live08_choice_timing.py",
+        "run",
+        "--shard",
+        "1"
+      ]
+    }
+  ]
+}
