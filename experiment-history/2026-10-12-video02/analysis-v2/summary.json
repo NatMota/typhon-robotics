@@ -1,0 +1,23 @@
+{
+  "frames": 2644,
+  "four_second_windows": 147,
+  "windows_by_split": {
+    "P_train": 69,
+    "other_observation_only": 40,
+    "P_validation": 23,
+    "R_train": 15
+  },
+  "unique_anchor_samples": 2245,
+  "physical_contact_labels": 0,
+  "robot_action_labels": 0,
+  "previews": 6,
+  "synchronization_uncertainty_s": 0.25,
+  "time_resolution_note": "10Hz preserves more observations; does not improve the original synchronization uncertainty",
+  "adapter_gate_passed": false,
+  "adapter_missing": [
+    "measured physical scale/camera pose",
+    "qualified lift/metric depth",
+    "independent contact and gripper event timing"
+  ],
+  "source_human_takes": 16
+}

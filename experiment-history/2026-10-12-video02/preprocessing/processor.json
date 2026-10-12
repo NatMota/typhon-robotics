@@ -1,0 +1,32 @@
+{
+  "_processor_class": "XVLAProcessor",
+  "auto_map": {
+    "AutoProcessor": "processing_xvla.XVLAProcessor"
+  },
+  "image_processor_type": "CLIPImageProcessor",
+  "do_resize": true,
+  "size": {
+    "height": 224,
+    "width": 224
+  },
+  "resample": 3,
+  "do_center_crop": false,
+  "crop_size": {
+    "height": 224,
+    "width": 224
+  },
+  "do_rescale": true,
+  "rescale_factor": 0.00392156862745098,
+  "do_normalize": true,
+  "image_mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "image_std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "do_convert_rgb": null
+}

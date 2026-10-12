@@ -1,0 +1,37 @@
+{
+  "schema": "video02-features-v1",
+  "base_model": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/.cache-xvla-pt",
+  "base_model_sha256": "433acffc992f457b1737d35ae20f81a895521f38eadaf03c736b6c0b0af1c93e",
+  "input_index_sha256": "8d87ba0170f3e9a1bf258521342f7dc85a239f31ff8b4f416530abff9d494b1c",
+  "script_sha256": "66b2613fbe73ad93e931105efde3dceab059cc058557722a5623f38c104cba49",
+  "frame_count": 2644,
+  "crop_valid_count": 2211,
+  "crop_fallback": "full frame when current object is not valid; invalid-crop comparisons must be masked",
+  "sequence_embedding": "per-image visual-token mean, L2; temporal summarization is separate",
+  "feature_shape": [
+    2644,
+    1024
+  ],
+  "pixel_shapes": {
+    "full_rgb": [
+      8,
+      3,
+      224,
+      224
+    ],
+    "current_observed_object_square_crop": [
+      8,
+      3,
+      224,
+      224
+    ]
+  },
+  "seconds_by_method": {
+    "full_rgb": 16.281572743988363,
+    "current_observed_object_square_crop": 13.085806346993195
+  },
+  "seconds_after_load": 31.67661362400395,
+  "peak_allocated_gpu_bytes": 4030397440,
+  "training_updates": 0,
+  "geometric_expert_labels": false
+}

@@ -1,0 +1,92 @@
+{
+  "dense-v1-launch.json": {
+    "pid": 1101808,
+    "command": [
+      "/var/tmp/typhon-video-representation-20261012/.venv-hand/bin/python",
+      "-u",
+      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_dense.py",
+      "--source-index",
+      "/var/tmp/typhon-video-representation-20261012/source-index.json",
+      "--project-root",
+      "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor",
+      "--hand-model",
+      "/var/tmp/typhon-video-representation-20261012/hand_landmarker.task",
+      "--protocol",
+      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/configs/experiments/video02/protocol.json",
+      "--output",
+      "/var/tmp/typhon-video-representation-20261012/dense-v1"
+    ]
+  },
+  "dense-v1-features-launch.json": {
+    "pid": 1103996,
+    "command": [
+      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-xvla/bin/python",
+      "-u",
+      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_features.py",
+      "--data",
+      "/var/tmp/typhon-video-representation-20261012/dense-v1",
+      "--base-model",
+      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-visual-features/.cache-video/video01_pt_frozen",
+      "--output",
+      "/var/tmp/typhon-video-representation-20261012/dense-v1/features"
+    ]
+  },
+  "dense-v1-analysis-launch.json": {
+    "pid": 1104604,
+    "command": [
+      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-sim/bin/python",
+      "-u",
+      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_analyze.py",
+      "--data",
+      "/var/tmp/typhon-video-representation-20261012/dense-v1",
+      "--features",
+      "/var/tmp/typhon-video-representation-20261012/dense-v1/features/features.npz",
+      "--output",
+      "/var/tmp/typhon-video-representation-20261012/dense-v1/analysis"
+    ]
+  },
+  "dense-v1-analysis-retry-launch.json": {
+    "pid": 1105364,
+    "command": [
+      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-sim/bin/python",
+      "-u",
+      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_analyze.py",
+      "--data",
+      "/var/tmp/typhon-video-representation-20261012/dense-v1",
+      "--features",
+      "/var/tmp/typhon-video-representation-20261012/dense-v1/features/features.npz",
+      "--output",
+      "/var/tmp/typhon-video-representation-20261012/dense-v1/analysis"
+    ],
+    "previous_attempt": "analysis-failed-system-encoder"
+  },
+  "dense-v1-preprocessing-launch.json": {
+    "pid": 1105893,
+    "command": [
+      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-xvla/bin/python",
+      "-u",
+      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_preprocessing.py",
+      "--data",
+      "/var/tmp/typhon-video-representation-20261012/dense-v1",
+      "--base-model",
+      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-visual-features/.cache-video/video01_pt_frozen",
+      "--output",
+      "/var/tmp/typhon-video-representation-20261012/dense-v1/preprocessing"
+    ]
+  },
+  "dense-v1-analysis-v2-launch.json": {
+    "pid": 1106841,
+    "command": [
+      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-sim/bin/python",
+      "-u",
+      "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video01-temporal-validation/scripts/video02_analyze.py",
+      "--data",
+      "/var/tmp/typhon-video-representation-20261012/dense-v1",
+      "--features",
+      "/var/tmp/typhon-video-representation-20261012/dense-v1/features/features.npz",
+      "--output",
+      "/var/tmp/typhon-video-representation-20261012/dense-v1/analysis-v2"
+    ],
+    "purpose": "QA header layout only; compare unchanged numeric outcomes to analysis"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "primary_samples_with_observed_yaw": 1144,
+  "model_input_wh": [
+    224,
+    224
+  ],
+  "blue_extent_quantiles_p05_p50_p95": {
+    "full_rgb": {
+      "blue_extent_width_px": [
+        7.0,
+        7.0,
+        10.0
+      ],
+      "blue_extent_height_px": [
+        12.0,
+        16.0,
+        18.0
+      ],
+      "blue_pixels": [
+        53.150000000000006,
+        67.0,
+        83.84999999999991
+      ]
+    },
+    "object_crop": {
+      "blue_extent_width_px": [
+        26.0,
+        29.0,
+        42.0
+      ],
+      "blue_extent_height_px": [
+        30.0,
+        35.0,
+        42.84999999999991
+      ],
+      "blue_pixels": [
+        480.0,
+        565.0,
+        792.6999999999998
+      ]
+    }
+  },
+  "limitations": "Colour extent is pixel support, not glyph legibility or semantic recognition. Each sample is observed with known template yaw; missing/occluded glyph frames are excluded. Crop and full view use the actual pinned processor."
+}

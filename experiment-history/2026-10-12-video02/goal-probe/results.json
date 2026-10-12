@@ -1,0 +1,2211 @@
+{
+  "goal_similarity": [
+    {
+      "demo_id": "demo_0001",
+      "view": "camera_a",
+      "method": "full_rgb",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.8046576380729675,
+      "final_max_similarity": 0.9904142618179321,
+      "delta_final_minus_initial": 0.1857566237449646,
+      "control_reversed_delta": -0.1857566237449646,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0001",
+      "view": "camera_b",
+      "method": "full_rgb",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7065421938896179,
+      "final_max_similarity": 0.9774858355522156,
+      "delta_final_minus_initial": 0.27094364166259766,
+      "control_reversed_delta": -0.27094364166259766,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0002",
+      "view": "camera_a",
+      "method": "full_rgb",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.8078947067260742,
+      "final_max_similarity": 0.9860501885414124,
+      "delta_final_minus_initial": 0.17815548181533813,
+      "control_reversed_delta": -0.17815548181533813,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0002",
+      "view": "camera_b",
+      "method": "full_rgb",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6997357606887817,
+      "final_max_similarity": 0.9888302683830261,
+      "delta_final_minus_initial": 0.2890945076942444,
+      "control_reversed_delta": -0.2890945076942444,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0003",
+      "view": "camera_a",
+      "method": "full_rgb",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.814960777759552,
+      "final_max_similarity": 0.9830988645553589,
+      "delta_final_minus_initial": 0.16813808679580688,
+      "control_reversed_delta": -0.16813808679580688,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0003",
+      "view": "camera_b",
+      "method": "full_rgb",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7457801103591919,
+      "final_max_similarity": 0.9809476137161255,
+      "delta_final_minus_initial": 0.2351675033569336,
+      "control_reversed_delta": -0.2351675033569336,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0004",
+      "view": "camera_a",
+      "method": "full_rgb",
+      "split": "other_observation_only",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7957638502120972,
+      "final_max_similarity": 0.9868605136871338,
+      "delta_final_minus_initial": 0.19109666347503662,
+      "control_reversed_delta": -0.19109666347503662,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0004",
+      "view": "camera_b",
+      "method": "full_rgb",
+      "split": "other_observation_only",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7035159468650818,
+      "final_max_similarity": 0.9903209805488586,
+      "delta_final_minus_initial": 0.28680503368377686,
+      "control_reversed_delta": -0.28680503368377686,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0005",
+      "view": "camera_a",
+      "method": "full_rgb",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.8189338445663452,
+      "final_max_similarity": 0.9860501885414124,
+      "delta_final_minus_initial": 0.16711634397506714,
+      "control_reversed_delta": -0.16711634397506714,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0005",
+      "view": "camera_b",
+      "method": "full_rgb",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7116901874542236,
+      "final_max_similarity": 0.9870089888572693,
+      "delta_final_minus_initial": 0.27531880140304565,
+      "control_reversed_delta": -0.27531880140304565,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0006",
+      "view": "camera_a",
+      "method": "full_rgb",
+      "split": "P_validation",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.8207533955574036,
+      "final_max_similarity": 0.9832836389541626,
+      "delta_final_minus_initial": 0.16253024339675903,
+      "control_reversed_delta": -0.16253024339675903,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0006",
+      "view": "camera_b",
+      "method": "full_rgb",
+      "split": "P_validation",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7625916004180908,
+      "final_max_similarity": 0.9871907234191895,
+      "delta_final_minus_initial": 0.22459912300109863,
+      "control_reversed_delta": -0.22459912300109863,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0007",
+      "view": "camera_a",
+      "method": "full_rgb",
+      "split": "R_train",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9300980567932129,
+      "final_max_similarity": 0.9910343885421753,
+      "delta_final_minus_initial": 0.0609363317489624,
+      "control_reversed_delta": -0.0609363317489624,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0007",
+      "view": "camera_b",
+      "method": "full_rgb",
+      "split": "R_train",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9711850881576538,
+      "final_max_similarity": 0.9891108274459839,
+      "delta_final_minus_initial": 0.017925739288330078,
+      "control_reversed_delta": -0.017925739288330078,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0009",
+      "view": "camera_a",
+      "method": "full_rgb",
+      "split": "R_train",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9606786370277405,
+      "final_max_similarity": 0.9812208414077759,
+      "delta_final_minus_initial": 0.0205422043800354,
+      "control_reversed_delta": -0.0205422043800354,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0009",
+      "view": "camera_b",
+      "method": "full_rgb",
+      "split": "R_train",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.975469708442688,
+      "final_max_similarity": 0.980554461479187,
+      "delta_final_minus_initial": 0.0050847530364990234,
+      "control_reversed_delta": -0.0050847530364990234,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0011",
+      "view": "camera_a",
+      "method": "full_rgb",
+      "split": "other_observation_only",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9414653182029724,
+      "final_max_similarity": 0.9835957288742065,
+      "delta_final_minus_initial": 0.04213041067123413,
+      "control_reversed_delta": -0.04213041067123413,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0011",
+      "view": "camera_b",
+      "method": "full_rgb",
+      "split": "other_observation_only",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9752943515777588,
+      "final_max_similarity": 0.9867449998855591,
+      "delta_final_minus_initial": 0.011450648307800293,
+      "control_reversed_delta": -0.011450648307800293,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0012",
+      "view": "camera_a",
+      "method": "full_rgb",
+      "split": "P_train",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.8261659145355225,
+      "final_max_similarity": 0.9904142618179321,
+      "delta_final_minus_initial": 0.16424834728240967,
+      "control_reversed_delta": -0.16424834728240967,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0012",
+      "view": "camera_b",
+      "method": "full_rgb",
+      "split": "P_train",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7087677717208862,
+      "final_max_similarity": 0.9888302683830261,
+      "delta_final_minus_initial": 0.2800624966621399,
+      "control_reversed_delta": -0.2800624966621399,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0013",
+      "view": "camera_a",
+      "method": "full_rgb",
+      "split": "P_train",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012"
+      ],
+      "initial_max_similarity": 0.8083754777908325,
+      "final_max_similarity": 0.9774796366691589,
+      "delta_final_minus_initial": 0.16910415887832642,
+      "control_reversed_delta": -0.16910415887832642,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0013",
+      "view": "camera_b",
+      "method": "full_rgb",
+      "split": "P_train",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012"
+      ],
+      "initial_max_similarity": 0.7266858816146851,
+      "final_max_similarity": 0.9859592914581299,
+      "delta_final_minus_initial": 0.2592734098434448,
+      "control_reversed_delta": -0.2592734098434448,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0014",
+      "view": "camera_a",
+      "method": "full_rgb",
+      "split": "P_validation",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.8185957670211792,
+      "final_max_similarity": 0.9917048215866089,
+      "delta_final_minus_initial": 0.1731090545654297,
+      "control_reversed_delta": -0.1731090545654297,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0014",
+      "view": "camera_b",
+      "method": "full_rgb",
+      "split": "P_validation",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7175750732421875,
+      "final_max_similarity": 0.9919776320457458,
+      "delta_final_minus_initial": 0.27440255880355835,
+      "control_reversed_delta": -0.27440255880355835,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0015",
+      "view": "camera_a",
+      "method": "full_rgb",
+      "split": "other_observation_only",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7744143009185791,
+      "final_max_similarity": 0.9806087017059326,
+      "delta_final_minus_initial": 0.20619440078735352,
+      "control_reversed_delta": -0.20619440078735352,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0015",
+      "view": "camera_b",
+      "method": "full_rgb",
+      "split": "other_observation_only",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7369937896728516,
+      "final_max_similarity": 0.985176146030426,
+      "delta_final_minus_initial": 0.24818235635757446,
+      "control_reversed_delta": -0.24818235635757446,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0016",
+      "view": "camera_a",
+      "method": "full_rgb",
+      "split": "P_validation",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.8159506916999817,
+      "final_max_similarity": 0.9898156523704529,
+      "delta_final_minus_initial": 0.1738649606704712,
+      "control_reversed_delta": -0.1738649606704712,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0016",
+      "view": "camera_b",
+      "method": "full_rgb",
+      "split": "P_validation",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7668460607528687,
+      "final_max_similarity": 0.9838314056396484,
+      "delta_final_minus_initial": 0.21698534488677979,
+      "control_reversed_delta": -0.21698534488677979,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0018",
+      "view": "camera_a",
+      "method": "full_rgb",
+      "split": "other_observation_only",
+      "manual_category": "already_completed",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9858618974685669,
+      "final_max_similarity": 0.9874507784843445,
+      "delta_final_minus_initial": 0.0015888810157775879,
+      "control_reversed_delta": -0.0015888810157775879,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0018",
+      "view": "camera_b",
+      "method": "full_rgb",
+      "split": "other_observation_only",
+      "manual_category": "already_completed",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9917730689048767,
+      "final_max_similarity": 0.994164764881134,
+      "delta_final_minus_initial": 0.0023916959762573242,
+      "control_reversed_delta": -0.0023916959762573242,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0019",
+      "view": "camera_a",
+      "method": "full_rgb",
+      "split": "other_observation_only",
+      "manual_category": "already_completed",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9868765473365784,
+      "final_max_similarity": 0.9870185852050781,
+      "delta_final_minus_initial": 0.00014203786849975586,
+      "control_reversed_delta": -0.00014203786849975586,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0019",
+      "view": "camera_b",
+      "method": "full_rgb",
+      "split": "other_observation_only",
+      "manual_category": "already_completed",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9930223822593689,
+      "final_max_similarity": 0.9925575256347656,
+      "delta_final_minus_initial": -0.0004648566246032715,
+      "control_reversed_delta": 0.0004648566246032715,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0001",
+      "view": "camera_a",
+      "method": "current_observed_object_square_crop",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.5489961504936218,
+      "final_max_similarity": 0.9698876142501831,
+      "delta_final_minus_initial": 0.4208914637565613,
+      "control_reversed_delta": -0.4208914637565613,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0001",
+      "view": "camera_b",
+      "method": "current_observed_object_square_crop",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.4961710572242737,
+      "final_max_similarity": 0.9818630218505859,
+      "delta_final_minus_initial": 0.48569196462631226,
+      "control_reversed_delta": -0.48569196462631226,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0002",
+      "view": "camera_a",
+      "method": "current_observed_object_square_crop",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6502987742424011,
+      "final_max_similarity": 0.9701600074768066,
+      "delta_final_minus_initial": 0.3198612332344055,
+      "control_reversed_delta": -0.3198612332344055,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0002",
+      "view": "camera_b",
+      "method": "current_observed_object_square_crop",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6314098834991455,
+      "final_max_similarity": 0.9829055070877075,
+      "delta_final_minus_initial": 0.351495623588562,
+      "control_reversed_delta": -0.351495623588562,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0003",
+      "view": "camera_a",
+      "method": "current_observed_object_square_crop",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6546654105186462,
+      "final_max_similarity": 0.9603005647659302,
+      "delta_final_minus_initial": 0.30563515424728394,
+      "control_reversed_delta": -0.30563515424728394,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0003",
+      "view": "camera_b",
+      "method": "current_observed_object_square_crop",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6992734670639038,
+      "final_max_similarity": 0.9743731021881104,
+      "delta_final_minus_initial": 0.27509963512420654,
+      "control_reversed_delta": -0.27509963512420654,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0004",
+      "view": "camera_a",
+      "method": "current_observed_object_square_crop",
+      "split": "other_observation_only",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.3893035054206848,
+      "final_max_similarity": 0.9620711803436279,
+      "delta_final_minus_initial": 0.5727676749229431,
+      "control_reversed_delta": -0.5727676749229431,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0004",
+      "view": "camera_b",
+      "method": "current_observed_object_square_crop",
+      "split": "other_observation_only",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6363925933837891,
+      "final_max_similarity": 0.9771331548690796,
+      "delta_final_minus_initial": 0.3407405614852905,
+      "control_reversed_delta": -0.3407405614852905,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0005",
+      "view": "camera_a",
+      "method": "current_observed_object_square_crop",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7881746292114258,
+      "final_max_similarity": 0.9622218608856201,
+      "delta_final_minus_initial": 0.17404723167419434,
+      "control_reversed_delta": -0.17404723167419434,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0005",
+      "view": "camera_b",
+      "method": "current_observed_object_square_crop",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6987836360931396,
+      "final_max_similarity": 0.9743731021881104,
+      "delta_final_minus_initial": 0.2755894660949707,
+      "control_reversed_delta": -0.2755894660949707,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0006",
+      "view": "camera_a",
+      "method": "current_observed_object_square_crop",
+      "split": "P_validation",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6616916060447693,
+      "final_max_similarity": 0.9590163230895996,
+      "delta_final_minus_initial": 0.2973247170448303,
+      "control_reversed_delta": -0.2973247170448303,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0006",
+      "view": "camera_b",
+      "method": "current_observed_object_square_crop",
+      "split": "P_validation",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.695067286491394,
+      "final_max_similarity": 0.9774827361106873,
+      "delta_final_minus_initial": 0.2824154496192932,
+      "control_reversed_delta": -0.2824154496192932,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0007",
+      "view": "camera_a",
+      "method": "current_observed_object_square_crop",
+      "split": "R_train",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.8096096515655518,
+      "final_max_similarity": 0.9676258563995361,
+      "delta_final_minus_initial": 0.15801620483398438,
+      "control_reversed_delta": -0.15801620483398438,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0007",
+      "view": "camera_b",
+      "method": "current_observed_object_square_crop",
+      "split": "R_train",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.8900409936904907,
+      "final_max_similarity": 0.9850420951843262,
+      "delta_final_minus_initial": 0.09500110149383545,
+      "control_reversed_delta": -0.09500110149383545,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0009",
+      "view": "camera_a",
+      "method": "current_observed_object_square_crop",
+      "split": "R_train",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.8473324775695801,
+      "final_max_similarity": 0.9593377709388733,
+      "delta_final_minus_initial": 0.11200529336929321,
+      "control_reversed_delta": -0.11200529336929321,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0009",
+      "view": "camera_b",
+      "method": "current_observed_object_square_crop",
+      "split": "R_train",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9211128354072571,
+      "final_max_similarity": 0.9834030866622925,
+      "delta_final_minus_initial": 0.0622902512550354,
+      "control_reversed_delta": -0.0622902512550354,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0011",
+      "view": "camera_a",
+      "method": "current_observed_object_square_crop",
+      "split": "other_observation_only",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.8484624624252319,
+      "final_max_similarity": 0.9500638842582703,
+      "delta_final_minus_initial": 0.10160142183303833,
+      "control_reversed_delta": -0.10160142183303833,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0011",
+      "view": "camera_b",
+      "method": "current_observed_object_square_crop",
+      "split": "other_observation_only",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9164302349090576,
+      "final_max_similarity": 0.974531888961792,
+      "delta_final_minus_initial": 0.058101654052734375,
+      "control_reversed_delta": -0.058101654052734375,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0012",
+      "view": "camera_a",
+      "method": "current_observed_object_square_crop",
+      "split": "P_train",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7992794513702393,
+      "final_max_similarity": 0.9701600074768066,
+      "delta_final_minus_initial": 0.17088055610656738,
+      "control_reversed_delta": -0.17088055610656738,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0012",
+      "view": "camera_b",
+      "method": "current_observed_object_square_crop",
+      "split": "P_train",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.45094412565231323,
+      "final_max_similarity": 0.9829055070877075,
+      "delta_final_minus_initial": 0.5319613814353943,
+      "control_reversed_delta": -0.5319613814353943,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0013",
+      "view": "camera_a",
+      "method": "current_observed_object_square_crop",
+      "split": "P_train",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012"
+      ],
+      "initial_max_similarity": 0.6374757289886475,
+      "final_max_similarity": 0.9440875053405762,
+      "delta_final_minus_initial": 0.3066117763519287,
+      "control_reversed_delta": -0.3066117763519287,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0013",
+      "view": "camera_b",
+      "method": "current_observed_object_square_crop",
+      "split": "P_train",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012"
+      ],
+      "initial_max_similarity": 0.686021625995636,
+      "final_max_similarity": 0.9665345549583435,
+      "delta_final_minus_initial": 0.2805129289627075,
+      "control_reversed_delta": -0.2805129289627075,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0014",
+      "view": "camera_a",
+      "method": "current_observed_object_square_crop",
+      "split": "P_validation",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6298038959503174,
+      "final_max_similarity": 0.9783259630203247,
+      "delta_final_minus_initial": 0.3485220670700073,
+      "control_reversed_delta": -0.3485220670700073,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0014",
+      "view": "camera_b",
+      "method": "current_observed_object_square_crop",
+      "split": "P_validation",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.43607011437416077,
+      "final_max_similarity": 0.9848523139953613,
+      "delta_final_minus_initial": 0.5487821996212006,
+      "control_reversed_delta": -0.5487821996212006,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0015",
+      "view": "camera_a",
+      "method": "current_observed_object_square_crop",
+      "split": "other_observation_only",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.5680954456329346,
+      "final_max_similarity": 0.9636939167976379,
+      "delta_final_minus_initial": 0.39559847116470337,
+      "control_reversed_delta": -0.39559847116470337,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0015",
+      "view": "camera_b",
+      "method": "current_observed_object_square_crop",
+      "split": "other_observation_only",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6618515849113464,
+      "final_max_similarity": 0.9826483726501465,
+      "delta_final_minus_initial": 0.32079678773880005,
+      "control_reversed_delta": -0.32079678773880005,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0016",
+      "view": "camera_a",
+      "method": "current_observed_object_square_crop",
+      "split": "P_validation",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.5243144035339355,
+      "final_max_similarity": 0.9236868023872375,
+      "delta_final_minus_initial": 0.399372398853302,
+      "control_reversed_delta": -0.399372398853302,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0016",
+      "view": "camera_b",
+      "method": "current_observed_object_square_crop",
+      "split": "P_validation",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.49127084016799927,
+      "final_max_similarity": 0.9707727432250977,
+      "delta_final_minus_initial": 0.4795019030570984,
+      "control_reversed_delta": -0.4795019030570984,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0018",
+      "view": "camera_a",
+      "method": "current_observed_object_square_crop",
+      "split": "other_observation_only",
+      "manual_category": "already_completed",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9590271711349487,
+      "final_max_similarity": 0.9535301327705383,
+      "delta_final_minus_initial": -0.0054970383644104,
+      "control_reversed_delta": 0.0054970383644104,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0018",
+      "view": "camera_b",
+      "method": "current_observed_object_square_crop",
+      "split": "other_observation_only",
+      "manual_category": "already_completed",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9903799891471863,
+      "final_max_similarity": 0.9848659038543701,
+      "delta_final_minus_initial": -0.005514085292816162,
+      "control_reversed_delta": 0.005514085292816162,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0019",
+      "view": "camera_a",
+      "method": "current_observed_object_square_crop",
+      "split": "other_observation_only",
+      "manual_category": "already_completed",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9588932394981384,
+      "final_max_similarity": 0.9527414441108704,
+      "delta_final_minus_initial": -0.006151795387268066,
+      "control_reversed_delta": 0.006151795387268066,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0019",
+      "view": "camera_b",
+      "method": "current_observed_object_square_crop",
+      "split": "other_observation_only",
+      "manual_category": "already_completed",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9815266132354736,
+      "final_max_similarity": 0.9826533198356628,
+      "delta_final_minus_initial": 0.001126706600189209,
+      "control_reversed_delta": -0.001126706600189209,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0001",
+      "view": "camera_a",
+      "method": "equal_full_plus_crop",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6789939403533936,
+      "final_max_similarity": 0.9801603555679321,
+      "delta_final_minus_initial": 0.3011664152145386,
+      "control_reversed_delta": -0.3011664152145386,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0001",
+      "view": "camera_b",
+      "method": "equal_full_plus_crop",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.5948588848114014,
+      "final_max_similarity": 0.979672908782959,
+      "delta_final_minus_initial": 0.3848140239715576,
+      "control_reversed_delta": -0.3848140239715576,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0002",
+      "view": "camera_a",
+      "method": "equal_full_plus_crop",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7244192361831665,
+      "final_max_similarity": 0.9741466045379639,
+      "delta_final_minus_initial": 0.24972736835479736,
+      "control_reversed_delta": -0.24972736835479736,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0002",
+      "view": "camera_b",
+      "method": "equal_full_plus_crop",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6511063575744629,
+      "final_max_similarity": 0.9858687520027161,
+      "delta_final_minus_initial": 0.3347623944282532,
+      "control_reversed_delta": -0.3347623944282532,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0003",
+      "view": "camera_a",
+      "method": "equal_full_plus_crop",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7349493503570557,
+      "final_max_similarity": 0.9659372568130493,
+      "delta_final_minus_initial": 0.23098790645599365,
+      "control_reversed_delta": -0.23098790645599365,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0003",
+      "view": "camera_b",
+      "method": "equal_full_plus_crop",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7178757786750793,
+      "final_max_similarity": 0.9776643514633179,
+      "delta_final_minus_initial": 0.2597885727882385,
+      "control_reversed_delta": -0.2597885727882385,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0004",
+      "view": "camera_a",
+      "method": "equal_full_plus_crop",
+      "split": "other_observation_only",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.5925307869911194,
+      "final_max_similarity": 0.9744963049888611,
+      "delta_final_minus_initial": 0.3819655179977417,
+      "control_reversed_delta": -0.3819655179977417,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0004",
+      "view": "camera_b",
+      "method": "equal_full_plus_crop",
+      "split": "other_observation_only",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6660706996917725,
+      "final_max_similarity": 0.9837275743484497,
+      "delta_final_minus_initial": 0.31765687465667725,
+      "control_reversed_delta": -0.31765687465667725,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0005",
+      "view": "camera_a",
+      "method": "equal_full_plus_crop",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7973272800445557,
+      "final_max_similarity": 0.9741466045379639,
+      "delta_final_minus_initial": 0.1768193244934082,
+      "control_reversed_delta": -0.1768193244934082,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0005",
+      "view": "camera_b",
+      "method": "equal_full_plus_crop",
+      "split": "P_train",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6960446834564209,
+      "final_max_similarity": 0.9776643514633179,
+      "delta_final_minus_initial": 0.281619668006897,
+      "control_reversed_delta": -0.281619668006897,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0006",
+      "view": "camera_a",
+      "method": "equal_full_plus_crop",
+      "split": "P_validation",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7413949370384216,
+      "final_max_similarity": 0.9701948761940002,
+      "delta_final_minus_initial": 0.2287999391555786,
+      "control_reversed_delta": -0.2287999391555786,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0006",
+      "view": "camera_b",
+      "method": "equal_full_plus_crop",
+      "split": "P_validation",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7226762771606445,
+      "final_max_similarity": 0.9814301133155823,
+      "delta_final_minus_initial": 0.25875383615493774,
+      "control_reversed_delta": -0.25875383615493774,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0007",
+      "view": "camera_a",
+      "method": "equal_full_plus_crop",
+      "split": "R_train",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.8648959398269653,
+      "final_max_similarity": 0.9793403148651123,
+      "delta_final_minus_initial": 0.11444437503814697,
+      "control_reversed_delta": -0.11444437503814697,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0007",
+      "view": "camera_b",
+      "method": "equal_full_plus_crop",
+      "split": "R_train",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9284826517105103,
+      "final_max_similarity": 0.9870774149894714,
+      "delta_final_minus_initial": 0.05859476327896118,
+      "control_reversed_delta": -0.05859476327896118,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0009",
+      "view": "camera_a",
+      "method": "equal_full_plus_crop",
+      "split": "R_train",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.8937417268753052,
+      "final_max_similarity": 0.9702849984169006,
+      "delta_final_minus_initial": 0.07654327154159546,
+      "control_reversed_delta": -0.07654327154159546,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0009",
+      "view": "camera_b",
+      "method": "equal_full_plus_crop",
+      "split": "R_train",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9476025104522705,
+      "final_max_similarity": 0.9819780588150024,
+      "delta_final_minus_initial": 0.034375548362731934,
+      "control_reversed_delta": -0.034375548362731934,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0011",
+      "view": "camera_a",
+      "method": "equal_full_plus_crop",
+      "split": "other_observation_only",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.8903628587722778,
+      "final_max_similarity": 0.9668825268745422,
+      "delta_final_minus_initial": 0.0765196681022644,
+      "control_reversed_delta": -0.0765196681022644,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0011",
+      "view": "camera_b",
+      "method": "equal_full_plus_crop",
+      "split": "other_observation_only",
+      "manual_category": "orientation_correction",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9458831548690796,
+      "final_max_similarity": 0.9806414842605591,
+      "delta_final_minus_initial": 0.03475832939147949,
+      "control_reversed_delta": -0.03475832939147949,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0012",
+      "view": "camera_a",
+      "method": "equal_full_plus_crop",
+      "split": "P_train",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.7997983694076538,
+      "final_max_similarity": 0.9801603555679321,
+      "delta_final_minus_initial": 0.18036198616027832,
+      "control_reversed_delta": -0.18036198616027832,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0012",
+      "view": "camera_b",
+      "method": "equal_full_plus_crop",
+      "split": "P_train",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.5800720453262329,
+      "final_max_similarity": 0.9858687520027161,
+      "delta_final_minus_initial": 0.40579670667648315,
+      "control_reversed_delta": -0.40579670667648315,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0013",
+      "view": "camera_a",
+      "method": "equal_full_plus_crop",
+      "split": "P_train",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012"
+      ],
+      "initial_max_similarity": 0.723166286945343,
+      "final_max_similarity": 0.96082603931427,
+      "delta_final_minus_initial": 0.237659752368927,
+      "control_reversed_delta": -0.237659752368927,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0013",
+      "view": "camera_b",
+      "method": "equal_full_plus_crop",
+      "split": "P_train",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012"
+      ],
+      "initial_max_similarity": 0.7028010487556458,
+      "final_max_similarity": 0.9762574434280396,
+      "delta_final_minus_initial": 0.2734563946723938,
+      "control_reversed_delta": -0.2734563946723938,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0014",
+      "view": "camera_a",
+      "method": "equal_full_plus_crop",
+      "split": "P_validation",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.71834397315979,
+      "final_max_similarity": 0.9850218892097473,
+      "delta_final_minus_initial": 0.2666779160499573,
+      "control_reversed_delta": -0.2666779160499573,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0014",
+      "view": "camera_b",
+      "method": "equal_full_plus_crop",
+      "split": "P_validation",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.5718640089035034,
+      "final_max_similarity": 0.9838621020317078,
+      "delta_final_minus_initial": 0.41199809312820435,
+      "control_reversed_delta": -0.41199809312820435,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0015",
+      "view": "camera_a",
+      "method": "equal_full_plus_crop",
+      "split": "other_observation_only",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6622604131698608,
+      "final_max_similarity": 0.9709581136703491,
+      "delta_final_minus_initial": 0.3086977005004883,
+      "control_reversed_delta": -0.3086977005004883,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0015",
+      "view": "camera_b",
+      "method": "equal_full_plus_crop",
+      "split": "other_observation_only",
+      "manual_category": "awkward_pause_resume_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6922712326049805,
+      "final_max_similarity": 0.9839140176773071,
+      "delta_final_minus_initial": 0.29164278507232666,
+      "control_reversed_delta": -0.29164278507232666,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0016",
+      "view": "camera_a",
+      "method": "equal_full_plus_crop",
+      "split": "P_validation",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6688341498374939,
+      "final_max_similarity": 0.9537767171859741,
+      "delta_final_minus_initial": 0.2849425673484802,
+      "control_reversed_delta": -0.2849425673484802,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0016",
+      "view": "camera_b",
+      "method": "equal_full_plus_crop",
+      "split": "P_validation",
+      "manual_category": "normal_feeding",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.6282898187637329,
+      "final_max_similarity": 0.9773036241531372,
+      "delta_final_minus_initial": 0.3490138053894043,
+      "control_reversed_delta": -0.3490138053894043,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0018",
+      "view": "camera_a",
+      "method": "equal_full_plus_crop",
+      "split": "other_observation_only",
+      "manual_category": "already_completed",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9724575281143188,
+      "final_max_similarity": 0.9705066680908203,
+      "delta_final_minus_initial": -0.0019508600234985352,
+      "control_reversed_delta": 0.0019508600234985352,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0018",
+      "view": "camera_b",
+      "method": "equal_full_plus_crop",
+      "split": "other_observation_only",
+      "manual_category": "already_completed",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9910768270492554,
+      "final_max_similarity": 0.9895181655883789,
+      "delta_final_minus_initial": -0.0015586614608764648,
+      "control_reversed_delta": 0.0015586614608764648,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0019",
+      "view": "camera_a",
+      "method": "equal_full_plus_crop",
+      "split": "other_observation_only",
+      "manual_category": "already_completed",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9729182720184326,
+      "final_max_similarity": 0.9698972702026367,
+      "delta_final_minus_initial": -0.0030210018157958984,
+      "control_reversed_delta": 0.0030210018157958984,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    },
+    {
+      "demo_id": "demo_0019",
+      "view": "camera_b",
+      "method": "equal_full_plus_crop",
+      "split": "other_observation_only",
+      "manual_category": "already_completed",
+      "reference_sources": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "initial_max_similarity": 0.9872775077819824,
+      "final_max_similarity": 0.987607479095459,
+      "delta_final_minus_initial": 0.0003299713134765625,
+      "control_reversed_delta": -0.0003299713134765625,
+      "control_static_delta": 0.0,
+      "self_reference_excluded": true
+    }
+  ],
+  "fusion_within_pair": [
+    {
+      "demo_id": "demo_0001",
+      "scope": "all_frames",
+      "queries": 128,
+      "mean_time_error_s": 1.0770792265625,
+      "within075": 55
+    },
+    {
+      "demo_id": "demo_0001",
+      "scope": "both_object_visible",
+      "queries": 128,
+      "mean_time_error_s": 1.0770792265625,
+      "within075": 55
+    },
+    {
+      "demo_id": "demo_0002",
+      "scope": "all_frames",
+      "queries": 83,
+      "mean_time_error_s": 0.9939877228915662,
+      "within075": 37
+    },
+    {
+      "demo_id": "demo_0002",
+      "scope": "both_object_visible",
+      "queries": 83,
+      "mean_time_error_s": 1.0072407349397592,
+      "within075": 36
+    },
+    {
+      "demo_id": "demo_0003",
+      "scope": "all_frames",
+      "queries": 77,
+      "mean_time_error_s": 0.3948509610389607,
+      "within075": 67
+    },
+    {
+      "demo_id": "demo_0003",
+      "scope": "both_object_visible",
+      "queries": 77,
+      "mean_time_error_s": 0.3948509610389607,
+      "within075": 67
+    },
+    {
+      "demo_id": "demo_0004",
+      "scope": "all_frames",
+      "queries": 81,
+      "mean_time_error_s": 0.7231345555555564,
+      "within075": 51
+    },
+    {
+      "demo_id": "demo_0004",
+      "scope": "both_object_visible",
+      "queries": 26,
+      "mean_time_error_s": 0.2880415384615388,
+      "within075": 24
+    },
+    {
+      "demo_id": "demo_0005",
+      "scope": "all_frames",
+      "queries": 79,
+      "mean_time_error_s": 0.6388566075949371,
+      "within075": 50
+    },
+    {
+      "demo_id": "demo_0005",
+      "scope": "both_object_visible",
+      "queries": 79,
+      "mean_time_error_s": 0.6388566075949371,
+      "within075": 50
+    },
+    {
+      "demo_id": "demo_0006",
+      "scope": "all_frames",
+      "queries": 77,
+      "mean_time_error_s": 0.59401468831169,
+      "within075": 51
+    },
+    {
+      "demo_id": "demo_0006",
+      "scope": "both_object_visible",
+      "queries": 77,
+      "mean_time_error_s": 0.59401468831169,
+      "within075": 51
+    },
+    {
+      "demo_id": "demo_0007",
+      "scope": "all_frames",
+      "queries": 76,
+      "mean_time_error_s": 0.9904885263157895,
+      "within075": 35
+    },
+    {
+      "demo_id": "demo_0007",
+      "scope": "both_object_visible",
+      "queries": 76,
+      "mean_time_error_s": 0.9904885263157895,
+      "within075": 35
+    },
+    {
+      "demo_id": "demo_0009",
+      "scope": "all_frames",
+      "queries": 71,
+      "mean_time_error_s": 0.4355193380281683,
+      "within075": 58
+    },
+    {
+      "demo_id": "demo_0009",
+      "scope": "both_object_visible",
+      "queries": 66,
+      "mean_time_error_s": 0.4456277272727266,
+      "within075": 53
+    },
+    {
+      "demo_id": "demo_0011",
+      "scope": "all_frames",
+      "queries": 60,
+      "mean_time_error_s": 1.4531733000000004,
+      "within075": 38
+    },
+    {
+      "demo_id": "demo_0011",
+      "scope": "both_object_visible",
+      "queries": 60,
+      "mean_time_error_s": 1.4531733000000004,
+      "within075": 38
+    },
+    {
+      "demo_id": "demo_0012",
+      "scope": "all_frames",
+      "queries": 101,
+      "mean_time_error_s": 2.355836257425742,
+      "within075": 35
+    },
+    {
+      "demo_id": "demo_0012",
+      "scope": "both_object_visible",
+      "queries": 101,
+      "mean_time_error_s": 2.4000584752475245,
+      "within075": 34
+    },
+    {
+      "demo_id": "demo_0013",
+      "scope": "all_frames",
+      "queries": 96,
+      "mean_time_error_s": 0.6935511666666668,
+      "within075": 58
+    },
+    {
+      "demo_id": "demo_0013",
+      "scope": "both_object_visible",
+      "queries": 96,
+      "mean_time_error_s": 0.6935511666666668,
+      "within075": 58
+    },
+    {
+      "demo_id": "demo_0014",
+      "scope": "all_frames",
+      "queries": 81,
+      "mean_time_error_s": 1.800315382716048,
+      "within075": 40
+    },
+    {
+      "demo_id": "demo_0014",
+      "scope": "both_object_visible",
+      "queries": 81,
+      "mean_time_error_s": 1.8163647654320971,
+      "within075": 40
+    },
+    {
+      "demo_id": "demo_0015",
+      "scope": "all_frames",
+      "queries": 84,
+      "mean_time_error_s": 0.7802288452380938,
+      "within075": 50
+    },
+    {
+      "demo_id": "demo_0015",
+      "scope": "both_object_visible",
+      "queries": 71,
+      "mean_time_error_s": 0.8683158169014066,
+      "within075": 37
+    },
+    {
+      "demo_id": "demo_0016",
+      "scope": "all_frames",
+      "queries": 70,
+      "mean_time_error_s": 0.6487104857142828,
+      "within075": 41
+    },
+    {
+      "demo_id": "demo_0016",
+      "scope": "both_object_visible",
+      "queries": 70,
+      "mean_time_error_s": 2.121984428571425,
+      "within075": 23
+    },
+    {
+      "demo_id": "demo_0018",
+      "scope": "all_frames",
+      "queries": 111,
+      "mean_time_error_s": 3.2904622162162163,
+      "within075": 15
+    },
+    {
+      "demo_id": "demo_0018",
+      "scope": "both_object_visible",
+      "queries": 111,
+      "mean_time_error_s": 3.2904622162162163,
+      "within075": 15
+    },
+    {
+      "demo_id": "demo_0019",
+      "scope": "all_frames",
+      "queries": 47,
+      "mean_time_error_s": 1.1926269148936173,
+      "within075": 15
+    },
+    {
+      "demo_id": "demo_0019",
+      "scope": "both_object_visible",
+      "queries": 47,
+      "mean_time_error_s": 1.1926269148936173,
+      "within075": 15
+    }
+  ],
+  "interpretation": "Post-hoc diagnostic after full/crop results, equal weights fixed before this run. Nearest same-view released reference from P_train only, with self-source excluded. Similarity increase does not identify the causal visual cue, contact, release or task completion. Reversal/static controls are algebraic checks, not independent validation."
+}
