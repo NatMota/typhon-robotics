@@ -12,7 +12,7 @@ from supervisor.feeding_loading.evaluation import score_episode,angle_error
 from supervisor.planning.m7_service import Guard,ServiceConfig
 from supervisor.planning.boundary_handoff import held_target,handoff_check
 import live04_boundary as old
-OUT=Path('/var/tmp/typhon-live05-isolation-20261012')
+OUT=Path('/var/tmp/typhon-live05-isolation-20261012-v2')
 PREVIOUS=Path('/var/tmp/typhon-live04-boundary-20261012-v3')
 STEPS=800
 
@@ -51,6 +51,8 @@ def prepare():
   'guard':'Unchanged LIVE04 motion guard and freshness thresholds. Shadow records would-reject but reproduces original unguarded simulator reference. Enforce rejects whole candidate on handoff and aborts suffix on per-tick violation; retries next control tick after a hold. No physical deployment.',
   'waiting':'Prediction is calculated with physics paused; then exactly N 20Hz holding controls advance world, cameras, causal labels and actual executed-action history before handoff. Controlled simulator latency injection, NOT network latency or a real-time throughput benchmark.',
   'controls':'All core variants choose candidateA; no API selection. Same scene, seed, model, request, camera, causal held-label contract,40s total simulation budget. Waiting necessarily reduces motion opportunities; report executed-action counts separately.',
+  'render_order':'Canonical post-step video callback and initial capture restored. Zero-wait handoff reuses the already observed snapshot rather than adding an unnecessary render.',
+  'preflight':'v1 stopped exact-reference qualification on0002: one secondary RGB pixel differed by +1 in each channel atquery6, with all previous predictions/noises identical. V1 retained. V2 restores canonical render-call ordering; experiment factors/metrics unchanged.',
   'limits':['Three previously inspected development scenes; no significance/generalisation claim','Privileged causal held label retained from V4','Sampling and waiting can interact','Four-candidate diagnostic is not original wall-clockLIVE04 replay','Goal preservation is not recognition','No new training or guard threshold changes'],
   'replay':'Replay exact old control commands; validate all saved truth fields and log chunk/per-tick guard would-reject events. Independent of new model inference.',
   'code_sha256':{n:sha(R/n) for n in ['scripts/live05_isolation.py','scripts/live04_boundary.py','scripts/live04_candidates_worker.py','scripts/m7_evaluate.py','supervisor/planning/boundary_handoff.py','supervisor/planning/m7_service.py']}}
@@ -110,9 +112,10 @@ def episode(route,scenario,policy):
   cmd=policy.to_action(target,obs,env.episode_config);env.step(cmd);last_close=bool(target[9]>.5);counts[origin]+=1;truths.append(env.truth())
   xf.write(json.dumps({'step':env.steps,'origin':origin,'identity':identity,'target':np.asarray(target).tolist(),'guard_shadow':d,
    'joint_position_rad':np.asarray(obs['proprio']['joint_position_rad']).tolist(),'joint_velocity_rad_s':np.asarray(obs['proprio']['joint_velocity_rad_s']).tolist()})+'\n')
-  if env.steps%4==0:writer.append_data(np.hstack([env.frame('primary'),env.frame('secondary')]))
   return True
  try:
+  def capture(scene):writer.append_data(np.hstack([scene.frame('primary'),scene.frame('secondary')]))
+  capture(env);env.capture_callback=capture
   imageio.imwrite(folder/'initial.png',np.hstack([env.frame('primary'),env.frame('secondary')]))
   while env.steps<deadline:
    obs=env.observe();snapshot=copy.deepcopy(obs);payload=policy.request_payload(obs)
@@ -122,7 +125,7 @@ def episode(route,scenario,policy):
    event('query',index=sequence,elapsed_wall_s=elapsed,seeds=payload.get('candidate_seeds'),history_frames=len(payload['history']))
    hold=held_target(obs,last_close)
    for _ in range(min(route['wait_ticks'],deadline-env.steps)):step_target(hold,'boundary_hold',{'query':sequence})
-   current=env.observe();selected=None
+   current=snapshot if route['wait_ticks']==0 else env.observe();selected=None
    for j,a in enumerate(response['actions']):
     reason,drift=handoff_check(snapshot,current,a,guard)
     d=diagnostic(guard,a,current);event('handoff_shadow',query=sequence,candidate=j,reason=reason,drift=drift,guard_details=d)
@@ -141,8 +144,7 @@ def episode(route,scenario,policy):
   for i in range(24):
    env.step(np.r_[np.zeros(6),env.last_grip]);truths.append(env.truth());counts['stability_hold']+=1
    if i%2==1:stable.append(env.truth())
-   if env.steps%4==0:writer.append_data(np.hstack([env.frame('primary'),env.frame('secondary')]))
-  recorder.finish();attempts=recorder.observed_attempts;recorder=None
+   recorder.finish();attempts=recorder.observed_attempts;recorder=None
   final=env.truth();score=score_episode(initial,final,stable,env.episode_config,attempts);c=score['criteria']
   initial_gap=math.degrees(angle_error(initial['object_yaw_rad'],scenario['config']['task']['target_yaw_rad']))
   contact_lift=any(t['bilateral_grasp_contact'] and t['object_position_m'][2]-initial['object_position_m'][2]>=.07 for t in truths)
