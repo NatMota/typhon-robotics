@@ -47,3 +47,17 @@ Branch: research/live04-boundary-handoff.
 Report: https://github.com/NatMota/typhon-robotics/blob/research/live04-boundary-handoff/experiment-history/2026-10-12-live04/REPORT.md
 
 Nine V4 development rollouts. Three API choices executed 62 exact saved targets, including two complete chunks; one late reply was rejected. Original V4 grasped and placed on its known scene but retained 85.33 degrees yaw error. Both boundary routes lost that grasp; all preserved the already-completed case. Fixed two-second waiting is diagnostic and has no demonstrated benefit. Twelve regressions and exact model replay pass. LIVE05 #11025 separates waiting, sampling and guard effects. Bulk v1/v2 preflights and v3 episodes are retained on Mint; use LIVE04_BACKUP_RECEIPT.json for verification.
+
+## LIVE05 — Separate guards, waiting and sampling
+
+Branch: research/live05-scheduler-isolation.
+Report: https://github.com/NatMota/typhon-robotics/blob/research/live05-scheduler-isolation/experiment-history/2026-10-12-live05/REPORT.md
+
+Thirty controlled-delay V4 trials. The known grasp survives both sampling schemes at0/0.1/2s waits without guard intervention; enforcing the guard loses it even atzero wait. Old per-tick raw-target distance vetoes eight reference steps. Most live preview paths nearly overlap. Exact-reference rendering limits retained; no training or API benefit claim. Mint archive:1452files /2552769509bytes, SHA-verified. LIVE06 #11026 qualifies the execution contract.
+
+## LIVE06 — Execution guard qualification
+
+Branch: research/live06-execution-guard.
+Report: https://github.com/NatMota/typhon-robotics/blob/research/live06-execution-guard/experiment-history/2026-10-12-live06/REPORT.md
+
+Nine V4 trials restore the known pickup and placement with unchanged weights, while retaining85.33degrees yaw error. Eight expert trials pass; new execution check accepts all1714ticks versus304old raw-target vetoes. Eleven negative/contract regressions pass. First570native/corrected control records match; later wrist motion differs with tiny historical-image changes, so full trace identity is not claimed. LIVE07 #11027 must integrate the explicit execution helper into the live service without changing generic prospective admission. Use LIVE06_BACKUP_RECEIPT.json for bulk verification.
