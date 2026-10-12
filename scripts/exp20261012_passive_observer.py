@@ -12,13 +12,16 @@ from supervisor.feeding_loading.environment import FeedingLoadingEnv
 OUT=Path('/var/tmp/typhon-research-20261012/observer/passive-v3')
 def main():
  global OUT,PhaseSupervisor,OBSERVER_SOURCE
- parser=argparse.ArgumentParser();parser.add_argument('--phase-independent',action='store_true');parser.add_argument('--stereo',action='store_true');args=parser.parse_args()
+ parser=argparse.ArgumentParser();parser.add_argument('--phase-independent',action='store_true');parser.add_argument('--stereo',action='store_true');parser.add_argument('--body-support',action='store_true');args=parser.parse_args()
  if args.phase_independent:
   from exp20261012_observation_hypotheses import PhaseSupervisor as IndependentSupervisor
   PhaseSupervisor=IndependentSupervisor;OUT=OUT.parent/'passive-independent-v1';OBSERVER_SOURCE=ROOT/'scripts/exp20261012_observation_hypotheses.py'
  if args.stereo:
   from exp20261012_stereo_observer import PhaseSupervisor as StereoSupervisor
   PhaseSupervisor=StereoSupervisor;OUT=OUT.parent/'passive-stereo-v1';OBSERVER_SOURCE=ROOT/'scripts/exp20261012_stereo_observer.py'
+ if args.body_support:
+  from exp20261012_body_support_observer import PhaseSupervisor as BodySupervisor
+  PhaseSupervisor=BodySupervisor;OUT=OUT.parent/'passive-body-support-v1';OBSERVER_SOURCE=ROOT/'scripts/exp20261012_body_support_observer.py'
  OUT.mkdir(parents=True,exist_ok=False)
  data=json.loads((DATA/'dataset.json').read_text())['episodes'];cases=[]
  for e in sorted(data,key=lambda e:e['id']):

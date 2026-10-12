@@ -28,7 +28,7 @@ def main():
   assert starts[0]==starts[1]
  assert len(checks)==48
  observers={}
- for variant in ['passive-v3','passive-independent-v1','passive-stereo-v1']:
+ for variant in ['passive-v3','passive-independent-v1','passive-stereo-v1','passive-body-support-v1']:
   r=json.loads((OUT/'observer'/variant/'summary.json').read_text());assert len(r['cases'])==8 and r['max_replay_final_position_difference_m']==0 and r['actions_changed']==0;observers[variant]={'exact_replays':8,'qualified':r['qualification_passed']}
  summary={'passed':True,'exact_rescored_rollouts':len(checks),'checks':checks,'passive_observers':observers,'scope':'Artifact/scoring integrity, not validation of an autonomous repair','all_completed_outputs_preserved':True}
  (OUT/'validation.json').write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps({k:v for k,v in summary.items() if k!='checks'}))
