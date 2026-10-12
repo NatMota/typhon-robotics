@@ -61,3 +61,21 @@ Branch: research/live06-execution-guard.
 Report: https://github.com/NatMota/typhon-robotics/blob/research/live06-execution-guard/experiment-history/2026-10-12-live06/REPORT.md
 
 Nine V4 trials restore the known pickup and placement with unchanged weights, while retaining 85.33 degrees yaw error. Eight expert trials pass; new execution check accepts all 1,714 ticks versus 304 old raw-target vetoes. Eleven negative/contract regressions pass. First 570 native/corrected control records match; later wrist motion differs with tiny historical-image changes, so full trace identity is not claimed. LIVE07 #11027 must integrate the explicit execution helper into the live service without changing generic prospective admission. Use LIVE06_BACKUP_RECEIPT.json for bulk verification.
+
+## LIVE07 — Integrated live guard
+
+[Report and comparison video](https://github.com/NatMota/typhon-robotics/blob/research/live07-live-integration/experiment-history/2026-10-12-live07/REPORT.md)
+
+Nine V4 trials and 44 regression checks. The corrected live first-admissible route restores the known pickup and placement, with 79.46° remaining yaw and a narrow 14.985 mm centre error. The Decisions route misses; only one of two activated API queues actually executes. All preserve the already-completed brick, without establishing recognition. First 41 control/truth records match before the first A/C choice; later timing differs. Bulk: 405 files / 444,892,013 bytes SHA-verified on Mint. OST #11027.
+
+## LIVE08 — Candidate choice versus timing
+
+[Report and four-cell video](https://github.com/NatMota/typhon-robotics/blob/research/live08-choice-timing/experiment-history/2026-10-12-live08/REPORT.md)
+
+Fixed initial A/C choice × 40/41 holding ticks on the same inspected V4 scene. A grasps and places under both waits; C grasps under neither. Initial images, noise and all four proposals match LIVE07. One-tick waiting alone does not explain the lost grasp; orientation remains 79–81° wrong for A. Four strict failures; no new training or API calls. Bulk: 114 files / 134,433,160 bytes SHA-verified on Mint. OST #11028.
+
+## LIVE09 — Actual Decisions calls on blue ghosts and future RGB
+
+[Report and full choice table](https://github.com/NatMota/typhon-robotics/blob/research/live09-ghost-decisions/experiment-history/2026-10-12-live09/REPORT.md)
+
+32 choice calls plus 32 reason calls on the previously frozen R10 cards. Primary ghost-only selects 3/12, with 2/3 proxy-adequate; future RGB selects 5/12, with 5/5 adequate, but abstains 7/12 and changes decisions under reordering in 4/6 states. Future RGB also selects from the unsuitable V4 held state. Both modes contain privileged simulator lookahead. Secondary regional completions are separate from strict success, and supplied held states receive no new-pickup credit. No live-control benefit demonstrated. OST #11029; use LIVE09_BACKUP_RECEIPT.json for bulk verification.
