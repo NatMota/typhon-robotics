@@ -775,7 +775,7 @@
       "label": "Predict held state from unmarked phone video\nVIDEO03 · #11020\nRUN / COMPLETE",
       "parent_id": "sol_data_3",
       "x": 1134,
-      "y": 5445.0,
+      "y": 5423.0,
       "color": "#3C3926",
       "width": 280,
       "height": 156,
@@ -793,25 +793,23 @@
     {
       "id": "result_11020",
       "type": "result",
-      "label": "35 tiny probes; 155/155 known validation interiors agree. Blinded hand-present negatives: false held 5/8 full image, 2/8 full+crop. Cross-view temporal recall 23/28. Correction positive labels vanish after uncertainty margin. No control authority.",
+      "label": "35 small probes; 155/155 known interiors agree. Transition false-held: full 5/8, crop 2/8. Cross-view recall: crop 28/28, +history 23/28; history helps a different session panel. Missing hard negatives; no control authority.",
       "parent_id": "exp_11020",
       "x": 1504,
       "y": 5368.0,
       "color": "#3C382D",
       "width": 280,
-      "height": 310,
+      "height": 266,
       "lines": [
-        "35 tiny probes; 155/155",
-        "known validation interiors",
-        "agree. Blinded",
-        "hand-present negatives:",
-        "false held 5/8 full image,",
-        "2/8 full+crop. Cross-view",
-        "temporal recall 23/28.",
-        "Correction positive labels",
-        "vanish after uncertainty",
-        "margin. No control",
-        "authority."
+        "35 small probes; 155/155",
+        "known interiors agree.",
+        "Transition false-held: full",
+        "5/8, crop 2/8. Cross-view",
+        "recall: crop 28/28, +history",
+        "23/28; history helps a",
+        "different session panel.",
+        "Missing hard negatives; no",
+        "control authority."
       ],
       "prefix": "Result",
       "ticket_id": 11020,
@@ -954,5 +952,5 @@
     ]
   ],
   "width": 1808,
-  "height": 5822
+  "height": 5778
 }

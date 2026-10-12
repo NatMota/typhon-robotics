@@ -31,5 +31,5 @@
   "11017": "Hands detected in 175/526 sampled frames. Pinch midpoint/aperture and hand-centred landmarks saved; grasp/global depth remain unknown. Static no-hand frames are expected, so this is not recall.",
   "11018": "Frozen Pt backbone: 526 x 1024 descriptors; pooled paired-take retrieval 1/16. Frame timing and shuffle/reversal controls saved. Offline future-aware comparison; pooled features do not encode temporal order.",
   "11019": "Corrected v2: 2,644 frames verified against raw decoding; 147 four-second windows. Full+crop timing error 2.09 to 1.21 s; 13/16 takes improve. Ordered retrieval 7/16 vs pooled 1/16. Earlier frame-index bug preserved and fixed. No robot-action labels.",
-  "11020": "35 tiny probes; 155/155 known validation interiors agree. Blinded hand-present negatives: false held 5/8 full image, 2/8 full+crop. Cross-view temporal recall 23/28. Correction positive labels vanish after uncertainty margin. No control authority."
+  "11020": "35 small probes; 155/155 known interiors agree. Transition false-held: full 5/8, crop 2/8. Cross-view recall: crop 28/28, +history 23/28; history helps a different session panel. Missing hard negatives; no control authority."
 }
