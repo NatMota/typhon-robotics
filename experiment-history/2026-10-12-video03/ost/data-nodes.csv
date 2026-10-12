@@ -1,0 +1,63 @@
+id,type,label,parent_id,x,y,color
+outcome,outcome,Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer,,24,128,#2D3831
+opp_data,opportunity,I need my recordings to contribute to robot behaviour with traceable supervision,outcome,394,128,#2D3831
+sol_data_0,solution,Traceable curation and explicit calibration,opp_data,764,128,#30353D
+exp_10981,experiment,"Excluded-take provenance audit
+OPS04 · #10981
+RUN / COMPLETE",sol_data_0,1134,150.0,#3C3926
+result_10981,result,"Excluded review candidate 6 is demo0017, not successful demo0006. Candidate 5 is normal demo0016. Source clips and hashes preserved.",exp_10981,1504,128.0,#303840
+exp_10991,experiment,"Physical DUPLO + calibration
+DATA06 · #10991
+BLOCKED · PREREQUISITE FAILED",sol_data_0,1134,499.0,#3C3926
+result_10991,result,"Calibration/proxy mismatch explicitly reconciled: frozen training 50 x 35 x 30 mm,80 g versus catalogue 32 x 43 x 32 mm,12.7 g; target square virtual 100 mm. Actual measurements and paired-camera metric calibration remain missing. Do not silently replace geometry or call virtual units physical accuracy. Waiting for measurement/calibration evidence; original results unchanged. ",exp_10991,1504,378.0,#38323E
+sol_data_1,solution,Event alignment and constrained retargeting,opp_data,764,866,#30353D
+exp_10972,experiment,"Human / expert event timeline
+R07 · #10972
+RUN / COMPLETE",sol_data_1,1134,888.0,#3C3926
+result_10972,result,One 7.6 s human correction aligned by events; camera sync uncertainty ±0.25 s. Human lift/rotation overlap differs from the teacher. Not valid motor-action labels.,exp_10972,1504,866.0,#3C382D
+exp_10974,experiment,"Human endpoint retargeting
+R09 · #10974
+RUN / COMPLETE",sol_data_1,1134,1160.0,#3C3926
+result_10974,result,"One endpoint-derived, constrained Panda execution succeeds: 2.46 mm / 0.081° from the mapped endpoint. Virtual scale and supplied path/timing; not recovered human 3D actions.",exp_10974,1504,1116.0,#293D37
+exp_10989,experiment,"Phone-to-Panda action alignment
+DATA04 · #10989
+BLOCKED · PREREQUISITE FAILED",sol_data_1,1134,1619.0,#3C3926
+result_10989,result,"Phone-to-robot alignment audit completed; full direct supervision remains blocked. Existing one-clip event alignment has 7.6 s duration and+-0.25 s sync uncertainty; human lift/rotation overlap differs from teacher phase timing. Endpoint retarget succeeds with supplied path/height/timing; it is not full recovered 3 D. SixP_train tracking sources audited for observable segments, but grasp/release correspondence and metric lift are not established. Proposed reusable object-motion/contact representation recorded; no invented per-frame motor labels.",exp_10989,1504,1410.0,#38323E
+sol_data_2,solution,"Balanced phase, horizon and view mixtures",opp_data,764,2074,#30353D
+exp_10987,experiment,"Phase chunks + 4 s intentions
+DATA02 · #10987
+RUN / COMPLETE",sol_data_2,1134,2250.0,#3C3926
+result_10987,result,"Actual chunk/target audit completed. V 2 has 632 rows=316 semantic chunks x 2 view orders; V 3 has 776/388. Future durations vary, and four-second history is not four-second future supervision. Broad-Pt and new continuations predict 30 actions at 20 Hz=1.5 s. Human footage remains without validated frame-to-Franka-action labels. Missing held sidecars use validity masks. Proceed with explicitly versioned physical-time contracts; do not claim uniform four-second intention targets. ",exp_10987,1504,2074.0,#303840
+exp_10988,experiment,"Balanced data randomisation
+DATA03 · #10988
+RUN / COMPLETE",sol_data_2,1134,2808.0,#3C3926
+result_10988,result,"Sampling audit completed: broad 12 k all 439 windows,48,000 exposures,8,000/source. V 1/V 2 historical aggregate logs cover declared sources; V 2 semantic/view copies and category balancing do not imply uniform source weighting. Historical V 3 per-update consumption remains unverified. New fixed/varied/recovery runs retain every sample identity and exact 2,000/source exposure, independently shuffled window queues and a shared shuffled cell schedule. ",exp_10988,1504,2632.0,#303840
+exp_10990,experiment,"Held crosshair + separate labels
+DATA05 · #10990
+RUN / COMPLETE",sol_data_2,1134,3355.0,#3C3926
+result_10990,result,"Historical phone held export verified on Mint:16 takes,32 views,7,904 view-frames;1,024 held,3,598 notheld,3,282 unknown;768 green-on frames. Unknown/off is not a negative held label. Marker is a pseudo 3 Dimage bracket, not metric 3 D. Source timestamps/audio retained; frame-level labels are agent-reviewed, not all human-confirmed. Export predates the later evaluation exclusion. No direct Franka labels attach to phone frames. ",exp_10990,1504,3190.0,#303840
+sol_data_3,solution,"Object, hand and temporal visual representations",opp_data,764,3744,#30353D
+exp_11015,experiment,"Video-derived representation and robot adapter
+VIDEO01 · #11015
+ACTIVE · RESULTS PENDING",sol_data_3,1134,3799.0,#3C3926
+result_11015,result,"Three phone representations, dense alignment and held-state probes tested. Video can supervise a small observation head; transition false positives remain. No qualified metric/contact stream or Panda action decoder.",exp_11015,1504,3744.0,#38323E
+exp_11016,experiment,"Object motion from phone frames
+VIDEO01-A · #11016
+REVIEW",sol_data_3,1134,4137.0,#3C3926
+result_11016,result,"440/526 centres and 227/264 primary directed-yaw estimates pass confidence filters. Actual 2D paths, missing masks and shuffle/static controls saved. Coverage is not accuracy; no physical 3D or grasp inference.",exp_11016,1504,4082.0,#303840
+exp_11017,experiment,"Hand/pinch motion from phone frames
+VIDEO01-B · #11017
+REVIEW",sol_data_3,1134,4453.0,#3C3926
+result_11017,result,"Hands detected in 175/526 sampled frames. Pinch midpoint/aperture and hand-centred landmarks saved; grasp/global depth remain unknown. Static no-hand frames are expected, so this is not recall.",exp_11017,1504,4398.0,#303840
+exp_11018,experiment,"Frozen visual features across views
+VIDEO01-C · #11018
+REVIEW",sol_data_3,1134,4769.0,#3C3926
+result_11018,result,Frozen Pt backbone: 526 x 1024 descriptors; pooled paired-take retrieval 1/16. Frame timing and shuffle/reversal controls saved. Offline future-aware comparison; pooled features do not encode temporal order.,exp_11018,1504,4714.0,#3C382D
+exp_11019,experiment,"Dense video, crops and ordered observations
+VIDEO02 · #11019
+RUN / COMPLETE",sol_data_3,1134,5096.0,#3C3926
+result_11019,result,"Corrected v2: 2,644 frames verified against raw decoding; 147 four-second windows. Full+crop timing error 2.09 to 1.21 s; 13/16 takes improve. Ordered retrieval 7/16 vs pooled 1/16. Earlier frame-index bug preserved and fixed. No robot-action labels.",exp_11019,1504,5030.0,#3C382D
+exp_11020,experiment,"Predict held state from unmarked phone video
+VIDEO03 · #11020
+RUN / COMPLETE",sol_data_3,1134,5445.0,#3C3926
+result_11020,result,"35 tiny probes; 155/155 known validation interiors agree. Blinded hand-present negatives: false held 5/8 full image, 2/8 full+crop. Cross-view temporal recall 23/28. Correction positive labels vanish after uncertainty margin. No control authority.",exp_11020,1504,5368.0,#3C382D
