@@ -1,0 +1,74 @@
+[
+  {
+    "case": "Earlier approach: repaired",
+    "scope": "reused03_transitions",
+    "review_id": "demo_0006-approach",
+    "view": "camera_a",
+    "sample_id": "demo_0006/camera_a/2536",
+    "frame_path": "frames/demo_0006/camera_a/002536.jpg",
+    "frame_sha256": "6d05dc03f320590f1bb2fdfec171893bd5d46dedfca54b48626a6b23977dbd07",
+    "label": 0,
+    "score_before": 0.9132793545722961,
+    "score_after": 0.31395453214645386
+  },
+  {
+    "case": "Earlier approach: repaired",
+    "scope": "reused03_transitions",
+    "review_id": "demo_0006-approach",
+    "view": "camera_b",
+    "sample_id": "demo_0006/camera_b/2677",
+    "frame_path": "frames/demo_0006/camera_b/002677.jpg",
+    "frame_sha256": "43403af88bb2de6536f1354e90981c49c0c58555c3b5d22727c4f71efad643a8",
+    "label": 0,
+    "score_before": 0.12384724617004395,
+    "score_after": 0.022382883355021477
+  },
+  {
+    "case": "Other approach: still wrong",
+    "scope": "reused04_extra_transitions",
+    "review_id": "demo_0015-approach",
+    "view": "camera_a",
+    "sample_id": "demo_0015/camera_a/1481",
+    "frame_path": "frames/demo_0015/camera_a/001481.jpg",
+    "frame_sha256": "e9c302ae9cc2d3c4e9012eb80a29ff3ce5c5d3b71d204b1bc1ca78f5641580f7",
+    "label": 0,
+    "score_before": 0.9496784806251526,
+    "score_after": 0.9181666374206543
+  },
+  {
+    "case": "Other approach: still wrong",
+    "scope": "reused04_extra_transitions",
+    "review_id": "demo_0015-approach",
+    "view": "camera_b",
+    "sample_id": "demo_0015/camera_b/1441",
+    "frame_path": "frames/demo_0015/camera_b/001441.jpg",
+    "frame_sha256": "83c8fa0125727a5d6dbcc068918518b08c71b13bedec98cf5fba54b1604d30ef",
+    "label": 0,
+    "score_before": 0.21106992661952972,
+    "score_after": 0.11908576637506485
+  },
+  {
+    "case": "Held state retained; pause unverified",
+    "scope": "excluded_held_midpoints",
+    "review_id": "demo_0015-held-midpoint",
+    "view": "camera_a",
+    "sample_id": "demo_0015/camera_a/1562",
+    "frame_path": "frames/demo_0015/camera_a/001562.jpg",
+    "frame_sha256": "57483c0534e1dbca8b35a8be72e6c2048b666c773a687f9f4a34baa7aef59bcd",
+    "label": 1,
+    "score_before": 0.9993318915367126,
+    "score_after": 0.9996575117111206
+  },
+  {
+    "case": "Held state retained; pause unverified",
+    "scope": "excluded_held_midpoints",
+    "review_id": "demo_0015-held-midpoint",
+    "view": "camera_b",
+    "sample_id": "demo_0015/camera_b/1522",
+    "frame_path": "frames/demo_0015/camera_b/001522.jpg",
+    "frame_sha256": "39cc5dc6929d6ccbd285b44d860ad26cca7f5110d60f0de797fb678b000a34b4",
+    "label": 1,
+    "score_before": 0.9999512434005737,
+    "score_after": 0.9999598264694214
+  }
+]

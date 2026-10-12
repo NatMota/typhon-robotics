@@ -1,0 +1,18 @@
+{
+  "scope": "Independent pause-qualification audit; no labels, models, thresholds or predictions changed",
+  "training_examples": [
+    "demo_0012",
+    "demo_0013"
+  ],
+  "training_observed_normalized_displacement_range": [
+    0.005255771872129934,
+    0.007795269123138688
+  ],
+  "excluded_examples": {
+    "demo_0014": "Visible lowering; normalized centre displacement 0.0378 primary / 0.0723 secondary. Held motion, not pause.",
+    "demo_0015": "Initial visual review called little motion, but primary tracked displacement 0.0537 and secondary centre unavailable. Motion is unresolved; do not claim verified held-out pause."
+  },
+  "held_classification_claim": "All four excluded midpoint frame-views remain held, but they do not constitute a qualified held-out pause panel.",
+  "source_review_preserved": true,
+  "further_work": "Inspect time-resolved held intervals and validate tracking against actual object pixels before declaring a stationary held test."
+}

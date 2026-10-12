@@ -1,0 +1,116 @@
+[
+  {
+    "model": "added_precontact_original_weighting__full_crop_current",
+    "dimension": 2048,
+    "closure_calls": 54,
+    "seconds": 0.18036556101287715,
+    "train_samples": 476,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "added_precontact_original_weighting__fusion_current",
+    "dimension": 2069,
+    "closure_calls": 48,
+    "seconds": 0.16426536699873395,
+    "train_samples": 476,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "added_precontact_original_weighting__fusion_causal_history",
+    "dimension": 6165,
+    "closure_calls": 58,
+    "seconds": 0.1604660950251855,
+    "train_samples": 476,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "added_precontact_balanced_negative_regimes__full_crop_current",
+    "dimension": 2048,
+    "closure_calls": 48,
+    "seconds": 0.1679675949853845,
+    "train_samples": 476,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "added_precontact_balanced_negative_regimes__fusion_current",
+    "dimension": 2069,
+    "closure_calls": 61,
+    "seconds": 0.19161586798145436,
+    "train_samples": 476,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  },
+  {
+    "model": "added_precontact_balanced_negative_regimes__fusion_causal_history",
+    "dimension": 6165,
+    "closure_calls": 62,
+    "seconds": 0.16780246098642237,
+    "train_samples": 476,
+    "train_takes": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005",
+      "demo_0012",
+      "demo_0013"
+    ],
+    "train_views": [
+      "camera_a",
+      "camera_b"
+    ]
+  }
+]
