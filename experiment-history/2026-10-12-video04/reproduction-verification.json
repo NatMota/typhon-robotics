@@ -1,0 +1,236 @@
+{
+  "fresh_refit_arrays_bitwise_equal": 12,
+  "preserved_baseline_probability_max_errors": {
+    "frozen03__full_crop_current": 4.3213367462158203e-07,
+    "frozen03__fusion_current": 3.5762786865234375e-07,
+    "frozen03__fusion_causal_history": 5.364418029785156e-07
+  },
+  "only_new_training_negatives_changed": 12,
+  "models_reloaded": 9,
+  "event_level_results": [
+    {
+      "model": "added_negatives_balanced_negative_regimes__full_crop_current",
+      "panel": "extra_validation",
+      "events": 3,
+      "events_with_any_false_held_view": 1,
+      "events_with_both_false_held_views": 0,
+      "negative_frame_views": 6,
+      "false_held_views": 1,
+      "remaining_failures": [
+        "demo_0015-approach"
+      ]
+    },
+    {
+      "model": "added_negatives_balanced_negative_regimes__full_crop_current",
+      "panel": "reused_validation",
+      "events": 4,
+      "events_with_any_false_held_view": 1,
+      "events_with_both_false_held_views": 0,
+      "negative_frame_views": 8,
+      "false_held_views": 1,
+      "remaining_failures": [
+        "demo_0006-approach"
+      ]
+    },
+    {
+      "model": "added_negatives_balanced_negative_regimes__fusion_causal_history",
+      "panel": "extra_validation",
+      "events": 3,
+      "events_with_any_false_held_view": 1,
+      "events_with_both_false_held_views": 0,
+      "negative_frame_views": 6,
+      "false_held_views": 1,
+      "remaining_failures": [
+        "demo_0015-approach"
+      ]
+    },
+    {
+      "model": "added_negatives_balanced_negative_regimes__fusion_causal_history",
+      "panel": "reused_validation",
+      "events": 4,
+      "events_with_any_false_held_view": 1,
+      "events_with_both_false_held_views": 0,
+      "negative_frame_views": 8,
+      "false_held_views": 1,
+      "remaining_failures": [
+        "demo_0006-approach"
+      ]
+    },
+    {
+      "model": "added_negatives_balanced_negative_regimes__fusion_current",
+      "panel": "extra_validation",
+      "events": 3,
+      "events_with_any_false_held_view": 1,
+      "events_with_both_false_held_views": 0,
+      "negative_frame_views": 6,
+      "false_held_views": 1,
+      "remaining_failures": [
+        "demo_0015-approach"
+      ]
+    },
+    {
+      "model": "added_negatives_balanced_negative_regimes__fusion_current",
+      "panel": "reused_validation",
+      "events": 4,
+      "events_with_any_false_held_view": 1,
+      "events_with_both_false_held_views": 0,
+      "negative_frame_views": 8,
+      "false_held_views": 1,
+      "remaining_failures": [
+        "demo_0006-approach"
+      ]
+    },
+    {
+      "model": "added_negatives_original_weighting__full_crop_current",
+      "panel": "extra_validation",
+      "events": 3,
+      "events_with_any_false_held_view": 1,
+      "events_with_both_false_held_views": 0,
+      "negative_frame_views": 6,
+      "false_held_views": 1,
+      "remaining_failures": [
+        "demo_0015-approach"
+      ]
+    },
+    {
+      "model": "added_negatives_original_weighting__full_crop_current",
+      "panel": "reused_validation",
+      "events": 4,
+      "events_with_any_false_held_view": 1,
+      "events_with_both_false_held_views": 0,
+      "negative_frame_views": 8,
+      "false_held_views": 1,
+      "remaining_failures": [
+        "demo_0006-approach"
+      ]
+    },
+    {
+      "model": "added_negatives_original_weighting__fusion_causal_history",
+      "panel": "extra_validation",
+      "events": 3,
+      "events_with_any_false_held_view": 1,
+      "events_with_both_false_held_views": 0,
+      "negative_frame_views": 6,
+      "false_held_views": 1,
+      "remaining_failures": [
+        "demo_0015-approach"
+      ]
+    },
+    {
+      "model": "added_negatives_original_weighting__fusion_causal_history",
+      "panel": "reused_validation",
+      "events": 4,
+      "events_with_any_false_held_view": 1,
+      "events_with_both_false_held_views": 0,
+      "negative_frame_views": 8,
+      "false_held_views": 1,
+      "remaining_failures": [
+        "demo_0006-approach"
+      ]
+    },
+    {
+      "model": "added_negatives_original_weighting__fusion_current",
+      "panel": "extra_validation",
+      "events": 3,
+      "events_with_any_false_held_view": 1,
+      "events_with_both_false_held_views": 0,
+      "negative_frame_views": 6,
+      "false_held_views": 1,
+      "remaining_failures": [
+        "demo_0015-approach"
+      ]
+    },
+    {
+      "model": "added_negatives_original_weighting__fusion_current",
+      "panel": "reused_validation",
+      "events": 4,
+      "events_with_any_false_held_view": 1,
+      "events_with_both_false_held_views": 0,
+      "negative_frame_views": 8,
+      "false_held_views": 1,
+      "remaining_failures": [
+        "demo_0006-approach"
+      ]
+    },
+    {
+      "model": "frozen03__full_crop_current",
+      "panel": "extra_validation",
+      "events": 3,
+      "events_with_any_false_held_view": 1,
+      "events_with_both_false_held_views": 1,
+      "negative_frame_views": 6,
+      "false_held_views": 2,
+      "remaining_failures": [
+        "demo_0015-approach"
+      ]
+    },
+    {
+      "model": "frozen03__full_crop_current",
+      "panel": "reused_validation",
+      "events": 4,
+      "events_with_any_false_held_view": 2,
+      "events_with_both_false_held_views": 0,
+      "negative_frame_views": 8,
+      "false_held_views": 2,
+      "remaining_failures": [
+        "demo_0006-approach",
+        "demo_0006-withdrawal"
+      ]
+    },
+    {
+      "model": "frozen03__fusion_causal_history",
+      "panel": "extra_validation",
+      "events": 3,
+      "events_with_any_false_held_view": 1,
+      "events_with_both_false_held_views": 1,
+      "negative_frame_views": 6,
+      "false_held_views": 2,
+      "remaining_failures": [
+        "demo_0015-approach"
+      ]
+    },
+    {
+      "model": "frozen03__fusion_causal_history",
+      "panel": "reused_validation",
+      "events": 4,
+      "events_with_any_false_held_view": 2,
+      "events_with_both_false_held_views": 0,
+      "negative_frame_views": 8,
+      "false_held_views": 2,
+      "remaining_failures": [
+        "demo_0006-approach",
+        "demo_0006-withdrawal"
+      ]
+    },
+    {
+      "model": "frozen03__fusion_current",
+      "panel": "extra_validation",
+      "events": 3,
+      "events_with_any_false_held_view": 1,
+      "events_with_both_false_held_views": 1,
+      "negative_frame_views": 6,
+      "false_held_views": 2,
+      "remaining_failures": [
+        "demo_0015-approach"
+      ]
+    },
+    {
+      "model": "frozen03__fusion_current",
+      "panel": "reused_validation",
+      "events": 4,
+      "events_with_any_false_held_view": 2,
+      "events_with_both_false_held_views": 0,
+      "negative_frame_views": 8,
+      "false_held_views": 2,
+      "remaining_failures": [
+        "demo_0006-approach",
+        "demo_0006-withdrawal"
+      ]
+    }
+  ],
+  "limitations": [
+    "Event summary is descriptive any-view failure, not an implemented multi-camera controller fusion rule.",
+    "Correlated camera views do not create independent physical events.",
+    "No motor policy or controller was changed."
+  ]
+}

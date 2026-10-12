@@ -1,0 +1,7 @@
+{
+  "selection": "scripts/video04_select.py --protocol configs/experiments/video04/protocol.json --output /var/tmp/typhon-video-contact-20261012/review-v1",
+  "fit": "scripts/video04_fit.py --protocol configs/experiments/video04/protocol.json --output /var/tmp/typhon-video-contact-20261012/fit-v1",
+  "refit": "scripts/video04_fit.py --protocol configs/experiments/video04/protocol.json --output /var/tmp/typhon-video-contact-20261012/fit-reproduction",
+  "verify": "scripts/video04_verify.py --root /var/tmp/typhon-video-contact-20261012",
+  "python": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-xvla/bin/python"
+}
