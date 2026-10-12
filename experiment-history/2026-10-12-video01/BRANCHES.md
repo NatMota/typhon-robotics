@@ -20,3 +20,7 @@ Code, source checksums, small derived observations/feature matrices, reports and
 ## VIDEO04 — Training-only contact negatives
 
 Private branch: [research/video04-contact-negatives](https://github.com/NatMota/typhon-robotics/tree/research/video04-contact-negatives). [Report and full results](https://github.com/NatMota/typhon-robotics/blob/research/video04-contact-negatives/experiment-history/2026-10-12-video04/REPORT.md). Six small observation probes, with new labels committed before scores. Withdrawal error improves; the extra panel still has the same failing approach event (1/3). All 90 conservative held positives retained. No motor-policy change or contact authority. OST #11021.
+
+## VIDEO05 — Pre-contact labels and held-midpoint audit
+
+[Private branch](https://github.com/NatMota/typhon-robotics/tree/research/video05-precontact-pause) and [report/case card](https://github.com/NatMota/typhon-robotics/blob/research/video05-precontact-pause/experiment-history/2026-10-12-video05/REPORT.md). Thirteen training-only pre-contact views repair the old approach error. The other excluded-take approach remains wrong; all 90 labelled held interiors retained. History/extra weighting does not resolve the remaining failure. Held-pause qualification is incomplete because one selected case lowers the block and another has uncertain tracking. No motor-policy update or control authority. OST #11022.
