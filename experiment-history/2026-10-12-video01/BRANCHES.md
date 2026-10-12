@@ -12,3 +12,7 @@ Code, source checksums, small derived observations/feature matrices, reports and
 - [Results and reproduction](https://github.com/NatMota/typhon-robotics/blob/research/video01-temporal-validation/experiment-history/2026-10-12-video02/REPORT.md)
 
 2,644 phone observations;147 four-second view-windows; six paired previews. Frozen full+crop features improve offline matching, not robot execution. The corrected dense-v2 export passes all 2,644 raw sequential frame hashes; 2,710 files verified on Mint. Superseded dense-v1 and its frame-index failure remain preserved. Calibration/contact and the Panda action adapter remain unresolved.
+
+## Held-state continuation — VIDEO03
+
+[Results and reproduction](https://github.com/NatMota/typhon-robotics/blob/research/video03-held-probe/experiment-history/2026-10-12-video03/REPORT.md). Thirty-five small observation probes from unmarked personal footage. Perfect conservative-interior agreement did not survive hand-present transition checks: 5/8 false held views for full images, 2/8 with crop/fusion. No motor-policy update or control authority. All results and fresh reproduction are verified on Mint.
