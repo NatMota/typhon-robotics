@@ -15,7 +15,7 @@ def metrics(w):
  return {'max_any_tracked_feature_displacement_px':maxpoint if w['qualified']else None,'max_any_tracked_feature_path_px':max(paths.values())if w['qualified']and paths else None,'apparent_2d_similarity_angle_clockwise_deg':ang if w['qualified']else None,'apparent_similarity_scale':scale if w['qualified']else None,'similarity_rms_px':rms if w['qualified']else None}
 def tile(im,label,width=540,height=300):
  canvas=np.full((height,width,3),18,np.uint8);s=min(width/im.shape[1],(height-30)/im.shape[0]);mini=cv2.resize(im,(round(im.shape[1]*s),round(im.shape[0]*s)));x=(width-mini.shape[1])//2;y=30+(height-30-mini.shape[0])//2;canvas[y:y+mini.shape[0],x:x+mini.shape[1]]=mini;cv2.putText(canvas,label,(6,20),cv2.FONT_HERSHEY_SIMPLEX,.47,(240,240,240),1);return canvas
-p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--analysis-dir',default='analysis-v2');a=p.parse_args();audit=a.root/'audit-v1';out=a.root/a.analysis_dir;out.mkdir(parents=True,exist_ok=False)
+p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--analysis-dir',default='analysis-v3');p.add_argument('--audit-dir',default='audit-v2');a=p.parse_args();audit=a.root/a.audit_dir;out=a.root/a.analysis_dir;out.mkdir(parents=True,exist_ok=False)
 cfg=json.loads((audit/'protocol.json').read_text());d=Path(cfg['input_data']);rows=json.loads((d/'source-index.json').read_text())['samples'];summary=json.loads((audit/'summary.json').read_text());sel=json.loads((audit/'selection.json').read_text());derived=[];checks=[];pairs=[];videos=[]
 for seq in sel:
  tr=json.loads((audit/'traces'/f'{seq["sequence_id"]}.json').read_text());ss=next(s for s in summary if s['sequence_id']==seq['sequence_id'])

@@ -28,7 +28,7 @@ def flow(g0,g1,p,mask1,cfg):
  q=q.reshape(-1,2);back=back.reshape(-1,2);err=np.linalg.norm(back-p,axis=1);le=e.reshape(-1)
  h,w=g1.shape;xy=np.rint(q).astype(int);inside=(xy[:,0]>=0)&(xy[:,0]<w)&(xy[:,1]>=0)&(xy[:,1]<h);support=np.zeros(len(p),bool);support[inside]=mask1[xy[inside,1],xy[inside,0]]>0
  ok=(st.ravel()>0)&(bst.ravel()>0)&np.isfinite(q).all(axis=1)&(err<=c['fb_error_max_px'])&(le<=c['lk_error_max'])&support
- return q,ok,{'fb_error_px':[float(x)if math.isfinite(x)else None for x in err],'lk_error':[float(x)if math.isfinite(x)else None for x in le]}
+ return q,ok,{'fb_error_px':[float(x)if st.ravel()[i] and bst.ravel()[i] and math.isfinite(x)else None for i,x in enumerate(err)],'lk_error':[float(x)if st.ravel()[i] and math.isfinite(x)else None for i,x in enumerate(le)],'forward_status':st.ravel().tolist(),'backward_status':bst.ravel().tolist()}
 def sufficient(n,n0,cfg):return n>=cfg['tracking']['min_retained_points']and n>=n0*cfg['tracking']['min_retained_fraction']
 def vec(x):return [float(v)for v in x]
 def estimate_pair(g0,g1,m0,m1,cfg):
