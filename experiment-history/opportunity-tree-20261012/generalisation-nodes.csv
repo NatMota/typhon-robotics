@@ -1,0 +1,33 @@
+id,type,label,parent_id,x,y,color
+outcome,outcome,Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer,,24,128,#2D3831
+opp_generalisation,opportunity,I need learned behaviour to work beyond familiar starting states,outcome,394,128,#2D3831
+sol_generalisation_0,solution,Broader supervised adaptation,opp_generalisation,764,128,#30353D
+exp_10962,experiment,"Broader full-weight Pt adaptation
+R03 · #10962
+RUN / COMPLETE",sol_generalisation_0,1134,161.0,#3C3926
+result_10962,result,Fresh X-VLA-Pt; all six training takes; 439 simulated RGB/expert windows. 3k and 12k checkpoints saved in 64 min. Full-weight adaptation after staged warm-up.,exp_10962,1504,128.0,#303840
+exp_10963,experiment,"Unchanged development evaluation
+R03b · #10963
+RUN / COMPLETE",sol_generalisation_0,1134,433.0,#3C3926
+result_10963,result,"Narrow M6, broad 3k and broad 12k each grasp 0/6 and complete 0/6. Three development families × two seeds; previously inspected, not a fresh confirmatory test.",exp_10963,1504,400.0,#403034
+exp_10964,experiment,"Familiar-start diagnostic
+R03c · #10964
+RUN / COMPLETE",sol_generalisation_0,1134,716.0,#3C3926
+result_10964,result,Broad 12k on six exact training starts: 6/6 grasps and lifts; 5/6 stable released placements inside the square; 4/6 strict successes. One seed per start.,exp_10964,1504,672.0,#3C382D
+sol_generalisation_1,solution,Coverage-driven training and correction examples,opp_generalisation,764,962,#30353D
+exp_10965,experiment,"Training-start coverage audit
+R03d · #10965
+RUN / COMPLETE",sol_generalisation_1,1134,995.0,#3C3926
+result_10965,result,All three development starts lie outside the six training-start XY convex hull. Initial-position coverage mismatch is established; causality is not.,exp_10965,1504,962.0,#303840
+exp_10983,experiment,"16 trials: local position and yaw robustness
+NEXT01 · #10983
+RUN / COMPLETE",sol_generalisation_1,1134,1278.0,#3C3926
+result_10983,result,"16 local trials: 14 grasps, 14 stable released in-square placements, 13 strict successes. Original 4/4; inward 3/4; outward 4/4; yaw 2/4. Two selected familiar parents; not broad transfer.",exp_10983,1504,1234.0,#3C382D
+exp_10992,experiment,"Failure / correction coverage
+DATA07 · #10992
+REVIEW",sol_generalisation_1,1134,1682.0,#3C3926
+result_10992,result,"Four distinct qualified training-only direct corrections admitted from twoP_trainfamilies after replay, action/proprio roundtrip, finite and joint-limit checks. One near-limit source excluded; duplicate removed. Added to a separate 3,000 update recovery continuation;0/4 quarantined recovery success. This partially covers failures, not all requested pause/no-op/repair families. Broader recovery coverage depends on CTRL 01. ",exp_10992,1504,1528.0,#38323E
+exp_11013,experiment,"Why B/loading does not generalise
+B01 · #11013
+RUN / COMPLETE",sol_generalisation_1,1134,2086.0,#3C3926
+result_11013,result,"Loading: 28 rollouts and 18 fixed-image queries. Verified V1–V3 data: 18 feeding, 0 loading. Broad12k returns to feeding square; endpoint changes <1 mm for 270 mm goal shift. Expert 8/8 feasible.",exp_11013,1504,2042.0,#3C382D

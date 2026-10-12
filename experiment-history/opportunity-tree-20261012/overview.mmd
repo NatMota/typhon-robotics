@@ -1,0 +1,156 @@
+flowchart LR
+outcome("Outcome: Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer")
+style outcome fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+opp_data("Opportunity: I need my recordings to contribute to robot behaviour with traceable supervision")
+style opp_data fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+sol_data_1("Solution: Event alignment and constrained retargeting")
+style sol_data_1 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10974("Experiment: Human endpoint retargeting<br/>R09 · #10974<br/>RUN / COMPLETE")
+style exp_10974 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10974("Result: One endpoint-derived, constrained Panda execution succeeds: 2.46 mm / 0.081° from the mapped endpoint. Virtual scale and supplied path/timing; not recovered human 3D actions.")
+style result_10974 fill:#293D37,color:#E5E8E4,stroke:#6A716B
+sol_data_3("Solution: Object, hand and temporal visual representations")
+style sol_data_3 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_11015("Experiment: Video-derived representation and robot adapter<br/>VIDEO01 · #11015<br/>ACTIVE · RESULTS PENDING")
+style exp_11015 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11015("Interim result: INITIAL CHECKS: three independent branches processed 526 real phone frames from 16 takes. No expert action labels, training or robot execution. Contact, global depth and a robot-specific adapter remain unvalidated.")
+style result_11015 fill:#38323E,color:#E5E8E4,stroke:#6A716B
+opp_perception("Opportunity: I need the robot to see and use the correct brick orientation")
+style opp_perception fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+sol_perception_1("Solution: Visual-goal and language conditioning")
+style sol_perception_1 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10954("Experiment: Numeral + coherent-goal probes<br/>R01b · #10954<br/>RUN / COMPLETE")
+style exp_10954 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10954("Result: 87 offline queries on three states from one episode. Initial numeral rotation changes wrist targets by 26–34°. Held-state target stays about 94°; cue recognition versus action use remains unresolved.")
+style result_10954 fill:#3C382D,color:#E5E8E4,stroke:#6A716B
+exp_10994("Experiment: Language / action grounding repair<br/>VIS02 · #10994<br/>RUN / COMPLETE")
+style exp_10994 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10994("Result: Matched goal-diversity test completed: same broad-Pt 12 k initializer, +3,000 joint updates, 12,000 samples and 2,000/source in each arm. Six fixed-goal trajectories versus 12 varied-goal trajectories. Novel start/goal strict success: fixed 0/12, varied 10/12; original source 7/12 versus 10/12; loading 0/12 both. Six already-seen source families, one fit seed; not independent new demonstrations. A further 18 fixed-image queries per arm found at most 1.381 mm/fixed and 0.977 mm/varied endpoint response to a 270 mm text-only goal change. Proceed with visually")
+style result_10994 fill:#293D37,color:#E5E8E4,stroke:#6A716B
+opp_generalisation("Opportunity: I need learned behaviour to work beyond familiar starting states")
+style opp_generalisation fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+sol_generalisation_1("Solution: Coverage-driven training and correction examples")
+style sol_generalisation_1 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10983("Experiment: 16 trials: local position and yaw robustness<br/>NEXT01 · #10983<br/>RUN / COMPLETE")
+style exp_10983 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10983("Result: 16 local trials: 14 grasps, 14 stable released in-square placements, 13 strict successes. Original 4/4; inward 3/4; outward 4/4; yaw 2/4. Two selected familiar parents; not broad transfer.")
+style result_10983 fill:#3C382D,color:#E5E8E4,stroke:#6A716B
+exp_11013("Experiment: Why B/loading does not generalise<br/>B01 · #11013<br/>RUN / COMPLETE")
+style exp_11013 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11013("Result: Loading: 28 rollouts and 18 fixed-image queries. Verified V1–V3 data: 18 feeding, 0 loading. Broad12k returns to feeding square; endpoint changes &lt;1 mm for 270 mm goal shift. Expert 8/8 feasible.")
+style result_11013 fill:#3C382D,color:#E5E8E4,stroke:#6A716B
+opp_execution("Opportunity: I need a grasped brick placed and released in the correct orientation")
+style opp_execution fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+sol_execution_0("Solution: Grasp-relative orientation control")
+style sol_execution_0 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10957("Experiment: Release command trace<br/>R01 · #10957<br/>RUN / COMPLETE")
+style exp_10957 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10957("Result: Policy requests OPEN at 3.60 s; controller passes it through. Wrist target ≈93°, but this grasp needs ≈174°. Keeping the gripper closed still leaves ≈80° error.")
+style result_10957 fill:#403034,color:#E5E8E4,stroke:#6A716B
+sol_execution_1("Solution: Replanning cadence and joint-aware paths")
+style sol_execution_1 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10966("Experiment: 30 vs 10 actions before looking<br/>R04 · #10966<br/>RUN / COMPLETE")
+style exp_10966 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10966("Result: H30: 2/12 grasps and in-square placements. H10: 0/12 grasps. Strict success: 0 for both. Mean wall time 22.76 versus 43.94 s; matched first-action prefixes.")
+style result_10966 fill:#403034,color:#E5E8E4,stroke:#6A716B
+exp_10998("Experiment: Joint-aware paths + regrasp<br/>CTRL01 · #10998<br/>BLOCKED · PREREQUISITE FAILED")
+style exp_10998 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10998("Result · review: Staged set-down/regrasp tested on six exact quarantined historical failure states:1/6 strict. Five stopped for executed installed-joint-limit violations. Four started within limits; the fifth other-family handoff was already 9.47 e-6 radoutside and is explicitly marked. No full collision qualification. Two earlier logging-instrumentation failures are invalid experiments and excluded. Do not use failed oracle paths as labels. ")
+style result_10998 fill:#403034,color:#E5E8E4,stroke:#6A716B
+opp_recovery("Opportunity: I need recovery without blocking valid actions or repeating completed work")
+style opp_recovery fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+sol_recovery_0("Solution: Observed-state phase supervisor")
+style sol_recovery_0 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10969("Experiment: Phase guard vs V4 vs primitives<br/>R06 · #10969<br/>RUN / COMPLETE")
+style exp_10969 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10969("Result: Unmodified V4 grasps 2/6; phase guard 0/6 with 1,126 close vetoes. Primitives pick up 2/6, complete 0/6 new tasks. All three routes preserve 2/2 already-complete cases.")
+style result_10969 fill:#403034,color:#E5E8E4,stroke:#6A716B
+sol_recovery_3("Solution: Learner-state correction and bounded residual repair")
+style sol_recovery_3 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_11001("Experiment: Learner-state imitation / DAgger<br/>REL01 · #11001<br/>RUN / COMPLETE")
+style exp_11001 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11001("Result: One separate offline DAgger-style aggregation iteration completed: four qualified correction paths from two P_train families plus six nominal paths;3,000 joint updates from broad 12 k. Four quarantined demo 0006 handoffs: recovery 0/4 strict, all three controls also 0/4. No teacher at evaluation; no RL. The six-state original stress set was narrowed to four because other states overlap source training families. Preserve failed cases and expand qualified correction coverage before scaling. ")
+style result_11001 fill:#403034,color:#E5E8E4,stroke:#6A716B
+opp_compute("Opportunity: I need extra inference to produce better actions")
+style opp_compute fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+sol_compute_0("Solution: Multiple candidate action chunks")
+style sol_compute_0 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10967("Experiment: Best-of-eight offline oracle<br/>R05 · #10967<br/>RUN / COMPLETE")
+style exp_10967 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10967("Result: 48 proposals over six states. Random-to-best-of-eight oracle approach availability: 72.9% → 83.3%. Grasp-capable states remain 1/6. Privileged offline scoring only.")
+style result_10967 fill:#3C382D,color:#E5E8E4,stroke:#6A716B
+sol_compute_1("Solution: Visual critic over projected futures")
+style sol_compute_1 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10982("Experiment: Luna visual ranking<br/>R10 · #10982<br/>RUN / COMPLETE")
+style exp_10982 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10982("Result: Frozen Decisions API ranking finished using the user-authorized credential, with no secret in artifacts.32 choice requests plus 32 separate reason requests over original/supplement panels. Six original states: ghost 2/3 adequate selections with 9 abstentions; futureRGB 5/5 with 7 abstentions; median 857 ms/1466 ms. Many abstentions occurred despite adequate candidates. Supplemental held-state strict adequacy 0/8 in each state; visual-goal sufficiency is scored separately. Simulator future images are privileged lookahead, not a deployable world model. Conditional chosen accuracy does not establish")
+style result_10982 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_11014("Experiment: Live Decisions API ranking<br/>LIVE04 · #11014<br/>REVIEW")
+style exp_11014 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11014("Result · review: Live ranker prototype implemented and 8 regression tests pass: batched 4 proposals, asynchronous bounded 1 inflight request, exact observation/candidate IDs, deadline/stale rejection, guard recheck, retained tensors. First 40 s broad 12 kdevelopment smoke:56 valid APIresponses,55 UNKNOWN,1 candidate;48 late beyond 500 ms total budget;0 APIselected motions,3 fallback chunks. APIp 50=381 ms,p 95 about 1002 ms plus proposal/preview overhead. Both ranked and first-admissible scheduler trials fail strict success. Blue projectedEEFpaths are not full arm/object futures. Prefix skipping rejects delayedgrip transitions; redesign handoff scheduling before comparison to unmodifiedV 4. Not deployment-ready.")
+style result_11014 fill:#38323E,color:#E5E8E4,stroke:#6A716B
+opp_evidence("Opportunity: I need comparable results that show what actually worked")
+style opp_evidence fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+sol_evidence_0("Solution: Matched evaluations with explicit limitations")
+style sol_evidence_0 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10996("Experiment: 204 paired rollouts: vanilla / broad 12k / intervention<br/>EVAL02 · #10996<br/>REVIEW")
+style exp_10996 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10996("Result · review: The two baseline arms completed 136 rollouts across 34 frozen layouts x 2 seeds. Broad 12 k near-personal:31/40 supported grasps,22/40 stable placements,17/40 strict; vanilla 0/40. Broader starts:both 0/20. Already-completed preservation:broad 8/8 strict,vanilla 1/8; broad still moved the arm. Native domain/input contracts differ, so whole-recipe comparison. Family-bootstrap uncertainty saved; not 136 independent humans. Planned 68 intervention rollouts were not run because observer qualification failed. Two invalid boundary layouts were clipped 1.64/2.82 mm before any policy action under a versioned protocol. ")
+style result_10996 fill:#38323E,color:#E5E8E4,stroke:#6A716B
+sol_evidence_1("Solution: Reproducible artifact and model registry")
+style sol_evidence_1 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_11008("Experiment: Matched video, subgoals, release timeline and four case cards<br/>DEL02 · #11008<br/>REVIEW")
+style exp_11008 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11008("Result · review: Private research report and model registry prepared: 296 new scored episodes, model identities, negative results, matched-state checks, family uncertainty and reproduction. Public demonstration and broken-media-link repair remain separate; no publication.")
+style result_11008 fill:#38323E,color:#E5E8E4,stroke:#6A716B
+outcome --> opp_data
+opp_data --> sol_data_1
+sol_data_1 --> exp_10974
+exp_10974 --> result_10974
+opp_data --> sol_data_3
+sol_data_3 --> exp_11015
+exp_11015 --> result_11015
+outcome --> opp_perception
+opp_perception --> sol_perception_1
+sol_perception_1 --> exp_10954
+exp_10954 --> result_10954
+sol_perception_1 --> exp_10994
+exp_10994 --> result_10994
+outcome --> opp_generalisation
+opp_generalisation --> sol_generalisation_1
+sol_generalisation_1 --> exp_10983
+exp_10983 --> result_10983
+sol_generalisation_1 --> exp_11013
+exp_11013 --> result_11013
+outcome --> opp_execution
+opp_execution --> sol_execution_0
+sol_execution_0 --> exp_10957
+exp_10957 --> result_10957
+opp_execution --> sol_execution_1
+sol_execution_1 --> exp_10966
+exp_10966 --> result_10966
+sol_execution_1 --> exp_10998
+exp_10998 --> result_10998
+outcome --> opp_recovery
+opp_recovery --> sol_recovery_0
+sol_recovery_0 --> exp_10969
+exp_10969 --> result_10969
+opp_recovery --> sol_recovery_3
+sol_recovery_3 --> exp_11001
+exp_11001 --> result_11001
+outcome --> opp_compute
+opp_compute --> sol_compute_0
+sol_compute_0 --> exp_10967
+exp_10967 --> result_10967
+opp_compute --> sol_compute_1
+sol_compute_1 --> exp_10982
+exp_10982 --> result_10982
+sol_compute_1 --> exp_11014
+exp_11014 --> result_11014
+outcome --> opp_evidence
+opp_evidence --> sol_evidence_0
+sol_evidence_0 --> exp_10996
+exp_10996 --> result_10996
+opp_evidence --> sol_evidence_1
+sol_evidence_1 --> exp_11008
+exp_11008 --> result_11008

@@ -1,0 +1,48 @@
+flowchart LR
+outcome("Outcome: Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer")
+style outcome fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+opp_execution("Opportunity: I need a grasped brick placed and released in the correct orientation")
+style opp_execution fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+sol_execution_0("Solution: Grasp-relative orientation control")
+style sol_execution_0 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10957("Experiment: Release command trace<br/>R01 · #10957<br/>RUN / COMPLETE")
+style exp_10957 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10957("Result: Policy requests OPEN at 3.60 s; controller passes it through. Wrist target ≈93°, but this grasp needs ≈174°. Keeping the gripper closed still leaves ≈80° error.")
+style result_10957 fill:#403034,color:#E5E8E4,stroke:#6A716B
+exp_10958("Experiment: Proprioception input ablation<br/>R01d · #10958<br/>RUN / COMPLETE")
+style exp_10958 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10958("Result: Using measured end-effector pose delays opening from waypoint 11 to 13–14. Orientation error remains 79–85°. Offline input ablation; not a validated fix.")
+style result_10958 fill:#403034,color:#E5E8E4,stroke:#6A716B
+exp_10968("Experiment: Two supplied grasp-state panels<br/>R05b · #10968<br/>RUN / COMPLETE")
+style exp_10968 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10968("Result: Eight proposals per supplied grasp state. Off-axis grasp: ≈85° yaw error. Near-expert grasp: &lt;1°; 7/8 stable releases inside. Strict success 0/16. State/history confounded.")
+style result_10968 fill:#3C382D,color:#E5E8E4,stroke:#6A716B
+exp_10985("Experiment: Observed vs truth grasp transform<br/>NEXT03 · #10985<br/>RUN / COMPLETE")
+style exp_10985 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10985("Result: Two source-held states: truth 2/2 strict, RGB 2/2. Centre error: truth 1.5–2.1 mm, RGB 12.1–12.6 mm. Established expert grasps and diagnostic handoff; no VLA improvement demonstrated.")
+style result_10985 fill:#3C382D,color:#E5E8E4,stroke:#6A716B
+sol_execution_1("Solution: Replanning cadence and joint-aware paths")
+style sol_execution_1 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10966("Experiment: 30 vs 10 actions before looking<br/>R04 · #10966<br/>RUN / COMPLETE")
+style exp_10966 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10966("Result: H30: 2/12 grasps and in-square placements. H10: 0/12 grasps. Strict success: 0 for both. Mean wall time 22.76 versus 43.94 s; matched first-action prefixes.")
+style result_10966 fill:#403034,color:#E5E8E4,stroke:#6A716B
+exp_10998("Experiment: Joint-aware paths + regrasp<br/>CTRL01 · #10998<br/>BLOCKED · PREREQUISITE FAILED")
+style exp_10998 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10998("Result · review: Staged set-down/regrasp tested on six exact quarantined historical failure states:1/6 strict. Five stopped for executed installed-joint-limit violations. Four started within limits; the fifth other-family handoff was already 9.47 e-6 radoutside and is explicitly marked. No full collision qualification. Two earlier logging-instrumentation failures are invalid experiments and excluded. Do not use failed oracle paths as labels. ")
+style result_10998 fill:#403034,color:#E5E8E4,stroke:#6A716B
+outcome --> opp_execution
+opp_execution --> sol_execution_0
+sol_execution_0 --> exp_10957
+exp_10957 --> result_10957
+sol_execution_0 --> exp_10958
+exp_10958 --> result_10958
+sol_execution_0 --> exp_10968
+exp_10968 --> result_10968
+sol_execution_0 --> exp_10985
+exp_10985 --> result_10985
+opp_execution --> sol_execution_1
+sol_execution_1 --> exp_10966
+exp_10966 --> result_10966
+sol_execution_1 --> exp_10998
+exp_10998 --> result_10998

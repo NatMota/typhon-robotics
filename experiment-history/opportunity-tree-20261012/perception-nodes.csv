@@ -1,0 +1,46 @@
+id,type,label,parent_id,x,y,color
+outcome,outcome,Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer,,24,128,#2D3831
+opp_perception,opportunity,I need the robot to see and use the correct brick orientation,outcome,394,128,#2D3831
+sol_perception_0,solution,Resolution-preserving views and temporal context,opp_perception,764,128,#30353D
+exp_10959,experiment,"Numeral visibility audit
+R01e · #10959
+RUN / COMPLETE",sol_perception_0,1134,172.0,#3C3926
+result_10959,result,"12 saved input packets checked. One blue fragment shrinks from 8×4 to 2×1 px after resizing. That is a fragment, not the whole image or proof of recognition failure.",exp_10959,1504,128.0,#303840
+exp_10955,experiment,"Actual image and history audit
+R01c · #10955
+RUN / COMPLETE",sol_perception_0,1134,433.0,#3C3926
+result_10955,result,Two current camera images: 512 → 224 px. Six earlier frames are supplied as pooled features. No object crop at release. Receiving history does not prove the model uses it.,exp_10955,1504,400.0,#303840
+exp_10993,experiment,"Visibility remediation
+VIS01 · #10993
+RUN / COMPLETE",sol_perception_0,1134,749.0,#3C3926
+result_10993,result,"108 visibility predictions: enlarging the held numeral increased feature sensitivity, but wrist error remained about 80 degrees and opening stayed at waypoint 11. Crop-only fix rejected; semantic numeral recognition remains unresolved.",exp_10993,1504,672.0,#403034
+sol_perception_1,solution,Visual-goal and language conditioning,opp_perception,764,1028,#30353D
+exp_10954,experiment,"Numeral + coherent-goal probes
+R01b · #10954
+RUN / COMPLETE",sol_perception_1,1134,1072.0,#3C3926
+result_10954,result,87 offline queries on three states from one episode. Initial numeral rotation changes wrist targets by 26–34°. Held-state target stays about 94°; cue recognition versus action use remains unresolved.,exp_10954,1504,1028.0,#3C382D
+exp_10960,experiment,"Simple-action prompt probes
+R02 · #10960
+RUN / COMPLETE",sol_perception_1,1134,1355.0,#3C3926
+result_10960,result,"36 fixed-state/noise predictions. Wording changes actions, but “move +X/−X”, approach and extend do not reliably produce the requested primitive.",exp_10960,1504,1322.0,#403034
+exp_10961,experiment,"Vanilla / V3 / V4 prompt controls
+R02b · #10961
+RUN / COMPLETE",sol_perception_1,1134,1616.0,#3C3926
+result_10961,result,"180 predictions across vanilla, V3 and V4. Each model: 0/18 paired direction reversals and 0/6 open/close reversals. Native input contracts differ.",exp_10961,1504,1594.0,#403034
+exp_11011,experiment,"Perception vs action mapping
+R01f · #11011
+RUN / COMPLETE",sol_perception_1,1134,1910.0,#3C3926
+result_11011,result,"108 visibility predictions: enlarging the held numeral increased feature sensitivity, but wrist error remained about 80 degrees and opening stayed at waypoint 11. Crop-only fix rejected; semantic numeral recognition remains unresolved.",exp_11011,1504,1844.0,#403034
+exp_10994,experiment,"Language / action grounding repair
+VIS02 · #10994
+RUN / COMPLETE",sol_perception_1,1134,2391.0,#3C3926
+result_10994,result,"Matched goal-diversity test completed: same broad-Pt 12 k initializer, +3,000 joint updates, 12,000 samples and 2,000/source in each arm. Six fixed-goal trajectories versus 12 varied-goal trajectories. Novel start/goal strict success: fixed 0/12, varied 10/12; original source 7/12 versus 10/12; loading 0/12 both. Six already-seen source families, one fit seed; not independent new demonstrations. A further 18 fixed-image queries per arm found at most 1.381 mm/fixed and 0.977 mm/varied endpoint response to a 270 mm text-only goal change. Proceed with visually",exp_10994,1504,2182.0,#293D37
+sol_perception_2,solution,Visual completion checks and goal references,opp_perception,764,2824,#30353D
+exp_11005,experiment,"Simple visual completion test
+LIVE02 · #11005
+RUN / COMPLETE",sol_perception_2,1134,2956.0,#3C3926
+result_11005,result,"Completion qualification finished with negative result. Frozen classical checks fail 80%recall gates on the 168-image two-panel study; reference conjunction reduces false positives but misses valid poses. A separate static DecisionsAPI panel, not the user's live-ranking role, gives 2/22 true-positive recall excluding identical references and 0 false completions. No completion authority granted. ",exp_11005,1504,2824.0,#403034
+exp_11006,experiment,"Qwen + finished-reference image
+LIVE03 · #11006
+RUN / COMPLETE",sol_perception_2,1134,3393.0,#3C3926
+result_11006,result,"Historical Qwen 3-VL-2 B-Instruct service audited: a 180 degree false-positive completion was vetoed by independent RGB reference; old 3 candidateTTC ranked a smoothness heuristic, not learned value. Current live ranking uses DecisionsAPI under LIVE 04. Qwen weights are archived on Mint, no newly qualified Qwen control authority. ",exp_11006,1504,3294.0,#303840

@@ -1,0 +1,45 @@
+id,type,label,parent_id,x,y,color
+outcome,outcome,Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer,,24,128,#2D3831
+opp_evidence,opportunity,I need comparable results that show what actually worked,outcome,394,128,#2D3831
+sol_evidence_0,solution,Matched evaluations with explicit limitations,opp_evidence,764,128,#30353D
+exp_10995,experiment,"Earlier 775-rollout comparison
+EVAL01 · #10995
+RUN / COMPLETE",sol_evidence_0,1134,194.0,#3C3926
+result_10995,result,"775 feeding trials reconciled:155 scenes x 5 models, no harness/TTC. On 137 unfinished scenes,70 mm pickups vanilla/V 1/V 2/V 3/V 4=0/0/0/10/1; new upright stable placements=0/0/0/5/1. Original strict passes all started complete.",exp_10995,1504,128.0,#303840
+exp_10997,experiment,"Earlier A/B harness comparison
+EVAL03 · #10997
+RUN / COMPLETE",sol_evidence_0,1134,587.0,#3C3926
+result_10997,result,Historical 400 AB rows reconciled:5 models x 2 modes x 20 A/20 B. All strict/pickup/place outcomes 0. Matched initial-state/config hashes retained. Harness had 30 s wall cap and one candidate; noTTC. Budget stops are separated from runtime errors in report/historical-ab 400.json. This synthetic panel is distinct from 775 feeding and the new 136+160 panels. ,exp_10997,1504,466.0,#303840
+exp_10996,experiment,"204 paired rollouts: vanilla / broad 12k / intervention
+EVAL02 · #10996
+REVIEW",sol_evidence_0,1134,1167.0,#3C3926
+result_10996,result,"The two baseline arms completed 136 rollouts across 34 frozen layouts x 2 seeds. Broad 12 k near-personal:31/40 supported grasps,22/40 stable placements,17/40 strict; vanilla 0/40. Broader starts:both 0/20. Already-completed preservation:broad 8/8 strict,vanilla 1/8; broad still moved the arm. Native domain/input contracts differ, so whole-recipe comparison. Family-bootstrap uncertainty saved; not 136 independent humans. Planned 68 intervention rollouts were not run because observer qualification failed. Two invalid boundary layouts were clipped 1.64/2.82 mm before any policy action under a versioned protocol. ",exp_10996,1504,914.0,#38323E
+exp_10980,experiment,"Research report + independent review
+OPS03 · #10980
+RUN / COMPLETE",sol_evidence_0,1134,1648.0,#3C3926
+result_10980,result,"13 research requests reconciled with independent and planner review. Model identities, denominator limits and errata documented.",exp_10980,1504,1626.0,#303840
+sol_evidence_1,solution,Reproducible artifact and model registry,opp_evidence,764,1894,#30353D
+exp_10979,experiment,"Weights, traces and recovery backup
+OPS02 · #10979
+RUN / COMPLETE",sol_evidence_1,1134,1916.0,#3C3926
+result_10979,result,"Weights, traces and recovery states preserved with SHA-256 verification on Mint Fast Drive. Backup evidence; no new model-performance result.",exp_10979,1504,1894.0,#303840
+exp_10956,experiment,"Research ledger
+OPS01 · #10956
+RUN / COMPLETE",sol_evidence_1,1134,2177.0,#3C3926
+result_10956,result,"58 original work items recorded with requests, findings, limitations and follow-ups. Administrative evidence; no robot-performance result.",exp_10956,1504,2144.0,#303840
+exp_10986,experiment,"Exact model and dataset registry
+DATA01 · #10986
+RUN / COMPLETE",sol_evidence_1,1134,2460.0,#3C3926
+result_10986,result,"Checkpoint and dataset registry saved.19 headers verified, historical M 6 hashes reconciled and three new continuations recorded. V 4 continues V 3; broad-Pt 12 k starts fresh. Native RGB and privileged held/history contracts distinguished.",exp_10986,1504,2394.0,#303840
+exp_11007,experiment,"Dashboard + video evidence
+DEL01 · #11007
+REVIEW",sol_evidence_1,1134,2864.0,#3C3926
+result_11007,result,"Media provenance inventory checked:419 existingR 2 entries, including 64 training videos=32 trimmed+32 marked, not spatially cropped. Tested personal/M 3 pilot URLs work; two V 4 M 6 pilot URLs return 404. Local evaluated videos remain archived. No newDrive upload/public publishing in this sweep. Repair missing media URLs separately; dashboard release remains private. ",exp_11007,1504,2732.0,#38323E
+exp_11008,experiment,"Matched video, subgoals, release timeline and four case cards
+DEL02 · #11008
+REVIEW",sol_evidence_1,1134,3268.0,#3C3926
+result_11008,result,"Private research report and model registry prepared: 296 new scored episodes, model identities, negative results, matched-state checks, family uncertainty and reproduction. Public demonstration and broken-media-link repair remain separate; no publication.",exp_11008,1504,3202.0,#38323E
+exp_11012,experiment,"Draw and verify the research OST
+OPS05 · #11012
+RUN / COMPLETE",sol_evidence_1,1134,3606.0,#3C3926
+result_11012,result,Five-column OST verified with experiment/result alignment and all historical work retained. Updated12October to include the authorised24-hour plan and B/loading diagnosis.,exp_11012,1504,3562.0,#303840

@@ -1,0 +1,21 @@
+id,type,label,parent_id,x,y,color
+outcome,outcome,Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer,,24,128,#2D3831
+opp_compute,opportunity,I need extra inference to produce better actions,outcome,394,128,#2D3831
+sol_compute_0,solution,Multiple candidate action chunks,opp_compute,764,128,#30353D
+exp_10967,experiment,"Best-of-eight offline oracle
+R05 · #10967
+RUN / COMPLETE",sol_compute_0,1134,183.0,#3C3926
+result_10967,result,48 proposals over six states. Random-to-best-of-eight oracle approach availability: 72.9% → 83.3%. Grasp-capable states remain 1/6. Privileged offline scoring only.,exp_10967,1504,128.0,#3C382D
+sol_compute_1,solution,Visual critic over projected futures,opp_compute,764,440,#30353D
+exp_10975,experiment,"Blue ghosts + typed critic inputs
+R10a · #10975
+RUN / COMPLETE",sol_compute_1,1134,462.0,#3C3926
+result_10975,result,"64 simulated candidate futures / 32 blue-ghost slates prepared with typed choices. Luna calls: 0. This validates critic inputs, not ranking quality.",exp_10975,1504,440.0,#303840
+exp_10982,experiment,"Luna visual ranking
+R10 · #10982
+RUN / COMPLETE",sol_compute_1,1134,943.0,#3C3926
+result_10982,result,"Frozen Decisions API ranking finished using the user-authorized credential, with no secret in artifacts.32 choice requests plus 32 separate reason requests over original/supplement panels. Six original states: ghost 2/3 adequate selections with 9 abstentions; futureRGB 5/5 with 7 abstentions; median 857 ms/1466 ms. Many abstentions occurred despite adequate candidates. Supplemental held-state strict adequacy 0/8 in each state; visual-goal sufficiency is scored separately. Simulator future images are privileged lookahead, not a deployable world model. Conditional chosen accuracy does not establish",exp_10982,1504,690.0,#303840
+exp_11014,experiment,"Live Decisions API ranking
+LIVE04 · #11014
+REVIEW",sol_compute_1,1134,1677.0,#3C3926
+result_11014,result,"Live ranker prototype implemented and 8 regression tests pass: batched 4 proposals, asynchronous bounded 1 inflight request, exact observation/candidate IDs, deadline/stale rejection, guard recheck, retained tensors. First 40 s broad 12 kdevelopment smoke:56 valid APIresponses,55 UNKNOWN,1 candidate;48 late beyond 500 ms total budget;0 APIselected motions,3 fallback chunks. APIp 50=381 ms,p 95 about 1002 ms plus proposal/preview overhead. Both ranked and first-admissible scheduler trials fail strict success. Blue projectedEEFpaths are not full arm/object futures. Prefix skipping rejects delayedgrip transitions; redesign handoff scheduling before comparison to unmodifiedV 4. Not deployment-ready.",exp_11014,1504,1380.0,#38323E

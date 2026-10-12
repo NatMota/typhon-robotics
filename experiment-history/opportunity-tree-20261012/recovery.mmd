@@ -1,0 +1,102 @@
+flowchart LR
+outcome("Outcome: Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer")
+style outcome fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+opp_recovery("Opportunity: I need recovery without blocking valid actions or repeating completed work")
+style opp_recovery fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+sol_recovery_0("Solution: Observed-state phase supervisor")
+style sol_recovery_0 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10969("Experiment: Phase guard vs V4 vs primitives<br/>R06 · #10969<br/>RUN / COMPLETE")
+style exp_10969 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10969("Result: Unmodified V4 grasps 2/6; phase guard 0/6 with 1,126 close vetoes. Primitives pick up 2/6, complete 0/6 new tasks. All three routes preserve 2/2 already-complete cases.")
+style result_10969 fill:#403034,color:#E5E8E4,stroke:#6A716B
+exp_10970("Experiment: Post-release projection fix<br/>R06b · #10970<br/>RUN / COMPLETE")
+style exp_10970 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10970("Result: Same images, corrected tabletop projection: position error 16–19 mm → 0.44–0.66 mm. Recognised successes 0/3 → 2/3; physical success stays 3/6.")
+style result_10970 fill:#293D37,color:#E5E8E4,stroke:#6A716B
+exp_10984("Experiment: Passive observer repair<br/>NEXT02 · #10984<br/>BLOCKED · PREREQUISITE FAILED")
+style exp_10984 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10984("Result · review: Four passive observation variants evaluated on 8 exact replays/1,219 frames each. No variant qualifies: pose/held precision-recall and phase-transition errors remain. Replay policy/physics unchanged. Do not grant veto or advancement authority. Proceed only with targeted observation repair and a new qualification panel. ")
+style result_10984 fill:#403034,color:#E5E8E4,stroke:#6A716B
+exp_10999("Experiment: Hard movement boundaries<br/>CTRL02 · #10999<br/>RUN / COMPLETE")
+style exp_10999 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10999("Result: Guard/service audit completed with 27 tests passing. Measured 7 joint positions/velocities, finite inputs, installed joint ranges, workspace and 15 mm-expanded no-go AABB checked; proposedEEFsegments checked. Historical 36 successful expert replays had 0 rejections. These checks do not certify whole-arm collisions or executedIKfeasibility. Separate recovery stress found executed joint-limit excursions; preserve violation logs. ")
+style result_10999 fill:#303840,color:#E5E8E4,stroke:#6A716B
+sol_recovery_1("Solution: Qualified primitives and recovery experts")
+style sol_recovery_1 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10971("Experiment: Two-axis IK endpoint selector<br/>R06c · #10971<br/>RUN / COMPLETE")
+style exp_10971 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10971("Result: On six training takes, success drops from 3/6 to 1/6. A reachable inverse-kinematics endpoint does not ensure a feasible executed path. Selector rejected.")
+style result_10971 fill:#403034,color:#E5E8E4,stroke:#6A716B
+exp_10973("Experiment: Expert recovery from V4 failures<br/>R08 · #10973<br/>RUN / COMPLETE")
+style exp_10973 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10973("Result: Six exact failure states × two experts. Nominal recovery 2/6; grasp-aware 3/6. Original off-axis case repaired. Five successful suffixes kept out of training.")
+style result_10973 fill:#3C382D,color:#E5E8E4,stroke:#6A716B
+exp_10976("Experiment: Explicit primitive-call adapter<br/>R11 · #10976<br/>RUN / COMPLETE")
+style exp_10976 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10976("Result: External typed primitive adapter works. Skill route: 2/6 pickups, 0/6 new completions. X-VLA still emits continuous actions; it does not natively call tools.")
+style result_10976 fill:#3C382D,color:#E5E8E4,stroke:#6A716B
+exp_11004("Experiment: Live controller + harness hookup<br/>LIVE01 · #11004<br/>REVIEW")
+style exp_11004 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11004("Result · review: Telemetry/guard tests pass and a current asynchronous Decisions integration smoke ran end-to-end on broad 12 k with full commands/RGB/joint traces. Both smoke modes failed task success; delayed-prefix eligibility rejected many commands. This is infrastructure evidence, not a qualified live harness or matched unmodifiedV 4 comparison. Keep deployment gated on LIVE 04 and observation reliability.")
+style result_11004 fill:#38323E,color:#E5E8E4,stroke:#6A716B
+sol_recovery_2("Solution: Confidence-gated phase prediction")
+style sol_recovery_2 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10977("Experiment: Causal phase predictor<br/>R12 · #10977<br/>RUN / COMPLETE")
+style exp_10977 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10977("Result: 347 training / 179 validation frames. Accuracy 63.7%, macro-F1 0.592, including early release errors. The 90% selective-accuracy gate fails; predictor disabled.")
+style result_10977 fill:#403034,color:#E5E8E4,stroke:#6A716B
+exp_11000("Experiment: High-level skill selector<br/>HIER01 · #11000<br/>BLOCKED · PREREQUISITE FAILED")
+style exp_11000 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11000("Result · review: Proceed decision: do not train a skill selector yet. Candidate primitives/phase observer remain unqualified and staged recovery 1/6. A learned high-level selector would confound selection quality with inability to execute/recognise completion. Resume after CTRL 01/NEXT 02 pass. No hierarchical selector training claimed.")
+style result_11000 fill:#38323E,color:#E5E8E4,stroke:#6A716B
+sol_recovery_3("Solution: Learner-state correction and bounded residual repair")
+style sol_recovery_3 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10978("Review: Hierarchical / RL method review<br/>R13 · #10978<br/>RUN / COMPLETE")
+style exp_10978 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10978("Result: DAgger, options, residual RL, offline Q and PPO reviewed. Qualify expert recovery before correction training. No new RL training was performed.")
+style result_10978 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_11001("Experiment: Learner-state imitation / DAgger<br/>REL01 · #11001<br/>RUN / COMPLETE")
+style exp_11001 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11001("Result: One separate offline DAgger-style aggregation iteration completed: four qualified correction paths from two P_train families plus six nominal paths;3,000 joint updates from broad 12 k. Four quarantined demo 0006 handoffs: recovery 0/4 strict, all three controls also 0/4. No teacher at evaluation; no RL. The six-state original stress set was narrowed to four because other states overlap source training families. Preserve failed cases and expand qualified correction coverage before scaling. ")
+style result_11001 fill:#403034,color:#E5E8E4,stroke:#6A716B
+exp_11002("Experiment: Residual repair learning<br/>REL02 · #11002<br/>BLOCKED · PREREQUISITE FAILED")
+style exp_11002 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11002("Result · review: Proceed decision: supervised correction was tested first under REL 01 and scored 0/4 quarantined states. Current observers and recovery primitives fail qualification. Do not launch residualRLon an unqualified baseline; first establish supported residual actions, reliable state/reward interface and source-disjoint recovery coverage. No residualRLrun claimed.")
+style result_11002 fill:#38323E,color:#E5E8E4,stroke:#6A716B
+exp_11003("Experiment: Offline Q / PPO / DPPO<br/>REL03 · #11003<br/>BLOCKED · PREREQUISITE FAILED")
+style exp_11003 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11003("Result · review: Proceed decision: offline candidate oracle has weak grasp availability and narrow state support; live ranking has no qualified gain. PPO/DPPO is not a drop-in replacement for this flow action model. NoQ/PPOtraining launched. Require a frozen supported-action/reward protocol and qualified execution before this comparison.")
+style result_11003 fill:#38323E,color:#E5E8E4,stroke:#6A716B
+outcome --> opp_recovery
+opp_recovery --> sol_recovery_0
+sol_recovery_0 --> exp_10969
+exp_10969 --> result_10969
+sol_recovery_0 --> exp_10970
+exp_10970 --> result_10970
+sol_recovery_0 --> exp_10984
+exp_10984 --> result_10984
+sol_recovery_0 --> exp_10999
+exp_10999 --> result_10999
+opp_recovery --> sol_recovery_1
+sol_recovery_1 --> exp_10971
+exp_10971 --> result_10971
+sol_recovery_1 --> exp_10973
+exp_10973 --> result_10973
+sol_recovery_1 --> exp_10976
+exp_10976 --> result_10976
+sol_recovery_1 --> exp_11004
+exp_11004 --> result_11004
+opp_recovery --> sol_recovery_2
+sol_recovery_2 --> exp_10977
+exp_10977 --> result_10977
+sol_recovery_2 --> exp_11000
+exp_11000 --> result_11000
+opp_recovery --> sol_recovery_3
+sol_recovery_3 --> exp_10978
+exp_10978 --> result_10978
+sol_recovery_3 --> exp_11001
+exp_11001 --> result_11001
+sol_recovery_3 --> exp_11002
+exp_11002 --> result_11002
+sol_recovery_3 --> exp_11003
+exp_11003 --> result_11003

@@ -1,0 +1,72 @@
+flowchart LR
+outcome("Outcome: Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer")
+style outcome fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+opp_evidence("Opportunity: I need comparable results that show what actually worked")
+style opp_evidence fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+sol_evidence_0("Solution: Matched evaluations with explicit limitations")
+style sol_evidence_0 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10995("Experiment: Earlier 775-rollout comparison<br/>EVAL01 · #10995<br/>RUN / COMPLETE")
+style exp_10995 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10995("Result: 775 feeding trials reconciled:155 scenes x 5 models, no harness/TTC. On 137 unfinished scenes,70 mm pickups vanilla/V 1/V 2/V 3/V 4=0/0/0/10/1; new upright stable placements=0/0/0/5/1. Original strict passes all started complete.")
+style result_10995 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_10997("Experiment: Earlier A/B harness comparison<br/>EVAL03 · #10997<br/>RUN / COMPLETE")
+style exp_10997 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10997("Result: Historical 400 AB rows reconciled:5 models x 2 modes x 20 A/20 B. All strict/pickup/place outcomes 0. Matched initial-state/config hashes retained. Harness had 30 s wall cap and one candidate; noTTC. Budget stops are separated from runtime errors in report/historical-ab 400.json. This synthetic panel is distinct from 775 feeding and the new 136+160 panels. ")
+style result_10997 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_10996("Experiment: 204 paired rollouts: vanilla / broad 12k / intervention<br/>EVAL02 · #10996<br/>REVIEW")
+style exp_10996 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10996("Result · review: The two baseline arms completed 136 rollouts across 34 frozen layouts x 2 seeds. Broad 12 k near-personal:31/40 supported grasps,22/40 stable placements,17/40 strict; vanilla 0/40. Broader starts:both 0/20. Already-completed preservation:broad 8/8 strict,vanilla 1/8; broad still moved the arm. Native domain/input contracts differ, so whole-recipe comparison. Family-bootstrap uncertainty saved; not 136 independent humans. Planned 68 intervention rollouts were not run because observer qualification failed. Two invalid boundary layouts were clipped 1.64/2.82 mm before any policy action under a versioned protocol. ")
+style result_10996 fill:#38323E,color:#E5E8E4,stroke:#6A716B
+exp_10980("Review: Research report + independent review<br/>OPS03 · #10980<br/>RUN / COMPLETE")
+style exp_10980 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10980("Result: 13 research requests reconciled with independent and planner review. Model identities, denominator limits and errata documented.")
+style result_10980 fill:#303840,color:#E5E8E4,stroke:#6A716B
+sol_evidence_1("Solution: Reproducible artifact and model registry")
+style sol_evidence_1 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10979("Backup: Weights, traces and recovery backup<br/>OPS02 · #10979<br/>RUN / COMPLETE")
+style exp_10979 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10979("Result: Weights, traces and recovery states preserved with SHA-256 verification on Mint Fast Drive. Backup evidence; no new model-performance result.")
+style result_10979 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_10956("Delivery: Research ledger<br/>OPS01 · #10956<br/>RUN / COMPLETE")
+style exp_10956 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10956("Result: 58 original work items recorded with requests, findings, limitations and follow-ups. Administrative evidence; no robot-performance result.")
+style result_10956 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_10986("Experiment: Exact model and dataset registry<br/>DATA01 · #10986<br/>RUN / COMPLETE")
+style exp_10986 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10986("Result: Checkpoint and dataset registry saved.19 headers verified, historical M 6 hashes reconciled and three new continuations recorded. V 4 continues V 3; broad-Pt 12 k starts fresh. Native RGB and privileged held/history contracts distinguished.")
+style result_10986 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_11007("Experiment: Dashboard + video evidence<br/>DEL01 · #11007<br/>REVIEW")
+style exp_11007 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11007("Result · review: Media provenance inventory checked:419 existingR 2 entries, including 64 training videos=32 trimmed+32 marked, not spatially cropped. Tested personal/M 3 pilot URLs work; two V 4 M 6 pilot URLs return 404. Local evaluated videos remain archived. No newDrive upload/public publishing in this sweep. Repair missing media URLs separately; dashboard release remains private. ")
+style result_11007 fill:#38323E,color:#E5E8E4,stroke:#6A716B
+exp_11008("Experiment: Matched video, subgoals, release timeline and four case cards<br/>DEL02 · #11008<br/>REVIEW")
+style exp_11008 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11008("Result · review: Private research report and model registry prepared: 296 new scored episodes, model identities, negative results, matched-state checks, family uncertainty and reproduction. Public demonstration and broken-media-link repair remain separate; no publication.")
+style result_11008 fill:#38323E,color:#E5E8E4,stroke:#6A716B
+exp_11012("Experiment: Draw and verify the research OST<br/>OPS05 · #11012<br/>RUN / COMPLETE")
+style exp_11012 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11012("Result: Five-column OST verified with experiment/result alignment and all historical work retained. Updated12October to include the authorised24-hour plan and B/loading diagnosis.")
+style result_11012 fill:#303840,color:#E5E8E4,stroke:#6A716B
+outcome --> opp_evidence
+opp_evidence --> sol_evidence_0
+sol_evidence_0 --> exp_10995
+exp_10995 --> result_10995
+sol_evidence_0 --> exp_10997
+exp_10997 --> result_10997
+sol_evidence_0 --> exp_10996
+exp_10996 --> result_10996
+sol_evidence_0 --> exp_10980
+exp_10980 --> result_10980
+opp_evidence --> sol_evidence_1
+sol_evidence_1 --> exp_10979
+exp_10979 --> result_10979
+sol_evidence_1 --> exp_10956
+exp_10956 --> result_10956
+sol_evidence_1 --> exp_10986
+exp_10986 --> result_10986
+sol_evidence_1 --> exp_11007
+exp_11007 --> result_11007
+sol_evidence_1 --> exp_11008
+exp_11008 --> result_11008
+sol_evidence_1 --> exp_11012
+exp_11012 --> result_11012

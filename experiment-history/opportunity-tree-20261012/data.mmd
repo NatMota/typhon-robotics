@@ -1,0 +1,90 @@
+flowchart LR
+outcome("Outcome: Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer")
+style outcome fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+opp_data("Opportunity: I need my recordings to contribute to robot behaviour with traceable supervision")
+style opp_data fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+sol_data_0("Solution: Traceable curation and explicit calibration")
+style sol_data_0 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10981("Audit: Excluded-take provenance audit<br/>OPS04 · #10981<br/>RUN / COMPLETE")
+style exp_10981 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10981("Result: Excluded review candidate 6 is demo0017, not successful demo0006. Candidate 5 is normal demo0016. Source clips and hashes preserved.")
+style result_10981 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_10991("Experiment: Physical DUPLO + calibration<br/>DATA06 · #10991<br/>BLOCKED · PREREQUISITE FAILED")
+style exp_10991 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10991("Result · review: Calibration/proxy mismatch explicitly reconciled: frozen training 50 x 35 x 30 mm,80 g versus catalogue 32 x 43 x 32 mm,12.7 g; target square virtual 100 mm. Actual measurements and paired-camera metric calibration remain missing. Do not silently replace geometry or call virtual units physical accuracy. Waiting for measurement/calibration evidence; original results unchanged. ")
+style result_10991 fill:#38323E,color:#E5E8E4,stroke:#6A716B
+sol_data_1("Solution: Event alignment and constrained retargeting")
+style sol_data_1 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10972("Experiment: Human / expert event timeline<br/>R07 · #10972<br/>RUN / COMPLETE")
+style exp_10972 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10972("Result: One 7.6 s human correction aligned by events; camera sync uncertainty ±0.25 s. Human lift/rotation overlap differs from the teacher. Not valid motor-action labels.")
+style result_10972 fill:#3C382D,color:#E5E8E4,stroke:#6A716B
+exp_10974("Experiment: Human endpoint retargeting<br/>R09 · #10974<br/>RUN / COMPLETE")
+style exp_10974 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10974("Result: One endpoint-derived, constrained Panda execution succeeds: 2.46 mm / 0.081° from the mapped endpoint. Virtual scale and supplied path/timing; not recovered human 3D actions.")
+style result_10974 fill:#293D37,color:#E5E8E4,stroke:#6A716B
+exp_10989("Experiment: Phone-to-Panda action alignment<br/>DATA04 · #10989<br/>BLOCKED · PREREQUISITE FAILED")
+style exp_10989 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10989("Result · review: Phone-to-robot alignment audit completed; full direct supervision remains blocked. Existing one-clip event alignment has 7.6 s duration and+-0.25 s sync uncertainty; human lift/rotation overlap differs from teacher phase timing. Endpoint retarget succeeds with supplied path/height/timing; it is not full recovered 3 D. SixP_train tracking sources audited for observable segments, but grasp/release correspondence and metric lift are not established. Proposed reusable object-motion/contact representation recorded; no invented per-frame motor labels.")
+style result_10989 fill:#38323E,color:#E5E8E4,stroke:#6A716B
+sol_data_2("Solution: Balanced phase, horizon and view mixtures")
+style sol_data_2 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10987("Experiment: Phase chunks + 4 s intentions<br/>DATA02 · #10987<br/>RUN / COMPLETE")
+style exp_10987 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10987("Result: Actual chunk/target audit completed. V 2 has 632 rows=316 semantic chunks x 2 view orders; V 3 has 776/388. Future durations vary, and four-second history is not four-second future supervision. Broad-Pt and new continuations predict 30 actions at 20 Hz=1.5 s. Human footage remains without validated frame-to-Franka-action labels. Missing held sidecars use validity masks. Proceed with explicitly versioned physical-time contracts; do not claim uniform four-second intention targets. ")
+style result_10987 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_10988("Experiment: Balanced data randomisation<br/>DATA03 · #10988<br/>RUN / COMPLETE")
+style exp_10988 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10988("Result: Sampling audit completed: broad 12 k all 439 windows,48,000 exposures,8,000/source. V 1/V 2 historical aggregate logs cover declared sources; V 2 semantic/view copies and category balancing do not imply uniform source weighting. Historical V 3 per-update consumption remains unverified. New fixed/varied/recovery runs retain every sample identity and exact 2,000/source exposure, independently shuffled window queues and a shared shuffled cell schedule. ")
+style result_10988 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_10990("Experiment: Held crosshair + separate labels<br/>DATA05 · #10990<br/>RUN / COMPLETE")
+style exp_10990 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10990("Result: Historical phone held export verified on Mint:16 takes,32 views,7,904 view-frames;1,024 held,3,598 notheld,3,282 unknown;768 green-on frames. Unknown/off is not a negative held label. Marker is a pseudo 3 Dimage bracket, not metric 3 D. Source timestamps/audio retained; frame-level labels are agent-reviewed, not all human-confirmed. Export predates the later evaluation exclusion. No direct Franka labels attach to phone frames. ")
+style result_10990 fill:#303840,color:#E5E8E4,stroke:#6A716B
+sol_data_3("Solution: Object, hand and temporal visual representations")
+style sol_data_3 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_11015("Experiment: Video-derived representation and robot adapter<br/>VIDEO01 · #11015<br/>ACTIVE · RESULTS PENDING")
+style exp_11015 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11015("Interim result: INITIAL CHECKS: three independent branches processed 526 real phone frames from 16 takes. No expert action labels, training or robot execution. Contact, global depth and a robot-specific adapter remain unvalidated.")
+style result_11015 fill:#38323E,color:#E5E8E4,stroke:#6A716B
+exp_11016("Experiment: Object motion from phone frames<br/>VIDEO01-A · #11016<br/>REVIEW")
+style exp_11016 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11016("Result · review: 440/526 centres and 227/264 primary directed-yaw estimates pass confidence filters. Actual 2D paths, missing masks and shuffle/static controls saved. Coverage is not accuracy; no physical 3D or grasp inference.")
+style result_11016 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_11017("Experiment: Hand/pinch motion from phone frames<br/>VIDEO01-B · #11017<br/>REVIEW")
+style exp_11017 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11017("Result · review: Hands detected in 175/526 sampled frames. Pinch midpoint/aperture and hand-centred landmarks saved; grasp/global depth remain unknown. Static no-hand frames are expected, so this is not recall.")
+style result_11017 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_11018("Experiment: Frozen visual features across views<br/>VIDEO01-C · #11018<br/>REVIEW")
+style exp_11018 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11018("Result · review: Frozen Pt backbone: 526 x 1024 descriptors; pooled paired-take retrieval 1/16. Frame timing and shuffle/reversal controls saved. Offline future-aware comparison; pooled features do not encode temporal order.")
+style result_11018 fill:#3C382D,color:#E5E8E4,stroke:#6A716B
+outcome --> opp_data
+opp_data --> sol_data_0
+sol_data_0 --> exp_10981
+exp_10981 --> result_10981
+sol_data_0 --> exp_10991
+exp_10991 --> result_10991
+opp_data --> sol_data_1
+sol_data_1 --> exp_10972
+exp_10972 --> result_10972
+sol_data_1 --> exp_10974
+exp_10974 --> result_10974
+sol_data_1 --> exp_10989
+exp_10989 --> result_10989
+opp_data --> sol_data_2
+sol_data_2 --> exp_10987
+exp_10987 --> result_10987
+sol_data_2 --> exp_10988
+exp_10988 --> result_10988
+sol_data_2 --> exp_10990
+exp_10990 --> result_10990
+opp_data --> sol_data_3
+sol_data_3 --> exp_11015
+exp_11015 --> result_11015
+sol_data_3 --> exp_11016
+exp_11016 --> result_11016
+sol_data_3 --> exp_11017
+exp_11017 --> result_11017
+sol_data_3 --> exp_11018
+exp_11018 --> result_11018

@@ -1,0 +1,54 @@
+flowchart LR
+outcome("Outcome: Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer")
+style outcome fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+opp_generalisation("Opportunity: I need learned behaviour to work beyond familiar starting states")
+style opp_generalisation fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+sol_generalisation_0("Solution: Broader supervised adaptation")
+style sol_generalisation_0 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10962("Training: Broader full-weight Pt adaptation<br/>R03 · #10962<br/>RUN / COMPLETE")
+style exp_10962 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10962("Result: Fresh X-VLA-Pt; all six training takes; 439 simulated RGB/expert windows. 3k and 12k checkpoints saved in 64 min. Full-weight adaptation after staged warm-up.")
+style result_10962 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_10963("Experiment: Unchanged development evaluation<br/>R03b · #10963<br/>RUN / COMPLETE")
+style exp_10963 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10963("Result: Narrow M6, broad 3k and broad 12k each grasp 0/6 and complete 0/6. Three development families × two seeds; previously inspected, not a fresh confirmatory test.")
+style result_10963 fill:#403034,color:#E5E8E4,stroke:#6A716B
+exp_10964("Experiment: Familiar-start diagnostic<br/>R03c · #10964<br/>RUN / COMPLETE")
+style exp_10964 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10964("Result: Broad 12k on six exact training starts: 6/6 grasps and lifts; 5/6 stable released placements inside the square; 4/6 strict successes. One seed per start.")
+style result_10964 fill:#3C382D,color:#E5E8E4,stroke:#6A716B
+sol_generalisation_1("Solution: Coverage-driven training and correction examples")
+style sol_generalisation_1 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10965("Audit: Training-start coverage audit<br/>R03d · #10965<br/>RUN / COMPLETE")
+style exp_10965 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10965("Result: All three development starts lie outside the six training-start XY convex hull. Initial-position coverage mismatch is established; causality is not.")
+style result_10965 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_10983("Experiment: 16 trials: local position and yaw robustness<br/>NEXT01 · #10983<br/>RUN / COMPLETE")
+style exp_10983 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10983("Result: 16 local trials: 14 grasps, 14 stable released in-square placements, 13 strict successes. Original 4/4; inward 3/4; outward 4/4; yaw 2/4. Two selected familiar parents; not broad transfer.")
+style result_10983 fill:#3C382D,color:#E5E8E4,stroke:#6A716B
+exp_10992("Experiment: Failure / correction coverage<br/>DATA07 · #10992<br/>REVIEW")
+style exp_10992 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10992("Result · review: Four distinct qualified training-only direct corrections admitted from twoP_trainfamilies after replay, action/proprio roundtrip, finite and joint-limit checks. One near-limit source excluded; duplicate removed. Added to a separate 3,000 update recovery continuation;0/4 quarantined recovery success. This partially covers failures, not all requested pause/no-op/repair families. Broader recovery coverage depends on CTRL 01. ")
+style result_10992 fill:#38323E,color:#E5E8E4,stroke:#6A716B
+exp_11013("Experiment: Why B/loading does not generalise<br/>B01 · #11013<br/>RUN / COMPLETE")
+style exp_11013 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11013("Result: Loading: 28 rollouts and 18 fixed-image queries. Verified V1–V3 data: 18 feeding, 0 loading. Broad12k returns to feeding square; endpoint changes &lt;1 mm for 270 mm goal shift. Expert 8/8 feasible.")
+style result_11013 fill:#3C382D,color:#E5E8E4,stroke:#6A716B
+outcome --> opp_generalisation
+opp_generalisation --> sol_generalisation_0
+sol_generalisation_0 --> exp_10962
+exp_10962 --> result_10962
+sol_generalisation_0 --> exp_10963
+exp_10963 --> result_10963
+sol_generalisation_0 --> exp_10964
+exp_10964 --> result_10964
+opp_generalisation --> sol_generalisation_1
+sol_generalisation_1 --> exp_10965
+exp_10965 --> result_10965
+sol_generalisation_1 --> exp_10983
+exp_10983 --> result_10983
+sol_generalisation_1 --> exp_10992
+exp_10992 --> result_10992
+sol_generalisation_1 --> exp_11013
+exp_11013 --> result_11013

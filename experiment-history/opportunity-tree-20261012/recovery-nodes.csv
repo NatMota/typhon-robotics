@@ -1,0 +1,63 @@
+id,type,label,parent_id,x,y,color
+outcome,outcome,Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer,,24,128,#2D3831
+opp_recovery,opportunity,I need recovery without blocking valid actions or repeating completed work,outcome,394,128,#2D3831
+sol_recovery_0,solution,Observed-state phase supervisor,opp_recovery,764,128,#30353D
+exp_10969,experiment,"Phase guard vs V4 vs primitives
+R06 · #10969
+RUN / COMPLETE",sol_recovery_0,1134,161.0,#3C3926
+result_10969,result,"Unmodified V4 grasps 2/6; phase guard 0/6 with 1,126 close vetoes. Primitives pick up 2/6, complete 0/6 new tasks. All three routes preserve 2/2 already-complete cases.",exp_10969,1504,128.0,#403034
+exp_10970,experiment,"Post-release projection fix
+R06b · #10970
+RUN / COMPLETE",sol_recovery_0,1134,433.0,#3C3926
+result_10970,result,"Same images, corrected tabletop projection: position error 16–19 mm → 0.44–0.66 mm. Recognised successes 0/3 → 2/3; physical success stays 3/6.",exp_10970,1504,400.0,#293D37
+exp_10984,experiment,"Passive observer repair
+NEXT02 · #10984
+BLOCKED · PREREQUISITE FAILED",sol_recovery_0,1134,749.0,#3C3926
+result_10984,result,"Four passive observation variants evaluated on 8 exact replays/1,219 frames each. No variant qualifies: pose/held precision-recall and phase-transition errors remain. Replay policy/physics unchanged. Do not grant veto or advancement authority. Proceed only with targeted observation repair and a new qualification panel. ",exp_10984,1504,650.0,#403034
+exp_10999,experiment,"Hard movement boundaries
+CTRL02 · #10999
+RUN / COMPLETE",sol_recovery_0,1134,1230.0,#3C3926
+result_10999,result,"Guard/service audit completed with 27 tests passing. Measured 7 joint positions/velocities, finite inputs, installed joint ranges, workspace and 15 mm-expanded no-go AABB checked; proposedEEFsegments checked. Historical 36 successful expert replays had 0 rejections. These checks do not certify whole-arm collisions or executedIKfeasibility. Separate recovery stress found executed joint-limit excursions; preserve violation logs. ",exp_10999,1504,1054.0,#303840
+sol_recovery_1,solution,Qualified primitives and recovery experts,opp_recovery,764,1608,#30353D
+exp_10971,experiment,"Two-axis IK endpoint selector
+R06c · #10971
+RUN / COMPLETE",sol_recovery_1,1134,1641.0,#3C3926
+result_10971,result,"On six training takes, success drops from 3/6 to 1/6. A reachable inverse-kinematics endpoint does not ensure a feasible executed path. Selector rejected.",exp_10971,1504,1608.0,#403034
+exp_10973,experiment,"Expert recovery from V4 failures
+R08 · #10973
+RUN / COMPLETE",sol_recovery_1,1134,1902.0,#3C3926
+result_10973,result,Six exact failure states × two experts. Nominal recovery 2/6; grasp-aware 3/6. Original off-axis case repaired. Five successful suffixes kept out of training.,exp_10973,1504,1880.0,#3C382D
+exp_10976,experiment,"Explicit primitive-call adapter
+R11 · #10976
+RUN / COMPLETE",sol_recovery_1,1134,2152.0,#3C3926
+result_10976,result,"External typed primitive adapter works. Skill route: 2/6 pickups, 0/6 new completions. X-VLA still emits continuous actions; it does not natively call tools.",exp_10976,1504,2130.0,#3C382D
+exp_11004,experiment,"Live controller + harness hookup
+LIVE01 · #11004
+REVIEW",sol_recovery_1,1134,2523.0,#3C3926
+result_11004,result,"Telemetry/guard tests pass and a current asynchronous Decisions integration smoke ran end-to-end on broad 12 k with full commands/RGB/joint traces. Both smoke modes failed task success; delayed-prefix eligibility rejected many commands. This is infrastructure evidence, not a qualified live harness or matched unmodifiedV 4 comparison. Keep deployment gated on LIVE 04 and observation reliability.",exp_11004,1504,2380.0,#38323E
+sol_recovery_2,solution,Confidence-gated phase prediction,opp_recovery,764,2890,#30353D
+exp_10977,experiment,"Causal phase predictor
+R12 · #10977
+RUN / COMPLETE",sol_recovery_2,1134,2934.0,#3C3926
+result_10977,result,"347 training / 179 validation frames. Accuracy 63.7%, macro-F1 0.592, including early release errors. The 90% selective-accuracy gate fails; predictor disabled.",exp_10977,1504,2890.0,#403034
+exp_11000,experiment,"High-level skill selector
+HIER01 · #11000
+BLOCKED · PREREQUISITE FAILED",sol_recovery_2,1134,3261.0,#3C3926
+result_11000,result,Proceed decision: do not train a skill selector yet. Candidate primitives/phase observer remain unqualified and staged recovery 1/6. A learned high-level selector would confound selection quality with inability to execute/recognise completion. Resume after CTRL 01/NEXT 02 pass. No hierarchical selector training claimed.,exp_11000,1504,3162.0,#38323E
+sol_recovery_3,solution,Learner-state correction and bounded residual repair,opp_recovery,764,3584,#30353D
+exp_10978,experiment,"Hierarchical / RL method review
+R13 · #10978
+RUN / COMPLETE",sol_recovery_3,1134,3606.0,#3C3926
+result_10978,result,"DAgger, options, residual RL, offline Q and PPO reviewed. Qualify expert recovery before correction training. No new RL training was performed.",exp_10978,1504,3584.0,#303840
+exp_11001,experiment,"Learner-state imitation / DAgger
+REL01 · #11001
+RUN / COMPLETE",sol_recovery_3,1134,4021.0,#3C3926
+result_11001,result,"One separate offline DAgger-style aggregation iteration completed: four qualified correction paths from two P_train families plus six nominal paths;3,000 joint updates from broad 12 k. Four quarantined demo 0006 handoffs: recovery 0/4 strict, all three controls also 0/4. No teacher at evaluation; no RL. The six-state original stress set was narrowed to four because other states overlap source training families. Preserve failed cases and expand qualified correction coverage before scaling. ",exp_11001,1504,3834.0,#403034
+exp_11002,experiment,"Residual repair learning
+REL02 · #11002
+BLOCKED · PREREQUISITE FAILED",sol_recovery_3,1134,4535.0,#3C3926
+result_11002,result,"Proceed decision: supervised correction was tested first under REL 01 and scored 0/4 quarantined states. Current observers and recovery primitives fail qualification. Do not launch residualRLon an unqualified baseline; first establish supported residual actions, reliable state/reward interface and source-disjoint recovery coverage. No residualRLrun claimed.",exp_11002,1504,4414.0,#38323E
+exp_11003,experiment,"Offline Q / PPO / DPPO
+REL03 · #11003
+BLOCKED · PREREQUISITE FAILED",sol_recovery_3,1134,4972.0,#3C3926
+result_11003,result,Proceed decision: offline candidate oracle has weak grasp availability and narrow state support; live ranking has no qualified gain. PPO/DPPO is not a drop-in replacement for this flow action model. NoQ/PPOtraining launched. Require a frozen supported-action/reward protocol and qualified execution before this comparison.,exp_11003,1504,4862.0,#38323E

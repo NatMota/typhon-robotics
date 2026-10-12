@@ -1,0 +1,36 @@
+flowchart LR
+outcome("Outcome: Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer")
+style outcome fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+opp_compute("Opportunity: I need extra inference to produce better actions")
+style opp_compute fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+sol_compute_0("Solution: Multiple candidate action chunks")
+style sol_compute_0 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10967("Experiment: Best-of-eight offline oracle<br/>R05 · #10967<br/>RUN / COMPLETE")
+style exp_10967 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10967("Result: 48 proposals over six states. Random-to-best-of-eight oracle approach availability: 72.9% → 83.3%. Grasp-capable states remain 1/6. Privileged offline scoring only.")
+style result_10967 fill:#3C382D,color:#E5E8E4,stroke:#6A716B
+sol_compute_1("Solution: Visual critic over projected futures")
+style sol_compute_1 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10975("Prototype: Blue ghosts + typed critic inputs<br/>R10a · #10975<br/>RUN / COMPLETE")
+style exp_10975 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10975("Result: 64 simulated candidate futures / 32 blue-ghost slates prepared with typed choices. Luna calls: 0. This validates critic inputs, not ranking quality.")
+style result_10975 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_10982("Experiment: Luna visual ranking<br/>R10 · #10982<br/>RUN / COMPLETE")
+style exp_10982 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10982("Result: Frozen Decisions API ranking finished using the user-authorized credential, with no secret in artifacts.32 choice requests plus 32 separate reason requests over original/supplement panels. Six original states: ghost 2/3 adequate selections with 9 abstentions; futureRGB 5/5 with 7 abstentions; median 857 ms/1466 ms. Many abstentions occurred despite adequate candidates. Supplemental held-state strict adequacy 0/8 in each state; visual-goal sufficiency is scored separately. Simulator future images are privileged lookahead, not a deployable world model. Conditional chosen accuracy does not establish")
+style result_10982 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_11014("Experiment: Live Decisions API ranking<br/>LIVE04 · #11014<br/>REVIEW")
+style exp_11014 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11014("Result · review: Live ranker prototype implemented and 8 regression tests pass: batched 4 proposals, asynchronous bounded 1 inflight request, exact observation/candidate IDs, deadline/stale rejection, guard recheck, retained tensors. First 40 s broad 12 kdevelopment smoke:56 valid APIresponses,55 UNKNOWN,1 candidate;48 late beyond 500 ms total budget;0 APIselected motions,3 fallback chunks. APIp 50=381 ms,p 95 about 1002 ms plus proposal/preview overhead. Both ranked and first-admissible scheduler trials fail strict success. Blue projectedEEFpaths are not full arm/object futures. Prefix skipping rejects delayedgrip transitions; redesign handoff scheduling before comparison to unmodifiedV 4. Not deployment-ready.")
+style result_11014 fill:#38323E,color:#E5E8E4,stroke:#6A716B
+outcome --> opp_compute
+opp_compute --> sol_compute_0
+sol_compute_0 --> exp_10967
+exp_10967 --> result_10967
+opp_compute --> sol_compute_1
+sol_compute_1 --> exp_10975
+exp_10975 --> result_10975
+sol_compute_1 --> exp_10982
+exp_10982 --> result_10982
+sol_compute_1 --> exp_11014
+exp_11014 --> result_11014

@@ -1,0 +1,75 @@
+flowchart LR
+outcome("Outcome: Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer")
+style outcome fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+opp_perception("Opportunity: I need the robot to see and use the correct brick orientation")
+style opp_perception fill:#2D3831,color:#E5E8E4,stroke:#6A716B
+sol_perception_0("Solution: Resolution-preserving views and temporal context")
+style sol_perception_0 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10959("Audit: Numeral visibility audit<br/>R01e · #10959<br/>RUN / COMPLETE")
+style exp_10959 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10959("Result: 12 saved input packets checked. One blue fragment shrinks from 8×4 to 2×1 px after resizing. That is a fragment, not the whole image or proof of recognition failure.")
+style result_10959 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_10955("Audit: Actual image and history audit<br/>R01c · #10955<br/>RUN / COMPLETE")
+style exp_10955 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10955("Result: Two current camera images: 512 → 224 px. Six earlier frames are supplied as pooled features. No object crop at release. Receiving history does not prove the model uses it.")
+style result_10955 fill:#303840,color:#E5E8E4,stroke:#6A716B
+exp_10993("Experiment: Visibility remediation<br/>VIS01 · #10993<br/>RUN / COMPLETE")
+style exp_10993 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10993("Result: 108 visibility predictions: enlarging the held numeral increased feature sensitivity, but wrist error remained about 80 degrees and opening stayed at waypoint 11. Crop-only fix rejected; semantic numeral recognition remains unresolved.")
+style result_10993 fill:#403034,color:#E5E8E4,stroke:#6A716B
+sol_perception_1("Solution: Visual-goal and language conditioning")
+style sol_perception_1 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_10954("Experiment: Numeral + coherent-goal probes<br/>R01b · #10954<br/>RUN / COMPLETE")
+style exp_10954 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10954("Result: 87 offline queries on three states from one episode. Initial numeral rotation changes wrist targets by 26–34°. Held-state target stays about 94°; cue recognition versus action use remains unresolved.")
+style result_10954 fill:#3C382D,color:#E5E8E4,stroke:#6A716B
+exp_10960("Experiment: Simple-action prompt probes<br/>R02 · #10960<br/>RUN / COMPLETE")
+style exp_10960 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10960("Result: 36 fixed-state/noise predictions. Wording changes actions, but “move +X/−X”, approach and extend do not reliably produce the requested primitive.")
+style result_10960 fill:#403034,color:#E5E8E4,stroke:#6A716B
+exp_10961("Experiment: Vanilla / V3 / V4 prompt controls<br/>R02b · #10961<br/>RUN / COMPLETE")
+style exp_10961 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10961("Result: 180 predictions across vanilla, V3 and V4. Each model: 0/18 paired direction reversals and 0/6 open/close reversals. Native input contracts differ.")
+style result_10961 fill:#403034,color:#E5E8E4,stroke:#6A716B
+exp_11011("Experiment: Perception vs action mapping<br/>R01f · #11011<br/>RUN / COMPLETE")
+style exp_11011 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11011("Result: 108 visibility predictions: enlarging the held numeral increased feature sensitivity, but wrist error remained about 80 degrees and opening stayed at waypoint 11. Crop-only fix rejected; semantic numeral recognition remains unresolved.")
+style result_11011 fill:#403034,color:#E5E8E4,stroke:#6A716B
+exp_10994("Experiment: Language / action grounding repair<br/>VIS02 · #10994<br/>RUN / COMPLETE")
+style exp_10994 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_10994("Result: Matched goal-diversity test completed: same broad-Pt 12 k initializer, +3,000 joint updates, 12,000 samples and 2,000/source in each arm. Six fixed-goal trajectories versus 12 varied-goal trajectories. Novel start/goal strict success: fixed 0/12, varied 10/12; original source 7/12 versus 10/12; loading 0/12 both. Six already-seen source families, one fit seed; not independent new demonstrations. A further 18 fixed-image queries per arm found at most 1.381 mm/fixed and 0.977 mm/varied endpoint response to a 270 mm text-only goal change. Proceed with visually")
+style result_10994 fill:#293D37,color:#E5E8E4,stroke:#6A716B
+sol_perception_2("Solution: Visual completion checks and goal references")
+style sol_perception_2 fill:#30353D,color:#E5E8E4,stroke:#6A716B
+exp_11005("Experiment: Simple visual completion test<br/>LIVE02 · #11005<br/>RUN / COMPLETE")
+style exp_11005 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11005("Result: Completion qualification finished with negative result. Frozen classical checks fail 80%recall gates on the 168-image two-panel study; reference conjunction reduces false positives but misses valid poses. A separate static DecisionsAPI panel, not the user&#x27;s live-ranking role, gives 2/22 true-positive recall excluding identical references and 0 false completions. No completion authority granted. ")
+style result_11005 fill:#403034,color:#E5E8E4,stroke:#6A716B
+exp_11006("Experiment: Qwen + finished-reference image<br/>LIVE03 · #11006<br/>RUN / COMPLETE")
+style exp_11006 fill:#3C3926,color:#E5E8E4,stroke:#6A716B
+result_11006("Result: Historical Qwen 3-VL-2 B-Instruct service audited: a 180 degree false-positive completion was vetoed by independent RGB reference; old 3 candidateTTC ranked a smoothness heuristic, not learned value. Current live ranking uses DecisionsAPI under LIVE 04. Qwen weights are archived on Mint, no newly qualified Qwen control authority. ")
+style result_11006 fill:#303840,color:#E5E8E4,stroke:#6A716B
+outcome --> opp_perception
+opp_perception --> sol_perception_0
+sol_perception_0 --> exp_10959
+exp_10959 --> result_10959
+sol_perception_0 --> exp_10955
+exp_10955 --> result_10955
+sol_perception_0 --> exp_10993
+exp_10993 --> result_10993
+opp_perception --> sol_perception_1
+sol_perception_1 --> exp_10954
+exp_10954 --> result_10954
+sol_perception_1 --> exp_10960
+exp_10960 --> result_10960
+sol_perception_1 --> exp_10961
+exp_10961 --> result_10961
+sol_perception_1 --> exp_11011
+exp_11011 --> result_11011
+sol_perception_1 --> exp_10994
+exp_10994 --> result_10994
+opp_perception --> sol_perception_2
+sol_perception_2 --> exp_11005
+exp_11005 --> result_11005
+sol_perception_2 --> exp_11006
+exp_11006 --> result_11006

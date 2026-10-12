@@ -1,0 +1,29 @@
+id,type,label,parent_id,x,y,color
+outcome,outcome,Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer,,24,128,#2D3831
+opp_execution,opportunity,I need a grasped brick placed and released in the correct orientation,outcome,394,128,#2D3831
+sol_execution_0,solution,Grasp-relative orientation control,opp_execution,764,128,#30353D
+exp_10957,experiment,"Release command trace
+R01 · #10957
+RUN / COMPLETE",sol_execution_0,1134,161.0,#3C3926
+result_10957,result,"Policy requests OPEN at 3.60 s; controller passes it through. Wrist target ≈93°, but this grasp needs ≈174°. Keeping the gripper closed still leaves ≈80° error.",exp_10957,1504,128.0,#403034
+exp_10958,experiment,"Proprioception input ablation
+R01d · #10958
+RUN / COMPLETE",sol_execution_0,1134,411.0,#3C3926
+result_10958,result,Using measured end-effector pose delays opening from waypoint 11 to 13–14. Orientation error remains 79–85°. Offline input ablation; not a validated fix.,exp_10958,1504,378.0,#403034
+exp_10968,experiment,"Two supplied grasp-state panels
+R05b · #10968
+RUN / COMPLETE",sol_execution_0,1134,683.0,#3C3926
+result_10968,result,Eight proposals per supplied grasp state. Off-axis grasp: ≈85° yaw error. Near-expert grasp: <1°; 7/8 stable releases inside. Strict success 0/16. State/history confounded.,exp_10968,1504,650.0,#3C382D
+exp_10985,experiment,"Observed vs truth grasp transform
+NEXT03 · #10985
+RUN / COMPLETE",sol_execution_0,1134,966.0,#3C3926
+result_10985,result,"Two source-held states: truth 2/2 strict, RGB 2/2. Centre error: truth 1.5–2.1 mm, RGB 12.1–12.6 mm. Established expert grasps and diagnostic handoff; no VLA improvement demonstrated.",exp_10985,1504,922.0,#3C382D
+sol_execution_1,solution,Replanning cadence and joint-aware paths,opp_execution,764,1234,#30353D
+exp_10966,experiment,"30 vs 10 actions before looking
+R04 · #10966
+RUN / COMPLETE",sol_execution_1,1134,1267.0,#3C3926
+result_10966,result,H30: 2/12 grasps and in-square placements. H10: 0/12 grasps. Strict success: 0 for both. Mean wall time 22.76 versus 43.94 s; matched first-action prefixes.,exp_10966,1504,1234.0,#403034
+exp_10998,experiment,"Joint-aware paths + regrasp
+CTRL01 · #10998
+BLOCKED · PREREQUISITE FAILED",sol_execution_1,1134,1660.0,#3C3926
+result_10998,result,Staged set-down/regrasp tested on six exact quarantined historical failure states:1/6 strict. Five stopped for executed installed-joint-limit violations. Four started within limits; the fifth other-family handoff was already 9.47 e-6 radoutside and is explicitly marked. No full collision qualification. Two earlier logging-instrumentation failures are invalid experiments and excluded. Do not use failed oracle paths as labels. ,exp_10998,1504,1506.0,#403034

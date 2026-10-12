@@ -1,0 +1,85 @@
+id,type,label,parent_id,x,y,color
+outcome,outcome,Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer,,24,128,#2D3831
+opp_data,opportunity,I need my recordings to contribute to robot behaviour with traceable supervision,outcome,394,128,#2D3831
+sol_data_1,solution,Event alignment and constrained retargeting,opp_data,764,128,#30353D
+exp_10974,experiment,"Human endpoint retargeting
+R09 · #10974
+RUN / COMPLETE",sol_data_1,1134,172.0,#3C3926
+result_10974,result,"One endpoint-derived, constrained Panda execution succeeds: 2.46 mm / 0.081° from the mapped endpoint. Virtual scale and supplied path/timing; not recovered human 3D actions.",exp_10974,1504,128.0,#293D37
+sol_data_3,solution,"Object, hand and temporal visual representations",opp_data,764,440,#30353D
+exp_11015,experiment,"Video-derived representation and robot adapter
+VIDEO01 · #11015
+ACTIVE · RESULTS PENDING",sol_data_3,1134,484.0,#3C3926
+result_11015,result,"INITIAL CHECKS: three independent branches processed 526 real phone frames from 16 takes. No expert action labels, training or robot execution. Contact, global depth and a robot-specific adapter remain unvalidated.",exp_11015,1504,440.0,#38323E
+opp_perception,opportunity,I need the robot to see and use the correct brick orientation,outcome,394,814,#2D3831
+sol_perception_1,solution,Visual-goal and language conditioning,opp_perception,764,814,#30353D
+exp_10954,experiment,"Numeral + coherent-goal probes
+R01b · #10954
+RUN / COMPLETE",sol_perception_1,1134,858.0,#3C3926
+result_10954,result,87 offline queries on three states from one episode. Initial numeral rotation changes wrist targets by 26–34°. Held-state target stays about 94°; cue recognition versus action use remains unresolved.,exp_10954,1504,814.0,#3C382D
+exp_10994,experiment,"Language / action grounding repair
+VIS02 · #10994
+RUN / COMPLETE",sol_perception_1,1134,1317.0,#3C3926
+result_10994,result,"Matched goal-diversity test completed: same broad-Pt 12 k initializer, +3,000 joint updates, 12,000 samples and 2,000/source in each arm. Six fixed-goal trajectories versus 12 varied-goal trajectories. Novel start/goal strict success: fixed 0/12, varied 10/12; original source 7/12 versus 10/12; loading 0/12 both. Six already-seen source families, one fit seed; not independent new demonstrations. A further 18 fixed-image queries per arm found at most 1.381 mm/fixed and 0.977 mm/varied endpoint response to a 270 mm text-only goal change. Proceed with visually",exp_10994,1504,1108.0,#293D37
+opp_generalisation,opportunity,I need learned behaviour to work beyond familiar starting states,outcome,394,1790,#2D3831
+sol_generalisation_1,solution,Coverage-driven training and correction examples,opp_generalisation,764,1790,#30353D
+exp_10983,experiment,"16 trials: local position and yaw robustness
+NEXT01 · #10983
+RUN / COMPLETE",sol_generalisation_1,1134,1834.0,#3C3926
+result_10983,result,"16 local trials: 14 grasps, 14 stable released in-square placements, 13 strict successes. Original 4/4; inward 3/4; outward 4/4; yaw 2/4. Two selected familiar parents; not broad transfer.",exp_10983,1504,1790.0,#3C382D
+exp_11013,experiment,"Why B/loading does not generalise
+B01 · #11013
+RUN / COMPLETE",sol_generalisation_1,1134,2128.0,#3C3926
+result_11013,result,"Loading: 28 rollouts and 18 fixed-image queries. Verified V1–V3 data: 18 feeding, 0 loading. Broad12k returns to feeding square; endpoint changes <1 mm for 270 mm goal shift. Expert 8/8 feasible.",exp_11013,1504,2084.0,#3C382D
+opp_execution,opportunity,I need a grasped brick placed and released in the correct orientation,outcome,394,2436,#2D3831
+sol_execution_0,solution,Grasp-relative orientation control,opp_execution,764,2436,#30353D
+exp_10957,experiment,"Release command trace
+R01 · #10957
+RUN / COMPLETE",sol_execution_0,1134,2469.0,#3C3926
+result_10957,result,"Policy requests OPEN at 3.60 s; controller passes it through. Wrist target ≈93°, but this grasp needs ≈174°. Keeping the gripper closed still leaves ≈80° error.",exp_10957,1504,2436.0,#403034
+sol_execution_1,solution,Replanning cadence and joint-aware paths,opp_execution,764,2704,#30353D
+exp_10966,experiment,"30 vs 10 actions before looking
+R04 · #10966
+RUN / COMPLETE",sol_execution_1,1134,2737.0,#3C3926
+result_10966,result,H30: 2/12 grasps and in-square placements. H10: 0/12 grasps. Strict success: 0 for both. Mean wall time 22.76 versus 43.94 s; matched first-action prefixes.,exp_10966,1504,2704.0,#403034
+exp_10998,experiment,"Joint-aware paths + regrasp
+CTRL01 · #10998
+BLOCKED · PREREQUISITE FAILED",sol_execution_1,1134,3130.0,#3C3926
+result_10998,result,Staged set-down/regrasp tested on six exact quarantined historical failure states:1/6 strict. Five stopped for executed installed-joint-limit violations. Four started within limits; the fifth other-family handoff was already 9.47 e-6 radoutside and is explicitly marked. No full collision qualification. Two earlier logging-instrumentation failures are invalid experiments and excluded. Do not use failed oracle paths as labels. ,exp_10998,1504,2976.0,#403034
+opp_recovery,opportunity,I need recovery without blocking valid actions or repeating completed work,outcome,394,3548,#2D3831
+sol_recovery_0,solution,Observed-state phase supervisor,opp_recovery,764,3548,#30353D
+exp_10969,experiment,"Phase guard vs V4 vs primitives
+R06 · #10969
+RUN / COMPLETE",sol_recovery_0,1134,3581.0,#3C3926
+result_10969,result,"Unmodified V4 grasps 2/6; phase guard 0/6 with 1,126 close vetoes. Primitives pick up 2/6, complete 0/6 new tasks. All three routes preserve 2/2 already-complete cases.",exp_10969,1504,3548.0,#403034
+sol_recovery_3,solution,Learner-state correction and bounded residual repair,opp_recovery,764,3838,#30353D
+exp_11001,experiment,"Learner-state imitation / DAgger
+REL01 · #11001
+RUN / COMPLETE",sol_recovery_3,1134,4025.0,#3C3926
+result_11001,result,"One separate offline DAgger-style aggregation iteration completed: four qualified correction paths from two P_train families plus six nominal paths;3,000 joint updates from broad 12 k. Four quarantined demo 0006 handoffs: recovery 0/4 strict, all three controls also 0/4. No teacher at evaluation; no RL. The six-state original stress set was narrowed to four because other states overlap source training families. Preserve failed cases and expand qualified correction coverage before scaling. ",exp_11001,1504,3838.0,#403034
+opp_compute,opportunity,I need extra inference to produce better actions,outcome,394,4476,#2D3831
+sol_compute_0,solution,Multiple candidate action chunks,opp_compute,764,4476,#30353D
+exp_10967,experiment,"Best-of-eight offline oracle
+R05 · #10967
+RUN / COMPLETE",sol_compute_0,1134,4531.0,#3C3926
+result_10967,result,48 proposals over six states. Random-to-best-of-eight oracle approach availability: 72.9% → 83.3%. Grasp-capable states remain 1/6. Privileged offline scoring only.,exp_10967,1504,4476.0,#3C382D
+sol_compute_1,solution,Visual critic over projected futures,opp_compute,764,4788,#30353D
+exp_10982,experiment,"Luna visual ranking
+R10 · #10982
+RUN / COMPLETE",sol_compute_1,1134,5041.0,#3C3926
+result_10982,result,"Frozen Decisions API ranking finished using the user-authorized credential, with no secret in artifacts.32 choice requests plus 32 separate reason requests over original/supplement panels. Six original states: ghost 2/3 adequate selections with 9 abstentions; futureRGB 5/5 with 7 abstentions; median 857 ms/1466 ms. Many abstentions occurred despite adequate candidates. Supplemental held-state strict adequacy 0/8 in each state; visual-goal sufficiency is scored separately. Simulator future images are privileged lookahead, not a deployable world model. Conditional chosen accuracy does not establish",exp_10982,1504,4788.0,#303840
+exp_11014,experiment,"Live Decisions API ranking
+LIVE04 · #11014
+REVIEW",sol_compute_1,1134,5775.0,#3C3926
+result_11014,result,"Live ranker prototype implemented and 8 regression tests pass: batched 4 proposals, asynchronous bounded 1 inflight request, exact observation/candidate IDs, deadline/stale rejection, guard recheck, retained tensors. First 40 s broad 12 kdevelopment smoke:56 valid APIresponses,55 UNKNOWN,1 candidate;48 late beyond 500 ms total budget;0 APIselected motions,3 fallback chunks. APIp 50=381 ms,p 95 about 1002 ms plus proposal/preview overhead. Both ranked and first-admissible scheduler trials fail strict success. Blue projectedEEFpaths are not full arm/object futures. Prefix skipping rejects delayedgrip transitions; redesign handoff scheduling before comparison to unmodifiedV 4. Not deployment-ready.",exp_11014,1504,5478.0,#38323E
+opp_evidence,opportunity,I need comparable results that show what actually worked,outcome,394,6314,#2D3831
+sol_evidence_0,solution,Matched evaluations with explicit limitations,opp_evidence,764,6314,#30353D
+exp_10996,experiment,"204 paired rollouts: vanilla / broad 12k / intervention
+EVAL02 · #10996
+REVIEW",sol_evidence_0,1134,6567.0,#3C3926
+result_10996,result,"The two baseline arms completed 136 rollouts across 34 frozen layouts x 2 seeds. Broad 12 k near-personal:31/40 supported grasps,22/40 stable placements,17/40 strict; vanilla 0/40. Broader starts:both 0/20. Already-completed preservation:broad 8/8 strict,vanilla 1/8; broad still moved the arm. Native domain/input contracts differ, so whole-recipe comparison. Family-bootstrap uncertainty saved; not 136 independent humans. Planned 68 intervention rollouts were not run because observer qualification failed. Two invalid boundary layouts were clipped 1.64/2.82 mm before any policy action under a versioned protocol. ",exp_10996,1504,6314.0,#38323E
+sol_evidence_1,solution,Reproducible artifact and model registry,opp_evidence,764,7044,#30353D
+exp_11008,experiment,"Matched video, subgoals, release timeline and four case cards
+DEL02 · #11008
+REVIEW",sol_evidence_1,1134,7110.0,#3C3926
+result_11008,result,"Private research report and model registry prepared: 296 new scored episodes, model identities, negative results, matched-state checks, family uncertainty and reproduction. Public demonstration and broken-media-link repair remain separate; no publication.",exp_11008,1504,7044.0,#38323E
