@@ -24,3 +24,11 @@ Private branch: [research/video04-contact-negatives](https://github.com/NatMota/
 ## VIDEO05 — Pre-contact labels and held-midpoint audit
 
 [Private branch](https://github.com/NatMota/typhon-robotics/tree/research/video05-precontact-pause) and [report/case card](https://github.com/NatMota/typhon-robotics/blob/research/video05-precontact-pause/experiment-history/2026-10-12-video05/REPORT.md). Thirteen training-only pre-contact views repair the old approach error. The other excluded-take approach remains wrong; all 90 labelled held interiors retained. History/extra weighting does not resolve the remaining failure. Held-pause qualification is incomplete because one selected case lowers the block and another has uncertain tracking. No motor-policy update or control authority. OST #11022.
+
+
+## VIDEO06 — Motion audit
+
+Branch: research/video06-motion-audit.
+Report: https://github.com/NatMota/typhon-robotics/blob/research/video06-motion-audit/experiment-history/2026-10-12-video06/REPORT.md
+
+Six phone takes and 342 verified frames. Glyph flow supports 194/222 held frame pairs, including 53 where the old contour lacked motion; 28 remain unsupported. Demo0015 midpoint has real image movement in both cameras. Small held sway is distinct from exact stillness; no strict stationary-held panel qualifies. 28 numeric/provenance files reproduce exactly. No robot-action labels, VLA update or control authority. VIDEO07 #11024 tests native cadence and phase timing. Bulk 204 files / 67,572,407 bytes checksum-verified on Mint.
