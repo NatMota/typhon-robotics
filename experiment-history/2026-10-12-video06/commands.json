@@ -1,0 +1,22 @@
+{
+  "branch": "research/video06-motion-audit",
+  "working_directory": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video06-motion-audit",
+  "python": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/.venv-xvla/bin/python",
+  "commands": [
+    "scripts/video06_select.py --protocol configs/experiments/video06/protocol.json --output /var/tmp/typhon-video-motion-20261012/review-v1",
+    "scripts/video06_motion.py --protocol configs/experiments/video06/protocol.json --selection /var/tmp/typhon-video-motion-20261012/review-v1/selection.json --output /var/tmp/typhon-video-motion-20261012/audit-v2",
+    "scripts/video06_analyze.py --root /var/tmp/typhon-video-motion-20261012"
+  ],
+  "preserved_intermediate_runs": [
+    "audit-v1",
+    "audit-reproduction",
+    "analysis-v1",
+    "analysis-v2",
+    "audit-v2-reproduction"
+  ],
+  "authoritative": [
+    "audit-v2",
+    "analysis-v3"
+  ],
+  "no_model_training": true
+}

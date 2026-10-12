@@ -1,0 +1,133 @@
+{
+  "schema": "video06-motion-audit-v1",
+  "input_data": "/var/tmp/typhon-video-representation-20261012/dense-v2",
+  "source_index_sha256": "a7f7afafe32ac33ebdce29f8ee84846bd97e12e497c2047b738665ee1e34a370",
+  "base_commit": "7555a6074c19e27fd2ffa88c9a08aa741e8b7317",
+  "awkward_takes": [
+    "demo_0012",
+    "demo_0013",
+    "demo_0014",
+    "demo_0015"
+  ],
+  "normal_controls": [
+    "demo_0001",
+    "demo_0004"
+  ],
+  "held_intervals_s": {
+    "demo_0001": [
+      6,
+      6.75
+    ],
+    "demo_0004": [
+      4,
+      4.75
+    ],
+    "demo_0012": [
+      3.5,
+      5.5
+    ],
+    "demo_0013": [
+      3,
+      6
+    ],
+    "demo_0014": [
+      2.5,
+      5.25
+    ],
+    "demo_0015": [
+      3,
+      5
+    ]
+  },
+  "stationary_control_s": [
+    0,
+    0.8
+  ],
+  "views": [
+    "camera_a",
+    "camera_b"
+  ],
+  "train_takes": [
+    "demo_0001",
+    "demo_0012",
+    "demo_0013"
+  ],
+  "excluded_takes": [
+    "demo_0004",
+    "demo_0014",
+    "demo_0015"
+  ],
+  "intervals": "Whole old held interiors, all rolling0.6s subintervals, old midpoint\u00b10.3s, and fixed0-0.8s non-held controls. No best-window-only reporting.",
+  "motion_measurements": "Compare visible-orange centre, blue-glyph feature optical flow and camera/background motion. Flow follows image features, not true centre, contact or3D translation. Rotation and foreshortening separately unknown unless visually justified.",
+  "tracking": {
+    "algorithm": "OpenCV pyramidal Lucas-Kanade with per-pair forward/backward validation",
+    "max_corners": 40,
+    "quality_level": 0.02,
+    "min_distance_px": 3,
+    "window_px": 15,
+    "max_level": 2,
+    "fb_error_max_px": 1,
+    "lk_error_max": 25,
+    "min_retained_points": 3,
+    "min_retained_fraction": 0.5,
+    "blue_hsv_min": [
+      95,
+      95,
+      45
+    ],
+    "blue_hsv_max": [
+      130,
+      255,
+      255
+    ],
+    "support_dilation_px": 3
+  },
+  "low_motion_rule": {
+    "window_s": 0.6,
+    "maximum_pair_gap_s": 0.15,
+    "maximum_supported_feature_displacement_px": 3,
+    "maximum_supported_feature_path_px": 5,
+    "minimum_supported_pair_fraction": 1,
+    "maximum_background_path_px": 2,
+    "qualification": "Image-space low motion only. Must have visually verified object feature seeds, complete tracking support and visible held review. Both views support independent pause qualification; missing view stays unknown. Not exactzero or stationary3D."
+  },
+  "future_frames": "Offline motion audit and labels only; no predictor or live controller inputs.",
+  "no_training": true,
+  "no_GE": true,
+  "no_metric_depth": true,
+  "no_control_authority": true,
+  "references": [
+    "https://docs.opencv.org/4.13.0/d4/dee/tutorial_optical_flow.html"
+  ],
+  "reviewed_spatial_masks": {
+    "camera_a": {
+      "glyph_roi_normalized": [
+        0.12,
+        0,
+        0.85,
+        0.6
+      ],
+      "background_roi_normalized": [
+        0.62,
+        0.62,
+        0.98,
+        0.98
+      ]
+    },
+    "camera_b": {
+      "glyph_roi_normalized": [
+        0,
+        0,
+        0.92,
+        0.43
+      ],
+      "background_roi_normalized": [
+        0.04,
+        0.64,
+        0.95,
+        0.98
+      ]
+    },
+    "review": "Agent-reviewed full first/mid/last panels before flow measurements. Broad static workspace search; glyph selection does not use old orange centroid/bbox or previous flow. Largest blue component area>=10px; dilate3px for corners. Masks stored separately from original tracking."
+  }
+}

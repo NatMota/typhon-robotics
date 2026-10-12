@@ -1,0 +1,540 @@
+{
+  "known_image_translation_checks": 36,
+  "qualified_translation_checks": 35,
+  "rejected_translation_checks": 1,
+  "max_translation_error_px": 0.0005568935422025958,
+  "blank_occlusion_checks": 12,
+  "preview_videos_decoded": 12,
+  "total_preview_frames": 234,
+  "flow_units": "pixels in850px-long-edge images; no metric or3D validity",
+  "pointwise_qualification": "max surviving-feature displacement and accumulated path, not group median translation, so rotation cannot cancel into a false pause",
+  "check_details": [
+    {
+      "sequence_id": "demo_0001-camera_a-stationary_control",
+      "known_delta_px": [
+        0.0,
+        0.0
+      ],
+      "measured_delta_px": [
+        0.0,
+        0.0
+      ],
+      "error_px": 0.0,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0001-camera_a-stationary_control",
+      "known_delta_px": [
+        4.0,
+        -3.0
+      ],
+      "measured_delta_px": [
+        3.9999618530273438,
+        -2.999837875366211
+      ],
+      "error_px": 0.0001665520591409014,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0001-camera_a-stationary_control",
+      "known_delta_px": [
+        -4.0,
+        3.0
+      ],
+      "measured_delta_px": [
+        -4.000053405761719,
+        3.0001354217529297
+      ],
+      "error_px": 0.00014557206652139422,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0001-camera_b-stationary_control",
+      "known_delta_px": [
+        0.0,
+        0.0
+      ],
+      "measured_delta_px": [
+        0.0,
+        0.0
+      ],
+      "error_px": 0.0,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0001-camera_b-stationary_control",
+      "known_delta_px": [
+        4.0,
+        -3.0
+      ],
+      "measured_delta_px": [
+        3.9999542236328125,
+        -3.0000152587890625
+      ],
+      "error_px": 4.825252777356536e-05,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0001-camera_b-stationary_control",
+      "known_delta_px": [
+        -4.0,
+        3.0
+      ],
+      "measured_delta_px": [
+        -4.0001220703125,
+        3.0000457763671875
+      ],
+      "error_px": 0.00013037115089901017,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0004-camera_a-stationary_control",
+      "known_delta_px": [
+        0.0,
+        0.0
+      ],
+      "measured_delta_px": [
+        0.0,
+        0.0
+      ],
+      "error_px": 0.0,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0004-camera_a-stationary_control",
+      "known_delta_px": [
+        4.0,
+        -3.0
+      ],
+      "measured_delta_px": [
+        3.999969482421875,
+        -3.0001373291015625
+      ],
+      "error_px": 0.0001406790841261732,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0004-camera_a-stationary_control",
+      "known_delta_px": [
+        -4.0,
+        3.0
+      ],
+      "measured_delta_px": [
+        -4.0000762939453125,
+        2.9999122619628906
+      ],
+      "error_px": 0.00011627007029821908,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0004-camera_b-stationary_control",
+      "known_delta_px": [
+        0.0,
+        0.0
+      ],
+      "measured_delta_px": [
+        0.0,
+        0.0
+      ],
+      "error_px": 0.0,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0004-camera_b-stationary_control",
+      "known_delta_px": [
+        4.0,
+        -3.0
+      ],
+      "measured_delta_px": [
+        4.000022888183594,
+        -3.0
+      ],
+      "error_px": 2.288818359375e-05,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0004-camera_b-stationary_control",
+      "known_delta_px": [
+        -4.0,
+        3.0
+      ],
+      "measured_delta_px": [
+        -3.9999771118164062,
+        2.9999732971191406
+      ],
+      "error_px": 3.51697710315433e-05,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0012-camera_a-stationary_control",
+      "known_delta_px": [
+        0.0,
+        0.0
+      ],
+      "measured_delta_px": [
+        0.0,
+        0.0
+      ],
+      "error_px": 0.0,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0012-camera_a-stationary_control",
+      "known_delta_px": [
+        4.0,
+        -3.0
+      ],
+      "measured_delta_px": [
+        3.9998703002929688,
+        -3.0
+      ],
+      "error_px": 0.00012969970703125,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0012-camera_a-stationary_control",
+      "known_delta_px": [
+        -4.0,
+        3.0
+      ],
+      "measured_delta_px": [
+        -4.0001678466796875,
+        3.0000228881835938
+      ],
+      "error_px": 0.00016940004967631926,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0012-camera_b-stationary_control",
+      "known_delta_px": [
+        0.0,
+        0.0
+      ],
+      "measured_delta_px": [
+        0.0,
+        0.0
+      ],
+      "error_px": 0.0,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0012-camera_b-stationary_control",
+      "known_delta_px": [
+        4.0,
+        -3.0
+      ],
+      "measured_delta_px": null,
+      "error_px": null,
+      "qualified": false
+    },
+    {
+      "sequence_id": "demo_0012-camera_b-stationary_control",
+      "known_delta_px": [
+        -4.0,
+        3.0
+      ],
+      "measured_delta_px": [
+        -4.000082015991211,
+        2.99981689453125
+      ],
+      "error_px": 0.00020063458201533902,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0013-camera_a-stationary_control",
+      "known_delta_px": [
+        0.0,
+        0.0
+      ],
+      "measured_delta_px": [
+        0.0,
+        0.0
+      ],
+      "error_px": 0.0,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0013-camera_a-stationary_control",
+      "known_delta_px": [
+        4.0,
+        -3.0
+      ],
+      "measured_delta_px": [
+        4.000091552734375,
+        -2.9999313354492188
+      ],
+      "error_px": 0.00011444091796875,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0013-camera_a-stationary_control",
+      "known_delta_px": [
+        -4.0,
+        3.0
+      ],
+      "measured_delta_px": [
+        -3.99993896484375,
+        3.000080108642578
+      ],
+      "error_px": 0.00010071089769320744,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0013-camera_b-stationary_control",
+      "known_delta_px": [
+        0.0,
+        0.0
+      ],
+      "measured_delta_px": [
+        0.0,
+        0.0
+      ],
+      "error_px": 0.0,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0013-camera_b-stationary_control",
+      "known_delta_px": [
+        4.0,
+        -3.0
+      ],
+      "measured_delta_px": [
+        4.00006103515625,
+        -2.9999313354492188
+      ],
+      "error_px": 9.187007582696759e-05,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0013-camera_b-stationary_control",
+      "known_delta_px": [
+        -4.0,
+        3.0
+      ],
+      "measured_delta_px": [
+        -3.99993896484375,
+        3.0000228881835938
+      ],
+      "error_px": 6.518557544950508e-05,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0014-camera_a-stationary_control",
+      "known_delta_px": [
+        0.0,
+        0.0
+      ],
+      "measured_delta_px": [
+        0.0,
+        0.0
+      ],
+      "error_px": 0.0,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0014-camera_a-stationary_control",
+      "known_delta_px": [
+        4.0,
+        -3.0
+      ],
+      "measured_delta_px": [
+        4.000068664550781,
+        -2.9999237060546875
+      ],
+      "error_px": 0.00010264300573023765,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0014-camera_a-stationary_control",
+      "known_delta_px": [
+        -4.0,
+        3.0
+      ],
+      "measured_delta_px": [
+        -3.9999542236328125,
+        3.000030517578125
+      ],
+      "error_px": 5.501634636633284e-05,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0014-camera_b-stationary_control",
+      "known_delta_px": [
+        0.0,
+        0.0
+      ],
+      "measured_delta_px": [
+        0.0,
+        0.0
+      ],
+      "error_px": 0.0,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0014-camera_b-stationary_control",
+      "known_delta_px": [
+        4.0,
+        -3.0
+      ],
+      "measured_delta_px": [
+        4.000055313110352,
+        -2.9999771118164062
+      ],
+      "error_px": 5.9861583047772275e-05,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0014-camera_b-stationary_control",
+      "known_delta_px": [
+        -4.0,
+        3.0
+      ],
+      "measured_delta_px": [
+        -4.0000457763671875,
+        3.0
+      ],
+      "error_px": 4.57763671875e-05,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0015-camera_a-stationary_control",
+      "known_delta_px": [
+        0.0,
+        0.0
+      ],
+      "measured_delta_px": [
+        0.0,
+        0.0
+      ],
+      "error_px": 0.0,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0015-camera_a-stationary_control",
+      "known_delta_px": [
+        4.0,
+        -3.0
+      ],
+      "measured_delta_px": [
+        4.00054931640625,
+        -3.000091552734375
+      ],
+      "error_px": 0.0005568935422025958,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0015-camera_a-stationary_control",
+      "known_delta_px": [
+        -4.0,
+        3.0
+      ],
+      "measured_delta_px": [
+        -3.99945068359375,
+        2.999908447265625
+      ],
+      "error_px": 0.0005568935422025958,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0015-camera_b-stationary_control",
+      "known_delta_px": [
+        0.0,
+        0.0
+      ],
+      "measured_delta_px": [
+        0.0,
+        0.0
+      ],
+      "error_px": 0.0,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0015-camera_b-stationary_control",
+      "known_delta_px": [
+        4.0,
+        -3.0
+      ],
+      "measured_delta_px": [
+        4.0000457763671875,
+        -3.0000457763671875
+      ],
+      "error_px": 6.473755931273323e-05,
+      "qualified": true
+    },
+    {
+      "sequence_id": "demo_0015-camera_b-stationary_control",
+      "known_delta_px": [
+        -4.0,
+        3.0
+      ],
+      "measured_delta_px": [
+        -4.000030517578125,
+        3.0
+      ],
+      "error_px": 3.0517578125e-05,
+      "qualified": true
+    }
+  ],
+  "videos": [
+    {
+      "file": "audit-v2/previews/demo_0001-camera_a-held.mp4",
+      "frames": 8,
+      "sha256": "ca7022a45435a614dd4aac57869e943129f68a287b486f983846c62ae0858d1e"
+    },
+    {
+      "file": "audit-v2/previews/demo_0001-camera_b-held.mp4",
+      "frames": 8,
+      "sha256": "7a063988b4788fd96a6751cae1a8e9a389429e784d336399d0ae18ab2ce5520d"
+    },
+    {
+      "file": "audit-v2/previews/demo_0004-camera_a-held.mp4",
+      "frames": 8,
+      "sha256": "1c2f2cc22dc549ef74e75191fe61c4c8d5f487bbaa153659cbe991441f9d073c"
+    },
+    {
+      "file": "audit-v2/previews/demo_0004-camera_b-held.mp4",
+      "frames": 8,
+      "sha256": "5096f973353d50a6d6024d4f6eecde0e37f0ab6247aec578c25b2cdecbf69df8"
+    },
+    {
+      "file": "audit-v2/previews/demo_0012-camera_a-held.mp4",
+      "frames": 21,
+      "sha256": "d6bf9839979b0ecca4b1620e61dc1a3ebe0c0dc3e4b2241071dc648a81fa6b07"
+    },
+    {
+      "file": "audit-v2/previews/demo_0012-camera_b-held.mp4",
+      "frames": 21,
+      "sha256": "c15a9675c697e307fd42e8ef0517feaea93067216378a60fd7526e76e7372be0"
+    },
+    {
+      "file": "audit-v2/previews/demo_0013-camera_a-held.mp4",
+      "frames": 31,
+      "sha256": "2bf8ea559042bf6793c4db8779d725087df7b21c617daaafb13cd6eed648349f"
+    },
+    {
+      "file": "audit-v2/previews/demo_0013-camera_b-held.mp4",
+      "frames": 31,
+      "sha256": "3e0d3aa6359702bfb4c9a6133c9b0054bd0b582fdc8ab43c9f69889e08288e71"
+    },
+    {
+      "file": "audit-v2/previews/demo_0014-camera_a-held.mp4",
+      "frames": 28,
+      "sha256": "31940bf4dc599fed0a52acdfeeffb548a50213dae56a3853405d14abb09d8df8"
+    },
+    {
+      "file": "audit-v2/previews/demo_0014-camera_b-held.mp4",
+      "frames": 28,
+      "sha256": "775e56e59d8149472ed0c23d4dfc608e7f061acfdb0a54b5fbec5d9690dba7d5"
+    },
+    {
+      "file": "audit-v2/previews/demo_0015-camera_a-held.mp4",
+      "frames": 21,
+      "sha256": "66050b4d9348c38200d8450d87b73b1f891ac9fea14a0475da09836e5c38b2af"
+    },
+    {
+      "file": "audit-v2/previews/demo_0015-camera_b-held.mp4",
+      "frames": 21,
+      "sha256": "4bc8667440e7392cb929d3f3fb9202fb9605d5cc0f66749cb454bc2a7aeaeffe"
+    }
+  ]
+}

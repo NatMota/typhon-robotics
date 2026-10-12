@@ -1,0 +1,5 @@
+{
+  "issue": "OpenCV LK error arrays contain undefined values for failed tracking status. Four discarded background-point errors differed between original and reproduction. No accepted flow, summary, window, prediction or frame changed.",
+  "fix": "Serialize failed-status LK/FB errors as null and record statuses. Preserve audit-v1 and first reproduction. Primary outputs are audit-v2; verify complete numeric traces bitwise after fix.",
+  "algorithm_or_threshold_change": false
+}
