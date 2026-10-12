@@ -53,11 +53,11 @@ Nine V4 development rollouts. Three API choices executed 62 exact saved targets,
 Branch: research/live05-scheduler-isolation.
 Report: https://github.com/NatMota/typhon-robotics/blob/research/live05-scheduler-isolation/experiment-history/2026-10-12-live05/REPORT.md
 
-Thirty controlled-delay V4 trials. The known grasp survives both sampling schemes at0/0.1/2s waits without guard intervention; enforcing the guard loses it even atzero wait. Old per-tick raw-target distance vetoes eight reference steps. Most live preview paths nearly overlap. Exact-reference rendering limits retained; no training or API benefit claim. Mint archive:1452files /2552769509bytes, SHA-verified. LIVE06 #11026 qualifies the execution contract.
+Thirty controlled-delay V4 trials. The known grasp survives both sampling schemes at 0/0.1/2 s waits without guard intervention; enforcing the guard loses it even at zero wait. Old per-tick raw-target distance vetoes eight reference steps. Most live preview paths nearly overlap. Exact-reference rendering limits retained; no training or API benefit claim. Mint archive:1,452 files / 2,552,769,509 bytes, SHA-verified. LIVE06 #11026 qualifies the execution contract.
 
 ## LIVE06 — Execution guard qualification
 
 Branch: research/live06-execution-guard.
 Report: https://github.com/NatMota/typhon-robotics/blob/research/live06-execution-guard/experiment-history/2026-10-12-live06/REPORT.md
 
-Nine V4 trials restore the known pickup and placement with unchanged weights, while retaining85.33degrees yaw error. Eight expert trials pass; new execution check accepts all1714ticks versus304old raw-target vetoes. Eleven negative/contract regressions pass. First570native/corrected control records match; later wrist motion differs with tiny historical-image changes, so full trace identity is not claimed. LIVE07 #11027 must integrate the explicit execution helper into the live service without changing generic prospective admission. Use LIVE06_BACKUP_RECEIPT.json for bulk verification.
+Nine V4 trials restore the known pickup and placement with unchanged weights, while retaining 85.33 degrees yaw error. Eight expert trials pass; new execution check accepts all 1,714 ticks versus 304 old raw-target vetoes. Eleven negative/contract regressions pass. First 570 native/corrected control records match; later wrist motion differs with tiny historical-image changes, so full trace identity is not claimed. LIVE07 #11027 must integrate the explicit execution helper into the live service without changing generic prospective admission. Use LIVE06_BACKUP_RECEIPT.json for bulk verification.
