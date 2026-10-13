@@ -95,6 +95,7 @@ def execute(index):
    observations.append({"step":env.steps,"predictions":pred,"aperture_rate_m_s":rate,"evidence":e,"scorer_only":env.truth()})
    os.environ["M7_LIVE_DIR"]=str(aux/"publisher")
    live=attach_live(env,OUT.name,"original-v4-m6",s["scenario_id"],metadata_provider=context.publish_metadata if context else None);policy.live=live
+   save(aux/"initial-publisher.json",json.loads((aux/"publisher/latest.json").read_text()))
    live.privileged_held_cue=True
    atomic=live._atomic
    def write(name,data):
