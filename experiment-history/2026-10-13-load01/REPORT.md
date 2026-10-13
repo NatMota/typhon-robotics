@@ -40,7 +40,7 @@ The unchanged expert succeeded on both development cases. These were two separat
 
 [Watch the source-0001 comparison](qa/load01-source-demo_0001-matched-overhead.mp4). [Raw-derived diagnostic](analysis/held-state-diagnostic.json).
 
-**Feeding 0003: strict centre-accuracy miss.** FL finishes inside the square, upright, released and stable, with 0.073° yaw error. Its centre error is 15.854 mm against the unchanged 15 mm limit, so the result remains a strict failure. P and F have 8.473 and 8.692 mm error on the same case. All three models retain 5/6 stable released in-square placements, but FL has 4/6 strict feeding successes.
+**Feeding 0003: strict centre-accuracy miss.** FL finishes inside the square, upright, released and stable, with 0.073° yaw error. Its centre error is 15.854 mm against the unchanged 15 mm limit, so the result remains a strict failure. P and F have 8.473 and 8.692 mm error on the same case. FL is 0.854 mm beyond the threshold and 7.162 mm worse than F on this example; neither number establishes catastrophic forgetting or a general trade-off from one training seed. All three models retain 5/6 stable released in-square placements, but FL has 4/6 strict feeding successes.
 
 [Watch the feeding-precision comparison](qa/load01-retention-demo_0003-matched-overhead.mp4).
 
@@ -64,11 +64,11 @@ Supported pickup requires simultaneous bilateral contact and at least 10 mm lift
 
 ## Interpretation and limits
 
-Retain FL as a checkpoint with demonstrated additional task capability and a measured feeding-precision trade-off. It is not a universal replacement for P. The matched control supports a benefit from loading-specific supervision under this recipe, beyond simply spending another 3,000 updates.
+Retain FL as a checkpoint with demonstrated additional task capability and an observed strict-feeding precision regression. It is not a universal replacement for P. The matched control supports a benefit from loading-specific supervision under this recipe, beyond simply spending another 3,000 updates.
 
 The data is personally derived scene initialization paired with generated expert robot actions. This does not show direct learning of robot commands from phone video. Task text, fixture imagery and demonstrated destination vary together, so successful loading does not by itself prove numeric-language understanding or semantic recognition of the blue numeral.
 
-The next useful investigation is why the source-0001 policy remains in a lifted hold instead of requesting transport, while preserving the newly demonstrated loading capability. More undirected training or a longer rollout is not justified by these traces.
+The planner ranks a separate fixed-scene instruction-switching test next: keep both destinations, physical state and model inputs identical, and change only the complete feeding/loading instruction. This tests whether the new capability is instruction-selectable or tied to scene context. It requires its own frozen protocol; no such results are included here. The source-0001 held-state stall remains a distinct follow-up. More undirected training or a longer rollout is not justified by the current traces. See the [planner review](PLANNER_REVIEW.md).
 
 ## Evidence and execution
 
@@ -80,4 +80,4 @@ The next useful investigation is why the source-0001 policy remains in a lifted 
 - Raw RGB inputs, model chunks, actual actions, joint/contact traces, score components and videos remain preserved. Three representative 73.4-second comparison videos were selected post hoc for inspection; all outcomes remain in the tables.
 - [Validation](analysis/validation.json), [paired outcomes](analysis/paired-outcomes.json), [file hashes](analysis/episode-evidence-integrity.json), [reproduction commands](REPRODUCTION.md), [frozen protocol](protocol.json).
 - Old experiment outputs were not overwritten. One inactive old checkpoint was offloaded only after byte-for-byte verification on Mint.
-- Private branch: research/load01-loading-supervision. Bulk artifacts and model weights reside on Powerglide and Mint Fast Drive. Final archive receipts are added at closeout.
+- Private branch: research/load01-loading-supervision. All 550 raw artifact files, totaling 8,837,130,076 bytes, are independently SHA-256 verified on Mint Fast Drive, including both final model checkpoints, probes, source arrays, exact inference inputs, actions and videos. Existing parent-model and feeding-data dependencies are independently verified in the adjacent archive. See [raw archive verification](archive/raw-backup-verification.json) and the separate checkpoint receipts.
