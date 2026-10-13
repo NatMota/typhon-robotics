@@ -1,0 +1,38 @@
+{
+  "ticket": 11008,
+  "name": "DEL02 private synthesis review",
+  "started_utc": "2026-10-13T05:17:37Z",
+  "deadline_utc": "2026-10-13T06:02:37Z",
+  "base_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+  "branch": "research/del02-private-synthesis",
+  "main_report": "experiment-history/2026-10-12-ost-sweep/REPORT.md",
+  "word_range": [
+    1400,
+    2000
+  ],
+  "artifacts": [
+    "existing main report updated in place",
+    "claim-to-evidence index",
+    "package-status receipt"
+  ],
+  "constraints": {
+    "existing_artifacts_only": true,
+    "new_training": false,
+    "new_inference": false,
+    "new_physics": false,
+    "new_media": false,
+    "new_dashboard_importer": false,
+    "upload": false,
+    "publication": false,
+    "permission_changes": false
+  },
+  "acceptance": [
+    "all numerical headlines trace to audited evidence and denominators",
+    "method and assistance attribution explicit",
+    "outcome definitions kept separate",
+    "negative results and uncertainty preserved",
+    "canonical DEL01 media mapping reused",
+    "reproduction commands checked without execution of physics/training",
+    "private-review status distinct from submission"
+  ]
+}
