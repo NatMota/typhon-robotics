@@ -35,7 +35,7 @@ Primary recording_0005 frame188 at **6.387267 s** and secondary recording_0001 f
 
 The source evidence distinguishes carried transfer from endpoints alone. It does not measure support forces, metric lift height or exact contact/release boundaries.
 
-Existing dense observations retain 128 primary and 128 secondary frames. Accepted centres are 128/128 and92/128; detected hands occur in43 and26 frames. These counts are coverage, not accuracy. All physical-contact fields remain unknown. This is a **P_train** take, so inspecting it is not evidence of held-out generalisation.
+Existing dense observations retain 128 primary and 128 secondary frames. Accepted centres are 128/128 and 92/128; detected hands occur in 43 and 26 frames. These counts are coverage, not accuracy. All physical-contact fields remain unknown. This is a **P_train** take, so inspecting it is not evidence of held-out generalisation.
 
 ### 0012: pause/resume detail is available, but a mandatory robot pause is unsupported
 
@@ -43,9 +43,9 @@ Existing dense observations retain 128 primary and 128 secondary frames. Accepte
 
 Primary recording_0008 frame199 at **6.727067 s** and frame249 at **8.393333 s**, paired with secondary recording_0003 frame160 at **5.333333 s** and frame210 at **7.000000 s**, show held intermediate states before final placement. The seven-frame sheet alone does not measure a pause duration. Pairing uncertainty remains **±0.25 s**.
 
-The earlier VIDEO07 native-frame review separately documented reduced progress around relative3.51–5.01 s followed by resumed transport by5.51 s. That remains an attributed prior observation, not a newly measured pause or prescribed motor action.
+The earlier VIDEO07 native-frame review separately documented reduced progress around relative 3.51–5.01 s followed by resumed transport by 5.51 s. That remains an attributed prior observation, not a newly measured pause or prescribed motor action.
 
-Existing dense data retain101 frames per view,101/60 accepted centres and45/35 hand detections. VIDEO07 retained useful native image-feature motion on this interval. Neither motion support nor the label proves secure grasp, a required wait, or that X-VLA understands why the person paused. This is also P_train.
+Existing dense data retain 101 frames per view, 101/60 accepted centres and 45/35 hand detections. VIDEO07 retained useful native image-feature motion on this interval. Neither motion support nor the label proves secure grasp, a required wait, or that X-VLA understands why the person paused. This is also P_train.
 
 ### 0018: already completed means preserve the state
 
@@ -53,7 +53,7 @@ Existing dense data retain101 frames per view,101/60 accepted centres and45/35 h
 
 Primary recording_0006 frames139,305,471 at **4.788967,10.321000,15.853033 s** and secondary recording_0004 frames97,263,429 at **3.233333,8.766667,14.298333 s** show the correct-looking block without manipulation. All seven reviewed paired instants are consistent with that state. Synchronization uncertainty is **±0.05 s**.
 
-Existing dense data retain111 frames per view, all with accepted centres and no detected hands. Primary endpoint displacement is approximately0.000091 normalized image units; observed yaw varies by5°, the observer's template step. This supports a stationary observation sequence, not calibrated zero motion.
+Existing dense data retain 111 frames per view, all with accepted centres and no detected hands. Primary endpoint displacement is approximately 0.000091 normalized image units; observed yaw varies by 5°, the observer's template step. This supports a stationary observation sequence, not calibrated zero motion.
 
 This take remains **observation-only**, not motor-training data. The sequence can audit preservation; it does not prove that a full-video encoder is needed to choose no action initially.
 
@@ -80,16 +80,16 @@ This take remains **observation-only**, not motor-training data. The sequence ca
 
 ## What the representation actually retains
 
-The audit verified all **2,644 frozen feature IDs** against the corrected dense-v2 index. Full-frame and crop descriptors are each2644×1024; no descriptors or weights were regenerated. Every dense `is_grasped` and metric XYZ field is null.
+The audit verified all **2,644 frozen feature IDs** against the corrected dense-v2 index. Full-frame and crop descriptors are each 2644×1024; no descriptors or weights were regenerated. Every dense `is_grasped` and metric XYZ field is null.
 
 - **Retained:** ordered source timestamps/frames, confidence-masked image centres and directed numeral yaw, supported hand landmarks, and native feature motion. Raw sequence evidence remains recoverable.
 - **Suggested with limited validation:** VIDEO03–05 held-state probes classify selected labelled interiors. VIDEO05 still has a pre-contact false positive in an excluded take; its tests do not qualify autonomous grasp/release authority or independent stationary-held robustness.
 - **Missing:** qualified physical contact/support, metric depth, precise support-transfer/release timing and a validated mapping to robot actions.
 - **Untested:** whether those representations improve a causal robot decision over endpoint/current-state controls for these task requirements.
 
-Existing VIDEO02 ordered retrieval (7/16 versus1/16 pooled) is a **retrieval result**. Cross-camera timing improvements are **correspondence results**. Feature variation or higher goal-image similarity does not establish phase semantics or control benefit.
+Existing VIDEO02 ordered retrieval (7/16 versus 1/16 pooled) is a **retrieval result**. Cross-camera timing improvements are **correspondence results**. Feature variation or higher goal-image similarity does not establish phase semantics or control benefit.
 
-For the three examples,40 reviewed view-instants are linked to nearest existing dense feature rows. Only13 use exactly the same native frame; the other27 are explicitly marked nearest matches, with maximum timestamp separation0.066667 s. No nearest match is passed off as the exact reviewed image.
+For the three examples, 40 reviewed view-instants are linked to nearest existing dense feature rows. Only 13 use exactly the same native frame; the other 27 are explicitly marked nearest matches, with maximum timestamp separation 0.066667 s. No nearest match is passed off as the exact reviewed image.
 
 ## Negative control and acceptance decision
 
