@@ -1,0 +1,57 @@
+{
+  "schema": "typhon-telemetry-provenance-v1",
+  "legacy": "append source_contract only; retain every existing numerical field",
+  "source_clocks": [
+    "control_tick",
+    "policy_origin_control_tick",
+    "policy_tick",
+    "simulation_time_at_read_s"
+  ],
+  "wall_clocks": [
+    "frame render call interval",
+    "observation/proprio read interval",
+    "query request interval",
+    "observer estimate interval",
+    "publication assembly monotonic time"
+  ],
+  "unknowns": [
+    "physics step identity unavailable",
+    "cached site computation time unknown",
+    "historical acquisition times unknown"
+  ],
+  "fixtures": [
+    {
+      "id": "settling_tail",
+      "source": "saved LIVE01 last snapshot",
+      "expect": "settling command active; retained target inactive"
+    },
+    {
+      "id": "repeat_image",
+      "source": "same archived snapshot twice",
+      "expect": "same frame identity and unknown acquisition time retained; publication never refreshes it"
+    },
+    {
+      "id": "out_of_order",
+      "source": "two source-tick ordered snapshots delivered reversed",
+      "expect": "older source flagged and latest measurement retained"
+    },
+    {
+      "id": "cached_vs_integrated",
+      "source": "saved joint and site fields",
+      "expect": "different phase provenance; simultaneity unproven"
+    }
+  ],
+  "execution": "two sequential actual inference runs, original versus labelled shadow; film-demo_0006 seed7417; H30,20Hz,1500ticks; no retry after mismatch",
+  "start_utc": "2026-10-13T06:29:52Z",
+  "hard_stop_utc": "2026-10-13T07:14:52Z",
+  "source_snapshot": "/var/tmp/typhon-live01-shadow-20261013",
+  "source_runtime": "cbd4d61ac3292d3ccb05018d154fff339c0bcd1b",
+  "authority": "none",
+  "forbidden": [
+    "extra render",
+    "extra forward",
+    "physics step split",
+    "actor/controller/state write",
+    "new hold/guard/selector/early stop"
+  ]
+}
