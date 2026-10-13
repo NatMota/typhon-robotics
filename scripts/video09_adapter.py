@@ -90,7 +90,7 @@ def run(out,name,qualification=False):
     cfg=json.loads((out/'config.json').read_text());protocol=json.loads((out/'protocol.json').read_text())
     source=json.loads((out/'source_reference.json').read_text())['rows']
     sensor=ImageSensor(cfg,protocol);servo=VisualServo(cfg,protocol);ctl=protocol['controller'];timing=protocol['timing'];env=None;writer=None
-    start=time.monotonic();trace=[];rows=[];stability=[];phase='reset';source_t=None;exception=None;initial=None;final=None;qual_checks=[]
+    start=time.monotonic();trace=[];rows=[];stability=[];frame_clock=[];phase='reset';source_t=None;exception=None;initial=None;final=None;qual_checks=[]
     import imageio.v2 as imageio
     env=FeedingLoadingEnv(cfg)
     try:
@@ -106,6 +106,7 @@ def run(out,name,qualification=False):
             cv2.rectangle(canvas,(0,0),(1024,34),(15,15,15),-1)
             cv2.putText(canvas,f'{name} | {label} | source={source_t if source_t is not None else "prefix"} | step={env.steps}',(10,23),cv2.FONT_HERSHEY_SIMPLEX,.5,(255,255,255),1)
             writer.append_data(canvas)
+            frame_clock.append({'frame_index':len(frame_clock),'control_step':env.steps,'phase':label,'source_clip_time_s':source_t})
         def step(action,diagnostic=None):
             env.step(action)
             # Independent diagnostics and static-environment guard; never supplied to the actor.
@@ -202,6 +203,7 @@ def run(out,name,qualification=False):
         if writer:writer.close()
         if env:env.close()
         save(dest/'result.json',result)
+        save(dest/'frame_clock.json',frame_clock)
         with gzip.open(dest/'actions.jsonl.gz','wt') as f:
             for row in trace:f.write(json.dumps(row,default=serial,allow_nan=False)+'\n')
         with gzip.open(dest/'observations.jsonl.gz','wt') as f:
