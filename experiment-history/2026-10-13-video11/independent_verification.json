@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "rows": 736,
+  "implemented_glyph_scanline_boxes": 56,
+  "local_mask_area_centroid_matches_implemented_geometry": true,
+  "numeral_top_above_body_m": 8.000000000000021e-05,
+  "old_scorer_height_discrepancy_m": 0.0001199999999999998,
+  "groups": [
+    {
+      "condition": "SEQ",
+      "n": 184,
+      "plane_shift_direction_cosine_mean": 0.9993411096100956,
+      "observer_vs_fixed_landmark_RMSE": 0.07626216164630527,
+      "fixed_pixel_depth_shift_RMSE": 0.07519451800939222,
+      "remaining_vector_RMSE_after_analytic_plane_decomposition": 0.003717885545250777,
+      "interpretation": "Offline geometric decomposition only; no fitted offset, revised actor, qualified visible-mask equivalence or new path score."
+    },
+    {
+      "condition": "END",
+      "n": 184,
+      "plane_shift_direction_cosine_mean": 0.9992864817993015,
+      "observer_vs_fixed_landmark_RMSE": 0.07591904564345521,
+      "fixed_pixel_depth_shift_RMSE": 0.07507773467314406,
+      "remaining_vector_RMSE_after_analytic_plane_decomposition": 0.003646182516237345,
+      "interpretation": "Offline geometric decomposition only; no fitted offset, revised actor, qualified visible-mask equivalence or new path score."
+    },
+    {
+      "condition": "SHUFFLE",
+      "n": 184,
+      "plane_shift_direction_cosine_mean": 0.9993630489316235,
+      "observer_vs_fixed_landmark_RMSE": 0.07569868562567841,
+      "fixed_pixel_depth_shift_RMSE": 0.0752445313786221,
+      "remaining_vector_RMSE_after_analytic_plane_decomposition": 0.003487501588783563,
+      "interpretation": "Offline geometric decomposition only; no fitted offset, revised actor, qualified visible-mask equivalence or new path score."
+    },
+    {
+      "condition": "STATIC",
+      "n": 184,
+      "plane_shift_direction_cosine_mean": 0.9992205056960082,
+      "observer_vs_fixed_landmark_RMSE": 0.07563618460680491,
+      "fixed_pixel_depth_shift_RMSE": 0.07499657880033019,
+      "remaining_vector_RMSE_after_analytic_plane_decomposition": 0.0036281573871921272,
+      "interpretation": "Offline geometric decomposition only; no fitted offset, revised actor, qualified visible-mask equivalence or new path score."
+    }
+  ],
+  "preserved_VIDEO10_files": 552,
+  "preserved_VIDEO10_bytes": 49527849,
+  "VIDEO10_mismatches": [],
+  "rendering_gate_not_promoted": true,
+  "physical_rollouts": 0
+}

@@ -1,0 +1,33 @@
+Codex: VIDEO11 (#11035) offline audit has finished within its45-minute cap (start02:21UTC, numerical verification and Mint backup finished02:35UTC). No actor execution, no new physics rollout, no observer fitting/tuning, no training. I am closing this measurement branch as you directed, preserving VIDEO10 physical successes and rejecting an established full-sequence physical-fidelity advantage.
+
+Results:
+1. Feature contract is explicitly different: human and robot detectors use visible blue-component centroids; scorer projects a fixed complete-mask area centroid. Human detection happens before target homography/VIDEO10rigid registration; secondary robot RGB is rectified first then detected. Scorer uses cached body_xpos/body_xquat. No silent sim.forward.
+2. Predetermined indices[0,61,122,183] ->source times[0,1.525,3.05,4.875], controlsteps[182,304,426,572] in each of4conditions. Only8/16states have an exact-tick video frame;0/16have archived nativeRGB/hash or a complete cached-render snapshot. H264 display frames saved every4ticks; feature decisions every2ticks. No qualified geometry-based visible/full mask reconstruction is possible from the saved evidence alone under this protocol. I saved8annotated compressed-frame pairs and8explicit missing-frame cards, not nearest-frame substitutes. Corresponding4human timestamps x2views were redecoded from originals; all8match original decodedBGR hashes. Hand adjacency/occlusion means source visible centroid isn't promoted to a rigid trajectory.
+3. Numerical decomposition uses ALL4x184=736original common rows and frozen intervals/routes. Every route was secondary_rectified. Squared-error identity residual <=1.39e-17.
+Mean signed observer-minus-fixed-landmark (u,v) is approx[-0.058,+0.048]targetunits acrossconditions.
+Mean cross terms 2(p-r).(o-p):
+SEQ -0.01296035, END -0.01013212, SHUFFLE -0.01311851, STATIC -0.00731907.
+Thus similar observer bias magnitudes DO NOT cancel; they cancel reference error differently, explaining how the metric ranking reverses.
+4. A fixed-pixel, offline plane counterfactual strongly points to secondary rectification depth: assumed carried plane averages2.949mm ABOVE the actual logged printed-face centre. Holding the same inverse-warp native secondary pixel fixed and using actual plane changes projected position RMSE:
+SEQ0.075195, END0.075078, SHUF0.075245, STATIC0.074997units.
+Observed discrepancy RMSE respectively0.076262,0.075919,0.075699,0.075636. Shift/bias direction mean cosines0.99922–0.99936; remaining vector RMS after analytic decomposition0.00349–0.00372units. This is geometric diagnostic evidence, NOT a fitted offset, revised actor or qualified rendered-visible-support comparison. No corrected-controller outcomes claimed.
+5. There is a deterministic minor scorer defect: it projects h/2+0.0002m, whereas implemented56blue scanline boxes have top h/2+0.00008m. Independent XML geometry construction validates x/yarea centroid exactly, and120micrometre height discrepancy. New diagnostic fixes only this point height:
+SEQ trueprojectedRMSE0.0930204 (was0.092892)
+END0.0908720 (was0.090762)
+SHUF0.1261399 (was0.126047)
+STATIC0.0844542 (was0.084365).
+Ranking unchanged; this tiny defect does NOT rescue sequence advantage. Original outputs unchanged.
+
+Decision: Stop this measurement branch; no new controller rerun or training. Successful assisted correction remains valid, intermediate video not necessary for completion here; full-sequence physical-path superiority unproven. Analytic evidence implicates carried-plane error, while exact rendered support/occlusion attribution remains unqualified.
+
+Backup:75files6,388,929bytes checked onMint,zero mismatches. All552VIDEO10files49,527,849bytes independently rehashed unchanged. Private branchresearch/video11-feature-correspondence; report/OSTfinalization underway.
+
+For your next choice, current OST has no Next/Backlog experiments; parentVIDEO01active; remaining Review tickets are:
+LIVE01#11004 verify existing live harness/telemetry contract after guard qualification;
+DEL01#11007 reconcile dashboard/hosted video provenance (no new publication);
+EVAL02#10996 confirmatory-comparison plan/review (previous execution evidence may already exist);
+DATA07#10992 training-only failure/correction coverage review;
+DEL02#11008 accurate private write-up/submission package;
+VIDEO01-A/B/C#11016/17/18 review extracted object/hand/frozen-feature representations.
+Blocked: observerauthority10984, human-actionalignment10989, physicalcalibration10991, joint-aware recovery10998, hierarchicaltraining11000,residualRL11002,value/PPO11003.
+Please choose ONE bounded next item on existing evidence, or a substantive temporal-information test only if the available recordings genuinely support a constraint absent from endpoints. Do not reopen an endless observer-tuning loop. User priority remains meaningful personal-video use and proving/disproving the OST. Repo stays private; no new publication/paid compute.

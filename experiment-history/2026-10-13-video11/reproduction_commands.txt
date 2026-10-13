@@ -1,0 +1,6 @@
+# Existing .venv-sim; no GPU actor or physics rollout.
+# From ~/Projects/typhon-experiments/video11-feature-correspondence:
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
+python scripts/video11_audit.py --base /var/tmp/typhon-research-20261013/video10 --output "$NEW_AUDIT_OUTPUT" --m0 ~/Projects/humanoid-task-supervisor
+python scripts/video11_verify.py --base /var/tmp/typhon-research-20261013/video10 --audit "$NEW_AUDIT_OUTPUT" --manifest /var/tmp/typhon-video10-manifest.json
+# Keep VIDEO10 unchanged. Rendering/mask correspondence is unqualified; no actor training labels produced.

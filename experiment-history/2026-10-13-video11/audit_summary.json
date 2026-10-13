@@ -1,0 +1,113 @@
+{
+  "code_sha256": "946faff88ad0334e36237e56c038fe6ea54a5e656a53a3273294df1611cdcb43",
+  "physical_rollouts": 0,
+  "actor_executions": 0,
+  "cached_render_snapshots_found": 0,
+  "selected_robot_states": 16,
+  "exact_tick_compressed_video_states": 8,
+  "native_lossless_RGB_states": 0,
+  "render_reconstruction_gate_passed": false,
+  "gate_reason": "Eight selected instants have no video image; all remaining images are lossy. None has native RGB/hash or full cached geometry snapshot. No substitute timestamp or unqualified sim.forward used.",
+  "common_rows": 736,
+  "max_squared_error_identity_residual": 1.3877787807814457e-17,
+  "human_native_frames_hash_verified": 8,
+  "scorer_defect": {
+    "type": "fixed glyph height differs from implemented numeral top",
+    "old_z_above_body_top_m": 0.0002,
+    "implemented_z_above_body_top_m": 8e-05,
+    "difference_m": 0.00012,
+    "corrected_diagnostic_only": true,
+    "x_y_area_centroid_definition_matches_asset_scanline_geometry": true
+  },
+  "all_interval_groups": [
+    {
+      "condition": "SEQ",
+      "interval": "all",
+      "route": "secondary_rectified",
+      "n": 184,
+      "observer_rmse": 0.038529006880969045,
+      "projected_rmse": 0.09289196925289173,
+      "observer_projected_rmse": 0.07626216164630528,
+      "mean_cross_term": -0.012960350879413619,
+      "mean_observer_projected_dx": -0.05870589203003766,
+      "mean_observer_projected_dy": 0.04818325361290186,
+      "z_corrected_scorer_rmse": 0.09302039768262076,
+      "mean_scorer_z_correction_norm_units": 0.00014344657912738204,
+      "depth_conversion": {
+        "n": 184,
+        "mean": 0.07498666831893251,
+        "median": 0.0750863427318755,
+        "rmse": 0.07519451800939222,
+        "p95": 0.08278755185740311
+      },
+      "mean_assumed_face_height_error_m": 0.0029490961910981772
+    },
+    {
+      "condition": "END",
+      "interval": "all",
+      "route": "secondary_rectified",
+      "n": 184,
+      "observer_rmse": 0.06220377571381065,
+      "projected_rmse": 0.09076191604681261,
+      "observer_projected_rmse": 0.07591904564345522,
+      "mean_cross_term": -0.010132117182847636,
+      "mean_observer_projected_dx": -0.058416098612083606,
+      "mean_observer_projected_dy": 0.04804771158491333,
+      "z_corrected_scorer_rmse": 0.09087202606244656,
+      "mean_scorer_z_correction_norm_units": 0.00014456644154714715,
+      "depth_conversion": {
+        "n": 184,
+        "mean": 0.07487851101331547,
+        "median": 0.07516149183981413,
+        "rmse": 0.07507773467314405,
+        "p95": 0.08235789138970918
+      },
+      "mean_assumed_face_height_error_m": 0.002948935553340637
+    },
+    {
+      "condition": "SHUFFLE",
+      "interval": "all",
+      "route": "secondary_rectified",
+      "n": 184,
+      "observer_rmse": 0.09219279953349672,
+      "projected_rmse": 0.12604655302843631,
+      "observer_projected_rmse": 0.07569868562567844,
+      "mean_cross_term": -0.013118512249982192,
+      "mean_observer_projected_dx": -0.0586610822459334,
+      "mean_observer_projected_dy": 0.04743710011802291,
+      "z_corrected_scorer_rmse": 0.12613993234753726,
+      "mean_scorer_z_correction_norm_units": 0.0001409590963150197,
+      "depth_conversion": {
+        "n": 184,
+        "mean": 0.07504647535645112,
+        "median": 0.0750863427318755,
+        "rmse": 0.07524453137862208,
+        "p95": 0.08274496772345066
+      },
+      "mean_assumed_face_height_error_m": 0.002950383249262112
+    },
+    {
+      "condition": "STATIC",
+      "interval": "all",
+      "route": "secondary_rectified",
+      "n": 184,
+      "observer_rmse": 0.07429124039034683,
+      "projected_rmse": 0.08436482515219787,
+      "observer_projected_rmse": 0.07563618460680491,
+      "mean_cross_term": -0.007319067746099288,
+      "mean_observer_projected_dx": -0.05797138818259138,
+      "mean_observer_projected_dy": 0.04815278901251626,
+      "z_corrected_scorer_rmse": 0.08445416524233249,
+      "mean_scorer_z_correction_norm_units": 0.00014689417180157428,
+      "depth_conversion": {
+        "n": 184,
+        "mean": 0.07480396449485098,
+        "median": 0.07521533575942027,
+        "rmse": 0.07499657880033019,
+        "p95": 0.08223941770224369
+      },
+      "mean_assumed_face_height_error_m": 0.0029490557705410536
+    }
+  ],
+  "decision": "Stop this measurement branch: rendered like-for-like correspondence is unqualified; preserve successful assisted correction and both disputed metrics. No next controller rerun or training is justified by this audit."
+}
