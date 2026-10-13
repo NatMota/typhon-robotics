@@ -1,6 +1,6 @@
 # VIDEO01-C — What the complete personal video adds
 
-**Decision: representation bottleneck.** The recordings contain useful intermediate evidence for the requested pickup/place assessment and for preserving an already-completed state. The current artifacts do not establish that a causal robot policy recognises and uses those distinctions. Keep the source evidence and its uncertainty; do not accept a claim that following the full human sequence improves manipulation, or start another full-policy training run on that assumption.
+**Decision: the representation-to-action link remains unqualified.** The recordings contain useful intermediate evidence for the requested pickup/place assessment and for preserving an already-completed state. The current artifacts do not establish that a causal robot policy recognises and uses those distinctions. Keep the source evidence and its uncertainty; do not accept a claim that following the full human sequence improves manipulation, or start another full-policy training run on that assumption.
 
 This is an acceptance review of existing VIDEO01-C (#11018), not a new controller experiment. It closes the review question with evidence; it does not close the broader video-to-robot research objective.
 
@@ -80,7 +80,7 @@ This take remains **observation-only**, not motor-training data. The sequence ca
 
 ## What the representation actually retains
 
-The audit verified all **2,644 frozen feature IDs** against the corrected dense-v2 index. Full-frame and crop descriptors are each 2644×1024; no descriptors or weights were regenerated. Every dense `is_grasped` and metric XYZ field is null.
+The audit verified all **2,644 frozen feature IDs** against the corrected dense-v2 index. Full-frame and crop descriptors are each 2644×1024; no descriptors or weights were regenerated. Every dense `is_grasped` and metric XYZ field is null. This establishes missing qualified outputs; it does not establish that the images or embeddings lack relevant information. This review has not identified perception as the sole bottleneck.
 
 - **Retained:** ordered source timestamps/frames, confidence-masked image centres and directed numeral yaw, supported hand landmarks, and native feature motion. Raw sequence evidence remains recoverable.
 - **Suggested with limited validation:** VIDEO03–05 held-state probes classify selected labelled interiors. VIDEO05 still has a pre-contact false positive in an excluded take; its tests do not qualify autonomous grasp/release authority or independent stationary-held robustness.
