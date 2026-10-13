@@ -1,0 +1,18 @@
+{
+  "time": 1791919682.6581008,
+  "reason": "Repeated whole-archive decompression per cached frame; pre-load each immutable NPZ once, matching prior qualified trainer",
+  "before_any_optimizer_update": true,
+  "evidence": "train-F directory empty; no config, losses, model or probe; GPU415MiB context only",
+  "stopped_child": 330944,
+  "before_sha256": "69d7dda058e42cb3c86b019b90f4542b9079c4447f7e6499c693c82e686450b0",
+  "after_sha256": "0a39d9141bc1ad7e19dcf8e7ca72515a08fb9891f4ae1699413301528502f024",
+  "unchanged": [
+    "source bytes",
+    "processor",
+    "sample windows",
+    "sampling plan",
+    "training seed",
+    "optimizer",
+    "clock deadline"
+  ]
+}
