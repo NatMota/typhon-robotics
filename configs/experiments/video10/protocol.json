@@ -1,0 +1,107 @@
+{
+  "schema": "video10-goal-registered-sequence-v1",
+  "ticket": 11034,
+  "started_utc": "2026-10-13T01:46:00Z",
+  "qualification_deadline_utc": "2026-10-13T02:46:00Z",
+  "base_experiment": "VIDEO09 landmark-v2",
+  "base_code_commit": "8d3e7042dfbc4b660ff0237e47a3484d56b80181",
+  "source_take": "demo_0007",
+  "development_status": "previously_inspected_R_train; no heldout/generalisation claim",
+  "question": "Once initialization, feature reference and task agree, do ordered intermediate human observations improve prerelease motion fidelity beyond endpoint/static controls?",
+  "registration": {
+    "goal_reference": "One offline RGB rendering of unchanged proxy resting at original task goal/yaw; same GlyphYaw detector. Current actor object truth prohibited.",
+    "endpoints": "Exact first/last native descriptor rows already frozen by VIDEO09; do not choose substitutes.",
+    "scale": 1,
+    "delta_phi": "wrap(phi_goal - phi_human_terminal)",
+    "position": "c_goal + R(delta_phi) @ (c_human(t) - c_human_terminal)",
+    "orientation": "wrap(phi_human(t)+delta_phi)",
+    "same_transform_for_all_conditions": true,
+    "no_endpoint_blending": true,
+    "no_terminal_suffix": true
+  },
+  "initialization": {
+    "reset": "Identical VIDEO09 config and seed",
+    "acquisition": "Identical existing RGB acquisition and clearance prefix",
+    "alignment": "RGB/proprio visual servo to registered first source descriptor before starting source clock",
+    "max_extra_control_ticks": 100,
+    "position_tolerance_target_units": 0.05,
+    "direction_tolerance_deg": 10,
+    "consecutive_valid_feedback_samples": 3,
+    "tolerance_basis": "Engineering bounds fixed before outcomes: 5deg template bins, prior local response checks, prior directed-angle p95 approximately8deg. These are not calibrated probabilities.",
+    "all_runs_replay_same_qualified_prefix": true
+  },
+  "release_observation": {
+    "disable_carried_plane_on": "first OPEN requested by source-clock release",
+    "primary": "Direct qualified glyph projection remains valid",
+    "secondary": "Raw detections retained, normalized position/direction unknown when conversion depends on carried EEF plane",
+    "resting_assumption_after_open": false,
+    "no_postrelease_XY_or_yaw_servo": true,
+    "fields": [
+      "raw_feature_detected",
+      "coordinate_conversion_valid",
+      "projection_hypothesis"
+    ]
+  },
+  "frozen_conditions": [
+    "SEQ",
+    "END",
+    "SHUFFLE",
+    "STATIC",
+    "SEQ_REPEAT"
+  ],
+  "unchanged": [
+    "initial reset",
+    "seed151007",
+    "proxy50x35x30mm80g",
+    "M1.6v2 visual",
+    "camera geometry/resolution",
+    "task goal/yaw",
+    "15mm/full-footprint strict criteria",
+    "servo gains and action limits",
+    "4xslowdown",
+    "lower4.3-4.9s",
+    "release4.9s",
+    "retreat5.4-5.9s",
+    "settling"
+  ],
+  "evaluation": {
+    "primary_window_source_s": [
+      0,
+      4.9
+    ],
+    "right_boundary_excluded": true,
+    "common_valid_across": [
+      "SEQ",
+      "END",
+      "SHUFFLE",
+      "STATIC"
+    ],
+    "minimum_common_valid_fraction": 0.9,
+    "primary_position_metric": "RMSE of projected-position error on common-valid prerelease timestamps",
+    "position_advantage_screen_fraction": 0.2,
+    "compare_advantage_to_both": [
+      "END",
+      "STATIC"
+    ],
+    "angular_metric_separate": "RMSE/mean/median directed angle on same common-valid timestamps; no combined success metric",
+    "record_all_individual_coverage": true,
+    "no_whole_timeline_score_from_invalid_postrelease_geometry": true,
+    "independent_truth_diagnostics_only": true,
+    "report_physical_all_five": true,
+    "exact_repeat": true
+  },
+  "contract_gates": [
+    "rendered original-goal descriptor valid",
+    "registered terminal numerical agreement",
+    "initial aligned feature within frozen tolerance",
+    "rigid-curve/time/mask/permutation preservation",
+    "release independence from EEF depth",
+    "actor object-truth boundary"
+  ],
+  "qualification_cap_minutes": 60,
+  "no_parameter_sweep": true,
+  "no_vla_training": true,
+  "truth_scope": "Offline known-goal rendering, qualification check and independent physical scorer only",
+  "preserve_video09": true,
+  "planner_thread": "https://chatgpt.com/c/6ac8f7df-fef0-83eb-98c3-48bd796980a1"
+}
