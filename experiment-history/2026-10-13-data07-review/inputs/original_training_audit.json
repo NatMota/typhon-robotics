@@ -1,0 +1,710 @@
+{
+  "v2-m5": {
+    "config": {
+      "all_declared_training_takes": [
+        "m7_completed_personal_0018",
+        "m7_completed_personal_0019",
+        "m7_completed_synthetic_001",
+        "m7_completed_synthetic_002",
+        "personal_demo_0001",
+        "personal_demo_0002",
+        "personal_demo_0003",
+        "personal_demo_0005",
+        "personal_demo_0007",
+        "personal_demo_0009",
+        "personal_demo_0012",
+        "personal_demo_0013",
+        "synthetic_generated_001",
+        "synthetic_generated_002",
+        "synthetic_generated_003",
+        "synthetic_generated_004",
+        "synthetic_generated_005",
+        "synthetic_generated_006"
+      ],
+      "annotation_conditioning": {
+        "enabled": true,
+        "experiment": "explicit privileged annotation-conditioned training, not image-only deployed capability",
+        "held_sidecar": "held_value*valid and validity, UNKNOWN remains0/false; no grasp action label is invented",
+        "runtime_available": false,
+        "source": "causal_simulator_oracle_annotation"
+      },
+      "annotation_missing_examples": 140,
+      "annotations_sha256": "7022dad17dda28b8e2dfc90f17ba3aa01d9ba678478a8d5a9eb9bcbaeee5984d",
+      "balanced_epoch_draws": 1024,
+      "balanced_group_quota": 8,
+      "base": "2toINF/X-VLA-Pt",
+      "base_config_sha256": "b267fac2e018e979088a65b11c62808c2549b9311ffa21db7c863e10af81d914",
+      "base_revision": "c1c4a64a7e03ac5b95c468bf1578f3d03651b53b",
+      "base_weights_sha256": "433acffc992f457b1737d35ae20f81a895521f38eadaf03c736b6c0b0af1c93e",
+      "candidate_count": 632,
+      "catalog_input_hashes": {
+        "candidate_manifest": "2fd97e20b91158c44b7bd3675b7d3eef86831efd20ebac4c0e2ce6bf65c1dd1d",
+        "source_snapshot": "ee4f3959456afc2c1a3f5e025be5abbe3fb657fda8881496d6856dae207c39f9"
+      },
+      "condition": "crosshair",
+      "data_exclusions": "Frozen validation/test/failed/excluded source takes excluded. Only declared training catalog rows participate, including explicit R/S/C training assignments. Geometric parity replays are not extra diversity.",
+      "deadline_utc": "2099-01-01T00:00:00Z",
+      "decoding": "Timestamped waypoints only. No consecutive20Hz replay of sparse anchors; timed controller remains outside this smoke.",
+      "domain_id": 29,
+      "domain_init": "pretrained_domain3",
+      "effective_batch": 4,
+      "environment": {
+        "compiled_architectures": [
+          "sm_50",
+          "sm_60",
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90"
+        ],
+        "cuda": "12.1",
+        "gpu": "NVIDIA H100 80GB HBM3",
+        "packages": {
+          "numpy": "1.26.3",
+          "opencv-python-headless": "4.11.0.86",
+          "safetensors": "0.4.5",
+          "transformers": "4.51.3"
+        },
+        "python": "3.11.10 (main, Sep  7 2024, 18:35:41) [GCC 11.4.0]",
+        "torch": "2.5.1+cu121"
+      },
+      "history_contract": "Actual causal robot RGB, native saved-frame rate; paired cameras, chronological timestamps. Per-camera frame native vision features mean-pooled; explicit time/camera encoding; history vision branch no-grad; exact per-frame feature cache only for M3/M4 whose entire vision encoder remains frozen; M5/M6 recompute each step. Capacity compression pools adjacent encoded tokens without dropping source images.",
+      "history_mode": "dense",
+      "history_seconds": 4.0,
+      "init_checkpoint": null,
+      "initialization": "Pinned fresh base; isolated row29 copied from pretrained domain3 or freshly reset, as explicitly configured. No old fine-tuned weights unless init_checkpoint is declared.",
+      "joint_updates": 1000,
+      "microbatch": 1,
+      "minimum_updates_for_full_balanced_epoch": 256,
+      "padding": "Remove invalid tokens before native attention/noise. Select semantic_mask tokens before native action-space reductions. Context prefix is real evidence but not a supervised semantic action.",
+      "paper_distinction": "Explicit warmup/ramp/joint counts; smoke counts do not reproduce the1000/1000/1000paper-scale schedule.",
+      "phase": "separate_warmup_ramp_joint",
+      "physical_time_projection_features": [
+        "requested_time_s/20",
+        "requested_aligned_duration_s/20",
+        "context_prefix_s/20",
+        "annotation_held_value_times_valid",
+        "annotation_held_valid"
+      ],
+      "ramp_updates": 1000,
+      "requested_conditioning": "Training demonstration supplies requested semantic scope/instruction/duration/timestamp schedule as conditional-task labels. Inference must provide user/planner/policy requests, never future held-out labels.",
+      "resume_checkpoint": null,
+      "run_mode": "scheduled",
+      "run_name": "v2-m5",
+      "scope": "mixed",
+      "seed": 17,
+      "source_code_sha256": {
+        "scripts/m7_train.py": "c61d039d2759305c28aca0c786869c5559c8cced1c66af291d5b09f4ca665640",
+        "supervisor/adaptation/m7_catalog_data.py": "c19a4ca7b8c59e42f1ccf3342202ac723039cee70d72672b6942146196105e57",
+        "supervisor/adaptation/m7_training.py": "f48451cfaf940fb5d358a694cbc77165919734fefb8d4a658609f02cf9324e0c",
+        "supervisor/adaptation/m7_visual.py": "87b4fc931730191ecef4c9356fef7de3b04300dec19fdf5de8718d75daa3cf65"
+      },
+      "train_splits": [
+        "C_train",
+        "P_train",
+        "R_train",
+        "S_train"
+      ],
+      "training_mode": "m5_lora",
+      "true_semantic_count": 316,
+      "updates": 3000,
+      "warmup_updates": 1000
+    },
+    "candidate_rows": 632,
+    "unique_semantic_ids": 316,
+    "by_representation": {
+      "single": 232,
+      "pair": 196,
+      "triple": 168,
+      "intent": 36
+    },
+    "camera_variants": {
+      "overhead_main": 316,
+      "oblique_main": 316
+    },
+    "source_splits": {
+      "P_train": 264,
+      "R_train": 88,
+      "S_train": 264,
+      "C_train": 16
+    },
+    "anchor_horizon_seconds_minmax": [
+      0.7,
+      17.75
+    ],
+    "four_second_windows_exact": 8,
+    "native_time_violations": [],
+    "max_history_timestamp": 0.0,
+    "updates_logged": 3000,
+    "saved_run_aggregate": {
+      "seen_takes": {
+        "m7_completed_personal_0018": 376,
+        "m7_completed_personal_0019": 378,
+        "m7_completed_synthetic_001": 380,
+        "m7_completed_synthetic_002": 374,
+        "personal_demo_0001": 748,
+        "personal_demo_0002": 747,
+        "personal_demo_0003": 751,
+        "personal_demo_0005": 751,
+        "personal_demo_0007": 752,
+        "personal_demo_0009": 745,
+        "personal_demo_0012": 750,
+        "personal_demo_0013": 751,
+        "synthetic_generated_001": 749,
+        "synthetic_generated_002": 754,
+        "synthetic_generated_003": 747,
+        "synthetic_generated_004": 753,
+        "synthetic_generated_005": 749,
+        "synthetic_generated_006": 745
+      },
+      "sample_draws": 12000,
+      "all_camera_candidates_visited_by_total_step": true,
+      "unique_semantic_samples_seen": 316,
+      "updates_completed": 3000
+    },
+    "per_update_sample_ids_present": false,
+    "audit_limit": "Aggregate counts recorded by the original run, not independently reconstructable per-update sample order because loss rows omit sample IDs. Prepared balanced schedule/source inspected separately."
+  },
+  "v2-m6": {
+    "config": {
+      "all_declared_training_takes": [
+        "m7_completed_personal_0018",
+        "m7_completed_personal_0019",
+        "m7_completed_synthetic_001",
+        "m7_completed_synthetic_002",
+        "personal_demo_0001",
+        "personal_demo_0002",
+        "personal_demo_0003",
+        "personal_demo_0005",
+        "personal_demo_0007",
+        "personal_demo_0009",
+        "personal_demo_0012",
+        "personal_demo_0013",
+        "synthetic_generated_001",
+        "synthetic_generated_002",
+        "synthetic_generated_003",
+        "synthetic_generated_004",
+        "synthetic_generated_005",
+        "synthetic_generated_006"
+      ],
+      "annotation_conditioning": {
+        "enabled": true,
+        "experiment": "explicit privileged annotation-conditioned training, not image-only deployed capability",
+        "held_sidecar": "held_value*valid and validity, UNKNOWN remains0/false; no grasp action label is invented",
+        "runtime_available": false,
+        "source": "causal_simulator_oracle_annotation"
+      },
+      "annotation_missing_examples": 140,
+      "annotations_sha256": "7022dad17dda28b8e2dfc90f17ba3aa01d9ba678478a8d5a9eb9bcbaeee5984d",
+      "balanced_epoch_draws": 1024,
+      "balanced_group_quota": 8,
+      "base": "2toINF/X-VLA-Pt",
+      "base_config_sha256": "b267fac2e018e979088a65b11c62808c2549b9311ffa21db7c863e10af81d914",
+      "base_revision": "c1c4a64a7e03ac5b95c468bf1578f3d03651b53b",
+      "base_weights_sha256": "433acffc992f457b1737d35ae20f81a895521f38eadaf03c736b6c0b0af1c93e",
+      "candidate_count": 632,
+      "catalog_input_hashes": {
+        "candidate_manifest": "2fd97e20b91158c44b7bd3675b7d3eef86831efd20ebac4c0e2ce6bf65c1dd1d",
+        "source_snapshot": "ee4f3959456afc2c1a3f5e025be5abbe3fb657fda8881496d6856dae207c39f9"
+      },
+      "condition": "crosshair",
+      "data_exclusions": "Frozen validation/test/failed/excluded source takes excluded. Only declared training catalog rows participate, including explicit R/S/C training assignments. Geometric parity replays are not extra diversity.",
+      "deadline_utc": "2099-01-01T00:00:00Z",
+      "decoding": "Timestamped waypoints only. No consecutive20Hz replay of sparse anchors; timed controller remains outside this smoke.",
+      "domain_id": 29,
+      "domain_init": "pretrained_domain3",
+      "effective_batch": 4,
+      "environment": {
+        "compiled_architectures": [
+          "sm_50",
+          "sm_60",
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90"
+        ],
+        "cuda": "12.1",
+        "gpu": "NVIDIA H100 80GB HBM3",
+        "packages": {
+          "numpy": "1.26.3",
+          "opencv-python-headless": "4.11.0.86",
+          "safetensors": "0.4.5",
+          "transformers": "4.51.3"
+        },
+        "python": "3.11.10 (main, Sep  7 2024, 18:35:41) [GCC 11.4.0]",
+        "torch": "2.5.1+cu121"
+      },
+      "history_contract": "Actual causal robot RGB, native saved-frame rate; paired cameras, chronological timestamps. Per-camera frame native vision features mean-pooled; explicit time/camera encoding; history vision branch no-grad; exact per-frame feature cache only for M3/M4 whose entire vision encoder remains frozen; M5/M6 recompute each step. Capacity compression pools adjacent encoded tokens without dropping source images.",
+      "history_mode": "dense",
+      "history_seconds": 4.0,
+      "init_checkpoint": null,
+      "initialization": "Pinned fresh base; isolated row29 copied from pretrained domain3 or freshly reset, as explicitly configured. No old fine-tuned weights unless init_checkpoint is declared.",
+      "joint_updates": 1000,
+      "microbatch": 1,
+      "minimum_updates_for_full_balanced_epoch": 256,
+      "padding": "Remove invalid tokens before native attention/noise. Select semantic_mask tokens before native action-space reductions. Context prefix is real evidence but not a supervised semantic action.",
+      "paper_distinction": "Explicit warmup/ramp/joint counts; smoke counts do not reproduce the1000/1000/1000paper-scale schedule.",
+      "phase": "separate_warmup_ramp_joint",
+      "physical_time_projection_features": [
+        "requested_time_s/20",
+        "requested_aligned_duration_s/20",
+        "context_prefix_s/20",
+        "annotation_held_value_times_valid",
+        "annotation_held_valid"
+      ],
+      "ramp_updates": 1000,
+      "requested_conditioning": "Training demonstration supplies requested semantic scope/instruction/duration/timestamp schedule as conditional-task labels. Inference must provide user/planner/policy requests, never future held-out labels.",
+      "resume_checkpoint": null,
+      "run_mode": "scheduled",
+      "run_name": "v2-m6",
+      "scope": "mixed",
+      "seed": 17,
+      "source_code_sha256": {
+        "scripts/m7_train.py": "c61d039d2759305c28aca0c786869c5559c8cced1c66af291d5b09f4ca665640",
+        "supervisor/adaptation/m7_catalog_data.py": "c19a4ca7b8c59e42f1ccf3342202ac723039cee70d72672b6942146196105e57",
+        "supervisor/adaptation/m7_training.py": "f48451cfaf940fb5d358a694cbc77165919734fefb8d4a658609f02cf9324e0c",
+        "supervisor/adaptation/m7_visual.py": "87b4fc931730191ecef4c9356fef7de3b04300dec19fdf5de8718d75daa3cf65"
+      },
+      "train_splits": [
+        "C_train",
+        "P_train",
+        "R_train",
+        "S_train"
+      ],
+      "training_mode": "m6_joint",
+      "true_semantic_count": 316,
+      "updates": 3000,
+      "warmup_updates": 1000
+    },
+    "candidate_rows": 632,
+    "unique_semantic_ids": 316,
+    "by_representation": {
+      "single": 232,
+      "pair": 196,
+      "triple": 168,
+      "intent": 36
+    },
+    "camera_variants": {
+      "overhead_main": 316,
+      "oblique_main": 316
+    },
+    "source_splits": {
+      "P_train": 264,
+      "R_train": 88,
+      "S_train": 264,
+      "C_train": 16
+    },
+    "anchor_horizon_seconds_minmax": [
+      0.7,
+      17.75
+    ],
+    "four_second_windows_exact": 8,
+    "native_time_violations": [],
+    "max_history_timestamp": 0.0,
+    "updates_logged": 3000,
+    "saved_run_aggregate": {
+      "seen_takes": {
+        "m7_completed_personal_0018": 376,
+        "m7_completed_personal_0019": 378,
+        "m7_completed_synthetic_001": 380,
+        "m7_completed_synthetic_002": 374,
+        "personal_demo_0001": 748,
+        "personal_demo_0002": 747,
+        "personal_demo_0003": 751,
+        "personal_demo_0005": 751,
+        "personal_demo_0007": 752,
+        "personal_demo_0009": 745,
+        "personal_demo_0012": 750,
+        "personal_demo_0013": 751,
+        "synthetic_generated_001": 749,
+        "synthetic_generated_002": 754,
+        "synthetic_generated_003": 747,
+        "synthetic_generated_004": 753,
+        "synthetic_generated_005": 749,
+        "synthetic_generated_006": 745
+      },
+      "sample_draws": 12000,
+      "all_camera_candidates_visited_by_total_step": true,
+      "unique_semantic_samples_seen": 316,
+      "updates_completed": 3000
+    },
+    "per_update_sample_ids_present": false,
+    "audit_limit": "Aggregate counts recorded by the original run, not independently reconstructable per-update sample order because loss rows omit sample IDs. Prepared balanced schedule/source inspected separately."
+  },
+  "v1-m6": {
+    "training_report_path": "/var/tmp/typhon-ost-sweep-20261012/archived-training-metadata/2wna7xnq3gk5ak/results/personal-m7-training-20261009/expert-pair-20261009/runs/v1-m6/training_report.json",
+    "saved_run_aggregate": {
+      "all_camera_candidates_visited_by_total_step": true,
+      "candidate_count": 2014,
+      "sample_draws": 12000,
+      "seen_takes": {
+        "m7_completed_personal_0018": 671,
+        "m7_completed_personal_0019": 661,
+        "m7_completed_synthetic_001": 665,
+        "m7_completed_synthetic_002": 661,
+        "personal_demo_0001": 668,
+        "personal_demo_0002": 665,
+        "personal_demo_0003": 671,
+        "personal_demo_0005": 658,
+        "personal_demo_0007": 667,
+        "personal_demo_0009": 667,
+        "personal_demo_0012": 669,
+        "personal_demo_0013": 662,
+        "synthetic_generated_001": 668,
+        "synthetic_generated_002": 669,
+        "synthetic_generated_003": 678,
+        "synthetic_generated_004": 662,
+        "synthetic_generated_005": 669,
+        "synthetic_generated_006": 669
+      },
+      "unique_semantic_samples_seen": 1007,
+      "updates_completed": 3000
+    },
+    "config": {
+      "all_declared_training_takes": [
+        "m7_completed_personal_0018",
+        "m7_completed_personal_0019",
+        "m7_completed_synthetic_001",
+        "m7_completed_synthetic_002",
+        "personal_demo_0001",
+        "personal_demo_0002",
+        "personal_demo_0003",
+        "personal_demo_0005",
+        "personal_demo_0007",
+        "personal_demo_0009",
+        "personal_demo_0012",
+        "personal_demo_0013",
+        "synthetic_generated_001",
+        "synthetic_generated_002",
+        "synthetic_generated_003",
+        "synthetic_generated_004",
+        "synthetic_generated_005",
+        "synthetic_generated_006"
+      ],
+      "annotation_conditioning": {
+        "enabled": false,
+        "experiment": "explicit privileged annotation-conditioned training, not image-only deployed capability",
+        "held_sidecar": "held_value*valid and validity, UNKNOWN remains0/false; no grasp action label is invented",
+        "runtime_available": false,
+        "source": "causal_simulator_oracle_annotation"
+      },
+      "annotation_missing_examples": 190,
+      "annotations_sha256": "7022dad17dda28b8e2dfc90f17ba3aa01d9ba678478a8d5a9eb9bcbaeee5984d",
+      "balanced_epoch_draws": 3780,
+      "balanced_group_quota": 105,
+      "base": "2toINF/X-VLA-Pt",
+      "base_config_sha256": "b267fac2e018e979088a65b11c62808c2549b9311ffa21db7c863e10af81d914",
+      "base_revision": "c1c4a64a7e03ac5b95c468bf1578f3d03651b53b",
+      "base_weights_sha256": "433acffc992f457b1737d35ae20f81a895521f38eadaf03c736b6c0b0af1c93e",
+      "candidate_count": 2014,
+      "catalog_input_hashes": {
+        "candidate_manifest": "683acde2694125d3989d26fb07c10e8f38b15dffffce5fe5f1a48ec419ef3684",
+        "source_snapshot": "ee4f3959456afc2c1a3f5e025be5abbe3fb657fda8881496d6856dae207c39f9"
+      },
+      "condition": "raw",
+      "data_exclusions": "Frozen validation/test/failed/excluded source takes excluded. Only declared training catalog rows participate, including explicit R/S/C training assignments. Geometric parity replays are not extra diversity.",
+      "deadline_utc": "2099-01-01T00:00:00Z",
+      "decoding": "Timestamped waypoints only. No consecutive20Hz replay of sparse anchors; timed controller remains outside this smoke.",
+      "domain_id": 29,
+      "domain_init": "pretrained_domain3",
+      "effective_batch": 4,
+      "environment": {
+        "compiled_architectures": [
+          "sm_50",
+          "sm_60",
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90"
+        ],
+        "cuda": "12.1",
+        "gpu": "NVIDIA H100 80GB HBM3",
+        "packages": {
+          "numpy": "1.26.3",
+          "opencv-python-headless": "4.11.0.86",
+          "safetensors": "0.4.5",
+          "transformers": "4.51.3"
+        },
+        "python": "3.11.10 (main, Sep  7 2024, 18:35:41) [GCC 11.4.0]",
+        "torch": "2.5.1+cu121"
+      },
+      "history_contract": "Actual causal robot RGB, native saved-frame rate; paired cameras, chronological timestamps. Per-camera frame native vision features mean-pooled; explicit time/camera encoding; history vision branch no-grad; exact per-frame feature cache only for M3/M4 whose entire vision encoder remains frozen; M5/M6 recompute each step. Capacity compression pools adjacent encoded tokens without dropping source images.",
+      "history_mode": "dense",
+      "history_seconds": 4.0,
+      "init_checkpoint": null,
+      "initialization": "Pinned fresh base; isolated row29 copied from pretrained domain3 or freshly reset, as explicitly configured. No old fine-tuned weights unless init_checkpoint is declared.",
+      "joint_updates": 1000,
+      "microbatch": 1,
+      "minimum_updates_for_full_balanced_epoch": 945,
+      "padding": "Remove invalid tokens before native attention/noise. Select semantic_mask tokens before native action-space reductions. Context prefix is real evidence but not a supervised semantic action.",
+      "paper_distinction": "Explicit warmup/ramp/joint counts; smoke counts do not reproduce the1000/1000/1000paper-scale schedule.",
+      "phase": "separate_warmup_ramp_joint",
+      "physical_time_projection_features": [
+        "requested_time_s/20",
+        "requested_aligned_duration_s/20",
+        "context_prefix_s/20",
+        "annotation_held_value_times_valid",
+        "annotation_held_valid"
+      ],
+      "ramp_updates": 1000,
+      "requested_conditioning": "Training demonstration supplies requested semantic scope/instruction/duration/timestamp schedule as conditional-task labels. Inference must provide user/planner/policy requests, never future held-out labels.",
+      "resume_checkpoint": null,
+      "run_mode": "scheduled",
+      "run_name": "v1-m6",
+      "scope": "mixed",
+      "seed": 17,
+      "source_code_sha256": {
+        "scripts/m7_train.py": "dcbbae87c0dfb01f4ab7dad67d320c360be725a46a97ccbc033c42926d6794ab",
+        "supervisor/adaptation/m7_catalog_data.py": "c19a4ca7b8c59e42f1ccf3342202ac723039cee70d72672b6942146196105e57",
+        "supervisor/adaptation/m7_training.py": "f48451cfaf940fb5d358a694cbc77165919734fefb8d4a658609f02cf9324e0c",
+        "supervisor/adaptation/m7_visual.py": "87b4fc931730191ecef4c9356fef7de3b04300dec19fdf5de8718d75daa3cf65"
+      },
+      "train_splits": [
+        "C_train",
+        "P_train",
+        "R_train",
+        "S_train"
+      ],
+      "training_mode": "m6_joint",
+      "true_semantic_count": 1007,
+      "updates": 3000,
+      "warmup_updates": 1000
+    }
+  },
+  "v3-m6": {
+    "checkpoint_sha256": "af87b969d15f646d2d5ba497369e473e06cbd4c7f13b3591934c5910e842b1ed",
+    "config": {
+      "run_name": "v3-m6",
+      "history_mode": "sparse",
+      "history_seconds": 4.0,
+      "history_contract": "Actual causal robot RGB, native saved-frame rate; paired cameras, chronological timestamps. Per-camera frame native vision features mean-pooled; explicit time/camera encoding; history vision branch no-grad; exact per-frame feature cache only for M3/M4 whose entire vision encoder remains frozen; M5/M6 recompute each step. Capacity compression pools adjacent encoded tokens without dropping source images.",
+      "training_mode": "m6_joint",
+      "train_splits": [
+        "C_train",
+        "P_train",
+        "R_train",
+        "S_train"
+      ],
+      "condition": "crosshair",
+      "scope": "mixed",
+      "seed": 17,
+      "base": "2toINF/X-VLA-Pt",
+      "base_revision": "c1c4a64a7e03ac5b95c468bf1578f3d03651b53b",
+      "base_config_sha256": "b267fac2e018e979088a65b11c62808c2549b9311ffa21db7c863e10af81d914",
+      "base_weights_sha256": "433acffc992f457b1737d35ae20f81a895521f38eadaf03c736b6c0b0af1c93e",
+      "domain_id": 29,
+      "domain_init": "pretrained_domain3",
+      "initialization": "Pinned fresh base; isolated row29 copied from pretrained domain3 or freshly reset, as explicitly configured. No old fine-tuned weights unless init_checkpoint is declared.",
+      "phase": "separate_warmup_ramp_joint",
+      "updates": 3000,
+      "warmup_updates": 1000,
+      "ramp_updates": 1000,
+      "joint_updates": 1000,
+      "deadline_utc": "2099-01-01T00:00:00Z",
+      "run_mode": "scheduled",
+      "balanced_epoch_draws": 1664,
+      "balanced_group_quota": 13,
+      "effective_batch": 4,
+      "microbatch": 1,
+      "paper_distinction": "Explicit warmup/ramp/joint counts; smoke counts do not reproduce the1000/1000/1000paper-scale schedule.",
+      "all_declared_training_takes": [
+        "m7_completed_personal_0018",
+        "m7_completed_personal_0019",
+        "m7_completed_synthetic_001",
+        "m7_completed_synthetic_002",
+        "personal_demo_0001",
+        "personal_demo_0002",
+        "personal_demo_0003",
+        "personal_demo_0005",
+        "personal_demo_0007",
+        "personal_demo_0009",
+        "personal_demo_0012",
+        "personal_demo_0013",
+        "synthetic_generated_001",
+        "synthetic_generated_002",
+        "synthetic_generated_003",
+        "synthetic_generated_004",
+        "synthetic_generated_005",
+        "synthetic_generated_006"
+      ],
+      "minimum_updates_for_full_balanced_epoch": 416,
+      "catalog_input_hashes": {
+        "candidate_manifest": "38c89cf0e269c3591697dad6b35245da78d50dff025ccc8cf0647879dffc5e5c",
+        "source_snapshot": "ee4f3959456afc2c1a3f5e025be5abbe3fb657fda8881496d6856dae207c39f9"
+      },
+      "candidate_count": 776,
+      "true_semantic_count": 388,
+      "annotation_conditioning": {
+        "enabled": true,
+        "source": "causal_simulator_oracle_annotation",
+        "runtime_available": false,
+        "experiment": "explicit privileged annotation-conditioned training, not image-only deployed capability",
+        "held_sidecar": "held_value*valid and validity, UNKNOWN remains0/false; no grasp action label is invented"
+      },
+      "requested_conditioning": "Training demonstration supplies requested semantic scope/instruction/duration/timestamp schedule as conditional-task labels. Inference must provide user/planner/policy requests, never future held-out labels.",
+      "physical_time_projection_features": [
+        "requested_time_s/20",
+        "requested_aligned_duration_s/20",
+        "context_prefix_s/20",
+        "annotation_held_value_times_valid",
+        "annotation_held_valid"
+      ],
+      "padding": "Remove invalid tokens before native attention/noise. Select semantic_mask tokens before native action-space reductions. Context prefix is real evidence but not a supervised semantic action.",
+      "decoding": "Timestamped waypoints only. No consecutive20Hz replay of sparse anchors; timed controller remains outside this smoke.",
+      "data_exclusions": "Frozen validation/test/failed/excluded source takes excluded. Only declared training catalog rows participate, including explicit R/S/C training assignments. Geometric parity replays are not extra diversity.",
+      "source_code_sha256": {
+        "scripts/m7_train.py": "dcbbae87c0dfb01f4ab7dad67d320c360be725a46a97ccbc033c42926d6794ab",
+        "supervisor/adaptation/m7_catalog_data.py": "c19a4ca7b8c59e42f1ccf3342202ac723039cee70d72672b6942146196105e57",
+        "supervisor/adaptation/m7_visual.py": "87b4fc931730191ecef4c9356fef7de3b04300dec19fdf5de8718d75daa3cf65",
+        "supervisor/adaptation/m7_training.py": "f48451cfaf940fb5d358a694cbc77165919734fefb8d4a658609f02cf9324e0c"
+      },
+      "annotations_sha256": "7022dad17dda28b8e2dfc90f17ba3aa01d9ba678478a8d5a9eb9bcbaeee5984d",
+      "annotation_missing_examples": 176,
+      "init_checkpoint": null,
+      "resume_checkpoint": null,
+      "environment": {
+        "python": "3.11.10 (main, Sep  7 2024, 18:35:41) [GCC 11.4.0]",
+        "torch": "2.5.1+cu121",
+        "cuda": "12.1",
+        "gpu": "NVIDIA H100 80GB HBM3",
+        "compiled_architectures": [
+          "sm_50",
+          "sm_60",
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90"
+        ],
+        "packages": {
+          "transformers": "4.51.3",
+          "numpy": "1.26.3",
+          "opencv-python-headless": "4.11.0.86",
+          "safetensors": "0.4.5"
+        }
+      }
+    },
+    "limitation": "Config and tensor header verified; per-update sampling log/report not present in online evidence audited today. Do not invent coverage counts."
+  },
+  "v4-m6": {
+    "checkpoint_sha256": "c884e5052bc2734c1edf7d33498497cb26b27d88db1b32e3289fc46ea2e453dc",
+    "config": {
+      "run_name": "v4-m6",
+      "history_mode": "sparse",
+      "history_seconds": 4.0,
+      "history_contract": "Actual causal robot RGB, native saved-frame rate; paired cameras, chronological timestamps. Per-camera frame native vision features mean-pooled; explicit time/camera encoding; history vision branch no-grad; exact per-frame feature cache only for M3/M4 whose entire vision encoder remains frozen; M5/M6 recompute each step. Capacity compression pools adjacent encoded tokens without dropping source images.",
+      "training_mode": "m6_joint",
+      "train_splits": [
+        "C_train",
+        "P_train",
+        "R_train",
+        "S_train"
+      ],
+      "condition": "crosshair",
+      "scope": "mixed",
+      "seed": 17,
+      "base": "2toINF/X-VLA-Pt",
+      "base_revision": "c1c4a64a7e03ac5b95c468bf1578f3d03651b53b",
+      "base_config_sha256": "b267fac2e018e979088a65b11c62808c2549b9311ffa21db7c863e10af81d914",
+      "base_weights_sha256": "433acffc992f457b1737d35ae20f81a895521f38eadaf03c736b6c0b0af1c93e",
+      "domain_id": 29,
+      "domain_init": "pretrained_domain3",
+      "initialization": "Pinned fresh base; isolated row29 copied from pretrained domain3 or freshly reset, as explicitly configured. No old fine-tuned weights unless init_checkpoint is declared.",
+      "phase": "separate_warmup_ramp_joint",
+      "updates": 500,
+      "warmup_updates": 0,
+      "ramp_updates": 0,
+      "joint_updates": 500,
+      "deadline_utc": "2099-01-01T00:00:00Z",
+      "run_mode": "scheduled",
+      "balanced_epoch_draws": 1976,
+      "balanced_group_quota": 13,
+      "effective_batch": 4,
+      "microbatch": 1,
+      "paper_distinction": "Explicit warmup/ramp/joint counts; smoke counts do not reproduce the1000/1000/1000paper-scale schedule.",
+      "all_declared_training_takes": [
+        "m7_completed_personal_0018",
+        "m7_completed_personal_0019",
+        "m7_completed_synthetic_001",
+        "m7_completed_synthetic_002",
+        "m7_recovery_M6_personal_demo_0007_02",
+        "m7_recovery_M6_personal_demo_0012_01",
+        "m7_recovery_M6_synthetic_generated_003_05",
+        "personal_demo_0001",
+        "personal_demo_0002",
+        "personal_demo_0003",
+        "personal_demo_0005",
+        "personal_demo_0007",
+        "personal_demo_0009",
+        "personal_demo_0012",
+        "personal_demo_0013",
+        "synthetic_generated_001",
+        "synthetic_generated_002",
+        "synthetic_generated_003",
+        "synthetic_generated_004",
+        "synthetic_generated_005",
+        "synthetic_generated_006"
+      ],
+      "minimum_updates_for_full_balanced_epoch": 494,
+      "catalog_input_hashes": {
+        "candidate_manifest": "5a550a6ba5026ad11bb83e5fb041aab8003db9832a131cd57c1c8963162361a4",
+        "source_snapshot": "0fd2726d05079f24fbb54f85c2cedd89c0f27663cf481429aaf970284d7ba414"
+      },
+      "candidate_count": 918,
+      "true_semantic_count": 459,
+      "annotation_conditioning": {
+        "enabled": true,
+        "source": "causal_simulator_oracle_annotation",
+        "runtime_available": false,
+        "experiment": "explicit privileged annotation-conditioned training, not image-only deployed capability",
+        "held_sidecar": "held_value*valid and validity, UNKNOWN remains0/false; no grasp action label is invented"
+      },
+      "requested_conditioning": "Training demonstration supplies requested semantic scope/instruction/duration/timestamp schedule as conditional-task labels. Inference must provide user/planner/policy requests, never future held-out labels.",
+      "physical_time_projection_features": [
+        "requested_time_s/20",
+        "requested_aligned_duration_s/20",
+        "context_prefix_s/20",
+        "annotation_held_value_times_valid",
+        "annotation_held_valid"
+      ],
+      "padding": "Remove invalid tokens before native attention/noise. Select semantic_mask tokens before native action-space reductions. Context prefix is real evidence but not a supervised semantic action.",
+      "decoding": "Timestamped waypoints only. No consecutive20Hz replay of sparse anchors; timed controller remains outside this smoke.",
+      "data_exclusions": "Frozen validation/test/failed/excluded source takes excluded. Only declared training catalog rows participate, including explicit R/S/C training assignments. Geometric parity replays are not extra diversity.",
+      "source_code_sha256": {
+        "scripts/m7_train.py": "dcbbae87c0dfb01f4ab7dad67d320c360be725a46a97ccbc033c42926d6794ab",
+        "supervisor/adaptation/m7_catalog_data.py": "c19a4ca7b8c59e42f1ccf3342202ac723039cee70d72672b6942146196105e57",
+        "supervisor/adaptation/m7_visual.py": "87b4fc931730191ecef4c9356fef7de3b04300dec19fdf5de8718d75daa3cf65",
+        "supervisor/adaptation/m7_training.py": "f48451cfaf940fb5d358a694cbc77165919734fefb8d4a658609f02cf9324e0c"
+      },
+      "annotations_sha256": "e1c358ab1df2ae7ab380cedff5fecc0bd2f5a6f96fe3f42f8529f605817c3a54",
+      "annotation_missing_examples": 214,
+      "init_checkpoint": "/workspace/humanoid-m7/results/personal-m7-training-20261009/temporal-run3-20261009-v2/runs/v3-m6/m7-step003000.pt",
+      "resume_checkpoint": null,
+      "environment": {
+        "python": "3.11.10 (main, Sep  7 2024, 18:35:41) [GCC 11.4.0]",
+        "torch": "2.5.1+cu121",
+        "cuda": "12.1",
+        "gpu": "NVIDIA H100 80GB HBM3",
+        "compiled_architectures": [
+          "sm_50",
+          "sm_60",
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90"
+        ],
+        "packages": {
+          "transformers": "4.51.3",
+          "numpy": "1.26.3",
+          "opencv-python-headless": "4.11.0.86",
+          "safetensors": "0.4.5"
+        }
+      }
+    },
+    "limitation": "Config and tensor header verified; per-update sampling log/report not present in online evidence audited today. Do not invent coverage counts."
+  }
+}

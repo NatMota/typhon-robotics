@@ -1,0 +1,59 @@
+{
+  "schema": "data07-existing-evidence-review-v1",
+  "created_utc": "2026-10-13T03:54:24.199933+00:00",
+  "ledger_rows": 38,
+  "dispositions": {
+    "verified existing training material": 22,
+    "failed execution": 1,
+    "missing evidence": 3,
+    "development quarantine": 12
+  },
+  "original_catalog_episodes": 18,
+  "catalog_current_npz_hash_matches": 18,
+  "broad_six_are_subset": true,
+  "broad_overlap_count": 6,
+  "later_admitted_corrections": 4,
+  "later_source_families": [
+    "demo_0003",
+    "demo_0005"
+  ],
+  "later_correction_exposure": {
+    "updates": 3000,
+    "steps_contiguous": true,
+    "draws": 12000,
+    "actual_draws_by_episode": {
+      "personal_demo_0012-goal0": 2000,
+      "personal_demo_0013-goal0": 2000,
+      "personal_demo_0001-goal0": 2000,
+      "correction-0005-final_failed": 628,
+      "personal_demo_0003-goal0": 1000,
+      "personal_demo_0002-goal0": 2000,
+      "correction-missed0003-7417": 505,
+      "personal_demo_0005-goal0": 1000,
+      "correction-missed0003-7418": 495,
+      "correction-0005-last_supported": 372
+    },
+    "logged_ids_equal_saved_plan": true,
+    "unique_sample_ids_seen": 660,
+    "available_windows": 660,
+    "losses_finite": true
+  },
+  "original_v4_extra_episodes": 3,
+  "original_v4_arrays_currently_verified": 0,
+  "curated_human_take_rows": 16,
+  "excluded_human_take_rows": 1,
+  "human_take_rows": 17,
+  "human_take_count_not_added_to_generated_count": true,
+  "later_vs_original_V4_distinct": true,
+  "later_saved_quarantined_evaluation": {
+    "successes": 0,
+    "episodes": 4,
+    "note": "Existing later model evaluation, not a V4 rerun"
+  },
+  "training_or_split_changes": false,
+  "new_training": false,
+  "new_physics": false,
+  "fresh_hash_mismatches": [],
+  "missing_current_files": [],
+  "pending_original_V4_evidence": "Three original source NPZs, recovery qualification/manifest, and actual per-episode exposure."
+}

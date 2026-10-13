@@ -1,0 +1,47 @@
+{
+  "created_before_training": 1791796316.7419944,
+  "base": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/research-checkpoints/broad-pt-20261011/step12000.pt",
+  "base_sha256": "59eb9e502c057d639e278e7f84d06c8fa8e3e513e52522dae47089a97b5c3736",
+  "initialization": "same full broad-Pt12k, fresh optimizer, local3000 joint continuation updates",
+  "variants": [
+    "recovery"
+  ],
+  "steps": 3000,
+  "batch": 4,
+  "seed": 121221,
+  "checkpoints": [
+    3000
+  ],
+  "learning_rates": "same existing m6_joint full-joint peak values, constant; inactive domain rows frozen",
+  "sampling": "same 12-cell shuffled schedule as goal control; 2000/source; source0003/0005 each1000 nominal+1000 correction exposures, other four2000 nominal; windows shuffled within cells",
+  "training_sources": [
+    "personal_demo_0001-goal0",
+    "personal_demo_0002-goal0",
+    "personal_demo_0003-goal0",
+    "personal_demo_0005-goal0",
+    "personal_demo_0012-goal0",
+    "personal_demo_0013-goal0",
+    "correction-0005-last_supported",
+    "correction-0005-final_failed",
+    "correction-missed0003-7417",
+    "correction-missed0003-7418"
+  ],
+  "combination_holdouts": [],
+  "evaluation": "same original-source and new goal/loading panel as fixed control; plus six quarantined old failure states, with reset policy history at identical physical handoff. No training from those old diagnostic states.",
+  "strict_qualified_teacher_count": 18,
+  "model_selection": "final update only, no choice by held-out outcome",
+  "data_hash": "fdb11f77b650cbea81f2f8a7a9a701b380a4321c237afad4f44a18f86d112369",
+  "source_hash": "c557eca04a0580c79489844742c9b97b3ab0c66e2c752cccac73cd367fca7a64",
+  "description": "One offline DAgger-style aggregation iteration: generated corrections from fixed learner failures. Four admitted correction trajectories from two source families. No online expert at evaluation; not RL.",
+  "excluded": [
+    {
+      "id": "0001-last_supported",
+      "reason": "joint_or_action_contract_failed",
+      "margin_rad": -0.00042943721464805407,
+      "max_roundtrip": 5.9036535748902e-07
+    }
+  ],
+  "duplicates": [
+    "0001-final_failed"
+  ]
+}

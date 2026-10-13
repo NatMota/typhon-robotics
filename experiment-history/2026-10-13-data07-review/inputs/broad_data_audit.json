@@ -1,0 +1,225 @@
+{
+  "created_utc": "2026-10-11T07:36:00.067739+00:00",
+  "manifest_sha256": "73e10d64e77603b9cc9879a40256aa09dd6e462db3cfbae7983ca22f3dd66bb7",
+  "train": [
+    {
+      "episode": {
+        "id": "personal_demo_0001",
+        "source_demo_id": "demo_0001",
+        "split": "P_train",
+        "category": "normal_feeding",
+        "actions": 446,
+        "frames": 112,
+        "path": "personal_demo_0001.npz",
+        "sha256": "7340f8a894f79b7a12133041f6e14b6419dd9cfc072b3fb51c7601599e7d2ac1",
+        "source_action_sha256": "2eedbf82db3fa402cee6b9334c6c8a9d9e5b847c66af31e46e002551993cf305",
+        "source_episode_sha256": "578b42ea823253311ccf35b56bfb9c4e56cd4caa7a16bccab6f20e42608936e2",
+        "proprio": "measured EE on first window; previous commanded absolute target thereafter, matching M2 action-history interface",
+        "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions"
+      },
+      "windows": 105,
+      "close_command_index": 158,
+      "open_command_index": 344,
+      "phase_proxy_counts": {
+        "pre_close": 40,
+        "close_transition_overlap": 7,
+        "commanded_closed": 46,
+        "release_transition_overlap": 8,
+        "post_open": 19
+      },
+      "all_complete_observation_windows": true,
+      "last_window_covers_through_action": 446
+    },
+    {
+      "episode": {
+        "id": "personal_demo_0002",
+        "source_demo_id": "demo_0002",
+        "split": "P_train",
+        "category": "normal_feeding",
+        "actions": 303,
+        "frames": 76,
+        "path": "personal_demo_0002.npz",
+        "sha256": "41f61023fcc4d0b0e312675ac90ea0e285a8efa6baf1f9ce3866544e237a8f35",
+        "source_action_sha256": "f57d8dfa6f90e849e96f14767c78ef6c8bbac8f441590c768fa4cb909970d07a",
+        "source_episode_sha256": "95d393395c98b694395c8bbdbdf94cf69bc206afa2c1c3a90ab3a570c996308e",
+        "proprio": "measured EE on first window; previous commanded absolute target thereafter, matching M2 action-history interface",
+        "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions"
+      },
+      "windows": 69,
+      "close_command_index": 87,
+      "open_command_index": 201,
+      "phase_proxy_counts": {
+        "pre_close": 22,
+        "close_transition_overlap": 7,
+        "commanded_closed": 29,
+        "release_transition_overlap": 8,
+        "post_open": 18
+      },
+      "all_complete_observation_windows": true,
+      "last_window_covers_through_action": 302
+    },
+    {
+      "episode": {
+        "id": "personal_demo_0003",
+        "source_demo_id": "demo_0003",
+        "split": "P_train",
+        "category": "normal_feeding",
+        "actions": 303,
+        "frames": 76,
+        "path": "personal_demo_0003.npz",
+        "sha256": "66c1ccbb9e071fb6ca3e9b6dc00a93d4fc0c5b95188be8493f96de7f545fbf8d",
+        "source_action_sha256": "67e15f55d2dcbff9a8869b15dce0b681c378cf04ed256c030320ce65123ce155",
+        "source_episode_sha256": "cbb76515baf78b99dcae794b1194087ec0c534b59cf4be9c43eb78638080ccb7",
+        "proprio": "measured EE on first window; previous commanded absolute target thereafter, matching M2 action-history interface",
+        "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions"
+      },
+      "windows": 69,
+      "close_command_index": 115,
+      "open_command_index": 201,
+      "phase_proxy_counts": {
+        "pre_close": 29,
+        "close_transition_overlap": 7,
+        "commanded_closed": 22,
+        "release_transition_overlap": 8,
+        "post_open": 18
+      },
+      "all_complete_observation_windows": true,
+      "last_window_covers_through_action": 302
+    },
+    {
+      "episode": {
+        "id": "personal_demo_0005",
+        "source_demo_id": "demo_0005",
+        "split": "P_train",
+        "category": "normal_feeding",
+        "actions": 296,
+        "frames": 74,
+        "path": "personal_demo_0005.npz",
+        "sha256": "f15c44cff00c7c8904e20c0996064b8ca350dab09a99c3b79de8f97b7e6ad737",
+        "source_action_sha256": "be77c1c4a0d9d008382dc3b133e540a6b0c3b9de0c27969ae9feaeba0c3d9081",
+        "source_episode_sha256": "53d0ba137e3e8fb2c7923b50e56a1b27c9469f95108764e476708b4ff85de6bd",
+        "proprio": "measured EE on first window; previous commanded absolute target thereafter, matching M2 action-history interface",
+        "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions"
+      },
+      "windows": 67,
+      "close_command_index": 91,
+      "open_command_index": 194,
+      "phase_proxy_counts": {
+        "pre_close": 23,
+        "close_transition_overlap": 7,
+        "commanded_closed": 26,
+        "release_transition_overlap": 7,
+        "post_open": 18
+      },
+      "all_complete_observation_windows": true,
+      "last_window_covers_through_action": 294
+    },
+    {
+      "episode": {
+        "id": "personal_demo_0012",
+        "source_demo_id": "demo_0012",
+        "split": "P_train",
+        "category": "awkward_pause_resume_feeding",
+        "actions": 278,
+        "frames": 70,
+        "path": "personal_demo_0012.npz",
+        "sha256": "01bac6d5f076f699595fb933bd15038437d838039d8002c2904a2275cd206c45",
+        "source_action_sha256": "3b565e4835504b8a9dcd1d75de7eb6ec92034e62079ff577beafe3bac1d2243c",
+        "source_episode_sha256": "ed00ef1f0b01f9d99db8e8f8667b249279a9e6c739e238c352d4d0f527d34281",
+        "proprio": "measured EE on first window; previous commanded absolute target thereafter, matching M2 action-history interface",
+        "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions"
+      },
+      "windows": 63,
+      "close_command_index": 83,
+      "open_command_index": 176,
+      "phase_proxy_counts": {
+        "pre_close": 21,
+        "close_transition_overlap": 7,
+        "commanded_closed": 23,
+        "release_transition_overlap": 8,
+        "post_open": 19
+      },
+      "all_complete_observation_windows": true,
+      "last_window_covers_through_action": 278
+    },
+    {
+      "episode": {
+        "id": "personal_demo_0013",
+        "source_demo_id": "demo_0013",
+        "split": "P_train",
+        "category": "awkward_pause_resume_feeding",
+        "actions": 292,
+        "frames": 73,
+        "path": "personal_demo_0013.npz",
+        "sha256": "ebda32e8b5ac9b9c0baefcdac4996c9cd09a4c541b46a0a12078b0948107681a",
+        "source_action_sha256": "2df333cbd3f9586b98bcefce8d3f18cd64c425fd5445c19b1a9c2a86ecae8f4a",
+        "source_episode_sha256": "1de6da90fb3f896ce11219c277799b821e4260cb8aba5c5f584ddc2afe0db7d4",
+        "proprio": "measured EE on first window; previous commanded absolute target thereafter, matching M2 action-history interface",
+        "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions"
+      },
+      "windows": 66,
+      "close_command_index": 93,
+      "open_command_index": 190,
+      "phase_proxy_counts": {
+        "pre_close": 24,
+        "close_transition_overlap": 8,
+        "commanded_closed": 24,
+        "release_transition_overlap": 7,
+        "post_open": 18
+      },
+      "all_complete_observation_windows": true,
+      "last_window_covers_through_action": 290
+    }
+  ],
+  "holdouts": [
+    {
+      "id": "personal_demo_0006",
+      "source_demo_id": "demo_0006",
+      "split": "P_validation",
+      "sha256": "a2e096a18d13594b5df653b49871876bf3d940335cb44f716c668abf46d2e1f6",
+      "category": "normal_feeding"
+    },
+    {
+      "id": "personal_demo_0014",
+      "source_demo_id": "demo_0014",
+      "split": "P_validation",
+      "sha256": "b3f45b4d7413b6b90ea43d82338ae53b95923122cef9b1e1aeb57abbb83e8f56",
+      "category": "awkward_pause_resume_feeding"
+    },
+    {
+      "id": "personal_demo_0016",
+      "source_demo_id": "demo_0016",
+      "split": "P_validation",
+      "sha256": "bd6395cce9c022c09bcc298f1271c0190924a3c99e4a1dbff74b101f109f7072",
+      "category": "normal_feeding"
+    }
+  ],
+  "input_hashes": {
+    "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/frozen_results/personal-m3-20261009/data-canonical/dataset.json": "73e10d64e77603b9cc9879a40256aa09dd6e462db3cfbae7983ca22f3dd66bb7",
+    "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/frozen_results/personal-m3-20261009/data-canonical/personal_demo_0001.npz": "7340f8a894f79b7a12133041f6e14b6419dd9cfc072b3fb51c7601599e7d2ac1",
+    "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/frozen_results/personal-m3-20261009/data-canonical/personal_demo_0002.npz": "41f61023fcc4d0b0e312675ac90ea0e285a8efa6baf1f9ce3866544e237a8f35",
+    "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/frozen_results/personal-m3-20261009/data-canonical/personal_demo_0003.npz": "66c1ccbb9e071fb6ca3e9b6dc00a93d4fc0c5b95188be8493f96de7f545fbf8d",
+    "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/frozen_results/personal-m3-20261009/data-canonical/personal_demo_0005.npz": "f15c44cff00c7c8904e20c0996064b8ca350dab09a99c3b79de8f97b7e6ad737",
+    "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/frozen_results/personal-m3-20261009/data-canonical/personal_demo_0012.npz": "01bac6d5f076f699595fb933bd15038437d838039d8002c2904a2275cd206c45",
+    "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/frozen_results/personal-m3-20261009/data-canonical/personal_demo_0013.npz": "ebda32e8b5ac9b9c0baefcdac4996c9cd09a4c541b46a0a12078b0948107681a",
+    "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/frozen_results/personal-m3-20261009/data-canonical/personal_demo_0006.npz": "a2e096a18d13594b5df653b49871876bf3d940335cb44f716c668abf46d2e1f6",
+    "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/frozen_results/personal-m3-20261009/data-canonical/personal_demo_0014.npz": "b3f45b4d7413b6b90ea43d82338ae53b95923122cef9b1e1aeb57abbb83e8f56",
+    "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/frozen_results/personal-m3-20261009/data-canonical/personal_demo_0016.npz": "bd6395cce9c022c09bcc298f1271c0190924a3c99e4a1dbff74b101f109f7072"
+  },
+  "holdout_derived_siblings": "Whole source-demo grouping. Only exact six canonical P_train NPZs allowed. No augmented/synthetic/recovery siblings are ingested.",
+  "total_windows": 439,
+  "total_independent_takes": 6,
+  "sample_count": 48000,
+  "samples_per_take": {
+    "personal_demo_0002": 8000,
+    "personal_demo_0001": 8000,
+    "personal_demo_0012": 8000,
+    "personal_demo_0003": 8000,
+    "personal_demo_0013": 8000,
+    "personal_demo_0005": 8000
+  },
+  "phase_proxy_limitation": "Commanded gripper transitions are verified; these labels do not claim measured grasp/lift or human phase annotations. Entire complete-window corpus includes approach through release/retreat, with no artificial terminal padding.",
+  "data_origin": "Simulator RGB and generated expert Panda absolute actions for scenarios configured from personally recorded object endpoints. Not frame-aligned phone-video supervision.",
+  "base_revision": "c1c4a64a7e03ac5b95c468bf1578f3d03651b53b",
+  "base_weight_sha256": "433acffc992f457b1737d35ae20f81a895521f38eadaf03c736b6c0b0af1c93e"
+}

@@ -1,0 +1,842 @@
+[
+  {
+    "id": "demo_0001",
+    "unit": "human_take",
+    "category": "normal_feeding",
+    "disposition": "observation-only",
+    "robot_action_labels_from_video": false,
+    "generated_scenario_descendants": [
+      "personal_demo_0001",
+      "rejected-0001-last_supported"
+    ],
+    "annotation_provenance": "agent_visual_review_with_separate_specific_human_examples",
+    "sync_uncertainty_s": 0.25,
+    "boundary_uncertainty_s": 0.5,
+    "known_limitation": "No calibrated causal human-to-robot action alignment or per-frame grasp labels; static takes provide preserve-goal evidence, not human no-op robot commands.",
+    "original_sources": {
+      "camera_a": {
+        "recording_id": "recording_0005",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+        "raw_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+        "canonical_transform": "rotate_90_degrees_counterclockwise",
+        "reviewed_source_times_s": [
+          0.0,
+          2.121611,
+          4.254444,
+          6.387267,
+          8.486778,
+          10.619611,
+          12.752444
+        ]
+      },
+      "camera_b": {
+        "recording_id": "recording_0001",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+        "raw_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+        "canonical_transform": "none",
+        "reviewed_source_times_s": [
+          4.566667,
+          6.7,
+          8.833333,
+          10.966667,
+          13.066667,
+          15.198333,
+          17.331667
+        ]
+      }
+    },
+    "metadata_source": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0001/metadata.json",
+    "existing_split": "P_train",
+    "canonical_exclusion_reason": null,
+    "existing_train_eligibility": true
+  },
+  {
+    "id": "demo_0002",
+    "unit": "human_take",
+    "category": "normal_feeding",
+    "disposition": "observation-only",
+    "robot_action_labels_from_video": false,
+    "generated_scenario_descendants": [
+      "personal_demo_0002",
+      "diagnostic-missed_grasp/nominal_expert",
+      "diagnostic-missed_grasp/grasp_transform_expert"
+    ],
+    "annotation_provenance": "agent_visual_review_with_separate_specific_human_examples",
+    "sync_uncertainty_s": 0.25,
+    "boundary_uncertainty_s": 0.5,
+    "known_limitation": "No calibrated causal human-to-robot action alignment or per-frame grasp labels; static takes provide preserve-goal evidence, not human no-op robot commands.",
+    "original_sources": {
+      "camera_a": {
+        "recording_id": "recording_0005",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+        "raw_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+        "canonical_transform": "rotate_90_degrees_counterclockwise",
+        "reviewed_source_times_s": [
+          20.850533,
+          22.216889,
+          23.616556,
+          25.016222,
+          26.382567,
+          27.782244,
+          29.148589
+        ]
+      },
+      "camera_b": {
+        "recording_id": "recording_0001",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+        "raw_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+        "canonical_transform": "none",
+        "reviewed_source_times_s": [
+          25.431667,
+          26.798333,
+          28.198333,
+          29.565,
+          30.965,
+          32.331667,
+          33.731667
+        ]
+      }
+    },
+    "metadata_source": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0002/metadata.json",
+    "existing_split": "P_train",
+    "canonical_exclusion_reason": null,
+    "existing_train_eligibility": true
+  },
+  {
+    "id": "demo_0003",
+    "unit": "human_take",
+    "category": "normal_feeding",
+    "disposition": "observation-only",
+    "robot_action_labels_from_video": false,
+    "generated_scenario_descendants": [
+      "personal_demo_0003",
+      "correction-missed0003-7417",
+      "correction-missed0003-7418",
+      "diagnostic-otherfamily_held/nominal_expert",
+      "diagnostic-otherfamily_held/grasp_transform_expert"
+    ],
+    "annotation_provenance": "agent_visual_review_with_separate_specific_human_examples",
+    "sync_uncertainty_s": 0.25,
+    "boundary_uncertainty_s": 0.5,
+    "known_limitation": "No calibrated causal human-to-robot action alignment or per-frame grasp labels; static takes provide preserve-goal evidence, not human no-op robot commands.",
+    "original_sources": {
+      "camera_a": {
+        "recording_id": "recording_0005",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+        "raw_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+        "canonical_transform": "rotate_90_degrees_counterclockwise",
+        "reviewed_source_times_s": [
+          40.079356,
+          41.345722,
+          42.612089,
+          43.878456,
+          45.144833,
+          46.4112,
+          47.677567
+        ]
+      },
+      "camera_b": {
+        "recording_id": "recording_0001",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+        "raw_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+        "canonical_transform": "none",
+        "reviewed_source_times_s": [
+          44.663333,
+          45.93,
+          47.196667,
+          48.463333,
+          49.73,
+          50.996667,
+          52.263333
+        ]
+      }
+    },
+    "metadata_source": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0003/metadata.json",
+    "existing_split": "P_train",
+    "canonical_exclusion_reason": null,
+    "existing_train_eligibility": true
+  },
+  {
+    "id": "demo_0004",
+    "unit": "human_take",
+    "category": "normal_feeding",
+    "disposition": "observation-only",
+    "robot_action_labels_from_video": false,
+    "generated_scenario_descendants": [],
+    "annotation_provenance": "agent_visual_review_with_separate_specific_human_examples",
+    "sync_uncertainty_s": 0.25,
+    "boundary_uncertainty_s": 0.5,
+    "known_limitation": "No calibrated causal human-to-robot action alignment or per-frame grasp labels; static takes provide preserve-goal evidence, not human no-op robot commands.",
+    "original_sources": {
+      "camera_a": {
+        "recording_id": "recording_0005",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+        "raw_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+        "canonical_transform": "rotate_90_degrees_counterclockwise",
+        "reviewed_source_times_s": [
+          55.609033,
+          56.942056,
+          58.275078,
+          59.641422,
+          60.974444,
+          62.307456,
+          63.673811
+        ]
+      },
+      "camera_b": {
+        "recording_id": "recording_0001",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+        "raw_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+        "canonical_transform": "none",
+        "reviewed_source_times_s": [
+          60.163333,
+          61.53,
+          62.863333,
+          64.196667,
+          65.563333,
+          66.896667,
+          68.23
+        ]
+      }
+    },
+    "metadata_source": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0004/metadata.json",
+    "existing_split": "excluded_motor_training",
+    "canonical_exclusion_reason": "M15 unreconstructable initial orientation",
+    "existing_train_eligibility": false
+  },
+  {
+    "id": "demo_0005",
+    "unit": "human_take",
+    "category": "normal_feeding",
+    "disposition": "observation-only",
+    "robot_action_labels_from_video": false,
+    "generated_scenario_descendants": [
+      "personal_demo_0005",
+      "correction-0005-last_supported",
+      "correction-0005-final_failed"
+    ],
+    "annotation_provenance": "agent_visual_review_with_separate_specific_human_examples",
+    "sync_uncertainty_s": 0.25,
+    "boundary_uncertainty_s": 0.5,
+    "known_limitation": "No calibrated causal human-to-robot action alignment or per-frame grasp labels; static takes provide preserve-goal evidence, not human no-op robot commands.",
+    "original_sources": {
+      "camera_a": {
+        "recording_id": "recording_0005",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+        "raw_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+        "canonical_transform": "rotate_90_degrees_counterclockwise",
+        "reviewed_source_times_s": [
+          69.472444,
+          70.772133,
+          72.071833,
+          73.371522,
+          74.671222,
+          75.970911,
+          77.303933
+        ]
+      },
+      "camera_b": {
+        "recording_id": "recording_0001",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+        "raw_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+        "canonical_transform": "none",
+        "reviewed_source_times_s": [
+          74.061667,
+          75.361667,
+          76.661667,
+          77.961667,
+          79.261667,
+          80.561667,
+          81.861667
+        ]
+      }
+    },
+    "metadata_source": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0005/metadata.json",
+    "existing_split": "P_train",
+    "canonical_exclusion_reason": null,
+    "existing_train_eligibility": true
+  },
+  {
+    "id": "demo_0006",
+    "unit": "human_take",
+    "category": "normal_feeding",
+    "disposition": "observation-only",
+    "robot_action_labels_from_video": false,
+    "generated_scenario_descendants": [
+      "diagnostic-offaxis_held/nominal_expert",
+      "diagnostic-offaxis_held/grasp_transform_expert",
+      "diagnostic-sideface_held/nominal_expert",
+      "diagnostic-sideface_held/grasp_transform_expert",
+      "diagnostic-released_wrongyaw/nominal_expert",
+      "diagnostic-released_wrongyaw/grasp_transform_expert",
+      "diagnostic-released_wrongface/nominal_expert",
+      "diagnostic-released_wrongface/grasp_transform_expert"
+    ],
+    "annotation_provenance": "agent_visual_review_with_separate_specific_human_examples",
+    "sync_uncertainty_s": 0.25,
+    "boundary_uncertainty_s": 0.5,
+    "known_limitation": "No calibrated causal human-to-robot action alignment or per-frame grasp labels; static takes provide preserve-goal evidence, not human no-op robot commands.",
+    "original_sources": {
+      "camera_a": {
+        "recording_id": "recording_0005",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.50 (1).mp4",
+        "raw_sha256": "3f56c2f543084f7f5f35bf48096fe0703e79584ea9e90da5eba22ac2b7be1d7e",
+        "canonical_transform": "rotate_90_degrees_counterclockwise",
+        "reviewed_source_times_s": [
+          82.935944,
+          84.235644,
+          85.502011,
+          86.768378,
+          88.068078,
+          89.334444,
+          90.634133
+        ]
+      },
+      "camera_b": {
+        "recording_id": "recording_0001",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.16.mp4",
+        "raw_sha256": "6cfa8155d25064466b8966d7a9012b277f462073f51c225c38f27f8b22c5304e",
+        "canonical_transform": "none",
+        "reviewed_source_times_s": [
+          87.528333,
+          88.795,
+          90.095,
+          91.361667,
+          92.628333,
+          93.928333,
+          95.195
+        ]
+      }
+    },
+    "metadata_source": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0006/metadata.json",
+    "existing_split": "P_validation",
+    "canonical_exclusion_reason": null,
+    "existing_train_eligibility": false
+  },
+  {
+    "id": "demo_0007",
+    "unit": "human_take",
+    "category": "orientation_correction",
+    "disposition": "observation-only",
+    "robot_action_labels_from_video": false,
+    "generated_scenario_descendants": [
+      "personal_demo_0007",
+      "m7_recovery_M6_personal_demo_0007_02"
+    ],
+    "annotation_provenance": "agent_visual_review_with_separate_specific_human_examples",
+    "sync_uncertainty_s": 0.25,
+    "boundary_uncertainty_s": 1.0,
+    "known_limitation": "No calibrated causal human-to-robot action alignment or per-frame grasp labels; static takes provide preserve-goal evidence, not human no-op robot commands.",
+    "original_sources": {
+      "camera_a": {
+        "recording_id": "recording_0007",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.50.mp4",
+        "raw_sha256": "c387aff4b2ee77cb56ce9933ffee0e5684046513cda1cc3a1b212652a288064a",
+        "canonical_transform": "rotate_90_degrees_counterclockwise",
+        "reviewed_source_times_s": [
+          5.164422,
+          6.430789,
+          7.697167,
+          8.963533,
+          10.2299,
+          11.496267,
+          12.762644
+        ]
+      },
+      "camera_b": {
+        "recording_id": "recording_0002",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.26.mp4",
+        "raw_sha256": "8afb4b0796615f56fba8fc1382ab9f047ad10585e32e356836ef5d3d61786cde",
+        "canonical_transform": "none",
+        "reviewed_source_times_s": [
+          2.733333,
+          4.0,
+          5.266667,
+          6.533333,
+          7.8,
+          9.066667,
+          10.333333
+        ]
+      }
+    },
+    "metadata_source": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0007/metadata.json",
+    "existing_split": "R_train",
+    "canonical_exclusion_reason": null,
+    "existing_train_eligibility": true
+  },
+  {
+    "id": "demo_0009",
+    "unit": "human_take",
+    "category": "orientation_correction",
+    "disposition": "observation-only",
+    "robot_action_labels_from_video": false,
+    "generated_scenario_descendants": [
+      "personal_demo_0009"
+    ],
+    "annotation_provenance": "agent_visual_review_with_separate_specific_human_examples",
+    "sync_uncertainty_s": 0.25,
+    "boundary_uncertainty_s": 1.0,
+    "known_limitation": "No calibrated causal human-to-robot action alignment or per-frame grasp labels; static takes provide preserve-goal evidence, not human no-op robot commands.",
+    "original_sources": {
+      "camera_a": {
+        "recording_id": "recording_0007",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.50.mp4",
+        "raw_sha256": "c387aff4b2ee77cb56ce9933ffee0e5684046513cda1cc3a1b212652a288064a",
+        "canonical_transform": "rotate_90_degrees_counterclockwise",
+        "reviewed_source_times_s": [
+          19.194456,
+          20.360856,
+          21.527244,
+          22.693633,
+          23.893356,
+          25.059744,
+          26.226144
+        ]
+      },
+      "camera_b": {
+        "recording_id": "recording_0002",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.26.mp4",
+        "raw_sha256": "8afb4b0796615f56fba8fc1382ab9f047ad10585e32e356836ef5d3d61786cde",
+        "canonical_transform": "none",
+        "reviewed_source_times_s": [
+          16.731667,
+          17.898333,
+          19.098333,
+          20.265,
+          21.431667,
+          22.598333,
+          23.798333
+        ]
+      }
+    },
+    "metadata_source": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0009/metadata.json",
+    "existing_split": "R_train",
+    "canonical_exclusion_reason": null,
+    "existing_train_eligibility": true
+  },
+  {
+    "id": "demo_0011",
+    "unit": "human_take",
+    "category": "orientation_correction",
+    "disposition": "observation-only",
+    "robot_action_labels_from_video": false,
+    "generated_scenario_descendants": [],
+    "annotation_provenance": "agent_visual_review_with_separate_specific_human_examples",
+    "sync_uncertainty_s": 0.25,
+    "boundary_uncertainty_s": 1.0,
+    "known_limitation": "No calibrated causal human-to-robot action alignment or per-frame grasp labels; static takes provide preserve-goal evidence, not human no-op robot commands.",
+    "original_sources": {
+      "camera_a": {
+        "recording_id": "recording_0007",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.50.mp4",
+        "raw_sha256": "c387aff4b2ee77cb56ce9933ffee0e5684046513cda1cc3a1b212652a288064a",
+        "canonical_transform": "rotate_90_degrees_counterclockwise",
+        "reviewed_source_times_s": [
+          32.291378,
+          33.291144,
+          34.290911,
+          35.290678,
+          36.290444,
+          37.290211,
+          38.256644
+        ]
+      },
+      "camera_b": {
+        "recording_id": "recording_0002",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.26.mp4",
+        "raw_sha256": "8afb4b0796615f56fba8fc1382ab9f047ad10585e32e356836ef5d3d61786cde",
+        "canonical_transform": "none",
+        "reviewed_source_times_s": [
+          29.865,
+          30.865,
+          31.865,
+          32.865,
+          33.865,
+          34.865,
+          35.865
+        ]
+      }
+    },
+    "metadata_source": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0011/metadata.json",
+    "existing_split": "excluded_motor_training",
+    "canonical_exclusion_reason": "source failure or already-completed no-op excluded",
+    "existing_train_eligibility": false
+  },
+  {
+    "id": "demo_0012",
+    "unit": "human_take",
+    "category": "awkward_pause_resume_feeding",
+    "disposition": "observation-only",
+    "robot_action_labels_from_video": false,
+    "generated_scenario_descendants": [
+      "personal_demo_0012",
+      "m7_recovery_M6_personal_demo_0012_01"
+    ],
+    "annotation_provenance": "agent_visual_review_with_separate_specific_human_examples",
+    "sync_uncertainty_s": 0.25,
+    "boundary_uncertainty_s": 1.0,
+    "known_limitation": "No calibrated causal human-to-robot action alignment or per-frame grasp labels; static takes provide preserve-goal evidence, not human no-op robot commands.",
+    "original_sources": {
+      "camera_a": {
+        "recording_id": "recording_0008",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.51.mp4",
+        "raw_sha256": "f78f7b81ae9791c8bf5be18a0f1840f038cf227be4fb53ee5d3d663f401d7855",
+        "canonical_transform": "rotate_90_degrees_counterclockwise",
+        "reviewed_source_times_s": [
+          3.394511,
+          5.060789,
+          6.727067,
+          8.393333,
+          10.092944,
+          11.759211,
+          13.425489
+        ]
+      },
+      "camera_b": {
+        "recording_id": "recording_0003",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.41.mp4",
+        "raw_sha256": "f3d665338680d107c0c261b21b5f01ca0ae1eddf7e00f968984b43026dbb5be1",
+        "canonical_transform": "none",
+        "reviewed_source_times_s": [
+          1.966667,
+          3.633333,
+          5.333333,
+          7.0,
+          8.666667,
+          10.366667,
+          12.033333
+        ]
+      }
+    },
+    "metadata_source": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0012/metadata.json",
+    "existing_split": "P_train",
+    "canonical_exclusion_reason": null,
+    "existing_train_eligibility": true
+  },
+  {
+    "id": "demo_0013",
+    "unit": "human_take",
+    "category": "awkward_pause_resume_feeding",
+    "disposition": "observation-only",
+    "robot_action_labels_from_video": false,
+    "generated_scenario_descendants": [
+      "personal_demo_0013"
+    ],
+    "annotation_provenance": "agent_visual_review_with_separate_specific_human_examples",
+    "sync_uncertainty_s": 0.25,
+    "boundary_uncertainty_s": 1.0,
+    "known_limitation": "No calibrated causal human-to-robot action alignment or per-frame grasp labels; static takes provide preserve-goal evidence, not human no-op robot commands.",
+    "original_sources": {
+      "camera_a": {
+        "recording_id": "recording_0008",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.51.mp4",
+        "raw_sha256": "f78f7b81ae9791c8bf5be18a0f1840f038cf227be4fb53ee5d3d663f401d7855",
+        "canonical_transform": "rotate_90_degrees_counterclockwise",
+        "reviewed_source_times_s": [
+          19.024178,
+          20.6238,
+          22.1901,
+          23.789722,
+          25.389344,
+          26.988967,
+          28.555267
+        ]
+      },
+      "camera_b": {
+        "recording_id": "recording_0003",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.41.mp4",
+        "raw_sha256": "f3d665338680d107c0c261b21b5f01ca0ae1eddf7e00f968984b43026dbb5be1",
+        "canonical_transform": "none",
+        "reviewed_source_times_s": [
+          17.598333,
+          19.198333,
+          20.798333,
+          22.398333,
+          23.965,
+          25.565,
+          27.165
+        ]
+      }
+    },
+    "metadata_source": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0013/metadata.json",
+    "existing_split": "P_train",
+    "canonical_exclusion_reason": null,
+    "existing_train_eligibility": true
+  },
+  {
+    "id": "demo_0014",
+    "unit": "human_take",
+    "category": "awkward_pause_resume_feeding",
+    "disposition": "observation-only",
+    "robot_action_labels_from_video": false,
+    "generated_scenario_descendants": [],
+    "annotation_provenance": "agent_visual_review_with_separate_specific_human_examples",
+    "sync_uncertainty_s": 0.25,
+    "boundary_uncertainty_s": 1.0,
+    "known_limitation": "No calibrated causal human-to-robot action alignment or per-frame grasp labels; static takes provide preserve-goal evidence, not human no-op robot commands.",
+    "original_sources": {
+      "camera_a": {
+        "recording_id": "recording_0008",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.51.mp4",
+        "raw_sha256": "f78f7b81ae9791c8bf5be18a0f1840f038cf227be4fb53ee5d3d663f401d7855",
+        "canonical_transform": "rotate_90_degrees_counterclockwise",
+        "reviewed_source_times_s": [
+          35.120389,
+          36.486733,
+          37.819756,
+          39.1861,
+          40.519122,
+          41.885467,
+          43.218489
+        ]
+      },
+      "camera_b": {
+        "recording_id": "recording_0003",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.41.mp4",
+        "raw_sha256": "f3d665338680d107c0c261b21b5f01ca0ae1eddf7e00f968984b43026dbb5be1",
+        "canonical_transform": "none",
+        "reviewed_source_times_s": [
+          33.731667,
+          35.065,
+          36.431667,
+          37.765,
+          39.131667,
+          40.465,
+          41.83
+        ]
+      }
+    },
+    "metadata_source": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0014/metadata.json",
+    "existing_split": "P_validation",
+    "canonical_exclusion_reason": null,
+    "existing_train_eligibility": false
+  },
+  {
+    "id": "demo_0015",
+    "unit": "human_take",
+    "category": "awkward_pause_resume_feeding",
+    "disposition": "observation-only",
+    "robot_action_labels_from_video": false,
+    "generated_scenario_descendants": [],
+    "annotation_provenance": "agent_visual_review_with_separate_specific_human_examples",
+    "sync_uncertainty_s": 0.25,
+    "boundary_uncertainty_s": 1.0,
+    "known_limitation": "No calibrated causal human-to-robot action alignment or per-frame grasp labels; static takes provide preserve-goal evidence, not human no-op robot commands.",
+    "original_sources": {
+      "camera_a": {
+        "recording_id": "recording_0008",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.51.mp4",
+        "raw_sha256": "f78f7b81ae9791c8bf5be18a0f1840f038cf227be4fb53ee5d3d663f401d7855",
+        "canonical_transform": "rotate_90_degrees_counterclockwise",
+        "reviewed_source_times_s": [
+          48.150656,
+          49.517,
+          50.916678,
+          52.316344,
+          53.682689,
+          55.082367,
+          56.448711
+        ]
+      },
+      "camera_b": {
+        "recording_id": "recording_0003",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.41.mp4",
+        "raw_sha256": "f3d665338680d107c0c261b21b5f01ca0ae1eddf7e00f968984b43026dbb5be1",
+        "canonical_transform": "none",
+        "reviewed_source_times_s": [
+          46.73,
+          48.13,
+          49.496667,
+          50.896667,
+          52.263333,
+          53.663333,
+          55.03
+        ]
+      }
+    },
+    "metadata_source": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0015/metadata.json",
+    "existing_split": "excluded_motor_training",
+    "canonical_exclusion_reason": "source failure or already-completed no-op excluded",
+    "existing_train_eligibility": false
+  },
+  {
+    "id": "demo_0016",
+    "unit": "human_take",
+    "category": "normal_feeding",
+    "disposition": "observation-only",
+    "robot_action_labels_from_video": false,
+    "generated_scenario_descendants": [],
+    "annotation_provenance": "agent_visual_review_with_separate_specific_human_examples",
+    "sync_uncertainty_s": 0.25,
+    "boundary_uncertainty_s": 1.0,
+    "known_limitation": "No calibrated causal human-to-robot action alignment or per-frame grasp labels; static takes provide preserve-goal evidence, not human no-op robot commands.",
+    "original_sources": {
+      "camera_a": {
+        "recording_id": "recording_0008",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.51.mp4",
+        "raw_sha256": "f78f7b81ae9791c8bf5be18a0f1840f038cf227be4fb53ee5d3d663f401d7855",
+        "canonical_transform": "rotate_90_degrees_counterclockwise",
+        "reviewed_source_times_s": [
+          61.714133,
+          62.880533,
+          64.046922,
+          65.213311,
+          66.346378,
+          67.512778,
+          68.679167
+        ]
+      },
+      "camera_b": {
+        "recording_id": "recording_0003",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.41.mp4",
+        "raw_sha256": "f3d665338680d107c0c261b21b5f01ca0ae1eddf7e00f968984b43026dbb5be1",
+        "canonical_transform": "none",
+        "reviewed_source_times_s": [
+          60.33,
+          61.463333,
+          62.63,
+          63.796667,
+          64.963333,
+          66.096667,
+          67.263333
+        ]
+      }
+    },
+    "metadata_source": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0016/metadata.json",
+    "existing_split": "P_validation",
+    "canonical_exclusion_reason": null,
+    "existing_train_eligibility": false
+  },
+  {
+    "id": "demo_0018",
+    "unit": "human_take",
+    "category": "already_completed",
+    "disposition": "observation-only",
+    "robot_action_labels_from_video": false,
+    "generated_scenario_descendants": [
+      "m7_completed_personal_0018"
+    ],
+    "annotation_provenance": "agent_visual_review_with_separate_specific_human_examples",
+    "sync_uncertainty_s": 0.05,
+    "boundary_uncertainty_s": 0.05,
+    "known_limitation": "No calibrated causal human-to-robot action alignment or per-frame grasp labels; static takes provide preserve-goal evidence, not human no-op robot commands.",
+    "original_sources": {
+      "camera_a": {
+        "recording_id": "recording_0006",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.50 (2).mp4",
+        "raw_sha256": "1a4e0e31265722bd2c98369ed0ef240fbc69706601f54b7af3069f8cfc20c65f",
+        "canonical_transform": "rotate_90_degrees_counterclockwise",
+        "reviewed_source_times_s": [
+          4.788967,
+          6.6552,
+          8.4881,
+          10.321,
+          12.187233,
+          14.020133,
+          15.853033
+        ]
+      },
+      "camera_b": {
+        "recording_id": "recording_0004",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.48.mp4",
+        "raw_sha256": "253f5b77f6725ffe063ff3567e6d9c498dd03dadb841dd7f3195be10ab6cb6d2",
+        "canonical_transform": "none",
+        "reviewed_source_times_s": [
+          3.233333,
+          5.066667,
+          6.933333,
+          8.766667,
+          10.6,
+          12.466667,
+          14.298333
+        ]
+      }
+    },
+    "metadata_source": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0018/metadata.json",
+    "existing_split": "excluded_motor_training",
+    "canonical_exclusion_reason": "source failure or already-completed no-op excluded",
+    "existing_train_eligibility": false
+  },
+  {
+    "id": "demo_0019",
+    "unit": "human_take",
+    "category": "already_completed",
+    "disposition": "observation-only",
+    "robot_action_labels_from_video": false,
+    "generated_scenario_descendants": [
+      "m7_completed_personal_0019"
+    ],
+    "annotation_provenance": "agent_visual_review_with_separate_specific_human_examples",
+    "sync_uncertainty_s": 0.05,
+    "boundary_uncertainty_s": 0.05,
+    "known_limitation": "No calibrated causal human-to-robot action alignment or per-frame grasp labels; static takes provide preserve-goal evidence, not human no-op robot commands.",
+    "original_sources": {
+      "camera_a": {
+        "recording_id": "recording_0006",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.50 (2).mp4",
+        "raw_sha256": "1a4e0e31265722bd2c98369ed0ef240fbc69706601f54b7af3069f8cfc20c65f",
+        "canonical_transform": "rotate_90_degrees_counterclockwise",
+        "reviewed_source_times_s": [
+          19.685467,
+          20.451956,
+          21.251767,
+          22.018256,
+          22.818067,
+          23.584544,
+          24.384367
+        ]
+      },
+      "camera_b": {
+        "recording_id": "recording_0004",
+        "raw_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.48.mp4",
+        "raw_sha256": "253f5b77f6725ffe063ff3567e6d9c498dd03dadb841dd7f3195be10ab6cb6d2",
+        "canonical_transform": "none",
+        "reviewed_source_times_s": [
+          18.131667,
+          18.898333,
+          19.698333,
+          20.465,
+          21.265,
+          22.031667,
+          22.831667
+        ]
+      }
+    },
+    "metadata_source": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/demonstrations/demo_0019/metadata.json",
+    "existing_split": "excluded_motor_training",
+    "canonical_exclusion_reason": "source failure or already-completed no-op excluded",
+    "existing_train_eligibility": false
+  },
+  {
+    "id": "demo_0017",
+    "unit": "human_take_excluded",
+    "disposition": "observation-only",
+    "curated": false,
+    "reason": "User says pause too short; retained successful task episode, not a failed trial.",
+    "original_split": "excluded",
+    "training_exposure": 0,
+    "source_views": {
+      "camera_a": {
+        "clip": "data/personal/m0/excluded_demonstrations/demo_0017/camera_a.mp4",
+        "clip_transform": "rotate_90_degrees_counterclockwise",
+        "end_s": 82.27,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.51.mp4",
+        "recording_id": "recording_0008",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "f78f7b81ae9791c8bf5be18a0f1840f038cf227be4fb53ee5d3d663f401d7855",
+        "start_s": 74.15
+      },
+      "camera_b": {
+        "clip": "data/personal/m0/excluded_demonstrations/demo_0017/camera_b.mp4",
+        "clip_transform": "none",
+        "end_s": 80.86,
+        "filename": "WhatsApp Video 2026-10-09 at 00.50.41.mp4",
+        "recording_id": "recording_0003",
+        "source_coordinates": "original_decoded_image",
+        "source_sha256": "f3d665338680d107c0c261b21b5f01ca0ae1eddf7e00f968984b43026dbb5be1",
+        "start_s": 72.74000000000001
+      }
+    },
+    "notes": "Preserve source and annotations; not admitted to any reviewed training set."
+  }
+]

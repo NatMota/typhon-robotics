@@ -1,0 +1,7 @@
+{
+  "review_script": "python3 scripts/data07_coverage_review.py --root '/media/nm/Fast Drive/Typhon' --output '/media/nm/Fast Drive/Typhon/research-20261012/data07-coverage-review'",
+  "powerglide_collector": "python3 /var/tmp/data07_collect_powerglide.py",
+  "copy": "scp -F /home/nm/.config/typhon-backup-20261010/config powerglide-backup:/var/tmp/typhon-data07-existing-audit/<evidence-file> <review>/inputs/",
+  "no_training_or_physics": true,
+  "no_package_installation": true
+}

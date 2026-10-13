@@ -1,0 +1,26 @@
+{
+  "schema": "m7-coverage-added-completed-training-v1",
+  "authorization": "parent /root explicitly authorized new C_train for personal0018/0019 and two newly generated synthetic completed cases; no Mint access for current workflow",
+  "new_personal_completed_train_ids": [
+    "personal_demo_0018",
+    "personal_demo_0019"
+  ],
+  "new_synthetic_completed_count": 2,
+  "new_synthetic_completed_ids": [
+    "m7_completed_synthetic_001",
+    "m7_completed_synthetic_002"
+  ],
+  "generation_status": "authorized; refer to temporal-agent export for generation/validation status",
+  "frozen_split_changed": false,
+  "prohibited_optimizer_sources": [
+    "P_validation",
+    "S_validation",
+    "heldout/test evaluation traces"
+  ],
+  "disclosure": "Personal completed sources were inspected during M15 development; now explicitly designated C_train in a new protocol. Previous motorpool exclusions remain historically intact. Real phone RGB has no measured/native robot action targets.",
+  "new_personal_completed_export_ids": [
+    "m7_completed_personal_0018",
+    "m7_completed_personal_0019"
+  ],
+  "new_completed_export_directory": "results/personal-m7-data-prep-20261009/completed-v2"
+}

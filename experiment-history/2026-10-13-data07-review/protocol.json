@@ -1,0 +1,39 @@
+{
+  "schema": "data07-coverage-review-v1",
+  "ticket": 10992,
+  "start_utc": "2026-10-13T03:28:11Z",
+  "deadline_utc": "2026-10-13T04:13:11.000Z",
+  "scope": "Existing-evidence provenance and failure/correction coverage review; no activated training manifest.",
+  "planner": "Hm challeng p2",
+  "unit": "One row per underlying generated episode or correction suffix, linked to human take and recipe; windows are separate exposure fields, not new demonstrations.",
+  "forbidden": [
+    "new training",
+    "new annotations",
+    "physics rollouts",
+    "observer changes",
+    "pod restarts",
+    "changing existing splits or memberships",
+    "reconstructing unavailable action arrays"
+  ],
+  "required_lineages": [
+    "six P_train source takes and broad Pt training",
+    "V1-V3 eighteen generated episodes",
+    "V4 original three accepted recovery additions",
+    "later four qualified training-only correction suffixes",
+    "development-state recovery suffixes",
+    "human observation-only and excluded takes"
+  ],
+  "questions": [
+    "Do verified training-eligible corrections cover off-axis acquired grasps or near-expert relationships?",
+    "Do they cover learner-visited approach/empty-close failures or successful expert approaches?",
+    "Which decisions have observable inputs and qualified targets versus only reviewed human-video evidence?"
+  ],
+  "dispositions": [
+    "verified existing training material",
+    "development quarantine",
+    "observation-only",
+    "failed execution",
+    "missing evidence"
+  ],
+  "stop": "Complete review even if arrays unavailable; record exact missing evidence and do not certify unavailable contents."
+}

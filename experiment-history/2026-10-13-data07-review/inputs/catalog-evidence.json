@@ -1,0 +1,5257 @@
+{
+  "source_path": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/results/personal-m7-data-prep-20261009/training-catalog-v2-complete/temporal/source_snapshot.json.gz",
+  "source_sha256": "ee4f3959456afc2c1a3f5e025be5abbe3fb657fda8881496d6856dae207c39f9",
+  "episodes": [
+    {
+      "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+      "actions": 446,
+      "category": "normal_feeding",
+      "frames": 112,
+      "id": "personal_demo_0001",
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "path": "personal_demo_0001.npz",
+      "proprio": {
+        "type": "list",
+        "length": 112,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "replay_max_position_error": 0.0,
+      "sha256": "7340f8a894f79b7a12133041f6e14b6419dd9cfc072b3fb51c7601599e7d2ac1",
+      "source_action_sha256": "2eedbf82db3fa402cee6b9334c6c8a9d9e5b847c66af31e46e002551993cf305",
+      "source_demo_id": "demo_0001",
+      "source_episode_sha256": "578b42ea823253311ccf35b56bfb9c4e56cd4caa7a16bccab6f20e42608936e2",
+      "source_path": "results/personal-m3-20261009/data-canonical/personal_generation/episode_artifacts/personal_demo_0001",
+      "split": "P_train",
+      "window": "30 future20Hz absolute targets; last target repeats only past terminal boundary; observation sampled before first action",
+      "targets": {
+        "type": "list",
+        "length": 446,
+        "first": "[-0.25, -0.25, 1.0800000429153442, -2.8679553834041086e-20, 1.0, -7.653081489689148e-21, 1.0, 3.2185"
+      },
+      "frame_action_indices": {
+        "type": "list",
+        "length": 112,
+        "first": "0"
+      },
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            112,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            112,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_demo_0001.npz",
+      "verified_source_sha256": "7340f8a894f79b7a12133041f6e14b6419dd9cfc072b3fb51c7601599e7d2ac1",
+      "source_sha256_after_read": "7340f8a894f79b7a12133041f6e14b6419dd9cfc072b3fb51c7601599e7d2ac1",
+      "source_provenance": null,
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_demo_0001.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 56740645,
+        "sha256": "7340f8a894f79b7a12133041f6e14b6419dd9cfc072b3fb51c7601599e7d2ac1"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_generation/episode_artifacts/personal_demo_0001",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "frames",
+        "resolved_config.json",
+        "camera_calibration.json",
+        "robot_actions.jsonl",
+        "rgb_trajectory.npz",
+        "primary.mp4",
+        "secondary.mp4",
+        "episode.json"
+      ],
+      "episode.json": {
+        "evaluation": {
+          "attempts": [
+            {
+              "attempt_index": 0,
+              "forced_miss": false,
+              "grasp_contact": true,
+              "lift_height_m": 0.15668599219462775,
+              "lift_truth": {
+                "bilateral_grasp_contact": true,
+                "control_steps": 316,
+                "eef_position_m": [
+                  -0.29777584510817123,
+                  0.08583747631518752,
+                  0.9782722102382666
+                ],
+                "grasp_contact": true,
+                "gripper_joint_position_m": [
+                  0.017283086395159374,
+                  -0.01724310636373175
+                ],
+                "gripper_open": false,
+                "object_angular_velocity_rad_s": [
+                  -0.004143956736868096,
+                  -0.0021870489719055712,
+                  0.0035616797949132853
+                ],
+                "object_linear_velocity_m_s": [
+                  -0.0050859136531283015,
+                  0.0035801414974702033,
+                  2.0191271267423584e-05
+                ],
+                "object_position_m": [
+                  -0.29395524526667727,
+                  0.09126575297634004,
+                  0.9714704813541937
+                ],
+                "object_quat_wxyz": [
+                  0.8884462318190824,
+                  -0.0008239809798016852,
+                  0.012821334338680719,
+                  0.45880085833354095
+                ],
+                "object_yaw_rad": 0.9534968523698758,
+                "sim_time_s": 15.8
+              },
+              "lifted": true,
+              "phases": [
+                {
+                  "converged": false,
+                  "eef_position_error_m": 0.011909730987490647,
+                  "object_position_m": [
+                    -0.3084651105738172,
+                    0.08221457497548734,
+                    0.8147844891595659
+                  ],
+                  "phase": "approach",
+                  "steps": 100
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0025468858108339443,
+                  "object_position_m": [
+                    -0.3080506630344245,
+                    0.08766060321660184,
+                    0.814784609877791
+                  ],
+                  "phase": "descend",
+                  "steps": 34
+                },
+                {
+                  "converged": false,
+                  "eef_position_error_m": 0.011813128655655359,
+                  "object_position_m": [
+                    -0.29395524526667727,
+                    0.09126575297634004,
+                    0.9714704813541937
+                  ],
+                  "phase": "lift",
+                  "steps": 100
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0016105417782922074,
+                  "object_position_m": [
+                    0.13592228378911028,
+                    -0.1203124485112733,
+                    0.9688796300739076
+                  ],
+                  "phase": "transfer",
+                  "steps": 52
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.001134785140986976,
+                  "object_position_m": [
+                    0.13448100152066997,
+                    -0.12047801496846311,
+                    0.8209502736903911
+                  ],
+                  "phase": "place",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.005818512204222962,
+                  "object_position_m": [
+                    0.13701973614554885,
+                    -0.12108319103232237,
+                    0.8147844891582005
+                  ],
+                  "phase": "retreat",
+                  "steps": 16
+                }
+              ],
+              "release_truth": {
+                "bilateral_grasp_contact": false,
+                "control_steps": 404,
+                "eef_position_m": [
+                  0.12465244759265864,
+                  -0.12010465125141347,
+                  0.8267781581232821
+                ],
+                "grasp_contact": false,
+                "gripper_joint_position_m": [
+                  0.03908867740574118,
+                  -0.039086785452614535
+                ],
+                "gripper_open": true,
+                "object_angular_velocity_rad_s": [
+                  -2.068402468068547e-06,
+                  9.622540566249493e-06,
+                  -2.9093938286944926e-13
+                ],
+                "object_linear_velocity_m_s": [
+                  1.4332988989755602e-07,
+                  3.0809289083566786e-08,
+                  1.2481921456915039e-06
+                ],
+                "object_position_m": [
+                  0.13701972560864295,
+                  -0.12108319330593793,
+                  0.8147843980061183
+                ],
+                "object_quat_wxyz": [
+                  0.9999956564990684,
+                  7.736368458242758e-08,
+                  -3.5347946298729606e-07,
+                  -0.0029473688039273263
+                ],
+                "object_yaw_rad": -0.005894746142524561,
+                "sim_time_s": 20.2
+              },
+              "verified_lift": true
+            }
+          ],
+          "control_steps": 446,
+          "controller_exceptions": [],
+          "criteria": {
+            "footprint_inside_target": true,
+            "marked_face_up": true,
+            "orientation": true,
+            "placement_height": true,
+            "position": true,
+            "released": true,
+            "stable": true
+          },
+          "failed_grasp_count": 0,
+          "footprint_inside_target": true,
+          "grasp_attempt_count": 1,
+          "height_error_m": 0.00021551084043414104,
+          "maximum_angular_velocity_rad_s": 1.3009228464928573e-15,
+          "maximum_linear_velocity_m_s": 2.162671204458322e-14,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "orientation_error_deg": 0.33774407526513467,
+          "orientation_error_rad": 0.00589474614248014,
+          "position_error_m": 0.012068444797285298,
+          "recovered_after_failed_grasp": false,
+          "retries": 0,
+          "sim_time_s": 22.3,
+          "stability_duration_s": 1.1000000000000014,
+          "stability_sample_count": 12,
+          "success": true,
+          "successful_grasp_count": 1,
+          "successful_recovery": false,
+          "target_height_m": 0.8150000000000001,
+          "task": "feeding",
+          "upright_error_rad": 0.0
+        },
+        "source_demo_id": "demo_0001",
+        "success": true
+      },
+      "episode.json_sha256": "578b42ea823253311ccf35b56bfb9c4e56cd4caa7a16bccab6f20e42608936e2",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "2eedbf82db3fa402cee6b9334c6c8a9d9e5b847c66af31e46e002551993cf305",
+      "source_actions_hash_match": true
+    },
+    {
+      "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+      "actions": 303,
+      "category": "normal_feeding",
+      "frames": 76,
+      "id": "personal_demo_0002",
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "path": "personal_demo_0002.npz",
+      "proprio": {
+        "type": "list",
+        "length": 76,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "replay_max_position_error": 0.0,
+      "sha256": "41f61023fcc4d0b0e312675ac90ea0e285a8efa6baf1f9ce3866544e237a8f35",
+      "source_action_sha256": "f57d8dfa6f90e849e96f14767c78ef6c8bbac8f441590c768fa4cb909970d07a",
+      "source_demo_id": "demo_0002",
+      "source_episode_sha256": "95d393395c98b694395c8bbdbdf94cf69bc206afa2c1c3a90ab3a570c996308e",
+      "source_path": "results/personal-m3-20261009/data-canonical/personal_generation/episode_artifacts/personal_demo_0002",
+      "split": "P_train",
+      "window": "30 future20Hz absolute targets; last target repeats only past terminal boundary; observation sampled before first action",
+      "targets": {
+        "type": "list",
+        "length": 303,
+        "first": "[-0.25, -0.25, 1.0800000429153442, -2.8679553834041086e-20, 1.0, -7.653081489689148e-21, 1.0, 3.2185"
+      },
+      "frame_action_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+        84,
+        88,
+        92,
+        96,
+        100,
+        104,
+        108,
+        112,
+        116,
+        120,
+        124,
+        128,
+        132,
+        136,
+        140,
+        144,
+        148,
+        152,
+        156,
+        160,
+        164,
+        168,
+        172,
+        176,
+        180,
+        184,
+        188,
+        192,
+        196,
+        200,
+        204,
+        208,
+        212,
+        216,
+        220,
+        224,
+        228,
+        232,
+        236,
+        240,
+        244,
+        248,
+        252,
+        256,
+        260,
+        264,
+        268,
+        272,
+        276,
+        280,
+        284,
+        288,
+        292,
+        296,
+        300
+      ],
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            76,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            76,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_demo_0002.npz",
+      "verified_source_sha256": "41f61023fcc4d0b0e312675ac90ea0e285a8efa6baf1f9ce3866544e237a8f35",
+      "source_sha256_after_read": "41f61023fcc4d0b0e312675ac90ea0e285a8efa6baf1f9ce3866544e237a8f35",
+      "source_provenance": null,
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_demo_0002.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 38660147,
+        "sha256": "41f61023fcc4d0b0e312675ac90ea0e285a8efa6baf1f9ce3866544e237a8f35"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_generation/episode_artifacts/personal_demo_0002",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "frames",
+        "resolved_config.json",
+        "camera_calibration.json",
+        "robot_actions.jsonl",
+        "rgb_trajectory.npz",
+        "primary.mp4",
+        "secondary.mp4",
+        "episode.json"
+      ],
+      "episode.json": {
+        "evaluation": {
+          "attempts": [
+            {
+              "attempt_index": 0,
+              "forced_miss": false,
+              "grasp_contact": true,
+              "lift_height_m": 0.15626720013538054,
+              "lift_truth": {
+                "bilateral_grasp_contact": true,
+                "control_steps": 177,
+                "eef_position_m": [
+                  -0.19805596881137655,
+                  -0.126587672875554,
+                  0.9762883889885607
+                ],
+                "grasp_contact": true,
+                "gripper_joint_position_m": [
+                  0.017327623128510078,
+                  -0.017198542476878027
+                ],
+                "gripper_open": false,
+                "object_angular_velocity_rad_s": [
+                  -0.025073543376875524,
+                  -0.05656122053125191,
+                  -0.016890422587326346
+                ],
+                "object_linear_velocity_m_s": [
+                  -0.016609152025098686,
+                  0.012878975643612123,
+                  -0.010747093266901759
+                ],
+                "object_position_m": [
+                  -0.2007253065607294,
+                  -0.12924195442959457,
+                  0.9710516892949465
+                ],
+                "object_quat_wxyz": [
+                  0.9262651154115066,
+                  0.005271493615850239,
+                  -0.003219646595659059,
+                  0.3768219489395036
+                ],
+                "object_yaw_rad": 0.7727049133576821,
+                "sim_time_s": 8.85
+              },
+              "lifted": true,
+              "phases": [
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.001096534221037755,
+                  "object_position_m": [
+                    -0.2007394761471165,
+                    -0.12648037692132735,
+                    0.8147844891595659
+                  ],
+                  "phase": "approach",
+                  "steps": 34
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.001121771435967191,
+                  "object_position_m": [
+                    -0.2007394761471165,
+                    -0.12648037692132735,
+                    0.8147844891595659
+                  ],
+                  "phase": "descend",
+                  "steps": 29
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.003078057624284214,
+                  "object_position_m": [
+                    -0.2007253065607294,
+                    -0.12924195442959457,
+                    0.9710516892949465
+                  ],
+                  "phase": "lift",
+                  "steps": 32
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0023500020973658635,
+                  "object_position_m": [
+                    0.12433970784867433,
+                    -0.1204697376430618,
+                    0.9706414717786775
+                  ],
+                  "phase": "transfer",
+                  "steps": 48
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0011689783912000305,
+                  "object_position_m": [
+                    0.12211276633362987,
+                    -0.12049741785443022,
+                    0.8220985627240975
+                  ],
+                  "phase": "place",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.005827057744782078,
+                  "object_position_m": [
+                    0.1264777786117153,
+                    -0.12104902091893961,
+                    0.8147844891579283
+                  ],
+                  "phase": "retreat",
+                  "steps": 16
+                }
+              ],
+              "release_truth": {
+                "bilateral_grasp_contact": false,
+                "control_steps": 261,
+                "eef_position_m": [
+                  0.12467982424383255,
+                  -0.12011153129141186,
+                  0.8267957039280243
+                ],
+                "grasp_contact": false,
+                "gripper_joint_position_m": [
+                  0.03908873136806416,
+                  -0.039086724749606394
+                ],
+                "gripper_open": true,
+                "object_angular_velocity_rad_s": [
+                  -2.492112959778904e-06,
+                  -6.483944999722501e-06,
+                  2.2601522329928107e-13
+                ],
+                "object_linear_velocity_m_s": [
+                  -9.657974182278484e-08,
+                  3.7120521723494735e-08,
+                  1.4965666011314448e-06
+                ],
+                "object_position_m": [
+                  0.1264777857116417,
+                  -0.12104902365779735,
+                  0.8147843798679081
+                ],
+                "object_quat_wxyz": [
+                  0.9999917315853756,
+                  9.096900433469853e-08,
+                  2.3870439883666257e-07,
+                  -0.004066541628592201
+                ],
+                "object_yaw_rad": -0.008133105673117199,
+                "sim_time_s": 13.05
+              },
+              "verified_lift": true
+            }
+          ],
+          "control_steps": 303,
+          "controller_exceptions": [],
+          "criteria": {
+            "footprint_inside_target": true,
+            "marked_face_up": true,
+            "orientation": true,
+            "placement_height": true,
+            "position": true,
+            "released": true,
+            "stable": true
+          },
+          "failed_grasp_count": 0,
+          "footprint_inside_target": true,
+          "grasp_attempt_count": 1,
+          "height_error_m": 0.00021551084043414104,
+          "maximum_angular_velocity_rad_s": 1.2088837214878756e-15,
+          "maximum_linear_velocity_m_s": 2.1666717638597325e-14,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "orientation_error_deg": 0.4659926294055005,
+          "orientation_error_rad": 0.00813310567315173,
+          "position_error_m": 0.0018122567459336427,
+          "recovered_after_failed_grasp": false,
+          "retries": 0,
+          "sim_time_s": 15.149999999999999,
+          "stability_duration_s": 1.0999999999999979,
+          "stability_sample_count": 12,
+          "success": true,
+          "successful_grasp_count": 1,
+          "successful_recovery": false,
+          "target_height_m": 0.8150000000000001,
+          "task": "feeding",
+          "upright_error_rad": 0.0
+        },
+        "source_demo_id": "demo_0002",
+        "success": true
+      },
+      "episode.json_sha256": "95d393395c98b694395c8bbdbdf94cf69bc206afa2c1c3a90ab3a570c996308e",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "f57d8dfa6f90e849e96f14767c78ef6c8bbac8f441590c768fa4cb909970d07a",
+      "source_actions_hash_match": true
+    },
+    {
+      "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+      "actions": 303,
+      "category": "normal_feeding",
+      "frames": 76,
+      "id": "personal_demo_0003",
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "path": "personal_demo_0003.npz",
+      "proprio": {
+        "type": "list",
+        "length": 76,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "replay_max_position_error": 0.0,
+      "sha256": "66c1ccbb9e071fb6ca3e9b6dc00a93d4fc0c5b95188be8493f96de7f545fbf8d",
+      "source_action_sha256": "67e15f55d2dcbff9a8869b15dce0b681c378cf04ed256c030320ce65123ce155",
+      "source_demo_id": "demo_0003",
+      "source_episode_sha256": "cbb76515baf78b99dcae794b1194087ec0c534b59cf4be9c43eb78638080ccb7",
+      "source_path": "results/personal-m3-20261009/data-canonical/personal_generation/episode_artifacts/personal_demo_0003",
+      "split": "P_train",
+      "window": "30 future20Hz absolute targets; last target repeats only past terminal boundary; observation sampled before first action",
+      "targets": {
+        "type": "list",
+        "length": 303,
+        "first": "[-0.25, -0.25, 1.0800000429153442, -2.8679553834041086e-20, 1.0, -7.653081489689148e-21, 1.0, 3.2185"
+      },
+      "frame_action_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+        84,
+        88,
+        92,
+        96,
+        100,
+        104,
+        108,
+        112,
+        116,
+        120,
+        124,
+        128,
+        132,
+        136,
+        140,
+        144,
+        148,
+        152,
+        156,
+        160,
+        164,
+        168,
+        172,
+        176,
+        180,
+        184,
+        188,
+        192,
+        196,
+        200,
+        204,
+        208,
+        212,
+        216,
+        220,
+        224,
+        228,
+        232,
+        236,
+        240,
+        244,
+        248,
+        252,
+        256,
+        260,
+        264,
+        268,
+        272,
+        276,
+        280,
+        284,
+        288,
+        292,
+        296,
+        300
+      ],
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            76,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            76,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_demo_0003.npz",
+      "verified_source_sha256": "66c1ccbb9e071fb6ca3e9b6dc00a93d4fc0c5b95188be8493f96de7f545fbf8d",
+      "source_sha256_after_read": "66c1ccbb9e071fb6ca3e9b6dc00a93d4fc0c5b95188be8493f96de7f545fbf8d",
+      "source_provenance": null,
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_demo_0003.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 38668235,
+        "sha256": "66c1ccbb9e071fb6ca3e9b6dc00a93d4fc0c5b95188be8493f96de7f545fbf8d"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_generation/episode_artifacts/personal_demo_0003",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "frames",
+        "resolved_config.json",
+        "camera_calibration.json",
+        "robot_actions.jsonl",
+        "rgb_trajectory.npz",
+        "primary.mp4",
+        "secondary.mp4",
+        "episode.json"
+      ],
+      "episode.json": {
+        "evaluation": {
+          "attempts": [
+            {
+              "attempt_index": 0,
+              "forced_miss": false,
+              "grasp_contact": true,
+              "lift_height_m": 0.15549994359369634,
+              "lift_truth": {
+                "bilateral_grasp_contact": true,
+                "control_steps": 191,
+                "eef_position_m": [
+                  -0.0750311052585357,
+                  0.1057087468866735,
+                  0.9748636817434304
+                ],
+                "grasp_contact": true,
+                "gripper_joint_position_m": [
+                  0.01723456052109253,
+                  -0.017291121520127753
+                ],
+                "gripper_open": false,
+                "object_angular_velocity_rad_s": [
+                  -1.7664894905378963e-05,
+                  0.03786870434033913,
+                  -0.0021552085931824966
+                ],
+                "object_linear_velocity_m_s": [
+                  0.01474362871516858,
+                  0.0016182712735076225,
+                  0.01709682105074815
+                ],
+                "object_position_m": [
+                  -0.07503542933892217,
+                  0.10602004967132593,
+                  0.9702844327532623
+                ],
+                "object_quat_wxyz": [
+                  0.7017606716330994,
+                  -0.0035156147124716258,
+                  8.836579076688986e-05,
+                  -0.7124040934706523
+                ],
+                "object_yaw_rad": -1.5858362736480358,
+                "sim_time_s": 9.55
+              },
+              "lifted": true,
+              "phases": [
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.002005170997079415,
+                  "object_position_m": [
+                    -0.07585278904486192,
+                    0.10285597944852876,
+                    0.8147844891595659
+                  ],
+                  "phase": "approach",
+                  "steps": 75
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.005002462321344198,
+                  "object_position_m": [
+                    -0.07585278904486192,
+                    0.10285597944852876,
+                    0.8147844891595659
+                  ],
+                  "phase": "descend",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.002969800964069729,
+                  "object_position_m": [
+                    -0.07503542933892217,
+                    0.10602004967132593,
+                    0.9702844327532623
+                  ],
+                  "phase": "lift",
+                  "steps": 18
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.004747898672435568,
+                  "object_position_m": [
+                    0.12707849937040816,
+                    -0.12348461049315239,
+                    0.9723376788502585
+                  ],
+                  "phase": "transfer",
+                  "steps": 34
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0015672319442899003,
+                  "object_position_m": [
+                    0.12381315402886457,
+                    -0.11999886215582448,
+                    0.8225488908798795
+                  ],
+                  "phase": "place",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.005917068947948194,
+                  "object_position_m": [
+                    0.12745471661681299,
+                    -0.12087766989808621,
+                    0.8147844891580847
+                  ],
+                  "phase": "retreat",
+                  "steps": 16
+                }
+              ],
+              "release_truth": {
+                "bilateral_grasp_contact": false,
+                "control_steps": 261,
+                "eef_position_m": [
+                  0.12495473026848088,
+                  -0.12021335272853548,
+                  0.8269738310119981
+                ],
+                "grasp_contact": false,
+                "gripper_joint_position_m": [
+                  0.039088866452883675,
+                  -0.0390865951718245
+                ],
+                "gripper_open": true,
+                "object_angular_velocity_rad_s": [
+                  2.171185614241686e-06,
+                  -6.416852227674929e-07,
+                  -1.9383648862417096e-14
+                ],
+                "object_linear_velocity_m_s": [
+                  -9.558041628234729e-09,
+                  -3.2340256810353654e-08,
+                  1.3540019568865504e-06
+                ],
+                "object_position_m": [
+                  0.12745471731953567,
+                  -0.12087766751171786,
+                  0.8147843902790369
+                ],
+                "object_quat_wxyz": [
+                  0.999992900216225,
+                  -8.019477079575982e-08,
+                  2.328717602938372e-08,
+                  -0.0037682246663481296
+                ],
+                "object_yaw_rad": -0.007536467168470851,
+                "sim_time_s": 13.05
+              },
+              "verified_lift": true
+            }
+          ],
+          "control_steps": 303,
+          "controller_exceptions": [],
+          "criteria": {
+            "footprint_inside_target": true,
+            "marked_face_up": true,
+            "orientation": true,
+            "placement_height": true,
+            "position": true,
+            "released": true,
+            "stable": true
+          },
+          "failed_grasp_count": 0,
+          "footprint_inside_target": true,
+          "grasp_attempt_count": 1,
+          "height_error_m": 0.00021551084043414104,
+          "maximum_angular_velocity_rad_s": 1.4569061758708677e-15,
+          "maximum_linear_velocity_m_s": 2.1622861177587824e-14,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "orientation_error_deg": 0.4318077611921203,
+          "orientation_error_rad": 0.007536467168467894,
+          "position_error_m": 0.0026069020155887307,
+          "recovered_after_failed_grasp": false,
+          "retries": 0,
+          "sim_time_s": 15.149999999999999,
+          "stability_duration_s": 1.0999999999999979,
+          "stability_sample_count": 12,
+          "success": true,
+          "successful_grasp_count": 1,
+          "successful_recovery": false,
+          "target_height_m": 0.8150000000000001,
+          "task": "feeding",
+          "upright_error_rad": 0.0
+        },
+        "source_demo_id": "demo_0003",
+        "success": true
+      },
+      "episode.json_sha256": "cbb76515baf78b99dcae794b1194087ec0c534b59cf4be9c43eb78638080ccb7",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "67e15f55d2dcbff9a8869b15dce0b681c378cf04ed256c030320ce65123ce155",
+      "source_actions_hash_match": true
+    },
+    {
+      "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+      "actions": 296,
+      "category": "normal_feeding",
+      "frames": 74,
+      "id": "personal_demo_0005",
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "path": "personal_demo_0005.npz",
+      "proprio": {
+        "type": "list",
+        "length": 74,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "replay_max_position_error": 0.0,
+      "sha256": "f15c44cff00c7c8904e20c0996064b8ca350dab09a99c3b79de8f97b7e6ad737",
+      "source_action_sha256": "be77c1c4a0d9d008382dc3b133e540a6b0c3b9de0c27969ae9feaeba0c3d9081",
+      "source_demo_id": "demo_0005",
+      "source_episode_sha256": "53d0ba137e3e8fb2c7923b50e56a1b27c9469f95108764e476708b4ff85de6bd",
+      "source_path": "results/personal-m3-20261009/data-canonical/personal_generation/episode_artifacts/personal_demo_0005",
+      "split": "P_train",
+      "window": "30 future20Hz absolute targets; last target repeats only past terminal boundary; observation sampled before first action",
+      "targets": {
+        "type": "list",
+        "length": 296,
+        "first": "[-0.25, -0.25, 1.0800000429153442, -2.8679553834041086e-20, 1.0, -7.653081489689148e-21, 1.0, 3.2185"
+      },
+      "frame_action_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+        84,
+        88,
+        92,
+        96,
+        100,
+        104,
+        108,
+        112,
+        116,
+        120,
+        124,
+        128,
+        132,
+        136,
+        140,
+        144,
+        148,
+        152,
+        156,
+        160,
+        164,
+        168,
+        172,
+        176,
+        180,
+        184,
+        188,
+        192,
+        196,
+        200,
+        204,
+        208,
+        212,
+        216,
+        220,
+        224,
+        228,
+        232,
+        236,
+        240,
+        244,
+        248,
+        252,
+        256,
+        260,
+        264,
+        268,
+        272,
+        276,
+        280,
+        284,
+        288,
+        292
+      ],
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            74,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            74,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_demo_0005.npz",
+      "verified_source_sha256": "f15c44cff00c7c8904e20c0996064b8ca350dab09a99c3b79de8f97b7e6ad737",
+      "source_sha256_after_read": "f15c44cff00c7c8904e20c0996064b8ca350dab09a99c3b79de8f97b7e6ad737",
+      "source_provenance": null,
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_demo_0005.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 37681686,
+        "sha256": "f15c44cff00c7c8904e20c0996064b8ca350dab09a99c3b79de8f97b7e6ad737"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_generation/episode_artifacts/personal_demo_0005",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "frames",
+        "resolved_config.json",
+        "camera_calibration.json",
+        "robot_actions.jsonl",
+        "rgb_trajectory.npz",
+        "primary.mp4",
+        "secondary.mp4",
+        "episode.json"
+      ],
+      "episode.json": {
+        "evaluation": {
+          "attempts": [
+            {
+              "attempt_index": 0,
+              "forced_miss": false,
+              "grasp_contact": true,
+              "lift_height_m": 0.15410511031145868,
+              "lift_truth": {
+                "bilateral_grasp_contact": true,
+                "control_steps": 171,
+                "eef_position_m": [
+                  -0.2511866715139793,
+                  -0.023337322789390623,
+                  0.9752608635076108
+                ],
+                "grasp_contact": true,
+                "gripper_joint_position_m": [
+                  0.01715775114781132,
+                  -0.017364233857677432
+                ],
+                "gripper_open": false,
+                "object_angular_velocity_rad_s": [
+                  0.013421456599484094,
+                  0.05185903322937208,
+                  0.08988053224374151
+                ],
+                "object_linear_velocity_m_s": [
+                  0.024619920878735355,
+                  -0.022820119135030195,
+                  0.013584160802502255
+                ],
+                "object_position_m": [
+                  -0.254551330085779,
+                  -0.024266696927498027,
+                  0.9688895994710246
+                ],
+                "object_quat_wxyz": [
+                  0.9892944603617764,
+                  0.00200410704195418,
+                  -0.007172709769255227,
+                  0.14574294661160236
+                ],
+                "object_yaw_rad": 0.29252211173339665,
+                "sim_time_s": 8.55
+              },
+              "lifted": true,
+              "phases": [
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0019063870164749588,
+                  "object_position_m": [
+                    -0.251382728450295,
+                    -0.023407758749883045,
+                    0.8147844891595659
+                  ],
+                  "phase": "approach",
+                  "steps": 38
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.001674164660647342,
+                  "object_position_m": [
+                    -0.251382728450295,
+                    -0.023407758749883045,
+                    0.8147844891595659
+                  ],
+                  "phase": "descend",
+                  "steps": 29
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0005199346750151708,
+                  "object_position_m": [
+                    -0.254551330085779,
+                    -0.024266696927498027,
+                    0.9688895994710246
+                  ],
+                  "phase": "lift",
+                  "steps": 22
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0024621579294543936,
+                  "object_position_m": [
+                    0.1248914930812628,
+                    -0.12043373109107422,
+                    0.9696911915493834
+                  ],
+                  "phase": "transfer",
+                  "steps": 47
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0011762197297183273,
+                  "object_position_m": [
+                    0.12255248066027168,
+                    -0.12047412191716828,
+                    0.8210700092063529
+                  ],
+                  "phase": "place",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.005827689313894317,
+                  "object_position_m": [
+                    0.12705075770622332,
+                    -0.12099368376029974,
+                    0.814784489158083
+                  ],
+                  "phase": "retreat",
+                  "steps": 16
+                }
+              ],
+              "release_truth": {
+                "bilateral_grasp_contact": false,
+                "control_steps": 254,
+                "eef_position_m": [
+                  0.12468196029838192,
+                  -0.12011268162602236,
+                  0.8267971458086555
+                ],
+                "grasp_contact": false,
+                "gripper_joint_position_m": [
+                  0.039088739582284496,
+                  -0.039086715460340114
+                ],
+                "gripper_open": true,
+                "object_angular_velocity_rad_s": [
+                  2.5264065465250112e-06,
+                  -3.90488757855667e-06,
+                  -1.416206433002036e-13
+                ],
+                "object_linear_velocity_m_s": [
+                  -5.8164154665759e-08,
+                  -3.7631345245862644e-08,
+                  1.3552072003821654e-06
+                ],
+                "object_position_m": [
+                  0.12705076198222923,
+                  -0.12099368098338945,
+                  0.814784390191027
+                ],
+                "object_quat_wxyz": [
+                  0.999990511636795,
+                  -9.384070212309793e-08,
+                  1.431308021355407e-07,
+                  -0.004356218124929749
+                ],
+                "object_yaw_rad": -0.008712463805577645,
+                "sim_time_s": 12.7
+              },
+              "verified_lift": true
+            }
+          ],
+          "control_steps": 296,
+          "controller_exceptions": [],
+          "criteria": {
+            "footprint_inside_target": true,
+            "marked_face_up": true,
+            "orientation": true,
+            "placement_height": true,
+            "position": true,
+            "released": true,
+            "stable": true
+          },
+          "failed_grasp_count": 0,
+          "footprint_inside_target": true,
+          "grasp_attempt_count": 1,
+          "height_error_m": 0.00021551084043414104,
+          "maximum_angular_velocity_rad_s": 1.2567690272741926e-15,
+          "maximum_linear_velocity_m_s": 2.166621356670481e-14,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "orientation_error_deg": 0.49918740521884775,
+          "orientation_error_rad": 0.008712463805556018,
+          "position_error_m": 0.0022788186818894617,
+          "recovered_after_failed_grasp": false,
+          "retries": 0,
+          "sim_time_s": 14.8,
+          "stability_duration_s": 1.1000000000000014,
+          "stability_sample_count": 12,
+          "success": true,
+          "successful_grasp_count": 1,
+          "successful_recovery": false,
+          "target_height_m": 0.8150000000000001,
+          "task": "feeding",
+          "upright_error_rad": 0.0
+        },
+        "source_demo_id": "demo_0005",
+        "success": true
+      },
+      "episode.json_sha256": "53d0ba137e3e8fb2c7923b50e56a1b27c9469f95108764e476708b4ff85de6bd",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "be77c1c4a0d9d008382dc3b133e540a6b0c3b9de0c27969ae9feaeba0c3d9081",
+      "source_actions_hash_match": true
+    },
+    {
+      "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+      "actions": 299,
+      "category": "orientation_correction",
+      "frames": 75,
+      "id": "personal_demo_0007",
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "path": "personal_demo_0007.npz",
+      "proprio": {
+        "type": "list",
+        "length": 75,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "replay_max_position_error": 0.0,
+      "sha256": "60d17c175c256ca78c5b4b263fdfc9eba4801d3041d89bbc793043398d904e09",
+      "source_action_sha256": "f99ec3d363a85953fdb65a4346ce727dd9a3940edf7f9ec07e954d2831a4ca4d",
+      "source_demo_id": "demo_0007",
+      "source_episode_sha256": "469191be44216c2cafbb5da9225f605289edf95a92d4d7a41ececead739d24e5",
+      "source_path": "results/personal-m3-20261009/data-canonical/personal_generation/episode_artifacts/personal_demo_0007",
+      "split": "R_train",
+      "window": "30 future20Hz absolute targets; last target repeats only past terminal boundary; observation sampled before first action",
+      "targets": {
+        "type": "list",
+        "length": 299,
+        "first": "[-0.25, -0.25, 1.0800000429153442, -2.8679553834041086e-20, 1.0, -7.653081489689148e-21, 1.0, 3.2185"
+      },
+      "frame_action_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+        84,
+        88,
+        92,
+        96,
+        100,
+        104,
+        108,
+        112,
+        116,
+        120,
+        124,
+        128,
+        132,
+        136,
+        140,
+        144,
+        148,
+        152,
+        156,
+        160,
+        164,
+        168,
+        172,
+        176,
+        180,
+        184,
+        188,
+        192,
+        196,
+        200,
+        204,
+        208,
+        212,
+        216,
+        220,
+        224,
+        228,
+        232,
+        236,
+        240,
+        244,
+        248,
+        252,
+        256,
+        260,
+        264,
+        268,
+        272,
+        276,
+        280,
+        284,
+        288,
+        292,
+        296
+      ],
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            75,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            75,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_demo_0007.npz",
+      "verified_source_sha256": "60d17c175c256ca78c5b4b263fdfc9eba4801d3041d89bbc793043398d904e09",
+      "source_sha256_after_read": "60d17c175c256ca78c5b4b263fdfc9eba4801d3041d89bbc793043398d904e09",
+      "source_provenance": null,
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_demo_0007.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 38173080,
+        "sha256": "60d17c175c256ca78c5b4b263fdfc9eba4801d3041d89bbc793043398d904e09"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_generation/episode_artifacts/personal_demo_0007",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "frames",
+        "resolved_config.json",
+        "camera_calibration.json",
+        "robot_actions.jsonl",
+        "rgb_trajectory.npz",
+        "primary.mp4",
+        "secondary.mp4",
+        "episode.json"
+      ],
+      "episode.json": {
+        "evaluation": {
+          "attempts": [
+            {
+              "attempt_index": 0,
+              "forced_miss": false,
+              "grasp_contact": true,
+              "lift_height_m": 0.14804783090894302,
+              "lift_truth": {
+                "bilateral_grasp_contact": true,
+                "control_steps": 192,
+                "eef_position_m": [
+                  0.11419413098628861,
+                  -0.10999826691602128,
+                  0.9703644215963532
+                ],
+                "grasp_contact": true,
+                "gripper_joint_position_m": [
+                  0.017493055815468648,
+                  -0.017035064399489368
+                ],
+                "gripper_open": false,
+                "object_angular_velocity_rad_s": [
+                  0.0025380425275894685,
+                  0.004086778001030064,
+                  0.0022255335637487057
+                ],
+                "object_linear_velocity_m_s": [
+                  0.0021115220841550976,
+                  -0.0007641135118635279,
+                  0.00692860797041219
+                ],
+                "object_position_m": [
+                  0.11408018460180844,
+                  -0.10920145854341701,
+                  0.9628323200685089
+                ],
+                "object_quat_wxyz": [
+                  0.70758837414702,
+                  0.0027711565258602476,
+                  -0.008484964727491663,
+                  -0.7065684813498684
+                ],
+                "object_yaw_rad": -1.5694183081717004,
+                "sim_time_s": 9.6
+              },
+              "lifted": true,
+              "phases": [
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0025569519855760917,
+                  "object_position_m": [
+                    0.11916169151858524,
+                    -0.11118095075483524,
+                    0.8147844891595659
+                  ],
+                  "phase": "approach",
+                  "steps": 76
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.00168651324980652,
+                  "object_position_m": [
+                    0.11916169151858524,
+                    -0.11118095075483524,
+                    0.8147844891595659
+                  ],
+                  "phase": "descend",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.006753694986301106,
+                  "object_position_m": [
+                    0.11408018460180844,
+                    -0.10920145854341701,
+                    0.9628323200685089
+                  ],
+                  "phase": "lift",
+                  "steps": 18
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.005551105860997672,
+                  "object_position_m": [
+                    0.12198595483296651,
+                    -0.12497373616602254,
+                    0.9661450060341739
+                  ],
+                  "phase": "transfer",
+                  "steps": 30
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0013009946093866353,
+                  "object_position_m": [
+                    0.12474048018654986,
+                    -0.11979672880400435,
+                    0.8205580821915829
+                  ],
+                  "phase": "place",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.005876313214347689,
+                  "object_position_m": [
+                    0.12726258175362906,
+                    -0.12041322055271196,
+                    0.8147844891583195
+                  ],
+                  "phase": "retreat",
+                  "steps": 16
+                }
+              ],
+              "release_truth": {
+                "bilateral_grasp_contact": false,
+                "control_steps": 258,
+                "eef_position_m": [
+                  0.12488395382814023,
+                  -0.11994887839733002,
+                  0.82690241216571
+                ],
+                "grasp_contact": false,
+                "gripper_joint_position_m": [
+                  0.03908798520540752,
+                  -0.03908747462756067
+                ],
+                "gripper_open": true,
+                "object_angular_velocity_rad_s": [
+                  1.8979721323808667e-06,
+                  3.5036842023316135e-06,
+                  9.381455654425046e-14
+                ],
+                "object_linear_velocity_m_s": [
+                  5.2188174397343155e-08,
+                  -2.827070300586725e-08,
+                  1.1395393739349813e-06
+                ],
+                "object_position_m": [
+                  0.12726257791708154,
+                  -0.12041321846674997,
+                  0.8147844059407584
+                ],
+                "object_quat_wxyz": [
+                  0.9999932211725193,
+                  -6.954760344308224e-08,
+                  -1.2904328851298495e-07,
+                  -0.0036820658586691666
+                ],
+                "object_yaw_rad": -0.007364148357425129,
+                "sim_time_s": 12.9
+              },
+              "verified_lift": true
+            }
+          ],
+          "control_steps": 299,
+          "controller_exceptions": [],
+          "criteria": {
+            "footprint_inside_target": true,
+            "marked_face_up": true,
+            "orientation": true,
+            "placement_height": true,
+            "position": true,
+            "released": true,
+            "stable": true
+          },
+          "failed_grasp_count": 0,
+          "footprint_inside_target": true,
+          "grasp_attempt_count": 1,
+          "height_error_m": 0.00021551084043414104,
+          "maximum_angular_velocity_rad_s": 1.192137282997691e-15,
+          "maximum_linear_velocity_m_s": 2.16193975792295e-14,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "orientation_error_deg": 0.4219346205894794,
+          "orientation_error_rad": 0.007364148357439473,
+          "position_error_m": 0.002300005960285098,
+          "recovered_after_failed_grasp": false,
+          "retries": 0,
+          "sim_time_s": 14.95,
+          "stability_duration_s": 1.0999999999999996,
+          "stability_sample_count": 12,
+          "success": true,
+          "successful_grasp_count": 1,
+          "successful_recovery": false,
+          "target_height_m": 0.8150000000000001,
+          "task": "feeding",
+          "upright_error_rad": 0.0
+        },
+        "source_demo_id": "demo_0007",
+        "success": true
+      },
+      "episode.json_sha256": "469191be44216c2cafbb5da9225f605289edf95a92d4d7a41ececead739d24e5",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "f99ec3d363a85953fdb65a4346ce727dd9a3940edf7f9ec07e954d2831a4ca4d",
+      "source_actions_hash_match": true
+    },
+    {
+      "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+      "actions": 299,
+      "category": "orientation_correction",
+      "frames": 75,
+      "id": "personal_demo_0009",
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "path": "personal_demo_0009.npz",
+      "proprio": {
+        "type": "list",
+        "length": 75,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "replay_max_position_error": 0.0,
+      "sha256": "d18c478a475294fea3a00ec57104fed84979c053439ebfe68d6f0f262db0ac3f",
+      "source_action_sha256": "b5ca8a55dfb5534a175a8d5cf6e52c21920fae1891d6161b92b0561541be3c92",
+      "source_demo_id": "demo_0009",
+      "source_episode_sha256": "2777bec566e9956308f392bddfdac47a742e04530466b0b3caafb52e3eba53fd",
+      "source_path": "results/personal-m3-20261009/data-canonical/personal_generation/episode_artifacts/personal_demo_0009",
+      "split": "R_train",
+      "window": "30 future20Hz absolute targets; last target repeats only past terminal boundary; observation sampled before first action",
+      "targets": {
+        "type": "list",
+        "length": 299,
+        "first": "[-0.25, -0.25, 1.0800000429153442, -2.8679553834041086e-20, 1.0, -7.653081489689148e-21, 1.0, 3.2185"
+      },
+      "frame_action_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+        84,
+        88,
+        92,
+        96,
+        100,
+        104,
+        108,
+        112,
+        116,
+        120,
+        124,
+        128,
+        132,
+        136,
+        140,
+        144,
+        148,
+        152,
+        156,
+        160,
+        164,
+        168,
+        172,
+        176,
+        180,
+        184,
+        188,
+        192,
+        196,
+        200,
+        204,
+        208,
+        212,
+        216,
+        220,
+        224,
+        228,
+        232,
+        236,
+        240,
+        244,
+        248,
+        252,
+        256,
+        260,
+        264,
+        268,
+        272,
+        276,
+        280,
+        284,
+        288,
+        292,
+        296
+      ],
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            75,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            75,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_demo_0009.npz",
+      "verified_source_sha256": "d18c478a475294fea3a00ec57104fed84979c053439ebfe68d6f0f262db0ac3f",
+      "source_sha256_after_read": "d18c478a475294fea3a00ec57104fed84979c053439ebfe68d6f0f262db0ac3f",
+      "source_provenance": null,
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_demo_0009.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 38175486,
+        "sha256": "d18c478a475294fea3a00ec57104fed84979c053439ebfe68d6f0f262db0ac3f"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_generation/episode_artifacts/personal_demo_0009",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "frames",
+        "resolved_config.json",
+        "camera_calibration.json",
+        "robot_actions.jsonl",
+        "rgb_trajectory.npz",
+        "primary.mp4",
+        "secondary.mp4",
+        "episode.json"
+      ],
+      "episode.json": {
+        "evaluation": {
+          "attempts": [
+            {
+              "attempt_index": 0,
+              "forced_miss": false,
+              "grasp_contact": true,
+              "lift_height_m": 0.14754725200685348,
+              "lift_truth": {
+                "bilateral_grasp_contact": true,
+                "control_steps": 168,
+                "eef_position_m": [
+                  0.12296634606373043,
+                  -0.1130524037525761,
+                  0.9697843059682183
+                ],
+                "grasp_contact": true,
+                "gripper_joint_position_m": [
+                  0.01731487190190969,
+                  -0.017212204292881606
+                ],
+                "gripper_open": false,
+                "object_angular_velocity_rad_s": [
+                  -0.005777052433123943,
+                  -0.0179596161995079,
+                  -3.382375552100028e-05
+                ],
+                "object_linear_velocity_m_s": [
+                  -0.0048040513308679955,
+                  0.004094517195526243,
+                  0.005974008113141062
+                ],
+                "object_position_m": [
+                  0.12010705736484842,
+                  -0.11300620537766906,
+                  0.9623317411664194
+                ],
+                "object_quat_wxyz": [
+                  0.0012926258823886966,
+                  -0.017300794822176526,
+                  0.0010361519697783086,
+                  0.9998489575960686
+                ],
+                "object_yaw_rad": 3.13904211497525,
+                "sim_time_s": 8.4
+              },
+              "lifted": true,
+              "phases": [
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.006042292495276538,
+                  "object_position_m": [
+                    0.1283178215230923,
+                    -0.11374862648798859,
+                    0.8147844891595659
+                  ],
+                  "phase": "approach",
+                  "steps": 53
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.002292687654752247,
+                  "object_position_m": [
+                    0.1283178215230923,
+                    -0.11374862648798859,
+                    0.8147844891595659
+                  ],
+                  "phase": "descend",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0073569591297283346,
+                  "object_position_m": [
+                    0.12010705736484842,
+                    -0.11300620537766906,
+                    0.9623317411664194
+                  ],
+                  "phase": "lift",
+                  "steps": 17
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.005468060031356023,
+                  "object_position_m": [
+                    0.1288780442880072,
+                    -0.11464126059762489,
+                    0.9670735566285202
+                  ],
+                  "phase": "transfer",
+                  "steps": 54
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.001493551002451359,
+                  "object_position_m": [
+                    0.12803805894999593,
+                    -0.12094039382673132,
+                    0.8203295388848748
+                  ],
+                  "phase": "place",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0059134845535201985,
+                  "object_position_m": [
+                    0.13009664565987158,
+                    -0.1207391526648636,
+                    0.8147844891584494
+                  ],
+                  "phase": "retreat",
+                  "steps": 16
+                }
+              ],
+              "release_truth": {
+                "bilateral_grasp_contact": false,
+                "control_steps": 258,
+                "eef_position_m": [
+                  0.12496181499769841,
+                  -0.12009564809652305,
+                  0.8269656057981607
+                ],
+                "grasp_contact": false,
+                "gripper_joint_position_m": [
+                  0.039088353734681947,
+                  -0.03908710905465111
+                ],
+                "gripper_open": true,
+                "object_angular_velocity_rad_s": [
+                  9.85718999753241e-07,
+                  3.522591051886324e-06,
+                  4.888232180149497e-14
+                ],
+                "object_linear_velocity_m_s": [
+                  5.246981345149124e-08,
+                  -1.4682501294375959e-08,
+                  1.0207481547046003e-06
+                ],
+                "object_position_m": [
+                  0.13009664180257083,
+                  -0.12073915158150578,
+                  0.8147844146158331
+                ],
+                "object_quat_wxyz": [
+                  0.9999984005103324,
+                  -3.613486767672576e-08,
+                  -1.29547790886567e-07,
+                  -0.0017885683545609142
+                ],
+                "object_yaw_rad": -0.0035771386163114985,
+                "sim_time_s": 12.9
+              },
+              "verified_lift": true
+            }
+          ],
+          "control_steps": 299,
+          "controller_exceptions": [],
+          "criteria": {
+            "footprint_inside_target": true,
+            "marked_face_up": true,
+            "orientation": true,
+            "placement_height": true,
+            "position": true,
+            "released": true,
+            "stable": true
+          },
+          "failed_grasp_count": 0,
+          "footprint_inside_target": true,
+          "grasp_attempt_count": 1,
+          "height_error_m": 0.00021551084043414104,
+          "maximum_angular_velocity_rad_s": 1.3960164809585806e-15,
+          "maximum_linear_velocity_m_s": 2.1625319173569145e-14,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "orientation_error_deg": 0.2049549454483441,
+          "orientation_error_rad": 0.0035771386163189704,
+          "position_error_m": 0.005149965402303308,
+          "recovered_after_failed_grasp": false,
+          "retries": 0,
+          "sim_time_s": 14.95,
+          "stability_duration_s": 1.0999999999999996,
+          "stability_sample_count": 12,
+          "success": true,
+          "successful_grasp_count": 1,
+          "successful_recovery": false,
+          "target_height_m": 0.8150000000000001,
+          "task": "feeding",
+          "upright_error_rad": 0.0
+        },
+        "source_demo_id": "demo_0009",
+        "success": true
+      },
+      "episode.json_sha256": "2777bec566e9956308f392bddfdac47a742e04530466b0b3caafb52e3eba53fd",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "b5ca8a55dfb5534a175a8d5cf6e52c21920fae1891d6161b92b0561541be3c92",
+      "source_actions_hash_match": true
+    },
+    {
+      "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+      "actions": 278,
+      "category": "awkward_pause_resume_feeding",
+      "frames": 70,
+      "id": "personal_demo_0012",
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "path": "personal_demo_0012.npz",
+      "proprio": {
+        "type": "list",
+        "length": 70,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "replay_max_position_error": 0.0,
+      "sha256": "01bac6d5f076f699595fb933bd15038437d838039d8002c2904a2275cd206c45",
+      "source_action_sha256": "3b565e4835504b8a9dcd1d75de7eb6ec92034e62079ff577beafe3bac1d2243c",
+      "source_demo_id": "demo_0012",
+      "source_episode_sha256": "ed00ef1f0b01f9d99db8e8f8667b249279a9e6c739e238c352d4d0f527d34281",
+      "source_path": "results/personal-m3-20261009/data-canonical/personal_generation/episode_artifacts/personal_demo_0012",
+      "split": "P_train",
+      "window": "30 future20Hz absolute targets; last target repeats only past terminal boundary; observation sampled before first action",
+      "targets": {
+        "type": "list",
+        "length": 278,
+        "first": "[-0.25, -0.25, 1.0800000429153442, -2.8679553834041086e-20, 1.0, -7.653081489689148e-21, 1.0, 3.2185"
+      },
+      "frame_action_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+        84,
+        88,
+        92,
+        96,
+        100,
+        104,
+        108,
+        112,
+        116,
+        120,
+        124,
+        128,
+        132,
+        136,
+        140,
+        144,
+        148,
+        152,
+        156,
+        160,
+        164,
+        168,
+        172,
+        176,
+        180,
+        184,
+        188,
+        192,
+        196,
+        200,
+        204,
+        208,
+        212,
+        216,
+        220,
+        224,
+        228,
+        232,
+        236,
+        240,
+        244,
+        248,
+        252,
+        256,
+        260,
+        264,
+        268,
+        272,
+        276
+      ],
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            70,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            70,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_demo_0012.npz",
+      "verified_source_sha256": "01bac6d5f076f699595fb933bd15038437d838039d8002c2904a2275cd206c45",
+      "source_sha256_after_read": "01bac6d5f076f699595fb933bd15038437d838039d8002c2904a2275cd206c45",
+      "source_provenance": null,
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_demo_0012.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 35658064,
+        "sha256": "01bac6d5f076f699595fb933bd15038437d838039d8002c2904a2275cd206c45"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_generation/episode_artifacts/personal_demo_0012",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "frames",
+        "resolved_config.json",
+        "camera_calibration.json",
+        "robot_actions.jsonl",
+        "rgb_trajectory.npz",
+        "primary.mp4",
+        "secondary.mp4",
+        "episode.json"
+      ],
+      "episode.json": {
+        "evaluation": {
+          "attempts": [
+            {
+              "attempt_index": 0,
+              "forced_miss": false,
+              "grasp_contact": true,
+              "lift_height_m": 0.1555730109424036,
+              "lift_truth": {
+                "bilateral_grasp_contact": true,
+                "control_steps": 159,
+                "eef_position_m": [
+                  -0.16726209232507191,
+                  -0.15986248045947327,
+                  0.9758285488535741
+                ],
+                "grasp_contact": true,
+                "gripper_joint_position_m": [
+                  0.017316990879906024,
+                  -0.01720801685255846
+                ],
+                "gripper_open": false,
+                "object_angular_velocity_rad_s": [
+                  0.003545473995262789,
+                  0.03498070515996111,
+                  0.004040518555240544
+                ],
+                "object_linear_velocity_m_s": [
+                  0.015644998489148226,
+                  -0.001838670205558621,
+                  0.01683126393577639
+                ],
+                "object_position_m": [
+                  -0.1709087965345945,
+                  -0.16110046009392046,
+                  0.9703575001019695
+                ],
+                "object_quat_wxyz": [
+                  0.9865962689378317,
+                  0.006064306919060696,
+                  -0.0012066406662851702,
+                  0.1630630869260225
+                ],
+                "object_yaw_rad": 0.32757010207800313,
+                "sim_time_s": 7.95
+              },
+              "lifted": true,
+              "phases": [
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0008636922636360231,
+                  "object_position_m": [
+                    -0.16933751319902174,
+                    -0.15580803088202866,
+                    0.8147844891595659
+                  ],
+                  "phase": "approach",
+                  "steps": 27
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0016388435057973435,
+                  "object_position_m": [
+                    -0.16933751319902174,
+                    -0.15580803088202866,
+                    0.8147844891595659
+                  ],
+                  "phase": "descend",
+                  "steps": 32
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.004672899937375048,
+                  "object_position_m": [
+                    -0.1709087965345945,
+                    -0.16110046009392046,
+                    0.9703575001019695
+                  ],
+                  "phase": "lift",
+                  "steps": 18
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.00223891497325107,
+                  "object_position_m": [
+                    0.12384379548952498,
+                    -0.12039823026403101,
+                    0.9704616525760406
+                  ],
+                  "phase": "transfer",
+                  "steps": 41
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0011429006464437686,
+                  "object_position_m": [
+                    0.12174271541098361,
+                    -0.12049049005621436,
+                    0.8219921331829527
+                  ],
+                  "phase": "place",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.005824243080258013,
+                  "object_position_m": [
+                    0.12600568159411193,
+                    -0.12092684646115168,
+                    0.8147844891578349
+                  ],
+                  "phase": "retreat",
+                  "steps": 16
+                }
+              ],
+              "release_truth": {
+                "bilateral_grasp_contact": false,
+                "control_steps": 236,
+                "eef_position_m": [
+                  0.12466987922317724,
+                  -0.1201181767951509,
+                  0.8267902411639997
+                ],
+                "grasp_contact": false,
+                "gripper_joint_position_m": [
+                  0.03908874151168432,
+                  -0.0390867126413956
+                ],
+                "gripper_open": true,
+                "object_angular_velocity_rad_s": [
+                  1.4687536051369616e-06,
+                  -1.8244501521192873e-06,
+                  -3.823943992916729e-14
+                ],
+                "object_linear_velocity_m_s": [
+                  -2.717556701601348e-08,
+                  -2.1877373458824348e-08,
+                  1.5817990454319106e-06
+                ],
+                "object_position_m": [
+                  0.1260056835919307,
+                  -0.12092684484682181,
+                  0.8147843736435862
+                ],
+                "object_quat_wxyz": [
+                  0.999998035234436,
+                  -5.4323239906242763e-08,
+                  6.69558427035085e-08,
+                  -0.0019823035238239637
+                ],
+                "object_yaw_rad": -0.003964609644165058,
+                "sim_time_s": 11.8
+              },
+              "verified_lift": true
+            }
+          ],
+          "control_steps": 278,
+          "controller_exceptions": [],
+          "criteria": {
+            "footprint_inside_target": true,
+            "marked_face_up": true,
+            "orientation": true,
+            "placement_height": true,
+            "position": true,
+            "released": true,
+            "stable": true
+          },
+          "failed_grasp_count": 0,
+          "footprint_inside_target": true,
+          "grasp_attempt_count": 1,
+          "height_error_m": 0.00021551084043414104,
+          "maximum_angular_velocity_rad_s": 1.2809608514964406e-15,
+          "maximum_linear_velocity_m_s": 2.1628739188277184e-14,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "orientation_error_deg": 0.22715540002718623,
+          "orientation_error_rad": 0.0039646096441592164,
+          "position_error_m": 0.0013676402419023324,
+          "recovered_after_failed_grasp": false,
+          "retries": 0,
+          "sim_time_s": 13.9,
+          "stability_duration_s": 1.0999999999999996,
+          "stability_sample_count": 12,
+          "success": true,
+          "successful_grasp_count": 1,
+          "successful_recovery": false,
+          "target_height_m": 0.8150000000000001,
+          "task": "feeding",
+          "upright_error_rad": 0.0
+        },
+        "source_demo_id": "demo_0012",
+        "success": true
+      },
+      "episode.json_sha256": "ed00ef1f0b01f9d99db8e8f8667b249279a9e6c739e238c352d4d0f527d34281",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "3b565e4835504b8a9dcd1d75de7eb6ec92034e62079ff577beafe3bac1d2243c",
+      "source_actions_hash_match": true
+    },
+    {
+      "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+      "actions": 292,
+      "category": "awkward_pause_resume_feeding",
+      "frames": 73,
+      "id": "personal_demo_0013",
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "path": "personal_demo_0013.npz",
+      "proprio": {
+        "type": "list",
+        "length": 73,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "replay_max_position_error": 0.0,
+      "sha256": "ebda32e8b5ac9b9c0baefcdac4996c9cd09a4c541b46a0a12078b0948107681a",
+      "source_action_sha256": "2df333cbd3f9586b98bcefce8d3f18cd64c425fd5445c19b1a9c2a86ecae8f4a",
+      "source_demo_id": "demo_0013",
+      "source_episode_sha256": "1de6da90fb3f896ce11219c277799b821e4260cb8aba5c5f584ddc2afe0db7d4",
+      "source_path": "results/personal-m3-20261009/data-canonical/personal_generation/episode_artifacts/personal_demo_0013",
+      "split": "P_train",
+      "window": "30 future20Hz absolute targets; last target repeats only past terminal boundary; observation sampled before first action",
+      "targets": {
+        "type": "list",
+        "length": 292,
+        "first": "[-0.25, -0.25, 1.0800000429153442, -2.8679553834041086e-20, 1.0, -7.653081489689148e-21, 1.0, 3.2185"
+      },
+      "frame_action_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+        84,
+        88,
+        92,
+        96,
+        100,
+        104,
+        108,
+        112,
+        116,
+        120,
+        124,
+        128,
+        132,
+        136,
+        140,
+        144,
+        148,
+        152,
+        156,
+        160,
+        164,
+        168,
+        172,
+        176,
+        180,
+        184,
+        188,
+        192,
+        196,
+        200,
+        204,
+        208,
+        212,
+        216,
+        220,
+        224,
+        228,
+        232,
+        236,
+        240,
+        244,
+        248,
+        252,
+        256,
+        260,
+        264,
+        268,
+        272,
+        276,
+        280,
+        284,
+        288
+      ],
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            73,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            73,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_demo_0013.npz",
+      "verified_source_sha256": "ebda32e8b5ac9b9c0baefcdac4996c9cd09a4c541b46a0a12078b0948107681a",
+      "source_sha256_after_read": "ebda32e8b5ac9b9c0baefcdac4996c9cd09a4c541b46a0a12078b0948107681a",
+      "source_provenance": null,
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_demo_0013.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 37169592,
+        "sha256": "ebda32e8b5ac9b9c0baefcdac4996c9cd09a4c541b46a0a12078b0948107681a"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/personal_generation/episode_artifacts/personal_demo_0013",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "frames",
+        "resolved_config.json",
+        "camera_calibration.json",
+        "robot_actions.jsonl",
+        "rgb_trajectory.npz",
+        "primary.mp4",
+        "secondary.mp4",
+        "episode.json"
+      ],
+      "episode.json": {
+        "evaluation": {
+          "attempts": [
+            {
+              "attempt_index": 0,
+              "forced_miss": false,
+              "grasp_contact": true,
+              "lift_height_m": 0.1579659080146989,
+              "lift_truth": {
+                "bilateral_grasp_contact": true,
+                "control_steps": 172,
+                "eef_position_m": [
+                  -0.16512151227706576,
+                  0.06304222039908121,
+                  0.9778483498461944
+                ],
+                "grasp_contact": true,
+                "gripper_joint_position_m": [
+                  0.017344855373066084,
+                  -0.01718086066948218
+                ],
+                "gripper_open": false,
+                "object_angular_velocity_rad_s": [
+                  -0.021977081356567722,
+                  0.11686766757422994,
+                  -0.04921716987006005
+                ],
+                "object_linear_velocity_m_s": [
+                  0.04030991911166109,
+                  0.024376682599758046,
+                  0.024803076795293453
+                ],
+                "object_position_m": [
+                  -0.16595373769551314,
+                  0.06388028602372586,
+                  0.9727503971742648
+                ],
+                "object_quat_wxyz": [
+                  0.8939903778953121,
+                  -0.00731985389469775,
+                  0.0013068194990062823,
+                  -0.4480244593684084
+                ],
+                "object_yaw_rad": -0.929106379246178,
+                "sim_time_s": 8.6
+              },
+              "lifted": true,
+              "phases": [
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.002198720844819231,
+                  "object_position_m": [
+                    -0.1677830779869675,
+                    0.057586299258928664,
+                    0.8147844891595659
+                  ],
+                  "phase": "approach",
+                  "steps": 45
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.003241191627152608,
+                  "object_position_m": [
+                    -0.1677830779869675,
+                    0.057586299258928664,
+                    0.8147844891595659
+                  ],
+                  "phase": "descend",
+                  "steps": 24
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.006799871309278995,
+                  "object_position_m": [
+                    -0.16595373769551314,
+                    0.06388028602372586,
+                    0.9727503971742648
+                  ],
+                  "phase": "lift",
+                  "steps": 21
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0022349769428764384,
+                  "object_position_m": [
+                    0.1267111209781337,
+                    -0.12023857664033963,
+                    0.9708381320987113
+                  ],
+                  "phase": "transfer",
+                  "steps": 42
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0011187122176990083,
+                  "object_position_m": [
+                    0.12462163370621406,
+                    -0.12045610547356563,
+                    0.8223972135329127
+                  ],
+                  "phase": "place",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.005818636826332758,
+                  "object_position_m": [
+                    0.12855546826060937,
+                    -0.12105119656084032,
+                    0.8147844891579656
+                  ],
+                  "phase": "retreat",
+                  "steps": 16
+                }
+              ],
+              "release_truth": {
+                "bilateral_grasp_contact": false,
+                "control_steps": 250,
+                "eef_position_m": [
+                  0.12465223516023353,
+                  -0.12012417085875036,
+                  0.8267800199517141
+                ],
+                "grasp_contact": false,
+                "gripper_joint_position_m": [
+                  0.039088762658247206,
+                  -0.03908669354119689
+                ],
+                "gripper_open": true,
+                "object_angular_velocity_rad_s": [
+                  -8.392465490809535e-06,
+                  1.648514285536675e-07,
+                  -1.2069296881385325e-14
+                ],
+                "object_linear_velocity_m_s": [
+                  2.45549654113972e-09,
+                  1.2500746410676405e-07,
+                  1.4624596170477516e-06
+                ],
+                "object_position_m": [
+                  0.12855546807983392,
+                  -0.12105120578498198,
+                  0.814784382358653
+                ],
+                "object_quat_wxyz": [
+                  0.9999927509377556,
+                  3.096601292169726e-07,
+                  -4.889298755418862e-09,
+                  -0.003807633365209824
+                ],
+                "object_yaw_rad": -0.007615285131656391,
+                "sim_time_s": 12.5
+              },
+              "verified_lift": true
+            }
+          ],
+          "control_steps": 292,
+          "controller_exceptions": [],
+          "criteria": {
+            "footprint_inside_target": true,
+            "marked_face_up": true,
+            "orientation": true,
+            "placement_height": true,
+            "position": true,
+            "released": true,
+            "stable": true
+          },
+          "failed_grasp_count": 0,
+          "footprint_inside_target": true,
+          "grasp_attempt_count": 1,
+          "height_error_m": 0.00021551084043414104,
+          "maximum_angular_velocity_rad_s": 1.2515829216365998e-15,
+          "maximum_linear_velocity_m_s": 2.1670038981025068e-14,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "orientation_error_deg": 0.4363236978325332,
+          "orientation_error_rad": 0.00761528513165455,
+          "position_error_m": 0.003707609575105683,
+          "recovered_after_failed_grasp": false,
+          "retries": 0,
+          "sim_time_s": 14.600000000000001,
+          "stability_duration_s": 1.1000000000000014,
+          "stability_sample_count": 12,
+          "success": true,
+          "successful_grasp_count": 1,
+          "successful_recovery": false,
+          "target_height_m": 0.8150000000000001,
+          "task": "feeding",
+          "upright_error_rad": 0.0
+        },
+        "source_demo_id": "demo_0013",
+        "success": true
+      },
+      "episode.json_sha256": "1de6da90fb3f896ce11219c277799b821e4260cb8aba5c5f584ddc2afe0db7d4",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "2df333cbd3f9586b98bcefce8d3f18cd64c425fd5445c19b1a9c2a86ecae8f4a",
+      "source_actions_hash_match": true
+    },
+    {
+      "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+      "actions": 287,
+      "category": "normal_feeding",
+      "frames": 72,
+      "id": "synthetic_generated_001",
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.122577, y=-0.137180. Required block yaw: -142.217940 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "path": "synthetic_generated_001.npz",
+      "proprio": {
+        "type": "list",
+        "length": 72,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "replay_max_position_error": 0.0,
+      "sha256": "6ee9e3b7a1fd4a5b97dc502e488d4d7bf83306c8e26b71366faa7756cea74111",
+      "source_action_sha256": "b63b1bcd766191643c1301c431555e335874968659f7728061024f5d339b2cfd",
+      "source_demo_id": null,
+      "source_episode_sha256": "ac47d9380ecff415ebb23921137c08208b2327702c385d3ff9481eb56d03c10a",
+      "source_path": "results/personal-m3-20261009/data-canonical/synthetic_generation/episode_artifacts/synthetic_generated_001",
+      "split": "S_train",
+      "window": "30 future20Hz absolute targets; last target repeats only past terminal boundary; observation sampled before first action",
+      "targets": {
+        "type": "list",
+        "length": 287,
+        "first": "[-0.25, -0.25, 1.0800000429153442, -2.8679553834041086e-20, 1.0, -7.653081489689148e-21, 1.0, 3.2185"
+      },
+      "frame_action_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+        84,
+        88,
+        92,
+        96,
+        100,
+        104,
+        108,
+        112,
+        116,
+        120,
+        124,
+        128,
+        132,
+        136,
+        140,
+        144,
+        148,
+        152,
+        156,
+        160,
+        164,
+        168,
+        172,
+        176,
+        180,
+        184,
+        188,
+        192,
+        196,
+        200,
+        204,
+        208,
+        212,
+        216,
+        220,
+        224,
+        228,
+        232,
+        236,
+        240,
+        244,
+        248,
+        252,
+        256,
+        260,
+        264,
+        268,
+        272,
+        276,
+        280,
+        284
+      ],
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            72,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            72,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generated_001.npz",
+      "verified_source_sha256": "6ee9e3b7a1fd4a5b97dc502e488d4d7bf83306c8e26b71366faa7756cea74111",
+      "source_sha256_after_read": "6ee9e3b7a1fd4a5b97dc502e488d4d7bf83306c8e26b71366faa7756cea74111",
+      "source_provenance": null,
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generated_001.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 36683937,
+        "sha256": "6ee9e3b7a1fd4a5b97dc502e488d4d7bf83306c8e26b71366faa7756cea74111"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generation/episode_artifacts/synthetic_generated_001",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "frames",
+        "resolved_config.json",
+        "camera_calibration.json",
+        "robot_actions.jsonl",
+        "rgb_trajectory.npz",
+        "primary.mp4",
+        "secondary.mp4",
+        "episode.json"
+      ],
+      "episode.json": {
+        "evaluation": {
+          "attempts": [
+            {
+              "attempt_index": 0,
+              "forced_miss": false,
+              "grasp_contact": true,
+              "lift_height_m": 0.1471631573813157,
+              "lift_truth": {
+                "bilateral_grasp_contact": true,
+                "control_steps": 167,
+                "eef_position_m": [
+                  0.1065850140001641,
+                  0.17084759750165443,
+                  0.9698858441831196
+                ],
+                "grasp_contact": true,
+                "gripper_joint_position_m": [
+                  0.017443780242151905,
+                  -0.017081849022577703
+                ],
+                "gripper_open": false,
+                "object_angular_velocity_rad_s": [
+                  0.004812860642872314,
+                  -0.013918502695064014,
+                  0.006899942988541245
+                ],
+                "object_linear_velocity_m_s": [
+                  -0.0022177453554716553,
+                  -0.0011316849139443425,
+                  0.006879713883360457
+                ],
+                "object_position_m": [
+                  0.10513071843340673,
+                  0.17185834780685952,
+                  0.9619476465408816
+                ],
+                "object_quat_wxyz": [
+                  0.9478434103654597,
+                  0.003285230618830908,
+                  -0.012108115041936447,
+                  -0.31848935655165506
+                ],
+                "object_yaw_rad": -0.6484692076618532,
+                "sim_time_s": 8.35
+              },
+              "lifted": true,
+              "phases": [
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0020400118559172347,
+                  "object_position_m": [
+                    0.11155748529374371,
+                    0.17259542798529037,
+                    0.8147844891595659
+                  ],
+                  "phase": "approach",
+                  "steps": 52
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.001728385817333696,
+                  "object_position_m": [
+                    0.11155748529374371,
+                    0.17259542798529037,
+                    0.8147844891595659
+                  ],
+                  "phase": "descend",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.00719563095011571,
+                  "object_position_m": [
+                    0.10513071843340673,
+                    0.17185834780685952,
+                    0.9619476465408816
+                  ],
+                  "phase": "lift",
+                  "steps": 17
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0032011530988789436,
+                  "object_position_m": [
+                    0.12374288441431824,
+                    -0.13310185380205009,
+                    0.9661231105573032
+                  ],
+                  "phase": "transfer",
+                  "steps": 34
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0028777229433146487,
+                  "object_position_m": [
+                    0.12275091188159393,
+                    -0.1385105464906628,
+                    0.8192858527483136
+                  ],
+                  "phase": "place",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.00676137302965242,
+                  "object_position_m": [
+                    0.12426391076028812,
+                    -0.13926585030304156,
+                    0.8147844891595521
+                  ],
+                  "phase": "retreat",
+                  "steps": 22
+                }
+              ],
+              "release_truth": {
+                "bilateral_grasp_contact": false,
+                "control_steps": 237,
+                "eef_position_m": [
+                  0.12154367143027046,
+                  -0.13937111346165146,
+                  0.8266195035246476
+                ],
+                "grasp_contact": false,
+                "gripper_joint_position_m": [
+                  0.03908543552493518,
+                  -0.03908998626505484
+                ],
+                "gripper_open": true,
+                "object_angular_velocity_rad_s": [
+                  -2.6913460353567247e-06,
+                  9.007676430534825e-07,
+                  -5.273829512570194e-14
+                ],
+                "object_linear_velocity_m_s": [
+                  1.3417160545260329e-08,
+                  4.008822281557168e-08,
+                  9.02073287326194e-07
+                ],
+                "object_position_m": [
+                  0.12426390977784703,
+                  -0.13926585325519986,
+                  0.8147844232824242
+                ],
+                "object_quat_wxyz": [
+                  0.3263144294409388,
+                  6.350999664930981e-08,
+                  8.291158436488342e-08,
+                  -0.9452612829999036
+                ],
+                "object_yaw_rad": -2.476788771395161,
+                "sim_time_s": 11.85
+              },
+              "verified_lift": true
+            }
+          ],
+          "control_steps": 287,
+          "controller_exceptions": [],
+          "criteria": {
+            "footprint_inside_target": true,
+            "marked_face_up": true,
+            "orientation": true,
+            "placement_height": true,
+            "position": true,
+            "released": true,
+            "stable": true
+          },
+          "failed_grasp_count": 0,
+          "footprint_inside_target": true,
+          "grasp_attempt_count": 1,
+          "height_error_m": 0.00021551084043414104,
+          "maximum_angular_velocity_rad_s": 1.2059817815655519e-15,
+          "maximum_linear_velocity_m_s": 2.166059671759798e-14,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "orientation_error_deg": 0.3083964624903844,
+          "orientation_error_rad": 0.005382533671960399,
+          "position_error_m": 0.0026826459321447277,
+          "recovered_after_failed_grasp": false,
+          "retries": 0,
+          "sim_time_s": 14.350000000000001,
+          "stability_duration_s": 1.1000000000000014,
+          "stability_sample_count": 12,
+          "success": true,
+          "successful_grasp_count": 1,
+          "successful_recovery": false,
+          "target_height_m": 0.8150000000000001,
+          "task": "feeding",
+          "upright_error_rad": 0.0
+        },
+        "source_demo_id": null,
+        "success": true
+      },
+      "episode.json_sha256": "ac47d9380ecff415ebb23921137c08208b2327702c385d3ff9481eb56d03c10a",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "b63b1bcd766191643c1301c431555e335874968659f7728061024f5d339b2cfd",
+      "source_actions_hash_match": true
+    },
+    {
+      "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+      "actions": 306,
+      "category": "normal_feeding",
+      "frames": 77,
+      "id": "synthetic_generated_002",
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.119509, y=-0.136131. Required block yaw: 74.686325 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "path": "synthetic_generated_002.npz",
+      "proprio": {
+        "type": "list",
+        "length": 77,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "replay_max_position_error": 0.0,
+      "sha256": "87964935c2433743937f2b760b168486c234e2a93173d17af8424ea4c34e7094",
+      "source_action_sha256": "560aafbbe597c0851b1a92e76facd1b8ad12f5c488e66e6ef8cfa03baf3494c4",
+      "source_demo_id": null,
+      "source_episode_sha256": "919a2a57c06301262c2dba59a45c08eaad6aee3c021ad1cae75c8b07711bb910",
+      "source_path": "results/personal-m3-20261009/data-canonical/synthetic_generation/episode_artifacts/synthetic_generated_002",
+      "split": "S_train",
+      "window": "30 future20Hz absolute targets; last target repeats only past terminal boundary; observation sampled before first action",
+      "targets": {
+        "type": "list",
+        "length": 306,
+        "first": "[-0.25, -0.25, 1.0800000429153442, -2.8679553834041086e-20, 1.0, -7.653081489689148e-21, 1.0, 3.2185"
+      },
+      "frame_action_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+        84,
+        88,
+        92,
+        96,
+        100,
+        104,
+        108,
+        112,
+        116,
+        120,
+        124,
+        128,
+        132,
+        136,
+        140,
+        144,
+        148,
+        152,
+        156,
+        160,
+        164,
+        168,
+        172,
+        176,
+        180,
+        184,
+        188,
+        192,
+        196,
+        200,
+        204,
+        208,
+        212,
+        216,
+        220,
+        224,
+        228,
+        232,
+        236,
+        240,
+        244,
+        248,
+        252,
+        256,
+        260,
+        264,
+        268,
+        272,
+        276,
+        280,
+        284,
+        288,
+        292,
+        296,
+        300,
+        304
+      ],
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            77,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            77,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generated_002.npz",
+      "verified_source_sha256": "87964935c2433743937f2b760b168486c234e2a93173d17af8424ea4c34e7094",
+      "source_sha256_after_read": "87964935c2433743937f2b760b168486c234e2a93173d17af8424ea4c34e7094",
+      "source_provenance": null,
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generated_002.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 39207932,
+        "sha256": "87964935c2433743937f2b760b168486c234e2a93173d17af8424ea4c34e7094"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generation/episode_artifacts/synthetic_generated_002",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "frames",
+        "resolved_config.json",
+        "camera_calibration.json",
+        "robot_actions.jsonl",
+        "rgb_trajectory.npz",
+        "primary.mp4",
+        "secondary.mp4",
+        "episode.json"
+      ],
+      "episode.json": {
+        "evaluation": {
+          "attempts": [
+            {
+              "attempt_index": 0,
+              "forced_miss": false,
+              "grasp_contact": true,
+              "lift_height_m": 0.15331895340871315,
+              "lift_truth": {
+                "bilateral_grasp_contact": true,
+                "control_steps": 181,
+                "eef_position_m": [
+                  0.01902347547812172,
+                  -0.1364542198902741,
+                  0.9729735207769701
+                ],
+                "grasp_contact": true,
+                "gripper_joint_position_m": [
+                  0.017282094115427454,
+                  -0.017244033778912187
+                ],
+                "gripper_open": false,
+                "object_angular_velocity_rad_s": [
+                  0.013443671378542433,
+                  0.023622948138778282,
+                  -0.0015422098527770505
+                ],
+                "object_linear_velocity_m_s": [
+                  0.0056248853353079034,
+                  -0.004984550542404588,
+                  0.01427576561835639
+                ],
+                "object_position_m": [
+                  0.019052012075534076,
+                  -0.13564708614877,
+                  0.9681034425682791
+                ],
+                "object_quat_wxyz": [
+                  0.6881307639309682,
+                  -0.0007954278915817054,
+                  -0.002890998303846676,
+                  -0.7255804994313578
+                ],
+                "object_yaw_rad": -1.6237726385457047,
+                "sim_time_s": 9.05
+              },
+              "lifted": true,
+              "phases": [
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.002081595910860934,
+                  "object_position_m": [
+                    0.02008825412539205,
+                    -0.1385132979709895,
+                    0.8147844891595659
+                  ],
+                  "phase": "approach",
+                  "steps": 65
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.003658256105768508,
+                  "object_position_m": [
+                    0.02008825412539205,
+                    -0.1385132979709895,
+                    0.8147844891595659
+                  ],
+                  "phase": "descend",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.002941625841762908,
+                  "object_position_m": [
+                    0.019052012075534076,
+                    -0.13564708614877,
+                    0.9681034425682791
+                  ],
+                  "phase": "lift",
+                  "steps": 18
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.00537749528102656,
+                  "object_position_m": [
+                    0.1181295373195749,
+                    -0.14212881922656323,
+                    0.969477273709242
+                  ],
+                  "phase": "transfer",
+                  "steps": 51
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0010747481814724963,
+                  "object_position_m": [
+                    0.11886196248805994,
+                    -0.1367782450034205,
+                    0.8227255393862858
+                  ],
+                  "phase": "place",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0058613471704376295,
+                  "object_position_m": [
+                    0.1213170012288902,
+                    -0.13725309132756788,
+                    0.8147844891581736
+                  ],
+                  "phase": "retreat",
+                  "steps": 16
+                }
+              ],
+              "release_truth": {
+                "bilateral_grasp_contact": false,
+                "control_steps": 268,
+                "eef_position_m": [
+                  0.11948346855089989,
+                  -0.1363901497161217,
+                  0.8269914168294719
+                ],
+                "grasp_contact": false,
+                "gripper_joint_position_m": [
+                  0.03909012351384409,
+                  -0.03908529007047621
+                ],
+                "gripper_open": true,
+                "object_angular_velocity_rad_s": [
+                  1.415331910668776e-06,
+                  -1.4637001574482858e-07,
+                  -4.865744790995092e-15
+                ],
+                "object_linear_velocity_m_s": [
+                  -2.180216948732972e-09,
+                  -2.108168251213063e-08,
+                  1.272524693036247e-06
+                ],
+                "object_position_m": [
+                  0.12131700138821042,
+                  -0.1372530897774846,
+                  0.8147843962291307
+                ],
+                "object_quat_wxyz": [
+                  0.7973930904585474,
+                  -3.8263921290603295e-08,
+                  3.566478170551956e-08,
+                  0.6034602383661779
+                ],
+                "object_yaw_rad": 1.2956669175271656,
+                "sim_time_s": 13.4
+              },
+              "verified_lift": true
+            }
+          ],
+          "control_steps": 306,
+          "controller_exceptions": [],
+          "criteria": {
+            "footprint_inside_target": true,
+            "marked_face_up": true,
+            "orientation": true,
+            "placement_height": true,
+            "position": true,
+            "released": true,
+            "stable": true
+          },
+          "failed_grasp_count": 0,
+          "footprint_inside_target": true,
+          "grasp_attempt_count": 1,
+          "height_error_m": 0.00021551084043058832,
+          "maximum_angular_velocity_rad_s": 9.308128135850509e-11,
+          "maximum_linear_velocity_m_s": 1.3888369881509976e-12,
+          "object_movement_after_release_m": 1.0168349734711977e-13,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "orientation_error_deg": 0.4500787349260635,
+          "orientation_error_rad": 0.007855355817670604,
+          "position_error_m": 0.002127623758821157,
+          "recovered_after_failed_grasp": false,
+          "retries": 0,
+          "sim_time_s": 15.3,
+          "stability_duration_s": 1.1000000000000014,
+          "stability_sample_count": 12,
+          "success": true,
+          "successful_grasp_count": 1,
+          "successful_recovery": false,
+          "target_height_m": 0.8150000000000001,
+          "task": "feeding",
+          "upright_error_rad": 0.0
+        },
+        "source_demo_id": null,
+        "success": true
+      },
+      "episode.json_sha256": "919a2a57c06301262c2dba59a45c08eaad6aee3c021ad1cae75c8b07711bb910",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "560aafbbe597c0851b1a92e76facd1b8ad12f5c488e66e6ef8cfa03baf3494c4",
+      "source_actions_hash_match": true
+    },
+    {
+      "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+      "actions": 285,
+      "category": "normal_feeding",
+      "frames": 72,
+      "id": "synthetic_generated_003",
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.130805, y=-0.103663. Required block yaw: 15.470861 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "path": "synthetic_generated_003.npz",
+      "proprio": {
+        "type": "list",
+        "length": 72,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "replay_max_position_error": 0.0,
+      "sha256": "65badc5f3b92e6588454ef6b3674d5de50ce89d7a15d496123ccc7319cbd87cd",
+      "source_action_sha256": "851e42cacc10536fe164377c6db7ac9fc05e0b79c216034a6584ec1cb5a0ce7d",
+      "source_demo_id": null,
+      "source_episode_sha256": "3b84d18c7ece32b39430bd2df12c0479352c57d0da29684a36f53e9a7882fb46",
+      "source_path": "results/personal-m3-20261009/data-canonical/synthetic_generation/episode_artifacts/synthetic_generated_003",
+      "split": "S_train",
+      "window": "30 future20Hz absolute targets; last target repeats only past terminal boundary; observation sampled before first action",
+      "targets": {
+        "type": "list",
+        "length": 285,
+        "first": "[-0.25, -0.25, 1.0800000429153442, -2.8679553834041086e-20, 1.0, -7.653081489689148e-21, 1.0, 3.2185"
+      },
+      "frame_action_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+        84,
+        88,
+        92,
+        96,
+        100,
+        104,
+        108,
+        112,
+        116,
+        120,
+        124,
+        128,
+        132,
+        136,
+        140,
+        144,
+        148,
+        152,
+        156,
+        160,
+        164,
+        168,
+        172,
+        176,
+        180,
+        184,
+        188,
+        192,
+        196,
+        200,
+        204,
+        208,
+        212,
+        216,
+        220,
+        224,
+        228,
+        232,
+        236,
+        240,
+        244,
+        248,
+        252,
+        256,
+        260,
+        264,
+        268,
+        272,
+        276,
+        280,
+        284
+      ],
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            72,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            72,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generated_003.npz",
+      "verified_source_sha256": "65badc5f3b92e6588454ef6b3674d5de50ce89d7a15d496123ccc7319cbd87cd",
+      "source_sha256_after_read": "65badc5f3b92e6588454ef6b3674d5de50ce89d7a15d496123ccc7319cbd87cd",
+      "source_provenance": null,
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generated_003.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 36630155,
+        "sha256": "65badc5f3b92e6588454ef6b3674d5de50ce89d7a15d496123ccc7319cbd87cd"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generation/episode_artifacts/synthetic_generated_003",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "frames",
+        "resolved_config.json",
+        "camera_calibration.json",
+        "robot_actions.jsonl",
+        "rgb_trajectory.npz",
+        "primary.mp4",
+        "secondary.mp4",
+        "episode.json"
+      ],
+      "episode.json": {
+        "evaluation": {
+          "attempts": [
+            {
+              "attempt_index": 0,
+              "forced_miss": false,
+              "grasp_contact": true,
+              "lift_height_m": 0.15092917855468369,
+              "lift_truth": {
+                "bilateral_grasp_contact": true,
+                "control_steps": 178,
+                "eef_position_m": [
+                  0.07168136018393018,
+                  0.01408685011644238,
+                  0.9717745697524063
+                ],
+                "grasp_contact": true,
+                "gripper_joint_position_m": [
+                  0.01742276485141054,
+                  -0.017105308033879205
+                ],
+                "gripper_open": false,
+                "object_angular_velocity_rad_s": [
+                  0.0020130320679397308,
+                  0.02002754243507781,
+                  0.00011268590499165292
+                ],
+                "object_linear_velocity_m_s": [
+                  0.0034437474831620555,
+                  -0.00208764093920313,
+                  0.012082969002500518
+                ],
+                "object_position_m": [
+                  0.07152230633712772,
+                  0.014203371853443171,
+                  0.9657136677142496
+                ],
+                "object_quat_wxyz": [
+                  0.8199197615171415,
+                  0.001542920596927141,
+                  -0.0050558369852818285,
+                  -0.5724540528130477
+                ],
+                "object_yaw_rad": -1.219038080722034,
+                "sim_time_s": 8.9
+              },
+              "lifted": true,
+              "phases": [
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.00330918765639171,
+                  "object_position_m": [
+                    0.07472744613419757,
+                    0.013967756761224692,
+                    0.8147844891595659
+                  ],
+                  "phase": "approach",
+                  "steps": 62
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0017823218114595214,
+                  "object_position_m": [
+                    0.07472744613419757,
+                    0.013967756761224692,
+                    0.8147844891595659
+                  ],
+                  "phase": "descend",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.004283974519213418,
+                  "object_position_m": [
+                    0.07152230633712772,
+                    0.014203371853443171,
+                    0.9657136677142496
+                  ],
+                  "phase": "lift",
+                  "steps": 18
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.007125715450084948,
+                  "object_position_m": [
+                    0.12795828730270245,
+                    -0.11008119389509903,
+                    0.9673503318965655
+                  ],
+                  "phase": "transfer",
+                  "steps": 29
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0014303329972890008,
+                  "object_position_m": [
+                    0.1314085783788077,
+                    -0.10323117877243887,
+                    0.8221146726056959
+                  ],
+                  "phase": "place",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.005870929170449087,
+                  "object_position_m": [
+                    0.13391389265663234,
+                    -0.10379476064476954,
+                    0.8147844891581788
+                  ],
+                  "phase": "retreat",
+                  "steps": 16
+                }
+              ],
+              "release_truth": {
+                "bilateral_grasp_contact": false,
+                "control_steps": 243,
+                "eef_position_m": [
+                  0.13063088342776402,
+                  -0.10359837404520483,
+                  0.8268663980391986
+                ],
+                "grasp_contact": false,
+                "gripper_joint_position_m": [
+                  0.039088463728957544,
+                  -0.03908698399811157
+                ],
+                "gripper_open": true,
+                "object_angular_velocity_rad_s": [
+                  1.831015473252671e-07,
+                  2.6358202643512388e-06,
+                  3.062877958652403e-14
+                ],
+                "object_linear_velocity_m_s": [
+                  3.926112628334601e-08,
+                  -2.7273275362273497e-09,
+                  1.2677644099762208e-06
+                ],
+                "object_position_m": [
+                  0.13391388976945098,
+                  -0.10379476044087588,
+                  0.8147843965767652
+                ],
+                "object_quat_wxyz": [
+                  0.9914030825979966,
+                  -1.9466592132139602e-08,
+                  -9.518902934320148e-08,
+                  0.1308431420257885
+                ],
+                "object_yaw_rad": 0.26243877077151423,
+                "sim_time_s": 12.15
+              },
+              "verified_lift": true
+            }
+          ],
+          "control_steps": 285,
+          "controller_exceptions": [],
+          "criteria": {
+            "footprint_inside_target": true,
+            "marked_face_up": true,
+            "orientation": true,
+            "placement_height": true,
+            "position": true,
+            "released": true,
+            "stable": true
+          },
+          "failed_grasp_count": 0,
+          "footprint_inside_target": true,
+          "grasp_attempt_count": 1,
+          "height_error_m": 0.00021551084043414104,
+          "maximum_angular_velocity_rad_s": 1.3722245051992288e-15,
+          "maximum_linear_velocity_m_s": 2.1657679215004722e-14,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "orientation_error_deg": 0.4342268786784494,
+          "orientation_error_rad": 0.0075786887335969055,
+          "position_error_m": 0.003111294804842947,
+          "recovered_after_failed_grasp": false,
+          "retries": 0,
+          "sim_time_s": 14.25,
+          "stability_duration_s": 1.0999999999999996,
+          "stability_sample_count": 12,
+          "success": true,
+          "successful_grasp_count": 1,
+          "successful_recovery": false,
+          "target_height_m": 0.8150000000000001,
+          "task": "feeding",
+          "upright_error_rad": 0.0
+        },
+        "source_demo_id": null,
+        "success": true
+      },
+      "episode.json_sha256": "3b84d18c7ece32b39430bd2df12c0479352c57d0da29684a36f53e9a7882fb46",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "851e42cacc10536fe164377c6db7ac9fc05e0b79c216034a6584ec1cb5a0ce7d",
+      "source_actions_hash_match": true
+    },
+    {
+      "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+      "actions": 255,
+      "category": "normal_feeding",
+      "frames": 64,
+      "id": "synthetic_generated_004",
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.112705, y=-0.115191. Required block yaw: 45.105434 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "path": "synthetic_generated_004.npz",
+      "proprio": {
+        "type": "list",
+        "length": 64,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "replay_max_position_error": 0.0,
+      "sha256": "642215b2e7e807258673f98b7a1a2741ae5316139c6cf42709058d0ef582b730",
+      "source_action_sha256": "37ec0999f52f084c2931dbd7c70d6c0a39b0e94e89d9db6d2cc7c69192688e04",
+      "source_demo_id": null,
+      "source_episode_sha256": "f7d6a38e53819ff7f60f5d449f9455d50c32b7289f97b32614dfa7214bf5d5ff",
+      "source_path": "results/personal-m3-20261009/data-canonical/synthetic_generation/episode_artifacts/synthetic_generated_004",
+      "split": "S_train",
+      "window": "30 future20Hz absolute targets; last target repeats only past terminal boundary; observation sampled before first action",
+      "targets": {
+        "type": "list",
+        "length": 255,
+        "first": "[-0.25, -0.25, 1.0800000429153442, -2.8679553834041086e-20, 1.0, -7.653081489689148e-21, 1.0, 3.2185"
+      },
+      "frame_action_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+        84,
+        88,
+        92,
+        96,
+        100,
+        104,
+        108,
+        112,
+        116,
+        120,
+        124,
+        128,
+        132,
+        136,
+        140,
+        144,
+        148,
+        152,
+        156,
+        160,
+        164,
+        168,
+        172,
+        176,
+        180,
+        184,
+        188,
+        192,
+        196,
+        200,
+        204,
+        208,
+        212,
+        216,
+        220,
+        224,
+        228,
+        232,
+        236,
+        240,
+        244,
+        248,
+        252
+      ],
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            64,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            64,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generated_004.npz",
+      "verified_source_sha256": "642215b2e7e807258673f98b7a1a2741ae5316139c6cf42709058d0ef582b730",
+      "source_sha256_after_read": "642215b2e7e807258673f98b7a1a2741ae5316139c6cf42709058d0ef582b730",
+      "source_provenance": null,
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generated_004.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 32431999,
+        "sha256": "642215b2e7e807258673f98b7a1a2741ae5316139c6cf42709058d0ef582b730"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generation/episode_artifacts/synthetic_generated_004",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "frames",
+        "resolved_config.json",
+        "camera_calibration.json",
+        "robot_actions.jsonl",
+        "rgb_trajectory.npz",
+        "primary.mp4",
+        "secondary.mp4",
+        "episode.json"
+      ],
+      "episode.json": {
+        "evaluation": {
+          "attempts": [
+            {
+              "attempt_index": 0,
+              "forced_miss": false,
+              "grasp_contact": true,
+              "lift_height_m": 0.14609224480909277,
+              "lift_truth": {
+                "bilateral_grasp_contact": true,
+                "control_steps": 167,
+                "eef_position_m": [
+                  0.12929297711883944,
+                  -0.21327798119464916,
+                  0.9695810664282248
+                ],
+                "grasp_contact": true,
+                "gripper_joint_position_m": [
+                  0.01740785042128309,
+                  -0.017020716380802856
+                ],
+                "gripper_open": false,
+                "object_angular_velocity_rad_s": [
+                  -0.02744307983961862,
+                  -0.08430483697886448,
+                  0.0009200002620672595
+                ],
+                "object_linear_velocity_m_s": [
+                  -0.024148666149363184,
+                  0.00954466503737918,
+                  -0.005014213361207963
+                ],
+                "object_position_m": [
+                  0.1290289509287052,
+                  -0.21462350939267433,
+                  0.9608767339686587
+                ],
+                "object_quat_wxyz": [
+                  0.8992283352625532,
+                  -0.008841866399614784,
+                  -0.012092898872962747,
+                  0.437223037197672
+                ],
+                "object_yaw_rad": 0.9053119651009297,
+                "sim_time_s": 8.35
+              },
+              "lifted": true,
+              "phases": [
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0020642024007917694,
+                  "object_position_m": [
+                    0.13396876305311434,
+                    -0.21518648832703707,
+                    0.8147844891595659
+                  ],
+                  "phase": "approach",
+                  "steps": 53
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0019174242329083881,
+                  "object_position_m": [
+                    0.13396876305311434,
+                    -0.21518648832703707,
+                    0.8147844891595659
+                  ],
+                  "phase": "descend",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.007251274487879759,
+                  "object_position_m": [
+                    0.1290289509287052,
+                    -0.21462350939267433,
+                    0.9608767339686587
+                  ],
+                  "phase": "lift",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.007403164363172964,
+                  "object_position_m": [
+                    0.10776648307496053,
+                    -0.11203557017843767,
+                    0.9623090291532052
+                  ],
+                  "phase": "transfer",
+                  "steps": 13
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0022722666213774918,
+                  "object_position_m": [
+                    0.11282568065393149,
+                    -0.11674419644289619,
+                    0.8203329694859833
+                  ],
+                  "phase": "place",
+                  "steps": 15
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.005348857063430686,
+                  "object_position_m": [
+                    0.11515747396594049,
+                    -0.11643558713224234,
+                    0.8147844891590101
+                  ],
+                  "phase": "retreat",
+                  "steps": 17
+                }
+              ],
+              "release_truth": {
+                "bilateral_grasp_contact": false,
+                "control_steps": 215,
+                "eef_position_m": [
+                  0.11234696326288926,
+                  -0.11538688560116866,
+                  0.8267772161870033
+                ],
+                "grasp_contact": false,
+                "gripper_joint_position_m": [
+                  0.03908830037649168,
+                  -0.03908709073979994
+                ],
+                "gripper_open": true,
+                "object_angular_velocity_rad_s": [
+                  -5.75873248740064e-07,
+                  -1.0978794315736689e-06,
+                  6.0945060464209274e-15
+                ],
+                "object_linear_velocity_m_s": [
+                  -1.635315878007785e-08,
+                  8.577755324285686e-09,
+                  1.0186857882810269e-06
+                ],
+                "object_position_m": [
+                  0.11515747517160169,
+                  -0.11643558776624223,
+                  0.8147844147664387
+                ],
+                "object_quat_wxyz": [
+                  0.9225105793431081,
+                  3.5253942183443845e-08,
+                  2.9121258816458634e-08,
+                  0.38597180078347804
+                ],
+                "object_yaw_rad": 0.7925220424098747,
+                "sim_time_s": 10.75
+              },
+              "verified_lift": true
+            }
+          ],
+          "control_steps": 255,
+          "controller_exceptions": [],
+          "criteria": {
+            "footprint_inside_target": true,
+            "marked_face_up": true,
+            "orientation": true,
+            "placement_height": true,
+            "position": true,
+            "released": true,
+            "stable": true
+          },
+          "failed_grasp_count": 0,
+          "footprint_inside_target": true,
+          "grasp_attempt_count": 1,
+          "height_error_m": 0.00021551084043414104,
+          "maximum_angular_velocity_rad_s": 1.1891732736393293e-15,
+          "maximum_linear_velocity_m_s": 2.1668238757607756e-14,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "orientation_error_deg": 0.3027344655754623,
+          "orientation_error_rad": 0.005283713183557247,
+          "position_error_m": 0.00275068872656228,
+          "recovered_after_failed_grasp": false,
+          "retries": 0,
+          "sim_time_s": 12.75,
+          "stability_duration_s": 1.0999999999999996,
+          "stability_sample_count": 12,
+          "success": true,
+          "successful_grasp_count": 1,
+          "successful_recovery": false,
+          "target_height_m": 0.8150000000000001,
+          "task": "feeding",
+          "upright_error_rad": 0.0
+        },
+        "source_demo_id": null,
+        "success": true
+      },
+      "episode.json_sha256": "f7d6a38e53819ff7f60f5d449f9455d50c32b7289f97b32614dfa7214bf5d5ff",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "37ec0999f52f084c2931dbd7c70d6c0a39b0e94e89d9db6d2cc7c69192688e04",
+      "source_actions_hash_match": true
+    },
+    {
+      "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+      "actions": 275,
+      "category": "normal_feeding",
+      "frames": 69,
+      "id": "synthetic_generated_005",
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.103161, y=-0.111445. Required block yaw: -84.641301 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "path": "synthetic_generated_005.npz",
+      "proprio": {
+        "type": "list",
+        "length": 69,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "replay_max_position_error": 0.0,
+      "sha256": "ae63e58edf3349b674a16d96a30dbbf9ded75301e0e9b54a05310377ae073461",
+      "source_action_sha256": "9a9c5581d56b5418b08c2458eda62c74efeb1015a1e09a341242fd59e86437c8",
+      "source_demo_id": null,
+      "source_episode_sha256": "2e8bd2643e46bd9b262103afe27cd54dd038f21b2ef8ada544396fe6d3668895",
+      "source_path": "results/personal-m3-20261009/data-canonical/synthetic_generation/episode_artifacts/synthetic_generated_005",
+      "split": "S_train",
+      "window": "30 future20Hz absolute targets; last target repeats only past terminal boundary; observation sampled before first action",
+      "targets": {
+        "type": "list",
+        "length": 275,
+        "first": "[-0.25, -0.25, 1.0800000429153442, -2.8679553834041086e-20, 1.0, -7.653081489689148e-21, 1.0, 3.2185"
+      },
+      "frame_action_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+        84,
+        88,
+        92,
+        96,
+        100,
+        104,
+        108,
+        112,
+        116,
+        120,
+        124,
+        128,
+        132,
+        136,
+        140,
+        144,
+        148,
+        152,
+        156,
+        160,
+        164,
+        168,
+        172,
+        176,
+        180,
+        184,
+        188,
+        192,
+        196,
+        200,
+        204,
+        208,
+        212,
+        216,
+        220,
+        224,
+        228,
+        232,
+        236,
+        240,
+        244,
+        248,
+        252,
+        256,
+        260,
+        264,
+        268,
+        272
+      ],
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            69,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            69,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generated_005.npz",
+      "verified_source_sha256": "ae63e58edf3349b674a16d96a30dbbf9ded75301e0e9b54a05310377ae073461",
+      "source_sha256_after_read": "ae63e58edf3349b674a16d96a30dbbf9ded75301e0e9b54a05310377ae073461",
+      "source_provenance": null,
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generated_005.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 35152649,
+        "sha256": "ae63e58edf3349b674a16d96a30dbbf9ded75301e0e9b54a05310377ae073461"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generation/episode_artifacts/synthetic_generated_005",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "frames",
+        "resolved_config.json",
+        "camera_calibration.json",
+        "robot_actions.jsonl",
+        "rgb_trajectory.npz",
+        "primary.mp4",
+        "secondary.mp4",
+        "episode.json"
+      ],
+      "episode.json": {
+        "evaluation": {
+          "attempts": [
+            {
+              "attempt_index": 0,
+              "forced_miss": false,
+              "grasp_contact": true,
+              "lift_height_m": 0.1555052427802035,
+              "lift_truth": {
+                "bilateral_grasp_contact": true,
+                "control_steps": 162,
+                "eef_position_m": [
+                  -0.15330692915521768,
+                  0.11895650364059722,
+                  0.9758707209412583
+                ],
+                "grasp_contact": true,
+                "gripper_joint_position_m": [
+                  0.017196451388653198,
+                  -0.017329565887515035
+                ],
+                "gripper_open": false,
+                "object_angular_velocity_rad_s": [
+                  -0.004293836185603731,
+                  0.029703077434532696,
+                  0.006574418447992839
+                ],
+                "object_linear_velocity_m_s": [
+                  0.015100031539467108,
+                  0.005401239323083097,
+                  0.01577330322761101
+                ],
+                "object_position_m": [
+                  -0.15524664320129264,
+                  0.11927575991672952,
+                  0.9702897319397735
+                ],
+                "object_quat_wxyz": [
+                  0.9968964607489409,
+                  -0.0038478405227669716,
+                  0.0010658445442909643,
+                  -0.07862254539859503
+                ],
+                "object_yaw_rad": -0.1574147603940326,
+                "sim_time_s": 8.1
+              },
+              "lifted": true,
+              "phases": [
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0027303670473345447,
+                  "object_position_m": [
+                    -0.15628131382924149,
+                    0.11627382053517023,
+                    0.8147844891595695
+                  ],
+                  "phase": "approach",
+                  "steps": 32
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0010221959324474908,
+                  "object_position_m": [
+                    -0.15628131382924149,
+                    0.11627382053517023,
+                    0.8147844891595695
+                  ],
+                  "phase": "descend",
+                  "steps": 30
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.004150138831081559,
+                  "object_position_m": [
+                    -0.15524664320129264,
+                    0.11927575991672952,
+                    0.9702897319397735
+                  ],
+                  "phase": "lift",
+                  "steps": 18
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0026572726225686455,
+                  "object_position_m": [
+                    0.10508547351470464,
+                    -0.11123055069218571,
+                    0.9702808263672446
+                  ],
+                  "phase": "transfer",
+                  "steps": 41
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0014385079794977866,
+                  "object_position_m": [
+                    0.10190178666572731,
+                    -0.11096319857181558,
+                    0.8215322922320835
+                  ],
+                  "phase": "place",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0051214038122091386,
+                  "object_position_m": [
+                    0.1050059867284448,
+                    -0.11143536578431945,
+                    0.8147844891588585
+                  ],
+                  "phase": "retreat",
+                  "steps": 17
+                }
+              ],
+              "release_truth": {
+                "bilateral_grasp_contact": false,
+                "control_steps": 239,
+                "eef_position_m": [
+                  0.10319263290720505,
+                  -0.11150124292560147,
+                  0.8269981301124106
+                ],
+                "grasp_contact": false,
+                "gripper_joint_position_m": [
+                  0.03908603387935716,
+                  -0.039089381497138316
+                ],
+                "gripper_open": true,
+                "object_angular_velocity_rad_s": [
+                  2.571941285435256e-07,
+                  -3.6012708628782984e-07,
+                  1.2204491925642424e-15
+                ],
+                "object_linear_velocity_m_s": [
+                  -5.364167727405984e-09,
+                  -3.830963021086457e-09,
+                  1.2961317650021638e-06
+                ],
+                "object_position_m": [
+                  0.10500598712434439,
+                  -0.11143536550254901,
+                  0.8147843945051599
+                ],
+                "object_quat_wxyz": [
+                  0.7373804129156749,
+                  -1.5951311612354444e-08,
+                  3.4104857853676483e-09,
+                  -0.6754777025545023
+                ],
+                "object_yaw_rad": -1.4832246949151608,
+                "sim_time_s": 11.95
+              },
+              "verified_lift": true
+            }
+          ],
+          "control_steps": 275,
+          "controller_exceptions": [],
+          "criteria": {
+            "footprint_inside_target": true,
+            "marked_face_up": true,
+            "orientation": true,
+            "placement_height": true,
+            "position": true,
+            "released": true,
+            "stable": true
+          },
+          "failed_grasp_count": 0,
+          "footprint_inside_target": true,
+          "grasp_attempt_count": 1,
+          "height_error_m": 0.00021551084043414104,
+          "maximum_angular_velocity_rad_s": 1.1898061976976229e-15,
+          "maximum_linear_velocity_m_s": 2.1626994316962646e-14,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "orientation_error_deg": 0.3412135960693092,
+          "orientation_error_rad": 0.005955300703979427,
+          "position_error_m": 0.0018451109473460888,
+          "recovered_after_failed_grasp": false,
+          "retries": 0,
+          "sim_time_s": 13.75,
+          "stability_duration_s": 1.0999999999999996,
+          "stability_sample_count": 12,
+          "success": true,
+          "successful_grasp_count": 1,
+          "successful_recovery": false,
+          "target_height_m": 0.8150000000000001,
+          "task": "feeding",
+          "upright_error_rad": 0.0
+        },
+        "source_demo_id": null,
+        "success": true
+      },
+      "episode.json_sha256": "2e8bd2643e46bd9b262103afe27cd54dd038f21b2ef8ada544396fe6d3668895",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "9a9c5581d56b5418b08c2458eda62c74efeb1015a1e09a341242fd59e86437c8",
+      "source_actions_hash_match": true
+    },
+    {
+      "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+      "actions": 275,
+      "category": "normal_feeding",
+      "frames": 69,
+      "id": "synthetic_generated_006",
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125665, y=-0.120278. Required block yaw: 79.082144 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "path": "synthetic_generated_006.npz",
+      "proprio": {
+        "type": "list",
+        "length": 69,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "replay_max_position_error": 0.0,
+      "sha256": "0d304e707f02f51c4e272bb165c45afe9f790d4a7dd8794834cce0bab6164c96",
+      "source_action_sha256": "c4ce9edd9f73e7d6296c4287ecb315edc95c2762c8d3c0f45cb2727edc0a5144",
+      "source_demo_id": null,
+      "source_episode_sha256": "0ec4ed0aa1a52f3cefad286536a5892589d3bcb843ae2c4f343cebee0035f8d3",
+      "source_path": "results/personal-m3-20261009/data-canonical/synthetic_generation/episode_artifacts/synthetic_generated_006",
+      "split": "S_train",
+      "window": "30 future20Hz absolute targets; last target repeats only past terminal boundary; observation sampled before first action",
+      "targets": {
+        "type": "list",
+        "length": 275,
+        "first": "[-0.25, -0.25, 1.0800000429153442, -2.8679553834041086e-20, 1.0, -7.653081489689148e-21, 1.0, 3.2185"
+      },
+      "frame_action_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+        84,
+        88,
+        92,
+        96,
+        100,
+        104,
+        108,
+        112,
+        116,
+        120,
+        124,
+        128,
+        132,
+        136,
+        140,
+        144,
+        148,
+        152,
+        156,
+        160,
+        164,
+        168,
+        172,
+        176,
+        180,
+        184,
+        188,
+        192,
+        196,
+        200,
+        204,
+        208,
+        212,
+        216,
+        220,
+        224,
+        228,
+        232,
+        236,
+        240,
+        244,
+        248,
+        252,
+        256,
+        260,
+        264,
+        268,
+        272
+      ],
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            69,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            69,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generated_006.npz",
+      "verified_source_sha256": "0d304e707f02f51c4e272bb165c45afe9f790d4a7dd8794834cce0bab6164c96",
+      "source_sha256_after_read": "0d304e707f02f51c4e272bb165c45afe9f790d4a7dd8794834cce0bab6164c96",
+      "source_provenance": null,
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generated_006.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 35213318,
+        "sha256": "0d304e707f02f51c4e272bb165c45afe9f790d4a7dd8794834cce0bab6164c96"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m3/results/personal-m3-20261009/data-canonical/synthetic_generation/episode_artifacts/synthetic_generated_006",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "frames",
+        "resolved_config.json",
+        "camera_calibration.json",
+        "robot_actions.jsonl",
+        "rgb_trajectory.npz",
+        "primary.mp4",
+        "secondary.mp4",
+        "episode.json"
+      ],
+      "episode.json": {
+        "evaluation": {
+          "attempts": [
+            {
+              "attempt_index": 0,
+              "forced_miss": false,
+              "grasp_contact": true,
+              "lift_height_m": 0.15627566026939055,
+              "lift_truth": {
+                "bilateral_grasp_contact": true,
+                "control_steps": 174,
+                "eef_position_m": [
+                  0.18768073608917657,
+                  0.19648614350717822,
+                  0.9763556135037754
+                ],
+                "grasp_contact": true,
+                "gripper_joint_position_m": [
+                  0.017662180703341235,
+                  -0.016864485215878418
+                ],
+                "gripper_open": false,
+                "object_angular_velocity_rad_s": [
+                  0.04354842139335283,
+                  -0.11525997424294893,
+                  0.0005641655542609758
+                ],
+                "object_linear_velocity_m_s": [
+                  -0.03014573070630786,
+                  -0.013291715762129836,
+                  -0.0167160761752334
+                ],
+                "object_position_m": [
+                  0.18820820220661783,
+                  0.19660164964063373,
+                  0.9710601494289565
+                ],
+                "object_quat_wxyz": [
+                  0.25503067812237223,
+                  0.004317433907640794,
+                  0.003933514604813983,
+                  0.9669153222716816
+                ],
+                "object_yaw_rad": 2.6257936854787634,
+                "sim_time_s": 8.7
+              },
+              "lifted": true,
+              "phases": [
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.007991155222122254,
+                  "object_position_m": [
+                    0.18489550816805456,
+                    0.1958615432357606,
+                    0.8147844891595659
+                  ],
+                  "phase": "approach",
+                  "steps": 55
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0025191154100318957,
+                  "object_position_m": [
+                    0.18489550816805456,
+                    0.1958615432357606,
+                    0.8147844891595659
+                  ],
+                  "phase": "descend",
+                  "steps": 19
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0032582283186756967,
+                  "object_position_m": [
+                    0.18820820220661783,
+                    0.19660164964063373,
+                    0.9710601494289565
+                  ],
+                  "phase": "lift",
+                  "steps": 18
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.001862992541489363,
+                  "object_position_m": [
+                    0.1267498541140222,
+                    -0.11932449086830935,
+                    0.9697629529487151
+                  ],
+                  "phase": "transfer",
+                  "steps": 26
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.0016092307050385372,
+                  "object_position_m": [
+                    0.12461133689410418,
+                    -0.12123179986595053,
+                    0.8222695598960867
+                  ],
+                  "phase": "place",
+                  "steps": 16
+                },
+                {
+                  "converged": true,
+                  "eef_position_error_m": 0.006012070140451178,
+                  "object_position_m": [
+                    0.12630063962542987,
+                    -0.12088423969232626,
+                    0.8147844891582462
+                  ],
+                  "phase": "retreat",
+                  "steps": 16
+                }
+              ],
+              "release_truth": {
+                "bilateral_grasp_contact": false,
+                "control_steps": 236,
+                "eef_position_m": [
+                  0.1260275164251453,
+                  -0.12062186131278138,
+                  0.827234588347562
+                ],
+                "grasp_contact": false,
+                "gripper_joint_position_m": [
+                  0.03909029786290159,
+                  -0.03908516232726509
+                ],
+                "gripper_open": true,
+                "object_angular_velocity_rad_s": [
+                  -4.273120808286574e-06,
+                  1.6568536639694003e-06,
+                  5.062426838847505e-14
+                ],
+                "object_linear_velocity_m_s": [
+                  2.4679198147180176e-08,
+                  6.3649097891933e-08,
+                  1.2062058047034247e-06
+                ],
+                "object_position_m": [
+                  0.1263006378079925,
+                  -0.12088424437084341,
+                  0.814784401072257
+                ],
+                "object_quat_wxyz": [
+                  0.7733135842902169,
+                  8.276804099582732e-08,
+                  -1.4675186907401264e-07,
+                  0.6340237380037038
+                ],
+                "object_yaw_rad": 1.3734908513706454,
+                "sim_time_s": 11.8
+              },
+              "verified_lift": true
+            }
+          ],
+          "control_steps": 275,
+          "controller_exceptions": [],
+          "criteria": {
+            "footprint_inside_target": true,
+            "marked_face_up": true,
+            "orientation": true,
+            "placement_height": true,
+            "position": true,
+            "released": true,
+            "stable": true
+          },
+          "failed_grasp_count": 0,
+          "footprint_inside_target": true,
+          "grasp_attempt_count": 1,
+          "height_error_m": 0.00021551084043414104,
+          "maximum_angular_velocity_rad_s": 1.4308558978788736e-15,
+          "maximum_linear_velocity_m_s": 2.165922858136042e-14,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "orientation_error_deg": 0.38691455232351035,
+          "orientation_error_rad": 0.006752932861925132,
+          "position_error_m": 0.0008784069162637358,
+          "recovered_after_failed_grasp": false,
+          "retries": 0,
+          "sim_time_s": 13.75,
+          "stability_duration_s": 1.0999999999999996,
+          "stability_sample_count": 12,
+          "success": true,
+          "successful_grasp_count": 1,
+          "successful_recovery": false,
+          "target_height_m": 0.8150000000000001,
+          "task": "feeding",
+          "upright_error_rad": 0.0
+        },
+        "source_demo_id": null,
+        "success": true
+      },
+      "episode.json_sha256": "0ec4ed0aa1a52f3cefad286536a5892589d3bcb843ae2c4f343cebee0035f8d3",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "c4ce9edd9f73e7d6296c4287ecb315edc95c2762c8d3c0f45cb2727edc0a5144",
+      "source_actions_hash_match": true
+    },
+    {
+      "id": "m7_completed_personal_0018",
+      "split": "C_train",
+      "source_demo_id": "demo_0018",
+      "category": "already_completed",
+      "path": "m7_completed_personal_0018.npz",
+      "sha256": "ae2871b4a9911d968723204ef5384f6a3c2d88ab6bd197a05b8c311955e1d21f",
+      "frames": 20,
+      "actions": 80,
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "source_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/completed-v2/m7_completed_personal_0018",
+      "source_action_sha256": "f5ad9c1d209e827761c45a8215e89e2b33a80c655adbf1a0660dacab61a7d497",
+      "source_episode_sha256": "1bef85452fa9b976e024eb2747a58f5f0f6e8a57d5e22d251e82c18053a6a5ea",
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/completed-v2/m7_completed_personal_0018.npz",
+      "verified_source_sha256": "ae2871b4a9911d968723204ef5384f6a3c2d88ab6bd197a05b8c311955e1d21f",
+      "source_sha256_after_read": "ae2871b4a9911d968723204ef5384f6a3c2d88ab6bd197a05b8c311955e1d21f",
+      "targets": {
+        "type": "list",
+        "length": 80,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "proprio": {
+        "type": "list",
+        "length": 20,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "frame_action_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76
+      ],
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            20,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            20,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_provenance": {
+        "original_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m15/results/personal-m15-20261009/episode_artifacts/personal_demo_0018",
+        "config_sha256": "d871364e9d17596d71cf5ba20f50f8fd265ddfad54d8dc4b2a324a947cc2b444",
+        "episode_sha256": "e120d4b221363ebf2a28f407b81b7fb2768a7c470a71b8b09da423d62d001ac0",
+        "original_action_sha256": "df08184bb8923483904efa68fc0dba8b4dc26c632d00c14f0183756d87f8a2ac",
+        "prior_status": "previously inspected M15 successful completed case; excluded from frozen M3-M6 motor pool; newly assigned C_train before this generation",
+        "human_frame_action_alignment": false
+      },
+      "action_labels": "Generated open-gripper zero-normalized-motion robot hold commands; not observed human actions",
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/completed-v2/m7_completed_personal_0018.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 10060530,
+        "sha256": "ae2871b4a9911d968723204ef5384f6a3c2d88ab6bd197a05b8c311955e1d21f"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/completed-v2/m7_completed_personal_0018",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "resolved_config.json",
+        "episode.json",
+        "robot_actions.jsonl"
+      ],
+      "episode.json": {
+        "source_demo_id": "demo_0018",
+        "success": true,
+        "evaluation": {
+          "task": "feeding",
+          "success": true,
+          "criteria": {
+            "position": true,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": true,
+            "placement_height": true,
+            "released": true,
+            "stable": true
+          },
+          "position_error_m": 0.006608542674657295,
+          "orientation_error_rad": 0.07806136753822196,
+          "orientation_error_deg": 4.472586902959647,
+          "upright_error_rad": 0.0,
+          "height_error_m": 0.00021551084043414104,
+          "target_height_m": 0.8150000000000001,
+          "footprint_inside_target": true,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "maximum_linear_velocity_m_s": 2.1631272973345393e-14,
+          "maximum_angular_velocity_rad_s": 1.4072632007051112e-15,
+          "stability_sample_count": 80,
+          "stability_duration_s": 3.95,
+          "grasp_attempt_count": 0,
+          "successful_grasp_count": 0,
+          "failed_grasp_count": 0,
+          "retries": 0,
+          "recovered_after_failed_grasp": false,
+          "successful_recovery": false,
+          "controller_exceptions": [],
+          "control_steps": 80,
+          "sim_time_s": 4.0,
+          "attempts": []
+        }
+      },
+      "episode.json_sha256": "1bef85452fa9b976e024eb2747a58f5f0f6e8a57d5e22d251e82c18053a6a5ea",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "f5ad9c1d209e827761c45a8215e89e2b33a80c655adbf1a0660dacab61a7d497",
+      "source_actions_hash_match": true
+    },
+    {
+      "id": "m7_completed_personal_0019",
+      "split": "C_train",
+      "source_demo_id": "demo_0019",
+      "category": "already_completed",
+      "path": "m7_completed_personal_0019.npz",
+      "sha256": "a3cec0a298e8ded9522d09a900751188ec216b9d6a4277a847d04e7d87392ca3",
+      "frames": 20,
+      "actions": 80,
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "source_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/completed-v2/m7_completed_personal_0019",
+      "source_action_sha256": "fc3dd90c990c6a7771365d15998ad5a69eb212b32f0c08daae63aeff698ba73f",
+      "source_episode_sha256": "c76c4553398b1457dcdd6146128ec26c85c747c0a0f554891240eefdcd24c7b8",
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/completed-v2/m7_completed_personal_0019.npz",
+      "verified_source_sha256": "a3cec0a298e8ded9522d09a900751188ec216b9d6a4277a847d04e7d87392ca3",
+      "source_sha256_after_read": "a3cec0a298e8ded9522d09a900751188ec216b9d6a4277a847d04e7d87392ca3",
+      "targets": {
+        "type": "list",
+        "length": 80,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "proprio": {
+        "type": "list",
+        "length": 20,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "frame_action_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76
+      ],
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            20,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            20,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_provenance": {
+        "original_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m15/results/personal-m15-20261009/episode_artifacts/personal_demo_0019",
+        "config_sha256": "f4b496402c9cfc0d18d6294f96d73b3d33092d48b7c17b724c767977e6d1b502",
+        "episode_sha256": "173ee9e23c68e4a701d572abf948daa584f08e98a99657590acf4044bee202a4",
+        "original_action_sha256": "ee9bf91ba80a1243451678072d7bbe7a2a8d2ebbb74ec7aaa70226593a69ae54",
+        "prior_status": "previously inspected M15 successful completed case; excluded from frozen M3-M6 motor pool; newly assigned C_train before this generation",
+        "human_frame_action_alignment": false
+      },
+      "action_labels": "Generated open-gripper zero-normalized-motion robot hold commands; not observed human actions",
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/completed-v2/m7_completed_personal_0019.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 10058263,
+        "sha256": "a3cec0a298e8ded9522d09a900751188ec216b9d6a4277a847d04e7d87392ca3"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/completed-v2/m7_completed_personal_0019",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "resolved_config.json",
+        "episode.json",
+        "robot_actions.jsonl"
+      ],
+      "episode.json": {
+        "source_demo_id": "demo_0019",
+        "success": true,
+        "evaluation": {
+          "task": "feeding",
+          "success": true,
+          "criteria": {
+            "position": true,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": true,
+            "placement_height": true,
+            "released": true,
+            "stable": true
+          },
+          "position_error_m": 0.006474710271135916,
+          "orientation_error_rad": 0.0039058645036520604,
+          "orientation_error_deg": 0.2237895514092232,
+          "upright_error_rad": 0.0,
+          "height_error_m": 0.00021551084043414104,
+          "target_height_m": 0.8150000000000001,
+          "footprint_inside_target": true,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "maximum_linear_velocity_m_s": 2.1625561023478166e-14,
+          "maximum_angular_velocity_rad_s": 1.3498997938611435e-15,
+          "stability_sample_count": 80,
+          "stability_duration_s": 3.95,
+          "grasp_attempt_count": 0,
+          "successful_grasp_count": 0,
+          "failed_grasp_count": 0,
+          "retries": 0,
+          "recovered_after_failed_grasp": false,
+          "successful_recovery": false,
+          "controller_exceptions": [],
+          "control_steps": 80,
+          "sim_time_s": 4.0,
+          "attempts": []
+        }
+      },
+      "episode.json_sha256": "c76c4553398b1457dcdd6146128ec26c85c747c0a0f554891240eefdcd24c7b8",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "fc3dd90c990c6a7771365d15998ad5a69eb212b32f0c08daae63aeff698ba73f",
+      "source_actions_hash_match": true
+    },
+    {
+      "id": "m7_completed_synthetic_001",
+      "split": "C_train",
+      "source_demo_id": null,
+      "category": "already_completed",
+      "path": "m7_completed_synthetic_001.npz",
+      "sha256": "7b0b40b893b9f44ffd21c7e5ea4b89b088be623f66ea881646d0482931ce4036",
+      "frames": 20,
+      "actions": 80,
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "source_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/completed-v2/m7_completed_synthetic_001",
+      "source_action_sha256": "c09698361ff9f930a086ff93cff54c3649d8404e517647fc32eaf7c376b9518a",
+      "source_episode_sha256": "7d2b29126f93ab162a86789df9f2fd1e3ce8c19b72673f32892f4fda08b4fea3",
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/completed-v2/m7_completed_synthetic_001.npz",
+      "verified_source_sha256": "7b0b40b893b9f44ffd21c7e5ea4b89b088be623f66ea881646d0482931ce4036",
+      "source_sha256_after_read": "7b0b40b893b9f44ffd21c7e5ea4b89b088be623f66ea881646d0482931ce4036",
+      "targets": {
+        "type": "list",
+        "length": 80,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "proprio": {
+        "type": "list",
+        "length": 20,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "frame_action_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76
+      ],
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            20,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            20,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_provenance": {
+        "sampler": "fixed independent small offsets declared before generation; no personal completed pose or image used",
+        "seed": 773101
+      },
+      "action_labels": "Generated open-gripper zero-normalized-motion robot hold commands; not observed human actions",
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/completed-v2/m7_completed_synthetic_001.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 10059810,
+        "sha256": "7b0b40b893b9f44ffd21c7e5ea4b89b088be623f66ea881646d0482931ce4036"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/completed-v2/m7_completed_synthetic_001",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "resolved_config.json",
+        "episode.json",
+        "robot_actions.jsonl"
+      ],
+      "episode.json": {
+        "source_demo_id": null,
+        "success": true,
+        "evaluation": {
+          "task": "feeding",
+          "success": true,
+          "criteria": {
+            "position": true,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": true,
+            "placement_height": true,
+            "released": true,
+            "stable": true
+          },
+          "position_error_m": 0.004242640687119279,
+          "orientation_error_rad": 0.029999999999999995,
+          "orientation_error_deg": 1.7188733853924694,
+          "upright_error_rad": 0.0,
+          "height_error_m": 0.00021551084043414104,
+          "target_height_m": 0.8150000000000001,
+          "footprint_inside_target": true,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "maximum_linear_velocity_m_s": 2.1624001979761094e-14,
+          "maximum_angular_velocity_rad_s": 1.35854452410653e-15,
+          "stability_sample_count": 80,
+          "stability_duration_s": 3.95,
+          "grasp_attempt_count": 0,
+          "successful_grasp_count": 0,
+          "failed_grasp_count": 0,
+          "retries": 0,
+          "recovered_after_failed_grasp": false,
+          "successful_recovery": false,
+          "controller_exceptions": [],
+          "control_steps": 80,
+          "sim_time_s": 4.0,
+          "attempts": []
+        }
+      },
+      "episode.json_sha256": "7d2b29126f93ab162a86789df9f2fd1e3ce8c19b72673f32892f4fda08b4fea3",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "c09698361ff9f930a086ff93cff54c3649d8404e517647fc32eaf7c376b9518a",
+      "source_actions_hash_match": true
+    },
+    {
+      "id": "m7_completed_synthetic_002",
+      "split": "C_train",
+      "source_demo_id": null,
+      "category": "already_completed",
+      "path": "m7_completed_synthetic_002.npz",
+      "sha256": "bbad95adae09793083c42a8a607b73c620d2700f34722d14d7f9f22ef074ee42",
+      "frames": 20,
+      "actions": 80,
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "source_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/completed-v2/m7_completed_synthetic_002",
+      "source_action_sha256": "dcc55c6c92158929bd4e53e03abeed3df0e8816253bbe86966fb70535a21017b",
+      "source_episode_sha256": "6aabb5b9bdd64ebf9b832ac922a7ed9c758c465e20bb915a817d7e87b78fd0dd",
+      "source_npz_uri": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/completed-v2/m7_completed_synthetic_002.npz",
+      "verified_source_sha256": "bbad95adae09793083c42a8a607b73c620d2700f34722d14d7f9f22ef074ee42",
+      "source_sha256_after_read": "bbad95adae09793083c42a8a607b73c620d2700f34722d14d7f9f22ef074ee42",
+      "targets": {
+        "type": "list",
+        "length": 80,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "proprio": {
+        "type": "list",
+        "length": 20,
+        "first": "[-0.250055193901062, -0.24988751113414764, 1.0799217224121094, -0.00042835090425796807, 0.9999998807"
+      },
+      "frame_action_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76
+      ],
+      "observation_shapes": {
+        "primary": {
+          "shape": [
+            20,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        "secondary": {
+          "shape": [
+            20,
+            512,
+            512,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "source_provenance": {
+        "sampler": "fixed independent small offsets declared before generation; no personal completed pose or image used",
+        "seed": 773102
+      },
+      "action_labels": "Generated open-gripper zero-normalized-motion robot hold commands; not observed human actions",
+      "npz_probe": {
+        "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/completed-v2/m7_completed_synthetic_002.npz",
+        "exists": true,
+        "hash_match": true,
+        "bytes": 10061526,
+        "sha256": "bbad95adae09793083c42a8a607b73c620d2700f34722d14d7f9f22ef074ee42"
+      },
+      "resolved_source_folder": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/completed-v2/m7_completed_synthetic_002",
+      "source_folder_exists": true,
+      "source_folder_files": [
+        "resolved_config.json",
+        "episode.json",
+        "robot_actions.jsonl"
+      ],
+      "episode.json": {
+        "source_demo_id": null,
+        "success": true,
+        "evaluation": {
+          "task": "feeding",
+          "success": true,
+          "criteria": {
+            "position": true,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": true,
+            "placement_height": true,
+            "released": true,
+            "stable": true
+          },
+          "position_error_m": 0.005656854249492385,
+          "orientation_error_rad": 0.04000000000000001,
+          "orientation_error_deg": 2.2918311805232934,
+          "upright_error_rad": 0.0,
+          "height_error_m": 0.00021551084043414104,
+          "target_height_m": 0.8150000000000001,
+          "footprint_inside_target": true,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "maximum_linear_velocity_m_s": 2.1629757798924392e-14,
+          "maximum_angular_velocity_rad_s": 1.3945932822185858e-15,
+          "stability_sample_count": 80,
+          "stability_duration_s": 3.95,
+          "grasp_attempt_count": 0,
+          "successful_grasp_count": 0,
+          "failed_grasp_count": 0,
+          "retries": 0,
+          "recovered_after_failed_grasp": false,
+          "successful_recovery": false,
+          "controller_exceptions": [],
+          "control_steps": 80,
+          "sim_time_s": 4.0,
+          "attempts": []
+        }
+      },
+      "episode.json_sha256": "6aabb5b9bdd64ebf9b832ac922a7ed9c758c465e20bb915a817d7e87b78fd0dd",
+      "episode.json_matches_original": true,
+      "source_actions_current_sha256": "dcc55c6c92158929bd4e53e03abeed3df0e8816253bbe86966fb70535a21017b",
+      "source_actions_hash_match": true
+    }
+  ],
+  "merged_sources": {
+    "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/training-catalog-v2/temporal/source_snapshot.json.gz": "5b28838311e8bde2db04a0f3731477bfc7dd9266f96431693791ba7396451691",
+    "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/completed-v2/temporal/source_snapshot.json.gz": "a22611112ae7a33b4eb0f1ea874bad5583c12e21ee745b6378d465e55c7c24aa"
+  }
+}
