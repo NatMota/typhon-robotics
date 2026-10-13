@@ -1,13 +1,19 @@
-# Powerglide, existing .venv-sim; no package upgrades
+# Powerglide: existing environment; run in a fresh OUTPUT directory.
 cd ~/Projects/typhon-experiments/video09-sequence-adapter
 PY=~/Projects/humanoid-task-supervisor/.venv-sim/bin/python
-OUT=/var/tmp/typhon-research-20261013/video09
+OUT=/var/tmp/typhon-research-20261013/video09/landmark-v2
 $PY scripts/video09_source.py --m0 ~/Projects/humanoid-task-supervisor --output $OUT
 $PY scripts/video09_check.py $OUT
-$PY scripts/video09_adapter.py --output $OUT --name q1 --qualification
-# Only if independent qualification passes, execute each frozen condition once:
-# $PY scripts/video09_adapter.py --output $OUT --name SEQ
-# $PY scripts/video09_adapter.py --output $OUT --name END
-# $PY scripts/video09_adapter.py --output $OUT --name SHUFFLE
-# $PY scripts/video09_adapter.py --output $OUT --name STATIC
-# $PY scripts/video09_adapter.py --output $OUT --name SEQ_REPEAT
+$PY scripts/video09_adapter.py --output $OUT --name q2 --qualification
+# Inspect qualification/q2/result.json. Only a passing qualification allows:
+$PY scripts/video09_adapter.py --output $OUT --name SEQ
+$PY scripts/video09_adapter.py --output $OUT --name END
+$PY scripts/video09_adapter.py --output $OUT --name SHUFFLE
+$PY scripts/video09_adapter.py --output $OUT --name STATIC
+$PY scripts/video09_adapter.py --output $OUT --name SEQ_REPEAT
+$PY scripts/video09_analyze.py --output $OUT --previews
+$PY scripts/video09_validate.py --output $OUT --m0 ~/Projects/humanoid-task-supervisor --destination $OUT/independent_validation.json
+# Original batch used3parallel subprocesses with OMP_NUM_THREADS=1,
+# OPENBLAS_NUM_THREADS=1, MKL_NUM_THREADS=1. Raw scores have the documented
+# post-release observation flaw. Read metric_validity_audit.json and REPORT.md.
+# q1 retained under video09/qualification/q1; v1 code is archived in Git.

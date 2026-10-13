@@ -1,0 +1,17 @@
+{
+  "schema": "video09-metric-validity-v1",
+  "raw_analysis_file": "analysis.json",
+  "raw_analysis_sha256": "4456f765bf5061125d7af79992340b2184963689364963e80791db0210782b33",
+  "physical_outcome_scores_valid": true,
+  "whole_timeline_observer_position_metrics_valid_for_benefit_claim": false,
+  "main_claim_accepted": false,
+  "reason": "After release, secondary rectification continues using EEF-relative plane although object is resting. Gripper retreat changes reported feature position without object movement. Log keeps status observed. No XY/yaw servo authority after release; physical outcomes unchanged. All raw scores preserved, no retrospective replacement.",
+  "additional_limitations": [
+    "Initial body-centroid reconstruction disagrees with glyph reference by0.189585targetunits.",
+    "Matching final glyph under declared resting geometry implies27.101mmcentreerror, beyond15mm.",
+    "All valid runtime feature observations used secondary rectification; overhead view remained occluded.",
+    "Single developmenttake with fourconditions and one exactrepeat; no statistical or generalisation evidence.",
+    "Only227of228saved native reference frames sampled by feedback; missing final stationarytailframe, no manipulation omission."
+  ],
+  "recommended_interpretation": "Intermediate human video changed physical Panda motion, but no robust overall sequence advantage or strict task completion established. Hold generated trajectories out of policy training."
+}

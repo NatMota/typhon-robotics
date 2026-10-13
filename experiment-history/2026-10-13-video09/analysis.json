@@ -1,0 +1,1318 @@
+{
+  "schema": "video09-execution-analysis-v1",
+  "demonstrations": 1,
+  "condition_runs": 4,
+  "exact_repeat_runs": 1,
+  "independent_statistical_trials": false,
+  "conditions": {
+    "SEQ": {
+      "condition": "SEQ",
+      "result": {
+        "condition": "SEQ",
+        "completed_reference_horizon": true,
+        "prefix_steps": 128,
+        "sequence_steps": 628,
+        "scoring": {
+          "task": "feeding",
+          "success": false,
+          "criteria": {
+            "position": false,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": false,
+            "placement_height": true,
+            "released": true,
+            "stable": true
+          },
+          "position_error_m": 0.03547475317342388,
+          "orientation_error_rad": 0.06678272635254127,
+          "orientation_error_deg": 3.8263683643777173,
+          "upright_error_rad": 0.0,
+          "height_error_m": 0.00021551084043414104,
+          "target_height_m": 0.8150000000000001,
+          "footprint_inside_target": false,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "maximum_linear_velocity_m_s": 2.1628823767990437e-14,
+          "maximum_angular_velocity_rad_s": 1.1809922312806491e-15,
+          "stability_sample_count": 20,
+          "stability_duration_s": 0.9499999999999957,
+          "grasp_attempt_count": 1,
+          "successful_grasp_count": 1,
+          "failed_grasp_count": 0,
+          "retries": 0,
+          "recovered_after_failed_grasp": false,
+          "successful_recovery": false,
+          "controller_exceptions": [],
+          "control_steps": 756,
+          "sim_time_s": 37.8,
+          "attempts": [
+            {
+              "verified_lift": true,
+              "scope": "independent post-execution scorer; actor does not read this"
+            }
+          ]
+        },
+        "any_contact": true,
+        "bilateral_contact": true,
+        "supported_lift": true,
+        "median_ordered_position_error_units": 0.04794328038853725,
+        "median_ordered_direction_error_deg": 4.194720111021835,
+        "ordered_score_observations": 299,
+        "runtime_observed_fraction": 0.9835526315789473,
+        "reference_rate_limited_decisions": 9,
+        "command_saturated_decisions": 64,
+        "status": "finished",
+        "wall_s": 6.324228698000297,
+        "initial_truth": {
+          "object_position_m": [
+            0.11914984804365202,
+            -0.11104606210455074,
+            0.8147844891595659
+          ],
+          "object_quat_wxyz": [
+            0.7434755809961403,
+            3.895352087848169e-17,
+            -2.703992895763584e-17,
+            -0.6687630824607856
+          ],
+          "object_yaw_rad": -1.4650876873871301,
+          "object_linear_velocity_m_s": [
+            1.4062203533810575e-17,
+            1.871523674903924e-18,
+            2.166135987442774e-14
+          ],
+          "object_angular_velocity_rad_s": [
+            4.555588384958774e-17,
+            1.063233406946343e-15,
+            -8.194088038896923e-32
+          ],
+          "eef_position_m": [
+            -0.25005520706281603,
+            -0.24988750754560166,
+            1.0799217278777893
+          ],
+          "gripper_joint_position_m": [
+            0.03959546089013839,
+            -0.03976879892039342
+          ],
+          "gripper_open": true,
+          "grasp_contact": false,
+          "bilateral_grasp_contact": false,
+          "control_steps": 40,
+          "sim_time_s": 2.0
+        },
+        "final_truth": {
+          "object_position_m": [
+            0.11502510086235851,
+            -0.08595650576234533,
+            0.8147844891595659
+          ],
+          "object_quat_wxyz": [
+            0.9994425602301646,
+            3.2972884558633095e-17,
+            -2.9162399451217788e-18,
+            0.033385158387727716
+          ],
+          "object_yaw_rad": 0.06678272635254127,
+          "object_linear_velocity_m_s": [
+            1.4912694256471064e-19,
+            1.2903065683314771e-17,
+            2.1626044314297237e-14
+          ],
+          "object_angular_velocity_rad_s": [
+            -1.154127184098582e-15,
+            -3.9805774722882356e-17,
+            1.50934140185029e-31
+          ],
+          "eef_position_m": [
+            0.11607353379635334,
+            -0.08783324105571703,
+            0.9799037433169538
+          ],
+          "gripper_joint_position_m": [
+            0.03999985418062271,
+            -0.040000001798283696
+          ],
+          "gripper_open": true,
+          "grasp_contact": false,
+          "bilateral_grasp_contact": false,
+          "control_steps": 796,
+          "sim_time_s": 39.8
+        }
+      },
+      "whole_position": {
+        "n": 299,
+        "mean": 0.7417681319642292,
+        "median": 0.04794328038853725,
+        "rmse": 1.3947271980304647,
+        "p95": 2.8562581362704473
+      },
+      "whole_direction_deg": {
+        "n": 299,
+        "mean": 6.455625527560403,
+        "median": 4.194720111021835,
+        "rmse": 10.586260159795604,
+        "p95": 30.287576486778917
+      },
+      "phase_diagnostics_posthoc": {
+        "initial_still": {
+          "position": {
+            "n": 100,
+            "mean": 0.04227304038336152,
+            "median": 0.011638050564876767,
+            "rmse": 0.09526131105355119,
+            "p95": 0.2718040327374768
+          },
+          "direction_deg": {
+            "n": 100,
+            "mean": 3.017846576290969,
+            "median": 3.943360321166795,
+            "rmse": 3.7672761936860155,
+            "p95": 6.056622716509122
+          }
+        },
+        "manipulation": {
+          "position": {
+            "n": 85,
+            "mean": 0.04733510905317997,
+            "median": 0.05030646714821681,
+            "rmse": 0.05491970060948397,
+            "p95": 0.09115889067629326
+          },
+          "direction_deg": {
+            "n": 85,
+            "mean": 14.278311444547704,
+            "median": 10.635648768334928,
+            "rmse": 18.908160569206117,
+            "p95": 37.68870965342573
+          }
+        },
+        "post_manipulation": {
+          "position": {
+            "n": 114,
+            "mean": 1.8731393258723517,
+            "median": 2.8540060460366146,
+            "rmse": 2.2565111959590727,
+            "p95": 2.8567107536641685
+          },
+          "direction_deg": {
+            "n": 114,
+            "mean": 3.638516687060603,
+            "median": 4.198465356737304,
+            "rmse": 3.8619713465684447,
+            "p95": 4.209431404151899
+          }
+        }
+      },
+      "runtime_feature_vs_projected_asset_truth_position": {
+        "n": 299,
+        "mean": 0.7974065885621421,
+        "median": 0.08295689348863457,
+        "rmse": 1.446158562557868,
+        "p95": 2.9553738738276585
+      },
+      "runtime_feature_vs_projected_asset_truth_direction_deg": {
+        "n": 299,
+        "mean": 3.3244489217221678,
+        "median": 3.82633721043538,
+        "rmse": 3.998686675036014,
+        "p95": 7.973334606508645
+      },
+      "independent_true_projected_ordered_position": {
+        "n": 304,
+        "mean": 0.09872865843389807,
+        "median": 0.0991084087031687,
+        "rmse": 0.10458427261453328,
+        "p95": 0.1518993088004558
+      },
+      "independent_true_projected_ordered_direction_deg": {
+        "n": 304,
+        "mean": 4.725173273887958,
+        "median": 1.0618861899889196,
+        "rmse": 9.581021957628389,
+        "p95": 27.321830062511577
+      },
+      "native_reference_rows_saved": 228,
+      "native_frames_seen_at_feedback": 227,
+      "native_frame_ids_not_sampled_at_feedback": [
+        378
+      ],
+      "last_feedback_source_s": 7.575,
+      "view_counts": {
+        "primary": 0,
+        "secondary_rectified": 299
+      },
+      "unknown_feedback_samples": 5,
+      "minimum_joint_margin_rad": 0.3476710425803393,
+      "forbidden_static_contacts": 0,
+      "supplied_prefix_actions": 128,
+      "tracked_source_actions": 392,
+      "supplied_release_retreat_settle_actions": 236
+    },
+    "END": {
+      "condition": "END",
+      "result": {
+        "condition": "END",
+        "completed_reference_horizon": true,
+        "prefix_steps": 128,
+        "sequence_steps": 628,
+        "scoring": {
+          "task": "feeding",
+          "success": false,
+          "criteria": {
+            "position": false,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": false,
+            "placement_height": true,
+            "released": true,
+            "stable": true
+          },
+          "position_error_m": 0.03442543594724462,
+          "orientation_error_rad": 0.13412880385033352,
+          "orientation_error_deg": 7.685014371762176,
+          "upright_error_rad": 0.0,
+          "height_error_m": 0.00021551084043058832,
+          "target_height_m": 0.8150000000000001,
+          "footprint_inside_target": false,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "maximum_linear_velocity_m_s": 2.172715902197671e-14,
+          "maximum_angular_velocity_rad_s": 1.3799159453185822e-15,
+          "stability_sample_count": 20,
+          "stability_duration_s": 0.9499999999999957,
+          "grasp_attempt_count": 1,
+          "successful_grasp_count": 1,
+          "failed_grasp_count": 0,
+          "retries": 0,
+          "recovered_after_failed_grasp": false,
+          "successful_recovery": false,
+          "controller_exceptions": [],
+          "control_steps": 756,
+          "sim_time_s": 37.8,
+          "attempts": [
+            {
+              "verified_lift": true,
+              "scope": "independent post-execution scorer; actor does not read this"
+            }
+          ]
+        },
+        "any_contact": true,
+        "bilateral_contact": true,
+        "supported_lift": true,
+        "median_ordered_position_error_units": 0.058386798728437814,
+        "median_ordered_direction_error_deg": 5.788438981244744,
+        "ordered_score_observations": 300,
+        "runtime_observed_fraction": 0.9868421052631579,
+        "reference_rate_limited_decisions": 0,
+        "command_saturated_decisions": 49,
+        "status": "finished",
+        "wall_s": 6.516045748000579,
+        "initial_truth": {
+          "object_position_m": [
+            0.11914984804365202,
+            -0.11104606210455074,
+            0.8147844891595659
+          ],
+          "object_quat_wxyz": [
+            0.7434755809961403,
+            3.895352087848169e-17,
+            -2.703992895763584e-17,
+            -0.6687630824607856
+          ],
+          "object_yaw_rad": -1.4650876873871301,
+          "object_linear_velocity_m_s": [
+            1.4062203533810575e-17,
+            1.871523674903924e-18,
+            2.166135987442774e-14
+          ],
+          "object_angular_velocity_rad_s": [
+            4.555588384958774e-17,
+            1.063233406946343e-15,
+            -8.194088038896923e-32
+          ],
+          "eef_position_m": [
+            -0.25005520706281603,
+            -0.24988750754560166,
+            1.0799217278777893
+          ],
+          "gripper_joint_position_m": [
+            0.03959546089013839,
+            -0.03976879892039342
+          ],
+          "gripper_open": true,
+          "grasp_contact": false,
+          "bilateral_grasp_contact": false,
+          "control_steps": 40,
+          "sim_time_s": 2.0
+        },
+        "final_truth": {
+          "object_position_m": [
+            0.11404996571905915,
+            -0.08736248493827904,
+            0.8147844891595695
+          ],
+          "object_quat_wxyz": [
+            0.9977520257338424,
+            4.037891167615941e-17,
+            -2.4120084627190996e-20,
+            0.06701414137339953
+          ],
+          "object_yaw_rad": 0.13412880385033354,
+          "object_linear_velocity_m_s": [
+            -1.3551867474621721e-18,
+            1.3446270752491331e-17,
+            -2.171327505691442e-14
+          ],
+          "object_angular_velocity_rad_s": [
+            -6.502100154091506e-16,
+            -2.1056675735985006e-16,
+            1.3154372498892308e-31
+          ],
+          "eef_position_m": [
+            0.1151970775866396,
+            -0.08878126561680233,
+            0.9799047839365738
+          ],
+          "gripper_joint_position_m": [
+            0.039999801169785326,
+            -0.04000000402741549
+          ],
+          "gripper_open": true,
+          "grasp_contact": false,
+          "bilateral_grasp_contact": false,
+          "control_steps": 796,
+          "sim_time_s": 39.8
+        }
+      },
+      "whole_position": {
+        "n": 300,
+        "mean": 0.7311938697081204,
+        "median": 0.058386798728437814,
+        "rmse": 1.3753784003835707,
+        "p95": 2.8601654124007667
+      },
+      "whole_direction_deg": {
+        "n": 300,
+        "mean": 7.803568641377492,
+        "median": 5.788438981244744,
+        "rmse": 12.877800223399214,
+        "p95": 36.421940747290826
+      },
+      "phase_diagnostics_posthoc": {
+        "initial_still": {
+          "position": {
+            "n": 100,
+            "mean": 0.04330665427667928,
+            "median": 0.01262532795879565,
+            "rmse": 0.0955928230303067,
+            "p95": 0.27186599598389755
+          },
+          "direction_deg": {
+            "n": 100,
+            "mean": 3.3113242867211876,
+            "median": 3.9433682720021492,
+            "rmse": 3.8462736578796792,
+            "p95": 6.05662271650893
+          }
+        },
+        "manipulation": {
+          "position": {
+            "n": 88,
+            "mean": 0.07654179461653537,
+            "median": 0.06568974430095675,
+            "rmse": 0.09291927819811899,
+            "p95": 0.20135205914957965
+          },
+          "direction_deg": {
+            "n": 88,
+            "mean": 17.21975300845546,
+            "median": 11.33260288394381,
+            "rmse": 22.74905355577232,
+            "p95": 42.87043882630253
+          }
+        },
+        "post_manipulation": {
+          "position": {
+            "n": 112,
+            "mean": 1.8597483710581528,
+            "median": 2.85688015709583,
+            "rmse": 2.2476696924101325,
+            "p95": 2.860434861713141
+          },
+          "direction_deg": {
+            "n": 112,
+            "mean": 4.416070526759363,
+            "median": 5.792288353476676,
+            "rmse": 4.9373114402199345,
+            "p95": 5.806146578280795
+          }
+        }
+      },
+      "runtime_feature_vs_projected_asset_truth_position": {
+        "n": 300,
+        "mean": 0.7758158916436052,
+        "median": 0.08366337559723885,
+        "rmse": 1.4232275523348756,
+        "p95": 2.955092709397319
+      },
+      "runtime_feature_vs_projected_asset_truth_direction_deg": {
+        "n": 300,
+        "mean": 3.090491526273238,
+        "median": 2.3149856282373027,
+        "rmse": 3.8253872662205337,
+        "p95": 7.895367822341267
+      },
+      "independent_true_projected_ordered_position": {
+        "n": 304,
+        "mean": 0.09275769516687171,
+        "median": 0.09550901847644648,
+        "rmse": 0.10050609526155842,
+        "p95": 0.1532938393474867
+      },
+      "independent_true_projected_ordered_direction_deg": {
+        "n": 304,
+        "mean": 6.739737488474978,
+        "median": 3.482532958864217,
+        "rmse": 11.42349150781725,
+        "p95": 32.292640458662895
+      },
+      "native_reference_rows_saved": 228,
+      "native_frames_seen_at_feedback": 227,
+      "native_frame_ids_not_sampled_at_feedback": [
+        378
+      ],
+      "last_feedback_source_s": 7.575,
+      "view_counts": {
+        "primary": 0,
+        "secondary_rectified": 300
+      },
+      "unknown_feedback_samples": 4,
+      "minimum_joint_margin_rad": 0.3476710425803393,
+      "forbidden_static_contacts": 0,
+      "supplied_prefix_actions": 128,
+      "tracked_source_actions": 392,
+      "supplied_release_retreat_settle_actions": 236
+    },
+    "SHUFFLE": {
+      "condition": "SHUFFLE",
+      "result": {
+        "condition": "SHUFFLE",
+        "completed_reference_horizon": true,
+        "prefix_steps": 128,
+        "sequence_steps": 628,
+        "scoring": {
+          "task": "feeding",
+          "success": false,
+          "criteria": {
+            "position": false,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": false,
+            "placement_height": true,
+            "released": true,
+            "stable": true
+          },
+          "position_error_m": 0.03367322065068099,
+          "orientation_error_rad": 0.12909708997336602,
+          "orientation_error_deg": 7.39671840289453,
+          "upright_error_rad": 0.0,
+          "height_error_m": 0.00021551084043414104,
+          "target_height_m": 0.8150000000000001,
+          "footprint_inside_target": false,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "maximum_linear_velocity_m_s": 2.1619100452740398e-14,
+          "maximum_angular_velocity_rad_s": 1.1690276342586473e-15,
+          "stability_sample_count": 20,
+          "stability_duration_s": 0.9499999999999957,
+          "grasp_attempt_count": 1,
+          "successful_grasp_count": 1,
+          "failed_grasp_count": 0,
+          "retries": 0,
+          "recovered_after_failed_grasp": false,
+          "successful_recovery": false,
+          "controller_exceptions": [],
+          "control_steps": 756,
+          "sim_time_s": 37.8,
+          "attempts": [
+            {
+              "verified_lift": true,
+              "scope": "independent post-execution scorer; actor does not read this"
+            }
+          ]
+        },
+        "any_contact": true,
+        "bilateral_contact": true,
+        "supported_lift": true,
+        "median_ordered_position_error_units": 0.083681305871083,
+        "median_ordered_direction_error_deg": 9.201681204493191,
+        "ordered_score_observations": 304,
+        "runtime_observed_fraction": 1.0,
+        "reference_rate_limited_decisions": 55,
+        "command_saturated_decisions": 102,
+        "status": "finished",
+        "wall_s": 6.525791127000048,
+        "initial_truth": {
+          "object_position_m": [
+            0.11914984804365202,
+            -0.11104606210455074,
+            0.8147844891595659
+          ],
+          "object_quat_wxyz": [
+            0.7434755809961403,
+            3.895352087848169e-17,
+            -2.703992895763584e-17,
+            -0.6687630824607856
+          ],
+          "object_yaw_rad": -1.4650876873871301,
+          "object_linear_velocity_m_s": [
+            1.4062203533810575e-17,
+            1.871523674903924e-18,
+            2.166135987442774e-14
+          ],
+          "object_angular_velocity_rad_s": [
+            4.555588384958774e-17,
+            1.063233406946343e-15,
+            -8.194088038896923e-32
+          ],
+          "eef_position_m": [
+            -0.25005520706281603,
+            -0.24988750754560166,
+            1.0799217278777893
+          ],
+          "gripper_joint_position_m": [
+            0.03959546089013839,
+            -0.03976879892039342
+          ],
+          "gripper_open": true,
+          "grasp_contact": false,
+          "bilateral_grasp_contact": false,
+          "control_steps": 40,
+          "sim_time_s": 2.0
+        },
+        "final_truth": {
+          "object_position_m": [
+            0.1156454188081987,
+            -0.08765223964915891,
+            0.8147844891595659
+          ],
+          "object_quat_wxyz": [
+            0.9979174658964506,
+            4.1230562376686025e-17,
+            -4.1624373287696136e-18,
+            -0.0645037305805355
+          ],
+          "object_yaw_rad": -0.12909708997336602,
+          "object_linear_velocity_m_s": [
+            2.4396054732759888e-18,
+            1.4001481598473962e-17,
+            2.1616318569661697e-14
+          ],
+          "object_angular_velocity_rad_s": [
+            -7.151202516317637e-16,
+            1.394819094528604e-16,
+            1.5591377892317872e-32
+          ],
+          "eef_position_m": [
+            0.11659725632620808,
+            -0.09053020367315998,
+            0.9799009463235432
+          ],
+          "gripper_joint_position_m": [
+            0.0399999894863001,
+            -0.03999986963409231
+          ],
+          "gripper_open": true,
+          "grasp_contact": false,
+          "bilateral_grasp_contact": false,
+          "control_steps": 796,
+          "sim_time_s": 39.8
+        }
+      },
+      "whole_position": {
+        "n": 304,
+        "mean": 0.7616435876793153,
+        "median": 0.083681305871083,
+        "rmse": 1.3966971656219427,
+        "p95": 2.8663115735084785
+      },
+      "whole_direction_deg": {
+        "n": 304,
+        "mean": 13.423379919379045,
+        "median": 9.201681204493191,
+        "rmse": 19.538926526111954,
+        "p95": 47.516705217343784
+      },
+      "phase_diagnostics_posthoc": {
+        "initial_still": {
+          "position": {
+            "n": 100,
+            "mean": 0.04227304038336152,
+            "median": 0.011638050564876767,
+            "rmse": 0.09526131105355119,
+            "p95": 0.2718040327374768
+          },
+          "direction_deg": {
+            "n": 100,
+            "mean": 3.017846576290969,
+            "median": 3.943360321166795,
+            "rmse": 3.7672761936860155,
+            "p95": 6.056622716509122
+          }
+        },
+        "manipulation": {
+          "position": {
+            "n": 89,
+            "mean": 0.11208490584134827,
+            "median": 0.09949620314604575,
+            "rmse": 0.12972118987614625,
+            "p95": 0.2283684340734299
+          },
+          "direction_deg": {
+            "n": 89,
+            "mean": 28.77329309701394,
+            "median": 27.960659183783683,
+            "rmse": 33.66477215351345,
+            "p95": 57.39092158526558
+          }
+        },
+        "post_manipulation": {
+          "position": {
+            "n": 115,
+            "mean": 1.8898851304025712,
+            "median": 2.8638879168754308,
+            "rmse": 2.266249183574932,
+            "p95": 2.8666855564006357
+          },
+          "direction_deg": {
+            "n": 115,
+            "mean": 10.592171758503413,
+            "median": 9.204357335929938,
+            "rmse": 10.943941685537254,
+            "p95": 14.207481887453305
+          }
+        }
+      },
+      "runtime_feature_vs_projected_asset_truth_position": {
+        "n": 304,
+        "mean": 0.7927025728380043,
+        "median": 0.0830290773570472,
+        "rmse": 1.4398083831270663,
+        "p95": 2.952113180060688
+      },
+      "runtime_feature_vs_projected_asset_truth_direction_deg": {
+        "n": 304,
+        "mean": 3.0222276258876914,
+        "median": 2.3967184028941606,
+        "rmse": 3.81590592236797,
+        "p95": 8.06619865831391
+      },
+      "independent_true_projected_ordered_position": {
+        "n": 304,
+        "mean": 0.10458771090363964,
+        "median": 0.08744154276098745,
+        "rmse": 0.11883338679362289,
+        "p95": 0.23851026829908148
+      },
+      "independent_true_projected_ordered_direction_deg": {
+        "n": 304,
+        "mean": 13.776908121256186,
+        "median": 11.594463833683589,
+        "rmse": 19.247324413464344,
+        "p95": 45.45565102720331
+      },
+      "native_reference_rows_saved": 228,
+      "native_frames_seen_at_feedback": 227,
+      "native_frame_ids_not_sampled_at_feedback": [
+        378
+      ],
+      "last_feedback_source_s": 7.575,
+      "view_counts": {
+        "primary": 0,
+        "secondary_rectified": 304
+      },
+      "unknown_feedback_samples": 0,
+      "minimum_joint_margin_rad": 0.3476710425803393,
+      "forbidden_static_contacts": 0,
+      "supplied_prefix_actions": 128,
+      "tracked_source_actions": 392,
+      "supplied_release_retreat_settle_actions": 236
+    },
+    "STATIC": {
+      "condition": "STATIC",
+      "result": {
+        "condition": "STATIC",
+        "completed_reference_horizon": true,
+        "prefix_steps": 128,
+        "sequence_steps": 628,
+        "scoring": {
+          "task": "feeding",
+          "success": false,
+          "criteria": {
+            "position": false,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": false,
+            "placement_height": true,
+            "released": true,
+            "stable": true
+          },
+          "position_error_m": 0.03538685559234809,
+          "orientation_error_rad": 0.06278065079580891,
+          "orientation_error_deg": 3.5970663256844837,
+          "upright_error_rad": 0.0,
+          "height_error_m": 0.00021551084043414104,
+          "target_height_m": 0.8150000000000001,
+          "footprint_inside_target": false,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "maximum_linear_velocity_m_s": 2.1666063063575963e-14,
+          "maximum_angular_velocity_rad_s": 1.127417011346882e-15,
+          "stability_sample_count": 20,
+          "stability_duration_s": 0.9499999999999957,
+          "grasp_attempt_count": 1,
+          "successful_grasp_count": 1,
+          "failed_grasp_count": 0,
+          "retries": 0,
+          "recovered_after_failed_grasp": false,
+          "successful_recovery": false,
+          "controller_exceptions": [],
+          "control_steps": 756,
+          "sim_time_s": 37.8,
+          "attempts": [
+            {
+              "verified_lift": true,
+              "scope": "independent post-execution scorer; actor does not read this"
+            }
+          ]
+        },
+        "any_contact": true,
+        "bilateral_contact": true,
+        "supported_lift": true,
+        "median_ordered_position_error_units": 0.0680744066765395,
+        "median_ordered_direction_error_deg": 1.6262565436664094,
+        "ordered_score_observations": 298,
+        "runtime_observed_fraction": 0.9802631578947368,
+        "reference_rate_limited_decisions": 14,
+        "command_saturated_decisions": 60,
+        "status": "finished",
+        "wall_s": 5.489566360999561,
+        "initial_truth": {
+          "object_position_m": [
+            0.11914984804365202,
+            -0.11104606210455074,
+            0.8147844891595659
+          ],
+          "object_quat_wxyz": [
+            0.7434755809961403,
+            3.895352087848169e-17,
+            -2.703992895763584e-17,
+            -0.6687630824607856
+          ],
+          "object_yaw_rad": -1.4650876873871301,
+          "object_linear_velocity_m_s": [
+            1.4062203533810575e-17,
+            1.871523674903924e-18,
+            2.166135987442774e-14
+          ],
+          "object_angular_velocity_rad_s": [
+            4.555588384958774e-17,
+            1.063233406946343e-15,
+            -8.194088038896923e-32
+          ],
+          "eef_position_m": [
+            -0.25005520706281603,
+            -0.24988750754560166,
+            1.0799217278777893
+          ],
+          "gripper_joint_position_m": [
+            0.03959546089013839,
+            -0.03976879892039342
+          ],
+          "gripper_open": true,
+          "grasp_contact": false,
+          "bilateral_grasp_contact": false,
+          "control_steps": 40,
+          "sim_time_s": 2.0
+        },
+        "final_truth": {
+          "object_position_m": [
+            0.11399177827725505,
+            -0.08636893395658438,
+            0.8147844891595659
+          ],
+          "object_quat_wxyz": [
+            0.9995073641893618,
+            3.835335132889403e-17,
+            7.490706525789589e-19,
+            0.031385170562460186
+          ],
+          "object_yaw_rad": 0.06278065079580891,
+          "object_linear_velocity_m_s": [
+            -8.466582194060723e-19,
+            1.4577897765981677e-17,
+            2.1660507868855294e-14
+          ],
+          "object_angular_velocity_rad_s": [
+            -8.849624955504537e-16,
+            -7.141265699733108e-17,
+            -2.811151459795937e-32
+          ],
+          "eef_position_m": [
+            0.11502189311339386,
+            -0.08838724044258041,
+            0.9799041226011279
+          ],
+          "gripper_joint_position_m": [
+            0.0399998540314924,
+            -0.040000001830054685
+          ],
+          "gripper_open": true,
+          "grasp_contact": false,
+          "bilateral_grasp_contact": false,
+          "control_steps": 796,
+          "sim_time_s": 39.8
+        }
+      },
+      "whole_position": {
+        "n": 298,
+        "mean": 0.7546804092951512,
+        "median": 0.0680744066765395,
+        "rmse": 1.3924449133000507,
+        "p95": 2.850080454494002
+      },
+      "whole_direction_deg": {
+        "n": 298,
+        "mean": 3.902794735840723,
+        "median": 1.6262565436664094,
+        "rmse": 6.2719905846628805,
+        "p95": 10.685768732887214
+      },
+      "phase_diagnostics_posthoc": {
+        "initial_still": {
+          "position": {
+            "n": 100,
+            "mean": 0.04330665427667928,
+            "median": 0.01262532795879565,
+            "rmse": 0.0955928230303067,
+            "p95": 0.27186599598389755
+          },
+          "direction_deg": {
+            "n": 100,
+            "mean": 3.3113242867211876,
+            "median": 3.9433682720021492,
+            "rmse": 3.8462736578796792,
+            "p95": 6.05662271650893
+          }
+        },
+        "manipulation": {
+          "position": {
+            "n": 84,
+            "mean": 0.09323935631529909,
+            "median": 0.08761600252655333,
+            "rmse": 0.11347470959699699,
+            "p95": 0.23162467303525727
+          },
+          "direction_deg": {
+            "n": 84,
+            "mean": 8.215820479814527,
+            "median": 7.6276672423039145,
+            "rmse": 10.860645352255363,
+            "p95": 23.951600401798984
+          }
+        },
+        "post_manipulation": {
+          "position": {
+            "n": 114,
+            "mean": 1.8660700930859822,
+            "median": 2.847822444333559,
+            "rmse": 2.2474110245284162,
+            "p95": 2.8505276793940433
+          },
+          "direction_deg": {
+            "n": 114,
+            "mean": 1.2436094938947087,
+            "median": 0.8015346432628299,
+            "rmse": 1.7147401829807456,
+            "p95": 4.206373693469947
+          }
+        }
+      },
+      "runtime_feature_vs_projected_asset_truth_position": {
+        "n": 298,
+        "mean": 0.7982044864024882,
+        "median": 0.08174442769102633,
+        "rmse": 1.4452082294842843,
+        "p95": 2.95360075594114
+      },
+      "runtime_feature_vs_projected_asset_truth_direction_deg": {
+        "n": 298,
+        "mean": 2.6560463384982813,
+        "median": 1.4029336743156682,
+        "rmse": 3.5691601000939452,
+        "p95": 8.303792730279094
+      },
+      "independent_true_projected_ordered_position": {
+        "n": 304,
+        "mean": 0.09228889669874463,
+        "median": 0.09984017278251064,
+        "rmse": 0.10045996955240186,
+        "p95": 0.15389816839593812
+      },
+      "independent_true_projected_ordered_direction_deg": {
+        "n": 304,
+        "mean": 3.581018417781256,
+        "median": 1.0670907978598239,
+        "rmse": 6.850650242775374,
+        "p95": 16.7542920703128
+      },
+      "native_reference_rows_saved": 228,
+      "native_frames_seen_at_feedback": 227,
+      "native_frame_ids_not_sampled_at_feedback": [
+        378
+      ],
+      "last_feedback_source_s": 7.575,
+      "view_counts": {
+        "primary": 0,
+        "secondary_rectified": 298
+      },
+      "unknown_feedback_samples": 6,
+      "minimum_joint_margin_rad": 0.3476710425803393,
+      "forbidden_static_contacts": 0,
+      "supplied_prefix_actions": 128,
+      "tracked_source_actions": 392,
+      "supplied_release_retreat_settle_actions": 236
+    },
+    "SEQ_REPEAT": {
+      "condition": "SEQ_REPEAT",
+      "result": {
+        "condition": "SEQ_REPEAT",
+        "completed_reference_horizon": true,
+        "prefix_steps": 128,
+        "sequence_steps": 628,
+        "scoring": {
+          "task": "feeding",
+          "success": false,
+          "criteria": {
+            "position": false,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": false,
+            "placement_height": true,
+            "released": true,
+            "stable": true
+          },
+          "position_error_m": 0.03547475317342388,
+          "orientation_error_rad": 0.06678272635254127,
+          "orientation_error_deg": 3.8263683643777173,
+          "upright_error_rad": 0.0,
+          "height_error_m": 0.00021551084043414104,
+          "target_height_m": 0.8150000000000001,
+          "footprint_inside_target": false,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "maximum_linear_velocity_m_s": 2.1628823767990437e-14,
+          "maximum_angular_velocity_rad_s": 1.1809922312806491e-15,
+          "stability_sample_count": 20,
+          "stability_duration_s": 0.9499999999999957,
+          "grasp_attempt_count": 1,
+          "successful_grasp_count": 1,
+          "failed_grasp_count": 0,
+          "retries": 0,
+          "recovered_after_failed_grasp": false,
+          "successful_recovery": false,
+          "controller_exceptions": [],
+          "control_steps": 756,
+          "sim_time_s": 37.8,
+          "attempts": [
+            {
+              "verified_lift": true,
+              "scope": "independent post-execution scorer; actor does not read this"
+            }
+          ]
+        },
+        "any_contact": true,
+        "bilateral_contact": true,
+        "supported_lift": true,
+        "median_ordered_position_error_units": 0.04794328038853725,
+        "median_ordered_direction_error_deg": 4.194720111021835,
+        "ordered_score_observations": 299,
+        "runtime_observed_fraction": 0.9835526315789473,
+        "reference_rate_limited_decisions": 9,
+        "command_saturated_decisions": 64,
+        "status": "finished",
+        "wall_s": 5.706495321999682,
+        "initial_truth": {
+          "object_position_m": [
+            0.11914984804365202,
+            -0.11104606210455074,
+            0.8147844891595659
+          ],
+          "object_quat_wxyz": [
+            0.7434755809961403,
+            3.895352087848169e-17,
+            -2.703992895763584e-17,
+            -0.6687630824607856
+          ],
+          "object_yaw_rad": -1.4650876873871301,
+          "object_linear_velocity_m_s": [
+            1.4062203533810575e-17,
+            1.871523674903924e-18,
+            2.166135987442774e-14
+          ],
+          "object_angular_velocity_rad_s": [
+            4.555588384958774e-17,
+            1.063233406946343e-15,
+            -8.194088038896923e-32
+          ],
+          "eef_position_m": [
+            -0.25005520706281603,
+            -0.24988750754560166,
+            1.0799217278777893
+          ],
+          "gripper_joint_position_m": [
+            0.03959546089013839,
+            -0.03976879892039342
+          ],
+          "gripper_open": true,
+          "grasp_contact": false,
+          "bilateral_grasp_contact": false,
+          "control_steps": 40,
+          "sim_time_s": 2.0
+        },
+        "final_truth": {
+          "object_position_m": [
+            0.11502510086235851,
+            -0.08595650576234533,
+            0.8147844891595659
+          ],
+          "object_quat_wxyz": [
+            0.9994425602301646,
+            3.2972884558633095e-17,
+            -2.9162399451217788e-18,
+            0.033385158387727716
+          ],
+          "object_yaw_rad": 0.06678272635254127,
+          "object_linear_velocity_m_s": [
+            1.4912694256471064e-19,
+            1.2903065683314771e-17,
+            2.1626044314297237e-14
+          ],
+          "object_angular_velocity_rad_s": [
+            -1.154127184098582e-15,
+            -3.9805774722882356e-17,
+            1.50934140185029e-31
+          ],
+          "eef_position_m": [
+            0.11607353379635334,
+            -0.08783324105571703,
+            0.9799037433169538
+          ],
+          "gripper_joint_position_m": [
+            0.03999985418062271,
+            -0.040000001798283696
+          ],
+          "gripper_open": true,
+          "grasp_contact": false,
+          "bilateral_grasp_contact": false,
+          "control_steps": 796,
+          "sim_time_s": 39.8
+        }
+      },
+      "whole_position": {
+        "n": 299,
+        "mean": 0.7417681319642292,
+        "median": 0.04794328038853725,
+        "rmse": 1.3947271980304647,
+        "p95": 2.8562581362704473
+      },
+      "whole_direction_deg": {
+        "n": 299,
+        "mean": 6.455625527560403,
+        "median": 4.194720111021835,
+        "rmse": 10.586260159795604,
+        "p95": 30.287576486778917
+      },
+      "phase_diagnostics_posthoc": {
+        "initial_still": {
+          "position": {
+            "n": 100,
+            "mean": 0.04227304038336152,
+            "median": 0.011638050564876767,
+            "rmse": 0.09526131105355119,
+            "p95": 0.2718040327374768
+          },
+          "direction_deg": {
+            "n": 100,
+            "mean": 3.017846576290969,
+            "median": 3.943360321166795,
+            "rmse": 3.7672761936860155,
+            "p95": 6.056622716509122
+          }
+        },
+        "manipulation": {
+          "position": {
+            "n": 85,
+            "mean": 0.04733510905317997,
+            "median": 0.05030646714821681,
+            "rmse": 0.05491970060948397,
+            "p95": 0.09115889067629326
+          },
+          "direction_deg": {
+            "n": 85,
+            "mean": 14.278311444547704,
+            "median": 10.635648768334928,
+            "rmse": 18.908160569206117,
+            "p95": 37.68870965342573
+          }
+        },
+        "post_manipulation": {
+          "position": {
+            "n": 114,
+            "mean": 1.8731393258723517,
+            "median": 2.8540060460366146,
+            "rmse": 2.2565111959590727,
+            "p95": 2.8567107536641685
+          },
+          "direction_deg": {
+            "n": 114,
+            "mean": 3.638516687060603,
+            "median": 4.198465356737304,
+            "rmse": 3.8619713465684447,
+            "p95": 4.209431404151899
+          }
+        }
+      },
+      "runtime_feature_vs_projected_asset_truth_position": {
+        "n": 299,
+        "mean": 0.7974065885621421,
+        "median": 0.08295689348863457,
+        "rmse": 1.446158562557868,
+        "p95": 2.9553738738276585
+      },
+      "runtime_feature_vs_projected_asset_truth_direction_deg": {
+        "n": 299,
+        "mean": 3.3244489217221678,
+        "median": 3.82633721043538,
+        "rmse": 3.998686675036014,
+        "p95": 7.973334606508645
+      },
+      "independent_true_projected_ordered_position": {
+        "n": 304,
+        "mean": 0.09872865843389807,
+        "median": 0.0991084087031687,
+        "rmse": 0.10458427261453328,
+        "p95": 0.1518993088004558
+      },
+      "independent_true_projected_ordered_direction_deg": {
+        "n": 304,
+        "mean": 4.725173273887958,
+        "median": 1.0618861899889196,
+        "rmse": 9.581021957628389,
+        "p95": 27.321830062511577
+      },
+      "native_reference_rows_saved": 228,
+      "native_frames_seen_at_feedback": 227,
+      "native_frame_ids_not_sampled_at_feedback": [
+        378
+      ],
+      "last_feedback_source_s": 7.575,
+      "view_counts": {
+        "primary": 0,
+        "secondary_rectified": 299
+      },
+      "unknown_feedback_samples": 5,
+      "minimum_joint_margin_rad": 0.3476710425803393,
+      "forbidden_static_contacts": 0,
+      "supplied_prefix_actions": 128,
+      "tracked_source_actions": 392,
+      "supplied_release_retreat_settle_actions": 236
+    }
+  },
+  "improvements_vs_controls": {
+    "END": {
+      "whole_position": {
+        "median": 0.17886780175214434,
+        "mean": -0.014461639647402658,
+        "rmse": -0.014067981321720602
+      },
+      "whole_direction_deg": {
+        "median": 0.2753279209449655,
+        "mean": 0.17273419069703333,
+        "rmse": 0.17794499245607476
+      }
+    },
+    "SHUFFLE": {
+      "whole_position": {
+        "median": 0.4270729897260771,
+        "mean": 0.026095480926512482,
+        "rmse": 0.00141044718924499
+      },
+      "whole_direction_deg": {
+        "median": 0.5441354663565666,
+        "mean": 0.5190760027405203,
+        "rmse": 0.45819642928448223
+      }
+    },
+    "STATIC": {
+      "whole_position": {
+        "median": 0.2957223907019383,
+        "mean": 0.017109596554893636,
+        "rmse": -0.0016390484884640788
+      },
+      "whole_direction_deg": {
+        "median": -1.5793717032890777,
+        "mean": -0.6541032681724575,
+        "rmse": -0.6878628908791029
+      }
+    }
+  },
+  "repeat": {
+    "action_log_exact": true,
+    "observation_log_exact": true
+  },
+  "source_endpoint_mapping_diagnostic": {
+    "desired_final_glyph_uv": [
+      0.7196820959529677,
+      0.5180472457155411
+    ],
+    "physical_robot_centre_that_exactly_matches_final_glyph_under_horizontal_resting_assumption_m": [
+      0.12155837333565242,
+      -0.09311836108530677
+    ],
+    "implied_centre_error_mm": 27.101057264186156,
+    "implied_yaw_deg": 4.202812811267874,
+    "original_centring_tolerance_mm": 15,
+    "scope": "posthoc analytic robot-camera diagnostic using declared proxy; not measured human physical endpoint; no goal was changed"
+  },
+  "initial_reference_mismatch": {
+    "initial_robot_projected_glyph": [
+      0.5658147380501665,
+      0.44600815860156034,
+      1.5629540440052323
+    ],
+    "first_human_glyph": [
+      0.7549480599702605,
+      0.45909127686734363,
+      1.5629540978588405
+    ],
+    "distance_units": 0.18958528804758662,
+    "reason_to_inspect": "Simulation initial centre was reconstructed from visible orange centroid, whereas servo follows glyph. Proxy shape/scale and feature registration can disagree."
+  },
+  "gates": {
+    "local_controller_qualification": true,
+    "full_reference_saved": true,
+    "every_native_frame_consumed_at_feedback": false,
+    "no_manipulation_interval_truncated": true,
+    "seq_manipulates_and_releases_stably": true,
+    "seq_repeat_action_and_observation_exact": true,
+    "seq_median_position_at_most_005": true,
+    "seq_median_direction_at_most_10deg": true,
+    "seq_position_median_improvement_at_least20pct_over_end_and_static": false,
+    "seq_strict_original_goal_success": false,
+    "conclusion": "physical sequence following demonstrated; stronger sequence-benefit and unchanged-placement acceptance NOT met"
+  },
+  "interpretation": "Robot-specific assisted retargeting only; no VLA or policy training."
+}
