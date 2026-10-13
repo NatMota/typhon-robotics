@@ -87,7 +87,8 @@ def train(name):
  data=read(OUT/"data/qualified-dataset.json");cached=[None]*len(data["windows"])
  for e in data["episodes"]:
   assert sha(e["absolute_path"])==e["sha256"]
-  with np.load(e["absolute_path"])as z:
+  with np.load(e["absolute_path"])as archive:
+   z={key:archive[key] for key in archive.files}
    for i,w in enumerate(data["windows"]):
     if w["episode"]!=e["id"]:continue
     fi=w["frame"];ai=w["start"]
