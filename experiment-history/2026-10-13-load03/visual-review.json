@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "reviewer": "Codex visual inspection, not a new human annotation",
+  "artifacts": [
+    "qa/render-isolation.jpg",
+    "qa/training-reference-views.jpg"
+  ],
+  "observations": "Inspected visible/hidden overhead comparison: only gray fixture disappears; green target, orange brick, robot and table remain. Actual source feeding example lacks fixture; loading example contains fixture. Physics/foreground/crop isolation separately verified numerically.",
+  "time": 1791925900.4628694
+}

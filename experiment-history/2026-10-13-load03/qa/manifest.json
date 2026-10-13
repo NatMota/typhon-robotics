@@ -1,0 +1,48 @@
+{
+  "selection": "post-hoc representative comparison, all 16 endpoints also shown",
+  "scene": "demo_0012",
+  "seed": 912171,
+  "conditions": [
+    [
+      "visible",
+      "feeding"
+    ],
+    [
+      "visible",
+      "loading"
+    ],
+    [
+      "hidden",
+      "feeding"
+    ],
+    [
+      "hidden",
+      "loading"
+    ]
+  ],
+  "sources": [
+    {
+      "path": "/var/tmp/typhon-load03-20261013/evaluation/visible/demo_0012/load03-demo_0012-seed912171-visible-feeding/rollout.mp4",
+      "sha256": "ef639dc8f1195d9b7dd3f8c157f2bb1c0db5ba822e63ca0ac057b9836baa11b3"
+    },
+    {
+      "path": "/var/tmp/typhon-load03-20261013/evaluation/visible/demo_0012/load03-demo_0012-seed912171-visible-loading/rollout.mp4",
+      "sha256": "db38e8fa2603d597630686c30d58bbc4586b339c61a9a6522ee4b68dd570d996"
+    },
+    {
+      "path": "/var/tmp/typhon-load03-20261013/evaluation/hidden/demo_0012/load03-demo_0012-seed912171-hidden-feeding/rollout.mp4",
+      "sha256": "a43a5868821f152b67cfb3c8b1f59c67646fdef603f140fdf08653524a24ea96"
+    },
+    {
+      "path": "/var/tmp/typhon-load03-20261013/evaluation/hidden/demo_0012/load03-demo_0012-seed912171-hidden-loading/rollout.mp4",
+      "sha256": "db03163c58ce0e1e37c8fdd23fed465542d591c423d7bfda61d4ee87af1aa8fa"
+    }
+  ],
+  "derived_video": "/var/tmp/typhon-load03-20261013/qa/fixture-appearance-demo_0012-seed912171.mp4",
+  "frames": 367,
+  "decoded_frames": 367,
+  "fps": 5,
+  "duration_seconds": 73.4,
+  "bytes": 2753162,
+  "sha256": "1984569a7a623e8e49db622b28e4acdbe75417af2c5a35eb39d7f953d63270c7"
+}
