@@ -130,7 +130,14 @@
       "dyaw_rad": 0.1
     },
     "must_observe_directional_response": true,
-    "freeze_before_condition_outcomes": true
+    "freeze_before_condition_outcomes": true,
+    "response_ratio_range": [
+      0.25,
+      3.0
+    ],
+    "direction_cosine_min": 0.5,
+    "independent_scorer_requires_bilateral_lift": true,
+    "single_point_scope": "Local response check on this development start; no broad controller qualification."
   },
   "gates": {
     "median_position_target_units": 0.05,
