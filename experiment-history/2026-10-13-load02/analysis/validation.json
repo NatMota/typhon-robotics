@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "episodes": 16,
+  "scoring_reproduced": true,
+  "actual_initial_prepared_inputs_match_fixtures": true,
+  "image_mask_proprio_domain_identical_between_instructions": true,
+  "paired_noise_matches_all_chunks": true,
+  "noise_chunks_per_pair": 48,
+  "all_resets_match": true,
+  "runtime_errors": 0,
+  "same_loading_condition_load01_parity": [
+    {
+      "model": "F",
+      "scene": "demo_0012",
+      "chunks_byte_identical": false,
+      "maximum_action_difference": 0.128662109375,
+      "initial_truth_identical": true,
+      "final_truth_identical": false,
+      "same_strict_loading_outcome": true
+    },
+    {
+      "model": "F",
+      "scene": "demo_0013",
+      "chunks_byte_identical": true,
+      "maximum_action_difference": 0.0,
+      "initial_truth_identical": true,
+      "final_truth_identical": true,
+      "same_strict_loading_outcome": true
+    },
+    {
+      "model": "FL",
+      "scene": "demo_0012",
+      "chunks_byte_identical": true,
+      "maximum_action_difference": 0.0,
+      "initial_truth_identical": true,
+      "final_truth_identical": true,
+      "same_strict_loading_outcome": true
+    },
+    {
+      "model": "FL",
+      "scene": "demo_0013",
+      "chunks_byte_identical": true,
+      "maximum_action_difference": 0.0,
+      "initial_truth_identical": true,
+      "final_truth_identical": true,
+      "same_strict_loading_outcome": true
+    }
+  ],
+  "both_endpoints_feasible_from_old_evidence": true,
+  "completed": 1791924273.3243682
+}

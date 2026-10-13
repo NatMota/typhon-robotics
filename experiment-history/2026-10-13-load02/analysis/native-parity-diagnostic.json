@@ -1,0 +1,63 @@
+{
+  "files": [
+    "model_actions",
+    "primary",
+    "secondary",
+    "eef_position_m",
+    "eef_quat_xyzw"
+  ],
+  "inputs": {
+    "model_actions": {
+      "first_different": 12,
+      "shape": [
+        48,
+        30,
+        20
+      ],
+      "different_values": 284,
+      "max_difference": 0.0078125
+    },
+    "primary": {
+      "first_different": 13,
+      "shape": [
+        48,
+        512,
+        512,
+        3
+      ],
+      "different_values": 3065,
+      "max_difference": 79.0
+    },
+    "secondary": {
+      "first_different": 12,
+      "shape": [
+        48,
+        512,
+        512,
+        3
+      ],
+      "different_values": 13,
+      "max_difference": 1.0
+    },
+    "eef_position_m": {
+      "first_different": 13,
+      "shape": [
+        48,
+        3
+      ],
+      "different_values": 3,
+      "max_difference": 1.0607214943114673e-05
+    },
+    "eef_quat_xyzw": {
+      "first_different": 13,
+      "shape": [
+        48,
+        4
+      ],
+      "different_values": 4,
+      "max_difference": 1.9629004264110073e-05
+    }
+  },
+  "first_different_control_trace_record": 360,
+  "first_different_control_step": 401
+}

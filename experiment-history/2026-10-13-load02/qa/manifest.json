@@ -1,0 +1,48 @@
+{
+  "selection": "post-hoc representative comparison, all 16 endpoints also shown",
+  "scene": "demo_0012",
+  "seed": 912171,
+  "conditions": [
+    [
+      "F",
+      "feeding"
+    ],
+    [
+      "F",
+      "loading"
+    ],
+    [
+      "FL",
+      "feeding"
+    ],
+    [
+      "FL",
+      "loading"
+    ]
+  ],
+  "sources": [
+    {
+      "path": "/var/tmp/typhon-load02-20261013/evaluation/F/demo_0012/load02-demo_0012-seed912171-feeding/rollout.mp4",
+      "sha256": "e946099c05a60e36aed3a457cca034e4f296b24aa568787385809c4ede562502"
+    },
+    {
+      "path": "/var/tmp/typhon-load02-20261013/evaluation/F/demo_0012/load02-demo_0012-seed912171-loading/rollout.mp4",
+      "sha256": "73af7651831c5593a3f48ef648c66faddb57c22782873b11644dd4ef5250e943"
+    },
+    {
+      "path": "/var/tmp/typhon-load02-20261013/evaluation/FL/demo_0012/load02-demo_0012-seed912171-feeding/rollout.mp4",
+      "sha256": "dbd92cf0e00daf5c8ea0c60a64b54b4d6fb10c2f8204ad8dabf276c3b1cb5dd4"
+    },
+    {
+      "path": "/var/tmp/typhon-load02-20261013/evaluation/FL/demo_0012/load02-demo_0012-seed912171-loading/rollout.mp4",
+      "sha256": "1615f513b58bce2147b56178bdbfd2edebdd8c97494b13ddcd6f8fed57099966"
+    }
+  ],
+  "derived_video": "/var/tmp/typhon-load02-20261013/qa/instruction-switch-demo_0012-seed912171.mp4",
+  "frames": 367,
+  "decoded_frames": 367,
+  "fps": 5,
+  "duration_seconds": 73.4,
+  "bytes": 2754976,
+  "sha256": "318fa32fe1bd947234ee215278588cad6b25982088c993e1065d1d437583e854"
+}
