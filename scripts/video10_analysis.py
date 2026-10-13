@@ -4,7 +4,7 @@ from pathlib import Path
 import cv2,numpy as np
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT));sys.path.insert(0,str(ROOT/'scripts'))
 from video09_source import save,sha,wrap,robot_h
-from video09_analysis import stats,readlines,truth_feature,previews
+from video09_analyze import stats,readlines,truth_feature,previews
 from exp20261011_hierarchy_runtime_v3 import ObservableBlock
 
 def analyze(out):
