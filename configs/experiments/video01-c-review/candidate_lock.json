@@ -1,0 +1,50 @@
+{
+  "schema": "video01-c-review-candidate-lock-v1",
+  "selection_reason": "First source-reviewed take in ascending demo ID for each distinct decision/state class: pickup-place, pause-style contrast, already-completed preservation. Repeated normal/correction examples do not add a new independently required constraint. Chosen before new per-candidate feature inspection.",
+  "examples": [
+    {
+      "demo_id": "demo_0001",
+      "sample_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "question": "Pickup/lift and release versus matching endpoints by pushing"
+    },
+    {
+      "demo_id": "demo_0012",
+      "sample_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "question": "Observed held transport and user-labelled pause; is waiting independently required?"
+    },
+    {
+      "demo_id": "demo_0018",
+      "sample_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "question": "Preserve already-completed state without needless manipulation"
+    }
+  ],
+  "negative_control": {
+    "demo_id": "demo_0007",
+    "role": "Existing VIDEO10 result, not fourth selected temporal example; no physical advantage from full path established."
+  },
+  "maximum_examples": 3,
+  "locked_utc": "2026-10-13T03:05:57.092199+00:00"
+}
