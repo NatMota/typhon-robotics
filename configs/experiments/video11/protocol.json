@@ -1,0 +1,59 @@
+{
+  "schema": "video11-offline-correspondence-audit-v1",
+  "ticket": 11035,
+  "start_utc": "2026-10-13T02:21:00Z",
+  "deadline_utc": "2026-10-13T03:06:00Z",
+  "source": "VIDEO10 immutable saved executions",
+  "conditions": [
+    "SEQ",
+    "END",
+    "SHUFFLE",
+    "STATIC"
+  ],
+  "common_timestamp_count": 184,
+  "selected_common_indices": [
+    0,
+    61,
+    122,
+    183
+  ],
+  "selected_source_times_s": [
+    0,
+    1.525,
+    3.05,
+    4.875
+  ],
+  "time_intervals": [
+    {
+      "name": "initial_still",
+      "start": 0,
+      "end": 2.5
+    },
+    {
+      "name": "demonstrated_manipulation",
+      "start": 2.5,
+      "end": 4.7
+    },
+    {
+      "name": "pre_release_tail",
+      "start": 4.7,
+      "end": 4.9
+    }
+  ],
+  "time_bounds": "left-inclusive, right-exclusive",
+  "no_actor_execution": true,
+  "no_physics_rollouts": true,
+  "no_observer_tuning": true,
+  "no_fitted_correction": true,
+  "no_favorable_subsets": true,
+  "rendering_gate": "Geometry-based visible masks only if unchanged cached render reconstruction matches archived RGB at its original instant; no unqualified sim.forward",
+  "required_comparisons": [
+    "native detection vs visible glyph support",
+    "visible vs complete glyph support",
+    "scorer declared landmark vs implemented glyph geometry",
+    "same secondary pixel through assumed vs actual printed-face geometry"
+  ],
+  "numerical_residuals": "All four x184 saved common timestamps; signed residuals and exact squared-error cross-term; retain source and original metrics",
+  "failure_gate": "If rendering/like-for-like correspondence cannot be qualified within45min, preserve both disputed scores and physical successes; stop measurement branch without a new controller run",
+  "privacy": "private branch and Mint Fast Drive; no publication"
+}
