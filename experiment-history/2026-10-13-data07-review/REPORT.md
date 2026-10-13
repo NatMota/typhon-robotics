@@ -38,7 +38,9 @@ Using **saved simulator telemetry**, the inherited grasp's planar object-to-nomi
 
 The successful off-axis expert suffix exists and is hash-verified, but remains excluded because it comes from a quarantined diagnostic state. Another diagnostic held state at approximately −24.13° failed under both tested experts. Side-face diagnostics also failed. Thus the qualified later training set does **not** demonstrate diverse difficult held-grasp coverage.
 
-The near-nominal held correction received 372/12,000 draws, or **3.1%** of this continuation's sampled examples. Repeated windows do not create additional grasp relationships.
+The near-nominal held-start suffix received 372/12,000 draws, or **3.1%** of this continuation's sampled examples. These are draws from that suffix, not necessarily 372 held-state windows. This review audited episode starts; it did not exhaustively measure every later window's grasp relationship. Therefore it establishes narrow verified start-state coverage, not the absence of every other relationship anywhere in the trajectories. The four correction suffixes together account for 16.67% of presentations.
+
+Missing V4 training arrays do not erase its saved checkpoint behavior. They prevent fully reproducing or attributing its correction-data recipe.
 
 For **original V4**, the answer remains unknown: its three declared recovery episode IDs are recorded, but their arrays and physical qualification were not recovered in this review. Do not substitute the later four corrections when describing V4.
 

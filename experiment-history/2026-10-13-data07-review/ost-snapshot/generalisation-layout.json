@@ -1,0 +1,470 @@
+{
+  "nodes": [
+    {
+      "id": "outcome",
+      "type": "outcome",
+      "label": "Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer",
+      "parent_id": "",
+      "x": 24,
+      "y": 128,
+      "color": "#2D3831",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Personally recorded",
+        "manipulation data drives",
+        "reliable Panda feeding and",
+        "measured loading transfer"
+      ],
+      "prefix": "Outcome",
+      "ticket_id": null
+    },
+    {
+      "id": "opp_generalisation",
+      "type": "opportunity",
+      "label": "I need learned behaviour to work beyond familiar starting states",
+      "parent_id": "outcome",
+      "x": 394,
+      "y": 128,
+      "color": "#2D3831",
+      "width": 280,
+      "height": 134,
+      "lines": [
+        "I need learned behaviour to",
+        "work beyond familiar",
+        "starting states"
+      ],
+      "prefix": "Opportunity",
+      "ticket_id": null
+    },
+    {
+      "id": "sol_generalisation_0",
+      "type": "solution",
+      "label": "Broader supervised adaptation",
+      "parent_id": "opp_generalisation",
+      "x": 764,
+      "y": 128,
+      "color": "#30353D",
+      "width": 280,
+      "height": 112,
+      "lines": [
+        "Broader supervised",
+        "adaptation"
+      ],
+      "prefix": "Solution",
+      "ticket_id": null
+    },
+    {
+      "id": "exp_10962",
+      "type": "experiment",
+      "label": "Broader full-weight Pt adaptation\nR03 · #10962\nRUN / COMPLETE",
+      "parent_id": "sol_generalisation_0",
+      "x": 1134,
+      "y": 161.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Broader full-weight Pt",
+        "adaptation",
+        "R03 · #10962",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Training",
+      "ticket_id": 10962,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "result_10962",
+      "type": "result",
+      "label": "Fresh X-VLA-Pt; all six training takes; 439 simulated RGB/expert windows. 3k and 12k checkpoints saved in 64 min. Full-weight adaptation after staged warm-up.",
+      "parent_id": "exp_10962",
+      "x": 1504,
+      "y": 128.0,
+      "color": "#303840",
+      "width": 280,
+      "height": 222,
+      "lines": [
+        "Fresh X-VLA-Pt; all six",
+        "training takes; 439",
+        "simulated RGB/expert",
+        "windows. 3k and 12k",
+        "checkpoints saved in 64",
+        "min. Full-weight adaptation",
+        "after staged warm-up."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10962,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "exp_10963",
+      "type": "experiment",
+      "label": "Unchanged development evaluation\nR03b · #10963\nRUN / COMPLETE",
+      "parent_id": "sol_generalisation_0",
+      "x": 1134,
+      "y": 433.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Unchanged development",
+        "evaluation",
+        "R03b · #10963",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 10963,
+      "status": "Done",
+      "result_type": "negative"
+    },
+    {
+      "id": "result_10963",
+      "type": "result",
+      "label": "Narrow M6, broad 3k and broad 12k each grasp 0/6 and complete 0/6. Three development families × two seeds; previously inspected, not a fresh confirmatory test.",
+      "parent_id": "exp_10963",
+      "x": 1504,
+      "y": 400.0,
+      "color": "#403034",
+      "width": 280,
+      "height": 222,
+      "lines": [
+        "Narrow M6, broad 3k and",
+        "broad 12k each grasp 0/6",
+        "and complete 0/6. Three",
+        "development families × two",
+        "seeds; previously inspected,",
+        "not a fresh confirmatory",
+        "test."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10963,
+      "status": "Done",
+      "result_type": "negative"
+    },
+    {
+      "id": "exp_10964",
+      "type": "experiment",
+      "label": "Familiar-start diagnostic\nR03c · #10964\nRUN / COMPLETE",
+      "parent_id": "sol_generalisation_0",
+      "x": 1134,
+      "y": 716.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 134,
+      "lines": [
+        "Familiar-start diagnostic",
+        "R03c · #10964",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 10964,
+      "status": "Done",
+      "result_type": "mixed"
+    },
+    {
+      "id": "result_10964",
+      "type": "result",
+      "label": "Broad 12k on six exact training starts: 6/6 grasps and lifts; 5/6 stable released placements inside the square; 4/6 strict successes. One seed per start.",
+      "parent_id": "exp_10964",
+      "x": 1504,
+      "y": 672.0,
+      "color": "#3C382D",
+      "width": 280,
+      "height": 222,
+      "lines": [
+        "Broad 12k on six exact",
+        "training starts: 6/6 grasps",
+        "and lifts; 5/6 stable",
+        "released placements inside",
+        "the square; 4/6 strict",
+        "successes. One seed per",
+        "start."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10964,
+      "status": "Done",
+      "result_type": "mixed"
+    },
+    {
+      "id": "sol_generalisation_1",
+      "type": "solution",
+      "label": "Coverage-driven training and correction examples",
+      "parent_id": "opp_generalisation",
+      "x": 764,
+      "y": 962,
+      "color": "#30353D",
+      "width": 280,
+      "height": 112,
+      "lines": [
+        "Coverage-driven training",
+        "and correction examples"
+      ],
+      "prefix": "Solution",
+      "ticket_id": null
+    },
+    {
+      "id": "exp_10965",
+      "type": "experiment",
+      "label": "Training-start coverage audit\nR03d · #10965\nRUN / COMPLETE",
+      "parent_id": "sol_generalisation_1",
+      "x": 1134,
+      "y": 995.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Training-start coverage",
+        "audit",
+        "R03d · #10965",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Audit",
+      "ticket_id": 10965,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "result_10965",
+      "type": "result",
+      "label": "All three development starts lie outside the six training-start XY convex hull. Initial-position coverage mismatch is established; causality is not.",
+      "parent_id": "exp_10965",
+      "x": 1504,
+      "y": 962.0,
+      "color": "#303840",
+      "width": 280,
+      "height": 222,
+      "lines": [
+        "All three development",
+        "starts lie outside the six",
+        "training-start XY convex",
+        "hull. Initial-position",
+        "coverage mismatch is",
+        "established; causality is",
+        "not."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10965,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "exp_10983",
+      "type": "experiment",
+      "label": "16 trials: local position and yaw robustness\nNEXT01 · #10983\nRUN / COMPLETE",
+      "parent_id": "sol_generalisation_1",
+      "x": 1134,
+      "y": 1278.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "16 trials: local position and",
+        "yaw robustness",
+        "NEXT01 · #10983",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 10983,
+      "status": "Done",
+      "result_type": "mixed"
+    },
+    {
+      "id": "result_10983",
+      "type": "result",
+      "label": "16 local trials: 14 grasps, 14 stable released in-square placements, 13 strict successes. Original 4/4; inward 3/4; outward 4/4; yaw 2/4. Two selected familiar parents; not broad transfer.",
+      "parent_id": "exp_10983",
+      "x": 1504,
+      "y": 1234.0,
+      "color": "#3C382D",
+      "width": 280,
+      "height": 244,
+      "lines": [
+        "16 local trials: 14 grasps, 14",
+        "stable released in-square",
+        "placements, 13 strict",
+        "successes. Original 4/4;",
+        "inward 3/4; outward 4/4;",
+        "yaw 2/4. Two selected",
+        "familiar parents; not broad",
+        "transfer."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10983,
+      "status": "Done",
+      "result_type": "mixed"
+    },
+    {
+      "id": "exp_10992",
+      "type": "experiment",
+      "label": "Audit actual correction coverage\nDATA07 · #10992\nRUN / COMPLETE",
+      "parent_id": "sol_generalisation_1",
+      "x": 1134,
+      "y": 1638.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Audit actual correction",
+        "coverage",
+        "DATA07 · #10992",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 10992,
+      "status": "Done",
+      "result_type": "mixed"
+    },
+    {
+      "id": "result_10992",
+      "type": "result",
+      "label": "18 original episodes verified; broad-six is an exact subset. Later four repairs contributed 2000/12000 draws; only one starts held, near nominal (0.075 degree planar residual). This is a start-state audit, not every window. The 84 degree off-axis diagnostic remains quarantined. Original V4 three additions lack source arrays. No new training.",
+      "parent_id": "exp_10992",
+      "x": 1504,
+      "y": 1528.0,
+      "color": "#3C382D",
+      "width": 280,
+      "height": 376,
+      "lines": [
+        "18 original episodes",
+        "verified; broad-six is an",
+        "exact subset. Later four",
+        "repairs contributed",
+        "2000/12000 draws; only",
+        "one starts held, near",
+        "nominal (0.075 degree",
+        "planar residual). This is a",
+        "start-state audit, not every",
+        "window. The 84 degree",
+        "off-axis diagnostic remains",
+        "quarantined. Original V4",
+        "three additions lack source",
+        "arrays. No new training."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10992,
+      "status": "Done",
+      "result_type": "mixed"
+    },
+    {
+      "id": "exp_11013",
+      "type": "experiment",
+      "label": "Why B/loading does not generalise\nB01 · #11013\nRUN / COMPLETE",
+      "parent_id": "sol_generalisation_1",
+      "x": 1134,
+      "y": 1998.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Why B/loading does not",
+        "generalise",
+        "B01 · #11013",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 11013,
+      "status": "Done",
+      "result_type": "mixed"
+    },
+    {
+      "id": "result_11013",
+      "type": "result",
+      "label": "Loading: 28 rollouts and 18 fixed-image queries. Verified V1–V3 data: 18 feeding, 0 loading. Broad12k returns to feeding square; endpoint changes <1 mm for 270 mm goal shift. Expert 8/8 feasible.",
+      "parent_id": "exp_11013",
+      "x": 1504,
+      "y": 1954.0,
+      "color": "#3C382D",
+      "width": 280,
+      "height": 244,
+      "lines": [
+        "Loading: 28 rollouts and 18",
+        "fixed-image queries.",
+        "Verified V1–V3 data: 18",
+        "feeding, 0 loading.",
+        "Broad12k returns to feeding",
+        "square; endpoint changes",
+        "<1 mm for 270 mm goal",
+        "shift. Expert 8/8 feasible."
+      ],
+      "prefix": "Result",
+      "ticket_id": 11013,
+      "status": "Done",
+      "result_type": "mixed"
+    }
+  ],
+  "edges": [
+    [
+      "outcome",
+      "opp_generalisation"
+    ],
+    [
+      "opp_generalisation",
+      "sol_generalisation_0"
+    ],
+    [
+      "sol_generalisation_0",
+      "exp_10962"
+    ],
+    [
+      "exp_10962",
+      "result_10962"
+    ],
+    [
+      "sol_generalisation_0",
+      "exp_10963"
+    ],
+    [
+      "exp_10963",
+      "result_10963"
+    ],
+    [
+      "sol_generalisation_0",
+      "exp_10964"
+    ],
+    [
+      "exp_10964",
+      "result_10964"
+    ],
+    [
+      "opp_generalisation",
+      "sol_generalisation_1"
+    ],
+    [
+      "sol_generalisation_1",
+      "exp_10965"
+    ],
+    [
+      "exp_10965",
+      "result_10965"
+    ],
+    [
+      "sol_generalisation_1",
+      "exp_10983"
+    ],
+    [
+      "exp_10983",
+      "result_10983"
+    ],
+    [
+      "sol_generalisation_1",
+      "exp_10992"
+    ],
+    [
+      "exp_10992",
+      "result_10992"
+    ],
+    [
+      "sol_generalisation_1",
+      "exp_11013"
+    ],
+    [
+      "exp_11013",
+      "result_11013"
+    ]
+  ],
+  "width": 1808,
+  "height": 2342
+}
