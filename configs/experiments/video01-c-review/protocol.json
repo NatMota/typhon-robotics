@@ -1,0 +1,28 @@
+{
+  "schema": "video01-c-temporal-information-review-v1",
+  "ticket": 11018,
+  "start_utc": "2026-10-13T02:50:00Z",
+  "deadline_utc": "2026-10-13T03:35:00Z",
+  "planner": "Hm challeng p2",
+  "input": "16 frozen curated takes; exclude demo_0017",
+  "no_physics": true,
+  "no_training": true,
+  "no_new_classifier": true,
+  "no_similarity_tuning": true,
+  "review_sampling": "Original paired raw recordings: seven predetermined evenly spaced source instants per take for initial review; additional inspected intervals explicitly logged, never claim unseen frames absent.",
+  "ledger_fields": [
+    "initial_final_information",
+    "additional_temporal_information",
+    "raw_frame_time_evidence",
+    "sync_uncertainty_s",
+    "task_relevance",
+    "requirement_authority",
+    "robot_consequence",
+    "representation_support",
+    "review_limitations"
+  ],
+  "candidate_selection": "At most three timestamped examples, ascending demo ID among reviewed candidates with clear additional state/style information. Prefer distinct decision/state distinctions rather than duplicate same-event examples; lock selection before inspecting per-candidate feature behavior.",
+  "negative_control": "demo_0007: intermediate motion not shown necessary by VIDEO10",
+  "authority_rule": "Separate task-required pickup/no-unnecessary-manipulation if explicitly in existing instructions from human style and externally imposed constraints. Do not invent required pauses/routes/obstacles from a human movement.",
+  "decision": "One acceptance decision, with unsupported/unreviewed meaning not established, not absent."
+}
