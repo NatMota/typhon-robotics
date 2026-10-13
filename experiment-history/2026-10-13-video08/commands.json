@@ -1,0 +1,21 @@
+{
+  "cwd": "/media/nm/Fast Drive/Typhon/research-20261012/working/video08-calibration",
+  "analysis": [
+    "/home/nm/Projects/humanoid-task-supervisor/.venv-sim/bin/python",
+    "scripts/video08_calibration.py",
+    "--protocol",
+    "configs/experiments/video08/protocol.json",
+    "--output",
+    "/media/nm/Fast Drive/Typhon/research-20261012/video08/analysis-v1"
+  ],
+  "summary": [
+    "/home/nm/Projects/humanoid-task-supervisor/.venv-sim/bin/python",
+    "scripts/video08_summarize.py",
+    "--root",
+    "/media/nm/Fast Drive/Typhon/research-20261012/video08",
+    "--protocol",
+    "configs/experiments/video08/protocol.json"
+  ],
+  "reproduction": "same analysis command with reproduction-v1 output",
+  "execution_host": "Mint CPU during approved Powerglide reservation wait"
+}

@@ -1,0 +1,118 @@
+{
+  "primary": {
+    "raw_wh": [
+      478,
+      850
+    ],
+    "nominal_focal_squared": [
+      -1364952.8370869756,
+      133939.81125118415
+    ],
+    "nominal_real_focal_px": [
+      null,
+      365.977883554709
+    ],
+    "corner_perturbations": 1000,
+    "positive_both_focal_constraints": 288,
+    "squared_focal_constraint_ratio": {
+      "min": 1.0046201114385518,
+      "p05": 1.2173505113915597,
+      "median": 4.586946731607985,
+      "p95": 108.04622839914946,
+      "max": 1843.261182420686
+    },
+    "positive_consistent_within_10percent_focal": 16,
+    "candidate_count": 594,
+    "accepted_count": 525,
+    "centred_accepted_count": 58,
+    "accepted_focal_px": {
+      "min": 425.0,
+      "p05": 480.83600019212406,
+      "median": 1164.391451581478,
+      "p95": 2411.1429200170164,
+      "max": 2550.0
+    },
+    "accepted_height_target_units": {
+      "min": 3.9059564237572393,
+      "p05": 4.617967104905907,
+      "median": 10.761604040586404,
+      "p95": 22.387531825535362,
+      "max": 23.768825282561096
+    },
+    "centred_height_target_units": {
+      "min": 4.002975318194057,
+      "p05": 4.654114233189531,
+      "median": 10.845358748920571,
+      "p95": 22.190026933282617,
+      "max": 23.734198977253445
+    },
+    "accepted_tilt_deg": {
+      "min": 23.528244178305588,
+      "p05": 26.448765312793313,
+      "median": 30.85676225243015,
+      "p95": 33.70084041109933,
+      "max": 35.21480455679863
+    },
+    "minimum_corner_fit_error_px": 0.14846573125006673,
+    "hypothetical_probe_max_prediction_disagreement_px": 55.1154449528996,
+    "hypothetical_probe_count": 525
+  },
+  "secondary": {
+    "raw_wh": [
+      464,
+      832
+    ],
+    "nominal_focal_squared": [
+      195904.09877300615,
+      -54358.16378096546
+    ],
+    "nominal_real_focal_px": [
+      442.6105497759923,
+      null
+    ],
+    "corner_perturbations": 1000,
+    "positive_both_focal_constraints": 206,
+    "squared_focal_constraint_ratio": {
+      "min": 1.0064549856462917,
+      "p05": 1.0808868660373756,
+      "median": 3.8079220712988686,
+      "p95": 35.01430358919437,
+      "max": 185.93503061152526
+    },
+    "positive_consistent_within_10percent_focal": 20,
+    "candidate_count": 594,
+    "accepted_count": 501,
+    "centred_accepted_count": 56,
+    "accepted_focal_px": {
+      "min": 416.0,
+      "p05": 465.29435512510986,
+      "median": 1205.370714037498,
+      "p95": 2360.0834228872445,
+      "max": 2496.0
+    },
+    "accepted_height_target_units": {
+      "min": 2.4192808467982454,
+      "p05": 2.7750149010541625,
+      "median": 7.050743176047247,
+      "p95": 13.842631579040306,
+      "max": 14.653263588823483
+    },
+    "centred_height_target_units": {
+      "min": 2.4478859405652127,
+      "p05": 2.8510201678176936,
+      "median": 6.877248280393341,
+      "p95": 13.831422212550711,
+      "max": 14.6444889666688
+    },
+    "accepted_tilt_deg": {
+      "min": 33.70046870393905,
+      "p05": 38.40531317817979,
+      "median": 47.92158278057365,
+      "p95": 59.160669114731675,
+      "max": 62.948739544385475
+    },
+    "minimum_corner_fit_error_px": 1.5431705059866954,
+    "hypothetical_probe_max_prediction_disagreement_px": 101.03264721101084,
+    "hypothetical_probe_count": 501
+  }
+}

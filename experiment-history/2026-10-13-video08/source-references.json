@@ -1,0 +1,112 @@
+[
+  {
+    "camera": "primary",
+    "source_sample": {
+      "sample_id": "demo_0007/camera_a/151",
+      "demo_id": "demo_0007",
+      "view": "camera_a",
+      "recording_id": "recording_0007",
+      "source_frame_index": 151,
+      "source_time_s": 5.197756,
+      "clip_time_s": 0.027756000000000114,
+      "source_start_s": 5.17,
+      "source_end_s": 12.77,
+      "sync_uncertainty_s": 0.25,
+      "frame_path": "frames/demo_0007/camera_a/000151.jpg",
+      "frame_sha256": "c23afa9f94a637a37b326ada6edcb2ab62feca5281368659c956115c56cefa07",
+      "decoded_bgr_sha256": "3bb29bd52c30f5467d87984b5f1b286b1ede04c4e38a0fa73676dc00800fe919",
+      "image_wh": [
+        850,
+        478
+      ],
+      "canonical_rotate_ccw": true,
+      "manual_category": "orientation_correction",
+      "split": "R_train",
+      "valid_xy": true,
+      "xy_normalized": [
+        0.5570270588235294,
+        0.3925251046025105
+      ],
+      "apparent_target_xy": [
+        0.5948269367218018,
+        0.45052722096443176
+      ],
+      "bbox_xywh": [
+        442,
+        155,
+        68,
+        61
+      ],
+      "yaw_clockwise_deg": 85.0,
+      "tracking_confidence": 0.95,
+      "orientation_confidence": 0.7598,
+      "orientation_method": "blue2_rotation_template",
+      "hands": [],
+      "crop_xyxy": [
+        374,
+        83,
+        578,
+        288
+      ],
+      "is_grasped": null,
+      "metric_xyz": null,
+      "metric_lift_height_m": null
+    },
+    "frame_sha256": "c23afa9f94a637a37b326ada6edcb2ab62feca5281368659c956115c56cefa07"
+  },
+  {
+    "camera": "secondary",
+    "source_sample": {
+      "sample_id": "demo_0007/camera_b/82",
+      "demo_id": "demo_0007",
+      "view": "camera_b",
+      "recording_id": "recording_0002",
+      "source_frame_index": 82,
+      "source_time_s": 2.733333,
+      "clip_time_s": 0.0033330000000000304,
+      "source_start_s": 2.73,
+      "source_end_s": 10.33,
+      "sync_uncertainty_s": 0.25,
+      "frame_path": "frames/demo_0007/camera_b/000082.jpg",
+      "frame_sha256": "0bd89847a1428c209f00f66acfe5f6b11d72e2aab7660e400015706230278dea",
+      "decoded_bgr_sha256": "a8d199039fcf52245f41786612b4fd8e1cf20393811dbf55a54df4259c6e9961",
+      "image_wh": [
+        464,
+        832
+      ],
+      "canonical_rotate_ccw": false,
+      "manual_category": "orientation_correction",
+      "split": "R_train",
+      "valid_xy": true,
+      "xy_normalized": [
+        0.41080603448275865,
+        0.33285096153846155
+      ],
+      "apparent_target_xy": [
+        0.682417631149292,
+        0.14584137499332428
+      ],
+      "bbox_xywh": [
+        149,
+        228,
+        83,
+        94
+      ],
+      "yaw_clockwise_deg": null,
+      "tracking_confidence": 0.9484,
+      "orientation_confidence": null,
+      "orientation_method": "perspective_not_qualified",
+      "hands": [],
+      "crop_xyxy": [
+        49,
+        134,
+        332,
+        416
+      ],
+      "is_grasped": null,
+      "metric_xyz": null,
+      "metric_lift_height_m": null
+    },
+    "frame_sha256": "0bd89847a1428c209f00f66acfe5f6b11d72e2aab7660e400015706230278dea"
+  }
+]

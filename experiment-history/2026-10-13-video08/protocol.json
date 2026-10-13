@@ -1,0 +1,115 @@
+{
+  "schema": "video08-calibration-sensitivity-v1",
+  "ticket": 11032,
+  "created_utc": "2026-10-13T00:31:00Z",
+  "question": "Do existing M0 target corners constrain dimensionless camera geometry enough for a 3D video-to-robot adapter?",
+  "physical_scale_m": null,
+  "units": "target-side units under a hypothetical exact square; no measured physical length",
+  "assumptions": [
+    "zero skew",
+    "square pixels",
+    "zero lens distortion",
+    "fixed camera",
+    "hand-drawn target treated as an ideal square only for sensitivity",
+    "camera-specific intrinsics, no shared focal length"
+  ],
+  "cameras": [
+    {
+      "id": "primary",
+      "recording_id": "recording_0007",
+      "raw_wh": [
+        478,
+        850
+      ],
+      "corners_raw_px": [
+        [
+          237,
+          435
+        ],
+        [
+          316,
+          431
+        ],
+        [
+          323,
+          518
+        ],
+        [
+          245,
+          532
+        ]
+      ],
+      "sample_id": "demo_0007/camera_a/151",
+      "frame_path": "frames/demo_0007/camera_a/000151.jpg",
+      "canonical_rotate_ccw": true
+    },
+    {
+      "id": "secondary",
+      "recording_id": "recording_0002",
+      "raw_wh": [
+        464,
+        832
+      ],
+      "corners_raw_px": [
+        [
+          119,
+          293
+        ],
+        [
+          207,
+          260
+        ],
+        [
+          270,
+          311
+        ],
+        [
+          186,
+          355
+        ]
+      ],
+      "sample_id": "demo_0007/camera_b/82",
+      "frame_path": "frames/demo_0007/camera_b/000082.jpg",
+      "canonical_rotate_ccw": false
+    }
+  ],
+  "source_root": "/media/nm/Fast Drive/Typhon/research-20261012/video01/dense-v2",
+  "source_script": "scripts/video02_m0_observer.py",
+  "uncertainty_px": 5,
+  "sensitivity": {
+    "seed": 20261013,
+    "corner_draws": 1000,
+    "corner_noise": "uniform independent +/-5px; declared sensitivity only",
+    "focal_over_long_side": [
+      0.5,
+      3
+    ],
+    "focal_samples": 33,
+    "principal_offsets_fraction": [
+      -0.05,
+      0,
+      0.05
+    ]
+  },
+  "pose_fit": {
+    "method": "SOLVEPNP_IPPE, both branches then solvePnPRefineLM",
+    "accepted_max_corner_error_px": 5,
+    "require_positive_camera_depth": true
+  },
+  "off_plane_probe": {
+    "point_xy": [
+      0.5,
+      0.5
+    ],
+    "height_target_sides": 0.5,
+    "note": "Hypothetical point toward camera, not measured brick/hand height. Used only to quantify camera model prediction disagreement."
+  },
+  "decision": {
+    "sufficient_for_adapter": "Do not license a 3D adapter merely from low training reprojection error. Examine spread and independent evidence; no new physical or action labels."
+  },
+  "sources": [
+    "https://www.microsoft.com/en-us/research/publication/a-flexible-new-technique-for-camera-calibration/",
+    "https://docs.opencv.org/4.11.0/d9/d0c/group__calib3d.html",
+    "https://github.com/tobycollins/IPPE"
+  ]
+}
