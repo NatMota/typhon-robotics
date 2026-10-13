@@ -1,0 +1,17 @@
+# Run in ~/Projects/typhon-experiments/video10-goal-registration (private branch research/video10-goal-registration).
+# Environment: ~/Projects/humanoid-task-supervisor/.venv-sim/bin/python
+# Set MUJOCO_GL=egl PYOPENGL_PLATFORM=egl OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
+# Use a fresh output directory: scripts reject existing prepare/episode directories.
+python scripts/video10_prepare.py --base /var/tmp/typhon-research-20261013/video09/landmark-v2 --output "$OUTPUT"
+python scripts/video10_contract_checks.py "$OUTPUT"
+python scripts/video10_adapter.py --output "$OUTPUT" --name q1 --qualification
+# Only proceed if registration_validation.json, contract_code_checks.json and qualification/q1/result.json pass.
+# Qualification commands are frozen in qualified_prefix.json and replayed unchanged in each condition.
+python scripts/video10_adapter.py --output "$OUTPUT" --name SEQ
+python scripts/video10_adapter.py --output "$OUTPUT" --name END
+python scripts/video10_adapter.py --output "$OUTPUT" --name SHUFFLE
+python scripts/video10_adapter.py --output "$OUTPUT" --name STATIC
+python scripts/video10_adapter.py --output "$OUTPUT" --name SEQ_REPEAT
+# Three concurrent independent condition processes were used for the recorded run, then the remaining two.
+python scripts/video10_analysis.py --output "$OUTPUT" --previews
+python scripts/video10_validate.py --output "$OUTPUT" --m0 ~/Projects/humanoid-task-supervisor --destination "$OUTPUT/independent_validation.json"

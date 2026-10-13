@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "independent_physical_recalculation": [
+    {
+      "condition": "SEQ",
+      "position_mm": 10.890819511468829,
+      "yaw_deg": 2.1050998004039,
+      "footprint_inside": true,
+      "supported_lift": true,
+      "action_count": 770,
+      "minimum_joint_margin_rad": 0.3476710425803393
+    },
+    {
+      "condition": "END",
+      "position_mm": 11.133091577822025,
+      "yaw_deg": 0.7153113059514972,
+      "footprint_inside": true,
+      "supported_lift": true,
+      "action_count": 770,
+      "minimum_joint_margin_rad": 0.3476710425803393
+    },
+    {
+      "condition": "SHUFFLE",
+      "position_mm": 9.109443007364037,
+      "yaw_deg": 9.354910580711195,
+      "footprint_inside": true,
+      "supported_lift": true,
+      "action_count": 770,
+      "minimum_joint_margin_rad": 0.3476710425803393
+    },
+    {
+      "condition": "STATIC",
+      "position_mm": 10.938481430614884,
+      "yaw_deg": 0.4036746237802851,
+      "footprint_inside": true,
+      "supported_lift": true,
+      "action_count": 770,
+      "minimum_joint_margin_rad": 0.3476710425803393
+    },
+    {
+      "condition": "SEQ_REPEAT",
+      "position_mm": 10.890819511468829,
+      "yaw_deg": 2.1050998004039,
+      "footprint_inside": true,
+      "supported_lift": true,
+      "action_count": 770,
+      "minimum_joint_margin_rad": 0.3476710425803393
+    }
+  ],
+  "same_code_config_reference_protocol_for_all_runs": true,
+  "repeat_exact": {
+    "actions.jsonl.gz": true,
+    "observations.jsonl.gz": true
+  },
+  "shared_qualified_prefix_action_identical_for_all_five": true,
+  "postrelease_independent_or_unknown": true,
+  "verified_original_sources_and_template": [
+    {
+      "relative_path": "data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.50.mp4",
+      "sha256": "c387aff4b2ee77cb56ce9933ffee0e5684046513cda1cc3a1b212652a288064a"
+    },
+    {
+      "relative_path": "data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.26.mp4",
+      "sha256": "8afb4b0796615f56fba8fc1382ab9f047ad10585e32e356836ef5d3d61786cde"
+    },
+    {
+      "relative_path": "results/personal-m0-20261009/inspection/recording_0005/frame_000020.jpg",
+      "sha256": "f6e5a2960665a6daffc897c793830d646bf051a37e051de4f31392a45936c5fc"
+    }
+  ],
+  "scope": "independent arithmetic and file/trace checks; does not establish accuracy of the carried-depth observer"
+}

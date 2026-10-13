@@ -1,0 +1,40 @@
+Codex implementation agent reporting VIDEO10 (#11034) completed per your bounded feature-contract protocol. Please lead the next bounded experiment; do not propose a broad retraining/sweep. We are still on Powerglide RTX4090, booking to Fri16Oct02:00BST, private branches and Mint Fast Drive backups. No VLA training or paid pods.
+
+All preparation gates passed before outcomes, within the 60min cap (started01:46UTC; runs finished before02:02UTC):
+- One offline primary RGB rendering of the unchanged 50x35x30mm proxy at original goal [0.125,-0.12]m,yaw0. Robot goal glyph feature [0.4458519211,0.5257123181,0.0978663566rad].
+- Same original first/last of 228 native source rows, demo0007 previously inspected R_train. Fixed scale1 rotation+translation of ALL valid descriptors; delta_phi=4.202809726deg. Terminal residual exactly0 position/~1.4e-17rad; inverse-transform error<=1.1e-16. All times,masks,frames,permutation preserved. Initial config file byte-identical to VIDEO09.
+- Shared original RGB grasp/lift prefix plus14 extra RGB alignment control ticks (cap100), initial feature residual0.026474units,1.853846deg within frozen0.05/10deg for3consecutive feedback samples. Independent scorer confirms bilateral contact/lift0.15745m. Complete142-command supplied prefix replayed identically across all5 conditions. Source clock starts afterward.
+- Gains,limits,4xslowdown,lower4.3–4.9,OPEN4.9,retreat5.4–5.9,settling and strict physical goal unchanged.
+- On first OPEN request, secondary EEF-plane conversion is disabled BEFORE measuring. Direct primary remains allowed; otherwise unknown. Regression verifies invariance/unknown for fixed images with EEF z0.83,0.98,1.15. All108post-release measurements/run were unknown, honestly retained; no post-release XY/yaw servo.
+- Actor sees RGB/proprio/task/cameras; truth only offline goal reference, independent qualifier/scorer. No expert terminal correction.
+- Exact SEQ repeat has byte-identical decompressed action AND observation logs; independent recomputation of physical errors/footprint passes. Same qualified prefix all5 verified.
+
+Frozen pre-release [0,4.9) common-valid comparison:184/196 timestamps=93.8776% (threshold90%). Individual coverage SEQ195/196,END196/196,SHUFFLE196/196,STATIC185/196.
+Rows: condition | observer position RMSE target units | observer directed-angle RMSE deg | final center error mm | final yaw error deg | strict success
+SEQ |0.038529|13.532704|10.890820|2.105100|yes
+END |0.062204|14.523635|11.133092|0.715311|yes
+SHUFFLE |0.092193|21.126991|9.109443|9.354911|yes
+STATIC |0.074291|8.024608|10.938481|0.403675|yes
+SEQ_REPEAT identical SEQ.
+All5 bilateral grasp/lift/release/stable/full-footprint; no forbidden static collisions or joint violations. This is ONE development take,4conditions+repeat, not independent5/5 reliability. Shared supplied acquisition success is not video-intermediate evidence. Batch13.276s wall with3parallel workers; full physics each38.5s inclsuppliedprefix/settling.
+
+CRITICAL CONFLICT: primary observer position-RMSE screen passes (SEQ38.06%better END,48.14%better STATIC), BUT the independent projected-asset-truth diagnostic on THE SAME184 timestamps does not corroborate:
+SEQ true-projected posRMSE0.092892,angleRMSE12.363835deg
+END0.090762,13.468113
+SHUFFLE0.126047,20.523365
+STATIC0.084365,9.192666.
+Runtime observer vs projected-asset truth posRMSE ~0.0756–0.0763units across conditions; angularRMSE3.67–4.24deg. So observed-sequence position advantage may be affected by the remaining secondary-view carried-plane/landmark bias; not evidence of physically closer human trajectory. Static is better in both observed and true-projected yaw RMSE. We will report this disagreement prominently, not promote the20%screen into a physical-fidelity claim.
+
+Final physical error vectors (x,y)mm:
+SEQ[-7.3117,+8.0715];END[-7.4517,+8.2715];SHUFFLE[-6.2116,+6.6632];STATIC[-7.3769,+8.0766].
+No scalar subtraction from VIDEO09 registration27.1mm. V09 zero physical successes ->V10 allsuccesses after a PACKAGE of reference registration+initialalignment+measurementvalidity changes; no causal attribution to onlyone.
+
+My proposed conclusion: feature-contract repair makes this assisted image-conditioned execution physically feasible. The intermediate video changes behavior and improves its own surrogate position metric, but does not yet show unique task success, overall trajectory superiority, learning, or generalization. Keep endpoint/static baselines. Before scaling/training, resolve whether truth_feature itself represents the same rendered glyph landmark correctly vs whether secondary conversion is biased.
+
+Please choose ONE next step with exact data/actor boundaries, capped scope and stop conditions:
+A) offline observer/landmark correspondence audit using saved RGB/render state and shared184timestamps, validating the scorer's glyph projection and decomposing detector-vs-depth conversion errors, without changing any control or fitting on evaluation.
+B) new observation design/replay with directly comparable RGB measurement (if warranted after audit).
+C) stop full-sequence branch here and move to another unfinished OST experiment (specify which).
+Prioritize the original user objective: meaningful use of their human video, not endless controller bookkeeping. Explain what this result proves/disproves and what evidence would justify going onward.
+
+Raw outputs and4human-vs-Panda videos at /var/tmp/typhon-research-20261013/video10. Mint backup manifest552files49,527,849bytes copying/verifying now. Private branch research/video10-goal-registration, runtime97aa8ec, analysis0f2e329. Report/OST updates in progress, VIDEO09 intact.

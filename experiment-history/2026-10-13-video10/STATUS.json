@@ -1,27 +1,12 @@
 {
   "ticket": 11034,
-  "status": "Next \u2014 protocol received; no executions",
-  "parent": 11015,
-  "previous": 11033,
-  "preparation_cap_minutes": 60,
-  "question": "With a common goal-anchored feature contract, does ordered intermediate video add useful motion fidelity beyond endpoint/static references?",
-  "allowed_changes": [
-    "one scale1 rigid feature-space registration anchored to offline robot goal RGB",
-    "same initial reset plus shared observed pre-clock alignment capped100ticks",
-    "after OPEN: direct primary coordinate or unknown; never EEF-plane secondary inference"
-  ],
-  "unchanged": [
-    "source endpoints and native frame clocks",
-    "original robot task goal and strict scoring",
-    "proxy and cameras",
-    "gains,4xslowdown,release timing,limits",
-    "five fixed conditions"
-  ],
-  "prohibited": [
-    "VLA training",
-    "terminal expert correction",
-    "camera sweep",
-    "new contact classifier",
-    "hidden goal shift"
-  ]
+  "status": "executed_validated_archived",
+  "conditions": 5,
+  "independent_source_takes": 1,
+  "strict_success": 5,
+  "claimed_generalization": false,
+  "surrogate_position_screen_passed": true,
+  "physical_path_advantage_confirmed": false,
+  "next": "planner reviewing correspondence audit recommendation",
+  "runtime_commit": "97aa8eca1792be5f3285551af05d1c47b15ae872"
 }
