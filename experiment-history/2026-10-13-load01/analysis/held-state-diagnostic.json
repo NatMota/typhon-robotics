@@ -1,0 +1,42 @@
+{
+  "schema": "load01-posthoc-held-state-diagnostic-v1",
+  "created": 1791922076.5922055,
+  "source": "/var/tmp/typhon-load01-20261013/evaluation/FL/source/load01-source-demo_0001",
+  "policy_changed": false,
+  "new_rollouts": 0,
+  "supported_pickup": true,
+  "maximum_lift_mm": 151.82258771160463,
+  "longest_supported_lift_s": 66.7,
+  "max_horizontal_transport_while_supported_mm": 15.312956513392947,
+  "late_step_range": [
+    400,
+    1476
+  ],
+  "late_command_xyz_min": [
+    -0.3077787160873413,
+    0.08053008466959,
+    0.9664744734764099
+  ],
+  "late_command_xyz_max": [
+    -0.2999662160873413,
+    0.09029570966959,
+    0.9742869734764099
+  ],
+  "late_command_xyz_range_mm": [
+    7.8125,
+    9.765625,
+    7.8125
+  ],
+  "late_gripper_sigmoid_min_max": [
+    0.9988565444946289,
+    0.9993682503700256
+  ],
+  "late_tracking_error_mm_p50_p95_max": [
+    2.7601965723905155,
+    5.438514762544989,
+    7.357959941943197
+  ],
+  "minimum_joint_limit_margin_rad": -0.004826166361746154,
+  "observed_failure": "Object grasped and lifted, then held near source. Late policy XYZ requests stay near raised pickup; final gripper remains closed. Not an early-release failure.",
+  "causal_limit": "A near-limit joint is observed, but this trace does not establish whether it causes the policy to stall. Controller follows the locally requested targets closely; no long transport request is visible in the late window."
+}
