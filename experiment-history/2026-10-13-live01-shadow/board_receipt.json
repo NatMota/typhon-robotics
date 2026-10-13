@@ -1,0 +1,43 @@
+{
+  "id": 11004,
+  "projectId": 16,
+  "columnId": 74,
+  "title": "LIVE01 \u2014 Verify the existing live harness and controller telemetry hookup",
+  "description": "Original request\nEarlier user asked for the actual service hookup with the earlier model and live joint telemetry.\n\nCurrent evidence / status\nHistorical service/harness code exists, but recent comparisons were controlled standalone simulations. Live deployment readiness is not established by them.\n\nBounded work and acceptance criteria\nInspect service version, model checkpoint, observation/action contract, controller joint telemetry, guard logging, success/no-op behavior and failure recovery. Run one bounded end-to-end smoke test after component qualification; label replay versus live output accurately.\n\nDependencies and exclusions\nDo not redeploy a harmful phase guard. Depends on CTRL02 and model registry.\n\nStatus semantics\nHistorical artifacts or implementation exist; their scope/evidence must be reconciled before claiming completion or launching replacement work.\n\n12 October final OST sweep decision\nTelemetry/guard tests pass and a current asynchronous Decisions integration smoke ran end-to-end on broad12k with full commands/RGB/joint traces. Both smoke modes failed task success; delayed-prefix eligibility rejected many commands. This is infrastructure evidence, not a qualified live harness or matched unmodifiedV4 comparison. Keep deployment gated on LIVE04 and observation reliability.\n\nLIVE05 follow-up (12 October): 30 controlled-delay V4 episodes isolate a motion-guard regression. The known grasp survives both sampling schemes and0/0.1/2s delays without guard intervention, but disappears with unchanged enforcement, including a matched zero-wait continuous-stream comparison. LIVE06 #11026 must qualify the guard against the clipped OSC execution contract and successful expert trajectories before deployment. Current lightweight LIVE04 preview audit:30/36requests have all pairwise mean path separations within2pixels; all36show identical first/middle/last gripper commands. These are projected tool paths, not the separate privileged ghost-arm futures in#10975. Preview discriminability/critic usefulness remains unqualified; retainUNKNOWN. Already-completed preservation is not completion recognition. Evidence: branch research/live05-scheduler-isolation, experiment-history/2026-10-12-live05/REPORT.md.\n\nLIVE07\u201309 continuation,12 October2026\nLIVE07 #11027 integrates the execution helper without changing prospective admission;44tests and9live/development trials pass audit. First-admissible restores known pickup/placement (79.46\u00b0 yaw remaining); Decisions loses it. Only one of two activated API queues actually executes. LIVE08 #11028 fixes waiting at40/41ticks: firstAgrasps/places at both, firstCneither, allstrictfail. LIVE09 #11029 finishes32frozen offline ghost/futureRGB choices plus32reason calls; futureRGBhas5/5proxy-adequate selected primary motions but7/12abstentions, poor order stability and unsuitable held-state selections. Both modes use privileged lookahead. Keep ranking diagnostic and first-admissible as reference; orientation, completion recognition and observation authority remain unqualified. Reports/videos/private branches and SHA-verified Mint archives are linked from those tickets.\n\n13 October correction: LIVE09 #11029 repeats the already-completed R10 #10982 panel. All 32 choices and categorical-reason responses match; no independent scenes were added. Its limitations and lack of control qualification remain unchanged.\n\n13 October bounded qualification started 05:46:53 UTC, hard stop06:31:53. LIVE01 shadow non-interference: original V4-M6 full hash c884e5052bc2734c1edf7d33498497cb26b27d88db1b32e3289fc46ea2e453dc, film-demo_0006 seed7417 plus first originally completed scenario film-demo_0018 seed151018; native versus read-only monitoring, four full1500-step executions maximum. Pin current OBS06 passive observer and unchanged LIVE telemetry publisher; actual policy inference in both, H30/20Hz, no guard/selector/stop/hold authority. Compare actual tensors/noise, controls and physics, separate transparency from observer accuracy. No training/publication.\n\nLIVE01 shadow equivalence completed13October, four actual-inference1500tick runs. Pinned V4-M6 on film-demo_0006 seed7417 and film-demo_0018 seed151018: native versus unchanged passive OBS06 + telemetry.96paired inference queries and2920paired ticks have exact prepared tensors, CPU/CUDA RNG/noise, targets, applied controls and recorded physics/controller parity. No observer writes. Native/Shadow0006 both grasp/place but85.3316deg yaw failure;0018preserved at6.6085mm/4.4726deg. Holding8/9 samples, no false positives in this tiny panel; no authority qualification. Telemetry FK/joint integration-phase gap max0.55249mm; source/age needs explicit labelling. OPEN112/contact lost117/measured open118. Older775archive not exactly reproduced: first output changes query33/12 coincide with1level historyRGB differences. Cause unresolved. Neither thresholds nor runtime changed to hide this. KeepReview for broaderLIVE01integration/timing/authority; monitoring-only composition is transparent. 290executed-source hashes unchanged,4videos fully decoded,1981files/362135781bytes SHA-verified to Mint. Artifact70f97a171c79f48e59b76ad1ab74aff3802e2bc3; frozen runtimecbd4d61ac3292d3ccb05018d154fff339c0bcd1b. No paid compute/newtraining/publication.",
+  "estimate": null,
+  "status": "Review",
+  "progressState": "review",
+  "createdAt": "2026-10-11 16:38:56",
+  "updatedAt": "2026-10-13 06:17:49",
+  "completedAt": null,
+  "completionSummary": null,
+  "deploymentProof": null,
+  "completionEvidence": [
+    {
+      "label": "LIVE01 private shadow-equivalence report",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/70f97a171c79f48e59b76ad1ab74aff3802e2bc3/experiment-history/2026-10-13-live01-shadow/REPORT.md",
+      "type": "link"
+    }
+  ],
+  "epicId": 83,
+  "priority": 12,
+  "workflow": {
+    "status": "Review",
+    "columnId": 74,
+    "progressState": "review",
+    "completedAt": null,
+    "completionSummary": null,
+    "deploymentProof": null,
+    "completionEvidence": [
+      {
+        "label": "LIVE01 private shadow-equivalence report",
+        "url": "https://github.com/NatMota/typhon-robotics/blob/70f97a171c79f48e59b76ad1ab74aff3802e2bc3/experiment-history/2026-10-13-live01-shadow/REPORT.md",
+        "type": "link"
+      }
+    ]
+  },
+  "runs": {
+    "current": null,
+    "historyCount": 0
+  }
+}
