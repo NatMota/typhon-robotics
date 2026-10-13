@@ -1,0 +1,172 @@
+{
+  "schema": "video09-full-sequence-projected-path-v1",
+  "ticket": 11033,
+  "frozen_utc": "2026-10-13T01:01:00Z",
+  "source_demo": "demo_0007",
+  "source_split": "previously_inspected_R_train_development",
+  "source_views": {
+    "primary": "camera_a",
+    "secondary": "camera_b"
+  },
+  "question": "Do ordered intermediate human RGB observations contribute useful physically executed motion beyond endpoints plus a shared supplied robot routine?",
+  "claim_ceiling": "Video-conditioned projected-appearance retargeting. Not measured human 3D, human motor-action recovery, learned policy or held-out generalisation.",
+  "source": {
+    "native_sequential_decode": true,
+    "seek": false,
+    "keep_entire_curated_take": true,
+    "primary_time_s": [
+      5.17,
+      12.77
+    ],
+    "secondary_time_s": [
+      2.73,
+      10.33
+    ],
+    "sync_uncertainty_s": 0.25,
+    "short_gap_interpolation": false,
+    "missing_values": "Unknown; controller holds during brief missing intervals, separately logged."
+  },
+  "registration": {
+    "origin_m": [
+      0.125,
+      -0.12
+    ],
+    "virtual_side_m": 0.1,
+    "world_rotation_rad": 0.09786641047171031,
+    "equation": "virtual_xy=origin+0.1*R(rotation)*[v-.5,u-.5]",
+    "source_coordinates": "dimensionless apparent target-plane projection; not metric when elevated",
+    "robot_features": "RGB visible orange centroid and directed blue2. Both transformed via robot-camera target-plane homography; direction from two image points.",
+    "calibrated_robot_camera": true,
+    "human_camera_calibrated": false
+  },
+  "proxy": {
+    "width_m": 0.05,
+    "depth_m": 0.035,
+    "height_m": 0.03,
+    "mass_kg": 0.08,
+    "visual_version": "duplo_31110pb074_v2",
+    "status": "frozen provisional training proxy, not measured user object; historical catalogue M15 unchanged"
+  },
+  "timing": {
+    "slowdown": 4,
+    "source_duration_s": 7.6,
+    "shared_pose_interpolation_interval_s": [
+      2.5,
+      4.7
+    ],
+    "shared_lower_interval_s": [
+      4.3,
+      4.9
+    ],
+    "release_source_s": 4.9,
+    "shared_retreat_interval_s": [
+      5.4,
+      5.9
+    ],
+    "event_review": "agent visual review of both views; user confirmed correction category, not precise event timestamps",
+    "prefix": "RGB-localized fixed approach, descend, 20-tick close and clearance lift before source clock. This assistance and timing mismatch is separately logged.",
+    "prefix_height_m": 0.98,
+    "grasp_eef_height_above_table_m": 0.02,
+    "placement_eef_height_above_table_m": 0.027
+  },
+  "conditions": [
+    "SEQ",
+    "END",
+    "SHUFFLE",
+    "STATIC",
+    "SEQ_REPEAT"
+  ],
+  "seed": 151007,
+  "shuffle": {
+    "interval_source_s": [
+      2.5,
+      4.7
+    ],
+    "blocks": 4,
+    "permutation": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "boundary_rule": "exact boundary samples retained; masks travel with original observations"
+  },
+  "controller": {
+    "frequency_hz": 20,
+    "feedback_stride": 2,
+    "max_steps": 1700,
+    "visual_loss_timeout_s": 1,
+    "source_loss_timeout_s": 1,
+    "cartesian_increment_limit_m": 0.004,
+    "yaw_increment_limit_rad": 0.06,
+    "gain": 0.5,
+    "reference_rate_units_per_robot_s": 0.5,
+    "reference_rate_yaw_deg_per_robot_s": 60,
+    "damping": 0.001,
+    "rest_target": [
+      -0.25,
+      -0.25,
+      1.08
+    ],
+    "acquisition_move_step_limit": 120,
+    "acquisition_close_ticks": 20,
+    "final_settle_s": 1,
+    "required_channels": [
+      "rgb",
+      "proprio",
+      "task",
+      "cameras"
+    ],
+    "object_truth_in_actor": false,
+    "old_expert_trajectory_import": false,
+    "depth_assumption": "Jacobian depth uses supplied nominal horizontal marked-face plane relative to EEF; reference/error is projected appearance, not recovered world pose.",
+    "yaw_assumption": "top-down wrist, horizontal marked face; actual directed glyph provides yaw correction, not assumed grasp yaw offset"
+  },
+  "qualification": {
+    "max_wall_hours": 2,
+    "perturbations": {
+      "dx_m": 0.01,
+      "dy_m": 0.01,
+      "dyaw_rad": 0.1
+    },
+    "must_observe_directional_response": true,
+    "freeze_before_condition_outcomes": true
+  },
+  "gates": {
+    "median_position_target_units": 0.05,
+    "median_direction_deg": 10,
+    "ordered_error_improvement_fraction": 0.2,
+    "physical_manipulation": true,
+    "repeat": true,
+    "original_task_position_tolerance_m": 0.015,
+    "original_task_yaw_tolerance_deg": 10
+  },
+  "stop_rules": [
+    "nonfinite command",
+    "joint or forbidden collision violation",
+    "visual feedback unavailable longer than timeout",
+    "source reference unavailable longer than timeout",
+    "nonresponsive or singular image controller",
+    "fixed horizon"
+  ],
+  "evaluation": {
+    "truth": "independent scorer only, never actor",
+    "same_original_task_goal": true,
+    "fixed_time_no_DTW": true,
+    "all_five_retained": true,
+    "coverage_denominator": "entire curated take",
+    "physical": [
+      "any_contact",
+      "bilateral_contact",
+      "supported_lift",
+      "in_square",
+      "position_error",
+      "yaw_error",
+      "released",
+      "stable",
+      "strict_success"
+    ],
+    "ordered_reference_scoring": "All conditions scored against original SEQ at the same declared source time; yaw only on supported samples"
+  },
+  "planner_thread": "https://chatgpt.com/c/6ac8f7df-fef0-83eb-98c3-48bd796980a1"
+}
