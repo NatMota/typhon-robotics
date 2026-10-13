@@ -1,0 +1,334 @@
+[
+  {
+    "scenario": "film-demo_0006",
+    "status": "analyzed",
+    "native_original_trace_first_difference": {
+      "index": 990,
+      "path": "/requested_action/1",
+      "kind": "scalar",
+      "a": -0.1508757713432246,
+      "b": -0.1606413963432246
+    },
+    "native_original_trace_lengths": [
+      1460,
+      1460
+    ],
+    "native_original_policy_io_difference": {
+      "path": "/model_actions",
+      "kind": "values",
+      "max_abs": 0.0078125
+    },
+    "initial_state_difference": null,
+    "parent_python_rng_initially_equal": false,
+    "parent_python_rng_unchanged_native": true,
+    "parent_python_rng_unchanged_shadow": true,
+    "numpy_rng_initially_equal": true,
+    "numpy_rng_equal_all_ticks": true,
+    "policy_io_difference": null,
+    "query_schedule_difference": null,
+    "tensor_query_counts": [
+      48,
+      48
+    ],
+    "tensor_first_difference": null,
+    "tensor_different_queries": 0,
+    "control_records": [
+      1460,
+      1460
+    ],
+    "first_any_difference": {
+      "index": 0,
+      "step": 41,
+      "path": "/state/python_rng/1/1",
+      "kind": "scalar",
+      "a": 4180760460,
+      "b": 3651003793
+    },
+    "first_physics_difference": null,
+    "first_applied_action_difference": null,
+    "observer_callback_state_changes": 0,
+    "native_outcome": {
+      "success": false,
+      "position_error_mm": 11.424590880940235,
+      "yaw_error_deg": 85.33158878423161
+    },
+    "shadow_outcome": {
+      "success": false,
+      "position_error_mm": 11.424590880940235,
+      "yaw_error_deg": 85.33158878423161
+    },
+    "observer_metrics": {
+      "legacy": {
+        "contact": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8888888888888888
+        },
+        "supported_lift": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8888888888888888
+        },
+        "unknown": 1,
+        "positive_older_than_half_second": 0
+      },
+      "aperture": {
+        "contact": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8888888888888888
+        },
+        "supported_lift": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8888888888888888
+        },
+        "unknown": 1,
+        "positive_older_than_half_second": 0
+      },
+      "opening": {
+        "contact": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8888888888888888
+        },
+        "supported_lift": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8888888888888888
+        },
+        "unknown": 1,
+        "positive_older_than_half_second": 0
+      },
+      "both": {
+        "contact": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8888888888888888
+        },
+        "supported_lift": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8888888888888888
+        },
+        "unknown": 1,
+        "positive_older_than_half_second": 0
+      }
+    },
+    "observer_samples": 366,
+    "publisher_samples": 51,
+    "publisher_numeric_attribution_errors": [],
+    "publisher_numeric_attribution_error_count": 0,
+    "release_events": [
+      {
+        "step": 112,
+        "events": [
+          "OPEN_command"
+        ],
+        "applied_grip": -1.0,
+        "measured_open": false,
+        "bilateral_contact": true
+      },
+      {
+        "step": 117,
+        "events": [
+          "bilateral_contact_lost"
+        ],
+        "applied_grip": -1.0,
+        "measured_open": false,
+        "bilateral_contact": false
+      },
+      {
+        "step": 118,
+        "events": [
+          "measured_open_threshold"
+        ],
+        "applied_grip": -1.0,
+        "measured_open": true,
+        "bilateral_contact": false
+      }
+    ],
+    "runtime": {
+      "live_error": null,
+      "publisher_records": 51,
+      "observer_records": 366,
+      "query_count": 48
+    },
+    "semantic_limits": [
+      "Publisher has no holding/completion estimate; passive OBS06 estimates holding only.",
+      "Publisher target persists during24ticksettling: proposed target is not applied pose.",
+      "Publisher timestamp is publication clock, not separately captured sensor-acquisition clock.",
+      "MuJoCo kinematic fields read without extra forward; derived-field phase is not guaranteed same as integrated qpos.",
+      "Monitoring parity does not qualify observer authority or guard/selector integration."
+    ],
+    "execution_transparent_exact": true
+  },
+  {
+    "scenario": "film-demo_0018",
+    "status": "analyzed",
+    "native_original_trace_first_difference": {
+      "index": 360,
+      "path": "/requested_action/3",
+      "kind": "scalar",
+      "a": -0.0054732519709113385,
+      "b": -0.005408601410641492
+    },
+    "native_original_trace_lengths": [
+      1460,
+      1460
+    ],
+    "native_original_policy_io_difference": {
+      "path": "/model_actions",
+      "kind": "values",
+      "max_abs": 0.0078125
+    },
+    "initial_state_difference": null,
+    "parent_python_rng_initially_equal": false,
+    "parent_python_rng_unchanged_native": true,
+    "parent_python_rng_unchanged_shadow": true,
+    "numpy_rng_initially_equal": true,
+    "numpy_rng_equal_all_ticks": true,
+    "policy_io_difference": null,
+    "query_schedule_difference": null,
+    "tensor_query_counts": [
+      48,
+      48
+    ],
+    "tensor_first_difference": null,
+    "tensor_different_queries": 0,
+    "control_records": [
+      1460,
+      1460
+    ],
+    "first_any_difference": {
+      "index": 0,
+      "step": 41,
+      "path": "/state/python_rng/1/1",
+      "kind": "scalar",
+      "a": 1454688749,
+      "b": 2328112558
+    },
+    "first_physics_difference": null,
+    "first_applied_action_difference": null,
+    "observer_callback_state_changes": 0,
+    "native_outcome": {
+      "success": true,
+      "position_error_mm": 6.608542674657294,
+      "yaw_error_deg": 4.472586902959647
+    },
+    "shadow_outcome": {
+      "success": true,
+      "position_error_mm": 6.608542674657294,
+      "yaw_error_deg": 4.472586902959647
+    },
+    "observer_metrics": {
+      "legacy": {
+        "contact": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": null,
+          "recall": null
+        },
+        "supported_lift": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": null,
+          "recall": null
+        },
+        "unknown": 0,
+        "positive_older_than_half_second": 0
+      },
+      "aperture": {
+        "contact": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": null,
+          "recall": null
+        },
+        "supported_lift": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": null,
+          "recall": null
+        },
+        "unknown": 0,
+        "positive_older_than_half_second": 0
+      },
+      "opening": {
+        "contact": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": null,
+          "recall": null
+        },
+        "supported_lift": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": null,
+          "recall": null
+        },
+        "unknown": 0,
+        "positive_older_than_half_second": 0
+      },
+      "both": {
+        "contact": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": null,
+          "recall": null
+        },
+        "supported_lift": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": null,
+          "recall": null
+        },
+        "unknown": 0,
+        "positive_older_than_half_second": 0
+      }
+    },
+    "observer_samples": 366,
+    "publisher_samples": 50,
+    "publisher_numeric_attribution_errors": [],
+    "publisher_numeric_attribution_error_count": 0,
+    "release_events": [],
+    "runtime": {
+      "live_error": null,
+      "publisher_records": 50,
+      "observer_records": 366,
+      "query_count": 48
+    },
+    "semantic_limits": [
+      "Publisher has no holding/completion estimate; passive OBS06 estimates holding only.",
+      "Publisher target persists during24ticksettling: proposed target is not applied pose.",
+      "Publisher timestamp is publication clock, not separately captured sensor-acquisition clock.",
+      "MuJoCo kinematic fields read without extra forward; derived-field phase is not guaranteed same as integrated qpos.",
+      "Monitoring parity does not qualify observer authority or guard/selector integration."
+    ],
+    "execution_transparent_exact": true
+  }
+]

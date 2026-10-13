@@ -1,0 +1,110 @@
+[
+  {
+    "scenario": "film-demo_0006",
+    "scope": "Offline FK on separate environment, not a controller or observer change. No policy inference or action execution.",
+    "model_timestep_s": 0.002,
+    "indices": {
+      "joint_pos": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "joint_vel": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "gripper_pos": [
+        7,
+        8
+      ],
+      "eef_site_id": 2
+    },
+    "samples": 51,
+    "maximum_position_gap_m": 0.0005524896310195068,
+    "median_position_gap_m": 0.00019108098713487497,
+    "all_gripper_exact": true,
+    "all_joint_position_exact": true,
+    "all_actuator_torque_exact": true,
+    "worst": {
+      "step": 68,
+      "position_error_m": 0.0005524896310195068,
+      "reported_eef": [
+        -0.1206223756054121,
+        -0.0640074926596323,
+        0.8564613249937747
+      ],
+      "fk_of_recorded_integrated_qpos": [
+        -0.12019372084966093,
+        -0.06402487288384515,
+        0.8561131902202138
+      ],
+      "gripper_exact": true,
+      "joint_position_exact": true,
+      "actuator_torque_exact": true
+    },
+    "verdict": "Telemetry reads existing MuJoCo site field; it is not simultaneous FK of logged integrated joint positions. Acquisition/integration phase needs an explicit label."
+  },
+  {
+    "scenario": "film-demo_0018",
+    "scope": "Offline FK on separate environment, not a controller or observer change. No policy inference or action execution.",
+    "model_timestep_s": 0.002,
+    "indices": {
+      "joint_pos": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "joint_vel": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "gripper_pos": [
+        7,
+        8
+      ],
+      "eef_site_id": 2
+    },
+    "samples": 50,
+    "maximum_position_gap_m": 9.916631018813513e-05,
+    "median_position_gap_m": 5.771138759739681e-05,
+    "all_gripper_exact": true,
+    "all_joint_position_exact": true,
+    "all_actuator_torque_exact": true,
+    "worst": {
+      "step": 41,
+      "position_error_m": 9.916631018813513e-05,
+      "reported_eef": [
+        -0.24897204310860532,
+        -0.24974275620301203,
+        1.0788924897784578
+      ],
+      "fk_of_recorded_integrated_qpos": [
+        -0.24890058732497972,
+        -0.24973263763576856,
+        1.07882447770115
+      ],
+      "gripper_exact": true,
+      "joint_position_exact": true,
+      "actuator_torque_exact": true
+    },
+    "verdict": "Telemetry reads existing MuJoCo site field; it is not simultaneous FK of logged integrated joint positions. Acquisition/integration phase needs an explicit label."
+  }
+]
