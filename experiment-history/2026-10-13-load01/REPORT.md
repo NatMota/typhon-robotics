@@ -2,7 +2,7 @@
 
 Adding verified loading examples enabled fixture placement on this small matched panel. An equal amount of additional feeding-only training did not. The new model also incurs one additional strict feeding failure, while preserving the same number of stable in-square placements.
 
-All 36 policy rollouts completed without runtime errors. The models received identical physical starts and camera images for each matched case. All inference checkpoints reproduced their saved probes exactly.
+All 36 policy rollouts completed without runtime errors. The models received identical physical starts and byte-identical first RGB policy inputs for every matched case. All inference checkpoints reproduced their saved probes exactly.
 
 ## Strict outcomes
 
@@ -76,7 +76,7 @@ The next useful investigation is why the source-0001 policy remains in a lifted 
 - Sixteen training episodes provide 1,165 complete action windows. Both continuations used 12,000 presentations; actual sample IDs match the frozen plan for every update.
 - F trained in 926.6 seconds; FL in 923.4 seconds. Both changed shared VLM/core parameters and the active prompt/head rows, with inactive domain rows unchanged.
 - Thirty-six policy rollouts completed in three parallel lanes, averaging approximately 20 seconds wall time each. Simulated time pauses for inference, so these are not real-time throughput measurements.
-- The source panel completed before any development/retention panel began. All 12 physical starts and initial camera images match across models. Expert-control starts also match their policy counterparts.
+- The source panel completed before any development/retention panel began. All 12 physical starts and first policy-input RGB arrays match exactly across models. One separately rendered initial preview differs at five pixels by one colour level; this does not occur in the model inputs, and the original preview is retained. Expert-control starts also match their policy counterparts.
 - Raw RGB inputs, model chunks, actual actions, joint/contact traces, score components and videos remain preserved. Three representative 73.4-second comparison videos were selected post hoc for inspection; all outcomes remain in the tables.
 - [Validation](analysis/validation.json), [paired outcomes](analysis/paired-outcomes.json), [file hashes](analysis/episode-evidence-integrity.json), [reproduction commands](REPRODUCTION.md), [frozen protocol](protocol.json).
 - Old experiment outputs were not overwritten. One inactive old checkpoint was offloaded only after byte-for-byte verification on Mint.

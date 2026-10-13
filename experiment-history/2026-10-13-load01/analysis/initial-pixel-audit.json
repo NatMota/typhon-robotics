@@ -1,0 +1,781 @@
+{
+  "all_first_policy_arrays_exact": true,
+  "all_initial_png_pixels_exact": false,
+  "cases": [
+    {
+      "id": "load01-source-demo_0001",
+      "comparisons": {
+        "F": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        },
+        "FL": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        }
+      }
+    },
+    {
+      "id": "load01-source-demo_0002",
+      "comparisons": {
+        "F": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": false,
+            "changed_channels": 13,
+            "changed_pixels": 5,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 1,
+            "mean_channel_difference_255": 8.265177408854166e-06,
+            "changed_bbox_yx": [
+              [
+                168,
+                679
+              ],
+              [
+                482,
+                711
+              ]
+            ]
+          }
+        },
+        "FL": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": false,
+            "changed_channels": 13,
+            "changed_pixels": 5,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 1,
+            "mean_channel_difference_255": 8.265177408854166e-06,
+            "changed_bbox_yx": [
+              [
+                168,
+                679
+              ],
+              [
+                482,
+                711
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "load01-source-demo_0003",
+      "comparisons": {
+        "F": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        },
+        "FL": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        }
+      }
+    },
+    {
+      "id": "load01-source-demo_0005",
+      "comparisons": {
+        "F": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        },
+        "FL": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        }
+      }
+    },
+    {
+      "id": "load01-development-demo_0012",
+      "comparisons": {
+        "F": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        },
+        "FL": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        }
+      }
+    },
+    {
+      "id": "load01-development-demo_0013",
+      "comparisons": {
+        "F": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        },
+        "FL": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        }
+      }
+    },
+    {
+      "id": "load01-retention-demo_0001",
+      "comparisons": {
+        "F": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        },
+        "FL": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        }
+      }
+    },
+    {
+      "id": "load01-retention-demo_0002",
+      "comparisons": {
+        "F": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        },
+        "FL": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        }
+      }
+    },
+    {
+      "id": "load01-retention-demo_0003",
+      "comparisons": {
+        "F": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        },
+        "FL": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        }
+      }
+    },
+    {
+      "id": "load01-retention-demo_0005",
+      "comparisons": {
+        "F": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        },
+        "FL": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        }
+      }
+    },
+    {
+      "id": "load01-retention-demo_0012",
+      "comparisons": {
+        "F": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        },
+        "FL": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        }
+      }
+    },
+    {
+      "id": "load01-retention-demo_0013",
+      "comparisons": {
+        "F": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        },
+        "FL": {
+          "policy_primary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "policy_secondary": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 262144,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          },
+          "initial_png": {
+            "array_equal": true,
+            "changed_channels": 0,
+            "changed_pixels": 0,
+            "total_pixels": 524288,
+            "max_channel_difference_255": 0,
+            "mean_channel_difference_255": 0.0,
+            "changed_bbox_yx": null
+          }
+        }
+      }
+    }
+  ],
+  "new_rollouts": 0
+}
