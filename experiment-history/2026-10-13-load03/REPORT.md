@@ -113,3 +113,9 @@ PY
 Qualification finished in 6.2 minutes and the 16 rollouts in approximately 9.8 minutes from the separate 60-minute clock. Reproduction requires the exact recorded environments/checkpoints; no clean-host replay is claimed. Simulation pauses for inference, so wall time is not a real-time controller benchmark.
 
 All 1,860 raw artifact files (463,148,537 bytes) are independently SHA-256 verified on Mint. The [archive receipt](archive/raw-backup-verification.json) covers raw RGB inputs, action predictions, noise/RNG arrays, physical traces, outputs and qualification artifacts. The unchanged FL checkpoint remains in the independently verified LOAD01 archive.
+
+## Planner review and next experiment
+
+The [saved planner review](PLANNER_REVIEW.md) agrees that fixture appearance selects the destination in this diagnostic, and proposes LOAD04 as a separate experiment. Its two equal-budget continuations will share eight qualified trajectories from training parents 0001/0002/0003/0005, with fixture physics present for both tasks. Only the visual task correlation differs: correlated control versus balanced visible/hidden appearance for each task. Both start from the sealed FL checkpoint, receive the same 12,000 draws and 3,000 full-joint updates, and face the unchanged 16-case LOAD03 development panel (32 new rollouts). Primary outcome is two-way instruction switching, /4 pairs separately by visibility.
+
+LOAD04 is queued, not run. It has a separate 120-minute cap, a mandatory all-eight demonstration qualification gate, and no extra conditions or outcome-selected checkpoints. This does not change any LOAD03 result or extend this batch.
