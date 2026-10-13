@@ -1,0 +1,318 @@
+{
+  "updated_tickets": [
+    {
+      "id": 10996,
+      "projectId": 16,
+      "columnId": 74,
+      "title": "EVAL02 \u2014 Define the next confirmatory comparison with family-level uncertainty",
+      "description": "Original request\nEarlier user asked for statistical power and matched film/synthetic evaluation.\n\nCurrent evidence / status\nCurrent research panels use three inspected development families and repeated seeds, not a confirmatory sample.\n\nBounded work and acceptance criteria\nFreeze independent source/scenario families, model variants, primary subgoals, strict criteria and matched seeds before running. Plan sample size from a meaningful effect and family clustering, report confidence intervals and all failures. Keep already-completed preservation separate.\n\nDependencies and exclusions\nDepends on mechanism fixes and DATA01. Do not treat frames, seeds or near-variants as independent human demonstrations.\n\n\n12 October execution plan\nAuthorised next comparison: freeze 20 new near-personal feeding layouts +10 broader feeding starts +4 already-completed configurations before execution; 2 seeds; vanilla Pt, fixed broad-Pt12k, and same broad checkpoint plus one qualified intervention =204 rollouts. Same physical scenes and control-step budget. Separate simulator-truth diagnostics. Report supported grasp/lift, stable released containment, initial/final directed yaw and reduction, strict success, unnecessary movement and interventions. Seeds/near-variants cluster within parent scenes; do not claim 204 independent demonstrations. New B/loading diagnostic is tracked separately.\n\n12 October OST traversal started: 136 untouched baseline rollouts (68 vanilla-Pt-native, 68 broad-Pt12k) launched on the already frozen 34-layout x2-seed panel. Output /var/tmp/typhon-ost-sweep-20261012/confirmatory. Candidate intervention remains unqualified, so this is the two-baseline portion, not completion of the 204-rollout programme. New layouts and seeds unchanged. Native observation/domain/action contracts recorded; no training on these scenes.\n\n12 October final OST sweep decision\nThe two baseline arms completed136rollouts across34frozen layouts x2seeds. Broad12k near-personal:31/40supported grasps,22/40stable placements,17/40strict; vanilla0/40. Broader starts:both0/20. Already-completed preservation:broad8/8strict,vanilla1/8; broad still moved the arm. Native domain/input contracts differ, so whole-recipe comparison. Family-bootstrap uncertainty saved; not136independent humans. Planned68intervention rollouts were not run because observer qualification failed. Two invalid boundary layouts were clipped1.64/2.82mm before any policy action under a versioned protocol. Evidence:confirmatory-v2,report/evaluation-groups.json.\n\n13 October evidence reconciliation\nEVAL02R #11036 is a separate 45-minute read-only review of existing comparisons. The two-baseline 136-rollout execution remains distinct from the planned 68-rollout qualified-intervention arm, which has not run. Completing the review does not complete that execution requirement.\n\nEVAL02R review sealed 13 October 04:33 UTC\nReview #11036 completed on private branch research/eval02-comparison-review, artifact commit a0b57e0. Original775 strict improvement concerns already-completed preservation; V3 four newly oriented in-square placements remain valid labelled post-hoc progress. Later goal-varied versus fixed matched continuation:10/12 versus0/12 on new combinations; loading and selected recovery states remain0. Near-layout pooled17/40 and family-balanced41.67% (22.22\u201355.56%) are separate estimands. Six source takes originate from two recording pairs. All existing counts/intervals reproduced, no new tests. Parent204 plan still incomplete:68 intervention trials not run, not zero successes.",
+      "estimate": null,
+      "status": "Review",
+      "progressState": "review",
+      "createdAt": "2026-10-11 16:38:55",
+      "updatedAt": "2026-10-13 04:33:45",
+      "completedAt": null,
+      "completionSummary": null,
+      "deploymentProof": null,
+      "completionEvidence": [],
+      "epicId": 82,
+      "priority": 10,
+      "workflow": {
+        "status": "Review",
+        "columnId": 74,
+        "progressState": "review",
+        "completedAt": null,
+        "completionSummary": null,
+        "deploymentProof": null,
+        "completionEvidence": []
+      },
+      "runs": {
+        "current": null,
+        "historyCount": 0
+      }
+    },
+    {
+      "id": 11036,
+      "projectId": 16,
+      "columnId": 75,
+      "title": "EVAL02R \u2014 Reconcile existing comparison claims and family-level uncertainty",
+      "description": "Review subtask of EVAL02 #10996, preserving its unexecuted qualified-intervention requirement.\n\nPlanner-directed scope, 13 October 2026\n45-minute existing-evidence review, 04:07:40\u201304:52:40 UTC. Inventory the original Vanilla/V1\u2013V4 comparison, narrow/broad-Pt development comparison, broad source competence, later correction evaluation and the separate EVAL02 34-layout panel. Identify model/data lineage, endpoint, eligible denominator, family/seed dependence, prior exposure and exact existing inference.\n\nRequired distinctions\nManipulation versus already-completed preservation; original centring criterion versus labelled post-hoc square placement; source checks versus generalization; frozen development protocol versus untouched confirmation; correction data versus additional optimization. Preserve original cluster/Holm grouping and multiplicity. Gains and losses separately when available.\n\nDeliverables\nOne comparison ledger and one short claim-status report. Reproduce existing counts/uncertainty only from available pinned inputs; do not choose a new test after seeing results. Missing evidence is a named gap, not zero success.\n\nForbidden\nNo new training, physics rollouts, scenario generation, annotation, observer work, pod restarts, split changes or replacement evaluations.\n\nBranch research/eval02-comparison-review. Review closure does not claim completion of the original 204-rollout plan; the qualified intervention arm remains unresolved.",
+      "estimate": null,
+      "status": "Done",
+      "progressState": "done",
+      "createdAt": "2026-10-13 04:09:18",
+      "updatedAt": "2026-10-13 04:33:45",
+      "completedAt": "2026-10-13T04:33:45.546Z",
+      "completionSummary": "What was done: Reconciled all five requested evidence sets. Original 775 analysis reproduces five output files byte-for-byte with original cluster/Holm settings. Checked 775 frozen metrics, 296 later raw episodes/checkpoint identities and 24 earlier raw-record extracts. Reproduced all22 later group estimates and3 original paired intervals; recounted36000 continuation-training draws. Saved model/data lineage, actual exposure, original/post-hoc endpoints, eligible denominators, paired gains/losses and recording dependence. All1102 hashed inputs unchanged. Private branch a0b57e0 restored independently on Mint and synced cleanly to Powerglide.\n\nFuture improvements: Additional training-seed and genuinely separate-recording evaluation would be required for broader inference. Original V4 recovery arrays and narrow initialization lineage remain named evidence gaps. No replacement tests, training or rollouts were performed.\n\nSeparated work: Parent EVAL02 #10996 remains Review:136 baseline trials complete,68 intervention trials unexecuted pending qualification. DATA07 #10992 supplies correction-coverage audit; VIDEO01 #11015 remains separate. Review closure does not complete the204-rollout programme.",
+      "deploymentProof": null,
+      "completionEvidence": [
+        {
+          "label": "Claim-status report",
+          "url": "https://github.com/NatMota/typhon-robotics/blob/research/eval02-comparison-review/experiment-history/2026-10-13-eval02-review/CLAIM_STATUS.md",
+          "type": "link"
+        },
+        {
+          "label": "Comparison ledger and validation",
+          "url": "https://github.com/NatMota/typhon-robotics/tree/research/eval02-comparison-review/experiment-history/2026-10-13-eval02-review",
+          "type": "link"
+        }
+      ],
+      "epicId": 82,
+      "priority": 68,
+      "workflow": {
+        "status": "Done",
+        "columnId": 75,
+        "progressState": "done",
+        "completedAt": "2026-10-13T04:33:45.546Z",
+        "completionSummary": "What was done: Reconciled all five requested evidence sets. Original 775 analysis reproduces five output files byte-for-byte with original cluster/Holm settings. Checked 775 frozen metrics, 296 later raw episodes/checkpoint identities and 24 earlier raw-record extracts. Reproduced all22 later group estimates and3 original paired intervals; recounted36000 continuation-training draws. Saved model/data lineage, actual exposure, original/post-hoc endpoints, eligible denominators, paired gains/losses and recording dependence. All1102 hashed inputs unchanged. Private branch a0b57e0 restored independently on Mint and synced cleanly to Powerglide.\n\nFuture improvements: Additional training-seed and genuinely separate-recording evaluation would be required for broader inference. Original V4 recovery arrays and narrow initialization lineage remain named evidence gaps. No replacement tests, training or rollouts were performed.\n\nSeparated work: Parent EVAL02 #10996 remains Review:136 baseline trials complete,68 intervention trials unexecuted pending qualification. DATA07 #10992 supplies correction-coverage audit; VIDEO01 #11015 remains separate. Review closure does not complete the204-rollout programme.",
+        "deploymentProof": null,
+        "completionEvidence": [
+          {
+            "label": "Claim-status report",
+            "url": "https://github.com/NatMota/typhon-robotics/blob/research/eval02-comparison-review/experiment-history/2026-10-13-eval02-review/CLAIM_STATUS.md",
+            "type": "link"
+          },
+          {
+            "label": "Comparison ledger and validation",
+            "url": "https://github.com/NatMota/typhon-robotics/tree/research/eval02-comparison-review/experiment-history/2026-10-13-eval02-review",
+            "type": "link"
+          }
+        ]
+      },
+      "runs": {
+        "current": null,
+        "historyCount": 0
+      }
+    },
+    {
+      "id": 11015,
+      "projectId": 16,
+      "columnId": 75,
+      "title": "VIDEO01 \u2014 Compare video-derived representations and robot adapters without geometric-expert trajectories",
+      "description": "User request12October: add an OST experiment to understand a generic robot encoder and compare methods driven by personal video, not the existing geometric teacher.\n\nInterpretation\nSeparate the human-video representation from the robot-specific action decoder/controller. A universal robot encoder is a hypothesis, not an existing component. Keep original footage and frozen models/results unchanged.\n\nArms\nA: track object-centric motion, directed orientation and observable contact events from phone frames.\nB: track hand/pinch motion and aperture from phone frames, with uncertainty through occlusion.\nC: use frozen pretrained visual features over the actual human sequence to represent temporal progress/subgoals; test whether they preserve task-relevant motion across views and distinguish correction from completion.\nExisting endpoint/geometric expert is a labelled comparator only, not labels or trajectory generator forA/B/C.\n\nAcceptance\nAudit actual available calibration, synchronization and source split. Preserve full source timestamps and feature provenance. Run paired-view correspondence, temporal reversal/shuffle/static-video negative controls, and held-out take/view tests. Where justified, retarget one observed trajectory to Panda using only declared calibration, robot kinematics/controller and task-independent feasibility constraints. Record every supplied constant. Do not invent metric3D, hand contacts or robot-action labels from2D. If calibration blocks motor execution, report the representation-level result and blocker explicitly rather than silently substituting teacher waypoints.\n\nGeneralisation\nDistinguish representation reuse across layouts/views from motor transfer to another robot. Freeze any second-robot or novel-layout test before execution. No new paid compute, no model upgrade or publication.\n\nOutput\nNew isolated results under /var/tmp/typhon-video-representation-20261012; mirror to Mint Fast Drive. Add an experiment and corresponding result box in OST, with individual arm findings.\n\n12 October implementation update\nCreated and pushed isolated GitHub branches/worktrees for all three arms. Source freeze reverified all eight raw recordings and 526 sampled phone frames from 16 takes. A: 440 accepted centres, 227/264 accepted primary orientations; B: 175/526 sampled frames contain detected hands, with grasp unknown; C: 526 frozen 1024D visual descriptors, pooled paired-take retrieval 1/16, timing/shuffle/reversal controls retained. No geometric-expert trajectories or robot truth supplied to these methods. Initial extraction artifacts are ready for review. No new VLA training or robot execution has occurred.\n\nStill outstanding\nDense contact/phase accuracy checks, correction/completion representation tests on held-out takes, calibrated/declared robot adapter and any transfer claim. Metric global depth/lift and contacts remain unresolved. Keep this parent In Progress; do not mark the broad generic-encoder hypothesis complete.\n\nBackup\nResearch branches are private on GitHub. Bulk checkpoints/media/rollouts go to Mint Fast Drive with SHA-256 manifests. Powerglide reservation AAE1BB6A was checked live: expires Tuesday 13 October 2026 01:00 BST.\n\nVIDEO02 corrected continuation, 12 October 2026\nDense extraction, cropped/full frozen features, four-second observed anchors and QA are under #11019. Report: https://github.com/NatMota/typhon-robotics/blob/research/video01-temporal-validation/experiment-history/2026-10-12-video02/REPORT.md. Independent sequential raw decoding caught 906 frame-content/index mismatches in the first dense-v1 export; it is preserved and superseded. Corrected dense-v2 decodes from frame zero and passes all 2,644 raw frame-content hashes. Recomputed full/crop fusion reduces offline paired-camera timing error 2.090 to 1.205 s; 13/16 takes improve. Ordered full-image take retrieval improves 1/16 to 7/16. This is exploratory offline matching with future frames available, not live control or task success. Crops enlarge glyph support but crop-only matching is worse. No GE trajectories, model updates, robot-action labels or new robot episodes. Next: validate contact/depth/calibration for the separate Panda adapter. The broad transfer/encoder task is unresolved.\n\nVIDEO03 continuation, 12 October 2026 (#11020)\nA direct phone-video observation probe was fitted from P_train reviewed held intervals; no GE actions, crosshair input or motor-policy changes. 155/155 conservative validation interiors agree, but the hand-present challenge exposes false held states: full image 5/8 views; full+crop/temporal 2/8. Primary-to-secondary recall is 28/28 with full+crop but 23/28 after adding history. History removes 12 false positives in a different recording-shift panel; effects are mixed and do not establish reliable contact. Correction positive labels vanish under 0.25 s uncertainty erosion. 35 fresh refits reproduce bitwise. Report: https://github.com/NatMota/typhon-robotics/blob/research/video03-held-probe/experiment-history/2026-10-12-video03/REPORT.md\nNext: training-only hard negatives and better contact transition labels with new event holdouts, before any controller authority or Panda retargeting. The generic encoder/Panda adapter remains unresolved.\n\nVIDEO04 continuation, 12 October 2026 (#11021)\nTraining-only hand-present negatives tested: six withdrawal events / 12 new views, five training approaches remain unknown. All 90 held interiors retained. Extra transition false-held views 2/6 to 1/6, but the same approach event remains wrong (1/3 events); old challenge 2/4 to 1/4 failing events. Six refits reproduce bitwise; no extra discrete benefit from negative reweighting or history. This supports targeted withdrawal label repair, not contact authority or robot transfer. Next: training-only pre-contact, supported-pause and failed-grasp evidence; use independent event evaluation. Report: https://github.com/NatMota/typhon-robotics/blob/research/video04-contact-negatives/experiment-history/2026-10-12-video04/REPORT.md\n\nVIDEO05 continuation, 12 October 2026 (#11022)\nThirteen training-only pre-contact views repair the remaining old challenge error (1/8 to 0/8). New excluded-take pre-contact views improve 2/5 to 1/5 with current features; history stays2/5. The same excluded take still has an approach false positive; all90labelled held interiors retained. No benefit from extra reweighting. Held-pause qualification remains incomplete: excluded midpoint0014lowers the block;0015has conflicting primary motion and missing side-centre evidence. Report: https://github.com/NatMota/typhon-robotics/blob/research/video05-precontact-pause/experiment-history/2026-10-12-video05/REPORT.md\nNext: VIDEO06 #11023 audits raw object motion and tracking during occlusion before any Panda retargeting claim. Preserve original review notes and do not turn confidence coverage into accuracy.\n\nVIDEO06 continuation,12October2026 (#11023)\n342verified source frames from6takes/2views audited. Blue-glyph optical flow supports194/222held adjacent pairs,53with old centroid unavailable;28rejected. No>5px discrepancy among141common pairs. Demo0015midpoint showsreal image motion28.36px primary/36.38px secondary; old side centre absent despite visible numeral.0012/13small sway;0014lowering but persistent support inadequate. Strict held-pause qualification stillfails; camera reference is weak in primary view.28numeric/provenance files reproduce exactly; no VLA training/control changes. Report: https://github.com/NatMota/typhon-robotics/blob/research/video06-motion-audit/experiment-history/2026-10-12-video06/REPORT.md\nNext: VIDEO07 #11024 native-cadence and phase-timing comparison. No metric3D, contact or Panda action decoder established.\n\nVIDEO07 continuation,12 October2026 (#11024)\nCompared exactly matched query frames with native (~30Hz) intermediates:969 verified source frames,342 byte-identical to dense-v2. Held pair support194/222\u2192212/222; persistent0.6s tracks104/162\u2192138/162, with18/34 gains and no held losses. One real stationary-control pair/window loses support; a separate initial0.1554s gap is rejected equally after a documented comparison correction. New table-edge background reference supports162/162held windows.28numeric trace files reproduce bitwise;12native previews/678frames decode. Coarse task-pause/transport/lowering notes are agent-reviewed and explicitly not training labels. Supports tracking first, temporal abstraction later; no calibrated3D/contact/robot actions or VLA training. Report: https://github.com/NatMota/typhon-robotics/blob/research/video07-native-cadence/experiment-history/2026-10-12-video07/REPORT.md\nVideo-to-Panda adapter remains unresolved under #10989/#10991. Next independent OST experiment: LIVE04 #11014 delayed candidate handoff; video evidence remains preserved.\n\nVIDEO08 continuation,13October2026 (#11032)\nThe inherited target-plane annotation does not identify unique camera geometry. All297 tested intrinsic settings per view have a compatible PnP fit within5px, despite camera-height ranges3.91\u201323.77 /2.42\u201314.65 target-side units. Nominal exact centred focal constraints conflict. Hypothetical off-plane predictions spread55.12/101.03px across alternative pose branches; retaining lowest-error branch per intrinsic gives4.95/11.48px. These are sensitivity hypotheses, not independent trials or confidence intervals. Ten analysis artifacts reproduce byte-for-byte; exact synthetic pinhole/projection/rotation checks pass. Report: https://github.com/NatMota/typhon-robotics/blob/research/video08-calibration-identifiability/experiment-history/2026-10-13-video08/REPORT.md\nThis rejects promoting existing M0 homographies into3D labels, not normalized image-space retargeting or all shape-prior methods. Planner Hmchallengp2 asked for a single next execution-level test with endpoint-only/shuffle/static controls. No VLA training or robot actions run.\nCompute: previous AAE1BB6A expired as scheduled; new Powerglide reservation65CEFFC0 is approved from Tuesday13October02:00BST to Friday16October02:00BST. At this update start time has not arrived. All new code/evidence on Mint and private GitHub; no paid pods.\n\nVIDEO09 #11033 completed 13 October: complete native human correction video drove five Panda executions (four conditions plus exact repeat). All grasped/lifted/released stably; strict success 0/5. Endpoint registration implies 27.1 mm centre error; initial body/glyph feature mismatch and invalid post-release support plane were identified. Whole-timeline observer gains are unqualified. Intermediate video affects physical motion, but advantage over endpoint/static control is not established. No generated action labels approved for training. Planner is reviewing one bounded next step.\n\nVIDEO10 #11034 completed, 13 October\nOne rigid registration of all 228 native human glyph descriptors to an offline RGB goal, plus 14 extra RGB alignment ticks before the source clock, made all five matched correction executions pass unchanged strict placement. The same 142-command supplied prefix was replayed in every condition. Observer position RMSE improves 38.06% versus END and 48.14% versus STATIC on 184/196 common-valid pre-release timestamps. Independent projected-asset diagnostics do not confirm physical path superiority; STATIC has better yaw tracking. All 108 post-release coordinates per run are unknown, with raw detections retained. No X-VLA training or held-out generalisation; no unique full-sequence task-success benefit.\nVerified backup: 552 files, 49,527,849 bytes. Private report: https://github.com/NatMota/typhon-robotics/blob/research/video10-goal-registration/experiment-history/2026-10-13-video10/REPORT.md\nPowerglide reservation 65CEFFC0 is active, ending Friday 16 October at 02:00 BST.\n\nVIDEO11 #11035 completed, 13 October\nThe capped offline audit covers all 736 common observations, with zero actor executions or physics rollouts. The assumed secondary-camera plane is about 2.949 mm above the logged printed face. Its fixed-pixel shift (about 0.075 normalized units) nearly matches the observer/fixed-landmark discrepancy (about 0.076 units), with direction cosine above 0.999. The signed cross-term explains why similar bias magnitudes reverse rankings.\nAn independent check of 56 decorative geoms identifies a 120-micrometre scorer-height discrepancy; correcting that diagnostic leaves END and STATIC ahead. Exact visible/full-support verification remains unqualified: 8/16 selected states have only compressed frames, 8 have no frame, and none has saved native RGB/hash or a full render cache. Eight human frames were redecoded and hash-verified.\nDecision: close this measurement branch. Retain successful assisted correction, but do not claim a full-sequence physical-path advantage or automatically start another controller/training run. All 552 VIDEO10 files remain unchanged; 75 audit files are verified on Mint.\nReport: https://github.com/NatMota/typhon-robotics/blob/research/video11-feature-correspondence/experiment-history/2026-10-13-video11/REPORT.md\nThe planner is choosing another bounded OST item or a substantive task that requires intermediate information absent from endpoints. The broad generic-encoder and generalisation questions remain unresolved.\n\n13 October VIDEO01-C acceptance review completed (#11018)\nAll16 curated takes sampled and source-audited; three cases locked before frozen-feature review. Intermediate pickup/release and preserving an already-completed goal have user-specified task authority. Human path/pause timing is not independently required. Ordered source evidence is retained, but causal phase-to-robot improvement and precise contact/depth remain unqualified. Decision: representation bottleneck, not full-sequence manipulation gain. No new training or physics. Report: https://github.com/NatMota/typhon-robotics/blob/research/video01-c-temporal-review/experiment-history/2026-10-12-video01/temporal-information-review-20261013/REPORT.md\nBroader VIDEO01 remains active while planner selects the next bounded OST item; VIDEO10/11 observer branch stays closed.\n\n13 October planner disposition after EVAL02R\nInvestigation complete; generic full-sequence motor transfer and incremental control benefit over endpoint/static references remain unestablished. Closing the investigation does not accept the strongest capability hypothesis. Calibration and robot-action translation remain explicitly blocked under #10991/#10989; observer/control authority remains unqualified under #10984. VIDEO10/11 measurement branch remains closed. Planner directive saved with DEL01 follow-up.",
+      "estimate": null,
+      "status": "Done",
+      "progressState": "done",
+      "createdAt": "2026-10-12 10:42:24",
+      "updatedAt": "2026-10-13 04:41:51",
+      "completedAt": "2026-10-13T04:41:51.098Z",
+      "completionSummary": "What was done: Completed the A/B/C representation investigation and VIDEO02\u201311 follow-ups using preserved personal footage, negative controls and scoped adapter diagnostics. Preserved timestamped object/hand/frozen-feature representations; audited calibration non-identifiability; executed a physically successful assisted, goal-registered Panda correction with endpoint/static controls. Acceptance NOT MET for generic full-sequence motor transfer, calibrated human actions, superior physical path fidelity or an incremental task-success benefit from intermediate video. Done means investigation concluded, not capability accepted.\n\nFuture improvements: A genuinely discriminating intermediate-information task and independently observable contact/depth would be needed before stronger motor-transfer claims. Do not reopen the closed measurement branch by default.\n\nSeparated work: Calibration #10991, video-to-robot action link #10989 and observation authority #10984 remain unresolved. EVAL02 #10996 retains68 unexecuted intervention trials. DEL01 #11007 now reconciles media/claims; no publication or new training.",
+      "deploymentProof": null,
+      "completionEvidence": [
+        {
+          "label": "VIDEO10 assisted execution and matched controls",
+          "url": "https://github.com/NatMota/typhon-robotics/blob/research/video10-goal-registration/experiment-history/2026-10-13-video10/REPORT.md",
+          "type": "link"
+        },
+        {
+          "label": "VIDEO11 measurement limitations",
+          "url": "https://github.com/NatMota/typhon-robotics/blob/research/video11-feature-correspondence/experiment-history/2026-10-13-video11/REPORT.md",
+          "type": "link"
+        }
+      ],
+      "epicId": 80,
+      "priority": 69,
+      "workflow": {
+        "status": "Done",
+        "columnId": 75,
+        "progressState": "done",
+        "completedAt": "2026-10-13T04:41:51.098Z",
+        "completionSummary": "What was done: Completed the A/B/C representation investigation and VIDEO02\u201311 follow-ups using preserved personal footage, negative controls and scoped adapter diagnostics. Preserved timestamped object/hand/frozen-feature representations; audited calibration non-identifiability; executed a physically successful assisted, goal-registered Panda correction with endpoint/static controls. Acceptance NOT MET for generic full-sequence motor transfer, calibrated human actions, superior physical path fidelity or an incremental task-success benefit from intermediate video. Done means investigation concluded, not capability accepted.\n\nFuture improvements: A genuinely discriminating intermediate-information task and independently observable contact/depth would be needed before stronger motor-transfer claims. Do not reopen the closed measurement branch by default.\n\nSeparated work: Calibration #10991, video-to-robot action link #10989 and observation authority #10984 remain unresolved. EVAL02 #10996 retains68 unexecuted intervention trials. DEL01 #11007 now reconciles media/claims; no publication or new training.",
+        "deploymentProof": null,
+        "completionEvidence": [
+          {
+            "label": "VIDEO10 assisted execution and matched controls",
+            "url": "https://github.com/NatMota/typhon-robotics/blob/research/video10-goal-registration/experiment-history/2026-10-13-video10/REPORT.md",
+            "type": "link"
+          },
+          {
+            "label": "VIDEO11 measurement limitations",
+            "url": "https://github.com/NatMota/typhon-robotics/blob/research/video11-feature-correspondence/experiment-history/2026-10-13-video11/REPORT.md",
+            "type": "link"
+          }
+        ]
+      },
+      "runs": {
+        "current": null,
+        "historyCount": 0
+      }
+    },
+    {
+      "id": 11007,
+      "projectId": 16,
+      "columnId": 75,
+      "title": "DEL01 \u2014 Reconcile dashboard, video hosting and research result provenance",
+      "description": "Original request\nEarlier user requested Typhon dashboard on natslabs.com/typhon-robotics, R2 video links and Google Drive meaningful evaluation videos.\n\nCurrent evidence / status\nPrior dashboard/uploads were requested and some delivered, but this research import has not verified current URLs and model labels.\n\nBounded work and acceptance criteria\nInventory existing dashboard/media assets, verify accessible links and exact scene/checkpoint/outcome labels, clearly distinguish live from recorded playback, and remove stale numerical claims only through an explicit evidence-based update. No new publication in this ticket's current status.\n\nDependencies and exclusions\nPrivate repository instruction persists. Hosting work is separate from scientific success.\n\nStatus semantics\nHistorical artifacts or implementation exist; their scope/evidence must be reconciled before claiming completion or launching replacement work.\n\n12 October final OST sweep decision\nMedia provenance inventory checked:419existingR2entries, including64training videos=32trimmed+32marked, not spatially cropped. Tested personal/M3pilot URLs work; two V4M6pilot URLs return404. Local evaluated videos remain archived. No newDrive upload/public publishing in this sweep. Repair missing media URLs separately; dashboard release remains private. Evidence:audits/media-access.json.\n\n13 October planner-directed review\n45-minute existing-artifact review beginning 2026-10-13T04:41:51.000Z, ending 2026-10-13T05:26:51.000Z. Deterministic maximum8 media slots: broad near success, varied combination success + matched fixed failure, varied failure, V3 regional oriented placement, V4demo0006 partial placement, VIDEO10SEQ andSTATIC. Save exact checkpoint/controller, assistance, source/config/seed, endpoint/denominator, original/derived hashes and hosted accessibility. Correct private claims only. Missing evidence explicitly excluded; no reruns, new media, deployment or publication. Branch research/del01-media-claims-review. Parent VIDEO01 closed as investigation complete with strong capability acceptance unmet.\n\nReview result (13 October): bounded DEL01 acceptance passed. Archive media and inspected private claims are traceable and correctly labelled; hosting gaps are explicitly excluded. Artifact commit b9e5c91a154a6c1b893d696f6f9792eaa3965257.",
+      "estimate": null,
+      "status": "Done",
+      "progressState": "done",
+      "createdAt": "2026-10-11 16:38:56",
+      "updatedAt": "2026-10-13 05:08:51",
+      "completedAt": "2026-10-13T05:08:51.865Z",
+      "completionSummary": "What was done: Completed the bounded existing-artifact claim/media review. Eight deterministically selected records, eight original videos and two existing comparison copies are linked to exact model/controller, source/configuration/seed, scoring, actions and hashes. All ten files fully decode and match Powerglide/Mint; eight final pose calculations agree. Reproduced the audit and rechecked 69 input hashes. Private README/dashboard captions now lead with broad 17/40 near-layout success and varied vs fixed 10/12 vs 0/12, preserving subgoals and limitations.\n\nFuture improvements: None of these selected hashes is present in the hosted 419-item index. Two related older pilot links return 404. A separate delivery change must resolve uploads and the dashboard's incompatible result importer before showing these as current hosted results.\n\nSeparated work: No new media, robot rollouts, training, deployment or publication. Original V4 training-array gaps, shared recording sessions, one fit seed, assisted VIDEO10/static-control limits and 68 unexecuted interventions remain explicit. DEL02 write-up remains separate. Done means this scoped evidence review passed, not that hosting or robot capability is complete.",
+      "deploymentProof": null,
+      "completionEvidence": [
+        {
+          "label": "Correction report and delivery gaps",
+          "url": "https://github.com/NatMota/typhon-robotics/blob/research/del01-media-claims-review/experiment-history/2026-10-13-del01-review/CORRECTIONS.md",
+          "type": "link"
+        },
+        {
+          "label": "Verified media/claim manifest",
+          "url": "https://github.com/NatMota/typhon-robotics/blob/research/del01-media-claims-review/experiment-history/2026-10-13-del01-review/media_claim_manifest.json",
+          "type": "link"
+        }
+      ],
+      "epicId": 85,
+      "priority": 70,
+      "workflow": {
+        "status": "Done",
+        "columnId": 75,
+        "progressState": "done",
+        "completedAt": "2026-10-13T05:08:51.865Z",
+        "completionSummary": "What was done: Completed the bounded existing-artifact claim/media review. Eight deterministically selected records, eight original videos and two existing comparison copies are linked to exact model/controller, source/configuration/seed, scoring, actions and hashes. All ten files fully decode and match Powerglide/Mint; eight final pose calculations agree. Reproduced the audit and rechecked 69 input hashes. Private README/dashboard captions now lead with broad 17/40 near-layout success and varied vs fixed 10/12 vs 0/12, preserving subgoals and limitations.\n\nFuture improvements: None of these selected hashes is present in the hosted 419-item index. Two related older pilot links return 404. A separate delivery change must resolve uploads and the dashboard's incompatible result importer before showing these as current hosted results.\n\nSeparated work: No new media, robot rollouts, training, deployment or publication. Original V4 training-array gaps, shared recording sessions, one fit seed, assisted VIDEO10/static-control limits and 68 unexecuted interventions remain explicit. DEL02 write-up remains separate. Done means this scoped evidence review passed, not that hosting or robot capability is complete.",
+        "deploymentProof": null,
+        "completionEvidence": [
+          {
+            "label": "Correction report and delivery gaps",
+            "url": "https://github.com/NatMota/typhon-robotics/blob/research/del01-media-claims-review/experiment-history/2026-10-13-del01-review/CORRECTIONS.md",
+            "type": "link"
+          },
+          {
+            "label": "Verified media/claim manifest",
+            "url": "https://github.com/NatMota/typhon-robotics/blob/research/del01-media-claims-review/experiment-history/2026-10-13-del01-review/media_claim_manifest.json",
+            "type": "link"
+          }
+        ]
+      },
+      "runs": {
+        "current": null,
+        "historyCount": 0
+      }
+    }
+  ],
+  "columns": [
+    {
+      "id": 70,
+      "name": "Backlog",
+      "ids": []
+    },
+    {
+      "id": 71,
+      "name": "Next",
+      "ids": []
+    },
+    {
+      "id": 72,
+      "name": "In Progress",
+      "ids": []
+    },
+    {
+      "id": 73,
+      "name": "Blocked",
+      "ids": [
+        10984,
+        10989,
+        10991,
+        10998,
+        11000,
+        11002,
+        11003
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Review",
+      "ids": [
+        11004,
+        10996,
+        11008
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Done",
+      "ids": [
+        10957,
+        10958,
+        10959,
+        10960,
+        10961,
+        10962,
+        10963,
+        10964,
+        10965,
+        10966,
+        10967,
+        10968,
+        10969,
+        10970,
+        10971,
+        10972,
+        10973,
+        10974,
+        10975,
+        10976,
+        10977,
+        10978,
+        10979,
+        10980,
+        10981,
+        10955,
+        10956,
+        10954,
+        11012,
+        10983,
+        11013,
+        10985,
+        11011,
+        10993,
+        10995,
+        10986,
+        10994,
+        11001,
+        10982,
+        10987,
+        10988,
+        10990,
+        10997,
+        10999,
+        11005,
+        11006,
+        11019,
+        11020,
+        11021,
+        11022,
+        11023,
+        11024,
+        11014,
+        11025,
+        11026,
+        11027,
+        11028,
+        11029,
+        11030,
+        11031,
+        11032,
+        11033,
+        11034,
+        11035,
+        11018,
+        11016,
+        11017,
+        10992,
+        11036,
+        11015,
+        11007
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Parked",
+      "ids": [
+        11009,
+        11010
+      ]
+    }
+  ]
+}
