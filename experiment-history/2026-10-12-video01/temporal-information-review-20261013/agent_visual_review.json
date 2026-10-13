@@ -1,0 +1,195 @@
+{
+  "reviewer": "Codex agent visual inspection, not new human approval",
+  "reviewed_utc": "2026-10-13T03:07:59.153180+00:00",
+  "scope": "All 16 contact sheets, seven predetermined paired instants each, decoded sequentially from eight original recordings. No claim to have watched every intervening frame.",
+  "notes": {
+    "demo_0001": {
+      "observation": "Initial block upper-left and oblique; fingers surround it before a lifted transport over the square; the hand withdraws and the upright block remains.",
+      "kind": "task_phase_evidence",
+      "samples": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "limit": "Support forces, exact contact/release time and metric lift height are not measured."
+    },
+    "demo_0002": {
+      "observation": "Initial block left/oblique; held transfer to square followed by withdrawal and upright final placement.",
+      "kind": "task_phase_evidence",
+      "samples": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "limit": "Sparse two-view samples bracket the transfer; contact onset and depth remain unknown."
+    },
+    "demo_0003": {
+      "observation": "Quarter-turned source near upper edge; fingers carry it toward square, then withdraw after upright placement.",
+      "kind": "task_phase_evidence",
+      "samples": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "limit": "Some source/approach content is near the frame boundary; no complete contact timing."
+    },
+    "demo_0004": {
+      "observation": "Source and early manipulation approach the upper image boundary; block is out of view in several intermediate samples, then placement/withdrawal are visible.",
+      "kind": "task_phase_evidence_with_missingness",
+      "samples": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "limit": "This review does not independently resolve the initial orientation or lift from seven samples; earlier M0 labels remain attributed annotations, not fresh verification."
+    },
+    "demo_0005": {
+      "observation": "Initially upright block left of goal is carried and placed upright; orientation change is not needed to describe its endpoint difference.",
+      "kind": "task_phase_evidence",
+      "samples": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "limit": "No measured force, lift height or exact release time."
+    },
+    "demo_0006": {
+      "observation": "Initially inverted block left of goal is gripped and reoriented during transport, then released upright in the square.",
+      "kind": "task_phase_evidence",
+      "samples": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "limit": "This is included demo_0006; excluded review example 6 is demo_0017. Intermediate route/rotation timing is not mandated."
+    },
+    "demo_0007": {
+      "observation": "Block begins in square quarter-turned; hand rotates it locally and withdraws with numeral upright.",
+      "kind": "motion_detail_negative_control",
+      "samples": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "limit": "VIDEO10 already showed endpoint/static alternatives meet physical completion in this supplied-controller correction; no required intermediate path established."
+    },
+    "demo_0009": {
+      "observation": "Block starts inverted in square; fingers reorient it, then leave an upright block at the target.",
+      "kind": "motion_detail",
+      "samples": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "limit": "Final yaw change is apparent from endpoints; specific lifting/rotation path is not an independent task requirement."
+    },
+    "demo_0011": {
+      "observation": "Another inverted in-square start followed by local finger-supported reorientation and withdrawal.",
+      "kind": "motion_detail",
+      "samples": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "limit": "No second actor, external intervention or required special route is established."
+    },
+    "demo_0012": {
+      "observation": "Left/upright source, hand-held intermediate block, then transport and upright placement. User-labelled pause/resume; seven-frame review alone does not measure a pause duration.",
+      "kind": "task_phase_plus_style",
+      "samples": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "limit": "VIDEO07 has finer sampled evidence of reduced progress and resumption; neither it nor the task specification makes waiting mandatory."
+    },
+    "demo_0013": {
+      "observation": "Source upper-left; fingers lift and visibly tilt/reorient the block during the transfer before placing it upright.",
+      "kind": "task_phase_plus_style",
+      "samples": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "limit": "Tilt and pace are observed human motion; no independent requirement to reproduce that out-of-plane excursion."
+    },
+    "demo_0014": {
+      "observation": "Left/oblique start, hand-held transport and lowering to the square, then withdrawal; user-labelled pause/resume.",
+      "kind": "task_phase_plus_style",
+      "samples": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "limit": "Lowering is visible; a pause is not inferred from a stationary overhead centroid. Exact support-transfer time unknown."
+    },
+    "demo_0015": {
+      "observation": "Upper-right source, grasp and elevated transfer, then placement/withdrawal. Starting side differs from the original left-start description.",
+      "kind": "task_phase_plus_style",
+      "samples": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "limit": "No long pause established by this sampled panel; keep user intent. Hand occlusion obscures part of the numeral and contact."
+    },
+    "demo_0016": {
+      "observation": "Source below square and oblique/inverted; fingers transfer and reorient it, then release at the square.",
+      "kind": "task_phase_evidence",
+      "samples": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "limit": "Keep actual below-target source rather than inventing a left start. No calibrated 3D trajectory."
+    },
+    "demo_0018": {
+      "observation": "Correct-looking block remains in the square and no hand/manipulation is visible at all seven inspected paired instants.",
+      "kind": "required_state_preservation_evidence",
+      "samples": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "limit": "Samples support no-action intent; they do not prove zero movement between every frame. Goal recognition can already use an initial goal observation."
+    },
+    "demo_0019": {
+      "observation": "Second completed example: upright block in square, unchanged and hand-free at the seven inspected paired instants.",
+      "kind": "required_state_preservation_evidence",
+      "samples": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "limit": "Same no-action limitation as demo_0018; short stationary take is not an independent manipulation trial."
+    }
+  }
+}
