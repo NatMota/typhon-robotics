@@ -1,0 +1,37 @@
+{
+  "schema": "video01-c-review-verification-v1",
+  "created_utc": "2026-10-13T03:10:39.663155+00:00",
+  "raw_recordings_verified_by_preparer": 8,
+  "curated_takes": 16,
+  "paired_review_instants": 112,
+  "view_samples": 224,
+  "excluded_demo_0017_absent": true,
+  "selected_example_ids": [
+    "demo_0001",
+    "demo_0012",
+    "demo_0018"
+  ],
+  "frozen_feature_index_order_verified": 2644,
+  "frozen_feature_shapes": {
+    "full_rgb": [
+      2644,
+      1024
+    ],
+    "current_observed_object_square_crop": [
+      2644,
+      1024
+    ]
+  },
+  "all_dense_physical_contact_unknown": true,
+  "all_dense_metric_xyz_unknown": true,
+  "new_model_fits": 0,
+  "new_physics_rollouts": 0,
+  "new_classifier_or_similarity_thresholds": 0,
+  "input_hashes": {
+    "dense-v2/source-index.json": "a7f7afafe32ac33ebdce29f8ee84846bd97e12e497c2047b738665ee1e34a370",
+    "dense-v2/features/features.npz": "c602dff710c5f9328eec66b3315ca5acaddbdb5ea672eb5b41e51d4fa1d73b0f",
+    "dense-v2/analysis-v2/trajectory-summary.json": "1077df55efcee621b08e2da919373abe99b71d28462d77dcce8e97e523a78217",
+    "dense-v2/goal-probe/results.json": "d93260c422485b62495cdb65eeb840b1dc0b1921c8f3011078cf63bf6f48553c",
+    "dense-v2/analysis-v2/feature-comparison.json": "a357e3da0e58c9900aaf70ae7b8a1c3a24d3b8188426f395c0fa9b9bb2e10ae7"
+  }
+}

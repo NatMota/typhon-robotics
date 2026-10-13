@@ -1,0 +1,19 @@
+{
+  "pickup_subgoal": {
+    "source": "User conversation: explicit three subgoals (pickup, placement in square, orientation), plus M0 demonstration specification grasp/lift/place/release.",
+    "requirement": "Under the requested pickup-place assessment, reaching the same endpoint by pushing does not satisfy the pickup subgoal. No exact human route, grasp shape, speed or lift height is required."
+  },
+  "preserve_completed": {
+    "source": "User M1.5 requirement for already-completed examples.",
+    "quote": "Initialize the block inside the goal tolerance and verify that task-completion logic recognises the completed state without unnecessary manipulation.",
+    "requirement": "Avoid unnecessary pickup/replacement when the goal is already satisfied. Initial-state recognition plus this supplied rule can suffice; a full video is not proven necessary for that decision."
+  },
+  "orientation_goal": {
+    "source": "User M0 task convention and confirmed correct example.",
+    "requirement": "Finish with blue 2 upright and studs toward the top of the primary view. Exact intermediate orientation path is unspecified."
+  },
+  "pause_intent": {
+    "source": "User labelled four takes awkward/pause-resume; M1.5 explicitly says annotate pauses and do not assume the human pause itself is a robot action.",
+    "requirement": "Preserve the demonstration intent and annotation. No independently imposed mandatory wait, obstacle or external intervention follows from the label."
+  }
+}
