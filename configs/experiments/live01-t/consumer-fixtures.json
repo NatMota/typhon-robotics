@@ -1,0 +1,1879 @@
+{
+  "source": "/var/tmp/typhon-live01-shadow-20261013/shadow-film-demo_0006-audit/publisher.jsonl.gz",
+  "source_sha256": "70d573a79f1344f4207704934b9a72e646777b53c3b5f352febc2afe66136dca",
+  "fixture_scope": "Saved numerical snapshots, newly fabricated delivery ordering only. Historical acquisition/generation/compute times remain unknown.",
+  "tests_passed": 4,
+  "legacy_numerical_fields_unchanged": true,
+  "control_authority": false,
+  "fixtures": [
+    {
+      "id": "settling_tail",
+      "inputs": [
+        {
+          "schema": "m7-observer-telemetry-v1",
+          "sequence": 52,
+          "timestamp_unix": 1791871402.8518133,
+          "timestamp_utc": "2026-10-13T06:03:22.851813+00:00",
+          "image_timestamp_unix": 1791871402.8518133,
+          "run_id": "typhon-live01-shadow-20261013",
+          "model": "original-v4-m6",
+          "scenario_id": "film-demo_0006",
+          "control_step": 1500,
+          "sim_time_s": 75.0,
+          "phase": "finished",
+          "status": "finished",
+          "live": false,
+          "image_file": "latest.jpg",
+          "camera_order": [
+            "primary",
+            "secondary"
+          ],
+          "telemetry": {
+            "source": "MuJoCo controller observation; simulated measurements",
+            "joint_names": [
+              "robot0_joint1",
+              "robot0_joint2",
+              "robot0_joint3",
+              "robot0_joint4",
+              "robot0_joint5",
+              "robot0_joint6",
+              "robot0_joint7"
+            ],
+            "joint_position_rad": [
+              -0.08043958842752436,
+              0.7604384877291798,
+              -0.06408996362181897,
+              -1.7018689618217242,
+              0.07152360052699372,
+              2.4637342140260174,
+              0.5724658719744815
+            ],
+            "joint_velocity_rad_s": [
+              1.4767856753990352e-05,
+              1.8507398666063013e-05,
+              3.569123596321589e-05,
+              -4.595606748889231e-05,
+              -9.358446505452748e-06,
+              -8.570175024716417e-05,
+              -8.163214378387038e-05
+            ],
+            "joint_limits_rad": [
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -1.7628,
+                1.7628
+              ],
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -3.0718,
+                -0.0698
+              ],
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -0.0175,
+                3.7525
+              ],
+              [
+                -2.8973,
+                2.8973
+              ]
+            ],
+            "eef_position_m": [
+              0.10527864170076744,
+              -0.0929776816254521,
+              0.9676535693016762
+            ],
+            "eef_quat_wxyz": [
+              0.001278376832995163,
+              0.6960838378640936,
+              0.7179580454725626,
+              0.0013788974888065562
+            ],
+            "gripper_joint_position_m": [
+              0.03999903552392193,
+              -0.039999410962967025
+            ],
+            "gripper_open": true,
+            "gripper_open_rule": "sum(abs(measured finger positions)) > 0.055m",
+            "joint_torque_nm": [
+              0.08507419434147952,
+              -41.79950677131467,
+              -1.1307908364921955,
+              16.52930746912655,
+              -0.012418005369677507,
+              2.1082140219241805,
+              -0.06788322464852982
+            ],
+            "joint_torque_source": "MuJoCo data.qfrc_actuator at arm DOF indices; simulated generalized actuator torques, not hardware sensors",
+            "temperature_c": null,
+            "temperature_source": "unavailable; no temperature sensor in simulation"
+          },
+          "command": {
+            "source": "policy target and requested/applied OSC commands, separate from measured state",
+            "target_20": [
+              0.10950251668691635,
+              -0.09791464358568192,
+              0.9716680645942688,
+              -0.03362133726477623,
+              1.0677111148834229,
+              0.00034441595198586583,
+              1.0664360523223877,
+              0.02781672589480877,
+              0.003270154818892479,
+              0.0,
+              -0.003159042913466692,
+              -0.000165572389960289,
+              0.0010181628167629242,
+              -0.0010411915136501193,
+              0.0030713912565261126,
+              -0.0036240185145288706,
+              0.00270962156355381,
+              -0.0015897853299975395,
+              -0.0013080101925879717,
+              0.0
+            ],
+            "target_format": "baseline: primary xyz_m, rotation6d, gripper, second arm unused",
+            "requested_action": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "applied_action": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "units": "7 normalized OSC components: dx,dy,dz,rotation vector xyz,gripper; each in [-1,1]",
+            "translation_step_m": 0.05,
+            "rotation_step_rad": 0.5
+          },
+          "guard": null,
+          "evaluator_truth_in_actor": true,
+          "actor_auxiliary_annotation": "causal simulator held label only",
+          "object_truth": null,
+          "note": "Camera and robot telemetry only. Evaluation success must come from separately labelled evaluator results.",
+          "source_contract": {
+            "schema": "typhon-telemetry-provenance-v1",
+            "authority": "none",
+            "clock": {
+              "control_tick": 1500,
+              "control_time_s": 75.0,
+              "policy_origin_control_tick": 40,
+              "policy_tick": 1460,
+              "policy_time_s": 73.0,
+              "simulation_time_at_read_s": null,
+              "physics_step_identity": null
+            },
+            "latest_reconstructed_target": {
+              "kind": "latest reconstructed policy target",
+              "query_id": null,
+              "waypoint_index": null,
+              "generation_interval_monotonic_s": null,
+              "last_selection_control_tick": null,
+              "provenance_status": "unknown in historical snapshot; no retroactive certification",
+              "active_as_current_command_source": false
+            },
+            "current_applied_command": {
+              "control_tick": 1500,
+              "source_mode": "settling",
+              "applied_workspace_adjusted_normalized_osc": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "policy_target_active_as_command_source": false
+            },
+            "integrated_robot_state": {
+              "source_fields": [
+                "MuJoCo data.qpos",
+                "MuJoCo data.qvel"
+              ],
+              "phase": "integrated state read by existing observe()",
+              "read_interval_monotonic_s": null,
+              "clock": {
+                "control_tick": 1500,
+                "control_time_s": 75.0,
+                "policy_origin_control_tick": 40,
+                "policy_tick": 1460,
+                "policy_time_s": 73.0,
+                "simulation_time_at_read_s": null,
+                "physics_step_identity": null
+              }
+            },
+            "derived_wrist_site_pose": {
+              "source_fields": [
+                "MuJoCo data.site_xpos",
+                "MuJoCo data.site_xmat"
+              ],
+              "phase": "cached derived kinematic fields",
+              "read_interval_monotonic_s": null,
+              "clock_at_read": {
+                "control_tick": 1500,
+                "control_time_s": 75.0,
+                "policy_origin_control_tick": 40,
+                "policy_tick": 1460,
+                "policy_time_s": 73.0,
+                "simulation_time_at_read_s": null,
+                "physics_step_identity": null
+              },
+              "computation_time_s": null,
+              "computation_time_status": "unknown; not inferred from the advanced simulation clock",
+              "simultaneous_fk_of_logged_integrated_joints": false
+            },
+            "rgb": [
+              {
+                "source": {
+                  "frame_id": "fixture-archive-publication-52-primary",
+                  "camera": "primary",
+                  "acquisition_interval_monotonic_s": null,
+                  "clock": {
+                    "control_tick": 1500,
+                    "control_time_s": 75.0,
+                    "policy_origin_control_tick": 40,
+                    "policy_tick": 1460,
+                    "policy_time_s": 73.0,
+                    "simulation_time_at_read_s": null,
+                    "physics_step_identity": null
+                  },
+                  "identity_status": "fixture identity derived from snapshot; acquisition was not archived"
+                },
+                "usage": "current",
+                "acquisition_status": "unknown"
+              },
+              {
+                "source": {
+                  "frame_id": "fixture-archive-publication-52-secondary",
+                  "camera": "secondary",
+                  "acquisition_interval_monotonic_s": null,
+                  "clock": {
+                    "control_tick": 1500,
+                    "control_time_s": 75.0,
+                    "policy_origin_control_tick": 40,
+                    "policy_tick": 1460,
+                    "policy_time_s": 73.0,
+                    "simulation_time_at_read_s": null,
+                    "physics_step_identity": null
+                  },
+                  "identity_status": "fixture identity derived from snapshot; acquisition was not archived"
+                },
+                "usage": "current",
+                "acquisition_status": "unknown"
+              }
+            ],
+            "observer_latest": null,
+            "publication": {
+              "sequence": 52,
+              "monotonic_s": 23774.609430575,
+              "phase": "payload assembly before existing atomic writes; not network delivery time"
+            },
+            "legacy_timestamp_note": "legacy image_timestamp_unix remains unchanged; use source RGB acquisition intervals here"
+          }
+        }
+      ],
+      "expected": {
+        "command_source": "settling",
+        "last_target_active": false
+      },
+      "actual": {
+        "source_control_tick": 1500,
+        "out_of_order": false,
+        "frame_ids": [
+          "fixture-archive-publication-52-primary",
+          "fixture-archive-publication-52-secondary"
+        ],
+        "same_frames_as_previous": false,
+        "acquisition_age_intervals_s": [
+          null,
+          null
+        ],
+        "acquisition_age_status": "unknown",
+        "command_source": "settling",
+        "effective_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "last_target_active": false,
+        "integrated_phase": "integrated state read by existing observe()",
+        "derived_phase": "cached derived kinematic fields",
+        "simultaneity_known": false,
+        "authority": "none"
+      }
+    },
+    {
+      "id": "repeat_image",
+      "inputs": [
+        {
+          "schema": "m7-observer-telemetry-v1",
+          "sequence": 52,
+          "timestamp_unix": 1791871402.8518133,
+          "timestamp_utc": "2026-10-13T06:03:22.851813+00:00",
+          "image_timestamp_unix": 1791871402.8518133,
+          "run_id": "typhon-live01-shadow-20261013",
+          "model": "original-v4-m6",
+          "scenario_id": "film-demo_0006",
+          "control_step": 1500,
+          "sim_time_s": 75.0,
+          "phase": "finished",
+          "status": "finished",
+          "live": false,
+          "image_file": "latest.jpg",
+          "camera_order": [
+            "primary",
+            "secondary"
+          ],
+          "telemetry": {
+            "source": "MuJoCo controller observation; simulated measurements",
+            "joint_names": [
+              "robot0_joint1",
+              "robot0_joint2",
+              "robot0_joint3",
+              "robot0_joint4",
+              "robot0_joint5",
+              "robot0_joint6",
+              "robot0_joint7"
+            ],
+            "joint_position_rad": [
+              -0.08043958842752436,
+              0.7604384877291798,
+              -0.06408996362181897,
+              -1.7018689618217242,
+              0.07152360052699372,
+              2.4637342140260174,
+              0.5724658719744815
+            ],
+            "joint_velocity_rad_s": [
+              1.4767856753990352e-05,
+              1.8507398666063013e-05,
+              3.569123596321589e-05,
+              -4.595606748889231e-05,
+              -9.358446505452748e-06,
+              -8.570175024716417e-05,
+              -8.163214378387038e-05
+            ],
+            "joint_limits_rad": [
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -1.7628,
+                1.7628
+              ],
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -3.0718,
+                -0.0698
+              ],
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -0.0175,
+                3.7525
+              ],
+              [
+                -2.8973,
+                2.8973
+              ]
+            ],
+            "eef_position_m": [
+              0.10527864170076744,
+              -0.0929776816254521,
+              0.9676535693016762
+            ],
+            "eef_quat_wxyz": [
+              0.001278376832995163,
+              0.6960838378640936,
+              0.7179580454725626,
+              0.0013788974888065562
+            ],
+            "gripper_joint_position_m": [
+              0.03999903552392193,
+              -0.039999410962967025
+            ],
+            "gripper_open": true,
+            "gripper_open_rule": "sum(abs(measured finger positions)) > 0.055m",
+            "joint_torque_nm": [
+              0.08507419434147952,
+              -41.79950677131467,
+              -1.1307908364921955,
+              16.52930746912655,
+              -0.012418005369677507,
+              2.1082140219241805,
+              -0.06788322464852982
+            ],
+            "joint_torque_source": "MuJoCo data.qfrc_actuator at arm DOF indices; simulated generalized actuator torques, not hardware sensors",
+            "temperature_c": null,
+            "temperature_source": "unavailable; no temperature sensor in simulation"
+          },
+          "command": {
+            "source": "policy target and requested/applied OSC commands, separate from measured state",
+            "target_20": [
+              0.10950251668691635,
+              -0.09791464358568192,
+              0.9716680645942688,
+              -0.03362133726477623,
+              1.0677111148834229,
+              0.00034441595198586583,
+              1.0664360523223877,
+              0.02781672589480877,
+              0.003270154818892479,
+              0.0,
+              -0.003159042913466692,
+              -0.000165572389960289,
+              0.0010181628167629242,
+              -0.0010411915136501193,
+              0.0030713912565261126,
+              -0.0036240185145288706,
+              0.00270962156355381,
+              -0.0015897853299975395,
+              -0.0013080101925879717,
+              0.0
+            ],
+            "target_format": "baseline: primary xyz_m, rotation6d, gripper, second arm unused",
+            "requested_action": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "applied_action": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "units": "7 normalized OSC components: dx,dy,dz,rotation vector xyz,gripper; each in [-1,1]",
+            "translation_step_m": 0.05,
+            "rotation_step_rad": 0.5
+          },
+          "guard": null,
+          "evaluator_truth_in_actor": true,
+          "actor_auxiliary_annotation": "causal simulator held label only",
+          "object_truth": null,
+          "note": "Camera and robot telemetry only. Evaluation success must come from separately labelled evaluator results.",
+          "source_contract": {
+            "schema": "typhon-telemetry-provenance-v1",
+            "authority": "none",
+            "clock": {
+              "control_tick": 1500,
+              "control_time_s": 75.0,
+              "policy_origin_control_tick": 40,
+              "policy_tick": 1460,
+              "policy_time_s": 73.0,
+              "simulation_time_at_read_s": null,
+              "physics_step_identity": null
+            },
+            "latest_reconstructed_target": {
+              "kind": "latest reconstructed policy target",
+              "query_id": null,
+              "waypoint_index": null,
+              "generation_interval_monotonic_s": null,
+              "last_selection_control_tick": null,
+              "provenance_status": "unknown in historical snapshot; no retroactive certification",
+              "active_as_current_command_source": false
+            },
+            "current_applied_command": {
+              "control_tick": 1500,
+              "source_mode": "settling",
+              "applied_workspace_adjusted_normalized_osc": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "policy_target_active_as_command_source": false
+            },
+            "integrated_robot_state": {
+              "source_fields": [
+                "MuJoCo data.qpos",
+                "MuJoCo data.qvel"
+              ],
+              "phase": "integrated state read by existing observe()",
+              "read_interval_monotonic_s": null,
+              "clock": {
+                "control_tick": 1500,
+                "control_time_s": 75.0,
+                "policy_origin_control_tick": 40,
+                "policy_tick": 1460,
+                "policy_time_s": 73.0,
+                "simulation_time_at_read_s": null,
+                "physics_step_identity": null
+              }
+            },
+            "derived_wrist_site_pose": {
+              "source_fields": [
+                "MuJoCo data.site_xpos",
+                "MuJoCo data.site_xmat"
+              ],
+              "phase": "cached derived kinematic fields",
+              "read_interval_monotonic_s": null,
+              "clock_at_read": {
+                "control_tick": 1500,
+                "control_time_s": 75.0,
+                "policy_origin_control_tick": 40,
+                "policy_tick": 1460,
+                "policy_time_s": 73.0,
+                "simulation_time_at_read_s": null,
+                "physics_step_identity": null
+              },
+              "computation_time_s": null,
+              "computation_time_status": "unknown; not inferred from the advanced simulation clock",
+              "simultaneous_fk_of_logged_integrated_joints": false
+            },
+            "rgb": [
+              {
+                "source": {
+                  "frame_id": "fixture-archive-publication-52-primary",
+                  "camera": "primary",
+                  "acquisition_interval_monotonic_s": null,
+                  "clock": {
+                    "control_tick": 1500,
+                    "control_time_s": 75.0,
+                    "policy_origin_control_tick": 40,
+                    "policy_tick": 1460,
+                    "policy_time_s": 73.0,
+                    "simulation_time_at_read_s": null,
+                    "physics_step_identity": null
+                  },
+                  "identity_status": "fixture identity derived from snapshot; acquisition was not archived"
+                },
+                "usage": "current",
+                "acquisition_status": "unknown"
+              },
+              {
+                "source": {
+                  "frame_id": "fixture-archive-publication-52-secondary",
+                  "camera": "secondary",
+                  "acquisition_interval_monotonic_s": null,
+                  "clock": {
+                    "control_tick": 1500,
+                    "control_time_s": 75.0,
+                    "policy_origin_control_tick": 40,
+                    "policy_tick": 1460,
+                    "policy_time_s": 73.0,
+                    "simulation_time_at_read_s": null,
+                    "physics_step_identity": null
+                  },
+                  "identity_status": "fixture identity derived from snapshot; acquisition was not archived"
+                },
+                "usage": "current",
+                "acquisition_status": "unknown"
+              }
+            ],
+            "observer_latest": null,
+            "publication": {
+              "sequence": 52,
+              "monotonic_s": 23774.609482965,
+              "phase": "payload assembly before existing atomic writes; not network delivery time"
+            },
+            "legacy_timestamp_note": "legacy image_timestamp_unix remains unchanged; use source RGB acquisition intervals here"
+          }
+        },
+        {
+          "schema": "m7-observer-telemetry-v1",
+          "sequence": 52,
+          "timestamp_unix": 1791871402.8518133,
+          "timestamp_utc": "2026-10-13T06:03:22.851813+00:00",
+          "image_timestamp_unix": 1791871402.8518133,
+          "run_id": "typhon-live01-shadow-20261013",
+          "model": "original-v4-m6",
+          "scenario_id": "film-demo_0006",
+          "control_step": 1500,
+          "sim_time_s": 75.0,
+          "phase": "finished",
+          "status": "finished",
+          "live": false,
+          "image_file": "latest.jpg",
+          "camera_order": [
+            "primary",
+            "secondary"
+          ],
+          "telemetry": {
+            "source": "MuJoCo controller observation; simulated measurements",
+            "joint_names": [
+              "robot0_joint1",
+              "robot0_joint2",
+              "robot0_joint3",
+              "robot0_joint4",
+              "robot0_joint5",
+              "robot0_joint6",
+              "robot0_joint7"
+            ],
+            "joint_position_rad": [
+              -0.08043958842752436,
+              0.7604384877291798,
+              -0.06408996362181897,
+              -1.7018689618217242,
+              0.07152360052699372,
+              2.4637342140260174,
+              0.5724658719744815
+            ],
+            "joint_velocity_rad_s": [
+              1.4767856753990352e-05,
+              1.8507398666063013e-05,
+              3.569123596321589e-05,
+              -4.595606748889231e-05,
+              -9.358446505452748e-06,
+              -8.570175024716417e-05,
+              -8.163214378387038e-05
+            ],
+            "joint_limits_rad": [
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -1.7628,
+                1.7628
+              ],
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -3.0718,
+                -0.0698
+              ],
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -0.0175,
+                3.7525
+              ],
+              [
+                -2.8973,
+                2.8973
+              ]
+            ],
+            "eef_position_m": [
+              0.10527864170076744,
+              -0.0929776816254521,
+              0.9676535693016762
+            ],
+            "eef_quat_wxyz": [
+              0.001278376832995163,
+              0.6960838378640936,
+              0.7179580454725626,
+              0.0013788974888065562
+            ],
+            "gripper_joint_position_m": [
+              0.03999903552392193,
+              -0.039999410962967025
+            ],
+            "gripper_open": true,
+            "gripper_open_rule": "sum(abs(measured finger positions)) > 0.055m",
+            "joint_torque_nm": [
+              0.08507419434147952,
+              -41.79950677131467,
+              -1.1307908364921955,
+              16.52930746912655,
+              -0.012418005369677507,
+              2.1082140219241805,
+              -0.06788322464852982
+            ],
+            "joint_torque_source": "MuJoCo data.qfrc_actuator at arm DOF indices; simulated generalized actuator torques, not hardware sensors",
+            "temperature_c": null,
+            "temperature_source": "unavailable; no temperature sensor in simulation"
+          },
+          "command": {
+            "source": "policy target and requested/applied OSC commands, separate from measured state",
+            "target_20": [
+              0.10950251668691635,
+              -0.09791464358568192,
+              0.9716680645942688,
+              -0.03362133726477623,
+              1.0677111148834229,
+              0.00034441595198586583,
+              1.0664360523223877,
+              0.02781672589480877,
+              0.003270154818892479,
+              0.0,
+              -0.003159042913466692,
+              -0.000165572389960289,
+              0.0010181628167629242,
+              -0.0010411915136501193,
+              0.0030713912565261126,
+              -0.0036240185145288706,
+              0.00270962156355381,
+              -0.0015897853299975395,
+              -0.0013080101925879717,
+              0.0
+            ],
+            "target_format": "baseline: primary xyz_m, rotation6d, gripper, second arm unused",
+            "requested_action": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "applied_action": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "units": "7 normalized OSC components: dx,dy,dz,rotation vector xyz,gripper; each in [-1,1]",
+            "translation_step_m": 0.05,
+            "rotation_step_rad": 0.5
+          },
+          "guard": null,
+          "evaluator_truth_in_actor": true,
+          "actor_auxiliary_annotation": "causal simulator held label only",
+          "object_truth": null,
+          "note": "Camera and robot telemetry only. Evaluation success must come from separately labelled evaluator results.",
+          "source_contract": {
+            "schema": "typhon-telemetry-provenance-v1",
+            "authority": "none",
+            "clock": {
+              "control_tick": 1500,
+              "control_time_s": 75.0,
+              "policy_origin_control_tick": 40,
+              "policy_tick": 1460,
+              "policy_time_s": 73.0,
+              "simulation_time_at_read_s": null,
+              "physics_step_identity": null
+            },
+            "latest_reconstructed_target": {
+              "kind": "latest reconstructed policy target",
+              "query_id": null,
+              "waypoint_index": null,
+              "generation_interval_monotonic_s": null,
+              "last_selection_control_tick": null,
+              "provenance_status": "unknown in historical snapshot; no retroactive certification",
+              "active_as_current_command_source": false
+            },
+            "current_applied_command": {
+              "control_tick": 1500,
+              "source_mode": "settling",
+              "applied_workspace_adjusted_normalized_osc": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "policy_target_active_as_command_source": false
+            },
+            "integrated_robot_state": {
+              "source_fields": [
+                "MuJoCo data.qpos",
+                "MuJoCo data.qvel"
+              ],
+              "phase": "integrated state read by existing observe()",
+              "read_interval_monotonic_s": null,
+              "clock": {
+                "control_tick": 1500,
+                "control_time_s": 75.0,
+                "policy_origin_control_tick": 40,
+                "policy_tick": 1460,
+                "policy_time_s": 73.0,
+                "simulation_time_at_read_s": null,
+                "physics_step_identity": null
+              }
+            },
+            "derived_wrist_site_pose": {
+              "source_fields": [
+                "MuJoCo data.site_xpos",
+                "MuJoCo data.site_xmat"
+              ],
+              "phase": "cached derived kinematic fields",
+              "read_interval_monotonic_s": null,
+              "clock_at_read": {
+                "control_tick": 1500,
+                "control_time_s": 75.0,
+                "policy_origin_control_tick": 40,
+                "policy_tick": 1460,
+                "policy_time_s": 73.0,
+                "simulation_time_at_read_s": null,
+                "physics_step_identity": null
+              },
+              "computation_time_s": null,
+              "computation_time_status": "unknown; not inferred from the advanced simulation clock",
+              "simultaneous_fk_of_logged_integrated_joints": false
+            },
+            "rgb": [
+              {
+                "source": {
+                  "frame_id": "fixture-archive-publication-52-primary",
+                  "camera": "primary",
+                  "acquisition_interval_monotonic_s": null,
+                  "clock": {
+                    "control_tick": 1500,
+                    "control_time_s": 75.0,
+                    "policy_origin_control_tick": 40,
+                    "policy_tick": 1460,
+                    "policy_time_s": 73.0,
+                    "simulation_time_at_read_s": null,
+                    "physics_step_identity": null
+                  },
+                  "identity_status": "fixture identity derived from snapshot; acquisition was not archived"
+                },
+                "usage": "current",
+                "acquisition_status": "unknown"
+              },
+              {
+                "source": {
+                  "frame_id": "fixture-archive-publication-52-secondary",
+                  "camera": "secondary",
+                  "acquisition_interval_monotonic_s": null,
+                  "clock": {
+                    "control_tick": 1500,
+                    "control_time_s": 75.0,
+                    "policy_origin_control_tick": 40,
+                    "policy_tick": 1460,
+                    "policy_time_s": 73.0,
+                    "simulation_time_at_read_s": null,
+                    "physics_step_identity": null
+                  },
+                  "identity_status": "fixture identity derived from snapshot; acquisition was not archived"
+                },
+                "usage": "current",
+                "acquisition_status": "unknown"
+              }
+            ],
+            "observer_latest": null,
+            "publication": {
+              "sequence": 53,
+              "monotonic_s": 23775.609482965,
+              "phase": "payload assembly before existing atomic writes; not network delivery time"
+            },
+            "legacy_timestamp_note": "legacy image_timestamp_unix remains unchanged; use source RGB acquisition intervals here"
+          }
+        }
+      ],
+      "expected": {
+        "same_frames_as_previous": true,
+        "acquisition_age_status": "unknown"
+      },
+      "actual": {
+        "source_control_tick": 1500,
+        "out_of_order": false,
+        "frame_ids": [
+          "fixture-archive-publication-52-primary",
+          "fixture-archive-publication-52-secondary"
+        ],
+        "same_frames_as_previous": true,
+        "acquisition_age_intervals_s": [
+          null,
+          null
+        ],
+        "acquisition_age_status": "unknown",
+        "command_source": "settling",
+        "effective_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "last_target_active": false,
+        "integrated_phase": "integrated state read by existing observe()",
+        "derived_phase": "cached derived kinematic fields",
+        "simultaneity_known": false,
+        "authority": "none"
+      }
+    },
+    {
+      "id": "out_of_order",
+      "inputs": [
+        {
+          "schema": "m7-observer-telemetry-v1",
+          "sequence": 52,
+          "timestamp_unix": 1791871402.8518133,
+          "timestamp_utc": "2026-10-13T06:03:22.851813+00:00",
+          "image_timestamp_unix": 1791871402.8518133,
+          "run_id": "typhon-live01-shadow-20261013",
+          "model": "original-v4-m6",
+          "scenario_id": "film-demo_0006",
+          "control_step": 1500,
+          "sim_time_s": 75.0,
+          "phase": "finished",
+          "status": "finished",
+          "live": false,
+          "image_file": "latest.jpg",
+          "camera_order": [
+            "primary",
+            "secondary"
+          ],
+          "telemetry": {
+            "source": "MuJoCo controller observation; simulated measurements",
+            "joint_names": [
+              "robot0_joint1",
+              "robot0_joint2",
+              "robot0_joint3",
+              "robot0_joint4",
+              "robot0_joint5",
+              "robot0_joint6",
+              "robot0_joint7"
+            ],
+            "joint_position_rad": [
+              -0.08043958842752436,
+              0.7604384877291798,
+              -0.06408996362181897,
+              -1.7018689618217242,
+              0.07152360052699372,
+              2.4637342140260174,
+              0.5724658719744815
+            ],
+            "joint_velocity_rad_s": [
+              1.4767856753990352e-05,
+              1.8507398666063013e-05,
+              3.569123596321589e-05,
+              -4.595606748889231e-05,
+              -9.358446505452748e-06,
+              -8.570175024716417e-05,
+              -8.163214378387038e-05
+            ],
+            "joint_limits_rad": [
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -1.7628,
+                1.7628
+              ],
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -3.0718,
+                -0.0698
+              ],
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -0.0175,
+                3.7525
+              ],
+              [
+                -2.8973,
+                2.8973
+              ]
+            ],
+            "eef_position_m": [
+              0.10527864170076744,
+              -0.0929776816254521,
+              0.9676535693016762
+            ],
+            "eef_quat_wxyz": [
+              0.001278376832995163,
+              0.6960838378640936,
+              0.7179580454725626,
+              0.0013788974888065562
+            ],
+            "gripper_joint_position_m": [
+              0.03999903552392193,
+              -0.039999410962967025
+            ],
+            "gripper_open": true,
+            "gripper_open_rule": "sum(abs(measured finger positions)) > 0.055m",
+            "joint_torque_nm": [
+              0.08507419434147952,
+              -41.79950677131467,
+              -1.1307908364921955,
+              16.52930746912655,
+              -0.012418005369677507,
+              2.1082140219241805,
+              -0.06788322464852982
+            ],
+            "joint_torque_source": "MuJoCo data.qfrc_actuator at arm DOF indices; simulated generalized actuator torques, not hardware sensors",
+            "temperature_c": null,
+            "temperature_source": "unavailable; no temperature sensor in simulation"
+          },
+          "command": {
+            "source": "policy target and requested/applied OSC commands, separate from measured state",
+            "target_20": [
+              0.10950251668691635,
+              -0.09791464358568192,
+              0.9716680645942688,
+              -0.03362133726477623,
+              1.0677111148834229,
+              0.00034441595198586583,
+              1.0664360523223877,
+              0.02781672589480877,
+              0.003270154818892479,
+              0.0,
+              -0.003159042913466692,
+              -0.000165572389960289,
+              0.0010181628167629242,
+              -0.0010411915136501193,
+              0.0030713912565261126,
+              -0.0036240185145288706,
+              0.00270962156355381,
+              -0.0015897853299975395,
+              -0.0013080101925879717,
+              0.0
+            ],
+            "target_format": "baseline: primary xyz_m, rotation6d, gripper, second arm unused",
+            "requested_action": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "applied_action": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "units": "7 normalized OSC components: dx,dy,dz,rotation vector xyz,gripper; each in [-1,1]",
+            "translation_step_m": 0.05,
+            "rotation_step_rad": 0.5
+          },
+          "guard": null,
+          "evaluator_truth_in_actor": true,
+          "actor_auxiliary_annotation": "causal simulator held label only",
+          "object_truth": null,
+          "note": "Camera and robot telemetry only. Evaluation success must come from separately labelled evaluator results.",
+          "source_contract": {
+            "schema": "typhon-telemetry-provenance-v1",
+            "authority": "none",
+            "clock": {
+              "control_tick": 1500,
+              "control_time_s": 75.0,
+              "policy_origin_control_tick": 40,
+              "policy_tick": 1460,
+              "policy_time_s": 73.0,
+              "simulation_time_at_read_s": null,
+              "physics_step_identity": null
+            },
+            "latest_reconstructed_target": {
+              "kind": "latest reconstructed policy target",
+              "query_id": null,
+              "waypoint_index": null,
+              "generation_interval_monotonic_s": null,
+              "last_selection_control_tick": null,
+              "provenance_status": "unknown in historical snapshot; no retroactive certification",
+              "active_as_current_command_source": false
+            },
+            "current_applied_command": {
+              "control_tick": 1500,
+              "source_mode": "settling",
+              "applied_workspace_adjusted_normalized_osc": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "policy_target_active_as_command_source": false
+            },
+            "integrated_robot_state": {
+              "source_fields": [
+                "MuJoCo data.qpos",
+                "MuJoCo data.qvel"
+              ],
+              "phase": "integrated state read by existing observe()",
+              "read_interval_monotonic_s": null,
+              "clock": {
+                "control_tick": 1500,
+                "control_time_s": 75.0,
+                "policy_origin_control_tick": 40,
+                "policy_tick": 1460,
+                "policy_time_s": 73.0,
+                "simulation_time_at_read_s": null,
+                "physics_step_identity": null
+              }
+            },
+            "derived_wrist_site_pose": {
+              "source_fields": [
+                "MuJoCo data.site_xpos",
+                "MuJoCo data.site_xmat"
+              ],
+              "phase": "cached derived kinematic fields",
+              "read_interval_monotonic_s": null,
+              "clock_at_read": {
+                "control_tick": 1500,
+                "control_time_s": 75.0,
+                "policy_origin_control_tick": 40,
+                "policy_tick": 1460,
+                "policy_time_s": 73.0,
+                "simulation_time_at_read_s": null,
+                "physics_step_identity": null
+              },
+              "computation_time_s": null,
+              "computation_time_status": "unknown; not inferred from the advanced simulation clock",
+              "simultaneous_fk_of_logged_integrated_joints": false
+            },
+            "rgb": [
+              {
+                "source": {
+                  "frame_id": "fixture-archive-publication-52-primary",
+                  "camera": "primary",
+                  "acquisition_interval_monotonic_s": null,
+                  "clock": {
+                    "control_tick": 1500,
+                    "control_time_s": 75.0,
+                    "policy_origin_control_tick": 40,
+                    "policy_tick": 1460,
+                    "policy_time_s": 73.0,
+                    "simulation_time_at_read_s": null,
+                    "physics_step_identity": null
+                  },
+                  "identity_status": "fixture identity derived from snapshot; acquisition was not archived"
+                },
+                "usage": "current",
+                "acquisition_status": "unknown"
+              },
+              {
+                "source": {
+                  "frame_id": "fixture-archive-publication-52-secondary",
+                  "camera": "secondary",
+                  "acquisition_interval_monotonic_s": null,
+                  "clock": {
+                    "control_tick": 1500,
+                    "control_time_s": 75.0,
+                    "policy_origin_control_tick": 40,
+                    "policy_tick": 1460,
+                    "policy_time_s": 73.0,
+                    "simulation_time_at_read_s": null,
+                    "physics_step_identity": null
+                  },
+                  "identity_status": "fixture identity derived from snapshot; acquisition was not archived"
+                },
+                "usage": "current",
+                "acquisition_status": "unknown"
+              }
+            ],
+            "observer_latest": null,
+            "publication": {
+              "sequence": 52,
+              "monotonic_s": 23774.609584628,
+              "phase": "payload assembly before existing atomic writes; not network delivery time"
+            },
+            "legacy_timestamp_note": "legacy image_timestamp_unix remains unchanged; use source RGB acquisition intervals here"
+          }
+        },
+        {
+          "schema": "m7-observer-telemetry-v1",
+          "sequence": 2,
+          "timestamp_unix": 1791871378.8146725,
+          "timestamp_utc": "2026-10-13T06:02:58.814672+00:00",
+          "image_timestamp_unix": 1791871378.8146725,
+          "run_id": "typhon-live01-shadow-20261013",
+          "model": "original-v4-m6",
+          "scenario_id": "film-demo_0006",
+          "control_step": 41,
+          "sim_time_s": 2.05,
+          "phase": "executing",
+          "status": "running",
+          "live": true,
+          "image_file": "latest.jpg",
+          "camera_order": [
+            "primary",
+            "secondary"
+          ],
+          "telemetry": {
+            "source": "MuJoCo controller observation; simulated measurements",
+            "joint_names": [
+              "robot0_joint1",
+              "robot0_joint2",
+              "robot0_joint3",
+              "robot0_joint4",
+              "robot0_joint5",
+              "robot0_joint6",
+              "robot0_joint7"
+            ],
+            "joint_position_rad": [
+              -0.17272301929230668,
+              -0.12367174626401008,
+              -0.5149627251492563,
+              -2.7238350427847173,
+              -0.1226093997286612,
+              2.611340516757779,
+              0.22574902122359294
+            ],
+            "joint_velocity_rad_s": [
+              0.1610068987915106,
+              0.880113279742657,
+              0.36790628994258134,
+              0.10695057319513562,
+              0.7425521122552554,
+              0.6706810450636761,
+              0.5765895402371423
+            ],
+            "joint_limits_rad": [
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -1.7628,
+                1.7628
+              ],
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -3.0718,
+                -0.0698
+              ],
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -0.0175,
+                3.7525
+              ],
+              [
+                -2.8973,
+                2.8973
+              ]
+            ],
+            "eef_position_m": [
+              -0.24644558136693775,
+              -0.24707148715526844,
+              1.073957124448201
+            ],
+            "eef_quat_wxyz": [
+              -0.0006498246870471734,
+              0.7130465681872292,
+              0.7011161172154778,
+              -0.0005995873442918209
+            ],
+            "gripper_joint_position_m": [
+              0.039620444264701536,
+              -0.03977111410051752
+            ],
+            "gripper_open": true,
+            "gripper_open_rule": "sum(abs(measured finger positions)) > 0.055m",
+            "joint_torque_nm": [
+              11.37426790904605,
+              19.952190305916876,
+              9.875812743375986,
+              13.95150909895493,
+              15.762671196043488,
+              12.0,
+              12.0
+            ],
+            "joint_torque_source": "MuJoCo data.qfrc_actuator at arm DOF indices; simulated generalized actuator torques, not hardware sensors",
+            "temperature_c": null,
+            "temperature_source": "unavailable; no temperature sensor in simulation"
+          },
+          "command": {
+            "source": "policy target and requested/applied OSC commands, separate from measured state",
+            "target_20": [
+              -0.19225530326366425,
+              -0.20680135488510132,
+              1.018543004989624,
+              0.35993334650993347,
+              0.8528674244880676,
+              8.722592610865831e-06,
+              0.8554985523223877,
+              -0.3552399277687073,
+              0.004002576693892479,
+              0.0,
+              -0.004776474554091692,
+              0.001215348020195961,
+              -0.0005382336676120758,
+              -0.002933281473815441,
+              0.0021253463346511126,
+              -0.0011826122645288706,
+              0.0008881036192178726,
+              -0.0019254786893725395,
+              -0.003320263000205159,
+              0.0
+            ],
+            "target_format": "baseline: primary xyz_m, rotation6d, gripper, second arm unused",
+            "requested_action": [
+              1.0,
+              0.8617230532100068,
+              -1.0,
+              -0.0016374468657194899,
+              -0.008059567977684638,
+              -0.7995558011384648,
+              -1.0
+            ],
+            "applied_action": [
+              0.9999999999999998,
+              0.8617230532100068,
+              -1.0,
+              -0.0016374468657194899,
+              -0.008059567977684638,
+              -0.7995558011384648,
+              -1.0
+            ],
+            "units": "7 normalized OSC components: dx,dy,dz,rotation vector xyz,gripper; each in [-1,1]",
+            "translation_step_m": 0.05,
+            "rotation_step_rad": 0.5
+          },
+          "guard": null,
+          "evaluator_truth_in_actor": true,
+          "actor_auxiliary_annotation": "causal simulator held label only",
+          "object_truth": null,
+          "note": "Camera and robot telemetry only. Evaluation success must come from separately labelled evaluator results.",
+          "source_contract": {
+            "schema": "typhon-telemetry-provenance-v1",
+            "authority": "none",
+            "clock": {
+              "control_tick": 41,
+              "control_time_s": 2.05,
+              "policy_origin_control_tick": 40,
+              "policy_tick": 1,
+              "policy_time_s": 0.05,
+              "simulation_time_at_read_s": null,
+              "physics_step_identity": null
+            },
+            "latest_reconstructed_target": {
+              "kind": "latest reconstructed policy target",
+              "query_id": null,
+              "waypoint_index": null,
+              "generation_interval_monotonic_s": null,
+              "last_selection_control_tick": null,
+              "provenance_status": "unknown in historical snapshot; no retroactive certification",
+              "active_as_current_command_source": true
+            },
+            "current_applied_command": {
+              "control_tick": 41,
+              "source_mode": "policy_execution",
+              "applied_workspace_adjusted_normalized_osc": [
+                0.9999999999999998,
+                0.8617230532100068,
+                -1.0,
+                -0.0016374468657194899,
+                -0.008059567977684638,
+                -0.7995558011384648,
+                -1.0
+              ],
+              "policy_target_active_as_command_source": true
+            },
+            "integrated_robot_state": {
+              "source_fields": [
+                "MuJoCo data.qpos",
+                "MuJoCo data.qvel"
+              ],
+              "phase": "integrated state read by existing observe()",
+              "read_interval_monotonic_s": null,
+              "clock": {
+                "control_tick": 41,
+                "control_time_s": 2.05,
+                "policy_origin_control_tick": 40,
+                "policy_tick": 1,
+                "policy_time_s": 0.05,
+                "simulation_time_at_read_s": null,
+                "physics_step_identity": null
+              }
+            },
+            "derived_wrist_site_pose": {
+              "source_fields": [
+                "MuJoCo data.site_xpos",
+                "MuJoCo data.site_xmat"
+              ],
+              "phase": "cached derived kinematic fields",
+              "read_interval_monotonic_s": null,
+              "clock_at_read": {
+                "control_tick": 41,
+                "control_time_s": 2.05,
+                "policy_origin_control_tick": 40,
+                "policy_tick": 1,
+                "policy_time_s": 0.05,
+                "simulation_time_at_read_s": null,
+                "physics_step_identity": null
+              },
+              "computation_time_s": null,
+              "computation_time_status": "unknown; not inferred from the advanced simulation clock",
+              "simultaneous_fk_of_logged_integrated_joints": false
+            },
+            "rgb": [
+              {
+                "source": {
+                  "frame_id": "fixture-archive-publication-2-primary",
+                  "camera": "primary",
+                  "acquisition_interval_monotonic_s": null,
+                  "clock": {
+                    "control_tick": 41,
+                    "control_time_s": 2.05,
+                    "policy_origin_control_tick": 40,
+                    "policy_tick": 1,
+                    "policy_time_s": 0.05,
+                    "simulation_time_at_read_s": null,
+                    "physics_step_identity": null
+                  },
+                  "identity_status": "fixture identity derived from snapshot; acquisition was not archived"
+                },
+                "usage": "current",
+                "acquisition_status": "unknown"
+              },
+              {
+                "source": {
+                  "frame_id": "fixture-archive-publication-2-secondary",
+                  "camera": "secondary",
+                  "acquisition_interval_monotonic_s": null,
+                  "clock": {
+                    "control_tick": 41,
+                    "control_time_s": 2.05,
+                    "policy_origin_control_tick": 40,
+                    "policy_tick": 1,
+                    "policy_time_s": 0.05,
+                    "simulation_time_at_read_s": null,
+                    "physics_step_identity": null
+                  },
+                  "identity_status": "fixture identity derived from snapshot; acquisition was not archived"
+                },
+                "usage": "current",
+                "acquisition_status": "unknown"
+              }
+            ],
+            "observer_latest": null,
+            "publication": {
+              "sequence": 2,
+              "monotonic_s": 23774.609618552,
+              "phase": "payload assembly before existing atomic writes; not network delivery time"
+            },
+            "legacy_timestamp_note": "legacy image_timestamp_unix remains unchanged; use source RGB acquisition intervals here"
+          }
+        }
+      ],
+      "expected": {
+        "out_of_order": true,
+        "latest_tick": 1500
+      },
+      "actual": {
+        "incoming": {
+          "source_control_tick": 41,
+          "out_of_order": true,
+          "frame_ids": [
+            "fixture-archive-publication-2-primary",
+            "fixture-archive-publication-2-secondary"
+          ],
+          "same_frames_as_previous": false,
+          "acquisition_age_intervals_s": [
+            null,
+            null
+          ],
+          "acquisition_age_status": "unknown",
+          "command_source": "policy_execution",
+          "effective_command": [
+            0.9999999999999998,
+            0.8617230532100068,
+            -1.0,
+            -0.0016374468657194899,
+            -0.008059567977684638,
+            -0.7995558011384648,
+            -1.0
+          ],
+          "last_target_active": true,
+          "integrated_phase": "integrated state read by existing observe()",
+          "derived_phase": "cached derived kinematic fields",
+          "simultaneity_known": false,
+          "authority": "none"
+        },
+        "latest": {
+          "source_control_tick": 1500,
+          "out_of_order": false,
+          "frame_ids": [
+            "fixture-archive-publication-52-primary",
+            "fixture-archive-publication-52-secondary"
+          ],
+          "same_frames_as_previous": false,
+          "acquisition_age_intervals_s": [
+            null,
+            null
+          ],
+          "acquisition_age_status": "unknown",
+          "command_source": "settling",
+          "effective_command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "last_target_active": false,
+          "integrated_phase": "integrated state read by existing observe()",
+          "derived_phase": "cached derived kinematic fields",
+          "simultaneity_known": false,
+          "authority": "none"
+        }
+      }
+    },
+    {
+      "id": "cached_vs_integrated",
+      "inputs": [
+        {
+          "schema": "m7-observer-telemetry-v1",
+          "sequence": 2,
+          "timestamp_unix": 1791871378.8146725,
+          "timestamp_utc": "2026-10-13T06:02:58.814672+00:00",
+          "image_timestamp_unix": 1791871378.8146725,
+          "run_id": "typhon-live01-shadow-20261013",
+          "model": "original-v4-m6",
+          "scenario_id": "film-demo_0006",
+          "control_step": 41,
+          "sim_time_s": 2.05,
+          "phase": "executing",
+          "status": "running",
+          "live": true,
+          "image_file": "latest.jpg",
+          "camera_order": [
+            "primary",
+            "secondary"
+          ],
+          "telemetry": {
+            "source": "MuJoCo controller observation; simulated measurements",
+            "joint_names": [
+              "robot0_joint1",
+              "robot0_joint2",
+              "robot0_joint3",
+              "robot0_joint4",
+              "robot0_joint5",
+              "robot0_joint6",
+              "robot0_joint7"
+            ],
+            "joint_position_rad": [
+              -0.17272301929230668,
+              -0.12367174626401008,
+              -0.5149627251492563,
+              -2.7238350427847173,
+              -0.1226093997286612,
+              2.611340516757779,
+              0.22574902122359294
+            ],
+            "joint_velocity_rad_s": [
+              0.1610068987915106,
+              0.880113279742657,
+              0.36790628994258134,
+              0.10695057319513562,
+              0.7425521122552554,
+              0.6706810450636761,
+              0.5765895402371423
+            ],
+            "joint_limits_rad": [
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -1.7628,
+                1.7628
+              ],
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -3.0718,
+                -0.0698
+              ],
+              [
+                -2.8973,
+                2.8973
+              ],
+              [
+                -0.0175,
+                3.7525
+              ],
+              [
+                -2.8973,
+                2.8973
+              ]
+            ],
+            "eef_position_m": [
+              -0.24644558136693775,
+              -0.24707148715526844,
+              1.073957124448201
+            ],
+            "eef_quat_wxyz": [
+              -0.0006498246870471734,
+              0.7130465681872292,
+              0.7011161172154778,
+              -0.0005995873442918209
+            ],
+            "gripper_joint_position_m": [
+              0.039620444264701536,
+              -0.03977111410051752
+            ],
+            "gripper_open": true,
+            "gripper_open_rule": "sum(abs(measured finger positions)) > 0.055m",
+            "joint_torque_nm": [
+              11.37426790904605,
+              19.952190305916876,
+              9.875812743375986,
+              13.95150909895493,
+              15.762671196043488,
+              12.0,
+              12.0
+            ],
+            "joint_torque_source": "MuJoCo data.qfrc_actuator at arm DOF indices; simulated generalized actuator torques, not hardware sensors",
+            "temperature_c": null,
+            "temperature_source": "unavailable; no temperature sensor in simulation"
+          },
+          "command": {
+            "source": "policy target and requested/applied OSC commands, separate from measured state",
+            "target_20": [
+              -0.19225530326366425,
+              -0.20680135488510132,
+              1.018543004989624,
+              0.35993334650993347,
+              0.8528674244880676,
+              8.722592610865831e-06,
+              0.8554985523223877,
+              -0.3552399277687073,
+              0.004002576693892479,
+              0.0,
+              -0.004776474554091692,
+              0.001215348020195961,
+              -0.0005382336676120758,
+              -0.002933281473815441,
+              0.0021253463346511126,
+              -0.0011826122645288706,
+              0.0008881036192178726,
+              -0.0019254786893725395,
+              -0.003320263000205159,
+              0.0
+            ],
+            "target_format": "baseline: primary xyz_m, rotation6d, gripper, second arm unused",
+            "requested_action": [
+              1.0,
+              0.8617230532100068,
+              -1.0,
+              -0.0016374468657194899,
+              -0.008059567977684638,
+              -0.7995558011384648,
+              -1.0
+            ],
+            "applied_action": [
+              0.9999999999999998,
+              0.8617230532100068,
+              -1.0,
+              -0.0016374468657194899,
+              -0.008059567977684638,
+              -0.7995558011384648,
+              -1.0
+            ],
+            "units": "7 normalized OSC components: dx,dy,dz,rotation vector xyz,gripper; each in [-1,1]",
+            "translation_step_m": 0.05,
+            "rotation_step_rad": 0.5
+          },
+          "guard": null,
+          "evaluator_truth_in_actor": true,
+          "actor_auxiliary_annotation": "causal simulator held label only",
+          "object_truth": null,
+          "note": "Camera and robot telemetry only. Evaluation success must come from separately labelled evaluator results.",
+          "source_contract": {
+            "schema": "typhon-telemetry-provenance-v1",
+            "authority": "none",
+            "clock": {
+              "control_tick": 41,
+              "control_time_s": 2.05,
+              "policy_origin_control_tick": 40,
+              "policy_tick": 1,
+              "policy_time_s": 0.05,
+              "simulation_time_at_read_s": null,
+              "physics_step_identity": null
+            },
+            "latest_reconstructed_target": {
+              "kind": "latest reconstructed policy target",
+              "query_id": null,
+              "waypoint_index": null,
+              "generation_interval_monotonic_s": null,
+              "last_selection_control_tick": null,
+              "provenance_status": "unknown in historical snapshot; no retroactive certification",
+              "active_as_current_command_source": true
+            },
+            "current_applied_command": {
+              "control_tick": 41,
+              "source_mode": "policy_execution",
+              "applied_workspace_adjusted_normalized_osc": [
+                0.9999999999999998,
+                0.8617230532100068,
+                -1.0,
+                -0.0016374468657194899,
+                -0.008059567977684638,
+                -0.7995558011384648,
+                -1.0
+              ],
+              "policy_target_active_as_command_source": true
+            },
+            "integrated_robot_state": {
+              "source_fields": [
+                "MuJoCo data.qpos",
+                "MuJoCo data.qvel"
+              ],
+              "phase": "integrated state read by existing observe()",
+              "read_interval_monotonic_s": null,
+              "clock": {
+                "control_tick": 41,
+                "control_time_s": 2.05,
+                "policy_origin_control_tick": 40,
+                "policy_tick": 1,
+                "policy_time_s": 0.05,
+                "simulation_time_at_read_s": null,
+                "physics_step_identity": null
+              }
+            },
+            "derived_wrist_site_pose": {
+              "source_fields": [
+                "MuJoCo data.site_xpos",
+                "MuJoCo data.site_xmat"
+              ],
+              "phase": "cached derived kinematic fields",
+              "read_interval_monotonic_s": null,
+              "clock_at_read": {
+                "control_tick": 41,
+                "control_time_s": 2.05,
+                "policy_origin_control_tick": 40,
+                "policy_tick": 1,
+                "policy_time_s": 0.05,
+                "simulation_time_at_read_s": null,
+                "physics_step_identity": null
+              },
+              "computation_time_s": null,
+              "computation_time_status": "unknown; not inferred from the advanced simulation clock",
+              "simultaneous_fk_of_logged_integrated_joints": false
+            },
+            "rgb": [
+              {
+                "source": {
+                  "frame_id": "fixture-archive-publication-2-primary",
+                  "camera": "primary",
+                  "acquisition_interval_monotonic_s": null,
+                  "clock": {
+                    "control_tick": 41,
+                    "control_time_s": 2.05,
+                    "policy_origin_control_tick": 40,
+                    "policy_tick": 1,
+                    "policy_time_s": 0.05,
+                    "simulation_time_at_read_s": null,
+                    "physics_step_identity": null
+                  },
+                  "identity_status": "fixture identity derived from snapshot; acquisition was not archived"
+                },
+                "usage": "current",
+                "acquisition_status": "unknown"
+              },
+              {
+                "source": {
+                  "frame_id": "fixture-archive-publication-2-secondary",
+                  "camera": "secondary",
+                  "acquisition_interval_monotonic_s": null,
+                  "clock": {
+                    "control_tick": 41,
+                    "control_time_s": 2.05,
+                    "policy_origin_control_tick": 40,
+                    "policy_tick": 1,
+                    "policy_time_s": 0.05,
+                    "simulation_time_at_read_s": null,
+                    "physics_step_identity": null
+                  },
+                  "identity_status": "fixture identity derived from snapshot; acquisition was not archived"
+                },
+                "usage": "current",
+                "acquisition_status": "unknown"
+              }
+            ],
+            "observer_latest": null,
+            "publication": {
+              "sequence": 2,
+              "monotonic_s": 23774.609669128,
+              "phase": "payload assembly before existing atomic writes; not network delivery time"
+            },
+            "legacy_timestamp_note": "legacy image_timestamp_unix remains unchanged; use source RGB acquisition intervals here"
+          }
+        }
+      ],
+      "expected": {
+        "simultaneity_known": false,
+        "site_computation_time": "unknown"
+      },
+      "actual": {
+        "source_control_tick": 41,
+        "out_of_order": false,
+        "frame_ids": [
+          "fixture-archive-publication-2-primary",
+          "fixture-archive-publication-2-secondary"
+        ],
+        "same_frames_as_previous": false,
+        "acquisition_age_intervals_s": [
+          null,
+          null
+        ],
+        "acquisition_age_status": "unknown",
+        "command_source": "policy_execution",
+        "effective_command": [
+          0.9999999999999998,
+          0.8617230532100068,
+          -1.0,
+          -0.0016374468657194899,
+          -0.008059567977684638,
+          -0.7995558011384648,
+          -1.0
+        ],
+        "last_target_active": true,
+        "integrated_phase": "integrated state read by existing observe()",
+        "derived_phase": "cached derived kinematic fields",
+        "simultaneity_known": false,
+        "authority": "none"
+      }
+    }
+  ]
+}
