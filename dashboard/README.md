@@ -1,5 +1,9 @@
 # M7 observation console
 
+The private 13 October claim/media review is in [review/media_claim_manifest.json](review/media_claim_manifest.json). It qualifies eight archived records; none has an exact matching entry in the audited public index. The hosted site remains its labelled 9 October snapshot. The existing summary-object importer does not automatically ingest the newer row-list experiments; no deployment or schema conversion was performed.
+
+The historical interface below is implementation documentation, not control-authority qualification.
+
 A read-only browser dashboard for learned-policy evaluations and controller telemetry. It uses Python's standard library and plain HTML/CSS/JavaScript; there is no build step or package installation.
 
 ```bash

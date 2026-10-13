@@ -12,7 +12,25 @@ The dashboard shows recorded experiments and controller measurements. Successful
 
 ## TL;DR
 
-We tested dense video, chopped trajectories, temporal abstraction and expert-guided corrections across 128 simulation episodes using scenarios derived from personally recorded demonstrations. The strongest rollout picked up the brick and released it inside the target, but left it rotated by 85°, so no unfinished task met every success criterion. A separate completion guard recognised all three tested correct configurations without moving the brick, showing that the harness can prevent unnecessary actions while learned orientation control still needs work.
+Broad Pt completed 17/40 near-personal feeding layouts versus vanilla's 0/40 in the matched comparison, while both failed all 20 broader starts. With the same additional training budget, varied-goal continuation completed 10/12 withheld start/goal combinations versus fixed-goal continuation's 0/12; this is transfer among familiar source families, with one fitted seed. Loading and selected failure-state repair remain unresolved, and the policies train on generated robot RGB/actions derived from personal scenario observations, not validated human-frame-to-robot-action labels.
+
+### Current private evidence — 13 October
+
+| Comparison | Result | What it supports |
+|---|---|---|
+| Broad Pt12k vs vanilla, near-personal layouts | 17/40 vs 0/40 strict | Local generalisation under differing domain/input contracts |
+| Same models, broader starts | 0/20 for both | Broader-start failure |
+| Equal-update varied vs fixed, new goal combinations | 10/12 vs 0/12 strict | Measured benefit of the varied-data recipe in familiar source families |
+| Base12k and three continuations, loading | 0/12 each | Loading transfer not established |
+| All four later models, selected failure states | 0/4 each | Repair not established; four handoffs from one family |
+| Original V3, 775-rollout comparison | 4 newly oriented in-square placements; 0 new original-strict completions | Real partial progress under a labelled post-hoc region endpoint |
+| VIDEO10 SEQ and STATIC | Both pass the assisted correction | Incremental task-success benefit from intermediate video not established |
+
+Six broad-Pt training episodes are a subset of the verified catalogue, not six newly recorded demonstrations. Six source takes share two original recording pairs. Goal appearance and text co-vary, so numeric-language grounding is not isolated. The near-layout pooled result is 42.5%; the separate family-balanced estimate is 41.67% with its own 22.22–55.56% interval. The planned 68 intervention trials were not executed.
+
+[Reconciled comparisons and uncertainty](experiment-history/2026-10-13-eval02-review/CLAIM_STATUS.md) · [Eight verified media records and captions](dashboard/review/media_claim_manifest.json) · [Media corrections and delivery gaps](experiment-history/2026-10-13-del01-review/CORRECTIONS.md)
+
+The hosted dashboard remains its labelled 9 October snapshot. The eight newly qualified records are verified in the private archive; this review has not published them.
 
 ## Why feeding and loading
 
@@ -89,7 +107,7 @@ Human video contributes task-relevant starting states, goals, disturbance catego
 
 Feeding moves a loose block into a marked staging square. Loading moves it from staging into a shallow fixture. A correct outcome requires position, directed orientation, release and stability, rather than merely closing the gripper.
 
-## Evidence so far
+## Historical 9 October pilot evidence
 
 This is a research/demo release with negative results retained. It is not a demonstrated general manipulation policy.
 
@@ -103,12 +121,12 @@ This is a research/demo release with negative results retained. It is not a demo
 | Common 1.5 s learned-policy pilot, V1/V2/V3 M3 | 0/8 for each | No unfinished manipulation solved |
 | Common 1.5 s learned-policy pilot, V1/V2/V3 M4 | 2/8 for each | Only the two already-completed states remained correct |
 | Separate 4 s V3 diagnostic | M3: 0/8; M4: 1/8 | Only already-completed preservation; different horizon |
-| Classifier-primary harness on today's frozen M6 | 3 valid goal cases recognised with zero policy actions | Completion guard working |
+| Classifier-primary harness on the historical frozen M6 | 3 development goal cases recognised with zero policy actions | Bounded pilot; later observer/control qualification remains unmet |
 | Same harness, unfinished source | Not completed within 500 decisions | Guards do not repair a failing policy |
 
 The six common pilots comprise 48 episodes; the separately labelled two longer-horizon diagnostics add 16. Later results are timestamped under `evidence/m7/`; this table is a frozen initial snapshot and does not imply that training completion means task success. Assisted diagnostics are not included in the unassisted policy results.
 
-### Tiny visual completion classifier
+### Historical visual completion classifier
 
 A 111,107-parameter, 414 KB classifier reads rendered RGB, combines learned numeral direction with target-relative geometry, and returns `complete`, `incomplete` or `unknown`. Controller release/stability checks remain separate. It uses no simulator object truth at inference.
 
@@ -122,11 +140,11 @@ On an untouched post-freeze 336-image synthetic confirmation set:
 
 This is fixed-camera, coloured-brick, overhead **feeding** evidence. Loading returns unknown. Real-camera accuracy and fine tolerance boundaries are unvalidated. The confirmation set contains 288 independent renders plus local occlusion augmentations, not 336 unrelated physical trials. Earlier exploratory retests and their label correction are disclosed in [metadata](evidence/goal-classifier/metadata.json).
 
-### Execution service
+### Service implementation and qualification
 
-The current default requests one X-VLA proposal per decision, checks configured end-effector regions and measured joint limits/speeds, and executes a short prefix before observing again. Candidate ranking and within-decision resampling are disabled; a rejected proposal causes a hold. To reproduce earlier three-candidate experiments, explicitly pass `--max-candidates 3`. It records measured joint position/velocity, gripper and end-effector state, simulated actuator torque, commands, rejections and image timestamps.
+The legacy service entry point requests one X-VLA proposal per decision, checks configured end-effector regions and measured joint limits/speeds, and executes a short prefix before observing again. Candidate ranking and within-decision resampling are disabled; a rejected proposal causes a hold. To reproduce earlier three-candidate experiments, explicitly pass `--max-candidates 3`. It records measured joint position/velocity, gripper and end-effector state, simulated actuator torque, commands, rejections and image timestamps.
 
-The optional legacy mode uses bounded candidate selection; neither mode performs learned-value search or simulator lookahead. End-effector zone checks are not whole-arm collision checking. The simulator pauses during inference. Qwen3-VL integration is available experimentally; the validated completion path uses the small classifier because Qwen produced contradictory outputs in these tests.
+The optional legacy mode uses bounded candidate selection; neither mode performs learned-value search or simulator lookahead. End-effector zone checks are not whole-arm collision checking. The simulator pauses during inference. Qwen3-VL integration is available experimentally; the historical pilot used the small classifier after contradictory Qwen outputs. Later observation and candidate-ranking diagnostics did not qualify a general completion or intervention authority; the service implementation is not a demonstrated reliable live manipulation system.
 
 ## Training matrix
 
@@ -136,10 +154,10 @@ All variants retain the declared source mixture and randomise sampling across tr
 |---|---|
 | V1 | Dense causal simulated video plus geometric-expert action windows |
 | V2 | Semantic single/pair/triple/intent chunks, dense simulated video, green held-object cue, expert actions |
-| V3 | Semantic chunks, up to 4 s future action windows, up to 30 exact anchors, sparse causal visual history, held cue, expert actions |
+| V3 | Semantic chunks, timestamped temporal action abstraction, sparse causal visual history, held cue and expert actions; inspect each requested horizon |
 | V4 | V3 originals plus one round of successful same-state expert continuations after a matching student's rollout budget expires |
 
-V4 is a DAgger-style continuation experiment, not PPO or Q-learning. A rollout budget expiry is not proof of irrecoverable failure. The simulator-derived held cue is privileged causal annotation and is explicitly declared; it must not be mistaken for a learned grasp detector.
+Original V4 is a declared DAgger-style continuation experiment, not PPO or Q-learning. It adds 500 updates to V3-M6 without a matched extra-update-only control, and three declared correction arrays remain missing in the scoped backup audit. Its saved rollout remains auditable; a benefit from its correction data is not established. A rollout budget expiry is not proof of irrecoverable failure. The simulator-derived held cue is privileged causal annotation and is explicitly declared; it must not be mistaken for a learned grasp detector.
 
 M3/M4 adapt prompts/action components; M5 uses LoRA joint adaptation; M6 uses full joint adaptation. Their configurations, optimiser schedules, mixture sizes and checkpoints differ. Read each experiment's manifests before comparing results. Training loss alone is not a robot success metric.
 
@@ -167,7 +185,7 @@ python3 dashboard/server.py --help
 
 The dashboard server observes local experiment directories; an empty checkout does not invent live runs. A portable recorded snapshot is included in `demo/`. The tiny classifier is included at `models/goal-classifier/model.npz`; its interface is documented in `supervisor/planning/simple_goal_classifier.py`.
 
-Full X-VLA checkpoints, raw phone videos and bulk training tensors are not bundled in Git. Scripts preserve the original experiment layout and may require archived inputs; the evidence-only check and geometric demo above are the minimal entry points. Verified public video URLs, checksums, source identities and outcome labels are recorded in [MEDIA_MANIFEST.json](MEDIA_MANIFEST.json). The [video library](https://www.natslabs.com/typhon-robotics/media-library.html) distinguishes phone observations, expert replays and learned-policy evaluations; it retains failed outcomes. The paired phone clips are temporally trimmed takes, with separate marked variants; no spatial-crop or frame-to-robot-action alignment is claimed.
+Full X-VLA checkpoints, raw phone videos and bulk training tensors are not bundled in Git. Scripts preserve the original experiment layout and may require archived inputs; the evidence-only check and geometric demo above are the minimal entry points. Historical public-video mappings, checksums and source labels are recorded in [MEDIA_MANIFEST.json](MEDIA_MANIFEST.json); they are not a current availability guarantee. The 13 October review records current access checks and private media provenance separately. The [video library](https://www.natslabs.com/typhon-robotics/media-library.html) distinguishes phone observations, expert replays and learned-policy evaluations; it retains failed outcomes. The paired phone clips are temporally trimmed takes, with separate marked variants; no spatial-crop or frame-to-robot-action alignment is claimed.
 
 ## Data and geometry limitations
 
@@ -176,6 +194,8 @@ Primary-camera image coordinates were mapped using a dimensionless target-square
 ![Fixed-camera orientation check](docs/orientation-check.png)
 
 The original simulation proxy and later catalogue-based DUPLO dimensions are different configurations. Proxy dimensions/mass are not physical measurements. Frozen experiments were not silently regenerated after visual or geometry changes. Source observations, generated robot actions and evaluator-only truth remain distinct.
+
+The root `PUBLIC_SHA256SUMS` and `EXPORT_PROVENANCE.json` describe the historical export. They were already stale for the current README before this review and remain preserved; current private changes have a separate checksum receipt.
 
 ## Repository map
 
@@ -191,4 +211,4 @@ The original simulation proxy and later catalogue-based DUPLO dimensions are dif
 
 Built on [X-VLA](https://github.com/2toinf/X-VLA), its [paper](https://arxiv.org/abs/2510.10274), [robosuite](https://robosuite.ai/) and MuJoCo. X-VLA base weights: [`2toINF/X-VLA-Pt`](https://huggingface.co/2toINF/X-VLA-Pt), revision `c1c4a64a7e03ac5b95c468bf1578f3d03651b53b`. Optional planner: [`Qwen/Qwen3-VL-2B-Instruct`](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct).
 
-This repository publishes the applicant's experimental implementation and results for inspection. A general reuse licence has not yet been selected; upstream software, model and asset licences continue to apply. No endorsement by UCL, Humanoid, NVIDIA, LEGO or the cited authors is implied. See `CITATION.cff` to cite this research software snapshot.
+This private repository records the applicant's experimental implementation and results for inspection. A general reuse licence has not yet been selected; upstream software, model and asset licences continue to apply. No endorsement by UCL, Humanoid, NVIDIA, LEGO or the cited authors is implied. See `CITATION.cff` to cite this research software snapshot.

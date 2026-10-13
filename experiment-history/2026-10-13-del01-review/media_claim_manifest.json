@@ -1,0 +1,1360 @@
+{
+  "schema": "typhon-private-media-claim-manifest-v1",
+  "created_utc": "2026-10-13T05:08:09.507921+00:00",
+  "ticket": 11007,
+  "public_deployment": false,
+  "records": [
+    {
+      "slot": "broad_near_success",
+      "displayed_claim": "Broad Pt12k completes this near-personal feeding layout. In its matched panel it achieved 17/40 strict successes versus vanilla 0/40; source families and input/domain contracts limit the comparison.",
+      "display_context": {
+        "panel_n": 40,
+        "strict_successes": 17,
+        "source_take_families": 6,
+        "source_recording_pairs": 2,
+        "pooled_fraction": 0.425,
+        "family_balanced_fraction": 0.4166666666666667,
+        "family_interval95": [
+          0.2222222222222222,
+          0.5555555555555556
+        ]
+      },
+      "original_video": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/confirmatory-v2/broad-Pt-12000/confirm-near-01-seed8417/rollout.mp4",
+        "sha256": "efb9a07cf9656f4f8f1bfac42091a797ffa78fa395eba92f5f58e325431077e3",
+        "bytes": 1038004,
+        "powerglide_path": "/var/tmp/typhon-ost-sweep-20261012/confirmatory-v2/broad-Pt-12000/confirm-near-01-seed8417/rollout.mp4",
+        "powerglide_sha256_matches": true,
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 1024,
+              "height": 512,
+              "r_frame_rate": "5/1",
+              "avg_frame_rate": "5/1",
+              "duration": "73.400000",
+              "nb_read_frames": "367"
+            }
+          ],
+          "format": {
+            "duration": "73.400000"
+          }
+        }
+      },
+      "selection": "First eligible frozen scenario ID; fixed is matched to selected varied case; explicit SEQ/STATIC conditions.",
+      "visual_review": "Agent inspected decoded start/end and representative intermediate frames; ffprobe decoded/count-checked all frames. Not a manual frame-by-frame content review.",
+      "protocol": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/confirmatory-v2/protocol.json",
+        "sha256": "6468eb4f46c4b6e824df70854650947617918683f1b6a6d5f013e35139a115aa",
+        "bytes": 631664
+      },
+      "method": {
+        "method": "broad-Pt-12000",
+        "domain": 29,
+        "O2": true,
+        "actor_truth": false,
+        "H": 30,
+        "steps": 10,
+        "checkpoint_sha256": "59eb9e502c057d639e278e7f84d06c8fa8e3e513e52522dae47089a97b5c3736",
+        "native_contract": "generic_interleaved converted once",
+        "proprio": "previous executed target"
+      },
+      "parent_and_recipe": "fresh pinned X-VLA-Pt, 6 source takes, 12000 updates",
+      "scene": {
+        "id": "confirm-near-01-seed8417",
+        "source_demo_id": "demo_0001",
+        "status": "near_personal",
+        "seed": 8417,
+        "config": {
+          "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/confirmatory-v2/broad-Pt-12000/confirm-near-01-seed8417/scenario.json",
+          "sha256": "bb30fb267941072c2242c1492058715d063a0d784226025b674d93512e04cdf0",
+          "bytes": 8188
+        }
+      },
+      "observation_assistance": {
+        "privileged_held_annotation_conditioning": false,
+        "actor_object_truth": false,
+        "actor_truth_exception": "causal simulator-held annotation when declared",
+        "goal_image": false,
+        "supplied_motor_prefix": false,
+        "training_robot_actions": "supplied geometric expert; personal video supplies scenario observations",
+        "replay_visualization": "rendered camera views, not a dump of all model conditioning channels"
+      },
+      "outcome_record": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/confirmatory-v2/broad-Pt-12000/confirm-near-01-seed8417/episode.json",
+        "sha256": "9af1f6523808b76c64ee7dd25883f3632e7b9dbb56687111c5df2ecdf2d64689",
+        "bytes": 65498
+      },
+      "action_record": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/confirmatory-v2/broad-Pt-12000/confirm-near-01-seed8417/trajectory.jsonl.gz",
+        "sha256": "32882683cf7c089dbcc364f58da6244a0e1836da59a766d430d4346773b519e4",
+        "bytes": 341485
+      },
+      "policy_payload": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/confirmatory-v2/broad-Pt-12000/confirm-near-01-seed8417/policy_io.npz",
+        "sha256": "6e6239e65047702251468d5cb5c6bb5bf96949293a113c86335bfac6166df96a",
+        "bytes": 24301054
+      },
+      "endpoint": "original strict plus partial subgoals",
+      "timing": {
+        "recorded_duration_s": 73.4,
+        "simulated_execution_s": 73.0,
+        "cadence_fps": 5,
+        "inference_pauses_simulation": true
+      },
+      "initial_image": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/confirmatory-v2/broad-Pt-12000/confirm-near-01-seed8417/initial.png",
+        "sha256": "62511d7ee7faae15063e54cefa5635680da57d1b51ba0b59403ef3d266a22187",
+        "bytes": 488231
+      },
+      "final_image": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/confirmatory-v2/broad-Pt-12000/confirm-near-01-seed8417/final.png",
+        "sha256": "c9f99fd4c5067339ce488c1ae006cf3cabf50eb40ce13768682ecdbd05fac43b",
+        "bytes": 487266
+      },
+      "pickup_subgoal": {
+        "supported_lift": true,
+        "definition": "10mm above initial with simultaneous bilateral contact for 3 consecutive 20 Hz steps",
+        "operational_placement": true
+      },
+      "initial_state": {
+        "object_position_m": [
+          -0.31948261426916646,
+          0.09105741201029943,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9330102812877746,
+          -2.442414929083387e-18,
+          -1.0808413406093418e-18,
+          0.35984971170102065
+        ],
+        "unfinished": true,
+        "position_error_mm": 492.04677171183425,
+        "directed_yaw_error_deg": 42.181933188839565
+      },
+      "outcome": {
+        "strict": true,
+        "criteria": {
+          "position": true,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true
+        },
+        "position_error_mm": 6.877611460756819,
+        "directed_yaw_error_deg": 1.2790135053315783,
+        "independent_pose_recalculation_matches": true
+      },
+      "hosted_copies": {
+        "verified_matching_entries": [],
+        "status": "not_present_in_audited_419_item_hosted_index",
+        "index_sha256": "22960d797f19c49976049395dbd98b438506452e067c447f6dea062afa62ad5c",
+        "public_url": null
+      },
+      "status": "verified_archived_original; no verified hosted copy"
+    },
+    {
+      "slot": "varied_new_combination",
+      "displayed_claim": "Varied-goal continuation completes a withheld start/goal combination. It achieved 10/12 strict successes versus equal-update fixed 0/12 across six familiar source families; one fitted seed.",
+      "display_context": {
+        "panel_n": 12,
+        "strict_successes": 10,
+        "matched_fixed_strict": 0,
+        "source_take_families": 6,
+        "source_recording_pairs": 2,
+        "training_seeds": 1
+      },
+      "original_video": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/varied/new_start_goal_combination-personal_demo_0002-goal2-seed912171/rollout.mp4",
+        "sha256": "054105d43e68bdb04ad846e1331525d4fc21fc49b35aa07f302c724699ca61d2",
+        "bytes": 1194939,
+        "powerglide_path": "/var/tmp/typhon-ost-sweep-20261012/goal-evaluation/evaluation/varied/new_start_goal_combination-personal_demo_0002-goal2-seed912171/rollout.mp4",
+        "powerglide_sha256_matches": true,
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 1024,
+              "height": 512,
+              "r_frame_rate": "5/1",
+              "avg_frame_rate": "5/1",
+              "duration": "73.400000",
+              "nb_read_frames": "367"
+            }
+          ],
+          "format": {
+            "duration": "73.400000"
+          }
+        }
+      },
+      "selection": "First eligible frozen scenario ID; fixed is matched to selected varied case; explicit SEQ/STATIC conditions.",
+      "visual_review": "Agent inspected decoded start/end and representative intermediate frames; ffprobe decoded/count-checked all frames. Not a manual frame-by-frame content review.",
+      "protocol": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation-protocol.json",
+        "sha256": "7b88c52cb302b4eb10d8df74d46ad4941eb41341d4ef2ab06554a1116ce302f4",
+        "bytes": 336249
+      },
+      "method": {
+        "method": "varied",
+        "protocol_sha256": "7b88c52cb302b4eb10d8df74d46ad4941eb41341d4ef2ab06554a1116ce302f4",
+        "checkpoint_sha256": "d5449244d96e55e60c3342af9fffe2ae64362b74cdf9c3d41e39b74995c9bcdb",
+        "checkpoint": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000.pt",
+        "eval_script_sha256": "31f2ed20b674cb1774ce271f6c758a67f705e1bfd478a32c8c7a9250ea677f28",
+        "worker_sha256": "043e66934b7f800417d7408db6477be7a4dcc32cb8bf3e1273dff301e0c7d518",
+        "extra_guard": false,
+        "observation_version": "O2",
+        "domain_id": 29,
+        "model_rotation": "generic_interleaved",
+        "returned_rotation": "concatenated columns",
+        "H": 30,
+        "steps": 10,
+        "actor_truth": false
+      },
+      "parent_and_recipe": "broad-Pt12k plus 3000 joint updates, equal-update fixed/varied comparison",
+      "scene": {
+        "id": "new_start_goal_combination-personal_demo_0002-goal2-seed912171",
+        "source_demo_id": "demo_0002",
+        "status": "new_start_goal_combination",
+        "seed": 912171,
+        "config": {
+          "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/varied/new_start_goal_combination-personal_demo_0002-goal2-seed912171/scenario.json",
+          "sha256": "c3c24487fa8383b5e8ade666cd3a7e18dad3a6bc8a9ebfb9e9df57adba4db69b",
+          "bytes": 8199
+        }
+      },
+      "observation_assistance": {
+        "privileged_held_annotation_conditioning": false,
+        "actor_object_truth": false,
+        "actor_truth_exception": "causal simulator-held annotation when declared",
+        "goal_image": false,
+        "supplied_motor_prefix": false,
+        "training_robot_actions": "supplied geometric expert; personal video supplies scenario observations",
+        "replay_visualization": "rendered camera views, not a dump of all model conditioning channels"
+      },
+      "outcome_record": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/varied/new_start_goal_combination-personal_demo_0002-goal2-seed912171/episode.json",
+        "sha256": "6bd7a2c718f3969fd7ee095b7f9209e0e9b8e2212b88c8103cf7d1e0b4427457",
+        "bytes": 80299
+      },
+      "action_record": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/varied/new_start_goal_combination-personal_demo_0002-goal2-seed912171/trajectory.jsonl.gz",
+        "sha256": "df2492b7ce90f28503482fd6fc3652b110c6a50eabdcdfc28628dad04ab720f8",
+        "bytes": 312149
+      },
+      "policy_payload": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/varied/new_start_goal_combination-personal_demo_0002-goal2-seed912171/policy_io.npz",
+        "sha256": "1f628f27086ac88d67c1dd106b11ceb36a8c170779845f68e5b7664e72cb0c4e",
+        "bytes": 24269483
+      },
+      "endpoint": "original strict plus partial subgoals",
+      "timing": {
+        "recorded_duration_s": 73.4,
+        "simulated_execution_s": 73.0,
+        "cadence_fps": 5,
+        "inference_pauses_simulation": true
+      },
+      "initial_image": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/varied/new_start_goal_combination-personal_demo_0002-goal2-seed912171/initial.png",
+        "sha256": "53c499280c560b623a552163d832193f2f91e66e9c869a17a2a936b7de32b7f9",
+        "bytes": 487036
+      },
+      "final_image": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/varied/new_start_goal_combination-personal_demo_0002-goal2-seed912171/final.png",
+        "sha256": "4ebfc4d2325feb56003c3c83cf1664d9d2a5f11b88a6e0718288f407d73b1aab",
+        "bytes": 488926
+      },
+      "pickup_subgoal": {
+        "supported_lift": true,
+        "definition": "10mm above initial with simultaneous bilateral contact for 3 consecutive 20 Hz steps",
+        "operational_placement": true
+      },
+      "initial_state": {
+        "object_position_m": [
+          -0.2007394761471165,
+          -0.12648037692132735,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9262092468377112,
+          2.317206911496797e-17,
+          8.572937041298502e-18,
+          0.3770098554047622
+        ],
+        "unfinished": true,
+        "position_error_mm": 235.69776106131368,
+        "directed_yaw_error_deg": 44.29717752105002
+      },
+      "outcome": {
+        "strict": true,
+        "criteria": {
+          "position": true,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true
+        },
+        "position_error_mm": 3.996131715356522,
+        "directed_yaw_error_deg": 1.3097820536702298,
+        "independent_pose_recalculation_matches": true
+      },
+      "hosted_copies": {
+        "verified_matching_entries": [],
+        "status": "not_present_in_audited_419_item_hosted_index",
+        "index_sha256": "22960d797f19c49976049395dbd98b438506452e067c447f6dea062afa62ad5c",
+        "public_url": null
+      },
+      "status": "verified_archived_original; no verified hosted copy"
+    },
+    {
+      "slot": "fixed_matched_control",
+      "displayed_claim": "Fixed-goal continuation fails on the same configuration and seed as the selected varied success. Both received 3000 additional updates from the same broad12k weights.",
+      "display_context": {
+        "panel_n": 12,
+        "strict_successes": 0,
+        "matched_varied_strict": 10,
+        "source_take_families": 6,
+        "source_recording_pairs": 2,
+        "training_seeds": 1
+      },
+      "original_video": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/fixed/new_start_goal_combination-personal_demo_0002-goal2-seed912171/rollout.mp4",
+        "sha256": "4c89e23b9f11f8cab717979a40354344f91e8056828a0a1326e6d1c690fef8a8",
+        "bytes": 1728270,
+        "powerglide_path": "/var/tmp/typhon-ost-sweep-20261012/goal-evaluation/evaluation/fixed/new_start_goal_combination-personal_demo_0002-goal2-seed912171/rollout.mp4",
+        "powerglide_sha256_matches": true,
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 1024,
+              "height": 512,
+              "r_frame_rate": "5/1",
+              "avg_frame_rate": "5/1",
+              "duration": "73.400000",
+              "nb_read_frames": "367"
+            }
+          ],
+          "format": {
+            "duration": "73.400000"
+          }
+        }
+      },
+      "selection": "First eligible frozen scenario ID; fixed is matched to selected varied case; explicit SEQ/STATIC conditions.",
+      "visual_review": "Agent inspected decoded start/end and representative intermediate frames; ffprobe decoded/count-checked all frames. Not a manual frame-by-frame content review.",
+      "protocol": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation-protocol.json",
+        "sha256": "7b88c52cb302b4eb10d8df74d46ad4941eb41341d4ef2ab06554a1116ce302f4",
+        "bytes": 336249
+      },
+      "method": {
+        "method": "fixed",
+        "protocol_sha256": "7b88c52cb302b4eb10d8df74d46ad4941eb41341d4ef2ab06554a1116ce302f4",
+        "checkpoint_sha256": "007892426a061fe903e188d41f26b7432830becdfd583435e3373df728029fdd",
+        "checkpoint": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-fixed/step3000.pt",
+        "eval_script_sha256": "31f2ed20b674cb1774ce271f6c758a67f705e1bfd478a32c8c7a9250ea677f28",
+        "worker_sha256": "043e66934b7f800417d7408db6477be7a4dcc32cb8bf3e1273dff301e0c7d518",
+        "extra_guard": false,
+        "observation_version": "O2",
+        "domain_id": 29,
+        "model_rotation": "generic_interleaved",
+        "returned_rotation": "concatenated columns",
+        "H": 30,
+        "steps": 10,
+        "actor_truth": false
+      },
+      "parent_and_recipe": "broad-Pt12k plus 3000 joint updates, equal-update fixed/varied comparison",
+      "scene": {
+        "id": "new_start_goal_combination-personal_demo_0002-goal2-seed912171",
+        "source_demo_id": "demo_0002",
+        "status": "new_start_goal_combination",
+        "seed": 912171,
+        "config": {
+          "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/fixed/new_start_goal_combination-personal_demo_0002-goal2-seed912171/scenario.json",
+          "sha256": "c3c24487fa8383b5e8ade666cd3a7e18dad3a6bc8a9ebfb9e9df57adba4db69b",
+          "bytes": 8199
+        }
+      },
+      "observation_assistance": {
+        "privileged_held_annotation_conditioning": false,
+        "actor_object_truth": false,
+        "actor_truth_exception": "causal simulator-held annotation when declared",
+        "goal_image": false,
+        "supplied_motor_prefix": false,
+        "training_robot_actions": "supplied geometric expert; personal video supplies scenario observations",
+        "replay_visualization": "rendered camera views, not a dump of all model conditioning channels"
+      },
+      "outcome_record": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/fixed/new_start_goal_combination-personal_demo_0002-goal2-seed912171/episode.json",
+        "sha256": "6a2d667e68686a6479c3c0d06373d81d7c574d04d79a15fecaf899976da2d18f",
+        "bytes": 104736
+      },
+      "action_record": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/fixed/new_start_goal_combination-personal_demo_0002-goal2-seed912171/trajectory.jsonl.gz",
+        "sha256": "069e628f5ef09d7681a472ff1498050aa0fe9825fa8eda2dcf7b3cdb557939e0",
+        "bytes": 318077
+      },
+      "policy_payload": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/fixed/new_start_goal_combination-personal_demo_0002-goal2-seed912171/policy_io.npz",
+        "sha256": "c9828774a8eda1449e1d654d020e58225cee631d91c9267fef60a5ffd246a9f4",
+        "bytes": 24653455
+      },
+      "endpoint": "original strict plus partial subgoals",
+      "timing": {
+        "recorded_duration_s": 73.4,
+        "simulated_execution_s": 73.0,
+        "cadence_fps": 5,
+        "inference_pauses_simulation": true
+      },
+      "initial_image": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/fixed/new_start_goal_combination-personal_demo_0002-goal2-seed912171/initial.png",
+        "sha256": "53c499280c560b623a552163d832193f2f91e66e9c869a17a2a936b7de32b7f9",
+        "bytes": 487036
+      },
+      "final_image": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/fixed/new_start_goal_combination-personal_demo_0002-goal2-seed912171/final.png",
+        "sha256": "022baab2f4519550823230e85435d5e1ccfe29ac46c2ce7345e4dc95472e0efc",
+        "bytes": 497388
+      },
+      "pickup_subgoal": {
+        "supported_lift": true,
+        "definition": "10mm above initial with simultaneous bilateral contact for 3 consecutive 20 Hz steps",
+        "operational_placement": false
+      },
+      "initial_state": {
+        "object_position_m": [
+          -0.2007394761471165,
+          -0.12648037692132735,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9262092468377112,
+          2.317206911496797e-17,
+          8.572937041298502e-18,
+          0.3770098554047622
+        ],
+        "unfinished": true,
+        "position_error_mm": 235.69776106131368,
+        "directed_yaw_error_deg": 44.29717752105002
+      },
+      "outcome": {
+        "strict": false,
+        "criteria": {
+          "position": false,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": false,
+          "placement_height": true,
+          "released": true,
+          "stable": true
+        },
+        "position_error_mm": 180.5193922544014,
+        "directed_yaw_error_deg": 0.7813012746229143,
+        "independent_pose_recalculation_matches": true
+      },
+      "hosted_copies": {
+        "verified_matching_entries": [],
+        "status": "not_present_in_audited_419_item_hosted_index",
+        "index_sha256": "22960d797f19c49976049395dbd98b438506452e067c447f6dea062afa62ad5c",
+        "public_url": null
+      },
+      "status": "verified_archived_original; no verified hosted copy"
+    },
+    {
+      "slot": "varied_failure",
+      "displayed_claim": "Varied-goal continuation still fails the loading goal. It achieved 0/12 strict loading completions; visible movement toward the feeding square does not satisfy the fixture task.",
+      "display_context": {
+        "panel_n": 12,
+        "strict_successes": 0,
+        "source_take_families": 6,
+        "source_recording_pairs": 2
+      },
+      "original_video": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/varied/loading-transfer-personal_demo_0001-goal0-seed912171/rollout.mp4",
+        "sha256": "cbd0b5c99e4246e6fa4164daa910a724de08a6055eeb27f6cdb6db11964ca1af",
+        "bytes": 1238123,
+        "powerglide_path": "/var/tmp/typhon-ost-sweep-20261012/goal-evaluation/evaluation/varied/loading-transfer-personal_demo_0001-goal0-seed912171/rollout.mp4",
+        "powerglide_sha256_matches": true,
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 1024,
+              "height": 512,
+              "r_frame_rate": "5/1",
+              "avg_frame_rate": "5/1",
+              "duration": "73.400000",
+              "nb_read_frames": "367"
+            }
+          ],
+          "format": {
+            "duration": "73.400000"
+          }
+        }
+      },
+      "selection": "First eligible frozen scenario ID; fixed is matched to selected varied case; explicit SEQ/STATIC conditions.",
+      "visual_review": "Agent inspected decoded start/end and representative intermediate frames; ffprobe decoded/count-checked all frames. Not a manual frame-by-frame content review.",
+      "protocol": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation-protocol.json",
+        "sha256": "7b88c52cb302b4eb10d8df74d46ad4941eb41341d4ef2ab06554a1116ce302f4",
+        "bytes": 336249
+      },
+      "method": {
+        "method": "varied",
+        "protocol_sha256": "7b88c52cb302b4eb10d8df74d46ad4941eb41341d4ef2ab06554a1116ce302f4",
+        "checkpoint_sha256": "d5449244d96e55e60c3342af9fffe2ae64362b74cdf9c3d41e39b74995c9bcdb",
+        "checkpoint": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000.pt",
+        "eval_script_sha256": "31f2ed20b674cb1774ce271f6c758a67f705e1bfd478a32c8c7a9250ea677f28",
+        "worker_sha256": "043e66934b7f800417d7408db6477be7a4dcc32cb8bf3e1273dff301e0c7d518",
+        "extra_guard": false,
+        "observation_version": "O2",
+        "domain_id": 29,
+        "model_rotation": "generic_interleaved",
+        "returned_rotation": "concatenated columns",
+        "H": 30,
+        "steps": 10,
+        "actor_truth": false
+      },
+      "parent_and_recipe": "broad-Pt12k plus 3000 joint updates, equal-update fixed/varied comparison",
+      "scene": {
+        "id": "loading-transfer-personal_demo_0001-goal0-seed912171",
+        "source_demo_id": "demo_0001",
+        "status": "loading_transfer_no_B_labels",
+        "seed": 912171,
+        "config": {
+          "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/varied/loading-transfer-personal_demo_0001-goal0-seed912171/scenario.json",
+          "sha256": "f4cc10c85ec4ad9113949454396d2c9b190dbe89ac299eea07c8fd21402d6064",
+          "bytes": 8202
+        }
+      },
+      "observation_assistance": {
+        "privileged_held_annotation_conditioning": false,
+        "actor_object_truth": false,
+        "actor_truth_exception": "causal simulator-held annotation when declared",
+        "goal_image": false,
+        "supplied_motor_prefix": false,
+        "training_robot_actions": "supplied geometric expert; personal video supplies scenario observations",
+        "replay_visualization": "rendered camera views, not a dump of all model conditioning channels"
+      },
+      "outcome_record": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/varied/loading-transfer-personal_demo_0001-goal0-seed912171/episode.json",
+        "sha256": "468dd7b3d06b9fcea823fd5b8324e3fc19749c2179b99c22be9e937a018db9a9",
+        "bytes": 79545
+      },
+      "action_record": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/varied/loading-transfer-personal_demo_0001-goal0-seed912171/trajectory.jsonl.gz",
+        "sha256": "9ee3b776532e8b919801d79476ed9f3417b9a04437f10478bfbff9d4e6b60613",
+        "bytes": 322110
+      },
+      "policy_payload": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/varied/loading-transfer-personal_demo_0001-goal0-seed912171/policy_io.npz",
+        "sha256": "593a2aa636ddb425f4da2cf14a196eade4ef6ffd4b6d1f9b8a4cbb44451091e9",
+        "bytes": 24277806
+      },
+      "endpoint": "original strict plus partial subgoals",
+      "timing": {
+        "recorded_duration_s": 73.4,
+        "simulated_execution_s": 73.0,
+        "cadence_fps": 5,
+        "inference_pauses_simulation": true
+      },
+      "initial_image": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/varied/loading-transfer-personal_demo_0001-goal0-seed912171/initial.png",
+        "sha256": "cbd0e45fba68e9dbeb4b12e92766293d26c2e38eee92bddec4801ea2d8a57bf0",
+        "bytes": 485045
+      },
+      "final_image": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-evaluation/evaluation/varied/loading-transfer-personal_demo_0001-goal0-seed912171/final.png",
+        "sha256": "d08cd0f7849feff066109522351feaff7f307790b01dd71de81bf3ffdae94c98",
+        "bytes": 484705
+      },
+      "pickup_subgoal": {
+        "supported_lift": true,
+        "definition": "10mm above initial with simultaneous bilateral contact for 3 consecutive 20 Hz steps",
+        "operational_placement": false
+      },
+      "initial_state": {
+        "object_position_m": [
+          -0.3084651105738172,
+          0.08221457497548734,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.8890930203885663,
+          3.79836844083831e-17,
+          1.9714857028539407e-17,
+          0.4577265571237225
+        ],
+        "unfinished": true,
+        "position_error_mm": 433.7939773957071,
+        "directed_yaw_error_deg": 54.48100682117106
+      },
+      "outcome": {
+        "strict": false,
+        "criteria": {
+          "position": false,
+          "orientation": true,
+          "marked_face_up": false,
+          "footprint_inside_target": false,
+          "placement_height": true,
+          "released": true,
+          "stable": true,
+          "seated": false
+        },
+        "position_error_mm": 263.26671639308427,
+        "directed_yaw_error_deg": 1.6501309659549692,
+        "independent_pose_recalculation_matches": true
+      },
+      "hosted_copies": {
+        "verified_matching_entries": [],
+        "status": "not_present_in_audited_419_item_hosted_index",
+        "index_sha256": "22960d797f19c49976049395dbd98b438506452e067c447f6dea062afa62ad5c",
+        "public_url": null
+      },
+      "status": "verified_archived_original; no verified hosted copy"
+    },
+    {
+      "slot": "v3_oriented_region",
+      "displayed_claim": "V3 grasps and places with correct orientation inside the square, but misses the original 15 mm centring threshold. This is a labelled post-hoc region success, not an original strict completion.",
+      "display_context": {
+        "original_scenes": 155,
+        "initially_unfinished": 137,
+        "new_original_strict": 0,
+        "new_oriented_region_goals": 4,
+        "region_endpoint": "posthoc descriptive"
+      },
+      "original_video": {
+        "path": "/media/nm/Fast Drive/Typhon/evaluations/film-feeding-775-20261011/benchmark-native/v3-m6/film-demo_0002/rollout.mp4",
+        "sha256": "6f25cdc34da4623a49f69e8a17ba32d6e058efd91fbcdb0c26fa1f00b10a8360",
+        "bytes": 2331864,
+        "powerglide_path": "/var/tmp/typhon-film-feeding-20261011-v3/benchmark-native/v3-m6/film-demo_0002/rollout.mp4",
+        "powerglide_sha256_matches": true,
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 1024,
+              "height": 512,
+              "r_frame_rate": "5/1",
+              "avg_frame_rate": "5/1",
+              "duration": "73.400000",
+              "nb_read_frames": "367"
+            }
+          ],
+          "format": {
+            "duration": "73.400000"
+          }
+        }
+      },
+      "selection": "First eligible frozen scenario ID; fixed is matched to selected varied case; explicit SEQ/STATIC conditions.",
+      "visual_review": "Agent inspected decoded start/end and representative intermediate frames; ffprobe decoded/count-checked all frames. Not a manual frame-by-frame content review.",
+      "protocol": {
+        "path": "/media/nm/Fast Drive/Typhon/evaluations/film-feeding-775-20261011/suite.json",
+        "sha256": "8f6d2701165fb20356dd16f9e8f61bbf2d00f59c48fea24944538cf9efea62a2",
+        "bytes": 1219407
+      },
+      "posthoc_region": {
+        "model": "v3-m6",
+        "scenario_id": "film-demo_0002",
+        "cohort": "film_unchanged",
+        "category": "normal_feeding",
+        "initial_position_already_satisfied": "False",
+        "initial_full_pose_already_satisfied": "False",
+        "initial_region_already_satisfied": "False",
+        "initial_region_goal_already_satisfied": "False",
+        "final_region_placement": "True",
+        "new_region_placement": "True",
+        "pickup_and_new_region_placement": "True",
+        "region_task_success": "True",
+        "new_region_task_success": "True",
+        "strict_task_success": "False",
+        "verified_pickup": "True",
+        "strict_final_placement": "False",
+        "strict_new_position": "False",
+        "strict_pickup_and_new_position": "False",
+        "posthoc_object_goal_without_empty_gripper_open_rule": "False",
+        "posthoc_new_object_goal": "False",
+        "posthoc_new_position": "False",
+        "strict_failed_due_only_to_gripper_open_requirement": "False",
+        "all_terminal_gripper_samples_open": "True",
+        "no_terminal_gripper_object_contact": "True",
+        "stable_object": "True",
+        "initial_yaw_gap_deg": "44.297177521050024",
+        "final_yaw_error_deg": "2.701608359072348"
+      },
+      "method": {
+        "name": "v3-m6",
+        "checkpoint_sha256": "af87b969d15f646d2d5ba497369e473e06cbd4c7f13b3591934c5910e842b1ed",
+        "identity_evidence": "frozen suite SHA plus episode model/provenance; not filename-only"
+      },
+      "parent_and_recipe": "fresh pinned X-VLA-Pt",
+      "scene": {
+        "id": "film-demo_0002",
+        "source_demo_id": "demo_0002",
+        "status": "M7 training source",
+        "seed": 151002,
+        "config": {
+          "path": "/media/nm/Fast Drive/Typhon/evaluations/film-feeding-775-20261011/benchmark-native/v3-m6/film-demo_0002/scenario.json",
+          "sha256": "dacc0d1b9e3b71735b93beda97138641a6ee262d4c6f77e06d7bed7569bea3b3",
+          "bytes": 9591
+        }
+      },
+      "observation_assistance": {
+        "privileged_held_annotation_conditioning": true,
+        "actor_object_truth": false,
+        "actor_truth_exception": "causal simulator-held annotation when declared",
+        "goal_image": false,
+        "supplied_motor_prefix": false,
+        "training_robot_actions": "supplied geometric expert; personal video supplies scenario observations",
+        "replay_visualization": "rendered camera views, not a dump of all model conditioning channels"
+      },
+      "outcome_record": {
+        "path": "/media/nm/Fast Drive/Typhon/evaluations/film-feeding-775-20261011/benchmark-native/v3-m6/film-demo_0002/episode.json",
+        "sha256": "0f08b315d6356eb87837d1b425ca070cc773ff1b7948e72e846fec4dd5a8c542",
+        "bytes": 243587
+      },
+      "action_record": {
+        "path": "/media/nm/Fast Drive/Typhon/evaluations/film-feeding-775-20261011/benchmark-native/v3-m6/film-demo_0002/trajectory.jsonl.gz",
+        "sha256": "d122454b9b0ec8188030662c16fa99c08d59a7ea9d59eb92295239b1a69b2dd8",
+        "bytes": 308743
+      },
+      "policy_payload": {
+        "path": "/media/nm/Fast Drive/Typhon/evaluations/film-feeding-775-20261011/benchmark-native/v3-m6/film-demo_0002/policy_io.npz",
+        "sha256": "cd8fb4b24023774dbddaa2bde806238c7f6755a0bc6f7698a0474409ce2fd141",
+        "bytes": 24701835
+      },
+      "endpoint": "posthoc oriented-region plus unchanged original strict",
+      "timing": {
+        "recorded_duration_s": 73.4,
+        "simulated_execution_s": 73.0,
+        "cadence_fps": 5,
+        "inference_pauses_simulation": true
+      },
+      "initial_image": {
+        "path": "/media/nm/Fast Drive/Typhon/evaluations/film-feeding-775-20261011/benchmark-native/v3-m6/film-demo_0002/initial.png",
+        "sha256": "b64021ae05ceb3257857ebc77c02ee5ba06b49b35e9f3a71f3760e0866b15bab",
+        "bytes": 488432
+      },
+      "final_image": {
+        "path": "/media/nm/Fast Drive/Typhon/evaluations/film-feeding-775-20261011/benchmark-native/v3-m6/film-demo_0002/final.png",
+        "sha256": "aeb634822832c64b832cc7ac1d4ae6fb705429f0b6a0fc466cab420648df1aa0",
+        "bytes": 495008
+      },
+      "pickup_subgoal": {
+        "legacy_pickup": true,
+        "definition": "original 775 legacy 70 mm pickup; do not merge with newer 10 mm bilateral metric"
+      },
+      "initial_state": {
+        "object_position_m": [
+          -0.2007394761471165,
+          -0.12648037692132735,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9262092468377112,
+          2.317206911496797e-17,
+          8.572937041298502e-18,
+          0.3770098554047622
+        ],
+        "unfinished": true,
+        "position_error_mm": 325.80393123110156,
+        "directed_yaw_error_deg": 44.29717752105002
+      },
+      "outcome": {
+        "strict": false,
+        "criteria": {
+          "position": false,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true
+        },
+        "position_error_mm": 19.607423507396586,
+        "directed_yaw_error_deg": 2.701608359072341,
+        "independent_pose_recalculation_matches": true
+      },
+      "hosted_copies": {
+        "verified_matching_entries": [],
+        "status": "not_present_in_audited_419_item_hosted_index",
+        "index_sha256": "22960d797f19c49976049395dbd98b438506452e067c447f6dea062afa62ad5c",
+        "public_url": null
+      },
+      "status": "verified_archived_original; no verified hosted copy"
+    },
+    {
+      "slot": "v4_demo0006_partial",
+      "displayed_claim": "V4 grasps and places inside the square but leaves about 85 degrees yaw error. A useful failure case, not evidence that original corrective training improved V3.",
+      "display_context": {
+        "original_scenes": 155,
+        "initially_unfinished": 137,
+        "pickup_70mm": 1,
+        "new_original_strict": 0,
+        "missing_training_artifacts": "three original V4 correction arrays; rollout remains auditable"
+      },
+      "original_video": {
+        "path": "/media/nm/Fast Drive/Typhon/evaluations/film-feeding-775-20261011/benchmark-native/v4-m6/film-demo_0006/rollout.mp4",
+        "sha256": "a6ed74a2d67d5d163ffda9e9ce6ee32b9a18bafd70309d534f1f16af3ab4e436",
+        "bytes": 1782471,
+        "powerglide_path": "/var/tmp/typhon-film-feeding-20261011-v3/benchmark-native/v4-m6/film-demo_0006/rollout.mp4",
+        "powerglide_sha256_matches": true,
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 1024,
+              "height": 512,
+              "r_frame_rate": "5/1",
+              "avg_frame_rate": "5/1",
+              "duration": "73.400000",
+              "nb_read_frames": "367"
+            }
+          ],
+          "format": {
+            "duration": "73.400000"
+          }
+        }
+      },
+      "selection": "First eligible frozen scenario ID; fixed is matched to selected varied case; explicit SEQ/STATIC conditions.",
+      "visual_review": "Agent inspected decoded start/end and representative intermediate frames; ffprobe decoded/count-checked all frames. Not a manual frame-by-frame content review.",
+      "protocol": {
+        "path": "/media/nm/Fast Drive/Typhon/evaluations/film-feeding-775-20261011/suite.json",
+        "sha256": "8f6d2701165fb20356dd16f9e8f61bbf2d00f59c48fea24944538cf9efea62a2",
+        "bytes": 1219407
+      },
+      "posthoc_region": null,
+      "method": {
+        "name": "v4-m6",
+        "checkpoint_sha256": "c884e5052bc2734c1edf7d33498497cb26b27d88db1b32e3289fc46ea2e453dc",
+        "identity_evidence": "frozen suite SHA plus episode model/provenance; not filename-only"
+      },
+      "parent_and_recipe": "V3-M6 plus 500 additional joint updates; recovery-array gap retained",
+      "scene": {
+        "id": "film-demo_0006",
+        "source_demo_id": "demo_0006",
+        "status": "not M7 training source; already inspected development data",
+        "seed": 7417,
+        "config": {
+          "path": "/media/nm/Fast Drive/Typhon/evaluations/film-feeding-775-20261011/benchmark-native/v4-m6/film-demo_0006/scenario.json",
+          "sha256": "7983768be4d4274908edab54cf144266af506bd98ec056cb5f398200d387e339",
+          "bytes": 9633
+        }
+      },
+      "observation_assistance": {
+        "privileged_held_annotation_conditioning": true,
+        "actor_object_truth": false,
+        "actor_truth_exception": "causal simulator-held annotation when declared",
+        "goal_image": false,
+        "supplied_motor_prefix": false,
+        "training_robot_actions": "supplied geometric expert; personal video supplies scenario observations",
+        "replay_visualization": "rendered camera views, not a dump of all model conditioning channels"
+      },
+      "outcome_record": {
+        "path": "/media/nm/Fast Drive/Typhon/evaluations/film-feeding-775-20261011/benchmark-native/v4-m6/film-demo_0006/episode.json",
+        "sha256": "2ecfaef5223a7e210a474265aa21ce1b71ac6d4d4b115ab8f32f46c1122ffea3",
+        "bytes": 243461
+      },
+      "action_record": {
+        "path": "/media/nm/Fast Drive/Typhon/evaluations/film-feeding-775-20261011/benchmark-native/v4-m6/film-demo_0006/trajectory.jsonl.gz",
+        "sha256": "bb3db1831737f2616a4d07ffe730b9fc85a7b0b52bcf906971948bcab5f2c4e9",
+        "bytes": 307544
+      },
+      "policy_payload": {
+        "path": "/media/nm/Fast Drive/Typhon/evaluations/film-feeding-775-20261011/benchmark-native/v4-m6/film-demo_0006/policy_io.npz",
+        "sha256": "0942c0e474efddfc76fd71d2b8cc09d1a4b2299783d3acfd2b5f5b7f4fea75bd",
+        "bytes": 24707666
+      },
+      "endpoint": "original strict plus partial subgoals",
+      "timing": {
+        "recorded_duration_s": 73.4,
+        "simulated_execution_s": 73.0,
+        "cadence_fps": 5,
+        "inference_pauses_simulation": true
+      },
+      "initial_image": {
+        "path": "/media/nm/Fast Drive/Typhon/evaluations/film-feeding-775-20261011/benchmark-native/v4-m6/film-demo_0006/initial.png",
+        "sha256": "21a63cf0f242a3e53dec64fd9c7459d87051a1819726b626797423a9d0b4c5fc",
+        "bytes": 488633
+      },
+      "final_image": {
+        "path": "/media/nm/Fast Drive/Typhon/evaluations/film-feeding-775-20261011/benchmark-native/v4-m6/film-demo_0006/final.png",
+        "sha256": "af52a4b84ce9af9c3df0dce317dc90745a0a8d8925cd8e9c7d03842d8e0f3ec5",
+        "bytes": 494411
+      },
+      "pickup_subgoal": {
+        "legacy_pickup": true,
+        "definition": "original 775 legacy 70 mm pickup; do not merge with newer 10 mm bilateral metric"
+      },
+      "initial_state": {
+        "object_position_m": [
+          -0.07166566664184679,
+          -0.08633557666103109,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.1691750598989693,
+          7.864310542174733e-18,
+          -3.423800735574111e-17,
+          -0.9855860181172317
+        ],
+        "unfinished": true,
+        "position_error_mm": 199.52613321173575,
+        "directed_yaw_error_deg": 160.52028245896508
+      },
+      "outcome": {
+        "strict": false,
+        "criteria": {
+          "position": true,
+          "orientation": false,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true
+        },
+        "position_error_mm": 11.424590880940235,
+        "directed_yaw_error_deg": 85.33158878423161,
+        "independent_pose_recalculation_matches": true
+      },
+      "hosted_copies": {
+        "verified_matching_entries": [],
+        "status": "not_present_in_audited_419_item_hosted_index",
+        "index_sha256": "22960d797f19c49976049395dbd98b438506452e067c447f6dea062afa62ad5c",
+        "public_url": null
+      },
+      "status": "verified_archived_original; no verified hosted copy"
+    },
+    {
+      "slot": "video10_seq",
+      "displayed_claim": "Assisted VIDEO10 SEQ correction succeeds with RGB feedback, supplied acquisition/prefix, goal registration and reviewed event timing. No X-VLA policy or recovered human motor actions.",
+      "display_context": {
+        "conditions": 4,
+        "exact_repeat": 1,
+        "strict_successes_including_repeat": 5,
+        "human_takes": 1,
+        "status": "assisted development diagnostic"
+      },
+      "original_video": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/video10/data/executions/SEQ/robot.mp4",
+        "sha256": "fd394cd7778ee134b9a705bbd2f5a82a627e0930a5007db2fd45b0d4a5170f42",
+        "bytes": 1715155,
+        "powerglide_path": "/var/tmp/typhon-research-20261013/video10/executions/SEQ/robot.mp4",
+        "powerglide_sha256_matches": true,
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 1024,
+              "height": 512,
+              "r_frame_rate": "5/1",
+              "avg_frame_rate": "5/1",
+              "duration": "38.600000",
+              "nb_read_frames": "193"
+            }
+          ],
+          "format": {
+            "duration": "38.600000"
+          }
+        }
+      },
+      "selection": "First eligible frozen scenario ID; fixed is matched to selected varied case; explicit SEQ/STATIC conditions.",
+      "visual_review": "Agent inspected decoded start/end and representative intermediate frames; ffprobe decoded/count-checked all frames. Not a manual frame-by-frame content review.",
+      "method": {
+        "kind": "assisted RGB visual-servo controller, no learned policy",
+        "condition": "SEQ",
+        "adapter_sha256": "898f450212883939b4899d41e2110f0ec2a13d17f4255766f138097ee5dec8f5",
+        "source_code_sha256": "682cbdadf45ab96c84439d76d32f952a5e2613b1384cd4bb3847f34bc2dc228e",
+        "protocol_sha256": "6418048c8a985347b68e084c025eda682fef3227a2f20f58eafb2c448379b64c",
+        "config_sha256": "66e455904d54b4046f5e4e3ed6cfa442d03547a66909fe1f6e235970b32f49b7",
+        "reference_sha256": "92d8bc000175b67fcd3c05ede579dba5840f99697ca968da12864f1f71a177e0",
+        "actor_truth_access": false,
+        "prior_expert_actions_imported": false,
+        "shared_preclock_prefix_replayed": true,
+        "prefix_sha256": "a95fd5c5018488f2b77d2ef48b4f7a068dde9366ae35de98835fee70d4b069ab",
+        "seed": 151007
+      },
+      "protocol": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/video10/data/protocol.json",
+        "sha256": "6418048c8a985347b68e084c025eda682fef3227a2f20f58eafb2c448379b64c",
+        "bytes": 10987
+      },
+      "scene": {
+        "id": "demo_0007-goal-registered-SEQ",
+        "source_demo_id": "demo_0007",
+        "status": "previously_inspected_R_train_development",
+        "seed": 151007,
+        "config": {
+          "path": "/media/nm/Fast Drive/Typhon/research-20261012/video10/data/config.json",
+          "sha256": "66e455904d54b4046f5e4e3ed6cfa442d03547a66909fe1f6e235970b32f49b7",
+          "bytes": 3236
+        }
+      },
+      "observation_assistance": {
+        "actor_object_truth": false,
+        "goal_image_and_registration": true,
+        "supplied_acquisition_and_prefix_steps": 142,
+        "reviewed_release_timing": true,
+        "human_camera_metric_calibration": false,
+        "runtime_depth": "supplied nominal marked-face plane",
+        "prefix_sha256": "a95fd5c5018488f2b77d2ef48b4f7a068dde9366ae35de98835fee70d4b069ab"
+      },
+      "outcome_record": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/video10/data/executions/SEQ/result.json",
+        "sha256": "26f916041fee87d951eb86088428962d6b5e0185b93efc5448bfd1c22d37772a",
+        "bytes": 3743
+      },
+      "action_record": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/video10/data/executions/SEQ/actions.jsonl.gz",
+        "sha256": "fcc39d63324390be7c3eec852c22e3edea942d8f5e42b8cffaa0bfb848ff7449",
+        "bytes": 223875
+      },
+      "action_rows": 770,
+      "endpoint": "original strict, assisted execution",
+      "frame_clock": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/video10/data/executions/SEQ/frame_clock.json",
+        "sha256": "b6240fe94c8df4c13c19e0d1892dae2d6946034964e31c15355b6d259d595f14",
+        "bytes": 24055
+      },
+      "timing": {
+        "source_video_duration_s": 7.6,
+        "source_slowdown_factor": 4,
+        "supplied_prefix_s": 7.1,
+        "recorded_duration_s": 38.6,
+        "simulated_execution_s": 38.5
+      },
+      "human_source_provenance": {
+        "originals": [
+          {
+            "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.50.mp4",
+            "bytes": 7749966,
+            "sha256": "c387aff4b2ee77cb56ce9933ffee0e5684046513cda1cc3a1b212652a288064a"
+          },
+          {
+            "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.26.mp4",
+            "bytes": 5956581,
+            "sha256": "8afb4b0796615f56fba8fc1382ab9f047ad10585e32e356836ef5d3d61786cde"
+          },
+          {
+            "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/results/personal-m0-20261009/inspection/recording_0005/frame_000020.jpg",
+            "bytes": 36591,
+            "sha256": "f6e5a2960665a6daffc897c793830d646bf051a37e051de4f31392a45936c5fc"
+          },
+          {
+            "path": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video09-sequence-adapter/configs/experiments/video09/protocol.json",
+            "sha256": "19dfffb1a7d03ab9c0cccc2c69cd9aedbe6613f3abd385be4b91437f06fe9df9"
+          },
+          {
+            "path": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video09-sequence-adapter/scripts/video09_source.py",
+            "sha256": "682cbdadf45ab96c84439d76d32f952a5e2613b1384cd4bb3847f34bc2dc228e"
+          }
+        ],
+        "raw_preserved": true,
+        "sequential_no_seek": true,
+        "robot_expert_actions_imported": false
+      },
+      "derived_video": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/video10/data/comparison_videos/SEQ-human-vs-Panda.mp4",
+        "sha256": "f7df75862ed83ba03c7057a1a0bfafcc75a36476754a9fb2d821f9b51a711318",
+        "bytes": 3934300,
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 1024,
+              "height": 896,
+              "r_frame_rate": "5/1",
+              "avg_frame_rate": "5/1",
+              "duration": "38.600000",
+              "nb_read_frames": "193"
+            }
+          ],
+          "format": {
+            "duration": "38.600000"
+          }
+        },
+        "transforms": "Two original phone views above paired robot cameras; human source clock frozen during supplied prefix, then 4x slowed; condition/source-time/prefix text overlays; original 7.6 s human take preserved.",
+        "mapping": "frame_clock.json plus frozen protocol timing and source timestamps",
+        "derivation_code": {
+          "path": "/media/nm/Fast Drive/Typhon/research-20261012/working/del01-media-claims-review/scripts/video10_analysis.py",
+          "sha256": "bb4a937a4600939c843333479657587e34653b05971890bb4a70c03877b64dde",
+          "bytes": 8619
+        }
+      },
+      "pickup_subgoal": {
+        "supported_lift": true,
+        "definition": "independent saved supported lift in assisted execution"
+      },
+      "initial_state": {
+        "object_position_m": [
+          0.11914984804365202,
+          -0.11104606210455074,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.7434755809961403,
+          3.895352087848169e-17,
+          -2.703992895763584e-17,
+          -0.6687630824607856
+        ],
+        "unfinished": true,
+        "position_error_mm": 10.695666493862097,
+        "directed_yaw_error_deg": 83.94334110386468
+      },
+      "outcome": {
+        "strict": true,
+        "criteria": {
+          "position": true,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true
+        },
+        "position_error_mm": 10.890819511468829,
+        "directed_yaw_error_deg": 2.105099800403894,
+        "independent_pose_recalculation_matches": true
+      },
+      "hosted_copies": {
+        "verified_matching_entries": [],
+        "status": "not_present_in_audited_419_item_hosted_index",
+        "index_sha256": "22960d797f19c49976049395dbd98b438506452e067c447f6dea062afa62ad5c",
+        "public_url": null
+      },
+      "status": "verified_archived_original; no verified hosted copy"
+    },
+    {
+      "slot": "video10_static",
+      "displayed_claim": "VIDEO10 STATIC also succeeds with the same supplied prefix and goal registration. This matched control prevents attributing task success uniquely to intermediate human video.",
+      "display_context": {
+        "conditions": 4,
+        "exact_repeat": 1,
+        "strict_successes_including_repeat": 5,
+        "human_takes": 1,
+        "status": "assisted development diagnostic"
+      },
+      "original_video": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/video10/data/executions/STATIC/robot.mp4",
+        "sha256": "08328daf8b773c08523e7f5a8b80dae2e8d52668d7d0be1b08c1de0958d20f2f",
+        "bytes": 1647530,
+        "powerglide_path": "/var/tmp/typhon-research-20261013/video10/executions/STATIC/robot.mp4",
+        "powerglide_sha256_matches": true,
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 1024,
+              "height": 512,
+              "r_frame_rate": "5/1",
+              "avg_frame_rate": "5/1",
+              "duration": "38.600000",
+              "nb_read_frames": "193"
+            }
+          ],
+          "format": {
+            "duration": "38.600000"
+          }
+        }
+      },
+      "selection": "First eligible frozen scenario ID; fixed is matched to selected varied case; explicit SEQ/STATIC conditions.",
+      "visual_review": "Agent inspected decoded start/end and representative intermediate frames; ffprobe decoded/count-checked all frames. Not a manual frame-by-frame content review.",
+      "method": {
+        "kind": "assisted RGB visual-servo controller, no learned policy",
+        "condition": "STATIC",
+        "adapter_sha256": "898f450212883939b4899d41e2110f0ec2a13d17f4255766f138097ee5dec8f5",
+        "source_code_sha256": "682cbdadf45ab96c84439d76d32f952a5e2613b1384cd4bb3847f34bc2dc228e",
+        "protocol_sha256": "6418048c8a985347b68e084c025eda682fef3227a2f20f58eafb2c448379b64c",
+        "config_sha256": "66e455904d54b4046f5e4e3ed6cfa442d03547a66909fe1f6e235970b32f49b7",
+        "reference_sha256": "92d8bc000175b67fcd3c05ede579dba5840f99697ca968da12864f1f71a177e0",
+        "actor_truth_access": false,
+        "prior_expert_actions_imported": false,
+        "shared_preclock_prefix_replayed": true,
+        "prefix_sha256": "a95fd5c5018488f2b77d2ef48b4f7a068dde9366ae35de98835fee70d4b069ab",
+        "seed": 151007
+      },
+      "protocol": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/video10/data/protocol.json",
+        "sha256": "6418048c8a985347b68e084c025eda682fef3227a2f20f58eafb2c448379b64c",
+        "bytes": 10987
+      },
+      "scene": {
+        "id": "demo_0007-goal-registered-STATIC",
+        "source_demo_id": "demo_0007",
+        "status": "previously_inspected_R_train_development",
+        "seed": 151007,
+        "config": {
+          "path": "/media/nm/Fast Drive/Typhon/research-20261012/video10/data/config.json",
+          "sha256": "66e455904d54b4046f5e4e3ed6cfa442d03547a66909fe1f6e235970b32f49b7",
+          "bytes": 3236
+        }
+      },
+      "observation_assistance": {
+        "actor_object_truth": false,
+        "goal_image_and_registration": true,
+        "supplied_acquisition_and_prefix_steps": 142,
+        "reviewed_release_timing": true,
+        "human_camera_metric_calibration": false,
+        "runtime_depth": "supplied nominal marked-face plane",
+        "prefix_sha256": "a95fd5c5018488f2b77d2ef48b4f7a068dde9366ae35de98835fee70d4b069ab"
+      },
+      "outcome_record": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/video10/data/executions/STATIC/result.json",
+        "sha256": "776ff5bce32cb31374689de2eb1851fb8ebb86f9c6fee7dc5a0521bc69af0416",
+        "bytes": 3752
+      },
+      "action_record": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/video10/data/executions/STATIC/actions.jsonl.gz",
+        "sha256": "93d876d932010099ba11c387e009e6e81fff0ef84ffbd109a414a9883d162607",
+        "bytes": 222710
+      },
+      "action_rows": 770,
+      "endpoint": "original strict, assisted execution",
+      "frame_clock": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/video10/data/executions/STATIC/frame_clock.json",
+        "sha256": "b6240fe94c8df4c13c19e0d1892dae2d6946034964e31c15355b6d259d595f14",
+        "bytes": 24055
+      },
+      "timing": {
+        "source_video_duration_s": 7.6,
+        "source_slowdown_factor": 4,
+        "supplied_prefix_s": 7.1,
+        "recorded_duration_s": 38.6,
+        "simulated_execution_s": 38.5
+      },
+      "human_source_provenance": {
+        "originals": [
+          {
+            "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.50.mp4",
+            "bytes": 7749966,
+            "sha256": "c387aff4b2ee77cb56ce9933ffee0e5684046513cda1cc3a1b212652a288064a"
+          },
+          {
+            "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/data/personal/m0/raw/WhatsApp Video 2026-10-09 at 00.50.26.mp4",
+            "bytes": 5956581,
+            "sha256": "8afb4b0796615f56fba8fc1382ab9f047ad10585e32e356836ef5d3d61786cde"
+          },
+          {
+            "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/results/personal-m0-20261009/inspection/recording_0005/frame_000020.jpg",
+            "bytes": 36591,
+            "sha256": "f6e5a2960665a6daffc897c793830d646bf051a37e051de4f31392a45936c5fc"
+          },
+          {
+            "path": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video09-sequence-adapter/configs/experiments/video09/protocol.json",
+            "sha256": "19dfffb1a7d03ab9c0cccc2c69cd9aedbe6613f3abd385be4b91437f06fe9df9"
+          },
+          {
+            "path": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/video09-sequence-adapter/scripts/video09_source.py",
+            "sha256": "682cbdadf45ab96c84439d76d32f952a5e2613b1384cd4bb3847f34bc2dc228e"
+          }
+        ],
+        "raw_preserved": true,
+        "sequential_no_seek": true,
+        "robot_expert_actions_imported": false
+      },
+      "derived_video": {
+        "path": "/media/nm/Fast Drive/Typhon/research-20261012/video10/data/comparison_videos/STATIC-human-vs-Panda.mp4",
+        "sha256": "9cb3f2b4ff4f7e78a9dd0423042c087890b0109b8c179c5f31396862ef1803b2",
+        "bytes": 3905586,
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 1024,
+              "height": 896,
+              "r_frame_rate": "5/1",
+              "avg_frame_rate": "5/1",
+              "duration": "38.600000",
+              "nb_read_frames": "193"
+            }
+          ],
+          "format": {
+            "duration": "38.600000"
+          }
+        },
+        "transforms": "Two original phone views above paired robot cameras; human source clock frozen during supplied prefix, then 4x slowed; condition/source-time/prefix text overlays; original 7.6 s human take preserved.",
+        "mapping": "frame_clock.json plus frozen protocol timing and source timestamps",
+        "derivation_code": {
+          "path": "/media/nm/Fast Drive/Typhon/research-20261012/working/del01-media-claims-review/scripts/video10_analysis.py",
+          "sha256": "bb4a937a4600939c843333479657587e34653b05971890bb4a70c03877b64dde",
+          "bytes": 8619
+        }
+      },
+      "pickup_subgoal": {
+        "supported_lift": true,
+        "definition": "independent saved supported lift in assisted execution"
+      },
+      "initial_state": {
+        "object_position_m": [
+          0.11914984804365202,
+          -0.11104606210455074,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.7434755809961403,
+          3.895352087848169e-17,
+          -2.703992895763584e-17,
+          -0.6687630824607856
+        ],
+        "unfinished": true,
+        "position_error_mm": 10.695666493862097,
+        "directed_yaw_error_deg": 83.94334110386468
+      },
+      "outcome": {
+        "strict": true,
+        "criteria": {
+          "position": true,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true
+        },
+        "position_error_mm": 10.938481430614884,
+        "directed_yaw_error_deg": 0.4036746237802808,
+        "independent_pose_recalculation_matches": true
+      },
+      "hosted_copies": {
+        "verified_matching_entries": [],
+        "status": "not_present_in_audited_419_item_hosted_index",
+        "index_sha256": "22960d797f19c49976049395dbd98b438506452e067c447f6dea062afa62ad5c",
+        "public_url": null
+      },
+      "status": "verified_archived_original; no verified hosted copy"
+    }
+  ],
+  "shared_limits": [
+    "No recording-session holdout; six source takes share two recording pairs.",
+    "Original V4 three correction arrays missing; saved rollout remains verified.",
+    "Narrow initializer header does not prove matched initialization.",
+    "68 EVAL02 intervention trials unexecuted.",
+    "VIDEO10 observer path superiority unqualified; STATIC succeeds too.",
+    "Hosted dashboard remains a 9 October historical snapshot; this private review does not deploy it."
+  ]
+}
