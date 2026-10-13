@@ -1,0 +1,705 @@
+{
+  "nodes": [
+    {
+      "id": "outcome",
+      "type": "outcome",
+      "label": "Personally recorded manipulation data drives reliable Panda feeding and measured loading transfer",
+      "parent_id": "",
+      "x": 24,
+      "y": 128,
+      "color": "#2D3831",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Personally recorded",
+        "manipulation data drives",
+        "reliable Panda feeding and",
+        "measured loading transfer"
+      ],
+      "prefix": "Outcome",
+      "ticket_id": null
+    },
+    {
+      "id": "opp_evidence",
+      "type": "opportunity",
+      "label": "I need comparable results that show what actually worked",
+      "parent_id": "outcome",
+      "x": 394,
+      "y": 128,
+      "color": "#2D3831",
+      "width": 280,
+      "height": 134,
+      "lines": [
+        "I need comparable results",
+        "that show what actually",
+        "worked"
+      ],
+      "prefix": "Opportunity",
+      "ticket_id": null
+    },
+    {
+      "id": "sol_evidence_0",
+      "type": "solution",
+      "label": "Matched evaluations with explicit limitations",
+      "parent_id": "opp_evidence",
+      "x": 764,
+      "y": 128,
+      "color": "#30353D",
+      "width": 280,
+      "height": 112,
+      "lines": [
+        "Matched evaluations with",
+        "explicit limitations"
+      ],
+      "prefix": "Solution",
+      "ticket_id": null
+    },
+    {
+      "id": "exp_10995",
+      "type": "experiment",
+      "label": "Earlier 775-rollout comparison\nEVAL01 · #10995\nRUN / COMPLETE",
+      "parent_id": "sol_evidence_0",
+      "x": 1134,
+      "y": 194.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Earlier 775-rollout",
+        "comparison",
+        "EVAL01 · #10995",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 10995,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "result_10995",
+      "type": "result",
+      "label": "775 feeding trials reconciled:155 scenes x 5 models, no harness/TTC. On 137 unfinished scenes,70 mm pickups vanilla/V 1/V 2/V 3/V 4=0/0/0/10/1; new upright stable placements=0/0/0/5/1. Original strict passes all started complete.",
+      "parent_id": "exp_10995",
+      "x": 1504,
+      "y": 128.0,
+      "color": "#303840",
+      "width": 280,
+      "height": 288,
+      "lines": [
+        "775 feeding trials",
+        "reconciled:155 scenes x 5",
+        "models, no harness/TTC. On",
+        "137 unfinished scenes,70",
+        "mm pickups vanilla/V 1/V",
+        "2/V 3/V 4=0/0/0/10/1; new",
+        "upright stable",
+        "placements=0/0/0/5/1.",
+        "Original strict passes all",
+        "started complete."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10995,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "exp_10997",
+      "type": "experiment",
+      "label": "Earlier A/B harness comparison\nEVAL03 · #10997\nRUN / COMPLETE",
+      "parent_id": "sol_evidence_0",
+      "x": 1134,
+      "y": 587.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Earlier A/B harness",
+        "comparison",
+        "EVAL03 · #10997",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 10997,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "result_10997",
+      "type": "result",
+      "label": "Historical 400 AB rows reconciled:5 models x 2 modes x 20 A/20 B. All strict/pickup/place outcomes 0. Matched initial-state/config hashes retained. Harness had 30 s wall cap and one candidate; noTTC. Budget stops are separated from runtime errors in report/historical-ab 400.json. This synthetic panel is distinct from 775 feeding and the new 136+160 panels. ",
+      "parent_id": "exp_10997",
+      "x": 1504,
+      "y": 466.0,
+      "color": "#303840",
+      "width": 280,
+      "height": 398,
+      "lines": [
+        "Historical 400 AB rows",
+        "reconciled:5 models x 2",
+        "modes x 20 A/20 B. All",
+        "strict/pickup/place",
+        "outcomes 0. Matched",
+        "initial-state/config hashes",
+        "retained. Harness had 30 s",
+        "wall cap and one candidate;",
+        "noTTC. Budget stops are",
+        "separated from runtime",
+        "errors in report/historical-ab",
+        "400.json. This synthetic",
+        "panel is distinct from 775",
+        "feeding and the new",
+        "136+160 panels."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10997,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "exp_10996",
+      "type": "experiment",
+      "label": "204 paired rollouts: vanilla / broad 12k / intervention\nEVAL02 · #10996\nREVIEW",
+      "parent_id": "sol_evidence_0",
+      "x": 1134,
+      "y": 980.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "204 paired rollouts: vanilla /",
+        "broad 12k / intervention",
+        "EVAL02 · #10996",
+        "REVIEW"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 10996,
+      "status": "Review",
+      "result_type": "review"
+    },
+    {
+      "id": "result_10996",
+      "type": "result",
+      "label": "136 baseline trials complete: broad12k17/40 near starts,0/20 broad,8/8 already-complete.68 intervention trials unexecuted. EVAL02R reproduces existing family uncertainty; procedural freezing is not pristine holdout.",
+      "parent_id": "exp_10996",
+      "x": 1504,
+      "y": 914.0,
+      "color": "#38323E",
+      "width": 280,
+      "height": 288,
+      "lines": [
+        "136 baseline trials",
+        "complete: broad12k17/40",
+        "near starts,0/20 broad,8/8",
+        "already-complete.68",
+        "intervention trials",
+        "unexecuted. EVAL02R",
+        "reproduces existing family",
+        "uncertainty; procedural",
+        "freezing is not pristine",
+        "holdout."
+      ],
+      "prefix": "Result · review",
+      "ticket_id": 10996,
+      "status": "Review",
+      "result_type": "review"
+    },
+    {
+      "id": "exp_10980",
+      "type": "experiment",
+      "label": "Research report + independent review\nOPS03 · #10980\nRUN / COMPLETE",
+      "parent_id": "sol_evidence_0",
+      "x": 1134,
+      "y": 1274.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Research report +",
+        "independent review",
+        "OPS03 · #10980",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Review",
+      "ticket_id": 10980,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "result_10980",
+      "type": "result",
+      "label": "13 research requests reconciled with independent and planner review. Model identities, denominator limits and errata documented.",
+      "parent_id": "exp_10980",
+      "x": 1504,
+      "y": 1252.0,
+      "color": "#303840",
+      "width": 280,
+      "height": 200,
+      "lines": [
+        "13 research requests",
+        "reconciled with independent",
+        "and planner review. Model",
+        "identities, denominator",
+        "limits and errata",
+        "documented."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10980,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "exp_11036",
+      "type": "experiment",
+      "label": "Reconcile existing comparison claims\nEVAL02R · #11036\nRUN / COMPLETE",
+      "parent_id": "sol_evidence_0",
+      "x": 1134,
+      "y": 1568.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Reconcile existing",
+        "comparison claims",
+        "EVAL02R · #11036",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 11036,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "result_11036",
+      "type": "result",
+      "label": "775 original statistics reproduce exactly;296 later raw episodes and24 earlier extracts agree. Six training takes share two recording pairs. Goal-varied versus fixed:10 gains,0 losses on new combinations; loading0/12. EVAL02 remains136/204.",
+      "parent_id": "exp_11036",
+      "x": 1504,
+      "y": 1502.0,
+      "color": "#303840",
+      "width": 280,
+      "height": 288,
+      "lines": [
+        "775 original statistics",
+        "reproduce exactly;296 later",
+        "raw episodes and24 earlier",
+        "extracts agree. Six training",
+        "takes share two recording",
+        "pairs. Goal-varied versus",
+        "fixed:10 gains,0 losses on",
+        "new combinations;",
+        "loading0/12. EVAL02",
+        "remains136/204."
+      ],
+      "prefix": "Result",
+      "ticket_id": 11036,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "sol_evidence_1",
+      "type": "solution",
+      "label": "Reproducible artifact and model registry",
+      "parent_id": "opp_evidence",
+      "x": 764,
+      "y": 1858,
+      "color": "#30353D",
+      "width": 280,
+      "height": 112,
+      "lines": [
+        "Reproducible artifact and",
+        "model registry"
+      ],
+      "prefix": "Solution",
+      "ticket_id": null
+    },
+    {
+      "id": "exp_10979",
+      "type": "experiment",
+      "label": "Weights, traces and recovery backup\nOPS02 · #10979\nRUN / COMPLETE",
+      "parent_id": "sol_evidence_1",
+      "x": 1134,
+      "y": 1880.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Weights, traces and",
+        "recovery backup",
+        "OPS02 · #10979",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Backup",
+      "ticket_id": 10979,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "result_10979",
+      "type": "result",
+      "label": "Weights, traces and recovery states preserved with SHA-256 verification on Mint Fast Drive. Backup evidence; no new model-performance result.",
+      "parent_id": "exp_10979",
+      "x": 1504,
+      "y": 1858.0,
+      "color": "#303840",
+      "width": 280,
+      "height": 200,
+      "lines": [
+        "Weights, traces and",
+        "recovery states preserved",
+        "with SHA-256 verification",
+        "on Mint Fast Drive. Backup",
+        "evidence; no new",
+        "model-performance result."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10979,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "exp_10956",
+      "type": "experiment",
+      "label": "Research ledger\nOPS01 · #10956\nRUN / COMPLETE",
+      "parent_id": "sol_evidence_1",
+      "x": 1134,
+      "y": 2141.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 134,
+      "lines": [
+        "Research ledger",
+        "OPS01 · #10956",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Delivery",
+      "ticket_id": 10956,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "result_10956",
+      "type": "result",
+      "label": "58 original work items recorded with requests, findings, limitations and follow-ups. Administrative evidence; no robot-performance result.",
+      "parent_id": "exp_10956",
+      "x": 1504,
+      "y": 2108.0,
+      "color": "#303840",
+      "width": 280,
+      "height": 200,
+      "lines": [
+        "58 original work items",
+        "recorded with requests,",
+        "findings, limitations and",
+        "follow-ups. Administrative",
+        "evidence; no",
+        "robot-performance result."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10956,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "exp_10986",
+      "type": "experiment",
+      "label": "Exact model and dataset registry\nDATA01 · #10986\nRUN / COMPLETE",
+      "parent_id": "sol_evidence_1",
+      "x": 1134,
+      "y": 2424.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Exact model and dataset",
+        "registry",
+        "DATA01 · #10986",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 10986,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "result_10986",
+      "type": "result",
+      "label": "Checkpoint and dataset registry saved.19 headers verified, historical M 6 hashes reconciled and three new continuations recorded. V 4 continues V 3; broad-Pt 12 k starts fresh. Native RGB and privileged held/history contracts distinguished.",
+      "parent_id": "exp_10986",
+      "x": 1504,
+      "y": 2358.0,
+      "color": "#303840",
+      "width": 280,
+      "height": 288,
+      "lines": [
+        "Checkpoint and dataset",
+        "registry saved.19 headers",
+        "verified, historical M 6",
+        "hashes reconciled and three",
+        "new continuations",
+        "recorded. V 4 continues V 3;",
+        "broad-Pt 12 k starts fresh.",
+        "Native RGB and privileged",
+        "held/history contracts",
+        "distinguished."
+      ],
+      "prefix": "Result",
+      "ticket_id": 10986,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "exp_11007",
+      "type": "experiment",
+      "label": "Dashboard + video evidence\nDEL01 · #11007\nREVIEW",
+      "parent_id": "sol_evidence_1",
+      "x": 1134,
+      "y": 2828.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Dashboard + video",
+        "evidence",
+        "DEL01 · #11007",
+        "REVIEW"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 11007,
+      "status": "Review",
+      "result_type": "review"
+    },
+    {
+      "id": "result_11007",
+      "type": "result",
+      "label": "Media provenance inventory checked:419 existingR 2 entries, including 64 training videos=32 trimmed+32 marked, not spatially cropped. Tested personal/M 3 pilot URLs work; two V 4 M 6 pilot URLs return 404. Local evaluated videos remain archived. No newDrive upload/public publishing in this sweep. Repair missing media URLs separately; dashboard release remains private. ",
+      "parent_id": "exp_11007",
+      "x": 1504,
+      "y": 2696.0,
+      "color": "#38323E",
+      "width": 280,
+      "height": 420,
+      "lines": [
+        "Media provenance",
+        "inventory checked:419",
+        "existingR 2 entries,",
+        "including 64 training",
+        "videos=32 trimmed+32",
+        "marked, not spatially",
+        "cropped. Tested personal/M",
+        "3 pilot URLs work; two V 4",
+        "M 6 pilot URLs return 404.",
+        "Local evaluated videos",
+        "remain archived. No",
+        "newDrive upload/public",
+        "publishing in this sweep.",
+        "Repair missing media URLs",
+        "separately; dashboard",
+        "release remains private."
+      ],
+      "prefix": "Result · review",
+      "ticket_id": 11007,
+      "status": "Review",
+      "result_type": "review"
+    },
+    {
+      "id": "exp_11008",
+      "type": "experiment",
+      "label": "Matched video, subgoals, release timeline and four case cards\nDEL02 · #11008\nREVIEW",
+      "parent_id": "sol_evidence_1",
+      "x": 1134,
+      "y": 3232.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 178,
+      "lines": [
+        "Matched video, subgoals,",
+        "release timeline and four",
+        "case cards",
+        "DEL02 · #11008",
+        "REVIEW"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 11008,
+      "status": "Review",
+      "result_type": "review"
+    },
+    {
+      "id": "result_11008",
+      "type": "result",
+      "label": "Private research report and model registry prepared: 296 new scored episodes, model identities, negative results, matched-state checks, family uncertainty and reproduction. Public demonstration and broken-media-link repair remain separate; no publication.",
+      "parent_id": "exp_11008",
+      "x": 1504,
+      "y": 3166.0,
+      "color": "#38323E",
+      "width": 280,
+      "height": 310,
+      "lines": [
+        "Private research report and",
+        "model registry prepared:",
+        "296 new scored episodes,",
+        "model identities, negative",
+        "results, matched-state",
+        "checks, family uncertainty",
+        "and reproduction. Public",
+        "demonstration and",
+        "broken-media-link repair",
+        "remain separate; no",
+        "publication."
+      ],
+      "prefix": "Result · review",
+      "ticket_id": 11008,
+      "status": "Review",
+      "result_type": "review"
+    },
+    {
+      "id": "exp_11012",
+      "type": "experiment",
+      "label": "Draw and verify the research OST\nOPS05 · #11012\nRUN / COMPLETE",
+      "parent_id": "sol_evidence_1",
+      "x": 1134,
+      "y": 3570.0,
+      "color": "#3C3926",
+      "width": 280,
+      "height": 156,
+      "lines": [
+        "Draw and verify the",
+        "research OST",
+        "OPS05 · #11012",
+        "RUN / COMPLETE"
+      ],
+      "prefix": "Experiment",
+      "ticket_id": 11012,
+      "status": "Done",
+      "result_type": "evidence"
+    },
+    {
+      "id": "result_11012",
+      "type": "result",
+      "label": "Five-column OST verified with experiment/result alignment and all historical work retained. Updated12October to include the authorised24-hour plan and B/loading diagnosis.",
+      "parent_id": "exp_11012",
+      "x": 1504,
+      "y": 3526.0,
+      "color": "#303840",
+      "width": 280,
+      "height": 244,
+      "lines": [
+        "Five-column OST verified",
+        "with experiment/result",
+        "alignment and all historical",
+        "work retained.",
+        "Updated12October to",
+        "include the",
+        "authorised24-hour plan and",
+        "B/loading diagnosis."
+      ],
+      "prefix": "Result",
+      "ticket_id": 11012,
+      "status": "Done",
+      "result_type": "evidence"
+    }
+  ],
+  "edges": [
+    [
+      "outcome",
+      "opp_evidence"
+    ],
+    [
+      "opp_evidence",
+      "sol_evidence_0"
+    ],
+    [
+      "sol_evidence_0",
+      "exp_10995"
+    ],
+    [
+      "exp_10995",
+      "result_10995"
+    ],
+    [
+      "sol_evidence_0",
+      "exp_10997"
+    ],
+    [
+      "exp_10997",
+      "result_10997"
+    ],
+    [
+      "sol_evidence_0",
+      "exp_10996"
+    ],
+    [
+      "exp_10996",
+      "result_10996"
+    ],
+    [
+      "sol_evidence_0",
+      "exp_10980"
+    ],
+    [
+      "exp_10980",
+      "result_10980"
+    ],
+    [
+      "sol_evidence_0",
+      "exp_11036"
+    ],
+    [
+      "exp_11036",
+      "result_11036"
+    ],
+    [
+      "opp_evidence",
+      "sol_evidence_1"
+    ],
+    [
+      "sol_evidence_1",
+      "exp_10979"
+    ],
+    [
+      "exp_10979",
+      "result_10979"
+    ],
+    [
+      "sol_evidence_1",
+      "exp_10956"
+    ],
+    [
+      "exp_10956",
+      "result_10956"
+    ],
+    [
+      "sol_evidence_1",
+      "exp_10986"
+    ],
+    [
+      "exp_10986",
+      "result_10986"
+    ],
+    [
+      "sol_evidence_1",
+      "exp_11007"
+    ],
+    [
+      "exp_11007",
+      "result_11007"
+    ],
+    [
+      "sol_evidence_1",
+      "exp_11008"
+    ],
+    [
+      "exp_11008",
+      "result_11008"
+    ],
+    [
+      "sol_evidence_1",
+      "exp_11012"
+    ],
+    [
+      "exp_11012",
+      "result_11012"
+    ]
+  ],
+  "width": 1808,
+  "height": 3914
+}
