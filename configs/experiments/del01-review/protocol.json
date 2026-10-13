@@ -1,0 +1,35 @@
+{
+  "schema": "del01-media-claims-review-v1",
+  "ticket": 11007,
+  "start_utc": "2026-10-13T04:41:51.000Z",
+  "deadline_utc": "2026-10-13T05:26:51.000Z",
+  "scope": "Existing dashboard/media evidence qualification, at most eight deterministic media slots",
+  "selection": "first eligible scenario ID within each frozen required evidence slot; fixed control matches selected varied new-combination success",
+  "slots": [
+    "broad near-scene strict success",
+    "varied new-combination strict success",
+    "fixed on identical varied scenario",
+    "varied failure from existing evaluated panel",
+    "original V3 oriented region placement missing centring",
+    "original V4 demo0006 partial placement",
+    "VIDEO10 SEQ",
+    "VIDEO10 STATIC"
+  ],
+  "forbidden": [
+    "new training",
+    "new physics rollouts",
+    "new media generation",
+    "dashboard redesign",
+    "new hosting deployment",
+    "publication",
+    "submission",
+    "access-permission changes",
+    "pod restart"
+  ],
+  "outputs": [
+    "media_claim_manifest.json",
+    "CORRECTIONS.md",
+    "checksum_receipt.json"
+  ],
+  "stop": "45 minutes; label missing files/host access/provenance gaps rather than substitute or rerun"
+}
