@@ -1,0 +1,10 @@
+{
+  "offloaded_utc": "2026-10-13T19:07:50.691115+00:00",
+  "old_powerglide_path": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-fixed/step3000.pt",
+  "retained_mint_path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/goal-grounding/train-fixed/step3000.pt",
+  "bytes": 10765961010,
+  "sha256": "007892426a061fe903e188d41f26b7432830becdfd583435e3373df728029fdd",
+  "mint_verification_utc": "2026-10-13T19:07:13.227989+00:00",
+  "reason": "Previously authorized offload of inactive artifacts; make space for separate LOAD01 checkpoints. Existing file is preserved byte-for-byte on Mint.",
+  "restore": "Copy retained_mint_path to old_powerglide_path and verify sha256 before rerunning old fixed-model evaluation."
+}
