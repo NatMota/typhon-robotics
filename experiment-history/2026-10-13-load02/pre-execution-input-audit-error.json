@@ -1,0 +1,9 @@
+{
+  "time": 1791924004.666282,
+  "error": "KeyError: attention_mask in diagnostic token-count logging; processor supplies input_ids but no attention_mask",
+  "model_inferences": 0,
+  "policy_actions": 0,
+  "change": "Count non-padding input_ids for metadata only; leave processor/model inputs unchanged",
+  "clock_reset": false,
+  "scope": "pre-execution instrumentation correction, no experimental condition or policy retry"
+}
