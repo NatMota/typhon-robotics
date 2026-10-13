@@ -1,0 +1,65 @@
+{
+  "schema": "live01-t-closure-v1",
+  "closed_utc": "2026-10-13T18:50:46.280688+00:00",
+  "executed_source_commit": "291caa9f9cbf3345592d8020ef76f9f22927f102",
+  "runtime_tracked_diff": "",
+  "reanalysis": {
+    "live01_t_analyze.py": {
+      "exit": 0,
+      "stderr": ""
+    },
+    "live01_t_copy_probe.py": {
+      "exit": 0,
+      "stderr": ""
+    }
+  },
+  "byte_identical_reanalysis": true,
+  "analysis_sha256": {
+    "qualification.json": "3ad0937b5fe59031bbb9a36852e8bfac89660f41a522bb5b99a5feeae0b71685",
+    "consumer-views.json": "40ba9d481fae94d8a6627711d054a6f06dfa21d1285a1dc8213e5e6b9a6cf19f",
+    "copy-boundary-counterexample.json": "d06601737e8f538bfd2deabe10c145172fb4bcaf3c590c6e2c97a094799bd436"
+  },
+  "videos": [
+    {
+      "path": "labelled-film-demo_0006/rollout.mp4",
+      "sha256": "3cc0f3bc605a5fe2dbef738c258d4e4b711696a52c49a1d891672251a509b521",
+      "full_decode_exit": 0,
+      "info": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 1024,
+            "height": 512,
+            "duration": "73.400000",
+            "nb_frames": "367"
+          }
+        ]
+      }
+    },
+    {
+      "path": "shadow-film-demo_0006/rollout.mp4",
+      "sha256": "3cc0f3bc605a5fe2dbef738c258d4e4b711696a52c49a1d891672251a509b521",
+      "full_decode_exit": 0,
+      "info": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 1024,
+            "height": 512,
+            "duration": "73.400000",
+            "nb_frames": "367"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata_error_count": 1254,
+  "metadata_error_types": [
+    "unresolved frame"
+  ],
+  "experiment_status": "failed metadata qualification; behavior parity passed",
+  "rollouts_added_during_closure": 0,
+  "closure_note": "Read-only reanalysis and preservation completed after original 45-minute window; no repair/retry or new execution."
+}

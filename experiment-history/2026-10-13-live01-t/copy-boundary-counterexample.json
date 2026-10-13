@@ -1,0 +1,173 @@
+{
+  "scope": "CPU identity probe of real policy_observation(), no policy inference or simulator execution",
+  "source_file": "supervisor/feeding_loading/observations.py",
+  "source_sha256": "00d24cb266540e2a4e7787363413c55e17b2e4b813a7ef0b8525dfdd097d9831",
+  "copy_statement": "'rgb': {name: np.asarray(frame, dtype=np.uint8).copy() for name, frame in rgb.items()}",
+  "checks": {
+    "primary": {
+      "raw_has_identity": true,
+      "output_has_identity": false,
+      "same_object": false,
+      "same_pixels": true,
+      "shares_memory": false,
+      "raw_sha256": "4dbdc2b2b62cb00749785bc84202236dbc3777d74660611b8e58812f0cfde6c3",
+      "output_sha256": "4dbdc2b2b62cb00749785bc84202236dbc3777d74660611b8e58812f0cfde6c3"
+    },
+    "secondary": {
+      "raw_has_identity": true,
+      "output_has_identity": false,
+      "same_object": false,
+      "same_pixels": true,
+      "shares_memory": false,
+      "raw_sha256": "8ca35e321cdc168012e18af18d0f71e17d9f83f4d246ef33e54db595725c0fe3",
+      "output_sha256": "8ca35e321cdc168012e18af18d0f71e17d9f83f4d246ef33e54db595725c0fe3"
+    }
+  },
+  "first_live_counterexample": [
+    {
+      "type": "frame",
+      "frame": {
+        "frame_id": "render-000001-primary",
+        "camera": "primary",
+        "acquisition_kind": "existing simulation render call, not hardware exposure",
+        "acquisition_interval_monotonic_s": [
+          23943.176386926,
+          23943.17676845
+        ],
+        "clock": {
+          "control_tick": 40,
+          "control_time_s": 2.0,
+          "policy_origin_control_tick": 40,
+          "policy_tick": 0,
+          "policy_time_s": 0.0,
+          "simulation_time_at_read_s": 2.0000000000000013,
+          "physics_step_identity": null,
+          "physics_step_identity_status": "not exposed by the frozen wrapper"
+        }
+      }
+    },
+    {
+      "type": "frame",
+      "frame": {
+        "frame_id": "render-000002-secondary",
+        "camera": "secondary",
+        "acquisition_kind": "existing simulation render call, not hardware exposure",
+        "acquisition_interval_monotonic_s": [
+          23943.176813636,
+          23943.177099268
+        ],
+        "clock": {
+          "control_tick": 40,
+          "control_time_s": 2.0,
+          "policy_origin_control_tick": 40,
+          "policy_tick": 0,
+          "policy_time_s": 0.0,
+          "simulation_time_at_read_s": 2.0000000000000013,
+          "physics_step_identity": null,
+          "physics_step_identity_status": "not exposed by the frozen wrapper"
+        }
+      }
+    },
+    {
+      "type": "observation",
+      "observation": {
+        "frames": [
+          {
+            "source": null,
+            "usage": "current",
+            "acquisition_status": "unknown"
+          },
+          {
+            "source": null,
+            "usage": "current",
+            "acquisition_status": "unknown"
+          }
+        ],
+        "clock": {
+          "control_tick": 40,
+          "control_time_s": 2.0,
+          "policy_origin_control_tick": 40,
+          "policy_tick": 0,
+          "policy_time_s": 0.0,
+          "simulation_time_at_read_s": 2.0000000000000013,
+          "physics_step_identity": null,
+          "physics_step_identity_status": "not exposed by the frozen wrapper"
+        },
+        "read_interval_monotonic_s": [
+          23943.176321792,
+          23943.1771634
+        ],
+        "proprio_read_interval_monotonic_s": null,
+        "read_order": "frozen observe() reads proprio before primary and secondary render calls"
+      }
+    },
+    {
+      "type": "observer",
+      "observer": {
+        "authority": "none",
+        "estimate_interval_monotonic_s": [
+          23943.177185772,
+          23943.18050388
+        ],
+        "input_frames": [
+          {
+            "source": null,
+            "usage": "current",
+            "acquisition_status": "unknown"
+          },
+          {
+            "source": null,
+            "usage": "current",
+            "acquisition_status": "unknown"
+          }
+        ],
+        "input_clock": {
+          "control_tick": 40,
+          "control_time_s": 2.0,
+          "policy_origin_control_tick": 40,
+          "policy_tick": 0,
+          "policy_time_s": 0.0,
+          "simulation_time_at_read_s": 2.0000000000000013,
+          "physics_step_identity": null,
+          "physics_step_identity_status": "not exposed by the frozen wrapper"
+        },
+        "holding_variants": {
+          "legacy": {
+            "held": false,
+            "state": false,
+            "counter": 0,
+            "positive_age_s": null,
+            "last_confirmation_step": null
+          },
+          "aperture": {
+            "held": false,
+            "state": false,
+            "counter": 0,
+            "positive_age_s": null,
+            "last_confirmation_step": null
+          },
+          "opening": {
+            "held": false,
+            "state": false,
+            "counter": 0,
+            "positive_age_s": null,
+            "last_confirmation_step": null
+          },
+          "both": {
+            "held": false,
+            "state": false,
+            "counter": 0,
+            "positive_age_s": null,
+            "last_confirmation_step": null
+          }
+        },
+        "object_pose": "unknown",
+        "orientation": "unknown",
+        "completion": "unknown"
+      }
+    }
+  ],
+  "conclusion": "Render ndarray identity is not propagated across policy_observation copy. The new registry therefore cannot bind acquisition metadata to returned observation arrays or their history copies.",
+  "candidate_status": "failed; not repaired or rerun",
+  "proposed_followup": "Bind returned arrays to per-view render records captured inside the same existing observe call, validating unchanged pixels. Add an adapter-copy integration fixture before a separately frozen live qualification."
+}
