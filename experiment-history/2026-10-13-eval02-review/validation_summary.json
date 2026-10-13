@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "frozen_raw_775_metrics_checked": 775,
+  "later_raw_episodes_checked": 296,
+  "broad_saved_raw_record_extracts_checked": 24,
+  "original_775_exact_reproduction_receipt": {
+    "elapsed_s": 1.7086377143859863,
+    "script_sha256": "a045f3d978d3c28f4beca3776c86b5c4611bce9c43d22279bb10af983866f13f",
+    "files": [
+      {
+        "file": "validation-summary.json",
+        "exact_bytes_equal": true,
+        "sha256": "12da1ab44ab215a713c7eb5c6fc83d2c87136d761eebef52089c2a85d0ab1c0b",
+        "original_sha256": "12da1ab44ab215a713c7eb5c6fc83d2c87136d761eebef52089c2a85d0ab1c0b"
+      },
+      {
+        "file": "primary-paired-comparisons.csv",
+        "exact_bytes_equal": true,
+        "sha256": "d1f60a2475f106c2772f6268899f7b329be29f9fce3a25bd504fd653999d94ff",
+        "original_sha256": "d1f60a2475f106c2772f6268899f7b329be29f9fce3a25bd504fd653999d94ff"
+      },
+      {
+        "file": "exploratory-subgoal-comparisons.csv",
+        "exact_bytes_equal": true,
+        "sha256": "5f54f023fdb80dc8485652b0a2b4afbf95f945c09cf28b5145993dbc8403a418",
+        "original_sha256": "5f54f023fdb80dc8485652b0a2b4afbf95f945c09cf28b5145993dbc8403a418"
+      },
+      {
+        "file": "model-cohort-summary.csv",
+        "exact_bytes_equal": true,
+        "sha256": "ea48da5b072b2746eec945d4516023500a70e74783a1b5c10210811dc33555a3",
+        "original_sha256": "ea48da5b072b2746eec945d4516023500a70e74783a1b5c10210811dc33555a3"
+      },
+      {
+        "file": "all-775-episode-metrics.csv",
+        "exact_bytes_equal": true,
+        "sha256": "629d1b0a0b6cf47b32a4638f2029c100c11df84a98e822237c3d250e8e43b838",
+        "original_sha256": "629d1b0a0b6cf47b32a4638f2029c100c11df84a98e822237c3d250e8e43b838"
+      }
+    ],
+    "original_source": "/var/tmp/typhon-film-feeding-20261011-v3/analysis",
+    "no_new_rollouts": true
+  },
+  "later_original_group_estimates_exact": 22,
+  "later_original_paired_intervals_exact": 3,
+  "matched_initial_states": true,
+  "later_checkpoint_identities": 296,
+  "training_draws_recounted": 36000,
+  "new_physics_rollouts": 0,
+  "new_training_updates": 0,
+  "new_significance_tests": 0,
+  "parent_204_complete": false,
+  "script_sha256": "3bc1f559c794e26c3a3ce0338ba0805c7186667b1ee170d9f6532fa2646d6e76"
+}
