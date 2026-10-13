@@ -10,6 +10,7 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT));sys.path.i
 from video09_source import save,sha,serial,wrap,rz,project,descriptor,virtual_xy,robot_h,reference_at,at
 from exp20261011_hierarchy import color_measure
 from exp20261011_hierarchy_visual import GlyphYaw,rectified_secondary
+from exp20261011_hierarchy_runtime_v3 import ObservableBlock
 from supervisor.feeding_loading.environment import FeedingLoadingEnv
 from supervisor.feeding_loading.evaluation import score_episode
 
@@ -17,6 +18,7 @@ class ImageSensor:
     def __init__(self,cfg,protocol):
         self.cfg=cfg;self.protocol=protocol;self.h=robot_h(cfg,protocol)
         self.glyph=GlyphYaw(ROOT/'assets/duplo_31110pb074_v2/numeral_2_mask.png')
+        self.glyph_local=ObservableBlock(cfg).glyph_local
     def __call__(self,obs):
         assert set(obs)<={'rgb','proprio','task','cameras'}
         # A supplied depth hypothesis only supports rectification/Jacobian; no stored grasp transform.
@@ -26,8 +28,8 @@ class ImageSensor:
         for view in ['primary','secondary_rectified']:
             rgb=obs['rgb']['primary'] if view=='primary' else rectified_secondary(obs['rgb']['secondary'],self.cfg,plane)
             _,body=color_measure(rgb);glyph=self.glyph(rgb);body.pop('glyph',None)
-            if body['visible'] and glyph['observable']:
-                point=np.array(body['center_px']);a=glyph['yaw_rad']
+            if glyph['observable']:
+                point=np.array(glyph['center_px']);a=glyph['yaw_rad']
                 up=point+12*np.array([-math.sin(a),-math.cos(a)])
                 d=descriptor(self.h,point,up)
                 return {'valid':True,'feature':d,'view':view,'body':body,'glyph':glyph,'depth_hypothesis_m':plane,'status':'observed_RGB'}
@@ -136,7 +138,9 @@ def run(out,name,qualification=False):
         cam=cfg['cameras']['overhead'];floor=cfg['workspace']['table_z_m'];height=cfg['object']['height_m']
         # Ray to known resting top plane. No object-truth position or nominal grasp offset.
         xy=np.array(cam['position_m'][:2])+(xy-np.array(cam['position_m'][:2]))*(cam['position_m'][2]-floor-height)/(cam['position_m'][2]-floor)
-        yaw=wrap(protocol['registration']['world_rotation_rad']-f[2]);grasp_z=floor+timing['grasp_eef_height_above_table_m']
+        yaw=wrap(protocol['registration']['world_rotation_rad']-f[2])
+        xy-=rz(yaw)@sensor.glyph_local  # known printed-feature offset, not an assumed grasp transform
+        grasp_z=floor+timing['grasp_eef_height_above_table_m']
         move(np.r_[xy,timing['prefix_height_m']],yaw,-1,'supplied_approach')
         move(np.r_[xy,grasp_z],yaw,-1,'supplied_descend')
         phase='supplied_close'
@@ -145,7 +149,7 @@ def run(out,name,qualification=False):
         phase='qualification' if qualification else 'sequence';prefix_steps=env.steps-initial['control_steps']
         if qualification:
             base_obs=env.observe();base_pos=np.array(base_obs['proprio']['eef_position_m']);base_yaw=wrist_yaw(base_obs)
-            for axis,delta in [('x',.01),('y',.01),('yaw',.10)]:
+            for axis,delta in [('x',protocol['qualification']['perturbations']['dx_m']),('y',protocol['qualification']['perturbations']['dy_m']),('yaw',protocol['qualification']['perturbations']['dyaw_rad'])]:
                 before=env.observe();bf=sensor(before)
                 if not bf['valid']:raise RuntimeError('qualification_RGB_unavailable_before_'+axis)
                 target=base_pos.copy();target_yaw=base_yaw

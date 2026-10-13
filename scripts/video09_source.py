@@ -5,7 +5,7 @@ import cv2
 import numpy as np
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
-from video02_m0_observer import detect,make_templates,PRIMARY_CORNERS,SECONDARY_CORNERS
+from video02_m0_observer import detect,make_templates,largest_component,PRIMARY_CORNERS,SECONDARY_CORNERS
 from exp20261011_hierarchy_visual import project_points
 
 def serial(x):
@@ -60,11 +60,15 @@ def prepare(m0,out):
             if not ok:raise ValueError('sequential decoder ended before ffprobe frame clock')
             if t<source['start_s']:continue
             if t>source['end_s']:break
-            observed,_=detect(im,templates,previous)
+            observed,masks=detect(im,templates,previous)
             row={'source_demo_id':'demo_0007','recording_id':source['recording_id'],'view':view,'source_frame_index':i,'source_time_s':t,'clip_time_s':t-source['start_s'],'decoded_bgr_sha256':hashlib.sha256(im.tobytes()).hexdigest(),'observation':observed,'uv':None,'phi_rad':None,'status':'missing','interpolated':False,'flow_supported':False}
             if observed['detected']:
                 point=np.array([observed['centre_x_px'],observed['centre_y_px']]);previous=point
-                row['uv']=project(h,point).tolist();row['status']='position_only'
+                row['body_uv']=project(h,point).tolist();row['status']='body_only_no_glyph'
+                component=largest_component(masks[1])
+                if component is not None:
+                    point=np.asarray(component[2]);row['glyph_center_px']=point.tolist()
+                    row['uv']=project(h,point).tolist();row['status']='position_only'
                 a=observed['orientation_raw_clockwise_deg']
                 if view=='camera_a' and a is not None:
                     a=math.radians(a);up=point+12*np.array([math.sin(a),-math.cos(a)])
@@ -82,7 +86,7 @@ def prepare(m0,out):
         row['secondary_pair']={key:other[key] for key in ['recording_id','source_frame_index','source_time_s','clip_time_s','frame_path','status']}
         row['secondary_pair']['nominal_pair_residual_s']=other['clip_time_s']-row['clip_time_s']
         row['secondary_pair']['sync_uncertainty_s']=protocol['source']['sync_uncertainty_s']
-    save(out/'source_reference.json',{'schema':'video09-native-projected-reference-v1','rows':a,'duration_s':7.6,'interpretation':'apparent target-normalized centroid and directed glyph; no metric human 3D','paired_secondary_observations':'camera_b-native-observations.json'})
+    save(out/'source_reference.json',{'schema':'video09-native-projected-reference-v1','rows':a,'duration_s':7.6,'interpretation':'apparent target-normalized blue glyph centroid and directed glyph; separate visible body centroid retained; no metric human 3D','paired_secondary_observations':'camera_b-native-observations.json'})
     cfg=json.loads((ROOT/'evidence/m15/configs/personal_demo_0007.json').read_text())
     # New version: keep historical geometry/configuration intact and remove stale provenance.
     cfg.pop('m15_mapping',None);cfg.pop('m0_import',None)
@@ -90,7 +94,7 @@ def prepare(m0,out):
     cfg['object']['dimensions_source']={k:'VIDEO09_frozen_provisional_proxy' for k in ['width_m','depth_m','height_m']}
     cfg['object']['dimensions_status']='provisional_unmeasured';cfg['object']['mass_status']='provisional_unweighed'
     first=next(x for x in a if x['status']=='observed');yaw=wrap(protocol['registration']['world_rotation_rad']-first['phi_rad'])
-    cfg['initial_state'].update(position_xy_m=virtual_xy(first['uv'],protocol).tolist(),yaw_rad=yaw,yaw_choices_rad=[yaw],position_jitter_m=0.)
+    cfg['initial_state'].update(position_xy_m=virtual_xy(first['body_uv'],protocol).tolist(),yaw_rad=yaw,yaw_choices_rad=[yaw],position_jitter_m=0.)
     cfg['control']['max_steps']=protocol['controller']['max_steps']
     cfg['video09']={'source_demo_id':'demo_0007','initial_frame_index':first['source_frame_index'],'protocol_sha256':sha(ROOT/'configs/experiments/video09/protocol.json'),'physical_human_scale_known':False,'initial_state_is_virtual_reconstruction':True}
     save(out/'config.json',cfg);save(out/'protocol.json',protocol)

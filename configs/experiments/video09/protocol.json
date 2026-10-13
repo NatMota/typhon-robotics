@@ -1,5 +1,5 @@
 {
-  "schema": "video09-full-sequence-projected-path-v1",
+  "schema": "video09-full-sequence-projected-path-v2",
   "ticket": 11033,
   "frozen_utc": "2026-10-13T01:01:00Z",
   "source_demo": "demo_0007",
@@ -35,7 +35,7 @@
     "world_rotation_rad": 0.09786641047171031,
     "equation": "virtual_xy=origin+0.1*R(rotation)*[v-.5,u-.5]",
     "source_coordinates": "dimensionless apparent target-plane projection; not metric when elevated",
-    "robot_features": "RGB visible orange centroid and directed blue2. Both transformed via robot-camera target-plane homography; direction from two image points.",
+    "robot_features": "Matched blue2 visible glyph centroid and directed orientation in human and robot RGB. Visible orange centroid retained separately; no longer used as servo reference.",
     "calibrated_robot_camera": true,
     "human_camera_calibrated": false
   },
@@ -127,7 +127,7 @@
     "perturbations": {
       "dx_m": 0.01,
       "dy_m": 0.01,
-      "dyaw_rad": 0.1
+      "dyaw_rad": 0.3
     },
     "must_observe_directional_response": true,
     "freeze_before_condition_outcomes": true,
@@ -175,5 +175,11 @@
     ],
     "ordered_reference_scoring": "All conditions scored against original SEQ at the same declared source time; yaw only on supported samples"
   },
-  "planner_thread": "https://chatgpt.com/c/6ac8f7df-fef0-83eb-98c3-48bd796980a1"
+  "planner_thread": "https://chatgpt.com/c/6ac8f7df-fef0-83eb-98c3-48bd796980a1",
+  "qualification_revision": {
+    "before_condition_outcomes": true,
+    "prior": "q1",
+    "reason": "5deg physical turn was below effective rendered-glyph sensitivity; partial-body centroid changed with gripper visibility. Use matched printed glyph point and17deg qualification turn. Do not change condition timing/starts/goals.",
+    "utc": "2026-10-13T01:15:00Z"
+  }
 }
