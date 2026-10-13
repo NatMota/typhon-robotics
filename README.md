@@ -28,7 +28,7 @@ Broad Pt completed 17/40 near-personal feeding layouts versus vanilla's 0/40 in 
 
 Six broad-Pt training episodes are a subset of the verified catalogue, not six newly recorded demonstrations. Six source takes share two original recording pairs. Goal appearance and text co-vary, so numeric-language grounding is not isolated. The near-layout pooled result is 42.5%; the separate family-balanced estimate is 41.67% with its own 22.22–55.56% interval. The planned 68 intervention trials were not executed.
 
-[Reconciled comparisons and uncertainty](experiment-history/2026-10-13-eval02-review/CLAIM_STATUS.md) · [Eight verified media records and captions](dashboard/review/media_claim_manifest.json) · [Media corrections and delivery gaps](experiment-history/2026-10-13-del01-review/CORRECTIONS.md)
+[Private research synthesis](experiment-history/2026-10-12-ost-sweep/REPORT.md) · [Reconciled comparisons and uncertainty](experiment-history/2026-10-13-eval02-review/CLAIM_STATUS.md) · [Eight verified media records and captions](dashboard/review/media_claim_manifest.json) · [Media corrections and delivery gaps](experiment-history/2026-10-13-del01-review/CORRECTIONS.md)
 
 The hosted dashboard remains its labelled 9 October snapshot. The eight newly qualified records are verified in the private archive; this review has not published them.
 

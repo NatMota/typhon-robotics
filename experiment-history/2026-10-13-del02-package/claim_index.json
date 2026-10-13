@@ -1,0 +1,778 @@
+{
+  "schema": "typhon-private-claim-index-v1",
+  "created_utc": "2026-10-13T05:30:30.832934+00:00",
+  "ticket": 11008,
+  "synthesis": "experiment-history/2026-10-12-ost-sweep/REPORT.md",
+  "pinned_audits": {
+    "DATA07": "7620c1a68409ab2d2ca85f6fc69b368611f074f3",
+    "EVAL02R": "dda6e135bde90e732dbf69845ac25003b629921e",
+    "DEL01": "19aada67454b28821d3ed8660f3e02ed87a0286e"
+  },
+  "models": {
+    "original-v1": {
+      "checkpoint_sha256": "fc80f1d8af510ad1b70cf8e0969065567e1f67e3e415d2f27fcbf7f7c54f7986",
+      "identity_evidence": "eval_ledger: original775.models_sha256"
+    },
+    "original-v2": {
+      "checkpoint_sha256": "87b68bc9ff67c737957e8a8b5c334514cca1a36302ba75a5eabf11a326001b56",
+      "identity_evidence": "eval_ledger: original775.models_sha256"
+    },
+    "original-v3": {
+      "checkpoint_sha256": "af87b969d15f646d2d5ba497369e473e06cbd4c7f13b3591934c5910e842b1ed",
+      "identity_evidence": "eval_ledger: original775.models_sha256"
+    },
+    "original-v4": {
+      "checkpoint_sha256": "c884e5052bc2734c1edf7d33498497cb26b27d88db1b32e3289fc46ea2e453dc",
+      "identity_evidence": "eval_ledger: original775.models_sha256"
+    },
+    "narrow-3k": {
+      "checkpoint_sha256": "03a55fa46088368da0b8d92091ec3a4a5a539ae2772bf2cfd4c592b92b745a85",
+      "recorded_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m6-joint-20261009/training/final.pt",
+      "identity_evidence": "eval_ledger: verified_saved_headers"
+    },
+    "broad-3k": {
+      "checkpoint_sha256": "970bb00faaa19c80715df5a3b37c827dda2300efedcb6d49f7d26069d27de4a1",
+      "recorded_path": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/research-checkpoints/broad-pt-20261011/step3000.pt",
+      "identity_evidence": "eval_ledger: verified_saved_headers"
+    },
+    "broad-12k": {
+      "checkpoint_sha256": "59eb9e502c057d639e278e7f84d06c8fa8e3e513e52522dae47089a97b5c3736",
+      "recorded_path": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/research-checkpoints/broad-pt-20261011/step12000.pt",
+      "identity_evidence": "eval_ledger: verified_saved_headers"
+    },
+    "vanilla": {
+      "base_revision": "c1c4a64a7e03ac5b95c468bf1578f3d03651b53b",
+      "base_weights_sha256": "433acffc992f457b1737d35ae20f81a895521f38eadaf03c736b6c0b0af1c93e",
+      "domain_id": 3,
+      "identity_evidence": "pinned base identity; original suite native contract"
+    },
+    "fixed": {
+      "checkpoint_sha256": "007892426a061fe903e188d41f26b7432830becdfd583435e3373df728029fdd",
+      "parent_sha256": "59eb9e502c057d639e278e7f84d06c8fa8e3e513e52522dae47089a97b5c3736",
+      "updates": 3000,
+      "fit_seed": 121221,
+      "actual_unique_trajectories": 6,
+      "windows": 439,
+      "identity_evidence": "eval_ledger: later_training"
+    },
+    "varied": {
+      "checkpoint_sha256": "d5449244d96e55e60c3342af9fffe2ae64362b74cdf9c3d41e39b74995c9bcdb",
+      "parent_sha256": "59eb9e502c057d639e278e7f84d06c8fa8e3e513e52522dae47089a97b5c3736",
+      "updates": 3000,
+      "fit_seed": 121221,
+      "actual_unique_trajectories": 12,
+      "windows": 856,
+      "identity_evidence": "eval_ledger: later_training"
+    },
+    "recovery": {
+      "checkpoint_sha256": "5f3e4dde3e664d0a384a58742262380164902aafea75ee7560fa5b091c0870e4",
+      "parent_sha256": "59eb9e502c057d639e278e7f84d06c8fa8e3e513e52522dae47089a97b5c3736",
+      "updates": 3000,
+      "fit_seed": 121221,
+      "actual_unique_trajectories": 10,
+      "windows": 660,
+      "identity_evidence": "eval_ledger: later_training"
+    },
+    "video10-controller": {
+      "kind": "supplied visual-servo controller, no learned checkpoint",
+      "identity": {
+        "kind": "assisted RGB visual-servo controller, no learned policy",
+        "condition": "SEQ",
+        "adapter_sha256": "898f450212883939b4899d41e2110f0ec2a13d17f4255766f138097ee5dec8f5",
+        "source_code_sha256": "682cbdadf45ab96c84439d76d32f952a5e2613b1384cd4bb3847f34bc2dc228e",
+        "protocol_sha256": "6418048c8a985347b68e084c025eda682fef3227a2f20f58eafb2c448379b64c",
+        "config_sha256": "66e455904d54b4046f5e4e3ed6cfa442d03547a66909fe1f6e235970b32f49b7",
+        "reference_sha256": "92d8bc000175b67fcd3c05ede579dba5840f99697ca968da12864f1f71a177e0",
+        "actor_truth_access": false,
+        "prior_expert_actions_imported": false,
+        "shared_preclock_prefix_replayed": true,
+        "prefix_sha256": "a95fd5c5018488f2b77d2ef48b4f7a068dde9366ae35de98835fee70d4b069ab",
+        "seed": 151007
+      },
+      "assistance": {
+        "actor_object_truth": false,
+        "goal_image_and_registration": true,
+        "supplied_acquisition_and_prefix_steps": 142,
+        "reviewed_release_timing": true,
+        "human_camera_metric_calibration": false,
+        "runtime_depth": "supplied nominal marked-face plane",
+        "prefix_sha256": "a95fd5c5018488f2b77d2ef48b4f7a068dde9366ae35de98835fee70d4b069ab"
+      }
+    }
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "claim": "Personal observations inform scenarios and appearance; expert commands remain separately generated. Eighteen original generated episodes include the broad-six subset; later recovery has four verified suffixes from two families.",
+      "models": [
+        "original-v1",
+        "original-v2",
+        "original-v3",
+        "original-v4",
+        "broad-12k",
+        "recovery"
+      ],
+      "sources": [
+        "data07_report",
+        "data07_summary",
+        "data07_ledger"
+      ],
+      "locators": [
+        "summary.original_catalog_episodes",
+        "summary.broad_six_are_subset",
+        "summary.later_admitted_corrections",
+        "episode_ledger"
+      ],
+      "media": [],
+      "limit": "No validated phone-frame-to-native-robot-action alignment or isolated causal source-data advantage.",
+      "media_manifest_source": "del01_manifest"
+    },
+    {
+      "id": "C02",
+      "claim": "Model identity and lineage distinguish original V1\u2013V4, narrow single-take, fresh broad Pt, and the three equal-update later continuations.",
+      "models": [
+        "vanilla",
+        "original-v1",
+        "original-v2",
+        "original-v3",
+        "original-v4",
+        "narrow-3k",
+        "broad-3k",
+        "broad-12k",
+        "fixed",
+        "varied",
+        "recovery"
+      ],
+      "sources": [
+        "model_registry",
+        "eval_ledger",
+        "data07_report"
+      ],
+      "locators": [
+        "model_lineage_and_data",
+        "later_training",
+        "original775.models_sha256"
+      ],
+      "media": [],
+      "limit": "Original V4 is unmatched for extra updates; its three declared correction arrays and narrow initializer evidence remain incomplete.",
+      "media_manifest_source": "del01_manifest"
+    },
+    {
+      "id": "C03",
+      "claim": "Original 775 comparison has zero new strict completions for all five models. V3 has 10 pickups, 5 new region placements and 4 new oriented region goals; V4 has 1 pickup and 1 region placement.",
+      "models": [
+        "vanilla",
+        "original-v1",
+        "original-v2",
+        "original-v3",
+        "original-v4"
+      ],
+      "sources": [
+        "eval_ledger",
+        "original_subgoal_code",
+        "suite775"
+      ],
+      "locators": [
+        "original775.results",
+        "original775.eligible_definitions",
+        "region_keys/final_region/final_region_goal in code"
+      ],
+      "media": [
+        "v3_oriented_region",
+        "v4_demo0006_partial"
+      ],
+      "limit": "155/model; 137 initially unfinished; 116 new-region-position eligible. Legacy70mm pickup. Region placement excludes yaw; oriented-region goal adds yaw. Only oriented-region goal differs from strict solely by centre tolerance. Post-hoc; primary tests unchanged.",
+      "media_manifest_source": "del01_manifest"
+    },
+    {
+      "id": "C04",
+      "claim": "Broad12k shows local competence: exact-source6/6 grasps,5/6 placements,4/6 strict; near31/40,22/40,17/40 versus vanilla zero; broader both0/20; completed preservation8/8 versus1/8.",
+      "models": [
+        "broad-12k",
+        "vanilla"
+      ],
+      "sources": [
+        "eval_ledger",
+        "confirm_protocol",
+        "broad_source_report"
+      ],
+      "locators": [
+        "broad_development_and_source",
+        "later_panels.groups: panel=baselines"
+      ],
+      "media": [
+        "broad_near_success"
+      ],
+      "limit": "Later10mm bilateral lift definition. Source check post-hoc; native domain/input contracts differ. Pooled42.5% is separate from family-balanced41.67%,95%interval22.22\u201355.56%.",
+      "media_manifest_source": "del01_manifest"
+    },
+    {
+      "id": "C05",
+      "claim": "Matched varied/fixed continuations score10/12 versus0/12 strict on new start/goal combinations, each +3000 updates from broad12k.",
+      "models": [
+        "varied",
+        "fixed",
+        "broad-12k"
+      ],
+      "sources": [
+        "eval_ledger",
+        "goal_protocol",
+        "goal_train_protocol"
+      ],
+      "locators": [
+        "later_panels.groups: goal,new_start_goal_combination",
+        "later_training",
+        "later_panels.original_paired_varied_minus_fixed"
+      ],
+      "media": [
+        "varied_new_combination",
+        "fixed_matched_control"
+      ],
+      "limit": "One fitted seed, six familiar source families;6vs12trajectories and439vs856windows; equal updates/source exposure does not isolate every data factor.",
+      "media_manifest_source": "del01_manifest"
+    },
+    {
+      "id": "C06",
+      "claim": "Loading remains0/12 for base12k,fixed,varied,recovery. Grasp can succeed while destination/face/support fail. Text-only changes do not establish goal grounding.",
+      "models": [
+        "broad-12k",
+        "fixed",
+        "varied",
+        "recovery"
+      ],
+      "sources": [
+        "eval_ledger",
+        "goal_protocol",
+        "goal_text_probes",
+        "training_audit"
+      ],
+      "locators": [
+        "later_panels.groups: loading_transfer_no_B_labels",
+        "goal-text-probes",
+        "original data catalogue exposure"
+      ],
+      "media": [
+        "varied_failure"
+      ],
+      "limit": "No loading labels in verified V1\u2013V3 catalogue or later varied task. Image/goal text co-vary. This does not prove the internal reason or a sufficient remedy.",
+      "media_manifest_source": "del01_manifest"
+    },
+    {
+      "id": "C07",
+      "claim": "Later recovery continuation is0/4 on selected failure handoffs, despite verified teaching suffixes; only one admitted acquired-grasp start is near nominal.",
+      "models": [
+        "recovery",
+        "broad-12k",
+        "fixed",
+        "varied"
+      ],
+      "sources": [
+        "data07_report",
+        "data07_summary",
+        "eval_ledger",
+        "recovery_protocol"
+      ],
+      "locators": [
+        "later_saved_quarantined_evaluation",
+        "later_panels.groups: recovery",
+        "DATA07 section2"
+      ],
+      "media": [],
+      "limit": "Four handoffs from one selected family; source-disjoint diagnostic boundary preserved. Missing originalV4 arrays are a different gap.",
+      "media_manifest_source": "del01_manifest"
+    },
+    {
+      "id": "C08",
+      "claim": "OriginalV4 requests OPEN at3.60s; wrist target93degrees versus required174.15degrees for acquired grasp. Holding same chunk closed still leaves80.27degrees residual.",
+      "models": [
+        "original-v4"
+      ],
+      "sources": [
+        "release_report",
+        "release_provenance",
+        "release_summary"
+      ],
+      "locators": [
+        "Exact transition table",
+        "Two sources of error",
+        "Existing controlled check"
+      ],
+      "media": [
+        "v4_demo0006_partial"
+      ],
+      "limit": "One saved scene/seed7417. Proposed target, achieved wrist and brick yaw differ. No inference of hidden model reasoning or perception-only cause.",
+      "media_manifest_source": "del01_manifest"
+    },
+    {
+      "id": "C09",
+      "claim": "Local numeral edits affect initial proposals, while held-state/coherent edits and larger visibility cues do not produce correct grasp-relative orientation. A2x1pixel fragment is not the entire image.",
+      "models": [
+        "original-v4"
+      ],
+      "sources": [
+        "blue_report",
+        "blue_protocol",
+        "blue_coherent_report",
+        "blue_coherent_protocol",
+        "input_audit",
+        "visibility_protocol",
+        "visibility_summary"
+      ],
+      "locators": [
+        "initial vs held conditions",
+        "coherent-goal table",
+        "processor fragment measurements"
+      ],
+      "media": [],
+      "limit": "Cue dependence does not prove semantic recognition; edited images can be out of distribution. Proposals are not executed task successes.",
+      "media_manifest_source": "del01_manifest"
+    },
+    {
+      "id": "C10",
+      "claim": "Fixed-noise primitive prompts do not establish reliable opposing-axis or gripper instruction following.",
+      "models": [
+        "vanilla",
+        "original-v3",
+        "original-v4"
+      ],
+      "sources": [
+        "prompt_report",
+        "prompt_protocol",
+        "prompt_summary"
+      ],
+      "locators": [
+        "Partial and full effects",
+        "180 offline chunks;two states;three paired noises/model"
+      ],
+      "media": [],
+      "limit": "Native contracts differ; not evidence that adaptation destroyed working language control. No out-of-range proposals executed.",
+      "media_manifest_source": "del01_manifest"
+    },
+    {
+      "id": "C11",
+      "claim": "H10 lost the known H30 pickup; phase guards vetoed valid closure. Later bounded-command guard correction restored known grasp without fixing orientation; first ranked choice lost it.",
+      "models": [
+        "original-v4"
+      ],
+      "sources": [
+        "replan_report",
+        "replan_protocol",
+        "hierarchy_report",
+        "hierarchy_protocol",
+        "live06_report",
+        "live06_protocol",
+        "live07_report",
+        "live07_protocol",
+        "live08_report",
+        "live08_protocol"
+      ],
+      "locators": [
+        "H30vsH10 matched panel",
+        "paired phase routes",
+        "corrected execution interface",
+        "fixed40/41tick A/C intervention"
+      ],
+      "media": [],
+      "limit": "Inspected development scenes and repeated seeds. Infrastructure qualification is not reliable observation/completion/ranking authority. No generic safety claim.",
+      "media_manifest_source": "del01_manifest"
+    },
+    {
+      "id": "C12",
+      "claim": "VIDEO10's4reference conditions and1repeat succeed with supplied acquisition,goal registration and release timing;STATIC succeeds too. Independent path scoring does not corroborate full-sequence superiority.",
+      "models": [
+        "video10-controller"
+      ],
+      "sources": [
+        "video10_report",
+        "video10_protocol",
+        "video10_analysis",
+        "video11_report"
+      ],
+      "locators": [
+        "Physical outcomes",
+        "Pre-release path comparison",
+        "VIDEO11 plane/correspondence audit"
+      ],
+      "media": [
+        "video10_seq",
+        "video10_static"
+      ],
+      "limit": "One inspected R_train correction take; all motion is simulated. No X-VLA learning, calibrated human3D, generic motor transfer or incremental success benefit established.",
+      "media_manifest_source": "del01_manifest"
+    },
+    {
+      "id": "C13",
+      "claim": "Shared two recording pairs, development exposure, one later fit seed, proxy/scale assumptions and historical evidence gaps limit causal and generalisation claims.",
+      "models": [],
+      "sources": [
+        "eval_ledger",
+        "data07_report",
+        "video08_report",
+        "del01_report"
+      ],
+      "locators": [
+        "recording_dependence",
+        "gaps",
+        "calibration ambiguity"
+      ],
+      "media": [],
+      "limit": "No recording-session holdout; virtual dimensions are not measured physical accuracy.",
+      "media_manifest_source": "del01_manifest"
+    },
+    {
+      "id": "C14",
+      "claim": "Current media archive qualifies8originals and2existingderived files; none has an exact hosted-index match. EVAL02 remains136/204 with68interventions unrun.",
+      "models": [],
+      "sources": [
+        "del01_manifest",
+        "del01_validation",
+        "del01_report",
+        "eval_ledger",
+        "eval_report"
+      ],
+      "locators": [
+        "records[].hosted_copies",
+        "scope",
+        "parent planned vs executed"
+      ],
+      "media": [
+        "broad_near_success",
+        "varied_new_combination",
+        "fixed_matched_control",
+        "varied_failure",
+        "v3_oriented_region",
+        "v4_demo0006_partial",
+        "video10_seq",
+        "video10_static"
+      ],
+      "limit": "HostedOctober9snapshot is historical. No publication, upload or current hosted-video guarantee.",
+      "media_manifest_source": "del01_manifest"
+    }
+  ],
+  "sources": {
+    "eval_report": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-13-eval02-review/CLAIM_STATUS.md",
+      "sha256": "df704215d8402570e1c6eb15b078a2a04f1188b93635142afc8d307e4a021459",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/experiment-history/2026-10-13-eval02-review/CLAIM_STATUS.md"
+    },
+    "eval_ledger": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-13-eval02-review/comparison_ledger.json",
+      "sha256": "2ecf6744a4191c47653a9ff1a89c0494df2a86f861d63a3b9c80845210d68b66",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/experiment-history/2026-10-13-eval02-review/comparison_ledger.json"
+    },
+    "data07_report": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-13-data07-review/REPORT.md",
+      "sha256": "aafd29df6dcaf8b0138d53a47133df0c2e2e6efdc7727fc24219e6e9248aaffb",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/experiment-history/2026-10-13-data07-review/REPORT.md"
+    },
+    "data07_summary": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-13-data07-review/summary.json",
+      "sha256": "0a1eb5b10059d491ed317c799163a9b3e3bf5b461b7906b2ac96484519c23318",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/experiment-history/2026-10-13-data07-review/summary.json"
+    },
+    "data07_ledger": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-13-data07-review/episode_ledger.json",
+      "sha256": "b91a479ea6d9ec58805a7fe109ef32aff71995dac07d147676ea98c01c8dd779",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/experiment-history/2026-10-13-data07-review/episode_ledger.json"
+    },
+    "del01_manifest": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-13-del01-review/media_claim_manifest.json",
+      "sha256": "9237c837da2ffd8864ac39041ea9a479c1f412db93b692cc90c7bac57569a5cb",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/experiment-history/2026-10-13-del01-review/media_claim_manifest.json"
+    },
+    "del01_report": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-13-del01-review/CORRECTIONS.md",
+      "sha256": "aa18d5f25a097c237cc9cfd41b8ad6d71ed57261f3d5036e276e78ef7734dc03",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/experiment-history/2026-10-13-del01-review/CORRECTIONS.md"
+    },
+    "del01_validation": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-13-del01-review/validation_summary.json",
+      "sha256": "e2ad3601376313151a125d54535e177257f7f4295291a039e8c1ab0d3583239d",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/experiment-history/2026-10-13-del01-review/validation_summary.json"
+    },
+    "model_registry": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-12-ost-sweep/MODEL_REGISTRY.md",
+      "sha256": "9f5f923df0da697d40ca4547b81eaa7958e04b2b3ed1c9a5ded4e1b08d8c3abc",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/experiment-history/2026-10-12-ost-sweep/MODEL_REGISTRY.md"
+    },
+    "confirm_protocol": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-12-ost-sweep/protocols/confirmatory-v2/protocol.json",
+      "sha256": "6468eb4f46c4b6e824df70854650947617918683f1b6a6d5f013e35139a115aa",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/experiment-history/2026-10-12-ost-sweep/protocols/confirmatory-v2/protocol.json"
+    },
+    "goal_protocol": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-12-ost-sweep/protocols/goal-evaluation/evaluation-protocol.json",
+      "sha256": "7b88c52cb302b4eb10d8df74d46ad4941eb41341d4ef2ab06554a1116ce302f4",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/experiment-history/2026-10-12-ost-sweep/protocols/goal-evaluation/evaluation-protocol.json"
+    },
+    "goal_train_protocol": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-12-ost-sweep/protocols/goal-grounding/training-protocol.json",
+      "sha256": "2ce8142e11520eb7948c024c682301e621152ce9f5cd6430b93205d1eebbbc95",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/experiment-history/2026-10-12-ost-sweep/protocols/goal-grounding/training-protocol.json"
+    },
+    "recovery_protocol": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-12-ost-sweep/protocols/recovery-evaluation/evaluation-protocol.json",
+      "sha256": "1602de9819cb1d748a099e8283ede6913805824021fda5fb7b890486451a98cd",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/experiment-history/2026-10-12-ost-sweep/protocols/recovery-evaluation/evaluation-protocol.json"
+    },
+    "goal_text_probes": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-12-ost-sweep/goal-text-probes.json",
+      "sha256": "957963bee878ee4a8be781ca99e3c08b3dc033dc33952a4e55a922b8e8e478b9",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/experiment-history/2026-10-12-ost-sweep/goal-text-probes.json"
+    },
+    "original_subgoal_code": {
+      "storage": "private_repository",
+      "path": "scripts/film_feeding_subgoal_audit_20261011.py",
+      "sha256": "a61f2e3e2f3d286e6e0c0666cc1ca106fc9fc42311f1d5539fc556b9f92ec4ea",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/scripts/film_feeding_subgoal_audit_20261011.py"
+    },
+    "video10_report": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-13-video10/REPORT.md",
+      "sha256": "4077c89222121d565e47e3646a9ecd9d1b0cf389859c88b8bb907439b40db3fc",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/experiment-history/2026-10-13-video10/REPORT.md"
+    },
+    "video11_report": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-13-video11/REPORT.md",
+      "sha256": "73864fab21ca87c1815135b4fdb879c2186da7da86e4bfe4bafc99d6464b989e",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/experiment-history/2026-10-13-video11/REPORT.md"
+    },
+    "video08_report": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-13-video08/REPORT.md",
+      "sha256": "60b9b23e717abeb5f2bca6e1cc2efe26125d3b0cedd18cda68cd1e3c091452e6",
+      "pinned_commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/19aada67454b28821d3ed8660f3e02ed87a0286e/experiment-history/2026-10-13-video08/REPORT.md"
+    },
+    "suite775": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/evaluations/film-feeding-775-20261011/suite.json",
+      "sha256": "8f6d2701165fb20356dd16f9e8f61bbf2d00f59c48fea24944538cf9efea62a2",
+      "bytes": 1219407,
+      "public_url": null
+    },
+    "broad_source_report": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261011/broad-pt/artifacts/source-competence/SOURCE_COMPETENCE_REPORT.md",
+      "sha256": "6bb6c901b6b0ec49de23d38598fee5b721ffa9110883782856ba33a535d57310",
+      "bytes": 4287,
+      "public_url": null
+    },
+    "training_audit": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/audits/training-data-audit.json",
+      "sha256": "a14115ccd19363c611225277490c9b90dcd5c7a1252f8aef18fff5c9881b325b",
+      "bytes": 33049,
+      "public_url": null
+    },
+    "release_report": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261011/release-prompts/release-audit/REPORT.md",
+      "sha256": "0c2e307c017f893507ff5504a1038937b5139d3fbb1e3d2956ec9fd942faa8d2",
+      "bytes": 6010,
+      "public_url": null
+    },
+    "release_provenance": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261011/release-prompts/release-audit/source-provenance.json",
+      "sha256": "b9ffc0d8b7a7c35781467c546b63f301689be783f047590fc72496aee333ca2d",
+      "bytes": 1237,
+      "public_url": null
+    },
+    "release_summary": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261011/release-prompts/release-audit/summary.json",
+      "sha256": "4d51931b06dc34dba83583b80407ae2231245d0e6f55cdb8ebd1ebb2482c656b",
+      "bytes": 24574,
+      "public_url": null
+    },
+    "blue_report": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261011/blue2-causal-20261011-v1/REPORT.md",
+      "sha256": "b9dd36e2b789b8a494df9c57e16f699693eea6fcc602a091f10cc866e848f0a7",
+      "bytes": 12821,
+      "public_url": null
+    },
+    "blue_protocol": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261011/blue2-causal-20261011-v1/protocol.json",
+      "sha256": "1670299ec004772f4bd52590a8148dd54c68093fe5370c02b6af58a9b42f439f",
+      "bytes": 3811,
+      "public_url": null
+    },
+    "blue_coherent_report": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261011/blue2-causal-20261011-v2-coherent-goal/REPORT.md",
+      "sha256": "13c72497586785c815b4f1b035ac24c05427f9432f3b0c92ba2f70110fcbff95",
+      "bytes": 1946,
+      "public_url": null
+    },
+    "blue_coherent_protocol": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261011/blue2-causal-20261011-v2-coherent-goal/protocol.json",
+      "sha256": "a3a848ec2a0f77a26ffb669ac6f272e59104fc36acbf1dd758b8d6476c7d8d2e",
+      "bytes": 3879,
+      "public_url": null
+    },
+    "input_audit": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261011/orientation-input-audit/REPORT.md",
+      "sha256": "3fd5925d541258344341d68be3a0ca5af117369433e53cfefaa7abbf5c9eba2d",
+      "bytes": 4856,
+      "public_url": null
+    },
+    "visibility_protocol": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/visibility/protocol.json",
+      "sha256": "1374b8e9e592e509ffcdf8212463efb6a9db710e719b8bc0ff9c9fa7c6d4eff4",
+      "bytes": 3054,
+      "public_url": null
+    },
+    "visibility_summary": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261012/ost-sweep-20261012/visibility/summary.json",
+      "sha256": "4ca89f3c09c79b55ab1ff643cbc86ce1bbfeba730440d523f312407b45bb31c1",
+      "bytes": 41615,
+      "public_url": null
+    },
+    "prompt_report": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261011/release-prompts/prompt-controls-vanilla-v3-v4/REPORT.md",
+      "sha256": "f4a9bb9b50dcc5705e4c5c89092818d89f58437f8a7bee11aeb0f916dc46d396",
+      "bytes": 5394,
+      "public_url": null
+    },
+    "prompt_protocol": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261011/release-prompts/prompt-controls-vanilla-v3-v4/protocol.json",
+      "sha256": "2c6d37197176f8351a7d361410ed9bc845e16af13b663b3fd96128da9823a7cc",
+      "bytes": 3141,
+      "public_url": null
+    },
+    "prompt_summary": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261011/release-prompts/prompt-controls-vanilla-v3-v4/summary.json",
+      "sha256": "48c4380267560008b60c0e90d5e22e4fd127e06c89093d645f6da2e4dbd3d859",
+      "bytes": 280831,
+      "public_url": null
+    },
+    "replan_report": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261011/replanning-candidates/REPORT.md",
+      "sha256": "6c2c1c8ed7538ccfa85e365a19c0f79204ec765b2a0c0371478d4457ef978fd9",
+      "bytes": 6917,
+      "public_url": null
+    },
+    "replan_protocol": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261011/replanning-candidates/protocol.json",
+      "sha256": "2df92b3a22085353fa116ac1be323112d44bc95f70bbf350f1fc56a4f90d0644",
+      "bytes": 72042,
+      "public_url": null
+    },
+    "hierarchy_report": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261011/hierarchy-tranche4-final/REPORT-final.txt",
+      "sha256": "e8dfb836e23d31acd40d3c63da040c5db15581ab2a6bc8f03a989b22225fcb1d",
+      "bytes": 10065,
+      "public_url": null
+    },
+    "hierarchy_protocol": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261011/hierarchy-tranche4-final/paired-panel-v2/protocol.json",
+      "sha256": "0de522b5e48efa27bc7a74e803340acc8b5e084523008d2ee1a274ceb4ba674b",
+      "bytes": 50655,
+      "public_url": null
+    },
+    "video10_protocol": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261012/video10/data/protocol.json",
+      "sha256": "6418048c8a985347b68e084c025eda682fef3227a2f20f58eafb2c448379b64c",
+      "bytes": 10987,
+      "public_url": null
+    },
+    "video10_analysis": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261012/video10/data/analysis.json",
+      "sha256": "0167dfc75ac8b21497982a737a160b206353a1329a2e86a5d6d479bbcdb02703",
+      "bytes": 22304,
+      "public_url": null
+    },
+    "live06_report": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261012/live06/REPORT.md",
+      "sha256": "dd42a47efd5f93718711c141dc0102a5e43a36f77d8857736f1fe300e64a7733",
+      "bytes": 7525,
+      "public_url": null
+    },
+    "live06_protocol": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261012/live06/protocol.json",
+      "sha256": "543bd34876d43b2acd09baf18b5c6de42cb27f98e07f099f4f5f037bb73af4e2",
+      "bytes": 116163,
+      "public_url": null
+    },
+    "live07_report": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261012/live07/REPORT.md",
+      "sha256": "feae1ebe2539b45fa40345e0bd41caf44285dcf5d17fa7aeb46b48a434c84595",
+      "bytes": 8035,
+      "public_url": null
+    },
+    "live07_protocol": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261012/live07/protocol.json",
+      "sha256": "da5d02ca730f1453afdd969ffc708adc5b7a576e8f3a96f748d4077ced1e4282",
+      "bytes": 37371,
+      "public_url": null
+    },
+    "live08_report": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261012/live08/REPORT.md",
+      "sha256": "2e36265ffe9d9c842d7bb10122bc4bff08b6d23c0a8e7402fa86d13b4d7a0903",
+      "bytes": 5787,
+      "public_url": null
+    },
+    "live08_protocol": {
+      "storage": "Mint_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261012/live08/protocol.json",
+      "sha256": "cd374441a0fc92b9304851a62144a2e085c75248c2d4a635069b531b4d50b792",
+      "bytes": 14668,
+      "public_url": null
+    }
+  },
+  "fresh_checkpoint_rehash_performed": false,
+  "identity_scope": "Prior verified headers/weight hashes and episode provenance reused; DEL02 verifies these evidence files, not multi-GB weights."
+}

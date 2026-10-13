@@ -1,0 +1,335 @@
+[
+  {
+    "id": "C01",
+    "claim": "Personal observations inform scenarios and appearance; expert commands remain separately generated. Eighteen original generated episodes include the broad-six subset; later recovery has four verified suffixes from two families.",
+    "models": [
+      "original-v1",
+      "original-v2",
+      "original-v3",
+      "original-v4",
+      "broad-12k",
+      "recovery"
+    ],
+    "sources": [
+      "data07_report",
+      "data07_summary",
+      "data07_ledger"
+    ],
+    "locators": [
+      "summary.original_catalog_episodes",
+      "summary.broad_six_are_subset",
+      "summary.later_admitted_corrections",
+      "episode_ledger"
+    ],
+    "media": [],
+    "limit": "No validated phone-frame-to-native-robot-action alignment or isolated causal source-data advantage."
+  },
+  {
+    "id": "C02",
+    "claim": "Model identity and lineage distinguish original V1–V4, narrow single-take, fresh broad Pt, and the three equal-update later continuations.",
+    "models": [
+      "vanilla",
+      "original-v1",
+      "original-v2",
+      "original-v3",
+      "original-v4",
+      "narrow-3k",
+      "broad-3k",
+      "broad-12k",
+      "fixed",
+      "varied",
+      "recovery"
+    ],
+    "sources": [
+      "model_registry",
+      "eval_ledger",
+      "data07_report"
+    ],
+    "locators": [
+      "model_lineage_and_data",
+      "later_training",
+      "original775.models_sha256"
+    ],
+    "media": [],
+    "limit": "Original V4 is unmatched for extra updates; its three declared correction arrays and narrow initializer evidence remain incomplete."
+  },
+  {
+    "id": "C03",
+    "claim": "Original 775 comparison has zero new strict completions for all five models. V3 has 10 pickups, 5 new region placements and 4 new oriented region goals; V4 has 1 pickup and 1 region placement.",
+    "models": [
+      "vanilla",
+      "original-v1",
+      "original-v2",
+      "original-v3",
+      "original-v4"
+    ],
+    "sources": [
+      "eval_ledger",
+      "original_subgoal_code",
+      "suite775"
+    ],
+    "locators": [
+      "original775.results",
+      "original775.eligible_definitions",
+      "region_keys/final_region/final_region_goal in code"
+    ],
+    "media": [
+      "v3_oriented_region",
+      "v4_demo0006_partial"
+    ],
+    "limit": "155/model; 137 initially unfinished; 116 new-region-position eligible. Legacy70mm pickup. Region placement excludes yaw; oriented-region goal adds yaw. Only oriented-region goal differs from strict solely by centre tolerance. Post-hoc; primary tests unchanged."
+  },
+  {
+    "id": "C04",
+    "claim": "Broad12k shows local competence: exact-source6/6 grasps,5/6 placements,4/6 strict; near31/40,22/40,17/40 versus vanilla zero; broader both0/20; completed preservation8/8 versus1/8.",
+    "models": [
+      "broad-12k",
+      "vanilla"
+    ],
+    "sources": [
+      "eval_ledger",
+      "confirm_protocol",
+      "broad_source_report"
+    ],
+    "locators": [
+      "broad_development_and_source",
+      "later_panels.groups: panel=baselines"
+    ],
+    "media": [
+      "broad_near_success"
+    ],
+    "limit": "Later10mm bilateral lift definition. Source check post-hoc; native domain/input contracts differ. Pooled42.5% is separate from family-balanced41.67%,95%interval22.22–55.56%."
+  },
+  {
+    "id": "C05",
+    "claim": "Matched varied/fixed continuations score10/12 versus0/12 strict on new start/goal combinations, each +3000 updates from broad12k.",
+    "models": [
+      "varied",
+      "fixed",
+      "broad-12k"
+    ],
+    "sources": [
+      "eval_ledger",
+      "goal_protocol",
+      "goal_train_protocol"
+    ],
+    "locators": [
+      "later_panels.groups: goal,new_start_goal_combination",
+      "later_training",
+      "later_panels.original_paired_varied_minus_fixed"
+    ],
+    "media": [
+      "varied_new_combination",
+      "fixed_matched_control"
+    ],
+    "limit": "One fitted seed, six familiar source families;6vs12trajectories and439vs856windows; equal updates/source exposure does not isolate every data factor."
+  },
+  {
+    "id": "C06",
+    "claim": "Loading remains0/12 for base12k,fixed,varied,recovery. Grasp can succeed while destination/face/support fail. Text-only changes do not establish goal grounding.",
+    "models": [
+      "broad-12k",
+      "fixed",
+      "varied",
+      "recovery"
+    ],
+    "sources": [
+      "eval_ledger",
+      "goal_protocol",
+      "goal_text_probes",
+      "training_audit"
+    ],
+    "locators": [
+      "later_panels.groups: loading_transfer_no_B_labels",
+      "goal-text-probes",
+      "original data catalogue exposure"
+    ],
+    "media": [
+      "varied_failure"
+    ],
+    "limit": "No loading labels in verified V1–V3 catalogue or later varied task. Image/goal text co-vary. This does not prove the internal reason or a sufficient remedy."
+  },
+  {
+    "id": "C07",
+    "claim": "Later recovery continuation is0/4 on selected failure handoffs, despite verified teaching suffixes; only one admitted acquired-grasp start is near nominal.",
+    "models": [
+      "recovery",
+      "broad-12k",
+      "fixed",
+      "varied"
+    ],
+    "sources": [
+      "data07_report",
+      "data07_summary",
+      "eval_ledger",
+      "recovery_protocol"
+    ],
+    "locators": [
+      "later_saved_quarantined_evaluation",
+      "later_panels.groups: recovery",
+      "DATA07 section2"
+    ],
+    "media": [],
+    "limit": "Four handoffs from one selected family; source-disjoint diagnostic boundary preserved. Missing originalV4 arrays are a different gap."
+  },
+  {
+    "id": "C08",
+    "claim": "OriginalV4 requests OPEN at3.60s; wrist target93degrees versus required174.15degrees for acquired grasp. Holding same chunk closed still leaves80.27degrees residual.",
+    "models": [
+      "original-v4"
+    ],
+    "sources": [
+      "release_report",
+      "release_provenance",
+      "release_summary"
+    ],
+    "locators": [
+      "Exact transition table",
+      "Two sources of error",
+      "Existing controlled check"
+    ],
+    "media": [
+      "v4_demo0006_partial"
+    ],
+    "limit": "One saved scene/seed7417. Proposed target, achieved wrist and brick yaw differ. No inference of hidden model reasoning or perception-only cause."
+  },
+  {
+    "id": "C09",
+    "claim": "Local numeral edits affect initial proposals, while held-state/coherent edits and larger visibility cues do not produce correct grasp-relative orientation. A2x1pixel fragment is not the entire image.",
+    "models": [
+      "original-v4"
+    ],
+    "sources": [
+      "blue_report",
+      "blue_protocol",
+      "blue_coherent_report",
+      "blue_coherent_protocol",
+      "input_audit",
+      "visibility_protocol",
+      "visibility_summary"
+    ],
+    "locators": [
+      "initial vs held conditions",
+      "coherent-goal table",
+      "processor fragment measurements"
+    ],
+    "media": [],
+    "limit": "Cue dependence does not prove semantic recognition; edited images can be out of distribution. Proposals are not executed task successes."
+  },
+  {
+    "id": "C10",
+    "claim": "Fixed-noise primitive prompts do not establish reliable opposing-axis or gripper instruction following.",
+    "models": [
+      "vanilla",
+      "original-v3",
+      "original-v4"
+    ],
+    "sources": [
+      "prompt_report",
+      "prompt_protocol",
+      "prompt_summary"
+    ],
+    "locators": [
+      "Partial and full effects",
+      "180 offline chunks;two states;three paired noises/model"
+    ],
+    "media": [],
+    "limit": "Native contracts differ; not evidence that adaptation destroyed working language control. No out-of-range proposals executed."
+  },
+  {
+    "id": "C11",
+    "claim": "H10 lost the known H30 pickup; phase guards vetoed valid closure. Later bounded-command guard correction restored known grasp without fixing orientation; first ranked choice lost it.",
+    "models": [
+      "original-v4"
+    ],
+    "sources": [
+      "replan_report",
+      "replan_protocol",
+      "hierarchy_report",
+      "hierarchy_protocol",
+      "live06_report",
+      "live06_protocol",
+      "live07_report",
+      "live07_protocol",
+      "live08_report",
+      "live08_protocol"
+    ],
+    "locators": [
+      "H30vsH10 matched panel",
+      "paired phase routes",
+      "corrected execution interface",
+      "fixed40/41tick A/C intervention"
+    ],
+    "media": [],
+    "limit": "Inspected development scenes and repeated seeds. Infrastructure qualification is not reliable observation/completion/ranking authority. No generic safety claim."
+  },
+  {
+    "id": "C12",
+    "claim": "VIDEO10's4reference conditions and1repeat succeed with supplied acquisition,goal registration and release timing;STATIC succeeds too. Independent path scoring does not corroborate full-sequence superiority.",
+    "models": [
+      "video10-controller"
+    ],
+    "sources": [
+      "video10_report",
+      "video10_protocol",
+      "video10_analysis",
+      "video11_report"
+    ],
+    "locators": [
+      "Physical outcomes",
+      "Pre-release path comparison",
+      "VIDEO11 plane/correspondence audit"
+    ],
+    "media": [
+      "video10_seq",
+      "video10_static"
+    ],
+    "limit": "One inspected R_train correction take; all motion is simulated. No X-VLA learning, calibrated human3D, generic motor transfer or incremental success benefit established."
+  },
+  {
+    "id": "C13",
+    "claim": "Shared two recording pairs, development exposure, one later fit seed, proxy/scale assumptions and historical evidence gaps limit causal and generalisation claims.",
+    "models": [],
+    "sources": [
+      "eval_ledger",
+      "data07_report",
+      "video08_report",
+      "del01_report"
+    ],
+    "locators": [
+      "recording_dependence",
+      "gaps",
+      "calibration ambiguity"
+    ],
+    "media": [],
+    "limit": "No recording-session holdout; virtual dimensions are not measured physical accuracy."
+  },
+  {
+    "id": "C14",
+    "claim": "Current media archive qualifies8originals and2existingderived files; none has an exact hosted-index match. EVAL02 remains136/204 with68interventions unrun.",
+    "models": [],
+    "sources": [
+      "del01_manifest",
+      "del01_validation",
+      "del01_report",
+      "eval_ledger",
+      "eval_report"
+    ],
+    "locators": [
+      "records[].hosted_copies",
+      "scope",
+      "parent planned vs executed"
+    ],
+    "media": [
+      "broad_near_success",
+      "varied_new_combination",
+      "fixed_matched_control",
+      "varied_failure",
+      "v3_oriented_region",
+      "v4_demo0006_partial",
+      "video10_seq",
+      "video10_static"
+    ],
+    "limit": "HostedOctober9snapshot is historical. No publication, upload or current hosted-video guarantee."
+  }
+]

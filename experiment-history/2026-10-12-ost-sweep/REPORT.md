@@ -1,93 +1,95 @@
-# OST experiment sweep - 12 October 2026
+# Typhon: personal observations, learned manipulation and its limits
 
-Goal diversity improved held-out combinations of familiar starts and flat destinations. It did not establish task-B loading transfer. A small recovery-data continuation did not repair the quarantined failure states. Live Decisions API candidate ranking has a tested asynchronous prototype, but its first integration trial did not qualify for deployment.
+Private research synthesis, revised 13 October 2026. This updates the existing sweep report; its original text remains in Git. All robot executions discussed here are simulations.
 
-## Matched results
+**The strongest result is local learned manipulation plus better performance on new combinations after varied-goal training.** Broad Pt completed 17/40 near-personal feeding layouts against vanilla’s 0/40. From the same broad checkpoint, equal-update varied-goal continuation completed 10/12 new start/goal combinations against fixed-goal continuation’s 0/12. These are bounded results among familiar source families. Loading, broader starts, difficult recovery and direct human-to-robot motor transfer remain unresolved. [Audited comparisons](../2026-10-13-eval02-review/CLAIM_STATUS.md)
 
-| Panel | Model | Condition | n | Grasp ≥10 mm + bilateral contact | Stable released placement | Strict | Median yaw error |
-|---|---|---|---:|---:|---:|---:|---:|
-| goal | base12k | original_source | 12 | 10 | 10 | 7 | 0.88 deg |
-| goal | base12k | new_start_goal_combination | 12 | 10 | 0 | 0 | 0.91 deg |
-| goal | base12k | loading_transfer_no_B_labels | 12 | 12 | 0 | 0 | 0.98 deg |
-| goal | fixed | original_source | 12 | 12 | 9 | 7 | 0.71 deg |
-| goal | fixed | new_start_goal_combination | 12 | 12 | 0 | 0 | 0.86 deg |
-| goal | fixed | loading_transfer_no_B_labels | 12 | 12 | 0 | 0 | 0.77 deg |
-| goal | recovery | original_source | 12 | 12 | 9 | 9 | 0.48 deg |
-| goal | recovery | new_start_goal_combination | 12 | 11 | 0 | 0 | 0.37 deg |
-| goal | recovery | loading_transfer_no_B_labels | 12 | 10 | 0 | 0 | 0.41 deg |
-| goal | varied | original_source | 12 | 12 | 10 | 10 | 1.32 deg |
-| goal | varied | new_start_goal_combination | 12 | 12 | 10 | 10 | 0.93 deg |
-| goal | varied | loading_transfer_no_B_labels | 12 | 12 | 0 | 0 | 1.52 deg |
-| recovery | base12k | quarantined_failure_state | 4 | 0 | 2 | 0 | 60.57 deg |
-| recovery | fixed | quarantined_failure_state | 4 | 0 | 2 | 0 | 43.89 deg |
-| recovery | recovery | quarantined_failure_state | 4 | 0 | 1 | 0 | 61.22 deg |
-| recovery | varied | quarantined_failure_state | 4 | 0 | 2 | 0 | 62.85 deg |
-| baselines | broad-Pt-12000 | near_personal | 40 | 31 | 22 | 17 | 1.25 deg |
-| baselines | broad-Pt-12000 | broader_starts | 20 | 0 | 0 | 0 | 66.54 deg |
-| baselines | broad-Pt-12000 | already_completed | 8 | 0 | 8 | 8 | 2.50 deg |
-| baselines | vanilla-Pt-native | near_personal | 40 | 0 | 0 | 0 | 46.05 deg |
-| baselines | vanilla-Pt-native | broader_starts | 20 | 0 | 0 | 0 | 54.94 deg |
-| baselines | vanilla-Pt-native | already_completed | 8 | 0 | 4 | 1 | 36.26 deg |
+## What did the personal recordings contribute?
 
-All 296 new scored episodes have matched initial physical states within each comparison, completed reload checks and retained commands, observations, raw predictions and controller traces. 136 are two baseline conditions of the planned 204-suite; the 68 intervention trials were not run because no observer intervention qualified. 144 goal/source/loading and 16 recovery episodes are additional separate panels.
+The question was whether personally recorded manipulation could support meaningful Panda execution, and what additional learning or supervision makes that execution useful beyond a demonstrated configuration. Feeding moves the brick into a marked square; loading moves it from staging into a shallow fixture. A correct outcome requires both destination and orientation, followed by release and stability.
 
-Supported grasp requires ≥10 mm lift with bilateral contacts for ≥3 consecutive 20 Hz steps. This supplemental metric differs from the older 70 mm pickup. Operational placement requires containment, marked face up, correct support height, released and stable; strict adds 15 mm centre and 10 deg directed-yaw tolerance. Low yaw error alone can occur with the brick tipped on its side.
+The recordings supply the orange/blue object’s appearance, observed starting configurations and outcomes, task categories, temporal evidence and traceable source identities. The curated observation set includes normal feeding, pause/resume, corrective and already-completed examples; excluded material remains preserved. These are human observations, not native Panda action labels.
 
-## What the goal comparison supports
+The learned-policy route is:
 
-All new fits start from the same broad-Pt12k weights, run 3000 joint updates at batch 4, and consume 2000 samples per source family. Fixed uses six unique trajectories; varied uses 12. This is equal updates and source exposure, not equal unique trajectory count. There is one fit seed. New combinations are held out across six already-familiar source families; they are not six new human demonstrations.
-
-Varied obtains 10/12 strict novel-start/goal successes versus 0/12 fixed. Both get 0/12 loading. This supports supplying multiple destinations during teaching, with no evidence yet of loading transfer. Image geometry and requested goal text co-vary in the physical panel.
-
-Fixed-image, fixed-proprio, paired-noise goal-text tests do not establish language repair:
-- base12k: maximum horizontal endpoint shift 0.977mm across 9 pairs, for a 270.046 mm requested goal change.
-- fixed: maximum horizontal endpoint shift 1.381mm across 9 pairs, for a 270.046 mm requested goal change.
-- varied: maximum horizontal endpoint shift 0.977mm across 9 pairs, for a 270.046 mm requested goal change.
-
-The new model may rely on visible target layout; the text-only test does not separate all mechanisms and the input image can conflict with the requested loading goal. Do not claim new primitive-command understanding or proof the numeral is semantically recognised.
-
-Family-level uncertainty is saved in evaluation-groups.json and paired-varied-minus-fixed.json. These are exploratory source-family bootstrap intervals, conditional on one fitted checkpoint and the chosen simulator. Degenerate intervals for all-zero observations do not establish zero population success probability. Repeated seeds and nearby layouts do not count as independent human demonstrations.
-
-## Recovery and deferred learning
-
-Four qualified direct-recovery paths from two P_train families were added in one offline DAgger-style aggregation iteration. No online teacher is used during evaluation; this is not PPO/RL. All four models scored 0/4 on quarantined demo0006 handoffs. Other original diagnostic recovery states overlap training source families and were not included in this independent recovery panel.
-
-The separate staged set-down/regrasp teacher stress test completed 1/6 strict. Installed joint-limit checks stopped five executions: four began within limits, and one was already about 9.47e-6 rad outside a limit at handoff. See regrasp-joint-audit.json for initial margins and executed excursions; this is not a full collision qualification. The earlier two instrumentation attempts are explicitly invalid and excluded.
-
-Do not launch a high-level selector, residual RL, or offline Q/PPO as if reliable initiation/termination, recovery coverage and action support already exist. Their prerequisite failures are recorded in the board; they remain separate work.
-
-## Live Decisions API
-
-The API is used for candidate ranking, not trained here. Four independent X-VLA flow proposals are batched on GPU. A bounded asynchronous request sees current images and blue projected end-effector paths; response/context/deadline and current guards are checked before use. The 20 Hz controller does not wait on network I/O. Eight regression tests passed.
-
-In the development smoke, the native broad12k model was used, not the old V4 history wrapper. The ranker produced 0 activated selections: 56 valid API answers, 55 abstentions and 1 candidate choice; 48 responses missed the 500 ms observation-to-choice budget. API latency median 381 ms, p95 about 1002 ms, plus proposal generation and preview overhead. Three fallback chunks executed. Both ranker and first-admissible scheduler trials failed strict success.
-
-These projected tool paths are not predicted object futures or complete arm meshes. Prefix dropping rejected many delayed commands when gripping transitions would be skipped. This scheduling method needs revision before a fair matched comparison with unmodified execution. Low control-thread lateness is not proof of physically smooth robot motion.
-
-Offline frozen simulator-future ranking is separately labelled privileged lookahead: original six states yielded ghost 2/3 adequate chosen candidates with 9 abstentions, future RGB 5/5 with 7 abstentions. Conditional selected accuracy does not beat a uniform-random baseline by itself; abstentions and inadequate candidate sets must be included.
-
-## Personal video contribution and limits
-
-Current demonstrated pipeline: phone start/end observations and category -> virtual scene -> supplied geometric robot teacher -> generated robot RGB/actions -> supervised adaptation. Human corrections/pauses are not presently validated per-frame Franka labels. The one human-event alignment and endpoint retarget remain diagnostics.
-
-A proposed reusable translator should extract object-relative motion, orientation and contact events with confidence, then use a robot-specific kinematic/contact planner. Metric depth or calibrated paired views would help; planar homography does not recover lift height. Generalisation must be tested on withheld layouts and embodiments. This translator is not implemented by the current endpoint teacher.
-
-## Other audited outcomes
-
-Visibility: 108 frozen predictions. A larger held numeral cue changes encoded features more, but required-wrist error remains roughly 80 deg and opening waypoint 11. Crop-only fix rejected. Passive observers: four variants fail qualification. Classical completion panels and the separate static Decisions classifier fail recall gates, so no completion authority granted.
-
-Historical 400 A/B and 775 film panels are separate. A/B 400 used single-candidate harness / no TTC with 30 s wall cap. 775 used 155 matched scenes x 5 models with no harness, including both near-film and independent synthetic subsets. All original 775 strict passes started already complete; see frozen audit.
-
-R2 audit: 419 existing media entries; tested personal/training clips work but two requested V4 M6 pilot URLs returned 404. Videos still exist in verified local archives. No public publishing, new pod rental, or Google Drive upload was performed by this sweep.
-
-## Reproduction and evidence
-
-Run from the Powerglide repository using the existing .venv-sim and .venv-xvla. All original experiment scripts refuse output overwrite. Copy/version the output root for reruns; never delete frozen outputs.
-
-```sh
-.venv-sim/bin/python scripts/exp20261012_goal_text_continuations.py fixed
-.venv-sim/bin/python scripts/exp20261012_goal_text_continuations.py varied
-.venv-sim/bin/python scripts/exp20261012_sweep_report.py
+```text
+personal observations → virtual scenario and supplied goal
+→ supplied geometric controller → simulated robot RGB/actions
+→ X-VLA adaptation → bounded robot controller → independent scoring
 ```
 
-See each experiment protocol.json, training-protocol.json, per-model complete.json, reload-verification.json and code snapshot. Model SHA identities: MODEL_REGISTRY.md. New results live under /var/tmp/typhon-ost-sweep-20261012. The backup destination is Mint Fast Drive; consult the separate backup receipt for transfer and checksum status.
+The expert generates the grasp, clearance, transport and release commands using supplied geometry. The simulator contributes robot kinematics, rendering, contacts and evaluator truth. Camera registration, robot timing and the task goal are supplied engineering choices. The personal data demonstrably enter the pipeline; their incremental causal value over alternative source observations is not isolated by every comparison. [DATA07 lineage audit](../2026-10-13-data07-review/REPORT.md)
+
+## Which model was tested?
+
+Milestone names describe adaptation stages, not one uninterrupted chain. These are supervised adaptations; neither correction continuation is PPO or Q-learning. Short identities below resolve to full hashes in the [model registry](MODEL_REGISTRY.md) and [claim index](../2026-10-13-del02-package/CLAIM_INDEX.md).
+
+| Experiment/checkpoint | Distinct training recipe |
+|---|---|
+| Original V1-M6 `fc80f1d8` | Dense generated robot video and expert actions |
+| Original V2-M6 `87b68bc9` | Semantic chunks, dense history and declared held-state conditioning |
+| Original V3-M6 `af87b969` | Timestamped temporal action abstraction, sparse history and held conditioning |
+| Original V4-M6 `c884e505` | V3-M6 plus 500 additional joint updates with declared correction additions |
+| Narrow-M6-3k `03a55fa4` | Earlier single-take adaptation; initializer documentation remains incomplete |
+| Broad-Pt-3k / 12k `970bb00f` / `59eb9e50` | Fresh pinned Pt adaptation on all six P_train takes |
+| Fixed / varied / recovery `00789242` / `d5449244` / `5f3e4dde` | Separate 3,000-update continuations of broad-Pt12k |
+| VIDEO10 | Supplied RGB visual-servo controller; no X-VLA training or inference |
+
+The verified original catalogue contains 18 generated episodes. Broad training’s six episodes are an exact subset, not six extra human recordings. Original V4’s three declared correction arrays remain unavailable in the scoped backup audit. The later recovery model instead has four verified correction suffixes from two training families; these must not be substituted for the missing V4 material.
+
+Original V2–V4 use privileged causal held-state annotations. Broad Pt and its later continuations use current paired RGB, an RGB-derived crop, task text and native robot/action-history inputs. Their different input/domain contracts make cross-recipe comparisons broader than an isolated architecture test. Temporal history density, future action timestamps and how many commands execute before reobservation are separate settings.
+
+## What worked, under which outcome definition?
+
+Original strict success requires centre distance at most 15 mm, directed yaw error at most 10°, marked face upright, full footprint containment, correct support height, release/open gripper and stable settling. A small yaw error alone can coexist with the wrong destination or a tipped brick.
+
+The original comparison used 155 matched feeding scenes for each of vanilla and V1–V4: 775 rollouts without the harness. None newly completed an initially unfinished task under that strict endpoint. All strict passes preserved states that started complete. However, V3 made ten pickups, five new in-square placements and four newly oriented in-square goals; V4 made one pickup and one placement, with orientation wrong. Region placement waives centring and does not require yaw; oriented-region success adds yaw, differing from original strict only by centring. Both are post-hoc. Their denominators differ: pickups/new goals use 137 unfinished scenes; new placements use 116 eligible scenes. This is genuine partial manipulation, not newly established strict success.
+
+The later panels use a different supported-grasp definition: at least 10 mm lift with simultaneous bilateral contact for three consecutive control samples, rather than the original 70 mm pickup threshold. Their rates are not pooled.
+
+| Later evidence | Supported grasps | Stable placements | Strict completions |
+|---|---:|---:|---:|
+| Broad12k, six exact training starts | 6/6 | 5/6 | 4/6 |
+| Broad12k, near-personal layouts | 31/40 | 22/40 | 17/40 |
+| Vanilla, same near panel | 0/40 | 0/40 | 0/40 |
+| Broad12k and vanilla, broader starts | 0/20 each | 0/20 each | 0/20 each |
+
+The six-start check was separately frozen before execution but selected post-hoc; it establishes source competence, not holdout improvement. Narrow3k, broad3k and broad12k each failed all six trials on three inspected development families. Broad12k also preserved 8/8 already-completed configurations versus vanilla’s 1/8, while still moving the arm: preservation is not completion recognition.
+
+Near-layout success is 42.5% when pooled. The separate family-balanced estimate is 41.67%, with a 22.22–55.56% interval; that interval must not be attached to the pooled statistic. The [comparison ledger](../2026-10-13-eval02-review/comparison_ledger.json) retains the original estimands, clustered uncertainty and limitations.
+
+## What did varied goals change—and why does loading still fail?
+
+Fixed and varied continuations share broad12k initialization, a fresh optimizer, the same update budget and the same sampled source-family exposure. Fixed contains six trajectories; varied contains twelve, with different windowing and coverage. Varied achieved 10/12 new-combination strict successes versus fixed’s 0/12. This supports the varied-data recipe as tested, not isolation of one augmentation factor. One fit seed and six familiar source families constrain the inference.
+
+Loading remained 0/12 for broad12k, fixed, varied and the later recovery continuation. Many episodes grasped successfully but delivered to the feeding region instead of the fixture; low yaw error hid the destination failure. The audited V1–V3 catalogue contained feeding and completed-state material, not loading demonstrations. Varied-goal training also did not teach the fixture task.
+
+Fixed-image goal-text probes produced very small endpoint responses to a large requested destination change. Because target appearance and text co-vary in the successful physical comparisons, numeric-language grounding is unproven. The loading result therefore motivates distinct tests of destination grounding, fixture appearance and task-specific supervision; it does not establish that adding more identical feeding data would solve B. [Goal and loading evidence](../2026-10-13-del02-package/CLAIM_INDEX.md)
+
+## Why did orientation and interventions fail?
+
+For original V4-M6’s film-demo0006 execution, the policy requested opening at 3.60 seconds and the controller passed it through. Its wrist target was about 93°, while the actual acquired grasp required about 174°. The wrist also lagged its target, but waiting for that same target could not supply the missing rotation: the matched keep-closed check still left about 80° error. The diagnosis is an inappropriate grasp-relative target plus policy-selected release, not a controller independently declaring success.
+
+That does not prove failure to see the blue numeral. Controlled image edits changed initial wrist proposals, establishing local cue dependence; coherent held-state edits did not produce the needed correction. Some visible numeral fragments shrink to 2×1 pixels after resizing, not the entire camera image. Larger-cue tests did not repair held orientation. Representation, use of information and action conditioning remain distinct questions.
+
+Primitive-prompt tests likewise did not establish dependable opposite-direction or open/close control. These were saved-input proposal tests, with different native model contracts, not evidence that fine-tuning destroyed otherwise reliable instruction following.
+
+Executing ten rather than thirty predicted commands before reobserving lost the known pickup in the targeted V4 panel. An observable phase guard also vetoed valid closing actions and removed baseline grasps. Later execution-contract repairs restored a known grasp by checking the movement actually issued by the bounded controller, but neither orientation nor general completion authority became reliable. Live candidate selection lost that grasp; a fixed-wait follow-up implicated the first candidate choice on that inspected scene. More observation, guarding or proposals were not automatically improvements. [Mechanistic evidence index](../2026-10-13-del02-package/CLAIM_INDEX.md)
+
+## Did full human video drive the robot?
+
+VIDEO10 executed an ordered personal-video feature sequence through a supplied visual-servo adapter. All four reference conditions and an exact repeat completed the same correction. STATIC also succeeded, so intermediate video was not necessary for task success in this setup.
+
+All conditions shared supplied acquisition/alignment, goal-image registration, height/release scheduling and slowed source timing. They did not recover human Franka actions. The camera-feature path score initially favored the sequence; an independent projected-asset score disagreed. VIDEO11 identified a depth-plane contribution to that discrepancy without establishing a superior physical trajectory. The investigation closes with successful assisted execution and an unestablished incremental sequence benefit. [VIDEO10](../2026-10-13-video10/REPORT.md) · [VIDEO11](../2026-10-13-video11/REPORT.md)
+
+## Limits, reproduction and remaining decisions
+
+The six source takes and development takes share two recording pairs. Seeds, neighbouring layouts and frames are correlated observations, not independent people or recording sessions. Goal-recipe comparisons use one fitted seed; original V4 also lacks an extra-update-only control. The later recovery model scored 0/4 on selected failure handoffs despite qualified teaching suffixes. Its only acquired-grasp training start was nearly nominal, so difficult off-axis repair coverage remains narrow.
+
+Physical scale and paired-camera calibration are unresolved. Frozen simulation dimensions and mass are provisional, not measurements of the real DUPLO piece. Simulator scoring, privileged held cues, expert commands and assisted visual feedback must retain their separate roles.
+
+Saved-metric review is reproducible through `scripts/eval02_comparison_review.py` and `scripts/del01_media_review.py`; checked commands and paths are in the [package receipt](../2026-10-13-del02-package/package_status.json). Fresh inference/physics requires the recorded Powerglide environments and checkpoints. Retraining additionally requires original datasets and initialization evidence; missing V4 arrays prevent full historical reproduction. This writing task ran no model, physics or training.
+
+The [canonical media manifest](../2026-10-13-del01-review/media_claim_manifest.json) qualifies eight representative originals and two existing comparison copies. Their exact hashes were not found in the hosted index. The accessible dashboard remains its labelled October 9 snapshot. Hosting repair and importer integration are pending; no current public-video availability is implied.
+
+EVAL02 has 136 completed baseline trials; 68 intervention trials remain unexecuted. Hierarchical selectors, residual RL and Q/PPO remain deferred because observation, execution and recovery prerequisites failed qualification. Set-of-Mark was withdrawn; simulator migration remains parked. LIVE01 and observation/control prerequisites remain unresolved. Further learning should follow qualified grasp-state coverage and execution, while a new independent recording session would strengthen generalisation evidence. The immediate deliverable is a private, auditable research package, not a finished submission or a claim that every OST hypothesis succeeded.

@@ -1,0 +1,138 @@
+{
+  "schema": "typhon-private-package-status-v1",
+  "ticket": 11008,
+  "created_utc": "2026-10-13T05:32:24.333001+00:00",
+  "stage": "private_review_ready",
+  "scope": "Private review package; not submission, publication or complete OST execution",
+  "main_report": "experiment-history/2026-10-12-ost-sweep/REPORT.md",
+  "word_count_whitespace": 1777,
+  "previous_report": {
+    "commit": "19aada67454b28821d3ed8660f3e02ed87a0286e",
+    "sha256": "a85848d0ece012059e02c37c3349b95ac57552752c727c135570f09c528f0d34",
+    "preserved_in_git": true
+  },
+  "current_report_sha256": "efe29ba248782ab10154b4ec6fcf0c7b9950a71ae1b0f995ac6174c6602ebeae",
+  "claim_index": "claim_index.json",
+  "source_review": "46 indexed evidence/protocol files read and hashed;14 claim groups,12 method identities;37 numerical checks against existing audited ledger",
+  "manual_review": [
+    "All report numerical anchors matched to claim IDs/evidence",
+    "Region placement excludes yaw; oriented region adds yaw and differs from strict only by centring",
+    "Proposed wrist, achieved wrist and object yaw remain distinct",
+    "Assisted controller versus learned policy attribution preserved",
+    "Later recovery is separate from original V4",
+    "Archive-only evidence remains explicitly local"
+  ],
+  "reproduction": [
+    {
+      "kind": "saved_metrics",
+      "environment": "Mint system Python; standard library",
+      "command": "python3 scripts/eval02_comparison_review.py --storage-root \"/media/nm/Fast Drive/Typhon\" --output \"/media/nm/Fast Drive/Typhon/research-20261012/del02-saved-metrics-reproduction\"",
+      "documentation": "experiment-history/2026-10-13-eval02-review/CLAIM_STATUS.md",
+      "script": "scripts/eval02_comparison_review.py",
+      "executed_in_DEL02": false,
+      "scope": "Reads existing metrics and archives; does not launch a model or simulator. Original raw-statistics reproduction is separately documented in EVAL02R.",
+      "script_sha256": "3bc1f559c794e26c3a3ce0338ba0805c7186667b1ee170d9f6532fa2646d6e76",
+      "documentation_sha256": "df704215d8402570e1c6eb15b078a2a04f1188b93635142afc8d307e4a021459"
+    },
+    {
+      "kind": "saved_media_provenance",
+      "environment": "Mint system Python; standard library",
+      "command": "python3 scripts/del01_media_review.py --root \"/media/nm/Fast Drive/Typhon\" --output \"/media/nm/Fast Drive/Typhon/research-20261012/del02-media-reproduction\"",
+      "documentation": "experiment-history/2026-10-13-del01-review/CORRECTIONS.md",
+      "script": "scripts/del01_media_review.py",
+      "executed_in_DEL02": false,
+      "scope": "Uses existing video hashes and cached access/decode receipts. Does not regenerate videos or prove current hosting.",
+      "script_sha256": "2d9e153618ba0724ee6bf361a47097460daf59f7668959714afbaaaf0520e03f",
+      "documentation_sha256": "aa18d5f25a097c237cc9cfd41b8ad6d71ed57261f3d5036e276e78ef7734dc03"
+    },
+    {
+      "kind": "fresh_inference_and_physics",
+      "environment": "Powerglide recorded .venv-sim driver and .venv-xvla worker, pinned checkpoint/cache, EGL",
+      "documentation": "docs/research/2026-10-11/REPRODUCE.txt",
+      "script": "scripts/exp20261011_replan_candidates.py",
+      "documented_subcommands": [
+        "prepare --output NEW_DIRECTORY",
+        "replan --output NEW_DIRECTORY --replicates 2"
+      ],
+      "executed_in_DEL02": false,
+      "scope": "Documented argument parser and source paths checked. A full fresh run was not performed. Saved source-bank absolute paths and pinned checkpoints remain dependencies; do not use the populated default output.",
+      "script_sha256": "c76c0ed845dd923a2d467371f0ab21e3aee50cf2ea93abfb5dff2693b4475ed1",
+      "documentation_sha256": "6649490170ff73c5f47666067236b04fd744dbfb96f11b665e62b56d40496c9c"
+    },
+    {
+      "kind": "fresh_assisted_video10_physics",
+      "environment": "Powerglide humanoid-task-supervisor/.venv-sim with EGL",
+      "documentation": "experiment-history/2026-10-13-video10/reproduction_commands.txt",
+      "script": "scripts/video10_prepare.py",
+      "executed_in_DEL02": false,
+      "scope": "Use documented fresh output, prepare/registration/contract checks, then qualification before conditions. These commands create new simulated executions; no VLA checkpoint is involved.",
+      "script_sha256": "9d017ef3cf65f727d0f0cf1c607625540fb63203ac1f23ec4f6e2079a8e3a999",
+      "documentation_sha256": "227264e9af4d6d684cc9119df446da69aeb003f59e2c1d4982130d78fcd44f8b"
+    },
+    {
+      "kind": "retraining",
+      "environment": "Powerglide .venv-xvla with frozen base/canonical training arrays",
+      "documentation": "docs/research/2026-10-11/REPRODUCE.txt",
+      "script": "scripts/exp20261011_train_broad_pt.py",
+      "existing_cli": "train --checkpoints PATH; optional explicit --resume",
+      "executed_in_DEL02": false,
+      "scope": "Inspected parser only. OUT is still the historical hard-coded experiment root even if --checkpoints changes. Do not run this unmodified against the archive; a separately versioned output root is required. Original V4 exact retraining lacks three correction arrays; narrow initializer evidence incomplete.",
+      "script_sha256": "e1165308e9f305685cc9a3c47ef0e92a4ad1d91da2d08b60c507d811136373a2",
+      "documentation_sha256": "6649490170ff73c5f47666067236b04fd744dbfb96f11b665e62b56d40496c9c"
+    }
+  ],
+  "powerglide_environment_path_check": "powerglide_path_checks.json",
+  "during_this_task": {
+    "model_inferences": 0,
+    "physics_rollouts": 0,
+    "training_runs": 0,
+    "new_media": 0,
+    "hosted_uploads": 0,
+    "deployments": 0,
+    "publication": false,
+    "new_human_annotations": 0,
+    "raw_experiment_edits": false,
+    "fresh_checkpoint_weight_rehash": false
+  },
+  "delivery": {
+    "repository_expected_visibility": "PRIVATE",
+    "eight_selected_originals": "previously hash-verified on Mint and Powerglide by DEL01",
+    "two_existing_comparison_copies": "previously fully decoded and hash-verified by DEL01",
+    "current_selected_hosted_hash_matches": 0,
+    "dashboard": "historical October9snapshot; access check cached from DEL01",
+    "historical_export_checksums": "unchanged and not asserted to cover revised report",
+    "bulk_media_moved": false
+  },
+  "remaining": {
+    "EVAL02": "136baseline rollouts complete;68qualified-intervention rollouts unexecuted",
+    "LIVE01": "infrastructure evidence; deployment/completion/ranking authority unresolved",
+    "blocked_tickets": [
+      10984,
+      10989,
+      10991,
+      10998,
+      11000,
+      11002,
+      11003
+    ],
+    "parked_tickets": [
+      11009,
+      11010
+    ],
+    "data": "physical measurements/calibration, independent recording sessions, difficult learner-state coverage",
+    "historical_evidence": "originalV4three arrays; narrow initializer documentation",
+    "delivery": "host representative media and compatible dashboard importer remain separate",
+    "submission": "final challenge/deadline/eligibility verification, publication/access and actual submission not performed or implied"
+  },
+  "approval_boundary": "Current task authorizes private preparation; publication/submission remain pending explicit instruction, not requested in this task.",
+  "validation": {
+    "word_range_pass": true,
+    "relative_links_checked": 44,
+    "evidence_hashes_checked": 46,
+    "numerical_checks": 37,
+    "all_model_references_resolve": true,
+    "all_media_slots_resolve": true,
+    "fresh_run_claimed": false
+  },
+  "method_training_class": "Supervised adaptation; no PPO or Q-learning run claimed"
+}
