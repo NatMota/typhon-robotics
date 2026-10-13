@@ -1,0 +1,42 @@
+{
+  "protocol_window_utc": [
+    "2026-10-13T02:50:00Z",
+    "2026-10-13T03:35:00Z"
+  ],
+  "source_preparation": {
+    "host": "Powerglide",
+    "pid": 49736,
+    "python": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/bin/python",
+    "script": "scripts/video01c_review_prepare.py",
+    "arguments": [
+      "--m0",
+      "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor",
+      "--output",
+      "/var/tmp/typhon-video-representation-20261012/visual-features/temporal-information-review-20261013"
+    ]
+  },
+  "assembler": {
+    "host": "Mint",
+    "python": "python3",
+    "script": "scripts/video01c_review_assemble.py",
+    "arguments": [
+      "--root",
+      "/media/nm/Fast Drive/Typhon/research-20261012/video01/visual-features/temporal-information-review-20261013",
+      "--archive",
+      "/media/nm/Fast Drive/Typhon/research-20261012/video01"
+    ]
+  },
+  "tree": {
+    "host": "Mint",
+    "command": [
+      "python3",
+      "opportunity-tree/build_tree.py",
+      "--apply"
+    ]
+  },
+  "selection_commit": "cc5bac9",
+  "visual_notes_commit": "4526b8d",
+  "assembler_commit": "27f6edf",
+  "source_rows_reviewed": 224,
+  "scope": "Source-derived visual review and frozen-artifact reconciliation only. No new model fit or rollout."
+}
