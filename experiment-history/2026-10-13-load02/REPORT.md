@@ -64,7 +64,7 @@ One pre-execution token-count logger assumed an attention_mask key that this pro
 - Independent archive on Mint: /media/nm/Fast Drive/Typhon/research-20261012/load02-instruction-switching.
 - Exact weights are retained in the adjacent LOAD01 archive; LOAD02 does not create or modify weights.
 - Private branch: research/load02-instruction-switching. Frozen execution commit: a0f90914ebfd5ca137e0570623f87e0ccbb402c7.
-- First qualification and all executions completed within the separate 60-minute window. All 1,805 raw artifact files, totaling 457,887,901 bytes, are independently SHA-256 verified on Mint. See [archive verification](archive/raw-backup-verification.json). The final planner review is saved alongside this report.
+- First qualification and all executions completed within the separate 60-minute window. All 1,805 raw artifact files, totaling 457,887,901 bytes, are independently SHA-256 verified on Mint. See [archive verification](archive/raw-backup-verification.json). The [planner review](PLANNER_REVIEW.md) accepts the interpretation and keeps both reporting caveats.
 
 From this branch in the qualified Powerglide environment, use a fresh output namespace and the original recorded assets:
 
@@ -89,3 +89,7 @@ PY
 ```
 
 The scripts refuse to overwrite trial directories. Existing M0–M7, prior benchmarks and LOAD01 outputs are unchanged. Reproduction requires the manifest's exact checkpoints, processor cache and simulator environment; a clean-host rerun has not been claimed.
+
+## Next bounded diagnostic
+
+The planner ranks fixture-appearance removal next: retain physical fixture collisions and all model/controller settings, suppress only the rendered fixture in the policy images, and repeat the two instructions. This would test whether visible fixture appearance is necessary for the loading preference. It is a separate proposed LOAD03 experiment, not a deployment fix or an additional LOAD02 condition. No fixture-suppression results are claimed here.
