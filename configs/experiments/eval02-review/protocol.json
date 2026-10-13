@@ -1,0 +1,30 @@
+{
+  "schema": "eval02-comparison-review-v1",
+  "parent_ticket": 10996,
+  "start_utc": "2026-10-13T04:07:40Z",
+  "deadline_utc": "2026-10-13T04:52:40Z",
+  "scope": "Existing comparison and family-level uncertainty reconciliation; no replacement evaluation.",
+  "planner": "Hm challeng p2",
+  "forbidden": [
+    "new training",
+    "new rollouts",
+    "scenario generation",
+    "new annotation",
+    "observer changes",
+    "pod restarts",
+    "new post-hoc significance tests",
+    "changing original endpoints/splits/results"
+  ],
+  "evidence_sets": [
+    "Vanilla/V1-V4 matched comparison",
+    "Narrow Pt / broad Pt3k / broad Pt12k development panel",
+    "Broad Pt12k source competence",
+    "Later correction continuation and recovery panel",
+    "Existing EVAL02-specific 34-layout two-baseline execution"
+  ],
+  "deliverables": [
+    "comparison_ledger.json",
+    "CLAIM_STATUS.md"
+  ],
+  "stop": "45 minutes; named missing evidence is an acceptable review outcome. Retain unexecuted intervention arm as unresolved, never count it as zero success."
+}
