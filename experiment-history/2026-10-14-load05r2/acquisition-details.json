@@ -1,0 +1,183 @@
+[
+  {
+    "cell": "C\u2192C",
+    "origin_state": "C",
+    "checkpoint": "C",
+    "steps": 90,
+    "max_object_tilt_deg": 2.712360462385848,
+    "final_object_tilt_deg": 1.9472811605829463,
+    "first_tilt_over15": null,
+    "first_contact": 131,
+    "first_bilateral": 135,
+    "first_supported_lift": 147,
+    "supported_lift_tilt_deg": 1.5695615085447134,
+    "diagonal_reproduced": true,
+    "final_placement_evaluation": false,
+    "first_close_tick": 128,
+    "command_at_first_contact": "close",
+    "model_grip_probability": 0.9965872764587402,
+    "finger1_vertical_relative_speed_before_contact_mm_s": -7.444321591647599,
+    "finger_joint_opening_at_contact_mm": 60.72327423392371,
+    "first_contact_robot_geometries": [
+      "gripper0_finger1_collision",
+      "gripper0_finger1_pad_collision"
+    ],
+    "first_contact_object_local_points_mm": [
+      [
+        4.952706429192146,
+        -17.311801420597867,
+        0.4962145154551613
+      ],
+      [
+        4.564477035148166,
+        -17.19285668509835,
+        14.999999999999947
+      ],
+      [
+        4.347046789142976,
+        -17.171686744005292,
+        1.3899444779712844
+      ]
+    ],
+    "initial_state_source": "/var/tmp/typhon-load05r-20261014/continuations/C-to-C",
+    "evidence": "reused R native control"
+  },
+  {
+    "cell": "B\u2192B",
+    "origin_state": "B",
+    "checkpoint": "B",
+    "steps": 90,
+    "max_object_tilt_deg": 72.69765580074174,
+    "final_object_tilt_deg": 72.69765580074174,
+    "first_tilt_over15": 110,
+    "first_contact": 107,
+    "first_bilateral": 129,
+    "first_supported_lift": 144,
+    "supported_lift_tilt_deg": 62.75651563782459,
+    "diagonal_reproduced": true,
+    "final_placement_evaluation": false,
+    "first_close_tick": 124,
+    "command_at_first_contact": "open",
+    "model_grip_probability": 0.0008756566676311195,
+    "finger1_vertical_relative_speed_before_contact_mm_s": -170.663217753166,
+    "finger_joint_opening_at_contact_mm": 80.10871744157666,
+    "first_contact_robot_geometries": [
+      "gripper0_finger1_collision"
+    ],
+    "first_contact_object_local_points_mm": [
+      [
+        -0.33331200298462643,
+        -16.27771585121688,
+        13.952327872471733
+      ]
+    ],
+    "initial_state_source": "/var/tmp/typhon-load05r-20261014/continuations/B-to-B",
+    "evidence": "reused R native control"
+  },
+  {
+    "cell": "C\u2192B",
+    "origin_state": "C",
+    "checkpoint": "B",
+    "steps": 90,
+    "max_object_tilt_deg": 2.602299488008908,
+    "final_object_tilt_deg": 1.2884599819851934,
+    "first_tilt_over15": null,
+    "first_contact": 129,
+    "first_bilateral": 134,
+    "first_supported_lift": 145,
+    "supported_lift_tilt_deg": 0.8582624284459156,
+    "diagonal_reproduced": null,
+    "final_placement_evaluation": false,
+    "first_close_tick": 128,
+    "command_at_first_contact": "close",
+    "model_grip_probability": 0.9988920092582703,
+    "finger1_vertical_relative_speed_before_contact_mm_s": -8.517176330547935,
+    "finger_joint_opening_at_contact_mm": 75.58055909952064,
+    "first_contact_robot_geometries": [
+      "gripper0_finger1_collision",
+      "gripper0_finger1_pad_collision"
+    ],
+    "first_contact_object_local_points_mm": [
+      [
+        10.785168231027917,
+        -17.361690521857955,
+        -1.2158010020421086
+      ],
+      [
+        10.178277340124954,
+        -17.229180124898942,
+        14.999999999999975
+      ],
+      [
+        -5.814705620211904,
+        -17.466523524428226,
+        14.999999999999979
+      ],
+      [
+        10.149628770852807,
+        -17.209951925865973,
+        -0.2557916111165697
+      ],
+      [
+        -5.843300038771388,
+        -17.44733166999141,
+        -0.22695554674084387
+      ]
+    ],
+    "initial_state_source": "/var/tmp/typhon-load05r2-20261014/continuations/C-to-B",
+    "evidence": "new R2 crossed continuation"
+  },
+  {
+    "cell": "B\u2192C",
+    "origin_state": "B",
+    "checkpoint": "C",
+    "steps": 90,
+    "max_object_tilt_deg": 2.4365803071167487,
+    "final_object_tilt_deg": 1.0136310915610038,
+    "first_tilt_over15": null,
+    "first_contact": 128,
+    "first_bilateral": 132,
+    "first_supported_lift": 143,
+    "supported_lift_tilt_deg": 1.6178090435293642,
+    "diagonal_reproduced": null,
+    "final_placement_evaluation": false,
+    "first_close_tick": 125,
+    "command_at_first_contact": "close",
+    "model_grip_probability": 0.9995648264884949,
+    "finger1_vertical_relative_speed_before_contact_mm_s": -9.408863620552635,
+    "finger_joint_opening_at_contact_mm": 59.8682457865697,
+    "first_contact_robot_geometries": [
+      "gripper0_finger1_collision",
+      "gripper0_finger1_pad_collision"
+    ],
+    "first_contact_object_local_points_mm": [
+      [
+        3.309343865186322,
+        -17.341773256827206,
+        0.573428218272755
+      ],
+      [
+        2.8377368325857204,
+        -17.19116417736361,
+        15.000000000000043
+      ],
+      [
+        -13.157331626063451,
+        -17.40757363688096,
+        14.999999999999961
+      ],
+      [
+        2.692721303449049,
+        -17.19095292132398,
+        1.5077921056892483
+      ],
+      [
+        -13.300499739335654,
+        -17.407365072123838,
+        1.6796752071644754
+      ]
+    ],
+    "initial_state_source": "/var/tmp/typhon-load05r2-20261014/continuations/B-to-C",
+    "evidence": "new R2 crossed continuation"
+  }
+]
