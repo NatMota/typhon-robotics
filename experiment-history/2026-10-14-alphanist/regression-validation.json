@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "split_disjoint": true,
+  "adaptive_sampler_test": true,
+  "binary_reward_test": true,
+  "reset_state_test": true,
+  "physical_action_sign_test": true,
+  "terminal_guard_test": true,
+  "finite_gradient_test": true,
+  "rows": [
+    {
+      "task": "feeding",
+      "actual_joint0_delta_rad_for_negative_positive": [
+        -0.016911031538323518,
+        0.016534006508499205
+      ],
+      "fixture_present": true,
+      "observation_shape": [
+        888
+      ],
+      "action_shape": [
+        8
+      ]
+    },
+    {
+      "task": "loading",
+      "actual_joint0_delta_rad_for_negative_positive": [
+        -0.016911031538323518,
+        0.016534006508499205
+      ],
+      "fixture_present": true,
+      "observation_shape": [
+        888
+      ],
+      "action_shape": [
+        8
+      ]
+    }
+  ]
+}

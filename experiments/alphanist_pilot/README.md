@@ -1,0 +1,1 @@
+AlphaNIST-inspired Panda pilot. See [the report and reproduction commands](../../experiment-history/2026-10-14-alphanist/REPORT.md). Run with scripts/alphanist_pilot.py using the existing .venv-xvla Python; the entrypoint adds the existing simulator packages.

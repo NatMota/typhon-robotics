@@ -1,0 +1,6 @@
+condition,training_steps,training_episodes,training_successes,training_loop_seconds,feeding_success,feeding_n,loading_success,loading_n,continuation_success,continuation_n,full_start_success,full_start_n
+untrained-v1,0,0,0,0,4,16,2,16,6,32,0,4
+adaptive-v1,4096,45,2,21.50499662999937,4,16,4,16,8,32,0,4
+uniform-v1,4096,45,2,21.998880441999063,3,16,4,16,7,32,0,4
+adaptive-32k-v1,32768,470,190,171.180655218006,3,16,3,16,6,32,0,4
+uniform-32k-v1,32768,369,42,167.74045023600047,4,16,4,16,8,32,0,4
