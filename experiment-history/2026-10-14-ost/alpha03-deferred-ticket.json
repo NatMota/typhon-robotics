@@ -1,0 +1,31 @@
+{
+  "id": 11051,
+  "projectId": 16,
+  "columnId": 76,
+  "title": "ALPHA03 \u2014 Fuller AlphaNIST implementation and visual-orientation extension \u2014 deferred",
+  "description": "User requested adding this work to the OST on 14 October, explicitly without prioritising it. PARKED: no training, simulator port, paid compute, or implementation started by this ticket. DATA07-R #11050 remains the next experiment.\n\nOpportunity: learn robust manipulation from diverse simulator experience, beyond the easy finishing states in our AlphaNIST-inspired pilot.\n\nExisting evidence:\n- ALPHA01 #11041 implements small point-cloud PPO, joint/gripper control, a 64-state controller-derived reset bank and adaptive-versus-uniform reset sampling.\n- ALPHA02 #11043 found 0/4 full-start successes and zero new grasps for all tested conditions at 15 seconds. OPEN-only matched all four selected near-goal completions. This does not reject the paper; it limits our pilot.\n\nDeferred implementation requirements:\n1. Port and qualify Panda/DUPLO contact physics in GPU-parallel Isaac Lab; benchmark throughput on the 4090 before considering rented GPUs.\n2. Build a broader physically valid reset bank spanning unheld pickup, transport, adverse/recovery and near-completion states. Preserve provenance and train/evaluation separation; distinguish naturally difficult states from near-goal finishing opportunities.\n3. Match the paper's point-cloud actor/critic, relative joint-plus-gripper control, PPO and success-guided reset allocation. Document any remaining departures from the published multi-task architecture and settings.\n4. Train with an explicitly chosen full-task horizon and compatible temporal objective. Longer evaluation alone does not train earlier manipulation phases.\n5. Compare adaptive and uniform reset sampling with matched budgets, multiple learning seeds and a frozen panel. Report new grasps, full fresh-start task completion and near-goal completion separately.\n6. For our blue-number-2 orientation goal, qualify RGB, coloured point clouds or a visual orientation estimator. Geometry-only input does not establish numeral recognition; this is an extension to the paper's observation contract.\n7. Keep original AlphaNIST reproduction, the DUPLO adaptation and the visual extension separately named. Phone recordings can define documented scenes/goals/evaluation; do not call simulator-generated actions recovered human actions.\n\nScale context, not a purchase plan: the paper reports 64K environments for a main result and 4K per GPU in multi-GPU runs (about 16 GPUs at that configuration). Required scale and training ETA for our simpler task remain unmeasured. The paper says official code release is planned following review/revision; verify availability when work resumes.\n\nReactivation gate: deliberately reprioritise this item, qualify the environment/reset/observation contracts, then demonstrate new pickup learning before expanding compute. Preserve all prior models/results.\n\nSources:\nhttps://arxiv.org/html/2610.13354v1\nhttps://github.com/NatMota/typhon-robotics/blob/4fd0c8719ff162966ca166848610e4e6ee4ee5ca/experiment-history/2026-10-14-alphanist-qualification/REPORT.md",
+  "estimate": null,
+  "status": "Parked",
+  "progressState": "todo",
+  "createdAt": "2026-10-14 18:34:41",
+  "updatedAt": "2026-10-14 18:34:41",
+  "completedAt": null,
+  "completionSummary": null,
+  "deploymentProof": null,
+  "completionEvidence": [],
+  "epicId": null,
+  "priority": 2,
+  "workflow": {
+    "status": "Parked",
+    "columnId": 76,
+    "progressState": "todo",
+    "completedAt": null,
+    "completionSummary": null,
+    "deploymentProof": null,
+    "completionEvidence": []
+  },
+  "runs": {
+    "current": null,
+    "historyCount": 0
+  }
+}

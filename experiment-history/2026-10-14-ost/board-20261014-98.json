@@ -1,0 +1,737 @@
+{
+  "project": {
+    "id": 16,
+    "key": "typhon-research",
+    "name": "Typhon \u2014 Robot Learning Research"
+  },
+  "columns": [
+    {
+      "id": 70,
+      "name": "Backlog",
+      "tickets": []
+    },
+    {
+      "id": 71,
+      "name": "Next",
+      "tickets": [
+        {
+          "id": 11050,
+          "title": "DATA07-R \u2014 Qualify acquisition repairs on training families before admitting corrective data",
+          "status": "Next",
+          "columnId": 71,
+          "updatedAt": "2026-10-14 18:06:09"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "name": "In Progress",
+      "tickets": []
+    },
+    {
+      "id": 73,
+      "name": "Blocked",
+      "tickets": [
+        {
+          "id": 10984,
+          "title": "NEXT02 \u2014 Repair observation hypotheses before granting the harness veto authority",
+          "status": "Blocked",
+          "columnId": 73,
+          "updatedAt": "2026-10-13 00:02:15"
+        },
+        {
+          "id": 10989,
+          "title": "DATA04 \u2014 Validate phone-video to Panda-action alignment beyond one event comparison",
+          "status": "Blocked",
+          "columnId": 73,
+          "updatedAt": "2026-10-12 10:38:48"
+        },
+        {
+          "id": 10991,
+          "title": "DATA06 \u2014 Version the physical-object and calibration assumptions consistently",
+          "status": "Blocked",
+          "columnId": 73,
+          "updatedAt": "2026-10-13 02:14:55"
+        },
+        {
+          "id": 10998,
+          "title": "CTRL01 \u2014 Qualify joint-aware recovery paths and staged regrasp",
+          "status": "Blocked",
+          "columnId": 73,
+          "updatedAt": "2026-10-12 10:38:49"
+        },
+        {
+          "id": 11000,
+          "title": "HIER01 \u2014 Train a high-level skill selector only after primitives are reliable",
+          "status": "Blocked",
+          "columnId": 73,
+          "updatedAt": "2026-10-12 10:38:49"
+        },
+        {
+          "id": 11002,
+          "title": "REL02 \u2014 Compare supervised residual correction with bounded residual RL",
+          "status": "Blocked",
+          "columnId": 73,
+          "updatedAt": "2026-10-12 10:38:49"
+        },
+        {
+          "id": 11003,
+          "title": "REL03 \u2014 Evaluate offline value ranking or PPO/DPPO only with adequate action support",
+          "status": "Blocked",
+          "columnId": 73,
+          "updatedAt": "2026-10-12 10:38:49"
+        },
+        {
+          "id": 11049,
+          "title": "OPS07 \u2014 Restore Mint access and mirror latest experiment evidence and OST",
+          "status": "Blocked",
+          "columnId": 73,
+          "updatedAt": "2026-10-14 18:12:05"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Review",
+      "tickets": [
+        {
+          "id": 10996,
+          "title": "EVAL02 \u2014 Define the next confirmatory comparison with family-level uncertainty",
+          "status": "Review",
+          "columnId": 74,
+          "updatedAt": "2026-10-13 04:33:45"
+        },
+        {
+          "id": 11008,
+          "title": "DEL02 \u2014 Prepare an accurate research write-up and submission package",
+          "status": "Review",
+          "columnId": 74,
+          "updatedAt": "2026-10-13 05:34:55"
+        },
+        {
+          "id": 11004,
+          "title": "LIVE01 \u2014 Verify the existing live harness and controller telemetry hookup",
+          "status": "Review",
+          "columnId": 74,
+          "updatedAt": "2026-10-13 18:54:39"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Done",
+      "tickets": [
+        {
+          "id": 10957,
+          "title": "R01 \u2014 Trace V4 rotation, gripper command and actual motion around release",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:44:38"
+        },
+        {
+          "id": 10958,
+          "title": "R01d \u2014 Audit previous-command proprioception and test release-input alternatives",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:44:38"
+        },
+        {
+          "id": 10959,
+          "title": "R01e \u2014 Measure numeral visibility through actual preprocessing",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:44:38"
+        },
+        {
+          "id": 10960,
+          "title": "R02 \u2014 Test whether fixed-seed prompts command simple arm actions",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:44:38"
+        },
+        {
+          "id": 10961,
+          "title": "R02b \u2014 Compare vanilla, V3 and V4 prompt response controls",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:44:38"
+        },
+        {
+          "id": 10962,
+          "title": "R03 \u2014 Train a new six-take full-weight X-VLA-Pt with fixed 3k/12k checkpoints",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:54:58"
+        },
+        {
+          "id": 10963,
+          "title": "R03b \u2014 Evaluate narrow M6, broad-Pt 3k and broad-Pt 12k on unchanged holdouts",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:54:58"
+        },
+        {
+          "id": 10964,
+          "title": "R03c \u2014 Measure broad-Pt 12k competence on its six familiar starts",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:54:58"
+        },
+        {
+          "id": 10965,
+          "title": "R03d \u2014 Audit source/holdout position and yaw coverage",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:44:39"
+        },
+        {
+          "id": 10966,
+          "title": "R04 \u2014 Compare 30-action execution with 10-action replanning on V4",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:54:59"
+        },
+        {
+          "id": 10967,
+          "title": "R05 \u2014 Measure eight-proposal availability using a privileged offline oracle",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:44:39"
+        },
+        {
+          "id": 10968,
+          "title": "R05b \u2014 Compare V4 continuation from off-axis and near-expert held states",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:44:39"
+        },
+        {
+          "id": 10969,
+          "title": "R06 \u2014 Compare observable phase harness, unmodified V4 and deterministic skills",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:44:39"
+        },
+        {
+          "id": 10970,
+          "title": "R06b \u2014 Fix post-release observer projection in a training-only prototype",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:44:39"
+        },
+        {
+          "id": 10971,
+          "title": "R06c \u2014 Qualify and reject a two-axis IK endpoint selector",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:44:39"
+        },
+        {
+          "id": 10972,
+          "title": "R07 \u2014 Align one human correction clip with the Panda-expert event timeline",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:44:40"
+        },
+        {
+          "id": 10973,
+          "title": "R08 \u2014 Qualify geometric expert recovery from exact V4 failure states",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:44:40"
+        },
+        {
+          "id": 10974,
+          "title": "R09 \u2014 Retarget one short human-observed correction into constrained Panda motion",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:44:40"
+        },
+        {
+          "id": 10975,
+          "title": "R10a \u2014 Prepare blue-ghost candidate cards and typed Luna requests",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 23:13:33"
+        },
+        {
+          "id": 10976,
+          "title": "R11 \u2014 Prototype a typed primitive interface and deterministic supervisor",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:44:40"
+        },
+        {
+          "id": 10977,
+          "title": "R12 \u2014 Train and evaluate a causal phase predictor",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:44:40"
+        },
+        {
+          "id": 10978,
+          "title": "R13 \u2014 Compare DAgger, options, residual RL, offline Q and PPO approaches",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:54:59"
+        },
+        {
+          "id": 10979,
+          "title": "OPS02 \u2014 Preserve and verify all research models, traces, videos and resume state",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:44:40"
+        },
+        {
+          "id": 10980,
+          "title": "OPS03 \u2014 Write a request-by-request report and obtain independent plus GPT Pro review",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:54:59"
+        },
+        {
+          "id": 10981,
+          "title": "OPS04 \u2014 Reconcile excluded human review candidate 6 with stable demo IDs",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:54:59"
+        },
+        {
+          "id": 10955,
+          "title": "R01c \u2014 Show exactly what V4 sees: 512\u2192224 images, crop and six history frames",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:54:08"
+        },
+        {
+          "id": 10956,
+          "title": "OPS01 \u2014 Create and reconcile the research kanban ledger with evidence and honest statuses",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:57:26"
+        },
+        {
+          "id": 10954,
+          "title": "R01b \u2014 Measure V4's numeral sensitivity and grasp-relative orientation response",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-11 16:57:26"
+        },
+        {
+          "id": 11012,
+          "title": "OPS05 \u2014 Draw the opportunity solution tree and restore the Design viewer",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-14 18:12:04"
+        },
+        {
+          "id": 10983,
+          "title": "NEXT01 \u2014 Measure local robustness around successful broad-Pt 12k starts",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 00:10:18"
+        },
+        {
+          "id": 11013,
+          "title": "B01 \u2014 Diagnose why task B loading does not generalise",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 00:30:49"
+        },
+        {
+          "id": 10985,
+          "title": "NEXT03 \u2014 Separate grasp-estimation error from recovery-control error",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 00:30:49"
+        },
+        {
+          "id": 11011,
+          "title": "R01f \u2014 Separate lost visual detail from failure to use orientation in the action head",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 09:28:49"
+        },
+        {
+          "id": 10993,
+          "title": "VIS01 \u2014 Qualify a visibility fix if the causal image test supports it",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 09:28:49"
+        },
+        {
+          "id": 10995,
+          "title": "EVAL01 \u2014 Reconcile the earlier 775-rollout feeding comparison and V4 grasp search",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 09:28:49"
+        },
+        {
+          "id": 10986,
+          "title": "DATA01 \u2014 Publish an internal model and dataset registry with unambiguous names",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 10:36:56"
+        },
+        {
+          "id": 10994,
+          "title": "VIS02 \u2014 Test language/action grounding repair with matched input contracts",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 10:38:47"
+        },
+        {
+          "id": 11001,
+          "title": "REL01 \u2014 Collect qualified learner-state corrections and run a separate DAgger experiment",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 10:38:47"
+        },
+        {
+          "id": 10982,
+          "title": "R10 \u2014 Run Decisions API visual ranking on frozen ghost/future slates",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 23:13:32"
+        },
+        {
+          "id": 10987,
+          "title": "DATA02 \u2014 Reconcile prepared phase chunks and four-second intention targets with actual training",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 10:38:47"
+        },
+        {
+          "id": 10988,
+          "title": "DATA03 \u2014 Audit balanced sampling across takes, chunks, horizons and camera views",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 10:38:47"
+        },
+        {
+          "id": 10990,
+          "title": "DATA05 \u2014 Audit held-state crosshair in video and separate trajectory labels",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 10:38:47"
+        },
+        {
+          "id": 10997,
+          "title": "EVAL03 \u2014 Reconcile the 20 \u00d7 A/B harness comparison and guard event logging",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 10:38:48"
+        },
+        {
+          "id": 10999,
+          "title": "CTRL02 \u2014 Specify and log hard workspace, no-go and joint-boundary policies",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 10:38:48"
+        },
+        {
+          "id": 11005,
+          "title": "LIVE02 \u2014 Qualify the simple visual completion classifier across allowable variation",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 10:38:48"
+        },
+        {
+          "id": 11006,
+          "title": "LIVE03 \u2014 Reconcile Qwen live planner, finished-reference image and veto behavior",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 10:38:48"
+        },
+        {
+          "id": 11019,
+          "title": "VIDEO02 \u2014 Dense phone observations, temporal controls and object-focused features",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 17:17:01"
+        },
+        {
+          "id": 11020,
+          "title": "VIDEO03 \u2014 Test causal held-state prediction from unmarked personal video",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 18:25:53"
+        },
+        {
+          "id": 11021,
+          "title": "VIDEO04 \u2014 Test training-only hand-present negatives for held-state errors",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 18:47:37"
+        },
+        {
+          "id": 11022,
+          "title": "VIDEO05 \u2014 Test pre-contact negatives while preserving held-pause recognition",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 19:24:11"
+        },
+        {
+          "id": 11023,
+          "title": "VIDEO06 \u2014 Audit object motion through occlusion before video retargeting",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 20:00:21"
+        },
+        {
+          "id": 11024,
+          "title": "VIDEO07 \u2014 Test native video cadence and phase timing before robot retargeting",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 20:33:25"
+        },
+        {
+          "id": 11014,
+          "title": "LIVE04 \u2014 Integrate Decisions API candidate ranking with bounded asynchronous execution",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 21:15:08"
+        },
+        {
+          "id": 11025,
+          "title": "LIVE05 \u2014 Separate waiting, sampling and guards after the live-ranking regression",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 22:09:27"
+        },
+        {
+          "id": 11026,
+          "title": "LIVE06 \u2014 Qualify motion guards against the executed controller contract",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 22:10:51"
+        },
+        {
+          "id": 11027,
+          "title": "LIVE07 \u2014 Integrate the qualified execution check into the live candidate handoff",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 22:37:13"
+        },
+        {
+          "id": 11028,
+          "title": "LIVE08 \u2014 Isolate the first ranked candidate from boundary timing",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 22:46:52"
+        },
+        {
+          "id": 11029,
+          "title": "LIVE09 \u2014 Repeat R10 and audit critic response consistency",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 23:13:04"
+        },
+        {
+          "id": 11030,
+          "title": "OBS05 \u2014 Test fresh glyph-motion evidence against the held-state latch",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-12 23:46:26"
+        },
+        {
+          "id": 11031,
+          "title": "OBS06 \u2014 Test aperture and release evidence on additional archived episodes",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-13 00:02:15"
+        },
+        {
+          "id": 11032,
+          "title": "VIDEO08 \u2014 Test whether existing views identify camera geometry for a video-to-robot adapter",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-13 00:41:28"
+        },
+        {
+          "id": 11033,
+          "title": "VIDEO09 \u2014 Execute full human correction sequence with a frozen RGB-to-Panda adapter",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-13 01:35:48"
+        },
+        {
+          "id": 11034,
+          "title": "VIDEO10 \u2014 Register the complete video to the fixed task goal and rerun matched controls",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-13 02:14:33"
+        },
+        {
+          "id": 11035,
+          "title": "VIDEO11 \u2014 Audit glyph correspondence and the conflicting trajectory scores",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-13 02:41:33"
+        },
+        {
+          "id": 11018,
+          "title": "VIDEO01-C \u2014 Frozen phone-frame features with temporal and cross-view controls",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-13 03:29:12"
+        },
+        {
+          "id": 11016,
+          "title": "VIDEO01-A \u2014 Observed 2D object paths and explicit orientation gaps",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-13 03:29:11"
+        },
+        {
+          "id": 11017,
+          "title": "VIDEO01-B \u2014 Hand/pinch observations without fabricated grasp labels",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-13 03:29:11"
+        },
+        {
+          "id": 10992,
+          "title": "DATA07 \u2014 Add training-only failure and correction coverage after teacher qualification",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-13 04:04:58"
+        },
+        {
+          "id": 11036,
+          "title": "EVAL02R \u2014 Reconcile existing comparison claims and family-level uncertainty",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-13 04:33:45"
+        },
+        {
+          "id": 11015,
+          "title": "VIDEO01 \u2014 Compare video-derived representations and robot adapters without geometric-expert trajectories",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-13 04:41:51"
+        },
+        {
+          "id": 11007,
+          "title": "DEL01 \u2014 Reconcile dashboard, video hosting and research result provenance",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-13 05:08:51"
+        },
+        {
+          "id": 11037,
+          "title": "LOAD01 \u2014 Test loading supervision while retaining feeding competence",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-13 20:33:29"
+        },
+        {
+          "id": 11038,
+          "title": "LOAD02 \u2014 Switch feeding/loading instruction in an identical scene",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-13 21:03:04"
+        },
+        {
+          "id": 11039,
+          "title": "LOAD03 \u2014 Test whether fixture appearance controls task choice",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-13 21:37:34"
+        },
+        {
+          "id": 11041,
+          "title": "ALPHA01 \u2014 AlphaNIST-inspired Panda PPO/reset-sampling pilot",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-14 01:14:05"
+        },
+        {
+          "id": 11043,
+          "title": "ALPHA02 \u2014 frozen-policy 4s/15s reset qualification and release-only control",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-14 01:16:09"
+        },
+        {
+          "id": 11042,
+          "title": "OPS01 \u2014 Verify Powerglide booking and full backup including lab recovery",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-14 16:52:12"
+        },
+        {
+          "id": 11040,
+          "title": "LOAD04 \u2014 Counterbalanced task supervision in identical scenes",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-14 16:55:54"
+        },
+        {
+          "id": 11045,
+          "title": "LOAD05-Q \u2014 Repair content signatures and qualify saved-action restart",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-14 17:25:24"
+        },
+        {
+          "id": 11046,
+          "title": "LOAD05-R \u2014 Reconstruct pre-contact states and cross C/B acquisition policies",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-14 17:51:34"
+        },
+        {
+          "id": 11047,
+          "title": "LOAD05-R2 \u2014 Complete two crossed-policy acquisition branches",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-14 17:51:35"
+        },
+        {
+          "id": 11044,
+          "title": "LOAD05 \u2014 Pre-contact C/B acquisition crossover",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-14 17:55:46"
+        },
+        {
+          "id": 11048,
+          "title": "LOAD06 \u2014 Separate pose sequence from gripper schedule at acquisition",
+          "status": "Done",
+          "columnId": 75,
+          "updatedAt": "2026-10-14 18:01:14"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Parked",
+      "tickets": [
+        {
+          "id": 11009,
+          "title": "PARK01 \u2014 Set-of-Mark object/region labels \u2014 withdrawn",
+          "status": "Parked",
+          "columnId": 76,
+          "updatedAt": "2026-10-11 16:42:04"
+        },
+        {
+          "id": 11010,
+          "title": "PARK02 \u2014 Broader platform and simulator changes \u2014 deferred",
+          "status": "Parked",
+          "columnId": 76,
+          "updatedAt": "2026-10-11 16:42:04"
+        },
+        {
+          "id": 11051,
+          "title": "ALPHA03 \u2014 Fuller AlphaNIST implementation and visual-orientation extension \u2014 deferred",
+          "status": "Parked",
+          "columnId": 76,
+          "updatedAt": "2026-10-14 18:34:41"
+        }
+      ]
+    }
+  ],
+  "scope": "Current ticket identities and statuses. Detailed deferred AlphaNIST ticket is separately preserved.",
+  "recorded_at_utc": "2026-10-14T18:35:26.650790+00:00"
+}

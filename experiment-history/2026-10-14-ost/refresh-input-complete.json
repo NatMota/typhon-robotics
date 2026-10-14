@@ -202,7 +202,8 @@
           "Separate AlphaNIST-style PPO from X-VLA",
           [
             11041,
-            11043
+            11043,
+            11051
           ]
         ],
         [
@@ -326,7 +327,7 @@
     "11009": "PARKED: Set-of-Mark withdrawn by the user.",
     "11010": "PARKED: broader platforms and simulator changes deferred.",
     "11011": "108 paired predictions: cue sensitivity rises 0.0102 to 0.1887; wrist error remains about 80 degrees and opens at waypoint 11.",
-    "11012": "97 work items exported in reference layout with separate results. Live viewer last verified at 92; new installation waits for Mint.",
+    "11012": "98 work items exported with separate results. AlphaNIST expansion is parked; DATA07-R remains next. Live refresh waits for Mint.",
     "11013": "28 physical runs and 18 fixed-input goal probes separate grasp and destination failures; expert feasibility established.",
     "11014": "Nine live trials: 3 API choices executed 62 targets; 33/36 replies UNKNOWN. Reference pickup/place 1/2 vs 0/2 live variants.",
     "11015": "Investigation concluded. Assisted correction works, but generic video-to-action transfer and extra benefit from intermediate video were not established.",
@@ -364,7 +365,8 @@
     "11047": "Only B from its own state tips. Crossed pickups are upright (0.86 and 1.62 degrees). State-policy interaction in one inspected case.",
     "11048": "Pose-only substitution fixes acquisition: 1.12 versus 62.76 degrees tilt. Grip-only does not. B resumes; no full-placement or training claim.",
     "11049": "BLOCKED: Mint SSH and viewer unreachable. New raw evidence privately backed up and independently hashed; mirror and live refresh pending.",
-    "11050": "NEXT, not run: four training families, at most two qualified pose repairs, full-task scoring. No training or development-data reuse."
+    "11050": "NEXT, not run: four training families, at most two qualified pose repairs, full-task scoring. No training or development-data reuse.",
+    "11051": "PARKED by request. Fuller GPU-parallel/reset-bank implementation and visual orientation extension recorded; no implementation or training started."
   },
   "tickets": [
     {
@@ -850,6 +852,11 @@
     {
       "id": 11010,
       "title": "PARK02 \u2014 Broader platform and simulator changes \u2014 deferred",
+      "status": "Parked"
+    },
+    {
+      "id": 11051,
+      "title": "ALPHA03 \u2014 Fuller AlphaNIST implementation and visual-orientation extension \u2014 deferred",
       "status": "Parked"
     }
   ]

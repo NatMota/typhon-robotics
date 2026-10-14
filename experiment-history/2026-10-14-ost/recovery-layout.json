@@ -614,12 +614,45 @@
       ]
     },
     {
+      "id": "T11051",
+      "type": "experiment",
+      "label": "ALPHA03 \u00b7 #11051\nFuller AlphaNIST implementation and visual-orientation extension \u2014 deferred",
+      "parent_id": "S_recovery_3",
+      "x": 1220,
+      "y": 2492.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "ALPHA03 \u00b7 #11051",
+        "Fuller AlphaNIST implementation and",
+        "visual-orientation extension \u2014 deferred"
+      ]
+    },
+    {
+      "id": "R11051",
+      "type": "result",
+      "label": "PARKED by request. Fuller GPU-parallel/reset-bank implementation and visual orientation extension recorded; no implementation or training started.",
+      "parent_id": "T11051",
+      "x": 1620,
+      "y": 2482.0,
+      "width": 350,
+      "height": 112,
+      "color": "#373b42",
+      "lines": [
+        "PARKED by request. Fuller",
+        "GPU-parallel/reset-bank implementation and",
+        "visual orientation extension recorded; no",
+        "implementation or training started."
+      ]
+    },
+    {
       "id": "S_recovery_3",
       "type": "solution",
       "label": "Separate AlphaNIST-style PPO from X-VLA",
       "parent_id": "O_recovery",
       "x": 820,
-      "y": 2280.0,
+      "y": 2354.0,
       "width": 350,
       "height": 72,
       "color": "#343a46",
@@ -633,7 +666,7 @@
       "label": "DATA07-R \u00b7 #11050\nQualify acquisition repairs on training families before admitting corrective data",
       "parent_id": "S_recovery_4",
       "x": 1220,
-      "y": 2517.5,
+      "y": 2665.5,
       "width": 350,
       "height": 91,
       "color": "#4a4428",
@@ -649,7 +682,7 @@
       "label": "NEXT, not run: four training families, at most two qualified pose repairs, full-task scoring. No training or development-data reuse.",
       "parent_id": "T11050",
       "x": 1620,
-      "y": 2507.0,
+      "y": 2655.0,
       "width": 350,
       "height": 112,
       "color": "#574831",
@@ -666,7 +699,7 @@
       "label": "Qualify training-family corrective supervision",
       "parent_id": "O_recovery",
       "x": 820,
-      "y": 2527.0,
+      "y": 2675.0,
       "width": 350,
       "height": 72,
       "color": "#343a46",
@@ -681,7 +714,7 @@
       "label": "Advance phases only from trustworthy evidence",
       "parent_id": "outcome",
       "x": 420,
-      "y": 1498.25,
+      "y": 1572.25,
       "width": 350,
       "height": 72,
       "color": "#2d443b",
@@ -864,6 +897,14 @@
       "R11043"
     ],
     [
+      "S_recovery_3",
+      "T11051"
+    ],
+    [
+      "T11051",
+      "R11051"
+    ],
+    [
       "O_recovery",
       "S_recovery_3"
     ],
@@ -885,5 +926,5 @@
     ]
   ],
   "width": 2000,
-  "height": 2679.0
+  "height": 2827.0
 }
