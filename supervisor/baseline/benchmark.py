@@ -136,6 +136,9 @@ def run_episode(scenario, method, output, policy=None, provenance=None, action_o
                 if chunk_intervention:
                     event=chunk_intervention(env,len(model_chunks))
                     if event:row.setdefault('interventions',[]).append(event)
+                    if event and event.get('terminate_policy_loop'):
+                        row['uses_simulator_truth_for_control']=bool(event.get('privileged_expert_continuation'))
+                        break
                 observation=env.observe()
                 assert set(observation)<= {'rgb','proprio','task','cameras'}
                 policy_inputs.append({'primary':observation['rgb']['primary'].copy(),'secondary':observation['rgb']['secondary'].copy(),

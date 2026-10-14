@@ -1,0 +1,526 @@
+{
+  "time": 1792015609.0089808,
+  "reason": "Use exact native DATA07-R environment alias for model-asset provenance; all86 mismatches were alias strings resolving to the same existing asset paths. No physics/controller/RNG/RGB differences. No comparator relaxation.",
+  "asset_alias_checks": [
+    {
+      "field": "/python/gripper/asset/children/0/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand.stl"
+    },
+    {
+      "field": "/python/gripper/asset/children/1/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand_vis.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand_vis.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand_vis.stl"
+    },
+    {
+      "field": "/python/gripper/asset/children/2/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger.stl"
+    },
+    {
+      "field": "/python/gripper/asset/children/3/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_vis.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_vis.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_vis.stl"
+    },
+    {
+      "field": "/python/gripper/asset/children/4/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_longer.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_longer.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_longer.stl"
+    },
+    {
+      "field": "/python/gripper/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/panda_gripper.xml",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/panda_gripper.xml",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/panda_gripper.xml"
+    },
+    {
+      "field": "/python/gripper/folder",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers"
+    },
+    {
+      "field": "/python/gripper/root/children/0/children/0/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand.stl"
+    },
+    {
+      "field": "/python/gripper/root/children/0/children/1/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand_vis.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand_vis.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand_vis.stl"
+    },
+    {
+      "field": "/python/gripper/root/children/0/children/2/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger.stl"
+    },
+    {
+      "field": "/python/gripper/root/children/0/children/3/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_vis.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_vis.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_vis.stl"
+    },
+    {
+      "field": "/python/gripper/root/children/0/children/4/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_longer.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_longer.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_longer.stl"
+    },
+    {
+      "field": "/python/gripper/tree/xml_tree/children/0/children/0/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand.stl"
+    },
+    {
+      "field": "/python/gripper/tree/xml_tree/children/0/children/1/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand_vis.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand_vis.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand_vis.stl"
+    },
+    {
+      "field": "/python/gripper/tree/xml_tree/children/0/children/2/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger.stl"
+    },
+    {
+      "field": "/python/gripper/tree/xml_tree/children/0/children/3/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_vis.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_vis.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_vis.stl"
+    },
+    {
+      "field": "/python/gripper/tree/xml_tree/children/0/children/4/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_longer.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_longer.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_longer.stl"
+    },
+    {
+      "field": "/xml/children/5/children/1/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/arenas/../textures/light-gray-floor-tile.png",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/arenas/../textures/light-gray-floor-tile.png",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/textures/light-gray-floor-tile.png"
+    },
+    {
+      "field": "/xml/children/5/children/2/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/arenas/../textures/ceramic.png",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/arenas/../textures/ceramic.png",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/textures/ceramic.png"
+    },
+    {
+      "field": "/xml/children/5/children/3/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/arenas/../textures/steel-brushed.png",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/arenas/../textures/steel-brushed.png",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/textures/steel-brushed.png"
+    },
+    {
+      "field": "/xml/children/5/children/4/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/arenas/../textures/light-gray-plaster.png",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/arenas/../textures/light-gray-plaster.png",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/textures/light-gray-plaster.png"
+    },
+    {
+      "field": "/xml/children/5/children/6/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/textures/red-wood.png",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/textures/red-wood.png",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/textures/red-wood.png"
+    },
+    {
+      "field": "/xml/children/5/children/63/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link0.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link0.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link0.stl"
+    },
+    {
+      "field": "/xml/children/5/children/64/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link1.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link1.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link1.stl"
+    },
+    {
+      "field": "/xml/children/5/children/65/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link2.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link2.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link2.stl"
+    },
+    {
+      "field": "/xml/children/5/children/66/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link3.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link3.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link3.stl"
+    },
+    {
+      "field": "/xml/children/5/children/67/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link4.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link4.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link4.stl"
+    },
+    {
+      "field": "/xml/children/5/children/68/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link5.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link5.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link5.stl"
+    },
+    {
+      "field": "/xml/children/5/children/69/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link6.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link6.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link6.stl"
+    },
+    {
+      "field": "/xml/children/5/children/70/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link7.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link7.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/meshes/link7.stl"
+    },
+    {
+      "field": "/xml/children/5/children/71/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_0.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_0.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_0.obj"
+    },
+    {
+      "field": "/xml/children/5/children/72/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_1.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_1.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_1.obj"
+    },
+    {
+      "field": "/xml/children/5/children/73/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_2.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_2.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_2.obj"
+    },
+    {
+      "field": "/xml/children/5/children/74/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_3.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_3.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_3.obj"
+    },
+    {
+      "field": "/xml/children/5/children/75/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_4.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_4.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_4.obj"
+    },
+    {
+      "field": "/xml/children/5/children/76/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_5.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_5.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_5.obj"
+    },
+    {
+      "field": "/xml/children/5/children/77/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_6.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_6.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_6.obj"
+    },
+    {
+      "field": "/xml/children/5/children/78/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_7.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_7.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_7.obj"
+    },
+    {
+      "field": "/xml/children/5/children/79/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_8.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_8.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_8.obj"
+    },
+    {
+      "field": "/xml/children/5/children/80/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_9.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_9.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_9.obj"
+    },
+    {
+      "field": "/xml/children/5/children/81/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_10.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_10.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_10.obj"
+    },
+    {
+      "field": "/xml/children/5/children/82/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_11.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_11.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_11.obj"
+    },
+    {
+      "field": "/xml/children/5/children/83/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link1_vis/link1_vis.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link1_vis/link1_vis.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link1_vis/link1_vis.obj"
+    },
+    {
+      "field": "/xml/children/5/children/84/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link2_vis/link2_vis.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link2_vis/link2_vis.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link2_vis/link2_vis.obj"
+    },
+    {
+      "field": "/xml/children/5/children/85/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link3_vis/link3_vis_0.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link3_vis/link3_vis_0.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link3_vis/link3_vis_0.obj"
+    },
+    {
+      "field": "/xml/children/5/children/86/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link3_vis/link3_vis_1.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link3_vis/link3_vis_1.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link3_vis/link3_vis_1.obj"
+    },
+    {
+      "field": "/xml/children/5/children/87/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link3_vis/link3_vis_2.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link3_vis/link3_vis_2.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link3_vis/link3_vis_2.obj"
+    },
+    {
+      "field": "/xml/children/5/children/88/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link3_vis/link3_vis_3.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link3_vis/link3_vis_3.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link3_vis/link3_vis_3.obj"
+    },
+    {
+      "field": "/xml/children/5/children/89/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link4_vis/link4_vis_0.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link4_vis/link4_vis_0.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link4_vis/link4_vis_0.obj"
+    },
+    {
+      "field": "/xml/children/5/children/90/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link4_vis/link4_vis_1.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link4_vis/link4_vis_1.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link4_vis/link4_vis_1.obj"
+    },
+    {
+      "field": "/xml/children/5/children/91/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link4_vis/link4_vis_2.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link4_vis/link4_vis_2.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link4_vis/link4_vis_2.obj"
+    },
+    {
+      "field": "/xml/children/5/children/92/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link4_vis/link4_vis_3.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link4_vis/link4_vis_3.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link4_vis/link4_vis_3.obj"
+    },
+    {
+      "field": "/xml/children/5/children/93/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link5_vis/link5_vis_0.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link5_vis/link5_vis_0.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link5_vis/link5_vis_0.obj"
+    },
+    {
+      "field": "/xml/children/5/children/94/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link5_vis/link5_vis_1.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link5_vis/link5_vis_1.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link5_vis/link5_vis_1.obj"
+    },
+    {
+      "field": "/xml/children/5/children/95/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link5_vis/link5_vis_2.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link5_vis/link5_vis_2.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link5_vis/link5_vis_2.obj"
+    },
+    {
+      "field": "/xml/children/5/children/96/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_0.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_0.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_0.obj"
+    },
+    {
+      "field": "/xml/children/5/children/97/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_1.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_1.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_1.obj"
+    },
+    {
+      "field": "/xml/children/5/children/98/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_2.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_2.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_2.obj"
+    },
+    {
+      "field": "/xml/children/5/children/99/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_3.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_3.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_3.obj"
+    },
+    {
+      "field": "/xml/children/5/children/100/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_4.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_4.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_4.obj"
+    },
+    {
+      "field": "/xml/children/5/children/101/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_5.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_5.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_5.obj"
+    },
+    {
+      "field": "/xml/children/5/children/102/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_6.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_6.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_6.obj"
+    },
+    {
+      "field": "/xml/children/5/children/103/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_7.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_7.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_7.obj"
+    },
+    {
+      "field": "/xml/children/5/children/104/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_8.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_8.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_8.obj"
+    },
+    {
+      "field": "/xml/children/5/children/105/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_9.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_9.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_9.obj"
+    },
+    {
+      "field": "/xml/children/5/children/106/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_10.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_10.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_10.obj"
+    },
+    {
+      "field": "/xml/children/5/children/107/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_11.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_11.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_11.obj"
+    },
+    {
+      "field": "/xml/children/5/children/108/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_12.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_12.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_12.obj"
+    },
+    {
+      "field": "/xml/children/5/children/109/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_13.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_13.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_13.obj"
+    },
+    {
+      "field": "/xml/children/5/children/110/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_14.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_14.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_14.obj"
+    },
+    {
+      "field": "/xml/children/5/children/111/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_15.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_15.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_15.obj"
+    },
+    {
+      "field": "/xml/children/5/children/112/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_16.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_16.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_16.obj"
+    },
+    {
+      "field": "/xml/children/5/children/113/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_0.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_0.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_0.obj"
+    },
+    {
+      "field": "/xml/children/5/children/114/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_1.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_1.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_1.obj"
+    },
+    {
+      "field": "/xml/children/5/children/115/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_2.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_2.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_2.obj"
+    },
+    {
+      "field": "/xml/children/5/children/116/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_3.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_3.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_3.obj"
+    },
+    {
+      "field": "/xml/children/5/children/117/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_4.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_4.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_4.obj"
+    },
+    {
+      "field": "/xml/children/5/children/118/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_5.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_5.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_5.obj"
+    },
+    {
+      "field": "/xml/children/5/children/119/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_6.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_6.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_6.obj"
+    },
+    {
+      "field": "/xml/children/5/children/120/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_7.obj",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_7.obj",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_7.obj"
+    },
+    {
+      "field": "/xml/children/5/children/121/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/mounts/meshes/rethink_mount/pedestal.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/mounts/meshes/rethink_mount/pedestal.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/mounts/meshes/rethink_mount/pedestal.stl"
+    },
+    {
+      "field": "/xml/children/5/children/122/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand.stl"
+    },
+    {
+      "field": "/xml/children/5/children/123/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand_vis.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand_vis.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand_vis.stl"
+    },
+    {
+      "field": "/xml/children/5/children/124/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger.stl"
+    },
+    {
+      "field": "/xml/children/5/children/125/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_vis.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_vis.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_vis.stl"
+    },
+    {
+      "field": "/xml/children/5/children/126/attributes/file",
+      "a": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_longer.stl",
+      "b": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07ge-current-state/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_longer.stl",
+      "same_resolved_asset": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger_longer.stl"
+    }
+  ],
+  "expert_attempts_before_amendment": 0,
+  "control_parameters_unchanged": true,
+  "case_and_deadline_unchanged": true,
+  "interpreter": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/bin/python"
+}

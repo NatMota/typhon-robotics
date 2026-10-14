@@ -1,0 +1,53 @@
+{
+  "source_demo_id": "demo_0001",
+  "strict_success": false,
+  "position_error_mm": 1.2167981225204432,
+  "yaw_error_deg": 0.015738059708621865,
+  "criteria": {
+    "position": true,
+    "orientation": true,
+    "marked_face_up": false,
+    "footprint_inside_target": true,
+    "placement_height": false,
+    "released": true,
+    "stable": true,
+    "seated": false
+  },
+  "first_contact": 527,
+  "first_tilt_over15": 530,
+  "first_supported_lift": 569,
+  "supported_lift_tilt_deg": 91.4286786475439,
+  "peak_tilt_deg": 93.18416159278351,
+  "expert_status": "returned",
+  "control_steps": 793,
+  "expert_final_tick": 769,
+  "24_passive_stability_steps": true,
+  "handoff_passed": true,
+  "errors": {},
+  "uses_privileged_object_state": true,
+  "training_eligible": false,
+  "correction_candidate_only": false,
+  "new_model_queries": 0,
+  "new_expert_attempts": 1,
+  "counterfactual_reference": "DATA07-R native and one-chunk C patch, no rerun",
+  "final_tilt_deg": 90.0000000000003,
+  "first_close_command": 550,
+  "tilt_preceded_close_command": true,
+  "minimum_joint_limit_margin_rad": -0.0030245165580198297,
+  "grip_events": [
+    {
+      "step": 550,
+      "grip": 1.0,
+      "tilt_deg": 88.24231877676759,
+      "bilateral": false
+    },
+    {
+      "step": 734,
+      "grip": -1.0,
+      "tilt_deg": 90.12765258695447,
+      "bilateral": true
+    }
+  ],
+  "expert_high_level_lift_verified": true,
+  "expert_lift_phase_converged": false
+}
