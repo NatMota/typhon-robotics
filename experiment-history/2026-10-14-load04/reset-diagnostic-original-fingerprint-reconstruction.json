@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "task": "loading",
+      "original_fingerprint": "b7a1fdc4a4a164698127066803e539df0bd62501a554ecafcbbe91dfe260e75c",
+      "reproduced_exactly": true,
+      "recovered_original_statistic_meansize": "0.244383",
+      "diagnostic_statistic_meansize": "0.244381",
+      "reconstruction": "Saved diagnostic arrays and XML; only statistic meansize varied; exact full SHA-256 match binds all other bytes to the original composite fingerprint."
+    },
+    {
+      "task": "feeding",
+      "original_fingerprint": "b1ec01aa6bc5691d9024a20fdb0a7d662a2efee0bc0faa6a7a569f863169aa80",
+      "reproduced_exactly": true,
+      "recovered_original_statistic_meansize": "0.244374",
+      "diagnostic_statistic_meansize": "0.244374",
+      "reconstruction": "Saved diagnostic arrays and XML; only statistic meansize varied; exact full SHA-256 match binds all other bytes to the original composite fingerprint."
+    }
+  ],
+  "physical_state_bytes_bound_to_original": true,
+  "only_missing_original_XML_attribute_recovered": "statistic.meansize",
+  "time": 1791991936.3433554
+}

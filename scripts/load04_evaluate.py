@@ -6,7 +6,7 @@ from supervisor.baseline.benchmark import run_episode
 from m5_evaluate import supplemental
 def run(method,scene,visibility):
  p=read(OUT/'protocol.json');assert read(OUT/'input-qualification.json')['passed']
- e=p['models'][method];assert sha(e['checkpoint'])==e['sha256']
+ e=read(OUT/'trained-models.json')[method];assert sha(e['checkpoint'])==e['sha256']
  cases=[s for s in p['cases'] if s['source_demo_id']==scene and s['visibility']==visibility]
  folder=OUT/'evaluation'/method/visibility/scene;folder.mkdir(parents=True,exist_ok=False)
  manifest={'method':method,'scene':scene,'visibility':visibility,'checkpoint_sha256':e['sha256'],'protocol_sha256':sha(OUT/'protocol.json'),'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=R,text=True).strip(),'worker_sha256':sha(R/'scripts/load04_worker.py'),'benchmark_sha256':sha(R/'supervisor/baseline/benchmark.py'),'started':time.time(),'harness':False,'TTC':False,'tasks_for_simulator_always_loading':True}
