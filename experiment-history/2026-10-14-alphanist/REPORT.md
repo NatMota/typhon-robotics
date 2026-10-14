@@ -52,6 +52,8 @@ The screenshots illustrate those same states. Some overhead views occlude the br
 
 ![Initial, untrained and trained physical replays](comparison.png)
 
+Exact installed packages and hardware: [environment.json](environment.json).
+
 Machine-readable results: [comparison.json](comparison.json), [comparison.csv](comparison.csv), [regression checks](regression-validation.json), [replay checks](replay-validation.json). Raw states, checkpoint files, per-action logs and videos are under the archive paths below.
 
 ## Relation to AlphaNIST
