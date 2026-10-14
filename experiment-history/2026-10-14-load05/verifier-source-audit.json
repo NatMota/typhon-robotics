@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "scope": "copy-only XML demonstration, no environment instantiation or simulation steps",
+  "stored_pointer_strings": 36,
+  "current_canonicalizer_rejects_identical_XML_copy": true,
+  "original_xml": "<geom name=\"finger\" size=\"0.01 0.01 0.04\" />",
+  "copied_xml": "<geom name=\"finger\" size=\"0.01 0.01 0.04\" />",
+  "original_signature": {
+    "static_type": "xml.etree.ElementTree.Element",
+    "value": "<Element 'geom' at 0x7fc8081bf740>"
+  },
+  "copy_signature": {
+    "static_type": "xml.etree.ElementTree.Element",
+    "value": "<Element 'geom' at 0x7fc8cd1fbfb0>"
+  },
+  "only_failure_cause_established": false
+}

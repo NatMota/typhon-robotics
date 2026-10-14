@@ -1,0 +1,6 @@
+{
+  "stopped": true,
+  "time": 1791997482.9744675,
+  "error": "Traceback (most recent call last):\n  File \"/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/load05-precontact/scripts/load05_crossover.py\", line 165, in <module>\n    try:main()\n        ^^^^^^\n  File \"/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/load05-precontact/scripts/load05_crossover.py\", line 132, in main\n    assert m in states;restore(env,states[m]);obs=env.observe();eqobs(obs,s['io'],index)\n                       ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/load05-precontact/scripts/load05_crossover.py\", line 84, in restore\n    assert signature(env)==s['signature'],'full copied state restoration differs'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: full copied state restoration differs\n",
+  "outcome_retries": 0
+}
