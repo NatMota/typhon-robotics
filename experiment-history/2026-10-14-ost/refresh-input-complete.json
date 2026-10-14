@@ -347,13 +347,13 @@
     "11041": "Small point-cloud PPO pilot: adaptive reset sampling has no demonstrated advantage. All five policies 0/4 full starts. Separate from X-VLA.",
     "11042": "Full backup reconciled: 906,507 files, 299.6 GB, no integrity errors. Labs and checkpoint checks saved. Fresh-machine restore untested.",
     "11043": "Frozen 32-rollout follow-up: all four policies 0/4 full starts and zero new grasps. Release-only matches near-goal success; park further PPO.",
-    "11044": "Queued: compare both frozen models from each acquired grasp state. Full restart and image/tensor qualification first; no result yet."
+    "11044": "BLOCKED at full-state restore verification. One saved-action prefix; zero model queries or crossovers. XML identity bug found; repair must qualify separately."
   },
   "tickets": [
     {
       "id": 11044,
-      "title": "LOAD05 \u2014 Same-held-state C/B loading crossover",
-      "status": "Next"
+      "title": "LOAD05 \u2014 Pre-contact C/B acquisition crossover",
+      "status": "Blocked"
     },
     {
       "id": 10984,

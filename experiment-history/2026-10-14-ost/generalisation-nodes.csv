@@ -37,8 +37,8 @@ Counterbalanced task supervision in identical scenes",S_generalisation_3,1220,14
 R11040,result,Balanced vs control: requested region 16/16 vs 8/16; strict 12/16 vs 8/16. Loading stays 4/8. Four cases tip before grasp. Archive verified.,T11040,1620,1466.0,#574831
 S_generalisation_3,solution,Separate task instruction from fixture appearance,O_generalisation,820,1348.5,#343a46
 T11044,experiment,"LOAD05 · #11044
-Same-held-state C/B loading crossover",S_generalisation_4,1220,1659.0,#4a4428
-R11044,result,Queued: compare both frozen models from each acquired grasp state. Full restart and image/tensor qualification first; no result yet.,T11044,1620,1639.0,#574831
+Pre-contact C/B acquisition crossover",S_generalisation_4,1220,1659.0,#4a4428
+R11044,result,BLOCKED at full-state restore verification. One saved-action prefix; zero model queries or crossovers. XML identity bug found; repair must qualify separately.,T11044,1620,1639.0,#4e374f
 S_generalisation_4,solution,Separate acquired grasp from placement behaviour,O_generalisation,820,1659.0,#343a46
 O_generalisation,opportunity,The model succeeds locally but follows scene cues,outcome,420,998.12,#2d443b
 outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60

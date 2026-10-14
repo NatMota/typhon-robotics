@@ -416,7 +416,7 @@
     {
       "id": "T11044",
       "type": "experiment",
-      "label": "LOAD05 \u00b7 #11044\nSame-held-state C/B loading crossover",
+      "label": "LOAD05 \u00b7 #11044\nPre-contact C/B acquisition crossover",
       "parent_id": "S_generalisation_4",
       "x": 1220,
       "y": 1659.0,
@@ -425,24 +425,24 @@
       "color": "#4a4428",
       "lines": [
         "LOAD05 \u00b7 #11044",
-        "Same-held-state C/B loading crossover"
+        "Pre-contact C/B acquisition crossover"
       ]
     },
     {
       "id": "R11044",
       "type": "result",
-      "label": "Queued: compare both frozen models from each acquired grasp state. Full restart and image/tensor qualification first; no result yet.",
+      "label": "BLOCKED at full-state restore verification. One saved-action prefix; zero model queries or crossovers. XML identity bug found; repair must qualify separately.",
       "parent_id": "T11044",
       "x": 1620,
       "y": 1639.0,
       "width": 350,
       "height": 112,
-      "color": "#574831",
+      "color": "#4e374f",
       "lines": [
-        "Queued: compare both frozen models from",
-        "each acquired grasp state. Full restart and",
-        "image/tensor qualification first; no result",
-        "yet."
+        "BLOCKED at full-state restore verification.",
+        "One saved-action prefix; zero model queries",
+        "or crossovers. XML identity bug found;",
+        "repair must qualify separately."
       ]
     },
     {
