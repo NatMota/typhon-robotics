@@ -1,0 +1,34 @@
+{
+  "source_demo_id": "demo_0001",
+  "mode": "repair",
+  "status": "evaluated",
+  "strict_success": false,
+  "position_error_mm": 428.08814709661186,
+  "yaw_error_deg": 55.63264195658211,
+  "criteria": {
+    "position": false,
+    "orientation": false,
+    "marked_face_up": false,
+    "footprint_inside_target": false,
+    "placement_height": false,
+    "released": false,
+    "stable": false,
+    "seated": false
+  },
+  "first_tilt_over15": 478,
+  "first_contact": 473,
+  "first_bilateral": 503,
+  "first_supported_lift": 513,
+  "supported_lift_tilt_deg": 89.05063846191284,
+  "peak_tilt_deg": 94.13704617491373,
+  "pre_acquisition_tipping_failure": true,
+  "repair_boundary": {
+    "query_index": 14,
+    "control_step": 460,
+    "stable_precontact": true,
+    "state_directory": "/var/tmp/typhon-data07r-20261014/repair/demo_0001/boundaries/014"
+  },
+  "wall_seconds": 22.382881867000833,
+  "trained": false,
+  "training_eligible": false
+}

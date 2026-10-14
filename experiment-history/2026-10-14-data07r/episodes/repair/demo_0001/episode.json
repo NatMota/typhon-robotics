@@ -1,0 +1,2133 @@
+{
+  "scenario_id": "data07r-repair-demo_0001",
+  "group": "train-diagnostic",
+  "task": "loading",
+  "seed": 131902,
+  "method": "pretrained",
+  "uses_simulator_truth_for_control": false,
+  "started_at_utc": "2026-10-14T21:44:44.464078+00:00",
+  "provenance": {
+    "protocol_sha256": "542b20bb49def801d40dcf2fb753686c270fa81b8e0c5662d5f99c29fda36640",
+    "source_demo_id": "demo_0001",
+    "no_training": true,
+    "no_holdout": true
+  },
+  "success": false,
+  "setup": {
+    "fixtures_visible": true,
+    "training_family": "demo_0001",
+    "initial_isolation_checked": true
+  },
+  "status": "evaluated",
+  "initial_truth": {
+    "object_position_m": [
+      -0.3084651105738172,
+      0.08221457497548734,
+      0.8147844891595659
+    ],
+    "object_quat_wxyz": [
+      0.8890930203885663,
+      3.79836844083831e-17,
+      1.9714857028539407e-17,
+      0.4577265571237225
+    ],
+    "object_yaw_rad": 0.9508729488309244,
+    "object_linear_velocity_m_s": [
+      -9.784221096161218e-18,
+      7.425924713856818e-18,
+      2.166855413601659e-14
+    ],
+    "object_angular_velocity_rad_s": [
+      -6.202923840616383e-16,
+      -1.2722661871742164e-15,
+      2.445827297894714e-31
+    ],
+    "eef_position_m": [
+      -0.25005520706281603,
+      -0.24988750754560166,
+      1.0799217278777893
+    ],
+    "gripper_joint_position_m": [
+      0.03959546089013839,
+      -0.03976879892039342
+    ],
+    "gripper_open": true,
+    "grasp_contact": false,
+    "bilateral_grasp_contact": false,
+    "control_steps": 40,
+    "sim_time_s": 2.0
+  },
+  "final_truth": {
+    "object_position_m": [
+      -0.30253706443334166,
+      0.08128398392903977,
+      0.9798655313520925
+    ],
+    "object_quat_wxyz": [
+      0.6475901915801333,
+      -0.5997960377974132,
+      -0.3758325344204092,
+      0.28217293081169637
+    ],
+    "object_yaw_rad": 0.9709727737254981,
+    "object_linear_velocity_m_s": [
+      9.456512940631426e-05,
+      9.234562990393077e-05,
+      2.989646623276382e-05
+    ],
+    "object_angular_velocity_rad_s": [
+      0.0027035499576325657,
+      -0.002114167446671945,
+      0.00026424638210524235
+    ],
+    "eef_position_m": [
+      -0.2953227174252392,
+      0.0918384455259039,
+      0.9809473094657127
+    ],
+    "gripper_joint_position_m": [
+      0.014595328663526782,
+      -0.014584974438063314
+    ],
+    "gripper_open": false,
+    "grasp_contact": true,
+    "bilateral_grasp_contact": true,
+    "control_steps": 1500,
+    "sim_time_s": 75.0
+  },
+  "stability_truths": [
+    {
+      "object_position_m": [
+        -0.3053973432805778,
+        0.08026678874630816,
+        0.9787020811640949
+      ],
+      "object_quat_wxyz": [
+        0.6479973939548238,
+        -0.5997492835003981,
+        -0.369871901839494,
+        0.28912791390343473
+      ],
+      "object_yaw_rad": 0.971359855394234,
+      "object_linear_velocity_m_s": [
+        0.009938442710427918,
+        0.00397827060473623,
+        0.004288240423671587
+      ],
+      "object_angular_velocity_rad_s": [
+        0.02519183276877354,
+        -0.058461372418468,
+        -0.023529781764071497
+      ],
+      "eef_position_m": [
+        -0.2981890137712023,
+        0.09085248736116165,
+        0.9795450155162885
+      ],
+      "gripper_joint_position_m": [
+        0.01460506236628507,
+        -0.01457524958774315
+      ],
+      "gripper_open": false,
+      "grasp_contact": true,
+      "bilateral_grasp_contact": true,
+      "control_steps": 1478,
+      "sim_time_s": 73.9
+    },
+    {
+      "object_position_m": [
+        -0.3044223684777359,
+        0.08063475311385462,
+        0.9790915237310344
+      ],
+      "object_quat_wxyz": [
+        0.6478823835048797,
+        -0.6000726172893553,
+        -0.3715957363327384,
+        0.28649237313211157
+      ],
+      "object_yaw_rad": 0.9702931276367615,
+      "object_linear_velocity_m_s": [
+        0.00961309005207796,
+        0.003572164254123026,
+        0.0035589529406935315
+      ],
+      "object_angular_velocity_rad_s": [
+        0.019722366413200448,
+        -0.04749432976388281,
+        -0.006005404620445654
+      ],
+      "eef_position_m": [
+        -0.29720295606795283,
+        0.09120622688603784,
+        0.9800042572317126
+      ],
+      "gripper_joint_position_m": [
+        0.014604486031857874,
+        -0.014575827639578622
+      ],
+      "gripper_open": false,
+      "grasp_contact": true,
+      "bilateral_grasp_contact": true,
+      "control_steps": 1480,
+      "sim_time_s": 74.0
+    },
+    {
+      "object_position_m": [
+        -0.3036698219029541,
+        0.08090058513272079,
+        0.9793774087221974
+      ],
+      "object_quat_wxyz": [
+        0.6476715848559023,
+        -0.6001391790678505,
+        -0.37299250781762233,
+        0.28501065423933086
+      ],
+      "object_yaw_rad": 0.9704358708698477,
+      "object_linear_velocity_m_s": [
+        0.005602427667793206,
+        0.001853969357467583,
+        0.0021385214072555097
+      ],
+      "object_angular_velocity_rad_s": [
+        0.01218565662942718,
+        -0.028854395643995685,
+        -0.0006138670417339558
+      ],
+      "eef_position_m": [
+        -0.2964520159715743,
+        0.09146841686708902,
+        0.9803373447065522
+      ],
+      "gripper_joint_position_m": [
+        0.014603887651862053,
+        -0.014576428131282888
+      ],
+      "gripper_open": false,
+      "grasp_contact": true,
+      "bilateral_grasp_contact": true,
+      "control_steps": 1482,
+      "sim_time_s": 74.1
+    },
+    {
+      "object_position_m": [
+        -0.30322491258426426,
+        0.08104670907935342,
+        0.9795483381440815
+      ],
+      "object_quat_wxyz": [
+        0.6475500121868667,
+        -0.6001480693128702,
+        -0.3738752370481213,
+        0.28411016127381683
+      ],
+      "object_yaw_rad": 0.970583966003038,
+      "object_linear_velocity_m_s": [
+        0.0033416605699488123,
+        0.0010854470927118222,
+        0.00130459840862605
+      ],
+      "object_angular_velocity_rad_s": [
+        0.008219403400531717,
+        -0.017822248279079862,
+        6.955992384215023e-05
+      ],
+      "eef_position_m": [
+        -0.2960085011090884,
+        0.09161217353532965,
+        0.9805390109808477
+      ],
+      "gripper_joint_position_m": [
+        0.014602991729981321,
+        -0.014577328284743769
+      ],
+      "gripper_open": false,
+      "grasp_contact": true,
+      "bilateral_grasp_contact": true,
+      "control_steps": 1484,
+      "sim_time_s": 74.2
+    },
+    {
+      "object_position_m": [
+        -0.3029574452704729,
+        0.08113349605858425,
+        0.9796587463490378
+      ],
+      "object_quat_wxyz": [
+        0.6474894711872577,
+        -0.600131574199824,
+        -0.3744390331219518,
+        0.2835399245693354
+      ],
+      "object_yaw_rad": 0.970685842437712,
+      "object_linear_velocity_m_s": [
+        0.0020045251746116564,
+        0.0006564289249190052,
+        0.000865537908046656
+      ],
+      "object_angular_velocity_rad_s": [
+        0.00573425552767324,
+        -0.011353889135658915,
+        -2.0691323643780564e-05
+      ],
+      "eef_position_m": [
+        -0.29574180498766534,
+        0.09169704187076864,
+        0.9806704121560029
+      ],
+      "gripper_joint_position_m": [
+        0.0146019561777769,
+        -0.0145783568639134
+      ],
+      "gripper_open": false,
+      "grasp_contact": true,
+      "bilateral_grasp_contact": true,
+      "control_steps": 1486,
+      "sim_time_s": 74.3
+    },
+    {
+      "object_position_m": [
+        -0.302795644367377,
+        0.08118461792475946,
+        0.9797324073298548
+      ],
+      "object_quat_wxyz": [
+        0.6474631032617228,
+        -0.6001028193981403,
+        -0.3748152438418369,
+        0.28316367890124433
+      ],
+      "object_yaw_rad": 0.9707591908088525,
+      "object_linear_velocity_m_s": [
+        0.0012211490368435735,
+        0.0003750735494632632,
+        0.0005782557247652829
+      ],
+      "object_angular_velocity_rad_s": [
+        0.004341360200002967,
+        -0.007494037641482913,
+        -0.0003264958829847892
+      ],
+      "eef_position_m": [
+        -0.2955804381929262,
+        0.09174653581946035,
+        0.9807593612541596
+      ],
+      "gripper_joint_position_m": [
+        0.014600890651817754,
+        -0.01457944265886226
+      ],
+      "gripper_open": false,
+      "grasp_contact": true,
+      "bilateral_grasp_contact": true,
+      "control_steps": 1488,
+      "sim_time_s": 74.4
+    },
+    {
+      "object_position_m": [
+        -0.3026958131820979,
+        0.08121475782537495,
+        0.9797819527274735
+      ],
+      "object_quat_wxyz": [
+        0.6474638725058903,
+        -0.6000635339176175,
+        -0.375075476671014,
+        0.2829004698864749
+      ],
+      "object_yaw_rad": 0.9708033564756969,
+      "object_linear_velocity_m_s": [
+        0.000760638980040659,
+        0.0002349955306554574,
+        0.00038861440356953615
+      ],
+      "object_angular_velocity_rad_s": [
+        0.003593869463175898,
+        -0.005166161462409248,
+        7.995972932485935e-05
+      ],
+      "eef_position_m": [
+        -0.29548072571931405,
+        0.09177515905456296,
+        0.9808207849498809
+      ],
+      "gripper_joint_position_m": [
+        0.014599816589920706,
+        -0.014580487886507046
+      ],
+      "gripper_open": false,
+      "grasp_contact": true,
+      "bilateral_grasp_contact": true,
+      "control_steps": 1490,
+      "sim_time_s": 74.5
+    },
+    {
+      "object_position_m": [
+        -0.3026330613194051,
+        0.08123494774868117,
+        0.9798152599494939
+      ],
+      "object_quat_wxyz": [
+        0.647477286017636,
+        -0.6000174058075243,
+        -0.3752747299383695,
+        0.28270329656537246
+      ],
+      "object_yaw_rad": 0.9708420698619953,
+      "object_linear_velocity_m_s": [
+        0.00048226817522293626,
+        0.00016835768541726686,
+        0.0002589222991711981
+      ],
+      "object_angular_velocity_rad_s": [
+        0.003142721383624285,
+        -0.003965987328724309,
+        0.00018042529883088526
+      ],
+      "eef_position_m": [
+        -0.2954180667554437,
+        0.09179399197130982,
+        0.9808641035911355
+      ],
+      "gripper_joint_position_m": [
+        0.014598799415160523,
+        -0.014581503464392291
+      ],
+      "gripper_open": false,
+      "grasp_contact": true,
+      "bilateral_grasp_contact": true,
+      "control_steps": 1492,
+      "sim_time_s": 74.6
+    },
+    {
+      "object_position_m": [
+        -0.3025926073160926,
+        0.08125006339882722,
+        0.9798373364938516
+      ],
+      "object_quat_wxyz": [
+        0.6474933042513039,
+        -0.5999646304739256,
+        -0.37544781184392856,
+        0.2825487634225648
+      ],
+      "object_yaw_rad": 0.9709000210041427,
+      "object_linear_velocity_m_s": [
+        0.0003151608233337703,
+        0.00013196403073168354,
+        0.00016806336418726968
+      ],
+      "object_angular_velocity_rad_s": [
+        0.0028861575501024934,
+        -0.0033475162779679525,
+        0.0005161325572268582
+      ],
+      "eef_position_m": [
+        -0.2953779643220001,
+        0.09180800692977689,
+        0.9808952221295468
+      ],
+      "gripper_joint_position_m": [
+        0.014597850838587492,
+        -0.014582476108400204
+      ],
+      "gripper_open": false,
+      "grasp_contact": true,
+      "bilateral_grasp_contact": true,
+      "control_steps": 1494,
+      "sim_time_s": 74.7
+    },
+    {
+      "object_position_m": [
+        -0.30256646407479826,
+        0.08126280492469794,
+        0.9798516546261662
+      ],
+      "object_quat_wxyz": [
+        0.6475210247763662,
+        -0.5999147311458458,
+        -0.375587703451155,
+        0.28240523161418146
+      ],
+      "object_yaw_rad": 0.9709172964343237,
+      "object_linear_velocity_m_s": [
+        0.00020406749566227148,
+        0.00011652863990092208,
+        0.0001060693193965528
+      ],
+      "object_angular_velocity_rad_s": [
+        0.002781865988858956,
+        -0.0027950133658341636,
+        9.174753644640458e-05
+      ],
+      "eef_position_m": [
+        -0.2953518167137728,
+        0.09181947539586731,
+        0.9809179308373919
+      ],
+      "gripper_joint_position_m": [
+        0.01459695664054953,
+        -0.014583379632717181
+      ],
+      "gripper_open": false,
+      "grasp_contact": true,
+      "bilateral_grasp_contact": true,
+      "control_steps": 1496,
+      "sim_time_s": 74.8
+    },
+    {
+      "object_position_m": [
+        -0.30254895771099466,
+        0.08127394151640822,
+        0.9798606454981684
+      ],
+      "object_quat_wxyz": [
+        0.6475558386079716,
+        -0.5998547182036527,
+        -0.37571273617187023,
+        0.282286543802197
+      ],
+      "object_yaw_rad": 0.9709455954102403,
+      "object_linear_velocity_m_s": [
+        0.00014155755388922949,
+        0.00010089559178622202,
+        6.0807297251257384e-05
+      ],
+      "object_angular_velocity_rad_s": [
+        0.0026910259615560315,
+        -0.0025195635035142783,
+        0.0005737625836391873
+      ],
+      "eef_position_m": [
+        -0.2953344262865878,
+        0.09182948178940997,
+        0.9809347391752353
+      ],
+      "gripper_joint_position_m": [
+        0.014596102142593072,
+        -0.01458419813842142
+      ],
+      "gripper_open": false,
+      "grasp_contact": true,
+      "bilateral_grasp_contact": true,
+      "control_steps": 1498,
+      "sim_time_s": 74.9
+    },
+    {
+      "object_position_m": [
+        -0.30253706443334166,
+        0.08128398392903977,
+        0.9798655313520925
+      ],
+      "object_quat_wxyz": [
+        0.6475901915801333,
+        -0.5997960377974132,
+        -0.3758325344204092,
+        0.28217293081169637
+      ],
+      "object_yaw_rad": 0.9709727737254981,
+      "object_linear_velocity_m_s": [
+        9.456512940631426e-05,
+        9.234562990393077e-05,
+        2.989646623276382e-05
+      ],
+      "object_angular_velocity_rad_s": [
+        0.0027035499576325657,
+        -0.002114167446671945,
+        0.00026424638210524235
+      ],
+      "eef_position_m": [
+        -0.2953227174252392,
+        0.0918384455259039,
+        0.9809473094657127
+      ],
+      "gripper_joint_position_m": [
+        0.014595328663526782,
+        -0.014584974438063314
+      ],
+      "gripper_open": false,
+      "grasp_contact": true,
+      "bilateral_grasp_contact": true,
+      "control_steps": 1500,
+      "sim_time_s": 75.0
+    }
+  ],
+  "evaluation": {
+    "task": "loading",
+    "success": false,
+    "criteria": {
+      "position": false,
+      "orientation": false,
+      "marked_face_up": false,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": false,
+      "stable": false,
+      "seated": false
+    },
+    "position_error_m": 0.42808814709661186,
+    "orientation_error_rad": 0.9709727737254981,
+    "orientation_error_deg": 55.63264195658211,
+    "upright_error_rad": 1.57280708992256,
+    "height_error_m": 0.16086553135209247,
+    "target_height_m": 0.8190000000000001,
+    "footprint_inside_target": false,
+    "object_movement_after_release_m": 0.0032510763546356254,
+    "object_yaw_movement_after_release_rad": 0.0010667277574725187,
+    "maximum_linear_velocity_m_s": 0.011532054736436924,
+    "maximum_angular_velocity_rad_s": 0.06786760002508925,
+    "stability_sample_count": 12,
+    "stability_duration_s": 1.0999999999999943,
+    "grasp_attempt_count": 2,
+    "successful_grasp_count": 1,
+    "failed_grasp_count": 1,
+    "retries": 1,
+    "recovered_after_failed_grasp": true,
+    "successful_recovery": false,
+    "controller_exceptions": [],
+    "control_steps": 1460,
+    "sim_time_s": 73.0,
+    "attempts": [
+      {
+        "start_step": 486,
+        "initial_height_m": 0.8172623414555918,
+        "maximum_lift_m": 2.078170567743065e-05,
+        "any_contact": false,
+        "verified_lift": false,
+        "end_step": 491
+      },
+      {
+        "start_step": 496,
+        "initial_height_m": 0.8173333684845469,
+        "maximum_lift_m": 0.16529484340965062,
+        "any_contact": true,
+        "verified_lift": true,
+        "end_step": 1500
+      }
+    ]
+  },
+  "attempts": [
+    {
+      "start_step": 486,
+      "initial_height_m": 0.8172623414555918,
+      "maximum_lift_m": 2.078170567743065e-05,
+      "any_contact": false,
+      "verified_lift": false,
+      "end_step": 491
+    },
+    {
+      "start_step": 496,
+      "initial_height_m": 0.8173333684845469,
+      "maximum_lift_m": 0.16529484340965062,
+      "any_contact": true,
+      "verified_lift": true,
+      "end_step": 1500
+    }
+  ],
+  "observed_gripper_attempts": [
+    {
+      "start_step": 486,
+      "initial_height_m": 0.8172623414555918,
+      "maximum_lift_m": 2.078170567743065e-05,
+      "any_contact": false,
+      "verified_lift": false,
+      "end_step": 491
+    },
+    {
+      "start_step": 496,
+      "initial_height_m": 0.8173333684845469,
+      "maximum_lift_m": 0.16529484340965062,
+      "any_contact": true,
+      "verified_lift": true,
+      "end_step": 1500
+    }
+  ],
+  "move_events": [],
+  "position_error_mm": 428.08814709661186,
+  "yaw_error_deg": 55.63264195658211,
+  "grasp_attempts": 2,
+  "failed_grasps": 1,
+  "recovery_attempts": 1,
+  "recovery_success": false,
+  "completion_claimed": null,
+  "premature_completion": null,
+  "controller_failures": 0,
+  "controller_phase_failures": 0,
+  "controller_exceptions": [],
+  "episode_steps": 1460,
+  "total_control_steps": 1500,
+  "simulated_duration_s": 73.0,
+  "wall_duration_s": 22.382881867000833,
+  "inference_latency_s": [
+    0.3680205490090884,
+    0.3553969899949152,
+    0.3540011100121774,
+    0.3562847249850165,
+    0.3542299740074668,
+    0.352134885994019,
+    0.3535101679735817,
+    0.35260005900636315,
+    0.3528488820011262,
+    0.35170152300270274,
+    0.353326589014614,
+    0.35345569398486987,
+    0.3510446550208144,
+    0.3521767960046418,
+    0.558844726998359,
+    0.06907286201021634,
+    0.06911387000582181,
+    0.06918746998417191,
+    0.07024193200049922,
+    0.07038240801193751,
+    0.06920481697306968,
+    0.07085128800827079,
+    0.0703149390174076,
+    0.06946213101036847,
+    0.07094210002105683,
+    0.07069937998312525,
+    0.06967877098941244,
+    0.07094782099011354,
+    0.07107797800563276,
+    0.06979358897660859,
+    0.07164611699408852,
+    0.07113748200936243,
+    0.07097906101262197,
+    0.07130088098347187,
+    0.06975099898409098,
+    0.07118694501696154,
+    0.07162569797947071,
+    0.06992737299879082,
+    0.07187129399972036,
+    0.07171991697396152,
+    0.072550634999061,
+    0.07197374899988063,
+    0.07246671500615776,
+    0.07264768800814636,
+    0.07268813499831595,
+    0.07239737300551496,
+    0.07448127999668941,
+    0.0731157370028086
+  ],
+  "mean_inference_latency_s": 0.16383366170763716,
+  "inference_measurements": [
+    {
+      "cached_prefix": true,
+      "query_index": 0
+    },
+    {
+      "cached_prefix": true,
+      "query_index": 1
+    },
+    {
+      "cached_prefix": true,
+      "query_index": 2
+    },
+    {
+      "cached_prefix": true,
+      "query_index": 3
+    },
+    {
+      "cached_prefix": true,
+      "query_index": 4
+    },
+    {
+      "cached_prefix": true,
+      "query_index": 5
+    },
+    {
+      "cached_prefix": true,
+      "query_index": 6
+    },
+    {
+      "cached_prefix": true,
+      "query_index": 7
+    },
+    {
+      "cached_prefix": true,
+      "query_index": 8
+    },
+    {
+      "cached_prefix": true,
+      "query_index": 9
+    },
+    {
+      "cached_prefix": true,
+      "query_index": 10
+    },
+    {
+      "cached_prefix": true,
+      "query_index": 11
+    },
+    {
+      "cached_prefix": true,
+      "query_index": 12
+    },
+    {
+      "cached_prefix": true,
+      "query_index": 13
+    },
+    {
+      "cached_prefix": false,
+      "query_index": 14
+    },
+    {
+      "inference_s": 0.059294334991136566,
+      "preprocess_and_inference_s": 0.0660935560008511,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.05945013099699281,
+      "preprocess_and_inference_s": 0.06619784398935735,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.0593041839892976,
+      "preprocess_and_inference_s": 0.06593464300385676,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.060087670979555696,
+      "preprocess_and_inference_s": 0.06687981801223941,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.059889203985221684,
+      "preprocess_and_inference_s": 0.0668839460122399,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.058281156001612544,
+      "preprocess_and_inference_s": 0.06524183301371522,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.06021753899403848,
+      "preprocess_and_inference_s": 0.06717846399988048,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.05996007900102995,
+      "preprocess_and_inference_s": 0.06669721100479364,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.05836792700574733,
+      "preprocess_and_inference_s": 0.06537035197834484,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.06010126697947271,
+      "preprocess_and_inference_s": 0.06700252101290971,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.060012269008439034,
+      "preprocess_and_inference_s": 0.06673713700729422,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.05848316600895487,
+      "preprocess_and_inference_s": 0.06562665800447576,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.059924372006207705,
+      "preprocess_and_inference_s": 0.06666933800443076,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.06002974201692268,
+      "preprocess_and_inference_s": 0.066837817983469,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.05819482801598497,
+      "preprocess_and_inference_s": 0.06515350000699982,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.060128629993414506,
+      "preprocess_and_inference_s": 0.0670218369923532,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.059817549015861005,
+      "preprocess_and_inference_s": 0.06657637201715261,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.05960425399825908,
+      "preprocess_and_inference_s": 0.06638621000456624,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.05981169798178598,
+      "preprocess_and_inference_s": 0.06649721099529415,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.058085080003365874,
+      "preprocess_and_inference_s": 0.06487954899785109,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.059719692973885685,
+      "preprocess_and_inference_s": 0.06633992199203931,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.05978789200889878,
+      "preprocess_and_inference_s": 0.06650320297922008,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.05824418200063519,
+      "preprocess_and_inference_s": 0.06492573700961657,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.05997502797981724,
+      "preprocess_and_inference_s": 0.0667441300174687,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.059780327981570736,
+      "preprocess_and_inference_s": 0.06648335501085967,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.05819720198633149,
+      "preprocess_and_inference_s": 0.06607926700962707,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.05983484198804945,
+      "preprocess_and_inference_s": 0.06652871100232005,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.060065369005315006,
+      "preprocess_and_inference_s": 0.0668065779900644,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.05963237799005583,
+      "preprocess_and_inference_s": 0.06635129399364814,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.060233700001845136,
+      "preprocess_and_inference_s": 0.06692755801486783,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.0598842459730804,
+      "preprocess_and_inference_s": 0.0665774029912427,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.06153239498962648,
+      "preprocess_and_inference_s": 0.0683878310082946,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    },
+    {
+      "inference_s": 0.059434010996483266,
+      "preprocess_and_inference_s": 0.0668622940138448,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          128
+        ],
+        "image_input": [
+          1,
+          3,
+          3,
+          224,
+          224
+        ],
+        "image_mask": [
+          1,
+          3
+        ],
+        "proprio": [
+          1,
+          20
+        ],
+        "domain_id": [
+          1
+        ]
+      },
+      "image_mask": [
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "crop_metadata": {
+        "detected": false,
+        "reason": "no plausible orange component"
+      },
+      "peak_allocated_bytes": 5192418816,
+      "peak_reserved_bytes": 5249171456
+    }
+  ],
+  "policy_actions_executed": 1436,
+  "artifact_errors": [],
+  "evaluation_errors": [],
+  "inference_pauses_simulation": true,
+  "evidence_directory": "/var/tmp/typhon-data07r-20261014/repair/demo_0001"
+}
