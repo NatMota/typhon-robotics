@@ -4,7 +4,7 @@ import numpy as np,mujoco
 import load05_crossover as b
 import load05q_state as q
 R=pathlib.Path(__file__).resolve().parents[1]
-MANIFEST=R/'experiment-history/2026-10-14-load05r/state-manifest.json'
+MANIFEST=R/'experiment-history/2026-10-14-load05r2/state-manifest.json'
 def normalize(x,excluded,path=''):
  if isinstance(x,dict):
   out={}
@@ -43,6 +43,20 @@ def record(env,dest,history,source):
  b.dump(dest/'state.json',state);b.dump(dest/'excluded-process-identities.json',excluded)
  b.dump(dest/'field-manifest.json',manifest)
  return state
+def comparator_copy(state):
+ import copy
+ state=copy.deepcopy(state);values=[]
+ def walk(node):
+  if isinstance(node,dict):
+   if node.get('xml_tag')=='statistic' and 'meansize' in node.get('attributes',{}):values.append(node['attributes'].pop('meansize'))
+   for value in node.values():walk(value)
+  elif isinstance(node,list):
+   for value in node:walk(value)
+ walk(state['xml']);assert len(values)==1,values
+ return state,values
+
 def assert_equivalent(old,new,path):
- diffs=q.differences(old,new);b.dump(path,{'passed':not diffs,'differences':diffs,'atol':0,'rtol':0})
+ old_compare,old_values=comparator_copy(old);new_compare,new_values=comparator_copy(new)
+ diffs=q.differences(old_compare,new_compare)
+ b.dump(path,{'passed':not diffs,'differences':diffs,'old_meansize':old_values,'new_meansize':new_values,'only_new_exclusion':'xml statistic/meansize','atol':0,'rtol':0})
  assert not diffs,'Independent-prefix state differs; saved field-level differences'

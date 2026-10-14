@@ -1,0 +1,58 @@
+{
+  "executed_commit": "3ddcc6c5840ea7aed6b7df134dc0a0fa717b5604",
+  "source_report_commit": "90757e706271bbd98ea52b00ec82a62afd17a54d",
+  "controls": [
+    {
+      "path": "/var/tmp/typhon-load05r-20261014/continuations/C-to-C/branch-state/state.json",
+      "bytes": 4610478,
+      "sha256": "75f61be95b32afc35b546cc7acc2a4f0d69361a2cdfaccabd198a5fe5141782d"
+    },
+    {
+      "path": "/var/tmp/typhon-load05r-20261014/continuations/C-to-C/branch-input.npz",
+      "bytes": 509300,
+      "sha256": "b649acf7b65da5effb7382914638e56290debf1d9614e6ed814251b578abe492"
+    },
+    {
+      "path": "/var/tmp/typhon-load05r-20261014/continuations/C-to-C/predictions.npz",
+      "bytes": 3957,
+      "sha256": "df8b63c72fb30457e5afb3bba98e1fe44c3aa86f7114e776d66cf16163b2f052"
+    },
+    {
+      "path": "/var/tmp/typhon-load05r-20261014/continuations/C-to-C/trace.jsonl.gz",
+      "bytes": 172348,
+      "sha256": "a49f972a9dd2ac8334411a09660ac08647df492616153934220ce4c6e9085cdf"
+    },
+    {
+      "path": "/var/tmp/typhon-load05r-20261014/continuations/C-to-C/summary.json",
+      "bytes": 382,
+      "sha256": "4fccb2a8e6dae671564bebc1a75593b7c7cf5fd478e2c276713017e4d4794621"
+    },
+    {
+      "path": "/var/tmp/typhon-load05r-20261014/continuations/B-to-B/branch-state/state.json",
+      "bytes": 4610312,
+      "sha256": "22affa1fdf871cbf9ed12db3aa593c117b9431a8301f7a6e23dad35331fc3c94"
+    },
+    {
+      "path": "/var/tmp/typhon-load05r-20261014/continuations/B-to-B/branch-input.npz",
+      "bytes": 510502,
+      "sha256": "85b6fba6611e6043f4c62a22c9105932e2d2ec376c92ef7625056dff070a0e15"
+    },
+    {
+      "path": "/var/tmp/typhon-load05r-20261014/continuations/B-to-B/predictions.npz",
+      "bytes": 3873,
+      "sha256": "5d9b40ad2658267bf448ef43f45d826be29d0295bb860a1fb99dd9f7169e781a"
+    },
+    {
+      "path": "/var/tmp/typhon-load05r-20261014/continuations/B-to-B/trace.jsonl.gz",
+      "bytes": 169095,
+      "sha256": "761a87d0c83b2dff3eea3c5a58d0ed197c6e88c5bf13fe3fa3c3901c84693071"
+    },
+    {
+      "path": "/var/tmp/typhon-load05r-20261014/continuations/B-to-B/summary.json",
+      "bytes": 379,
+      "sha256": "a6bc761002a6b4689a300325137a3fcfb7c9ca4fb0ab844ab62f22d21477244b"
+    }
+  ],
+  "execution_root": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/load05r-prefix",
+  "reason": "preserve original absolute asset/runtime paths; new orchestrator and comparator live in separate worktree"
+}

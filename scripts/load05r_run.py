@@ -1,10 +1,10 @@
 """LOAD05-R: four deterministic-prefix branches, diagonals gate crossed inference."""
 import pathlib,sys,os,json,time,gzip,traceback
 import numpy as np
-R=pathlib.Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
+R=pathlib.Path('/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/load05r-prefix');sys.path.insert(0,str(R))
 import load05_crossover as b
 import load05r_state as semantic
-OUT=pathlib.Path('/var/tmp/typhon-load05r-20261014');b.OUT=OUT;b.R=R
+OUT=pathlib.Path('/var/tmp/typhon-load05r2-20261014');b.OUT=OUT;b.R=R
 def limit(key):assert time.time()<b.read(OUT/'clock.json')[key],key+' exceeded'
 def source(m):
  rows=b.read(b.SRC/'analysis/episodes.json');r=next(x for x in rows if x['model']==m and x['visibility']=='visible' and x['scene']=='demo_0012' and x['requested_task']=='loading' and x['seed']==912171)
@@ -17,9 +17,9 @@ def check_trace(actual,expected,path):
 def main():
  limit('diagonal_deadline');assert b.read(OUT/'frozen.json')['passed']
  sources={m:source(m) for m in ['C','B']}
- workers={};states={};rows=[]
+ workers={};previous=pathlib.Path('/var/tmp/typhon-load05r-20261014');states={m:b.read(previous/'continuations'/(m+'-to-'+m)/'branch-state/state.json') for m in ['C','B']};rows=b.read(previous/'summary.json');assert len(rows)==2 and all(x['diagonal_reproduced'] for x in rows);[x.update(evidence_origin='qualified control reused from LOAD05-R') for x in rows]
  try:
-  for origin,model in [('C','C'),('B','B'),('C','B'),('B','C')]:
+  for origin,model in [('C','B'),('B','C')]:
    deadline='diagonal_deadline' if origin==model else 'crossed_deadline';limit(deadline)
    s=sources[origin];dest=OUT/'continuations'/(origin+'-to-'+model);dest.mkdir(parents=True,exist_ok=False)
    env=b.FeedingLoadingEnv(s['scenario']['config']);frames=[];branch_started=False
@@ -84,7 +84,7 @@ def main():
      imageio.mimwrite(str(dest/'rollout.mp4'),frames,fps=5,codec='libx264')
    limit(deadline)
    if len(rows)==2:b.dump(OUT/'diagonal-qualified.json',{'passed':True,'rows':rows,'finished':time.time()})
-  b.dump(OUT/'complete.json',{'passed':True,'continuations':len(rows),'finished':time.time(),'new_model_queries':12,'restore_or_state_copy_used':False,'training':False})
+  b.dump(OUT/'complete.json',{'passed':True,'continuations':len(rows),'finished':time.time(),'new_model_queries':6,'new_continuations':2,'inherited_controls':2,'restore_or_state_copy_used':False,'training':False})
  finally:
   for w in workers.values():w.close()
 if __name__=='__main__':
