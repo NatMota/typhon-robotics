@@ -1,0 +1,829 @@
+{
+  "model_xml_sha256": "d1e5a9fca6b8f8887d982adfcb68e6df6e853b4e0dab5a3f5d73c7241dcb7567",
+  "mujoco_version": "2.3.7",
+  "detached_analysis_only": true,
+  "simulation_steps": 0,
+  "nominal_corridor": {
+    "sample_count": 63,
+    "open_finger_joint_position_m": [
+      0.04000374222459624,
+      -0.03958712021598121
+    ],
+    "all_sampled_poses_separated": true,
+    "minimum_projection_gap_mm": 21.041515942242462,
+    "samples": [
+      {
+        "height_above_brick_centre_m": 0.16,
+        "gaps_mm": {
+          "gripper0_hand_collision": 176.04151575853356,
+          "gripper0_finger1_collision": 137.4222639694369,
+          "gripper0_finger1_pad_collision": 140.59999999999994,
+          "gripper0_finger2_collision": 137.38122270793508,
+          "gripper0_finger2_pad_collision": 140.60000000000005
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.1575,
+        "gaps_mm": {
+          "gripper0_hand_collision": 173.54151576149667,
+          "gripper0_finger1_collision": 134.93442371443354,
+          "gripper0_finger1_pad_collision": 138.09999999999988,
+          "gripper0_finger2_collision": 134.8933824529317,
+          "gripper0_finger2_pad_collision": 138.1
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.155,
+        "gaps_mm": {
+          "gripper0_hand_collision": 171.0415157644597,
+          "gripper0_finger1_collision": 132.4465834594303,
+          "gripper0_finger1_pad_collision": 135.59999999999994,
+          "gripper0_finger2_collision": 132.40554219792844,
+          "gripper0_finger2_pad_collision": 135.60000000000005
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.1525,
+        "gaps_mm": {
+          "gripper0_hand_collision": 168.5415157674226,
+          "gripper0_finger1_collision": 129.9587432044269,
+          "gripper0_finger1_pad_collision": 133.09999999999988,
+          "gripper0_finger2_collision": 129.91770194292496,
+          "gripper0_finger2_pad_collision": 133.1
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.15,
+        "gaps_mm": {
+          "gripper0_hand_collision": 166.04151577038562,
+          "gripper0_finger1_collision": 127.47090294942365,
+          "gripper0_finger1_pad_collision": 130.59999999999994,
+          "gripper0_finger2_collision": 127.4298616879217,
+          "gripper0_finger2_pad_collision": 130.60000000000005
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.1475,
+        "gaps_mm": {
+          "gripper0_hand_collision": 163.54151577334864,
+          "gripper0_finger1_collision": 124.98306269442017,
+          "gripper0_finger1_pad_collision": 128.09999999999988,
+          "gripper0_finger2_collision": 124.94202143291832,
+          "gripper0_finger2_pad_collision": 128.1
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.14500000000000002,
+        "gaps_mm": {
+          "gripper0_hand_collision": 161.04151577631177,
+          "gripper0_finger1_collision": 122.4952224394169,
+          "gripper0_finger1_pad_collision": 125.59999999999994,
+          "gripper0_finger2_collision": 122.45418117791506,
+          "gripper0_finger2_pad_collision": 125.60000000000005
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.14250000000000002,
+        "gaps_mm": {
+          "gripper0_hand_collision": 158.5415157792749,
+          "gripper0_finger1_collision": 120.00738218441364,
+          "gripper0_finger1_pad_collision": 123.1,
+          "gripper0_finger2_collision": 119.96634092291181,
+          "gripper0_finger2_pad_collision": 123.1000000000001
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.14,
+        "gaps_mm": {
+          "gripper0_hand_collision": 156.04151578223778,
+          "gripper0_finger1_collision": 117.51954192941028,
+          "gripper0_finger1_pad_collision": 120.59999999999992,
+          "gripper0_finger2_collision": 117.47850066790843,
+          "gripper0_finger2_pad_collision": 120.60000000000004
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.1375,
+        "gaps_mm": {
+          "gripper0_hand_collision": 153.5415157852008,
+          "gripper0_finger1_collision": 115.0317016744069,
+          "gripper0_finger1_pad_collision": 118.09999999999987,
+          "gripper0_finger2_collision": 114.99066041290496,
+          "gripper0_finger2_pad_collision": 118.09999999999998
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.135,
+        "gaps_mm": {
+          "gripper0_hand_collision": 151.04151578816393,
+          "gripper0_finger1_collision": 112.56534528476325,
+          "gripper0_finger1_pad_collision": 115.59999999999992,
+          "gripper0_finger2_collision": 112.5028201579017,
+          "gripper0_finger2_pad_collision": 115.60000000000004
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.1325,
+        "gaps_mm": {
+          "gripper0_hand_collision": 148.54151579112707,
+          "gripper0_finger1_collision": 110.17577699591097,
+          "gripper0_finger1_pad_collision": 113.09999999999998,
+          "gripper0_finger2_collision": 110.05331978643629,
+          "gripper0_finger2_pad_collision": 113.1000000000001
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.13,
+        "gaps_mm": {
+          "gripper0_hand_collision": 146.04151579408997,
+          "gripper0_finger1_collision": 107.78620870705858,
+          "gripper0_finger1_pad_collision": 110.59999999999992,
+          "gripper0_finger2_collision": 107.66375149758534,
+          "gripper0_finger2_pad_collision": 110.60000000000004
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.1275,
+        "gaps_mm": {
+          "gripper0_hand_collision": 143.541515797053,
+          "gripper0_finger1_collision": 105.39664041820618,
+          "gripper0_finger1_pad_collision": 108.09999999999987,
+          "gripper0_finger2_collision": 105.27418320873439,
+          "gripper0_finger2_pad_collision": 108.09999999999998
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.125,
+        "gaps_mm": {
+          "gripper0_hand_collision": 141.04151580001613,
+          "gripper0_finger1_collision": 103.00707212935379,
+          "gripper0_finger1_pad_collision": 105.59999999999991,
+          "gripper0_finger2_collision": 102.88461491988355,
+          "gripper0_finger2_pad_collision": 105.60000000000002
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.1225,
+        "gaps_mm": {
+          "gripper0_hand_collision": 138.54151580297923,
+          "gripper0_finger1_collision": 100.6175038405015,
+          "gripper0_finger1_pad_collision": 103.09999999999997,
+          "gripper0_finger2_collision": 100.4950466310328,
+          "gripper0_finger2_pad_collision": 103.10000000000008
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.12,
+        "gaps_mm": {
+          "gripper0_hand_collision": 136.04151580594214,
+          "gripper0_finger1_collision": 98.2279355516491,
+          "gripper0_finger1_pad_collision": 100.59999999999991,
+          "gripper0_finger2_collision": 98.10547834218187,
+          "gripper0_finger2_pad_collision": 100.60000000000002
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.1175,
+        "gaps_mm": {
+          "gripper0_hand_collision": 133.54151580890516,
+          "gripper0_finger1_collision": 95.83836726279671,
+          "gripper0_finger1_pad_collision": 98.09999999999985,
+          "gripper0_finger2_collision": 95.71591005333092,
+          "gripper0_finger2_pad_collision": 98.09999999999997
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.115,
+        "gaps_mm": {
+          "gripper0_hand_collision": 131.0415158118683,
+          "gripper0_finger1_collision": 93.44879897394442,
+          "gripper0_finger1_pad_collision": 95.59999999999991,
+          "gripper0_finger2_collision": 93.32634176448008,
+          "gripper0_finger2_pad_collision": 95.60000000000002
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.1125,
+        "gaps_mm": {
+          "gripper0_hand_collision": 128.54151581483143,
+          "gripper0_finger1_collision": 91.05923068509215,
+          "gripper0_finger1_pad_collision": 93.09999999999997,
+          "gripper0_finger2_collision": 90.93677347562934,
+          "gripper0_finger2_pad_collision": 93.10000000000007
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.11,
+        "gaps_mm": {
+          "gripper0_hand_collision": 126.04151581779432,
+          "gripper0_finger1_collision": 88.66966239623974,
+          "gripper0_finger1_pad_collision": 90.59999999999991,
+          "gripper0_finger2_collision": 88.54720518677838,
+          "gripper0_finger2_pad_collision": 90.60000000000001
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.10750000000000001,
+        "gaps_mm": {
+          "gripper0_hand_collision": 123.54151582075745,
+          "gripper0_finger1_collision": 86.28009410738746,
+          "gripper0_finger1_pad_collision": 88.09999999999995,
+          "gripper0_finger2_collision": 86.15763689792755,
+          "gripper0_finger2_pad_collision": 88.10000000000007
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.10500000000000001,
+        "gaps_mm": {
+          "gripper0_hand_collision": 121.04151582372047,
+          "gripper0_finger1_collision": 83.89052581853507,
+          "gripper0_finger1_pad_collision": 85.5999999999999,
+          "gripper0_finger2_collision": 83.7680686090766,
+          "gripper0_finger2_pad_collision": 85.60000000000001
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.10250000000000001,
+        "gaps_mm": {
+          "gripper0_hand_collision": 118.5415158266836,
+          "gripper0_finger1_collision": 81.50095752968267,
+          "gripper0_finger1_pad_collision": 83.09999999999995,
+          "gripper0_finger2_collision": 81.37850032022575,
+          "gripper0_finger2_pad_collision": 83.10000000000007
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.1,
+        "gaps_mm": {
+          "gripper0_hand_collision": 116.04151582964661,
+          "gripper0_finger1_collision": 79.11138924083028,
+          "gripper0_finger1_pad_collision": 80.5999999999999,
+          "gripper0_finger2_collision": 78.98893203137492,
+          "gripper0_finger2_pad_collision": 80.60000000000001
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.0975,
+        "gaps_mm": {
+          "gripper0_hand_collision": 113.54151583260963,
+          "gripper0_finger1_collision": 76.72182095197799,
+          "gripper0_finger1_pad_collision": 78.09999999999995,
+          "gripper0_finger2_collision": 76.59936374252408,
+          "gripper0_finger2_pad_collision": 78.10000000000005
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.095,
+        "gaps_mm": {
+          "gripper0_hand_collision": 111.04151583557265,
+          "gripper0_finger1_collision": 74.3322526631256,
+          "gripper0_finger1_pad_collision": 75.5999999999999,
+          "gripper0_finger2_collision": 74.20979545367312,
+          "gripper0_finger2_pad_collision": 75.6
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.0925,
+        "gaps_mm": {
+          "gripper0_hand_collision": 108.54151583853577,
+          "gripper0_finger1_collision": 71.94268437427331,
+          "gripper0_finger1_pad_collision": 73.09999999999994,
+          "gripper0_finger2_collision": 71.82022716482228,
+          "gripper0_finger2_pad_collision": 73.10000000000005
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.09,
+        "gaps_mm": {
+          "gripper0_hand_collision": 106.04151584149879,
+          "gripper0_finger1_collision": 69.55311608542092,
+          "gripper0_finger1_pad_collision": 70.59999999999988,
+          "gripper0_finger2_collision": 69.43065887597145,
+          "gripper0_finger2_pad_collision": 70.6
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.08750000000000001,
+        "gaps_mm": {
+          "gripper0_hand_collision": 103.54151584446181,
+          "gripper0_finger1_collision": 67.16354779656864,
+          "gripper0_finger1_pad_collision": 68.09999999999994,
+          "gripper0_finger2_collision": 67.0410905871206,
+          "gripper0_finger2_pad_collision": 68.10000000000005
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.085,
+        "gaps_mm": {
+          "gripper0_hand_collision": 101.04151584742482,
+          "gripper0_finger1_collision": 64.77397950771623,
+          "gripper0_finger1_pad_collision": 65.59999999999988,
+          "gripper0_finger2_collision": 64.65152229826965,
+          "gripper0_finger2_pad_collision": 65.6
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.0825,
+        "gaps_mm": {
+          "gripper0_hand_collision": 98.54151585038795,
+          "gripper0_finger1_collision": 62.38441121886395,
+          "gripper0_finger1_pad_collision": 63.09999999999994,
+          "gripper0_finger2_collision": 62.26195400941881,
+          "gripper0_finger2_pad_collision": 63.100000000000044
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.08,
+        "gaps_mm": {
+          "gripper0_hand_collision": 96.04151585335097,
+          "gripper0_finger1_collision": 59.99484293001156,
+          "gripper0_finger1_pad_collision": 60.59999999999987,
+          "gripper0_finger2_collision": 59.87238572056797,
+          "gripper0_finger2_pad_collision": 60.59999999999999
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.0775,
+        "gaps_mm": {
+          "gripper0_hand_collision": 93.54151585631398,
+          "gripper0_finger1_collision": 57.60527464115916,
+          "gripper0_finger1_pad_collision": 58.09999999999993,
+          "gripper0_finger2_collision": 57.48281743171712,
+          "gripper0_finger2_pad_collision": 58.10000000000004
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.075,
+        "gaps_mm": {
+          "gripper0_hand_collision": 91.041515859277,
+          "gripper0_finger1_collision": 55.21570635230677,
+          "gripper0_finger1_pad_collision": 55.59999999999987,
+          "gripper0_finger2_collision": 55.09324914286617,
+          "gripper0_finger2_pad_collision": 55.59999999999998
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.0725,
+        "gaps_mm": {
+          "gripper0_hand_collision": 88.54151586224013,
+          "gripper0_finger1_collision": 52.826138063454486,
+          "gripper0_finger1_pad_collision": 53.09999999999992,
+          "gripper0_finger2_collision": 52.70368085401533,
+          "gripper0_finger2_pad_collision": 53.10000000000004
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.07,
+        "gaps_mm": {
+          "gripper0_hand_collision": 86.04151586520325,
+          "gripper0_finger1_collision": 50.436569774602205,
+          "gripper0_finger1_pad_collision": 50.59999999999998,
+          "gripper0_finger2_collision": 50.314112565164606,
+          "gripper0_finger2_pad_collision": 50.60000000000009
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.0675,
+        "gaps_mm": {
+          "gripper0_hand_collision": 83.54151586816616,
+          "gripper0_finger1_collision": 48.04700148574981,
+          "gripper0_finger1_pad_collision": 48.09999999999992,
+          "gripper0_finger2_collision": 47.924544276313654,
+          "gripper0_finger2_pad_collision": 48.10000000000003
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.065,
+        "gaps_mm": {
+          "gripper0_hand_collision": 81.04151587112918,
+          "gripper0_finger1_collision": 45.657433196897415,
+          "gripper0_finger1_pad_collision": 45.599999999999866,
+          "gripper0_finger2_collision": 45.5349759874627,
+          "gripper0_finger2_pad_collision": 45.59999999999997
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.0625,
+        "gaps_mm": {
+          "gripper0_hand_collision": 78.54151587409231,
+          "gripper0_finger1_collision": 43.26786490804513,
+          "gripper0_finger1_pad_collision": 43.099999999999916,
+          "gripper0_finger2_collision": 43.14540769861186,
+          "gripper0_finger2_pad_collision": 43.10000000000003
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.06,
+        "gaps_mm": {
+          "gripper0_hand_collision": 76.04151587705543,
+          "gripper0_finger1_collision": 40.878296619192845,
+          "gripper0_finger1_pad_collision": 40.599999999999966,
+          "gripper0_finger2_collision": 40.75583940976113,
+          "gripper0_finger2_pad_collision": 40.60000000000008
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.057499999999999996,
+        "gaps_mm": {
+          "gripper0_hand_collision": 73.54151588001834,
+          "gripper0_finger1_collision": 38.48872833034045,
+          "gripper0_finger1_pad_collision": 38.09999999999991,
+          "gripper0_finger2_collision": 38.36627112091018,
+          "gripper0_finger2_pad_collision": 38.10000000000002
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.05500000000000001,
+        "gaps_mm": {
+          "gripper0_hand_collision": 71.04151588298147,
+          "gripper0_finger1_collision": 36.225309521288665,
+          "gripper0_finger1_pad_collision": 35.60154934923033,
+          "gripper0_finger2_collision": 35.97670283205934,
+          "gripper0_finger2_pad_collision": 35.60000000000008
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.052500000000000005,
+        "gaps_mm": {
+          "gripper0_hand_collision": 68.54151588594448,
+          "gripper0_finger1_collision": 34.76520557821166,
+          "gripper0_finger1_pad_collision": 33.09999999999991,
+          "gripper0_finger2_collision": 34.42702360167604,
+          "gripper0_finger2_pad_collision": 34.1108773076062
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.05,
+        "gaps_mm": {
+          "gripper0_hand_collision": 66.04151588890761,
+          "gripper0_finger1_collision": 33.30510163513478,
+          "gripper0_finger1_pad_collision": 30.59999999999996,
+          "gripper0_finger2_collision": 32.9669196585991,
+          "gripper0_finger2_pad_collision": 32.99284331885632
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.0475,
+        "gaps_mm": {
+          "gripper0_hand_collision": 63.541515891870624,
+          "gripper0_finger1_collision": 31.844997692057785,
+          "gripper0_finger1_pad_collision": 32.24744738298062,
+          "gripper0_finger2_collision": 31.506815715522162,
+          "gripper0_finger2_pad_collision": 31.874809330106444
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.045,
+        "gaps_mm": {
+          "gripper0_hand_collision": 61.041515894833644,
+          "gripper0_finger1_collision": 30.3848937489809,
+          "gripper0_finger1_pad_collision": 31.129413394230767,
+          "gripper0_finger2_collision": 30.04671177244522,
+          "gripper0_finger2_pad_collision": 30.75677534135657
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.042499999999999996,
+        "gaps_mm": {
+          "gripper0_hand_collision": 58.54151589779666,
+          "gripper0_finger1_collision": 28.924789805903906,
+          "gripper0_finger1_pad_collision": 23.0999999999999,
+          "gripper0_finger2_collision": 28.586607829368283,
+          "gripper0_finger2_pad_collision": 29.63874135260658
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.04000000000000001,
+        "gaps_mm": {
+          "gripper0_hand_collision": 56.041515900759784,
+          "gripper0_finger1_collision": 27.464685862826965,
+          "gripper0_finger1_pad_collision": 22.003742224596333,
+          "gripper0_finger2_collision": 27.126503886291342,
+          "gripper0_finger2_pad_collision": 28.5207073638567
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.037500000000000006,
+        "gaps_mm": {
+          "gripper0_hand_collision": 53.541515903722804,
+          "gripper0_finger1_collision": 26.049750502422587,
+          "gripper0_finger1_pad_collision": 27.775311427981052,
+          "gripper0_finger2_collision": 25.70596151664939,
+          "gripper0_finger2_pad_collision": 27.402673375106822
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.035,
+        "gaps_mm": {
+          "gripper0_hand_collision": 51.04151590668582,
+          "gripper0_finger1_collision": 24.866579299916875,
+          "gripper0_finger1_pad_collision": 26.657277439231173,
+          "gripper0_finger2_collision": 24.4814804258483,
+          "gripper0_finger2_pad_collision": 26.284639386356943
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.0325,
+        "gaps_mm": {
+          "gripper0_hand_collision": 48.54151590964884,
+          "gripper0_finger1_collision": 23.912632630499136,
+          "gripper0_finger1_pad_collision": 22.003742224596333,
+          "gripper0_finger2_collision": 23.52753375643035,
+          "gripper0_finger2_pad_collision": 25.166605397606958
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.03,
+        "gaps_mm": {
+          "gripper0_hand_collision": 46.04151591261196,
+          "gripper0_finger1_collision": 23.078737378672763,
+          "gripper0_finger1_pad_collision": 22.00374222459628,
+          "gripper0_finger2_collision": 22.66795538117866,
+          "gripper0_finger2_pad_collision": 24.04857140885708
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.027499999999999997,
+        "gaps_mm": {
+          "gripper0_hand_collision": 43.541515915574976,
+          "gripper0_finger1_collision": 22.66161504172122,
+          "gripper0_finger1_pad_collision": 23.303175472981483,
+          "gripper0_finger2_collision": 22.250833044227093,
+          "gripper0_finger2_pad_collision": 22.9305374201072
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.024999999999999994,
+        "gaps_mm": {
+          "gripper0_hand_collision": 41.041515918537996,
+          "gripper0_finger1_collision": 22.42927471900949,
+          "gripper0_finger1_pad_collision": 22.185141484231604,
+          "gripper0_finger2_collision": 22.012877224318437,
+          "gripper0_finger2_pad_collision": 21.81250343135732
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.022499999999999992,
+        "gaps_mm": {
+          "gripper0_hand_collision": 38.541515921501016,
+          "gripper0_finger1_collision": 22.392139097244023,
+          "gripper0_finger1_pad_collision": 22.00374222459628,
+          "gripper0_finger2_collision": 21.97554544753538,
+          "gripper0_finger2_pad_collision": 21.587120215981248
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.01999999999999999,
+        "gaps_mm": {
+          "gripper0_hand_collision": 36.04151592446414,
+          "gripper0_finger1_collision": 22.371099382393457,
+          "gripper0_finger1_pad_collision": 22.00374222459628,
+          "gripper0_finger2_collision": 21.95447737377848,
+          "gripper0_finger2_pad_collision": 21.587120215981248
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.017499999999999988,
+        "gaps_mm": {
+          "gripper0_hand_collision": 33.541515927427156,
+          "gripper0_finger1_collision": 22.371099382393457,
+          "gripper0_finger1_pad_collision": 22.00374222459628,
+          "gripper0_finger2_collision": 21.95447737377848,
+          "gripper0_finger2_pad_collision": 21.587120215981248
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.015000000000000013,
+        "gaps_mm": {
+          "gripper0_hand_collision": 31.041515930390172,
+          "gripper0_finger1_collision": 22.371099382393457,
+          "gripper0_finger1_pad_collision": 22.00374222459628,
+          "gripper0_finger2_collision": 21.95447737377848,
+          "gripper0_finger2_pad_collision": 21.587120215981248
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.012500000000000011,
+        "gaps_mm": {
+          "gripper0_hand_collision": 28.54151593335319,
+          "gripper0_finger1_collision": 22.371099382393457,
+          "gripper0_finger1_pad_collision": 22.00374222459628,
+          "gripper0_finger2_collision": 21.95447737377848,
+          "gripper0_finger2_pad_collision": 21.587120215981248
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.010000000000000009,
+        "gaps_mm": {
+          "gripper0_hand_collision": 26.041515936316316,
+          "gripper0_finger1_collision": 22.371099382393457,
+          "gripper0_finger1_pad_collision": 22.00374222459628,
+          "gripper0_finger2_collision": 21.95447737377848,
+          "gripper0_finger2_pad_collision": 21.587120215981248
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.007500000000000007,
+        "gaps_mm": {
+          "gripper0_hand_collision": 23.541515939279446,
+          "gripper0_finger1_collision": 22.371099382393457,
+          "gripper0_finger1_pad_collision": 22.00374222459628,
+          "gripper0_finger2_collision": 21.95447737377848,
+          "gripper0_finger2_pad_collision": 21.587120215981248
+        },
+        "all_geoms_separated": true
+      },
+      {
+        "height_above_brick_centre_m": 0.005,
+        "gaps_mm": {
+          "gripper0_hand_collision": 21.041515942242462,
+          "gripper0_finger1_collision": 22.371099382393457,
+          "gripper0_finger1_pad_collision": 22.00374222459628,
+          "gripper0_finger2_collision": 21.95447737377848,
+          "gripper0_finger2_pad_collision": 21.587120215981248
+        },
+        "all_geoms_separated": true
+      }
+    ]
+  },
+  "actual_contact_tick": 527,
+  "recorded_first_collision_pair": [
+    "cube_g0",
+    "gripper0_finger2_collision"
+  ],
+  "actual_first_contact_projection_gaps_mm": {
+    "gripper0_hand_collision": 35.35534744728086,
+    "gripper0_finger1_collision": 55.75775331271032,
+    "gripper0_finger1_pad_collision": 55.722296607114394,
+    "gripper0_finger2_collision": -2.679505219353562,
+    "gripper0_finger2_pad_collision": 1.9377462051189953
+  },
+  "fk_vs_logged_eef_difference_mm": 0.1655036582459581,
+  "fk_vs_logged_geom_centres_mm": {
+    "gripper0_hand_collision": 0.19829834371351615,
+    "gripper0_finger1_collision": 0.16332220744088402,
+    "gripper0_finger1_pad_collision": 0.15723502776715914,
+    "gripper0_finger2_collision": 0.1674595838314225,
+    "gripper0_finger2_pad_collision": 0.1590454786527205
+  },
+  "geometry": {
+    "gripper0_hand_collision": {
+      "type": 7,
+      "vertices": 102,
+      "local_bounds_m": [
+        [
+          -0.031641412526369095,
+          -0.048672012984752655,
+          -0.10188709944486618
+        ],
+        [
+          0.03160836920142174,
+          0.044386934489011765,
+          0.10394595563411713
+        ]
+      ],
+      "contype": 1,
+      "conaffinity": 1
+    },
+    "gripper0_finger1_collision": {
+      "type": 7,
+      "vertices": 18,
+      "local_bounds_m": [
+        [
+          -0.010603564791381359,
+          -0.013564666733145714,
+          -0.025787556543946266
+        ],
+        [
+          0.010680919513106346,
+          0.012463240884244442,
+          0.03158571198582649
+        ]
+      ],
+      "contype": 0,
+      "conaffinity": 1
+    },
+    "gripper0_finger1_pad_collision": {
+      "type": 6,
+      "vertices": 8,
+      "local_bounds_m": [
+        [
+          -0.008,
+          -0.004,
+          -0.008
+        ],
+        [
+          0.008,
+          0.004,
+          0.008
+        ]
+      ],
+      "contype": 1,
+      "conaffinity": 1
+    },
+    "gripper0_finger2_collision": {
+      "type": 7,
+      "vertices": 18,
+      "local_bounds_m": [
+        [
+          -0.010603564791381359,
+          -0.013564666733145714,
+          -0.025787556543946266
+        ],
+        [
+          0.010680919513106346,
+          0.012463240884244442,
+          0.03158571198582649
+        ]
+      ],
+      "contype": 0,
+      "conaffinity": 1
+    },
+    "gripper0_finger2_pad_collision": {
+      "type": 6,
+      "vertices": 8,
+      "local_bounds_m": [
+        [
+          -0.008,
+          -0.004,
+          -0.008
+        ],
+        [
+          0.008,
+          0.004,
+          0.008
+        ]
+      ],
+      "contype": 1,
+      "conaffinity": 1
+    }
+  },
+  "limits": [
+    "Discrete sampled vertical corridor, not continuous dynamic feasibility proof.",
+    "Mesh convex-hull SAT mirrors convex collision geometry, not rendered fingertips.",
+    "Projection gap is a separating-axis value, not exact Euclidean distance.",
+    "Actual corroboration uses FK geom rotations and recorded centres; qpos/derived transforms may be offset by one integration substep.",
+    "Contact forces were not logged; no reconstructed force magnitude or causal-force claim."
+  ]
+}
