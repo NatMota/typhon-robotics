@@ -63,6 +63,9 @@ S_recovery_3,solution,Separate AlphaNIST-style PPO from X-VLA,O_recovery,820,235
 T11050,experiment,"DATA07-R · #11050
 Qualify acquisition repairs on training families before admitting corrective data",S_recovery_4,1220,2707.5,#4a4428
 R11050,result,"Completed: native B loading3/4. Only0001 tipped pre-acquisition; one same-state C-pose/B-grip chunk still failed (0/1 conversions), with428.09mm final error. Full horizon and exact state/input/noise checks passed. Zero successful correction examples; no training. Raw809files SHA256-verified on Mint.",T11050,1620,2655.0,#574831
-S_recovery_4,solution,Qualify training-family corrective supervision,O_recovery,820,2717.0,#343a46
-O_recovery,opportunity,Advance phases only from trustworthy evidence,outcome,420,1593.25,#2d443b
+T11052,experiment,"DATA07-GE · #11052
+Qualify one geometric-expert continuation from B's failed approach state",S_recovery_4,1220,2929.0,#4a4428
+R11052,result,"Completed: exact-state geometric teacher placed/released inside fixture (1.22 mm, 0.016 deg yaw) but brick lay sideways (90 deg tilt). Strict 0/1; no correction candidate. Open descent tipped before close. No training; stopped after one attempt.",T11052,1620,2887.0,#574831
+S_recovery_4,solution,Qualify training-family corrective supervision,O_recovery,820,2827.75,#343a46
+O_recovery,opportunity,Advance phases only from trustworthy evidence,outcome,420,1648.62,#2d443b
 outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60

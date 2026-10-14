@@ -1,7 +1,7 @@
 {
   "passed": true,
-  "time": 1792014767.6001725,
-  "tickets": 98,
+  "time": 1792016139.855134,
+  "tickets": 99,
   "covered": [
     10954,
     10955,
@@ -100,7 +100,8 @@
     11048,
     11049,
     11050,
-    11051
+    11051,
+    11052
   ],
   "pages": [
     {
@@ -133,10 +134,10 @@
     },
     {
       "page": "recovery",
-      "experiments": 20,
+      "experiments": 21,
       "width": 2000,
-      "height": 2911.0,
-      "svg_sha256": "192351ce466af567326986dff11a9be4a9d5d84625593a0e37f9db50441c6700"
+      "height": 3122.0,
+      "svg_sha256": "3d092dd61104b6700bed1d7dd0cc92927fc13e76725bb436e29ad41e7f181815"
     },
     {
       "page": "compute",
@@ -149,8 +150,8 @@
       "page": "evidence",
       "experiments": 13,
       "width": 2000,
-      "height": 2056.0,
-      "svg_sha256": "7ebecb03ddaca215ff84536cf14153332a00cc708d61d1e66c19768f902eb63c"
+      "height": 2077.0,
+      "svg_sha256": "33eb4ba2afad99470125b794cb2320a64b1c3c258fb0f8f0c492b7d5fe4bfc7f"
     },
     {
       "page": "parked",
@@ -161,17 +162,17 @@
     },
     {
       "page": "full-tree",
-      "experiments": 98,
+      "experiments": 99,
       "width": 2000,
-      "height": 14536.0,
-      "svg_sha256": "cc6a175f76032a294c8e6e599a50e9cb20939a819ad384c0777dbe88963891c5"
+      "height": 14768.0,
+      "svg_sha256": "20c94b44e54c5bdec0978051433003bc49277511624632041529b2b73201641b"
     },
     {
       "page": "overview",
-      "experiments": 15,
+      "experiments": 16,
       "width": 2000,
-      "height": 2961.0,
-      "svg_sha256": "a409ff4c64f701e4444ba769c56d9285a1efb8e8f85799ad27e158e89035aef2"
+      "height": 3193.0,
+      "svg_sha256": "9ec86993a76e1a2921765431adb19fb4283448bb05578baffa0fe16031bed463"
     }
   ],
   "distinct_results_to_right": true,
@@ -180,6 +181,6 @@
   "bounds_checks": true,
   "source": "refresh-input-complete.json",
   "render_command": "python3 render-offline.py",
-  "live_installation": "pending OPS07 #11049; these files have NOT been served by the Mint Design app",
-  "last_live_ticket_count": 92
+  "live_installation": "not asserted by offline renderer; see served-validation-current.json",
+  "last_live_ticket_count": null
 }

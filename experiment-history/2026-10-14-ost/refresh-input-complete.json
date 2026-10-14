@@ -209,7 +209,8 @@
         [
           "Qualify training-family corrective supervision",
           [
-            11050
+            11050,
+            11052
           ]
         ]
       ]
@@ -364,16 +365,12 @@
     "11046": "Both native controls reproduce. Crossed test stopped only on an XML visual statistic; controls subsequently reused in R2.",
     "11047": "Only B from its own state tips. Crossed pickups are upright (0.86 and 1.62 degrees). State-policy interaction in one inspected case.",
     "11048": "Pose-only substitution fixes acquisition: 1.12 versus 62.76 degrees tilt. Grip-only does not. B resumes; no full-placement or training claim.",
-    "11049": "Mint access recovered. LOAD05-R/R2/LOAD06 mirrors verified45files; DATA07-R809files verified. Interrupted OST edits preserved. Installing/revalidating latest98-ticket live views; not yet complete.",
+    "11049": "Recovered: Mint mirrors verified (45 older evidence files, 809 DATA07-R raw files). Interrupted work preserved; live OST installed and served bytes checked. DATA07-GE raw 223 files also verified. Fresh-machine restore untested.",
     "11050": "Completed: native B loading3/4. Only0001 tipped pre-acquisition; one same-state C-pose/B-grip chunk still failed (0/1 conversions), with428.09mm final error. Full horizon and exact state/input/noise checks passed. Zero successful correction examples; no training. Raw809files SHA256-verified on Mint.",
-    "11051": "PARKED by request. Fuller GPU-parallel/reset-bank implementation and visual orientation extension recorded; no implementation or training started."
+    "11051": "PARKED by request. Fuller GPU-parallel/reset-bank implementation and visual orientation extension recorded; no implementation or training started.",
+    "11052": "Completed: exact-state geometric teacher placed/released inside fixture (1.22 mm, 0.016 deg yaw) but brick lay sideways (90 deg tilt). Strict 0/1; no correction candidate. Open descent tipped before close. No training; stopped after one attempt."
   },
   "tickets": [
-    {
-      "id": 11049,
-      "title": "OPS07 \u2014 Restore Mint access and mirror latest experiment evidence and OST",
-      "status": "In Progress"
-    },
     {
       "id": 10984,
       "title": "NEXT02 \u2014 Repair observation hypotheses before granting the harness veto authority",
@@ -842,6 +839,16 @@
     {
       "id": 11050,
       "title": "DATA07-R \u2014 Qualify acquisition repairs on training families before admitting corrective data",
+      "status": "Done"
+    },
+    {
+      "id": 11049,
+      "title": "OPS07 \u2014 Restore Mint access and mirror latest experiment evidence and OST",
+      "status": "Done"
+    },
+    {
+      "id": 11052,
+      "title": "DATA07-GE \u2014 Qualify one geometric-expert continuation from B's failed approach state",
       "status": "Done"
     },
     {

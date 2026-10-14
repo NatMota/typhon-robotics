@@ -543,12 +543,48 @@
       ]
     },
     {
+      "id": "T11052",
+      "type": "experiment",
+      "label": "DATA07-GE \u00b7 #11052\nQualify one geometric-expert continuation from B's failed approach state",
+      "parent_id": "S_recovery_4",
+      "x": 1220,
+      "y": 2191.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DATA07-GE \u00b7 #11052",
+        "Qualify one geometric-expert continuation",
+        "from B's failed approach state"
+      ]
+    },
+    {
+      "id": "R11052",
+      "type": "result",
+      "label": "Completed: exact-state geometric teacher placed/released inside fixture (1.22 mm, 0.016 deg yaw) but brick lay sideways (90 deg tilt). Strict 0/1; no correction candidate. Open descent tipped before close. No training; stopped after one attempt.",
+      "parent_id": "T11052",
+      "x": 1620,
+      "y": 2149.0,
+      "width": 350,
+      "height": 175,
+      "color": "#574831",
+      "lines": [
+        "Completed: exact-state geometric teacher",
+        "placed/released inside fixture (1.22 mm,",
+        "0.016 deg yaw) but brick lay sideways (90",
+        "deg tilt). Strict 0/1; no correction",
+        "candidate. Open descent tipped before",
+        "close. No training; stopped after one",
+        "attempt."
+      ]
+    },
+    {
       "id": "S_recovery_4",
       "type": "solution",
       "label": "Qualify training-family corrective supervision",
       "parent_id": "O_recovery",
       "x": 820,
-      "y": 1979.0,
+      "y": 2089.75,
       "width": 350,
       "height": 72,
       "color": "#343a46",
@@ -563,7 +599,7 @@
       "label": "Advance phases only from trustworthy evidence",
       "parent_id": "outcome",
       "x": 420,
-      "y": 1790.25,
+      "y": 1845.62,
       "width": 350,
       "height": 72,
       "color": "#2d443b",
@@ -578,7 +614,7 @@
       "label": "LIVE08 \u00b7 #11028\nIsolate the first ranked candidate from boundary timing",
       "parent_id": "S_compute_1",
       "x": 1220,
-      "y": 2234.5,
+      "y": 2445.5,
       "width": 350,
       "height": 91,
       "color": "#4a4428",
@@ -594,7 +630,7 @@
       "label": "Four-run 2x2: candidate A grasps/places at both waits; C at neither. Candidate choice explains this failure, not one tick of delay.",
       "parent_id": "T11028",
       "x": 1620,
-      "y": 2224.0,
+      "y": 2435.0,
       "width": 350,
       "height": 112,
       "color": "#574831",
@@ -611,7 +647,7 @@
       "label": "Integrate and isolate the live selection mechanism",
       "parent_id": "O_compute",
       "x": 820,
-      "y": 2244.0,
+      "y": 2455.0,
       "width": 350,
       "height": 72,
       "color": "#343a46",
@@ -626,7 +662,7 @@
       "label": "Choose useful candidates without blocking valid motion",
       "parent_id": "outcome",
       "x": 420,
-      "y": 2244.0,
+      "y": 2455.0,
       "width": 350,
       "height": 72,
       "color": "#2d443b",
@@ -641,7 +677,7 @@
       "label": "EVAL02 \u00b7 #10996\nDefine the next confirmatory comparison with family-level uncertainty",
       "parent_id": "S_evidence_0",
       "x": 1220,
-      "y": 2457.5,
+      "y": 2668.5,
       "width": 350,
       "height": 91,
       "color": "#4a4428",
@@ -657,7 +693,7 @@
       "label": "REVIEW: 136/204 planned completed. Broad vs vanilla near-layout strict 17/40 vs 0/40. Broader layouts 0/20 both; 68 interventions unrun.",
       "parent_id": "T10996",
       "x": 1620,
-      "y": 2447.0,
+      "y": 2658.0,
       "width": 350,
       "height": 112,
       "color": "#574831",
@@ -674,7 +710,7 @@
       "label": "Reconcile evaluation panels and uncertainty",
       "parent_id": "O_evidence",
       "x": 820,
-      "y": 2467.0,
+      "y": 2678.0,
       "width": 350,
       "height": 72,
       "color": "#343a46",
@@ -688,7 +724,7 @@
       "label": "OPS01 \u00b7 #11042\nVerify Powerglide booking and full backup including lab recovery",
       "parent_id": "S_evidence_1",
       "x": 1220,
-      "y": 2630.5,
+      "y": 2841.5,
       "width": 350,
       "height": 91,
       "color": "#4a4428",
@@ -704,7 +740,7 @@
       "label": "Full backup reconciled: 906,507 files, 299.6 GB, no integrity errors. Labs and checkpoint checks saved. Fresh-machine restore untested.",
       "parent_id": "T11042",
       "x": 1620,
-      "y": 2620.0,
+      "y": 2831.0,
       "width": 350,
       "height": 112,
       "color": "#574831",
@@ -721,7 +757,7 @@
       "label": "OPS07 \u00b7 #11049\nRestore Mint access and mirror latest experiment evidence and OST",
       "parent_id": "S_evidence_1",
       "x": 1220,
-      "y": 2789.0,
+      "y": 3010.5,
       "width": 350,
       "height": 91,
       "color": "#4a4428",
@@ -734,19 +770,20 @@
     {
       "id": "R11049",
       "type": "result",
-      "label": "Mint access recovered. LOAD05-R/R2/LOAD06 mirrors verified45files; DATA07-R809files verified. Interrupted OST edits preserved. Installing/revalidating latest98-ticket live views; not yet complete.",
+      "label": "Recovered: Mint mirrors verified (45 older evidence files, 809 DATA07-R raw files). Interrupted work preserved; live OST installed and served bytes checked. DATA07-GE raw 223 files also verified. Fresh-machine restore untested.",
       "parent_id": "T11049",
       "x": 1620,
-      "y": 2768.0,
+      "y": 2979.0,
       "width": 350,
-      "height": 133,
-      "color": "#30445a",
+      "height": 154,
+      "color": "#574831",
       "lines": [
-        "Mint access recovered. LOAD05-R/R2/LOAD06",
-        "mirrors verified45files; DATA07-R809files",
-        "verified. Interrupted OST edits preserved.",
-        "Installing/revalidating latest98-ticket",
-        "live views; not yet complete."
+        "Recovered: Mint mirrors verified (45 older",
+        "evidence files, 809 DATA07-R raw files).",
+        "Interrupted work preserved; live OST",
+        "installed and served bytes checked.",
+        "DATA07-GE raw 223 files also verified.",
+        "Fresh-machine restore untested."
       ]
     },
     {
@@ -755,7 +792,7 @@
       "label": "Preserve the research record and compute environment",
       "parent_id": "O_evidence",
       "x": 820,
-      "y": 2719.25,
+      "y": 2935.5,
       "width": 350,
       "height": 72,
       "color": "#343a46",
@@ -770,7 +807,7 @@
       "label": "Make results reproducible, recoverable and understandable",
       "parent_id": "outcome",
       "x": 420,
-      "y": 2593.12,
+      "y": 2806.75,
       "width": 350,
       "height": 72,
       "color": "#2d443b",
@@ -933,6 +970,14 @@
       "R11050"
     ],
     [
+      "S_recovery_4",
+      "T11052"
+    ],
+    [
+      "T11052",
+      "R11052"
+    ],
+    [
       "O_recovery",
       "S_recovery_4"
     ],
@@ -994,5 +1039,5 @@
     ]
   ],
   "width": 2000,
-  "height": 2961.0
+  "height": 3193.0
 }

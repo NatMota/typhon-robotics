@@ -698,12 +698,48 @@
       ]
     },
     {
+      "id": "T11052",
+      "type": "experiment",
+      "label": "DATA07-GE \u00b7 #11052\nQualify one geometric-expert continuation from B's failed approach state",
+      "parent_id": "S_recovery_4",
+      "x": 1220,
+      "y": 2929.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DATA07-GE \u00b7 #11052",
+        "Qualify one geometric-expert continuation",
+        "from B's failed approach state"
+      ]
+    },
+    {
+      "id": "R11052",
+      "type": "result",
+      "label": "Completed: exact-state geometric teacher placed/released inside fixture (1.22 mm, 0.016 deg yaw) but brick lay sideways (90 deg tilt). Strict 0/1; no correction candidate. Open descent tipped before close. No training; stopped after one attempt.",
+      "parent_id": "T11052",
+      "x": 1620,
+      "y": 2887.0,
+      "width": 350,
+      "height": 175,
+      "color": "#574831",
+      "lines": [
+        "Completed: exact-state geometric teacher",
+        "placed/released inside fixture (1.22 mm,",
+        "0.016 deg yaw) but brick lay sideways (90",
+        "deg tilt). Strict 0/1; no correction",
+        "candidate. Open descent tipped before",
+        "close. No training; stopped after one",
+        "attempt."
+      ]
+    },
+    {
       "id": "S_recovery_4",
       "type": "solution",
       "label": "Qualify training-family corrective supervision",
       "parent_id": "O_recovery",
       "x": 820,
-      "y": 2717.0,
+      "y": 2827.75,
       "width": 350,
       "height": 72,
       "color": "#343a46",
@@ -718,7 +754,7 @@
       "label": "Advance phases only from trustworthy evidence",
       "parent_id": "outcome",
       "x": 420,
-      "y": 1593.25,
+      "y": 1648.62,
       "width": 350,
       "height": 72,
       "color": "#2d443b",
@@ -921,6 +957,14 @@
       "R11050"
     ],
     [
+      "S_recovery_4",
+      "T11052"
+    ],
+    [
+      "T11052",
+      "R11052"
+    ],
+    [
       "O_recovery",
       "S_recovery_4"
     ],
@@ -930,5 +974,5 @@
     ]
   ],
   "width": 2000,
-  "height": 2911.0
+  "height": 3122.0
 }

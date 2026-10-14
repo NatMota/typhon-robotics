@@ -1,0 +1,27 @@
+{"page": "data", "width": 4208, "height": 6320, "layer": "b7417d1e-7663-4833-98b3-64abeb81c115"}
+{"page": "perception", "width": 4087, "height": 2792, "layer": "e786cd11-91ae-44c2-a7ae-3cc81cbdda5d"}
+{"page": "execution", "width": 4082, "height": 1608, "layer": "fb362760-ba96-4b7f-90bb-05359f25b893"}
+{"page": "recovery", "width": 4222, "height": 4872, "layer": "aefab601-590f-496b-8ea5-4ba49811c22b"}
+{"page": "compute", "width": 4055, "height": 2520, "layer": "44daef42-a2ab-4dc0-b238-c1874965b28b"}
+{"page": "evidence", "width": 4156, "height": 3624, "layer": "254e6e7d-f55a-451b-b047-ef4b2e8e43af"}
+Traceback (most recent call last):
+  File "/media/nm/Fast Drive/Typhon/research-20261014/ost-update/refresh.py", line 69, in <module>
+    for page,body in bodies.items():receipts.append(install(page,header+body+styles))
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/nm/Fast Drive/Typhon/research-20261014/ost-update/refresh.py", line 45, in install
+    receipt=call('create_mermaid_diagram',{**base,'mermaid_code':code,'theme':'dark'});newid=receipt['layer_id']
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/nm/Fast Drive/Typhon/research-20261014/ost-update/refresh.py", line 6, in call
+    p=subprocess.run(['python3','/home/nm/llm-design-tool/cli/ldt.py','tools/call',name,json.dumps(args)],env=ENV,capture_output=True,text=True,timeout=180)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 2116, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/usr/lib/python3.12/subprocess.py", line 1253, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['python3', '/home/nm/llm-design-tool/cli/ldt.py', 'tools/call', 'create_mermaid_diagram', '{"project_id": "typhon-research", "page_id": "parked", "artboard_id": "parked-tree", "mermaid_code": "%%{init: {\\"theme\\": \\"base\\", \\"securityLevel\\": \\"loose\\", \\"fontFamily\\": \\"Arial, sans-serif\\", \\"fontSize\\": 18, \\"markdownAutoWrap\\": false, \\"flowchart\\": {\\"htmlLabels\\": false, \\"curve\\": \\"basis\\", \\"nodeSpacing\\": 24, \\"rankSpacing\\": 70, \\"wrappingWidth\\": 360}, \\"themeVariables\\": {\\"primaryTextColor\\": \\"#edf2f7\\", \\"lineColor\\": \\"#71849f\\", \\"background\\": \\"#0b1220\\"}}}%%\\nflowchart LR\\nOUT[\\"Outcome: reliably complete the requested<br/>manipulation task from personal evidence\\"]:::outcome\\nO_parked[\\"Opportunity: Keep deferred work distinct from evidence\\"]:::opportunity\\nOUT --> O_parked\\nO_parked_S0[\\"Solution: Do not expand scope without a new reason\\"]:::solution\\nO_parked --> O_parked_S0\\nT11009[\\"PARK01 \\u00b7 #11009<br/>Set-of-Mark object/region labels \\u2014 withdrawn\\"]:::experiment\\nO_parked_S0 --> T11009\\nR11009[\\"PARKED: Set-of-Mark withdrawn by the user.\\"]:::parked\\nT11009 --> R11009\\nclick T11009 \\"http://127.0.0.1:4001/?project=typhon-research#ticket=11009\\" \\"Open research ticket\\" _blank\\nT11010[\\"PARK02 \\u00b7 #11010<br/>Broader platform and simulator changes \\u2014<br/>deferred\\"]:::experiment\\nO_parked_S0 --> T11010\\nR11010[\\"PARKED: broader platforms and simulator<br/>changes deferred.\\"]:::parked\\nT11010 --> R11010\\nclick T11010 \\"http://127.0.0.1:4001/?project=typhon-research#ticket=11010\\" \\"Open research ticket\\" _blank\\nclassDef outcome fill:#263f60,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\\nclassDef opportunity fill:#2d443b,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\\nclassDef solution fill:#343a46,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\\nclassDef experiment fill:#4a4428,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\\nclassDef evidence fill:#244a3d,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\\nclassDef mixed fill:#574831,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\\nclassDef negative fill:#56343c,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\\nclassDef pending fill:#30445a,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\\nclassDef blocked fill:#4e374f,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\\nclassDef parked fill:#373b42,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\\n", "theme": "dark"}']' timed out after 180 seconds

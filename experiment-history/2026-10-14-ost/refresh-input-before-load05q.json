@@ -1,0 +1,809 @@
+{
+  "groups": [
+    [
+      "data",
+      "Personal data",
+      "Turn personal observations into reliable robot practice",
+      [
+        [
+          "Preserve source evidence and physical assumptions",
+          [
+            10981,
+            10991,
+            10972,
+            10974,
+            10989
+          ]
+        ],
+        [
+          "Audit training targets, mixing and held markers",
+          [
+            10987,
+            10988,
+            10990
+          ]
+        ],
+        [
+          "Extract observed object, hand and temporal evidence",
+          [
+            11016,
+            11017,
+            11018,
+            11019
+          ]
+        ],
+        [
+          "Test causal contact evidence and its failures",
+          [
+            11020,
+            11021,
+            11022
+          ]
+        ],
+        [
+          "Qualify motion, camera geometry and transfer",
+          [
+            11023,
+            11024,
+            11032,
+            11033,
+            11034,
+            11035,
+            11015
+          ]
+        ]
+      ]
+    ],
+    [
+      "perception",
+      "Perception and goal grounding",
+      "Make relevant visual cues change the correct action",
+      [
+        [
+          "Inspect the exact model inputs",
+          [
+            10959,
+            10955,
+            10993,
+            11011
+          ]
+        ],
+        [
+          "Test instructions and goal diversity",
+          [
+            10954,
+            10960,
+            10961,
+            10994
+          ]
+        ],
+        [
+          "Qualify visual completion decisions",
+          [
+            11005,
+            11006
+          ]
+        ]
+      ]
+    ],
+    [
+      "execution",
+      "Action execution",
+      "Make grasp-relative motion finish before release",
+      [
+        [
+          "Trace commanded and executed motion",
+          [
+            10957,
+            10958,
+            10968
+          ]
+        ],
+        [
+          "Estimate the actual grasp and qualify paths",
+          [
+            10985,
+            10998
+          ]
+        ],
+        [
+          "Test observation frequency",
+          [
+            10966
+          ]
+        ]
+      ]
+    ],
+    [
+      "generalisation",
+      "Generalisation",
+      "The model succeeds locally but follows scene cues",
+      [
+        [
+          "Broader adaptation and coverage checks",
+          [
+            10962,
+            10963,
+            10964,
+            10965,
+            10983
+          ]
+        ],
+        [
+          "Audit repair data",
+          [
+            10992
+          ]
+        ],
+        [
+          "Teach loading without losing feeding",
+          [
+            11013,
+            11037
+          ]
+        ],
+        [
+          "Separate task instruction from fixture appearance",
+          [
+            11038,
+            11039,
+            11040
+          ]
+        ],
+        [
+          "Separate acquired grasp from placement behaviour",
+          [
+            11044
+          ]
+        ]
+      ]
+    ],
+    [
+      "recovery",
+      "Recovery and supervision",
+      "Advance phases only from trustworthy evidence",
+      [
+        [
+          "Qualify state estimates and safety checks",
+          [
+            10969,
+            10970,
+            10984,
+            10999,
+            11004,
+            11030,
+            11031
+          ]
+        ],
+        [
+          "Qualify skills and phase control",
+          [
+            10971,
+            10973,
+            10976,
+            10977,
+            11000
+          ]
+        ],
+        [
+          "Test correction data and RL prerequisites",
+          [
+            10978,
+            11001,
+            11002,
+            11003
+          ]
+        ],
+        [
+          "Separate AlphaNIST-style PPO from X-VLA",
+          [
+            11041,
+            11043
+          ]
+        ]
+      ]
+    ],
+    [
+      "compute",
+      "Test-time compute",
+      "Choose useful candidates without blocking valid motion",
+      [
+        [
+          "Measure candidate support and visual ranking",
+          [
+            10967,
+            10975,
+            10982,
+            11029
+          ]
+        ],
+        [
+          "Integrate and isolate the live selection mechanism",
+          [
+            11014,
+            11025,
+            11026,
+            11027,
+            11028
+          ]
+        ]
+      ]
+    ],
+    [
+      "evidence",
+      "Evidence and delivery",
+      "Make results reproducible, recoverable and understandable",
+      [
+        [
+          "Reconcile evaluation panels and uncertainty",
+          [
+            10995,
+            10997,
+            10996,
+            11036
+          ]
+        ],
+        [
+          "Preserve the research record and compute environment",
+          [
+            10980,
+            10979,
+            10956,
+            10986,
+            11012,
+            11042
+          ]
+        ],
+        [
+          "Qualify media and the private report",
+          [
+            11007,
+            11008
+          ]
+        ]
+      ]
+    ],
+    [
+      "parked",
+      "Parked work",
+      "Keep deferred work distinct from evidence",
+      [
+        [
+          "Do not expand scope without a new reason",
+          [
+            11009,
+            11010
+          ]
+        ]
+      ]
+    ]
+  ],
+  "results": {
+    "10956": "Research ledger reconciled. Current tree covers every ticket with explicit evidence, limitations and status; creating a ticket is not executing it.",
+    "10962": "Six P_train takes, 439 windows. Fresh full-weight Pt reached 3k and 12k checkpoints in 64 minutes; performance tested separately.",
+    "10963": "Narrow M6, broad3k and broad12k each 0/6 development grasps. These starts lie outside the training position hull.",
+    "10964": "Broad12k on six familiar starts: 6/6 grasps, 5/6 stable square placements, 4/6 strict successes.",
+    "10965": "All three development starts lie outside the six training starts' XY convex hull. Coverage gap established.",
+    "10981": "Review candidate 6 is demo0017; its source remains preserved. It is distinct from successful demo0006.",
+    "10982": "32 choices + 32 reasons. Future RGB: 5/5 selected adequate, 7 abstentions; held strict 0/8. Privileged lookahead; no qualified benefit.",
+    "10983": "Selected familiar local variations: 14/16 grasps and 13/16 strict successes. Bounded local competence, not broad transfer.",
+    "10984": "BLOCKED: observers remain below preregistered qualification. No veto, grasp or release authority.",
+    "10985": "Four paired recovery executions: truth and RGB grasp transforms each 2/2 strict. Two inspected source states; no autonomous handoff qualification.",
+    "10986": "19 checkpoint identities audited. M3\u2013M6 are separate lineages; broad Pt starts fresh. Historical V4 recovery arrays remain partly unverified.",
+    "10987": "V2: 632 rows / 316 chunks. V3: 776 / 388. Broad Pt uses 30 actions over 1.5 s; four-second history is not a four-second action target.",
+    "10988": "Broad12k: 48,000 draws, 8,000 per source, all 439 windows. Historical V3 per-update sampling remains unverified.",
+    "10989": "BLOCKED: no validated dense phone-frame to Panda-action alignment. One event comparison is not motor supervision.",
+    "10990": "16 takes / 32 views / 7,904 frames: 1,024 held, 3,598 not held, 3,282 unknown. 768 marked frames; no direct Franka labels.",
+    "10991": "BLOCKED: reliable physical measurements and camera calibration remain missing. Virtual scale stays explicit.",
+    "10992": "18 original episodes verified; original V4's three additions remain unverified. Four later corrections are separate data and gave 0/4 recoveries.",
+    "10993": "Crop-only repair rejected: clearer features did not repair held orientation or release. Native production inputs retained.",
+    "10994": "Matched 3k continuations: varied vs fixed goals 10/12 vs 0/12 novel-goal strict success. Loading 0/12 both; text-only goal response under 1.4 mm.",
+    "10995": "775 matched feeding rollouts: vanilla/V1/V2/V3/V4 pickups 0/0/0/10/1 on 137 unfinished scenes. Stable square placements 0/0/0/5/1.",
+    "10996": "REVIEW: 136/204 planned completed. Broad vs vanilla near-layout strict 17/40 vs 0/40. Broader layouts 0/20 both; 68 interventions unrun.",
+    "10997": "Historical 400 synthetic A/B rows: zero pickup/place/strict. One candidate, 30-second cap, no TTC. Distinct from film-derived evaluation.",
+    "10998": "BLOCKED: set-down/regrasp strict 1/6. Five joint-limit stops; no full collision qualification. Failed paths are not labels.",
+    "10999": "27 checks plus 36 successful expert episodes: zero guard rejections. Logging implemented; not full robot-safety validation.",
+    "11000": "BLOCKED: reliable primitive transitions and observation authority are prerequisites. No high-level selector training.",
+    "11001": "One DAgger iteration, four corrections plus nominal data, 3k updates. Quarantine recovery 0/4; no benefit demonstrated.",
+    "11002": "BLOCKED: reliable correction targets and action support required. Residual RL not run.",
+    "11003": "BLOCKED: useful proposals and valid rewards required. Offline Q / PPO on X-VLA not run.",
+    "11004": "REVIEW: shadow behavior exactly matches V4. Timing provenance still fails because copied RGB arrays lose identity-keyed timestamps.",
+    "11005": "Completion gate failed: classical recall below 80%; separate API diagnostic 2/22 recall. No completion authority granted.",
+    "11006": "Qwen's 180-degree false completion was vetoed by RGB reference. Historical TTC used smoothness, not learned value; no qualified Qwen control.",
+    "11007": "Eight representative records, ten videos, exact models and hashes verified. Current selected files absent from hosted index; delivery repair separate.",
+    "11008": "REVIEW: private 1,777-word synthesis, 14 claim groups, 46 evidence files, 37 numerical checks. Hosting/publication/submission still pending.",
+    "11009": "PARKED: Set-of-Mark withdrawn by the user.",
+    "11010": "PARKED: broader platforms and simulator changes deferred.",
+    "11011": "108 paired predictions: cue sensitivity rises 0.0102 to 0.1887; wrist error remains about 80 degrees and opens at waypoint 11.",
+    "11012": "Reference-style tree restored: outcome, opportunity, solution, experiment, result. Current refresh preserves old snapshots and ticket links.",
+    "11013": "28 physical runs and 18 fixed-input goal probes separate grasp and destination failures; expert feasibility established.",
+    "11014": "Nine live trials: 3 API choices executed 62 targets; 33/36 replies UNKNOWN. Reference pickup/place 1/2 vs 0/2 live variants.",
+    "11015": "Investigation concluded. Assisted correction works, but generic video-to-action transfer and extra benefit from intermediate video were not established.",
+    "11016": "Observed 2D object representation audited. Missing orientation and calibration stay explicit; no recovered human 3D actions.",
+    "11017": "526 sample identities, 175 hand detections. Unknown contact stays unknown; no autonomous grasp authority.",
+    "11018": "112 paired instants / 224 views reviewed. Intermediate pickup/release matters; generic representation-to-action transfer remains unqualified.",
+    "11019": "Corrected extraction: 2,644/2,644 frame hashes; 147 four-second windows. Failed 906-frame-mismatch export preserved. Offline features, no motor labels.",
+    "11020": "35 probes: perfect labelled interiors but hand-present false-held errors remain. Primary-to-side recall 3/28 full vs 28/28 fused; no control authority.",
+    "11021": "12 training negative views added. Transition errors 2/6 to 1/6 views; the same physical event still fails. 90/90 held positives retained.",
+    "11022": "13 pre-contact views added. New false-held errors 2/5 to 1/5; reused challenge 1/8 to 0/8. Held-pause qualification incomplete.",
+    "11023": "342 frames: 194/222 held motion pairs supported, 28 unknown. Image motion is real; metric depth and grasp remain unresolved.",
+    "11024": "Native cadence: 212/222 held pairs supported, up from 194. Ten unsupported pairs remain; no recovered robot actions.",
+    "11025": "30 matched trials isolate guard regression: native pickup/place 1/2 even with waits; guard 0/2 at zero wait. Strict 0/2.",
+    "11026": "Executed-command check restores known pickup/place. Eight experts succeed, 1,714 ticks and zero new vetoes; 304 old false jump vetoes.",
+    "11027": "Nine live trials: native and first-admissible grasp/place; API misses grasp. All strict 0/2. Activation is not executed selection.",
+    "11028": "Four-run 2x2: candidate A grasps/places at both waits; C at neither. Candidate choice explains this failure, not one tick of delay.",
+    "11029": "Repeat of the same 32 slates, not new evidence. Future-image choices still poor across ordering; median/p95 1.094/2.338 seconds.",
+    "11030": "Eight replay episodes / 1,219 observations. All four passive variants fail gates; glyph filtering loses too much recall.",
+    "11031": "24 episodes / 8,784 observations: contact false positives 108 to 20, precision 94.65%. Still below 95% gate; no authority.",
+    "11032": "297 camera fits per view fit within 5 px. Large depth/height ambiguity: planar corners do not identify 3D geometry.",
+    "11033": "Five sequence/control executions all grasp, lift and release; strict 0/5. Goal error 33.7\u201335.5 mm. Endpoint registration is a confound.",
+    "11034": "Goal registration: all five sequence/endpoint/shuffle/static/repeat conditions succeed. One inspected take; no advantage from full sequence.",
+    "11035": "736-observation audit: plane-depth bias explains conflicting path scores. No new rollout; close full-path superiority claim.",
+    "11036": "Read-only review of 775 + 296 rollouts and 24 extracts. Family-aware intervals and 1,102 input hashes checked; no new experiments.",
+    "11037": "New loading supervision: 3/4 taught and 2/2 development loading successes. Feeding 4/6 vs control 5/6; task selection tested next.",
+    "11038": "Identical scene, different text: model loads under both instructions. Four wrong feeding destinations; zero two-way switches.",
+    "11039": "Visible fixture: loading 8/8. Hidden: feeding 8/8. Eight requested and eight wrong endpoints; zero instruction switches.",
+    "11040": "Balanced vs control: requested region 16/16 vs 8/16; strict 12/16 vs 8/16. Loading stays 4/8. Four cases tip before grasp. Archive verified.",
+    "11041": "Small point-cloud PPO pilot: adaptive reset sampling has no demonstrated advantage. All five policies 0/4 full starts. Separate from X-VLA.",
+    "11042": "Full backup reconciled: 906,507 files, 299.6 GB, no integrity errors. Labs and checkpoint checks saved. Fresh-machine restore untested.",
+    "11043": "Frozen 32-rollout follow-up: all four policies 0/4 full starts and zero new grasps. Release-only matches near-goal success; park further PPO.",
+    "11044": "BLOCKED at full-state restore verification. One saved-action prefix; zero model queries or crossovers. XML identity bug found; repair must qualify separately."
+  },
+  "tickets": [
+    {
+      "id": 11044,
+      "title": "LOAD05 \u2014 Pre-contact C/B acquisition crossover",
+      "status": "Blocked"
+    },
+    {
+      "id": 10984,
+      "title": "NEXT02 \u2014 Repair observation hypotheses before granting the harness veto authority",
+      "status": "Blocked"
+    },
+    {
+      "id": 10989,
+      "title": "DATA04 \u2014 Validate phone-video to Panda-action alignment beyond one event comparison",
+      "status": "Blocked"
+    },
+    {
+      "id": 10991,
+      "title": "DATA06 \u2014 Version the physical-object and calibration assumptions consistently",
+      "status": "Blocked"
+    },
+    {
+      "id": 10998,
+      "title": "CTRL01 \u2014 Qualify joint-aware recovery paths and staged regrasp",
+      "status": "Blocked"
+    },
+    {
+      "id": 11000,
+      "title": "HIER01 \u2014 Train a high-level skill selector only after primitives are reliable",
+      "status": "Blocked"
+    },
+    {
+      "id": 11002,
+      "title": "REL02 \u2014 Compare supervised residual correction with bounded residual RL",
+      "status": "Blocked"
+    },
+    {
+      "id": 11003,
+      "title": "REL03 \u2014 Evaluate offline value ranking or PPO/DPPO only with adequate action support",
+      "status": "Blocked"
+    },
+    {
+      "id": 10996,
+      "title": "EVAL02 \u2014 Define the next confirmatory comparison with family-level uncertainty",
+      "status": "Review"
+    },
+    {
+      "id": 11008,
+      "title": "DEL02 \u2014 Prepare an accurate research write-up and submission package",
+      "status": "Review"
+    },
+    {
+      "id": 11004,
+      "title": "LIVE01 \u2014 Verify the existing live harness and controller telemetry hookup",
+      "status": "Review"
+    },
+    {
+      "id": 10957,
+      "title": "R01 \u2014 Trace V4 rotation, gripper command and actual motion around release",
+      "status": "Done"
+    },
+    {
+      "id": 10958,
+      "title": "R01d \u2014 Audit previous-command proprioception and test release-input alternatives",
+      "status": "Done"
+    },
+    {
+      "id": 10959,
+      "title": "R01e \u2014 Measure numeral visibility through actual preprocessing",
+      "status": "Done"
+    },
+    {
+      "id": 10960,
+      "title": "R02 \u2014 Test whether fixed-seed prompts command simple arm actions",
+      "status": "Done"
+    },
+    {
+      "id": 10961,
+      "title": "R02b \u2014 Compare vanilla, V3 and V4 prompt response controls",
+      "status": "Done"
+    },
+    {
+      "id": 10962,
+      "title": "R03 \u2014 Train a new six-take full-weight X-VLA-Pt with fixed 3k/12k checkpoints",
+      "status": "Done"
+    },
+    {
+      "id": 10963,
+      "title": "R03b \u2014 Evaluate narrow M6, broad-Pt 3k and broad-Pt 12k on unchanged holdouts",
+      "status": "Done"
+    },
+    {
+      "id": 10964,
+      "title": "R03c \u2014 Measure broad-Pt 12k competence on its six familiar starts",
+      "status": "Done"
+    },
+    {
+      "id": 10965,
+      "title": "R03d \u2014 Audit source/holdout position and yaw coverage",
+      "status": "Done"
+    },
+    {
+      "id": 10966,
+      "title": "R04 \u2014 Compare 30-action execution with 10-action replanning on V4",
+      "status": "Done"
+    },
+    {
+      "id": 10967,
+      "title": "R05 \u2014 Measure eight-proposal availability using a privileged offline oracle",
+      "status": "Done"
+    },
+    {
+      "id": 10968,
+      "title": "R05b \u2014 Compare V4 continuation from off-axis and near-expert held states",
+      "status": "Done"
+    },
+    {
+      "id": 10969,
+      "title": "R06 \u2014 Compare observable phase harness, unmodified V4 and deterministic skills",
+      "status": "Done"
+    },
+    {
+      "id": 10970,
+      "title": "R06b \u2014 Fix post-release observer projection in a training-only prototype",
+      "status": "Done"
+    },
+    {
+      "id": 10971,
+      "title": "R06c \u2014 Qualify and reject a two-axis IK endpoint selector",
+      "status": "Done"
+    },
+    {
+      "id": 10972,
+      "title": "R07 \u2014 Align one human correction clip with the Panda-expert event timeline",
+      "status": "Done"
+    },
+    {
+      "id": 10973,
+      "title": "R08 \u2014 Qualify geometric expert recovery from exact V4 failure states",
+      "status": "Done"
+    },
+    {
+      "id": 10974,
+      "title": "R09 \u2014 Retarget one short human-observed correction into constrained Panda motion",
+      "status": "Done"
+    },
+    {
+      "id": 10975,
+      "title": "R10a \u2014 Prepare blue-ghost candidate cards and typed Luna requests",
+      "status": "Done"
+    },
+    {
+      "id": 10976,
+      "title": "R11 \u2014 Prototype a typed primitive interface and deterministic supervisor",
+      "status": "Done"
+    },
+    {
+      "id": 10977,
+      "title": "R12 \u2014 Train and evaluate a causal phase predictor",
+      "status": "Done"
+    },
+    {
+      "id": 10978,
+      "title": "R13 \u2014 Compare DAgger, options, residual RL, offline Q and PPO approaches",
+      "status": "Done"
+    },
+    {
+      "id": 10979,
+      "title": "OPS02 \u2014 Preserve and verify all research models, traces, videos and resume state",
+      "status": "Done"
+    },
+    {
+      "id": 10980,
+      "title": "OPS03 \u2014 Write a request-by-request report and obtain independent plus GPT Pro review",
+      "status": "Done"
+    },
+    {
+      "id": 10981,
+      "title": "OPS04 \u2014 Reconcile excluded human review candidate 6 with stable demo IDs",
+      "status": "Done"
+    },
+    {
+      "id": 10955,
+      "title": "R01c \u2014 Show exactly what V4 sees: 512\u2192224 images, crop and six history frames",
+      "status": "Done"
+    },
+    {
+      "id": 10956,
+      "title": "OPS01 \u2014 Create and reconcile the research kanban ledger with evidence and honest statuses",
+      "status": "Done"
+    },
+    {
+      "id": 10954,
+      "title": "R01b \u2014 Measure V4's numeral sensitivity and grasp-relative orientation response",
+      "status": "Done"
+    },
+    {
+      "id": 11012,
+      "title": "OPS05 \u2014 Draw the opportunity solution tree and restore the Design viewer",
+      "status": "Done"
+    },
+    {
+      "id": 10983,
+      "title": "NEXT01 \u2014 Measure local robustness around successful broad-Pt 12k starts",
+      "status": "Done"
+    },
+    {
+      "id": 11013,
+      "title": "B01 \u2014 Diagnose why task B loading does not generalise",
+      "status": "Done"
+    },
+    {
+      "id": 10985,
+      "title": "NEXT03 \u2014 Separate grasp-estimation error from recovery-control error",
+      "status": "Done"
+    },
+    {
+      "id": 11011,
+      "title": "R01f \u2014 Separate lost visual detail from failure to use orientation in the action head",
+      "status": "Done"
+    },
+    {
+      "id": 10993,
+      "title": "VIS01 \u2014 Qualify a visibility fix if the causal image test supports it",
+      "status": "Done"
+    },
+    {
+      "id": 10995,
+      "title": "EVAL01 \u2014 Reconcile the earlier 775-rollout feeding comparison and V4 grasp search",
+      "status": "Done"
+    },
+    {
+      "id": 10986,
+      "title": "DATA01 \u2014 Publish an internal model and dataset registry with unambiguous names",
+      "status": "Done"
+    },
+    {
+      "id": 10994,
+      "title": "VIS02 \u2014 Test language/action grounding repair with matched input contracts",
+      "status": "Done"
+    },
+    {
+      "id": 11001,
+      "title": "REL01 \u2014 Collect qualified learner-state corrections and run a separate DAgger experiment",
+      "status": "Done"
+    },
+    {
+      "id": 10982,
+      "title": "R10 \u2014 Run Decisions API visual ranking on frozen ghost/future slates",
+      "status": "Done"
+    },
+    {
+      "id": 10987,
+      "title": "DATA02 \u2014 Reconcile prepared phase chunks and four-second intention targets with actual training",
+      "status": "Done"
+    },
+    {
+      "id": 10988,
+      "title": "DATA03 \u2014 Audit balanced sampling across takes, chunks, horizons and camera views",
+      "status": "Done"
+    },
+    {
+      "id": 10990,
+      "title": "DATA05 \u2014 Audit held-state crosshair in video and separate trajectory labels",
+      "status": "Done"
+    },
+    {
+      "id": 10997,
+      "title": "EVAL03 \u2014 Reconcile the 20 \u00d7 A/B harness comparison and guard event logging",
+      "status": "Done"
+    },
+    {
+      "id": 10999,
+      "title": "CTRL02 \u2014 Specify and log hard workspace, no-go and joint-boundary policies",
+      "status": "Done"
+    },
+    {
+      "id": 11005,
+      "title": "LIVE02 \u2014 Qualify the simple visual completion classifier across allowable variation",
+      "status": "Done"
+    },
+    {
+      "id": 11006,
+      "title": "LIVE03 \u2014 Reconcile Qwen live planner, finished-reference image and veto behavior",
+      "status": "Done"
+    },
+    {
+      "id": 11019,
+      "title": "VIDEO02 \u2014 Dense phone observations, temporal controls and object-focused features",
+      "status": "Done"
+    },
+    {
+      "id": 11020,
+      "title": "VIDEO03 \u2014 Test causal held-state prediction from unmarked personal video",
+      "status": "Done"
+    },
+    {
+      "id": 11021,
+      "title": "VIDEO04 \u2014 Test training-only hand-present negatives for held-state errors",
+      "status": "Done"
+    },
+    {
+      "id": 11022,
+      "title": "VIDEO05 \u2014 Test pre-contact negatives while preserving held-pause recognition",
+      "status": "Done"
+    },
+    {
+      "id": 11023,
+      "title": "VIDEO06 \u2014 Audit object motion through occlusion before video retargeting",
+      "status": "Done"
+    },
+    {
+      "id": 11024,
+      "title": "VIDEO07 \u2014 Test native video cadence and phase timing before robot retargeting",
+      "status": "Done"
+    },
+    {
+      "id": 11014,
+      "title": "LIVE04 \u2014 Integrate Decisions API candidate ranking with bounded asynchronous execution",
+      "status": "Done"
+    },
+    {
+      "id": 11025,
+      "title": "LIVE05 \u2014 Separate waiting, sampling and guards after the live-ranking regression",
+      "status": "Done"
+    },
+    {
+      "id": 11026,
+      "title": "LIVE06 \u2014 Qualify motion guards against the executed controller contract",
+      "status": "Done"
+    },
+    {
+      "id": 11027,
+      "title": "LIVE07 \u2014 Integrate the qualified execution check into the live candidate handoff",
+      "status": "Done"
+    },
+    {
+      "id": 11028,
+      "title": "LIVE08 \u2014 Isolate the first ranked candidate from boundary timing",
+      "status": "Done"
+    },
+    {
+      "id": 11029,
+      "title": "LIVE09 \u2014 Repeat R10 and audit critic response consistency",
+      "status": "Done"
+    },
+    {
+      "id": 11030,
+      "title": "OBS05 \u2014 Test fresh glyph-motion evidence against the held-state latch",
+      "status": "Done"
+    },
+    {
+      "id": 11031,
+      "title": "OBS06 \u2014 Test aperture and release evidence on additional archived episodes",
+      "status": "Done"
+    },
+    {
+      "id": 11032,
+      "title": "VIDEO08 \u2014 Test whether existing views identify camera geometry for a video-to-robot adapter",
+      "status": "Done"
+    },
+    {
+      "id": 11033,
+      "title": "VIDEO09 \u2014 Execute full human correction sequence with a frozen RGB-to-Panda adapter",
+      "status": "Done"
+    },
+    {
+      "id": 11034,
+      "title": "VIDEO10 \u2014 Register the complete video to the fixed task goal and rerun matched controls",
+      "status": "Done"
+    },
+    {
+      "id": 11035,
+      "title": "VIDEO11 \u2014 Audit glyph correspondence and the conflicting trajectory scores",
+      "status": "Done"
+    },
+    {
+      "id": 11018,
+      "title": "VIDEO01-C \u2014 Frozen phone-frame features with temporal and cross-view controls",
+      "status": "Done"
+    },
+    {
+      "id": 11016,
+      "title": "VIDEO01-A \u2014 Observed 2D object paths and explicit orientation gaps",
+      "status": "Done"
+    },
+    {
+      "id": 11017,
+      "title": "VIDEO01-B \u2014 Hand/pinch observations without fabricated grasp labels",
+      "status": "Done"
+    },
+    {
+      "id": 10992,
+      "title": "DATA07 \u2014 Add training-only failure and correction coverage after teacher qualification",
+      "status": "Done"
+    },
+    {
+      "id": 11036,
+      "title": "EVAL02R \u2014 Reconcile existing comparison claims and family-level uncertainty",
+      "status": "Done"
+    },
+    {
+      "id": 11015,
+      "title": "VIDEO01 \u2014 Compare video-derived representations and robot adapters without geometric-expert trajectories",
+      "status": "Done"
+    },
+    {
+      "id": 11007,
+      "title": "DEL01 \u2014 Reconcile dashboard, video hosting and research result provenance",
+      "status": "Done"
+    },
+    {
+      "id": 11037,
+      "title": "LOAD01 \u2014 Test loading supervision while retaining feeding competence",
+      "status": "Done"
+    },
+    {
+      "id": 11038,
+      "title": "LOAD02 \u2014 Switch feeding/loading instruction in an identical scene",
+      "status": "Done"
+    },
+    {
+      "id": 11039,
+      "title": "LOAD03 \u2014 Test whether fixture appearance controls task choice",
+      "status": "Done"
+    },
+    {
+      "id": 11041,
+      "title": "ALPHA01 \u2014 AlphaNIST-inspired Panda PPO/reset-sampling pilot",
+      "status": "Done"
+    },
+    {
+      "id": 11043,
+      "title": "ALPHA02 \u2014 frozen-policy 4s/15s reset qualification and release-only control",
+      "status": "Done"
+    },
+    {
+      "id": 11042,
+      "title": "OPS01 \u2014 Verify Powerglide booking and full backup including lab recovery",
+      "status": "Done"
+    },
+    {
+      "id": 11040,
+      "title": "LOAD04 \u2014 Counterbalanced task supervision in identical scenes",
+      "status": "Done"
+    },
+    {
+      "id": 11009,
+      "title": "PARK01 \u2014 Set-of-Mark object/region labels \u2014 withdrawn",
+      "status": "Parked"
+    },
+    {
+      "id": 11010,
+      "title": "PARK02 \u2014 Broader platform and simulator changes \u2014 deferred",
+      "status": "Parked"
+    }
+  ]
+}

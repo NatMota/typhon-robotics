@@ -431,6 +431,11 @@ O_recovery_S4 --> T11050
 R11050["Completed: native B loading3/4. Only0001<br/>tipped pre-acquisition; one same-state<br/>C-pose/B-grip chunk still failed (0/1<br/>conversions), with428.09mm final error. Full<br/>horizon and exact state/input/noise checks<br/>passed. Zero successful correction examples;<br/>no training. Raw809files SHA256-verified on<br/>Mint."]:::mixed
 T11050 --> R11050
 click T11050 "http://127.0.0.1:4001/?project=typhon-research#ticket=11050" "Open research ticket" _blank
+T11052["DATA07-GE · #11052<br/>Qualify one geometric-expert continuation from<br/>B&#x27;s failed approach state"]:::experiment
+O_recovery_S4 --> T11052
+R11052["Completed: exact-state geometric teacher<br/>placed/released inside fixture (1.22 mm, 0.016<br/>deg yaw) but brick lay sideways (90 deg tilt).<br/>Strict 0/1; no correction candidate. Open<br/>descent tipped before close. No training;<br/>stopped after one attempt."]:::mixed
+T11052 --> R11052
+click T11052 "http://127.0.0.1:4001/?project=typhon-research#ticket=11052" "Open research ticket" _blank
 
 OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
 O_compute["Opportunity: Choose useful candidates without blocking<br/>valid motion"]:::opportunity
@@ -544,7 +549,7 @@ T11042 --> R11042
 click T11042 "http://127.0.0.1:4001/?project=typhon-research#ticket=11042" "Open research ticket" _blank
 T11049["OPS07 · #11049<br/>Restore Mint access and mirror latest<br/>experiment evidence and OST"]:::experiment
 O_evidence_S1 --> T11049
-R11049["Mint access recovered. LOAD05-R/R2/LOAD06<br/>mirrors verified45files; DATA07-R809files<br/>verified. Interrupted OST edits preserved.<br/>Installing/revalidating latest98-ticket live<br/>views; not yet complete."]:::pending
+R11049["Recovered: Mint mirrors verified (45 older<br/>evidence files, 809 DATA07-R raw files).<br/>Interrupted work preserved; live OST installed<br/>and served bytes checked. DATA07-GE raw 223<br/>files also verified. Fresh-machine restore<br/>untested."]:::mixed
 T11049 --> R11049
 click T11049 "http://127.0.0.1:4001/?project=typhon-research#ticket=11049" "Open research ticket" _blank
 O_evidence_S2["Solution: Qualify media and the private report"]:::solution

@@ -44,23 +44,26 @@ S_recovery_3,solution,Separate AlphaNIST-style PPO from X-VLA,O_recovery,820,176
 T11050,experiment,"DATA07-R · #11050
 Qualify acquisition repairs on training families before admitting corrective data",S_recovery_4,1220,1969.5,#4a4428
 R11050,result,"Completed: native B loading3/4. Only0001 tipped pre-acquisition; one same-state C-pose/B-grip chunk still failed (0/1 conversions), with428.09mm final error. Full horizon and exact state/input/noise checks passed. Zero successful correction examples; no training. Raw809files SHA256-verified on Mint.",T11050,1620,1917.0,#574831
-S_recovery_4,solution,Qualify training-family corrective supervision,O_recovery,820,1979.0,#343a46
-O_recovery,opportunity,Advance phases only from trustworthy evidence,outcome,420,1790.25,#2d443b
+T11052,experiment,"DATA07-GE · #11052
+Qualify one geometric-expert continuation from B's failed approach state",S_recovery_4,1220,2191.0,#4a4428
+R11052,result,"Completed: exact-state geometric teacher placed/released inside fixture (1.22 mm, 0.016 deg yaw) but brick lay sideways (90 deg tilt). Strict 0/1; no correction candidate. Open descent tipped before close. No training; stopped after one attempt.",T11052,1620,2149.0,#574831
+S_recovery_4,solution,Qualify training-family corrective supervision,O_recovery,820,2089.75,#343a46
+O_recovery,opportunity,Advance phases only from trustworthy evidence,outcome,420,1845.62,#2d443b
 T11028,experiment,"LIVE08 · #11028
-Isolate the first ranked candidate from boundary timing",S_compute_1,1220,2234.5,#4a4428
-R11028,result,"Four-run 2x2: candidate A grasps/places at both waits; C at neither. Candidate choice explains this failure, not one tick of delay.",T11028,1620,2224.0,#574831
-S_compute_1,solution,Integrate and isolate the live selection mechanism,O_compute,820,2244.0,#343a46
-O_compute,opportunity,Choose useful candidates without blocking valid motion,outcome,420,2244.0,#2d443b
+Isolate the first ranked candidate from boundary timing",S_compute_1,1220,2445.5,#4a4428
+R11028,result,"Four-run 2x2: candidate A grasps/places at both waits; C at neither. Candidate choice explains this failure, not one tick of delay.",T11028,1620,2435.0,#574831
+S_compute_1,solution,Integrate and isolate the live selection mechanism,O_compute,820,2455.0,#343a46
+O_compute,opportunity,Choose useful candidates without blocking valid motion,outcome,420,2455.0,#2d443b
 T10996,experiment,"EVAL02 · #10996
-Define the next confirmatory comparison with family-level uncertainty",S_evidence_0,1220,2457.5,#4a4428
-R10996,result,REVIEW: 136/204 planned completed. Broad vs vanilla near-layout strict 17/40 vs 0/40. Broader layouts 0/20 both; 68 interventions unrun.,T10996,1620,2447.0,#574831
-S_evidence_0,solution,Reconcile evaluation panels and uncertainty,O_evidence,820,2467.0,#343a46
+Define the next confirmatory comparison with family-level uncertainty",S_evidence_0,1220,2668.5,#4a4428
+R10996,result,REVIEW: 136/204 planned completed. Broad vs vanilla near-layout strict 17/40 vs 0/40. Broader layouts 0/20 both; 68 interventions unrun.,T10996,1620,2658.0,#574831
+S_evidence_0,solution,Reconcile evaluation panels and uncertainty,O_evidence,820,2678.0,#343a46
 T11042,experiment,"OPS01 · #11042
-Verify Powerglide booking and full backup including lab recovery",S_evidence_1,1220,2630.5,#4a4428
-R11042,result,"Full backup reconciled: 906,507 files, 299.6 GB, no integrity errors. Labs and checkpoint checks saved. Fresh-machine restore untested.",T11042,1620,2620.0,#574831
+Verify Powerglide booking and full backup including lab recovery",S_evidence_1,1220,2841.5,#4a4428
+R11042,result,"Full backup reconciled: 906,507 files, 299.6 GB, no integrity errors. Labs and checkpoint checks saved. Fresh-machine restore untested.",T11042,1620,2831.0,#574831
 T11049,experiment,"OPS07 · #11049
-Restore Mint access and mirror latest experiment evidence and OST",S_evidence_1,1220,2789.0,#4a4428
-R11049,result,Mint access recovered. LOAD05-R/R2/LOAD06 mirrors verified45files; DATA07-R809files verified. Interrupted OST edits preserved. Installing/revalidating latest98-ticket live views; not yet complete.,T11049,1620,2768.0,#30445a
-S_evidence_1,solution,Preserve the research record and compute environment,O_evidence,820,2719.25,#343a46
-O_evidence,opportunity,"Make results reproducible, recoverable and understandable",outcome,420,2593.12,#2d443b
+Restore Mint access and mirror latest experiment evidence and OST",S_evidence_1,1220,3010.5,#4a4428
+R11049,result,"Recovered: Mint mirrors verified (45 older evidence files, 809 DATA07-R raw files). Interrupted work preserved; live OST installed and served bytes checked. DATA07-GE raw 223 files also verified. Fresh-machine restore untested.",T11049,1620,2979.0,#574831
+S_evidence_1,solution,Preserve the research record and compute environment,O_evidence,820,2935.5,#343a46
+O_evidence,opportunity,"Make results reproducible, recoverable and understandable",outcome,420,2806.75,#2d443b
 outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60
