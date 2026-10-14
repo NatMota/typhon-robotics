@@ -25,6 +25,8 @@ For this one selected state/noise realization, replacing the first 30 pose targe
 
 The pose substitution changes the complete XYZ and wrist-rotation sequence. It does not isolate vertical speed, lateral alignment or wrist orientation individually. This is a diagnostic hybrid, not an autonomous B model improvement. No weights or persistent controller/harness behavior were changed.
 
+Post-lift telemetry shows continuous measured bilateral contact through tick190 in all four cells. The pose-only CB case nevertheless issues six OPEN commands (ticks149–151 and158–160) without losing measured bilateral contact in this rollout. That command oscillation remains an unresolved robustness concern; upright acquisition does not certify a reliable release policy. See [grasp-retention evidence](grasp-retention.json).
+
 No complete placement or strict loading-task score was evaluated. All resulting hybrid traces remain development diagnostics and are quarantined from training.
 
 ## Qualification and budget
