@@ -666,7 +666,7 @@
       "label": "DATA07-R \u00b7 #11050\nQualify acquisition repairs on training families before admitting corrective data",
       "parent_id": "S_recovery_4",
       "x": 1220,
-      "y": 2665.5,
+      "y": 2707.5,
       "width": 350,
       "height": 91,
       "color": "#4a4428",
@@ -679,18 +679,22 @@
     {
       "id": "R11050",
       "type": "result",
-      "label": "NEXT, not run: four training families, at most two qualified pose repairs, full-task scoring. No training or development-data reuse.",
+      "label": "Completed: native B loading3/4. Only0001 tipped pre-acquisition; one same-state C-pose/B-grip chunk still failed (0/1 conversions), with428.09mm final error. Full horizon and exact state/input/noise checks passed. Zero successful correction examples; no training. Raw809files SHA256-verified on Mint.",
       "parent_id": "T11050",
       "x": 1620,
       "y": 2655.0,
       "width": 350,
-      "height": 112,
+      "height": 196,
       "color": "#574831",
       "lines": [
-        "NEXT, not run: four training families, at",
-        "most two qualified pose repairs, full-task",
-        "scoring. No training or development-data",
-        "reuse."
+        "Completed: native B loading3/4. Only0001",
+        "tipped pre-acquisition; one same-state",
+        "C-pose/B-grip chunk still failed (0/1",
+        "conversions), with428.09mm final error.",
+        "Full horizon and exact state/input/noise",
+        "checks passed. Zero successful correction",
+        "examples; no training. Raw809files",
+        "SHA256-verified on Mint."
       ]
     },
     {
@@ -699,7 +703,7 @@
       "label": "Qualify training-family corrective supervision",
       "parent_id": "O_recovery",
       "x": 820,
-      "y": 2675.0,
+      "y": 2717.0,
       "width": 350,
       "height": 72,
       "color": "#343a46",
@@ -714,7 +718,7 @@
       "label": "Advance phases only from trustworthy evidence",
       "parent_id": "outcome",
       "x": 420,
-      "y": 1572.25,
+      "y": 1593.25,
       "width": 350,
       "height": 72,
       "color": "#2d443b",
@@ -926,5 +930,5 @@
     ]
   ],
   "width": 2000,
-  "height": 2827.0
+  "height": 2911.0
 }
