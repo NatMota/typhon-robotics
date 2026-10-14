@@ -1,0 +1,55 @@
+id,type,label,parent_id,x,y,color
+T11034,experiment,"VIDEO10 · #11034
+Register the complete video to the fixed task goal and rerun matched controls",S_data_4,1220,68.5,#4a4428
+R11034,result,Goal registration: all five sequence/endpoint/shuffle/static/repeat conditions succeed. One inspected take; no advantage from full sequence.,T11034,1620,58.0,#574831
+T11015,experiment,"VIDEO01 · #11015
+Compare video-derived representations and robot adapters without geometric-expert trajectories",S_data_4,1220,216.5,#4a4428
+R11015,result,"Investigation concluded. Assisted correction works, but generic video-to-action transfer and extra benefit from intermediate video were not established.",T11015,1620,206.0,#574831
+S_data_4,solution,"Qualify motion, camera geometry and transfer",O_data,820,157.25,#343a46
+O_data,opportunity,Turn personal observations into reliable robot practice,outcome,420,157.25,#2d443b
+T11011,experiment,"R01f · #11011
+Separate lost visual detail from failure to use orientation in the action head",S_perception_0,1220,450.0,#4a4428
+R11011,result,108 paired predictions: cue sensitivity rises 0.0102 to 0.1887; wrist error remains about 80 degrees and opens at waypoint 11.,T11011,1620,450.0,#574831
+S_perception_0,solution,Inspect the exact model inputs,O_perception,820,459.5,#343a46
+T10994,experiment,"VIS02 · #10994
+Test language/action grounding repair with matched input contracts",S_perception_1,1220,612.5,#4a4428
+R10994,result,Matched 3k continuations: varied vs fixed goals 10/12 vs 0/12 novel-goal strict success. Loading 0/12 both; text-only goal response under 1.4 mm.,T10994,1620,602.0,#30445a
+S_perception_1,solution,Test instructions and goal diversity,O_perception,820,622.0,#343a46
+O_perception,opportunity,Make relevant visual cues change the correct action,outcome,420,540.75,#2d443b
+T10985,experiment,"NEXT03 · #10985
+Separate grasp-estimation error from recovery-control error",S_execution_1,1220,835.5,#4a4428
+R10985,result,Four paired recovery executions: truth and RGB grasp transforms each 2/2 strict. Two inspected source states; no autonomous handoff qualification.,T10985,1620,825.0,#574831
+S_execution_1,solution,Estimate the actual grasp and qualify paths,O_execution,820,845.0,#343a46
+O_execution,opportunity,Make grasp-relative motion finish before release,outcome,420,845.0,#2d443b
+T11039,experiment,"LOAD03 · #11039
+Test whether fixture appearance controls task choice",S_generalisation_3,1220,1048.0,#4a4428
+R11039,result,Visible fixture: loading 8/8. Hidden: feeding 8/8. Eight requested and eight wrong endpoints; zero instruction switches.,T11039,1620,1048.0,#574831
+T11040,experiment,"LOAD04 · #11040
+Counterbalanced task supervision in identical scenes",S_generalisation_3,1220,1185.5,#4a4428
+R11040,result,Balanced vs control: requested region 16/16 vs 8/16; strict 12/16 vs 8/16. Loading stays 4/8. Four cases tip before grasp. Archive verified.,T11040,1620,1175.0,#574831
+S_generalisation_3,solution,Separate task instruction from fixture appearance,O_generalisation,820,1126.25,#343a46
+O_generalisation,opportunity,The model succeeds locally but follows scene cues,outcome,420,1126.25,#2d443b
+T11031,experiment,"OBS06 · #11031
+Test aperture and release evidence on additional archived episodes",S_recovery_0,1220,1398.0,#4a4428
+R11031,result,"24 episodes / 8,784 observations: contact false positives 108 to 20, precision 94.65%. Still below 95% gate; no authority.",T11031,1620,1398.0,#574831
+S_recovery_0,solution,Qualify state estimates and safety checks,O_recovery,820,1407.5,#343a46
+T11043,experiment,"ALPHA02 · #11043
+frozen-policy 4s/15s reset qualification and release-only control",S_recovery_3,1220,1560.5,#4a4428
+R11043,result,Frozen 32-rollout follow-up: all four policies 0/4 full starts and zero new grasps. Release-only matches near-goal success; park further PPO.,T11043,1620,1550.0,#574831
+S_recovery_3,solution,Separate AlphaNIST-style PPO from X-VLA,O_recovery,820,1570.0,#343a46
+O_recovery,opportunity,Advance phases only from trustworthy evidence,outcome,420,1488.75,#2d443b
+T11028,experiment,"LIVE08 · #11028
+Isolate the first ranked candidate from boundary timing",S_compute_1,1220,1783.5,#4a4428
+R11028,result,"Four-run 2x2: candidate A grasps/places at both waits; C at neither. Candidate choice explains this failure, not one tick of delay.",T11028,1620,1773.0,#574831
+S_compute_1,solution,Integrate and isolate the live selection mechanism,O_compute,820,1793.0,#343a46
+O_compute,opportunity,Choose useful candidates without blocking valid motion,outcome,420,1793.0,#2d443b
+T10996,experiment,"EVAL02 · #10996
+Define the next confirmatory comparison with family-level uncertainty",S_evidence_0,1220,2006.5,#4a4428
+R10996,result,REVIEW: 136/204 planned completed. Broad vs vanilla near-layout strict 17/40 vs 0/40. Broader layouts 0/20 both; 68 interventions unrun.,T10996,1620,1996.0,#574831
+S_evidence_0,solution,Reconcile evaluation panels and uncertainty,O_evidence,820,2016.0,#343a46
+T11042,experiment,"OPS01 · #11042
+Verify Powerglide booking and full backup including lab recovery",S_evidence_1,1220,2179.5,#4a4428
+R11042,result,"Full backup reconciled: 906,507 files, 299.6 GB, no integrity errors. Labs and checkpoint checks saved. Fresh-machine restore untested.",T11042,1620,2169.0,#574831
+S_evidence_1,solution,Preserve the research record and compute environment,O_evidence,820,2189.0,#343a46
+O_evidence,opportunity,"Make results reproducible, recoverable and understandable",outcome,420,2102.5,#2d443b
+outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60

@@ -1,0 +1,27 @@
+%%{init: {"theme": "base", "securityLevel": "loose", "fontFamily": "Arial, sans-serif", "fontSize": 18, "markdownAutoWrap": false, "flowchart": {"htmlLabels": false, "curve": "basis", "nodeSpacing": 24, "rankSpacing": 70, "wrappingWidth": 360}, "themeVariables": {"primaryTextColor": "#edf2f7", "lineColor": "#71849f", "background": "#0b1220"}}}%%
+flowchart LR
+OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
+O_parked["Opportunity: Keep deferred work distinct from evidence"]:::opportunity
+OUT --> O_parked
+O_parked_S0["Solution: Do not expand scope without a new reason"]:::solution
+O_parked --> O_parked_S0
+T11009["PARK01 · #11009<br/>Set-of-Mark object/region labels — withdrawn"]:::experiment
+O_parked_S0 --> T11009
+R11009["PARKED: Set-of-Mark withdrawn by the user."]:::parked
+T11009 --> R11009
+click T11009 "http://127.0.0.1:4001/?project=typhon-research#ticket=11009" "Open research ticket" _blank
+T11010["PARK02 · #11010<br/>Broader platform and simulator changes —<br/>deferred"]:::experiment
+O_parked_S0 --> T11010
+R11010["PARKED: broader platforms and simulator<br/>changes deferred."]:::parked
+T11010 --> R11010
+click T11010 "http://127.0.0.1:4001/?project=typhon-research#ticket=11010" "Open research ticket" _blank
+classDef outcome fill:#263f60,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef opportunity fill:#2d443b,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef solution fill:#343a46,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef experiment fill:#4a4428,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef evidence fill:#244a3d,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef mixed fill:#574831,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef negative fill:#56343c,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef pending fill:#30445a,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef blocked fill:#4e374f,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef parked fill:#373b42,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;

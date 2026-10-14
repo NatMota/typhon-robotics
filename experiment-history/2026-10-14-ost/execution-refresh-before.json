@@ -1,0 +1,33 @@
+{
+  "id": "execution",
+  "name": "04 \u00b7 Grasp, orientation and release",
+  "artboards": [
+    {
+      "id": "execution-tree",
+      "name": "execution-tree",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 1808,
+        "height": 2114
+      },
+      "layers": [
+        {
+          "id": "68ba88ee-ca06-4be3-ba97-3f75ce35fcdb",
+          "type": "image",
+          "name": "TYPHON / Grasp, orientation and release",
+          "x": 0,
+          "y": 0,
+          "width": 1808.0,
+          "height": 2114.0,
+          "imageRef": "/llm-design-tool/designs/typhon-research/assets/execution.svg"
+        }
+      ],
+      "width": 2492,
+      "height": 2082,
+      "updatedAt": "2026-10-13T21:38:43Z",
+      "mermaidSource": "%%{init: {\"theme\": \"base\", \"securityLevel\": \"loose\", \"look\": \"classic\", \"htmlLabels\": false, \"fontFamily\": \"sans-serif\", \"fontSize\": 18, \"markdownAutoWrap\": false, \"flowchart\": {\"htmlLabels\": false, \"wrappingWidth\": 360, \"minNodeWidth\": 300, \"curve\": \"basis\", \"nodeSpacing\": 28, \"rankSpacing\": 80}, \"themeVariables\": {\"fontFamily\": \"Arial, sans-serif\", \"fontSize\": \"18px\", \"primaryTextColor\": \"#edf2f7\", \"lineColor\": \"#71849f\", \"background\": \"#0b1220\"}}}%%\nflowchart LR\nO_execution[\"Carry a successful grasp through<br/>correct placement and release\"]:::opportunity\nO_execution_S0[\"Account for the actual brick-to-<br/>gripper transform\"]:::solution\nO_execution --> O_execution_S0\nT10957[\"NEGATIVE RESULT<br/>Release command trace<br/>Policy opens before orientation<br/>keep-closed still ~80\u00b0 wrong<br/>R01 \u00b7 #10957\"]:::negative\nO_execution_S0 --> T10957\nclick T10957 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10957\" \"Open research ticket 10957\" _blank\nT10958[\"NEGATIVE RESULT<br/>Proprioception input ablation<br/>Measured EEF delays opening<br/>79\u201385\u00b0 error remains<br/>R01d \u00b7 #10958\"]:::negative\nO_execution_S0 --> T10958\nclick T10958 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10958\" \"Open research ticket 10958\" _blank\nT10968[\"MIXED / LIMITED<br/>Two supplied grasp-state panels<br/>Same V4: off-axis ~85\u00b0 error<br/>near-expert &lt;1\u00b0; strict 0/16<br/>R05b \u00b7 #10968\"]:::mixed\nO_execution_S0 --> T10968\nclick T10968 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10968\" \"Open research ticket 10968\" _blank\nT10985[\"NEXT \u00b7 NOT RUN<br/>Observed vs truth grasp transform<br/>NEXT: matched recovery branches<br/>separate estimation and control<br/>NEXT03 \u00b7 #10985\"]:::next\nO_execution_S0 -.-> T10985\nclick T10985 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10985\" \"Open research ticket 10985\" _blank\nO_execution_S1[\"Choose an execution schedule and<br/>path the arm can follow\"]:::solution\nO_execution --> O_execution_S1\nT10966[\"NEGATIVE RESULT<br/>30 vs 10 actions before looking<br/>Grasps: 2/12 vs 0/12<br/>H10 slower; strict 0 both<br/>R04 \u00b7 #10966\"]:::negative\nO_execution_S1 --> T10966\nclick T10966 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10966\" \"Open research ticket 10966\" _blank\nT10998[\"BACKLOG \u00b7 NOT RUN<br/>Joint-aware paths + regrasp<br/>BACKLOG: executed posture matters<br/>endpoint IK alone was insufficient<br/>CTRL01 \u00b7 #10998\"]:::pending\nO_execution_S1 -.-> T10998\nclick T10998 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10998\" \"Open research ticket 10998\" _blank\nclassDef outcome fill:#162b50,stroke:#8ab7ff,stroke-width:3px,color:#f8fbff;\nclassDef opportunity fill:#143936,stroke:#55c9b5,stroke-width:2px,color:#ecfff9;\nclassDef solution fill:#222d45,stroke:#8395b8,color:#eef2ff;\nclassDef positive fill:#143e33,stroke:#57d9a3,stroke-width:2px,color:#effff6;\nclassDef evidence fill:#18344b,stroke:#67b5e8,color:#eff9ff;\nclassDef mixed fill:#48361e,stroke:#dfb265,color:#fff7df;\nclassDef negative fill:#452632,stroke:#e78298,color:#fff0f4;\nclassDef next fill:#223353,stroke:#92acff,stroke-width:2px,stroke-dasharray:5 3,color:#edf1ff;\nclassDef pending fill:#242b39,stroke:#718096,stroke-dasharray:5 3,color:#d5deed;\nclassDef review fill:#332c48,stroke:#b5a0da,stroke-dasharray:3 3,color:#f2edff;\nclassDef blocked fill:#412d4b,stroke:#d796db,stroke-dasharray:3 3,color:#fff0ff;\nclassDef parked fill:#2b3038,stroke:#68717e,stroke-dasharray:3 5,color:#aeb8c7;\n"
+    }
+  ],
+  "updatedAt": "2026-10-13T21:38:43Z"
+}

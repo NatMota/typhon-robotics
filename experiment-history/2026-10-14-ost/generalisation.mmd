@@ -1,0 +1,85 @@
+%%{init: {"theme": "base", "securityLevel": "loose", "fontFamily": "Arial, sans-serif", "fontSize": 18, "markdownAutoWrap": false, "flowchart": {"htmlLabels": false, "curve": "basis", "nodeSpacing": 24, "rankSpacing": 70, "wrappingWidth": 360}, "themeVariables": {"primaryTextColor": "#edf2f7", "lineColor": "#71849f", "background": "#0b1220"}}}%%
+flowchart LR
+OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
+O_generalisation["Opportunity: The model succeeds locally but follows scene<br/>cues"]:::opportunity
+OUT --> O_generalisation
+O_generalisation_S0["Solution: Broader adaptation and coverage checks"]:::solution
+O_generalisation --> O_generalisation_S0
+T10962["R03 · #10962<br/>Train a new six-take full-weight X-VLA-Pt with<br/>fixed 3k/12k checkpoints"]:::experiment
+O_generalisation_S0 --> T10962
+R10962["Six P_train takes, 439 windows. Fresh<br/>full-weight Pt reached 3k and 12k checkpoints<br/>in 64 minutes; performance tested separately."]:::evidence
+T10962 --> R10962
+click T10962 "http://127.0.0.1:4001/?project=typhon-research#ticket=10962" "Open research ticket" _blank
+T10963["R03b · #10963<br/>Evaluate narrow M6, broad-Pt 3k and broad-Pt<br/>12k on unchanged holdouts"]:::experiment
+O_generalisation_S0 --> T10963
+R10963["Narrow M6, broad3k and broad12k each 0/6<br/>development grasps. These starts lie outside<br/>the training position hull."]:::negative
+T10963 --> R10963
+click T10963 "http://127.0.0.1:4001/?project=typhon-research#ticket=10963" "Open research ticket" _blank
+T10964["R03c · #10964<br/>Measure broad-Pt 12k competence on its six<br/>familiar starts"]:::experiment
+O_generalisation_S0 --> T10964
+R10964["Broad12k on six familiar starts: 6/6 grasps,<br/>5/6 stable square placements, 4/6 strict<br/>successes."]:::mixed
+T10964 --> R10964
+click T10964 "http://127.0.0.1:4001/?project=typhon-research#ticket=10964" "Open research ticket" _blank
+T10965["R03d · #10965<br/>Audit source/holdout position and yaw coverage"]:::experiment
+O_generalisation_S0 --> T10965
+R10965["All three development starts lie outside the<br/>six training starts&#x27; XY convex hull. Coverage<br/>gap established."]:::evidence
+T10965 --> R10965
+click T10965 "http://127.0.0.1:4001/?project=typhon-research#ticket=10965" "Open research ticket" _blank
+T10983["NEXT01 · #10983<br/>Measure local robustness around successful<br/>broad-Pt 12k starts"]:::experiment
+O_generalisation_S0 --> T10983
+R10983["Selected familiar local variations: 14/16<br/>grasps and 13/16 strict successes. Bounded<br/>local competence, not broad transfer."]:::mixed
+T10983 --> R10983
+click T10983 "http://127.0.0.1:4001/?project=typhon-research#ticket=10983" "Open research ticket" _blank
+O_generalisation_S1["Solution: Audit repair data"]:::solution
+O_generalisation --> O_generalisation_S1
+T10992["DATA07 · #10992<br/>Add training-only failure and correction<br/>coverage after teacher qualification"]:::experiment
+O_generalisation_S1 --> T10992
+R10992["18 original episodes verified; original V4&#x27;s<br/>three additions remain unverified. Four later<br/>corrections are separate data and gave 0/4<br/>recoveries."]:::pending
+T10992 --> R10992
+click T10992 "http://127.0.0.1:4001/?project=typhon-research#ticket=10992" "Open research ticket" _blank
+O_generalisation_S2["Solution: Teach loading without losing feeding"]:::solution
+O_generalisation --> O_generalisation_S2
+T11013["B01 · #11013<br/>Diagnose why task B loading does not<br/>generalise"]:::experiment
+O_generalisation_S2 --> T11013
+R11013["28 physical runs and 18 fixed-input goal<br/>probes separate grasp and destination<br/>failures; expert feasibility established."]:::mixed
+T11013 --> R11013
+click T11013 "http://127.0.0.1:4001/?project=typhon-research#ticket=11013" "Open research ticket" _blank
+T11037["LOAD01 · #11037<br/>Test loading supervision while retaining<br/>feeding competence"]:::experiment
+O_generalisation_S2 --> T11037
+R11037["New loading supervision: 3/4 taught and 2/2<br/>development loading successes. Feeding 4/6 vs<br/>control 5/6; task selection tested next."]:::mixed
+T11037 --> R11037
+click T11037 "http://127.0.0.1:4001/?project=typhon-research#ticket=11037" "Open research ticket" _blank
+O_generalisation_S3["Solution: Separate task instruction from fixture<br/>appearance"]:::solution
+O_generalisation --> O_generalisation_S3
+T11038["LOAD02 · #11038<br/>Switch feeding/loading instruction in an<br/>identical scene"]:::experiment
+O_generalisation_S3 --> T11038
+R11038["Identical scene, different text: model loads<br/>under both instructions. Four wrong feeding<br/>destinations; zero two-way switches."]:::mixed
+T11038 --> R11038
+click T11038 "http://127.0.0.1:4001/?project=typhon-research#ticket=11038" "Open research ticket" _blank
+T11039["LOAD03 · #11039<br/>Test whether fixture appearance controls task<br/>choice"]:::experiment
+O_generalisation_S3 --> T11039
+R11039["Visible fixture: loading 8/8. Hidden: feeding<br/>8/8. Eight requested and eight wrong<br/>endpoints; zero instruction switches."]:::mixed
+T11039 --> R11039
+click T11039 "http://127.0.0.1:4001/?project=typhon-research#ticket=11039" "Open research ticket" _blank
+T11040["LOAD04 · #11040<br/>Counterbalanced task supervision in identical<br/>scenes"]:::experiment
+O_generalisation_S3 --> T11040
+R11040["Balanced vs control: requested region 16/16 vs<br/>8/16; strict 12/16 vs 8/16. Loading stays 4/8.<br/>Four cases tip before grasp. Archive verified."]:::mixed
+T11040 --> R11040
+click T11040 "http://127.0.0.1:4001/?project=typhon-research#ticket=11040" "Open research ticket" _blank
+O_generalisation_S4["Solution: Separate acquired grasp from placement<br/>behaviour"]:::solution
+O_generalisation --> O_generalisation_S4
+T11044["LOAD05 · #11044<br/>Same-held-state C/B loading crossover"]:::experiment
+O_generalisation_S4 --> T11044
+R11044["Queued: compare both frozen models from each<br/>acquired grasp state. Full restart and<br/>image/tensor qualification first; no result<br/>yet."]:::mixed
+T11044 --> R11044
+click T11044 "http://127.0.0.1:4001/?project=typhon-research#ticket=11044" "Open research ticket" _blank
+classDef outcome fill:#263f60,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef opportunity fill:#2d443b,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef solution fill:#343a46,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef experiment fill:#4a4428,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef evidence fill:#244a3d,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef mixed fill:#574831,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef negative fill:#56343c,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef pending fill:#30445a,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef blocked fill:#4e374f,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef parked fill:#373b42,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;

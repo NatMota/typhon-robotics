@@ -1,0 +1,61 @@
+id,type,label,parent_id,x,y,color
+T10969,experiment,"R06 · #10969
+Compare observable phase harness, unmodified V4 and deterministic skills",S_recovery_0,1220,58.0,#4a4428
+R10969,result,"Guard blocks valid grasps 1,126 close vetoes; reject",T10969,1620,67.5,#56343c
+T10970,experiment,"R06b · #10970
+Fix post-release observer projection in a training-only prototype",S_recovery_0,1220,185.0,#4a4428
+R10970,result,"Position error 16–19 mm → 0.44–0.66 mm, same images",T10970,1620,194.5,#574831
+T10984,experiment,"NEXT02 · #10984
+Repair observation hypotheses before granting the harness veto authority",S_recovery_0,1220,312.0,#4a4428
+R10984,result,"BLOCKED: observers remain below preregistered qualification. No veto, grasp or release authority.",T10984,1620,312.0,#4e374f
+T10999,experiment,"CTRL02 · #10999
+Specify and log hard workspace, no-go and joint-boundary policies",S_recovery_0,1220,449.5,#4a4428
+R10999,result,27 checks plus 36 successful expert episodes: zero guard rejections. Logging implemented; not full robot-safety validation.,T10999,1620,439.0,#574831
+T11004,experiment,"LIVE01 · #11004
+Verify the existing live harness and controller telemetry hookup",S_recovery_0,1220,597.5,#4a4428
+R11004,result,REVIEW: shadow behavior exactly matches V4. Timing provenance still fails because copied RGB arrays lose identity-keyed timestamps.,T11004,1620,587.0,#574831
+T11030,experiment,"OBS05 · #11030
+Test fresh glyph-motion evidence against the held-state latch",S_recovery_0,1220,735.0,#4a4428
+R11030,result,"Eight replay episodes / 1,219 observations. All four passive variants fail gates; glyph filtering loses too much recall.",T11030,1620,735.0,#574831
+T11031,experiment,"OBS06 · #11031
+Test aperture and release evidence on additional archived episodes",S_recovery_0,1220,862.0,#4a4428
+R11031,result,"24 episodes / 8,784 observations: contact false positives 108 to 20, precision 94.65%. Still below 95% gate; no authority.",T11031,1620,862.0,#574831
+S_recovery_0,solution,Qualify state estimates and safety checks,O_recovery,820,469.5,#343a46
+T10971,experiment,"R06c · #10971
+Qualify and reject a two-axis IK endpoint selector",S_recovery_1,1220,1014.0,#4a4428
+R10971,result,Six-take success 3/6 → 1/6 Feasible endpoint ≠ feasible path,T10971,1620,1023.5,#56343c
+T10973,experiment,"R08 · #10973
+Qualify geometric expert recovery from exact V4 failure states",S_recovery_1,1220,1141.0,#4a4428
+R10973,result,Nominal 2/6 → grasp-aware 3/6 recoveries quarantined from training,T10973,1620,1150.5,#574831
+T10976,experiment,"R11 · #10976
+Prototype a typed primitive interface and deterministic supervisor",S_recovery_1,1220,1268.0,#4a4428
+R10976,result,Interface works; skills limited 2/6 pickups; 0/6 completions,T10976,1620,1277.5,#574831
+T10977,experiment,"R12 · #10977
+Train and evaluate a causal phase predictor",S_recovery_1,1220,1394.0,#4a4428
+R10977,result,63.7% accuracy; early release confidence gate fails; disabled,T10977,1620,1394.0,#56343c
+T11000,experiment,"HIER01 · #11000
+Train a high-level skill selector only after primitives are reliable",S_recovery_1,1220,1501.0,#4a4428
+R11000,result,BLOCKED: reliable primitive transitions and observation authority are prerequisites. No high-level selector training.,T11000,1620,1501.0,#4e374f
+S_recovery_1,solution,Qualify skills and phase control,O_recovery,820,1267.0,#343a46
+T10978,experiment,"R13 · #10978
+Compare DAgger, options, residual RL, offline Q and PPO approaches",S_recovery_2,1220,1653.0,#4a4428
+R10978,result,"DAgger, residuals, Q, PPO reviewed no new RL training performed",T10978,1620,1662.5,#244a3d
+T11001,experiment,"REL01 · #11001
+Collect qualified learner-state corrections and run a separate DAgger experiment",S_recovery_2,1220,1780.0,#4a4428
+R11001,result,"One DAgger iteration, four corrections plus nominal data, 3k updates. Quarantine recovery 0/4; no benefit demonstrated.",T11001,1620,1780.0,#30445a
+T11002,experiment,"REL02 · #11002
+Compare supervised residual correction with bounded residual RL",S_recovery_2,1220,1907.0,#4a4428
+R11002,result,BLOCKED: reliable correction targets and action support required. Residual RL not run.,T11002,1620,1907.0,#4e374f
+T11003,experiment,"REL03 · #11003
+Evaluate offline value ranking or PPO/DPPO only with adequate action support",S_recovery_2,1220,2034.0,#4a4428
+R11003,result,BLOCKED: useful proposals and valid rewards required. Offline Q / PPO on X-VLA not run.,T11003,1620,2043.5,#4e374f
+S_recovery_2,solution,Test correction data and RL prerequisites,O_recovery,820,1853.0,#343a46
+T11041,experiment,"ALPHA01 · #11041
+AlphaNIST-inspired Panda PPO/reset-sampling pilot",S_recovery_3,1220,2196.5,#4a4428
+R11041,result,Small point-cloud PPO pilot: adaptive reset sampling has no demonstrated advantage. All five policies 0/4 full starts. Separate from X-VLA.,T11041,1620,2186.0,#574831
+T11043,experiment,"ALPHA02 · #11043
+frozen-policy 4s/15s reset qualification and release-only control",S_recovery_3,1220,2344.5,#4a4428
+R11043,result,Frozen 32-rollout follow-up: all four policies 0/4 full starts and zero new grasps. Release-only matches near-goal success; park further PPO.,T11043,1620,2334.0,#574831
+S_recovery_3,solution,Separate AlphaNIST-style PPO from X-VLA,O_recovery,820,2280.0,#343a46
+O_recovery,opportunity,Advance phases only from trustworthy evidence,outcome,420,1374.75,#2d443b
+outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60
