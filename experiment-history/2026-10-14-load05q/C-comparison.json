@@ -1,0 +1,3770 @@
+{
+  "passed": false,
+  "schema": "load05q-content-state-v1",
+  "differences": [
+    {
+      "path": "/physical/efc_AR/sha256",
+      "kind": "value",
+      "before": "8c57e5bbc6ae56c615d285d74999656d9f12e1f48b32c682b9caf50679de97ab",
+      "after": "2b6ff65e55a08363f4fb412fe29fa42860ded84b2572bd1df3790b4f2478f375"
+    },
+    {
+      "path": "/physical/efc_AR_colind/sha256",
+      "kind": "value",
+      "before": "59da869354527d01e17b67f55830230755ed11b2e40906b4fa652c8051986ef0",
+      "after": "dcb1180560fa49fa1e036832600a309b988fd01534e78fc74961b1fc22e37bd2"
+    },
+    {
+      "path": "/physical/efc_AR_rowadr/sha256",
+      "kind": "value",
+      "before": "5a8df00efe8a21034cdae0b54d0effc89cb062da61ead9c3887c6e6d9d12f253",
+      "after": "d79d80323f7eb2aa489b8ebb692005a6faf4e6e2c790032b8665682d3c96c3f1"
+    },
+    {
+      "path": "/physical/efc_AR_rownnz/sha256",
+      "kind": "value",
+      "before": "b9d17bc6125703cbc5761e20a5f6dee0b6956b451cc7625d92db2dc80604890f",
+      "after": "795083443e7ee8b6d34ede7c8b086943399ea8ccfb64ad6180908b830e6973c7"
+    },
+    {
+      "path": "/physical/efc_D/sha256",
+      "kind": "value",
+      "before": "cca53c94af563e34daf0b3273c3cefd32b755a27b275279024e4ce493d1e4165",
+      "after": "e3c2af35d1dfc500e16f826a071cc311bf55003a3de77de7ea3376c6b6fa2857"
+    },
+    {
+      "path": "/physical/efc_J/sha256",
+      "kind": "value",
+      "before": "e93dfb4bf9d5be5383419dfd121aa55c1189541a3f66bfbc00f599d0e5e36b5f",
+      "after": "1c71ec6b184ef378eafadf86f731339eca87693678f565d78b071e0bcbebaae7"
+    },
+    {
+      "path": "/physical/efc_JT_colind/sha256",
+      "kind": "value",
+      "before": "826d172940a158db699bb8ee4b79c558b6cc38b6be68301804bf79809ca1183a",
+      "after": "dcc691a2b184bbae44826f3114cd51dc3fad0592147cf10a17cee82e8d824cea"
+    },
+    {
+      "path": "/physical/efc_JT_rowadr/sha256",
+      "kind": "value",
+      "before": "31bf84fa5e4f04b9e13513d2d2dad9973698e64136fa40e2bfd98c2df9042963",
+      "after": "5dcc1b5872dd9ff1c234501f1fefda01f664164e1583c3e1bb3dbea47588ab31"
+    },
+    {
+      "path": "/physical/efc_JT_rownnz/sha256",
+      "kind": "value",
+      "before": "2623d24c012dda6d2838c36d5123f03b17c83cc1523c95b526723161bf5f2c90",
+      "after": "5dcc1b5872dd9ff1c234501f1fefda01f664164e1583c3e1bb3dbea47588ab31"
+    },
+    {
+      "path": "/physical/efc_JT_rowsuper/sha256",
+      "kind": "value",
+      "before": "606d0ca8156f47989e494b394d5ecc3046494fa5c8727d98be89aa9d6e4dbb37",
+      "after": "5dcc1b5872dd9ff1c234501f1fefda01f664164e1583c3e1bb3dbea47588ab31"
+    },
+    {
+      "path": "/physical/efc_J_colind/sha256",
+      "kind": "value",
+      "before": "c80c45b899a088352dceb116349951ad8b329ecd5999ca68efc6bd1e6f8254a3",
+      "after": "dcc691a2b184bbae44826f3114cd51dc3fad0592147cf10a17cee82e8d824cea"
+    },
+    {
+      "path": "/physical/efc_J_rowadr/sha256",
+      "kind": "value",
+      "before": "e6c5d912c7d107f5bf0fa365652ad9201131de96c6769329a5091a598ffd7ec1",
+      "after": "4fea5e6a3ec5f5474a26d858bc77b6d7bd3ab864ea02d988683fdc648602b248"
+    },
+    {
+      "path": "/physical/efc_J_rowsuper/sha256",
+      "kind": "value",
+      "before": "303782143937252497ba7cd60e9ac053dafb322dd81c726c4bef6cabe7069432",
+      "after": "4fea5e6a3ec5f5474a26d858bc77b6d7bd3ab864ea02d988683fdc648602b248"
+    },
+    {
+      "path": "/physical/efc_KBIP/sha256",
+      "kind": "value",
+      "before": "45d786c80c003f7cd71474137f691ff8a396fab84492e9d83952177a2c8030d5",
+      "after": "f792b7f860bb94e55760c0daa727d58d13ba96276a2b52f29a645c8e08e73ec1"
+    },
+    {
+      "path": "/physical/efc_R/sha256",
+      "kind": "value",
+      "before": "6ca68b4c368bf5108d15e1ec56346a69e8f498b0c8459f8ba4c4922f3de31484",
+      "after": "e3c2af35d1dfc500e16f826a071cc311bf55003a3de77de7ea3376c6b6fa2857"
+    },
+    {
+      "path": "/physical/efc_aref/sha256",
+      "kind": "value",
+      "before": "3794f6edab899a74e8cc9316a113d265de43f305e0c65aafa218acb9dc13adb1",
+      "after": "e3c2af35d1dfc500e16f826a071cc311bf55003a3de77de7ea3376c6b6fa2857"
+    },
+    {
+      "path": "/physical/efc_b/sha256",
+      "kind": "value",
+      "before": "84a72597d5f2fbea2cdb192f108e0e5bf4f7c5fff250c23e2d18c40acaf21a11",
+      "after": "e3c2af35d1dfc500e16f826a071cc311bf55003a3de77de7ea3376c6b6fa2857"
+    },
+    {
+      "path": "/physical/efc_diagApprox/sha256",
+      "kind": "value",
+      "before": "be87860f1ca308a251a3e077f49099c057cc78afa90eaf5cab306bd2c63f231a",
+      "after": "e3c2af35d1dfc500e16f826a071cc311bf55003a3de77de7ea3376c6b6fa2857"
+    },
+    {
+      "path": "/physical/efc_force/sha256",
+      "kind": "value",
+      "before": "746d667ff86326624b94f2c9fa911c2c23ac372155a0c08e5a3151813e1929f7",
+      "after": "e3c2af35d1dfc500e16f826a071cc311bf55003a3de77de7ea3376c6b6fa2857"
+    },
+    {
+      "path": "/physical/efc_frictionloss/sha256",
+      "kind": "value",
+      "before": "956af5c1350223e27f9a8c5b0e56f901a526f6a4bad451db86bf86df148e5f06",
+      "after": "e3c2af35d1dfc500e16f826a071cc311bf55003a3de77de7ea3376c6b6fa2857"
+    },
+    {
+      "path": "/physical/efc_id/sha256",
+      "kind": "value",
+      "before": "91f6693ba80b2b68c319f6f5a89c952927066f20600caab91e1952fd217d3870",
+      "after": "4fea5e6a3ec5f5474a26d858bc77b6d7bd3ab864ea02d988683fdc648602b248"
+    },
+    {
+      "path": "/physical/efc_pos/sha256",
+      "kind": "value",
+      "before": "42a80b9b83bae0c31e56957c7dd00835f9351c344e344415fecf42178439dc98",
+      "after": "e3c2af35d1dfc500e16f826a071cc311bf55003a3de77de7ea3376c6b6fa2857"
+    },
+    {
+      "path": "/physical/efc_state/sha256",
+      "kind": "value",
+      "before": "55cc3f4327e0b1d799843fc1df57e125b8641352dd20f93d7cced6c4e3428016",
+      "after": "4fea5e6a3ec5f5474a26d858bc77b6d7bd3ab864ea02d988683fdc648602b248"
+    },
+    {
+      "path": "/physical/efc_type/sha256",
+      "kind": "value",
+      "before": "2f18840889e2ffdd9de2ec9a3e556fb3077b4cfdf1faef3680f10da95997b822",
+      "after": "4fea5e6a3ec5f5474a26d858bc77b6d7bd3ab864ea02d988683fdc648602b248"
+    },
+    {
+      "path": "/physical/efc_vel/sha256",
+      "kind": "value",
+      "before": "bce466488c25b7004003c79f586cc5a9202d7d5991b7e66e022276b5bcc2c4dd",
+      "after": "e3c2af35d1dfc500e16f826a071cc311bf55003a3de77de7ea3376c6b6fa2857"
+    }
+  ],
+  "snapshot_vs_before_differences": [
+    {
+      "path": "/physical/efc_AR/sha256",
+      "kind": "value",
+      "before": "8c57e5bbc6ae56c615d285d74999656d9f12e1f48b32c682b9caf50679de97ab",
+      "after": "97137f86202f3792ee983b883e958c644e4253ae202b393389e775538db442ac"
+    },
+    {
+      "path": "/physical/efc_AR_colind/sha256",
+      "kind": "value",
+      "before": "59da869354527d01e17b67f55830230755ed11b2e40906b4fa652c8051986ef0",
+      "after": "235ec87ceb8984cf9c03be0d793590cc84d43995ea0cd1a053096aeb5ec1a054"
+    },
+    {
+      "path": "/physical/efc_AR_rowadr/sha256",
+      "kind": "value",
+      "before": "5a8df00efe8a21034cdae0b54d0effc89cb062da61ead9c3887c6e6d9d12f253",
+      "after": "55cc3f4327e0b1d799843fc1df57e125b8641352dd20f93d7cced6c4e3428016"
+    },
+    {
+      "path": "/physical/efc_AR_rownnz/sha256",
+      "kind": "value",
+      "before": "b9d17bc6125703cbc5761e20a5f6dee0b6956b451cc7625d92db2dc80604890f",
+      "after": "303782143937252497ba7cd60e9ac053dafb322dd81c726c4bef6cabe7069432"
+    }
+  ],
+  "numerical_differences": [
+    {
+      "field": "efc_AR",
+      "changed_elements": 441,
+      "examples": [
+        {
+          "index": [
+            0,
+            0
+          ],
+          "before": 6.9366376300816e-310,
+          "after": 6.93663763006975e-310
+        },
+        {
+          "index": [
+            0,
+            1
+          ],
+          "before": 6.9366376300816e-310,
+          "after": 6.93663763006975e-310
+        },
+        {
+          "index": [
+            0,
+            2
+          ],
+          "before": 4.6408581877241e-310,
+          "after": 4.64085711267836e-310
+        },
+        {
+          "index": [
+            0,
+            3
+          ],
+          "before": 4.6408581877241e-310,
+          "after": 4.64085711267836e-310
+        },
+        {
+          "index": [
+            0,
+            4
+          ],
+          "before": -4.097806438974653e-14,
+          "after": 1.0981531279792742e+17
+        },
+        {
+          "index": [
+            0,
+            5
+          ],
+          "before": -1.1715966977351422e-05,
+          "after": 2.6992778989310427e-77
+        },
+        {
+          "index": [
+            0,
+            6
+          ],
+          "before": -0.0014005547803956969,
+          "after": 1.432768402738438e-86
+        },
+        {
+          "index": [
+            0,
+            7
+          ],
+          "before": -3.2514592484663296e-14,
+          "after": -2.9371260181787067e-306
+        },
+        {
+          "index": [
+            0,
+            8
+          ],
+          "before": -1.1715966977342833e-05,
+          "after": 6.053751269157113e+117
+        },
+        {
+          "index": [
+            0,
+            9
+          ],
+          "before": -0.0014005547803956969,
+          "after": -2.9374465244187876e-306
+        },
+        {
+          "index": [
+            0,
+            10
+          ],
+          "before": -4.107819045591237e-14,
+          "after": -1.3951936452038929e-306
+        },
+        {
+          "index": [
+            0,
+            11
+          ],
+          "before": -0.0005294318498385337,
+          "after": -1.4325658112025744e-306
+        },
+        {
+          "index": [
+            0,
+            12
+          ],
+          "before": 1.0234698463491474e-05,
+          "after": 3.100884206531936e+154
+        },
+        {
+          "index": [
+            0,
+            13
+          ],
+          "before": -4.4060424058714245e-14,
+          "after": 1.4170996794788972e-143
+        },
+        {
+          "index": [
+            0,
+            14
+          ],
+          "before": -0.002460390776900336,
+          "after": 1.756672747574028e-210
+        },
+        {
+          "index": [
+            0,
+            15
+          ],
+          "before": -2.7380924127872697e-08,
+          "after": -1.4416512101718434e+306
+        },
+        {
+          "index": [
+            0,
+            16
+          ],
+          "before": -3.5215448512196165e-14,
+          "after": -8.39020603261532e-309
+        },
+        {
+          "index": [
+            0,
+            17
+          ],
+          "before": -0.00045487965463348424,
+          "after": -1.2076640154654855e-07
+        },
+        {
+          "index": [
+            0,
+            18
+          ],
+          "before": -1.6647744352770237e-12,
+          "after": 3.366441767288403e+150
+        },
+        {
+          "index": [
+            0,
+            19
+          ],
+          "before": -6.2019168727594e-14,
+          "after": 1.0702875560353343e+200
+        },
+        {
+          "index": [
+            0,
+            20
+          ],
+          "before": -4.154674360418859e-05,
+          "after": 4.49207135e-315
+        },
+        {
+          "index": [
+            1,
+            0
+          ],
+          "before": -0.0015007087416714483,
+          "after": 0.006050001829862637
+        },
+        {
+          "index": [
+            1,
+            1
+          ],
+          "before": -7.899907578323244e-14,
+          "after": -1.2815008991404198e-09
+        },
+        {
+          "index": [
+            1,
+            2
+          ],
+          "before": -0.00025680946192729236,
+          "after": -3.716350334929952e-09
+        },
+        {
+          "index": [
+            1,
+            3
+          ],
+          "before": -0.0002929407039349447,
+          "after": 0.006200003409897909
+        },
+        {
+          "index": [
+            1,
+            4
+          ],
+          "before": -8.422899601522701e-14,
+          "after": -5.103649693541379e-10
+        },
+        {
+          "index": [
+            1,
+            5
+          ],
+          "before": -4.1546743604244964e-05,
+          "after": -3.3825640030453465e-09
+        },
+        {
+          "index": [
+            1,
+            6
+          ],
+          "before": -0.0015007087416714483,
+          "after": 0.006406254105479457
+        },
+        {
+          "index": [
+            1,
+            7
+          ],
+          "before": -1.5620265789006462e-13,
+          "after": -7.577244356120339e-10
+        },
+        {
+          "index": [
+            1,
+            8
+          ],
+          "before": 1.193380718936098e-09,
+          "after": -4.041194926968084e-09
+        },
+        {
+          "index": [
+            1,
+            9
+          ],
+          "before": -5.3003287453320594e-12,
+          "after": 3.366441767288401e+150
+        },
+        {
+          "index": [
+            1,
+            10
+          ],
+          "before": -1.5574263118755607e-13,
+          "after": 1.0702853660638378e+200
+        }
+      ]
+    },
+    {
+      "field": "efc_AR_colind",
+      "changed_elements": 437,
+      "examples": [
+        {
+          "index": [
+            0,
+            0
+          ],
+          "before": 922731520,
+          "after": 922731136
+        },
+        {
+          "index": [
+            0,
+            2
+          ],
+          "before": 922731520,
+          "after": 922731136
+        },
+        {
+          "index": [
+            0,
+            4
+          ],
+          "before": 1080691056,
+          "after": 1214848608
+        },
+        {
+          "index": [
+            0,
+            6
+          ],
+          "before": 1080691056,
+          "after": 1214848608
+        },
+        {
+          "index": [
+            0,
+            8
+          ],
+          "before": -1082704285,
+          "after": -272804288
+        },
+        {
+          "index": [
+            0,
+            9
+          ],
+          "before": 1036933242,
+          "after": 32688
+        },
+        {
+          "index": [
+            0,
+            10
+          ],
+          "before": -1158067297,
+          "after": -271679536
+        },
+        {
+          "index": [
+            0,
+            11
+          ],
+          "before": -1119338008,
+          "after": 32688
+        },
+        {
+          "index": [
+            0,
+            12
+          ],
+          "before": 1031037150,
+          "after": -1698057024
+        },
+        {
+          "index": [
+            0,
+            13
+          ],
+          "before": -1096745981,
+          "after": 32688
+        },
+        {
+          "index": [
+            0,
+            14
+          ],
+          "before": -1082998649,
+          "after": -272804544
+        },
+        {
+          "index": [
+            0,
+            15
+          ],
+          "before": 1026905187,
+          "after": 32688
+        },
+        {
+          "index": [
+            0,
+            16
+          ],
+          "before": -1148962757,
+          "after": -271679824
+        },
+        {
+          "index": [
+            0,
+            17
+          ],
+          "before": -1121896273,
+          "after": 32688
+        },
+        {
+          "index": [
+            0,
+            18
+          ],
+          "before": 1030943643,
+          "after": -1698057216
+        },
+        {
+          "index": [
+            0,
+            19
+          ],
+          "before": -1087038876,
+          "after": 32688
+        },
+        {
+          "index": [
+            0,
+            20
+          ],
+          "before": 1060430988,
+          "after": -272804736
+        },
+        {
+          "index": [
+            1,
+            0
+          ],
+          "before": -1132733605,
+          "after": 32688
+        },
+        {
+          "index": [
+            1,
+            1
+          ],
+          "before": -1148033684,
+          "after": -271680304
+        },
+        {
+          "index": [
+            1,
+            2
+          ],
+          "before": -1121760557,
+          "after": 32688
+        },
+        {
+          "index": [
+            1,
+            3
+          ],
+          "before": 1031190341,
+          "after": -1698057152
+        },
+        {
+          "index": [
+            1,
+            4
+          ],
+          "before": -1086281885,
+          "after": 32688
+        },
+        {
+          "index": [
+            1,
+            5
+          ],
+          "before": 1059617632,
+          "after": -272798784
+        },
+        {
+          "index": [
+            1,
+            6
+          ],
+          "before": 1018921298,
+          "after": 32688
+        },
+        {
+          "index": [
+            1,
+            7
+          ],
+          "before": -1150064789,
+          "after": -271680144
+        },
+        {
+          "index": [
+            1,
+            8
+          ],
+          "before": -1121924431,
+          "after": 32688
+        },
+        {
+          "index": [
+            1,
+            9
+          ],
+          "before": 1031878479,
+          "after": -1696747136
+        },
+        {
+          "index": [
+            1,
+            10
+          ],
+          "before": -1087936158,
+          "after": 32688
+        },
+        {
+          "index": [
+            1,
+            11
+          ],
+          "before": 1061214380,
+          "after": -272798976
+        },
+        {
+          "index": [
+            1,
+            12
+          ],
+          "before": 1032783239,
+          "after": 32688
+        },
+        {
+          "index": [
+            1,
+            13
+          ],
+          "before": -1166648193,
+          "after": -271680368
+        },
+        {
+          "index": [
+            1,
+            14
+          ],
+          "before": -1119316243,
+          "after": 32688
+        }
+      ]
+    },
+    {
+      "field": "efc_AR_rowadr",
+      "changed_elements": 20,
+      "examples": [
+        {
+          "index": [
+            0
+          ],
+          "before": 1786834086,
+          "after": 922729728
+        },
+        {
+          "index": [
+            1
+          ],
+          "before": 21867,
+          "after": 32689
+        },
+        {
+          "index": [
+            2
+          ],
+          "before": 0,
+          "after": 922729728
+        },
+        {
+          "index": [
+            3
+          ],
+          "before": 0,
+          "after": 32689
+        },
+        {
+          "index": [
+            4
+          ],
+          "before": 1068325104,
+          "after": 4128
+        },
+        {
+          "index": [
+            5
+          ],
+          "before": 21870,
+          "after": 0
+        },
+        {
+          "index": [
+            6
+          ],
+          "before": 1068325120,
+          "after": 32
+        },
+        {
+          "index": [
+            7
+          ],
+          "before": 21870,
+          "after": 0
+        },
+        {
+          "index": [
+            8
+          ],
+          "before": 1013239920,
+          "after": 385004399
+        },
+        {
+          "index": [
+            9
+          ],
+          "before": 21870,
+          "after": 21867
+        },
+        {
+          "index": [
+            10
+          ],
+          "before": 2,
+          "after": 922729728
+        },
+        {
+          "index": [
+            11
+          ],
+          "before": 0,
+          "after": 32689
+        },
+        {
+          "index": [
+            12
+          ],
+          "before": 1,
+          "after": -1994152000
+        },
+        {
+          "index": [
+            13
+          ],
+          "before": 0,
+          "after": 1064719151
+        },
+        {
+          "index": [
+            14
+          ],
+          "before": 0,
+          "after": 257
+        },
+        {
+          "index": [
+            16
+          ],
+          "before": 0,
+          "after": 1075228960
+        },
+        {
+          "index": [
+            17
+          ],
+          "before": 0,
+          "after": 21870
+        },
+        {
+          "index": [
+            18
+          ],
+          "before": -1696637072,
+          "after": 922729728
+        },
+        {
+          "index": [
+            19
+          ],
+          "before": 32688,
+          "after": 32689
+        },
+        {
+          "index": [
+            20
+          ],
+          "before": 0,
+          "after": 32
+        }
+      ]
+    },
+    {
+      "field": "efc_AR_rownnz",
+      "changed_elements": 16,
+      "examples": [
+        {
+          "index": [
+            0
+          ],
+          "before": 397747460,
+          "after": 922729728
+        },
+        {
+          "index": [
+            1
+          ],
+          "before": 21867,
+          "after": 32689
+        },
+        {
+          "index": [
+            2
+          ],
+          "before": 0,
+          "after": 922729728
+        },
+        {
+          "index": [
+            3
+          ],
+          "before": 0,
+          "after": 32689
+        },
+        {
+          "index": [
+            4
+          ],
+          "before": 0,
+          "after": 32
+        },
+        {
+          "index": [
+            6
+          ],
+          "before": 0,
+          "after": 32
+        },
+        {
+          "index": [
+            8
+          ],
+          "before": 0,
+          "after": 385022959
+        },
+        {
+          "index": [
+            9
+          ],
+          "before": 0,
+          "after": 21867
+        },
+        {
+          "index": [
+            10
+          ],
+          "before": 0,
+          "after": 922729728
+        },
+        {
+          "index": [
+            11
+          ],
+          "before": 0,
+          "after": 32689
+        },
+        {
+          "index": [
+            12
+          ],
+          "before": 0,
+          "after": 64
+        },
+        {
+          "index": [
+            14
+          ],
+          "before": 0,
+          "after": 32
+        },
+        {
+          "index": [
+            16
+          ],
+          "before": 0,
+          "after": 385003599
+        },
+        {
+          "index": [
+            17
+          ],
+          "before": 0,
+          "after": 21867
+        },
+        {
+          "index": [
+            18
+          ],
+          "before": 1,
+          "after": 922729728
+        },
+        {
+          "index": [
+            19
+          ],
+          "before": 0,
+          "after": 32689
+        }
+      ]
+    },
+    {
+      "field": "efc_D",
+      "changed_elements": 21,
+      "examples": [
+        {
+          "index": [
+            0
+          ],
+          "before": 54.96049093582364,
+          "after": 0.0
+        },
+        {
+          "index": [
+            1
+          ],
+          "before": 44.165678376870865,
+          "after": 0.0
+        },
+        {
+          "index": [
+            2
+          ],
+          "before": 20.798833281562132,
+          "after": 0.0
+        },
+        {
+          "index": [
+            3
+          ],
+          "before": 17.445302220358336,
+          "after": 0.0
+        },
+        {
+          "index": [
+            4
+          ],
+          "before": 12.328466561770112,
+          "after": 0.0
+        },
+        {
+          "index": [
+            5
+          ],
+          "before": 10.547833972455093,
+          "after": 0.0
+        },
+        {
+          "index": [
+            6
+          ],
+          "before": 7.914311680760349,
+          "after": 0.0
+        },
+        {
+          "index": [
+            7
+          ],
+          "before": 9.984886725347197,
+          "after": 0.0
+        },
+        {
+          "index": [
+            8
+          ],
+          "before": 9.984886725347197,
+          "after": 0.0
+        },
+        {
+          "index": [
+            9
+          ],
+          "before": 0.7293981080687834,
+          "after": 0.0
+        },
+        {
+          "index": [
+            10
+          ],
+          "before": 14.587962161375668,
+          "after": 0.0
+        },
+        {
+          "index": [
+            11
+          ],
+          "before": 14.587962161375668,
+          "after": 0.0
+        },
+        {
+          "index": [
+            12
+          ],
+          "before": 0.7293981080687834,
+          "after": 0.0
+        },
+        {
+          "index": [
+            13
+          ],
+          "before": 14.587962161375668,
+          "after": 0.0
+        },
+        {
+          "index": [
+            14
+          ],
+          "before": 14.587962161375668,
+          "after": 0.0
+        },
+        {
+          "index": [
+            15
+          ],
+          "before": 0.7293981080687834,
+          "after": 0.0
+        },
+        {
+          "index": [
+            16
+          ],
+          "before": 14.587962161375668,
+          "after": 0.0
+        },
+        {
+          "index": [
+            17
+          ],
+          "before": 14.587962161375668,
+          "after": 0.0
+        },
+        {
+          "index": [
+            18
+          ],
+          "before": 0.7293981080687834,
+          "after": 0.0
+        },
+        {
+          "index": [
+            19
+          ],
+          "before": 14.587962161375668,
+          "after": 0.0
+        },
+        {
+          "index": [
+            20
+          ],
+          "before": 14.587962161375668,
+          "after": 0.0
+        }
+      ]
+    },
+    {
+      "field": "efc_J",
+      "changed_elements": 57,
+      "examples": [
+        {
+          "index": [
+            0
+          ],
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "index": [
+            16
+          ],
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "index": [
+            32
+          ],
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "index": [
+            48
+          ],
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "index": [
+            64
+          ],
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "index": [
+            80
+          ],
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "index": [
+            96
+          ],
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "index": [
+            112
+          ],
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "index": [
+            128
+          ],
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "index": [
+            146
+          ],
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "index": [
+            147
+          ],
+          "before": -0.017499999999999977,
+          "after": 0.0
+        },
+        {
+          "index": [
+            148
+          ],
+          "before": -0.025000000000000015,
+          "after": 0.0
+        },
+        {
+          "index": [
+            149
+          ],
+          "before": 1.923861929025325e-18,
+          "after": 0.0
+        },
+        {
+          "index": [
+            160
+          ],
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "index": [
+            162
+          ],
+          "before": 0.014129767621776403,
+          "after": 0.0
+        },
+        {
+          "index": [
+            163
+          ],
+          "before": -0.0047041062465334816,
+          "after": 0.0
+        },
+        {
+          "index": [
+            164
+          ],
+          "before": 0.029247844240353787,
+          "after": 0.0
+        },
+        {
+          "index": [
+            174
+          ],
+          "before": -1.0,
+          "after": 0.0
+        },
+        {
+          "index": [
+            177
+          ],
+          "before": 0.004704106246533484,
+          "after": 0.0
+        },
+        {
+          "index": [
+            178
+          ],
+          "before": 0.014129767621776403,
+          "after": 0.0
+        },
+        {
+          "index": [
+            179
+          ],
+          "before": -0.008707100969438887,
+          "after": 0.0
+        },
+        {
+          "index": [
+            191
+          ],
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "index": [
+            192
+          ],
+          "before": -0.01749999999999998,
+          "after": 0.0
+        },
+        {
+          "index": [
+            193
+          ],
+          "before": 0.024999999999999988,
+          "after": 0.0
+        },
+        {
+          "index": [
+            194
+          ],
+          "before": -2.232597570085735e-18,
+          "after": 0.0
+        },
+        {
+          "index": [
+            205
+          ],
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "index": [
+            207
+          ],
+          "before": 0.014129767621776403,
+          "after": 0.0
+        },
+        {
+          "index": [
+            208
+          ],
+          "before": -0.004704106246533486,
+          "after": 0.0
+        },
+        {
+          "index": [
+            209
+          ],
+          "before": -0.018192175785097242,
+          "after": 0.0
+        },
+        {
+          "index": [
+            219
+          ],
+          "before": -1.0,
+          "after": 0.0
+        },
+        {
+          "index": [
+            222
+          ],
+          "before": 0.004704106246533484,
+          "after": 0.0
+        },
+        {
+          "index": [
+            223
+          ],
+          "before": 0.014129767621776401,
+          "after": 0.0
+        }
+      ]
+    },
+    {
+      "field": "efc_JT_colind",
+      "changed_elements": 184,
+      "examples": [
+        {
+          "index": [
+            0
+          ],
+          "before": 1072483532,
+          "after": 0
+        },
+        {
+          "index": [
+            5
+          ],
+          "before": -1808407282,
+          "after": 0
+        },
+        {
+          "index": [
+            6
+          ],
+          "before": 1079660759,
+          "after": 0
+        },
+        {
+          "index": [
+            7
+          ],
+          "before": -858993459,
+          "after": 0
+        },
+        {
+          "index": [
+            8
+          ],
+          "before": 1072483532,
+          "after": 0
+        },
+        {
+          "index": [
+            13
+          ],
+          "before": -1808407282,
+          "after": 0
+        },
+        {
+          "index": [
+            14
+          ],
+          "before": 1079660759,
+          "after": 0
+        },
+        {
+          "index": [
+            15
+          ],
+          "before": -858993459,
+          "after": 0
+        },
+        {
+          "index": [
+            16
+          ],
+          "before": 1072483532,
+          "after": 0
+        },
+        {
+          "index": [
+            21
+          ],
+          "before": -1808407282,
+          "after": 0
+        },
+        {
+          "index": [
+            22
+          ],
+          "before": 1079660759,
+          "after": 0
+        },
+        {
+          "index": [
+            23
+          ],
+          "before": -858993459,
+          "after": 0
+        },
+        {
+          "index": [
+            24
+          ],
+          "before": 1072483532,
+          "after": 0
+        },
+        {
+          "index": [
+            29
+          ],
+          "before": -1808407282,
+          "after": 0
+        },
+        {
+          "index": [
+            30
+          ],
+          "before": 1079660759,
+          "after": 0
+        },
+        {
+          "index": [
+            31
+          ],
+          "before": -858993459,
+          "after": 0
+        },
+        {
+          "index": [
+            32
+          ],
+          "before": 1072483532,
+          "after": 0
+        },
+        {
+          "index": [
+            35
+          ],
+          "before": 1576188870,
+          "after": 0
+        },
+        {
+          "index": [
+            36
+          ],
+          "before": 1078688497,
+          "after": 0
+        },
+        {
+          "index": [
+            37
+          ],
+          "before": -218814391,
+          "after": 0
+        },
+        {
+          "index": [
+            38
+          ],
+          "before": 1078334772,
+          "after": 0
+        },
+        {
+          "index": [
+            39
+          ],
+          "before": 1451443206,
+          "after": 0
+        },
+        {
+          "index": [
+            40
+          ],
+          "before": 1077202048,
+          "after": 0
+        },
+        {
+          "index": [
+            41
+          ],
+          "before": 1401505398,
+          "after": 0
+        },
+        {
+          "index": [
+            42
+          ],
+          "before": 1076982271,
+          "after": 0
+        },
+        {
+          "index": [
+            43
+          ],
+          "before": -991345745,
+          "after": 0
+        },
+        {
+          "index": [
+            44
+          ],
+          "before": 1076406316,
+          "after": 0
+        },
+        {
+          "index": [
+            45
+          ],
+          "before": -1312380369,
+          "after": 0
+        },
+        {
+          "index": [
+            46
+          ],
+          "before": 1076172925,
+          "after": 0
+        },
+        {
+          "index": [
+            47
+          ],
+          "before": 1379720624,
+          "after": 0
+        },
+        {
+          "index": [
+            48
+          ],
+          "before": 1075816513,
+          "after": 0
+        },
+        {
+          "index": [
+            49
+          ],
+          "before": 312951537,
+          "after": 0
+        }
+      ]
+    },
+    {
+      "field": "efc_JT_rowadr",
+      "changed_elements": 8,
+      "examples": [
+        {
+          "index": [
+            3
+          ],
+          "before": -1808407282,
+          "after": 0
+        },
+        {
+          "index": [
+            4
+          ],
+          "before": 1079660759,
+          "after": 0
+        },
+        {
+          "index": [
+            5
+          ],
+          "before": -858993459,
+          "after": 0
+        },
+        {
+          "index": [
+            6
+          ],
+          "before": 1072483532,
+          "after": 0
+        },
+        {
+          "index": [
+            11
+          ],
+          "before": -1808407282,
+          "after": 0
+        },
+        {
+          "index": [
+            12
+          ],
+          "before": 1079660759,
+          "after": 0
+        },
+        {
+          "index": [
+            13
+          ],
+          "before": -858993459,
+          "after": 0
+        },
+        {
+          "index": [
+            14
+          ],
+          "before": 1072483532,
+          "after": 0
+        }
+      ]
+    },
+    {
+      "field": "efc_JT_rownnz",
+      "changed_elements": 12,
+      "examples": [
+        {
+          "index": [
+            0
+          ],
+          "before": 22334773,
+          "after": 0
+        },
+        {
+          "index": [
+            1
+          ],
+          "before": 1072385503,
+          "after": 0
+        },
+        {
+          "index": [
+            2
+          ],
+          "before": 252688550,
+          "after": 0
+        },
+        {
+          "index": [
+            3
+          ],
+          "before": 1072837092,
+          "after": 0
+        },
+        {
+          "index": [
+            4
+          ],
+          "before": -1491578605,
+          "after": 0
+        },
+        {
+          "index": [
+            5
+          ],
+          "before": 1072486389,
+          "after": 0
+        },
+        {
+          "index": [
+            6
+          ],
+          "before": -1491578605,
+          "after": 0
+        },
+        {
+          "index": [
+            7
+          ],
+          "before": 1072486389,
+          "after": 0
+        },
+        {
+          "index": [
+            10
+          ],
+          "before": -1808407282,
+          "after": 0
+        },
+        {
+          "index": [
+            11
+          ],
+          "before": 1079660759,
+          "after": 0
+        },
+        {
+          "index": [
+            12
+          ],
+          "before": -858993459,
+          "after": 0
+        },
+        {
+          "index": [
+            13
+          ],
+          "before": 1072483532,
+          "after": 0
+        }
+      ]
+    },
+    {
+      "field": "efc_JT_rowsuper",
+      "changed_elements": 7,
+      "examples": [
+        {
+          "index": [
+            4
+          ],
+          "before": -1808407282,
+          "after": 0
+        },
+        {
+          "index": [
+            5
+          ],
+          "before": 1079660759,
+          "after": 0
+        },
+        {
+          "index": [
+            6
+          ],
+          "before": -858993459,
+          "after": 0
+        },
+        {
+          "index": [
+            7
+          ],
+          "before": 1072483532,
+          "after": 0
+        },
+        {
+          "index": [
+            12
+          ],
+          "before": -1808407282,
+          "after": 0
+        },
+        {
+          "index": [
+            13
+          ],
+          "before": 1079660759,
+          "after": 0
+        },
+        {
+          "index": [
+            14
+          ],
+          "before": -858993459,
+          "after": 0
+        }
+      ]
+    },
+    {
+      "field": "efc_J_colind",
+      "changed_elements": 149,
+      "examples": [
+        {
+          "index": [
+            25
+          ],
+          "before": 4,
+          "after": 0
+        },
+        {
+          "index": [
+            26
+          ],
+          "before": 78,
+          "after": 0
+        },
+        {
+          "index": [
+            27
+          ],
+          "before": 74,
+          "after": 0
+        },
+        {
+          "index": [
+            29
+          ],
+          "before": 21,
+          "after": 0
+        },
+        {
+          "index": [
+            31
+          ],
+          "before": -539203966,
+          "after": 0
+        },
+        {
+          "index": [
+            32
+          ],
+          "before": -1085684912,
+          "after": 0
+        },
+        {
+          "index": [
+            33
+          ],
+          "before": -2124135018,
+          "after": 0
+        },
+        {
+          "index": [
+            34
+          ],
+          "before": -1078189884,
+          "after": 0
+        },
+        {
+          "index": [
+            35
+          ],
+          "before": -1427413129,
+          "after": 0
+        },
+        {
+          "index": [
+            36
+          ],
+          "before": 1060521676,
+          "after": 0
+        },
+        {
+          "index": [
+            37
+          ],
+          "before": 203164245,
+          "after": 0
+        },
+        {
+          "index": [
+            38
+          ],
+          "before": 1072699554,
+          "after": 0
+        },
+        {
+          "index": [
+            39
+          ],
+          "before": -395981276,
+          "after": 0
+        },
+        {
+          "index": [
+            40
+          ],
+          "before": -1076097601,
+          "after": 0
+        },
+        {
+          "index": [
+            41
+          ],
+          "before": 832513718,
+          "after": 0
+        },
+        {
+          "index": [
+            42
+          ],
+          "before": 1072266613,
+          "after": 0
+        },
+        {
+          "index": [
+            43
+          ],
+          "before": 62979667,
+          "after": 0
+        },
+        {
+          "index": [
+            44
+          ],
+          "before": 1071293799,
+          "after": 0
+        },
+        {
+          "index": [
+            45
+          ],
+          "before": 2010619180,
+          "after": 0
+        },
+        {
+          "index": [
+            46
+          ],
+          "before": 1070182747,
+          "after": 0
+        },
+        {
+          "index": [
+            47
+          ],
+          "before": -80561385,
+          "after": 0
+        },
+        {
+          "index": [
+            48
+          ],
+          "before": -1076406197,
+          "after": 0
+        },
+        {
+          "index": [
+            49
+          ],
+          "before": 1385638725,
+          "after": 0
+        },
+        {
+          "index": [
+            50
+          ],
+          "before": 1072502840,
+          "after": 0
+        },
+        {
+          "index": [
+            51
+          ],
+          "before": 887682613,
+          "after": 0
+        },
+        {
+          "index": [
+            52
+          ],
+          "before": 1072433431,
+          "after": 0
+        },
+        {
+          "index": [
+            53
+          ],
+          "before": 2092625913,
+          "after": 0
+        },
+        {
+          "index": [
+            54
+          ],
+          "before": 1071569643,
+          "after": 0
+        },
+        {
+          "index": [
+            60
+          ],
+          "before": 1073741824,
+          "after": 0
+        },
+        {
+          "index": [
+            62
+          ],
+          "before": 1073741824,
+          "after": 0
+        },
+        {
+          "index": [
+            63
+          ],
+          "before": -1717986918,
+          "after": 0
+        },
+        {
+          "index": [
+            64
+          ],
+          "before": 1068079513,
+          "after": 0
+        }
+      ]
+    },
+    {
+      "field": "efc_J_rowadr",
+      "changed_elements": 1,
+      "examples": [
+        {
+          "index": [
+            10
+          ],
+          "before": 1072693248,
+          "after": 0
+        }
+      ]
+    },
+    {
+      "field": "efc_J_rowsuper",
+      "changed_elements": 2,
+      "examples": [
+        {
+          "index": [
+            4
+          ],
+          "before": 667232536,
+          "after": 0
+        },
+        {
+          "index": [
+            5
+          ],
+          "before": 1067580652,
+          "after": 0
+        }
+      ]
+    },
+    {
+      "field": "efc_KBIP",
+      "changed_elements": 58,
+      "examples": [
+        {
+          "index": [
+            0,
+            1
+          ],
+          "before": 105.26315789473685,
+          "after": 0.0
+        },
+        {
+          "index": [
+            0,
+            2
+          ],
+          "before": 0.9,
+          "after": 0.0
+        },
+        {
+          "index": [
+            1,
+            1
+          ],
+          "before": 105.26315789473685,
+          "after": 0.0
+        },
+        {
+          "index": [
+            1,
+            2
+          ],
+          "before": 0.9,
+          "after": 0.0
+        },
+        {
+          "index": [
+            2,
+            1
+          ],
+          "before": 105.26315789473685,
+          "after": 0.0
+        },
+        {
+          "index": [
+            2,
+            2
+          ],
+          "before": 0.9,
+          "after": 0.0
+        },
+        {
+          "index": [
+            3,
+            1
+          ],
+          "before": 105.26315789473685,
+          "after": 0.0
+        },
+        {
+          "index": [
+            3,
+            2
+          ],
+          "before": 0.9,
+          "after": 0.0
+        },
+        {
+          "index": [
+            4,
+            1
+          ],
+          "before": 105.26315789473685,
+          "after": 0.0
+        },
+        {
+          "index": [
+            4,
+            2
+          ],
+          "before": 0.9,
+          "after": 0.0
+        },
+        {
+          "index": [
+            5,
+            1
+          ],
+          "before": 105.26315789473685,
+          "after": 0.0
+        },
+        {
+          "index": [
+            5,
+            2
+          ],
+          "before": 0.9,
+          "after": 0.0
+        },
+        {
+          "index": [
+            6,
+            1
+          ],
+          "before": 105.26315789473685,
+          "after": 0.0
+        },
+        {
+          "index": [
+            6,
+            2
+          ],
+          "before": 0.9,
+          "after": 0.0
+        },
+        {
+          "index": [
+            7,
+            1
+          ],
+          "before": 105.26315789473685,
+          "after": 0.0
+        },
+        {
+          "index": [
+            7,
+            2
+          ],
+          "before": 0.9,
+          "after": 0.0
+        },
+        {
+          "index": [
+            8,
+            1
+          ],
+          "before": 105.26315789473685,
+          "after": 0.0
+        },
+        {
+          "index": [
+            8,
+            2
+          ],
+          "before": 0.9,
+          "after": 0.0
+        },
+        {
+          "index": [
+            9,
+            0
+          ],
+          "before": 2770.083102493075,
+          "after": 0.0
+        },
+        {
+          "index": [
+            9,
+            1
+          ],
+          "before": 105.26315789473685,
+          "after": 0.0
+        },
+        {
+          "index": [
+            9,
+            2
+          ],
+          "before": 0.9011611230586154,
+          "after": 0.0
+        },
+        {
+          "index": [
+            9,
+            3
+          ],
+          "before": -21.551084043410775,
+          "after": 0.0
+        },
+        {
+          "index": [
+            10,
+            1
+          ],
+          "before": 105.26315789473685,
+          "after": 0.0
+        },
+        {
+          "index": [
+            10,
+            2
+          ],
+          "before": 0.9011611230586154,
+          "after": 0.0
+        },
+        {
+          "index": [
+            10,
+            3
+          ],
+          "before": -21.551084043410775,
+          "after": 0.0
+        },
+        {
+          "index": [
+            11,
+            1
+          ],
+          "before": 105.26315789473685,
+          "after": 0.0
+        },
+        {
+          "index": [
+            11,
+            2
+          ],
+          "before": 0.9011611230586154,
+          "after": 0.0
+        },
+        {
+          "index": [
+            11,
+            3
+          ],
+          "before": -21.551084043410775,
+          "after": 0.0
+        },
+        {
+          "index": [
+            12,
+            0
+          ],
+          "before": 2770.083102493075,
+          "after": 0.0
+        },
+        {
+          "index": [
+            12,
+            1
+          ],
+          "before": 105.26315789473685,
+          "after": 0.0
+        },
+        {
+          "index": [
+            12,
+            2
+          ],
+          "before": 0.9011611230586154,
+          "after": 0.0
+        },
+        {
+          "index": [
+            12,
+            3
+          ],
+          "before": -21.551084043410736,
+          "after": 0.0
+        }
+      ]
+    },
+    {
+      "field": "efc_R",
+      "changed_elements": 21,
+      "examples": [
+        {
+          "index": [
+            0
+          ],
+          "before": 0.018194888418440105,
+          "after": 0.0
+        },
+        {
+          "index": [
+            1
+          ],
+          "before": 0.022642016080153548,
+          "after": 0.0
+        },
+        {
+          "index": [
+            2
+          ],
+          "before": 0.04807961997014927,
+          "after": 0.0
+        },
+        {
+          "index": [
+            3
+          ],
+          "before": 0.057322022133443985,
+          "after": 0.0
+        },
+        {
+          "index": [
+            4
+          ],
+          "before": 0.08111308855725369,
+          "after": 0.0
+        },
+        {
+          "index": [
+            5
+          ],
+          "before": 0.09480619458093745,
+          "after": 0.0
+        },
+        {
+          "index": [
+            6
+          ],
+          "before": 0.12635337605302996,
+          "after": 0.0
+        },
+        {
+          "index": [
+            7
+          ],
+          "before": 0.1001513615033252,
+          "after": 0.0
+        },
+        {
+          "index": [
+            8
+          ],
+          "before": 0.1001513615033252,
+          "after": 0.0
+        },
+        {
+          "index": [
+            9
+          ],
+          "before": 1.3709934107831527,
+          "after": 0.0
+        },
+        {
+          "index": [
+            10
+          ],
+          "before": 0.06854967053915764,
+          "after": 0.0
+        },
+        {
+          "index": [
+            11
+          ],
+          "before": 0.06854967053915764,
+          "after": 0.0
+        },
+        {
+          "index": [
+            12
+          ],
+          "before": 1.3709934107831527,
+          "after": 0.0
+        },
+        {
+          "index": [
+            13
+          ],
+          "before": 0.06854967053915764,
+          "after": 0.0
+        },
+        {
+          "index": [
+            14
+          ],
+          "before": 0.06854967053915764,
+          "after": 0.0
+        },
+        {
+          "index": [
+            15
+          ],
+          "before": 1.3709934107831527,
+          "after": 0.0
+        },
+        {
+          "index": [
+            16
+          ],
+          "before": 0.06854967053915764,
+          "after": 0.0
+        },
+        {
+          "index": [
+            17
+          ],
+          "before": 0.06854967053915764,
+          "after": 0.0
+        },
+        {
+          "index": [
+            18
+          ],
+          "before": 1.3709934107831527,
+          "after": 0.0
+        },
+        {
+          "index": [
+            19
+          ],
+          "before": 0.06854967053915764,
+          "after": 0.0
+        },
+        {
+          "index": [
+            20
+          ],
+          "before": 0.06854967053915764,
+          "after": 0.0
+        }
+      ]
+    },
+    {
+      "field": "efc_aref",
+      "changed_elements": 21,
+      "examples": [
+        {
+          "index": [
+            0
+          ],
+          "before": 25.754001818717725,
+          "after": 0.0
+        },
+        {
+          "index": [
+            1
+          ],
+          "before": -82.06211714168246,
+          "after": 0.0
+        },
+        {
+          "index": [
+            2
+          ],
+          "before": -40.335751394889144,
+          "after": 0.0
+        },
+        {
+          "index": [
+            3
+          ],
+          "before": -26.39934134462584,
+          "after": 0.0
+        },
+        {
+          "index": [
+            4
+          ],
+          "before": -69.40706634402163,
+          "after": 0.0
+        },
+        {
+          "index": [
+            5
+          ],
+          "before": -56.652888717741305,
+          "after": 0.0
+        },
+        {
+          "index": [
+            6
+          ],
+          "before": 51.18070052382374,
+          "after": 0.0
+        },
+        {
+          "index": [
+            7
+          ],
+          "before": -0.0030152861605320974,
+          "after": 0.0
+        },
+        {
+          "index": [
+            8
+          ],
+          "before": 0.0011024154037068512,
+          "after": 0.0
+        },
+        {
+          "index": [
+            9
+          ],
+          "before": 0.26898890719565405,
+          "after": 0.0
+        },
+        {
+          "index": [
+            10
+          ],
+          "before": 7.745409747984714e-16,
+          "after": 0.0
+        },
+        {
+          "index": [
+            11
+          ],
+          "before": 7.961981673381099e-17,
+          "after": 0.0
+        },
+        {
+          "index": [
+            12
+          ],
+          "before": 0.26898890719565377,
+          "after": 0.0
+        },
+        {
+          "index": [
+            13
+          ],
+          "before": 7.7454097479847225e-16,
+          "after": 0.0
+        },
+        {
+          "index": [
+            14
+          ],
+          "before": 7.961981673381131e-17,
+          "after": 0.0
+        },
+        {
+          "index": [
+            15
+          ],
+          "before": 0.2689889071956553,
+          "after": 0.0
+        },
+        {
+          "index": [
+            16
+          ],
+          "before": 7.745409747984717e-16,
+          "after": 0.0
+        },
+        {
+          "index": [
+            17
+          ],
+          "before": 7.961981673381034e-17,
+          "after": 0.0
+        },
+        {
+          "index": [
+            18
+          ],
+          "before": 0.26898890719565505,
+          "after": 0.0
+        },
+        {
+          "index": [
+            19
+          ],
+          "before": 7.745409747984726e-16,
+          "after": 0.0
+        },
+        {
+          "index": [
+            20
+          ],
+          "before": 7.961981673381067e-17,
+          "after": 0.0
+        }
+      ]
+    },
+    {
+      "field": "efc_b",
+      "changed_elements": 21,
+      "examples": [
+        {
+          "index": [
+            0
+          ],
+          "before": -26.78367699601537,
+          "after": 0.0
+        },
+        {
+          "index": [
+            1
+          ],
+          "before": 79.86259721417295,
+          "after": 0.0
+        },
+        {
+          "index": [
+            2
+          ],
+          "before": 40.89639083942515,
+          "after": 0.0
+        },
+        {
+          "index": [
+            3
+          ],
+          "before": 25.009149316404155,
+          "after": 0.0
+        },
+        {
+          "index": [
+            4
+          ],
+          "before": 69.56671733816248,
+          "after": 0.0
+        },
+        {
+          "index": [
+            5
+          ],
+          "before": 57.35288486301509,
+          "after": 0.0
+        },
+        {
+          "index": [
+            6
+          ],
+          "before": -52.23983101849003,
+          "after": 0.0
+        },
+        {
+          "index": [
+            7
+          ],
+          "before": 0.028580285113368843,
+          "after": 0.0
+        },
+        {
+          "index": [
+            8
+          ],
+          "before": -0.012172477709198628,
+          "after": 0.0
+        },
+        {
+          "index": [
+            9
+          ],
+          "before": -10.078988907195654,
+          "after": 0.0
+        },
+        {
+          "index": [
+            10
+          ],
+          "before": -7.745373343806253e-16,
+          "after": 0.0
+        },
+        {
+          "index": [
+            11
+          ],
+          "before": -7.961871028568727e-17,
+          "after": 0.0
+        },
+        {
+          "index": [
+            12
+          ],
+          "before": -10.078988907195654,
+          "after": 0.0
+        },
+        {
+          "index": [
+            13
+          ],
+          "before": -7.745373343806262e-16,
+          "after": 0.0
+        },
+        {
+          "index": [
+            14
+          ],
+          "before": -7.961871028568759e-17,
+          "after": 0.0
+        },
+        {
+          "index": [
+            15
+          ],
+          "before": -10.078988907195656,
+          "after": 0.0
+        },
+        {
+          "index": [
+            16
+          ],
+          "before": -7.745373343806256e-16,
+          "after": 0.0
+        },
+        {
+          "index": [
+            17
+          ],
+          "before": -7.961871028568662e-17,
+          "after": 0.0
+        },
+        {
+          "index": [
+            18
+          ],
+          "before": -10.078988907195656,
+          "after": 0.0
+        },
+        {
+          "index": [
+            19
+          ],
+          "before": -7.745373343806266e-16,
+          "after": 0.0
+        },
+        {
+          "index": [
+            20
+          ],
+          "before": -7.961871028568695e-17,
+          "after": 0.0
+        }
+      ]
+    },
+    {
+      "field": "efc_diagApprox",
+      "changed_elements": 21,
+      "examples": [
+        {
+          "index": [
+            0
+          ],
+          "before": 0.163753995765961,
+          "after": 0.0
+        },
+        {
+          "index": [
+            1
+          ],
+          "before": 0.20377814472138198,
+          "after": 0.0
+        },
+        {
+          "index": [
+            2
+          ],
+          "before": 0.43271657973134353,
+          "after": 0.0
+        },
+        {
+          "index": [
+            3
+          ],
+          "before": 0.515898199200996,
+          "after": 0.0
+        },
+        {
+          "index": [
+            4
+          ],
+          "before": 0.7300177970152834,
+          "after": 0.0
+        },
+        {
+          "index": [
+            5
+          ],
+          "before": 0.8532557512284372,
+          "after": 0.0
+        },
+        {
+          "index": [
+            6
+          ],
+          "before": 1.1371803844772699,
+          "after": 0.0
+        },
+        {
+          "index": [
+            7
+          ],
+          "before": 0.9013622535299269,
+          "after": 0.0
+        },
+        {
+          "index": [
+            8
+          ],
+          "before": 0.9013622535299269,
+          "after": 0.0
+        },
+        {
+          "index": [
+            9
+          ],
+          "before": 12.5,
+          "after": 0.0
+        },
+        {
+          "index": [
+            10
+          ],
+          "before": 0.6250000000000001,
+          "after": 0.0
+        },
+        {
+          "index": [
+            11
+          ],
+          "before": 0.6250000000000001,
+          "after": 0.0
+        },
+        {
+          "index": [
+            12
+          ],
+          "before": 12.5,
+          "after": 0.0
+        },
+        {
+          "index": [
+            13
+          ],
+          "before": 0.6250000000000001,
+          "after": 0.0
+        },
+        {
+          "index": [
+            14
+          ],
+          "before": 0.6250000000000001,
+          "after": 0.0
+        },
+        {
+          "index": [
+            15
+          ],
+          "before": 12.5,
+          "after": 0.0
+        },
+        {
+          "index": [
+            16
+          ],
+          "before": 0.6250000000000001,
+          "after": 0.0
+        },
+        {
+          "index": [
+            17
+          ],
+          "before": 0.6250000000000001,
+          "after": 0.0
+        },
+        {
+          "index": [
+            18
+          ],
+          "before": 12.5,
+          "after": 0.0
+        },
+        {
+          "index": [
+            19
+          ],
+          "before": 0.6250000000000001,
+          "after": 0.0
+        },
+        {
+          "index": [
+            20
+          ],
+          "before": 0.6250000000000001,
+          "after": 0.0
+        }
+      ]
+    },
+    {
+      "field": "efc_force",
+      "changed_elements": 21,
+      "examples": [
+        {
+          "index": [
+            0
+          ],
+          "before": 0.1,
+          "after": 0.0
+        },
+        {
+          "index": [
+            1
+          ],
+          "before": -0.1,
+          "after": 0.0
+        },
+        {
+          "index": [
+            2
+          ],
+          "before": -0.1,
+          "after": 0.0
+        },
+        {
+          "index": [
+            3
+          ],
+          "before": -0.1,
+          "after": 0.0
+        },
+        {
+          "index": [
+            4
+          ],
+          "before": -0.1,
+          "after": 0.0
+        },
+        {
+          "index": [
+            5
+          ],
+          "before": -0.1,
+          "after": 0.0
+        },
+        {
+          "index": [
+            6
+          ],
+          "before": 0.1,
+          "after": 0.0
+        },
+        {
+          "index": [
+            7
+          ],
+          "before": -0.029645143268492685,
+          "after": 0.0
+        },
+        {
+          "index": [
+            8
+          ],
+          "before": 0.011064782030204102,
+          "after": 0.0
+        },
+        {
+          "index": [
+            9
+          ],
+          "before": 0.19620000000000026,
+          "after": 0.0
+        },
+        {
+          "index": [
+            10
+          ],
+          "before": -2.1149021183674106e-18,
+          "after": 0.0
+        },
+        {
+          "index": [
+            11
+          ],
+          "before": -1.6463826914178038e-18,
+          "after": 0.0
+        },
+        {
+          "index": [
+            12
+          ],
+          "before": 0.19620000000000037,
+          "after": 0.0
+        },
+        {
+          "index": [
+            13
+          ],
+          "before": -2.1149021183690287e-18,
+          "after": 0.0
+        },
+        {
+          "index": [
+            14
+          ],
+          "before": -1.6463826914178486e-18,
+          "after": 0.0
+        },
+        {
+          "index": [
+            15
+          ],
+          "before": 0.19619999999999965,
+          "after": 0.0
+        },
+        {
+          "index": [
+            16
+          ],
+          "before": -2.1149021183659946e-18,
+          "after": 0.0
+        },
+        {
+          "index": [
+            17
+          ],
+          "before": -1.6463826914185678e-18,
+          "after": 0.0
+        },
+        {
+          "index": [
+            18
+          ],
+          "before": 0.19619999999999982,
+          "after": 0.0
+        },
+        {
+          "index": [
+            19
+          ],
+          "before": -2.114902118366197e-18,
+          "after": 0.0
+        },
+        {
+          "index": [
+            20
+          ],
+          "before": -1.6463826914180734e-18,
+          "after": 0.0
+        }
+      ]
+    },
+    {
+      "field": "efc_frictionloss",
+      "changed_elements": 9,
+      "examples": [
+        {
+          "index": [
+            0
+          ],
+          "before": 0.1,
+          "after": 0.0
+        },
+        {
+          "index": [
+            1
+          ],
+          "before": 0.1,
+          "after": 0.0
+        },
+        {
+          "index": [
+            2
+          ],
+          "before": 0.1,
+          "after": 0.0
+        },
+        {
+          "index": [
+            3
+          ],
+          "before": 0.1,
+          "after": 0.0
+        },
+        {
+          "index": [
+            4
+          ],
+          "before": 0.1,
+          "after": 0.0
+        },
+        {
+          "index": [
+            5
+          ],
+          "before": 0.1,
+          "after": 0.0
+        },
+        {
+          "index": [
+            6
+          ],
+          "before": 0.1,
+          "after": 0.0
+        },
+        {
+          "index": [
+            7
+          ],
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "index": [
+            8
+          ],
+          "before": 1.0,
+          "after": 0.0
+        }
+      ]
+    },
+    {
+      "field": "efc_id",
+      "changed_elements": 17,
+      "examples": [
+        {
+          "index": [
+            1
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            2
+          ],
+          "before": 2,
+          "after": 0
+        },
+        {
+          "index": [
+            3
+          ],
+          "before": 3,
+          "after": 0
+        },
+        {
+          "index": [
+            4
+          ],
+          "before": 4,
+          "after": 0
+        },
+        {
+          "index": [
+            5
+          ],
+          "before": 5,
+          "after": 0
+        },
+        {
+          "index": [
+            6
+          ],
+          "before": 6,
+          "after": 0
+        },
+        {
+          "index": [
+            7
+          ],
+          "before": 7,
+          "after": 0
+        },
+        {
+          "index": [
+            8
+          ],
+          "before": 8,
+          "after": 0
+        },
+        {
+          "index": [
+            12
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            13
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            14
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            15
+          ],
+          "before": 2,
+          "after": 0
+        },
+        {
+          "index": [
+            16
+          ],
+          "before": 2,
+          "after": 0
+        },
+        {
+          "index": [
+            17
+          ],
+          "before": 2,
+          "after": 0
+        },
+        {
+          "index": [
+            18
+          ],
+          "before": 3,
+          "after": 0
+        },
+        {
+          "index": [
+            19
+          ],
+          "before": 3,
+          "after": 0
+        },
+        {
+          "index": [
+            20
+          ],
+          "before": 3,
+          "after": 0
+        }
+      ]
+    },
+    {
+      "field": "efc_pos",
+      "changed_elements": 4,
+      "examples": [
+        {
+          "index": [
+            9
+          ],
+          "before": -0.00010775542021705404,
+          "after": 0.0
+        },
+        {
+          "index": [
+            12
+          ],
+          "before": -0.00010775542021705382,
+          "after": 0.0
+        },
+        {
+          "index": [
+            15
+          ],
+          "before": -0.00010775542021705259,
+          "after": 0.0
+        },
+        {
+          "index": [
+            18
+          ],
+          "before": -0.00010775542021705237,
+          "after": 0.0
+        }
+      ]
+    },
+    {
+      "field": "efc_state",
+      "changed_elements": 21,
+      "examples": [
+        {
+          "index": [
+            0
+          ],
+          "before": 2,
+          "after": 0
+        },
+        {
+          "index": [
+            1
+          ],
+          "before": 3,
+          "after": 0
+        },
+        {
+          "index": [
+            2
+          ],
+          "before": 3,
+          "after": 0
+        },
+        {
+          "index": [
+            3
+          ],
+          "before": 3,
+          "after": 0
+        },
+        {
+          "index": [
+            4
+          ],
+          "before": 3,
+          "after": 0
+        },
+        {
+          "index": [
+            5
+          ],
+          "before": 3,
+          "after": 0
+        },
+        {
+          "index": [
+            6
+          ],
+          "before": 2,
+          "after": 0
+        },
+        {
+          "index": [
+            7
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            8
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            9
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            10
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            11
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            12
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            13
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            14
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            15
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            16
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            17
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            18
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            19
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            20
+          ],
+          "before": 1,
+          "after": 0
+        }
+      ]
+    },
+    {
+      "field": "efc_type",
+      "changed_elements": 21,
+      "examples": [
+        {
+          "index": [
+            0
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            1
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            2
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            3
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            4
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            5
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            6
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            7
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            8
+          ],
+          "before": 1,
+          "after": 0
+        },
+        {
+          "index": [
+            9
+          ],
+          "before": 7,
+          "after": 0
+        },
+        {
+          "index": [
+            10
+          ],
+          "before": 7,
+          "after": 0
+        },
+        {
+          "index": [
+            11
+          ],
+          "before": 7,
+          "after": 0
+        },
+        {
+          "index": [
+            12
+          ],
+          "before": 7,
+          "after": 0
+        },
+        {
+          "index": [
+            13
+          ],
+          "before": 7,
+          "after": 0
+        },
+        {
+          "index": [
+            14
+          ],
+          "before": 7,
+          "after": 0
+        },
+        {
+          "index": [
+            15
+          ],
+          "before": 7,
+          "after": 0
+        },
+        {
+          "index": [
+            16
+          ],
+          "before": 7,
+          "after": 0
+        },
+        {
+          "index": [
+            17
+          ],
+          "before": 7,
+          "after": 0
+        },
+        {
+          "index": [
+            18
+          ],
+          "before": 7,
+          "after": 0
+        },
+        {
+          "index": [
+            19
+          ],
+          "before": 7,
+          "after": 0
+        },
+        {
+          "index": [
+            20
+          ],
+          "before": 7,
+          "after": 0
+        }
+      ]
+    },
+    {
+      "field": "efc_vel",
+      "changed_elements": 21,
+      "examples": [
+        {
+          "index": [
+            0
+          ],
+          "before": -0.24466301727781836,
+          "after": 0.0
+        },
+        {
+          "index": [
+            1
+          ],
+          "before": 0.7795901128459833,
+          "after": 0.0
+        },
+        {
+          "index": [
+            2
+          ],
+          "before": 0.3831896382514468,
+          "after": 0.0
+        },
+        {
+          "index": [
+            3
+          ],
+          "before": 0.25079374277394545,
+          "after": 0.0
+        },
+        {
+          "index": [
+            4
+          ],
+          "before": 0.6593671302682055,
+          "after": 0.0
+        },
+        {
+          "index": [
+            5
+          ],
+          "before": 0.5382024428185423,
+          "after": 0.0
+        },
+        {
+          "index": [
+            6
+          ],
+          "before": -0.4862166549763255,
+          "after": 0.0
+        },
+        {
+          "index": [
+            7
+          ],
+          "before": 2.8645218525054925e-05,
+          "after": 0.0
+        },
+        {
+          "index": [
+            8
+          ],
+          "before": -1.0472946335215086e-05,
+          "after": 0.0
+        },
+        {
+          "index": [
+            9
+          ],
+          "before": 2.1640408277013725e-14,
+          "after": 0.0
+        },
+        {
+          "index": [
+            10
+          ],
+          "before": -7.358139260585477e-18,
+          "after": 0.0
+        },
+        {
+          "index": [
+            11
+          ],
+          "before": -7.5638825897120435e-19,
+          "after": 0.0
+        },
+        {
+          "index": [
+            12
+          ],
+          "before": 2.163811361450349e-14,
+          "after": 0.0
+        },
+        {
+          "index": [
+            13
+          ],
+          "before": -7.358139260585486e-18,
+          "after": 0.0
+        },
+        {
+          "index": [
+            14
+          ],
+          "before": -7.563882589712074e-19,
+          "after": 0.0
+        },
+        {
+          "index": [
+            15
+          ],
+          "before": 2.1593975178899814e-14,
+          "after": 0.0
+        },
+        {
+          "index": [
+            16
+          ],
+          "before": -7.35813926058548e-18,
+          "after": 0.0
+        },
+        {
+          "index": [
+            17
+          ],
+          "before": -7.563882589711982e-19,
+          "after": 0.0
+        },
+        {
+          "index": [
+            18
+          ],
+          "before": 2.159168051638958e-14,
+          "after": 0.0
+        },
+        {
+          "index": [
+            19
+          ],
+          "before": -7.35813926058549e-18,
+          "after": 0.0
+        },
+        {
+          "index": [
+            20
+          ],
+          "before": -7.563882589712013e-19,
+          "after": 0.0
+        }
+      ]
+    }
+  ],
+  "before_record_independent_disk_files": true
+}

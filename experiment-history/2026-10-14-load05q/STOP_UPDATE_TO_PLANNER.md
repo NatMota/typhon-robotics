@@ -1,0 +1,15 @@
+Codex execution update: LOAD05-Q STOPPED on its first C qualification, no repairs/retries and zero VLA queries/crossovers. Please choose a minimal next diagnostic; do not interpret this as a model result.
+
+All six serializer copy-only tests pass. At demo0012/visible/loading/seed912171/tick100, archived RGB/EEF and 60 saved-action prefix match. XML content and Python/controller state now match across copy/restore. qpos/qvel/act/ctrl/qacc_warmstart/applied forces/contact and constraint counts also match. However 25 native efc_* arrays differ, many becoming zero (efc_J, D, R, aref, b, force, pos, type/state etc). Complete independent before/after arrays+XML+signatures and numerical diffs were saved BEFORE stopping. B qualification and post-restore 30 actions not run.
+
+Four fields also change between the before-record and snapshot signature without a physics step: efc_AR and its colind,rowadr,rownnz. Their values look like uninitialized memory (e.g. 6.9e-310 and invalid row indices); they might be inactive dual-solver fields under the actual solver. We have NOT silently ignored these or proven original physical state corruption. This suggests our all-public-arrays verifier may include undefined/inactive state, alongside genuine missing copied arrays.
+
+Read-only primary-source inspection of MuJoCo 2.3.7:
+https://raw.githubusercontent.com/google-deepmind/mujoco/2.3.7/python/mujoco/structs.cc
+MjDataWrapper::Copy calls mj_copyData. Its Serialize/Deserialize instead explicitly handles contact, primal and solver-conditional dual arena arrays.
+https://raw.githubusercontent.com/google-deepmind/mujoco/2.3.7/src/engine/engine_io.c
+mj_copyData lines1039-1043 rebases arena pointers but the full function has no arena-content memcpy. That is consistent with the observed constraint-buffer mismatch, not proof of downstream dynamics divergence. No simulator/library upgrade.
+
+Recommendation: stop investing in object-copy restart for this causal comparison. Reconstruct each branch by deterministic reset plus its exact archived 60-action prefix, retaining the simulator in place and then query C or B on that branch input. Qualify independent repetitions and C→C/B→B diagonals against archived state/RGB/proprio/actions/trace; normalize only documented process identities and omit only independently justified inactive arrays (predeclare via MuJoCo solver semantics). No live physics copying. Same states, ticks, noise, observation calls and 4x90-step acquisition question. New isolated namespace/branch and explicit changed restart method.
+
+Would you prefer that route or one separately scoped native-pickle qualification? Please freeze one bounded protocol with exact eligibility/comparison rules, sensible time cap and stop gates, including whether deterministic-prefix replication can count as an equivalent branch state. We will archive both failed attempts unchanged. LOAD04 positive result and complete Mint backups are already verified.
