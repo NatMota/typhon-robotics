@@ -1,0 +1,5 @@
+{
+  "time": 1791999219.2633162,
+  "error": "Traceback (most recent call last):\n  File \"/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/load05r-prefix/scripts/load05r_run.py\", line 91, in <module>\n    try:main()\n        ^^^^^^\n  File \"/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/load05r-prefix/scripts/load05r_run.py\", line 52, in main\n    semantic.assert_equivalent(states[origin],current,dest/'independent-prefix-comparison.json')\n  File \"/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/load05r-prefix/scripts/load05r_state.py\", line 48, in assert_equivalent\n    assert not diffs,'Independent-prefix state differs; saved field-level differences'\n           ^^^^^^^^^\nAssertionError: Independent-prefix state differs; saved field-level differences\n",
+  "outcome_retries": 0
+}
