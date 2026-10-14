@@ -1,0 +1,27 @@
+{
+  "sources": {
+    "B": {
+      "path": "/var/tmp/typhon-load05r-20261014/continuations/B-to-B/predictions.npz",
+      "file_sha256": "5d9b40ad2658267bf448ef43f45d826be29d0295bb860a1fb99dd9f7169e781a",
+      "first_chunk_sha256": "406debe2473976db865cd9fee151651763d20f52afcae428d9bd5d4d8f58105d"
+    },
+    "C": {
+      "path": "/var/tmp/typhon-load05r2-20261014/continuations/B-to-C/predictions.npz",
+      "file_sha256": "61820226e9cdb152078c23295eb3d38ce0390baff22129c058b206f7e36cec13",
+      "first_chunk_sha256": "01e8ea370490e57ce8687937cf2aaa72784ed9be5fc389c975827008b9896cfb"
+    }
+  },
+  "first_pose_difference_tick": 101,
+  "first_continuous_grip_difference_tick": 101,
+  "applied_grip_difference_ticks": [
+    124
+  ],
+  "identical_applied_grip_through_tick110": true,
+  "first_close": {
+    "B": 124,
+    "C": 125
+  },
+  "duplicate_conditions": [],
+  "inactive_arm": "B donor channels10:20 retained unchanged; executor ignores inactive arm",
+  "handoff": "Previous-target history first9 from actual executed chunk; other channels unchanged per native convention"
+}
