@@ -1,0 +1,22 @@
+{
+  "goal_cloud_max_difference": 0.42100000381469727,
+  "goal_feature": "selected stage/fixture surface point cloud; no task ID needed",
+  "residual_meaning": "Neural network residual blocks only; no expert action is added",
+  "time_feature_present": false,
+  "horizon_initial_observation_identical": true,
+  "first_10_action_observations_identical": true,
+  "reset_clears_history_and_terminal_latch": true,
+  "all_resets_score_false_without_new_stability": true,
+  "reward": "one strict success minus 0.0001*(mean(action^2)+mean(normalized_velocity^2)+mean(normalized_torque^2))",
+  "truncation": "4s time limit stored as done but next-state value bootstrapped unless success/limit violation; GAE recursion cut at reset.",
+  "bootstrap_qualification": "Timeout treated as external truncation; success and safety violation treated terminal. Audit only.",
+  "stability": "New post-release samples at distinct times, >=0.4s; no inherited success state.",
+  "open_command": -1,
+  "open_control": "Zero seven joint deltas; gripper -1. Joint servo still applies gravity compensation/impedance.",
+  "source_full_starts": "After original 40-step settling. Preserved original ALPHA01 full-start controls.",
+  "fixed_seed": 314,
+  "policy_evaluation": "Deterministic tanh of actor mean, original evaluation convention",
+  "gamma": 0.99,
+  "discount_at_4s": 0.36972963764972644,
+  "discount_at_15s": 0.02331110064784238
+}

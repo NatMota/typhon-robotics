@@ -1,0 +1,87 @@
+{
+  "checks": {
+    "32_rollouts": true,
+    "all_new_contact_false": true,
+    "no_safety_violations": true,
+    "all_prior_prefix_actions_equal": true,
+    "all_prior_prefix_object_positions_equal": true,
+    "all_prior_4s_success_agrees": true,
+    "no_initial_endpoint_credit": true
+  },
+  "summary": [
+    {
+      "condition": "U0",
+      "role": "full_start",
+      "n": 4,
+      "success_4s": 0,
+      "success_15s": 0,
+      "new_contacts": 0,
+      "new_grasps_and_lifts": 0
+    },
+    {
+      "condition": "U0",
+      "role": "latest_held",
+      "n": 4,
+      "success_4s": 3,
+      "success_15s": 4,
+      "new_contacts": 0,
+      "new_grasps_and_lifts": 0
+    },
+    {
+      "condition": "A32",
+      "role": "full_start",
+      "n": 4,
+      "success_4s": 0,
+      "success_15s": 0,
+      "new_contacts": 0,
+      "new_grasps_and_lifts": 0
+    },
+    {
+      "condition": "A32",
+      "role": "latest_held",
+      "n": 4,
+      "success_4s": 4,
+      "success_15s": 4,
+      "new_contacts": 0,
+      "new_grasps_and_lifts": 0
+    },
+    {
+      "condition": "U32",
+      "role": "full_start",
+      "n": 4,
+      "success_4s": 0,
+      "success_15s": 0,
+      "new_contacts": 0,
+      "new_grasps_and_lifts": 0
+    },
+    {
+      "condition": "U32",
+      "role": "latest_held",
+      "n": 4,
+      "success_4s": 4,
+      "success_15s": 4,
+      "new_contacts": 0,
+      "new_grasps_and_lifts": 0
+    },
+    {
+      "condition": "OPEN",
+      "role": "full_start",
+      "n": 4,
+      "success_4s": 0,
+      "success_15s": 0,
+      "new_contacts": 0,
+      "new_grasps_and_lifts": 0
+    },
+    {
+      "condition": "OPEN",
+      "role": "latest_held",
+      "n": 4,
+      "success_4s": 4,
+      "success_15s": 4,
+      "new_contacts": 0,
+      "new_grasps_and_lifts": 0
+    }
+  ],
+  "decision": "Park further PPO in this prototype: OPEN-only explains all four selected held-near completions; no full-start improvement at 15s.",
+  "scope": "Fixed eight-state diagnostic panel, four correlated development parent trajectories, one seed."
+}
