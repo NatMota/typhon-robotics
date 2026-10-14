@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "actual_update_logs_match": true,
+  "underlying_sample_order_identical": true,
+  "actual_counts": {
+    "C": {
+      "samples": 12000,
+      "underlying_windows": 619,
+      "cell_visibility_counts": {
+        "load04-demo_0001-loading/visible": 1500,
+        "load04-demo_0002-loading/visible": 1500,
+        "load04-demo_0001-feeding/hidden": 1500,
+        "load04-demo_0005-feeding/hidden": 1500,
+        "load04-demo_0002-feeding/hidden": 1500,
+        "load04-demo_0005-loading/visible": 1500,
+        "load04-demo_0003-loading/visible": 1500,
+        "load04-demo_0003-feeding/hidden": 1500
+      }
+    },
+    "B": {
+      "samples": 12000,
+      "underlying_windows": 619,
+      "cell_visibility_counts": {
+        "load04-demo_0001-loading/hidden": 750,
+        "load04-demo_0002-loading/hidden": 750,
+        "load04-demo_0001-feeding/hidden": 750,
+        "load04-demo_0005-feeding/hidden": 750,
+        "load04-demo_0002-feeding/hidden": 750,
+        "load04-demo_0005-loading/visible": 750,
+        "load04-demo_0003-loading/visible": 750,
+        "load04-demo_0003-feeding/hidden": 750,
+        "load04-demo_0003-feeding/visible": 750,
+        "load04-demo_0001-feeding/visible": 750,
+        "load04-demo_0005-loading/hidden": 750,
+        "load04-demo_0005-feeding/visible": 750,
+        "load04-demo_0003-loading/hidden": 750,
+        "load04-demo_0002-feeding/visible": 750,
+        "load04-demo_0001-loading/visible": 750,
+        "load04-demo_0002-loading/visible": 750
+      }
+    }
+  },
+  "totals": {
+    "C": {
+      "n": 16,
+      "supported_pickups": 16,
+      "requested_region": 8,
+      "strict": 8,
+      "other_strict": 8
+    },
+    "B": {
+      "n": 16,
+      "supported_pickups": 16,
+      "requested_region": 16,
+      "strict": 12,
+      "other_strict": 0
+    }
+  },
+  "local_document_links_checked": [
+    {
+      "from": "REPORT.md",
+      "to": "PLANNER_RESULTS_REVIEW.md"
+    },
+    {
+      "from": "REPORT.md",
+      "to": "PLANNER_PHASE_ADDENDUM.md"
+    },
+    {
+      "from": "REPORT.md",
+      "to": "PLANNER_QUALIFICATION.md"
+    },
+    {
+      "from": "REPORT.md",
+      "to": "summary.csv"
+    },
+    {
+      "from": "REPORT.md",
+      "to": "instruction-switch-pairs.csv"
+    },
+    {
+      "from": "REPORT.md",
+      "to": "validation.json"
+    },
+    {
+      "from": "REPORT.md",
+      "to": "instruction-isolation.json"
+    },
+    {
+      "from": "REPORT.md",
+      "to": "failure-phase-summary.json"
+    },
+    {
+      "from": "REPORT.md",
+      "to": "all-endpoints-C.jpg"
+    },
+    {
+      "from": "REPORT.md",
+      "to": "all-endpoints-B.jpg"
+    },
+    {
+      "from": "REPORT.md",
+      "to": "evaluation-media-manifest.json"
+    },
+    {
+      "from": "REPORT.md",
+      "to": "REPRODUCTION.md"
+    }
+  ],
+  "time": 1791996596.663786
+}

@@ -3,7 +3,7 @@ import os,sys,json,time,copy,hashlib,gzip,subprocess
 from pathlib import Path
 os.environ.setdefault('MUJOCO_GL','egl');os.environ.setdefault('PYOPENGL_PLATFORM','egl')
 R=Path(__file__).resolve().parents[1];sys.path[:0]=[str(R),str(R/'scripts')];os.chdir(R)
-OUT=Path('/var/tmp/typhon-load04-20261014')
+OUT=Path(os.environ.get('TYPHON_LOAD04_ROOT','/var/tmp/typhon-load04-20261014')).resolve()
 OLD=Path('/var/tmp/typhon-load01-20261013')
 BASE=OLD/'train-FL/step3000.pt'
 BASE_SHA='76334b9a17ac5fc49f46c2cb850a3c39ef38e0f13b9cdadc324f760567c5f128'

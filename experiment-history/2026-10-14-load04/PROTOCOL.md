@@ -7,5 +7,5 @@ Evaluation: unchanged LOAD03 inspected development scenes 0012/0013, both instru
 The parent has historical exposure to these personal families; this is a controlled development diagnostic, not a new held-out population claim.
 Primary: two-way instruction switches /4 separately for each visibility. Report requested/wrong/neither endpoints and pickups.
 Clock begins after implementation/preflight: data gate +30m, both final endpoints and exact fresh reload +85m, evaluation +110m, closeout +120m. Stop on qualification, numeric, storage, reload or deadline failure. Never replace a failed source.
-Reproduce: .venv-sim/bin/python scripts/load04_prepare.py prepare; commit protocol; .venv-sim/bin/python scripts/load04_prepare.py start; .venv-sim/bin/python scripts/load04_data.py; .venv-xvla/bin/python scripts/load04_train.py gate; .venv-xvla/bin/python scripts/load04_run_training.py.
+Reproduce using REPRODUCTION.md. The exact executed scripts are archived; the historical qualified-resume entry point is explicit, and fresh runs require a new output directory.
 All data/checkpoints go to /var/tmp/typhon-load04-20261014 and verified Mint Fast Drive archival storage; private experiment branch only. Existing experiments remain unchanged.

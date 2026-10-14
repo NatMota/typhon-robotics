@@ -90,15 +90,22 @@ class CaptureEnv(FeedingLoadingEnv):
     'success':result['success'],'source_path':origin,'action_labels':'privileged geometric expert robot commands, not measured human actions',
     'views':'both renderings from identical pre-action physics; no visibility-specific execution','crop_audit':str(OUT/'data'/('crop-'+identity+'.json'))}
 
-def run():
- clock=read(OUT/'clock.json');entries=read(OUT/'data/manifest.json')['episodes'];attempts=read(OUT/'data/execution-ledger.json')
- assert read(OUT/'qualification-addendum.json')['resume_qualified']
- assert len(entries)==2 and len(attempts)==2 and all(x['source_demo_id']=='demo_0001' for x in entries)
- pairs=[{'source':'demo_0001','initial_native_rgb_proprio_physics_exact':True,'canonical_fingerprint':entries[0]['initial_canonical_fingerprint'],'original_two_composite_fingerprints_reconstructed_exactly':True}]
+def run(resume_qualified=False):
+ clock=read(OUT/'clock.json')
+ if resume_qualified:
+  entries=read(OUT/'data/manifest.json')['episodes'];attempts=read(OUT/'data/execution-ledger.json')
+  assert read(OUT/'qualification-addendum.json')['resume_qualified']
+  assert len(entries)==2 and len(attempts)==2 and all(x['source_demo_id']=='demo_0001' for x in entries)
+  pairs=[{'source':'demo_0001','initial_native_rgb_proprio_physics_exact':True,'canonical_fingerprint':entries[0]['initial_canonical_fingerprint'],'original_two_composite_fingerprints_reconstructed_exactly':True}]
+  remaining_sources=SOURCES[1:]
+ else:
+  assert not (OUT/'data/manifest.json').exists() and not (OUT/'data/execution-ledger.json').exists(),'Fresh output required; never replace an attempted source'
+  (OUT/'data').mkdir(exist_ok=True)
+  entries=[];attempts=[];pairs=[];remaining_sources=SOURCES
 
  old=read(OLD/'data/loading-manifest.json')['episodes']
  try:
-  for parent in SOURCES[1:]:
+  for parent in remaining_sources:
    e=next(x for x in old if x['source_demo_id']==parent);physical=copy.deepcopy(e['config'])
    source=Path(e['source_path']);orig=read(source/'episode.json')
    assert orig['success'];CaptureEnv.physical_config=physical
@@ -149,4 +156,8 @@ def run():
   import traceback
   dump(OUT/'data/generation-gate.json',{'passed':False,'episodes_completed':len(entries),'executions_started':len(attempts),'error':traceback.format_exc(),'stopped_without_replacement':True,'time':time.time()})
   raise
-if __name__=='__main__':run()
+if __name__=='__main__':
+ import argparse
+ p=argparse.ArgumentParser()
+ p.add_argument('--resume-qualified',action='store_true',help='Historical first-pair continuation only; requires the sealed qualification addendum')
+ run(p.parse_args().resume_qualified)

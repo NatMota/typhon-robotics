@@ -1,0 +1,1928 @@
+[
+  {
+    "model": "C",
+    "visibility": "visible",
+    "seed": 912171,
+    "source": "/var/tmp/typhon-load04-20261014/evaluation/C/visible/demo_0012/load03-demo_0012-seed912171-visible-loading",
+    "strict": true,
+    "failure": false,
+    "events": {
+      "first_bilateral_contact": {
+        "step": 135,
+        "sim_time_s": 6.75,
+        "object_tilt_deg": 1.0787261599403393,
+        "object_yaw_deg": 20.280010412306144,
+        "height_above_initial_mm": 0.11428661211365654,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 0.6141940730985311,
+        "command_eef_down_error_deg": 0.18000664477579548,
+        "contact_pairs": [
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_supported_10mm_lift": {
+        "step": 147,
+        "sim_time_s": 7.35,
+        "object_tilt_deg": 1.5695615085447134,
+        "object_yaw_deg": 20.07645012062676,
+        "height_above_initial_mm": 11.506842548837938,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 0.2526790949200972,
+        "command_eef_down_error_deg": 0.12405074841820303,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_open_command_after_lift": {
+        "step": 213,
+        "sim_time_s": 10.65,
+        "object_tilt_deg": 1.7722877804313792,
+        "object_yaw_deg": -0.7910645265377096,
+        "height_above_initial_mm": 25.585537646256373,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": true,
+        "actual_eef_down_error_deg": 0.3985304329731605,
+        "command_eef_down_error_deg": 0.09405227490815539,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_tilt_over_15deg": null,
+      "first_tilt_over_45deg": null,
+      "first_tilt_over_75deg": null,
+      "last": {
+        "step": 1476,
+        "sim_time_s": 73.8,
+        "object_tilt_deg": 0.0,
+        "object_yaw_deg": -1.1323265795681865,
+        "height_above_initial_mm": 4.0000000000000036,
+        "bilateral_contact": false,
+        "gripper_open": true,
+        "command_open": true,
+        "actual_eef_down_error_deg": 0.11205312702804804,
+        "command_eef_down_error_deg": 0.07416746923588685,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ]
+        ]
+      }
+    },
+    "failed_criteria": [],
+    "maximum_command_eef_down_error_deg": 0.29183170653840246,
+    "maximum_actual_eef_down_error_deg": 2.763474790794959
+  },
+  {
+    "model": "C",
+    "visibility": "hidden",
+    "seed": 912171,
+    "source": "/var/tmp/typhon-load04-20261014/evaluation/C/hidden/demo_0012/load03-demo_0012-seed912171-hidden-loading",
+    "strict": false,
+    "failure": false,
+    "events": {
+      "first_bilateral_contact": {
+        "step": 135,
+        "sim_time_s": 6.75,
+        "object_tilt_deg": 0.9573880662622839,
+        "object_yaw_deg": 20.19048987028276,
+        "height_above_initial_mm": 0.384136501927701,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 0.6604032048340116,
+        "command_eef_down_error_deg": 0.17979731666802184,
+        "contact_pairs": [
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_supported_10mm_lift": {
+        "step": 148,
+        "sim_time_s": 7.4,
+        "object_tilt_deg": 1.4738041543671851,
+        "object_yaw_deg": 20.266519358203894,
+        "height_above_initial_mm": 15.704089142112853,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 0.4444882240970287,
+        "command_eef_down_error_deg": 0.13088558513883963,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_open_command_after_lift": {
+        "step": 226,
+        "sim_time_s": 11.3,
+        "object_tilt_deg": 0.6337332955080494,
+        "object_yaw_deg": -0.5180392187073874,
+        "height_above_initial_mm": 6.882254403003496,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": true,
+        "actual_eef_down_error_deg": 0.33672709187536043,
+        "command_eef_down_error_deg": 0.10370638312972137,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_tilt_over_15deg": null,
+      "first_tilt_over_45deg": null,
+      "first_tilt_over_75deg": null,
+      "last": {
+        "step": 1476,
+        "sim_time_s": 73.8,
+        "object_tilt_deg": 0.0,
+        "object_yaw_deg": -0.8103743996156928,
+        "height_above_initial_mm": 0.0,
+        "bilateral_contact": false,
+        "gripper_open": true,
+        "command_open": true,
+        "actual_eef_down_error_deg": 0.1853819745400358,
+        "command_eef_down_error_deg": 0.07547122982891774,
+        "contact_pairs": [
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ]
+        ]
+      }
+    },
+    "failed_criteria": [
+      "position",
+      "footprint_inside_target",
+      "placement_height",
+      "seated"
+    ],
+    "maximum_command_eef_down_error_deg": 0.2061882206692919,
+    "maximum_actual_eef_down_error_deg": 2.7091834672810364
+  },
+  {
+    "model": "C",
+    "visibility": "visible",
+    "seed": 912172,
+    "source": "/var/tmp/typhon-load04-20261014/evaluation/C/visible/demo_0012/load03-demo_0012-seed912172-visible-loading",
+    "strict": true,
+    "failure": false,
+    "events": {
+      "first_bilateral_contact": {
+        "step": 135,
+        "sim_time_s": 6.75,
+        "object_tilt_deg": 0.9346253313031788,
+        "object_yaw_deg": 19.593243361725634,
+        "height_above_initial_mm": 0.05594812978559904,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 0.6230138372422402,
+        "command_eef_down_error_deg": 0.18234007930625679,
+        "contact_pairs": [
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_supported_10mm_lift": {
+        "step": 147,
+        "sim_time_s": 7.35,
+        "object_tilt_deg": 1.5258929844411715,
+        "object_yaw_deg": 19.94092178335245,
+        "height_above_initial_mm": 11.476822404307585,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 0.25555467608126037,
+        "command_eef_down_error_deg": 0.11881523590449257,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_open_command_after_lift": {
+        "step": 226,
+        "sim_time_s": 11.3,
+        "object_tilt_deg": 1.2418530692652292,
+        "object_yaw_deg": -1.1199703666236374,
+        "height_above_initial_mm": 6.802435604363555,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": true,
+        "actual_eef_down_error_deg": 0.1023758054130326,
+        "command_eef_down_error_deg": 0.08395135424044314,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_tilt_over_15deg": null,
+      "first_tilt_over_45deg": null,
+      "first_tilt_over_75deg": null,
+      "last": {
+        "step": 1476,
+        "sim_time_s": 73.8,
+        "object_tilt_deg": 0.0,
+        "object_yaw_deg": -1.4445285086619144,
+        "height_above_initial_mm": 4.000000000003556,
+        "bilateral_contact": false,
+        "gripper_open": true,
+        "command_open": true,
+        "actual_eef_down_error_deg": 0.12027177340348771,
+        "command_eef_down_error_deg": 0.07639753171005202,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ]
+        ]
+      }
+    },
+    "failed_criteria": [],
+    "maximum_command_eef_down_error_deg": 0.303214207141857,
+    "maximum_actual_eef_down_error_deg": 2.7878579049238397
+  },
+  {
+    "model": "C",
+    "visibility": "hidden",
+    "seed": 912172,
+    "source": "/var/tmp/typhon-load04-20261014/evaluation/C/hidden/demo_0012/load03-demo_0012-seed912172-hidden-loading",
+    "strict": false,
+    "failure": false,
+    "events": {
+      "first_bilateral_contact": {
+        "step": 135,
+        "sim_time_s": 6.75,
+        "object_tilt_deg": 0.9149552427236072,
+        "object_yaw_deg": 20.495109638327307,
+        "height_above_initial_mm": 0.1681498769429135,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 0.6375852639895356,
+        "command_eef_down_error_deg": 0.1812087077229722,
+        "contact_pairs": [
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_supported_10mm_lift": {
+        "step": 148,
+        "sim_time_s": 7.4,
+        "object_tilt_deg": 1.5075827857412907,
+        "object_yaw_deg": 20.45233859520053,
+        "height_above_initial_mm": 15.183685847251716,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 0.42133155637844766,
+        "command_eef_down_error_deg": 0.13395051240093625,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_open_command_after_lift": {
+        "step": 227,
+        "sim_time_s": 11.35,
+        "object_tilt_deg": 0.746036914392227,
+        "object_yaw_deg": -0.6485816848833157,
+        "height_above_initial_mm": 5.8495179285456,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": true,
+        "actual_eef_down_error_deg": 0.3099626385529177,
+        "command_eef_down_error_deg": 0.13964744100054569,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_tilt_over_15deg": null,
+      "first_tilt_over_45deg": null,
+      "first_tilt_over_75deg": null,
+      "last": {
+        "step": 1476,
+        "sim_time_s": 73.8,
+        "object_tilt_deg": 0.0,
+        "object_yaw_deg": -0.9433856688219104,
+        "height_above_initial_mm": 0.0,
+        "bilateral_contact": false,
+        "gripper_open": true,
+        "command_open": true,
+        "actual_eef_down_error_deg": 0.12367911970903833,
+        "command_eef_down_error_deg": 0.0735955249148673,
+        "contact_pairs": [
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ]
+        ]
+      }
+    },
+    "failed_criteria": [
+      "position",
+      "footprint_inside_target",
+      "placement_height",
+      "seated"
+    ],
+    "maximum_command_eef_down_error_deg": 0.20521382596110654,
+    "maximum_actual_eef_down_error_deg": 2.670199748681597
+  },
+  {
+    "model": "B",
+    "visibility": "visible",
+    "seed": 912171,
+    "source": "/var/tmp/typhon-load04-20261014/evaluation/B/visible/demo_0012/load03-demo_0012-seed912171-visible-loading",
+    "strict": false,
+    "failure": true,
+    "events": {
+      "first_bilateral_contact": {
+        "step": 129,
+        "sim_time_s": 6.45,
+        "object_tilt_deg": 61.00502917913422,
+        "object_yaw_deg": 19.81287896898594,
+        "height_above_initial_mm": 7.964203557683125,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 0.2122638435885733,
+        "command_eef_down_error_deg": 0.17407740921424367,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_supported_10mm_lift": {
+        "step": 144,
+        "sim_time_s": 7.2,
+        "object_tilt_deg": 62.75651563782459,
+        "object_yaw_deg": 19.041235076425853,
+        "height_above_initial_mm": 11.927972574597545,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 0.5856860429617257,
+        "command_eef_down_error_deg": 0.16083052698237862,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_open_command_after_lift": {
+        "step": 226,
+        "sim_time_s": 11.3,
+        "object_tilt_deg": 81.0299329987269,
+        "object_yaw_deg": 0.13379065840725118,
+        "height_above_initial_mm": 18.303226005708883,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": true,
+        "actual_eef_down_error_deg": 0.47454647883805023,
+        "command_eef_down_error_deg": 0.1901220809031215,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_tilt_over_15deg": {
+        "step": 110,
+        "sim_time_s": 5.5,
+        "object_tilt_deg": 17.049745167798434,
+        "object_yaw_deg": 17.928296842471127,
+        "height_above_initial_mm": -2.6275643641041624,
+        "bilateral_contact": false,
+        "gripper_open": true,
+        "command_open": true,
+        "actual_eef_down_error_deg": 2.67906502781301,
+        "command_eef_down_error_deg": 0.1700400628694856,
+        "contact_pairs": [
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_tilt_over_45deg": {
+        "step": 115,
+        "sim_time_s": 5.75,
+        "object_tilt_deg": 45.90673920408478,
+        "object_yaw_deg": 17.55260293308901,
+        "height_above_initial_mm": 4.902871327745473,
+        "bilateral_contact": false,
+        "gripper_open": true,
+        "command_open": true,
+        "actual_eef_down_error_deg": 2.3224789859688713,
+        "command_eef_down_error_deg": 0.18625905013973174,
+        "contact_pairs": [
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_tilt_over_75deg": {
+        "step": 200,
+        "sim_time_s": 10.0,
+        "object_tilt_deg": 75.03854165659702,
+        "object_yaw_deg": -0.5146229211297538,
+        "height_above_initial_mm": 167.52657202194877,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 1.5264509287076748,
+        "command_eef_down_error_deg": 0.2688899369436097,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "last": {
+        "step": 1476,
+        "sim_time_s": 73.8,
+        "object_tilt_deg": 90.0000000000003,
+        "object_yaw_deg": 1.1218490942908454,
+        "height_above_initial_mm": 6.500000000000061,
+        "bilateral_contact": false,
+        "gripper_open": true,
+        "command_open": true,
+        "actual_eef_down_error_deg": 0.26906509410906665,
+        "command_eef_down_error_deg": 0.2774480573058858,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ]
+        ]
+      }
+    },
+    "failed_criteria": [
+      "marked_face_up",
+      "placement_height",
+      "seated"
+    ],
+    "maximum_command_eef_down_error_deg": 0.33037394316471486,
+    "maximum_actual_eef_down_error_deg": 3.0745426607218747
+  },
+  {
+    "model": "B",
+    "visibility": "hidden",
+    "seed": 912171,
+    "source": "/var/tmp/typhon-load04-20261014/evaluation/B/hidden/demo_0012/load03-demo_0012-seed912171-hidden-loading",
+    "strict": false,
+    "failure": true,
+    "events": {
+      "first_bilateral_contact": {
+        "step": 129,
+        "sim_time_s": 6.45,
+        "object_tilt_deg": 61.315149020893706,
+        "object_yaw_deg": 19.52049352267913,
+        "height_above_initial_mm": 7.630370787319873,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 0.22234726998746623,
+        "command_eef_down_error_deg": 0.17402672674688768,
+        "contact_pairs": [
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_supported_10mm_lift": {
+        "step": 145,
+        "sim_time_s": 7.25,
+        "object_tilt_deg": 63.52936581369353,
+        "object_yaw_deg": 19.349179159611737,
+        "height_above_initial_mm": 11.120368598255714,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 0.5278860042341194,
+        "command_eef_down_error_deg": 0.14768916788801853,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_open_command_after_lift": {
+        "step": 227,
+        "sim_time_s": 11.35,
+        "object_tilt_deg": 81.88719985590546,
+        "object_yaw_deg": 0.1763302706593386,
+        "height_above_initial_mm": 16.24020479410948,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": true,
+        "actual_eef_down_error_deg": 0.5214542660478116,
+        "command_eef_down_error_deg": 0.20449660523138433,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_tilt_over_15deg": {
+        "step": 110,
+        "sim_time_s": 5.5,
+        "object_tilt_deg": 18.565552257118377,
+        "object_yaw_deg": 17.880314115069414,
+        "height_above_initial_mm": -2.6349200152407937,
+        "bilateral_contact": false,
+        "gripper_open": true,
+        "command_open": true,
+        "actual_eef_down_error_deg": 2.738280254899479,
+        "command_eef_down_error_deg": 0.1723744242091853,
+        "contact_pairs": [
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_tilt_over_45deg": {
+        "step": 115,
+        "sim_time_s": 5.75,
+        "object_tilt_deg": 45.991627392535115,
+        "object_yaw_deg": 17.51515400868245,
+        "height_above_initial_mm": 5.146675136109113,
+        "bilateral_contact": false,
+        "gripper_open": true,
+        "command_open": true,
+        "actual_eef_down_error_deg": 2.3359572063420444,
+        "command_eef_down_error_deg": 0.18473834883926435,
+        "contact_pairs": [
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_tilt_over_75deg": {
+        "step": 197,
+        "sim_time_s": 9.85,
+        "object_tilt_deg": 75.01830604046866,
+        "object_yaw_deg": -0.6795319495105674,
+        "height_above_initial_mm": 170.78437329591546,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 2.0614839805321594,
+        "command_eef_down_error_deg": 0.20361549093417156,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "last": {
+        "step": 1476,
+        "sim_time_s": 73.8,
+        "object_tilt_deg": 90.0000000000003,
+        "object_yaw_deg": 0.9876226249629977,
+        "height_above_initial_mm": 6.500000000000061,
+        "bilateral_contact": false,
+        "gripper_open": true,
+        "command_open": true,
+        "actual_eef_down_error_deg": 0.21126858832926132,
+        "command_eef_down_error_deg": 0.26353386620803015,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ]
+        ]
+      }
+    },
+    "failed_criteria": [
+      "marked_face_up",
+      "placement_height",
+      "seated"
+    ],
+    "maximum_command_eef_down_error_deg": 0.32983018884908094,
+    "maximum_actual_eef_down_error_deg": 3.1358752761629773
+  },
+  {
+    "model": "B",
+    "visibility": "visible",
+    "seed": 912172,
+    "source": "/var/tmp/typhon-load04-20261014/evaluation/B/visible/demo_0012/load03-demo_0012-seed912172-visible-loading",
+    "strict": false,
+    "failure": true,
+    "events": {
+      "first_bilateral_contact": {
+        "step": 129,
+        "sim_time_s": 6.45,
+        "object_tilt_deg": 62.18995576164431,
+        "object_yaw_deg": 20.321740131697588,
+        "height_above_initial_mm": 7.807646439108917,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 0.22800813954657428,
+        "command_eef_down_error_deg": 0.1729164402979959,
+        "contact_pairs": [
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_supported_10mm_lift": {
+        "step": 141,
+        "sim_time_s": 7.05,
+        "object_tilt_deg": 64.10855355429163,
+        "object_yaw_deg": 18.79157833474415,
+        "height_above_initial_mm": 11.036487187659262,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 0.5761580609359385,
+        "command_eef_down_error_deg": 0.1536817519795887,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_open_command_after_lift": {
+        "step": 226,
+        "sim_time_s": 11.3,
+        "object_tilt_deg": 82.97300165246355,
+        "object_yaw_deg": 0.16914015693347648,
+        "height_above_initial_mm": 15.972100186947502,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": true,
+        "actual_eef_down_error_deg": 0.662634514429925,
+        "command_eef_down_error_deg": 0.21757905421478904,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_tilt_over_15deg": {
+        "step": 110,
+        "sim_time_s": 5.5,
+        "object_tilt_deg": 16.263596968959185,
+        "object_yaw_deg": 18.04535228850792,
+        "height_above_initial_mm": -2.707547075288641,
+        "bilateral_contact": false,
+        "gripper_open": true,
+        "command_open": true,
+        "actual_eef_down_error_deg": 2.694828496050434,
+        "command_eef_down_error_deg": 0.19827494705455972,
+        "contact_pairs": [
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_tilt_over_45deg": {
+        "step": 116,
+        "sim_time_s": 5.8,
+        "object_tilt_deg": 47.16476099340008,
+        "object_yaw_deg": 18.562703184907157,
+        "height_above_initial_mm": 5.845213456520781,
+        "bilateral_contact": false,
+        "gripper_open": true,
+        "command_open": true,
+        "actual_eef_down_error_deg": 1.8841790060388064,
+        "command_eef_down_error_deg": 0.19994179311657773,
+        "contact_pairs": [
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_tilt_over_75deg": {
+        "step": 191,
+        "sim_time_s": 9.55,
+        "object_tilt_deg": 75.02906575179861,
+        "object_yaw_deg": -0.5637939210244213,
+        "height_above_initial_mm": 170.06230656233723,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 1.7861578068734616,
+        "command_eef_down_error_deg": 0.27754561663764127,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "last": {
+        "step": 1476,
+        "sim_time_s": 73.8,
+        "object_tilt_deg": 90.00000000000031,
+        "object_yaw_deg": 1.162680241091988,
+        "height_above_initial_mm": 6.500000000000061,
+        "bilateral_contact": false,
+        "gripper_open": true,
+        "command_open": true,
+        "actual_eef_down_error_deg": 0.2589772470447258,
+        "command_eef_down_error_deg": 0.2796763276430406,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ]
+        ]
+      }
+    },
+    "failed_criteria": [
+      "marked_face_up",
+      "placement_height",
+      "seated"
+    ],
+    "maximum_command_eef_down_error_deg": 0.3415954604946844,
+    "maximum_actual_eef_down_error_deg": 3.0868878307202294
+  },
+  {
+    "model": "B",
+    "visibility": "hidden",
+    "seed": 912172,
+    "source": "/var/tmp/typhon-load04-20261014/evaluation/B/hidden/demo_0012/load03-demo_0012-seed912172-hidden-loading",
+    "strict": false,
+    "failure": true,
+    "events": {
+      "first_bilateral_contact": {
+        "step": 131,
+        "sim_time_s": 6.55,
+        "object_tilt_deg": 61.65134403424688,
+        "object_yaw_deg": 19.352368280199173,
+        "height_above_initial_mm": 8.037230685388419,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 0.320022954809815,
+        "command_eef_down_error_deg": 0.1966374431449806,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_supported_10mm_lift": {
+        "step": 141,
+        "sim_time_s": 7.05,
+        "object_tilt_deg": 63.206917610946846,
+        "object_yaw_deg": 18.36446924186197,
+        "height_above_initial_mm": 10.448181661097733,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 0.5488361735417016,
+        "command_eef_down_error_deg": 0.1538036108253141,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_open_command_after_lift": {
+        "step": 225,
+        "sim_time_s": 11.25,
+        "object_tilt_deg": 81.90461235141105,
+        "object_yaw_deg": 0.14392605515179405,
+        "height_above_initial_mm": 15.272111730999626,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": true,
+        "actual_eef_down_error_deg": 0.6161576037304428,
+        "command_eef_down_error_deg": 0.17743696326918443,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_tilt_over_15deg": {
+        "step": 110,
+        "sim_time_s": 5.5,
+        "object_tilt_deg": 15.983101058223465,
+        "object_yaw_deg": 18.092020458334762,
+        "height_above_initial_mm": -2.731382052681308,
+        "bilateral_contact": false,
+        "gripper_open": true,
+        "command_open": true,
+        "actual_eef_down_error_deg": 2.701386057675222,
+        "command_eef_down_error_deg": 0.17423971809857294,
+        "contact_pairs": [
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_tilt_over_45deg": {
+        "step": 117,
+        "sim_time_s": 5.85,
+        "object_tilt_deg": 46.99495652424777,
+        "object_yaw_deg": 19.025067719878564,
+        "height_above_initial_mm": 6.139408532200297,
+        "bilateral_contact": false,
+        "gripper_open": true,
+        "command_open": true,
+        "actual_eef_down_error_deg": 1.397612416643085,
+        "command_eef_down_error_deg": 0.1939543455956667,
+        "contact_pairs": [
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "table_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "first_tilt_over_75deg": {
+        "step": 195,
+        "sim_time_s": 9.75,
+        "object_tilt_deg": 75.12380964067974,
+        "object_yaw_deg": -0.48047645068018147,
+        "height_above_initial_mm": 164.38667204942513,
+        "bilateral_contact": true,
+        "gripper_open": false,
+        "command_open": false,
+        "actual_eef_down_error_deg": 1.8490040976106457,
+        "command_eef_down_error_deg": 0.21847817517376625,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "gripper0_finger1_collision"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger1_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "cube_g0",
+            "gripper0_finger2_collision"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ],
+          [
+            "gripper0_finger2_pad_collision",
+            "cube_g0"
+          ]
+        ]
+      },
+      "last": {
+        "step": 1476,
+        "sim_time_s": 73.8,
+        "object_tilt_deg": 90.0000000000003,
+        "object_yaw_deg": 0.6764341068276928,
+        "height_above_initial_mm": 6.500000000000061,
+        "bilateral_contact": false,
+        "gripper_open": true,
+        "command_open": true,
+        "actual_eef_down_error_deg": 0.2653511137070268,
+        "command_eef_down_error_deg": 0.26477293211102315,
+        "contact_pairs": [
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ],
+          [
+            "cube_g0",
+            "fixture_floor"
+          ]
+        ]
+      }
+    },
+    "failed_criteria": [
+      "marked_face_up",
+      "placement_height",
+      "seated"
+    ],
+    "maximum_command_eef_down_error_deg": 0.3289770189431612,
+    "maximum_actual_eef_down_error_deg": 3.052599228336277
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "selection": "Both development scenes, lower frozen seed; all 32 final endpoints included separately. Post-hoc illustrative comparisons, not new samples. Frames from original saved videos; simulator observations not rerendered.",
+  "sheets": [
+    {
+      "path": "/var/tmp/typhon-load04-20261014/qa/all-endpoints-C.jpg",
+      "sha256": "e015d802133326c310e3521cbabe20e3b025fdaeacca49f72184cfc5588da906"
+    },
+    {
+      "path": "/var/tmp/typhon-load04-20261014/qa/all-endpoints-B.jpg",
+      "sha256": "5db1be25e028aa22d8d5feedd41b1608aeef355996493f8f886fd1f69664d55e"
+    }
+  ],
+  "videos": [
+    {
+      "path": "/var/tmp/typhon-load04-20261014/qa/instruction-switch-demo_0012-seed912171.mp4",
+      "sha256": "90a7b36af8e2e7d5075c8859d3d68112b48476c7d439ff0a1ad74a57c290caae",
+      "frames": 367,
+      "decoded": 367,
+      "fps": 5,
+      "source_scene": "demo_0012",
+      "seed": 912171,
+      "sources": [
+        {
+          "path": "/var/tmp/typhon-load04-20261014/evaluation/C/visible/demo_0012/load03-demo_0012-seed912171-visible-feeding/rollout.mp4",
+          "sha256": "84d9e33442a1d113b683ef18f35ee31274910c787f707f1383a2f1d083082f51"
+        },
+        {
+          "path": "/var/tmp/typhon-load04-20261014/evaluation/C/visible/demo_0012/load03-demo_0012-seed912171-visible-loading/rollout.mp4",
+          "sha256": "bbfc00192c06fb56cea52bdfa31ad226e5e6c771d80a8b32de82bb709acfc247"
+        },
+        {
+          "path": "/var/tmp/typhon-load04-20261014/evaluation/B/visible/demo_0012/load03-demo_0012-seed912171-visible-feeding/rollout.mp4",
+          "sha256": "36c63c314a2263d4919b44024a5ea78b32a8f8fe06d53654a937d3faf2591024"
+        },
+        {
+          "path": "/var/tmp/typhon-load04-20261014/evaluation/B/visible/demo_0012/load03-demo_0012-seed912171-visible-loading/rollout.mp4",
+          "sha256": "ac280f8d30e7eb9e7fe85c1c954bce476087c0a7fad6e482fdc0c0fb9609a949"
+        }
+      ]
+    },
+    {
+      "path": "/var/tmp/typhon-load04-20261014/qa/instruction-switch-demo_0013-seed912171.mp4",
+      "sha256": "c9ffe8bb176f8953e0ca47498a8d0eefa894c00780584d00b9e73d4aca266431",
+      "frames": 367,
+      "decoded": 367,
+      "fps": 5,
+      "source_scene": "demo_0013",
+      "seed": 912171,
+      "sources": [
+        {
+          "path": "/var/tmp/typhon-load04-20261014/evaluation/C/visible/demo_0013/load03-demo_0013-seed912171-visible-feeding/rollout.mp4",
+          "sha256": "f7cdd3225dfd2fac3fd75d61f1b8f7416615073be9a5d9095a932feecc3e2e75"
+        },
+        {
+          "path": "/var/tmp/typhon-load04-20261014/evaluation/C/visible/demo_0013/load03-demo_0013-seed912171-visible-loading/rollout.mp4",
+          "sha256": "3d901c90bf97964d7fb57e17cb6ee1d1b499274f1e8f5c9d8cc58323ae0c5c91"
+        },
+        {
+          "path": "/var/tmp/typhon-load04-20261014/evaluation/B/visible/demo_0013/load03-demo_0013-seed912171-visible-feeding/rollout.mp4",
+          "sha256": "6cfca668701d83190e81a6a9b50c3083314da5d3b7052cfddb101055fd2add96"
+        },
+        {
+          "path": "/var/tmp/typhon-load04-20261014/evaluation/B/visible/demo_0013/load03-demo_0013-seed912171-visible-loading/rollout.mp4",
+          "sha256": "681722607c90463d0e8c56f66f40e972f5e434473fc6fe6f52cd63fec5ed99ca"
+        }
+      ]
+    }
+  ]
+}

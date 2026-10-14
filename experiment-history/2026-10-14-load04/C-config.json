@@ -1,0 +1,156 @@
+{
+  "schema": "load04-full-joint-v1",
+  "variant": "C",
+  "parent_sha256": "76334b9a17ac5fc49f46c2cb850a3c39ef38e0f13b9cdadc324f760567c5f128",
+  "protocol_sha256": "8d8146b45ac25a1a8fa1ce030bf56d8aa273ebfc32ac220a2d3e288d1402dd5e",
+  "data_gate": {
+    "passed": true,
+    "episodes": 8,
+    "underlying_windows": 619,
+    "rendered_windows": 1238,
+    "all_underlying_windows_presented": true,
+    "presentations_each": 12000,
+    "matched_family_task_window_draws": true,
+    "B_counts": {
+      "load04-demo_0001-loading:1": 750,
+      "load04-demo_0002-loading:1": 750,
+      "load04-demo_0001-feeding:1": 750,
+      "load04-demo_0005-feeding:1": 750,
+      "load04-demo_0002-feeding:1": 750,
+      "load04-demo_0005-loading:0": 750,
+      "load04-demo_0003-loading:0": 750,
+      "load04-demo_0003-feeding:1": 750,
+      "load04-demo_0003-feeding:0": 750,
+      "load04-demo_0001-feeding:0": 750,
+      "load04-demo_0005-loading:1": 750,
+      "load04-demo_0005-feeding:0": 750,
+      "load04-demo_0003-loading:1": 750,
+      "load04-demo_0002-feeding:0": 750,
+      "load04-demo_0001-loading:0": 750,
+      "load04-demo_0002-loading:0": 750
+    },
+    "protocol_sha256": "8d8146b45ac25a1a8fa1ce030bf56d8aa273ebfc32ac220a2d3e288d1402dd5e",
+    "dataset_sha256": "c0d01bf6756520c6661c6ede2f42c2920a5acc80c52c92f4d6c4afdc47cce648",
+    "sampling_sha256": "0e4835fe2392f81f8bc74d493fe5098966fe352895dded3e2b184a94dbc6d519",
+    "time": 1791992424.122619
+  },
+  "recipe": {
+    "updates": 3000,
+    "effective_batch": 4,
+    "microbatch": 1,
+    "seed": 141901,
+    "common_feeding_presentations": 6000,
+    "comparison_presentations": 6000,
+    "comparison_per_parent": 1500,
+    "optimizer": "AdamW",
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-08,
+    "learning_rates": {
+      "prompt": 1e-05,
+      "heads": 0.0001,
+      "vlm": 1e-05,
+      "core": 0.0001
+    },
+    "weight_decay": 0.01,
+    "domain_table_decay": "active row29 only; inactive gradients masked",
+    "clip_norm": 1.0,
+    "precision": "bfloat16 autocast;float32weights",
+    "joint": "all shared VLM/core weights and active prompt/head row throughout;no reset/no warmup",
+    "observation": "O2",
+    "domain": 29,
+    "action": "generic_interleaved_v1",
+    "window": 30,
+    "control_hz": 20,
+    "inference_refinements": 10,
+    "recipe_sha256": "dfaad7fb1569a9ee4682b795bd72061e7786880d67d3edd4a36699f1274f0fbd",
+    "optimizer_source_sha256": "fc253ad03ae3921fc6b23781cc551a47b02ceccdb94c8fb9ab78b7e1c7016803",
+    "endpoint": "final3000 only",
+    "optimizer_saved": false,
+    "recovery": "rerun fixed recipe from initializer;no selectable partial checkpoints",
+    "source_trajectories": 8,
+    "presentations_per_parent_task": 1500,
+    "matched": "identical underlying parent/task/window order; B has 750 of each visibility per cell; C shows fixture only for loading"
+  },
+  "resolved_optimizer": [
+    {
+      "lr": 1e-05,
+      "peak_lr": 1e-05,
+      "weight_decay": 0.0,
+      "name": "prompt",
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "eps": 1e-08,
+      "amsgrad": false,
+      "foreach": false,
+      "maximize": false,
+      "capturable": false,
+      "differentiable": false,
+      "fused": null
+    },
+    {
+      "lr": 0.0001,
+      "peak_lr": 0.0001,
+      "weight_decay": 0.0,
+      "name": "heads",
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "eps": 1e-08,
+      "amsgrad": false,
+      "foreach": false,
+      "maximize": false,
+      "capturable": false,
+      "differentiable": false,
+      "fused": null
+    },
+    {
+      "lr": 1e-05,
+      "peak_lr": 1e-05,
+      "weight_decay": 0.01,
+      "name": "vlm",
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "eps": 1e-08,
+      "amsgrad": false,
+      "foreach": false,
+      "maximize": false,
+      "capturable": false,
+      "differentiable": false,
+      "fused": null
+    },
+    {
+      "lr": 0.0001,
+      "peak_lr": 0.0001,
+      "weight_decay": 0.01,
+      "name": "core",
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "eps": 1e-08,
+      "amsgrad": false,
+      "foreach": false,
+      "maximize": false,
+      "capturable": false,
+      "differentiable": false,
+      "fused": null
+    }
+  ],
+  "parameter_counts": {
+    "prompt": 983040,
+    "heads": 2857560,
+    "vlm": 570706944,
+    "core": 304934912
+  },
+  "script_sha256": "97c8920a20d2971448c40196305fb538927dda30c1f7822c4d8c494904ac70f0",
+  "observation_version": "O2",
+  "rotation_contract": "generic_interleaved_v1"
+}

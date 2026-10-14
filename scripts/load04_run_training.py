@@ -2,7 +2,7 @@
 import os,sys,json,time,subprocess,pickle,traceback,select
 from pathlib import Path
 R=Path(__file__).resolve().parents[1];os.chdir(R)
-OUT=Path("/var/tmp/typhon-load04-20261014")
+OUT=Path(os.environ.get("TYPHON_LOAD04_ROOT","/var/tmp/typhon-load04-20261014")).resolve()
 def write(name,value):
  (OUT/name).write_text(json.dumps(value,indent=2)+"\n")
 def verify(name,deadline):
