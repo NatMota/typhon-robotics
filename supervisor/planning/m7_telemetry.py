@@ -19,7 +19,7 @@ def finite(value):
 
 class LiveTelemetry:
     """Latest snapshot only; camera timestamp enables consumers to mark stale feeds."""
-    def __init__(self, directory, run_id, model, scenario_id, interval_s=.2):
+    def __init__(self, directory, run_id, model, scenario_id, interval_s=.2, metadata_provider=None):
         self.directory = Path(directory)
         self.directory.mkdir(parents=True, exist_ok=True)
         self.run_id, self.model, self.scenario_id = run_id, model, scenario_id
@@ -29,6 +29,7 @@ class LiveTelemetry:
         self.requested = self.applied = self.target = None
         self.last_error = None
         self.last_guard = None
+        self.metadata_provider = metadata_provider
 
     def set_target(self, target):
         self.target = np.asarray(target).copy()
@@ -86,6 +87,8 @@ class LiveTelemetry:
                 'actor_auxiliary_annotation': 'causal simulator held label only' if getattr(self,'privileged_held_cue',False) else None,
                 'object_truth': None,
                 'note': 'Camera and robot telemetry only. Evaluation success must come from separately labelled evaluator results.'})
+            if self.metadata_provider is not None:
+                payload['source_contract'] = finite(self.metadata_provider(env, observation, self))
             self._atomic('latest.jpg', imageio.imwrite('<bytes>', frame, format='jpg', quality=85))
             encoded = (json.dumps(payload, indent=2, allow_nan=False)+'\n').encode()
             self._atomic('latest.json', encoded)
@@ -98,11 +101,11 @@ class LiveTelemetry:
             except Exception: pass
 
 
-def attach_live(env, run_id, model, scenario_id):
+def attach_live(env, run_id, model, scenario_id, metadata_provider=None):
     directory = os.environ.get('M7_LIVE_DIR')
     if not directory:
         return None
-    publisher = LiveTelemetry(directory, run_id, model, scenario_id)
+    publisher = LiveTelemetry(directory, run_id, model, scenario_id, metadata_provider=metadata_provider)
     raw_inner = env.env.step
     def inner(action, *args, **kwargs):
         publisher.applied = np.asarray(action).copy()

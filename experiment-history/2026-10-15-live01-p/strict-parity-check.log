@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/var/tmp/typhon-worktrees-20261015/live01-p-copy-safe/scripts/live01_p_analyse.py", line 109, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/var/tmp/typhon-worktrees-20261015/live01-p-copy-safe/scripts/live01_p_analyse.py", line 31, in main
+    same(a,b,'state-'+str(states));states+=1
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/tmp/typhon-worktrees-20261015/live01-p-copy-safe/scripts/live01_p_analyse.py", line 19, in same
+    for k in a:same(a[k],b[k],path+'/'+str(k))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/tmp/typhon-worktrees-20261015/live01-p-copy-safe/scripts/live01_p_analyse.py", line 19, in same
+    for k in a:same(a[k],b[k],path+'/'+str(k))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/tmp/typhon-worktrees-20261015/live01-p-copy-safe/scripts/live01_p_analyse.py", line 16, in same
+    raise AssertionError('array mismatch '+path)
+AssertionError: array mismatch state-150/state/qpos

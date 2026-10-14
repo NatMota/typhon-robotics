@@ -1,0 +1,268 @@
+{
+  "schema": "typhon-rgb-lineage-v2",
+  "query_index": 0,
+  "slots": [
+    {
+      "slot": 0,
+      "capture": {
+        "known": true,
+        "schema": "typhon-rgb-lineage-v2",
+        "capture_id": "fixture/primary/00000003/tick-41",
+        "artifact_id": "fixture/primary/00000003/tick-41/derived-00000003",
+        "run_id": "fixture",
+        "camera": "primary",
+        "capture_sequence": 3,
+        "capture_control_tick": 41,
+        "capture_physics_time_s": 2.05,
+        "capture_start_monotonic_ns": 171283677577175,
+        "capture_end_monotonic_ns": 171283677588266,
+        "content_sha256": "de701f6630167365e45927b24185a09b78aa80752d91b8faa024f929a9ceb07d",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "dtype": "uint8",
+        "operation": "observation_copy",
+        "parent_artifact_id": "fixture/primary/00000003/tick-41",
+        "physics_state_phase": "renderer reads current derived state; no extra forward",
+        "parameters": {
+          "boundary": "policy_observation np.asarray(...).copy()",
+          "camera": "primary"
+        }
+      },
+      "view_operation": {
+        "name": "native_view"
+      },
+      "view_sha256": "de701f6630167365e45927b24185a09b78aa80752d91b8faa024f929a9ceb07d",
+      "resize_operation": {
+        "input_sha256": "de701f6630167365e45927b24185a09b78aa80752d91b8faa024f929a9ceb07d",
+        "output_sha256": "9a6f71ce1ea0abe3c2c057a465d27b71fbdf56f26ba3445947bc0a9345b3e3d7",
+        "input_shape": [
+          512,
+          512,
+          3
+        ],
+        "output_shape": [
+          224,
+          224,
+          3
+        ],
+        "size": {
+          "height": 224,
+          "width": 224
+        },
+        "resample": 3
+      },
+      "tensor_sha256": "0fd86078364cda6e89757fbb546ae9d9ae10ccff97e5e8ba7a8f3c055b2f39d3",
+      "tensor_shape": [
+        3,
+        224,
+        224
+      ],
+      "post_resize": {
+        "rescale": true,
+        "rescale_factor": 0.00392156862745098,
+        "normalize": true,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "channel_order": "CHW"
+      }
+    },
+    {
+      "slot": 1,
+      "capture": {
+        "known": true,
+        "schema": "typhon-rgb-lineage-v2",
+        "capture_id": "fixture/secondary/00000004/tick-41",
+        "artifact_id": "fixture/secondary/00000004/tick-41/derived-00000004",
+        "run_id": "fixture",
+        "camera": "secondary",
+        "capture_sequence": 4,
+        "capture_control_tick": 41,
+        "capture_physics_time_s": 2.05,
+        "capture_start_monotonic_ns": 171283677908905,
+        "capture_end_monotonic_ns": 171283677919204,
+        "content_sha256": "de701f6630167365e45927b24185a09b78aa80752d91b8faa024f929a9ceb07d",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "dtype": "uint8",
+        "operation": "observation_copy",
+        "parent_artifact_id": "fixture/secondary/00000004/tick-41",
+        "physics_state_phase": "renderer reads current derived state; no extra forward",
+        "parameters": {
+          "boundary": "policy_observation np.asarray(...).copy()",
+          "camera": "secondary"
+        }
+      },
+      "view_operation": {
+        "name": "native_view"
+      },
+      "view_sha256": "de701f6630167365e45927b24185a09b78aa80752d91b8faa024f929a9ceb07d",
+      "resize_operation": {
+        "input_sha256": "de701f6630167365e45927b24185a09b78aa80752d91b8faa024f929a9ceb07d",
+        "output_sha256": "9a6f71ce1ea0abe3c2c057a465d27b71fbdf56f26ba3445947bc0a9345b3e3d7",
+        "input_shape": [
+          512,
+          512,
+          3
+        ],
+        "output_shape": [
+          224,
+          224,
+          3
+        ],
+        "size": {
+          "height": 224,
+          "width": 224
+        },
+        "resample": 3
+      },
+      "tensor_sha256": "0fd86078364cda6e89757fbb546ae9d9ae10ccff97e5e8ba7a8f3c055b2f39d3",
+      "tensor_shape": [
+        3,
+        224,
+        224
+      ],
+      "post_resize": {
+        "rescale": true,
+        "rescale_factor": 0.00392156862745098,
+        "normalize": true,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "channel_order": "CHW"
+      }
+    },
+    {
+      "slot": 2,
+      "capture": {
+        "known": true,
+        "schema": "typhon-rgb-lineage-v2",
+        "capture_id": "fixture/primary/00000003/tick-41",
+        "artifact_id": "fixture/primary/00000003/tick-41/derived-00000003",
+        "run_id": "fixture",
+        "camera": "primary",
+        "capture_sequence": 3,
+        "capture_control_tick": 41,
+        "capture_physics_time_s": 2.05,
+        "capture_start_monotonic_ns": 171283677577175,
+        "capture_end_monotonic_ns": 171283677588266,
+        "content_sha256": "de701f6630167365e45927b24185a09b78aa80752d91b8faa024f929a9ceb07d",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "dtype": "uint8",
+        "operation": "observation_copy",
+        "parent_artifact_id": "fixture/primary/00000003/tick-41",
+        "physics_state_phase": "renderer reads current derived state; no extra forward",
+        "parameters": {
+          "boundary": "policy_observation np.asarray(...).copy()",
+          "camera": "primary"
+        }
+      },
+      "view_operation": {
+        "name": "object_crop",
+        "parameters": {
+          "detected": true,
+          "component_bbox_xywh": [
+            235,
+            220,
+            35,
+            25
+          ],
+          "crop_xywh": [
+            204,
+            184,
+            96,
+            96
+          ],
+          "area_px": 875,
+          "component_fill": 1.0,
+          "confidence": 1.0,
+          "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+          "padding_ltrb": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "current RGB only",
+          "orientation_normalized": false
+        }
+      },
+      "view_sha256": "90a7a651399a83d57bab1f82269141ee62c7c2bc6682ebe1acf191616904d4ae",
+      "resize_operation": {
+        "input_sha256": "90a7a651399a83d57bab1f82269141ee62c7c2bc6682ebe1acf191616904d4ae",
+        "output_sha256": "8cd5dca184e2dcaafbc7c1819a8965f1d635abb58e8ee3978f83b7764c72b96c",
+        "input_shape": [
+          96,
+          96,
+          3
+        ],
+        "output_shape": [
+          224,
+          224,
+          3
+        ],
+        "size": {
+          "height": 224,
+          "width": 224
+        },
+        "resample": 3
+      },
+      "tensor_sha256": "21b1adb41ee056006d16f82615061cb5bb3cccf54945c00d860c94246007c0f1",
+      "tensor_shape": [
+        3,
+        224,
+        224
+      ],
+      "post_resize": {
+        "rescale": true,
+        "rescale_factor": 0.00392156862745098,
+        "normalize": true,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "channel_order": "CHW"
+      }
+    }
+  ],
+  "image_mask": [
+    [
+      true,
+      true,
+      true
+    ]
+  ],
+  "padded_slots": [],
+  "padding_origin": "processor zeros; not a camera capture",
+  "authority": "none"
+}

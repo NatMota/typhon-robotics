@@ -1,0 +1,359 @@
+{
+  "passed": false,
+  "provenance_passed": true,
+  "behavioral_parity_passed": false,
+  "experiment": "LIVE01-P",
+  "actual_inference_runs": 2,
+  "states_compared": 1460,
+  "queries_compared": 48,
+  "comparison_counts": {
+    "state": {
+      "compared": 1460,
+      "exact_equal": 150
+    },
+    "policy_io_model_actions": {
+      "compared": 48,
+      "exact_equal": 5
+    },
+    "policy_io_primary": {
+      "compared": 48,
+      "exact_equal": 6
+    },
+    "policy_io_secondary": {
+      "compared": 48,
+      "exact_equal": 5
+    },
+    "policy_io_eef_position_m": {
+      "compared": 48,
+      "exact_equal": 6
+    },
+    "policy_io_eef_quat_xyzw": {
+      "compared": 48,
+      "exact_equal": 6
+    },
+    "prepared_inputs": {
+      "compared": 48,
+      "exact_equal": 5
+    },
+    "noise_hashes": {
+      "compared": 48,
+      "exact_equal": 48
+    },
+    "actual_noise_rng": {
+      "compared": 144,
+      "exact_equal": 144
+    },
+    "observer": {
+      "compared": 48,
+      "exact_equal": 6
+    },
+    "publication": {
+      "compared": 49,
+      "exact_equal": 6
+    },
+    "episode_outcome": {
+      "compared": 7,
+      "exact_equal": 4
+    }
+  },
+  "first_mismatches": {
+    "state": [
+      {
+        "path": "tick-191",
+        "error": "array mismatch tick-191/state/qpos"
+      },
+      {
+        "path": "tick-192",
+        "error": "array mismatch tick-192/state/qpos"
+      },
+      {
+        "path": "tick-193",
+        "error": "array mismatch tick-193/state/qpos"
+      },
+      {
+        "path": "tick-194",
+        "error": "array mismatch tick-194/state/qpos"
+      },
+      {
+        "path": "tick-195",
+        "error": "array mismatch tick-195/state/qpos"
+      }
+    ],
+    "policy_io_model_actions": [
+      {
+        "path": "5",
+        "error": "array mismatch 5"
+      },
+      {
+        "path": "6",
+        "error": "array mismatch 6"
+      },
+      {
+        "path": "7",
+        "error": "array mismatch 7"
+      },
+      {
+        "path": "8",
+        "error": "array mismatch 8"
+      },
+      {
+        "path": "9",
+        "error": "array mismatch 9"
+      }
+    ],
+    "policy_io_primary": [
+      {
+        "path": "6",
+        "error": "array mismatch 6"
+      },
+      {
+        "path": "7",
+        "error": "array mismatch 7"
+      },
+      {
+        "path": "8",
+        "error": "array mismatch 8"
+      },
+      {
+        "path": "9",
+        "error": "array mismatch 9"
+      },
+      {
+        "path": "10",
+        "error": "array mismatch 10"
+      }
+    ],
+    "policy_io_secondary": [
+      {
+        "path": "5",
+        "error": "array mismatch 5"
+      },
+      {
+        "path": "6",
+        "error": "array mismatch 6"
+      },
+      {
+        "path": "7",
+        "error": "array mismatch 7"
+      },
+      {
+        "path": "8",
+        "error": "array mismatch 8"
+      },
+      {
+        "path": "9",
+        "error": "array mismatch 9"
+      }
+    ],
+    "policy_io_eef_position_m": [
+      {
+        "path": "6",
+        "error": "array mismatch 6"
+      },
+      {
+        "path": "7",
+        "error": "array mismatch 7"
+      },
+      {
+        "path": "8",
+        "error": "array mismatch 8"
+      },
+      {
+        "path": "9",
+        "error": "array mismatch 9"
+      },
+      {
+        "path": "10",
+        "error": "array mismatch 10"
+      }
+    ],
+    "policy_io_eef_quat_xyzw": [
+      {
+        "path": "6",
+        "error": "array mismatch 6"
+      },
+      {
+        "path": "7",
+        "error": "array mismatch 7"
+      },
+      {
+        "path": "8",
+        "error": "array mismatch 8"
+      },
+      {
+        "path": "9",
+        "error": "array mismatch 9"
+      },
+      {
+        "path": "10",
+        "error": "array mismatch 10"
+      }
+    ],
+    "prepared_inputs": [
+      {
+        "path": "query-5",
+        "error": "('value', 'query-5/image_input', 'affc5fff8da888915324a63a5d2f04b83ff3a38dc5e1fcaebf328474dcac358b', 'b11e2b839d3001c95695fe725b850cbf94b18c0b46052767b1979962dbdd5b64')"
+      },
+      {
+        "path": "query-6",
+        "error": "('value', 'query-6/image_input', 'e141628c5548061e6368b7b0071575f63588d620810e40fba1bf92b15411f282', 'b97b1e0ff6b8708aadc3d43a3882529bb855ae3faede3f60b097022175cad13c')"
+      },
+      {
+        "path": "query-7",
+        "error": "('value', 'query-7/image_input', 'f9dfcec648e0e8a7f6858a096a3ebd956b0e0857feda2a5288cd8186ba1c9337', '962bf6fbe6c9a10b56ab15f4ac99c1dc5d326c170d2b0e40d501ca6f7d09792b')"
+      },
+      {
+        "path": "query-8",
+        "error": "('value', 'query-8/image_input', 'b2a0b326ea861fea532fd31d30bff6af7b3c59f0740c4f8d2830e4cca95fe441', 'f2bc809806c6145f4537d789bbe254913f24125c5cc8a6ca61f814fe542e0c25')"
+      },
+      {
+        "path": "query-9",
+        "error": "('value', 'query-9/image_input', '949bb8b31dad028e811e19b74c69fc54e4c278621ea6d0ad505517e95dbc698d', 'b0767fb9508ff063b04404026a7211eaee64e82f93dad23a5da687940523aae7')"
+      }
+    ],
+    "observer": [
+      {
+        "path": "6",
+        "error": "('value', '6/aperture_rate_m_s', -7.397142586842061e-07, -7.39524118475073e-07)"
+      },
+      {
+        "path": "7",
+        "error": "('value', '7/aperture_rate_m_s', 0.02901632370864052, 0.029027511280531163)"
+      },
+      {
+        "path": "8",
+        "error": "('value', '8/aperture_rate_m_s', 0.0012016832842191756, 0.001190938057620235)"
+      },
+      {
+        "path": "9",
+        "error": "('value', '9/aperture_rate_m_s', 0.0003100840615276601, 0.00030969247324211246)"
+      },
+      {
+        "path": "10",
+        "error": "('value', '10/aperture_rate_m_s', 9.088888127476806e-05, 9.087292294894984e-05)"
+      }
+    ],
+    "publication": [
+      {
+        "path": "6",
+        "error": "('value', '6/telemetry/joint_position_rad/0', 0.12424628046419349, 0.12435202319408174)"
+      },
+      {
+        "path": "7",
+        "error": "('value', '7/telemetry/joint_position_rad/0', 0.15470344996788846, 0.15460718966712153)"
+      },
+      {
+        "path": "8",
+        "error": "('value', '8/telemetry/joint_position_rad/0', 0.02666894518839054, 0.026717800500623636)"
+      },
+      {
+        "path": "9",
+        "error": "('value', '9/telemetry/joint_position_rad/0', -0.18293517090035638, -0.1831347751734387)"
+      },
+      {
+        "path": "10",
+        "error": "('value', '10/telemetry/joint_position_rad/0', -0.1859067134362993, -0.1859650288080404)"
+      }
+    ],
+    "episode_outcome": [
+      {
+        "path": "final_truth",
+        "error": "('value', 'final_truth/object_position_m/0', 0.10916007447751463, 0.10913803352143492)"
+      },
+      {
+        "path": "evaluation",
+        "error": "('value', 'evaluation/position_error_m', 0.010885263502518993, 0.010909314279974552)"
+      },
+      {
+        "path": "attempts",
+        "error": "('value', 'attempts/0/maximum_lift_m', 0.16561993818690568, 0.16561436057878653)"
+      }
+    ]
+  },
+  "captures": 3704,
+  "event_counts": {
+    "capture": 3704,
+    "derived": 2968,
+    "observation": 1484,
+    "observer": 48,
+    "publication": 49,
+    "policy_query": 48
+  },
+  "eligible_references_known": 6365,
+  "eligible_references_unknown": 0,
+  "reference_categories": {
+    "derived_copy": {
+      "known": 2968,
+      "unknown": 0
+    },
+    "observation": {
+      "known": 2968,
+      "unknown": 0
+    },
+    "observer": {
+      "known": 96,
+      "unknown": 0
+    },
+    "publication": {
+      "known": 98,
+      "unknown": 0
+    },
+    "policy_query": {
+      "known": 96,
+      "unknown": 0
+    },
+    "worker_tensor_slot": {
+      "known": 139,
+      "unknown": 0
+    }
+  },
+  "worker_tensor_slots": 139,
+  "processor_padding_slots": 5,
+  "intentional_unknowns": [
+    "Unregistered or mutated arrays in negative fixtures",
+    "Processor padding is not a camera image"
+  ],
+  "last_publication_image_age_control_ticks": {
+    "primary": 25,
+    "secondary": 25
+  },
+  "history_runtime": "Native LOAD04 B uses current O2 views only. RGB-history lineage is fixture-qualified, not exercised by this actor.",
+  "physical_results": [
+    {
+      "mode": "monitoring",
+      "strict_success": true,
+      "position_error_mm": 10.885263502518992,
+      "yaw_error_deg": 0.7082484211878112,
+      "criteria": {
+        "position": true,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": true,
+        "placement_height": true,
+        "released": true,
+        "stable": true,
+        "seated": true
+      },
+      "wall_seconds": 18.955497913004365
+    },
+    {
+      "mode": "lineage",
+      "strict_success": true,
+      "position_error_mm": 10.909314279974552,
+      "yaw_error_deg": 0.7097378403887481,
+      "criteria": {
+        "position": true,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": true,
+        "placement_height": true,
+        "released": true,
+        "stable": true,
+        "seated": true
+      },
+      "wall_seconds": 24.58716467997874
+    }
+  ],
+  "scope": "One training scene and one frozen model; no observer-accuracy, controller-safety or task-generalisation claim",
+  "finished_epoch": 1792021450.0302846
+}

@@ -1,0 +1,60 @@
+[
+  {
+    "module": "obs06_aperture",
+    "bytes": 6740,
+    "sha256": "c7032d7167dbcee7a15bec6a22f5f4bd05c8cf30f55bc455e823200caac704c2",
+    "imports": [
+      "pathlib",
+      "obs05_feature_motion",
+      "argparse",
+      "numpy"
+    ]
+  },
+  {
+    "module": "obs05_feature_motion",
+    "bytes": 14908,
+    "sha256": "23409bbcec2cb31745d8e77459f671d0ffb6bcdd4bf9a8841a32865a22559ab6",
+    "imports": [
+      "pathlib",
+      "exp20261011_hierarchy",
+      "exp20261011_hierarchy_visual",
+      "supervisor.feeding_loading.environment",
+      "os",
+      "argparse",
+      "cv2",
+      "video06_motion"
+    ]
+  },
+  {
+    "module": "video06_motion",
+    "bytes": 11002,
+    "sha256": "c78c0d09435a6b8b62038a2405f6b48c68a41a75dc55fe1f742f08907e4ae56f",
+    "imports": [
+      "pathlib",
+      "argparse",
+      "cv2"
+    ]
+  },
+  {
+    "module": "exp20261011_hierarchy_visual",
+    "bytes": 3897,
+    "sha256": "a24cf3b908df4d41698606aadbaa3478eef7dfb1e4e0e7a4034d94077693f128",
+    "imports": [
+      "scipy.spatial.transform",
+      "math",
+      "cv2",
+      "numpy"
+    ]
+  },
+  {
+    "module": "exp20261011_hierarchy",
+    "bytes": 11843,
+    "sha256": "561fe9ced77240887a3a99104981685bbbfeeadb8177d37c11e1e65f84b80ea9",
+    "imports": [
+      "pathlib",
+      "argparse",
+      "cv2",
+      "numpy"
+    ]
+  }
+]

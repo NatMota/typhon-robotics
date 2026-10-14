@@ -1,0 +1,73 @@
+{
+  "first_different_rgb_query": 5,
+  "query_control_tick": 190,
+  "changed_camera": "secondary",
+  "primary_identical": true,
+  "proprio_eef_identical": true,
+  "changed_channel_values": 3,
+  "changed_pixels": 1,
+  "max_uint8_difference": 1,
+  "changed_xy_bbox": [
+    24,
+    417,
+    24,
+    417
+  ],
+  "first_changed_values": [
+    {
+      "x": 24,
+      "y": 417,
+      "channel": 0,
+      "monitoring": 196,
+      "lineage": 195
+    },
+    {
+      "x": 24,
+      "y": 417,
+      "channel": 1,
+      "monitoring": 187,
+      "lineage": 186
+    },
+    {
+      "x": 24,
+      "y": 417,
+      "channel": 2,
+      "monitoring": 178,
+      "lineage": 177
+    }
+  ],
+  "first_action_max_abs_difference": 0.00390625,
+  "raw_render_nondeterminism_cause_established": false,
+  "offline_preprocessing_queries": 48,
+  "offline_preprocessing_exact": true,
+  "extra_physical_runs": 0,
+  "extra_model_forward_calls": 0,
+  "conclusion": "The first difference is already in raw secondary RGB at identical recorded physics and EEF state. The same saved RGB preprocesses identically with and without sidecars. Rendering/timing origin remains unresolved; live parity stays failed.",
+  "archived_native_vs_new_monitoring": {
+    "model_actions": {
+      "queries_equal": 5,
+      "queries": 48,
+      "first_difference": 5
+    },
+    "primary": {
+      "queries_equal": 6,
+      "queries": 48,
+      "first_difference": 6
+    },
+    "secondary": {
+      "queries_equal": 5,
+      "queries": 48,
+      "first_difference": 5
+    },
+    "eef_position_m": {
+      "queries_equal": 6,
+      "queries": 48,
+      "first_difference": 6
+    },
+    "eef_quat_xyzw": {
+      "queries_equal": 6,
+      "queries": 48,
+      "first_difference": 6
+    }
+  }
+}
