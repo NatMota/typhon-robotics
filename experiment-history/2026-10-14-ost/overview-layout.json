@@ -269,44 +269,12 @@
       ]
     },
     {
-      "id": "T11039",
-      "type": "experiment",
-      "label": "LOAD03 \u00b7 #11039\nTest whether fixture appearance controls task choice",
-      "parent_id": "S_generalisation_3",
-      "x": 1220,
-      "y": 1048.0,
-      "width": 350,
-      "height": 91,
-      "color": "#4a4428",
-      "lines": [
-        "LOAD03 \u00b7 #11039",
-        "Test whether fixture appearance controls",
-        "task choice"
-      ]
-    },
-    {
-      "id": "R11039",
-      "type": "result",
-      "label": "Visible fixture: loading 8/8. Hidden: feeding 8/8. Eight requested and eight wrong endpoints; zero instruction switches.",
-      "parent_id": "T11039",
-      "x": 1620,
-      "y": 1048.0,
-      "width": 350,
-      "height": 91,
-      "color": "#574831",
-      "lines": [
-        "Visible fixture: loading 8/8. Hidden:",
-        "feeding 8/8. Eight requested and eight",
-        "wrong endpoints; zero instruction switches."
-      ]
-    },
-    {
       "id": "T11040",
       "type": "experiment",
       "label": "LOAD04 \u00b7 #11040\nCounterbalanced task supervision in identical scenes",
       "parent_id": "S_generalisation_3",
       "x": 1220,
-      "y": 1185.5,
+      "y": 1058.5,
       "width": 350,
       "height": 91,
       "color": "#4a4428",
@@ -322,7 +290,7 @@
       "label": "Balanced vs control: requested region 16/16 vs 8/16; strict 12/16 vs 8/16. Loading stays 4/8. Four cases tip before grasp. Archive verified.",
       "parent_id": "T11040",
       "x": 1620,
-      "y": 1175.0,
+      "y": 1048.0,
       "width": 350,
       "height": 112,
       "color": "#574831",
@@ -339,7 +307,7 @@
       "label": "Separate task instruction from fixture appearance",
       "parent_id": "O_generalisation",
       "x": 820,
-      "y": 1126.25,
+      "y": 1068.0,
       "width": 350,
       "height": 72,
       "color": "#343a46",
@@ -349,12 +317,93 @@
       ]
     },
     {
+      "id": "T11047",
+      "type": "experiment",
+      "label": "LOAD05-R2 \u00b7 #11047\nComplete two crossed-policy acquisition branches",
+      "parent_id": "S_generalisation_4",
+      "x": 1220,
+      "y": 1231.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LOAD05-R2 \u00b7 #11047",
+        "Complete two crossed-policy acquisition",
+        "branches"
+      ]
+    },
+    {
+      "id": "R11047",
+      "type": "result",
+      "label": "Only B from its own state tips. Crossed pickups are upright (0.86 and 1.62 degrees). State-policy interaction in one inspected case.",
+      "parent_id": "T11047",
+      "x": 1620,
+      "y": 1221.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Only B from its own state tips. Crossed",
+        "pickups are upright (0.86 and 1.62",
+        "degrees). State-policy interaction in one",
+        "inspected case."
+      ]
+    },
+    {
+      "id": "T11048",
+      "type": "experiment",
+      "label": "LOAD06 \u00b7 #11048\nSeparate pose sequence from gripper schedule at acquisition",
+      "parent_id": "S_generalisation_4",
+      "x": 1220,
+      "y": 1379.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LOAD06 \u00b7 #11048",
+        "Separate pose sequence from gripper",
+        "schedule at acquisition"
+      ]
+    },
+    {
+      "id": "R11048",
+      "type": "result",
+      "label": "Pose-only substitution fixes acquisition: 1.12 versus 62.76 degrees tilt. Grip-only does not. B resumes; no full-placement or training claim.",
+      "parent_id": "T11048",
+      "x": 1620,
+      "y": 1369.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Pose-only substitution fixes acquisition:",
+        "1.12 versus 62.76 degrees tilt. Grip-only",
+        "does not. B resumes; no full-placement or",
+        "training claim."
+      ]
+    },
+    {
+      "id": "S_generalisation_4",
+      "type": "solution",
+      "label": "Isolate approach state and acquisition policy",
+      "parent_id": "O_generalisation",
+      "x": 820,
+      "y": 1315.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Isolate approach state and acquisition",
+        "policy"
+      ]
+    },
+    {
       "id": "O_generalisation",
       "type": "opportunity",
       "label": "The model succeeds locally but follows scene cues",
       "parent_id": "outcome",
       "x": 420,
-      "y": 1126.25,
+      "y": 1191.5,
       "width": 350,
       "height": 72,
       "color": "#2d443b",
@@ -369,7 +418,7 @@
       "label": "OBS06 \u00b7 #11031\nTest aperture and release evidence on additional archived episodes",
       "parent_id": "S_recovery_0",
       "x": 1220,
-      "y": 1398.0,
+      "y": 1592.0,
       "width": 350,
       "height": 91,
       "color": "#4a4428",
@@ -385,7 +434,7 @@
       "label": "24 episodes / 8,784 observations: contact false positives 108 to 20, precision 94.65%. Still below 95% gate; no authority.",
       "parent_id": "T11031",
       "x": 1620,
-      "y": 1398.0,
+      "y": 1592.0,
       "width": 350,
       "height": 91,
       "color": "#574831",
@@ -401,7 +450,7 @@
       "label": "Qualify state estimates and safety checks",
       "parent_id": "O_recovery",
       "x": 820,
-      "y": 1407.5,
+      "y": 1601.5,
       "width": 350,
       "height": 72,
       "color": "#343a46",
@@ -415,7 +464,7 @@
       "label": "ALPHA02 \u00b7 #11043\nfrozen-policy 4s/15s reset qualification and release-only control",
       "parent_id": "S_recovery_3",
       "x": 1220,
-      "y": 1560.5,
+      "y": 1754.5,
       "width": 350,
       "height": 91,
       "color": "#4a4428",
@@ -431,7 +480,7 @@
       "label": "Frozen 32-rollout follow-up: all four policies 0/4 full starts and zero new grasps. Release-only matches near-goal success; park further PPO.",
       "parent_id": "T11043",
       "x": 1620,
-      "y": 1550.0,
+      "y": 1744.0,
       "width": 350,
       "height": 112,
       "color": "#574831",
@@ -448,7 +497,7 @@
       "label": "Separate AlphaNIST-style PPO from X-VLA",
       "parent_id": "O_recovery",
       "x": 820,
-      "y": 1570.0,
+      "y": 1764.0,
       "width": 350,
       "height": 72,
       "color": "#343a46",
@@ -457,12 +506,60 @@
       ]
     },
     {
+      "id": "T11050",
+      "type": "experiment",
+      "label": "DATA07-R \u00b7 #11050\nQualify acquisition repairs on training families before admitting corrective data",
+      "parent_id": "S_recovery_4",
+      "x": 1220,
+      "y": 1927.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DATA07-R \u00b7 #11050",
+        "Qualify acquisition repairs on training",
+        "families before admitting corrective data"
+      ]
+    },
+    {
+      "id": "R11050",
+      "type": "result",
+      "label": "NEXT, not run: four training families, at most two qualified pose repairs, full-task scoring. No training or development-data reuse.",
+      "parent_id": "T11050",
+      "x": 1620,
+      "y": 1917.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "NEXT, not run: four training families, at",
+        "most two qualified pose repairs, full-task",
+        "scoring. No training or development-data",
+        "reuse."
+      ]
+    },
+    {
+      "id": "S_recovery_4",
+      "type": "solution",
+      "label": "Qualify training-family corrective supervision",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 1937.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Qualify training-family corrective",
+        "supervision"
+      ]
+    },
+    {
       "id": "O_recovery",
       "type": "opportunity",
       "label": "Advance phases only from trustworthy evidence",
       "parent_id": "outcome",
       "x": 420,
-      "y": 1488.75,
+      "y": 1769.25,
       "width": 350,
       "height": 72,
       "color": "#2d443b",
@@ -477,7 +574,7 @@
       "label": "LIVE08 \u00b7 #11028\nIsolate the first ranked candidate from boundary timing",
       "parent_id": "S_compute_1",
       "x": 1220,
-      "y": 1783.5,
+      "y": 2150.5,
       "width": 350,
       "height": 91,
       "color": "#4a4428",
@@ -493,7 +590,7 @@
       "label": "Four-run 2x2: candidate A grasps/places at both waits; C at neither. Candidate choice explains this failure, not one tick of delay.",
       "parent_id": "T11028",
       "x": 1620,
-      "y": 1773.0,
+      "y": 2140.0,
       "width": 350,
       "height": 112,
       "color": "#574831",
@@ -510,7 +607,7 @@
       "label": "Integrate and isolate the live selection mechanism",
       "parent_id": "O_compute",
       "x": 820,
-      "y": 1793.0,
+      "y": 2160.0,
       "width": 350,
       "height": 72,
       "color": "#343a46",
@@ -525,7 +622,7 @@
       "label": "Choose useful candidates without blocking valid motion",
       "parent_id": "outcome",
       "x": 420,
-      "y": 1793.0,
+      "y": 2160.0,
       "width": 350,
       "height": 72,
       "color": "#2d443b",
@@ -540,7 +637,7 @@
       "label": "EVAL02 \u00b7 #10996\nDefine the next confirmatory comparison with family-level uncertainty",
       "parent_id": "S_evidence_0",
       "x": 1220,
-      "y": 2006.5,
+      "y": 2373.5,
       "width": 350,
       "height": 91,
       "color": "#4a4428",
@@ -556,7 +653,7 @@
       "label": "REVIEW: 136/204 planned completed. Broad vs vanilla near-layout strict 17/40 vs 0/40. Broader layouts 0/20 both; 68 interventions unrun.",
       "parent_id": "T10996",
       "x": 1620,
-      "y": 1996.0,
+      "y": 2363.0,
       "width": 350,
       "height": 112,
       "color": "#574831",
@@ -573,7 +670,7 @@
       "label": "Reconcile evaluation panels and uncertainty",
       "parent_id": "O_evidence",
       "x": 820,
-      "y": 2016.0,
+      "y": 2383.0,
       "width": 350,
       "height": 72,
       "color": "#343a46",
@@ -587,7 +684,7 @@
       "label": "OPS01 \u00b7 #11042\nVerify Powerglide booking and full backup including lab recovery",
       "parent_id": "S_evidence_1",
       "x": 1220,
-      "y": 2179.5,
+      "y": 2546.5,
       "width": 350,
       "height": 91,
       "color": "#4a4428",
@@ -603,7 +700,7 @@
       "label": "Full backup reconciled: 906,507 files, 299.6 GB, no integrity errors. Labs and checkpoint checks saved. Fresh-machine restore untested.",
       "parent_id": "T11042",
       "x": 1620,
-      "y": 2169.0,
+      "y": 2536.0,
       "width": 350,
       "height": 112,
       "color": "#574831",
@@ -615,12 +712,45 @@
       ]
     },
     {
+      "id": "T11049",
+      "type": "experiment",
+      "label": "OPS07 \u00b7 #11049\nRestore Mint access and mirror latest experiment evidence and OST",
+      "parent_id": "S_evidence_1",
+      "x": 1220,
+      "y": 2694.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "OPS07 \u00b7 #11049",
+        "Restore Mint access and mirror latest",
+        "experiment evidence and OST"
+      ]
+    },
+    {
+      "id": "R11049",
+      "type": "result",
+      "label": "BLOCKED: Mint SSH and viewer unreachable. New raw evidence privately backed up and independently hashed; mirror and live refresh pending.",
+      "parent_id": "T11049",
+      "x": 1620,
+      "y": 2684.0,
+      "width": 350,
+      "height": 112,
+      "color": "#4e374f",
+      "lines": [
+        "BLOCKED: Mint SSH and viewer unreachable.",
+        "New raw evidence privately backed up and",
+        "independently hashed; mirror and live",
+        "refresh pending."
+      ]
+    },
+    {
       "id": "S_evidence_1",
       "type": "solution",
       "label": "Preserve the research record and compute environment",
       "parent_id": "O_evidence",
       "x": 820,
-      "y": 2189.0,
+      "y": 2630.0,
       "width": 350,
       "height": 72,
       "color": "#343a46",
@@ -635,7 +765,7 @@
       "label": "Make results reproducible, recoverable and understandable",
       "parent_id": "outcome",
       "x": 420,
-      "y": 2102.5,
+      "y": 2506.5,
       "width": 350,
       "height": 72,
       "color": "#2d443b",
@@ -731,14 +861,6 @@
     ],
     [
       "S_generalisation_3",
-      "T11039"
-    ],
-    [
-      "T11039",
-      "R11039"
-    ],
-    [
-      "S_generalisation_3",
       "T11040"
     ],
     [
@@ -748,6 +870,26 @@
     [
       "O_generalisation",
       "S_generalisation_3"
+    ],
+    [
+      "S_generalisation_4",
+      "T11047"
+    ],
+    [
+      "T11047",
+      "R11047"
+    ],
+    [
+      "S_generalisation_4",
+      "T11048"
+    ],
+    [
+      "T11048",
+      "R11048"
+    ],
+    [
+      "O_generalisation",
+      "S_generalisation_4"
     ],
     [
       "outcome",
@@ -776,6 +918,18 @@
     [
       "O_recovery",
       "S_recovery_3"
+    ],
+    [
+      "S_recovery_4",
+      "T11050"
+    ],
+    [
+      "T11050",
+      "R11050"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_4"
     ],
     [
       "outcome",
@@ -818,6 +972,14 @@
       "R11042"
     ],
     [
+      "S_evidence_1",
+      "T11049"
+    ],
+    [
+      "T11049",
+      "R11049"
+    ],
+    [
       "O_evidence",
       "S_evidence_1"
     ],
@@ -827,5 +989,5 @@
     ]
   ],
   "width": 2000,
-  "height": 2341.0
+  "height": 2856.0
 }

@@ -57,5 +57,9 @@ T11043,experiment,"ALPHA02 · #11043
 frozen-policy 4s/15s reset qualification and release-only control",S_recovery_3,1220,2344.5,#4a4428
 R11043,result,Frozen 32-rollout follow-up: all four policies 0/4 full starts and zero new grasps. Release-only matches near-goal success; park further PPO.,T11043,1620,2334.0,#574831
 S_recovery_3,solution,Separate AlphaNIST-style PPO from X-VLA,O_recovery,820,2280.0,#343a46
-O_recovery,opportunity,Advance phases only from trustworthy evidence,outcome,420,1374.75,#2d443b
+T11050,experiment,"DATA07-R · #11050
+Qualify acquisition repairs on training families before admitting corrective data",S_recovery_4,1220,2517.5,#4a4428
+R11050,result,"NEXT, not run: four training families, at most two qualified pose repairs, full-task scoring. No training or development-data reuse.",T11050,1620,2507.0,#574831
+S_recovery_4,solution,Qualify training-family corrective supervision,O_recovery,820,2527.0,#343a46
+O_recovery,opportunity,Advance phases only from trustworthy evidence,outcome,420,1498.25,#2d443b
 outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60

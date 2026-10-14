@@ -66,13 +66,33 @@ O_generalisation_S3 --> T11040
 R11040["Balanced vs control: requested region 16/16 vs<br/>8/16; strict 12/16 vs 8/16. Loading stays 4/8.<br/>Four cases tip before grasp. Archive verified."]:::mixed
 T11040 --> R11040
 click T11040 "http://127.0.0.1:4001/?project=typhon-research#ticket=11040" "Open research ticket" _blank
-O_generalisation_S4["Solution: Separate acquired grasp from placement<br/>behaviour"]:::solution
+O_generalisation_S4["Solution: Isolate approach state and acquisition policy"]:::solution
 O_generalisation --> O_generalisation_S4
 T11044["LOAD05 · #11044<br/>Pre-contact C/B acquisition crossover"]:::experiment
 O_generalisation_S4 --> T11044
-R11044["BLOCKED at full-state restore verification.<br/>One saved-action prefix; zero model queries or<br/>crossovers. XML identity bug found; repair<br/>must qualify separately."]:::blocked
+R11044["Original restart qualification stopped. The<br/>causal comparison was completed separately in<br/>R2; no original crossover outcome."]:::mixed
 T11044 --> R11044
 click T11044 "http://127.0.0.1:4001/?project=typhon-research#ticket=11044" "Open research ticket" _blank
+T11045["LOAD05-Q · #11045<br/>Repair content signatures and qualify<br/>saved-action restart"]:::experiment
+O_generalisation_S4 --> T11045
+R11045["Content checks pass; copied solver-constraint<br/>state mismatches. Stopped before model<br/>inference. Failed qualification preserved."]:::mixed
+T11045 --> R11045
+click T11045 "http://127.0.0.1:4001/?project=typhon-research#ticket=11045" "Open research ticket" _blank
+T11046["LOAD05-R · #11046<br/>Reconstruct pre-contact states and cross C/B<br/>acquisition policies"]:::experiment
+O_generalisation_S4 --> T11046
+R11046["Both native controls reproduce. Crossed test<br/>stopped only on an XML visual statistic;<br/>controls subsequently reused in R2."]:::mixed
+T11046 --> R11046
+click T11046 "http://127.0.0.1:4001/?project=typhon-research#ticket=11046" "Open research ticket" _blank
+T11047["LOAD05-R2 · #11047<br/>Complete two crossed-policy acquisition<br/>branches"]:::experiment
+O_generalisation_S4 --> T11047
+R11047["Only B from its own state tips. Crossed<br/>pickups are upright (0.86 and 1.62 degrees).<br/>State-policy interaction in one inspected<br/>case."]:::mixed
+T11047 --> R11047
+click T11047 "http://127.0.0.1:4001/?project=typhon-research#ticket=11047" "Open research ticket" _blank
+T11048["LOAD06 · #11048<br/>Separate pose sequence from gripper schedule<br/>at acquisition"]:::experiment
+O_generalisation_S4 --> T11048
+R11048["Pose-only substitution fixes acquisition: 1.12<br/>versus 62.76 degrees tilt. Grip-only does not.<br/>B resumes; no full-placement or training<br/>claim."]:::mixed
+T11048 --> R11048
+click T11048 "http://127.0.0.1:4001/?project=typhon-research#ticket=11048" "Open research ticket" _blank
 classDef outcome fill:#263f60,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
 classDef opportunity fill:#2d443b,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
 classDef solution fill:#343a46,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;

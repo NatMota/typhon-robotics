@@ -293,7 +293,7 @@
     {
       "id": "R11012",
       "type": "result",
-      "label": "Reference-style tree restored: outcome, opportunity, solution, experiment, result. Current refresh preserves old snapshots and ticket links.",
+      "label": "97 work items exported in reference layout with separate results. Live viewer last verified at 92; new installation waits for Mint.",
       "parent_id": "T11012",
       "x": 1620,
       "y": 1225.0,
@@ -301,10 +301,10 @@
       "height": 112,
       "color": "#574831",
       "lines": [
-        "Reference-style tree restored: outcome,",
-        "opportunity, solution, experiment, result.",
-        "Current refresh preserves old snapshots and",
-        "ticket links."
+        "97 work items exported in reference layout",
+        "with separate results. Live viewer last",
+        "verified at 92; new installation waits for",
+        "Mint."
       ]
     },
     {
@@ -341,12 +341,45 @@
       ]
     },
     {
+      "id": "T11049",
+      "type": "experiment",
+      "label": "OPS07 \u00b7 #11049\nRestore Mint access and mirror latest experiment evidence and OST",
+      "parent_id": "S_evidence_1",
+      "x": 1220,
+      "y": 1531.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "OPS07 \u00b7 #11049",
+        "Restore Mint access and mirror latest",
+        "experiment evidence and OST"
+      ]
+    },
+    {
+      "id": "R11049",
+      "type": "result",
+      "label": "BLOCKED: Mint SSH and viewer unreachable. New raw evidence privately backed up and independently hashed; mirror and live refresh pending.",
+      "parent_id": "T11049",
+      "x": 1620,
+      "y": 1521.0,
+      "width": 350,
+      "height": 112,
+      "color": "#4e374f",
+      "lines": [
+        "BLOCKED: Mint SSH and viewer unreachable.",
+        "New raw evidence privately backed up and",
+        "independently hashed; mirror and live",
+        "refresh pending."
+      ]
+    },
+    {
       "id": "S_evidence_1",
       "type": "solution",
       "label": "Preserve the research record and compute environment",
       "parent_id": "O_evidence",
       "x": 820,
-      "y": 1038.75,
+      "y": 1112.75,
       "width": 350,
       "height": 72,
       "color": "#343a46",
@@ -361,7 +394,7 @@
       "label": "DEL01 \u00b7 #11007\nReconcile dashboard, video hosting and research result provenance",
       "parent_id": "S_evidence_2",
       "x": 1220,
-      "y": 1556.5,
+      "y": 1704.5,
       "width": 350,
       "height": 91,
       "color": "#4a4428",
@@ -377,7 +410,7 @@
       "label": "Eight representative records, ten videos, exact models and hashes verified. Current selected files absent from hosted index; delivery repair separate.",
       "parent_id": "T11007",
       "x": 1620,
-      "y": 1546.0,
+      "y": 1694.0,
       "width": 350,
       "height": 112,
       "color": "#574831",
@@ -394,7 +427,7 @@
       "label": "DEL02 \u00b7 #11008\nPrepare an accurate research write-up and submission package",
       "parent_id": "S_evidence_2",
       "x": 1220,
-      "y": 1715.0,
+      "y": 1863.0,
       "width": 350,
       "height": 91,
       "color": "#4a4428",
@@ -410,7 +443,7 @@
       "label": "REVIEW: private 1,777-word synthesis, 14 claim groups, 46 evidence files, 37 numerical checks. Hosting/publication/submission still pending.",
       "parent_id": "T11008",
       "x": 1620,
-      "y": 1694.0,
+      "y": 1842.0,
       "width": 350,
       "height": 133,
       "color": "#574831",
@@ -428,7 +461,7 @@
       "label": "Qualify media and the private report",
       "parent_id": "O_evidence",
       "x": 820,
-      "y": 1645.25,
+      "y": 1793.25,
       "width": 350,
       "height": 72,
       "color": "#343a46",
@@ -442,7 +475,7 @@
       "label": "Make results reproducible, recoverable and understandable",
       "parent_id": "outcome",
       "x": 420,
-      "y": 972.62,
+      "y": 1046.62,
       "width": 350,
       "height": 72,
       "color": "#2d443b",
@@ -553,6 +586,14 @@
       "R11042"
     ],
     [
+      "S_evidence_1",
+      "T11049"
+    ],
+    [
+      "T11049",
+      "R11049"
+    ],
+    [
       "O_evidence",
       "S_evidence_1"
     ],
@@ -582,5 +623,5 @@
     ]
   ],
   "width": 2000,
-  "height": 1887.0
+  "height": 2035.0
 }

@@ -290,13 +290,33 @@ O_generalisation_S3 --> T11040
 R11040["Balanced vs control: requested region 16/16 vs<br/>8/16; strict 12/16 vs 8/16. Loading stays 4/8.<br/>Four cases tip before grasp. Archive verified."]:::mixed
 T11040 --> R11040
 click T11040 "http://127.0.0.1:4001/?project=typhon-research#ticket=11040" "Open research ticket" _blank
-O_generalisation_S4["Solution: Separate acquired grasp from placement<br/>behaviour"]:::solution
+O_generalisation_S4["Solution: Isolate approach state and acquisition policy"]:::solution
 O_generalisation --> O_generalisation_S4
 T11044["LOAD05 · #11044<br/>Pre-contact C/B acquisition crossover"]:::experiment
 O_generalisation_S4 --> T11044
-R11044["BLOCKED at full-state restore verification.<br/>One saved-action prefix; zero model queries or<br/>crossovers. XML identity bug found; repair<br/>must qualify separately."]:::blocked
+R11044["Original restart qualification stopped. The<br/>causal comparison was completed separately in<br/>R2; no original crossover outcome."]:::mixed
 T11044 --> R11044
 click T11044 "http://127.0.0.1:4001/?project=typhon-research#ticket=11044" "Open research ticket" _blank
+T11045["LOAD05-Q · #11045<br/>Repair content signatures and qualify<br/>saved-action restart"]:::experiment
+O_generalisation_S4 --> T11045
+R11045["Content checks pass; copied solver-constraint<br/>state mismatches. Stopped before model<br/>inference. Failed qualification preserved."]:::mixed
+T11045 --> R11045
+click T11045 "http://127.0.0.1:4001/?project=typhon-research#ticket=11045" "Open research ticket" _blank
+T11046["LOAD05-R · #11046<br/>Reconstruct pre-contact states and cross C/B<br/>acquisition policies"]:::experiment
+O_generalisation_S4 --> T11046
+R11046["Both native controls reproduce. Crossed test<br/>stopped only on an XML visual statistic;<br/>controls subsequently reused in R2."]:::mixed
+T11046 --> R11046
+click T11046 "http://127.0.0.1:4001/?project=typhon-research#ticket=11046" "Open research ticket" _blank
+T11047["LOAD05-R2 · #11047<br/>Complete two crossed-policy acquisition<br/>branches"]:::experiment
+O_generalisation_S4 --> T11047
+R11047["Only B from its own state tips. Crossed<br/>pickups are upright (0.86 and 1.62 degrees).<br/>State-policy interaction in one inspected<br/>case."]:::mixed
+T11047 --> R11047
+click T11047 "http://127.0.0.1:4001/?project=typhon-research#ticket=11047" "Open research ticket" _blank
+T11048["LOAD06 · #11048<br/>Separate pose sequence from gripper schedule<br/>at acquisition"]:::experiment
+O_generalisation_S4 --> T11048
+R11048["Pose-only substitution fixes acquisition: 1.12<br/>versus 62.76 degrees tilt. Grip-only does not.<br/>B resumes; no full-placement or training<br/>claim."]:::mixed
+T11048 --> R11048
+click T11048 "http://127.0.0.1:4001/?project=typhon-research#ticket=11048" "Open research ticket" _blank
 
 OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
 O_recovery["Opportunity: Advance phases only from trustworthy evidence"]:::opportunity
@@ -399,6 +419,13 @@ O_recovery_S3 --> T11043
 R11043["Frozen 32-rollout follow-up: all four policies<br/>0/4 full starts and zero new grasps.<br/>Release-only matches near-goal success; park<br/>further PPO."]:::mixed
 T11043 --> R11043
 click T11043 "http://127.0.0.1:4001/?project=typhon-research#ticket=11043" "Open research ticket" _blank
+O_recovery_S4["Solution: Qualify training-family corrective supervision"]:::solution
+O_recovery --> O_recovery_S4
+T11050["DATA07-R · #11050<br/>Qualify acquisition repairs on training<br/>families before admitting corrective data"]:::experiment
+O_recovery_S4 --> T11050
+R11050["NEXT, not run: four training families, at most<br/>two qualified pose repairs, full-task scoring.<br/>No training or development-data reuse."]:::mixed
+T11050 --> R11050
+click T11050 "http://127.0.0.1:4001/?project=typhon-research#ticket=11050" "Open research ticket" _blank
 
 OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
 O_compute["Opportunity: Choose useful candidates without blocking<br/>valid motion"]:::opportunity
@@ -502,7 +529,7 @@ T10986 --> R10986
 click T10986 "http://127.0.0.1:4001/?project=typhon-research#ticket=10986" "Open research ticket" _blank
 T11012["OPS05 · #11012<br/>Draw the opportunity solution tree and restore<br/>the Design viewer"]:::experiment
 O_evidence_S1 --> T11012
-R11012["Reference-style tree restored: outcome,<br/>opportunity, solution, experiment, result.<br/>Current refresh preserves old snapshots and<br/>ticket links."]:::mixed
+R11012["97 work items exported in reference layout<br/>with separate results. Live viewer last<br/>verified at 92; new installation waits for<br/>Mint."]:::mixed
 T11012 --> R11012
 click T11012 "http://127.0.0.1:4001/?project=typhon-research#ticket=11012" "Open research ticket" _blank
 T11042["OPS01 · #11042<br/>Verify Powerglide booking and full backup<br/>including lab recovery"]:::experiment
@@ -510,6 +537,11 @@ O_evidence_S1 --> T11042
 R11042["Full backup reconciled: 906,507 files, 299.6<br/>GB, no integrity errors. Labs and checkpoint<br/>checks saved. Fresh-machine restore untested."]:::mixed
 T11042 --> R11042
 click T11042 "http://127.0.0.1:4001/?project=typhon-research#ticket=11042" "Open research ticket" _blank
+T11049["OPS07 · #11049<br/>Restore Mint access and mirror latest<br/>experiment evidence and OST"]:::experiment
+O_evidence_S1 --> T11049
+R11049["BLOCKED: Mint SSH and viewer unreachable. New<br/>raw evidence privately backed up and<br/>independently hashed; mirror and live refresh<br/>pending."]:::blocked
+T11049 --> R11049
+click T11049 "http://127.0.0.1:4001/?project=typhon-research#ticket=11049" "Open research ticket" _blank
 O_evidence_S2["Solution: Qualify media and the private report"]:::solution
 O_evidence --> O_evidence_S2
 T11007["DEL01 · #11007<br/>Reconcile dashboard, video hosting and<br/>research result provenance"]:::experiment

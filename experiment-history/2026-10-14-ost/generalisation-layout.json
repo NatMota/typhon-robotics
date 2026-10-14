@@ -419,7 +419,7 @@
       "label": "LOAD05 \u00b7 #11044\nPre-contact C/B acquisition crossover",
       "parent_id": "S_generalisation_4",
       "x": 1220,
-      "y": 1659.0,
+      "y": 1648.5,
       "width": 350,
       "height": 72,
       "color": "#4a4428",
@@ -431,33 +431,164 @@
     {
       "id": "R11044",
       "type": "result",
-      "label": "BLOCKED at full-state restore verification. One saved-action prefix; zero model queries or crossovers. XML identity bug found; repair must qualify separately.",
+      "label": "Original restart qualification stopped. The causal comparison was completed separately in R2; no original crossover outcome.",
       "parent_id": "T11044",
       "x": 1620,
       "y": 1639.0,
       "width": 350,
-      "height": 112,
-      "color": "#4e374f",
+      "height": 91,
+      "color": "#574831",
       "lines": [
-        "BLOCKED at full-state restore verification.",
-        "One saved-action prefix; zero model queries",
-        "or crossovers. XML identity bug found;",
-        "repair must qualify separately."
+        "Original restart qualification stopped. The",
+        "causal comparison was completed separately",
+        "in R2; no original crossover outcome."
+      ]
+    },
+    {
+      "id": "T11045",
+      "type": "experiment",
+      "label": "LOAD05-Q \u00b7 #11045\nRepair content signatures and qualify saved-action restart",
+      "parent_id": "S_generalisation_4",
+      "x": 1220,
+      "y": 1776.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LOAD05-Q \u00b7 #11045",
+        "Repair content signatures and qualify",
+        "saved-action restart"
+      ]
+    },
+    {
+      "id": "R11045",
+      "type": "result",
+      "label": "Content checks pass; copied solver-constraint state mismatches. Stopped before model inference. Failed qualification preserved.",
+      "parent_id": "T11045",
+      "x": 1620,
+      "y": 1766.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Content checks pass; copied",
+        "solver-constraint state mismatches. Stopped",
+        "before model inference. Failed",
+        "qualification preserved."
+      ]
+    },
+    {
+      "id": "T11046",
+      "type": "experiment",
+      "label": "LOAD05-R \u00b7 #11046\nReconstruct pre-contact states and cross C/B acquisition policies",
+      "parent_id": "S_generalisation_4",
+      "x": 1220,
+      "y": 1924.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LOAD05-R \u00b7 #11046",
+        "Reconstruct pre-contact states and cross",
+        "C/B acquisition policies"
+      ]
+    },
+    {
+      "id": "R11046",
+      "type": "result",
+      "label": "Both native controls reproduce. Crossed test stopped only on an XML visual statistic; controls subsequently reused in R2.",
+      "parent_id": "T11046",
+      "x": 1620,
+      "y": 1914.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Both native controls reproduce. Crossed",
+        "test stopped only on an XML visual",
+        "statistic; controls subsequently reused in",
+        "R2."
+      ]
+    },
+    {
+      "id": "T11047",
+      "type": "experiment",
+      "label": "LOAD05-R2 \u00b7 #11047\nComplete two crossed-policy acquisition branches",
+      "parent_id": "S_generalisation_4",
+      "x": 1220,
+      "y": 2072.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LOAD05-R2 \u00b7 #11047",
+        "Complete two crossed-policy acquisition",
+        "branches"
+      ]
+    },
+    {
+      "id": "R11047",
+      "type": "result",
+      "label": "Only B from its own state tips. Crossed pickups are upright (0.86 and 1.62 degrees). State-policy interaction in one inspected case.",
+      "parent_id": "T11047",
+      "x": 1620,
+      "y": 2062.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Only B from its own state tips. Crossed",
+        "pickups are upright (0.86 and 1.62",
+        "degrees). State-policy interaction in one",
+        "inspected case."
+      ]
+    },
+    {
+      "id": "T11048",
+      "type": "experiment",
+      "label": "LOAD06 \u00b7 #11048\nSeparate pose sequence from gripper schedule at acquisition",
+      "parent_id": "S_generalisation_4",
+      "x": 1220,
+      "y": 2220.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LOAD06 \u00b7 #11048",
+        "Separate pose sequence from gripper",
+        "schedule at acquisition"
+      ]
+    },
+    {
+      "id": "R11048",
+      "type": "result",
+      "label": "Pose-only substitution fixes acquisition: 1.12 versus 62.76 degrees tilt. Grip-only does not. B resumes; no full-placement or training claim.",
+      "parent_id": "T11048",
+      "x": 1620,
+      "y": 2210.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Pose-only substitution fixes acquisition:",
+        "1.12 versus 62.76 degrees tilt. Grip-only",
+        "does not. B resumes; no full-placement or",
+        "training claim."
       ]
     },
     {
       "id": "S_generalisation_4",
       "type": "solution",
-      "label": "Separate acquired grasp from placement behaviour",
+      "label": "Isolate approach state and acquisition policy",
       "parent_id": "O_generalisation",
       "x": 820,
-      "y": 1659.0,
+      "y": 1939.25,
       "width": 350,
       "height": 72,
       "color": "#343a46",
       "lines": [
-        "Separate acquired grasp from placement",
-        "behaviour"
+        "Isolate approach state and acquisition",
+        "policy"
       ]
     },
     {
@@ -466,7 +597,7 @@
       "label": "The model succeeds locally but follows scene cues",
       "parent_id": "outcome",
       "x": 420,
-      "y": 998.12,
+      "y": 1138.25,
       "width": 350,
       "height": 72,
       "color": "#2d443b",
@@ -605,6 +736,38 @@
       "R11044"
     ],
     [
+      "S_generalisation_4",
+      "T11045"
+    ],
+    [
+      "T11045",
+      "R11045"
+    ],
+    [
+      "S_generalisation_4",
+      "T11046"
+    ],
+    [
+      "T11046",
+      "R11046"
+    ],
+    [
+      "S_generalisation_4",
+      "T11047"
+    ],
+    [
+      "T11047",
+      "R11047"
+    ],
+    [
+      "S_generalisation_4",
+      "T11048"
+    ],
+    [
+      "T11048",
+      "R11048"
+    ],
+    [
       "O_generalisation",
       "S_generalisation_4"
     ],
@@ -614,5 +777,5 @@
     ]
   ],
   "width": 2000,
-  "height": 1811.0
+  "height": 2382.0
 }

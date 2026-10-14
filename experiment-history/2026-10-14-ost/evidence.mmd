@@ -49,7 +49,7 @@ T10986 --> R10986
 click T10986 "http://127.0.0.1:4001/?project=typhon-research#ticket=10986" "Open research ticket" _blank
 T11012["OPS05 · #11012<br/>Draw the opportunity solution tree and restore<br/>the Design viewer"]:::experiment
 O_evidence_S1 --> T11012
-R11012["Reference-style tree restored: outcome,<br/>opportunity, solution, experiment, result.<br/>Current refresh preserves old snapshots and<br/>ticket links."]:::mixed
+R11012["97 work items exported in reference layout<br/>with separate results. Live viewer last<br/>verified at 92; new installation waits for<br/>Mint."]:::mixed
 T11012 --> R11012
 click T11012 "http://127.0.0.1:4001/?project=typhon-research#ticket=11012" "Open research ticket" _blank
 T11042["OPS01 · #11042<br/>Verify Powerglide booking and full backup<br/>including lab recovery"]:::experiment
@@ -57,6 +57,11 @@ O_evidence_S1 --> T11042
 R11042["Full backup reconciled: 906,507 files, 299.6<br/>GB, no integrity errors. Labs and checkpoint<br/>checks saved. Fresh-machine restore untested."]:::mixed
 T11042 --> R11042
 click T11042 "http://127.0.0.1:4001/?project=typhon-research#ticket=11042" "Open research ticket" _blank
+T11049["OPS07 · #11049<br/>Restore Mint access and mirror latest<br/>experiment evidence and OST"]:::experiment
+O_evidence_S1 --> T11049
+R11049["BLOCKED: Mint SSH and viewer unreachable. New<br/>raw evidence privately backed up and<br/>independently hashed; mirror and live refresh<br/>pending."]:::blocked
+T11049 --> R11049
+click T11049 "http://127.0.0.1:4001/?project=typhon-research#ticket=11049" "Open research ticket" _blank
 O_evidence_S2["Solution: Qualify media and the private report"]:::solution
 O_evidence --> O_evidence_S2
 T11007["DEL01 · #11007<br/>Reconcile dashboard, video hosting and<br/>research result provenance"]:::experiment

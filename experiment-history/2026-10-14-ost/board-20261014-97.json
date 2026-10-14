@@ -1,0 +1,761 @@
+{
+  "captured_utc": "2026-10-14T18:07:00Z",
+  "project": {
+    "id": 16,
+    "key": "typhon-research",
+    "name": "Typhon \u2014 Robot Learning Research",
+    "description": "Research and implementation ledger for Nat's Humanoid challenge. One ticket per experiment or bounded follow-up, recording the original request, interpretation, actual model/data, evidence, limitations and dependencies. Done means the specified investigation completed, not that the method succeeded. Current compute: Powerglide RTX4090; bulk storage: Mint Fast Drive. Preserve frozen M0\u2013M7/evaluation outputs and private repository. Report root on Powerglide: /var/tmp/typhon-research-20261011; verified archive: /media/nm/Fast Drive/Typhon/research-20261011. Planner: https://chatgpt.com/c/6ac8f7df-fef0-83eb-98c3-48bd796980a1. Board creation does not authorize running every backlog experiment or publishing.",
+    "repoPath": null,
+    "knowledgeProjectId": null,
+    "automationSettings": {
+      "version": 1,
+      "columnStates": {
+        "70": "todo",
+        "71": "todo",
+        "72": "in_progress",
+        "73": "todo",
+        "74": "review",
+        "75": "done",
+        "76": "todo"
+      }
+    },
+    "createdAt": "2026-10-11 16:29:03",
+    "updatedAt": "2026-10-11 16:42:04"
+  },
+  "columns": [
+    {
+      "id": 70,
+      "name": "Backlog",
+      "tickets": []
+    },
+    {
+      "id": 71,
+      "name": "Next",
+      "tickets": [
+        {
+          "id": 11050,
+          "title": "DATA07-R \u2014 Qualify acquisition repairs on training families before admitting corrective data",
+          "status": "Next",
+          "updatedAt": "2026-10-14 18:06:09",
+          "columnId": 71,
+          "description": "Follow-up to DATA07 #10992, LOAD04 #11040 and LOAD06 #11048. Queued after GPT Web planner review on 2026-10-14; not executed and no new training started.\n\nQuestion: does the acquisition failure occur on training-eligible learner states, and can one corrected pose chunk repair it while the balanced B checkpoint completes the requested loading task?\n\nFrozen proposed protocol:\n1. Run native B on the four exact LOAD04 loading-training configurations 0001/0002/0003/0005, visible fixture, loading instruction, one frozen policy seed.\n2. In demo-ID order, qualify C-pose/B-grip first-chunk substitution for at most the first two pre-acquisition tipping failures, then return to B. Use the qualified deterministic-prefix machinery and preserve every native outcome.\n3. Continue through the original full terminal horizon. Measure upright acquisition, correct destination, seating, release and stability. Also retain commanded OPEN events and actual contact; LOAD06 briefly commanded OPEN despite retaining contact.\n4. Cap at 45 minutes, four native episodes and at most two repaired continuations. If native training cases do not fail, stop without manufacturing a problem.\n5. Keep development 0012/0013 and every LOAD05/06 hybrid trace quarantined from training.\n\nTraining eligibility gate: verified full-task repairs on more than one training family, aligned RGB/action records, exact donor/intervention provenance, preserved task/visibility counterbalancing, a matched extra-update control and a frozen evaluation panel. Donor C is not automatically an expert. Any admitted records are policy-generated corrective supervision, not recovered human actions.\n\nState: Next. Planner recommends queueing only tonight, after sealing LOAD06. Mint mirror/live OST refresh is separately blocked in OPS07 #11049.\nEvidence: https://github.com/NatMota/typhon-robotics/blob/f6638f99fd0958f79c9a208ccd466983ea6d3b68/experiment-history/2026-10-14-load06/REPORT.md",
+          "completionSummary": null
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "name": "In Progress",
+      "tickets": []
+    },
+    {
+      "id": 73,
+      "name": "Blocked",
+      "tickets": [
+        {
+          "id": 10984,
+          "title": "NEXT02 \u2014 Repair observation hypotheses before granting the harness veto authority",
+          "status": "Blocked",
+          "updatedAt": "2026-10-13 00:02:15",
+          "columnId": 73
+        },
+        {
+          "id": 10989,
+          "title": "DATA04 \u2014 Validate phone-video to Panda-action alignment beyond one event comparison",
+          "status": "Blocked",
+          "updatedAt": "2026-10-12 10:38:48",
+          "columnId": 73
+        },
+        {
+          "id": 10991,
+          "title": "DATA06 \u2014 Version the physical-object and calibration assumptions consistently",
+          "status": "Blocked",
+          "updatedAt": "2026-10-13 02:14:55",
+          "columnId": 73
+        },
+        {
+          "id": 10998,
+          "title": "CTRL01 \u2014 Qualify joint-aware recovery paths and staged regrasp",
+          "status": "Blocked",
+          "updatedAt": "2026-10-12 10:38:49",
+          "columnId": 73
+        },
+        {
+          "id": 11000,
+          "title": "HIER01 \u2014 Train a high-level skill selector only after primitives are reliable",
+          "status": "Blocked",
+          "updatedAt": "2026-10-12 10:38:49",
+          "columnId": 73
+        },
+        {
+          "id": 11002,
+          "title": "REL02 \u2014 Compare supervised residual correction with bounded residual RL",
+          "status": "Blocked",
+          "updatedAt": "2026-10-12 10:38:49",
+          "columnId": 73
+        },
+        {
+          "id": 11003,
+          "title": "REL03 \u2014 Evaluate offline value ranking or PPO/DPPO only with adequate action support",
+          "status": "Blocked",
+          "updatedAt": "2026-10-12 10:38:49",
+          "columnId": 73
+        },
+        {
+          "id": 11049,
+          "title": "OPS07 \u2014 Restore Mint access and mirror latest experiment evidence and OST",
+          "status": "Blocked",
+          "updatedAt": "2026-10-14 17:55:47",
+          "columnId": 73,
+          "description": "Mint at the pinned mint-uat alias (192.168.1.88) stopped supplying an SSH banner on 14 October around 17:33 UTC; TCP22 connects but SSH banner times out, viewer port5173 also times out. Known Tailscale endpoint unavailable; wake packet sent once to observed LAN MAC; user asked whether machine is awake. Power state is not established. Do not reboot Powerglide or discard evidence.\n\nEarlier backups last verified: full Powerglide/labs integrity inventory 906,507 files /299,635,881,615 logical bytes; LOAD04 3,859 files source/destination SHA verified; LOAD05/Q also archived. Newly created R/R2 raw evidence is independently backed up on private GitHub, with remote downloads SHA verified. Future LOAD06 must be sealed similarly.\n\nOn recovery: inspect interrupted OST docs worktree before changes, preserve any uncommitted work, reconcile newest private OST continuation branch, refresh and verify live SVGs, mirror R/R2/LOAD06 source artifacts and manifests to /media/nm/Fast Drive/Typhon/research-20261014, verify SHA256 source/destination. Do not claim new Mint mirror complete before those checks pass. No raw videos/weights stored on Mac.",
+          "completionSummary": null
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Review",
+      "tickets": [
+        {
+          "id": 10996,
+          "title": "EVAL02 \u2014 Define the next confirmatory comparison with family-level uncertainty",
+          "status": "Review",
+          "updatedAt": "2026-10-13 04:33:45",
+          "columnId": 74
+        },
+        {
+          "id": 11008,
+          "title": "DEL02 \u2014 Prepare an accurate research write-up and submission package",
+          "status": "Review",
+          "updatedAt": "2026-10-13 05:34:55",
+          "columnId": 74
+        },
+        {
+          "id": 11004,
+          "title": "LIVE01 \u2014 Verify the existing live harness and controller telemetry hookup",
+          "status": "Review",
+          "updatedAt": "2026-10-13 18:54:39",
+          "columnId": 74
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Done",
+      "tickets": [
+        {
+          "id": 10957,
+          "title": "R01 \u2014 Trace V4 rotation, gripper command and actual motion around release",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:44:38",
+          "columnId": 75
+        },
+        {
+          "id": 10958,
+          "title": "R01d \u2014 Audit previous-command proprioception and test release-input alternatives",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:44:38",
+          "columnId": 75
+        },
+        {
+          "id": 10959,
+          "title": "R01e \u2014 Measure numeral visibility through actual preprocessing",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:44:38",
+          "columnId": 75
+        },
+        {
+          "id": 10960,
+          "title": "R02 \u2014 Test whether fixed-seed prompts command simple arm actions",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:44:38",
+          "columnId": 75
+        },
+        {
+          "id": 10961,
+          "title": "R02b \u2014 Compare vanilla, V3 and V4 prompt response controls",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:44:38",
+          "columnId": 75
+        },
+        {
+          "id": 10962,
+          "title": "R03 \u2014 Train a new six-take full-weight X-VLA-Pt with fixed 3k/12k checkpoints",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:54:58",
+          "columnId": 75
+        },
+        {
+          "id": 10963,
+          "title": "R03b \u2014 Evaluate narrow M6, broad-Pt 3k and broad-Pt 12k on unchanged holdouts",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:54:58",
+          "columnId": 75
+        },
+        {
+          "id": 10964,
+          "title": "R03c \u2014 Measure broad-Pt 12k competence on its six familiar starts",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:54:58",
+          "columnId": 75
+        },
+        {
+          "id": 10965,
+          "title": "R03d \u2014 Audit source/holdout position and yaw coverage",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:44:39",
+          "columnId": 75
+        },
+        {
+          "id": 10966,
+          "title": "R04 \u2014 Compare 30-action execution with 10-action replanning on V4",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:54:59",
+          "columnId": 75
+        },
+        {
+          "id": 10967,
+          "title": "R05 \u2014 Measure eight-proposal availability using a privileged offline oracle",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:44:39",
+          "columnId": 75
+        },
+        {
+          "id": 10968,
+          "title": "R05b \u2014 Compare V4 continuation from off-axis and near-expert held states",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:44:39",
+          "columnId": 75
+        },
+        {
+          "id": 10969,
+          "title": "R06 \u2014 Compare observable phase harness, unmodified V4 and deterministic skills",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:44:39",
+          "columnId": 75
+        },
+        {
+          "id": 10970,
+          "title": "R06b \u2014 Fix post-release observer projection in a training-only prototype",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:44:39",
+          "columnId": 75
+        },
+        {
+          "id": 10971,
+          "title": "R06c \u2014 Qualify and reject a two-axis IK endpoint selector",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:44:39",
+          "columnId": 75
+        },
+        {
+          "id": 10972,
+          "title": "R07 \u2014 Align one human correction clip with the Panda-expert event timeline",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:44:40",
+          "columnId": 75
+        },
+        {
+          "id": 10973,
+          "title": "R08 \u2014 Qualify geometric expert recovery from exact V4 failure states",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:44:40",
+          "columnId": 75
+        },
+        {
+          "id": 10974,
+          "title": "R09 \u2014 Retarget one short human-observed correction into constrained Panda motion",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:44:40",
+          "columnId": 75
+        },
+        {
+          "id": 10975,
+          "title": "R10a \u2014 Prepare blue-ghost candidate cards and typed Luna requests",
+          "status": "Done",
+          "updatedAt": "2026-10-12 23:13:33",
+          "columnId": 75
+        },
+        {
+          "id": 10976,
+          "title": "R11 \u2014 Prototype a typed primitive interface and deterministic supervisor",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:44:40",
+          "columnId": 75
+        },
+        {
+          "id": 10977,
+          "title": "R12 \u2014 Train and evaluate a causal phase predictor",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:44:40",
+          "columnId": 75
+        },
+        {
+          "id": 10978,
+          "title": "R13 \u2014 Compare DAgger, options, residual RL, offline Q and PPO approaches",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:54:59",
+          "columnId": 75
+        },
+        {
+          "id": 10979,
+          "title": "OPS02 \u2014 Preserve and verify all research models, traces, videos and resume state",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:44:40",
+          "columnId": 75
+        },
+        {
+          "id": 10980,
+          "title": "OPS03 \u2014 Write a request-by-request report and obtain independent plus GPT Pro review",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:54:59",
+          "columnId": 75
+        },
+        {
+          "id": 10981,
+          "title": "OPS04 \u2014 Reconcile excluded human review candidate 6 with stable demo IDs",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:54:59",
+          "columnId": 75
+        },
+        {
+          "id": 10955,
+          "title": "R01c \u2014 Show exactly what V4 sees: 512\u2192224 images, crop and six history frames",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:54:08",
+          "columnId": 75
+        },
+        {
+          "id": 10956,
+          "title": "OPS01 \u2014 Create and reconcile the research kanban ledger with evidence and honest statuses",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:57:26",
+          "columnId": 75
+        },
+        {
+          "id": 10954,
+          "title": "R01b \u2014 Measure V4's numeral sensitivity and grasp-relative orientation response",
+          "status": "Done",
+          "updatedAt": "2026-10-11 16:57:26",
+          "columnId": 75
+        },
+        {
+          "id": 11012,
+          "title": "OPS05 \u2014 Draw the opportunity solution tree and restore the Design viewer",
+          "status": "Done",
+          "updatedAt": "2026-10-11 22:29:02",
+          "columnId": 75
+        },
+        {
+          "id": 10983,
+          "title": "NEXT01 \u2014 Measure local robustness around successful broad-Pt 12k starts",
+          "status": "Done",
+          "updatedAt": "2026-10-12 00:10:18",
+          "columnId": 75
+        },
+        {
+          "id": 11013,
+          "title": "B01 \u2014 Diagnose why task B loading does not generalise",
+          "status": "Done",
+          "updatedAt": "2026-10-12 00:30:49",
+          "columnId": 75
+        },
+        {
+          "id": 10985,
+          "title": "NEXT03 \u2014 Separate grasp-estimation error from recovery-control error",
+          "status": "Done",
+          "updatedAt": "2026-10-12 00:30:49",
+          "columnId": 75
+        },
+        {
+          "id": 11011,
+          "title": "R01f \u2014 Separate lost visual detail from failure to use orientation in the action head",
+          "status": "Done",
+          "updatedAt": "2026-10-12 09:28:49",
+          "columnId": 75
+        },
+        {
+          "id": 10993,
+          "title": "VIS01 \u2014 Qualify a visibility fix if the causal image test supports it",
+          "status": "Done",
+          "updatedAt": "2026-10-12 09:28:49",
+          "columnId": 75
+        },
+        {
+          "id": 10995,
+          "title": "EVAL01 \u2014 Reconcile the earlier 775-rollout feeding comparison and V4 grasp search",
+          "status": "Done",
+          "updatedAt": "2026-10-12 09:28:49",
+          "columnId": 75
+        },
+        {
+          "id": 10986,
+          "title": "DATA01 \u2014 Publish an internal model and dataset registry with unambiguous names",
+          "status": "Done",
+          "updatedAt": "2026-10-12 10:36:56",
+          "columnId": 75
+        },
+        {
+          "id": 10994,
+          "title": "VIS02 \u2014 Test language/action grounding repair with matched input contracts",
+          "status": "Done",
+          "updatedAt": "2026-10-12 10:38:47",
+          "columnId": 75
+        },
+        {
+          "id": 11001,
+          "title": "REL01 \u2014 Collect qualified learner-state corrections and run a separate DAgger experiment",
+          "status": "Done",
+          "updatedAt": "2026-10-12 10:38:47",
+          "columnId": 75
+        },
+        {
+          "id": 10982,
+          "title": "R10 \u2014 Run Decisions API visual ranking on frozen ghost/future slates",
+          "status": "Done",
+          "updatedAt": "2026-10-12 23:13:32",
+          "columnId": 75
+        },
+        {
+          "id": 10987,
+          "title": "DATA02 \u2014 Reconcile prepared phase chunks and four-second intention targets with actual training",
+          "status": "Done",
+          "updatedAt": "2026-10-12 10:38:47",
+          "columnId": 75
+        },
+        {
+          "id": 10988,
+          "title": "DATA03 \u2014 Audit balanced sampling across takes, chunks, horizons and camera views",
+          "status": "Done",
+          "updatedAt": "2026-10-12 10:38:47",
+          "columnId": 75
+        },
+        {
+          "id": 10990,
+          "title": "DATA05 \u2014 Audit held-state crosshair in video and separate trajectory labels",
+          "status": "Done",
+          "updatedAt": "2026-10-12 10:38:47",
+          "columnId": 75
+        },
+        {
+          "id": 10997,
+          "title": "EVAL03 \u2014 Reconcile the 20 \u00d7 A/B harness comparison and guard event logging",
+          "status": "Done",
+          "updatedAt": "2026-10-12 10:38:48",
+          "columnId": 75
+        },
+        {
+          "id": 10999,
+          "title": "CTRL02 \u2014 Specify and log hard workspace, no-go and joint-boundary policies",
+          "status": "Done",
+          "updatedAt": "2026-10-12 10:38:48",
+          "columnId": 75
+        },
+        {
+          "id": 11005,
+          "title": "LIVE02 \u2014 Qualify the simple visual completion classifier across allowable variation",
+          "status": "Done",
+          "updatedAt": "2026-10-12 10:38:48",
+          "columnId": 75
+        },
+        {
+          "id": 11006,
+          "title": "LIVE03 \u2014 Reconcile Qwen live planner, finished-reference image and veto behavior",
+          "status": "Done",
+          "updatedAt": "2026-10-12 10:38:48",
+          "columnId": 75
+        },
+        {
+          "id": 11019,
+          "title": "VIDEO02 \u2014 Dense phone observations, temporal controls and object-focused features",
+          "status": "Done",
+          "updatedAt": "2026-10-12 17:17:01",
+          "columnId": 75
+        },
+        {
+          "id": 11020,
+          "title": "VIDEO03 \u2014 Test causal held-state prediction from unmarked personal video",
+          "status": "Done",
+          "updatedAt": "2026-10-12 18:25:53",
+          "columnId": 75
+        },
+        {
+          "id": 11021,
+          "title": "VIDEO04 \u2014 Test training-only hand-present negatives for held-state errors",
+          "status": "Done",
+          "updatedAt": "2026-10-12 18:47:37",
+          "columnId": 75
+        },
+        {
+          "id": 11022,
+          "title": "VIDEO05 \u2014 Test pre-contact negatives while preserving held-pause recognition",
+          "status": "Done",
+          "updatedAt": "2026-10-12 19:24:11",
+          "columnId": 75
+        },
+        {
+          "id": 11023,
+          "title": "VIDEO06 \u2014 Audit object motion through occlusion before video retargeting",
+          "status": "Done",
+          "updatedAt": "2026-10-12 20:00:21",
+          "columnId": 75
+        },
+        {
+          "id": 11024,
+          "title": "VIDEO07 \u2014 Test native video cadence and phase timing before robot retargeting",
+          "status": "Done",
+          "updatedAt": "2026-10-12 20:33:25",
+          "columnId": 75
+        },
+        {
+          "id": 11014,
+          "title": "LIVE04 \u2014 Integrate Decisions API candidate ranking with bounded asynchronous execution",
+          "status": "Done",
+          "updatedAt": "2026-10-12 21:15:08",
+          "columnId": 75
+        },
+        {
+          "id": 11025,
+          "title": "LIVE05 \u2014 Separate waiting, sampling and guards after the live-ranking regression",
+          "status": "Done",
+          "updatedAt": "2026-10-12 22:09:27",
+          "columnId": 75
+        },
+        {
+          "id": 11026,
+          "title": "LIVE06 \u2014 Qualify motion guards against the executed controller contract",
+          "status": "Done",
+          "updatedAt": "2026-10-12 22:10:51",
+          "columnId": 75
+        },
+        {
+          "id": 11027,
+          "title": "LIVE07 \u2014 Integrate the qualified execution check into the live candidate handoff",
+          "status": "Done",
+          "updatedAt": "2026-10-12 22:37:13",
+          "columnId": 75
+        },
+        {
+          "id": 11028,
+          "title": "LIVE08 \u2014 Isolate the first ranked candidate from boundary timing",
+          "status": "Done",
+          "updatedAt": "2026-10-12 22:46:52",
+          "columnId": 75
+        },
+        {
+          "id": 11029,
+          "title": "LIVE09 \u2014 Repeat R10 and audit critic response consistency",
+          "status": "Done",
+          "updatedAt": "2026-10-12 23:13:04",
+          "columnId": 75
+        },
+        {
+          "id": 11030,
+          "title": "OBS05 \u2014 Test fresh glyph-motion evidence against the held-state latch",
+          "status": "Done",
+          "updatedAt": "2026-10-12 23:46:26",
+          "columnId": 75
+        },
+        {
+          "id": 11031,
+          "title": "OBS06 \u2014 Test aperture and release evidence on additional archived episodes",
+          "status": "Done",
+          "updatedAt": "2026-10-13 00:02:15",
+          "columnId": 75
+        },
+        {
+          "id": 11032,
+          "title": "VIDEO08 \u2014 Test whether existing views identify camera geometry for a video-to-robot adapter",
+          "status": "Done",
+          "updatedAt": "2026-10-13 00:41:28",
+          "columnId": 75
+        },
+        {
+          "id": 11033,
+          "title": "VIDEO09 \u2014 Execute full human correction sequence with a frozen RGB-to-Panda adapter",
+          "status": "Done",
+          "updatedAt": "2026-10-13 01:35:48",
+          "columnId": 75
+        },
+        {
+          "id": 11034,
+          "title": "VIDEO10 \u2014 Register the complete video to the fixed task goal and rerun matched controls",
+          "status": "Done",
+          "updatedAt": "2026-10-13 02:14:33",
+          "columnId": 75
+        },
+        {
+          "id": 11035,
+          "title": "VIDEO11 \u2014 Audit glyph correspondence and the conflicting trajectory scores",
+          "status": "Done",
+          "updatedAt": "2026-10-13 02:41:33",
+          "columnId": 75
+        },
+        {
+          "id": 11018,
+          "title": "VIDEO01-C \u2014 Frozen phone-frame features with temporal and cross-view controls",
+          "status": "Done",
+          "updatedAt": "2026-10-13 03:29:12",
+          "columnId": 75
+        },
+        {
+          "id": 11016,
+          "title": "VIDEO01-A \u2014 Observed 2D object paths and explicit orientation gaps",
+          "status": "Done",
+          "updatedAt": "2026-10-13 03:29:11",
+          "columnId": 75
+        },
+        {
+          "id": 11017,
+          "title": "VIDEO01-B \u2014 Hand/pinch observations without fabricated grasp labels",
+          "status": "Done",
+          "updatedAt": "2026-10-13 03:29:11",
+          "columnId": 75
+        },
+        {
+          "id": 10992,
+          "title": "DATA07 \u2014 Add training-only failure and correction coverage after teacher qualification",
+          "status": "Done",
+          "updatedAt": "2026-10-13 04:04:58",
+          "columnId": 75
+        },
+        {
+          "id": 11036,
+          "title": "EVAL02R \u2014 Reconcile existing comparison claims and family-level uncertainty",
+          "status": "Done",
+          "updatedAt": "2026-10-13 04:33:45",
+          "columnId": 75
+        },
+        {
+          "id": 11015,
+          "title": "VIDEO01 \u2014 Compare video-derived representations and robot adapters without geometric-expert trajectories",
+          "status": "Done",
+          "updatedAt": "2026-10-13 04:41:51",
+          "columnId": 75
+        },
+        {
+          "id": 11007,
+          "title": "DEL01 \u2014 Reconcile dashboard, video hosting and research result provenance",
+          "status": "Done",
+          "updatedAt": "2026-10-13 05:08:51",
+          "columnId": 75
+        },
+        {
+          "id": 11037,
+          "title": "LOAD01 \u2014 Test loading supervision while retaining feeding competence",
+          "status": "Done",
+          "updatedAt": "2026-10-13 20:33:29",
+          "columnId": 75
+        },
+        {
+          "id": 11038,
+          "title": "LOAD02 \u2014 Switch feeding/loading instruction in an identical scene",
+          "status": "Done",
+          "updatedAt": "2026-10-13 21:03:04",
+          "columnId": 75
+        },
+        {
+          "id": 11039,
+          "title": "LOAD03 \u2014 Test whether fixture appearance controls task choice",
+          "status": "Done",
+          "updatedAt": "2026-10-13 21:37:34",
+          "columnId": 75
+        },
+        {
+          "id": 11041,
+          "title": "ALPHA01 \u2014 AlphaNIST-inspired Panda PPO/reset-sampling pilot",
+          "status": "Done",
+          "updatedAt": "2026-10-14 01:14:05",
+          "columnId": 75
+        },
+        {
+          "id": 11043,
+          "title": "ALPHA02 \u2014 frozen-policy 4s/15s reset qualification and release-only control",
+          "status": "Done",
+          "updatedAt": "2026-10-14 01:16:09",
+          "columnId": 75
+        },
+        {
+          "id": 11042,
+          "title": "OPS01 \u2014 Verify Powerglide booking and full backup including lab recovery",
+          "status": "Done",
+          "updatedAt": "2026-10-14 16:52:12",
+          "columnId": 75
+        },
+        {
+          "id": 11040,
+          "title": "LOAD04 \u2014 Counterbalanced task supervision in identical scenes",
+          "status": "Done",
+          "updatedAt": "2026-10-14 16:55:54",
+          "columnId": 75
+        },
+        {
+          "id": 11045,
+          "title": "LOAD05-Q \u2014 Repair content signatures and qualify saved-action restart",
+          "status": "Done",
+          "updatedAt": "2026-10-14 17:25:24",
+          "columnId": 75,
+          "description": "**Yes. EXECUTE LOAD05-Q: a verifier-only repair followed by the minimum saved-action restart qualification. Separate output directory and a 30-minute cap.**\n\nThe XML address strings establish a verifier defect. **They do not establish that the original restoration was otherwise correct**, because its post-restore signature was not saved. Keep the stopped LOAD05 attempt classified as **failed qualification, with zero crossover results**.\n\n## 1. Repair serialization\u2014not restoration\n\nChange only the signature canonicalizer and diagnostic logging. Leave state capture/restoration, controller code, physics, observation order and numerical tolerances unchanged.\n\nFor recognized XML element types, compare deterministic **XML content**, not `str(Element)` or object addresses. Preserve tags, attributes, child order, text and relevant namespaces. Standard XML libraries provide serialization/canonicalization specifically for content-based comparison. Do not strip text, discard attributes or reorder child elements to obtain equality. [Python documentation](https://docs.python.org/3/library/xml.etree.elementtree.html?utm_source=chatgpt.com)\n\n**Do not apply a general \u201cremove hexadecimal addresses\u201d filter.** Unknown opaque types must be explicitly reported rather than silently ignored. Do not carry forward the earlier `meansize` exception unless independently relevant and already declared in this verifier.\n\nBefore every assertion, persist:\n\n- Independently captured **before and after** state records, including raw XML and numerical arrays.\n- Canonical signatures and their schema version.\n- Field-level differences, including missing keys, shape/dtype changes and numerical differences.\n\nConfirm that the saved \u201cbefore\u201d record does not share mutable storage with the restored environment.\n\n## 2. Mandatory copy-only tests\n\nRun these before creating a simulator:\n\n| Test | Required result |\n|---|---|\n| XML element versus its deep copy | New content signatures equal, despite different object identities |\n| Change a geometry attribute in the copy | Signature differs; diagnostic identifies the exact field |\n| Change child order or meaningful text | Difference retained\u2014not normalized away |\n| Change one element of a synthetic numerical state array | Full-state verifier detects it and saves both values |\n| Unsupported opaque object | Explicit unsupported-field result, not assumed equivalence |\n\nThese tests qualify the comparator. They do **not** qualify an actual simulator restart.\n\n## 3. At most two saved-action restart checks\n\nFreeze the repaired verifier before these checks. Use the existing **C and B demo0012/loading/visible-fixture/seed912171** archives, branching at the already-selected **tick100/query2**.\n\nFor each source, once:\n\n1. Replay its archived prefix to tick100.\n2. Capture the complete pre-restore state.\n3. Apply the **unchanged** copy/restore procedure.\n4. Save the complete post-restore state and field-level comparison before asserting.\n5. If the state check passes, execute **the next 30 archived actions** with the original observation/render call order; compare against the corresponding archived trace.\n\n**No model loading or inference is needed.** No crossover, extra `forward()`, new seed or controller adjustment belongs in this qualification.\n\nRetain full physical/controller checks, including controls, applied forces, warm-start state, cached quantities and command history. XML-content equality cannot replace those checks: MuJoCo\u2019s continuation can depend on actuator, callback and solver state beyond positions and velocities. [MuJoCo](https://mujoco.readthedocs.io/en/2.3.7/programming/simulation.html)\n\n## 4. Decision gate\n\n| Result | Action |\n|---|---|\n| Both content/state comparisons and saved-action continuations pass | **Restart qualification passes for the repaired verifier and these states.** |\n| XML content matches but another state field differs | Save the exact difference and stop; no quiet exclusion or tolerance change |\n| State signature passes but the continuation diverges | Restoration remains unqualified; preserve the first divergence |\n| Tests or qualification cannot finish within 30 minutes | Close with the specific blocker; no repair-and-retry loop |\n\n**A successful new qualification does not retroactively prove that pointer strings were the original attempt\u2019s only discrepancy.**\n\nOn a pass, **proceed without another approval round to the already-authorized LOAD05 pre-contact crossover**, in a new, separately frozen execution namespace: the same two states, C/B checkpoints, paired noise and maximum four 90-step continuations. Preserve its original scientific question and existing execution cap; add no conditions.\n\nThe immediate work is therefore **content-safe signatures \u2192 recorded before/after evidence \u2192 two restart checks**. This repairs a demonstrated measurement defect without weakening the physical gate or turning a failed restart into model evidence.\n\nPredecessor stopped LOAD05 #11044; no prior crossover result. Separate worktree, branch and namespace; Powerglide compute, Mint FastDrive backup. On a pass, continue the already-scoped crossover without another permission request.",
+          "completionSummary": "1) What was done: Completed the separately frozen 30-minute LOAD05-Q attempt. Six serializer tests passed. One C archived 60-action prefix matched RGB/proprio and trace. Copy/restore then differed in 25 native constraint arrays; independent before/after arrays/XML/signatures and exact differences were saved before stopping. B qualification, resumed chunk and all model/crossover inference were not run. No retries. Final code/report 02f05bc8659a51857ce0bbcd36feccb2fa783d58; 29 files / 39,713,810 bytes source/destination SHA verified on Mint, manifest eb3999c3c315fa9693887b59375dcd7153fc948b7cd20b72924121452fa7509f. Done means the bounded failed qualification is documented, not restart success.\n2) Future improvements: Replace object-copy restart with a separately specified deterministic prefix reconstruction, or qualify native serialization. Four unstable efc_AR fields may be inactive/undefined; do not call that source-state corruption without evidence or silently exclude them. No post-restore physics was executed.\n3) Separated work: LOAD05 #11044 remains blocked with zero crossed continuations. LOAD04 #11040 destination-selection results unchanged. Planner asked for one minimal next protocol."
+        },
+        {
+          "id": 11046,
+          "title": "LOAD05-R \u2014 Reconstruct pre-contact states and cross C/B acquisition policies",
+          "status": "Done",
+          "updatedAt": "2026-10-14 17:51:34",
+          "columnId": 75,
+          "description": "## EXECUTE NEXT: LOAD05-R \u2014 deterministic-prefix crossover, not native pickle\n\n**Use the reset-plus-prefix route. Do not spend another qualification cycle on copying or pickling live physics.**\n\nYes: **independently reconstructing the same branch state can support the causal comparison**, provided the physical/controller state, actor inputs and native continuations pass the checks below. The requirement is equivalent execution conditions\u2014not identical allocator contents or memory addresses.\n\nThe two stopped attempts remain **restart-qualification failures, not model results**. My earlier all-public-arrays comparison was too broad: it failed to distinguish valid simulation fields from solver-conditional or undefined storage.\n\n## 1. Freeze a semantic state comparator first\n\nAllocate **at most ten minutes**, using the pinned MuJoCo 2.3.7 source already available locally. Do not repair the simulator.\n\nRecord the actual solver, integrator, Jacobian mode, relevant flags, timestep and active sizes. Replace indiscriminate public-array hashing with a versioned field manifest:\n\n| Category | Comparison rule |\n|---|---|\n| **Physical and controller state** | Retain positions, velocities, actuator state/control, applied forces, warm-start state, mocap/user state, controller references and other behavior-relevant wrapper state |\n| **Active contacts and constraints** | Compare their valid, populated contents\u2014not merely counts |\n| **Derived kinematics/render state** | Compare at the same native computation point, without recomputing them |\n| **Solver-conditional fields** | Include only when defined for the actual solver and computation stage; exclusions require a pinned-source justification |\n| **Process identity/diagnostics** | Structural XML comparison; separately record excluded addresses, wall-clock timers and other nonbehavioral metadata |\n\nMuJoCo\u2019s documented state includes more than qpos/qvel: callbacks, controls, mocap and solver warm-start information can affect continuation. Those remain part of qualification. [MuJoCo](https://mujoco.readthedocs.io/en/2.3.7/programming/simulation.html)\n\nFor `efc_AR*`, **do not infer inactivity from strange numbers alone**. Check `mj_isDual(m)` and the pinned allocation/computation path. MuJoCo identifies PGS as dual and CG/Newton as primal. Exclude these fields only when the actual path establishes that they are uncomputed and unused here. Apply the same reasoning separately to sparse-storage metadata. [MuJoCo](https://mujoco.readthedocs.io/en/2.3.7/APIreference/APIfunctions.html)\n\n**Do not exclude all `efc_*` arrays.** The documented contact/constraint arrays have different meanings and active extents; `efc_J`, forces, constraint state and associated populated fields cannot be dismissed because a different buffer is inactive. Compare engine-defined live ranges, not unused capacity. [MuJoCo](https://mujoco.readthedocs.io/en/2.3.7/APIreference/APItypes.html)\n\nPreserve the old raw dumps and document every exclusion **before any new continuation**. Do not zero buffers, change the solver or add initialization calls to make signatures agree.\n\n## 2. Reconstruct each branch by executing its history\n\nUse a new private namespace and protocol. Preserve:\n\n- Exact LOAD04 **C and B checkpoint hashes**.\n- **demo0012, fixture visible, loading instruction, seed912171**.\n- Original reset procedure and **60 archived pre-branch actions**.\n- Branch boundary **tick100/query2**.\n- H30, native timing, preprocessing, controller and original numerical settings.\n\nFor each branch, create an independent environment, perform the normal reset, and replay its source model\u2019s archived prefix through the **same adapter/controller path**. Keep that simulator instance alive and continue in place.\n\n**No live-state copy, pickle restore, `mj_setState` shortcut, direct pose injection or extra `forward()`.** Preserve the original observation/render call order: recomputing cached quantities at a different point can change which state the cameras and controller observe. [MuJoCo](https://mujoco.readthedocs.io/en/2.3.7/programming/simulation.html)\n\nReconstruct the nonphysics context too: previous-target proprioception, query index, pending-action cursor, instruction and any native image/history buffers. Do not replace a mismatching current render with an archived image to force an input match.\n\nAt tick100, require:\n\n- No prior gripper\u2013brick contact.\n- The block remains upright and within the existing pre-acquisition tolerances.\n- Recorded physical/controller fields and actual prepared inputs match the source archive under the **already-frozen** comparison rules.\n\nCopy numerical arrays into independent diagnostic records when saving them. MuJoCo\u2019s Python bindings expose mutable underlying memory; retaining array views can otherwise make an earlier snapshot change as simulation advances. [MuJoCo](https://mujoco.readthedocs.io/en/2.3.7/python.html)\n\n## 3. Four branches total; diagonals first\n\nEach branch gets its own fresh reset and source-prefix replay:\n\n| Order | Prefix source | Continuation checkpoint | Role |\n|---:|---|---|---|\n| **1** | C | C | Qualify native C continuation |\n| **2** | B | B | Qualify native B continuation |\n| **3** | C | B | Test B from C\u2019s pre-contact state |\n| **4** | B | C | Test C from B\u2019s pre-contact state |\n\nThis gives **two independently reconstructed prefixes per source**, without adding separate repeat-only rollouts.\n\nUse the archived noise tensors for the corresponding query indices, identically across checkpoints within each source-state pair. Confirm actual inputs and noise before inference. Do not generate extra queries merely to advance RNG.\n\nRun **90 control steps after the branch point**, at most three generated chunks per branch. No settling extension, rescue, guard or final-task evaluation.\n\n### Diagonal gate\n\nBefore either crossed continuation runs, both diagonal branches must match their archived:\n\n- Prepared inputs, noise and raw predictions.\n- Applied commands and physical/controller traces.\n- Acquisition-phase behavior, including the upright-versus-tipping distinction.\n\nMatching only \u201cC upright/B tipped\u201d is insufficient.\n\n### Independent-prefix gate\n\nBefore branch 3 or 4 queries its alternative checkpoint, compare its reconstructed tick100 state and complete input packet with the corresponding saved diagonal branch.\n\nFor active cache fields absent from the original LOAD04 archive, report **agreement between the two new prefix reconstructions**, not invented historical equality. The diagonal\u2019s archived input/action/trajectory agreement supplies the complementary execution check.\n\n**Do not require C\u2019s state to equal B\u2019s state.** Their difference is the factor being crossed.\n\n## 4. What counts as an equivalent branch state?\n\nFor this experiment, accept **qualified prefix reconstruction** when:\n\n1. The original recorded state and actor inputs are reproduced.\n2. Two independent reconstructions of each source prefix agree on the defined behavior-relevant state.\n3. The matching-checkpoint continuation reproduces the archived trajectory under the original tolerances.\n\nThat is sufficient to run the prespecified crossover. **It is not certification of native copying/pickling, byte identity of every memory location, or universal determinism.**\n\nIf any currently read behavior-relevant field remains unexplained, stop. Do not move it into the exclusion list because it differs.\n\n## 5. Outcomes and interpretation\n\nKeep the original acquisition measurements: first contact geometry, finger aperture and command, requested/measured approach, relative velocity, tilt trajectory, bilateral contact and supported lift.\n\n| Crossover pattern | Supported interpretation |\n|---|---|\n| B tips from both source states; C remains upright from both | B\u2019s post-boundary action policy is implicated |\n| Both tip from B\u2019s state, both remain upright from C\u2019s | The earlier approach state is implicated |\n| Outcome depends on both | A state\u2013policy interaction |\n| Either diagonal fails qualification | No crossover conclusion; preserve the first divergence |\n\nA prefix state includes pose, velocity, aperture, command history and observation context. A state-following result does **not** isolate one millimetre offset or one contact force.\n\nThe new branches remain diagnostic continuations, outside LOAD04 success counts and all training data.\n\n## 6. Time cap and stop rules\n\n**One 60-minute window:**\n\n| Boundary | Required progress |\n|---|---|\n| **T+10 min** | Comparator manifest, source justifications and protocol frozen |\n| **T+30 min** | Both native diagonal branches qualified |\n| **T+45 min** | Both crossed branches finished |\n| **T+60 min** | Analysis and verified private archive |\n\nStop at the first unexplained active-state, input, noise or trajectory mismatch. Save both sides and field-level differences **before asserting**. No solver change, tolerance widening, alternate seed, pickle fallback or repair-and-rerun loop.\n\n**Proceed with LOAD05-R.** The objective is to answer why B tips the brick before acquisition\u2014not to turn this project into a general MuJoCo checkpointing investigation.\n\nSeparate follow-up to stopped LOAD05 #11044 and failed LOAD05-Q #11045. Private branch/worktree; Powerglide compute, Mint FastDrive evidence. Earlier outputs stay unchanged.",
+          "completionSummary": "1) What was done: Froze semantic comparator and independently replayed both native C/B prefixes and 90-step continuations. Both exactly matched archived inputs/noise/predictions and recorded trajectories. C lifted at 1.57\u00b0 tilt; B at 62.76\u00b0. Third prefix differed only in compiled XML statistic.meansize, so the frozen attempt stopped before any crossed query. Raw evidence (70 files, 2,792,579-byte tar) privately pushed and downloaded from GitHub with SHA256 ca5126d446368162c4f8150d9d309d3d84264af61935c9ef7b7fc2efc2b805ea verified. Commit 34b8bc213fc14181c7a6fca8ad1c6c8f03072c5b.\n2) Future improvements: Single visualization-scale comparison exception was independently justified and frozen in R2, never silently applied to this attempt. Mint mirror pending connectivity.\n3) Separated work: LOAD05-R2 #11047 reuses these qualified controls and executes only the two missing crossed-policy branches. LOAD04 #11040 benchmark counts unchanged."
+        },
+        {
+          "id": 11047,
+          "title": "LOAD05-R2 \u2014 Complete two crossed-policy acquisition branches",
+          "status": "Done",
+          "updatedAt": "2026-10-14 17:51:35",
+          "columnId": 75,
+          "description": "## APPROVED \u2014 EXECUTE LOAD05-R2 with only the two missing crossovers\n\n**Reuse the qualified C\u2192C and B\u2192B diagonals. Four fresh branches are unnecessary.** Preserve R as a stopped attempt; R2 is an explicit follow-up with one narrowly defined comparator amendment.\n\nMuJoCo 2.3.7 documents `statistic.meansize` as the length scale for visualization decorations, with no other side effect. That supports excluding this attribute from physical-equivalence comparison, **while retaining the camera/input checks**. Do not exclude the whole `statistic` element: other attributes have different semantics. [MuJoCo](https://mujoco.readthedocs.io/en/2.3.7/XMLreference.html)\n\n### Freeze this amendment before inference\n\n| Item | R2 requirement |\n|---|---|\n| **Only new exclusion** | The `meansize` attribute of the XML `statistic` element, identified structurally\u2014not by the fragile child index `4` |\n| **Preservation** | Save complete original XML, both values and raw fingerprints. Change the comparison only; do not modify either live model\u2019s value |\n| **Runtime** | Same execution code as R except the comparator/manifest change; same checkpoint, configuration and environment hashes |\n| **Other checks** | Preserve every existing physical, active-constraint, contact, controller, history, RNG and input check, with unchanged tolerances |\n| **Usage qualification** | Cite the existing local usage audit confirming no custom actor/controller dependency on `meansize`; retain exact fixed-camera RGB and prepared-input equality |\n\n### Reuse the diagonals explicitly\n\nReference R\u2019s exact diagonal artifacts and qualification results in R2. Re-evaluate their **saved comparisons** under the amended comparator without rerunning physics.\n\nLabel them **\u201cqualified controls reused from LOAD05-R,\u201d** not newly executed R2 controls. Their passed archived predictions and trajectories remain valid evidence.\n\n### Execute exactly two fresh independent-prefix branches\n\n| Branch | Reconstruction | Continuation |\n|---|---|---|\n| **C\u2192B** | Native reset plus C\u2019s exact archived prefix to tick100/query2 | B for **90 steps** |\n| **B\u2192C** | Native reset plus B\u2019s exact archived prefix to tick100/query2 | C for **90 steps** |\n\nBefore each first crossed query, compare the reconstructed state and actual prepared tensors with its **corresponding source diagonal**. Only the declared `meansize` difference is newly permitted. Keep the same archived per-query noise, H30, observations and controller.\n\n**After the checkpoint swap, different predictions and trajectories are the experimental result\u2014not a parity failure.** Continue checking actual noise injection and execution contracts, but do not require B\u2019s predictions to equal C\u2019s.\n\n### Stop and report\n\nSet a **20-minute R2 cap**. Stop at any additional unexplained pre-branch difference, failed input/noise qualification or runtime error. No new exclusions, tolerance changes, retries or simulator-copy fallback.\n\nReport the four-cell acquisition table using the two inherited diagonals and two new crossovers, with contact, tilt, bilateral acquisition and supported-lift events. Do not add final-placement claims or benchmark counts.\n\n**Proceed now. The demonstrated visualization-metadata difference should no longer block the actual acquisition question.**\n\nReuse the two qualified native controls from LOAD05-R #11046. Preserve the stopped attempts. One structural XML meansize comparison exception only; no live model change, 20-minute cap, no retries.",
+          "completionSummary": "1) What was done: Completed the two qualified crossed branches, 90 steps and 3 native H30 chunks each. C\u2192B lifted upright at 0.86\u00b0; B\u2192C at 1.62\u00b0. Combined with reused R controls C\u2192C 1.57\u00b0 and B\u2192B 62.76\u00b0, only B from its own approach tipped. This supports a state\u2013policy interaction on one inspected scene/noise seed. B\u2192B contacts while open with finger1 descending ~171mm/s relative to block; other cells contact while closing at ~7\u20139mm/s. Exact physical/controller/input/noise qualification passed, only predeclared XML statistic.meansize comparison exemption. Full report, four-cell video, chart, contact traces and raw archive saved. Private branch research/load05r2-acquisition-crossovers; commit ec406e49d751a7a6d050349d4fc147ddaf5089c2. Source raw archive SHA256 133279f74e20a1308918b47920b8567a8a510918b2406013d40a3da001631f34.\n2) Future improvements: Test acquisition timing/approach interaction with a bounded intervention before targeted training. No final-placement, yaw-recognition or population-generalization claim. Mint mirror pending network recovery; independent private GitHub archive verification recorded separately.\n3) Separated work: LOAD05-R #11046 controls reused and explicitly labelled. Original LOAD05/Q stops preserved. Planner asked for next bounded diagnostic; no broad retraining started."
+        },
+        {
+          "id": 11044,
+          "title": "LOAD05 \u2014 Pre-contact C/B acquisition crossover",
+          "status": "Done",
+          "updatedAt": "2026-10-14 17:55:46",
+          "columnId": 75,
+          "description": "Amended BEFORE any LOAD05 simulator execution, 14 October. The planner superseded its initial post-grasp proposal after the completed read-only LOAD04 phase audit. This is a pre-contact acquisition diagnostic, not a placement evaluation.\n\n**Yes\u2014move LOAD05\u2019s branch point to before first contact. Replace the unexecuted post-grasp crossover; do not add another experiment.**\n\nYour trace localizes the failure much earlier than my previous proposal assumed: **the brick is already tilted approximately 61\u201362\u00b0 when bilateral contact begins, and 63\u201364\u00b0 at the first supported lift.** Release does not initiate the failure. The small commanded and actual wrist-axis tilt also argues against a large wrist-roll error.\n\nThe next question is therefore about **approach, finger-contact geometry and acquisition timing**, without yet assuming which offset or command causes the tipping. A post-grasp crossover would primarily test recovery from an already-tipped object.\n\n## EXECUTE NEXT: LOAD05 \u2014 pre-contact C/B crossover\n\nSeal LOAD04 first. Freeze this amendment before any LOAD05 outcomes. Keep **visible-fixture demo0012, loading instruction, seed912171**, and the exact C/B checkpoints.\n\n### 1. Select one common branching time\n\nFrom the archived C and B traces, identify the **last shared native query boundary strictly before the first gripper\u2013brick contact in either execution**.\n\nAt that boundary, require both bricks to remain upright and within the existing post-reset position/stability tolerances.\n\n**Do not use \u201cbefore step110\u201d as the rule:** step110 is when tilt crosses 15\u00b0, not necessarily when the contact that initiates rotation begins. Do not insert an off-schedule query.\n\nSave each model\u2019s complete state at this same control tick:\n\n- \\(S_C\\): C\u2019s pre-contact state and native input packet.\n- \\(S_B\\): B\u2019s pre-contact state and native input packet.\n\n### 2. Run the four crossed continuations\n\n| Starting state | Continue with C | Continue with B |\n|---|---|---|\n| **\\(S_C\\)** | Native C reference | Does B\u2019s next behavior cause tipping from C\u2019s approach state? |\n| **\\(S_B\\)** | Can C acquire upright from B\u2019s approach state? | Native B reference |\n\nUse the archived matched noise sequence at corresponding query indices. Within each row, the checkpoints receive identical starting observations, proprioception, instruction and controller state.\n\n**Run at most 90 control steps\u2014three native chunks\u2014from the branch point**, with no added settling, correction, guard or expert intervention. This is an acquisition diagnostic, not a final-placement evaluation.\n\nIf the two complete states and input packets are identical, collapse duplicate rows and run only the two distinct checkpoint continuations.\n\n### 3. Qualify restoration, not a new controller\n\nRetain the existing allowance of **at most two short saved-action prefix qualifications**. Verify the prepared tensors and complete physical/controller state, including warm-start and actuator state\u2014not just qpos/qvel. These additional state components can affect MuJoCo\u2019s subsequent execution. [MuJoCo](https://mujoco.readthedocs.io/en/2.3.7/programming/simulation.html)\n\nThe diagonal continuations\u2014C from \\(S_C\\), B from \\(S_B\\)\u2014must reproduce the corresponding archived phase behavior within the established qualification tolerances. If they do not, stop the crossover interpretation; do not rerun until the desired tipping pattern appears.\n\n## Evidence to record\n\nUse simulator geometry only for **offline measurement**, never as a new actor input.\n\n| Measurement | Purpose |\n|---|---|\n| First contacting robot geom, contact location and brick face | Identifies the actual contact geometry |\n| Finger aperture and opening/closing command | Separates an open-finger collision from intended closure |\n| Requested versus measured approach motion | Distinguishes policy proposal from tracking |\n| Finger-to-brick offsets and relative velocity immediately before contact | Tests approach differences without treating the EEF site as a fingertip |\n| Tilt trace, first threshold crossing, bilateral-contact time and lift orientation | Establishes when acquisition becomes compromised |\n| Full acquired grasp transform, where a supported grasp occurs | Distinguishes upright pickup from successful retention of an already-tipped brick |\n\n## Decision gate\n\n| Pattern | Supported interpretation |\n|---|---|\n| B tips from both states; C remains upright from both | B\u2019s post-branch action policy is implicated |\n| Both remain upright from \\(S_C\\), but both tip from \\(S_B\\) | Earlier approach state\u2014pose, velocity, aperture or command history\u2014is implicated |\n| Results depend on both checkpoint and starting state | A state\u2013policy interaction; not one universal bad offset |\n| Neither diagonal reproduces the archived behavior | Restart qualification failed; no causal conclusion |\n\nThese comparisons will not isolate a particular millimetre offset or prove contact causality by themselves. They identify **which part of the execution to modify next**.\n\n**Keep the separate 60-minute LOAD05 cap. No new scenes, seeds, hidden-fixture conditions or training.** The destination-selection gain remains valid; the newly localized defect is acquisition quality in demo0012. **Trace and test that first\u2014not release timing.**\n\nSource planner: https://chatgpt.com/c/6ac8f7df-fef0-83eb-98c3-48bd796980a1\nFrozen predecessor LOAD04 #11040. Separate worktree/branch; Powerglide4090 compute; MintFastDrive artifacts; no older outputs modified. Initial unexecuted post-grasp protocol retained in project notes for provenance.\n\nExecution stop, 14 October: first contacts C131/B107; branch tick100/query2. One C saved-action prefix + first chunk reproduced archived RGB/dynamic/controller traces, but full copied-state signature equality failed at restore. Stopped before any model worker, prepared tensor qualification or crossed continuation. Zero outcome retries. Raw evidence /var/tmp/typhon-load05-20261014. A copy-only source audit demonstrates 36 XML address strings can spuriously fail deepcopy equality; no saved post-restore difference means other discrepancies are not ruled out. Await separately qualified verifier repair; do not mark the causal crossover complete.\n\nSeparate follow-up LOAD05-Q #11045 passed comparator tests but failed active constraint-copy equality; zero inference. Original attempt remains frozen. LOAD05-R #11046 now reconstructs branches via the exact archived prefix, with separately frozen semantic state comparator, two qualifying diagonals before crossovers, 60-minute cap and no copy/restore. It will supply the acquisition comparison only if its gates pass.",
+          "completionSummary": "1) What was done: Original LOAD05 execution stopped at copied-state verification, with zero crossed queries. That failure remains preserved. Its acquisition question was subsequently answered by separately qualified LOAD05-R/R2 (#11046/#11047): only the balanced model from its own approach state tipped; both crossed combinations acquired upright.\n2) Future improvements: Pose-versus-gripper component isolation is LOAD06 #11048. Original attempt is not reclassified as a successful restart or added to result counts.\n3) Separated work: LOAD05-Q #11045 comparator/copy investigation; LOAD05-R #11046 native controls; LOAD05-R2 #11047 completed crossed-policy evidence. Frozen LOAD04 counts unchanged."
+        },
+        {
+          "id": 11048,
+          "title": "LOAD06 \u2014 Separate pose sequence from gripper schedule at acquisition",
+          "status": "Done",
+          "updatedAt": "2026-10-14 18:01:14",
+          "columnId": 75,
+          "description": "**This is a state\u2013policy interaction, not a uniformly bad B approach state or a uniformly bad B acquisition policy.** B acquires upright from C\u2019s state, and C acquires upright from B\u2019s state. Only their original B-state/B-policy combination tips the brick in this inspected case.\n\n**Next priority: separate the pose sequence from the gripper-closing schedule at that failing boundary.** Do not add training or a release guard.\n\n## 1. Preserve R/R2 first; Mint\u2019s power state remains unknown\n\nSeal the raw results, manifests and code on Powerglide and push the permitted small reports/manifests privately. **Do not describe that as a completed Mint backup.** The next physical test should wait for a checksum-verified independent copy on Mint, or another already-authorized backup destination.\n\nFor Nat, the accurate status is:\n\n> **Mint is unreachable through the tested SSH routes; whether it is awake is not established. Earlier verified backups remain intact as last verified. R/R2 are currently preserved on Powerglide.**\n\nPreparing the following protocol and inspecting existing action arrays can proceed while connectivity is resolved. Do not restart Powerglide or discard its live evidence to troubleshoot Mint.\n\n## 2. EXECUTE NEXT once preservation clears: LOAD06 \u2014 pose \u00d7 gripper-schedule crossover\n\n**One case, one starting state, at most four 90-step continuations. No training.**\n\nThe question is:\n\n> **Does the pre-acquisition tipping depend on B\u2019s approach pose sequence, its gripper schedule, or their combination?**\n\n\u201cOther runs first contact under CLOSE\u201d does not alone establish that B should close earlier. Their slower/different approaches may simply reach the brick later. We need to manipulate the two command components separately.\n\n### Use two existing proposals from the *same B state*\n\nTake the first 30-waypoint chunks at **tick100/query2** from:\n\n- **B\u2192B:** B\u2019s proposal from B\u2019s pre-contact state.\n- **B\u2192C:** C\u2019s proposal from that same B state.\n\n**Do not use C\u2019s proposal from C\u2019s own state.** That would reintroduce the input-state difference we just isolated.\n\nBoth donor chunks already have qualified input/noise provenance. Freeze their exact hashes.\n\n### Four conditions\n\nAll four reconstruct **B\u2019s identical pre-contact state** using the qualified deterministic reset-plus-prefix route.\n\n| Condition | First-chunk XYZ and full wrist rotation | First-chunk gripper schedule |\n|---|---|---|\n| **BB \u2014 native reference** | B | B |\n| **BC \u2014 grip-only substitution** | B | C |\n| **CB \u2014 pose-only substitution** | C | B |\n| **CC \u2014 complete donor chunk** | C | C |\n\n\u201cPose\u201d includes the complete XYZ/rotation sequence. This experiment does **not** separately isolate descent speed, lateral offset and wrist orientation.\n\nUse the native output-to-command conversion unchanged. Swap only the designated active-arm channels; retain the original inactive-arm handling. Preserve continuous gripper predictions and the resulting applied OPEN/CLOSE sequence in the record.\n\n**Do not invent an earlier close, slow down either trajectory, interpolate between models, or choose a schedule after seeing outcomes.**\n\n### Continue with B after the first chunk\n\nAt the next normal query boundary, return **every condition to checkpoint B** for the remaining 60 steps, with the archived matched noise at corresponding query indices.\n\nThe resulting observation and proprioception must reflect what that branch actually executed. Preserve the existing previous-target convention; do not supply the original B target history after executing a different pose sequence.\n\nThis preserves B as the continuing policy while testing a **single-chunk acquisition intervention**. It remains a diagnostic hybrid\u2014not an autonomous B success or a production repair.\n\n## 3. Qualify and score the two time intervals separately\n\n### Before physical execution\n\nIn a maximum ten-minute array audit, record when the donor pose and applied gripper schedules first differ.\n\n- If their gripper schedules are identical through tick110, their differences cannot explain the *earlier* tipping onset under an otherwise identical pose stream.\n- If complete command streams and handoff inputs are identical for two conditions, collapse that duplicate rather than running it twice.\n- Do not manufacture a stronger intervention to obtain a more decisive contrast.\n\nUse LOAD05-R2\u2019s accepted comparator unchanged, including only its documented exclusions. Preserve active controller and solver state; MuJoCo continuation depends on controls and warm-start state as well as positions and velocities. [MuJoCo](https://mujoco.readthedocs.io/en/2.3.7/programming/simulation.html)\n\nRun BB first. It must reproduce the archived B\u2192B behavior. CC\u2019s **first 30 steps** must reproduce the archived B\u2192C first chunk; after that it uses B rather than C, so later equality is neither required nor expected. Stop on a qualification failure\u2014no new serialization investigation inside LOAD06.\n\n### Primary endpoint: the first 30 steps\n\nThis isolates the immediate effects of the selected pose/gripper combination before a new policy query.\n\nRecord maximum object tilt, first contact, first closing command, measured aperture, contacting geom/pad, contact location and relative approach velocity. Use the existing contact instrumentation; MuJoCo exposes contact geometry identities, positions and frames for this offline analysis. [MuJoCo](https://mujoco.readthedocs.io/en/2.3.7/APIreference/APItypes.html)\n\n### Secondary endpoint: the complete 90-step segment\n\nRecord whether B subsequently achieves a supported lift while retaining the existing upright tolerance, plus tilt and grasp-relative orientation. Separate:\n\n- Preventing initial tipping.\n- Acquiring an upright grasp.\n- Preserving that grasp under subsequent B control.\n\n**No final-placement or strict-task-success claim:** this segment does not evaluate the complete task.\n\n## 4. Decision gate\n\n| Result | Supported interpretation |\n|---|---|\n| BC prevents initial tipping with B\u2019s pose sequence | Gripper scheduling contributes causally in this local combination |\n| CB prevents tipping with B\u2019s gripper schedule | The pose sequence contributes; speed versus lateral geometry remains unresolved |\n| Both substitutions work | Two alternative local interventions are sufficient\u2014not one uniquely identified cause |\n| Only CC works | Coordinated pose/gripper behavior matters; neither isolated substitution is sufficient |\n| Initial tipping is prevented, but later B control loses upright acquisition | The first-chunk repair is insufficient for the subsequent phase |\n| Qualification fails | No new causal result; preserve the exact failure |\n\nThis is one selected development state and noise realization. It cannot establish a universal \u201cclose earlier\u201d rule.\n\n## 5. Cap and data boundary\n\n**Separate 45-minute clock, beginning after the preservation prerequisite:**\n\n| Boundary | Work |\n|---|---|\n| **T+10 min** | Donor-array audit and protocol frozen |\n| **T+35 min** | At most four continuations finished |\n| **T+45 min** | Analysis, private report and verified archive |\n\nNo new model generation is needed for the first chunk; at most eight subsequent B queries are needed across four branches. Keep seeds, task text, fixture visibility, controller, H30 and physics unchanged.\n\n**All resulting hybrid traces remain development diagnostics, quarantined from training.** A successful intervention could identify what to seek in future *training-family* corrections, but it must not become a new imitation target merely because it repaired this inspected case. Learner-state corrective training requires appropriate supervision and an explicit dataset boundary. [Proceedings of Machine Learning Research](https://proceedings.mlr.press/v15/ross11a.html)\n\n**The priority order is: preserve R/R2 \u2192 inspect the two saved command streams \u2192 test this one-chunk pose/gripper crossover.** B\u2019s demonstrated task-selection gain stays intact; we are isolating its acquisition failure without replacing the whole policy or beginning another training cycle.\n\nPreservation gate cleared: R and R2 compressed raw evidence independently downloaded from private GitHub and SHA256 verified, 34b8bc213fc14181c7a6fca8ad1c6c8f03072c5b / ec406e49d751a7a6d050349d4fc147ddaf5089c2. Mint mirror is pending, not claimed complete. New 45-minute scope, separate branch/worktree/namespace.",
+          "completionSummary": "1) What was done: Ran the four prespecified same-B-state pose\u00d7grip donor combinations, then resumed B for 60 steps. Native BB tilt at supported lift62.76\u00b0, grip-only BC61.04\u00b0, pose-only CB1.12\u00b0, complete donor CC1.06\u00b0. Pose substitution alone prevented initial tipping and retained upright acquisition. Grip schedules differ only at tick124, after original tipping onset110, so 'close earlier' is not established. BB full90 and CC first30 reference parity passed. Eight B queries, no retries/training, no final-placement claim. All four remain bilateral after lift; CB emits six brief OPEN commands without measured loss, an unresolved robustness concern. Report, four-cell video/figure, full raw evidence backed up privately and independently downloaded/hashed: f90914d35e52289b445e395020ec04cbc932938c3308bbb8962bcacc907cd42c (6,533,635 bytes,96 raw files).\n2) Future improvements: Isolate XYZ vs rotation and confirm targeted acquisition correction on separate permitted training families/unchanged validation. No universal geometry/speed rule. Do not add development hybrid traces to training. Mint mirror/live OST restore remains pending #11049.\n3) Separated work: LOAD05-R2 #11047 established state\u2013policy interaction; this test isolates the pose component of its first chunk. Next bounded recommendation requested from planner; no automatic new training."
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Parked",
+      "tickets": [
+        {
+          "id": 11009,
+          "title": "PARK01 \u2014 Set-of-Mark object/region labels \u2014 withdrawn",
+          "status": "Parked",
+          "updatedAt": "2026-10-11 16:42:04",
+          "columnId": 76
+        },
+        {
+          "id": 11010,
+          "title": "PARK02 \u2014 Broader platform and simulator changes \u2014 deferred",
+          "status": "Parked",
+          "updatedAt": "2026-10-11 16:42:04",
+          "columnId": 76
+        }
+      ]
+    }
+  ],
+  "scope": "Current ticket identity, status and recent-work descriptions; historical source snapshots retained separately."
+}

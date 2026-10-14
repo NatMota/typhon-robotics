@@ -628,12 +628,60 @@
       ]
     },
     {
+      "id": "T11050",
+      "type": "experiment",
+      "label": "DATA07-R \u00b7 #11050\nQualify acquisition repairs on training families before admitting corrective data",
+      "parent_id": "S_recovery_4",
+      "x": 1220,
+      "y": 2517.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DATA07-R \u00b7 #11050",
+        "Qualify acquisition repairs on training",
+        "families before admitting corrective data"
+      ]
+    },
+    {
+      "id": "R11050",
+      "type": "result",
+      "label": "NEXT, not run: four training families, at most two qualified pose repairs, full-task scoring. No training or development-data reuse.",
+      "parent_id": "T11050",
+      "x": 1620,
+      "y": 2507.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "NEXT, not run: four training families, at",
+        "most two qualified pose repairs, full-task",
+        "scoring. No training or development-data",
+        "reuse."
+      ]
+    },
+    {
+      "id": "S_recovery_4",
+      "type": "solution",
+      "label": "Qualify training-family corrective supervision",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 2527.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Qualify training-family corrective",
+        "supervision"
+      ]
+    },
+    {
       "id": "O_recovery",
       "type": "opportunity",
       "label": "Advance phases only from trustworthy evidence",
       "parent_id": "outcome",
       "x": 420,
-      "y": 1374.75,
+      "y": 1498.25,
       "width": 350,
       "height": 72,
       "color": "#2d443b",
@@ -820,10 +868,22 @@
       "S_recovery_3"
     ],
     [
+      "S_recovery_4",
+      "T11050"
+    ],
+    [
+      "T11050",
+      "R11050"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_4"
+    ],
+    [
       "outcome",
       "O_recovery"
     ]
   ],
   "width": 2000,
-  "height": 2506.0
+  "height": 2679.0
 }

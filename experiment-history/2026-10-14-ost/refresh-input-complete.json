@@ -151,9 +151,13 @@
           ]
         ],
         [
-          "Separate acquired grasp from placement behaviour",
+          "Isolate approach state and acquisition policy",
           [
-            11044
+            11044,
+            11045,
+            11046,
+            11047,
+            11048
           ]
         ]
       ]
@@ -199,6 +203,12 @@
           [
             11041,
             11043
+          ]
+        ],
+        [
+          "Qualify training-family corrective supervision",
+          [
+            11050
           ]
         ]
       ]
@@ -251,7 +261,8 @@
             10956,
             10986,
             11012,
-            11042
+            11042,
+            11049
           ]
         ],
         [
@@ -315,7 +326,7 @@
     "11009": "PARKED: Set-of-Mark withdrawn by the user.",
     "11010": "PARKED: broader platforms and simulator changes deferred.",
     "11011": "108 paired predictions: cue sensitivity rises 0.0102 to 0.1887; wrist error remains about 80 degrees and opens at waypoint 11.",
-    "11012": "Reference-style tree restored: outcome, opportunity, solution, experiment, result. Current refresh preserves old snapshots and ticket links.",
+    "11012": "97 work items exported in reference layout with separate results. Live viewer last verified at 92; new installation waits for Mint.",
     "11013": "28 physical runs and 18 fixed-input goal probes separate grasp and destination failures; expert feasibility established.",
     "11014": "Nine live trials: 3 API choices executed 62 targets; 33/36 replies UNKNOWN. Reference pickup/place 1/2 vs 0/2 live variants.",
     "11015": "Investigation concluded. Assisted correction works, but generic video-to-action transfer and extra benefit from intermediate video were not established.",
@@ -347,13 +358,19 @@
     "11041": "Small point-cloud PPO pilot: adaptive reset sampling has no demonstrated advantage. All five policies 0/4 full starts. Separate from X-VLA.",
     "11042": "Full backup reconciled: 906,507 files, 299.6 GB, no integrity errors. Labs and checkpoint checks saved. Fresh-machine restore untested.",
     "11043": "Frozen 32-rollout follow-up: all four policies 0/4 full starts and zero new grasps. Release-only matches near-goal success; park further PPO.",
-    "11044": "BLOCKED at full-state restore verification. One saved-action prefix; zero model queries or crossovers. XML identity bug found; repair must qualify separately."
+    "11044": "Original restart qualification stopped. The causal comparison was completed separately in R2; no original crossover outcome.",
+    "11045": "Content checks pass; copied solver-constraint state mismatches. Stopped before model inference. Failed qualification preserved.",
+    "11046": "Both native controls reproduce. Crossed test stopped only on an XML visual statistic; controls subsequently reused in R2.",
+    "11047": "Only B from its own state tips. Crossed pickups are upright (0.86 and 1.62 degrees). State-policy interaction in one inspected case.",
+    "11048": "Pose-only substitution fixes acquisition: 1.12 versus 62.76 degrees tilt. Grip-only does not. B resumes; no full-placement or training claim.",
+    "11049": "BLOCKED: Mint SSH and viewer unreachable. New raw evidence privately backed up and independently hashed; mirror and live refresh pending.",
+    "11050": "NEXT, not run: four training families, at most two qualified pose repairs, full-task scoring. No training or development-data reuse."
   },
   "tickets": [
     {
-      "id": 11044,
-      "title": "LOAD05 \u2014 Pre-contact C/B acquisition crossover",
-      "status": "Blocked"
+      "id": 11050,
+      "title": "DATA07-R \u2014 Qualify acquisition repairs on training families before admitting corrective data",
+      "status": "Next"
     },
     {
       "id": 10984,
@@ -388,6 +405,11 @@
     {
       "id": 11003,
       "title": "REL03 \u2014 Evaluate offline value ranking or PPO/DPPO only with adequate action support",
+      "status": "Blocked"
+    },
+    {
+      "id": 11049,
+      "title": "OPS07 \u2014 Restore Mint access and mirror latest experiment evidence and OST",
       "status": "Blocked"
     },
     {
@@ -793,6 +815,31 @@
     {
       "id": 11040,
       "title": "LOAD04 \u2014 Counterbalanced task supervision in identical scenes",
+      "status": "Done"
+    },
+    {
+      "id": 11045,
+      "title": "LOAD05-Q \u2014 Repair content signatures and qualify saved-action restart",
+      "status": "Done"
+    },
+    {
+      "id": 11046,
+      "title": "LOAD05-R \u2014 Reconstruct pre-contact states and cross C/B acquisition policies",
+      "status": "Done"
+    },
+    {
+      "id": 11047,
+      "title": "LOAD05-R2 \u2014 Complete two crossed-policy acquisition branches",
+      "status": "Done"
+    },
+    {
+      "id": 11044,
+      "title": "LOAD05 \u2014 Pre-contact C/B acquisition crossover",
+      "status": "Done"
+    },
+    {
+      "id": 11048,
+      "title": "LOAD06 \u2014 Separate pose sequence from gripper schedule at acquisition",
       "status": "Done"
     },
     {
