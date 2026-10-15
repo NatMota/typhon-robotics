@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "epoch": 1792104761.9322343,
+  "six_trace_summaries": 6,
+  "selections": [
+    {
+      "case": "init-demo_0003-loading-912172",
+      "earliest_contact_tick": 413,
+      "shared_query_index": 2,
+      "shared_query_tick": 403,
+      "original_policy_seed": 912172,
+      "states": [
+        {
+          "key": "init-demo_0003-loading-912172-Q0",
+          "model": "Q0",
+          "input_hashes": {
+            "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+            "image_input": "c3e53c369cccf296af527a5e62e085970db0a205f2bac9401a6db019d5e4273b",
+            "image_mask": "cfdcfa2a1beb5ec14416cc2c1bc9ee7eb06de6b23a0e6296db5437f501cbb6a9",
+            "proprio": "a8003c86c58797c39ea578ff9b1248c7cf9a3e0ab2b1598a1f989eb5539da3a8",
+            "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+          },
+          "effective_proprio_sha256": "a8003c86c58797c39ea578ff9b1248c7cf9a3e0ab2b1598a1f989eb5539da3a8",
+          "noise_hashes": [
+            "34e6ff6c77b69ccbe79c09e85d81620f5b5431ae8872eac1999d4fabf8fb97ff",
+            "f0619524f2ee323bf39a8af792641831965c19052d6e9dd24534ce5ecaf45ac6"
+          ]
+        },
+        {
+          "key": "init-demo_0003-loading-912172-Q1",
+          "model": "Q1",
+          "input_hashes": {
+            "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+            "image_input": "c7a9997df46f8b1f8d7910bf7b14b66853f74c59db06c09a60887cbe150dc3e1",
+            "image_mask": "cfdcfa2a1beb5ec14416cc2c1bc9ee7eb06de6b23a0e6296db5437f501cbb6a9",
+            "proprio": "0af1131329a6534b67c708815e5abaf550757f84e67da537fb2b3ac4cd6c4428",
+            "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+          },
+          "effective_proprio_sha256": "0af1131329a6534b67c708815e5abaf550757f84e67da537fb2b3ac4cd6c4428",
+          "noise_hashes": [
+            "34e6ff6c77b69ccbe79c09e85d81620f5b5431ae8872eac1999d4fabf8fb97ff",
+            "f0619524f2ee323bf39a8af792641831965c19052d6e9dd24534ce5ecaf45ac6"
+          ]
+        }
+      ],
+      "effective_packets_identical": false,
+      "deduplicate": false
+    },
+    {
+      "case": "init-demo_0005-loading-912171",
+      "earliest_contact_tick": 406,
+      "shared_query_index": 2,
+      "shared_query_tick": 396,
+      "original_policy_seed": 912171,
+      "states": [
+        {
+          "key": "init-demo_0005-loading-912171-Q0",
+          "model": "Q0",
+          "input_hashes": {
+            "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+            "image_input": "58c7988dac60be982b5c8f8b18c59d3e5f402b3a1e094915b593214f36f4efa1",
+            "image_mask": "cfdcfa2a1beb5ec14416cc2c1bc9ee7eb06de6b23a0e6296db5437f501cbb6a9",
+            "proprio": "23a564081a6f92958384719bed433283ee81756bc6e66b5ae7b2b5585017c0c2",
+            "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+          },
+          "effective_proprio_sha256": "23a564081a6f92958384719bed433283ee81756bc6e66b5ae7b2b5585017c0c2",
+          "noise_hashes": [
+            "34e6ff6c77b69ccbe79c09e85d81620f5b5431ae8872eac1999d4fabf8fb97ff",
+            "f0619524f2ee323bf39a8af792641831965c19052d6e9dd24534ce5ecaf45ac6"
+          ]
+        },
+        {
+          "key": "init-demo_0005-loading-912171-Q1",
+          "model": "Q1",
+          "input_hashes": {
+            "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+            "image_input": "c32931476092413e59a130e8ba57efcb6748e8c0eef958999c47e246fac836f2",
+            "image_mask": "cfdcfa2a1beb5ec14416cc2c1bc9ee7eb06de6b23a0e6296db5437f501cbb6a9",
+            "proprio": "94f429c8e4d4040d33eb018241ca73fcc7b439acc310614239f8a3cbdc82b01d",
+            "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+          },
+          "effective_proprio_sha256": "94f429c8e4d4040d33eb018241ca73fcc7b439acc310614239f8a3cbdc82b01d",
+          "noise_hashes": [
+            "34e6ff6c77b69ccbe79c09e85d81620f5b5431ae8872eac1999d4fabf8fb97ff",
+            "f0619524f2ee323bf39a8af792641831965c19052d6e9dd24534ce5ecaf45ac6"
+          ]
+        }
+      ],
+      "effective_packets_identical": false,
+      "deduplicate": false
+    }
+  ],
+  "new_model_calls": 0
+}

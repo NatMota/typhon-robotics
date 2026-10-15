@@ -1,0 +1,177 @@
+{
+  "experiment": "INIT08",
+  "ticket": 11079,
+  "cases": [
+    "init-demo_0003-loading-912172",
+    "init-demo_0005-loading-912171"
+  ],
+  "weights": {
+    "Q0": {
+      "path": "/var/tmp/typhon-init07-20261015/train-Q0/step3000.pt",
+      "sha256": "54c86e744e0c66cd5a55f81b56b949cd71000ed01726125550e878dcfaed081c"
+    },
+    "Q1": {
+      "path": "/var/tmp/typhon-init07-20261015/train-Q1/step3000.pt",
+      "sha256": "26d573eb90f791d9af86bbff30e138f51c5aa658ac7abefe76787ba352363a7a"
+    }
+  },
+  "selections": [
+    {
+      "case": "init-demo_0003-loading-912172",
+      "earliest_contact_tick": 413,
+      "shared_query_index": 2,
+      "shared_query_tick": 403,
+      "original_policy_seed": 912172,
+      "states": [
+        {
+          "key": "init-demo_0003-loading-912172-Q0",
+          "model": "Q0",
+          "input_hashes": {
+            "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+            "image_input": "c3e53c369cccf296af527a5e62e085970db0a205f2bac9401a6db019d5e4273b",
+            "image_mask": "cfdcfa2a1beb5ec14416cc2c1bc9ee7eb06de6b23a0e6296db5437f501cbb6a9",
+            "proprio": "a8003c86c58797c39ea578ff9b1248c7cf9a3e0ab2b1598a1f989eb5539da3a8",
+            "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+          },
+          "effective_proprio_sha256": "a8003c86c58797c39ea578ff9b1248c7cf9a3e0ab2b1598a1f989eb5539da3a8",
+          "noise_hashes": [
+            "34e6ff6c77b69ccbe79c09e85d81620f5b5431ae8872eac1999d4fabf8fb97ff",
+            "f0619524f2ee323bf39a8af792641831965c19052d6e9dd24534ce5ecaf45ac6"
+          ]
+        },
+        {
+          "key": "init-demo_0003-loading-912172-Q1",
+          "model": "Q1",
+          "input_hashes": {
+            "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+            "image_input": "c7a9997df46f8b1f8d7910bf7b14b66853f74c59db06c09a60887cbe150dc3e1",
+            "image_mask": "cfdcfa2a1beb5ec14416cc2c1bc9ee7eb06de6b23a0e6296db5437f501cbb6a9",
+            "proprio": "0af1131329a6534b67c708815e5abaf550757f84e67da537fb2b3ac4cd6c4428",
+            "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+          },
+          "effective_proprio_sha256": "0af1131329a6534b67c708815e5abaf550757f84e67da537fb2b3ac4cd6c4428",
+          "noise_hashes": [
+            "34e6ff6c77b69ccbe79c09e85d81620f5b5431ae8872eac1999d4fabf8fb97ff",
+            "f0619524f2ee323bf39a8af792641831965c19052d6e9dd24534ce5ecaf45ac6"
+          ]
+        }
+      ],
+      "effective_packets_identical": false,
+      "deduplicate": false
+    },
+    {
+      "case": "init-demo_0005-loading-912171",
+      "earliest_contact_tick": 406,
+      "shared_query_index": 2,
+      "shared_query_tick": 396,
+      "original_policy_seed": 912171,
+      "states": [
+        {
+          "key": "init-demo_0005-loading-912171-Q0",
+          "model": "Q0",
+          "input_hashes": {
+            "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+            "image_input": "58c7988dac60be982b5c8f8b18c59d3e5f402b3a1e094915b593214f36f4efa1",
+            "image_mask": "cfdcfa2a1beb5ec14416cc2c1bc9ee7eb06de6b23a0e6296db5437f501cbb6a9",
+            "proprio": "23a564081a6f92958384719bed433283ee81756bc6e66b5ae7b2b5585017c0c2",
+            "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+          },
+          "effective_proprio_sha256": "23a564081a6f92958384719bed433283ee81756bc6e66b5ae7b2b5585017c0c2",
+          "noise_hashes": [
+            "34e6ff6c77b69ccbe79c09e85d81620f5b5431ae8872eac1999d4fabf8fb97ff",
+            "f0619524f2ee323bf39a8af792641831965c19052d6e9dd24534ce5ecaf45ac6"
+          ]
+        },
+        {
+          "key": "init-demo_0005-loading-912171-Q1",
+          "model": "Q1",
+          "input_hashes": {
+            "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+            "image_input": "c32931476092413e59a130e8ba57efcb6748e8c0eef958999c47e246fac836f2",
+            "image_mask": "cfdcfa2a1beb5ec14416cc2c1bc9ee7eb06de6b23a0e6296db5437f501cbb6a9",
+            "proprio": "94f429c8e4d4040d33eb018241ca73fcc7b439acc310614239f8a3cbdc82b01d",
+            "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+          },
+          "effective_proprio_sha256": "94f429c8e4d4040d33eb018241ca73fcc7b439acc310614239f8a3cbdc82b01d",
+          "noise_hashes": [
+            "34e6ff6c77b69ccbe79c09e85d81620f5b5431ae8872eac1999d4fabf8fb97ff",
+            "f0619524f2ee323bf39a8af792641831965c19052d6e9dd24534ce5ecaf45ac6"
+          ]
+        }
+      ],
+      "effective_packets_identical": false,
+      "deduplicate": false
+    }
+  ],
+  "source_sha256": {
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-loading-912172/episode.json": "5e7811ce1e2049df90ab9ae32bca8f786f1c6a02794ac5a0dfe49dc083dd05f0",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-loading-912172/summary.json": "c0caff4b3490554b4533139ef6210a7756a0ff4dea9d15c5ffef4018d6f9f848",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-loading-912172/controller_trace.jsonl.gz": "4ca9fc0c896b659c724f696b6c8951e8c8a152c24d8bb5c4b730294e8615bcf6",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-loading-912172/trajectory.jsonl.gz": "c1d2d92df558d670e04922038e0ddaca5dad8431f92185abdcb75096b8df1683",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-loading-912172/policy_io.npz": "559fc6aca0b483e0544e94d1e32aea49a4e6bdbf57fdc74e96e72668345f6c49",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-loading-912172/predictions.npz": "47cac56733b9fd8b2a25e74cab064c7dafa9350f671381f5c084b1fdf962f765",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-loading-912172/inference.json": "775a9cde600144f2c92860073db54ae99b05cc20ccfb4e930a9a98da6995949a",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0003-loading-912172/episode.json": "5c4565e1c9a7797152619f36ece4b8d02b59ff14a4575b5ff0e40a4ab862ff2d",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0003-loading-912172/summary.json": "b3d0be2ad509c3aa70e4a303fe05098cf80c81d9dde24dedca0a5d801f7972ea",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0003-loading-912172/controller_trace.jsonl.gz": "d3218f8a1bf151b3a9902c0bf8e30e4f2b20a455b11cdb84707b6f28b181686c",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0003-loading-912172/trajectory.jsonl.gz": "2f215af8662125092e25caefb78018baeb5f77a98d7d00b9c3a771929e27f97b",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0003-loading-912172/policy_io.npz": "24709413c92c7bf01bbdfd744630c662fcc4d45a985c1d5f89ddd3c7c882bcae",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0003-loading-912172/predictions.npz": "88603b03792a6edc90b9f45e6850f60ae836aeb32a8d8d14e6e6778b8a2fbe9e",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0003-loading-912172/inference.json": "d0e879558a3f2238b87a5e990314587a166e3d6aa76f861f102d7a62a693e730",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/episode.json": "b640a56f5d201e50402300a0c2139212189795e66517f1a1694d326573d6299b",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/summary.json": "de3a499a60b37cf7e7f62da5aca0978466e98790964f9022bd1475749ee593a2",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/controller_trace.jsonl.gz": "44cc5a8e476265c8e42864292ccf5cc78903c3444b529c634b8989979c3fc3a3",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/trajectory.jsonl.gz": "0009d8f9b6e7cd874fa60e3292a2f94a59c0f19749b329ab636ba448773dd9e1",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/policy_io.npz": "361536f40b2f2b36ca76cb005c8c646d358f3a2bb0832f434f2a71f2a1672ba0",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/predictions.npz": "4f12d9fce5846b40dbe348c33cc8cd365114b3b573f3657949def7121f1c1450",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/inference.json": "eca6952061d2cf3a6159a171e078d77feae6d0e5ccab354fd3b3cfb260889307",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-loading-912171/episode.json": "4d7a93cce524b57e916f3115b55c82d358df827b42acb9845710846aec9d1dd2",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-loading-912171/summary.json": "ffe46cacbc0bc7e9715db82a7a67b6218b0671144920bd10e6fb90ca268b2d9a",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-loading-912171/controller_trace.jsonl.gz": "7921d4d2ab61d0f2a375e2d0de2ea11c4801d42fe0f1ee9989bf3db8cebbf735",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-loading-912171/trajectory.jsonl.gz": "06ba29612ab0d418e2b1dedaa678263992b6ae30308a06d49e5ac7ee3211abae",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-loading-912171/policy_io.npz": "68bd1cc35596fc763da514f867347e787c2565542a8bbafa7d5cb92f2d127340",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-loading-912171/predictions.npz": "2872042b570e6fcc69ef17417f35158d956a747ced5e45f6c11755d1b13759f2",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-loading-912171/inference.json": "a1e30abaef37982d49f20c1f3000d42f3f880a79fb09254d982da9e752402bbe",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0005-loading-912171/episode.json": "9abcc84439e2d8835c740afe4fe50bd807a4fe25445e7d903a74bbed1db9ee0d",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0005-loading-912171/summary.json": "9c91fcae6992675a304c53b57d6dd8c89773cc2537f5702ba608cb9d339d771e",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0005-loading-912171/controller_trace.jsonl.gz": "0606cb980ae8b3ef10c77b748283e4952432daddf85894af6c9018b155d85223",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0005-loading-912171/trajectory.jsonl.gz": "84c4f68e7cd0edf12bea20dfd5699791eee15ad8e5e3697e25f4f9f5e496a3ab",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0005-loading-912171/policy_io.npz": "da92b9f67bdfa029843ab141fc660d30188e038fc41c9d2310f2dc3c57789840",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0005-loading-912171/predictions.npz": "63c4e49d6efaf8dd1f7086faefd13d5aa8f2f0844d2be67f2b4c1841c5e68447",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0005-loading-912171/inference.json": "d54be312b7d1aac53b4f013d479b26bfb9a27c56f2376c9cee8927b2360230c3",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/episode.json": "feb7e521eb77ad0493f3a446fb6247c458be13a8756c6d21c373fe221629f87a",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/summary.json": "1ccff8c0b8b1ee95ff51dd3e6a7577665908560756bd37c05b64c1a015467f39",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/controller_trace.jsonl.gz": "d967495876f8e30ee9f8a9c5db9e0664da650a74596b91a3e1d7a8b1b3550f1a",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/trajectory.jsonl.gz": "1f1a6eebc3eca9d2a22dbb26bb1fc4c5f48664b2dd50baf3132b10abe1af614f",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/policy_io.npz": "d165c27de5482600f934400dd4a012949e8895172aae3c41cac39e06b8030030",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/predictions.npz": "61338f74afd44b1929039ba39d65a7e4082fb1e27bc006593398d46c5b27f1f0",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/inference.json": "624880a32634f349f486e5f0c7439b7d84ac46e19ad77dc143d40ec3643c9023",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0003-loading-912172/input-audit/input-002.json": "2edfe07ff61cca4ee2aac5740bf1803e19a62c64644f16f819623f526435efe9",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0003-loading-912171/input-audit/noise-002.npz": "b0bcba6c57f22c1b6b6c71a67deaf66c01b8939659953588f1b4ff1f97870c0e",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0003-loading-912172/input-audit/noise-002.npz": "2dc9ced1dd629609d787afb15040e77e55a8cb2eac3ad16acf8e010058aa9830",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-002.json": "468e9b436e96627b431aee79bf10adeea87b99c749dfa583aac9eb0c852d1854",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912171/input-audit/noise-002.npz": "b0bcba6c57f22c1b6b6c71a67deaf66c01b8939659953588f1b4ff1f97870c0e",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-002.npz": "2dc9ced1dd629609d787afb15040e77e55a8cb2eac3ad16acf8e010058aa9830",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0005-loading-912171/input-audit/input-002.json": "78c403d8cafad0daf942d5f25f3162a93eccf2446d433a74ff5fb82af2f5f7bf",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0005-loading-912171/input-audit/noise-002.npz": "b0bcba6c57f22c1b6b6c71a67deaf66c01b8939659953588f1b4ff1f97870c0e",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0005-loading-912172/input-audit/noise-002.npz": "2dc9ced1dd629609d787afb15040e77e55a8cb2eac3ad16acf8e010058aa9830",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-002.json": "50bc977df52885f478eee889aba2254a0032ae306af0172744c16f2a25caf256",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-002.npz": "b0bcba6c57f22c1b6b6c71a67deaf66c01b8939659953588f1b4ff1f97870c0e",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912172/input-audit/noise-002.npz": "2dc9ced1dd629609d787afb15040e77e55a8cb2eac3ad16acf8e010058aa9830"
+  },
+  "packets_sha256": "517770dcd846cc225a16308d49b33d994c149e94fd9456021fe521cdac7210a5",
+  "freeze_epoch": 1792104761.932022,
+  "maximum_outputs": 16,
+  "deduplicated_output_count": 16,
+  "new_physics": 0,
+  "new_training": 0,
+  "generation": {
+    "float32_weights": true,
+    "bf16_autocast": true,
+    "domain": 29,
+    "steps": 10,
+    "horizon": 30,
+    "native_previous_target_proprio": true
+  },
+  "trace_geometry_for_offline_reference_only": true
+}
