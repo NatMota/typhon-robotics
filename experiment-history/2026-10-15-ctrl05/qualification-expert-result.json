@@ -1,0 +1,13 @@
+{
+  "started": 1792024295.3045955,
+  "initial_tick": 460,
+  "uses_simulator_truth": true,
+  "new_attempts": 1,
+  "expert_function": "supervisor.feeding_loading.runner.scripted_attempt",
+  "expert_retries": 0,
+  "status": "expert_exception",
+  "error": "AssertionError('Independent-prefix state differs; saved field-level differences')",
+  "traceback": "Traceback (most recent call last):\n  File \"/var/tmp/typhon-worktrees-20261015/ctrl05-shaped-descent/scripts/data07ge_run.py\", line 58, in handoff\n    attempt,retreat,yaw=scripted_attempt(env,env.episode_config,attempt_index=0,force_miss=False)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/tmp/typhon-worktrees-20261015/ctrl05-shaped-descent/scripts/ctrl05_run.py\", line 98, in attempt\n    try:return original_attempt(env,config,*args,**kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/tmp/typhon-worktrees-20261015/ctrl05-shaped-descent/supervisor/feeding_loading/runner.py\", line 59, in scripted_attempt\n    move('descend', grasp, initial_yaw, -1)\n  File \"/var/tmp/typhon-worktrees-20261015/ctrl05-shaped-descent/supervisor/feeding_loading/runner.py\", line 50, in move\n    converged = env.move_to(target, yaw, grip)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/tmp/typhon-worktrees-20261015/ctrl05-shaped-descent/scripts/ctrl05_run.py\", line 71, in move\n    ge.native.semantic.assert_equivalent(read(ARCH/\"pregrasp-state/state.json\"),state,dest/\"historical510-comparison.json\")\n  File \"/var/tmp/typhon-worktrees-20261015/ctrl05-shaped-descent/scripts/load05r_state.py\", line 62, in assert_equivalent\n    assert not diffs,'Independent-prefix state differs; saved field-level differences'\n           ^^^^^^^^^\nAssertionError: Independent-prefix state differs; saved field-level differences\n",
+  "final_expert_tick": 510,
+  "wall_seconds": 0.5034911632537842
+}

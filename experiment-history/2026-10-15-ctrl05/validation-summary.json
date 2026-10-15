@@ -1,0 +1,28 @@
+{
+  "experiment": "CTRL05",
+  "status": "qualification_blocker",
+  "physical_reconstructions_started": 1,
+  "expert_approach_ticks": 50,
+  "S_descent_actions": 0,
+  "R_descent_actions": 0,
+  "evaluated_conditions": 0,
+  "success_rate": null,
+  "full_historical590_equality_claim": false,
+  "observed_prefix_equality_counts": {
+    "controller_trace.jsonl.gz": 470,
+    "trajectory.jsonl.gz": 470
+  },
+  "extra_measurement_rows_exact": 50,
+  "only_mismatches": [
+    "/python/wrapper/move_to/code_sha256",
+    "/python/wrapper/step/code_sha256"
+  ],
+  "semantic_comparator_passed": false,
+  "new_model_queries": 0,
+  "new_training": false,
+  "holdout_use": false,
+  "runtime_stop": "tick510 before added hold or either descent condition; unchanged24tick passive tail retained",
+  "interpretation": "Wrapper code identities changed before the required historical boundary. This is an implementation/qualification failure, not a result about smooth descent.",
+  "disposition": "No retry or comparator amendment. Park nominal approach-repair branch for remainder of overnight. Prospective follow-up must retain original wrappers until qualified boundary.",
+  "audit": "reference-actuation-audit.json"
+}

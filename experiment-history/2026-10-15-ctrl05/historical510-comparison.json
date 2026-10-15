@@ -1,0 +1,26 @@
+{
+  "passed": false,
+  "differences": [
+    {
+      "path": "/python/wrapper/move_to/code_sha256",
+      "kind": "value",
+      "before": "942e2281bb41cfcdd3c36e3b9c8733892bc5c811d8fbb285f98ab5151d3d95f9",
+      "after": "a5cecac6cb8d7f7ae442ab6af61ad57bf82c15c5e9365bf794e464cd8a25a5cb"
+    },
+    {
+      "path": "/python/wrapper/step/code_sha256",
+      "kind": "value",
+      "before": "86a0c206d5618f253ad8bc0756082d320463c6c5bdc1a743ccb662a574de2701",
+      "after": "42ef630366a891b50efb0db5e19271ad7f0461af039a74279a26c527791acfca"
+    }
+  ],
+  "old_meansize": [
+    "0.244374"
+  ],
+  "new_meansize": [
+    "0.244424"
+  ],
+  "only_new_exclusion": "xml statistic/meansize",
+  "atol": 0,
+  "rtol": 0
+}

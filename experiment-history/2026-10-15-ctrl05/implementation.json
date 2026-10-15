@@ -1,0 +1,15 @@
+{
+  "frozen_epoch": 1792024284.310144,
+  "source_sha256": {
+    "scripts/ctrl05_run.py": "e5bbbdfd366962beee1f00ae19fab5a69d1ddff68f2673181abd86c907ee70d0",
+    "scripts/ctrl05_audit.py": "04eae589174a55966ba563f33c2bde24c719bf664ebe95c2c59aa584f7de0d2c",
+    "scripts/ctrl04_run.py": "dde54288cc73c13f4300949db7932ccaed453abaf3264e423a8abce6a17f2216",
+    "scripts/data07ge_run.py": "8b1f7baebcb8da3321a316e2d2cb55fd8388a5115e07b3508d8e5c39fa1eb951",
+    "scripts/data07r_run.py": "e451a21335c88d3c8677ae05326958256972bf491b1196d356a157537671e0d1",
+    "supervisor/feeding_loading/environment.py": "1f790260461ba79b03875602ecd7f17a4ca888596b8ed10772a2aefa90dd180c",
+    "supervisor/feeding_loading/runner.py": "3e9138dee890bb9f6bafd45e5a56102e6a13e4521d86d491baca2b464da3fd58"
+  },
+  "read_only_substep_observer": "installed after semantic590 snapshot in both branches; reads original robot.control output before next integration; no forward/render/state assignment",
+  "qualification": "archived available fields EXACT, stricter than established tolerance; full semantic unchanged. No missing historical590 fields fabricated.",
+  "decomposition": "record compensation; position/orientation/nullspace components unavailable separately, no invented attribution"
+}
