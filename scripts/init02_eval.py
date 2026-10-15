@@ -71,7 +71,7 @@ def segment(env,w,source,context,out,first,previous_stability,model_name):
  return row,stability,physical
 
 def model_entry(name):
- if name=="P":return read(OUT/"protocol.json")["model"]
+ if name=="P":return read(OUT/"protocol.json")["initializer"]
  d=OUT/("train-"+name);c=read(d/"complete.json")
  return {"checkpoint":str(d/"step3000.pt"),"probe":str(d/"step3000-probe.pt"),"sha256":c["checkpoint_sha256"],"probe_sha256":c["probe_sha256"]}
 def initialise(source,folder):
