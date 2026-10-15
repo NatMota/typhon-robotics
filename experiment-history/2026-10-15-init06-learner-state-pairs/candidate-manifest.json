@@ -1,0 +1,1302 @@
+{
+  "experiment": "INIT06",
+  "candidate_only": true,
+  "active_training_manifest_modified": false,
+  "training": false,
+  "new_policy_queries": 0,
+  "episodes": [
+    {
+      "id": "demo_0001-q1-F-preserve",
+      "parent": "demo_0001",
+      "policy_seed": 912171,
+      "query": 1,
+      "source_episode": "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171",
+      "source_sha256": {
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/episode.json": "ad3e6c682248e2fbaa882ff7a46d24fdccbb7a312ce0035ab431033a425536e5",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/controller_trace.jsonl.gz": "f2a0e28f89120c162849f4c064c196f99183b80f86f4158a448c5d1695b8b5de",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/trajectory.jsonl.gz": "a76737a24cc4797a01323dcda166443d46bb530deb620f7f51c0c9f66207a00b",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/policy_io.npz": "2d9fc0bae6d647d3a0ea43dffcad8805690d49b7f36bf491aeef22a430506fe3",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/predictions.npz": "13f87239d3987d4a6adc77b4662aa9ca0125d227377cc7718c3ab859796bb355",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/input-audit/input-001.json": "a1b88d4c63970ea30cfda0e5ab3b32013908abd6d73926754bfbd20481f6042c",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/boundary-before.pkl": "d785afb075f8911de68cb041bbd496ce257c6332b71bc2a4a6807087c094db77",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/initial-live.npz": "e147fd354852f3f1ffb372dde8a3d1680b4f840b69349ebc15498527d523acc0",
+        "/var/tmp/typhon-load04-20261014/data/episode_artifacts/load04-demo_0001-feeding/robot_actions.jsonl": "2eedbf82db3fa402cee6b9334c6c8a9d9e5b847c66af31e46e002551993cf305",
+        "/var/tmp/typhon-load04-20261014/data/episode_artifacts/load04-demo_0001-feeding/episode.json": "a709500325c85d73af20ece7a4923d5ce6b1b6e7c44fa0510956f00c55451524",
+        "/var/tmp/typhon-init01-20261015/qualification/demo_0001/terminal-state.pkl": "d785afb075f8911de68cb041bbd496ce257c6332b71bc2a4a6807087c094db77"
+      },
+      "path": "/var/tmp/typhon-init06-20261015/continuations/demo_0001/F-preserve/episode/candidate.npz",
+      "sha256": "3e4aa7127cad702c1fc1c27436957bf14f3258f81aba95871f39028610334de8",
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "config": {
+        "schema_version": 1,
+        "object": {
+          "width_m": 0.05,
+          "depth_m": 0.035,
+          "height_m": 0.03,
+          "mass_kg": 0.08,
+          "marked_face": "top",
+          "dimensions_status": "M2_provisional_canonical_geometry_retarged_not_measured",
+          "dimensions_source": {
+            "width_m": "user_confirmed_part_31110pb074_catalogue_envelope",
+            "depth_m": "user_confirmed_part_31110pb074_catalogue_envelope",
+            "height_m": "user_confirmed_part_31110pb074_catalogue_envelope"
+          },
+          "mass_status": "catalogue_value_not_weighed_user_piece",
+          "visual_version": "duplo_31110pb074_v2"
+        },
+        "workspace": {
+          "table_width_m": 0.8,
+          "table_depth_m": 0.8,
+          "table_thickness_m": 0.05,
+          "table_z_m": 0.8,
+          "staging_position_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "staging_size_m": 0.1,
+          "fixture_position_xy_m": [
+            0.12,
+            0.15
+          ],
+          "fixture_inner_size_m": 0.11,
+          "fixture_wall_thickness_m": 0.008,
+          "fixture_wall_height_m": 0.02,
+          "fixture_floor_height_m": 0.004
+        },
+        "initial_state": {
+          "position_xy_m": [
+            -0.3084651105738172,
+            0.08221457497548734
+          ],
+          "yaw_rad": 0.9508729488309244,
+          "position_jitter_m": 0.0,
+          "yaw_choices_rad": [
+            0.9508729488309244
+          ]
+        },
+        "task": {
+          "type": "feeding",
+          "target_position_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "target_yaw_rad": 0.0,
+          "target_position_jitter_m": 0.0,
+          "target_region_size_m": 0.1,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square."
+        },
+        "cameras": {
+          "overhead": {
+            "position_m": [
+              0.0,
+              0.0,
+              2.2
+            ],
+            "quat_wxyz": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "width": 512,
+            "height": 512,
+            "fovy_deg": 36.0
+          },
+          "oblique": {
+            "position_m": [
+              0.65,
+              -0.65,
+              1.35
+            ],
+            "look_at_m": [
+              0.0,
+              0.0,
+              0.8
+            ],
+            "width": 512,
+            "height": 512,
+            "fovy_deg": 50.0
+          }
+        },
+        "control": {
+          "frequency_hz": 20,
+          "max_steps": 576,
+          "translation_step_m": 0.05,
+          "rotation_step_rad": 0.5,
+          "workspace_bounds_m": [
+            [
+              -0.35,
+              0.35
+            ],
+            [
+              -0.35,
+              0.35
+            ],
+            [
+              0.805,
+              1.2
+            ]
+          ]
+        },
+        "evaluation": {
+          "position_tolerance_m": 0.015,
+          "yaw_tolerance_rad": 0.17453292519943295,
+          "upright_tolerance_rad": 0.17453292519943295,
+          "height_tolerance_m": 0.002,
+          "stability_position_tolerance_m": 0.002,
+          "stability_yaw_tolerance_rad": 0.03490658503988659,
+          "linear_velocity_tolerance_m_s": 0.01,
+          "angular_velocity_tolerance_rad_s": 0.1,
+          "minimum_stability_samples": 5,
+          "minimum_stability_duration_s": 0.4
+        },
+        "physical_to_sim": {
+          "rotation_rad": 0.0,
+          "translation_xy_m": [
+            0.0,
+            0.0
+          ],
+          "scale": 1.0,
+          "source_frame": "m15_virtual_tabletop_m",
+          "destination_frame": "mujoco_world_m",
+          "status": "declared_virtual_layout_mapping_not_physical_calibration"
+        },
+        "m0_import": {
+          "calibration_required": false,
+          "coordinate_transform": {
+            "destination_frame": "mujoco_world_m",
+            "rotation_rad": 0.0,
+            "scale": 1.0,
+            "source_frame": "m15_virtual_tabletop_m",
+            "status": "declared_virtual_layout_mapping_not_physical_calibration",
+            "translation_xy_m": [
+              0.0,
+              0.0
+            ]
+          },
+          "source_contract": {
+            "coordinate_frame": "m15_virtual_tabletop_m",
+            "initial_state": {
+              "position_xy_m": [
+                -0.3084651105738172,
+                0.08221457497548734
+              ],
+              "yaw_rad": 0.9508729488309244
+            },
+            "object": {
+              "depth_m": null,
+              "height_m": null,
+              "marked_face": "top",
+              "width_m": null
+            },
+            "schema_version": 1,
+            "source_demo_id": "demo_0001",
+            "task": {
+              "target_position_xy_m": [
+                0.125,
+                -0.12
+              ],
+              "target_yaw_rad": 0.0,
+              "type": "feeding"
+            }
+          }
+        },
+        "m15_mapping": {
+          "block": {
+            "catalogue_mass_kg": 0.0127,
+            "catalogue_upright_envelope_m": [
+              0.032,
+              0.032,
+              0.043
+            ],
+            "catalogue_url": "https://www.bricklink.com/v2/catalog/catalogitem.page?P=31110pb074",
+            "identity": "DUPLO31110pb074 orange brick with blue2",
+            "identity_confidence": "user_confirmed_catalogue_identification",
+            "limitations": [
+              "solid bounding-box collision/inertia surrogate",
+              "studs/hollows not modelled",
+              "catalogue packing envelope is not a precision CAD drawing",
+              "friction remains M1 supplied assumption"
+            ],
+            "m1_original_provisional_dimensions_m": [
+              0.05,
+              0.035,
+              0.03
+            ],
+            "m1_original_provisional_mass_kg": 0.08,
+            "measurement_status": "catalogue estimate, user piece not measured/weighed",
+            "orientation": "printed face upward; original upright brick height runs along local+y toward studs",
+            "sim_proxy_mass_kg": 0.0127,
+            "sim_proxy_width_depth_height_m": [
+              0.032,
+              0.043,
+              0.032
+            ],
+            "user_confirmation": "yeap thats he one"
+          },
+          "camera_adjustment": "M15 overhead raised to2.2m,36degree field of view; both views512px. Debug-run visual review found original overhead obscured. Common settings for both cohorts; M1 unchanged.",
+          "controller": "unchanged M1 privileged geometric expert; simulator truth used for execution and independent scoring",
+          "endpoint_rule": "two supported consecutive samples within first/last1.75s; dt0.3-0.75s, displacement<=0.12targetunits, yawchange<=10deg",
+          "frozen_before_execution": true,
+          "missing_observations": "reject missing initial/final position or yaw; never replace initial with later post-action pose",
+          "origin_status": "supplied translation chosen before execution to fit M1 workspace; common to all personal examples",
+          "physical_metric_calibration_available": false,
+          "physical_to_sim_transform": null,
+          "plane_assumption": "resting endpoint visible centroid approximates tabletop position; object top is elevated and centroid is not contact centre",
+          "position_equation": "sim_xy = origin + 0.1 * R(world_rotation) * [target_v - 0.5, target_u - 0.5]",
+          "scale_status": "engineering_layout_scale: one target-square unit represents M1 100mm staging square, not a measurement of real target",
+          "schema_version": 1,
+          "sim_target_side_m": 0.1,
+          "source_coordinate_schema": "raw pixels; normalized image; dimensionless target-unit homography",
+          "synthetic_control": {
+            "initial_xy_domain_m": [
+              [
+                -0.28,
+                0.28
+              ],
+              [
+                -0.28,
+                0.25
+              ]
+            ],
+            "matching": "one independent draw per usable personal episode, matched category and robot/settings",
+            "personal_pose_values_used_by_sampler": false,
+            "seed": 151509,
+            "target_xy_domain_m": [
+              [
+                0.1,
+                0.14
+              ],
+              [
+                -0.14,
+                -0.1
+              ]
+            ],
+            "yaw_domain_rad": [
+              -3.141592653589793,
+              3.141592653589793
+            ]
+          },
+          "target_origin_sim_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "world_rotation_rad": 0.09786641047171031,
+          "yaw_equation": "project numeral-up vector through local homography; swap unit axes; yaw=atan2(-dx,dy)+world_rotation; retain directed 2pi angle"
+        }
+      },
+      "task": "feeding",
+      "views": {
+        "primary": "primary_visible",
+        "secondary": "secondary_visible"
+      },
+      "observations": "physical q1 followed by actual pre-action renders; inherited previous-target proprio, measured pose separate",
+      "labels": "privileged expert or measured-pose hold robot commands; not human motion labels",
+      "admitted": true,
+      "complete_H30_windows": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28
+      ],
+      "no_terminal_padding": true
+    },
+    {
+      "id": "demo_0001-q1-L-teacher",
+      "parent": "demo_0001",
+      "policy_seed": 912171,
+      "query": 1,
+      "source_episode": "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171",
+      "source_sha256": {
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/episode.json": "ad3e6c682248e2fbaa882ff7a46d24fdccbb7a312ce0035ab431033a425536e5",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/controller_trace.jsonl.gz": "f2a0e28f89120c162849f4c064c196f99183b80f86f4158a448c5d1695b8b5de",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/trajectory.jsonl.gz": "a76737a24cc4797a01323dcda166443d46bb530deb620f7f51c0c9f66207a00b",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/policy_io.npz": "2d9fc0bae6d647d3a0ea43dffcad8805690d49b7f36bf491aeef22a430506fe3",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/predictions.npz": "13f87239d3987d4a6adc77b4662aa9ca0125d227377cc7718c3ab859796bb355",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/input-audit/input-001.json": "a1b88d4c63970ea30cfda0e5ab3b32013908abd6d73926754bfbd20481f6042c",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/boundary-before.pkl": "d785afb075f8911de68cb041bbd496ce257c6332b71bc2a4a6807087c094db77",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/initial-live.npz": "e147fd354852f3f1ffb372dde8a3d1680b4f840b69349ebc15498527d523acc0",
+        "/var/tmp/typhon-load04-20261014/data/episode_artifacts/load04-demo_0001-feeding/robot_actions.jsonl": "2eedbf82db3fa402cee6b9334c6c8a9d9e5b847c66af31e46e002551993cf305",
+        "/var/tmp/typhon-load04-20261014/data/episode_artifacts/load04-demo_0001-feeding/episode.json": "a709500325c85d73af20ece7a4923d5ce6b1b6e7c44fa0510956f00c55451524",
+        "/var/tmp/typhon-init01-20261015/qualification/demo_0001/terminal-state.pkl": "d785afb075f8911de68cb041bbd496ce257c6332b71bc2a4a6807087c094db77"
+      },
+      "path": "/var/tmp/typhon-init06-20261015/continuations/demo_0001/L-teacher/episode/candidate.npz",
+      "sha256": "108f3bd3c71fbeff81f1eb9faf16a849175941a04a5168e8f593e92c81c30002",
+      "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "config": {
+        "schema_version": 1,
+        "object": {
+          "width_m": 0.05,
+          "depth_m": 0.035,
+          "height_m": 0.03,
+          "mass_kg": 0.08,
+          "marked_face": "top",
+          "dimensions_status": "M2_provisional_canonical_geometry_retarged_not_measured",
+          "dimensions_source": {
+            "width_m": "user_confirmed_part_31110pb074_catalogue_envelope",
+            "depth_m": "user_confirmed_part_31110pb074_catalogue_envelope",
+            "height_m": "user_confirmed_part_31110pb074_catalogue_envelope"
+          },
+          "mass_status": "catalogue_value_not_weighed_user_piece",
+          "visual_version": "duplo_31110pb074_v2"
+        },
+        "workspace": {
+          "table_width_m": 0.8,
+          "table_depth_m": 0.8,
+          "table_thickness_m": 0.05,
+          "table_z_m": 0.8,
+          "staging_position_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "staging_size_m": 0.1,
+          "fixture_position_xy_m": [
+            0.12,
+            0.15
+          ],
+          "fixture_inner_size_m": 0.11,
+          "fixture_wall_thickness_m": 0.008,
+          "fixture_wall_height_m": 0.02,
+          "fixture_floor_height_m": 0.004
+        },
+        "initial_state": {
+          "position_xy_m": [
+            -0.3084651105738172,
+            0.08221457497548734
+          ],
+          "yaw_rad": 0.9508729488309244,
+          "position_jitter_m": 0.0,
+          "yaw_choices_rad": [
+            0.9508729488309244
+          ]
+        },
+        "task": {
+          "type": "loading",
+          "target_position_xy_m": [
+            0.12,
+            0.15
+          ],
+          "target_yaw_rad": 0.0,
+          "target_position_jitter_m": 0.0,
+          "target_region_size_m": 0.11,
+          "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture."
+        },
+        "cameras": {
+          "overhead": {
+            "position_m": [
+              0.0,
+              0.0,
+              2.2
+            ],
+            "quat_wxyz": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "width": 512,
+            "height": 512,
+            "fovy_deg": 36.0
+          },
+          "oblique": {
+            "position_m": [
+              0.65,
+              -0.65,
+              1.35
+            ],
+            "look_at_m": [
+              0.0,
+              0.0,
+              0.8
+            ],
+            "width": 512,
+            "height": 512,
+            "fovy_deg": 50.0
+          }
+        },
+        "control": {
+          "frequency_hz": 20,
+          "max_steps": 1946,
+          "translation_step_m": 0.05,
+          "rotation_step_rad": 0.5,
+          "workspace_bounds_m": [
+            [
+              -0.35,
+              0.35
+            ],
+            [
+              -0.35,
+              0.35
+            ],
+            [
+              0.805,
+              1.2
+            ]
+          ]
+        },
+        "evaluation": {
+          "position_tolerance_m": 0.015,
+          "yaw_tolerance_rad": 0.17453292519943295,
+          "upright_tolerance_rad": 0.17453292519943295,
+          "height_tolerance_m": 0.002,
+          "stability_position_tolerance_m": 0.002,
+          "stability_yaw_tolerance_rad": 0.03490658503988659,
+          "linear_velocity_tolerance_m_s": 0.01,
+          "angular_velocity_tolerance_rad_s": 0.1,
+          "minimum_stability_samples": 5,
+          "minimum_stability_duration_s": 0.4
+        },
+        "physical_to_sim": {
+          "rotation_rad": 0.0,
+          "translation_xy_m": [
+            0.0,
+            0.0
+          ],
+          "scale": 1.0,
+          "source_frame": "m15_virtual_tabletop_m",
+          "destination_frame": "mujoco_world_m",
+          "status": "declared_virtual_layout_mapping_not_physical_calibration"
+        },
+        "m0_import": {
+          "calibration_required": false,
+          "coordinate_transform": {
+            "destination_frame": "mujoco_world_m",
+            "rotation_rad": 0.0,
+            "scale": 1.0,
+            "source_frame": "m15_virtual_tabletop_m",
+            "status": "declared_virtual_layout_mapping_not_physical_calibration",
+            "translation_xy_m": [
+              0.0,
+              0.0
+            ]
+          },
+          "source_contract": {
+            "coordinate_frame": "m15_virtual_tabletop_m",
+            "initial_state": {
+              "position_xy_m": [
+                -0.3084651105738172,
+                0.08221457497548734
+              ],
+              "yaw_rad": 0.9508729488309244
+            },
+            "object": {
+              "depth_m": null,
+              "height_m": null,
+              "marked_face": "top",
+              "width_m": null
+            },
+            "schema_version": 1,
+            "source_demo_id": "demo_0001",
+            "task": {
+              "target_position_xy_m": [
+                0.125,
+                -0.12
+              ],
+              "target_yaw_rad": 0.0,
+              "type": "feeding"
+            }
+          }
+        },
+        "m15_mapping": {
+          "block": {
+            "catalogue_mass_kg": 0.0127,
+            "catalogue_upright_envelope_m": [
+              0.032,
+              0.032,
+              0.043
+            ],
+            "catalogue_url": "https://www.bricklink.com/v2/catalog/catalogitem.page?P=31110pb074",
+            "identity": "DUPLO31110pb074 orange brick with blue2",
+            "identity_confidence": "user_confirmed_catalogue_identification",
+            "limitations": [
+              "solid bounding-box collision/inertia surrogate",
+              "studs/hollows not modelled",
+              "catalogue packing envelope is not a precision CAD drawing",
+              "friction remains M1 supplied assumption"
+            ],
+            "m1_original_provisional_dimensions_m": [
+              0.05,
+              0.035,
+              0.03
+            ],
+            "m1_original_provisional_mass_kg": 0.08,
+            "measurement_status": "catalogue estimate, user piece not measured/weighed",
+            "orientation": "printed face upward; original upright brick height runs along local+y toward studs",
+            "sim_proxy_mass_kg": 0.0127,
+            "sim_proxy_width_depth_height_m": [
+              0.032,
+              0.043,
+              0.032
+            ],
+            "user_confirmation": "yeap thats he one"
+          },
+          "camera_adjustment": "M15 overhead raised to2.2m,36degree field of view; both views512px. Debug-run visual review found original overhead obscured. Common settings for both cohorts; M1 unchanged.",
+          "controller": "unchanged M1 privileged geometric expert; simulator truth used for execution and independent scoring",
+          "endpoint_rule": "two supported consecutive samples within first/last1.75s; dt0.3-0.75s, displacement<=0.12targetunits, yawchange<=10deg",
+          "frozen_before_execution": true,
+          "missing_observations": "reject missing initial/final position or yaw; never replace initial with later post-action pose",
+          "origin_status": "supplied translation chosen before execution to fit M1 workspace; common to all personal examples",
+          "physical_metric_calibration_available": false,
+          "physical_to_sim_transform": null,
+          "plane_assumption": "resting endpoint visible centroid approximates tabletop position; object top is elevated and centroid is not contact centre",
+          "position_equation": "sim_xy = origin + 0.1 * R(world_rotation) * [target_v - 0.5, target_u - 0.5]",
+          "scale_status": "engineering_layout_scale: one target-square unit represents M1 100mm staging square, not a measurement of real target",
+          "schema_version": 1,
+          "sim_target_side_m": 0.1,
+          "source_coordinate_schema": "raw pixels; normalized image; dimensionless target-unit homography",
+          "synthetic_control": {
+            "initial_xy_domain_m": [
+              [
+                -0.28,
+                0.28
+              ],
+              [
+                -0.28,
+                0.25
+              ]
+            ],
+            "matching": "one independent draw per usable personal episode, matched category and robot/settings",
+            "personal_pose_values_used_by_sampler": false,
+            "seed": 151509,
+            "target_xy_domain_m": [
+              [
+                0.1,
+                0.14
+              ],
+              [
+                -0.14,
+                -0.1
+              ]
+            ],
+            "yaw_domain_rad": [
+              -3.141592653589793,
+              3.141592653589793
+            ]
+          },
+          "target_origin_sim_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "world_rotation_rad": 0.09786641047171031,
+          "yaw_equation": "project numeral-up vector through local homography; swap unit axes; yaw=atan2(-dx,dy)+world_rotation; retain directed 2pi angle"
+        }
+      },
+      "task": "loading",
+      "views": {
+        "primary": "primary_visible",
+        "secondary": "secondary_visible"
+      },
+      "observations": "physical q1 followed by actual pre-action renders; inherited previous-target proprio, measured pose separate",
+      "labels": "privileged expert or measured-pose hold robot commands; not human motion labels",
+      "admitted": true,
+      "complete_H30_windows": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+        84,
+        88,
+        92,
+        96,
+        100,
+        104,
+        108,
+        112,
+        116,
+        120,
+        124,
+        128,
+        132,
+        136,
+        140,
+        144,
+        148,
+        152,
+        156,
+        160,
+        164,
+        168,
+        172,
+        176,
+        180,
+        184,
+        188,
+        192,
+        196,
+        200,
+        204,
+        208,
+        212
+      ],
+      "no_terminal_padding": true
+    },
+    {
+      "id": "demo_0002-q1-F-preserve",
+      "parent": "demo_0002",
+      "policy_seed": 912171,
+      "query": 1,
+      "source_episode": "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171",
+      "source_sha256": {
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/episode.json": "3f70f2b1cc5030ba49b9d5a1f3bc608a5005cda62c29e5053125e5429ca25485",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/controller_trace.jsonl.gz": "ec1e546d6551359b2669c7164e10eff03408d0f85947ba2bbed858a2b1848708",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/trajectory.jsonl.gz": "d450d42953b9f7515cb8c66ebfae0f8b42a551f9da8ffb91e371ffccb436ec00",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/policy_io.npz": "a04114c779c7cb2702927f372a56802cb8ecee900cdfcd4e65133821a4ede000",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/predictions.npz": "fb481683857dc9907cc255bbeece92e28a3aca13fc951e50f2d864e7e85830b7",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/input-audit/input-001.json": "f988cdbf933cd6721f34890611fee6b08bc3711cd9107aa8a314f91d5497da03",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/boundary-before.pkl": "909ea6f2e10fe382a1a49bb193bafee9dbd0446a345433b9d8783bce43cb66c3",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/initial-live.npz": "9daa35208b11363ea16ace480225f967696d753dfdb9710217375611eaf70122",
+        "/var/tmp/typhon-load04-20261014/data/episode_artifacts/load04-demo_0002-feeding/robot_actions.jsonl": "f57d8dfa6f90e849e96f14767c78ef6c8bbac8f441590c768fa4cb909970d07a",
+        "/var/tmp/typhon-load04-20261014/data/episode_artifacts/load04-demo_0002-feeding/episode.json": "1132fb09c476353edecbe22a437fe6703b47b24541fdc6d890a2f8758dc65caa",
+        "/var/tmp/typhon-init01-20261015/qualification/demo_0002/terminal-state.pkl": "909ea6f2e10fe382a1a49bb193bafee9dbd0446a345433b9d8783bce43cb66c3"
+      },
+      "path": "/var/tmp/typhon-init06-20261015/continuations/demo_0002/F-preserve/episode/candidate.npz",
+      "sha256": "e10cf7ef3d52ee68c7bf6c96d37e91d318bd3077b7d8432d4db214de788f3ca7",
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "config": {
+        "schema_version": 1,
+        "object": {
+          "width_m": 0.05,
+          "depth_m": 0.035,
+          "height_m": 0.03,
+          "mass_kg": 0.08,
+          "marked_face": "top",
+          "dimensions_status": "M2_provisional_canonical_geometry_retarged_not_measured",
+          "dimensions_source": {
+            "width_m": "user_confirmed_part_31110pb074_catalogue_envelope",
+            "depth_m": "user_confirmed_part_31110pb074_catalogue_envelope",
+            "height_m": "user_confirmed_part_31110pb074_catalogue_envelope"
+          },
+          "mass_status": "catalogue_value_not_weighed_user_piece",
+          "visual_version": "duplo_31110pb074_v2"
+        },
+        "workspace": {
+          "table_width_m": 0.8,
+          "table_depth_m": 0.8,
+          "table_thickness_m": 0.05,
+          "table_z_m": 0.8,
+          "staging_position_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "staging_size_m": 0.1,
+          "fixture_position_xy_m": [
+            0.12,
+            0.15
+          ],
+          "fixture_inner_size_m": 0.11,
+          "fixture_wall_thickness_m": 0.008,
+          "fixture_wall_height_m": 0.02,
+          "fixture_floor_height_m": 0.004
+        },
+        "initial_state": {
+          "position_xy_m": [
+            -0.2007394761471165,
+            -0.12648037692132735
+          ],
+          "yaw_rad": 0.7731315970827426,
+          "position_jitter_m": 0.0,
+          "yaw_choices_rad": [
+            0.7731315970827426
+          ]
+        },
+        "task": {
+          "type": "feeding",
+          "target_position_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "target_yaw_rad": 0.0,
+          "target_position_jitter_m": 0.0,
+          "target_region_size_m": 0.1,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square."
+        },
+        "cameras": {
+          "overhead": {
+            "position_m": [
+              0.0,
+              0.0,
+              2.2
+            ],
+            "quat_wxyz": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "width": 512,
+            "height": 512,
+            "fovy_deg": 36.0
+          },
+          "oblique": {
+            "position_m": [
+              0.65,
+              -0.65,
+              1.35
+            ],
+            "look_at_m": [
+              0.0,
+              0.0,
+              0.8
+            ],
+            "width": 512,
+            "height": 512,
+            "fovy_deg": 50.0
+          }
+        },
+        "control": {
+          "frequency_hz": 20,
+          "max_steps": 433,
+          "translation_step_m": 0.05,
+          "rotation_step_rad": 0.5,
+          "workspace_bounds_m": [
+            [
+              -0.35,
+              0.35
+            ],
+            [
+              -0.35,
+              0.35
+            ],
+            [
+              0.805,
+              1.2
+            ]
+          ]
+        },
+        "evaluation": {
+          "position_tolerance_m": 0.015,
+          "yaw_tolerance_rad": 0.17453292519943295,
+          "upright_tolerance_rad": 0.17453292519943295,
+          "height_tolerance_m": 0.002,
+          "stability_position_tolerance_m": 0.002,
+          "stability_yaw_tolerance_rad": 0.03490658503988659,
+          "linear_velocity_tolerance_m_s": 0.01,
+          "angular_velocity_tolerance_rad_s": 0.1,
+          "minimum_stability_samples": 5,
+          "minimum_stability_duration_s": 0.4
+        },
+        "physical_to_sim": {
+          "rotation_rad": 0.0,
+          "translation_xy_m": [
+            0.0,
+            0.0
+          ],
+          "scale": 1.0,
+          "source_frame": "m15_virtual_tabletop_m",
+          "destination_frame": "mujoco_world_m",
+          "status": "declared_virtual_layout_mapping_not_physical_calibration"
+        },
+        "m0_import": {
+          "calibration_required": false,
+          "coordinate_transform": {
+            "destination_frame": "mujoco_world_m",
+            "rotation_rad": 0.0,
+            "scale": 1.0,
+            "source_frame": "m15_virtual_tabletop_m",
+            "status": "declared_virtual_layout_mapping_not_physical_calibration",
+            "translation_xy_m": [
+              0.0,
+              0.0
+            ]
+          },
+          "source_contract": {
+            "coordinate_frame": "m15_virtual_tabletop_m",
+            "initial_state": {
+              "position_xy_m": [
+                -0.2007394761471165,
+                -0.12648037692132735
+              ],
+              "yaw_rad": 0.7731315970827426
+            },
+            "object": {
+              "depth_m": null,
+              "height_m": null,
+              "marked_face": "top",
+              "width_m": null
+            },
+            "schema_version": 1,
+            "source_demo_id": "demo_0002",
+            "task": {
+              "target_position_xy_m": [
+                0.125,
+                -0.12
+              ],
+              "target_yaw_rad": 0.0,
+              "type": "feeding"
+            }
+          }
+        },
+        "m15_mapping": {
+          "block": {
+            "catalogue_mass_kg": 0.0127,
+            "catalogue_upright_envelope_m": [
+              0.032,
+              0.032,
+              0.043
+            ],
+            "catalogue_url": "https://www.bricklink.com/v2/catalog/catalogitem.page?P=31110pb074",
+            "identity": "DUPLO31110pb074 orange brick with blue2",
+            "identity_confidence": "user_confirmed_catalogue_identification",
+            "limitations": [
+              "solid bounding-box collision/inertia surrogate",
+              "studs/hollows not modelled",
+              "catalogue packing envelope is not a precision CAD drawing",
+              "friction remains M1 supplied assumption"
+            ],
+            "m1_original_provisional_dimensions_m": [
+              0.05,
+              0.035,
+              0.03
+            ],
+            "m1_original_provisional_mass_kg": 0.08,
+            "measurement_status": "catalogue estimate, user piece not measured/weighed",
+            "orientation": "printed face upward; original upright brick height runs along local+y toward studs",
+            "sim_proxy_mass_kg": 0.0127,
+            "sim_proxy_width_depth_height_m": [
+              0.032,
+              0.043,
+              0.032
+            ],
+            "user_confirmation": "yeap thats he one"
+          },
+          "camera_adjustment": "M15 overhead raised to2.2m,36degree field of view; both views512px. Debug-run visual review found original overhead obscured. Common settings for both cohorts; M1 unchanged.",
+          "controller": "unchanged M1 privileged geometric expert; simulator truth used for execution and independent scoring",
+          "endpoint_rule": "two supported consecutive samples within first/last1.75s; dt0.3-0.75s, displacement<=0.12targetunits, yawchange<=10deg",
+          "frozen_before_execution": true,
+          "missing_observations": "reject missing initial/final position or yaw; never replace initial with later post-action pose",
+          "origin_status": "supplied translation chosen before execution to fit M1 workspace; common to all personal examples",
+          "physical_metric_calibration_available": false,
+          "physical_to_sim_transform": null,
+          "plane_assumption": "resting endpoint visible centroid approximates tabletop position; object top is elevated and centroid is not contact centre",
+          "position_equation": "sim_xy = origin + 0.1 * R(world_rotation) * [target_v - 0.5, target_u - 0.5]",
+          "scale_status": "engineering_layout_scale: one target-square unit represents M1 100mm staging square, not a measurement of real target",
+          "schema_version": 1,
+          "sim_target_side_m": 0.1,
+          "source_coordinate_schema": "raw pixels; normalized image; dimensionless target-unit homography",
+          "synthetic_control": {
+            "initial_xy_domain_m": [
+              [
+                -0.28,
+                0.28
+              ],
+              [
+                -0.28,
+                0.25
+              ]
+            ],
+            "matching": "one independent draw per usable personal episode, matched category and robot/settings",
+            "personal_pose_values_used_by_sampler": false,
+            "seed": 151509,
+            "target_xy_domain_m": [
+              [
+                0.1,
+                0.14
+              ],
+              [
+                -0.14,
+                -0.1
+              ]
+            ],
+            "yaw_domain_rad": [
+              -3.141592653589793,
+              3.141592653589793
+            ]
+          },
+          "target_origin_sim_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "world_rotation_rad": 0.09786641047171031,
+          "yaw_equation": "project numeral-up vector through local homography; swap unit axes; yaw=atan2(-dx,dy)+world_rotation; retain directed 2pi angle"
+        }
+      },
+      "task": "feeding",
+      "views": {
+        "primary": "primary_visible",
+        "secondary": "secondary_visible"
+      },
+      "observations": "physical q1 followed by actual pre-action renders; inherited previous-target proprio, measured pose separate",
+      "labels": "privileged expert or measured-pose hold robot commands; not human motion labels",
+      "admitted": true,
+      "complete_H30_windows": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28
+      ],
+      "no_terminal_padding": true
+    },
+    {
+      "id": "demo_0002-q1-L-teacher",
+      "parent": "demo_0002",
+      "policy_seed": 912171,
+      "query": 1,
+      "source_episode": "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171",
+      "source_sha256": {
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/episode.json": "3f70f2b1cc5030ba49b9d5a1f3bc608a5005cda62c29e5053125e5429ca25485",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/controller_trace.jsonl.gz": "ec1e546d6551359b2669c7164e10eff03408d0f85947ba2bbed858a2b1848708",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/trajectory.jsonl.gz": "d450d42953b9f7515cb8c66ebfae0f8b42a551f9da8ffb91e371ffccb436ec00",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/policy_io.npz": "a04114c779c7cb2702927f372a56802cb8ecee900cdfcd4e65133821a4ede000",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/predictions.npz": "fb481683857dc9907cc255bbeece92e28a3aca13fc951e50f2d864e7e85830b7",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/input-audit/input-001.json": "f988cdbf933cd6721f34890611fee6b08bc3711cd9107aa8a314f91d5497da03",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/boundary-before.pkl": "909ea6f2e10fe382a1a49bb193bafee9dbd0446a345433b9d8783bce43cb66c3",
+        "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/initial-live.npz": "9daa35208b11363ea16ace480225f967696d753dfdb9710217375611eaf70122",
+        "/var/tmp/typhon-load04-20261014/data/episode_artifacts/load04-demo_0002-feeding/robot_actions.jsonl": "f57d8dfa6f90e849e96f14767c78ef6c8bbac8f441590c768fa4cb909970d07a",
+        "/var/tmp/typhon-load04-20261014/data/episode_artifacts/load04-demo_0002-feeding/episode.json": "1132fb09c476353edecbe22a437fe6703b47b24541fdc6d890a2f8758dc65caa",
+        "/var/tmp/typhon-init01-20261015/qualification/demo_0002/terminal-state.pkl": "909ea6f2e10fe382a1a49bb193bafee9dbd0446a345433b9d8783bce43cb66c3"
+      },
+      "path": "/var/tmp/typhon-init06-20261015/continuations/demo_0002/L-teacher/episode/candidate.npz",
+      "sha256": "9a1ded0c0421e3ae625d43483083eb60148b5d24cc5bb7956c33af30cb4004e9",
+      "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "config": {
+        "schema_version": 1,
+        "object": {
+          "width_m": 0.05,
+          "depth_m": 0.035,
+          "height_m": 0.03,
+          "mass_kg": 0.08,
+          "marked_face": "top",
+          "dimensions_status": "M2_provisional_canonical_geometry_retarged_not_measured",
+          "dimensions_source": {
+            "width_m": "user_confirmed_part_31110pb074_catalogue_envelope",
+            "depth_m": "user_confirmed_part_31110pb074_catalogue_envelope",
+            "height_m": "user_confirmed_part_31110pb074_catalogue_envelope"
+          },
+          "mass_status": "catalogue_value_not_weighed_user_piece",
+          "visual_version": "duplo_31110pb074_v2"
+        },
+        "workspace": {
+          "table_width_m": 0.8,
+          "table_depth_m": 0.8,
+          "table_thickness_m": 0.05,
+          "table_z_m": 0.8,
+          "staging_position_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "staging_size_m": 0.1,
+          "fixture_position_xy_m": [
+            0.12,
+            0.15
+          ],
+          "fixture_inner_size_m": 0.11,
+          "fixture_wall_thickness_m": 0.008,
+          "fixture_wall_height_m": 0.02,
+          "fixture_floor_height_m": 0.004
+        },
+        "initial_state": {
+          "position_xy_m": [
+            -0.2007394761471165,
+            -0.12648037692132735
+          ],
+          "yaw_rad": 0.7731315970827426,
+          "position_jitter_m": 0.0,
+          "yaw_choices_rad": [
+            0.7731315970827426
+          ]
+        },
+        "task": {
+          "type": "loading",
+          "target_position_xy_m": [
+            0.12,
+            0.15
+          ],
+          "target_yaw_rad": 0.0,
+          "target_position_jitter_m": 0.0,
+          "target_region_size_m": 0.11,
+          "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture."
+        },
+        "cameras": {
+          "overhead": {
+            "position_m": [
+              0.0,
+              0.0,
+              2.2
+            ],
+            "quat_wxyz": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "width": 512,
+            "height": 512,
+            "fovy_deg": 36.0
+          },
+          "oblique": {
+            "position_m": [
+              0.65,
+              -0.65,
+              1.35
+            ],
+            "look_at_m": [
+              0.0,
+              0.0,
+              0.8
+            ],
+            "width": 512,
+            "height": 512,
+            "fovy_deg": 50.0
+          }
+        },
+        "control": {
+          "frequency_hz": 20,
+          "max_steps": 1803,
+          "translation_step_m": 0.05,
+          "rotation_step_rad": 0.5,
+          "workspace_bounds_m": [
+            [
+              -0.35,
+              0.35
+            ],
+            [
+              -0.35,
+              0.35
+            ],
+            [
+              0.805,
+              1.2
+            ]
+          ]
+        },
+        "evaluation": {
+          "position_tolerance_m": 0.015,
+          "yaw_tolerance_rad": 0.17453292519943295,
+          "upright_tolerance_rad": 0.17453292519943295,
+          "height_tolerance_m": 0.002,
+          "stability_position_tolerance_m": 0.002,
+          "stability_yaw_tolerance_rad": 0.03490658503988659,
+          "linear_velocity_tolerance_m_s": 0.01,
+          "angular_velocity_tolerance_rad_s": 0.1,
+          "minimum_stability_samples": 5,
+          "minimum_stability_duration_s": 0.4
+        },
+        "physical_to_sim": {
+          "rotation_rad": 0.0,
+          "translation_xy_m": [
+            0.0,
+            0.0
+          ],
+          "scale": 1.0,
+          "source_frame": "m15_virtual_tabletop_m",
+          "destination_frame": "mujoco_world_m",
+          "status": "declared_virtual_layout_mapping_not_physical_calibration"
+        },
+        "m0_import": {
+          "calibration_required": false,
+          "coordinate_transform": {
+            "destination_frame": "mujoco_world_m",
+            "rotation_rad": 0.0,
+            "scale": 1.0,
+            "source_frame": "m15_virtual_tabletop_m",
+            "status": "declared_virtual_layout_mapping_not_physical_calibration",
+            "translation_xy_m": [
+              0.0,
+              0.0
+            ]
+          },
+          "source_contract": {
+            "coordinate_frame": "m15_virtual_tabletop_m",
+            "initial_state": {
+              "position_xy_m": [
+                -0.2007394761471165,
+                -0.12648037692132735
+              ],
+              "yaw_rad": 0.7731315970827426
+            },
+            "object": {
+              "depth_m": null,
+              "height_m": null,
+              "marked_face": "top",
+              "width_m": null
+            },
+            "schema_version": 1,
+            "source_demo_id": "demo_0002",
+            "task": {
+              "target_position_xy_m": [
+                0.125,
+                -0.12
+              ],
+              "target_yaw_rad": 0.0,
+              "type": "feeding"
+            }
+          }
+        },
+        "m15_mapping": {
+          "block": {
+            "catalogue_mass_kg": 0.0127,
+            "catalogue_upright_envelope_m": [
+              0.032,
+              0.032,
+              0.043
+            ],
+            "catalogue_url": "https://www.bricklink.com/v2/catalog/catalogitem.page?P=31110pb074",
+            "identity": "DUPLO31110pb074 orange brick with blue2",
+            "identity_confidence": "user_confirmed_catalogue_identification",
+            "limitations": [
+              "solid bounding-box collision/inertia surrogate",
+              "studs/hollows not modelled",
+              "catalogue packing envelope is not a precision CAD drawing",
+              "friction remains M1 supplied assumption"
+            ],
+            "m1_original_provisional_dimensions_m": [
+              0.05,
+              0.035,
+              0.03
+            ],
+            "m1_original_provisional_mass_kg": 0.08,
+            "measurement_status": "catalogue estimate, user piece not measured/weighed",
+            "orientation": "printed face upward; original upright brick height runs along local+y toward studs",
+            "sim_proxy_mass_kg": 0.0127,
+            "sim_proxy_width_depth_height_m": [
+              0.032,
+              0.043,
+              0.032
+            ],
+            "user_confirmation": "yeap thats he one"
+          },
+          "camera_adjustment": "M15 overhead raised to2.2m,36degree field of view; both views512px. Debug-run visual review found original overhead obscured. Common settings for both cohorts; M1 unchanged.",
+          "controller": "unchanged M1 privileged geometric expert; simulator truth used for execution and independent scoring",
+          "endpoint_rule": "two supported consecutive samples within first/last1.75s; dt0.3-0.75s, displacement<=0.12targetunits, yawchange<=10deg",
+          "frozen_before_execution": true,
+          "missing_observations": "reject missing initial/final position or yaw; never replace initial with later post-action pose",
+          "origin_status": "supplied translation chosen before execution to fit M1 workspace; common to all personal examples",
+          "physical_metric_calibration_available": false,
+          "physical_to_sim_transform": null,
+          "plane_assumption": "resting endpoint visible centroid approximates tabletop position; object top is elevated and centroid is not contact centre",
+          "position_equation": "sim_xy = origin + 0.1 * R(world_rotation) * [target_v - 0.5, target_u - 0.5]",
+          "scale_status": "engineering_layout_scale: one target-square unit represents M1 100mm staging square, not a measurement of real target",
+          "schema_version": 1,
+          "sim_target_side_m": 0.1,
+          "source_coordinate_schema": "raw pixels; normalized image; dimensionless target-unit homography",
+          "synthetic_control": {
+            "initial_xy_domain_m": [
+              [
+                -0.28,
+                0.28
+              ],
+              [
+                -0.28,
+                0.25
+              ]
+            ],
+            "matching": "one independent draw per usable personal episode, matched category and robot/settings",
+            "personal_pose_values_used_by_sampler": false,
+            "seed": 151509,
+            "target_xy_domain_m": [
+              [
+                0.1,
+                0.14
+              ],
+              [
+                -0.14,
+                -0.1
+              ]
+            ],
+            "yaw_domain_rad": [
+              -3.141592653589793,
+              3.141592653589793
+            ]
+          },
+          "target_origin_sim_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "world_rotation_rad": 0.09786641047171031,
+          "yaw_equation": "project numeral-up vector through local homography; swap unit axes; yaw=atan2(-dx,dy)+world_rotation; retain directed 2pi angle"
+        }
+      },
+      "task": "loading",
+      "views": {
+        "primary": "primary_visible",
+        "secondary": "secondary_visible"
+      },
+      "observations": "physical q1 followed by actual pre-action renders; inherited previous-target proprio, measured pose separate",
+      "labels": "privileged expert or measured-pose hold robot commands; not human motion labels",
+      "admitted": true,
+      "complete_H30_windows": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+        84,
+        88,
+        92,
+        96,
+        100,
+        104,
+        108,
+        112,
+        116,
+        120,
+        124,
+        128,
+        132,
+        136,
+        140,
+        144,
+        148,
+        152,
+        156,
+        160,
+        164,
+        168,
+        172,
+        176,
+        180,
+        184,
+        188,
+        192,
+        196,
+        200,
+        204,
+        208,
+        212
+      ],
+      "no_terminal_padding": true
+    }
+  ],
+  "qualified_pairs": 2
+}

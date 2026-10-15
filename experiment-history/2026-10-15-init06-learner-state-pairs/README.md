@@ -1,3 +1,3 @@
-# INIT06: learner-state paired references
+# INIT06: paired learner-state references
 
-Candidate data qualification only. The two archived q1 boundaries passed exact rich-trace and raw image reconstruction; both actual prepared native inputs match their original hashes. No new policy queries or training. See frozen protocol.
+Both prescribed hold/loading pairs qualified. See [report](REPORT.md), [visual evidence](contact-sheet.png), [candidate manifest](candidate-manifest.json) and [unlaunched repair proposal](REPAIR_PROPOSAL.md). Four continuations,124completeH30windows, zero new learned-policy queries or training updates.
