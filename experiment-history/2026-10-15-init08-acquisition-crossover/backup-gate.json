@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "epoch": 1792105426.1777666,
+  "packets_sha256": "517770dcd846cc225a16308d49b33d994c149e94fd9456021fe521cdac7210a5",
+  "weights": {
+    "Q0": "54c86e744e0c66cd5a55f81b56b949cd71000ed01726125550e878dcfaed081c",
+    "Q1": "26d573eb90f791d9af86bbff30e138f51c5aa658ac7abefe76787ba352363a7a"
+  },
+  "receipts": {
+    "Q0": {
+      "model": "Q0",
+      "files": 6,
+      "bytes": 3732366550,
+      "sha256_errors": [],
+      "source": "/var/tmp/typhon-init07-20261015",
+      "destination": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair",
+      "transfer_and_readback_seconds": 1952.0959129333496,
+      "epoch": 1792102601.9081829
+    },
+    "Q1": {
+      "model": "Q1",
+      "files": 6,
+      "bytes": 3732378247,
+      "sha256_errors": [],
+      "source": "/var/tmp/typhon-init07-20261015",
+      "destination": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair",
+      "transfer_and_readback_seconds": 543.085520029068,
+      "epoch": 1792105183.0974414,
+      "route": "direct UCL-to-Mint stream; Mac forwards authentication only",
+      "resumed_verified_prefix_bytes": 864026624
+    },
+    "inputs": {
+      "passed": true,
+      "files": 18,
+      "bytes": 9852573,
+      "sha256_errors": [],
+      "manifest_sha256": "4e3a35009f37ece4c445cbaceecce450a9269e187c515772a0f1cfe974a3bac0",
+      "epoch": 1792104888.095454,
+      "destination": "/media/nm/Fast Drive/Typhon/research-20261015/init08-acquisition-crossover",
+      "files_sha256": {
+        "PLANNER_PROTOCOL.md": "a7956129fd193f5b8fb0ac9f2e53919b5c637e4dd27abd59007fc40e45d23e0b",
+        "clock.json": "d9abbb2be1b1d0c08c391003de21842e9092f5e883038b6f47f73cb67cb94e3b",
+        "packets.pt": "517770dcd846cc225a16308d49b33d994c149e94fd9456021fe521cdac7210a5",
+        "phase-table.csv": "90a0f121cee82d5af9e1b20edb6d070b8c2dfa13576f81ec9a758e3ba3eb37ec",
+        "preparation-complete.json": "ef3f7ccd185d9338c343ea0ebf71265823c451c6e37ebaebf1c7993908863549",
+        "prepare.log": "5ed268d0fe563d28efebdeb5d3c1d39c0bfc3b546459c4e5e2badec004ece0a3",
+        "protocol.json": "3597bdc4b30eda31bfe25ce642fb083a16bab08bea00654c5b22093bb64157e9",
+        "selected-records/init-demo_0003-loading-912172-Q0.json": "97acdfbe893a16366900bd1a95bfb861ae5bea5173c17b012c560094005f244f",
+        "selected-records/init-demo_0003-loading-912172-Q0.npz": "f0f1dbcd9abd84abf1113a9d3e8978142b329388332afc70b735f81749c67828",
+        "selected-records/init-demo_0003-loading-912172-Q1.json": "1c23c40e6fe27327270ed5af0a991209d3ff042385a77e4e70f0bf39f5312640",
+        "selected-records/init-demo_0003-loading-912172-Q1.npz": "49e066a81df8dec7fc4b4236bd31555f6618bc428048d24127555e80fae22ccb",
+        "selected-records/init-demo_0005-loading-912171-Q0.json": "1394ae0fb5407c0d6ecfb7305463d9fca4f7cf6799042ddd88e21b3e6dfbfede",
+        "selected-records/init-demo_0005-loading-912171-Q0.npz": "022e753e64df5a7e444f3fd554703470a0db8fee2a931d65f2a3485be025b1ca",
+        "selected-records/init-demo_0005-loading-912171-Q1.json": "7b7d99dc5348b5ba0f2cb24b8fcefd19f07fc56fc56e182c912364cb59f8aa9d",
+        "selected-records/init-demo_0005-loading-912171-Q1.npz": "ec3e79117860c2e4228425969e59356a98a0e36120b55f219ea78341b9a16680",
+        "source/init08_prepare.py": "421b8df9dcc60e0be4c7e81f5cf110457f175df6a49cd33bc2fec6981a032698",
+        "trace-events.json": "12a92d50f9b0f4c7024186e21e6f1d76afa3a2e95d99b915de9d3ba78aca4316",
+        "trace-summary.csv": "e9d9a2036651067141ca5cc5f0ada0fedd7f2c63afe4d5a251aecce323fba43d"
+      }
+    }
+  },
+  "independent_destination": "Mint Fast Drive"
+}

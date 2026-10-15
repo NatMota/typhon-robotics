@@ -1,0 +1,54 @@
+{
+  "groups": [
+    {
+      "input_state": "Q0",
+      "model": "Q0",
+      "outputs": 4,
+      "first_close_waypoints": [
+        3
+      ],
+      "target_xy_distance_mm_min": 1.3994942645245392,
+      "target_xy_distance_mm_max": 2.1495891659995734,
+      "target_lift_mm_min": 139.79726915134972,
+      "target_lift_mm_max": 144.52416796459434
+    },
+    {
+      "input_state": "Q0",
+      "model": "Q1",
+      "outputs": 4,
+      "first_close_waypoints": [
+        5
+      ],
+      "target_xy_distance_mm_min": 4.352945829164602,
+      "target_xy_distance_mm_max": 5.61138832918597,
+      "target_lift_mm_min": 132.01379661335534,
+      "target_lift_mm_max": 132.83444542659996
+    },
+    {
+      "input_state": "Q1",
+      "model": "Q0",
+      "outputs": 4,
+      "first_close_waypoints": [
+        7
+      ],
+      "target_xy_distance_mm_min": 6.761160919334611,
+      "target_xy_distance_mm_max": 7.174310451024618,
+      "target_lift_mm_min": 47.8562558103266,
+      "target_lift_mm_max": 51.89913150786618
+    },
+    {
+      "input_state": "Q1",
+      "model": "Q1",
+      "outputs": 4,
+      "first_close_waypoints": [
+        7
+      ],
+      "target_xy_distance_mm_min": 9.008404028692501,
+      "target_xy_distance_mm_max": 9.604782193406503,
+      "target_lift_mm_min": 55.69778327233222,
+      "target_lift_mm_max": 59.740658969871795
+    }
+  ],
+  "noise_max_xyz_difference_mm": 7.827744007110596,
+  "limits": "Two deliberately selected lost cases; proposals are not physically executed and cannot establish grasp success. Donor packets differ jointly in images and previous-target proprioception. No mechanism isolated within that package."
+}
