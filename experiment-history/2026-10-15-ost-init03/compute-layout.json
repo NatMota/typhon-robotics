@@ -1,0 +1,443 @@
+{
+  "nodes": [
+    {
+      "id": "T10967",
+      "type": "experiment",
+      "label": "R05 \u00b7 #10967\nMeasure eight-proposal availability using a privileged offline oracle",
+      "parent_id": "S_compute_0",
+      "x": 1220,
+      "y": 58.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R05 \u00b7 #10967",
+        "Measure eight-proposal availability using a",
+        "privileged offline oracle"
+      ]
+    },
+    {
+      "id": "R10967",
+      "type": "result",
+      "label": "48 proposals; approach improves graspable states stay 1/6",
+      "parent_id": "T10967",
+      "x": 1620,
+      "y": 67.5,
+      "width": 350,
+      "height": 72,
+      "color": "#574831",
+      "lines": [
+        "48 proposals; approach improves graspable",
+        "states stay 1/6"
+      ]
+    },
+    {
+      "id": "T10975",
+      "type": "experiment",
+      "label": "R10a \u00b7 #10975\nPrepare blue-ghost candidate cards and typed Luna requests",
+      "parent_id": "S_compute_0",
+      "x": 1220,
+      "y": 185.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R10a \u00b7 #10975",
+        "Prepare blue-ghost candidate cards and",
+        "typed Luna requests"
+      ]
+    },
+    {
+      "id": "R10975",
+      "type": "result",
+      "label": "64 candidates / 32 slates prepared simulator futures; no Luna calls",
+      "parent_id": "T10975",
+      "x": 1620,
+      "y": 194.5,
+      "width": 350,
+      "height": 72,
+      "color": "#244a3d",
+      "lines": [
+        "64 candidates / 32 slates prepared",
+        "simulator futures; no Luna calls"
+      ]
+    },
+    {
+      "id": "T10982",
+      "type": "experiment",
+      "label": "R10 \u00b7 #10982\nRun Decisions API visual ranking on frozen ghost/future slates",
+      "parent_id": "S_compute_0",
+      "x": 1220,
+      "y": 322.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R10 \u00b7 #10982",
+        "Run Decisions API visual ranking on frozen",
+        "ghost/future slates"
+      ]
+    },
+    {
+      "id": "R10982",
+      "type": "result",
+      "label": "32 choices + 32 reasons. Future RGB: 5/5 selected adequate, 7 abstentions; held strict 0/8. Privileged lookahead; no qualified benefit.",
+      "parent_id": "T10982",
+      "x": 1620,
+      "y": 312.0,
+      "width": 350,
+      "height": 112,
+      "color": "#4e374f",
+      "lines": [
+        "32 choices + 32 reasons. Future RGB: 5/5",
+        "selected adequate, 7 abstentions; held",
+        "strict 0/8. Privileged lookahead; no",
+        "qualified benefit."
+      ]
+    },
+    {
+      "id": "T11029",
+      "type": "experiment",
+      "label": "LIVE09 \u00b7 #11029\nRepeat R10 and audit critic response consistency",
+      "parent_id": "S_compute_0",
+      "x": 1220,
+      "y": 470.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE09 \u00b7 #11029",
+        "Repeat R10 and audit critic response",
+        "consistency"
+      ]
+    },
+    {
+      "id": "R11029",
+      "type": "result",
+      "label": "Repeat of the same 32 slates, not new evidence. Future-image choices still poor across ordering; median/p95 1.094/2.338 seconds.",
+      "parent_id": "T11029",
+      "x": 1620,
+      "y": 460.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Repeat of the same 32 slates, not new",
+        "evidence. Future-image choices still poor",
+        "across ordering; median/p95 1.094/2.338",
+        "seconds."
+      ]
+    },
+    {
+      "id": "S_compute_0",
+      "type": "solution",
+      "label": "Measure candidate support and visual ranking",
+      "parent_id": "O_compute",
+      "x": 820,
+      "y": 273.75,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Measure candidate support and visual",
+        "ranking"
+      ]
+    },
+    {
+      "id": "T11014",
+      "type": "experiment",
+      "label": "LIVE04 \u00b7 #11014\nIntegrate Decisions API candidate ranking with bounded asynchronous execution",
+      "parent_id": "S_compute_1",
+      "x": 1220,
+      "y": 633.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE04 \u00b7 #11014",
+        "Integrate Decisions API candidate ranking",
+        "with bounded asynchronous execution"
+      ]
+    },
+    {
+      "id": "R11014",
+      "type": "result",
+      "label": "Nine live trials: 3 API choices executed 62 targets; 33/36 replies UNKNOWN. Reference pickup/place 1/2 vs 0/2 live variants.",
+      "parent_id": "T11014",
+      "x": 1620,
+      "y": 633.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "Nine live trials: 3 API choices executed 62",
+        "targets; 33/36 replies UNKNOWN. Reference",
+        "pickup/place 1/2 vs 0/2 live variants."
+      ]
+    },
+    {
+      "id": "T11025",
+      "type": "experiment",
+      "label": "LIVE05 \u00b7 #11025\nSeparate waiting, sampling and guards after the live-ranking regression",
+      "parent_id": "S_compute_1",
+      "x": 1220,
+      "y": 760.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE05 \u00b7 #11025",
+        "Separate waiting, sampling and guards after",
+        "the live-ranking regression"
+      ]
+    },
+    {
+      "id": "R11025",
+      "type": "result",
+      "label": "30 matched trials isolate guard regression: native pickup/place 1/2 even with waits; guard 0/2 at zero wait. Strict 0/2.",
+      "parent_id": "T11025",
+      "x": 1620,
+      "y": 760.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "30 matched trials isolate guard regression:",
+        "native pickup/place 1/2 even with waits;",
+        "guard 0/2 at zero wait. Strict 0/2."
+      ]
+    },
+    {
+      "id": "T11026",
+      "type": "experiment",
+      "label": "LIVE06 \u00b7 #11026\nQualify motion guards against the executed controller contract",
+      "parent_id": "S_compute_1",
+      "x": 1220,
+      "y": 897.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE06 \u00b7 #11026",
+        "Qualify motion guards against the executed",
+        "controller contract"
+      ]
+    },
+    {
+      "id": "R11026",
+      "type": "result",
+      "label": "Executed-command check restores known pickup/place. Eight experts succeed, 1,714 ticks and zero new vetoes; 304 old false jump vetoes.",
+      "parent_id": "T11026",
+      "x": 1620,
+      "y": 887.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Executed-command check restores known",
+        "pickup/place. Eight experts succeed, 1,714",
+        "ticks and zero new vetoes; 304 old false",
+        "jump vetoes."
+      ]
+    },
+    {
+      "id": "T11027",
+      "type": "experiment",
+      "label": "LIVE07 \u00b7 #11027\nIntegrate the qualified execution check into the live candidate handoff",
+      "parent_id": "S_compute_1",
+      "x": 1220,
+      "y": 1045.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE07 \u00b7 #11027",
+        "Integrate the qualified execution check",
+        "into the live candidate handoff"
+      ]
+    },
+    {
+      "id": "R11027",
+      "type": "result",
+      "label": "Nine live trials: native and first-admissible grasp/place; API misses grasp. All strict 0/2. Activation is not executed selection.",
+      "parent_id": "T11027",
+      "x": 1620,
+      "y": 1035.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Nine live trials: native and",
+        "first-admissible grasp/place; API misses",
+        "grasp. All strict 0/2. Activation is not",
+        "executed selection."
+      ]
+    },
+    {
+      "id": "T11028",
+      "type": "experiment",
+      "label": "LIVE08 \u00b7 #11028\nIsolate the first ranked candidate from boundary timing",
+      "parent_id": "S_compute_1",
+      "x": 1220,
+      "y": 1193.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE08 \u00b7 #11028",
+        "Isolate the first ranked candidate from",
+        "boundary timing"
+      ]
+    },
+    {
+      "id": "R11028",
+      "type": "result",
+      "label": "Four-run 2x2: candidate A grasps/places at both waits; C at neither. Candidate choice explains this failure, not one tick of delay.",
+      "parent_id": "T11028",
+      "x": 1620,
+      "y": 1183.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Four-run 2x2: candidate A grasps/places at",
+        "both waits; C at neither. Candidate choice",
+        "explains this failure, not one tick of",
+        "delay."
+      ]
+    },
+    {
+      "id": "S_compute_1",
+      "type": "solution",
+      "label": "Integrate and isolate the live selection mechanism",
+      "parent_id": "O_compute",
+      "x": 820,
+      "y": 922.75,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Integrate and isolate the live selection",
+        "mechanism"
+      ]
+    },
+    {
+      "id": "O_compute",
+      "type": "opportunity",
+      "label": "Choose useful candidates without blocking valid motion",
+      "parent_id": "outcome",
+      "x": 420,
+      "y": 598.25,
+      "width": 350,
+      "height": 72,
+      "color": "#2d443b",
+      "lines": [
+        "Choose useful candidates without blocking",
+        "valid motion"
+      ]
+    },
+    {
+      "id": "outcome",
+      "type": "outcome",
+      "label": "Reliably complete the requested manipulation task using personal evidence",
+      "parent_id": "",
+      "x": 20,
+      "y": 94.0,
+      "width": 350,
+      "height": 72,
+      "color": "#263f60",
+      "lines": [
+        "Reliably complete the requested",
+        "manipulation task using personal evidence"
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "S_compute_0",
+      "T10967"
+    ],
+    [
+      "T10967",
+      "R10967"
+    ],
+    [
+      "S_compute_0",
+      "T10975"
+    ],
+    [
+      "T10975",
+      "R10975"
+    ],
+    [
+      "S_compute_0",
+      "T10982"
+    ],
+    [
+      "T10982",
+      "R10982"
+    ],
+    [
+      "S_compute_0",
+      "T11029"
+    ],
+    [
+      "T11029",
+      "R11029"
+    ],
+    [
+      "O_compute",
+      "S_compute_0"
+    ],
+    [
+      "S_compute_1",
+      "T11014"
+    ],
+    [
+      "T11014",
+      "R11014"
+    ],
+    [
+      "S_compute_1",
+      "T11025"
+    ],
+    [
+      "T11025",
+      "R11025"
+    ],
+    [
+      "S_compute_1",
+      "T11026"
+    ],
+    [
+      "T11026",
+      "R11026"
+    ],
+    [
+      "S_compute_1",
+      "T11027"
+    ],
+    [
+      "T11027",
+      "R11027"
+    ],
+    [
+      "S_compute_1",
+      "T11028"
+    ],
+    [
+      "T11028",
+      "R11028"
+    ],
+    [
+      "O_compute",
+      "S_compute_1"
+    ],
+    [
+      "outcome",
+      "O_compute"
+    ]
+  ],
+  "width": 2000,
+  "height": 1355.0
+}

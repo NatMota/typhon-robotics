@@ -1,0 +1,51 @@
+%%{init: {"theme": "base", "securityLevel": "loose", "fontFamily": "Arial, sans-serif", "fontSize": 18, "markdownAutoWrap": false, "flowchart": {"htmlLabels": false, "curve": "basis", "nodeSpacing": 24, "rankSpacing": 70, "wrappingWidth": 360}, "themeVariables": {"primaryTextColor": "#edf2f7", "lineColor": "#71849f", "background": "#0b1220"}}}%%
+flowchart LR
+OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
+O_execution["Opportunity: Make grasp-relative motion finish before<br/>release"]:::opportunity
+OUT --> O_execution
+O_execution_S0["Solution: Trace commanded and executed motion"]:::solution
+O_execution --> O_execution_S0
+T10957["R01 · #10957<br/>Trace V4 rotation, gripper command and actual<br/>motion around release"]:::experiment
+O_execution_S0 --> T10957
+R10957["Policy opens before orientation keep-closed<br/>still ~80° wrong"]:::negative
+T10957 --> R10957
+click T10957 "http://127.0.0.1:4001/?project=typhon-research#ticket=10957" "Open research ticket" _blank
+T10958["R01d · #10958<br/>Audit previous-command proprioception and test<br/>release-input alternatives"]:::experiment
+O_execution_S0 --> T10958
+R10958["Measured EEF delays opening 79–85° error<br/>remains"]:::negative
+T10958 --> R10958
+click T10958 "http://127.0.0.1:4001/?project=typhon-research#ticket=10958" "Open research ticket" _blank
+T10968["R05b · #10968<br/>Compare V4 continuation from off-axis and<br/>near-expert held states"]:::experiment
+O_execution_S0 --> T10968
+R10968["Same V4: off-axis ~85° error near-expert &lt;1°;<br/>strict 0/16"]:::mixed
+T10968 --> R10968
+click T10968 "http://127.0.0.1:4001/?project=typhon-research#ticket=10968" "Open research ticket" _blank
+O_execution_S1["Solution: Estimate the actual grasp and qualify paths"]:::solution
+O_execution --> O_execution_S1
+T10985["NEXT03 · #10985<br/>Separate grasp-estimation error from<br/>recovery-control error"]:::experiment
+O_execution_S1 --> T10985
+R10985["Four paired recovery executions: truth and RGB<br/>grasp transforms each 2/2 strict. Two<br/>inspected source states; no autonomous handoff<br/>qualification."]:::mixed
+T10985 --> R10985
+click T10985 "http://127.0.0.1:4001/?project=typhon-research#ticket=10985" "Open research ticket" _blank
+T10998["CTRL01 · #10998<br/>Qualify joint-aware recovery paths and staged<br/>regrasp"]:::experiment
+O_execution_S1 --> T10998
+R10998["BLOCKED: set-down/regrasp strict 1/6. Five<br/>joint-limit stops; no full collision<br/>qualification. Failed paths are not labels."]:::blocked
+T10998 --> R10998
+click T10998 "http://127.0.0.1:4001/?project=typhon-research#ticket=10998" "Open research ticket" _blank
+O_execution_S2["Solution: Test observation frequency"]:::solution
+O_execution --> O_execution_S2
+T10966["R04 · #10966<br/>Compare 30-action execution with 10-action<br/>replanning on V4"]:::experiment
+O_execution_S2 --> T10966
+R10966["Grasps: 2/12 vs 0/12 H10 slower; strict 0 both"]:::negative
+T10966 --> R10966
+click T10966 "http://127.0.0.1:4001/?project=typhon-research#ticket=10966" "Open research ticket" _blank
+classDef outcome fill:#263f60,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef opportunity fill:#2d443b,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef solution fill:#343a46,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef experiment fill:#4a4428,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef evidence fill:#244a3d,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef mixed fill:#574831,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef negative fill:#56343c,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef pending fill:#30445a,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef blocked fill:#4e374f,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef parked fill:#373b42,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;

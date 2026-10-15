@@ -1,0 +1,121 @@
+id,type,label,parent_id,x,y,color
+T10969,experiment,"R06 · #10969
+Compare observable phase harness, unmodified V4 and deterministic skills",S_recovery_0,1220,58.0,#4a4428
+R10969,result,"Guard blocks valid grasps 1,126 close vetoes; reject",T10969,1620,67.5,#56343c
+T10970,experiment,"R06b · #10970
+Fix post-release observer projection in a training-only prototype",S_recovery_0,1220,185.0,#4a4428
+R10970,result,"Position error 16–19 mm → 0.44–0.66 mm, same images",T10970,1620,194.5,#574831
+T10984,experiment,"NEXT02 · #10984
+Repair observation hypotheses before granting the harness veto authority",S_recovery_0,1220,312.0,#4a4428
+R10984,result,"BLOCKED: observers remain below preregistered qualification. No veto, grasp or release authority.",T10984,1620,312.0,#4e374f
+T10999,experiment,"CTRL02 · #10999
+Specify and log hard workspace, no-go and joint-boundary policies",S_recovery_0,1220,449.5,#4a4428
+R10999,result,27 checks plus 36 successful expert episodes: zero guard rejections. Logging implemented; not full robot-safety validation.,T10999,1620,439.0,#574831
+T11004,experiment,"LIVE01 · #11004
+Verify the existing live harness and controller telemetry hookup",S_recovery_0,1220,597.5,#4a4428
+R11004,result,"REVIEW: original V4 shadow parity passed. New copy-safe lineage resolves timestamps, but LOAD04-B paired parity fails on raw camera variation. No control authority.",T11004,1620,587.0,#574831
+T11030,experiment,"OBS05 · #11030
+Test fresh glyph-motion evidence against the held-state latch",S_recovery_0,1220,735.0,#4a4428
+R11030,result,"Eight replay episodes / 1,219 observations. All four passive variants fail gates; glyph filtering loses too much recall.",T11030,1620,735.0,#574831
+T11031,experiment,"OBS06 · #11031
+Test aperture and release evidence on additional archived episodes",S_recovery_0,1220,862.0,#4a4428
+R11031,result,"24 episodes / 8,784 observations: contact false positives 108 to 20, precision 94.65%. Still below 95% gate; no authority.",T11031,1620,862.0,#574831
+T11054,experiment,"LIVE01-P · #11054
+Carry camera acquisition provenance across copies without changing robot execution",S_recovery_0,1220,1010.0,#4a4428
+R11054,result,"Review: capture provenance 6,365/6,365; offline tensors unchanged. Live pair differed by one background pixel, then actions diverged. Both tasks succeeded; exact live transparency failed.",T11054,1620,989.0,#574831
+T11057,experiment,"LIVE01-R · #11057
+Fixed-state camera repeatability with and without provenance",S_recovery_0,1220,1179.0,#4a4428
+R11057,result,Completed: fixed-state 24 bundles / 48 images match exactly with and without provenance. Earlier live difference not reproduced; live parity remains failed. Cached observer output; no new policy runs.,T11057,1620,1158.0,#574831
+S_recovery_0,solution,Qualify state estimates and safety checks,O_recovery,820,628.0,#343a46
+T10971,experiment,"R06c · #10971
+Qualify and reject a two-axis IK endpoint selector",S_recovery_1,1220,1352.0,#4a4428
+R10971,result,Six-take success 3/6 → 1/6 Feasible endpoint ≠ feasible path,T10971,1620,1361.5,#56343c
+T10973,experiment,"R08 · #10973
+Qualify geometric expert recovery from exact V4 failure states",S_recovery_1,1220,1479.0,#4a4428
+R10973,result,Nominal 2/6 → grasp-aware 3/6 recoveries quarantined from training,T10973,1620,1488.5,#574831
+T10976,experiment,"R11 · #10976
+Prototype a typed primitive interface and deterministic supervisor",S_recovery_1,1220,1606.0,#4a4428
+R10976,result,Interface works; skills limited 2/6 pickups; 0/6 completions,T10976,1620,1615.5,#574831
+T10977,experiment,"R12 · #10977
+Train and evaluate a causal phase predictor",S_recovery_1,1220,1732.0,#4a4428
+R10977,result,63.7% accuracy; early release confidence gate fails; disabled,T10977,1620,1732.0,#56343c
+T11000,experiment,"HIER01 · #11000
+Train a high-level skill selector only after primitives are reliable",S_recovery_1,1220,1839.0,#4a4428
+R11000,result,BLOCKED: reliable primitive transitions and observation authority are prerequisites. No high-level selector training.,T11000,1620,1839.0,#4e374f
+S_recovery_1,solution,Qualify skills and phase control,O_recovery,820,1605.0,#343a46
+T10978,experiment,"R13 · #10978
+Compare DAgger, options, residual RL, offline Q and PPO approaches",S_recovery_2,1220,1991.0,#4a4428
+R10978,result,"DAgger, residuals, Q, PPO reviewed no new RL training performed",T10978,1620,2000.5,#244a3d
+T11001,experiment,"REL01 · #11001
+Collect qualified learner-state corrections and run a separate DAgger experiment",S_recovery_2,1220,2118.0,#4a4428
+R11001,result,"One DAgger iteration, four corrections plus nominal data, 3k updates. Quarantine recovery 0/4; no benefit demonstrated.",T11001,1620,2118.0,#30445a
+T11002,experiment,"REL02 · #11002
+Compare supervised residual correction with bounded residual RL",S_recovery_2,1220,2245.0,#4a4428
+R11002,result,BLOCKED: reliable correction targets and action support required. Residual RL not run.,T11002,1620,2245.0,#4e374f
+T11003,experiment,"REL03 · #11003
+Evaluate offline value ranking or PPO/DPPO only with adequate action support",S_recovery_2,1220,2372.0,#4a4428
+R11003,result,BLOCKED: useful proposals and valid rewards required. Offline Q / PPO on X-VLA not run.,T11003,1620,2381.5,#4e374f
+S_recovery_2,solution,Test correction data and RL prerequisites,O_recovery,820,2191.0,#343a46
+T11041,experiment,"ALPHA01 · #11041
+AlphaNIST-inspired Panda PPO/reset-sampling pilot",S_recovery_3,1220,2534.5,#4a4428
+R11041,result,Small point-cloud PPO pilot: adaptive reset sampling has no demonstrated advantage. All five policies 0/4 full starts. Separate from X-VLA.,T11041,1620,2524.0,#574831
+T11043,experiment,"ALPHA02 · #11043
+frozen-policy 4s/15s reset qualification and release-only control",S_recovery_3,1220,2682.5,#4a4428
+R11043,result,Frozen 32-rollout follow-up: all four policies 0/4 full starts and zero new grasps. Release-only matches near-goal success; park further PPO.,T11043,1620,2672.0,#574831
+T11051,experiment,"ALPHA03 · #11051
+Fuller AlphaNIST implementation and visual-orientation extension — deferred",S_recovery_3,1220,2830.5,#4a4428
+R11051,result,PARKED by request. Fuller GPU-parallel/reset-bank implementation and visual orientation extension recorded; no implementation or training started.,T11051,1620,2820.0,#373b42
+S_recovery_3,solution,Separate AlphaNIST-style PPO from X-VLA,O_recovery,820,2692.0,#343a46
+T11050,experiment,"DATA07-R · #11050
+Qualify acquisition repairs on training families before admitting corrective data",S_recovery_4,1220,3045.5,#4a4428
+R11050,result,"Completed: native B loading3/4. Only0001 tipped pre-acquisition; one same-state C-pose/B-grip chunk still failed (0/1 conversions), with428.09mm final error. Full horizon and exact state/input/noise checks passed. Zero successful correction examples; no training. Raw809files SHA256-verified on Mint.",T11050,1620,2993.0,#574831
+T11052,experiment,"DATA07-GE · #11052
+Qualify one geometric-expert continuation from B's failed approach state",S_recovery_4,1220,3267.0,#4a4428
+R11052,result,"Completed: exact-state geometric teacher placed/released inside fixture (1.22 mm, 0.016 deg yaw) but brick lay sideways (90 deg tilt). Strict 0/1; no correction candidate. Open descent tipped before close. No training; stopped after one attempt.",T11052,1620,3225.0,#574831
+T11053,experiment,"CTRL03 · #11053
+Diagnose loading acquisition tipping before qualifying a controller repair",S_recovery_4,1220,3457.0,#4a4428
+R11053,result,Nominal sampled gripper corridor clears the brick; executed finger shell hits its top before closure. Proposed readiness gate failed: 11.85 mm minimum versus 3 mm. Zero repair rollouts.,T11053,1620,3436.0,#574831
+T11055,experiment,"CTRL04 · #11055
+Test one fixed pre-descent dwell from the failed acquisition state",S_recovery_4,1220,3615.5,#4a4428
+R11055,result,Completed: extra 4 s reduced entry error from 5.69 to 4.18 mm. Strict success 0/2; both tipped before grasp. Settling alone insufficient. Raw archive verified on Mint.,T11055,1620,3605.0,#574831
+T11056,experiment,"CTRL05 · #11056
+Compare matched-time step and smooth descent from the settled state",S_recovery_4,1220,3774.0,#4a4428
+R11056,result,BLOCKED: reference audit completed; qualification stopped at tick 510 because wrapper code changed too early. No S/R descent runs or efficacy result. Approach-repair branch deferred tonight.,T11056,1620,3753.0,#4e374f
+S_recovery_4,solution,Qualify training-family corrective supervision,O_recovery,820,3419.25,#343a46
+T11066,experiment,"HIER01-TASK · #11066
+Test a fixed caller-task dispatcher across retained checkpoints",S_recovery_5,1220,3968.0,#4a4428
+R11066,result,Done: caller-task routing. Main 4/4 vs B 3/4; conditional confirmation 2/2 vs 1/2. All 12 lift. G1 recovered; feeding/loading retained. One training family; no learned hierarchy.,T11066,1620,3947.0,#574831
+S_recovery_5,solution,Dispatch an explicitly supplied task to a retained motor policy,O_recovery,820,3977.5,#343a46
+T11067,experiment,"HIER01-DEV · #11067
+Qualify fixed task routing on archived 0012/0013 development scenes",S_recovery_6,1220,4162.0,#4a4428
+R11067,result,"Done: router passed feeding 4/4 and loading 4/4; B passed feeding 4/4 and loading 2/4. All 16 lifted. B loading failures were tilted/unseated placements. Two visible families, not independent holdouts.",T11067,1620,4141.0,#574831
+S_recovery_6,solution,Qualify task routing across starting contexts,O_recovery,820,4171.5,#343a46
+T11068,experiment,"HIER01-CHAIN · #11068
+Test fixed-budget feed/load handovers without world reset",S_recovery_7,1220,4366.5,#4a4428
+R11068,result,Done: both continuous task orders failed on the second task. First tasks succeeded; the incoming policy never reacquired the brick. No world reset or hidden home motion. Original reverse order had a documented raw-RGB audit stop.,T11068,1620,4335.0,#574831
+T11069,experiment,"HIER01-CHAIN-AMEND1 · #11069
+Complete one fresh L→F workflow after raw-render gate interruption",S_recovery_7,1220,4567.0,#4a4428
+R11069,result,"Done: explicit audit amendment allowed the fresh reverse workflow. Six raw channel differences left all actual actor inputs, actions and controller traces exact. Loading passed; subsequent feeding did not approach or grasp. Original evidence retained.",T11069,1620,4525.0,#574831
+S_recovery_7,solution,Test uninterrupted task handovers,O_recovery,820,4476.25,#343a46
+T11070,experiment,"HIER01-HANDOFF · #11070
+Diagnose both skill transitions from saved evidence",S_recovery_8,1220,4813.5,#4a4428
+R11070,result,"Done: correct task, fresh history and visible blue 2 at both handovers. Policies proposed open-gripper near-home motions: zero contact or lift. New starts are 200–299 mm from training starts; robot posture is close to standalone. Coverage/conditioning is next; numeral recognition remains unproven.",T11070,1620,4761.0,#574831
+S_recovery_8,solution,Diagnose why the next task never starts,O_recovery,820,4823.0,#343a46
+T11071,experiment,"HIER01-START · #11071
+Separate right-side start position from the feeding-marker cue",S_recovery_9,1220,5060.0,#4a4428
+R11071,result,"Done: loading controls 2/2. All eight right-side starts: no contact or lift. Inside the feeding marker: no close proposals. Outside: 17–371 empty-space closes and an arm path 112–117 mm closer. The cue changes activity, but does not restore acquisition.",T11071,1620,5018.0,#574831
+S_recovery_9,solution,Separate unfamiliar starts from prior-task visual cues,O_recovery,820,5069.5,#343a46
+T11072,experiment,"INIT01 · #11072
+qualify task-start supervision from training-family handovers",S_recovery_10,1220,5285.5,#4a4428
+R11072,result,Done: native loading 0/4; unchanged teacher 4/4; completed-feeding holds 4/4. Teacher lifts were upright with bilateral support. Eight candidate recordings; no training. Starts span only 10.5 mm. Next: a matched adaptation and retention test.,T11072,1620,5254.0,#574831
+S_recovery_10,solution,Qualify task-start supervision after completed work,O_recovery,820,5295.0,#343a46
+T11073,experiment,"INIT02 · #11073
+matched initiation adaptation with preservation and rehearsal",S_recovery_11,1220,5511.0,#4a4428
+R11073,result,"Complete: T learned loading at shared post-feeding starts (5/8 vs R 0/8), but disturbed all eight completed feeding cases (0/8 preserved vs R 8/8). Prior strict passes unchanged; two pickup regressions. Optional gate failed. 69 canonical trials; full SHA-verified Mint archive.",T11073,1620,5469.0,#574831
+S_recovery_11,solution,Learn when to initiate loading while preserving completed feeding,O_recovery,820,5520.5,#343a46
+T11074,experiment,"INIT03 · #11074
+distinguish conditional fitting from noise-to-action generation",S_recovery_12,1220,5757.5,#4a4428
+R11074,result,Partial diagnostic: all 32 saved first action chunks remain closer to hold under either instruction. Exact start inputs match training; initial loading vs hold not separated. Later T manipulation unexplained. Native conditional-loss test missed qualification deadline; unmeasured. Archived; planner review.,T11074,1620,5705.0,#574831
+S_recovery_12,solution,Separate initial action choice from later policy drift,O_recovery,820,5767.0,#343a46
+O_recovery,opportunity,Advance phases only from trustworthy evidence,outcome,420,3197.5,#2d443b
+outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60
