@@ -1,0 +1,34 @@
+{
+  "id": "overview",
+  "name": "00 \u00b7 Opportunity tree overview",
+  "artboards": [
+    {
+      "id": "overview-tree",
+      "name": "overview-tree",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 1808,
+        "height": 10058
+      },
+      "layers": [
+        {
+          "id": "60f6d795-21a2-4597-ac3e-78ae65f9a9ff",
+          "type": "image",
+          "name": "TYPHON / Selected experiments and results",
+          "x": 0,
+          "y": 0,
+          "width": 1808.0,
+          "height": 10058.0,
+          "imageRef": "/llm-design-tool/designs/typhon-research/assets/overview.svg",
+          "updatedAt": "2026-10-11T19:24:53Z"
+        }
+      ],
+      "width": 1324,
+      "height": 4532,
+      "updatedAt": "2026-10-13T21:38:42Z",
+      "mermaidSource": "%%{init: {\"theme\": \"base\", \"securityLevel\": \"loose\", \"look\": \"classic\", \"htmlLabels\": false, \"fontFamily\": \"sans-serif\", \"fontSize\": 18, \"markdownAutoWrap\": false, \"flowchart\": {\"htmlLabels\": false, \"wrappingWidth\": 360, \"minNodeWidth\": 300, \"curve\": \"basis\", \"nodeSpacing\": 28, \"rankSpacing\": 80}, \"themeVariables\": {\"fontFamily\": \"Arial, sans-serif\", \"fontSize\": \"18px\", \"primaryTextColor\": \"#edf2f7\", \"lineColor\": \"#71849f\", \"background\": \"#0b1220\"}}}%%\nflowchart LR\nGOAL[\"Use personally recorded manipulation<br/>data to achieve reliable, correctly<br/>oriented Panda feeding\"]:::outcome\nO_data[\"Turn personal observations into<br/>trustworthy robot practice\"]:::opportunity\nGOAL --> O_data\nF_data[\"One human correction retargets<br/>successfully; frame-to-action supervision<br/>remains unvalidated.\"]:::solution\nO_data --> F_data\nclick O_data \"http://127.0.0.1:5176/llm-design-tool/ui/index.html?project=typhon-research&file=opportunity-tree&page=data&artboard=data-tree\" \"Open detailed branch\" _self\nO_perception[\"Keep task orientation observable and<br/>actionable through occlusion\"]:::opportunity\nGOAL --> O_perception\nF_perception[\"Initial numeral dependence is real;<br/>release-stage goal adaptation still fails.\"]:::solution\nO_perception --> F_perception\nclick O_perception \"http://127.0.0.1:5176/llm-design-tool/ui/index.html?project=typhon-research&file=opportunity-tree&page=perception&artboard=perception-tree\" \"Open detailed branch\" _self\nO_generalisation[\"Succeed beyond the exact starts seen<br/>during training\"]:::opportunity\nGOAL --> O_generalisation\nF_generalisation[\"Broad Pt succeeds on familiar starts but<br/>grasps none of the three tested development<br/>families.\"]:::solution\nO_generalisation --> F_generalisation\nclick O_generalisation \"http://127.0.0.1:5176/llm-design-tool/ui/index.html?project=typhon-research&file=opportunity-tree&page=generalisation&artboard=generalisation-tree\" \"Open detailed branch\" _self\nO_execution[\"Carry a successful grasp through<br/>correct placement and release\"]:::opportunity\nGOAL --> O_execution\nF_execution[\"V4 can grasp and place; its off-axis grasp<br/>leaves roughly 85\u00b0 orientation error.\"]:::solution\nO_execution --> F_execution\nclick O_execution \"http://127.0.0.1:5176/llm-design-tool/ui/index.html?project=typhon-research&file=opportunity-tree&page=execution&artboard=execution-tree\" \"Open detailed branch\" _self\nO_recovery[\"Recover safely without blocking<br/>actions that would have worked\"]:::opportunity\nGOAL --> O_recovery\nF_recovery[\"The current phase guard harms grasping; a<br/>local observation fix works but full<br/>recovery is limited.\"]:::solution\nO_recovery --> F_recovery\nclick O_recovery \"http://127.0.0.1:5176/llm-design-tool/ui/index.html?project=typhon-research&file=opportunity-tree&page=recovery&artboard=recovery-tree\" \"Open detailed branch\" _self\nO_compute[\"Spend extra inference only when<br/>better actions are available\"]:::opportunity\nGOAL --> O_compute\nF_compute[\"Best-of-eight improves approach<br/>availability, but finds no additional<br/>grasp-capable state.\"]:::solution\nO_compute --> F_compute\nclick O_compute \"http://127.0.0.1:5176/llm-design-tool/ui/index.html?project=typhon-research&file=opportunity-tree&page=compute&artboard=compute-tree\" \"Open detailed branch\" _self\nO_evidence[\"Make each claimed improvement<br/>auditable and comparable\"]:::opportunity\nGOAL --> O_evidence\nF_evidence[\"Keep model identities, scene families,<br/>partial outcomes and strict success<br/>distinct.\"]:::solution\nO_evidence --> F_evidence\nclick O_evidence \"http://127.0.0.1:5176/llm-design-tool/ui/index.html?project=typhon-research&file=opportunity-tree&page=evidence&artboard=evidence-tree\" \"Open detailed branch\" _self\nO_parked[\"Preserve decisions about ideas<br/>outside the active scope\"]:::parked\nGOAL --> O_parked\nF_parked[\"Withdrawn and deferred ideas are retained<br/>without implying they were tested.\"]:::solution\nO_parked --> F_parked\nclick O_parked \"http://127.0.0.1:5176/llm-design-tool/ui/index.html?project=typhon-research&file=opportunity-tree&page=parked&artboard=parked-tree\" \"Open detailed branch\" _self\nclassDef outcome fill:#162b50,stroke:#8ab7ff,stroke-width:3px,color:#f8fbff;\nclassDef opportunity fill:#143936,stroke:#55c9b5,stroke-width:2px,color:#ecfff9;\nclassDef solution fill:#222d45,stroke:#8395b8,color:#eef2ff;\nclassDef positive fill:#143e33,stroke:#57d9a3,stroke-width:2px,color:#effff6;\nclassDef evidence fill:#18344b,stroke:#67b5e8,color:#eff9ff;\nclassDef mixed fill:#48361e,stroke:#dfb265,color:#fff7df;\nclassDef negative fill:#452632,stroke:#e78298,color:#fff0f4;\nclassDef next fill:#223353,stroke:#92acff,stroke-width:2px,stroke-dasharray:5 3,color:#edf1ff;\nclassDef pending fill:#242b39,stroke:#718096,stroke-dasharray:5 3,color:#d5deed;\nclassDef review fill:#332c48,stroke:#b5a0da,stroke-dasharray:3 3,color:#f2edff;\nclassDef blocked fill:#412d4b,stroke:#d796db,stroke-dasharray:3 3,color:#fff0ff;\nclassDef parked fill:#2b3038,stroke:#68717e,stroke-dasharray:3 5,color:#aeb8c7;\n"
+    }
+  ],
+  "updatedAt": "2026-10-13T21:38:42Z"
+}

@@ -1,0 +1,24 @@
+id,type,label,parent_id,x,y,color
+T10957,experiment,"R01 · #10957
+Trace V4 rotation, gripper command and actual motion around release",S_execution_0,1220,58.0,#4a4428
+R10957,result,Policy opens before orientation keep-closed still ~80° wrong,T10957,1620,67.5,#56343c
+T10958,experiment,"R01d · #10958
+Audit previous-command proprioception and test release-input alternatives",S_execution_0,1220,185.0,#4a4428
+R10958,result,Measured EEF delays opening 79–85° error remains,T10958,1620,194.5,#56343c
+T10968,experiment,"R05b · #10968
+Compare V4 continuation from off-axis and near-expert held states",S_execution_0,1220,312.0,#4a4428
+R10968,result,Same V4: off-axis ~85° error near-expert <1°; strict 0/16,T10968,1620,321.5,#574831
+S_execution_0,solution,Trace commanded and executed motion,O_execution,820,194.5,#343a46
+T10985,experiment,"NEXT03 · #10985
+Separate grasp-estimation error from recovery-control error",S_execution_1,1220,474.5,#4a4428
+R10985,result,Four paired recovery executions: truth and RGB grasp transforms each 2/2 strict. Two inspected source states; no autonomous handoff qualification.,T10985,1620,464.0,#574831
+T10998,experiment,"CTRL01 · #10998
+Qualify joint-aware recovery paths and staged regrasp",S_execution_1,1220,612.0,#4a4428
+R10998,result,BLOCKED: set-down/regrasp strict 1/6. Five joint-limit stops; no full collision qualification. Failed paths are not labels.,T10998,1620,612.0,#4e374f
+S_execution_1,solution,Estimate the actual grasp and qualify paths,O_execution,820,552.75,#343a46
+T10966,experiment,"R04 · #10966
+Compare 30-action execution with 10-action replanning on V4",S_execution_2,1220,764.0,#4a4428
+R10966,result,Grasps: 2/12 vs 0/12 H10 slower; strict 0 both,T10966,1620,773.5,#56343c
+S_execution_2,solution,Test observation frequency,O_execution,820,773.5,#343a46
+O_execution,opportunity,Make grasp-relative motion finish before release,outcome,420,484.0,#2d443b
+outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60
