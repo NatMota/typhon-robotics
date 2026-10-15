@@ -1,0 +1,621 @@
+{
+  "epoch": 1792106313.61901,
+  "source_sha256": {
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-loading-912172/episode.json": "5e7811ce1e2049df90ab9ae32bca8f786f1c6a02794ac5a0dfe49dc083dd05f0",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-loading-912172/controller_trace.jsonl.gz": "4ca9fc0c896b659c724f696b6c8951e8c8a152c24d8bb5c4b730294e8615bcf6",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-loading-912172/predictions.npz": "47cac56733b9fd8b2a25e74cab064c7dafa9350f671381f5c084b1fdf962f765",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-loading-912172/policy_io.npz": "559fc6aca0b483e0544e94d1e32aea49a4e6bdbf57fdc74e96e72668345f6c49",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-loading-912172/inference.json": "775a9cde600144f2c92860073db54ae99b05cc20ccfb4e930a9a98da6995949a",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0003-loading-912172/episode.json": "5c4565e1c9a7797152619f36ece4b8d02b59ff14a4575b5ff0e40a4ab862ff2d",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0003-loading-912172/controller_trace.jsonl.gz": "d3218f8a1bf151b3a9902c0bf8e30e4f2b20a455b11cdb84707b6f28b181686c",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0003-loading-912172/predictions.npz": "88603b03792a6edc90b9f45e6850f60ae836aeb32a8d8d14e6e6778b8a2fbe9e",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0003-loading-912172/policy_io.npz": "24709413c92c7bf01bbdfd744630c662fcc4d45a985c1d5f89ddd3c7c882bcae",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0003-loading-912172/inference.json": "d0e879558a3f2238b87a5e990314587a166e3d6aa76f861f102d7a62a693e730",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/episode.json": "b640a56f5d201e50402300a0c2139212189795e66517f1a1694d326573d6299b",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/controller_trace.jsonl.gz": "44cc5a8e476265c8e42864292ccf5cc78903c3444b529c634b8989979c3fc3a3",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/predictions.npz": "4f12d9fce5846b40dbe348c33cc8cd365114b3b573f3657949def7121f1c1450",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/policy_io.npz": "361536f40b2f2b36ca76cb005c8c646d358f3a2bb0832f434f2a71f2a1672ba0",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/inference.json": "eca6952061d2cf3a6159a171e078d77feae6d0e5ccab354fd3b3cfb260889307",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-loading-912171/episode.json": "4d7a93cce524b57e916f3115b55c82d358df827b42acb9845710846aec9d1dd2",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-loading-912171/controller_trace.jsonl.gz": "7921d4d2ab61d0f2a375e2d0de2ea11c4801d42fe0f1ee9989bf3db8cebbf735",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-loading-912171/predictions.npz": "2872042b570e6fcc69ef17417f35158d956a747ced5e45f6c11755d1b13759f2",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-loading-912171/policy_io.npz": "68bd1cc35596fc763da514f867347e787c2565542a8bbafa7d5cb92f2d127340",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-loading-912171/inference.json": "a1e30abaef37982d49f20c1f3000d42f3f880a79fb09254d982da9e752402bbe",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0005-loading-912171/episode.json": "9abcc84439e2d8835c740afe4fe50bd807a4fe25445e7d903a74bbed1db9ee0d",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0005-loading-912171/controller_trace.jsonl.gz": "0606cb980ae8b3ef10c77b748283e4952432daddf85894af6c9018b155d85223",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0005-loading-912171/predictions.npz": "63c4e49d6efaf8dd1f7086faefd13d5aa8f2f0844d2be67f2b4c1841c5e68447",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0005-loading-912171/policy_io.npz": "da92b9f67bdfa029843ab141fc660d30188e038fc41c9d2310f2dc3c57789840",
+    "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0005-loading-912171/inference.json": "d54be312b7d1aac53b4f013d479b26bfb9a27c56f2376c9cee8927b2360230c3",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/episode.json": "feb7e521eb77ad0493f3a446fb6247c458be13a8756c6d21c373fe221629f87a",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/controller_trace.jsonl.gz": "d967495876f8e30ee9f8a9c5db9e0664da650a74596b91a3e1d7a8b1b3550f1a",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/predictions.npz": "61338f74afd44b1929039ba39d65a7e4082fb1e27bc006593398d46c5b27f1f0",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/policy_io.npz": "d165c27de5482600f934400dd4a012949e8895172aae3c41cac39e06b8030030",
+    "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/inference.json": "624880a32634f349f486e5f0c7439b7d84ac46e19ad77dc143d40ec3643c9023"
+  },
+  "attempts": [
+    {
+      "id": "init-demo_0003-loading-912172-T-first_success",
+      "case": "init-demo_0003-loading-912172",
+      "model": "T",
+      "rule": "first_success",
+      "source_directory": "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-loading-912172",
+      "initial_truth": {
+        "object_position_m": [
+          0.12745471661680197,
+          -0.12087766989812622,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9999929002162286,
+          4.291679065133147e-17,
+          -8.039685632389745e-19,
+          -0.00376822466634851
+        ],
+        "object_yaw_rad": -0.007536467168467894,
+        "object_linear_velocity_m_s": [
+          -2.747485057714528e-20,
+          1.2609261598371768e-17,
+          2.162008142672985e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -5.663236422273068e-16,
+          -3.588623089180214e-17,
+          1.4263127523849565e-31
+        ],
+        "eef_position_m": [
+          -0.24967404804468535,
+          -0.25036190375443085,
+          1.0802553837333309
+        ],
+        "gripper_joint_position_m": [
+          0.03996798284124309,
+          -0.03998243368355606
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 343,
+        "sim_time_s": 17.15
+      },
+      "close_segment": {
+        "index": 0,
+        "start_index": 120,
+        "end_index_exclusive": 186,
+        "start_tick": 464,
+        "opening_tick": 530,
+        "qualifying_lifts": [
+          {
+            "start_tick": 477,
+            "ticks": 49
+          }
+        ],
+        "max_brick_rise_mm": 156.30298969317346,
+        "bilateral_ticks": 60,
+        "contact_ticks": 61
+      },
+      "window_start_index": 0,
+      "window_end_index_exclusive": 216,
+      "window_start_tick": 344,
+      "window_end_tick": 559,
+      "queries": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "first_close_generating_query": 4,
+      "dt_s": 0.05
+    },
+    {
+      "id": "init-demo_0003-loading-912172-Q0-first_failed_close",
+      "case": "init-demo_0003-loading-912172",
+      "model": "Q0",
+      "rule": "first_failed_close",
+      "source_directory": "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0003-loading-912172",
+      "initial_truth": {
+        "object_position_m": [
+          0.12745471661680197,
+          -0.12087766989812622,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9999929002162286,
+          4.291679065133147e-17,
+          -8.039685632389745e-19,
+          -0.00376822466634851
+        ],
+        "object_yaw_rad": -0.007536467168467894,
+        "object_linear_velocity_m_s": [
+          -2.747485057714528e-20,
+          1.2609261598371768e-17,
+          2.162008142672985e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -5.663236422273068e-16,
+          -3.588623089180214e-17,
+          1.4263127523849565e-31
+        ],
+        "eef_position_m": [
+          -0.24967404804468535,
+          -0.25036190375443085,
+          1.0802553837333309
+        ],
+        "gripper_joint_position_m": [
+          0.03996798284124309,
+          -0.03998243368355606
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 343,
+        "sim_time_s": 17.15
+      },
+      "close_segment": {
+        "index": 0,
+        "start_index": 63,
+        "end_index_exclusive": 90,
+        "start_tick": 407,
+        "opening_tick": 434,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 0.0,
+        "bilateral_ticks": 0,
+        "contact_ticks": 9
+      },
+      "window_start_index": 0,
+      "window_end_index_exclusive": 120,
+      "window_start_tick": 344,
+      "window_end_tick": 463,
+      "queries": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "first_close_generating_query": 2,
+      "dt_s": 0.05
+    },
+    {
+      "id": "init-demo_0003-loading-912172-Q0-first_later_success",
+      "case": "init-demo_0003-loading-912172",
+      "model": "Q0",
+      "rule": "first_later_success",
+      "source_directory": "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0003-loading-912172",
+      "initial_truth": {
+        "object_position_m": [
+          0.12745471661680197,
+          -0.12087766989812622,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9999929002162286,
+          4.291679065133147e-17,
+          -8.039685632389745e-19,
+          -0.00376822466634851
+        ],
+        "object_yaw_rad": -0.007536467168467894,
+        "object_linear_velocity_m_s": [
+          -2.747485057714528e-20,
+          1.2609261598371768e-17,
+          2.162008142672985e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -5.663236422273068e-16,
+          -3.588623089180214e-17,
+          1.4263127523849565e-31
+        ],
+        "eef_position_m": [
+          -0.24967404804468535,
+          -0.25036190375443085,
+          1.0802553837333309
+        ],
+        "gripper_joint_position_m": [
+          0.03996798284124309,
+          -0.03998243368355606
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 343,
+        "sim_time_s": 17.15
+      },
+      "close_segment": {
+        "index": 3,
+        "start_index": 330,
+        "end_index_exclusive": 400,
+        "start_tick": 674,
+        "opening_tick": 744,
+        "qualifying_lifts": [
+          {
+            "start_tick": 688,
+            "ticks": 60
+          }
+        ],
+        "max_brick_rise_mm": 148.36686961114742,
+        "bilateral_ticks": 64,
+        "contact_ticks": 65
+      },
+      "window_start_index": 300,
+      "window_end_index_exclusive": 430,
+      "window_start_tick": 644,
+      "window_end_tick": 773,
+      "queries": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "first_close_generating_query": 11,
+      "dt_s": 0.05
+    },
+    {
+      "id": "init-demo_0003-loading-912172-Q1-first_brief_lift_loss",
+      "case": "init-demo_0003-loading-912172",
+      "model": "Q1",
+      "rule": "first_brief_lift_loss",
+      "source_directory": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172",
+      "initial_truth": {
+        "object_position_m": [
+          0.12745471661680197,
+          -0.12087766989812622,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9999929002162286,
+          4.291679065133147e-17,
+          -8.039685632389745e-19,
+          -0.00376822466634851
+        ],
+        "object_yaw_rad": -0.007536467168467894,
+        "object_linear_velocity_m_s": [
+          -2.747485057714528e-20,
+          1.2609261598371768e-17,
+          2.162008142672985e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -5.663236422273068e-16,
+          -3.588623089180214e-17,
+          1.4263127523849565e-31
+        ],
+        "eef_position_m": [
+          -0.24967404804468535,
+          -0.25036190375443085,
+          1.0802553837333309
+        ],
+        "gripper_joint_position_m": [
+          0.03996798284124309,
+          -0.03998243368355606
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 343,
+        "sim_time_s": 17.15
+      },
+      "close_segment": {
+        "index": 0,
+        "start_index": 67,
+        "end_index_exclusive": 120,
+        "start_tick": 411,
+        "opening_tick": 464,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 34.695483534552984,
+        "bilateral_ticks": 15,
+        "contact_ticks": 17
+      },
+      "window_start_index": 0,
+      "window_end_index_exclusive": 150,
+      "window_start_tick": 344,
+      "window_end_tick": 493,
+      "queries": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "first_close_generating_query": 2,
+      "dt_s": 0.05
+    },
+    {
+      "id": "init-demo_0005-loading-912171-T-first_success",
+      "case": "init-demo_0005-loading-912171",
+      "model": "T",
+      "rule": "first_success",
+      "source_directory": "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-loading-912171",
+      "initial_truth": {
+        "object_position_m": [
+          0.12705075770615454,
+          -0.12099368376034642,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9999905116368096,
+          3.659066264493684e-17,
+          4.27645836495155e-18,
+          -0.004356218124932482
+        ],
+        "object_yaw_rad": -0.008712463805556018,
+        "object_linear_velocity_m_s": [
+          -1.6078822184107271e-18,
+          1.5860296783635155e-17,
+          2.1655107092039292e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -1.1249210971409807e-15,
+          -1.7819693938537581e-16,
+          5.79862573096884e-32
+        ],
+        "eef_position_m": [
+          -0.2496738487589997,
+          -0.25036202180800887,
+          1.080255526565341
+        ],
+        "gripper_joint_position_m": [
+          0.03996797692373631,
+          -0.03998243940091303
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 336,
+        "sim_time_s": 16.8
+      },
+      "close_segment": {
+        "index": 0,
+        "start_index": 180,
+        "end_index_exclusive": 258,
+        "start_tick": 517,
+        "opening_tick": 595,
+        "qualifying_lifts": [
+          {
+            "start_tick": 524,
+            "ticks": 71
+          }
+        ],
+        "max_brick_rise_mm": 140.06987018590166,
+        "bilateral_ticks": 72,
+        "contact_ticks": 75
+      },
+      "window_start_index": 0,
+      "window_end_index_exclusive": 288,
+      "window_start_tick": 337,
+      "window_end_tick": 624,
+      "queries": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "first_close_generating_query": 6,
+      "dt_s": 0.05
+    },
+    {
+      "id": "init-demo_0005-loading-912171-Q0-first_failed_close",
+      "case": "init-demo_0005-loading-912171",
+      "model": "Q0",
+      "rule": "first_failed_close",
+      "source_directory": "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0005-loading-912171",
+      "initial_truth": {
+        "object_position_m": [
+          0.12705075770615454,
+          -0.12099368376034642,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9999905116368096,
+          3.659066264493684e-17,
+          4.27645836495155e-18,
+          -0.004356218124932482
+        ],
+        "object_yaw_rad": -0.008712463805556018,
+        "object_linear_velocity_m_s": [
+          -1.6078822184107271e-18,
+          1.5860296783635155e-17,
+          2.1655107092039292e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -1.1249210971409807e-15,
+          -1.7819693938537581e-16,
+          5.79862573096884e-32
+        ],
+        "eef_position_m": [
+          -0.2496738487589997,
+          -0.25036202180800887,
+          1.080255526565341
+        ],
+        "gripper_joint_position_m": [
+          0.03996797692373631,
+          -0.03998243940091303
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 336,
+        "sim_time_s": 16.8
+      },
+      "close_segment": {
+        "index": 0,
+        "start_index": 63,
+        "end_index_exclusive": 90,
+        "start_tick": 400,
+        "opening_tick": 427,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 0.009098506436044929,
+        "bilateral_ticks": 0,
+        "contact_ticks": 9
+      },
+      "window_start_index": 0,
+      "window_end_index_exclusive": 120,
+      "window_start_tick": 337,
+      "window_end_tick": 456,
+      "queries": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "first_close_generating_query": 2,
+      "dt_s": 0.05
+    },
+    {
+      "id": "init-demo_0005-loading-912171-Q0-first_later_success",
+      "case": "init-demo_0005-loading-912171",
+      "model": "Q0",
+      "rule": "first_later_success",
+      "source_directory": "/var/tmp/typhon-init07-20261015/episodes/Q0/init-demo_0005-loading-912171",
+      "initial_truth": {
+        "object_position_m": [
+          0.12705075770615454,
+          -0.12099368376034642,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9999905116368096,
+          3.659066264493684e-17,
+          4.27645836495155e-18,
+          -0.004356218124932482
+        ],
+        "object_yaw_rad": -0.008712463805556018,
+        "object_linear_velocity_m_s": [
+          -1.6078822184107271e-18,
+          1.5860296783635155e-17,
+          2.1655107092039292e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -1.1249210971409807e-15,
+          -1.7819693938537581e-16,
+          5.79862573096884e-32
+        ],
+        "eef_position_m": [
+          -0.2496738487589997,
+          -0.25036202180800887,
+          1.080255526565341
+        ],
+        "gripper_joint_position_m": [
+          0.03996797692373631,
+          -0.03998243940091303
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 336,
+        "sim_time_s": 16.8
+      },
+      "close_segment": {
+        "index": 2,
+        "start_index": 259,
+        "end_index_exclusive": 330,
+        "start_tick": 596,
+        "opening_tick": 667,
+        "qualifying_lifts": [
+          {
+            "start_tick": 612,
+            "ticks": 59
+          }
+        ],
+        "max_brick_rise_mm": 155.09055980094067,
+        "bilateral_ticks": 65,
+        "contact_ticks": 66
+      },
+      "window_start_index": 150,
+      "window_end_index_exclusive": 360,
+      "window_start_tick": 487,
+      "window_end_tick": 696,
+      "queries": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "first_close_generating_query": 8,
+      "dt_s": 0.05
+    },
+    {
+      "id": "init-demo_0005-loading-912171-Q1-first_brief_lift_loss",
+      "case": "init-demo_0005-loading-912171",
+      "model": "Q1",
+      "rule": "first_brief_lift_loss",
+      "source_directory": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171",
+      "initial_truth": {
+        "object_position_m": [
+          0.12705075770615454,
+          -0.12099368376034642,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9999905116368096,
+          3.659066264493684e-17,
+          4.27645836495155e-18,
+          -0.004356218124932482
+        ],
+        "object_yaw_rad": -0.008712463805556018,
+        "object_linear_velocity_m_s": [
+          -1.6078822184107271e-18,
+          1.5860296783635155e-17,
+          2.1655107092039292e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -1.1249210971409807e-15,
+          -1.7819693938537581e-16,
+          5.79862573096884e-32
+        ],
+        "eef_position_m": [
+          -0.2496738487589997,
+          -0.25036202180800887,
+          1.080255526565341
+        ],
+        "gripper_joint_position_m": [
+          0.03996797692373631,
+          -0.03998243940091303
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 336,
+        "sim_time_s": 16.8
+      },
+      "close_segment": {
+        "index": 0,
+        "start_index": 67,
+        "end_index_exclusive": 120,
+        "start_tick": 404,
+        "opening_tick": 457,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 30.43734154560884,
+        "bilateral_ticks": 15,
+        "contact_ticks": 16
+      },
+      "window_start_index": 0,
+      "window_end_index_exclusive": 150,
+      "window_start_tick": 337,
+      "window_end_tick": 486,
+      "queries": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "first_close_generating_query": 2,
+      "dt_s": 0.05
+    }
+  ],
+  "total_attempts": 8,
+  "new_model_calls": 0,
+  "new_physics": 0,
+  "no_labels_added_to_training": true
+}

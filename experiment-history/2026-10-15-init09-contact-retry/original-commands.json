@@ -1,0 +1,9 @@
+{
+  "cwd": "/var/tmp/typhon-worktrees-20261015/init09",
+  "commands": [
+    "PYTHONPATH=/var/tmp/typhon-init08-analysis-deps OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 .venv-sim/bin/python scripts/init09_prepare.py",
+    "PYTHONPATH=/var/tmp/typhon-init08-analysis-deps OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 .venv-sim/bin/python scripts/init09_analyse.py",
+    "PYTHONPATH=/var/tmp/typhon-init08-analysis-deps OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 .venv-sim/bin/python scripts/init09_retry.py",
+    "PYTHONPATH=/var/tmp/typhon-init08-analysis-deps OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 .venv-sim/bin/python scripts/init09_reproduce.py --output /var/tmp/typhon-init09-reproduction-check-20261015"
+  ]
+}

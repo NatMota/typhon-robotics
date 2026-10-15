@@ -1,0 +1,28 @@
+{
+  "reviewed": true,
+  "reviewer": "Codex visual inspection of saved plots and original camera records",
+  "epoch_context": "2026-10-15 23:27\u201323:29 UTC",
+  "images": [
+    {
+      "path": "media/acquisition-comparison.png",
+      "sha256": "39376f36f6f4ffec60bbef046fbcfac92f6222dfad8a4d2522511cfef19b3769",
+      "observed": "Two cases, contact-aligned height/aperture lines legible. Q1 elevated briefly then fell; T and Q0 later acquire. Context windows include later motion."
+    },
+    {
+      "path": "media/q1-support-loss.png",
+      "sha256": "e18e5a814e0a78a54502c6dc6e3f98fde2bc76bd754935e717ebe39627bb801c",
+      "observed": "Loss marker matches logged timing. Relative displacement increases mainly at/after loss; finger aperture closes. Does not establish contact force."
+    },
+    {
+      "path": "media/attempt-camera-records.png",
+      "sha256": "c34af2dfab3c15a91ab5eeecc8db50fe9253eb83110a133e0eb06afc098b2375",
+      "observed": "All eight frozen first-close queries paired primary/secondary. Primary commonly occluded by robot; oblique view shows block and hand relationship. Not an orientation-recognition test."
+    },
+    {
+      "path": "media/retry-camera-records.png",
+      "sha256": "84603cac243a4bfc68111dbd86cce4c7926c2dc43fd9821306c054b539199e44",
+      "observed": "All seven selected queries. At Q0 q3 and 0003 q10 primary obscured but secondary block remains at source below empty gripper. 0005 q7 has visible block in both views. No visual evidence of explicit internal recognition."
+    }
+  ],
+  "new_simulator_rendering": false
+}

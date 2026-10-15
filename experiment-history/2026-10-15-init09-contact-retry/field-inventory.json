@@ -1,0 +1,389 @@
+{
+  "executions": [
+    {
+      "case": "init-demo_0003-loading-912172",
+      "model": "T",
+      "root_fields": [
+        "R_GO",
+        "command",
+        "contacts",
+        "contacts_full",
+        "controller_ee_xyz",
+        "controller_goal_rotation",
+        "controller_goal_xyz",
+        "controller_torques",
+        "eef_quat_xyzw",
+        "eef_xyz",
+        "finger_geoms",
+        "joint_positions",
+        "nearest_joint_limit_rad",
+        "object_tilt_deg",
+        "object_truth",
+        "orientation_error_deg",
+        "p_GO",
+        "position_error_mm",
+        "step",
+        "target"
+      ],
+      "object_fields": [
+        "bilateral_grasp_contact",
+        "control_steps",
+        "eef_position_m",
+        "grasp_contact",
+        "gripper_joint_position_m",
+        "gripper_open",
+        "object_angular_velocity_rad_s",
+        "object_linear_velocity_m_s",
+        "object_position_m",
+        "object_quat_wxyz",
+        "object_yaw_rad",
+        "sim_time_s"
+      ],
+      "contact_fields": [
+        "distance",
+        "geom1",
+        "geom2",
+        "normal_world",
+        "object_local_position",
+        "world_position"
+      ],
+      "finger_fields": [
+        "body_velocity",
+        "name",
+        "object_relative_offset",
+        "world_position"
+      ],
+      "torque_vector_lengths": [
+        7
+      ],
+      "actual_gripper_actuator_control_recorded": false,
+      "actual_gripper_actuator_force_recorded": false,
+      "contact_wrenches_recorded": false,
+      "bounded_gripper_command_available": true,
+      "measured_gripper_positions_available": true,
+      "finger_velocities_method": "finite differences of recorded positions at50ms; geom body velocities also logged but not interchangeable with pad-centre velocities"
+    },
+    {
+      "case": "init-demo_0003-loading-912172",
+      "model": "Q0",
+      "root_fields": [
+        "R_GO",
+        "command",
+        "contacts",
+        "contacts_full",
+        "controller_ee_xyz",
+        "controller_goal_rotation",
+        "controller_goal_xyz",
+        "controller_torques",
+        "eef_quat_xyzw",
+        "eef_xyz",
+        "finger_geoms",
+        "joint_positions",
+        "nearest_joint_limit_rad",
+        "object_tilt_deg",
+        "object_truth",
+        "orientation_error_deg",
+        "p_GO",
+        "position_error_mm",
+        "step",
+        "target"
+      ],
+      "object_fields": [
+        "bilateral_grasp_contact",
+        "control_steps",
+        "eef_position_m",
+        "grasp_contact",
+        "gripper_joint_position_m",
+        "gripper_open",
+        "object_angular_velocity_rad_s",
+        "object_linear_velocity_m_s",
+        "object_position_m",
+        "object_quat_wxyz",
+        "object_yaw_rad",
+        "sim_time_s"
+      ],
+      "contact_fields": [
+        "distance",
+        "geom1",
+        "geom2",
+        "normal_world",
+        "object_local_position",
+        "world_position"
+      ],
+      "finger_fields": [
+        "body_velocity",
+        "name",
+        "object_relative_offset",
+        "world_position"
+      ],
+      "torque_vector_lengths": [
+        7
+      ],
+      "actual_gripper_actuator_control_recorded": false,
+      "actual_gripper_actuator_force_recorded": false,
+      "contact_wrenches_recorded": false,
+      "bounded_gripper_command_available": true,
+      "measured_gripper_positions_available": true,
+      "finger_velocities_method": "finite differences of recorded positions at50ms; geom body velocities also logged but not interchangeable with pad-centre velocities"
+    },
+    {
+      "case": "init-demo_0003-loading-912172",
+      "model": "Q1",
+      "root_fields": [
+        "R_GO",
+        "command",
+        "contacts",
+        "contacts_full",
+        "controller_ee_xyz",
+        "controller_goal_rotation",
+        "controller_goal_xyz",
+        "controller_torques",
+        "eef_quat_xyzw",
+        "eef_xyz",
+        "finger_geoms",
+        "joint_positions",
+        "nearest_joint_limit_rad",
+        "object_tilt_deg",
+        "object_truth",
+        "orientation_error_deg",
+        "p_GO",
+        "position_error_mm",
+        "step",
+        "target"
+      ],
+      "object_fields": [
+        "bilateral_grasp_contact",
+        "control_steps",
+        "eef_position_m",
+        "grasp_contact",
+        "gripper_joint_position_m",
+        "gripper_open",
+        "object_angular_velocity_rad_s",
+        "object_linear_velocity_m_s",
+        "object_position_m",
+        "object_quat_wxyz",
+        "object_yaw_rad",
+        "sim_time_s"
+      ],
+      "contact_fields": [
+        "distance",
+        "geom1",
+        "geom2",
+        "normal_world",
+        "object_local_position",
+        "world_position"
+      ],
+      "finger_fields": [
+        "body_velocity",
+        "name",
+        "object_relative_offset",
+        "world_position"
+      ],
+      "torque_vector_lengths": [
+        7
+      ],
+      "actual_gripper_actuator_control_recorded": false,
+      "actual_gripper_actuator_force_recorded": false,
+      "contact_wrenches_recorded": false,
+      "bounded_gripper_command_available": true,
+      "measured_gripper_positions_available": true,
+      "finger_velocities_method": "finite differences of recorded positions at50ms; geom body velocities also logged but not interchangeable with pad-centre velocities"
+    },
+    {
+      "case": "init-demo_0005-loading-912171",
+      "model": "T",
+      "root_fields": [
+        "R_GO",
+        "command",
+        "contacts",
+        "contacts_full",
+        "controller_ee_xyz",
+        "controller_goal_rotation",
+        "controller_goal_xyz",
+        "controller_torques",
+        "eef_quat_xyzw",
+        "eef_xyz",
+        "finger_geoms",
+        "joint_positions",
+        "nearest_joint_limit_rad",
+        "object_tilt_deg",
+        "object_truth",
+        "orientation_error_deg",
+        "p_GO",
+        "position_error_mm",
+        "step",
+        "target"
+      ],
+      "object_fields": [
+        "bilateral_grasp_contact",
+        "control_steps",
+        "eef_position_m",
+        "grasp_contact",
+        "gripper_joint_position_m",
+        "gripper_open",
+        "object_angular_velocity_rad_s",
+        "object_linear_velocity_m_s",
+        "object_position_m",
+        "object_quat_wxyz",
+        "object_yaw_rad",
+        "sim_time_s"
+      ],
+      "contact_fields": [
+        "distance",
+        "geom1",
+        "geom2",
+        "normal_world",
+        "object_local_position",
+        "world_position"
+      ],
+      "finger_fields": [
+        "body_velocity",
+        "name",
+        "object_relative_offset",
+        "world_position"
+      ],
+      "torque_vector_lengths": [
+        7
+      ],
+      "actual_gripper_actuator_control_recorded": false,
+      "actual_gripper_actuator_force_recorded": false,
+      "contact_wrenches_recorded": false,
+      "bounded_gripper_command_available": true,
+      "measured_gripper_positions_available": true,
+      "finger_velocities_method": "finite differences of recorded positions at50ms; geom body velocities also logged but not interchangeable with pad-centre velocities"
+    },
+    {
+      "case": "init-demo_0005-loading-912171",
+      "model": "Q0",
+      "root_fields": [
+        "R_GO",
+        "command",
+        "contacts",
+        "contacts_full",
+        "controller_ee_xyz",
+        "controller_goal_rotation",
+        "controller_goal_xyz",
+        "controller_torques",
+        "eef_quat_xyzw",
+        "eef_xyz",
+        "finger_geoms",
+        "joint_positions",
+        "nearest_joint_limit_rad",
+        "object_tilt_deg",
+        "object_truth",
+        "orientation_error_deg",
+        "p_GO",
+        "position_error_mm",
+        "step",
+        "target"
+      ],
+      "object_fields": [
+        "bilateral_grasp_contact",
+        "control_steps",
+        "eef_position_m",
+        "grasp_contact",
+        "gripper_joint_position_m",
+        "gripper_open",
+        "object_angular_velocity_rad_s",
+        "object_linear_velocity_m_s",
+        "object_position_m",
+        "object_quat_wxyz",
+        "object_yaw_rad",
+        "sim_time_s"
+      ],
+      "contact_fields": [
+        "distance",
+        "geom1",
+        "geom2",
+        "normal_world",
+        "object_local_position",
+        "world_position"
+      ],
+      "finger_fields": [
+        "body_velocity",
+        "name",
+        "object_relative_offset",
+        "world_position"
+      ],
+      "torque_vector_lengths": [
+        7
+      ],
+      "actual_gripper_actuator_control_recorded": false,
+      "actual_gripper_actuator_force_recorded": false,
+      "contact_wrenches_recorded": false,
+      "bounded_gripper_command_available": true,
+      "measured_gripper_positions_available": true,
+      "finger_velocities_method": "finite differences of recorded positions at50ms; geom body velocities also logged but not interchangeable with pad-centre velocities"
+    },
+    {
+      "case": "init-demo_0005-loading-912171",
+      "model": "Q1",
+      "root_fields": [
+        "R_GO",
+        "command",
+        "contacts",
+        "contacts_full",
+        "controller_ee_xyz",
+        "controller_goal_rotation",
+        "controller_goal_xyz",
+        "controller_torques",
+        "eef_quat_xyzw",
+        "eef_xyz",
+        "finger_geoms",
+        "joint_positions",
+        "nearest_joint_limit_rad",
+        "object_tilt_deg",
+        "object_truth",
+        "orientation_error_deg",
+        "p_GO",
+        "position_error_mm",
+        "step",
+        "target"
+      ],
+      "object_fields": [
+        "bilateral_grasp_contact",
+        "control_steps",
+        "eef_position_m",
+        "grasp_contact",
+        "gripper_joint_position_m",
+        "gripper_open",
+        "object_angular_velocity_rad_s",
+        "object_linear_velocity_m_s",
+        "object_position_m",
+        "object_quat_wxyz",
+        "object_yaw_rad",
+        "sim_time_s"
+      ],
+      "contact_fields": [
+        "distance",
+        "geom1",
+        "geom2",
+        "normal_world",
+        "object_local_position",
+        "world_position"
+      ],
+      "finger_fields": [
+        "body_velocity",
+        "name",
+        "object_relative_offset",
+        "world_position"
+      ],
+      "torque_vector_lengths": [
+        7
+      ],
+      "actual_gripper_actuator_control_recorded": false,
+      "actual_gripper_actuator_force_recorded": false,
+      "contact_wrenches_recorded": false,
+      "bounded_gripper_command_available": true,
+      "measured_gripper_positions_available": true,
+      "finger_velocities_method": "finite differences of recorded positions at50ms; geom body velocities also logged but not interchangeable with pad-centre velocities"
+    }
+  ],
+  "missing": [
+    "historical contact forces/wrenches",
+    "actual gripper actuator ctrl/force",
+    "physics-substep contact series"
+  ],
+  "recorded_grip_probability_not_force": true,
+  "time_resolution_s": 0.05
+}

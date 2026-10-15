@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "epoch": 1792106838.173657,
+  "native_proprio_hashes_matching": 288,
+  "original_sources_unchanged": true,
+  "retry_queries": 7,
+  "new_physics": 0,
+  "new_model_calls": 0,
+  "Q1": [
+    {
+      "case": "init-demo_0003-loading-912172",
+      "first_open_tick": 464,
+      "post_opening_samples": 1340,
+      "minimum_wrist_to_object_mm": 197.07634846459328,
+      "minimum_distance_tick": 553,
+      "contact_samples_after_first_opening": 0,
+      "closing_segments_after_first_opening": [
+        {
+          "index": 1,
+          "start_index": 799,
+          "end_index_exclusive": 801,
+          "start_tick": 1143,
+          "opening_tick": 1145,
+          "qualifying_lifts": [],
+          "max_brick_rise_mm": 2.4999999999999467,
+          "bilateral_ticks": 0,
+          "contact_ticks": 0,
+          "minimum_wrist_to_object_mm": 237.78751643356074
+        },
+        {
+          "index": 2,
+          "start_index": 1009,
+          "end_index_exclusive": 1012,
+          "start_tick": 1353,
+          "opening_tick": 1356,
+          "qualifying_lifts": [],
+          "max_brick_rise_mm": 2.4999999999999467,
+          "bilateral_ticks": 0,
+          "contact_ticks": 0,
+          "minimum_wrist_to_object_mm": 234.02278857356436
+        },
+        {
+          "index": 3,
+          "start_index": 1339,
+          "end_index_exclusive": 1341,
+          "start_tick": 1683,
+          "opening_tick": 1685,
+          "qualifying_lifts": [],
+          "max_brick_rise_mm": 2.4999999999999467,
+          "bilateral_ticks": 0,
+          "contact_ticks": 0,
+          "minimum_wrist_to_object_mm": 235.39367990654043
+        },
+        {
+          "index": 4,
+          "start_index": 1369,
+          "end_index_exclusive": 1372,
+          "start_tick": 1713,
+          "opening_tick": 1716,
+          "qualifying_lifts": [],
+          "max_brick_rise_mm": 2.4999999999999467,
+          "bilateral_ticks": 0,
+          "contact_ticks": 0,
+          "minimum_wrist_to_object_mm": 222.79684704661273
+        }
+      ],
+      "interpretation": "No further physical contact or acquisition. Closing pulses and movement do not establish intended retries."
+    },
+    {
+      "case": "init-demo_0005-loading-912171",
+      "first_open_tick": 457,
+      "post_opening_samples": 1340,
+      "minimum_wrist_to_object_mm": 189.71945417509156,
+      "minimum_distance_tick": 545,
+      "contact_samples_after_first_opening": 0,
+      "closing_segments_after_first_opening": [
+        {
+          "index": 1,
+          "start_index": 1249,
+          "end_index_exclusive": 1251,
+          "start_tick": 1586,
+          "opening_tick": 1588,
+          "qualifying_lifts": [],
+          "max_brick_rise_mm": 2.4999999999999467,
+          "bilateral_ticks": 0,
+          "contact_ticks": 0,
+          "minimum_wrist_to_object_mm": 239.9167663809623
+        },
+        {
+          "index": 2,
+          "start_index": 1252,
+          "end_index_exclusive": 1253,
+          "start_tick": 1589,
+          "opening_tick": 1590,
+          "qualifying_lifts": [],
+          "max_brick_rise_mm": 2.4999999999999467,
+          "bilateral_ticks": 0,
+          "contact_ticks": 0,
+          "minimum_wrist_to_object_mm": 228.5117057282787
+        },
+        {
+          "index": 3,
+          "start_index": 1257,
+          "end_index_exclusive": 1260,
+          "start_tick": 1594,
+          "opening_tick": 1597,
+          "qualifying_lifts": [],
+          "max_brick_rise_mm": 2.4999999999999467,
+          "bilateral_ticks": 0,
+          "contact_ticks": 0,
+          "minimum_wrist_to_object_mm": 212.8095241409064
+        },
+        {
+          "index": 4,
+          "start_index": 1275,
+          "end_index_exclusive": 1290,
+          "start_tick": 1612,
+          "opening_tick": 1627,
+          "qualifying_lifts": [],
+          "max_brick_rise_mm": 2.4999999999999467,
+          "bilateral_ticks": 0,
+          "contact_ticks": 0,
+          "minimum_wrist_to_object_mm": 216.07607982738563
+        }
+      ],
+      "interpretation": "No further physical contact or acquisition. Closing pulses and movement do not establish intended retries."
+    }
+  ]
+}

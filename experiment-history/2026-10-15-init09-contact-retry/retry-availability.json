@@ -1,0 +1,466 @@
+{
+  "Q0": [
+    {
+      "case": "init-demo_0003-loading-912172",
+      "model": "Q0",
+      "query": "3",
+      "observation_tick": "433",
+      "first_action_tick": "434",
+      "last_action_tick": "463",
+      "measured_wrist_xyz": "[0.1328715412543622, -0.11963872343432613, 0.9514962401330884]",
+      "object_xyz": "[0.12762085589060118, -0.12094931003957939, 0.8147842384012015]",
+      "object_tilt_deg": "0.000199598693609025",
+      "object_speed_mm_s": "0.00350540659367011",
+      "measured_aperture_mm": "1.7570254271047505",
+      "predicted_first_xyz": "[0.13907164335250854, -0.12417976558208466, 0.9609687328338623]",
+      "predicted_last_xyz": "[0.14590758085250854, -0.11685554683208466, 0.8398749828338623]",
+      "predicted_min_z_m": "0.8320624828338623",
+      "predicted_max_z_m": "0.9609687328338623",
+      "measured_distance_to_object_mm": "136.819073054814",
+      "predicted_min_distance_to_fixed_object_mm": "21.972367462261218",
+      "first_close_waypoint": "14",
+      "first_target_rotation_departure_deg": "0.19003451490506165",
+      "object_crop_detected": "False",
+      "image_mask": "[true, true, false]",
+      "current_observation_only": "True",
+      "most_recent_prior_contact_end_tick": 421,
+      "time_since_prior_contact_ended_s": 0.6000000000000001,
+      "prior_completed_contact_episodes": 1,
+      "not_proof_of_failure_recognition": true
+    },
+    {
+      "case": "init-demo_0003-loading-912172",
+      "model": "Q0",
+      "query": "8",
+      "observation_tick": "583",
+      "first_action_tick": "584",
+      "last_action_tick": "613",
+      "measured_wrist_xyz": "[0.143735744228729, -0.11801879163128716, 0.98104987118562]",
+      "object_xyz": "[0.12761162161236853, -0.12082147245642862, 0.8147844891595659]",
+      "object_tilt_deg": "0.0",
+      "object_speed_mm_s": "2.165862055687675e-11",
+      "measured_aperture_mm": "79.9181625431937",
+      "predicted_first_xyz": "[0.13907164335250854, -0.12027351558208466, 0.9844062328338623]",
+      "predicted_last_xyz": "[0.14786070585250854, -0.12369148433208466, 0.8320624828338623]",
+      "predicted_min_z_m": "0.8242499828338623",
+      "predicted_max_z_m": "0.9844062328338623",
+      "measured_distance_to_object_mm": "167.0689067726989",
+      "predicted_min_distance_to_fixed_object_mm": "17.281024274483144",
+      "first_close_waypoint": "28",
+      "first_target_rotation_departure_deg": "1.9371082332471887",
+      "object_crop_detected": "False",
+      "image_mask": "[true, true, false]",
+      "current_observation_only": "True",
+      "most_recent_prior_contact_end_tick": 465,
+      "time_since_prior_contact_ended_s": 5.9,
+      "prior_completed_contact_episodes": 2,
+      "not_proof_of_failure_recognition": true
+    },
+    {
+      "case": "init-demo_0003-loading-912172",
+      "model": "Q0",
+      "query": "10",
+      "observation_tick": "643",
+      "first_action_tick": "644",
+      "last_action_tick": "673",
+      "measured_wrist_xyz": "[0.13858441609382183, -0.10254076094066186, 0.9765982814330855]",
+      "object_xyz": "[0.12630021672310457, -0.12174342138985952, 0.8147843704640884]",
+      "object_tilt_deg": "0.00048402866975247473",
+      "object_speed_mm_s": "0.002355818447191208",
+      "measured_aperture_mm": "1.5447647749233648",
+      "predicted_first_xyz": "[0.14004820585250854, -0.11490242183208466, 0.9804999828338623]",
+      "predicted_last_xyz": "[0.14786070585250854, -0.12125007808208466, 0.8359687328338623]",
+      "predicted_min_z_m": "0.8281562328338623",
+      "predicted_max_z_m": "0.9804999828338623",
+      "measured_distance_to_object_mm": "163.41170553417902",
+      "predicted_min_distance_to_fixed_object_mm": "22.97986282974963",
+      "first_close_waypoint": "",
+      "first_target_rotation_departure_deg": "0.8749719807670406",
+      "object_crop_detected": "False",
+      "image_mask": "[true, true, false]",
+      "current_observation_only": "True",
+      "most_recent_prior_contact_end_tick": 627,
+      "time_since_prior_contact_ended_s": 0.8,
+      "prior_completed_contact_episodes": 3,
+      "not_proof_of_failure_recognition": true
+    },
+    {
+      "case": "init-demo_0003-loading-912172",
+      "model": "Q0",
+      "query": "11",
+      "observation_tick": "673",
+      "first_action_tick": "674",
+      "last_action_tick": "703",
+      "measured_wrist_xyz": "[0.1477639361171141, -0.12122487526572394, 0.831430758433846]",
+      "object_xyz": "[0.1263002163538437, -0.12174329555716291, 0.8147844891595659]",
+      "object_tilt_deg": "0.0",
+      "object_speed_mm_s": "2.1742757434348235e-11",
+      "measured_aperture_mm": "78.81568854914848",
+      "predicted_first_xyz": "[0.14395445585250854, -0.11587898433208466, 0.8320624828338623]",
+      "predicted_last_xyz": "[0.13907164335250854, -0.09146492183208466, 0.9844062328338623]",
+      "predicted_min_z_m": "0.8281562328338623",
+      "predicted_max_z_m": "0.9844062328338623",
+      "measured_distance_to_object_mm": "27.167228537828812",
+      "predicted_min_distance_to_fixed_object_mm": "21.648665488461305",
+      "first_close_waypoint": "0",
+      "first_target_rotation_departure_deg": "0.559215147231678",
+      "object_crop_detected": "False",
+      "image_mask": "[true, true, false]",
+      "current_observation_only": "True",
+      "most_recent_prior_contact_end_tick": 627,
+      "time_since_prior_contact_ended_s": 2.3000000000000003,
+      "prior_completed_contact_episodes": 3,
+      "not_proof_of_failure_recognition": true
+    },
+    {
+      "case": "init-demo_0005-loading-912171",
+      "model": "Q0",
+      "query": "3",
+      "observation_tick": "426",
+      "first_action_tick": "427",
+      "last_action_tick": "456",
+      "measured_wrist_xyz": "[0.1325559214962195, -0.11946989110960937, 0.9515173738786457]",
+      "object_xyz": "[0.127161991492284, -0.12107531909324101, 0.8147842454146978]",
+      "object_tilt_deg": "0.00018815978011759221",
+      "object_speed_mm_s": "0.0034032012917292413",
+      "measured_aperture_mm": "1.7383941602674944",
+      "predicted_first_xyz": "[0.13809508085250854, -0.12466804683208466, 0.9531562328338623]",
+      "predicted_last_xyz": "[0.14590758085250854, -0.11783210933208466, 0.8359687328338623]",
+      "predicted_min_z_m": "0.8320624828338623",
+      "predicted_max_z_m": "0.9531562328338623",
+      "measured_distance_to_object_mm": "136.84889586487878",
+      "predicted_min_distance_to_fixed_object_mm": "22.189600926568282",
+      "first_close_waypoint": "14",
+      "first_target_rotation_departure_deg": "0.22399805450586746",
+      "object_crop_detected": "False",
+      "image_mask": "[true, true, false]",
+      "current_observation_only": "True",
+      "most_recent_prior_contact_end_tick": 414,
+      "time_since_prior_contact_ended_s": 0.6000000000000001,
+      "prior_completed_contact_episodes": 1,
+      "not_proof_of_failure_recognition": true
+    },
+    {
+      "case": "init-demo_0005-loading-912171",
+      "model": "Q0",
+      "query": "7",
+      "observation_tick": "546",
+      "first_action_tick": "547",
+      "last_action_tick": "576",
+      "measured_wrist_xyz": "[-0.05576300355474316, -0.052488266766235685, 1.0633515181879598]",
+      "object_xyz": "[0.1273126055253092, -0.12107964069525622, 0.8147844891595659]",
+      "object_tilt_deg": "0.0",
+      "object_speed_mm_s": "2.1615197700115436e-11",
+      "measured_aperture_mm": "79.69520630122645",
+      "predicted_first_xyz": "[-0.029629528522491455, -0.09830085933208466, 0.9844062328338623]",
+      "predicted_last_xyz": "[0.13418883085250854, -0.11783210933208466, 0.9648749828338623]",
+      "predicted_min_z_m": "0.9648749828338623",
+      "predicted_max_z_m": "0.9844062328338623",
+      "measured_distance_to_object_mm": "316.2388703772914",
+      "predicted_min_distance_to_fixed_object_mm": "150.28301709141726",
+      "first_close_waypoint": "",
+      "first_target_rotation_departure_deg": "0.880213334796529",
+      "object_crop_detected": "True",
+      "image_mask": "[true, true, true]",
+      "current_observation_only": "True",
+      "most_recent_prior_contact_end_tick": 458,
+      "time_since_prior_contact_ended_s": 4.4,
+      "prior_completed_contact_episodes": 2,
+      "not_proof_of_failure_recognition": true
+    },
+    {
+      "case": "init-demo_0005-loading-912171",
+      "model": "Q0",
+      "query": "8",
+      "observation_tick": "576",
+      "first_action_tick": "577",
+      "last_action_tick": "606",
+      "measured_wrist_xyz": "[0.13816862893770698, -0.11856477602024168, 0.9764527892416142]",
+      "object_xyz": "[0.1273126055253092, -0.12107964069525622, 0.8147844891595659]",
+      "object_tilt_deg": "0.0",
+      "object_speed_mm_s": "2.160687232955239e-11",
+      "measured_aperture_mm": "79.91814741414525",
+      "predicted_first_xyz": "[0.13321226835250854, -0.11978523433208466, 0.9804999828338623]",
+      "predicted_last_xyz": "[0.14200133085250854, -0.12125007808208466, 0.8359687328338623]",
+      "predicted_min_z_m": "0.8242499828338623",
+      "predicted_max_z_m": "0.9804999828338623",
+      "measured_distance_to_object_mm": "162.0518961323297",
+      "predicted_min_distance_to_fixed_object_mm": "12.480839890324187",
+      "first_close_waypoint": "19",
+      "first_target_rotation_departure_deg": "1.4902140673823212",
+      "object_crop_detected": "False",
+      "image_mask": "[true, true, false]",
+      "current_observation_only": "True",
+      "most_recent_prior_contact_end_tick": 458,
+      "time_since_prior_contact_ended_s": 5.9,
+      "prior_completed_contact_episodes": 2,
+      "not_proof_of_failure_recognition": true
+    }
+  ],
+  "Q1": [
+    {
+      "case": "init-demo_0003-loading-912172",
+      "first_open_tick": 464,
+      "post_opening_samples": 1340,
+      "minimum_wrist_to_object_mm": 197.07634846459328,
+      "minimum_distance_tick": 553,
+      "contact_samples_after_first_opening": 0,
+      "closing_segments_after_first_opening": [
+        {
+          "index": 1,
+          "start_index": 799,
+          "end_index_exclusive": 801,
+          "start_tick": 1143,
+          "opening_tick": 1145,
+          "qualifying_lifts": [],
+          "max_brick_rise_mm": 2.4999999999999467,
+          "bilateral_ticks": 0,
+          "contact_ticks": 0,
+          "minimum_wrist_to_object_mm": 237.78751643356074
+        },
+        {
+          "index": 2,
+          "start_index": 1009,
+          "end_index_exclusive": 1012,
+          "start_tick": 1353,
+          "opening_tick": 1356,
+          "qualifying_lifts": [],
+          "max_brick_rise_mm": 2.4999999999999467,
+          "bilateral_ticks": 0,
+          "contact_ticks": 0,
+          "minimum_wrist_to_object_mm": 234.02278857356436
+        },
+        {
+          "index": 3,
+          "start_index": 1339,
+          "end_index_exclusive": 1341,
+          "start_tick": 1683,
+          "opening_tick": 1685,
+          "qualifying_lifts": [],
+          "max_brick_rise_mm": 2.4999999999999467,
+          "bilateral_ticks": 0,
+          "contact_ticks": 0,
+          "minimum_wrist_to_object_mm": 235.39367990654043
+        },
+        {
+          "index": 4,
+          "start_index": 1369,
+          "end_index_exclusive": 1372,
+          "start_tick": 1713,
+          "opening_tick": 1716,
+          "qualifying_lifts": [],
+          "max_brick_rise_mm": 2.4999999999999467,
+          "bilateral_ticks": 0,
+          "contact_ticks": 0,
+          "minimum_wrist_to_object_mm": 222.79684704661273
+        }
+      ],
+      "interpretation": "No further physical contact or acquisition. Closing pulses and movement do not establish intended retries."
+    },
+    {
+      "case": "init-demo_0005-loading-912171",
+      "first_open_tick": 457,
+      "post_opening_samples": 1340,
+      "minimum_wrist_to_object_mm": 189.71945417509156,
+      "minimum_distance_tick": 545,
+      "contact_samples_after_first_opening": 0,
+      "closing_segments_after_first_opening": [
+        {
+          "index": 1,
+          "start_index": 1249,
+          "end_index_exclusive": 1251,
+          "start_tick": 1586,
+          "opening_tick": 1588,
+          "qualifying_lifts": [],
+          "max_brick_rise_mm": 2.4999999999999467,
+          "bilateral_ticks": 0,
+          "contact_ticks": 0,
+          "minimum_wrist_to_object_mm": 239.9167663809623
+        },
+        {
+          "index": 2,
+          "start_index": 1252,
+          "end_index_exclusive": 1253,
+          "start_tick": 1589,
+          "opening_tick": 1590,
+          "qualifying_lifts": [],
+          "max_brick_rise_mm": 2.4999999999999467,
+          "bilateral_ticks": 0,
+          "contact_ticks": 0,
+          "minimum_wrist_to_object_mm": 228.5117057282787
+        },
+        {
+          "index": 3,
+          "start_index": 1257,
+          "end_index_exclusive": 1260,
+          "start_tick": 1594,
+          "opening_tick": 1597,
+          "qualifying_lifts": [],
+          "max_brick_rise_mm": 2.4999999999999467,
+          "bilateral_ticks": 0,
+          "contact_ticks": 0,
+          "minimum_wrist_to_object_mm": 212.8095241409064
+        },
+        {
+          "index": 4,
+          "start_index": 1275,
+          "end_index_exclusive": 1290,
+          "start_tick": 1612,
+          "opening_tick": 1627,
+          "qualifying_lifts": [],
+          "max_brick_rise_mm": 2.4999999999999467,
+          "bilateral_ticks": 0,
+          "contact_ticks": 0,
+          "minimum_wrist_to_object_mm": 216.07607982738563
+        }
+      ],
+      "interpretation": "No further physical contact or acquisition. Closing pulses and movement do not establish intended retries."
+    }
+  ],
+  "opening_states": [
+    {
+      "attempt": "init-demo_0003-loading-912172-T-first_success",
+      "opening_tick": 530,
+      "object_position_m": [
+        0.11304509764919021,
+        0.14405311946018876,
+        0.8156131058953247
+      ],
+      "object_quat_wxyz": [
+        0.9996576891424734,
+        -0.004043253408022273,
+        0.02442710442907473,
+        0.008454182953999866
+      ],
+      "object_speed_mm_s": 7.313033041949419,
+      "gripper_aperture_mm": 34.79804432132071,
+      "note": "Exact first opening sample; unlike post_opening summary, not 30 ticks later where another attempt may have started."
+    },
+    {
+      "attempt": "init-demo_0003-loading-912172-Q0-first_failed_close",
+      "opening_tick": 434,
+      "object_position_m": [
+        0.12762083463068494,
+        -0.12094929536923438,
+        0.8147843639152366
+      ],
+      "object_quat_wxyz": [
+        0.9999930995450421,
+        4.958990174634581e-07,
+        7.206243356276644e-07,
+        -0.0037149510810487387
+      ],
+      "object_speed_mm_s": 0.001751183058416095,
+      "gripper_aperture_mm": 2.302491977837316,
+      "note": "Exact first opening sample; unlike post_opening summary, not 30 ticks later where another attempt may have started."
+    },
+    {
+      "attempt": "init-demo_0003-loading-912172-Q0-first_later_success",
+      "opening_tick": 744,
+      "object_position_m": [
+        0.11186215925162236,
+        0.1514151182142072,
+        0.830436081607091
+      ],
+      "object_quat_wxyz": [
+        0.9994359746663861,
+        -0.011581858196132755,
+        -0.030840539402533177,
+        0.006515691270805492
+      ],
+      "object_speed_mm_s": 43.66386513309484,
+      "gripper_aperture_mm": 34.157685577794794,
+      "note": "Exact first opening sample; unlike post_opening summary, not 30 ticks later where another attempt may have started."
+    },
+    {
+      "attempt": "init-demo_0003-loading-912172-Q1-first_brief_lift_loss",
+      "opening_tick": 464,
+      "object_position_m": [
+        0.13027448673530068,
+        -0.11287141880912284,
+        0.8172844891537412
+      ],
+      "object_quat_wxyz": [
+        0.7069356453983355,
+        -0.7069356454393729,
+        -0.015556131788135993,
+        0.015556131789306033
+      ],
+      "object_speed_mm_s": 8.094156332254651e-08,
+      "gripper_aperture_mm": 1.726635341145044,
+      "note": "Exact first opening sample; unlike post_opening summary, not 30 ticks later where another attempt may have started."
+    },
+    {
+      "attempt": "init-demo_0005-loading-912171-T-first_success",
+      "opening_tick": 595,
+      "object_position_m": [
+        0.12167551255704746,
+        0.15209149746435355,
+        0.8228427788414012
+      ],
+      "object_quat_wxyz": [
+        0.9997916391255012,
+        0.014739124558180706,
+        -0.01371308338420955,
+        0.003374594212617072
+      ],
+      "object_speed_mm_s": 54.34978534299164,
+      "gripper_aperture_mm": 34.458359041145776,
+      "note": "Exact first opening sample; unlike post_opening summary, not 30 ticks later where another attempt may have started."
+    },
+    {
+      "attempt": "init-demo_0005-loading-912171-Q0-first_failed_close",
+      "opening_tick": 427,
+      "object_position_m": [
+        0.12716197335678706,
+        -0.12107530285596244,
+        0.8147843674181412
+      ],
+      "object_quat_wxyz": [
+        0.9999898079068906,
+        5.490537662422601e-07,
+        6.156200850281973e-07,
+        -0.004514873382469886
+      ],
+      "object_speed_mm_s": 0.001700125248154191,
+      "gripper_aperture_mm": 2.287954412700098,
+      "note": "Exact first opening sample; unlike post_opening summary, not 30 ticks later where another attempt may have started."
+    },
+    {
+      "attempt": "init-demo_0005-loading-912171-Q0-first_later_success",
+      "opening_tick": 667,
+      "object_position_m": [
+        0.11949335453072425,
+        0.15052808150065033,
+        0.828532901307632
+      ],
+      "object_quat_wxyz": [
+        0.9998802306236093,
+        -0.0020669996501411843,
+        -0.011789776203273114,
+        0.009810866302269891
+      ],
+      "object_speed_mm_s": 100.34067609263064,
+      "gripper_aperture_mm": 34.50225153750805,
+      "note": "Exact first opening sample; unlike post_opening summary, not 30 ticks later where another attempt may have started."
+    },
+    {
+      "attempt": "init-demo_0005-loading-912171-Q1-first_brief_lift_loss",
+      "opening_tick": 457,
+      "object_position_m": [
+        0.1284010597441277,
+        -0.10839269028725662,
+        0.8172844891573041
+      ],
+      "object_quat_wxyz": [
+        0.7071019503816421,
+        -0.7071019504128115,
+        -0.0026137605944568433,
+        0.0026137605916311713
+      ],
+      "object_speed_mm_s": 3.269448756808136e-08,
+      "gripper_aperture_mm": 1.7265982889625704,
+      "note": "Exact first opening sample; unlike post_opening summary, not 30 ticks later where another attempt may have started."
+    }
+  ]
+}

@@ -1,0 +1,455 @@
+[
+  {
+    "case": "init-demo_0003-loading-912172",
+    "model": "T",
+    "close_segments": [
+      {
+        "index": 0,
+        "start_index": 120,
+        "end_index_exclusive": 186,
+        "start_tick": 464,
+        "opening_tick": 530,
+        "qualifying_lifts": [
+          {
+            "start_tick": 477,
+            "ticks": 49
+          }
+        ],
+        "max_brick_rise_mm": 156.30298969317346,
+        "bilateral_ticks": 60,
+        "contact_ticks": 61
+      }
+    ],
+    "all_object_gripper_contact_episodes": [
+      {
+        "start_tick": 469,
+        "end_tick_inclusive": 532,
+        "ticks": 64
+      }
+    ],
+    "bilateral_contact_episodes": [
+      {
+        "start_tick": 470,
+        "end_tick_inclusive": 532,
+        "ticks": 63
+      }
+    ],
+    "supported_height_contact_episodes": [
+      {
+        "start_tick": 477,
+        "end_tick_inclusive": 525,
+        "ticks": 49
+      }
+    ],
+    "qualified_lifts": [
+      {
+        "start_tick": 477,
+        "ticks": 49
+      }
+    ],
+    "closing_edges_are_not_intentional_retry_labels": true
+  },
+  {
+    "case": "init-demo_0003-loading-912172",
+    "model": "Q0",
+    "close_segments": [
+      {
+        "index": 0,
+        "start_index": 63,
+        "end_index_exclusive": 90,
+        "start_tick": 407,
+        "opening_tick": 434,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 0.0,
+        "bilateral_ticks": 0,
+        "contact_ticks": 9
+      },
+      {
+        "index": 1,
+        "start_index": 104,
+        "end_index_exclusive": 150,
+        "start_tick": 448,
+        "opening_tick": 494,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 2.063353767291942,
+        "bilateral_ticks": 0,
+        "contact_ticks": 6
+      },
+      {
+        "index": 2,
+        "start_index": 268,
+        "end_index_exclusive": 300,
+        "start_tick": 612,
+        "opening_tick": 644,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 5.352512926159014,
+        "bilateral_ticks": 7,
+        "contact_ticks": 10
+      },
+      {
+        "index": 3,
+        "start_index": 330,
+        "end_index_exclusive": 400,
+        "start_tick": 674,
+        "opening_tick": 744,
+        "qualifying_lifts": [
+          {
+            "start_tick": 688,
+            "ticks": 60
+          }
+        ],
+        "max_brick_rise_mm": 148.36686961114742,
+        "bilateral_ticks": 64,
+        "contact_ticks": 65
+      }
+    ],
+    "all_object_gripper_contact_episodes": [
+      {
+        "start_tick": 413,
+        "end_tick_inclusive": 421,
+        "ticks": 9
+      },
+      {
+        "start_tick": 460,
+        "end_tick_inclusive": 465,
+        "ticks": 6
+      },
+      {
+        "start_tick": 618,
+        "end_tick_inclusive": 627,
+        "ticks": 10
+      },
+      {
+        "start_tick": 679,
+        "end_tick_inclusive": 747,
+        "ticks": 69
+      }
+    ],
+    "bilateral_contact_episodes": [
+      {
+        "start_tick": 618,
+        "end_tick_inclusive": 624,
+        "ticks": 7
+      },
+      {
+        "start_tick": 680,
+        "end_tick_inclusive": 747,
+        "ticks": 68
+      }
+    ],
+    "supported_height_contact_episodes": [
+      {
+        "start_tick": 688,
+        "end_tick_inclusive": 747,
+        "ticks": 60
+      }
+    ],
+    "qualified_lifts": [
+      {
+        "start_tick": 688,
+        "ticks": 60
+      }
+    ],
+    "closing_edges_are_not_intentional_retry_labels": true
+  },
+  {
+    "case": "init-demo_0003-loading-912172",
+    "model": "Q1",
+    "close_segments": [
+      {
+        "index": 0,
+        "start_index": 67,
+        "end_index_exclusive": 120,
+        "start_tick": 411,
+        "opening_tick": 464,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 34.695483534552984,
+        "bilateral_ticks": 15,
+        "contact_ticks": 17
+      },
+      {
+        "index": 1,
+        "start_index": 799,
+        "end_index_exclusive": 801,
+        "start_tick": 1143,
+        "opening_tick": 1145,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 2.4999999999999467,
+        "bilateral_ticks": 0,
+        "contact_ticks": 0
+      },
+      {
+        "index": 2,
+        "start_index": 1009,
+        "end_index_exclusive": 1012,
+        "start_tick": 1353,
+        "opening_tick": 1356,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 2.4999999999999467,
+        "bilateral_ticks": 0,
+        "contact_ticks": 0
+      },
+      {
+        "index": 3,
+        "start_index": 1339,
+        "end_index_exclusive": 1341,
+        "start_tick": 1683,
+        "opening_tick": 1685,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 2.4999999999999467,
+        "bilateral_ticks": 0,
+        "contact_ticks": 0
+      },
+      {
+        "index": 4,
+        "start_index": 1369,
+        "end_index_exclusive": 1372,
+        "start_tick": 1713,
+        "opening_tick": 1716,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 2.4999999999999467,
+        "bilateral_ticks": 0,
+        "contact_ticks": 0
+      }
+    ],
+    "all_object_gripper_contact_episodes": [
+      {
+        "start_tick": 416,
+        "end_tick_inclusive": 432,
+        "ticks": 17
+      }
+    ],
+    "bilateral_contact_episodes": [
+      {
+        "start_tick": 417,
+        "end_tick_inclusive": 431,
+        "ticks": 15
+      }
+    ],
+    "supported_height_contact_episodes": [
+      {
+        "start_tick": 430,
+        "end_tick_inclusive": 431,
+        "ticks": 2
+      }
+    ],
+    "qualified_lifts": [],
+    "closing_edges_are_not_intentional_retry_labels": true
+  },
+  {
+    "case": "init-demo_0005-loading-912171",
+    "model": "T",
+    "close_segments": [
+      {
+        "index": 0,
+        "start_index": 180,
+        "end_index_exclusive": 258,
+        "start_tick": 517,
+        "opening_tick": 595,
+        "qualifying_lifts": [
+          {
+            "start_tick": 524,
+            "ticks": 71
+          }
+        ],
+        "max_brick_rise_mm": 140.06987018590166,
+        "bilateral_ticks": 72,
+        "contact_ticks": 75
+      }
+    ],
+    "all_object_gripper_contact_episodes": [
+      {
+        "start_tick": 520,
+        "end_tick_inclusive": 597,
+        "ticks": 78
+      }
+    ],
+    "bilateral_contact_episodes": [
+      {
+        "start_tick": 523,
+        "end_tick_inclusive": 597,
+        "ticks": 75
+      }
+    ],
+    "supported_height_contact_episodes": [
+      {
+        "start_tick": 524,
+        "end_tick_inclusive": 594,
+        "ticks": 71
+      }
+    ],
+    "qualified_lifts": [
+      {
+        "start_tick": 524,
+        "ticks": 71
+      }
+    ],
+    "closing_edges_are_not_intentional_retry_labels": true
+  },
+  {
+    "case": "init-demo_0005-loading-912171",
+    "model": "Q0",
+    "close_segments": [
+      {
+        "index": 0,
+        "start_index": 63,
+        "end_index_exclusive": 90,
+        "start_tick": 400,
+        "opening_tick": 427,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 0.009098506436044929,
+        "bilateral_ticks": 0,
+        "contact_ticks": 9
+      },
+      {
+        "index": 1,
+        "start_index": 104,
+        "end_index_exclusive": 150,
+        "start_tick": 441,
+        "opening_tick": 487,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 1.883198775082806,
+        "bilateral_ticks": 0,
+        "contact_ticks": 7
+      },
+      {
+        "index": 2,
+        "start_index": 259,
+        "end_index_exclusive": 330,
+        "start_tick": 596,
+        "opening_tick": 667,
+        "qualifying_lifts": [
+          {
+            "start_tick": 612,
+            "ticks": 59
+          }
+        ],
+        "max_brick_rise_mm": 155.09055980094067,
+        "bilateral_ticks": 65,
+        "contact_ticks": 66
+      }
+    ],
+    "all_object_gripper_contact_episodes": [
+      {
+        "start_tick": 406,
+        "end_tick_inclusive": 414,
+        "ticks": 9
+      },
+      {
+        "start_tick": 452,
+        "end_tick_inclusive": 458,
+        "ticks": 7
+      },
+      {
+        "start_tick": 601,
+        "end_tick_inclusive": 670,
+        "ticks": 70
+      }
+    ],
+    "bilateral_contact_episodes": [
+      {
+        "start_tick": 602,
+        "end_tick_inclusive": 670,
+        "ticks": 69
+      }
+    ],
+    "supported_height_contact_episodes": [
+      {
+        "start_tick": 612,
+        "end_tick_inclusive": 670,
+        "ticks": 59
+      }
+    ],
+    "qualified_lifts": [
+      {
+        "start_tick": 612,
+        "ticks": 59
+      }
+    ],
+    "closing_edges_are_not_intentional_retry_labels": true
+  },
+  {
+    "case": "init-demo_0005-loading-912171",
+    "model": "Q1",
+    "close_segments": [
+      {
+        "index": 0,
+        "start_index": 67,
+        "end_index_exclusive": 120,
+        "start_tick": 404,
+        "opening_tick": 457,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 30.43734154560884,
+        "bilateral_ticks": 15,
+        "contact_ticks": 16
+      },
+      {
+        "index": 1,
+        "start_index": 1249,
+        "end_index_exclusive": 1251,
+        "start_tick": 1586,
+        "opening_tick": 1588,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 2.4999999999999467,
+        "bilateral_ticks": 0,
+        "contact_ticks": 0
+      },
+      {
+        "index": 2,
+        "start_index": 1252,
+        "end_index_exclusive": 1253,
+        "start_tick": 1589,
+        "opening_tick": 1590,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 2.4999999999999467,
+        "bilateral_ticks": 0,
+        "contact_ticks": 0
+      },
+      {
+        "index": 3,
+        "start_index": 1257,
+        "end_index_exclusive": 1260,
+        "start_tick": 1594,
+        "opening_tick": 1597,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 2.4999999999999467,
+        "bilateral_ticks": 0,
+        "contact_ticks": 0
+      },
+      {
+        "index": 4,
+        "start_index": 1275,
+        "end_index_exclusive": 1290,
+        "start_tick": 1612,
+        "opening_tick": 1627,
+        "qualifying_lifts": [],
+        "max_brick_rise_mm": 2.4999999999999467,
+        "bilateral_ticks": 0,
+        "contact_ticks": 0
+      }
+    ],
+    "all_object_gripper_contact_episodes": [
+      {
+        "start_tick": 409,
+        "end_tick_inclusive": 424,
+        "ticks": 16
+      }
+    ],
+    "bilateral_contact_episodes": [
+      {
+        "start_tick": 410,
+        "end_tick_inclusive": 424,
+        "ticks": 15
+      }
+    ],
+    "supported_height_contact_episodes": [
+      {
+        "start_tick": 423,
+        "end_tick_inclusive": 424,
+        "ticks": 2
+      }
+    ],
+    "qualified_lifts": [],
+    "closing_edges_are_not_intentional_retry_labels": true
+  }
+]

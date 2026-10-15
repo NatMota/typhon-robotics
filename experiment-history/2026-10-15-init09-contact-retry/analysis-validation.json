@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "epoch": 1792106507.9189167,
+  "attempts": 8,
+  "queries": 288,
+  "p_GO_world_transform_max_error_m": 2.7755575615628914e-16,
+  "R_GO_world_transform_max_error": 8.881784197001252e-16,
+  "source_sha256_unchanged": true,
+  "new_physics": 0,
+  "new_model_calls": 0,
+  "new_training": 0,
+  "time_qualification": "All recorded pose/contact derived fields captured together after each env.step; finger qpos and velocities have simulator integration timing limitations, so no exact substep causal claim. Contact forces and actuator grip controls absent."
+}
