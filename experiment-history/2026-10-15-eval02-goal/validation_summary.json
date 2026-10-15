@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "episodes": 8,
+  "all_original_dual_scores_recomputed_exactly": true,
+  "initial_available_physics_controller_python_numpy_state_exact": true,
+  "initial_native_camera_bytes_exact": true,
+  "initial_actual_prepared_nontext_exact": true,
+  "nontext_keys": [
+    "image_input",
+    "image_mask",
+    "proprio",
+    "domain_id"
+  ],
+  "paired_generation_noise_checks": [
+    {
+      "reference": "FF-912171",
+      "other": "LL-912171",
+      "packets": 48,
+      "arrays_equal": 144
+    },
+    {
+      "reference": "FF-912171",
+      "other": "FL-912171",
+      "packets": 48,
+      "arrays_equal": 144
+    },
+    {
+      "reference": "FF-912171",
+      "other": "LF-912171",
+      "packets": 48,
+      "arrays_equal": 144
+    },
+    {
+      "reference": "FF-912172",
+      "other": "LL-912172",
+      "packets": 48,
+      "arrays_equal": 144
+    },
+    {
+      "reference": "FF-912172",
+      "other": "FL-912172",
+      "packets": 48,
+      "arrays_equal": 144
+    },
+    {
+      "reference": "FF-912172",
+      "other": "LF-912172",
+      "packets": 48,
+      "arrays_equal": 144
+    }
+  ],
+  "native_worker_reload_probe": {
+    "passed": true,
+    "fresh_process": true,
+    "checkpoint": "/var/tmp/typhon-load04-20261014/train-B/step3000.pt",
+    "step": 3000,
+    "probe": "/var/tmp/typhon-load04-20261014/train-B/step3000-probe.pt",
+    "action_max_error": 0.0,
+    "checkpoint_bytes": 3729342124,
+    "checkpoint_mtime_ns": 1791994548061975494,
+    "optimizer_restored_for_inference": false,
+    "rotation_contract": "generic_interleaved_v1",
+    "domain_id": 29,
+    "observation_version": "O2"
+  },
+  "no_simulator_truth_for_policy_control": true,
+  "identical_loading_physical_configuration": true,
+  "original_1460_step_execution_48_queries": true,
+  "all_controller_artifact_evaluation_errors_empty": true,
+  "preparation_within_10min": true,
+  "controls_within_25min": true,
+  "all_execution_within_35min": true,
+  "controls_gate": {
+    "passed": true,
+    "controls": 4,
+    "strict_passes": 4,
+    "finished_epoch": 1792026859.210937,
+    "interpretation": "Conflicting-cue testing qualified"
+  },
+  "tested_destinations_are_trained": true,
+  "new_holdout_or_training": false,
+  "checked_epoch": 1792027045.9874644
+}

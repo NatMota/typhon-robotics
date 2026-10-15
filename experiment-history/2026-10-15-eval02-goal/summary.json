@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "FF-912171",
+    "condition": "FF",
+    "policy_seed": 912171,
+    "source_demo_id": "demo_0002",
+    "physical_scene_task": "loading",
+    "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+    "wording_task": "feeding",
+    "numerical_goal_task": "feeding",
+    "scores": {
+      "feeding": {
+        "task": "feeding",
+        "success": true,
+        "criteria": {
+          "position": true,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true
+        },
+        "position_error_m": 0.007451108974852821,
+        "orientation_error_rad": 0.01214087441854923,
+        "orientation_error_deg": 0.6956208637812182,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.00021551084043414104,
+        "target_height_m": 0.8150000000000001,
+        "footprint_inside_target": true,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.1669573234426207e-14,
+        "maximum_angular_velocity_rad_s": 1.267732509395484e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 130,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.1643214809173258,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 253
+          }
+        ]
+      },
+      "loading": {
+        "task": "loading",
+        "success": false,
+        "criteria": {
+          "position": false,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": false,
+          "placement_height": false,
+          "released": true,
+          "stable": true,
+          "seated": false
+        },
+        "position_error_m": 0.2710008331904318,
+        "orientation_error_rad": 0.01214087441854923,
+        "orientation_error_deg": 0.6956208637812182,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.004215510840434145,
+        "target_height_m": 0.8190000000000001,
+        "footprint_inside_target": false,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.1669573234426207e-14,
+        "maximum_angular_velocity_rad_s": 1.267732509395484e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 130,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.1643214809173258,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 253
+          }
+        ]
+      }
+    },
+    "strict_destinations": [
+      "feeding"
+    ],
+    "physical_destination": "feeding",
+    "cue_choice": "consistent control",
+    "consistent_control_pass": true,
+    "distances_mm": {
+      "feeding": 7.451108974852821,
+      "loading": 271.00083319043176
+    },
+    "wall_seconds": 19.89342803598265,
+    "noise_qualification": {
+      "passed": true,
+      "reference": "/var/tmp/typhon-eval02-goal-20261015/episodes/FF-912171",
+      "comparisons": 0
+    },
+    "minimum_eef_object_distance_mm": 8.02567958953114,
+    "maximum_lift_above_initial_mm": 164.3214809173258,
+    "supported_lift_10mm_bilateral_steps": 99,
+    "longest_supported_lift_s": 4.95,
+    "supported_lift_10mm_3steps": true,
+    "legacy_height_only_70mm": true,
+    "horizontal_transport_while_supported_mm": 320.3501683571809,
+    "object_path_m": 0.7183465155673785,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "released_at_final": true,
+    "actual_policy_queries": 48,
+    "executed_control_records": 1460
+  },
+  {
+    "id": "LL-912171",
+    "condition": "LL",
+    "policy_seed": 912171,
+    "source_demo_id": "demo_0002",
+    "physical_scene_task": "loading",
+    "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+    "wording_task": "loading",
+    "numerical_goal_task": "loading",
+    "scores": {
+      "feeding": {
+        "task": "feeding",
+        "success": false,
+        "criteria": {
+          "position": false,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": false,
+          "placement_height": false,
+          "released": true,
+          "stable": true
+        },
+        "position_error_m": 0.2694519881984376,
+        "orientation_error_rad": 0.012387262140777646,
+        "orientation_error_deg": 0.7097378403887481,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.0037844891595694152,
+        "target_height_m": 0.8150000000000001,
+        "footprint_inside_target": false,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.148673271575902e-14,
+        "maximum_angular_velocity_rad_s": 1.2351637497352627e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 127,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.16561436057878653,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 236
+          }
+        ]
+      },
+      "loading": {
+        "task": "loading",
+        "success": true,
+        "criteria": {
+          "position": true,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true,
+          "seated": true
+        },
+        "position_error_m": 0.010909314279974552,
+        "orientation_error_rad": 0.012387262140777646,
+        "orientation_error_deg": 0.7097378403887481,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.00021551084043058832,
+        "target_height_m": 0.8190000000000001,
+        "footprint_inside_target": true,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.148673271575902e-14,
+        "maximum_angular_velocity_rad_s": 1.2351637497352627e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 127,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.16561436057878653,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 236
+          }
+        ]
+      }
+    },
+    "strict_destinations": [
+      "loading"
+    ],
+    "physical_destination": "loading",
+    "cue_choice": "consistent control",
+    "consistent_control_pass": true,
+    "distances_mm": {
+      "feeding": 269.45198819843756,
+      "loading": 10.909314279974552
+    },
+    "wall_seconds": 17.397005717997672,
+    "noise_qualification": {
+      "passed": true,
+      "seed": 912171,
+      "reference": "/var/tmp/typhon-eval02-goal-20261015/episodes/FF-912171",
+      "query_noise_packets": 48,
+      "actual_rng_and_noise_arrays_exact": 144
+    },
+    "minimum_eef_object_distance_mm": 8.241128120524108,
+    "maximum_lift_above_initial_mm": 165.61436057878655,
+    "supported_lift_10mm_bilateral_steps": 89,
+    "longest_supported_lift_s": 4.25,
+    "supported_lift_10mm_3steps": true,
+    "legacy_height_only_70mm": true,
+    "horizontal_transport_while_supported_mm": 416.205591692149,
+    "object_path_m": 0.843308665131634,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "released_at_final": true,
+    "actual_policy_queries": 48,
+    "executed_control_records": 1460
+  },
+  {
+    "id": "FF-912172",
+    "condition": "FF",
+    "policy_seed": 912172,
+    "source_demo_id": "demo_0002",
+    "physical_scene_task": "loading",
+    "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+    "wording_task": "feeding",
+    "numerical_goal_task": "feeding",
+    "scores": {
+      "feeding": {
+        "task": "feeding",
+        "success": true,
+        "criteria": {
+          "position": true,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true
+        },
+        "position_error_m": 0.0031080714099732325,
+        "orientation_error_rad": 0.012074120411371502,
+        "orientation_error_deg": 0.6917961409043484,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.00021551084043414104,
+        "target_height_m": 0.8150000000000001,
+        "footprint_inside_target": true,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.166807799091875e-14,
+        "maximum_angular_velocity_rad_s": 1.223313792717366e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 127,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.1664822418466093,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 250
+          }
+        ]
+      },
+      "loading": {
+        "task": "loading",
+        "success": false,
+        "criteria": {
+          "position": false,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": false,
+          "placement_height": false,
+          "released": true,
+          "stable": true,
+          "seated": false
+        },
+        "position_error_m": 0.27133597428617845,
+        "orientation_error_rad": 0.012074120411371502,
+        "orientation_error_deg": 0.6917961409043484,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.004215510840434145,
+        "target_height_m": 0.8190000000000001,
+        "footprint_inside_target": false,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.166807799091875e-14,
+        "maximum_angular_velocity_rad_s": 1.223313792717366e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 127,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.1664822418466093,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 250
+          }
+        ]
+      }
+    },
+    "strict_destinations": [
+      "feeding"
+    ],
+    "physical_destination": "feeding",
+    "cue_choice": "consistent control",
+    "consistent_control_pass": true,
+    "distances_mm": {
+      "feeding": 3.1080714099732325,
+      "loading": 271.33597428617844
+    },
+    "wall_seconds": 17.56725738098612,
+    "noise_qualification": {
+      "passed": true,
+      "reference": "/var/tmp/typhon-eval02-goal-20261015/episodes/FF-912172",
+      "comparisons": 0
+    },
+    "minimum_eef_object_distance_mm": 4.788435032771746,
+    "maximum_lift_above_initial_mm": 166.48224184660933,
+    "supported_lift_10mm_bilateral_steps": 102,
+    "longest_supported_lift_s": 5.1,
+    "supported_lift_10mm_3steps": true,
+    "legacy_height_only_70mm": true,
+    "horizontal_transport_while_supported_mm": 323.1262660463587,
+    "object_path_m": 0.7254536286972769,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "released_at_final": true,
+    "actual_policy_queries": 48,
+    "executed_control_records": 1460
+  },
+  {
+    "id": "LL-912172",
+    "condition": "LL",
+    "policy_seed": 912172,
+    "source_demo_id": "demo_0002",
+    "physical_scene_task": "loading",
+    "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+    "wording_task": "loading",
+    "numerical_goal_task": "loading",
+    "scores": {
+      "feeding": {
+        "task": "feeding",
+        "success": false,
+        "criteria": {
+          "position": false,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": false,
+          "placement_height": false,
+          "released": true,
+          "stable": true
+        },
+        "position_error_m": 0.2715452449734252,
+        "orientation_error_rad": 0.017597766983344452,
+        "orientation_error_deg": 1.0082777770003035,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.0037844891595694152,
+        "target_height_m": 0.8150000000000001,
+        "footprint_inside_target": false,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.1492075449845865e-14,
+        "maximum_angular_velocity_rad_s": 1.0967464325001856e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 127,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.16347421300393372,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 252
+          }
+        ]
+      },
+      "loading": {
+        "task": "loading",
+        "success": true,
+        "criteria": {
+          "position": true,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true,
+          "seated": true
+        },
+        "position_error_m": 0.004624317175745571,
+        "orientation_error_rad": 0.017597766983344452,
+        "orientation_error_deg": 1.0082777770003035,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.00021551084043058832,
+        "target_height_m": 0.8190000000000001,
+        "footprint_inside_target": true,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.1492075449845865e-14,
+        "maximum_angular_velocity_rad_s": 1.0967464325001856e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 127,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.16347421300393372,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 252
+          }
+        ]
+      }
+    },
+    "strict_destinations": [
+      "loading"
+    ],
+    "physical_destination": "loading",
+    "cue_choice": "consistent control",
+    "consistent_control_pass": true,
+    "distances_mm": {
+      "feeding": 271.5452449734252,
+      "loading": 4.624317175745571
+    },
+    "wall_seconds": 17.88239520500065,
+    "noise_qualification": {
+      "passed": true,
+      "seed": 912172,
+      "reference": "/var/tmp/typhon-eval02-goal-20261015/episodes/FF-912172",
+      "query_noise_packets": 48,
+      "actual_rng_and_noise_arrays_exact": 144
+    },
+    "minimum_eef_object_distance_mm": 6.509331574621047,
+    "maximum_lift_above_initial_mm": 163.47421300393373,
+    "supported_lift_10mm_bilateral_steps": 110,
+    "longest_supported_lift_s": 5.5,
+    "supported_lift_10mm_3steps": true,
+    "legacy_height_only_70mm": true,
+    "horizontal_transport_while_supported_mm": 419.35353358854866,
+    "object_path_m": 0.8426985367086431,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "released_at_final": true,
+    "actual_policy_queries": 48,
+    "executed_control_records": 1460
+  },
+  {
+    "id": "FL-912171",
+    "condition": "FL",
+    "policy_seed": 912171,
+    "source_demo_id": "demo_0002",
+    "physical_scene_task": "loading",
+    "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+    "wording_task": "feeding",
+    "numerical_goal_task": "loading",
+    "scores": {
+      "feeding": {
+        "task": "feeding",
+        "success": true,
+        "criteria": {
+          "position": true,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true
+        },
+        "position_error_m": 0.00935705265640097,
+        "orientation_error_rad": 0.004682340128890416,
+        "orientation_error_deg": 0.26827832763016274,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.00021551084043414104,
+        "target_height_m": 0.8150000000000001,
+        "footprint_inside_target": true,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.1612329597759543e-14,
+        "maximum_angular_velocity_rad_s": 1.2501584363198419e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 130,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.16630704505367355,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 238
+          }
+        ]
+      },
+      "loading": {
+        "task": "loading",
+        "success": false,
+        "criteria": {
+          "position": false,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": false,
+          "placement_height": false,
+          "released": true,
+          "stable": true,
+          "seated": false
+        },
+        "position_error_m": 0.2694355910221183,
+        "orientation_error_rad": 0.004682340128890416,
+        "orientation_error_deg": 0.26827832763016274,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.004215510840434145,
+        "target_height_m": 0.8190000000000001,
+        "footprint_inside_target": false,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.1612329597759543e-14,
+        "maximum_angular_velocity_rad_s": 1.2501584363198419e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 130,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.16630704505367355,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 238
+          }
+        ]
+      }
+    },
+    "strict_destinations": [
+      "feeding"
+    ],
+    "physical_destination": "feeding",
+    "cue_choice": "followed wording",
+    "consistent_control_pass": null,
+    "distances_mm": {
+      "feeding": 9.357052656400969,
+      "loading": 269.4355910221183
+    },
+    "wall_seconds": 18.005596215982223,
+    "noise_qualification": {
+      "passed": true,
+      "seed": 912171,
+      "reference": "/var/tmp/typhon-eval02-goal-20261015/episodes/FF-912171",
+      "query_noise_packets": 48,
+      "actual_rng_and_noise_arrays_exact": 144
+    },
+    "minimum_eef_object_distance_mm": 6.124976048096466,
+    "maximum_lift_above_initial_mm": 166.30704505367356,
+    "supported_lift_10mm_bilateral_steps": 93,
+    "longest_supported_lift_s": 4.65,
+    "supported_lift_10mm_3steps": true,
+    "legacy_height_only_70mm": true,
+    "horizontal_transport_while_supported_mm": 322.0082303350921,
+    "object_path_m": 0.7135151063315373,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "released_at_final": true,
+    "actual_policy_queries": 48,
+    "executed_control_records": 1460
+  },
+  {
+    "id": "LF-912171",
+    "condition": "LF",
+    "policy_seed": 912171,
+    "source_demo_id": "demo_0002",
+    "physical_scene_task": "loading",
+    "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+    "wording_task": "loading",
+    "numerical_goal_task": "feeding",
+    "scores": {
+      "feeding": {
+        "task": "feeding",
+        "success": false,
+        "criteria": {
+          "position": false,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": false,
+          "placement_height": false,
+          "released": true,
+          "stable": true
+        },
+        "position_error_m": 0.2684848246454167,
+        "orientation_error_rad": 0.008503730039289004,
+        "orientation_error_deg": 0.4872278413698776,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.0037844891595658625,
+        "target_height_m": 0.8150000000000001,
+        "footprint_inside_target": false,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.1857952760304242e-14,
+        "maximum_angular_velocity_rad_s": 1.181409675834925e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 127,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.16609072228420751,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 235
+          }
+        ]
+      },
+      "loading": {
+        "task": "loading",
+        "success": true,
+        "criteria": {
+          "position": true,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true,
+          "seated": true
+        },
+        "position_error_m": 0.009422785732126918,
+        "orientation_error_rad": 0.008503730039289004,
+        "orientation_error_deg": 0.4872278413698776,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.00021551084043414104,
+        "target_height_m": 0.8190000000000001,
+        "footprint_inside_target": true,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.1857952760304242e-14,
+        "maximum_angular_velocity_rad_s": 1.181409675834925e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 127,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.16609072228420751,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 235
+          }
+        ]
+      }
+    },
+    "strict_destinations": [
+      "loading"
+    ],
+    "physical_destination": "loading",
+    "cue_choice": "followed wording",
+    "consistent_control_pass": null,
+    "distances_mm": {
+      "feeding": 268.48482464541667,
+      "loading": 9.422785732126918
+    },
+    "wall_seconds": 17.50069586999598,
+    "noise_qualification": {
+      "passed": true,
+      "seed": 912171,
+      "reference": "/var/tmp/typhon-eval02-goal-20261015/episodes/FF-912171",
+      "query_noise_packets": 48,
+      "actual_rng_and_noise_arrays_exact": 144
+    },
+    "minimum_eef_object_distance_mm": 5.948157324568262,
+    "maximum_lift_above_initial_mm": 166.09072228420752,
+    "supported_lift_10mm_bilateral_steps": 93,
+    "longest_supported_lift_s": 4.65,
+    "supported_lift_10mm_3steps": true,
+    "legacy_height_only_70mm": true,
+    "horizontal_transport_while_supported_mm": 416.8789868818512,
+    "object_path_m": 0.8416478594658641,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "released_at_final": true,
+    "actual_policy_queries": 48,
+    "executed_control_records": 1460
+  },
+  {
+    "id": "FL-912172",
+    "condition": "FL",
+    "policy_seed": 912172,
+    "source_demo_id": "demo_0002",
+    "physical_scene_task": "loading",
+    "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+    "wording_task": "feeding",
+    "numerical_goal_task": "loading",
+    "scores": {
+      "feeding": {
+        "task": "feeding",
+        "success": true,
+        "criteria": {
+          "position": true,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true
+        },
+        "position_error_m": 0.007745175931813863,
+        "orientation_error_rad": 0.00847508438311625,
+        "orientation_error_deg": 0.48558656616979595,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.00021551084043414104,
+        "target_height_m": 0.8150000000000001,
+        "footprint_inside_target": true,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.1624865791011102e-14,
+        "maximum_angular_velocity_rad_s": 1.0782393854058929e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 127,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.16525096045546106,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 237
+          }
+        ]
+      },
+      "loading": {
+        "task": "loading",
+        "success": false,
+        "criteria": {
+          "position": false,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": false,
+          "placement_height": false,
+          "released": true,
+          "stable": true,
+          "seated": false
+        },
+        "position_error_m": 0.27046411081977767,
+        "orientation_error_rad": 0.00847508438311625,
+        "orientation_error_deg": 0.48558656616979595,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.004215510840434145,
+        "target_height_m": 0.8190000000000001,
+        "footprint_inside_target": false,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.1624865791011102e-14,
+        "maximum_angular_velocity_rad_s": 1.0782393854058929e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 127,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.16525096045546106,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 237
+          }
+        ]
+      }
+    },
+    "strict_destinations": [
+      "feeding"
+    ],
+    "physical_destination": "feeding",
+    "cue_choice": "followed wording",
+    "consistent_control_pass": null,
+    "distances_mm": {
+      "feeding": 7.745175931813863,
+      "loading": 270.46411081977766
+    },
+    "wall_seconds": 17.750613643991528,
+    "noise_qualification": {
+      "passed": true,
+      "seed": 912172,
+      "reference": "/var/tmp/typhon-eval02-goal-20261015/episodes/FF-912172",
+      "query_noise_packets": 48,
+      "actual_rng_and_noise_arrays_exact": 144
+    },
+    "minimum_eef_object_distance_mm": 7.30941516073497,
+    "maximum_lift_above_initial_mm": 165.25096045546107,
+    "supported_lift_10mm_bilateral_steps": 92,
+    "longest_supported_lift_s": 4.6,
+    "supported_lift_10mm_3steps": true,
+    "legacy_height_only_70mm": true,
+    "horizontal_transport_while_supported_mm": 320.99587317410703,
+    "object_path_m": 0.7126369970549984,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "released_at_final": true,
+    "actual_policy_queries": 48,
+    "executed_control_records": 1460
+  },
+  {
+    "id": "LF-912172",
+    "condition": "LF",
+    "policy_seed": 912172,
+    "source_demo_id": "demo_0002",
+    "physical_scene_task": "loading",
+    "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+    "wording_task": "loading",
+    "numerical_goal_task": "feeding",
+    "scores": {
+      "feeding": {
+        "task": "feeding",
+        "success": false,
+        "criteria": {
+          "position": false,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": false,
+          "placement_height": false,
+          "released": true,
+          "stable": true
+        },
+        "position_error_m": 0.26958532926207296,
+        "orientation_error_rad": 0.012530605890658731,
+        "orientation_error_deg": 0.7179508322765132,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.0037844891595658625,
+        "target_height_m": 0.8150000000000001,
+        "footprint_inside_target": false,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.18619376434431e-14,
+        "maximum_angular_velocity_rad_s": 1.2190404791674057e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 130,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.165205386439781,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 236
+          }
+        ]
+      },
+      "loading": {
+        "task": "loading",
+        "success": true,
+        "criteria": {
+          "position": true,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true,
+          "seated": true
+        },
+        "position_error_m": 0.009096440847136508,
+        "orientation_error_rad": 0.012530605890658731,
+        "orientation_error_deg": 0.7179508322765132,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.00021551084043414104,
+        "target_height_m": 0.8190000000000001,
+        "footprint_inside_target": true,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.18619376434431e-14,
+        "maximum_angular_velocity_rad_s": 1.2190404791674057e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 130,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.165205386439781,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 236
+          }
+        ]
+      }
+    },
+    "strict_destinations": [
+      "loading"
+    ],
+    "physical_destination": "loading",
+    "cue_choice": "followed wording",
+    "consistent_control_pass": null,
+    "distances_mm": {
+      "feeding": 269.58532926207295,
+      "loading": 9.096440847136508
+    },
+    "wall_seconds": 18.086449308000738,
+    "noise_qualification": {
+      "passed": true,
+      "seed": 912172,
+      "reference": "/var/tmp/typhon-eval02-goal-20261015/episodes/FF-912172",
+      "query_noise_packets": 48,
+      "actual_rng_and_noise_arrays_exact": 144
+    },
+    "minimum_eef_object_distance_mm": 6.6861224472102245,
+    "maximum_lift_above_initial_mm": 165.205386439781,
+    "supported_lift_10mm_bilateral_steps": 87,
+    "longest_supported_lift_s": 4.2,
+    "supported_lift_10mm_3steps": true,
+    "legacy_height_only_70mm": true,
+    "horizontal_transport_while_supported_mm": 416.5124267026836,
+    "object_path_m": 0.8389230439820321,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "released_at_final": true,
+    "actual_policy_queries": 48,
+    "executed_control_records": 1460
+  }
+]
