@@ -52,5 +52,9 @@ T11048,experiment,"LOAD06 · #11048
 Separate pose sequence from gripper schedule at acquisition",S_generalisation_4,1220,2220.5,#4a4428
 R11048,result,Pose-only substitution fixes acquisition: 1.12 versus 62.76 degrees tilt. Grip-only does not. B resumes; no full-placement or training claim.,T11048,1620,2210.0,#574831
 S_generalisation_4,solution,Isolate approach state and acquisition policy,O_generalisation,820,1939.25,#343a46
-O_generalisation,opportunity,The model succeeds locally but follows scene cues,outcome,420,1138.25,#2d443b
+T11058,experiment,"EVAL02-GOAL · #11058
+Separate task wording from numerical destination cues",S_generalisation_5,1220,2404.0,#4a4428
+R11058,result,"Completed: 4/4 consistent controls; all4 conflicts finish the wording-associated task. Numbers affect initial proposals but independent goal control is unproven. One scene, two seeds.",T11058,1620,2383.0,#574831
+S_generalisation_5,solution,Separate task wording from numerical goals,O_generalisation,820,2413.5,#343a46
+O_generalisation,opportunity,The model succeeds locally but follows scene cues,outcome,420,1375.38,#2d443b
 outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60

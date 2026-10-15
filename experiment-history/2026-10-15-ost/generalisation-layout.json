@@ -592,12 +592,60 @@
       ]
     },
     {
+      "id": "T11058",
+      "type": "experiment",
+      "label": "EVAL02-GOAL \u00b7 #11058\nSeparate task wording from numerical destination cues",
+      "parent_id": "S_generalisation_5",
+      "x": 1220,
+      "y": 2404.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "EVAL02-GOAL \u00b7 #11058",
+        "Separate task wording from numerical",
+        "destination cues"
+      ]
+    },
+    {
+      "id": "R11058",
+      "type": "result",
+      "label": "Completed: 4/4 consistent controls; all4 conflicts finish the wording-associated task. Numbers affect initial proposals but independent goal control is unproven. One scene, two seeds.",
+      "parent_id": "T11058",
+      "x": 1620,
+      "y": 2383.0,
+      "width": 350,
+      "height": 133,
+      "color": "#574831",
+      "lines": [
+        "Completed: 4/4 consistent controls; all4",
+        "conflicts finish the wording-associated",
+        "task. Numbers affect initial proposals but",
+        "independent goal control is unproven. One",
+        "scene, two seeds."
+      ]
+    },
+    {
+      "id": "S_generalisation_5",
+      "type": "solution",
+      "label": "Separate task wording from numerical goals",
+      "parent_id": "O_generalisation",
+      "x": 820,
+      "y": 2413.5,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Separate task wording from numerical goals"
+      ]
+    },
+    {
       "id": "O_generalisation",
       "type": "opportunity",
       "label": "The model succeeds locally but follows scene cues",
       "parent_id": "outcome",
       "x": 420,
-      "y": 1138.25,
+      "y": 1375.38,
       "width": 350,
       "height": 72,
       "color": "#2d443b",
@@ -772,10 +820,22 @@
       "S_generalisation_4"
     ],
     [
+      "S_generalisation_5",
+      "T11058"
+    ],
+    [
+      "T11058",
+      "R11058"
+    ],
+    [
+      "O_generalisation",
+      "S_generalisation_5"
+    ],
+    [
       "outcome",
       "O_generalisation"
     ]
   ],
   "width": 2000,
-  "height": 2382.0
+  "height": 2576.0
 }
