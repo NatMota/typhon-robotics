@@ -1,0 +1,727 @@
+%%{init: {"theme": "base", "securityLevel": "loose", "fontFamily": "Arial, sans-serif", "fontSize": 18, "markdownAutoWrap": false, "flowchart": {"htmlLabels": false, "curve": "basis", "nodeSpacing": 24, "rankSpacing": 70, "wrappingWidth": 360}, "themeVariables": {"primaryTextColor": "#edf2f7", "lineColor": "#71849f", "background": "#0b1220"}}}%%
+flowchart LR
+OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
+O_data["Opportunity: Turn personal observations into reliable robot<br/>practice"]:::opportunity
+OUT --> O_data
+O_data_S0["Solution: Preserve source evidence and physical<br/>assumptions"]:::solution
+O_data --> O_data_S0
+T10981["OPS04 · #10981<br/>Reconcile excluded human review candidate 6<br/>with stable demo IDs"]:::experiment
+O_data_S0 --> T10981
+R10981["Review candidate 6 is demo0017; its source<br/>remains preserved. It is distinct from<br/>successful demo0006."]:::evidence
+T10981 --> R10981
+click T10981 "http://127.0.0.1:4001/?project=typhon-research#ticket=10981" "Open research ticket" _blank
+T10991["DATA06 · #10991<br/>Version the physical-object and calibration<br/>assumptions consistently"]:::experiment
+O_data_S0 --> T10991
+R10991["BLOCKED: reliable physical measurements and<br/>camera calibration remain missing. Virtual<br/>scale stays explicit."]:::blocked
+T10991 --> R10991
+click T10991 "http://127.0.0.1:4001/?project=typhon-research#ticket=10991" "Open research ticket" _blank
+T10972["R07 · #10972<br/>Align one human correction clip with the<br/>Panda-expert event timeline"]:::experiment
+O_data_S0 --> T10972
+R10972["One 7.6 s correction aligned event warp is not<br/>motor labels"]:::mixed
+T10972 --> R10972
+click T10972 "http://127.0.0.1:4001/?project=typhon-research#ticket=10972" "Open research ticket" _blank
+T10974["R09 · #10974<br/>Retarget one short human-observed correction<br/>into constrained Panda motion"]:::experiment
+O_data_S0 --> T10974
+R10974["One constrained Panda success generated path;<br/>virtual scale"]:::mixed
+T10974 --> R10974
+click T10974 "http://127.0.0.1:4001/?project=typhon-research#ticket=10974" "Open research ticket" _blank
+T10989["DATA04 · #10989<br/>Validate phone-video to Panda-action alignment<br/>beyond one event comparison"]:::experiment
+O_data_S0 --> T10989
+R10989["BLOCKED: no validated dense phone-frame to<br/>Panda-action alignment. One event comparison<br/>is not motor supervision."]:::blocked
+T10989 --> R10989
+click T10989 "http://127.0.0.1:4001/?project=typhon-research#ticket=10989" "Open research ticket" _blank
+O_data_S1["Solution: Audit training targets, mixing and held<br/>markers"]:::solution
+O_data --> O_data_S1
+T10987["DATA02 · #10987<br/>Reconcile prepared phase chunks and<br/>four-second intention targets with actual<br/>training"]:::experiment
+O_data_S1 --> T10987
+R10987["V2: 632 rows / 316 chunks. V3: 776 / 388.<br/>Broad Pt uses 30 actions over 1.5 s;<br/>four-second history is not a four-second<br/>action target."]:::mixed
+T10987 --> R10987
+click T10987 "http://127.0.0.1:4001/?project=typhon-research#ticket=10987" "Open research ticket" _blank
+T10988["DATA03 · #10988<br/>Audit balanced sampling across takes, chunks,<br/>horizons and camera views"]:::experiment
+O_data_S1 --> T10988
+R10988["Broad12k: 48,000 draws, 8,000 per source, all<br/>439 windows. Historical V3 per-update sampling<br/>remains unverified."]:::mixed
+T10988 --> R10988
+click T10988 "http://127.0.0.1:4001/?project=typhon-research#ticket=10988" "Open research ticket" _blank
+T10990["DATA05 · #10990<br/>Audit held-state crosshair in video and<br/>separate trajectory labels"]:::experiment
+O_data_S1 --> T10990
+R10990["16 takes / 32 views / 7,904 frames: 1,024<br/>held, 3,598 not held, 3,282 unknown. 768<br/>marked frames; no direct Franka labels."]:::mixed
+T10990 --> R10990
+click T10990 "http://127.0.0.1:4001/?project=typhon-research#ticket=10990" "Open research ticket" _blank
+O_data_S2["Solution: Extract observed object, hand and temporal<br/>evidence"]:::solution
+O_data --> O_data_S2
+T11016["VIDEO01-A · #11016<br/>Observed 2D object paths and explicit<br/>orientation gaps"]:::experiment
+O_data_S2 --> T11016
+R11016["Observed 2D object representation audited.<br/>Missing orientation and calibration stay<br/>explicit; no recovered human 3D actions."]:::mixed
+T11016 --> R11016
+click T11016 "http://127.0.0.1:4001/?project=typhon-research#ticket=11016" "Open research ticket" _blank
+T11017["VIDEO01-B · #11017<br/>Hand/pinch observations without fabricated<br/>grasp labels"]:::experiment
+O_data_S2 --> T11017
+R11017["526 sample identities, 175 hand detections.<br/>Unknown contact stays unknown; no autonomous<br/>grasp authority."]:::mixed
+T11017 --> R11017
+click T11017 "http://127.0.0.1:4001/?project=typhon-research#ticket=11017" "Open research ticket" _blank
+T11018["VIDEO01-C · #11018<br/>Frozen phone-frame features with temporal and<br/>cross-view controls"]:::experiment
+O_data_S2 --> T11018
+R11018["112 paired instants / 224 views reviewed.<br/>Intermediate pickup/release matters; generic<br/>representation-to-action transfer remains<br/>unqualified."]:::mixed
+T11018 --> R11018
+click T11018 "http://127.0.0.1:4001/?project=typhon-research#ticket=11018" "Open research ticket" _blank
+T11019["VIDEO02 · #11019<br/>Dense phone observations, temporal controls<br/>and object-focused features"]:::experiment
+O_data_S2 --> T11019
+R11019["Corrected extraction: 2,644/2,644 frame<br/>hashes; 147 four-second windows. Failed<br/>906-frame-mismatch export preserved. Offline<br/>features, no motor labels."]:::mixed
+T11019 --> R11019
+click T11019 "http://127.0.0.1:4001/?project=typhon-research#ticket=11019" "Open research ticket" _blank
+O_data_S3["Solution: Test causal contact evidence and its failures"]:::solution
+O_data --> O_data_S3
+T11020["VIDEO03 · #11020<br/>Test causal held-state prediction from<br/>unmarked personal video"]:::experiment
+O_data_S3 --> T11020
+R11020["35 probes: perfect labelled interiors but<br/>hand-present false-held errors remain.<br/>Primary-to-side recall 3/28 full vs 28/28<br/>fused; no control authority."]:::mixed
+T11020 --> R11020
+click T11020 "http://127.0.0.1:4001/?project=typhon-research#ticket=11020" "Open research ticket" _blank
+T11021["VIDEO04 · #11021<br/>Test training-only hand-present negatives for<br/>held-state errors"]:::experiment
+O_data_S3 --> T11021
+R11021["12 training negative views added. Transition<br/>errors 2/6 to 1/6 views; the same physical<br/>event still fails. 90/90 held positives<br/>retained."]:::mixed
+T11021 --> R11021
+click T11021 "http://127.0.0.1:4001/?project=typhon-research#ticket=11021" "Open research ticket" _blank
+T11022["VIDEO05 · #11022<br/>Test pre-contact negatives while preserving<br/>held-pause recognition"]:::experiment
+O_data_S3 --> T11022
+R11022["13 pre-contact views added. New false-held<br/>errors 2/5 to 1/5; reused challenge 1/8 to<br/>0/8. Held-pause qualification incomplete."]:::mixed
+T11022 --> R11022
+click T11022 "http://127.0.0.1:4001/?project=typhon-research#ticket=11022" "Open research ticket" _blank
+O_data_S4["Solution: Qualify motion, camera geometry and transfer"]:::solution
+O_data --> O_data_S4
+T11023["VIDEO06 · #11023<br/>Audit object motion through occlusion before<br/>video retargeting"]:::experiment
+O_data_S4 --> T11023
+R11023["342 frames: 194/222 held motion pairs<br/>supported, 28 unknown. Image motion is real;<br/>metric depth and grasp remain unresolved."]:::mixed
+T11023 --> R11023
+click T11023 "http://127.0.0.1:4001/?project=typhon-research#ticket=11023" "Open research ticket" _blank
+T11024["VIDEO07 · #11024<br/>Test native video cadence and phase timing<br/>before robot retargeting"]:::experiment
+O_data_S4 --> T11024
+R11024["Native cadence: 212/222 held pairs supported,<br/>up from 194. Ten unsupported pairs remain; no<br/>recovered robot actions."]:::mixed
+T11024 --> R11024
+click T11024 "http://127.0.0.1:4001/?project=typhon-research#ticket=11024" "Open research ticket" _blank
+T11032["VIDEO08 · #11032<br/>Test whether existing views identify camera<br/>geometry for a video-to-robot adapter"]:::experiment
+O_data_S4 --> T11032
+R11032["297 camera fits per view fit within 5 px.<br/>Large depth/height ambiguity: planar corners<br/>do not identify 3D geometry."]:::mixed
+T11032 --> R11032
+click T11032 "http://127.0.0.1:4001/?project=typhon-research#ticket=11032" "Open research ticket" _blank
+T11033["VIDEO09 · #11033<br/>Execute full human correction sequence with a<br/>frozen RGB-to-Panda adapter"]:::experiment
+O_data_S4 --> T11033
+R11033["Five sequence/control executions all grasp,<br/>lift and release; strict 0/5. Goal error<br/>33.7–35.5 mm. Endpoint registration is a<br/>confound."]:::mixed
+T11033 --> R11033
+click T11033 "http://127.0.0.1:4001/?project=typhon-research#ticket=11033" "Open research ticket" _blank
+T11034["VIDEO10 · #11034<br/>Register the complete video to the fixed task<br/>goal and rerun matched controls"]:::experiment
+O_data_S4 --> T11034
+R11034["Goal registration: all five<br/>sequence/endpoint/shuffle/static/repeat<br/>conditions succeed. One inspected take; no<br/>advantage from full sequence."]:::mixed
+T11034 --> R11034
+click T11034 "http://127.0.0.1:4001/?project=typhon-research#ticket=11034" "Open research ticket" _blank
+T11035["VIDEO11 · #11035<br/>Audit glyph correspondence and the conflicting<br/>trajectory scores"]:::experiment
+O_data_S4 --> T11035
+R11035["736-observation audit: plane-depth bias<br/>explains conflicting path scores. No new<br/>rollout; close full-path superiority claim."]:::mixed
+T11035 --> R11035
+click T11035 "http://127.0.0.1:4001/?project=typhon-research#ticket=11035" "Open research ticket" _blank
+T11015["VIDEO01 · #11015<br/>Compare video-derived representations and<br/>robot adapters without geometric-expert<br/>trajectories"]:::experiment
+O_data_S4 --> T11015
+R11015["Investigation concluded. Assisted correction<br/>works, but generic video-to-action transfer<br/>and extra benefit from intermediate video were<br/>not established."]:::mixed
+T11015 --> R11015
+click T11015 "http://127.0.0.1:4001/?project=typhon-research#ticket=11015" "Open research ticket" _blank
+
+OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
+O_perception["Opportunity: Make relevant visual cues change the correct<br/>action"]:::opportunity
+OUT --> O_perception
+O_perception_S0["Solution: Inspect the exact model inputs"]:::solution
+O_perception --> O_perception_S0
+T10959["R01e · #10959<br/>Measure numeral visibility through actual<br/>preprocessing"]:::experiment
+O_perception_S0 --> T10959
+R10959["Tiny blue fragment after resize visibility<br/>evidence, not recognition"]:::evidence
+T10959 --> R10959
+click T10959 "http://127.0.0.1:4001/?project=typhon-research#ticket=10959" "Open research ticket" _blank
+T10955["R01c · #10955<br/>Show exactly what V4 sees: 512→224 images,<br/>crop and six history frames"]:::experiment
+O_perception_S0 --> T10955
+R10955["512→224; crop absent at release six history<br/>frames actually supplied"]:::evidence
+T10955 --> R10955
+click T10955 "http://127.0.0.1:4001/?project=typhon-research#ticket=10955" "Open research ticket" _blank
+T10993["VIS01 · #10993<br/>Qualify a visibility fix if the causal image<br/>test supports it"]:::experiment
+O_perception_S0 --> T10993
+R10993["Crop-only repair rejected: clearer features<br/>did not repair held orientation or release.<br/>Native production inputs retained."]:::pending
+T10993 --> R10993
+click T10993 "http://127.0.0.1:4001/?project=typhon-research#ticket=10993" "Open research ticket" _blank
+T11011["R01f · #11011<br/>Separate lost visual detail from failure to<br/>use orientation in the action head"]:::experiment
+O_perception_S0 --> T11011
+R11011["108 paired predictions: cue sensitivity rises<br/>0.0102 to 0.1887; wrist error remains about 80<br/>degrees and opens at waypoint 11."]:::mixed
+T11011 --> R11011
+click T11011 "http://127.0.0.1:4001/?project=typhon-research#ticket=11011" "Open research ticket" _blank
+O_perception_S1["Solution: Test instructions and goal diversity"]:::solution
+O_perception --> O_perception_S1
+T10954["R01b · #10954<br/>Measure V4&#x27;s numeral sensitivity and<br/>grasp-relative orientation response"]:::experiment
+O_perception_S1 --> T10954
+R10954["87 queries; initial cue response held-state<br/>target stays ~94°"]:::mixed
+T10954 --> R10954
+click T10954 "http://127.0.0.1:4001/?project=typhon-research#ticket=10954" "Open research ticket" _blank
+T10960["R02 · #10960<br/>Test whether fixed-seed prompts command simple<br/>arm actions"]:::experiment
+O_perception_S1 --> T10960
+R10960["36 predictions; directions not reliably<br/>commanded"]:::negative
+T10960 --> R10960
+click T10960 "http://127.0.0.1:4001/?project=typhon-research#ticket=10960" "Open research ticket" _blank
+T10961["R02b · #10961<br/>Compare vanilla, V3 and V4 prompt response<br/>controls"]:::experiment
+O_perception_S1 --> T10961
+R10961["180 predictions; each model 0/18 paired axis<br/>reversals"]:::negative
+T10961 --> R10961
+click T10961 "http://127.0.0.1:4001/?project=typhon-research#ticket=10961" "Open research ticket" _blank
+T10994["VIS02 · #10994<br/>Test language/action grounding repair with<br/>matched input contracts"]:::experiment
+O_perception_S1 --> T10994
+R10994["Matched 3k continuations: varied vs fixed<br/>goals 10/12 vs 0/12 novel-goal strict success.<br/>Loading 0/12 both; text-only goal response<br/>under 1.4 mm."]:::pending
+T10994 --> R10994
+click T10994 "http://127.0.0.1:4001/?project=typhon-research#ticket=10994" "Open research ticket" _blank
+O_perception_S2["Solution: Qualify visual completion decisions"]:::solution
+O_perception --> O_perception_S2
+T11005["LIVE02 · #11005<br/>Qualify the simple visual completion<br/>classifier across allowable variation"]:::experiment
+O_perception_S2 --> T11005
+R11005["Completion gate failed: classical recall below<br/>80%; separate API diagnostic 2/22 recall. No<br/>completion authority granted."]:::mixed
+T11005 --> R11005
+click T11005 "http://127.0.0.1:4001/?project=typhon-research#ticket=11005" "Open research ticket" _blank
+T11006["LIVE03 · #11006<br/>Reconcile Qwen live planner,<br/>finished-reference image and veto behavior"]:::experiment
+O_perception_S2 --> T11006
+R11006["Qwen&#x27;s 180-degree false completion was vetoed<br/>by RGB reference. Historical TTC used<br/>smoothness, not learned value; no qualified<br/>Qwen control."]:::mixed
+T11006 --> R11006
+click T11006 "http://127.0.0.1:4001/?project=typhon-research#ticket=11006" "Open research ticket" _blank
+
+OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
+O_execution["Opportunity: Make grasp-relative motion finish before<br/>release"]:::opportunity
+OUT --> O_execution
+O_execution_S0["Solution: Trace commanded and executed motion"]:::solution
+O_execution --> O_execution_S0
+T10957["R01 · #10957<br/>Trace V4 rotation, gripper command and actual<br/>motion around release"]:::experiment
+O_execution_S0 --> T10957
+R10957["Policy opens before orientation keep-closed<br/>still ~80° wrong"]:::negative
+T10957 --> R10957
+click T10957 "http://127.0.0.1:4001/?project=typhon-research#ticket=10957" "Open research ticket" _blank
+T10958["R01d · #10958<br/>Audit previous-command proprioception and test<br/>release-input alternatives"]:::experiment
+O_execution_S0 --> T10958
+R10958["Measured EEF delays opening 79–85° error<br/>remains"]:::negative
+T10958 --> R10958
+click T10958 "http://127.0.0.1:4001/?project=typhon-research#ticket=10958" "Open research ticket" _blank
+T10968["R05b · #10968<br/>Compare V4 continuation from off-axis and<br/>near-expert held states"]:::experiment
+O_execution_S0 --> T10968
+R10968["Same V4: off-axis ~85° error near-expert &lt;1°;<br/>strict 0/16"]:::mixed
+T10968 --> R10968
+click T10968 "http://127.0.0.1:4001/?project=typhon-research#ticket=10968" "Open research ticket" _blank
+O_execution_S1["Solution: Estimate the actual grasp and qualify paths"]:::solution
+O_execution --> O_execution_S1
+T10985["NEXT03 · #10985<br/>Separate grasp-estimation error from<br/>recovery-control error"]:::experiment
+O_execution_S1 --> T10985
+R10985["Four paired recovery executions: truth and RGB<br/>grasp transforms each 2/2 strict. Two<br/>inspected source states; no autonomous handoff<br/>qualification."]:::mixed
+T10985 --> R10985
+click T10985 "http://127.0.0.1:4001/?project=typhon-research#ticket=10985" "Open research ticket" _blank
+T10998["CTRL01 · #10998<br/>Qualify joint-aware recovery paths and staged<br/>regrasp"]:::experiment
+O_execution_S1 --> T10998
+R10998["BLOCKED: set-down/regrasp strict 1/6. Five<br/>joint-limit stops; no full collision<br/>qualification. Failed paths are not labels."]:::blocked
+T10998 --> R10998
+click T10998 "http://127.0.0.1:4001/?project=typhon-research#ticket=10998" "Open research ticket" _blank
+O_execution_S2["Solution: Test observation frequency"]:::solution
+O_execution --> O_execution_S2
+T10966["R04 · #10966<br/>Compare 30-action execution with 10-action<br/>replanning on V4"]:::experiment
+O_execution_S2 --> T10966
+R10966["Grasps: 2/12 vs 0/12 H10 slower; strict 0 both"]:::negative
+T10966 --> R10966
+click T10966 "http://127.0.0.1:4001/?project=typhon-research#ticket=10966" "Open research ticket" _blank
+
+OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
+O_generalisation["Opportunity: The model succeeds locally but follows scene<br/>cues"]:::opportunity
+OUT --> O_generalisation
+O_generalisation_S0["Solution: Broader adaptation and coverage checks"]:::solution
+O_generalisation --> O_generalisation_S0
+T10962["R03 · #10962<br/>Train a new six-take full-weight X-VLA-Pt with<br/>fixed 3k/12k checkpoints"]:::experiment
+O_generalisation_S0 --> T10962
+R10962["Six P_train takes, 439 windows. Fresh<br/>full-weight Pt reached 3k and 12k checkpoints<br/>in 64 minutes; performance tested separately."]:::evidence
+T10962 --> R10962
+click T10962 "http://127.0.0.1:4001/?project=typhon-research#ticket=10962" "Open research ticket" _blank
+T10963["R03b · #10963<br/>Evaluate narrow M6, broad-Pt 3k and broad-Pt<br/>12k on unchanged holdouts"]:::experiment
+O_generalisation_S0 --> T10963
+R10963["Narrow M6, broad3k and broad12k each 0/6<br/>development grasps. These starts lie outside<br/>the training position hull."]:::negative
+T10963 --> R10963
+click T10963 "http://127.0.0.1:4001/?project=typhon-research#ticket=10963" "Open research ticket" _blank
+T10964["R03c · #10964<br/>Measure broad-Pt 12k competence on its six<br/>familiar starts"]:::experiment
+O_generalisation_S0 --> T10964
+R10964["Broad12k on six familiar starts: 6/6 grasps,<br/>5/6 stable square placements, 4/6 strict<br/>successes."]:::mixed
+T10964 --> R10964
+click T10964 "http://127.0.0.1:4001/?project=typhon-research#ticket=10964" "Open research ticket" _blank
+T10965["R03d · #10965<br/>Audit source/holdout position and yaw coverage"]:::experiment
+O_generalisation_S0 --> T10965
+R10965["All three development starts lie outside the<br/>six training starts&#x27; XY convex hull. Coverage<br/>gap established."]:::evidence
+T10965 --> R10965
+click T10965 "http://127.0.0.1:4001/?project=typhon-research#ticket=10965" "Open research ticket" _blank
+T10983["NEXT01 · #10983<br/>Measure local robustness around successful<br/>broad-Pt 12k starts"]:::experiment
+O_generalisation_S0 --> T10983
+R10983["Selected familiar local variations: 14/16<br/>grasps and 13/16 strict successes. Bounded<br/>local competence, not broad transfer."]:::mixed
+T10983 --> R10983
+click T10983 "http://127.0.0.1:4001/?project=typhon-research#ticket=10983" "Open research ticket" _blank
+O_generalisation_S1["Solution: Audit repair data"]:::solution
+O_generalisation --> O_generalisation_S1
+T10992["DATA07 · #10992<br/>Add training-only failure and correction<br/>coverage after teacher qualification"]:::experiment
+O_generalisation_S1 --> T10992
+R10992["18 original episodes verified; original V4&#x27;s<br/>three additions remain unverified. Four later<br/>corrections are separate data and gave 0/4<br/>recoveries."]:::pending
+T10992 --> R10992
+click T10992 "http://127.0.0.1:4001/?project=typhon-research#ticket=10992" "Open research ticket" _blank
+O_generalisation_S2["Solution: Teach loading without losing feeding"]:::solution
+O_generalisation --> O_generalisation_S2
+T11013["B01 · #11013<br/>Diagnose why task B loading does not<br/>generalise"]:::experiment
+O_generalisation_S2 --> T11013
+R11013["28 physical runs and 18 fixed-input goal<br/>probes separate grasp and destination<br/>failures; expert feasibility established."]:::mixed
+T11013 --> R11013
+click T11013 "http://127.0.0.1:4001/?project=typhon-research#ticket=11013" "Open research ticket" _blank
+T11037["LOAD01 · #11037<br/>Test loading supervision while retaining<br/>feeding competence"]:::experiment
+O_generalisation_S2 --> T11037
+R11037["New loading supervision: 3/4 taught and 2/2<br/>development loading successes. Feeding 4/6 vs<br/>control 5/6; task selection tested next."]:::mixed
+T11037 --> R11037
+click T11037 "http://127.0.0.1:4001/?project=typhon-research#ticket=11037" "Open research ticket" _blank
+O_generalisation_S3["Solution: Separate task instruction from fixture<br/>appearance"]:::solution
+O_generalisation --> O_generalisation_S3
+T11038["LOAD02 · #11038<br/>Switch feeding/loading instruction in an<br/>identical scene"]:::experiment
+O_generalisation_S3 --> T11038
+R11038["Identical scene, different text: model loads<br/>under both instructions. Four wrong feeding<br/>destinations; zero two-way switches."]:::mixed
+T11038 --> R11038
+click T11038 "http://127.0.0.1:4001/?project=typhon-research#ticket=11038" "Open research ticket" _blank
+T11039["LOAD03 · #11039<br/>Test whether fixture appearance controls task<br/>choice"]:::experiment
+O_generalisation_S3 --> T11039
+R11039["Visible fixture: loading 8/8. Hidden: feeding<br/>8/8. Eight requested and eight wrong<br/>endpoints; zero instruction switches."]:::mixed
+T11039 --> R11039
+click T11039 "http://127.0.0.1:4001/?project=typhon-research#ticket=11039" "Open research ticket" _blank
+T11040["LOAD04 · #11040<br/>Counterbalanced task supervision in identical<br/>scenes"]:::experiment
+O_generalisation_S3 --> T11040
+R11040["Balanced vs control: requested region 16/16 vs<br/>8/16; strict 12/16 vs 8/16. Loading stays 4/8.<br/>Four cases tip before grasp. Archive verified."]:::mixed
+T11040 --> R11040
+click T11040 "http://127.0.0.1:4001/?project=typhon-research#ticket=11040" "Open research ticket" _blank
+O_generalisation_S4["Solution: Isolate approach state and acquisition policy"]:::solution
+O_generalisation --> O_generalisation_S4
+T11044["LOAD05 · #11044<br/>Pre-contact C/B acquisition crossover"]:::experiment
+O_generalisation_S4 --> T11044
+R11044["Original restart qualification stopped. The<br/>causal comparison was completed separately in<br/>R2; no original crossover outcome."]:::mixed
+T11044 --> R11044
+click T11044 "http://127.0.0.1:4001/?project=typhon-research#ticket=11044" "Open research ticket" _blank
+T11045["LOAD05-Q · #11045<br/>Repair content signatures and qualify<br/>saved-action restart"]:::experiment
+O_generalisation_S4 --> T11045
+R11045["Content checks pass; copied solver-constraint<br/>state mismatches. Stopped before model<br/>inference. Failed qualification preserved."]:::mixed
+T11045 --> R11045
+click T11045 "http://127.0.0.1:4001/?project=typhon-research#ticket=11045" "Open research ticket" _blank
+T11046["LOAD05-R · #11046<br/>Reconstruct pre-contact states and cross C/B<br/>acquisition policies"]:::experiment
+O_generalisation_S4 --> T11046
+R11046["Both native controls reproduce. Crossed test<br/>stopped only on an XML visual statistic;<br/>controls subsequently reused in R2."]:::mixed
+T11046 --> R11046
+click T11046 "http://127.0.0.1:4001/?project=typhon-research#ticket=11046" "Open research ticket" _blank
+T11047["LOAD05-R2 · #11047<br/>Complete two crossed-policy acquisition<br/>branches"]:::experiment
+O_generalisation_S4 --> T11047
+R11047["Only B from its own state tips. Crossed<br/>pickups are upright (0.86 and 1.62 degrees).<br/>State-policy interaction in one inspected<br/>case."]:::mixed
+T11047 --> R11047
+click T11047 "http://127.0.0.1:4001/?project=typhon-research#ticket=11047" "Open research ticket" _blank
+T11048["LOAD06 · #11048<br/>Separate pose sequence from gripper schedule<br/>at acquisition"]:::experiment
+O_generalisation_S4 --> T11048
+R11048["Pose-only substitution fixes acquisition: 1.12<br/>versus 62.76 degrees tilt. Grip-only does not.<br/>B resumes; no full-placement or training<br/>claim."]:::mixed
+T11048 --> R11048
+click T11048 "http://127.0.0.1:4001/?project=typhon-research#ticket=11048" "Open research ticket" _blank
+O_generalisation_S5["Solution: Separate task wording from numerical goals"]:::solution
+O_generalisation --> O_generalisation_S5
+T11058["EVAL02-GOAL · #11058<br/>Separate task wording from numerical<br/>destination cues"]:::experiment
+O_generalisation_S5 --> T11058
+R11058["Completed: 4/4 consistent controls; all4<br/>conflicts finish the wording-associated task.<br/>Numbers affect initial proposals but<br/>independent goal control is unproven. One<br/>scene, two seeds."]:::mixed
+T11058 --> R11058
+click T11058 "http://127.0.0.1:4001/?project=typhon-research#ticket=11058" "Open research ticket" _blank
+T11059["EVAL02-XY · #11059<br/>Test numerical placement steering within the<br/>feeding square"]:::experiment
+O_generalisation_S5 --> T11059
+R11059["Centre 2/2; numerical offsets 0/4. All six<br/>inside the original square. Requested 20 mm<br/>shifts produced only 0.315-0.926 mm Y movement<br/>in this panel."]:::mixed
+T11059 --> R11059
+click T11059 "http://127.0.0.1:4001/?project=typhon-research#ticket=11059" "Open research ticket" _blank
+T11060["EVAL02-SPATIAL · #11060<br/>Separate numeric goal from visible marker<br/>location"]:::experiment
+O_generalisation_S5 --> T11060
+R11060["BLOCKED before inference: marker shift changed<br/>29 protected-foreground pixels in first QA<br/>frame. Zero model trials; cause unresolved.<br/>Renderer retry deferred."]:::blocked
+T11060 --> R11060
+click T11060 "http://127.0.0.1:4001/?project=typhon-research#ticket=11060" "Open research ticket" _blank
+T11061["EVAL02-COVERAGE · #11061<br/>Audit numerical goal variation in B training<br/>and ancestry"]:::experiment
+O_generalisation_S5 --> T11061
+R11061["Actual sample logs show three feeding goals<br/>earlier, only one in B. Teacher placement<br/>labels pass. Exposure narrowed; this audit<br/>alone does not prove forgetting."]:::mixed
+T11061 --> R11061
+click T11061 "http://127.0.0.1:4001/?project=typhon-research#ticket=11061" "Open research ticket" _blank
+T11062["EVAL02-RETENTION · #11062<br/>Compare ancestor checkpoints on the same<br/>trained feeding goals"]:::experiment
+O_generalisation_S5 --> T11062
+R11062["GOAL and FL: 2/2 at both goals. B: 2/2 at G0,<br/>0/2 at G1; returns near old G0. All 12 grasp<br/>and transport. Local retention regression<br/>after B."]:::mixed
+T11062 --> R11062
+click T11062 "http://127.0.0.1:4001/?project=typhon-research#ticket=11062" "Open research ticket" _blank
+T11063["EVAL02-FIT · #11063<br/>Compare ancestor action predictions on<br/>identical G1 teacher observations"]:::experiment
+O_generalisation_S5 --> T11063
+R11063["Identical post-lift input: mean EEF error<br/>21-27 mm in earlier checkpoints, 56 mm in B.<br/>Gripper matches; no transition tested.<br/>Prediction change exists before rollout<br/>divergence."]:::mixed
+T11063 --> R11063
+click T11063 "http://127.0.0.1:4001/?project=typhon-research#ticket=11063" "Open research ticket" _blank
+T11064["EVAL02-RET-C · #11064<br/>Test the matched visibility-control checkpoint<br/>for retained G1 behavior"]:::experiment
+O_generalisation_S5 --> T11064
+R11064["Done: matched C control. G0 2/2; relocated G1<br/>1/2. All four lift and transport. One centre<br/>overshoot; unlike B returning toward the old<br/>goal. Mixed result preserved."]:::mixed
+T11064 --> R11064
+click T11064 "http://127.0.0.1:4001/?project=typhon-research#ticket=11064" "Open research ticket" _blank
+T11065["EVAL02-NUM · #11065<br/>Isolate numerical goal sensitivity on an<br/>unchanged post-lift packet"]:::experiment
+O_generalisation_S5 --> T11065
+R11065["Done: 150 mm numeric goal change barely alters<br/>predictions. GOAL final Y change 0; B +/-0.061<br/>mm. Four new + four archived chunks. No useful<br/>coordinate steering shown."]:::mixed
+T11065 --> R11065
+click T11065 "http://127.0.0.1:4001/?project=typhon-research#ticket=11065" "Open research ticket" _blank
+
+OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
+O_recovery["Opportunity: Advance phases only from trustworthy evidence"]:::opportunity
+OUT --> O_recovery
+O_recovery_S0["Solution: Qualify state estimates and safety checks"]:::solution
+O_recovery --> O_recovery_S0
+T10969["R06 · #10969<br/>Compare observable phase harness, unmodified<br/>V4 and deterministic skills"]:::experiment
+O_recovery_S0 --> T10969
+R10969["Guard blocks valid grasps 1,126 close vetoes;<br/>reject"]:::negative
+T10969 --> R10969
+click T10969 "http://127.0.0.1:4001/?project=typhon-research#ticket=10969" "Open research ticket" _blank
+T10970["R06b · #10970<br/>Fix post-release observer projection in a<br/>training-only prototype"]:::experiment
+O_recovery_S0 --> T10970
+R10970["Position error 16–19 mm → 0.44–0.66 mm, same<br/>images"]:::mixed
+T10970 --> R10970
+click T10970 "http://127.0.0.1:4001/?project=typhon-research#ticket=10970" "Open research ticket" _blank
+T10984["NEXT02 · #10984<br/>Repair observation hypotheses before granting<br/>the harness veto authority"]:::experiment
+O_recovery_S0 --> T10984
+R10984["BLOCKED: observers remain below preregistered<br/>qualification. No veto, grasp or release<br/>authority."]:::blocked
+T10984 --> R10984
+click T10984 "http://127.0.0.1:4001/?project=typhon-research#ticket=10984" "Open research ticket" _blank
+T10999["CTRL02 · #10999<br/>Specify and log hard workspace, no-go and<br/>joint-boundary policies"]:::experiment
+O_recovery_S0 --> T10999
+R10999["27 checks plus 36 successful expert episodes:<br/>zero guard rejections. Logging implemented;<br/>not full robot-safety validation."]:::mixed
+T10999 --> R10999
+click T10999 "http://127.0.0.1:4001/?project=typhon-research#ticket=10999" "Open research ticket" _blank
+T11004["LIVE01 · #11004<br/>Verify the existing live harness and<br/>controller telemetry hookup"]:::experiment
+O_recovery_S0 --> T11004
+R11004["REVIEW: original V4 shadow parity passed. New<br/>copy-safe lineage resolves timestamps, but<br/>LOAD04-B paired parity fails on raw camera<br/>variation. No control authority."]:::mixed
+T11004 --> R11004
+click T11004 "http://127.0.0.1:4001/?project=typhon-research#ticket=11004" "Open research ticket" _blank
+T11030["OBS05 · #11030<br/>Test fresh glyph-motion evidence against the<br/>held-state latch"]:::experiment
+O_recovery_S0 --> T11030
+R11030["Eight replay episodes / 1,219 observations.<br/>All four passive variants fail gates; glyph<br/>filtering loses too much recall."]:::mixed
+T11030 --> R11030
+click T11030 "http://127.0.0.1:4001/?project=typhon-research#ticket=11030" "Open research ticket" _blank
+T11031["OBS06 · #11031<br/>Test aperture and release evidence on<br/>additional archived episodes"]:::experiment
+O_recovery_S0 --> T11031
+R11031["24 episodes / 8,784 observations: contact<br/>false positives 108 to 20, precision 94.65%.<br/>Still below 95% gate; no authority."]:::mixed
+T11031 --> R11031
+click T11031 "http://127.0.0.1:4001/?project=typhon-research#ticket=11031" "Open research ticket" _blank
+T11054["LIVE01-P · #11054<br/>Carry camera acquisition provenance across<br/>copies without changing robot execution"]:::experiment
+O_recovery_S0 --> T11054
+R11054["Review: capture provenance 6,365/6,365;<br/>offline tensors unchanged. Live pair differed<br/>by one background pixel, then actions<br/>diverged. Both tasks succeeded; exact live<br/>transparency failed."]:::mixed
+T11054 --> R11054
+click T11054 "http://127.0.0.1:4001/?project=typhon-research#ticket=11054" "Open research ticket" _blank
+T11057["LIVE01-R · #11057<br/>Fixed-state camera repeatability with and<br/>without provenance"]:::experiment
+O_recovery_S0 --> T11057
+R11057["Completed: fixed-state 24 bundles / 48 images<br/>match exactly with and without provenance.<br/>Earlier live difference not reproduced; live<br/>parity remains failed. Cached observer output;<br/>no new policy runs."]:::mixed
+T11057 --> R11057
+click T11057 "http://127.0.0.1:4001/?project=typhon-research#ticket=11057" "Open research ticket" _blank
+O_recovery_S1["Solution: Qualify skills and phase control"]:::solution
+O_recovery --> O_recovery_S1
+T10971["R06c · #10971<br/>Qualify and reject a two-axis IK endpoint<br/>selector"]:::experiment
+O_recovery_S1 --> T10971
+R10971["Six-take success 3/6 → 1/6 Feasible endpoint ≠<br/>feasible path"]:::negative
+T10971 --> R10971
+click T10971 "http://127.0.0.1:4001/?project=typhon-research#ticket=10971" "Open research ticket" _blank
+T10973["R08 · #10973<br/>Qualify geometric expert recovery from exact<br/>V4 failure states"]:::experiment
+O_recovery_S1 --> T10973
+R10973["Nominal 2/6 → grasp-aware 3/6 recoveries<br/>quarantined from training"]:::mixed
+T10973 --> R10973
+click T10973 "http://127.0.0.1:4001/?project=typhon-research#ticket=10973" "Open research ticket" _blank
+T10976["R11 · #10976<br/>Prototype a typed primitive interface and<br/>deterministic supervisor"]:::experiment
+O_recovery_S1 --> T10976
+R10976["Interface works; skills limited 2/6 pickups;<br/>0/6 completions"]:::mixed
+T10976 --> R10976
+click T10976 "http://127.0.0.1:4001/?project=typhon-research#ticket=10976" "Open research ticket" _blank
+T10977["R12 · #10977<br/>Train and evaluate a causal phase predictor"]:::experiment
+O_recovery_S1 --> T10977
+R10977["63.7% accuracy; early release confidence gate<br/>fails; disabled"]:::negative
+T10977 --> R10977
+click T10977 "http://127.0.0.1:4001/?project=typhon-research#ticket=10977" "Open research ticket" _blank
+T11000["HIER01 · #11000<br/>Train a high-level skill selector only after<br/>primitives are reliable"]:::experiment
+O_recovery_S1 --> T11000
+R11000["BLOCKED: reliable primitive transitions and<br/>observation authority are prerequisites. No<br/>high-level selector training."]:::blocked
+T11000 --> R11000
+click T11000 "http://127.0.0.1:4001/?project=typhon-research#ticket=11000" "Open research ticket" _blank
+O_recovery_S2["Solution: Test correction data and RL prerequisites"]:::solution
+O_recovery --> O_recovery_S2
+T10978["R13 · #10978<br/>Compare DAgger, options, residual RL, offline<br/>Q and PPO approaches"]:::experiment
+O_recovery_S2 --> T10978
+R10978["DAgger, residuals, Q, PPO reviewed no new RL<br/>training performed"]:::evidence
+T10978 --> R10978
+click T10978 "http://127.0.0.1:4001/?project=typhon-research#ticket=10978" "Open research ticket" _blank
+T11001["REL01 · #11001<br/>Collect qualified learner-state corrections<br/>and run a separate DAgger experiment"]:::experiment
+O_recovery_S2 --> T11001
+R11001["One DAgger iteration, four corrections plus<br/>nominal data, 3k updates. Quarantine recovery<br/>0/4; no benefit demonstrated."]:::pending
+T11001 --> R11001
+click T11001 "http://127.0.0.1:4001/?project=typhon-research#ticket=11001" "Open research ticket" _blank
+T11002["REL02 · #11002<br/>Compare supervised residual correction with<br/>bounded residual RL"]:::experiment
+O_recovery_S2 --> T11002
+R11002["BLOCKED: reliable correction targets and<br/>action support required. Residual RL not run."]:::blocked
+T11002 --> R11002
+click T11002 "http://127.0.0.1:4001/?project=typhon-research#ticket=11002" "Open research ticket" _blank
+T11003["REL03 · #11003<br/>Evaluate offline value ranking or PPO/DPPO<br/>only with adequate action support"]:::experiment
+O_recovery_S2 --> T11003
+R11003["BLOCKED: useful proposals and valid rewards<br/>required. Offline Q / PPO on X-VLA not run."]:::blocked
+T11003 --> R11003
+click T11003 "http://127.0.0.1:4001/?project=typhon-research#ticket=11003" "Open research ticket" _blank
+O_recovery_S3["Solution: Separate AlphaNIST-style PPO from X-VLA"]:::solution
+O_recovery --> O_recovery_S3
+T11041["ALPHA01 · #11041<br/>AlphaNIST-inspired Panda PPO/reset-sampling<br/>pilot"]:::experiment
+O_recovery_S3 --> T11041
+R11041["Small point-cloud PPO pilot: adaptive reset<br/>sampling has no demonstrated advantage. All<br/>five policies 0/4 full starts. Separate from<br/>X-VLA."]:::mixed
+T11041 --> R11041
+click T11041 "http://127.0.0.1:4001/?project=typhon-research#ticket=11041" "Open research ticket" _blank
+T11043["ALPHA02 · #11043<br/>frozen-policy 4s/15s reset qualification and<br/>release-only control"]:::experiment
+O_recovery_S3 --> T11043
+R11043["Frozen 32-rollout follow-up: all four policies<br/>0/4 full starts and zero new grasps.<br/>Release-only matches near-goal success; park<br/>further PPO."]:::mixed
+T11043 --> R11043
+click T11043 "http://127.0.0.1:4001/?project=typhon-research#ticket=11043" "Open research ticket" _blank
+T11051["ALPHA03 · #11051<br/>Fuller AlphaNIST implementation and<br/>visual-orientation extension — deferred"]:::experiment
+O_recovery_S3 --> T11051
+R11051["PARKED by request. Fuller<br/>GPU-parallel/reset-bank implementation and<br/>visual orientation extension recorded; no<br/>implementation or training started."]:::parked
+T11051 --> R11051
+click T11051 "http://127.0.0.1:4001/?project=typhon-research#ticket=11051" "Open research ticket" _blank
+O_recovery_S4["Solution: Qualify training-family corrective supervision"]:::solution
+O_recovery --> O_recovery_S4
+T11050["DATA07-R · #11050<br/>Qualify acquisition repairs on training<br/>families before admitting corrective data"]:::experiment
+O_recovery_S4 --> T11050
+R11050["Completed: native B loading3/4. Only0001<br/>tipped pre-acquisition; one same-state<br/>C-pose/B-grip chunk still failed (0/1<br/>conversions), with428.09mm final error. Full<br/>horizon and exact state/input/noise checks<br/>passed. Zero successful correction examples;<br/>no training. Raw809files SHA256-verified on<br/>Mint."]:::mixed
+T11050 --> R11050
+click T11050 "http://127.0.0.1:4001/?project=typhon-research#ticket=11050" "Open research ticket" _blank
+T11052["DATA07-GE · #11052<br/>Qualify one geometric-expert continuation from<br/>B&#x27;s failed approach state"]:::experiment
+O_recovery_S4 --> T11052
+R11052["Completed: exact-state geometric teacher<br/>placed/released inside fixture (1.22 mm, 0.016<br/>deg yaw) but brick lay sideways (90 deg tilt).<br/>Strict 0/1; no correction candidate. Open<br/>descent tipped before close. No training;<br/>stopped after one attempt."]:::mixed
+T11052 --> R11052
+click T11052 "http://127.0.0.1:4001/?project=typhon-research#ticket=11052" "Open research ticket" _blank
+T11053["CTRL03 · #11053<br/>Diagnose loading acquisition tipping before<br/>qualifying a controller repair"]:::experiment
+O_recovery_S4 --> T11053
+R11053["Nominal sampled gripper corridor clears the<br/>brick; executed finger shell hits its top<br/>before closure. Proposed readiness gate<br/>failed: 11.85 mm minimum versus 3 mm. Zero<br/>repair rollouts."]:::mixed
+T11053 --> R11053
+click T11053 "http://127.0.0.1:4001/?project=typhon-research#ticket=11053" "Open research ticket" _blank
+T11055["CTRL04 · #11055<br/>Test one fixed pre-descent dwell from the<br/>failed acquisition state"]:::experiment
+O_recovery_S4 --> T11055
+R11055["Completed: extra 4 s reduced entry error from<br/>5.69 to 4.18 mm. Strict success 0/2; both<br/>tipped before grasp. Settling alone<br/>insufficient. Raw archive verified on Mint."]:::mixed
+T11055 --> R11055
+click T11055 "http://127.0.0.1:4001/?project=typhon-research#ticket=11055" "Open research ticket" _blank
+T11056["CTRL05 · #11056<br/>Compare matched-time step and smooth descent<br/>from the settled state"]:::experiment
+O_recovery_S4 --> T11056
+R11056["BLOCKED: reference audit completed;<br/>qualification stopped at tick 510 because<br/>wrapper code changed too early. No S/R descent<br/>runs or efficacy result. Approach-repair<br/>branch deferred tonight."]:::blocked
+T11056 --> R11056
+click T11056 "http://127.0.0.1:4001/?project=typhon-research#ticket=11056" "Open research ticket" _blank
+O_recovery_S5["Solution: Dispatch an explicitly supplied task to a<br/>retained motor policy"]:::solution
+O_recovery --> O_recovery_S5
+T11066["HIER01-TASK · #11066<br/>Test a fixed caller-task dispatcher across<br/>retained checkpoints"]:::experiment
+O_recovery_S5 --> T11066
+R11066["Done: caller-task routing. Main 4/4 vs B 3/4;<br/>conditional confirmation 2/2 vs 1/2. All 12<br/>lift. G1 recovered; feeding/loading retained.<br/>One training family; no learned hierarchy."]:::mixed
+T11066 --> R11066
+click T11066 "http://127.0.0.1:4001/?project=typhon-research#ticket=11066" "Open research ticket" _blank
+O_recovery_S6["Solution: Qualify task routing across starting contexts"]:::solution
+O_recovery --> O_recovery_S6
+T11067["HIER01-DEV · #11067<br/>Qualify fixed task routing on archived<br/>0012/0013 development scenes"]:::experiment
+O_recovery_S6 --> T11067
+R11067["Done: router passed feeding 4/4 and loading<br/>4/4; B passed feeding 4/4 and loading 2/4. All<br/>16 lifted. B loading failures were<br/>tilted/unseated placements. Two visible<br/>families, not independent holdouts."]:::mixed
+T11067 --> R11067
+click T11067 "http://127.0.0.1:4001/?project=typhon-research#ticket=11067" "Open research ticket" _blank
+O_recovery_S7["Solution: Test uninterrupted task handovers"]:::solution
+O_recovery --> O_recovery_S7
+T11068["HIER01-CHAIN · #11068<br/>Test fixed-budget feed/load handovers without<br/>world reset"]:::experiment
+O_recovery_S7 --> T11068
+R11068["Done: both continuous task orders failed on<br/>the second task. First tasks succeeded; the<br/>incoming policy never reacquired the brick. No<br/>world reset or hidden home motion. Original<br/>reverse order had a documented raw-RGB audit<br/>stop."]:::mixed
+T11068 --> R11068
+click T11068 "http://127.0.0.1:4001/?project=typhon-research#ticket=11068" "Open research ticket" _blank
+T11069["HIER01-CHAIN-AMEND1 · #11069<br/>Complete one fresh L→F workflow after<br/>raw-render gate interruption"]:::experiment
+O_recovery_S7 --> T11069
+R11069["Done: explicit audit amendment allowed the<br/>fresh reverse workflow. Six raw channel<br/>differences left all actual actor inputs,<br/>actions and controller traces exact. Loading<br/>passed; subsequent feeding did not approach or<br/>grasp. Original evidence retained."]:::mixed
+T11069 --> R11069
+click T11069 "http://127.0.0.1:4001/?project=typhon-research#ticket=11069" "Open research ticket" _blank
+O_recovery_S8["Solution: Diagnose why the next task never starts"]:::solution
+O_recovery --> O_recovery_S8
+T11070["HIER01-HANDOFF · #11070<br/>Diagnose both skill transitions from saved<br/>evidence"]:::experiment
+O_recovery_S8 --> T11070
+R11070["Done: correct task, fresh history and visible<br/>blue 2 at both handovers. Policies proposed<br/>open-gripper near-home motions: zero contact<br/>or lift. New starts are 200–299 mm from<br/>training starts; robot posture is close to<br/>standalone. Coverage/conditioning is next;<br/>numeral recognition remains unproven."]:::mixed
+T11070 --> R11070
+click T11070 "http://127.0.0.1:4001/?project=typhon-research#ticket=11070" "Open research ticket" _blank
+O_recovery_S9["Solution: Separate unfamiliar starts from prior-task<br/>visual cues"]:::solution
+O_recovery --> O_recovery_S9
+T11071["HIER01-START · #11071<br/>Separate right-side start position from the<br/>feeding-marker cue"]:::experiment
+O_recovery_S9 --> T11071
+R11071["Done: loading controls 2/2. All eight<br/>right-side starts: no contact or lift. Inside<br/>the feeding marker: no close proposals.<br/>Outside: 17–371 empty-space closes and an arm<br/>path 112–117 mm closer. The cue changes<br/>activity, but does not restore acquisition."]:::mixed
+T11071 --> R11071
+click T11071 "http://127.0.0.1:4001/?project=typhon-research#ticket=11071" "Open research ticket" _blank
+O_recovery_S10["Solution: Qualify task-start supervision after completed<br/>work"]:::solution
+O_recovery --> O_recovery_S10
+T11072["INIT01 · #11072<br/>qualify task-start supervision from<br/>training-family handovers"]:::experiment
+O_recovery_S10 --> T11072
+R11072["Done: native loading 0/4; unchanged teacher<br/>4/4; completed-feeding holds 4/4. Teacher<br/>lifts were upright with bilateral support.<br/>Eight candidate recordings; no training.<br/>Starts span only 10.5 mm. Next: a matched<br/>adaptation and retention test."]:::mixed
+T11072 --> R11072
+click T11072 "http://127.0.0.1:4001/?project=typhon-research#ticket=11072" "Open research ticket" _blank
+O_recovery_S11["Solution: Learn when to initiate loading while<br/>preserving completed feeding"]:::solution
+O_recovery --> O_recovery_S11
+T11073["INIT02 · #11073<br/>matched initiation adaptation with<br/>preservation and rehearsal"]:::experiment
+O_recovery_S11 --> T11073
+R11073["Complete: T learned loading at shared<br/>post-feeding starts (5/8 vs R 0/8), but<br/>disturbed all eight completed feeding cases<br/>(0/8 preserved vs R 8/8). Prior strict passes<br/>unchanged; two pickup regressions. Optional<br/>gate failed. 69 canonical trials; full<br/>SHA-verified Mint archive."]:::mixed
+T11073 --> R11073
+click T11073 "http://127.0.0.1:4001/?project=typhon-research#ticket=11073" "Open research ticket" _blank
+O_recovery_S12["Solution: Separate initial action choice from later<br/>policy drift"]:::solution
+O_recovery --> O_recovery_S12
+T11074["INIT03 · #11074<br/>distinguish conditional fitting from<br/>noise-to-action generation"]:::experiment
+O_recovery_S12 --> T11074
+R11074["Partial diagnostic: all 32 saved first action<br/>chunks remain closer to hold under either<br/>instruction. Exact start inputs match<br/>training; initial loading vs hold not<br/>separated. Later T manipulation unexplained.<br/>Native conditional-loss test missed<br/>qualification deadline; unmeasured. Archived;<br/>planner review."]:::mixed
+T11074 --> R11074
+click T11074 "http://127.0.0.1:4001/?project=typhon-research#ticket=11074" "Open research ticket" _blank
+O_recovery_S13["Solution: Locate when completed-task preservation<br/>becomes acquisition"]:::solution
+O_recovery --> O_recovery_S13
+T11075["INIT04 · #11075<br/>locate unwanted initiation and isolate<br/>instructions at later states"]:::experiment
+O_recovery_S13 --> T11075
+R11075["Complete: all eight feeding requests remain<br/>intact. At later fixed states,<br/>feeding/loading/explicit-hold prompts all<br/>approach and then close. 18 outputs; exact<br/>replay error 0. Stronger wording fails<br/>locally. No training/physics; image/history<br/>causes and native conditional fitting remain<br/>unresolved."]:::mixed
+T11075 --> R11075
+click T11075 "http://127.0.0.1:4001/?project=typhon-research#ticket=11075" "Open research ticket" _blank
+
+OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
+O_compute["Opportunity: Choose useful candidates without blocking<br/>valid motion"]:::opportunity
+OUT --> O_compute
+O_compute_S0["Solution: Measure candidate support and visual ranking"]:::solution
+O_compute --> O_compute_S0
+T10967["R05 · #10967<br/>Measure eight-proposal availability using a<br/>privileged offline oracle"]:::experiment
+O_compute_S0 --> T10967
+R10967["48 proposals; approach improves graspable<br/>states stay 1/6"]:::mixed
+T10967 --> R10967
+click T10967 "http://127.0.0.1:4001/?project=typhon-research#ticket=10967" "Open research ticket" _blank
+T10975["R10a · #10975<br/>Prepare blue-ghost candidate cards and typed<br/>Luna requests"]:::experiment
+O_compute_S0 --> T10975
+R10975["64 candidates / 32 slates prepared simulator<br/>futures; no Luna calls"]:::evidence
+T10975 --> R10975
+click T10975 "http://127.0.0.1:4001/?project=typhon-research#ticket=10975" "Open research ticket" _blank
+T10982["R10 · #10982<br/>Run Decisions API visual ranking on frozen<br/>ghost/future slates"]:::experiment
+O_compute_S0 --> T10982
+R10982["32 choices + 32 reasons. Future RGB: 5/5<br/>selected adequate, 7 abstentions; held strict<br/>0/8. Privileged lookahead; no qualified<br/>benefit."]:::blocked
+T10982 --> R10982
+click T10982 "http://127.0.0.1:4001/?project=typhon-research#ticket=10982" "Open research ticket" _blank
+T11029["LIVE09 · #11029<br/>Repeat R10 and audit critic response<br/>consistency"]:::experiment
+O_compute_S0 --> T11029
+R11029["Repeat of the same 32 slates, not new<br/>evidence. Future-image choices still poor<br/>across ordering; median/p95 1.094/2.338<br/>seconds."]:::mixed
+T11029 --> R11029
+click T11029 "http://127.0.0.1:4001/?project=typhon-research#ticket=11029" "Open research ticket" _blank
+O_compute_S1["Solution: Integrate and isolate the live selection<br/>mechanism"]:::solution
+O_compute --> O_compute_S1
+T11014["LIVE04 · #11014<br/>Integrate Decisions API candidate ranking with<br/>bounded asynchronous execution"]:::experiment
+O_compute_S1 --> T11014
+R11014["Nine live trials: 3 API choices executed 62<br/>targets; 33/36 replies UNKNOWN. Reference<br/>pickup/place 1/2 vs 0/2 live variants."]:::mixed
+T11014 --> R11014
+click T11014 "http://127.0.0.1:4001/?project=typhon-research#ticket=11014" "Open research ticket" _blank
+T11025["LIVE05 · #11025<br/>Separate waiting, sampling and guards after<br/>the live-ranking regression"]:::experiment
+O_compute_S1 --> T11025
+R11025["30 matched trials isolate guard regression:<br/>native pickup/place 1/2 even with waits; guard<br/>0/2 at zero wait. Strict 0/2."]:::mixed
+T11025 --> R11025
+click T11025 "http://127.0.0.1:4001/?project=typhon-research#ticket=11025" "Open research ticket" _blank
+T11026["LIVE06 · #11026<br/>Qualify motion guards against the executed<br/>controller contract"]:::experiment
+O_compute_S1 --> T11026
+R11026["Executed-command check restores known<br/>pickup/place. Eight experts succeed, 1,714<br/>ticks and zero new vetoes; 304 old false jump<br/>vetoes."]:::mixed
+T11026 --> R11026
+click T11026 "http://127.0.0.1:4001/?project=typhon-research#ticket=11026" "Open research ticket" _blank
+T11027["LIVE07 · #11027<br/>Integrate the qualified execution check into<br/>the live candidate handoff"]:::experiment
+O_compute_S1 --> T11027
+R11027["Nine live trials: native and first-admissible<br/>grasp/place; API misses grasp. All strict 0/2.<br/>Activation is not executed selection."]:::mixed
+T11027 --> R11027
+click T11027 "http://127.0.0.1:4001/?project=typhon-research#ticket=11027" "Open research ticket" _blank
+T11028["LIVE08 · #11028<br/>Isolate the first ranked candidate from<br/>boundary timing"]:::experiment
+O_compute_S1 --> T11028
+R11028["Four-run 2x2: candidate A grasps/places at<br/>both waits; C at neither. Candidate choice<br/>explains this failure, not one tick of delay."]:::mixed
+T11028 --> R11028
+click T11028 "http://127.0.0.1:4001/?project=typhon-research#ticket=11028" "Open research ticket" _blank
+
+OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
+O_evidence["Opportunity: Make results reproducible, recoverable and<br/>understandable"]:::opportunity
+OUT --> O_evidence
+O_evidence_S0["Solution: Reconcile evaluation panels and uncertainty"]:::solution
+O_evidence --> O_evidence_S0
+T10995["EVAL01 · #10995<br/>Reconcile the earlier 775-rollout feeding<br/>comparison and V4 grasp search"]:::experiment
+O_evidence_S0 --> T10995
+R10995["775 matched feeding rollouts:<br/>vanilla/V1/V2/V3/V4 pickups 0/0/0/10/1 on 137<br/>unfinished scenes. Stable square placements<br/>0/0/0/5/1."]:::mixed
+T10995 --> R10995
+click T10995 "http://127.0.0.1:4001/?project=typhon-research#ticket=10995" "Open research ticket" _blank
+T10997["EVAL03 · #10997<br/>Reconcile the 20 × A/B harness comparison and<br/>guard event logging"]:::experiment
+O_evidence_S0 --> T10997
+R10997["Historical 400 synthetic A/B rows: zero<br/>pickup/place/strict. One candidate, 30-second<br/>cap, no TTC. Distinct from film-derived<br/>evaluation."]:::mixed
+T10997 --> R10997
+click T10997 "http://127.0.0.1:4001/?project=typhon-research#ticket=10997" "Open research ticket" _blank
+T10996["EVAL02 · #10996<br/>Define the next confirmatory comparison with<br/>family-level uncertainty"]:::experiment
+O_evidence_S0 --> T10996
+R10996["REVIEW: 136/204 planned completed. Broad vs<br/>vanilla near-layout strict 17/40 vs 0/40.<br/>Broader layouts 0/20 both; 68 interventions<br/>unrun."]:::mixed
+T10996 --> R10996
+click T10996 "http://127.0.0.1:4001/?project=typhon-research#ticket=10996" "Open research ticket" _blank
+T11036["EVAL02R · #11036<br/>Reconcile existing comparison claims and<br/>family-level uncertainty"]:::experiment
+O_evidence_S0 --> T11036
+R11036["Read-only review of 775 + 296 rollouts and 24<br/>extracts. Family-aware intervals and 1,102<br/>input hashes checked; no new experiments."]:::mixed
+T11036 --> R11036
+click T11036 "http://127.0.0.1:4001/?project=typhon-research#ticket=11036" "Open research ticket" _blank
+O_evidence_S1["Solution: Preserve the research record and compute<br/>environment"]:::solution
+O_evidence --> O_evidence_S1
+T10980["OPS03 · #10980<br/>Write a request-by-request report and obtain<br/>independent plus GPT Pro review"]:::experiment
+O_evidence_S1 --> T10980
+R10980["review 13 requests reconciled limits and<br/>errata documented"]:::evidence
+T10980 --> R10980
+click T10980 "http://127.0.0.1:4001/?project=typhon-research#ticket=10980" "Open research ticket" _blank
+T10979["OPS02 · #10979<br/>Preserve and verify all research models,<br/>traces, videos and resume state"]:::experiment
+O_evidence_S1 --> T10979
+R10979["backup Artifacts and checkpoints retained<br/>SHA-verified on Mint fast drive"]:::evidence
+T10979 --> R10979
+click T10979 "http://127.0.0.1:4001/?project=typhon-research#ticket=10979" "Open research ticket" _blank
+T10956["OPS01 · #10956<br/>Create and reconcile the research kanban<br/>ledger with evidence and honest statuses"]:::experiment
+O_evidence_S1 --> T10956
+R10956["Research ledger reconciled. Current tree<br/>covers every ticket with explicit evidence,<br/>limitations and status; creating a ticket is<br/>not executing it."]:::evidence
+T10956 --> R10956
+click T10956 "http://127.0.0.1:4001/?project=typhon-research#ticket=10956" "Open research ticket" _blank
+T10986["DATA01 · #10986<br/>Publish an internal model and dataset registry<br/>with unambiguous names"]:::experiment
+O_evidence_S1 --> T10986
+R10986["19 checkpoint identities audited. M3–M6 are<br/>separate lineages; broad Pt starts fresh.<br/>Historical V4 recovery arrays remain partly<br/>unverified."]:::mixed
+T10986 --> R10986
+click T10986 "http://127.0.0.1:4001/?project=typhon-research#ticket=10986" "Open research ticket" _blank
+T11012["OPS05 · #11012<br/>Draw the opportunity solution tree and restore<br/>the Design viewer"]:::experiment
+O_evidence_S1 --> T11012
+R11012["113 work items across 10 views. Each<br/>experiment has a result card. Live/offline SVG<br/>coverage verified; active research programme<br/>continues after bounded tickets."]:::mixed
+T11012 --> R11012
+click T11012 "http://127.0.0.1:4001/?project=typhon-research#ticket=11012" "Open research ticket" _blank
+T11042["OPS01 · #11042<br/>Verify Powerglide booking and full backup<br/>including lab recovery"]:::experiment
+O_evidence_S1 --> T11042
+R11042["Full backup reconciled: 906,507 files, 299.6<br/>GB, no integrity errors. Labs and checkpoint<br/>checks saved. Fresh-machine restore untested."]:::mixed
+T11042 --> R11042
+click T11042 "http://127.0.0.1:4001/?project=typhon-research#ticket=11042" "Open research ticket" _blank
+T11049["OPS07 · #11049<br/>Restore Mint access and mirror latest<br/>experiment evidence and OST"]:::experiment
+O_evidence_S1 --> T11049
+R11049["Recovered: Mint mirrors verified (45 older<br/>evidence files, 809 DATA07-R raw files).<br/>Interrupted work preserved; live OST installed<br/>and served bytes checked. DATA07-GE raw 223<br/>files also verified. Fresh-machine restore<br/>untested."]:::mixed
+T11049 --> R11049
+click T11049 "http://127.0.0.1:4001/?project=typhon-research#ticket=11049" "Open research ticket" _blank
+O_evidence_S2["Solution: Qualify media and the private report"]:::solution
+O_evidence --> O_evidence_S2
+T11007["DEL01 · #11007<br/>Reconcile dashboard, video hosting and<br/>research result provenance"]:::experiment
+O_evidence_S2 --> T11007
+R11007["Eight representative records, ten videos,<br/>exact models and hashes verified. Current<br/>selected files absent from hosted index;<br/>delivery repair separate."]:::mixed
+T11007 --> R11007
+click T11007 "http://127.0.0.1:4001/?project=typhon-research#ticket=11007" "Open research ticket" _blank
+T11008["DEL02 · #11008<br/>Prepare an accurate research write-up and<br/>submission package"]:::experiment
+O_evidence_S2 --> T11008
+R11008["REVIEW: private research write-up plus<br/>overnight synthesis. Local task-wording<br/>precedence demonstrated; numerical steering<br/>and recovery remain open.<br/>Publication/submission pending."]:::mixed
+T11008 --> R11008
+click T11008 "http://127.0.0.1:4001/?project=typhon-research#ticket=11008" "Open research ticket" _blank
+
+OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
+O_parked["Opportunity: Keep deferred work distinct from evidence"]:::opportunity
+OUT --> O_parked
+O_parked_S0["Solution: Do not expand scope without a new reason"]:::solution
+O_parked --> O_parked_S0
+T11009["PARK01 · #11009<br/>Set-of-Mark object/region labels — withdrawn"]:::experiment
+O_parked_S0 --> T11009
+R11009["PARKED: Set-of-Mark withdrawn by the user."]:::parked
+T11009 --> R11009
+click T11009 "http://127.0.0.1:4001/?project=typhon-research#ticket=11009" "Open research ticket" _blank
+T11010["PARK02 · #11010<br/>Broader platform and simulator changes —<br/>deferred"]:::experiment
+O_parked_S0 --> T11010
+R11010["PARKED: broader platforms and simulator<br/>changes deferred."]:::parked
+T11010 --> R11010
+click T11010 "http://127.0.0.1:4001/?project=typhon-research#ticket=11010" "Open research ticket" _blank
+classDef outcome fill:#263f60,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef opportunity fill:#2d443b,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef solution fill:#343a46,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef experiment fill:#4a4428,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef evidence fill:#244a3d,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef mixed fill:#574831,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef negative fill:#56343c,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef pending fill:#30445a,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef blocked fill:#4e374f,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef parked fill:#373b42,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
