@@ -1,0 +1,22 @@
+Codex continuing under Nat's active autonomous OST programme (solo, existing Powerglide 4090, no paid pods, AlphaNIST parked). I applied your explicit raw-camera audit amendment, sealed that work, then completed HIER01-HANDOFF within its 20-minute read-only clock. Please select the next concrete, bounded experiment/dependency; we will continue rather than finish the whole programme at this review point.
+
+HIER01-CHAIN-AMEND1 #11069, private commit a52c470bb61b41a3ff8632845db732c8db4a6e04:
+- Fresh L→F from archived demo_0012 seed912171: loading succeeds (5.354mm, supported lift), feeding second stage fails (274.744mm, zero lift); brick remains correctly loaded.
+- Original F→L: feeding succeeds4.553mm, loading fails266.212mm, brick remains correctly fed.
+- Both incoming goals initially unsatisfied. Both continuous workflows fail. 5 physical segments total: 4 canonical plus the original interrupted duplicate loading; the original unexecuted feeding stage is not counted as a model failure.
+- Fresh loading first-stage exact all48 prepared input hashes, actual noise, predictions/history, controller/contact/command traces, initial full available state and final/stability truth vs DEV. Raw-camera exception retained exactly6 secondary channel values (2 RGB pixels, 1 unit) after preparation; no other RGB-dependent controller.
+- No reset, home motion, ticks/state injection between requests. Controller/world retained. Explicit incoming checkpoint+instruction, fresh measured first proprio/history and noiseindex0. Same1436policy+24settle each segment. Full videos/reloads and comparison clips saved; Mint291files70,253,472bytes verified.
+
+HIER01-HANDOFF #11070 private commit03f0cbe534ac2b1dd39ceaf0b9ac456d95b3a317, Mint23files1,368,879bytes verified:
+- 0 new inference/physics. 96 saved query histories verified, all initial measured, later native previous-command.
+- Correct incoming FL/full loading instruction and GOAL/full feeding instruction; instructions equal standaloneDEV. Selected fresh reload receipts actionerror0; first actualnoise identical23be9210...; all3 image masks valid.
+- Exact saved prepared224px crop contact sheet visually inspected: orange body and blue2 clearly present for both. No orientation recognition claim.
+- F→L: all1440 raw grippers .000276–.001584 (0close proposals), min rawtarget distance to initialbrick417.199mm, min actualEEF451.732mm, zero gripper contact/bilateral/lift/brickdisplacement.
+- L→F: all1440 raw grippers .000662–.001491 (0close), min rawtarget558.821mm, min actualEEF582.860mm, zero contact/lift/displacement.
+- Corresponding standaloneDEV acquired/lifted: minactualEEFs6.739/3.402mm; bilateralsteps86/91. Incoming firstchunk lasttargets remainnearhome whereas standalone firstchunks approach original left start.
+- Boundary robot EEF only6.078mm(F→L)/4.524mm(L→F) from standaloneinitial; max absolutejoint differences .586°/.905°. Brick now (+.1274,−.1161) / (+.1173,+.1546), respectively; open gripper, settled released brick.
+- Actual latest training manifests + sampling audited: GOAL12feeding episodes/six sourcefamilies/12000presentations; FL12feeding+4loading/12000 equallyfeedingloading. All actual sampled IDs accounted, source episodehashesmatch. ALL initial objectx in[-.3085,−.0759]m. Nearest incoming-task traininginitial XY distances298.737mm(F→L) and199.996mm(L→F); minimum initialyaw gaps15.311°/16.642°, separatefromposition.
+- Exact pre-action trainingjointstates absent; initialmeasuredEEF available. Did not substitute later joints or claim exhaustive basepretrainingcoverage. Finishedobjectpositions may appear later in training; no claim neverseen.
+- First actionable boundary failure bothdirections: policy emits near-home open-gripper targets with valid currentinputs, before execution/acquisition. Task-start coverage/conditioning limitation is supported; terminal-image shortcut vs generic right-side acquisition failure is a hypothesis, not established causality.
+
+All frozenM0/etc and holdouts unchanged; no corrective suffix or training on DEV. What single next test most efficiently separates task-start generalization from learned completion/conditioning, or advances the appropriate blocked OST dependency? Please specify exact cells/controls, data split protections, qualification and stop limits. Do not propose a long training run without first defining and qualifying the data. We can retain these handovers as development diagnostics only. I am updating the live OST/private Git snapshot while you review.

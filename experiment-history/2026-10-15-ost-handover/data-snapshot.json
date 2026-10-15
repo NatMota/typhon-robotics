@@ -1,0 +1,33 @@
+{
+  "id": "data",
+  "name": "01 \u00b7 Personal data",
+  "artboards": [
+    {
+      "id": "data-tree",
+      "name": "data-tree",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 1808,
+        "height": 8438
+      },
+      "layers": [
+        {
+          "id": "79c6c22c-ac60-45b5-91b7-5d5f8a6dc5d8",
+          "type": "image",
+          "name": "TYPHON / Personal data",
+          "x": 0,
+          "y": 0,
+          "width": 1808.0,
+          "height": 8438.0,
+          "imageRef": "/llm-design-tool/designs/typhon-research/assets/data.svg"
+        }
+      ],
+      "width": 2462,
+      "height": 2758,
+      "updatedAt": "2026-10-13T21:38:42Z",
+      "mermaidSource": "%%{init: {\"theme\": \"base\", \"securityLevel\": \"loose\", \"look\": \"classic\", \"htmlLabels\": false, \"fontFamily\": \"sans-serif\", \"fontSize\": 18, \"markdownAutoWrap\": false, \"flowchart\": {\"htmlLabels\": false, \"wrappingWidth\": 360, \"minNodeWidth\": 300, \"curve\": \"basis\", \"nodeSpacing\": 28, \"rankSpacing\": 80}, \"themeVariables\": {\"fontFamily\": \"Arial, sans-serif\", \"fontSize\": \"18px\", \"primaryTextColor\": \"#edf2f7\", \"lineColor\": \"#71849f\", \"background\": \"#0b1220\"}}}%%\nflowchart LR\nO_data[\"Turn personal observations into<br/>trustworthy robot practice\"]:::opportunity\nO_data_S0[\"Preserve provenance and physical<br/>assumptions\"]:::solution\nO_data --> O_data_S0\nT10981[\"ESTABLISHED / IMPLEMENTED<br/>Excluded-take provenance audit<br/>Review candidate 6 = demo0017<br/>distinct from successful demo0006<br/>OPS04 \u00b7 #10981\"]:::evidence\nO_data_S0 --> T10981\nclick T10981 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10981\" \"Open research ticket 10981\" _blank\nT10991[\"BACKLOG \u00b7 NOT RUN<br/>Physical DUPLO + calibration<br/>BACKLOG: scale, dimensions, frames<br/>version provisional assumptions<br/>DATA06 \u00b7 #10991\"]:::pending\nO_data_S0 -.-> T10991\nclick T10991 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10991\" \"Open research ticket 10991\" _blank\nO_data_S1[\"Align task events before motor<br/>supervision\"]:::solution\nO_data --> O_data_S1\nT10972[\"MIXED / LIMITED<br/>Human / expert event timeline<br/>One 7.6 s correction aligned<br/>event warp is not motor labels<br/>R07 \u00b7 #10972\"]:::mixed\nO_data_S1 --> T10972\nclick T10972 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10972\" \"Open research ticket 10972\" _blank\nT10974[\"BOUNDED IMPROVEMENT<br/>Human endpoint retargeting<br/>One constrained Panda success<br/>generated path; virtual scale<br/>R09 \u00b7 #10974\"]:::positive\nO_data_S1 --> T10974\nclick T10974 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10974\" \"Open research ticket 10974\" _blank\nT10989[\"BACKLOG \u00b7 NOT RUN<br/>Phone-to-Panda action alignment<br/>BACKLOG: beyond event alignment<br/>preserve embodiment/timing limits<br/>DATA04 \u00b7 #10989\"]:::pending\nO_data_S1 -.-> T10989\nclick T10989 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10989\" \"Open research ticket 10989\" _blank\nO_data_S2[\"Prepare useful phase, horizon and<br/>view mixtures\"]:::solution\nO_data --> O_data_S2\nT10987[\"REVIEW EXISTING WORK<br/>Phase chunks + 4 s intentions<br/>REVIEW: prepared vs actually trained<br/>horizons, alignment, supervision<br/>DATA02 \u00b7 #10987\"]:::review\nO_data_S2 -.-> T10987\nclick T10987 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10987\" \"Open research ticket 10987\" _blank\nT10988[\"REVIEW EXISTING WORK<br/>Balanced data randomisation<br/>REVIEW: trajectories, takes, views<br/>verify realised training mixture<br/>DATA03 \u00b7 #10988\"]:::review\nO_data_S2 -.-> T10988\nclick T10988 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10988\" \"Open research ticket 10988\" _blank\nT10990[\"REVIEW EXISTING WORK<br/>Held crosshair + separate labels<br/>REVIEW: video / trajectory encoding<br/>simulator-held signal is privileged<br/>DATA05 \u00b7 #10990\"]:::review\nO_data_S2 -.-> T10990\nclick T10990 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10990\" \"Open research ticket 10990\" _blank\nclassDef outcome fill:#162b50,stroke:#8ab7ff,stroke-width:3px,color:#f8fbff;\nclassDef opportunity fill:#143936,stroke:#55c9b5,stroke-width:2px,color:#ecfff9;\nclassDef solution fill:#222d45,stroke:#8395b8,color:#eef2ff;\nclassDef positive fill:#143e33,stroke:#57d9a3,stroke-width:2px,color:#effff6;\nclassDef evidence fill:#18344b,stroke:#67b5e8,color:#eff9ff;\nclassDef mixed fill:#48361e,stroke:#dfb265,color:#fff7df;\nclassDef negative fill:#452632,stroke:#e78298,color:#fff0f4;\nclassDef next fill:#223353,stroke:#92acff,stroke-width:2px,stroke-dasharray:5 3,color:#edf1ff;\nclassDef pending fill:#242b39,stroke:#718096,stroke-dasharray:5 3,color:#d5deed;\nclassDef review fill:#332c48,stroke:#b5a0da,stroke-dasharray:3 3,color:#f2edff;\nclassDef blocked fill:#412d4b,stroke:#d796db,stroke-dasharray:3 3,color:#fff0ff;\nclassDef parked fill:#2b3038,stroke:#68717e,stroke-dasharray:3 5,color:#aeb8c7;\n"
+    }
+  ],
+  "updatedAt": "2026-10-13T21:38:42Z"
+}

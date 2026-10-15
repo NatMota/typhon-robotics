@@ -1,0 +1,393 @@
+id,type,label,parent_id,x,y,color
+T10981,experiment,"OPS04 · #10981
+Reconcile excluded human review candidate 6 with stable demo IDs",S_data_0,1220,58.0,#4a4428
+R10981,result,Review candidate 6 is demo0017; its source remains preserved. It is distinct from successful demo0006.,T10981,1620,58.0,#244a3d
+T10991,experiment,"DATA06 · #10991
+Version the physical-object and calibration assumptions consistently",S_data_0,1220,185.0,#4a4428
+R10991,result,BLOCKED: reliable physical measurements and camera calibration remain missing. Virtual scale stays explicit.,T10991,1620,185.0,#4e374f
+T10972,experiment,"R07 · #10972
+Align one human correction clip with the Panda-expert event timeline",S_data_0,1220,312.0,#4a4428
+R10972,result,One 7.6 s correction aligned event warp is not motor labels,T10972,1620,321.5,#574831
+T10974,experiment,"R09 · #10974
+Retarget one short human-observed correction into constrained Panda motion",S_data_0,1220,439.0,#4a4428
+R10974,result,One constrained Panda success generated path; virtual scale,T10974,1620,448.5,#574831
+T10989,experiment,"DATA04 · #10989
+Validate phone-video to Panda-action alignment beyond one event comparison",S_data_0,1220,566.0,#4a4428
+R10989,result,BLOCKED: no validated dense phone-frame to Panda-action alignment. One event comparison is not motor supervision.,T10989,1620,566.0,#4e374f
+S_data_0,solution,Preserve source evidence and physical assumptions,O_data,820,321.5,#343a46
+T10987,experiment,"DATA02 · #10987
+Reconcile prepared phase chunks and four-second intention targets with actual training",S_data_1,1220,718.0,#4a4428
+R10987,result,V2: 632 rows / 316 chunks. V3: 776 / 388. Broad Pt uses 30 actions over 1.5 s; four-second history is not a four-second action target.,T10987,1620,718.0,#574831
+T10988,experiment,"DATA03 · #10988
+Audit balanced sampling across takes, chunks, horizons and camera views",S_data_1,1220,866.0,#4a4428
+R10988,result,"Broad12k: 48,000 draws, 8,000 per source, all 439 windows. Historical V3 per-update sampling remains unverified.",T10988,1620,866.0,#574831
+T10990,experiment,"DATA05 · #10990
+Audit held-state crosshair in video and separate trajectory labels",S_data_1,1220,993.0,#4a4428
+R10990,result,"16 takes / 32 views / 7,904 frames: 1,024 held, 3,598 not held, 3,282 unknown. 768 marked frames; no direct Franka labels.",T10990,1620,993.0,#574831
+S_data_1,solution,"Audit training targets, mixing and held markers",O_data,820,870.25,#343a46
+T11016,experiment,"VIDEO01-A · #11016
+Observed 2D object paths and explicit orientation gaps",S_data_2,1220,1145.0,#4a4428
+R11016,result,Observed 2D object representation audited. Missing orientation and calibration stay explicit; no recovered human 3D actions.,T11016,1620,1145.0,#574831
+T11017,experiment,"VIDEO01-B · #11017
+Hand/pinch observations without fabricated grasp labels",S_data_2,1220,1272.0,#4a4428
+R11017,result,"526 sample identities, 175 hand detections. Unknown contact stays unknown; no autonomous grasp authority.",T11017,1620,1272.0,#574831
+T11018,experiment,"VIDEO01-C · #11018
+Frozen phone-frame features with temporal and cross-view controls",S_data_2,1220,1409.5,#4a4428
+R11018,result,112 paired instants / 224 views reviewed. Intermediate pickup/release matters; generic representation-to-action transfer remains unqualified.,T11018,1620,1399.0,#574831
+T11019,experiment,"VIDEO02 · #11019
+Dense phone observations, temporal controls and object-focused features",S_data_2,1220,1557.5,#4a4428
+R11019,result,"Corrected extraction: 2,644/2,644 frame hashes; 147 four-second windows. Failed 906-frame-mismatch export preserved. Offline features, no motor labels.",T11019,1620,1547.0,#574831
+S_data_2,solution,"Extract observed object, hand and temporal evidence",O_data,820,1360.75,#343a46
+T11020,experiment,"VIDEO03 · #11020
+Test causal held-state prediction from unmarked personal video",S_data_3,1220,1730.5,#4a4428
+R11020,result,35 probes: perfect labelled interiors but hand-present false-held errors remain. Primary-to-side recall 3/28 full vs 28/28 fused; no control authority.,T11020,1620,1720.0,#574831
+T11021,experiment,"VIDEO04 · #11021
+Test training-only hand-present negatives for held-state errors",S_data_3,1220,1878.5,#4a4428
+R11021,result,12 training negative views added. Transition errors 2/6 to 1/6 views; the same physical event still fails. 90/90 held positives retained.,T11021,1620,1868.0,#574831
+T11022,experiment,"VIDEO05 · #11022
+Test pre-contact negatives while preserving held-pause recognition",S_data_3,1220,2016.0,#4a4428
+R11022,result,13 pre-contact views added. New false-held errors 2/5 to 1/5; reused challenge 1/8 to 0/8. Held-pause qualification incomplete.,T11022,1620,2016.0,#574831
+S_data_3,solution,Test causal contact evidence and its failures,O_data,820,1882.75,#343a46
+T11023,experiment,"VIDEO06 · #11023
+Audit object motion through occlusion before video retargeting",S_data_4,1220,2178.5,#4a4428
+R11023,result,"342 frames: 194/222 held motion pairs supported, 28 unknown. Image motion is real; metric depth and grasp remain unresolved.",T11023,1620,2168.0,#574831
+T11024,experiment,"VIDEO07 · #11024
+Test native video cadence and phase timing before robot retargeting",S_data_4,1220,2316.0,#4a4428
+R11024,result,"Native cadence: 212/222 held pairs supported, up from 194. Ten unsupported pairs remain; no recovered robot actions.",T11024,1620,2316.0,#574831
+T11032,experiment,"VIDEO08 · #11032
+Test whether existing views identify camera geometry for a video-to-robot adapter",S_data_4,1220,2443.0,#4a4428
+R11032,result,297 camera fits per view fit within 5 px. Large depth/height ambiguity: planar corners do not identify 3D geometry.,T11032,1620,2443.0,#574831
+T11033,experiment,"VIDEO09 · #11033
+Execute full human correction sequence with a frozen RGB-to-Panda adapter",S_data_4,1220,2580.5,#4a4428
+R11033,result,"Five sequence/control executions all grasp, lift and release; strict 0/5. Goal error 33.7–35.5 mm. Endpoint registration is a confound.",T11033,1620,2570.0,#574831
+T11034,experiment,"VIDEO10 · #11034
+Register the complete video to the fixed task goal and rerun matched controls",S_data_4,1220,2728.5,#4a4428
+R11034,result,Goal registration: all five sequence/endpoint/shuffle/static/repeat conditions succeed. One inspected take; no advantage from full sequence.,T11034,1620,2718.0,#574831
+T11035,experiment,"VIDEO11 · #11035
+Audit glyph correspondence and the conflicting trajectory scores",S_data_4,1220,2866.0,#4a4428
+R11035,result,736-observation audit: plane-depth bias explains conflicting path scores. No new rollout; close full-path superiority claim.,T11035,1620,2866.0,#574831
+T11015,experiment,"VIDEO01 · #11015
+Compare video-derived representations and robot adapters without geometric-expert trajectories",S_data_4,1220,3003.5,#4a4428
+R11015,result,"Investigation concluded. Assisted correction works, but generic video-to-action transfer and extra benefit from intermediate video were not established.",T11015,1620,2993.0,#574831
+S_data_4,solution,"Qualify motion, camera geometry and transfer",O_data,820,2605.75,#343a46
+O_data,opportunity,Turn personal observations into reliable robot practice,outcome,420,1463.62,#2d443b
+T10959,experiment,"R01e · #10959
+Measure numeral visibility through actual preprocessing",S_perception_0,1220,3237.0,#4a4428
+R10959,result,"Tiny blue fragment after resize visibility evidence, not recognition",T10959,1620,3246.5,#244a3d
+T10955,experiment,"R01c · #10955
+Show exactly what V4 sees: 512→224 images, crop and six history frames",S_perception_0,1220,3364.0,#4a4428
+R10955,result,512→224; crop absent at release six history frames actually supplied,T10955,1620,3373.5,#244a3d
+T10993,experiment,"VIS01 · #10993
+Qualify a visibility fix if the causal image test supports it",S_perception_0,1220,3491.0,#4a4428
+R10993,result,Crop-only repair rejected: clearer features did not repair held orientation or release. Native production inputs retained.,T10993,1620,3491.0,#30445a
+T11011,experiment,"R01f · #11011
+Separate lost visual detail from failure to use orientation in the action head",S_perception_0,1220,3618.0,#4a4428
+R11011,result,108 paired predictions: cue sensitivity rises 0.0102 to 0.1887; wrist error remains about 80 degrees and opens at waypoint 11.,T11011,1620,3618.0,#574831
+S_perception_0,solution,Inspect the exact model inputs,O_perception,820,3437.0,#343a46
+T10954,experiment,"R01b · #10954
+Measure V4's numeral sensitivity and grasp-relative orientation response",S_perception_1,1220,3770.0,#4a4428
+R10954,result,87 queries; initial cue response held-state target stays ~94°,T10954,1620,3779.5,#574831
+T10960,experiment,"R02 · #10960
+Test whether fixed-seed prompts command simple arm actions",S_perception_1,1220,3897.0,#4a4428
+R10960,result,36 predictions; directions not reliably commanded,T10960,1620,3906.5,#56343c
+T10961,experiment,"R02b · #10961
+Compare vanilla, V3 and V4 prompt response controls",S_perception_1,1220,4024.0,#4a4428
+R10961,result,180 predictions; each model 0/18 paired axis reversals,T10961,1620,4033.5,#56343c
+T10994,experiment,"VIS02 · #10994
+Test language/action grounding repair with matched input contracts",S_perception_1,1220,4161.5,#4a4428
+R10994,result,Matched 3k continuations: varied vs fixed goals 10/12 vs 0/12 novel-goal strict success. Loading 0/12 both; text-only goal response under 1.4 mm.,T10994,1620,4151.0,#30445a
+S_perception_1,solution,Test instructions and goal diversity,O_perception,820,3975.25,#343a46
+T11005,experiment,"LIVE02 · #11005
+Qualify the simple visual completion classifier across allowable variation",S_perception_2,1220,4324.0,#4a4428
+R11005,result,Completion gate failed: classical recall below 80%; separate API diagnostic 2/22 recall. No completion authority granted.,T11005,1620,4324.0,#574831
+T11006,experiment,"LIVE03 · #11006
+Reconcile Qwen live planner, finished-reference image and veto behavior",S_perception_2,1220,4461.5,#4a4428
+R11006,result,"Qwen's 180-degree false completion was vetoed by RGB reference. Historical TTC used smoothness, not learned value; no qualified Qwen control.",T11006,1620,4451.0,#574831
+S_perception_2,solution,Qualify visual completion decisions,O_perception,820,4402.25,#343a46
+O_perception,opportunity,Make relevant visual cues change the correct action,outcome,420,3919.62,#2d443b
+T10957,experiment,"R01 · #10957
+Trace V4 rotation, gripper command and actual motion around release",S_execution_0,1220,4674.0,#4a4428
+R10957,result,Policy opens before orientation keep-closed still ~80° wrong,T10957,1620,4683.5,#56343c
+T10958,experiment,"R01d · #10958
+Audit previous-command proprioception and test release-input alternatives",S_execution_0,1220,4801.0,#4a4428
+R10958,result,Measured EEF delays opening 79–85° error remains,T10958,1620,4810.5,#56343c
+T10968,experiment,"R05b · #10968
+Compare V4 continuation from off-axis and near-expert held states",S_execution_0,1220,4928.0,#4a4428
+R10968,result,Same V4: off-axis ~85° error near-expert <1°; strict 0/16,T10968,1620,4937.5,#574831
+S_execution_0,solution,Trace commanded and executed motion,O_execution,820,4810.5,#343a46
+T10985,experiment,"NEXT03 · #10985
+Separate grasp-estimation error from recovery-control error",S_execution_1,1220,5090.5,#4a4428
+R10985,result,Four paired recovery executions: truth and RGB grasp transforms each 2/2 strict. Two inspected source states; no autonomous handoff qualification.,T10985,1620,5080.0,#574831
+T10998,experiment,"CTRL01 · #10998
+Qualify joint-aware recovery paths and staged regrasp",S_execution_1,1220,5228.0,#4a4428
+R10998,result,BLOCKED: set-down/regrasp strict 1/6. Five joint-limit stops; no full collision qualification. Failed paths are not labels.,T10998,1620,5228.0,#4e374f
+S_execution_1,solution,Estimate the actual grasp and qualify paths,O_execution,820,5168.75,#343a46
+T10966,experiment,"R04 · #10966
+Compare 30-action execution with 10-action replanning on V4",S_execution_2,1220,5380.0,#4a4428
+R10966,result,Grasps: 2/12 vs 0/12 H10 slower; strict 0 both,T10966,1620,5389.5,#56343c
+S_execution_2,solution,Test observation frequency,O_execution,820,5389.5,#343a46
+O_execution,opportunity,Make grasp-relative motion finish before release,outcome,420,5100.0,#2d443b
+T10962,experiment,"R03 · #10962
+Train a new six-take full-weight X-VLA-Pt with fixed 3k/12k checkpoints",S_generalisation_0,1220,5592.5,#4a4428
+R10962,result,"Six P_train takes, 439 windows. Fresh full-weight Pt reached 3k and 12k checkpoints in 64 minutes; performance tested separately.",T10962,1620,5582.0,#244a3d
+T10963,experiment,"R03b · #10963
+Evaluate narrow M6, broad-Pt 3k and broad-Pt 12k on unchanged holdouts",S_generalisation_0,1220,5730.0,#4a4428
+R10963,result,"Narrow M6, broad3k and broad12k each 0/6 development grasps. These starts lie outside the training position hull.",T10963,1620,5730.0,#56343c
+T10964,experiment,"R03c · #10964
+Measure broad-Pt 12k competence on its six familiar starts",S_generalisation_0,1220,5857.0,#4a4428
+R10964,result,"Broad12k on six familiar starts: 6/6 grasps, 5/6 stable square placements, 4/6 strict successes.",T10964,1620,5857.0,#574831
+T10965,experiment,"R03d · #10965
+Audit source/holdout position and yaw coverage",S_generalisation_0,1220,5984.0,#4a4428
+R10965,result,All three development starts lie outside the six training starts' XY convex hull. Coverage gap established.,T10965,1620,5984.0,#244a3d
+T10983,experiment,"NEXT01 · #10983
+Measure local robustness around successful broad-Pt 12k starts",S_generalisation_0,1220,6111.0,#4a4428
+R10983,result,"Selected familiar local variations: 14/16 grasps and 13/16 strict successes. Bounded local competence, not broad transfer.",T10983,1620,6111.0,#574831
+S_generalisation_0,solution,Broader adaptation and coverage checks,O_generalisation,820,5861.25,#343a46
+T10992,experiment,"DATA07 · #10992
+Add training-only failure and correction coverage after teacher qualification",S_generalisation_1,1220,6273.5,#4a4428
+R10992,result,18 original episodes verified; original V4's three additions remain unverified. Four later corrections are separate data and gave 0/4 recoveries.,T10992,1620,6263.0,#30445a
+S_generalisation_1,solution,Audit repair data,O_generalisation,820,6283.0,#343a46
+T11013,experiment,"B01 · #11013
+Diagnose why task B loading does not generalise",S_generalisation_2,1220,6436.0,#4a4428
+R11013,result,28 physical runs and 18 fixed-input goal probes separate grasp and destination failures; expert feasibility established.,T11013,1620,6436.0,#574831
+T11037,experiment,"LOAD01 · #11037
+Test loading supervision while retaining feeding competence",S_generalisation_2,1220,6563.0,#4a4428
+R11037,result,New loading supervision: 3/4 taught and 2/2 development loading successes. Feeding 4/6 vs control 5/6; task selection tested next.,T11037,1620,6563.0,#574831
+S_generalisation_2,solution,Teach loading without losing feeding,O_generalisation,820,6509.0,#343a46
+T11038,experiment,"LOAD02 · #11038
+Switch feeding/loading instruction in an identical scene",S_generalisation_3,1220,6725.5,#4a4428
+R11038,result,"Identical scene, different text: model loads under both instructions. Four wrong feeding destinations; zero two-way switches.",T11038,1620,6715.0,#574831
+T11039,experiment,"LOAD03 · #11039
+Test whether fixture appearance controls task choice",S_generalisation_3,1220,6863.0,#4a4428
+R11039,result,Visible fixture: loading 8/8. Hidden: feeding 8/8. Eight requested and eight wrong endpoints; zero instruction switches.,T11039,1620,6863.0,#574831
+T11040,experiment,"LOAD04 · #11040
+Counterbalanced task supervision in identical scenes",S_generalisation_3,1220,7000.5,#4a4428
+R11040,result,Balanced vs control: requested region 16/16 vs 8/16; strict 12/16 vs 8/16. Loading stays 4/8. Four cases tip before grasp. Archive verified.,T11040,1620,6990.0,#574831
+S_generalisation_3,solution,Separate task instruction from fixture appearance,O_generalisation,820,6872.5,#343a46
+T11044,experiment,"LOAD05 · #11044
+Pre-contact C/B acquisition crossover",S_generalisation_4,1220,7172.5,#4a4428
+R11044,result,Original restart qualification stopped. The causal comparison was completed separately in R2; no original crossover outcome.,T11044,1620,7163.0,#574831
+T11045,experiment,"LOAD05-Q · #11045
+Repair content signatures and qualify saved-action restart",S_generalisation_4,1220,7300.5,#4a4428
+R11045,result,Content checks pass; copied solver-constraint state mismatches. Stopped before model inference. Failed qualification preserved.,T11045,1620,7290.0,#574831
+T11046,experiment,"LOAD05-R · #11046
+Reconstruct pre-contact states and cross C/B acquisition policies",S_generalisation_4,1220,7448.5,#4a4428
+R11046,result,Both native controls reproduce. Crossed test stopped only on an XML visual statistic; controls subsequently reused in R2.,T11046,1620,7438.0,#574831
+T11047,experiment,"LOAD05-R2 · #11047
+Complete two crossed-policy acquisition branches",S_generalisation_4,1220,7596.5,#4a4428
+R11047,result,Only B from its own state tips. Crossed pickups are upright (0.86 and 1.62 degrees). State-policy interaction in one inspected case.,T11047,1620,7586.0,#574831
+T11048,experiment,"LOAD06 · #11048
+Separate pose sequence from gripper schedule at acquisition",S_generalisation_4,1220,7744.5,#4a4428
+R11048,result,Pose-only substitution fixes acquisition: 1.12 versus 62.76 degrees tilt. Grip-only does not. B resumes; no full-placement or training claim.,T11048,1620,7734.0,#574831
+S_generalisation_4,solution,Isolate approach state and acquisition policy,O_generalisation,820,7463.25,#343a46
+T11058,experiment,"EVAL02-GOAL · #11058
+Separate task wording from numerical destination cues",S_generalisation_5,1220,7928.0,#4a4428
+R11058,result,"Completed: 4/4 consistent controls; all4 conflicts finish the wording-associated task. Numbers affect initial proposals but independent goal control is unproven. One scene, two seeds.",T11058,1620,7907.0,#574831
+T11059,experiment,"EVAL02-XY · #11059
+Test numerical placement steering within the feeding square",S_generalisation_5,1220,8086.5,#4a4428
+R11059,result,Centre 2/2; numerical offsets 0/4. All six inside the original square. Requested 20 mm shifts produced only 0.315-0.926 mm Y movement in this panel.,T11059,1620,8076.0,#574831
+T11060,experiment,"EVAL02-SPATIAL · #11060
+Separate numeric goal from visible marker location",S_generalisation_5,1220,8234.5,#4a4428
+R11060,result,BLOCKED before inference: marker shift changed 29 protected-foreground pixels in first QA frame. Zero model trials; cause unresolved. Renderer retry deferred.,T11060,1620,8224.0,#4e374f
+T11061,experiment,"EVAL02-COVERAGE · #11061
+Audit numerical goal variation in B training and ancestry",S_generalisation_5,1220,8382.5,#4a4428
+R11061,result,"Actual sample logs show three feeding goals earlier, only one in B. Teacher placement labels pass. Exposure narrowed; this audit alone does not prove forgetting.",T11061,1620,8372.0,#574831
+T11062,experiment,"EVAL02-RETENTION · #11062
+Compare ancestor checkpoints on the same trained feeding goals",S_generalisation_5,1220,8530.5,#4a4428
+R11062,result,"GOAL and FL: 2/2 at both goals. B: 2/2 at G0, 0/2 at G1; returns near old G0. All 12 grasp and transport. Local retention regression after B.",T11062,1620,8520.0,#574831
+T11063,experiment,"EVAL02-FIT · #11063
+Compare ancestor action predictions on identical G1 teacher observations",S_generalisation_5,1220,8689.0,#4a4428
+R11063,result,"Identical post-lift input: mean EEF error 21-27 mm in earlier checkpoints, 56 mm in B. Gripper matches; no transition tested. Prediction change exists before rollout divergence.",T11063,1620,8668.0,#574831
+T11064,experiment,"EVAL02-RET-C · #11064
+Test the matched visibility-control checkpoint for retained G1 behavior",S_generalisation_5,1220,8847.5,#4a4428
+R11064,result,Done: matched C control. G0 2/2; relocated G1 1/2. All four lift and transport. One centre overshoot; unlike B returning toward the old goal. Mixed result preserved.,T11064,1620,8837.0,#574831
+T11065,experiment,"EVAL02-NUM · #11065
+Isolate numerical goal sensitivity on an unchanged post-lift packet",S_generalisation_5,1220,9006.0,#4a4428
+R11065,result,Done: 150 mm numeric goal change barely alters predictions. GOAL final Y change 0; B +/-0.061 mm. Four new + four archived chunks. No useful coordinate steering shown.,T11065,1620,8985.0,#574831
+S_generalisation_5,solution,Separate task wording from numerical goals,O_generalisation,820,8476.5,#343a46
+O_generalisation,opportunity,The model succeeds locally but follows scene cues,outcome,420,7168.88,#2d443b
+T10969,experiment,"R06 · #10969
+Compare observable phase harness, unmodified V4 and deterministic skills",S_recovery_0,1220,9229.0,#4a4428
+R10969,result,"Guard blocks valid grasps 1,126 close vetoes; reject",T10969,1620,9238.5,#56343c
+T10970,experiment,"R06b · #10970
+Fix post-release observer projection in a training-only prototype",S_recovery_0,1220,9356.0,#4a4428
+R10970,result,"Position error 16–19 mm → 0.44–0.66 mm, same images",T10970,1620,9365.5,#574831
+T10984,experiment,"NEXT02 · #10984
+Repair observation hypotheses before granting the harness veto authority",S_recovery_0,1220,9483.0,#4a4428
+R10984,result,"BLOCKED: observers remain below preregistered qualification. No veto, grasp or release authority.",T10984,1620,9483.0,#4e374f
+T10999,experiment,"CTRL02 · #10999
+Specify and log hard workspace, no-go and joint-boundary policies",S_recovery_0,1220,9620.5,#4a4428
+R10999,result,27 checks plus 36 successful expert episodes: zero guard rejections. Logging implemented; not full robot-safety validation.,T10999,1620,9610.0,#574831
+T11004,experiment,"LIVE01 · #11004
+Verify the existing live harness and controller telemetry hookup",S_recovery_0,1220,9768.5,#4a4428
+R11004,result,"REVIEW: original V4 shadow parity passed. New copy-safe lineage resolves timestamps, but LOAD04-B paired parity fails on raw camera variation. No control authority.",T11004,1620,9758.0,#574831
+T11030,experiment,"OBS05 · #11030
+Test fresh glyph-motion evidence against the held-state latch",S_recovery_0,1220,9906.0,#4a4428
+R11030,result,"Eight replay episodes / 1,219 observations. All four passive variants fail gates; glyph filtering loses too much recall.",T11030,1620,9906.0,#574831
+T11031,experiment,"OBS06 · #11031
+Test aperture and release evidence on additional archived episodes",S_recovery_0,1220,10033.0,#4a4428
+R11031,result,"24 episodes / 8,784 observations: contact false positives 108 to 20, precision 94.65%. Still below 95% gate; no authority.",T11031,1620,10033.0,#574831
+T11054,experiment,"LIVE01-P · #11054
+Carry camera acquisition provenance across copies without changing robot execution",S_recovery_0,1220,10181.0,#4a4428
+R11054,result,"Review: capture provenance 6,365/6,365; offline tensors unchanged. Live pair differed by one background pixel, then actions diverged. Both tasks succeeded; exact live transparency failed.",T11054,1620,10160.0,#574831
+T11057,experiment,"LIVE01-R · #11057
+Fixed-state camera repeatability with and without provenance",S_recovery_0,1220,10350.0,#4a4428
+R11057,result,Completed: fixed-state 24 bundles / 48 images match exactly with and without provenance. Earlier live difference not reproduced; live parity remains failed. Cached observer output; no new policy runs.,T11057,1620,10329.0,#574831
+S_recovery_0,solution,Qualify state estimates and safety checks,O_recovery,820,9799.0,#343a46
+T10971,experiment,"R06c · #10971
+Qualify and reject a two-axis IK endpoint selector",S_recovery_1,1220,10523.0,#4a4428
+R10971,result,Six-take success 3/6 → 1/6 Feasible endpoint ≠ feasible path,T10971,1620,10532.5,#56343c
+T10973,experiment,"R08 · #10973
+Qualify geometric expert recovery from exact V4 failure states",S_recovery_1,1220,10650.0,#4a4428
+R10973,result,Nominal 2/6 → grasp-aware 3/6 recoveries quarantined from training,T10973,1620,10659.5,#574831
+T10976,experiment,"R11 · #10976
+Prototype a typed primitive interface and deterministic supervisor",S_recovery_1,1220,10777.0,#4a4428
+R10976,result,Interface works; skills limited 2/6 pickups; 0/6 completions,T10976,1620,10786.5,#574831
+T10977,experiment,"R12 · #10977
+Train and evaluate a causal phase predictor",S_recovery_1,1220,10903.0,#4a4428
+R10977,result,63.7% accuracy; early release confidence gate fails; disabled,T10977,1620,10903.0,#56343c
+T11000,experiment,"HIER01 · #11000
+Train a high-level skill selector only after primitives are reliable",S_recovery_1,1220,11010.0,#4a4428
+R11000,result,BLOCKED: reliable primitive transitions and observation authority are prerequisites. No high-level selector training.,T11000,1620,11010.0,#4e374f
+S_recovery_1,solution,Qualify skills and phase control,O_recovery,820,10776.0,#343a46
+T10978,experiment,"R13 · #10978
+Compare DAgger, options, residual RL, offline Q and PPO approaches",S_recovery_2,1220,11162.0,#4a4428
+R10978,result,"DAgger, residuals, Q, PPO reviewed no new RL training performed",T10978,1620,11171.5,#244a3d
+T11001,experiment,"REL01 · #11001
+Collect qualified learner-state corrections and run a separate DAgger experiment",S_recovery_2,1220,11289.0,#4a4428
+R11001,result,"One DAgger iteration, four corrections plus nominal data, 3k updates. Quarantine recovery 0/4; no benefit demonstrated.",T11001,1620,11289.0,#30445a
+T11002,experiment,"REL02 · #11002
+Compare supervised residual correction with bounded residual RL",S_recovery_2,1220,11416.0,#4a4428
+R11002,result,BLOCKED: reliable correction targets and action support required. Residual RL not run.,T11002,1620,11416.0,#4e374f
+T11003,experiment,"REL03 · #11003
+Evaluate offline value ranking or PPO/DPPO only with adequate action support",S_recovery_2,1220,11543.0,#4a4428
+R11003,result,BLOCKED: useful proposals and valid rewards required. Offline Q / PPO on X-VLA not run.,T11003,1620,11552.5,#4e374f
+S_recovery_2,solution,Test correction data and RL prerequisites,O_recovery,820,11362.0,#343a46
+T11041,experiment,"ALPHA01 · #11041
+AlphaNIST-inspired Panda PPO/reset-sampling pilot",S_recovery_3,1220,11705.5,#4a4428
+R11041,result,Small point-cloud PPO pilot: adaptive reset sampling has no demonstrated advantage. All five policies 0/4 full starts. Separate from X-VLA.,T11041,1620,11695.0,#574831
+T11043,experiment,"ALPHA02 · #11043
+frozen-policy 4s/15s reset qualification and release-only control",S_recovery_3,1220,11853.5,#4a4428
+R11043,result,Frozen 32-rollout follow-up: all four policies 0/4 full starts and zero new grasps. Release-only matches near-goal success; park further PPO.,T11043,1620,11843.0,#574831
+T11051,experiment,"ALPHA03 · #11051
+Fuller AlphaNIST implementation and visual-orientation extension — deferred",S_recovery_3,1220,12001.5,#4a4428
+R11051,result,PARKED by request. Fuller GPU-parallel/reset-bank implementation and visual orientation extension recorded; no implementation or training started.,T11051,1620,11991.0,#373b42
+S_recovery_3,solution,Separate AlphaNIST-style PPO from X-VLA,O_recovery,820,11863.0,#343a46
+T11050,experiment,"DATA07-R · #11050
+Qualify acquisition repairs on training families before admitting corrective data",S_recovery_4,1220,12216.5,#4a4428
+R11050,result,"Completed: native B loading3/4. Only0001 tipped pre-acquisition; one same-state C-pose/B-grip chunk still failed (0/1 conversions), with428.09mm final error. Full horizon and exact state/input/noise checks passed. Zero successful correction examples; no training. Raw809files SHA256-verified on Mint.",T11050,1620,12164.0,#574831
+T11052,experiment,"DATA07-GE · #11052
+Qualify one geometric-expert continuation from B's failed approach state",S_recovery_4,1220,12438.0,#4a4428
+R11052,result,"Completed: exact-state geometric teacher placed/released inside fixture (1.22 mm, 0.016 deg yaw) but brick lay sideways (90 deg tilt). Strict 0/1; no correction candidate. Open descent tipped before close. No training; stopped after one attempt.",T11052,1620,12396.0,#574831
+T11053,experiment,"CTRL03 · #11053
+Diagnose loading acquisition tipping before qualifying a controller repair",S_recovery_4,1220,12628.0,#4a4428
+R11053,result,Nominal sampled gripper corridor clears the brick; executed finger shell hits its top before closure. Proposed readiness gate failed: 11.85 mm minimum versus 3 mm. Zero repair rollouts.,T11053,1620,12607.0,#574831
+T11055,experiment,"CTRL04 · #11055
+Test one fixed pre-descent dwell from the failed acquisition state",S_recovery_4,1220,12786.5,#4a4428
+R11055,result,Completed: extra 4 s reduced entry error from 5.69 to 4.18 mm. Strict success 0/2; both tipped before grasp. Settling alone insufficient. Raw archive verified on Mint.,T11055,1620,12776.0,#574831
+T11056,experiment,"CTRL05 · #11056
+Compare matched-time step and smooth descent from the settled state",S_recovery_4,1220,12945.0,#4a4428
+R11056,result,BLOCKED: reference audit completed; qualification stopped at tick 510 because wrapper code changed too early. No S/R descent runs or efficacy result. Approach-repair branch deferred tonight.,T11056,1620,12924.0,#4e374f
+S_recovery_4,solution,Qualify training-family corrective supervision,O_recovery,820,12590.25,#343a46
+T11066,experiment,"HIER01-TASK · #11066
+Test a fixed caller-task dispatcher across retained checkpoints",S_recovery_5,1220,13139.0,#4a4428
+R11066,result,Done: caller-task routing. Main 4/4 vs B 3/4; conditional confirmation 2/2 vs 1/2. All 12 lift. G1 recovered; feeding/loading retained. One training family; no learned hierarchy.,T11066,1620,13118.0,#574831
+S_recovery_5,solution,Dispatch an explicitly supplied task to a retained motor policy,O_recovery,820,13148.5,#343a46
+T11067,experiment,"HIER01-DEV · #11067
+Qualify fixed task routing on archived 0012/0013 development scenes",S_recovery_6,1220,13333.0,#4a4428
+R11067,result,"Done: router passed feeding 4/4 and loading 4/4; B passed feeding 4/4 and loading 2/4. All 16 lifted. B loading failures were tilted/unseated placements. Two visible families, not independent holdouts.",T11067,1620,13312.0,#574831
+S_recovery_6,solution,Qualify task routing across starting contexts,O_recovery,820,13342.5,#343a46
+T11068,experiment,"HIER01-CHAIN · #11068
+Test fixed-budget feed/load handovers without world reset",S_recovery_7,1220,13537.5,#4a4428
+R11068,result,Done: both continuous task orders failed on the second task. First tasks succeeded; the incoming policy never reacquired the brick. No world reset or hidden home motion. Original reverse order had a documented raw-RGB audit stop.,T11068,1620,13506.0,#574831
+T11069,experiment,"HIER01-CHAIN-AMEND1 · #11069
+Complete one fresh L→F workflow after raw-render gate interruption",S_recovery_7,1220,13738.0,#4a4428
+R11069,result,"Done: explicit audit amendment allowed the fresh reverse workflow. Six raw channel differences left all actual actor inputs, actions and controller traces exact. Loading passed; subsequent feeding did not approach or grasp. Original evidence retained.",T11069,1620,13696.0,#574831
+S_recovery_7,solution,Test uninterrupted task handovers,O_recovery,820,13647.25,#343a46
+T11070,experiment,"HIER01-HANDOFF · #11070
+Diagnose both skill transitions from saved evidence",S_recovery_8,1220,13984.5,#4a4428
+R11070,result,"Done: correct task, fresh history and visible blue 2 at both handovers. Policies proposed open-gripper near-home motions: zero contact or lift. New starts are 200–299 mm from training starts; robot posture is close to standalone. Coverage/conditioning is next; numeral recognition remains unproven.",T11070,1620,13932.0,#574831
+S_recovery_8,solution,Diagnose why the next task never starts,O_recovery,820,13994.0,#343a46
+O_recovery,opportunity,Advance phases only from trustworthy evidence,outcome,420,11896.5,#2d443b
+T10967,experiment,"R05 · #10967
+Measure eight-proposal availability using a privileged offline oracle",S_compute_0,1220,14239.0,#4a4428
+R10967,result,48 proposals; approach improves graspable states stay 1/6,T10967,1620,14248.5,#574831
+T10975,experiment,"R10a · #10975
+Prepare blue-ghost candidate cards and typed Luna requests",S_compute_0,1220,14366.0,#4a4428
+R10975,result,64 candidates / 32 slates prepared simulator futures; no Luna calls,T10975,1620,14375.5,#244a3d
+T10982,experiment,"R10 · #10982
+Run Decisions API visual ranking on frozen ghost/future slates",S_compute_0,1220,14503.5,#4a4428
+R10982,result,"32 choices + 32 reasons. Future RGB: 5/5 selected adequate, 7 abstentions; held strict 0/8. Privileged lookahead; no qualified benefit.",T10982,1620,14493.0,#4e374f
+T11029,experiment,"LIVE09 · #11029
+Repeat R10 and audit critic response consistency",S_compute_0,1220,14651.5,#4a4428
+R11029,result,"Repeat of the same 32 slates, not new evidence. Future-image choices still poor across ordering; median/p95 1.094/2.338 seconds.",T11029,1620,14641.0,#574831
+S_compute_0,solution,Measure candidate support and visual ranking,O_compute,820,14454.75,#343a46
+T11014,experiment,"LIVE04 · #11014
+Integrate Decisions API candidate ranking with bounded asynchronous execution",S_compute_1,1220,14814.0,#4a4428
+R11014,result,Nine live trials: 3 API choices executed 62 targets; 33/36 replies UNKNOWN. Reference pickup/place 1/2 vs 0/2 live variants.,T11014,1620,14814.0,#574831
+T11025,experiment,"LIVE05 · #11025
+Separate waiting, sampling and guards after the live-ranking regression",S_compute_1,1220,14941.0,#4a4428
+R11025,result,30 matched trials isolate guard regression: native pickup/place 1/2 even with waits; guard 0/2 at zero wait. Strict 0/2.,T11025,1620,14941.0,#574831
+T11026,experiment,"LIVE06 · #11026
+Qualify motion guards against the executed controller contract",S_compute_1,1220,15078.5,#4a4428
+R11026,result,"Executed-command check restores known pickup/place. Eight experts succeed, 1,714 ticks and zero new vetoes; 304 old false jump vetoes.",T11026,1620,15068.0,#574831
+T11027,experiment,"LIVE07 · #11027
+Integrate the qualified execution check into the live candidate handoff",S_compute_1,1220,15226.5,#4a4428
+R11027,result,Nine live trials: native and first-admissible grasp/place; API misses grasp. All strict 0/2. Activation is not executed selection.,T11027,1620,15216.0,#574831
+T11028,experiment,"LIVE08 · #11028
+Isolate the first ranked candidate from boundary timing",S_compute_1,1220,15374.5,#4a4428
+R11028,result,"Four-run 2x2: candidate A grasps/places at both waits; C at neither. Candidate choice explains this failure, not one tick of delay.",T11028,1620,15364.0,#574831
+S_compute_1,solution,Integrate and isolate the live selection mechanism,O_compute,820,15103.75,#343a46
+O_compute,opportunity,Choose useful candidates without blocking valid motion,outcome,420,14779.25,#2d443b
+T10995,experiment,"EVAL01 · #10995
+Reconcile the earlier 775-rollout feeding comparison and V4 grasp search",S_evidence_0,1220,15597.5,#4a4428
+R10995,result,775 matched feeding rollouts: vanilla/V1/V2/V3/V4 pickups 0/0/0/10/1 on 137 unfinished scenes. Stable square placements 0/0/0/5/1.,T10995,1620,15587.0,#574831
+T10997,experiment,"EVAL03 · #10997
+Reconcile the 20 × A/B harness comparison and guard event logging",S_evidence_0,1220,15745.5,#4a4428
+R10997,result,"Historical 400 synthetic A/B rows: zero pickup/place/strict. One candidate, 30-second cap, no TTC. Distinct from film-derived evaluation.",T10997,1620,15735.0,#574831
+T10996,experiment,"EVAL02 · #10996
+Define the next confirmatory comparison with family-level uncertainty",S_evidence_0,1220,15893.5,#4a4428
+R10996,result,REVIEW: 136/204 planned completed. Broad vs vanilla near-layout strict 17/40 vs 0/40. Broader layouts 0/20 both; 68 interventions unrun.,T10996,1620,15883.0,#574831
+T11036,experiment,"EVAL02R · #11036
+Reconcile existing comparison claims and family-level uncertainty",S_evidence_0,1220,16041.5,#4a4428
+R11036,result,"Read-only review of 775 + 296 rollouts and 24 extracts. Family-aware intervals and 1,102 input hashes checked; no new experiments.",T11036,1620,16031.0,#574831
+S_evidence_0,solution,Reconcile evaluation panels and uncertainty,O_evidence,820,15829.0,#343a46
+T10980,experiment,"OPS03 · #10980
+Write a request-by-request report and obtain independent plus GPT Pro review",S_evidence_1,1220,16204.0,#4a4428
+R10980,result,review 13 requests reconciled limits and errata documented,T10980,1620,16213.5,#244a3d
+T10979,experiment,"OPS02 · #10979
+Preserve and verify all research models, traces, videos and resume state",S_evidence_1,1220,16331.0,#4a4428
+R10979,result,backup Artifacts and checkpoints retained SHA-verified on Mint fast drive,T10979,1620,16340.5,#244a3d
+T10956,experiment,"OPS01 · #10956
+Create and reconcile the research kanban ledger with evidence and honest statuses",S_evidence_1,1220,16468.5,#4a4428
+R10956,result,"Research ledger reconciled. Current tree covers every ticket with explicit evidence, limitations and status; creating a ticket is not executing it.",T10956,1620,16458.0,#244a3d
+T10986,experiment,"DATA01 · #10986
+Publish an internal model and dataset registry with unambiguous names",S_evidence_1,1220,16616.5,#4a4428
+R10986,result,19 checkpoint identities audited. M3–M6 are separate lineages; broad Pt starts fresh. Historical V4 recovery arrays remain partly unverified.,T10986,1620,16606.0,#574831
+T11012,experiment,"OPS05 · #11012
+Draw the opportunity solution tree and restore the Design viewer",S_evidence_1,1220,16764.5,#4a4428
+R11012,result,113 work items across 10 views. Each experiment has a result card. Live/offline SVG coverage verified; active research programme continues after bounded tickets.,T11012,1620,16754.0,#574831
+T11042,experiment,"OPS01 · #11042
+Verify Powerglide booking and full backup including lab recovery",S_evidence_1,1220,16912.5,#4a4428
+R11042,result,"Full backup reconciled: 906,507 files, 299.6 GB, no integrity errors. Labs and checkpoint checks saved. Fresh-machine restore untested.",T11042,1620,16902.0,#574831
+T11049,experiment,"OPS07 · #11049
+Restore Mint access and mirror latest experiment evidence and OST",S_evidence_1,1220,17081.5,#4a4428
+R11049,result,"Recovered: Mint mirrors verified (45 older evidence files, 809 DATA07-R raw files). Interrupted work preserved; live OST installed and served bytes checked. DATA07-GE raw 223 files also verified. Fresh-machine restore untested.",T11049,1620,17050.0,#574831
+S_evidence_1,solution,Preserve the research record and compute environment,O_evidence,820,16652.25,#343a46
+T11007,experiment,"DEL01 · #11007
+Reconcile dashboard, video hosting and research result provenance",S_evidence_2,1220,17275.5,#4a4428
+R11007,result,"Eight representative records, ten videos, exact models and hashes verified. Current selected files absent from hosted index; delivery repair separate.",T11007,1620,17265.0,#574831
+T11008,experiment,"DEL02 · #11008
+Prepare an accurate research write-up and submission package",S_evidence_2,1220,17434.0,#4a4428
+R11008,result,REVIEW: private research write-up plus overnight synthesis. Local task-wording precedence demonstrated; numerical steering and recovery remain open. Publication/submission pending.,T11008,1620,17413.0,#574831
+S_evidence_2,solution,Qualify media and the private report,O_evidence,820,17364.25,#343a46
+O_evidence,opportunity,"Make results reproducible, recoverable and understandable",outcome,420,16596.62,#2d443b
+T11009,experiment,"PARK01 · #11009
+Set-of-Mark object/region labels — withdrawn",S_parked_0,1220,17657.0,#4a4428
+R11009,result,PARKED: Set-of-Mark withdrawn by the user.,T11009,1620,17666.5,#373b42
+T11010,experiment,"PARK02 · #11010
+Broader platform and simulator changes — deferred",S_parked_0,1220,17784.0,#4a4428
+R11010,result,PARKED: broader platforms and simulator changes deferred.,T11010,1620,17793.5,#373b42
+S_parked_0,solution,Do not expand scope without a new reason,O_parked,820,17730.0,#343a46
+O_parked,opportunity,Keep deferred work distinct from evidence,outcome,420,17730.0,#2d443b
+outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60

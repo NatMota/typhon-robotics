@@ -1,0 +1,333 @@
+{
+  "nodes": [
+    {
+      "id": "T10957",
+      "type": "experiment",
+      "label": "R01 \u00b7 #10957\nTrace V4 rotation, gripper command and actual motion around release",
+      "parent_id": "S_execution_0",
+      "x": 1220,
+      "y": 58.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R01 \u00b7 #10957",
+        "Trace V4 rotation, gripper command and",
+        "actual motion around release"
+      ]
+    },
+    {
+      "id": "R10957",
+      "type": "result",
+      "label": "Policy opens before orientation keep-closed still ~80\u00b0 wrong",
+      "parent_id": "T10957",
+      "x": 1620,
+      "y": 67.5,
+      "width": 350,
+      "height": 72,
+      "color": "#56343c",
+      "lines": [
+        "Policy opens before orientation keep-closed",
+        "still ~80\u00b0 wrong"
+      ]
+    },
+    {
+      "id": "T10958",
+      "type": "experiment",
+      "label": "R01d \u00b7 #10958\nAudit previous-command proprioception and test release-input alternatives",
+      "parent_id": "S_execution_0",
+      "x": 1220,
+      "y": 185.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R01d \u00b7 #10958",
+        "Audit previous-command proprioception and",
+        "test release-input alternatives"
+      ]
+    },
+    {
+      "id": "R10958",
+      "type": "result",
+      "label": "Measured EEF delays opening 79\u201385\u00b0 error remains",
+      "parent_id": "T10958",
+      "x": 1620,
+      "y": 194.5,
+      "width": 350,
+      "height": 72,
+      "color": "#56343c",
+      "lines": [
+        "Measured EEF delays opening 79\u201385\u00b0 error",
+        "remains"
+      ]
+    },
+    {
+      "id": "T10968",
+      "type": "experiment",
+      "label": "R05b \u00b7 #10968\nCompare V4 continuation from off-axis and near-expert held states",
+      "parent_id": "S_execution_0",
+      "x": 1220,
+      "y": 312.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R05b \u00b7 #10968",
+        "Compare V4 continuation from off-axis and",
+        "near-expert held states"
+      ]
+    },
+    {
+      "id": "R10968",
+      "type": "result",
+      "label": "Same V4: off-axis ~85\u00b0 error near-expert <1\u00b0; strict 0/16",
+      "parent_id": "T10968",
+      "x": 1620,
+      "y": 321.5,
+      "width": 350,
+      "height": 72,
+      "color": "#574831",
+      "lines": [
+        "Same V4: off-axis ~85\u00b0 error near-expert",
+        "<1\u00b0; strict 0/16"
+      ]
+    },
+    {
+      "id": "S_execution_0",
+      "type": "solution",
+      "label": "Trace commanded and executed motion",
+      "parent_id": "O_execution",
+      "x": 820,
+      "y": 194.5,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Trace commanded and executed motion"
+      ]
+    },
+    {
+      "id": "T10985",
+      "type": "experiment",
+      "label": "NEXT03 \u00b7 #10985\nSeparate grasp-estimation error from recovery-control error",
+      "parent_id": "S_execution_1",
+      "x": 1220,
+      "y": 474.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "NEXT03 \u00b7 #10985",
+        "Separate grasp-estimation error from",
+        "recovery-control error"
+      ]
+    },
+    {
+      "id": "R10985",
+      "type": "result",
+      "label": "Four paired recovery executions: truth and RGB grasp transforms each 2/2 strict. Two inspected source states; no autonomous handoff qualification.",
+      "parent_id": "T10985",
+      "x": 1620,
+      "y": 464.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Four paired recovery executions: truth and",
+        "RGB grasp transforms each 2/2 strict. Two",
+        "inspected source states; no autonomous",
+        "handoff qualification."
+      ]
+    },
+    {
+      "id": "T10998",
+      "type": "experiment",
+      "label": "CTRL01 \u00b7 #10998\nQualify joint-aware recovery paths and staged regrasp",
+      "parent_id": "S_execution_1",
+      "x": 1220,
+      "y": 612.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "CTRL01 \u00b7 #10998",
+        "Qualify joint-aware recovery paths and",
+        "staged regrasp"
+      ]
+    },
+    {
+      "id": "R10998",
+      "type": "result",
+      "label": "BLOCKED: set-down/regrasp strict 1/6. Five joint-limit stops; no full collision qualification. Failed paths are not labels.",
+      "parent_id": "T10998",
+      "x": 1620,
+      "y": 612.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4e374f",
+      "lines": [
+        "BLOCKED: set-down/regrasp strict 1/6. Five",
+        "joint-limit stops; no full collision",
+        "qualification. Failed paths are not labels."
+      ]
+    },
+    {
+      "id": "S_execution_1",
+      "type": "solution",
+      "label": "Estimate the actual grasp and qualify paths",
+      "parent_id": "O_execution",
+      "x": 820,
+      "y": 552.75,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Estimate the actual grasp and qualify paths"
+      ]
+    },
+    {
+      "id": "T10966",
+      "type": "experiment",
+      "label": "R04 \u00b7 #10966\nCompare 30-action execution with 10-action replanning on V4",
+      "parent_id": "S_execution_2",
+      "x": 1220,
+      "y": 764.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R04 \u00b7 #10966",
+        "Compare 30-action execution with 10-action",
+        "replanning on V4"
+      ]
+    },
+    {
+      "id": "R10966",
+      "type": "result",
+      "label": "Grasps: 2/12 vs 0/12 H10 slower; strict 0 both",
+      "parent_id": "T10966",
+      "x": 1620,
+      "y": 773.5,
+      "width": 350,
+      "height": 72,
+      "color": "#56343c",
+      "lines": [
+        "Grasps: 2/12 vs 0/12 H10 slower; strict 0",
+        "both"
+      ]
+    },
+    {
+      "id": "S_execution_2",
+      "type": "solution",
+      "label": "Test observation frequency",
+      "parent_id": "O_execution",
+      "x": 820,
+      "y": 773.5,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Test observation frequency"
+      ]
+    },
+    {
+      "id": "O_execution",
+      "type": "opportunity",
+      "label": "Make grasp-relative motion finish before release",
+      "parent_id": "outcome",
+      "x": 420,
+      "y": 484.0,
+      "width": 350,
+      "height": 72,
+      "color": "#2d443b",
+      "lines": [
+        "Make grasp-relative motion finish before",
+        "release"
+      ]
+    },
+    {
+      "id": "outcome",
+      "type": "outcome",
+      "label": "Reliably complete the requested manipulation task using personal evidence",
+      "parent_id": "",
+      "x": 20,
+      "y": 94.0,
+      "width": 350,
+      "height": 72,
+      "color": "#263f60",
+      "lines": [
+        "Reliably complete the requested",
+        "manipulation task using personal evidence"
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "S_execution_0",
+      "T10957"
+    ],
+    [
+      "T10957",
+      "R10957"
+    ],
+    [
+      "S_execution_0",
+      "T10958"
+    ],
+    [
+      "T10958",
+      "R10958"
+    ],
+    [
+      "S_execution_0",
+      "T10968"
+    ],
+    [
+      "T10968",
+      "R10968"
+    ],
+    [
+      "O_execution",
+      "S_execution_0"
+    ],
+    [
+      "S_execution_1",
+      "T10985"
+    ],
+    [
+      "T10985",
+      "R10985"
+    ],
+    [
+      "S_execution_1",
+      "T10998"
+    ],
+    [
+      "T10998",
+      "R10998"
+    ],
+    [
+      "O_execution",
+      "S_execution_1"
+    ],
+    [
+      "S_execution_2",
+      "T10966"
+    ],
+    [
+      "T10966",
+      "R10966"
+    ],
+    [
+      "O_execution",
+      "S_execution_2"
+    ],
+    [
+      "outcome",
+      "O_execution"
+    ]
+  ],
+  "width": 2000,
+  "height": 915.0
+}

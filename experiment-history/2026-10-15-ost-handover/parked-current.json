@@ -1,0 +1,34 @@
+{
+  "id": "parked",
+  "name": "08 \u00b7 Parked scope",
+  "artboards": [
+    {
+      "id": "parked-tree",
+      "name": "parked-tree",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 2000,
+        "height": 336
+      },
+      "layers": [
+        {
+          "id": "6a652de2-5a37-4dad-aa73-177878685ba5",
+          "type": "image",
+          "name": "OST 20261015 \u2014 parked \u2014 SVG from CSV",
+          "x": 0,
+          "y": 0,
+          "width": 2000.0,
+          "height": 336.0,
+          "imageRef": "/llm-design-tool/designs/typhon-research/assets/ost-20261015-parked-30af65d73d.svg",
+          "content": "%%{init: {\"theme\": \"base\", \"securityLevel\": \"loose\", \"fontFamily\": \"Arial, sans-serif\", \"fontSize\": 18, \"markdownAutoWrap\": false, \"flowchart\": {\"htmlLabels\": false, \"curve\": \"basis\", \"nodeSpacing\": 24, \"rankSpacing\": 70, \"wrappingWidth\": 360}, \"themeVariables\": {\"primaryTextColor\": \"#edf2f7\", \"lineColor\": \"#71849f\", \"background\": \"#0b1220\"}}}%%\nflowchart LR\nOUT[\"Outcome: reliably complete the requested<br/>manipulation task from personal evidence\"]:::outcome\nO_parked[\"Opportunity: Keep deferred work distinct from evidence\"]:::opportunity\nOUT --> O_parked\nO_parked_S0[\"Solution: Do not expand scope without a new reason\"]:::solution\nO_parked --> O_parked_S0\nT11009[\"PARK01 \u00b7 #11009<br/>Set-of-Mark object/region labels \u2014 withdrawn\"]:::experiment\nO_parked_S0 --> T11009\nR11009[\"PARKED: Set-of-Mark withdrawn by the user.\"]:::parked\nT11009 --> R11009\nclick T11009 \"http://127.0.0.1:4001/?project=typhon-research#ticket=11009\" \"Open research ticket\" _blank\nT11010[\"PARK02 \u00b7 #11010<br/>Broader platform and simulator changes \u2014<br/>deferred\"]:::experiment\nO_parked_S0 --> T11010\nR11010[\"PARKED: broader platforms and simulator<br/>changes deferred.\"]:::parked\nT11010 --> R11010\nclick T11010 \"http://127.0.0.1:4001/?project=typhon-research#ticket=11010\" \"Open research ticket\" _blank\nclassDef outcome fill:#263f60,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef opportunity fill:#2d443b,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef solution fill:#343a46,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef experiment fill:#4a4428,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef evidence fill:#244a3d,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef mixed fill:#574831,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef negative fill:#56343c,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef pending fill:#30445a,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef blocked fill:#4e374f,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef parked fill:#373b42,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\n"
+        }
+      ],
+      "width": 4090,
+      "height": 548,
+      "updatedAt": "2026-10-15T15:48:12Z",
+      "mermaidSource": "%%{init: {\"theme\": \"base\", \"securityLevel\": \"loose\", \"fontFamily\": \"Arial, sans-serif\", \"fontSize\": 18, \"markdownAutoWrap\": false, \"flowchart\": {\"htmlLabels\": false, \"curve\": \"basis\", \"nodeSpacing\": 24, \"rankSpacing\": 70, \"wrappingWidth\": 360}, \"themeVariables\": {\"primaryTextColor\": \"#edf2f7\", \"lineColor\": \"#71849f\", \"background\": \"#0b1220\"}}}%%\nflowchart LR\nOUT[\"Outcome: reliably complete the requested<br/>manipulation task from personal evidence\"]:::outcome\nO_parked[\"Opportunity: Keep deferred work distinct from evidence\"]:::opportunity\nOUT --> O_parked\nO_parked_S0[\"Solution: Do not expand scope without a new reason\"]:::solution\nO_parked --> O_parked_S0\nT11009[\"PARK01 \u00b7 #11009<br/>Set-of-Mark object/region labels \u2014 withdrawn\"]:::experiment\nO_parked_S0 --> T11009\nR11009[\"PARKED: Set-of-Mark withdrawn by the user.\"]:::parked\nT11009 --> R11009\nclick T11009 \"http://127.0.0.1:4001/?project=typhon-research#ticket=11009\" \"Open research ticket\" _blank\nT11010[\"PARK02 \u00b7 #11010<br/>Broader platform and simulator changes \u2014<br/>deferred\"]:::experiment\nO_parked_S0 --> T11010\nR11010[\"PARKED: broader platforms and simulator<br/>changes deferred.\"]:::parked\nT11010 --> R11010\nclick T11010 \"http://127.0.0.1:4001/?project=typhon-research#ticket=11010\" \"Open research ticket\" _blank\nclassDef outcome fill:#263f60,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef opportunity fill:#2d443b,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef solution fill:#343a46,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef experiment fill:#4a4428,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef evidence fill:#244a3d,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef mixed fill:#574831,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef negative fill:#56343c,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef pending fill:#30445a,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef blocked fill:#4e374f,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\nclassDef parked fill:#373b42,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;\n"
+    }
+  ],
+  "updatedAt": "2026-10-15T15:48:12Z"
+}
