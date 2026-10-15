@@ -1,0 +1,427 @@
+{
+  "experiment": "INIT05",
+  "ticket": 11076,
+  "weight_sha256": "4d7a4a2547f084b6026164f27a6b7d43b5cb4d3b83ee4875343d108908f35636",
+  "weight_path": "/var/tmp/typhon-init02-20261015/train-T/step3000.pt",
+  "parent": "demo_0001",
+  "seed": 912171,
+  "queries": [
+    0,
+    1
+  ],
+  "texts": {
+    "F-original": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+    "L-original": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y."
+  },
+  "input_audit": [
+    {
+      "query": 0,
+      "original_hashes": {
+        "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+        "image_input": "3d469ce55e246c6e45d80bca06a4f3ac58c30d3158f32f1a51fa9d7b31396885",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "b2594bef69fb2d740f19630069e5061e3e6e4ece5a1a1e14bd5312f90713a2ae",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "raw_proprio": [
+        [
+          -0.24967384338378906,
+          -0.25036200881004333,
+          1.0802555084228516,
+          -0.00045360595686361194,
+          0.9999992847442627,
+          0.9999992251396179,
+          0.00045488376053981483,
+          0.001157899503596127,
+          -0.0011035302886739373,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "effective_proprio": [
+        [
+          -0.24967384338378906,
+          -0.25036200881004333,
+          1.0802555084228516,
+          -0.00045360595686361194,
+          0.9999992847442627,
+          0.9999992251396179,
+          0.00045488376053981483,
+          0.001157899503596127,
+          -0.0011035302886739373,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "crop": {
+        "detected": true,
+        "component_bbox_xywh": [
+          320,
+          314,
+          29,
+          22
+        ],
+        "crop_xywh": [
+          286,
+          277,
+          96,
+          96
+        ],
+        "area_px": 490,
+        "component_fill": 0.768025078369906,
+        "confidence": 0.768025078369906,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "rotation_conditioning": {
+        "raw_six": [
+          -0.00045360595686361194,
+          0.9999992847442627,
+          0.9999992251396179,
+          0.00045488376053981483,
+          0.001157899503596127,
+          -0.0011035302886739373
+        ],
+        "column_norms": [
+          0.9999999983847304,
+          0.9999999970936853
+        ],
+        "column_dot": -1.5243973211552866e-12,
+        "column_cosine": -1.5243973280479777e-12,
+        "singular_values": [
+          0.9999999983847309,
+          0.9999999970936846
+        ],
+        "condition_number": 1.0000000012910464
+      },
+      "measured_xyz": [
+        -0.24967384975924165,
+        -0.2503620208765294,
+        1.080255525752862
+      ],
+      "measured_quat_xyzw": [
+        0.7069459369442098,
+        0.7072671366677044,
+        1.9040834177725556e-05,
+        -0.0007995407347974334
+      ],
+      "supplied_measured_xyz_gap_mm": 2.2058462035773452e-05,
+      "supplied_measured_rotation_gap_deg": 0.0
+    },
+    {
+      "query": 1,
+      "original_hashes": {
+        "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+        "image_input": "ba98449f5d3ca4d24eb7703152e1f970dae2287cffb56af381281c01b47fa78b",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "7dd42a67c998b171882532528f6a618b817da35b0aba3960ded951b3e9b62762",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "raw_proprio": [
+        [
+          -0.24943555891513824,
+          -0.2589874267578125,
+          1.0849037170410156,
+          0.035257488489151,
+          1.0032720565795898,
+          1.0042730569839478,
+          -0.03548760339617729,
+          -0.0008480048854835331,
+          -0.0025416698772460222,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "effective_proprio": [
+        [
+          -0.24943555891513824,
+          -0.2589874267578125,
+          1.0849037170410156,
+          0.035257488489151,
+          1.0032720565795898,
+          1.0042730569839478,
+          -0.03548760339617729,
+          -0.0008480048854835331,
+          -0.0025416698772460222,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "crop": {
+        "detected": true,
+        "component_bbox_xywh": [
+          320,
+          314,
+          29,
+          22
+        ],
+        "crop_xywh": [
+          286,
+          277,
+          96,
+          96
+        ],
+        "area_px": 490,
+        "component_fill": 0.768025078369906,
+        "confidence": 0.768025078369906,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "rotation_conditioning": {
+        "raw_six": [
+          0.035257488489151,
+          1.0032720565795898,
+          1.0042730569839478,
+          -0.03548760339617729,
+          -0.0008480048854835331,
+          -0.0025416698772460222
+        ],
+        "column_norms": [
+          1.0048921248525793,
+          1.003902709227348
+        ],
+        "column_dot": -0.00026423561289796364,
+        "column_cosine": -0.0002619270074740993,
+        "singular_values": [
+          1.0049093053214253,
+          1.003885511531644
+        ],
+        "condition_number": 1.0010198312238008
+      },
+      "measured_xyz": [
+        -0.24935788746905058,
+        -0.25843746583180327,
+        1.0845798602179495
+      ],
+      "measured_quat_xyzw": [
+        0.7188947430059277,
+        0.6951183261076403,
+        -0.000927976000441124,
+        6.949531664543874e-06
+      ],
+      "supplied_measured_xyz_gap_mm": 0.6429409891434542,
+      "supplied_measured_rotation_gap_deg": 0.11422597524419403
+    }
+  ],
+  "q0_q1_difference": {
+    "xyz_q0_q1_mm": 9.801044128835201,
+    "rotation_q0_q1_deg": 2.041528716071198,
+    "masks_equal": true,
+    "images_equal": false,
+    "extra_fields_unchanged": [
+      "input_ids within each instruction",
+      "domain_id"
+    ],
+    "all_native_fields": [
+      "input_ids",
+      "image_input",
+      "image_mask",
+      "proprio",
+      "domain_id"
+    ],
+    "raw_effective_gripper_channels_zeroed_only": [
+      9,
+      19
+    ]
+  },
+  "cells": [
+    {
+      "cell": "00",
+      "images_from": 0,
+      "proprio_from": 0,
+      "input_hashes": {
+        "F-original": {
+          "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+          "image_input": "3d469ce55e246c6e45d80bca06a4f3ac58c30d3158f32f1a51fa9d7b31396885",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "b2594bef69fb2d740f19630069e5061e3e6e4ece5a1a1e14bd5312f90713a2ae",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        },
+        "L-original": {
+          "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+          "image_input": "3d469ce55e246c6e45d80bca06a4f3ac58c30d3158f32f1a51fa9d7b31396885",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "b2594bef69fb2d740f19630069e5061e3e6e4ece5a1a1e14bd5312f90713a2ae",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        }
+      },
+      "effective_proprio_sha256": "b2594bef69fb2d740f19630069e5061e3e6e4ece5a1a1e14bd5312f90713a2ae"
+    },
+    {
+      "cell": "10",
+      "images_from": 1,
+      "proprio_from": 0,
+      "input_hashes": {
+        "F-original": {
+          "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+          "image_input": "ba98449f5d3ca4d24eb7703152e1f970dae2287cffb56af381281c01b47fa78b",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "b2594bef69fb2d740f19630069e5061e3e6e4ece5a1a1e14bd5312f90713a2ae",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        },
+        "L-original": {
+          "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+          "image_input": "ba98449f5d3ca4d24eb7703152e1f970dae2287cffb56af381281c01b47fa78b",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "b2594bef69fb2d740f19630069e5061e3e6e4ece5a1a1e14bd5312f90713a2ae",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        }
+      },
+      "effective_proprio_sha256": "b2594bef69fb2d740f19630069e5061e3e6e4ece5a1a1e14bd5312f90713a2ae"
+    },
+    {
+      "cell": "01",
+      "images_from": 0,
+      "proprio_from": 1,
+      "input_hashes": {
+        "F-original": {
+          "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+          "image_input": "3d469ce55e246c6e45d80bca06a4f3ac58c30d3158f32f1a51fa9d7b31396885",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "7dd42a67c998b171882532528f6a618b817da35b0aba3960ded951b3e9b62762",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        },
+        "L-original": {
+          "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+          "image_input": "3d469ce55e246c6e45d80bca06a4f3ac58c30d3158f32f1a51fa9d7b31396885",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "7dd42a67c998b171882532528f6a618b817da35b0aba3960ded951b3e9b62762",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        }
+      },
+      "effective_proprio_sha256": "7dd42a67c998b171882532528f6a618b817da35b0aba3960ded951b3e9b62762"
+    },
+    {
+      "cell": "11",
+      "images_from": 1,
+      "proprio_from": 1,
+      "input_hashes": {
+        "F-original": {
+          "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+          "image_input": "ba98449f5d3ca4d24eb7703152e1f970dae2287cffb56af381281c01b47fa78b",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "7dd42a67c998b171882532528f6a618b817da35b0aba3960ded951b3e9b62762",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        },
+        "L-original": {
+          "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+          "image_input": "ba98449f5d3ca4d24eb7703152e1f970dae2287cffb56af381281c01b47fa78b",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "7dd42a67c998b171882532528f6a618b817da35b0aba3960ded951b3e9b62762",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        }
+      },
+      "effective_proprio_sha256": "7dd42a67c998b171882532528f6a618b817da35b0aba3960ded951b3e9b62762"
+    }
+  ],
+  "noise_sha256": [
+    "10f678c92f084ee06af47b9ddf97efc36218b1fa287ac4c3bd249d84d35046b0",
+    "21d3614081da1c4f3e0bd33056caa9c3a758542c2be7a309f932fb25be27069e"
+  ],
+  "source_sha256": {
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/predictions.npz": "13f87239d3987d4a6adc77b4662aa9ca0125d227377cc7718c3ab859796bb355",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/policy_io.npz": "2d9fc0bae6d647d3a0ea43dffcad8805690d49b7f36bf491aeef22a430506fe3",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/episode.json": "ad3e6c682248e2fbaa882ff7a46d24fdccbb7a312ce0035ab431033a425536e5",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/inference.json": "15aa74a36e96edcffeb64f2defc1f4da3fc15e020830cfb83e6566a6789c53a9",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/controller_trace.jsonl.gz": "f2a0e28f89120c162849f4c064c196f99183b80f86f4158a448c5d1695b8b5de",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912172/input-audit/noise-001.npz": "c31abd1dd250dea96a7e3a5eb2cb23601f62191577644160579266868119b546",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-loading-912171/input-audit/input-000.json": "4e934e91345d13edb2f9b89b29cb382485fa467f00f4b054f1c1d79255f1373d",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/input-audit/input-000.json": "e198c8ab451842b43f46a8cc00e98190a7d9df0f2ca08dc555026d290d93aee7",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/input-audit/noise-000.npz": "cd9ba73c3a52c4dcfd24039e43e142df30f0f0f3160909694d9d57c25b0bb530",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/input-audit/input-001.json": "a1b88d4c63970ea30cfda0e5ab3b32013908abd6d73926754bfbd20481f6042c",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/input-audit/noise-001.npz": "26d485ff54c04400eee165fee54191787a95dd22a6ef37c916ab03d43fe96883"
+  },
+  "packets_sha256": "a569a99398b99d5ee1d02efb17ffc025c893420315c2716c0ef06eb2019f8d68",
+  "expected_q1_sha256": "e468b3a3369af021291927877cec3b99a97005b49f914bfd1844812d42732873",
+  "generation": {
+    "float32_weights": true,
+    "autocast": "bf16",
+    "mode": "eval",
+    "requires_grad": "allTrue",
+    "steps": 10,
+    "horizon": 30,
+    "domain": 29
+  },
+  "max_outputs": 16,
+  "qualification_first": "11/F-original/noise0",
+  "mixed_time_cells": [
+    "10",
+    "01"
+  ],
+  "offline_truth_reference": "fixed measured q1 wrist and q1 block only; no truth into actor",
+  "prespecified_effect_metrics": [
+    "xyz_departure_measured_q1_max_mm",
+    "xyz_departure_measured_q1_last_mm",
+    "min_proposed_object_distance_mm",
+    "gripper_max",
+    "close_count",
+    "rotation_change_measured_q1_max_deg"
+  ],
+  "new_physics": 0,
+  "new_optimizer_updates": 0,
+  "freeze_epoch": 1792095957.6378593
+}
