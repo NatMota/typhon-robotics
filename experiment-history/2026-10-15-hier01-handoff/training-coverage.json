@@ -1,0 +1,62 @@
+[
+  {
+    "direction": "F-L",
+    "model": "FL",
+    "scope": "incoming_task",
+    "episodes": 4,
+    "nearest_start_xy_mm": 298.7369246729728,
+    "nearest_start_id": "load01-training-demo_0003",
+    "minimum_start_yaw_gap_deg": 15.311423242977042,
+    "minimum_initial_eef_distance_mm": 6.077904728162609,
+    "training_start_x_range_m": [
+      -0.3084651105738172,
+      -0.07585278904486192
+    ],
+    "exact_initial_joint_coverage": "not stored in teacher episode archive; not inferred from EEF"
+  },
+  {
+    "direction": "F-L",
+    "model": "FL",
+    "scope": "all_latest_stage_training",
+    "episodes": 16,
+    "nearest_start_xy_mm": 298.7369246729728,
+    "nearest_start_id": "personal_demo_0003-goal0",
+    "minimum_start_yaw_gap_deg": 15.311423242977042,
+    "minimum_initial_eef_distance_mm": 6.077904728162609,
+    "training_start_x_range_m": [
+      -0.3084651105738172,
+      -0.07585278904486192
+    ],
+    "exact_initial_joint_coverage": "not stored in teacher episode archive; not inferred from EEF"
+  },
+  {
+    "direction": "L-F",
+    "model": "GOAL",
+    "scope": "incoming_task",
+    "episodes": 12,
+    "nearest_start_xy_mm": 199.99625905932484,
+    "nearest_start_id": "personal_demo_0003-goal0",
+    "minimum_start_yaw_gap_deg": 16.642026288362782,
+    "minimum_initial_eef_distance_mm": 4.523646514233112,
+    "training_start_x_range_m": [
+      -0.3084651105738172,
+      -0.07585278904486192
+    ],
+    "exact_initial_joint_coverage": "not stored in teacher episode archive; not inferred from EEF"
+  },
+  {
+    "direction": "L-F",
+    "model": "GOAL",
+    "scope": "all_latest_stage_training",
+    "episodes": 12,
+    "nearest_start_xy_mm": 199.99625905932484,
+    "nearest_start_id": "personal_demo_0003-goal0",
+    "minimum_start_yaw_gap_deg": 16.642026288362782,
+    "minimum_initial_eef_distance_mm": 4.523646514233112,
+    "training_start_x_range_m": [
+      -0.3084651105738172,
+      -0.07585278904486192
+    ],
+    "exact_initial_joint_coverage": "not stored in teacher episode archive; not inferred from EEF"
+  }
+]

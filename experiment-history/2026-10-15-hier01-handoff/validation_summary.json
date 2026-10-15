@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "model_calls": 0,
+  "physics_steps": 0,
+  "directions": 2,
+  "queries_verified": 96,
+  "training_manifests_checked": {
+    "GOAL": {
+      "sampling": {
+        "sampling_sha256": "94b1e6a676d81f4f78ea131b76c90d4d1c8090b7583fc316db8c1f5e341e27e3",
+        "windows_sha256": "66add20070ab7758ad8a079ff26e9587070aec919be95b9f5a05a7fb1bf8d806",
+        "sample_counts": {
+          "personal_demo_0012-goal2": 1000,
+          "personal_demo_0013-goal0": 1000,
+          "personal_demo_0001-goal2": 1000,
+          "personal_demo_0005-goal1": 1000,
+          "personal_demo_0003-goal0": 1000,
+          "personal_demo_0001-goal0": 1000,
+          "personal_demo_0002-goal1": 1000,
+          "personal_demo_0003-goal2": 1000,
+          "personal_demo_0012-goal0": 1000,
+          "personal_demo_0013-goal1": 1000,
+          "personal_demo_0005-goal0": 1000,
+          "personal_demo_0002-goal0": 1000
+        },
+        "total_exposures": 12000
+      },
+      "manifest": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/data/dataset-v2.json",
+      "sha256": "7077d5476423554a07ed97c9a0ef11360facfd7ad4e0f1d690c6513dfe699b4a",
+      "episodes": 12,
+      "source_ids": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ]
+    },
+    "FL": {
+      "sampling": {
+        "sampling_sha256": "226dd42b7ce381ca5c6d37b7b3f2cbd5dfafcee9aa472ff0f64af3003cae42af",
+        "windows_sha256": "9466ac8c8c571edf619d453a9b1ef59ce56a059232f071f7e8e1b73e14d9fe1e",
+        "sample_counts": {
+          "personal_demo_0003-goal2": 500,
+          "personal_demo_0012-goal2": 500,
+          "load01-training-demo_0001": 1500,
+          "load01-training-demo_0002": 1500,
+          "load01-training-demo_0005": 1500,
+          "load01-training-demo_0003": 1500,
+          "personal_demo_0002-goal0": 500,
+          "personal_demo_0013-goal1": 500,
+          "personal_demo_0013-goal0": 500,
+          "personal_demo_0001-goal2": 500,
+          "personal_demo_0002-goal1": 500,
+          "personal_demo_0005-goal0": 500,
+          "personal_demo_0005-goal1": 500,
+          "personal_demo_0001-goal0": 500,
+          "personal_demo_0012-goal0": 500,
+          "personal_demo_0003-goal0": 500
+        },
+        "total_exposures": 12000
+      },
+      "manifest": "/var/tmp/typhon-load01-20261013/data/qualified-dataset.json",
+      "sha256": "9466ac8c8c571edf619d453a9b1ef59ce56a059232f071f7e8e1b73e14d9fe1e",
+      "episodes": 16,
+      "source_ids": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ]
+    }
+  },
+  "audit_finished_at_epoch": 1792078914.3708951,
+  "within_20_minute_audit_clock": true,
+  "limitations": [
+    "latest adaptation stage coverage, not exhaustive base pretraining coverage",
+    "training exact initial joint states absent; first post-action state not substituted",
+    "two directions from one already-visible family, not independent holdout families",
+    "visible numeral is not demonstrated recognition"
+  ]
+}

@@ -1,0 +1,714 @@
+[
+  {
+    "direction": "F-L",
+    "incoming_task": "loading",
+    "selected_model": "FL",
+    "checkpoint": {
+      "checkpoint": "/var/tmp/typhon-load01-20261013/train-FL/step3000.pt",
+      "probe": "/var/tmp/typhon-load01-20261013/train-FL/step3000-probe.pt",
+      "sha256": "76334b9a17ac5fc49f46c2cb850a3c39ef38e0f13b9cdadc324f760567c5f128",
+      "probe_sha256": "621318035b71ad85f1f7aff4d6636a5023aea889a78454a18212c29eac0727f9",
+      "step": 3000
+    },
+    "fresh_reload_receipt": {
+      "passed": true,
+      "fresh_process": true,
+      "checkpoint": "/var/tmp/typhon-load01-20261013/train-FL/step3000.pt",
+      "step": 3000,
+      "probe": "/var/tmp/typhon-load01-20261013/train-FL/step3000-probe.pt",
+      "action_max_error": 0.0,
+      "checkpoint_bytes": 3729341420,
+      "checkpoint_mtime_ns": 1791921577941972287,
+      "optimizer_restored_for_inference": false,
+      "rotation_contract": "generic_interleaved_v1",
+      "domain_id": 29,
+      "observation_version": "O2"
+    },
+    "robot_joint_difference_from_standalone_deg": [
+      0.24971522592772735,
+      0.47060316815586384,
+      0.5856016034934056,
+      -0.19967885421695128,
+      0.058109588435388417,
+      0.5707582914336249,
+      0.005800588283721996
+    ],
+    "maximum_joint_difference_from_standalone_deg": 0.5856016034934056,
+    "source_episode": "/var/tmp/typhon-hier01-chain-20261015/workers/F-L-stage2-loading/episode",
+    "standalone_reference": "/var/tmp/typhon-hier01-dev-20261015/workers/demo_0012-loading-912171-router/episode",
+    "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+    "query_index": 0,
+    "noise_hashes": [
+      "23be921051f417815bef90ae4875485ad67226f3a1f099a070624aaa8ede453f"
+    ],
+    "input_hashes": {
+      "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+      "image_input": "9a6142e6f8a590a7cbdf9b2a48d0394c30bd64fb16b334262ccf1c13ab6feb04",
+      "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+      "proprio": "f468d9668c03c862fec6508d75ab4e5e0b933fe5c93738f2fe0e5314b92bb2af",
+      "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+    },
+    "crop": {
+      "detected": true,
+      "component_bbox_xywh": [
+        314,
+        312,
+        30,
+        21
+      ],
+      "crop_xywh": [
+        281,
+        274,
+        96,
+        96
+      ],
+      "area_px": 468,
+      "component_fill": 0.7428571428571429,
+      "confidence": 0.7428571428571429,
+      "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+      "padding_ltrb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "source": "current RGB only",
+      "orientation_normalized": false
+    },
+    "image_mask": [
+      [
+        true,
+        true,
+        true
+      ]
+    ],
+    "image_shape": [
+      1,
+      3,
+      3,
+      224,
+      224
+    ],
+    "history_initial_measured_and_fresh": true,
+    "history_native_previous_command_verified_all_queries": true,
+    "world_state_exact_across_request": true,
+    "boundary_truth": {
+      "object_position_m": [
+        0.1273654519351832,
+        -0.11610999209965896,
+        0.8147844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999223382540774,
+        4.663212600250298e-17,
+        -3.475584665818913e-18,
+        0.0124626425969174
+      ],
+      "object_yaw_rad": 0.02492593046093513,
+      "object_linear_velocity_m_s": [
+        3.165220200139951e-19,
+        1.6777169509421303e-17,
+        -2.1724930998209264e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.1379724356896723e-15,
+        6.220357898484202e-17,
+        -5.6682078233757525e-31
+      ],
+      "eef_position_m": [
+        -0.24740743360325923,
+        -0.2452858094636376,
+        1.0769629111626249
+      ],
+      "gripper_joint_position_m": [
+        0.039997161547853745,
+        -0.04000011407659002
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1500,
+      "sim_time_s": 75.0
+    },
+    "boundary_robot_joints_rad": [
+      -0.17314166005576587,
+      -0.14142425383896792,
+      -0.5155279024509417,
+      -2.7294309472069704,
+      -0.14237885116627463,
+      2.601864018915182,
+      0.20966179242037924
+    ],
+    "boundary_robot_velocity_rad_s": [
+      5.842862881521455e-05,
+      -6.912474550269924e-06,
+      2.078674028921098e-05,
+      -6.826614540931483e-06,
+      -1.8738830718876066e-05,
+      9.484466102142514e-07,
+      -8.574465935427043e-05
+    ],
+    "boundary_full_qpos": [
+      -0.17314166005576587,
+      -0.14142425383896792,
+      -0.5155279024509417,
+      -2.7294309472069704,
+      -0.14237885116627463,
+      2.601864018915182,
+      0.20966179242037924,
+      0.039997161547853745,
+      -0.04000011407659002,
+      0.1273654519351832,
+      -0.11610999209965896,
+      0.8147844891595695,
+      0.9999223382540774,
+      4.5495017164712616e-17,
+      -3.3992037739214736e-18,
+      0.0124626425969174
+    ],
+    "boundary_full_qvel": [
+      5.842862881521455e-05,
+      -6.912474550269924e-06,
+      2.078674028921098e-05,
+      -6.826614540931483e-06,
+      -1.8738830718876066e-05,
+      9.484466102142514e-07,
+      -8.574465935427043e-05,
+      -1.0317928236565691e-07,
+      -1.1042509675619372e-09,
+      3.165220200139951e-19,
+      1.6777169509421303e-17,
+      -2.1724930998209264e-14,
+      -1.136068620175769e-15,
+      9.054634106319695e-17,
+      -5.660401530078824e-31
+    ],
+    "boundary_contact_count": 4,
+    "boundary_controller_keys": [
+      "actuator_min",
+      "actuator_max",
+      "action_scale",
+      "action_input_transform",
+      "action_output_transform",
+      "control_dim",
+      "output_min",
+      "output_max",
+      "input_min",
+      "input_max",
+      "model_timestep",
+      "eef_name",
+      "ee_pos",
+      "ee_ori_mat",
+      "ee_pos_vel",
+      "ee_ori_vel",
+      "joint_pos",
+      "joint_vel",
+      "J_pos",
+      "J_ori",
+      "J_full",
+      "mass_matrix",
+      "joint_dim",
+      "torques",
+      "new_update",
+      "initial_joint",
+      "initial_ee_pos",
+      "initial_ee_ori_mat",
+      "use_ori",
+      "use_delta",
+      "name_suffix",
+      "kp",
+      "kd",
+      "kp_min",
+      "kp_max",
+      "damping_ratio_min",
+      "damping_ratio_max",
+      "impedance_mode",
+      "control_freq",
+      "uncoupling",
+      "goal_ori",
+      "goal_pos",
+      "relative_ori"
+    ],
+    "boundary_mocap_pos": [
+      [
+        0.125,
+        -0.12,
+        0.8
+      ],
+      [
+        0.12,
+        0.15,
+        0.8
+      ]
+    ],
+    "boundary_mocap_quat": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "metrics": {
+      "predicted_actions": 1440,
+      "raw_gripper_range": [
+        0.00027562445029616356,
+        0.0015840341802686453
+      ],
+      "raw_close_proposals": 0,
+      "minimum_raw_target_distance_to_initial_brick_mm": 417.19861791254175,
+      "minimum_actual_eef_distance_to_initial_brick_mm": 451.73231778738386,
+      "grasp_contact_steps": 0,
+      "bilateral_grasp_steps": 0,
+      "max_object_displacement_mm": 0.0,
+      "max_object_lift_mm": 0.0,
+      "first_raw_target_xyz": [
+        -0.2384427785873413,
+        -0.2471066415309906,
+        1.0836620330810547
+      ],
+      "first_chunk_last_target_xyz": [
+        -0.2433255910873413,
+        -0.2412472665309906,
+        1.0680370330810547
+      ],
+      "first_raw_delta_from_measured_eef_mm": [
+        8.964655015917922,
+        -1.8208320673530065,
+        6.699121918429807
+      ]
+    },
+    "standalone_metrics": {
+      "predicted_actions": 1440,
+      "raw_gripper_range": [
+        0.00017797391046769917,
+        0.9997195601463318
+      ],
+      "raw_close_proposals": 89,
+      "minimum_raw_target_distance_to_initial_brick_mm": 7.145029179246987,
+      "minimum_actual_eef_distance_to_initial_brick_mm": 6.73941304217876,
+      "grasp_contact_steps": 89,
+      "bilateral_grasp_steps": 86,
+      "max_object_displacement_mm": 458.99702134572703,
+      "max_object_lift_mm": 163.46107167732714,
+      "first_raw_target_xyz": [
+        -0.2472318410873413,
+        -0.2510128915309906,
+        1.0836620330810547
+      ],
+      "first_chunk_last_target_xyz": [
+        -0.1710599660873413,
+        -0.1514035165309906,
+        0.9781932234764099
+      ],
+      "first_raw_delta_from_measured_eef_mm": [
+        2.823365975474723,
+        -1.1253839853889447,
+        3.740305203265404
+      ]
+    },
+    "standalone_initial_truth": {
+      "object_position_m": [
+        -0.16933751319902174,
+        -0.15580803088202866,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9871171157742684,
+        4.438168936477711e-17,
+        6.83715749969958e-18,
+        0.15999937420343133
+      ],
+      "object_yaw_rad": 0.3213800379760529,
+      "object_linear_velocity_m_s": [
+        -3.378565081687452e-18,
+        1.285924403629357e-17,
+        2.167433110549448e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -6.606070705442578e-16,
+        -2.312185408853623e-16,
+        7.598006523482491e-31
+      ],
+      "eef_position_m": [
+        -0.25005520706281603,
+        -0.24988750754560166,
+        1.0799217278777893
+      ],
+      "gripper_joint_position_m": [
+        0.03959546089013839,
+        -0.03976879892039342
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 40,
+      "sim_time_s": 2.0
+    },
+    "robot_eef_difference_from_standalone_mm": 6.077904728162609,
+    "first_actionable_failure": "policy emits near-home open-gripper targets and no acquisition; input contract checks pass",
+    "numeral_recognition": "not established by crop validity or visible pixels"
+  },
+  {
+    "direction": "L-F",
+    "incoming_task": "feeding",
+    "selected_model": "GOAL",
+    "checkpoint": {
+      "checkpoint": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000.pt",
+      "probe": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000-probe.pt",
+      "sha256": "d5449244d96e55e60c3342af9fffe2ae64362b74cdf9c3d41e39b74995c9bcdb",
+      "probe_sha256": "6452eed3b6e9ab899685147ac39e1f1fd2558217b7978aa10a530321ddec8c01",
+      "step": 3000
+    },
+    "fresh_reload_receipt": {
+      "passed": true,
+      "fresh_process": true,
+      "checkpoint": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000.pt",
+      "step": 3000,
+      "probe": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000-probe.pt",
+      "action_max_error": 0.0,
+      "checkpoint_bytes": 3729340908,
+      "checkpoint_mtime_ns": 1791797726771834339,
+      "optimizer_restored_for_inference": false,
+      "rotation_contract": "generic_interleaved_v1",
+      "domain_id": 29,
+      "observation_version": "O2"
+    },
+    "robot_joint_difference_from_standalone_deg": [
+      -0.0366744183263233,
+      -0.15822846981431787,
+      -0.15345340413593944,
+      0.6248193725791407,
+      0.09637119434389618,
+      -0.9054760427929321,
+      0.134663193952115
+    ],
+    "maximum_joint_difference_from_standalone_deg": 0.9054760427929321,
+    "source_episode": "/var/tmp/typhon-hier01-chain-amend1-20261015/workers/L-F-stage2-feeding/episode",
+    "standalone_reference": "/var/tmp/typhon-hier01-dev-20261015/workers/demo_0012-feeding-912171-router/episode",
+    "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+    "query_index": 0,
+    "noise_hashes": [
+      "23be921051f417815bef90ae4875485ad67226f3a1f099a070624aaa8ede453f"
+    ],
+    "input_hashes": {
+      "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+      "image_input": "75a63c848abf9a1e97d06f36708fb1af1c299b9d427e6343d4fe072bfdc354b1",
+      "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+      "proprio": "58802f37cd11f823f33b6ac4b00425af21b3243598d3ac819e3c188ebb5e7dba",
+      "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+    },
+    "crop": {
+      "detected": true,
+      "component_bbox_xywh": [
+        309,
+        157,
+        29,
+        20
+      ],
+      "crop_xywh": [
+        276,
+        119,
+        96,
+        96
+      ],
+      "area_px": 467,
+      "component_fill": 0.8051724137931034,
+      "confidence": 0.8051724137931034,
+      "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+      "padding_ltrb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "source": "current RGB only",
+      "orientation_normalized": false
+    },
+    "image_mask": [
+      [
+        true,
+        true,
+        true
+      ]
+    ],
+    "image_shape": [
+      1,
+      3,
+      3,
+      224,
+      224
+    ],
+    "history_initial_measured_and_fresh": true,
+    "history_native_previous_command_verified_all_queries": true,
+    "world_state_exact_across_request": true,
+    "boundary_truth": {
+      "object_position_m": [
+        0.11732384913812345,
+        0.15463715458046773,
+        0.8187844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999996376755543,
+        4.1445337033463724e-17,
+        -5.960949998609501e-18,
+        0.0008512630381339845
+      ],
+      "object_yaw_rad": 0.0017025262818902713,
+      "object_linear_velocity_m_s": [
+        1.893714615850622e-18,
+        1.4028792290779098e-17,
+        -2.149191942629968e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.110525266285119e-15,
+        -5.553107148670742e-17,
+        8.600200574481266e-32
+      ],
+      "eef_position_m": [
+        -0.2492223824597134,
+        -0.2527595542576878,
+        1.08331600668923
+      ],
+      "gripper_joint_position_m": [
+        0.040000094340424196,
+        -0.039997445858422166
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1500,
+      "sim_time_s": 75.0
+    },
+    "boundary_robot_joints_rad": [
+      -0.17814010229161417,
+      -0.15239943636225667,
+      -0.5284268456874257,
+      -2.7150407384725237,
+      -0.1417110601660705,
+      2.576098869251942,
+      0.21191086917199184
+    ],
+    "boundary_robot_velocity_rad_s": [
+      1.2057957548231319e-05,
+      -5.3340300176297224e-06,
+      2.3987132565040582e-05,
+      -5.113864820607819e-05,
+      3.4877863254769024e-05,
+      -5.870014646277341e-05,
+      -0.000104942119019769
+    ],
+    "boundary_full_qpos": [
+      -0.17814010229161417,
+      -0.15239943636225667,
+      -0.5284268456874257,
+      -2.7150407384725237,
+      -0.1417110601660705,
+      2.576098869251942,
+      0.21191086917199184,
+      0.040000094340424196,
+      -0.039997445858422166,
+      0.11732384913812345,
+      0.15463715458046773,
+      0.8187844891595695,
+      0.9999996376755543,
+      4.033476489800043e-17,
+      -6.015535700863841e-18,
+      0.0008512630381339845
+    ],
+    "boundary_full_qvel": [
+      1.2057957548231319e-05,
+      -5.3340300176297224e-06,
+      2.3987132565040582e-05,
+      -5.113864820607819e-05,
+      3.4877863254769024e-05,
+      -5.870014646277341e-05,
+      -0.000104942119019769,
+      3.0527818281314478e-09,
+      -9.26612268093029e-08,
+      1.893714615850622e-18,
+      1.4028792290779098e-17,
+      -2.149191942629968e-14,
+      -1.1106181998665985e-15,
+      -5.364029346650456e-17,
+      1.0376678133778286e-31
+    ],
+    "boundary_contact_count": 4,
+    "boundary_controller_keys": [
+      "actuator_min",
+      "actuator_max",
+      "action_scale",
+      "action_input_transform",
+      "action_output_transform",
+      "control_dim",
+      "output_min",
+      "output_max",
+      "input_min",
+      "input_max",
+      "model_timestep",
+      "eef_name",
+      "ee_pos",
+      "ee_ori_mat",
+      "ee_pos_vel",
+      "ee_ori_vel",
+      "joint_pos",
+      "joint_vel",
+      "J_pos",
+      "J_ori",
+      "J_full",
+      "mass_matrix",
+      "joint_dim",
+      "torques",
+      "new_update",
+      "initial_joint",
+      "initial_ee_pos",
+      "initial_ee_ori_mat",
+      "use_ori",
+      "use_delta",
+      "name_suffix",
+      "kp",
+      "kd",
+      "kp_min",
+      "kp_max",
+      "damping_ratio_min",
+      "damping_ratio_max",
+      "impedance_mode",
+      "control_freq",
+      "uncoupling",
+      "goal_ori",
+      "goal_pos",
+      "relative_ori"
+    ],
+    "boundary_mocap_pos": [
+      [
+        0.125,
+        -0.12,
+        0.8
+      ],
+      [
+        0.12,
+        0.15,
+        0.8
+      ]
+    ],
+    "boundary_mocap_quat": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "metrics": {
+      "predicted_actions": 1440,
+      "raw_gripper_range": [
+        0.0006622466025874019,
+        0.001491157803684473
+      ],
+      "raw_close_proposals": 0,
+      "minimum_raw_target_distance_to_initial_brick_mm": 558.8213164485353,
+      "minimum_actual_eef_distance_to_initial_brick_mm": 582.8599533662762,
+      "grasp_contact_steps": 0,
+      "bilateral_grasp_steps": 0,
+      "max_object_displacement_mm": 0.0,
+      "max_object_lift_mm": 0.0,
+      "first_raw_target_xyz": [
+        -0.24379968643188477,
+        -0.24354621767997742,
+        1.0743871927261353
+      ],
+      "first_chunk_last_target_xyz": [
+        -0.24672937393188477,
+        -0.24256965517997742,
+        1.0821996927261353
+      ],
+      "first_raw_delta_from_measured_eef_mm": [
+        5.422696027828633,
+        9.213336577710397,
+        -8.92881396309475
+      ]
+    },
+    "standalone_metrics": {
+      "predicted_actions": 1440,
+      "raw_gripper_range": [
+        0.000622148159891367,
+        0.9994606375694275
+      ],
+      "raw_close_proposals": 93,
+      "minimum_raw_target_distance_to_initial_brick_mm": 3.2317304850651034,
+      "minimum_actual_eef_distance_to_initial_brick_mm": 3.4019382619859004,
+      "grasp_contact_steps": 92,
+      "bilateral_grasp_steps": 91,
+      "max_object_displacement_mm": 345.16604907747455,
+      "max_object_lift_mm": 165.40754442475924,
+      "first_raw_target_xyz": [
+        -0.24477624893188477,
+        -0.24354621767997742,
+        1.0743871927261353
+      ],
+      "first_chunk_last_target_xyz": [
+        -0.16958093643188477,
+        -0.14979621767997742,
+        0.9650121927261353
+      ],
+      "first_raw_delta_from_measured_eef_mm": [
+        5.278958130931266,
+        6.341289865624239,
+        -5.53453515165403
+      ]
+    },
+    "standalone_initial_truth": {
+      "object_position_m": [
+        -0.16933751319902174,
+        -0.15580803088202866,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9871171157742684,
+        4.438168936477711e-17,
+        6.83715749969958e-18,
+        0.15999937420343133
+      ],
+      "object_yaw_rad": 0.3213800379760529,
+      "object_linear_velocity_m_s": [
+        -3.378565081687452e-18,
+        1.285924403629357e-17,
+        2.167433110549448e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -6.606070705442578e-16,
+        -2.312185408853623e-16,
+        7.598006523482491e-31
+      ],
+      "eef_position_m": [
+        -0.25005520706281603,
+        -0.24988750754560166,
+        1.0799217278777893
+      ],
+      "gripper_joint_position_m": [
+        0.03959546089013839,
+        -0.03976879892039342
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 40,
+      "sim_time_s": 2.0
+    },
+    "robot_eef_difference_from_standalone_mm": 4.523646514233112,
+    "first_actionable_failure": "policy emits near-home open-gripper targets and no acquisition; input contract checks pass",
+    "numeral_recognition": "not established by crop validity or visible pixels"
+  }
+]
