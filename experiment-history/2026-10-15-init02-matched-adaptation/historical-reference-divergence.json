@@ -1,0 +1,74 @@
+{
+  "primary": {
+    "differing_channel_values": 0,
+    "pixels": 0,
+    "max_level_delta": 0,
+    "first_indices": []
+  },
+  "secondary": {
+    "differing_channel_values": 3,
+    "pixels": 1,
+    "max_level_delta": 1,
+    "first_indices": [
+      [
+        417,
+        24,
+        0
+      ],
+      [
+        417,
+        24,
+        1
+      ],
+      [
+        417,
+        24,
+        2
+      ]
+    ]
+  },
+  "previous18_image_frames_exact": true,
+  "first570_control_records_exact": true,
+  "new_final": {
+    "object_position_m": [
+      0.126477778611601,
+      -0.1210490209188937,
+      0.8147844891595659
+    ],
+    "object_quat_wxyz": [
+      0.9999917315854082,
+      3.938497177910137e-17,
+      1.40182099588336e-18,
+      -0.004066541628588083
+    ],
+    "object_yaw_rad": -0.00813310567315173,
+    "object_linear_velocity_m_s": [
+      -2.393956185081713e-19,
+      1.3040919769905083e-17,
+      2.16556119572238e-14
+    ],
+    "object_angular_velocity_rad_s": [
+      -8.619176076555281e-16,
+      -8.929132069810423e-17,
+      -2.1246039757115407e-31
+    ],
+    "eef_position_m": [
+      -0.24452644772133747,
+      -0.2470082067754568,
+      1.075577767364419
+    ],
+    "gripper_joint_position_m": [
+      0.040000129616191676,
+      -0.039996940571066446
+    ],
+    "gripper_open": true,
+    "grasp_contact": false,
+    "bilateral_grasp_contact": false,
+    "control_steps": 1803,
+    "sim_time_s": 90.15
+  },
+  "source": "/var/tmp/typhon-init01-20261015/continuations/demo_0002/L-policy/episode",
+  "new": "/var/tmp/typhon-init02-20261015/episodes/P/init-demo_0002-loading-912171",
+  "raw_RGB_divergence_first_query": 19,
+  "epoch": 1792085743.824308
+}
