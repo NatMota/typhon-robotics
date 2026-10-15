@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "id": "REF-912171",
+      "cell": "REF",
+      "seed": 912171,
+      "directory": "/var/tmp/typhon-hier01-start-20261015/episodes/REF-912171",
+      "requested_success": true,
+      "position_error_mm": 5.353969185443213,
+      "yaw_error_deg": 0.09754757046241283,
+      "criteria": {
+        "position": true,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": true,
+        "placement_height": true,
+        "released": true,
+        "stable": true,
+        "seated": true
+      },
+      "noise": {
+        "passed": true,
+        "reference": "/var/tmp/typhon-hier01-start-20261015/episodes/REF-912171",
+        "comparisons": 0
+      },
+      "queries": 48,
+      "wall_seconds": 17.14675209001871,
+      "minimum_eef_object_distance_mm": 6.739413042178759,
+      "maximum_lift_above_initial_mm": 163.46107167732714,
+      "supported_lift_10mm_bilateral_steps": 71,
+      "longest_supported_lift_s": 3.45,
+      "supported_lift_10mm_3steps": true,
+      "legacy_height_only_70mm": true,
+      "horizontal_transport_while_supported_mm": 430.3191234274135,
+      "object_path_m": 0.8057998133994669,
+      "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+      "release_and_stability": {
+        "position": true,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": true,
+        "placement_height": true,
+        "released": true,
+        "stable": true,
+        "seated": true
+      }
+    },
+    {
+      "id": "REF-912172",
+      "cell": "REF",
+      "seed": 912172,
+      "directory": "/var/tmp/typhon-hier01-start-20261015/episodes/REF-912172",
+      "requested_success": true,
+      "position_error_mm": 7.064664726961184,
+      "yaw_error_deg": 0.2755698163185624,
+      "criteria": {
+        "position": true,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": true,
+        "placement_height": true,
+        "released": true,
+        "stable": true,
+        "seated": true
+      },
+      "noise": {
+        "passed": true,
+        "reference": "/var/tmp/typhon-hier01-start-20261015/episodes/REF-912172",
+        "comparisons": 0
+      },
+      "queries": 48,
+      "wall_seconds": 17.54793636300019,
+      "minimum_eef_object_distance_mm": 6.794240621445275,
+      "maximum_lift_above_initial_mm": 162.8270918341369,
+      "supported_lift_10mm_bilateral_steps": 67,
+      "longest_supported_lift_s": 3.35,
+      "supported_lift_10mm_3steps": true,
+      "legacy_height_only_70mm": true,
+      "horizontal_transport_while_supported_mm": 429.82225062514397,
+      "object_path_m": 0.8028834859739584,
+      "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+      "release_and_stability": {
+        "position": true,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": true,
+        "placement_height": true,
+        "released": true,
+        "stable": true,
+        "seated": true
+      }
+    }
+  ],
+  "epoch": 1792080400.0965278
+}

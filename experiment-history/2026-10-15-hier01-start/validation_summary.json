@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "reproduction_rerun": false,
+  "episodes": 10,
+  "controls": 2,
+  "controls_supported_lift_and_strict": true,
+  "new_factorial_rollouts": 8,
+  "actual_noise_paired_by_query": true,
+  "preparation_before_deadline": true,
+  "controls_before_deadline": true,
+  "execution_before_deadline": true,
+  "followup_within_10_minutes": true,
+  "analysis_finished_epoch": 1792081044.7849352,
+  "training": false,
+  "new_independent_holdout_families": 0,
+  "new_original_EVAL02_intervention_trials": 0,
+  "cell_results": {
+    "REF": {
+      "strict": 2,
+      "supported_lift": 2,
+      "trials": 2
+    },
+    "AA": {
+      "strict": 0,
+      "supported_lift": 0,
+      "trials": 2
+    },
+    "AB": {
+      "strict": 0,
+      "supported_lift": 0,
+      "trials": 2
+    },
+    "BA": {
+      "strict": 0,
+      "supported_lift": 0,
+      "trials": 2
+    },
+    "BB": {
+      "strict": 0,
+      "supported_lift": 0,
+      "trials": 2
+    }
+  }
+}

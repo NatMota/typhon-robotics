@@ -1,0 +1,2480 @@
+[
+  {
+    "id": "REF-912171",
+    "cell": "REF",
+    "seed": 912171,
+    "directory": "/var/tmp/typhon-hier01-start-20261015/episodes/REF-912171",
+    "requested_success": true,
+    "position_error_mm": 5.353969185443213,
+    "yaw_error_deg": 0.09754757046241283,
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "noise": {
+      "passed": true,
+      "reference": "/var/tmp/typhon-hier01-start-20261015/episodes/REF-912171",
+      "comparisons": 0
+    },
+    "queries": 48,
+    "wall_seconds": 17.14675209001871,
+    "minimum_eef_object_distance_mm": 6.739413042178759,
+    "maximum_lift_above_initial_mm": 163.46107167732714,
+    "supported_lift_10mm_bilateral_steps": 71,
+    "longest_supported_lift_s": 3.45,
+    "supported_lift_10mm_3steps": true,
+    "legacy_height_only_70mm": true,
+    "horizontal_transport_while_supported_mm": 430.3191234274135,
+    "object_path_m": 0.8057998133994669,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "first_chunk_min_raw_target_distance_to_current_brick_mm": 163.43619735155298,
+    "min_raw_target_distance_to_current_brick_mm": 5.792476772891421,
+    "first_chunk_last_raw_target_xyz": [
+      -0.1710599660873413,
+      -0.1514035165309906,
+      0.9781932234764099
+    ],
+    "first_chunk_start_to_last_target_displacement_mm": [
+      78.99524097547473,
+      98.48399101461105,
+      -101.72850440137937
+    ],
+    "minimum_executed_eef_distance_to_current_brick_mm": 6.739413042178759,
+    "first_chunk_min_actual_eef_distance_mm": 197.51602568381827,
+    "raw_gripper_probability_range": [
+      0.00017797391046769917,
+      0.9997195601463318
+    ],
+    "raw_close_proposals": 89,
+    "first_raw_close": {
+      "query": 2,
+      "action": 23,
+      "flat_index": 83,
+      "probability": 0.9746068716049194
+    },
+    "first_executed_close_index": 83,
+    "contact_steps": 89,
+    "bilateral_steps": 86,
+    "max_lift_mm": 163.46107167732714,
+    "max_object_displacement_mm": 458.99702134572703,
+    "executed_eef_path_length_mm": 3175.4937288654414,
+    "min_raw_target_xy_to_displayed_marker_mm": 190.29765191011373,
+    "final_brick_distance_to_displayed_marker_mm": 274.74440843829746,
+    "final_brick_distance_to_loading_fixture_mm": 5.353969185443212,
+    "initial_truth": {
+      "object_position_m": [
+        -0.16933751319902174,
+        -0.15580803088202866,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9871171157742684,
+        4.438168936477711e-17,
+        6.83715749969958e-18,
+        0.15999937420343133
+      ],
+      "object_yaw_rad": 0.3213800379760529,
+      "object_linear_velocity_m_s": [
+        -3.378565081687452e-18,
+        1.285924403629357e-17,
+        2.167433110549448e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -6.606070705442578e-16,
+        -2.312185408853623e-16,
+        7.598006523482491e-31
+      ],
+      "eef_position_m": [
+        -0.25005520706281603,
+        -0.24988750754560166,
+        1.0799217278777893
+      ],
+      "gripper_joint_position_m": [
+        0.03959546089013839,
+        -0.03976879892039342
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 40,
+      "sim_time_s": 2.0
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.11732384913812345,
+        0.15463715458046773,
+        0.8187844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999996376755543,
+        4.1445337033463724e-17,
+        -5.960949998609501e-18,
+        0.0008512630381339845
+      ],
+      "object_yaw_rad": 0.0017025262818902713,
+      "object_linear_velocity_m_s": [
+        1.893714615850622e-18,
+        1.4028792290779098e-17,
+        -2.149191942629968e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.110525266285119e-15,
+        -5.553107148670742e-17,
+        8.600200574481266e-32
+      ],
+      "eef_position_m": [
+        -0.2492223824597134,
+        -0.2527595542576878,
+        1.08331600668923
+      ],
+      "gripper_joint_position_m": [
+        0.040000094340424196,
+        -0.039997445858422166
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1500,
+      "sim_time_s": 75.0
+    },
+    "evaluation": {
+      "task": "loading",
+      "success": true,
+      "criteria": {
+        "position": true,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": true,
+        "placement_height": true,
+        "released": true,
+        "stable": true,
+        "seated": true
+      },
+      "position_error_m": 0.005353969185443213,
+      "orientation_error_rad": 0.0017025262818902713,
+      "orientation_error_deg": 0.09754757046241283,
+      "upright_error_rad": 0.0,
+      "height_error_m": 0.00021551084043058832,
+      "target_height_m": 0.8190000000000001,
+      "footprint_inside_target": true,
+      "object_movement_after_release_m": 0.0,
+      "object_yaw_movement_after_release_rad": 0.0,
+      "maximum_linear_velocity_m_s": 2.1491924088357602e-14,
+      "maximum_angular_velocity_rad_s": 1.111912796471961e-15,
+      "stability_sample_count": 12,
+      "stability_duration_s": 1.0999999999999943,
+      "grasp_attempt_count": 1,
+      "successful_grasp_count": 1,
+      "failed_grasp_count": 0,
+      "retries": 0,
+      "recovered_after_failed_grasp": false,
+      "successful_recovery": false,
+      "controller_exceptions": [],
+      "control_steps": 1460,
+      "sim_time_s": 73.0,
+      "attempts": [
+        {
+          "start_step": 123,
+          "initial_height_m": 0.8147844891595659,
+          "maximum_lift_m": 0.16346107167732715,
+          "any_contact": true,
+          "verified_lift": true,
+          "end_step": 213
+        }
+      ]
+    },
+    "source_sha256": {
+      "episode.json": "dced33edd491dfb96ed3a92e0d653c0ccb4ed46d7c14f1c51bfb85bdfee91fc5",
+      "predictions.npz": "4eb2f34b35d21878bf5ca6b31054055e957520be4ca3fe51c916e6fb916be48e",
+      "controller_trace.jsonl.gz": "0126f9111af809f8322bd87975ab24f9cf5e52e88d36ad9d041edae5c43c888e",
+      "policy_io.npz": "3c6f8817dd33ad4ada28e864b1d1884cd109b876020e764ee5ee77d8dcfac4f2"
+    }
+  },
+  {
+    "id": "REF-912172",
+    "cell": "REF",
+    "seed": 912172,
+    "directory": "/var/tmp/typhon-hier01-start-20261015/episodes/REF-912172",
+    "requested_success": true,
+    "position_error_mm": 7.064664726961184,
+    "yaw_error_deg": 0.2755698163185624,
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "noise": {
+      "passed": true,
+      "reference": "/var/tmp/typhon-hier01-start-20261015/episodes/REF-912172",
+      "comparisons": 0
+    },
+    "queries": 48,
+    "wall_seconds": 17.54793636300019,
+    "minimum_eef_object_distance_mm": 6.794240621445275,
+    "maximum_lift_above_initial_mm": 162.8270918341369,
+    "supported_lift_10mm_bilateral_steps": 67,
+    "longest_supported_lift_s": 3.35,
+    "supported_lift_10mm_3steps": true,
+    "legacy_height_only_70mm": true,
+    "horizontal_transport_while_supported_mm": 429.82225062514397,
+    "object_path_m": 0.8028834859739584,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "first_chunk_min_raw_target_distance_to_current_brick_mm": 163.49036326881102,
+    "min_raw_target_distance_to_current_brick_mm": 5.342768503543097,
+    "first_chunk_last_raw_target_xyz": [
+      -0.1730130910873413,
+      -0.1504269540309906,
+      0.9781932234764099
+    ],
+    "first_chunk_start_to_last_target_displacement_mm": [
+      77.04211597547473,
+      99.46055351461105,
+      -101.72850440137937
+    ],
+    "minimum_executed_eef_distance_to_current_brick_mm": 6.794240621445275,
+    "first_chunk_min_actual_eef_distance_mm": 197.6778870637418,
+    "raw_gripper_probability_range": [
+      0.0001894500746857375,
+      0.9997195601463318
+    ],
+    "raw_close_proposals": 87,
+    "first_raw_close": {
+      "query": 2,
+      "action": 23,
+      "flat_index": 83,
+      "probability": 0.9734206199645996
+    },
+    "first_executed_close_index": 83,
+    "contact_steps": 87,
+    "bilateral_steps": 85,
+    "max_lift_mm": 162.8270918341369,
+    "max_object_displacement_mm": 456.9897721553142,
+    "executed_eef_path_length_mm": 3144.345524992311,
+    "min_raw_target_xy_to_displayed_marker_mm": 190.297945741414,
+    "final_brick_distance_to_displayed_marker_mm": 275.2467883632946,
+    "final_brick_distance_to_loading_fixture_mm": 7.064664726961184,
+    "initial_truth": {
+      "object_position_m": [
+        -0.16933751319902174,
+        -0.15580803088202866,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9871171157742684,
+        4.438168936477711e-17,
+        6.83715749969958e-18,
+        0.15999937420343133
+      ],
+      "object_yaw_rad": 0.3213800379760529,
+      "object_linear_velocity_m_s": [
+        -3.378565081687452e-18,
+        1.285924403629357e-17,
+        2.167433110549448e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -6.606070705442578e-16,
+        -2.312185408853623e-16,
+        7.598006523482491e-31
+      ],
+      "eef_position_m": [
+        -0.25005520706281603,
+        -0.24988750754560166,
+        1.0799217278777893
+      ],
+      "gripper_joint_position_m": [
+        0.03959546089013839,
+        -0.03976879892039342
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 40,
+      "sim_time_s": 2.0
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.11507801949480323,
+        0.15506789853991104,
+        0.8187844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999971084691354,
+        3.970426408646121e-17,
+        2.6633006680731005e-19,
+        0.002404797989085573
+      ],
+      "object_yaw_rad": 0.004809600613874913,
+      "object_linear_velocity_m_s": [
+        3.543158357197611e-20,
+        1.4559788944707364e-17,
+        -2.148253366999854e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.1518603622714168e-15,
+        2.176360574188224e-16,
+        -3.2270946957685144e-31
+      ],
+      "eef_position_m": [
+        -0.24919375133455315,
+        -0.25274245040323506,
+        1.0833367579503452
+      ],
+      "gripper_joint_position_m": [
+        0.04000009745473277,
+        -0.03999735420034216
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1500,
+      "sim_time_s": 75.0
+    },
+    "evaluation": {
+      "task": "loading",
+      "success": true,
+      "criteria": {
+        "position": true,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": true,
+        "placement_height": true,
+        "released": true,
+        "stable": true,
+        "seated": true
+      },
+      "position_error_m": 0.007064664726961184,
+      "orientation_error_rad": 0.004809600613874913,
+      "orientation_error_deg": 0.2755698163185624,
+      "upright_error_rad": 0.0,
+      "height_error_m": 0.00021551084043058832,
+      "target_height_m": 0.8190000000000001,
+      "footprint_inside_target": true,
+      "object_movement_after_release_m": 0.0,
+      "object_yaw_movement_after_release_rad": 0.0,
+      "maximum_linear_velocity_m_s": 2.1485313819145884e-14,
+      "maximum_angular_velocity_rad_s": 1.2005331642553982e-15,
+      "stability_sample_count": 12,
+      "stability_duration_s": 1.0999999999999943,
+      "grasp_attempt_count": 1,
+      "successful_grasp_count": 1,
+      "failed_grasp_count": 0,
+      "retries": 0,
+      "recovered_after_failed_grasp": false,
+      "successful_recovery": false,
+      "controller_exceptions": [],
+      "control_steps": 1460,
+      "sim_time_s": 73.0,
+      "attempts": [
+        {
+          "start_step": 123,
+          "initial_height_m": 0.8147844891595659,
+          "maximum_lift_m": 0.1628270918341369,
+          "any_contact": true,
+          "verified_lift": true,
+          "end_step": 211
+        }
+      ]
+    },
+    "source_sha256": {
+      "episode.json": "bc135c8f92fe63ab0cd2ccdda112abba61105d5ec93cc606614d724519b10085",
+      "predictions.npz": "0ddb3f84a10252f126684e5162c8d736d5f424c095f2248ee6333d21e3545cbb",
+      "controller_trace.jsonl.gz": "b2ebc0fc82a10b45f375322a6a4d68794c9f70da113e7c4d54e6187a52555723",
+      "policy_io.npz": "f9dc6de6d8b93f097cab7eca9184cb11eefed593f3e13f762a8485dec325f91d"
+    }
+  },
+  {
+    "id": "AA-912171",
+    "cell": "AA",
+    "seed": 912171,
+    "directory": "/var/tmp/typhon-hier01-start-20261015/episodes/AA-912171",
+    "requested_success": false,
+    "position_error_mm": 266.21190389892416,
+    "yaw_error_deg": 1.4281506158481616,
+    "criteria": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "noise": {
+      "passed": true,
+      "seed": 912171,
+      "reference": "/var/tmp/typhon-hier01-start-20261015/episodes/REF-912171",
+      "query_noise_packets": 48,
+      "actual_rng_and_noise_arrays_exact": 144
+    },
+    "queries": 48,
+    "wall_seconds": 16.841438629984623,
+    "minimum_eef_object_distance_mm": 447.50172763201454,
+    "maximum_lift_above_initial_mm": 0.0,
+    "supported_lift_10mm_bilateral_steps": 0,
+    "longest_supported_lift_s": 0.0,
+    "supported_lift_10mm_3steps": false,
+    "legacy_height_only_70mm": false,
+    "horizontal_transport_while_supported_mm": 0.0,
+    "object_path_m": 0.0,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "first_chunk_min_raw_target_distance_to_current_brick_mm": 400.04105262971757,
+    "min_raw_target_distance_to_current_brick_mm": 400.04105262971757,
+    "first_chunk_last_raw_target_xyz": [
+      -0.2120755910873413,
+      -0.1894894540309906,
+      1.0133495330810547
+    ],
+    "first_chunk_start_to_last_target_displacement_mm": [
+      37.989558570235005,
+      60.39004555231059,
+      -66.56443514134858
+    ],
+    "minimum_executed_eef_distance_to_current_brick_mm": 447.50172763201454,
+    "first_chunk_min_actual_eef_distance_mm": 454.88665679466203,
+    "raw_gripper_probability_range": [
+      0.00024324559490196407,
+      0.0016342346789315343
+    ],
+    "raw_close_proposals": 0,
+    "first_raw_close": null,
+    "first_executed_close_index": null,
+    "contact_steps": 0,
+    "bilateral_steps": 0,
+    "max_lift_mm": 0.0,
+    "max_object_displacement_mm": 0.0,
+    "executed_eef_path_length_mm": 1834.4430061880669,
+    "min_raw_target_xy_to_displayed_marker_mm": 344.1638248398656,
+    "final_brick_distance_to_displayed_marker_mm": 4.552749095038912,
+    "final_brick_distance_to_loading_fixture_mm": 266.21190389892416,
+    "initial_truth": {
+      "object_position_m": [
+        0.1273654519351832,
+        -0.11610999209965896,
+        0.8147844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999223382540774,
+        4.663212600250298e-17,
+        -3.475584665818913e-18,
+        0.0124626425969174
+      ],
+      "object_yaw_rad": 0.02492593046093513,
+      "object_linear_velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "eef_position_m": [
+        -0.2500651496575763,
+        -0.2498794995833012,
+        1.0799139682224033
+      ],
+      "gripper_joint_position_m": [
+        0.03959546089013839,
+        -0.03976879892039342
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 40,
+      "sim_time_s": 2.0
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.1273654519351832,
+        -0.11610999209965896,
+        0.8147844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999223382540774,
+        3.54519227381436e-17,
+        -4.39248000021732e-18,
+        0.0124626425969174
+      ],
+      "object_yaw_rad": 0.02492593046093513,
+      "object_linear_velocity_m_s": [
+        2.9693620470039943e-19,
+        1.3934163974657005e-17,
+        -2.1721513476790835e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.1507708806069383e-15,
+        -2.6707636858196504e-16,
+        -7.614424526739853e-32
+      ],
+      "eef_position_m": [
+        -0.24458363223177038,
+        -0.2460095785069467,
+        1.0716382731672773
+      ],
+      "gripper_joint_position_m": [
+        0.04000012611000438,
+        -0.03999695777682099
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1500,
+      "sim_time_s": 75.0
+    },
+    "evaluation": {
+      "task": "loading",
+      "success": false,
+      "criteria": {
+        "position": false,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": false,
+        "placement_height": false,
+        "released": true,
+        "stable": true,
+        "seated": false
+      },
+      "position_error_m": 0.2662119038989242,
+      "orientation_error_rad": 0.02492593046093513,
+      "orientation_error_deg": 1.4281506158481616,
+      "upright_error_rad": 0.0,
+      "height_error_m": 0.004215510840430592,
+      "target_height_m": 0.8190000000000001,
+      "footprint_inside_target": false,
+      "object_movement_after_release_m": 0.0,
+      "object_yaw_movement_after_release_rad": 0.0,
+      "maximum_linear_velocity_m_s": 2.1727070846772128e-14,
+      "maximum_angular_velocity_rad_s": 1.2232042503530991e-15,
+      "stability_sample_count": 12,
+      "stability_duration_s": 1.0999999999999943,
+      "grasp_attempt_count": 0,
+      "successful_grasp_count": 0,
+      "failed_grasp_count": 0,
+      "retries": 0,
+      "recovered_after_failed_grasp": false,
+      "successful_recovery": false,
+      "controller_exceptions": [],
+      "control_steps": 1460,
+      "sim_time_s": 73.0,
+      "attempts": []
+    },
+    "source_sha256": {
+      "episode.json": "cc6cdac316956e9f1daf5c79c3f510e9331e7ac8674d12f4a62e851d6488fa9d",
+      "predictions.npz": "90d8709bd2300e453ac30a455bac169a4dbb1a3e6eba2d1c7bbd88c8d661c7b7",
+      "controller_trace.jsonl.gz": "07b69823534a4e48a8642c26c456c486dcffcdfd8c27d4c088f9228294693d63",
+      "policy_io.npz": "75eddc98c369973b22691563a9f960b4dc4cf7911d63e87d8f2a28757104bac3"
+    }
+  },
+  {
+    "id": "AA-912172",
+    "cell": "AA",
+    "seed": 912172,
+    "directory": "/var/tmp/typhon-hier01-start-20261015/episodes/AA-912172",
+    "requested_success": false,
+    "position_error_mm": 266.21190389892416,
+    "yaw_error_deg": 1.4281506158481616,
+    "criteria": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "noise": {
+      "passed": true,
+      "seed": 912172,
+      "reference": "/var/tmp/typhon-hier01-start-20261015/episodes/REF-912172",
+      "query_noise_packets": 48,
+      "actual_rng_and_noise_arrays_exact": 144
+    },
+    "queries": 48,
+    "wall_seconds": 17.34291167301126,
+    "minimum_eef_object_distance_mm": 447.365314193437,
+    "maximum_lift_above_initial_mm": 0.0,
+    "supported_lift_10mm_bilateral_steps": 0,
+    "longest_supported_lift_s": 0.0,
+    "supported_lift_10mm_3steps": false,
+    "legacy_height_only_70mm": false,
+    "horizontal_transport_while_supported_mm": 0.0,
+    "object_path_m": 0.0,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "first_chunk_min_raw_target_distance_to_current_brick_mm": 399.5140411464736,
+    "min_raw_target_distance_to_current_brick_mm": 399.5140411464736,
+    "first_chunk_last_raw_target_xyz": [
+      -0.2120755910873413,
+      -0.1865597665309906,
+      1.0133495330810547
+    ],
+    "first_chunk_start_to_last_target_displacement_mm": [
+      37.989558570235005,
+      63.31973305231059,
+      -66.56443514134858
+    ],
+    "minimum_executed_eef_distance_to_current_brick_mm": 447.365314193437,
+    "first_chunk_min_actual_eef_distance_mm": 454.7180056035674,
+    "raw_gripper_probability_range": [
+      0.00024324559490196407,
+      0.0010557525092735887
+    ],
+    "raw_close_proposals": 0,
+    "first_raw_close": null,
+    "first_executed_close_index": null,
+    "contact_steps": 0,
+    "bilateral_steps": 0,
+    "max_lift_mm": 0.0,
+    "max_object_displacement_mm": 0.0,
+    "executed_eef_path_length_mm": 1753.8818189296076,
+    "min_raw_target_xy_to_displayed_marker_mm": 343.58427878402773,
+    "final_brick_distance_to_displayed_marker_mm": 4.552749095038912,
+    "final_brick_distance_to_loading_fixture_mm": 266.21190389892416,
+    "initial_truth": {
+      "object_position_m": [
+        0.1273654519351832,
+        -0.11610999209965896,
+        0.8147844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999223382540774,
+        4.663212600250298e-17,
+        -3.475584665818913e-18,
+        0.0124626425969174
+      ],
+      "object_yaw_rad": 0.02492593046093513,
+      "object_linear_velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "eef_position_m": [
+        -0.2500651496575763,
+        -0.2498794995833012,
+        1.0799139682224033
+      ],
+      "gripper_joint_position_m": [
+        0.03959546089013839,
+        -0.03976879892039342
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 40,
+      "sim_time_s": 2.0
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.1273654519351832,
+        -0.11610999209965896,
+        0.8147844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999223382540774,
+        4.0313079272185357e-17,
+        -5.5495712526470465e-18,
+        0.0124626425969174
+      ],
+      "object_yaw_rad": 0.02492593046093513,
+      "object_linear_velocity_m_s": [
+        8.317173739238986e-19,
+        1.4963964482630107e-17,
+        -2.1715962361667702e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.2516410200443322e-15,
+        -2.7697644097133416e-16,
+        6.273793471841307e-34
+      ],
+      "eef_position_m": [
+        -0.24393712176036117,
+        -0.24583240394356626,
+        1.0749841987933544
+      ],
+      "gripper_joint_position_m": [
+        0.04000012931788172,
+        -0.03999690128710394
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1500,
+      "sim_time_s": 75.0
+    },
+    "evaluation": {
+      "task": "loading",
+      "success": false,
+      "criteria": {
+        "position": false,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": false,
+        "placement_height": false,
+        "released": true,
+        "stable": true,
+        "seated": false
+      },
+      "position_error_m": 0.2662119038989242,
+      "orientation_error_rad": 0.02492593046093513,
+      "orientation_error_deg": 1.4281506158481616,
+      "upright_error_rad": 0.0,
+      "height_error_m": 0.004215510840430592,
+      "target_height_m": 0.8190000000000001,
+      "footprint_inside_target": false,
+      "object_movement_after_release_m": 0.0,
+      "object_yaw_movement_after_release_rad": 0.0,
+      "maximum_linear_velocity_m_s": 2.172984875728369e-14,
+      "maximum_angular_velocity_rad_s": 1.2819208992409647e-15,
+      "stability_sample_count": 12,
+      "stability_duration_s": 1.0999999999999943,
+      "grasp_attempt_count": 0,
+      "successful_grasp_count": 0,
+      "failed_grasp_count": 0,
+      "retries": 0,
+      "recovered_after_failed_grasp": false,
+      "successful_recovery": false,
+      "controller_exceptions": [],
+      "control_steps": 1460,
+      "sim_time_s": 73.0,
+      "attempts": []
+    },
+    "source_sha256": {
+      "episode.json": "20c130fc432a61fa28467af2e38fd5b4bb68dcc69c6d54e91ff59be0ff22bdeb",
+      "predictions.npz": "9e7ef9d7c732d78070817e8d8634c4cf3302c91efb1931249a60376af7f95e16",
+      "controller_trace.jsonl.gz": "762477c14c9eb518e9a1f99c2981b40f7363b7a0491bc5b6e930dd43350a14ef",
+      "policy_io.npz": "771064c974387c98f5021f561553b5e9de81954fc2e4c08610486423353d2356"
+    }
+  },
+  {
+    "id": "AB-912171",
+    "cell": "AB",
+    "seed": 912171,
+    "directory": "/var/tmp/typhon-hier01-start-20261015/episodes/AB-912171",
+    "requested_success": false,
+    "position_error_mm": 266.21190389892416,
+    "yaw_error_deg": 1.4281506158481616,
+    "criteria": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "noise": {
+      "passed": true,
+      "seed": 912171,
+      "reference": "/var/tmp/typhon-hier01-start-20261015/episodes/REF-912171",
+      "query_noise_packets": 48,
+      "actual_rng_and_noise_arrays_exact": 144
+    },
+    "queries": 48,
+    "wall_seconds": 17.000401425990276,
+    "minimum_eef_object_distance_mm": 331.39650318693646,
+    "maximum_lift_above_initial_mm": 0.0,
+    "supported_lift_10mm_bilateral_steps": 0,
+    "longest_supported_lift_s": 0.0,
+    "supported_lift_10mm_3steps": false,
+    "legacy_height_only_70mm": false,
+    "horizontal_transport_while_supported_mm": 0.0,
+    "object_path_m": 0.0,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "first_chunk_min_raw_target_distance_to_current_brick_mm": 374.1198554726754,
+    "min_raw_target_distance_to_current_brick_mm": 330.47376432527585,
+    "first_chunk_last_raw_target_xyz": [
+      -0.2228177785873413,
+      -0.1572628915309906,
+      0.9664744734764099
+    ],
+    "first_chunk_start_to_last_target_displacement_mm": [
+      27.247371070235005,
+      92.6166080523106,
+      -113.43949474599336
+    ],
+    "minimum_executed_eef_distance_to_current_brick_mm": 331.39650318693646,
+    "first_chunk_min_actual_eef_distance_mm": 421.20765154952466,
+    "raw_gripper_probability_range": [
+      0.00014755003212485462,
+      0.9461553692817688
+    ],
+    "raw_close_proposals": 17,
+    "first_raw_close": {
+      "query": 14,
+      "action": 26,
+      "flat_index": 446,
+      "probability": 0.5275833010673523
+    },
+    "first_executed_close_index": 446,
+    "contact_steps": 0,
+    "bilateral_steps": 0,
+    "max_lift_mm": 0.0,
+    "max_object_displacement_mm": 0.0,
+    "executed_eef_path_length_mm": 6503.257769262182,
+    "min_raw_target_xy_to_displayed_marker_mm": 344.34902928800136,
+    "final_brick_distance_to_displayed_marker_mm": 123.91258782062549,
+    "final_brick_distance_to_loading_fixture_mm": 266.21190389892416,
+    "initial_truth": {
+      "object_position_m": [
+        0.1273654519351832,
+        -0.11610999209965896,
+        0.8147844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999223382540774,
+        4.663212600250298e-17,
+        -3.475584665818913e-18,
+        0.0124626425969174
+      ],
+      "object_yaw_rad": 0.02492593046093513,
+      "object_linear_velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "eef_position_m": [
+        -0.2500651496575763,
+        -0.2498794995833012,
+        1.0799139682224033
+      ],
+      "gripper_joint_position_m": [
+        0.03959546089013839,
+        -0.03976879892039342
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 40,
+      "sim_time_s": 2.0
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.1273654519351832,
+        -0.11610999209965896,
+        0.8147844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999223382540774,
+        4.2218776718636457e-17,
+        1.8915515938410303e-18,
+        0.0124626425969174
+      ],
+      "object_yaw_rad": 0.02492593046093513,
+      "object_linear_velocity_m_s": [
+        -3.9916213231699185e-19,
+        1.5381827537950687e-17,
+        -2.1718737919229376e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -9.463019099730983e-16,
+        1.2964117438988596e-16,
+        2.9687343193865147e-31
+      ],
+      "eef_position_m": [
+        -0.17117676971409385,
+        0.05229827222354133,
+        0.9036423535832279
+      ],
+      "gripper_joint_position_m": [
+        0.040000101085093734,
+        -0.03999615479306908
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1500,
+      "sim_time_s": 75.0
+    },
+    "evaluation": {
+      "task": "loading",
+      "success": false,
+      "criteria": {
+        "position": false,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": false,
+        "placement_height": false,
+        "released": true,
+        "stable": true,
+        "seated": false
+      },
+      "position_error_m": 0.2662119038989242,
+      "orientation_error_rad": 0.02492593046093513,
+      "orientation_error_deg": 1.4281506158481616,
+      "upright_error_rad": 0.0,
+      "height_error_m": 0.004215510840430592,
+      "target_height_m": 0.8190000000000001,
+      "footprint_inside_target": false,
+      "object_movement_after_release_m": 0.0,
+      "object_yaw_movement_after_release_rad": 0.0,
+      "maximum_linear_velocity_m_s": 2.1724295263061157e-14,
+      "maximum_angular_velocity_rad_s": 1.268180944973636e-15,
+      "stability_sample_count": 12,
+      "stability_duration_s": 1.0999999999999943,
+      "grasp_attempt_count": 3,
+      "successful_grasp_count": 0,
+      "failed_grasp_count": 3,
+      "retries": 2,
+      "recovered_after_failed_grasp": false,
+      "successful_recovery": false,
+      "controller_exceptions": [],
+      "control_steps": 1460,
+      "sim_time_s": 73.0,
+      "attempts": [
+        {
+          "start_step": 486,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 491
+        },
+        {
+          "start_step": 749,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 761
+        },
+        {
+          "start_step": 1238,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1241
+        }
+      ]
+    },
+    "source_sha256": {
+      "episode.json": "b46c7f04cb42d6c1a204437d06f0ed55c0a9f4cff919fe96588ef25f1ae0b5d7",
+      "predictions.npz": "2ee5e11be32b4df6bfcdac5cee3f65eada24322c5c9f4594bc16dbeb6b693c3e",
+      "controller_trace.jsonl.gz": "61384afac77823f228313a155fb649266318f892d825ce5be7574f9f129034dd",
+      "policy_io.npz": "711256e194435ba25c85dd909f3c3c216d5abc13a0d8457253618ca13fe44047"
+    }
+  },
+  {
+    "id": "AB-912172",
+    "cell": "AB",
+    "seed": 912172,
+    "directory": "/var/tmp/typhon-hier01-start-20261015/episodes/AB-912172",
+    "requested_success": false,
+    "position_error_mm": 266.21190389892416,
+    "yaw_error_deg": 1.4281506158481616,
+    "criteria": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "noise": {
+      "passed": true,
+      "seed": 912172,
+      "reference": "/var/tmp/typhon-hier01-start-20261015/episodes/REF-912172",
+      "query_noise_packets": 48,
+      "actual_rng_and_noise_arrays_exact": 144
+    },
+    "queries": 48,
+    "wall_seconds": 17.518050292972475,
+    "minimum_eef_object_distance_mm": 330.6672554648359,
+    "maximum_lift_above_initial_mm": 0.0,
+    "supported_lift_10mm_bilateral_steps": 0,
+    "longest_supported_lift_s": 0.0,
+    "supported_lift_10mm_3steps": false,
+    "legacy_height_only_70mm": false,
+    "horizontal_transport_while_supported_mm": 0.0,
+    "object_path_m": 0.0,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "first_chunk_min_raw_target_distance_to_current_brick_mm": 387.5750768741065,
+    "min_raw_target_distance_to_current_brick_mm": 328.9607800643587,
+    "first_chunk_last_raw_target_xyz": [
+      -0.2325834035873413,
+      -0.1484738290309906,
+      0.9703807234764099
+    ],
+    "first_chunk_start_to_last_target_displacement_mm": [
+      17.481746070235005,
+      101.4056705523106,
+      -109.53324474599336
+    ],
+    "minimum_executed_eef_distance_to_current_brick_mm": 330.6672554648359,
+    "first_chunk_min_actual_eef_distance_mm": 425.7425113914978,
+    "raw_gripper_probability_range": [
+      0.00013021471386309713,
+      0.9634751081466675
+    ],
+    "raw_close_proposals": 27,
+    "first_raw_close": {
+      "query": 23,
+      "action": 27,
+      "flat_index": 717,
+      "probability": 0.6259174942970276
+    },
+    "first_executed_close_index": 717,
+    "contact_steps": 0,
+    "bilateral_steps": 0,
+    "max_lift_mm": 0.0,
+    "max_object_displacement_mm": 0.0,
+    "executed_eef_path_length_mm": 7038.538144315238,
+    "min_raw_target_xy_to_displayed_marker_mm": 358.5600682747979,
+    "final_brick_distance_to_displayed_marker_mm": 123.91258782062549,
+    "final_brick_distance_to_loading_fixture_mm": 266.21190389892416,
+    "initial_truth": {
+      "object_position_m": [
+        0.1273654519351832,
+        -0.11610999209965896,
+        0.8147844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999223382540774,
+        4.663212600250298e-17,
+        -3.475584665818913e-18,
+        0.0124626425969174
+      ],
+      "object_yaw_rad": 0.02492593046093513,
+      "object_linear_velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "eef_position_m": [
+        -0.2500651496575763,
+        -0.2498794995833012,
+        1.0799139682224033
+      ],
+      "gripper_joint_position_m": [
+        0.03959546089013839,
+        -0.03976879892039342
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 40,
+      "sim_time_s": 2.0
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.1273654519351832,
+        -0.11610999209965896,
+        0.8147844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999223382540774,
+        3.8901569611074005e-17,
+        -2.4891596436043713e-18,
+        0.0124626425969174
+      ],
+      "object_yaw_rad": 0.02492593046093513,
+      "object_linear_velocity_m_s": [
+        -9.70862429717868e-20,
+        1.2837498419332328e-17,
+        -2.1710411246544776e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -9.329743644641692e-16,
+        -1.0284630295802728e-16,
+        1.6934782794500197e-31
+      ],
+      "eef_position_m": [
+        -0.16837878339875328,
+        0.05111365751762037,
+        0.9205476122512519
+      ],
+      "gripper_joint_position_m": [
+        0.03998520366227012,
+        -0.03997932118834764
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1500,
+      "sim_time_s": 75.0
+    },
+    "evaluation": {
+      "task": "loading",
+      "success": false,
+      "criteria": {
+        "position": false,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": false,
+        "placement_height": false,
+        "released": true,
+        "stable": true,
+        "seated": false
+      },
+      "position_error_m": 0.2662119038989242,
+      "orientation_error_rad": 0.02492593046093513,
+      "orientation_error_deg": 1.4281506158481616,
+      "upright_error_rad": 0.0,
+      "height_error_m": 0.004215510840430592,
+      "target_height_m": 0.8190000000000001,
+      "footprint_inside_target": false,
+      "object_movement_after_release_m": 0.0,
+      "object_yaw_movement_after_release_rad": 0.0,
+      "maximum_linear_velocity_m_s": 2.1727070937103678e-14,
+      "maximum_angular_velocity_rad_s": 1.555476783747186e-15,
+      "stability_sample_count": 12,
+      "stability_duration_s": 1.0999999999999943,
+      "grasp_attempt_count": 5,
+      "successful_grasp_count": 0,
+      "failed_grasp_count": 5,
+      "retries": 4,
+      "recovered_after_failed_grasp": false,
+      "successful_recovery": false,
+      "controller_exceptions": [],
+      "control_steps": 1460,
+      "sim_time_s": 73.0,
+      "attempts": [
+        {
+          "start_step": 757,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 761
+        },
+        {
+          "start_step": 1028,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1031
+        },
+        {
+          "start_step": 1081,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1091
+        },
+        {
+          "start_step": 1208,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1211
+        },
+        {
+          "start_step": 1379,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1391
+        }
+      ]
+    },
+    "source_sha256": {
+      "episode.json": "156d122f6610220e5dbefc96fc4ccb83e7ec839554dd8f6c75af0374d428b37e",
+      "predictions.npz": "a526260f75d6c40d06ecd775c1550ad7caabed8fe1241cdec6181f9639b2742a",
+      "controller_trace.jsonl.gz": "3b800d79a9108868c43c227d4652bb93caa097b558cf4a4ab8050f4044bbfcb8",
+      "policy_io.npz": "8b69a88102648f99d3aa86750f26cb30ce50653b64656bf9060a28e16011f6a2"
+    }
+  },
+  {
+    "id": "BA-912171",
+    "cell": "BA",
+    "seed": 912171,
+    "directory": "/var/tmp/typhon-hier01-start-20261015/episodes/BA-912171",
+    "requested_success": false,
+    "position_error_mm": 386.18023755936576,
+    "yaw_error_deg": 1.4281506158481616,
+    "criteria": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": false,
+      "stable": false,
+      "seated": false
+    },
+    "noise": {
+      "passed": true,
+      "seed": 912171,
+      "reference": "/var/tmp/typhon-hier01-start-20261015/episodes/REF-912171",
+      "query_noise_packets": 48,
+      "actual_rng_and_noise_arrays_exact": 144
+    },
+    "queries": 48,
+    "wall_seconds": 17.19809325298411,
+    "minimum_eef_object_distance_mm": 316.60294588323745,
+    "maximum_lift_above_initial_mm": 0.0,
+    "supported_lift_10mm_bilateral_steps": 0,
+    "longest_supported_lift_s": 0.0,
+    "supported_lift_10mm_3steps": false,
+    "legacy_height_only_70mm": false,
+    "horizontal_transport_while_supported_mm": 0.0,
+    "object_path_m": 0.0,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": false,
+      "stable": false,
+      "seated": false
+    },
+    "first_chunk_min_raw_target_distance_to_current_brick_mm": 367.7910069627186,
+    "min_raw_target_distance_to_current_brick_mm": 316.0896624019429,
+    "first_chunk_last_raw_target_xyz": [
+      -0.1964505910873413,
+      -0.1308957040309906,
+      0.9586619734764099
+    ],
+    "first_chunk_start_to_last_target_displacement_mm": [
+      53.614558570235005,
+      118.9837955523106,
+      -121.25199474599336
+    ],
+    "minimum_executed_eef_distance_to_current_brick_mm": 316.60294588323745,
+    "first_chunk_min_actual_eef_distance_mm": 403.11648603798255,
+    "raw_gripper_probability_range": [
+      0.0002933954820036888,
+      0.9995920062065125
+    ],
+    "raw_close_proposals": 227,
+    "first_raw_close": {
+      "query": 2,
+      "action": 29,
+      "flat_index": 89,
+      "probability": 0.5370647311210632
+    },
+    "first_executed_close_index": 89,
+    "contact_steps": 0,
+    "bilateral_steps": 0,
+    "max_lift_mm": 0.0,
+    "max_object_displacement_mm": 0.0,
+    "executed_eef_path_length_mm": 10165.96924271938,
+    "min_raw_target_xy_to_displayed_marker_mm": 212.72323024821793,
+    "final_brick_distance_to_displayed_marker_mm": 116.13408469627048,
+    "final_brick_distance_to_loading_fixture_mm": 386.1802375593657,
+    "initial_truth": {
+      "object_position_m": [
+        0.1273654519351832,
+        -0.23610999209965894,
+        0.8147844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999223382540774,
+        4.663212600250298e-17,
+        -3.475584665818913e-18,
+        0.0124626425969174
+      ],
+      "object_yaw_rad": 0.02492593046093513,
+      "object_linear_velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "eef_position_m": [
+        -0.2500651496575763,
+        -0.2498794995833012,
+        1.0799139682224033
+      ],
+      "gripper_joint_position_m": [
+        0.03959546089013839,
+        -0.03976879892039342
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 40,
+      "sim_time_s": 2.0
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.1273654519351832,
+        -0.23610999209965894,
+        0.8147844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999223382540774,
+        3.200322175116368e-17,
+        -9.140167897802369e-19,
+        0.0124626425969174
+      ],
+      "object_yaw_rad": 0.02492593046093513,
+      "object_linear_velocity_m_s": [
+        -6.05977992975569e-19,
+        1.2485203440536489e-17,
+        -2.170763568898341e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -7.552617281619693e-16,
+        -1.6828438261772844e-16,
+        1.614830757755905e-31
+      ],
+      "eef_position_m": [
+        -0.22176796993840084,
+        -0.03892991853254127,
+        0.899119487761887
+      ],
+      "gripper_joint_position_m": [
+        0.000675151580851327,
+        -0.0006755949349359873
+      ],
+      "gripper_open": false,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1500,
+      "sim_time_s": 75.0
+    },
+    "evaluation": {
+      "task": "loading",
+      "success": false,
+      "criteria": {
+        "position": false,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": false,
+        "placement_height": false,
+        "released": false,
+        "stable": false,
+        "seated": false
+      },
+      "position_error_m": 0.38618023755936576,
+      "orientation_error_rad": 0.02492593046093513,
+      "orientation_error_deg": 1.4281506158481616,
+      "upright_error_rad": 0.0,
+      "height_error_m": 0.004215510840430592,
+      "target_height_m": 0.8190000000000001,
+      "footprint_inside_target": false,
+      "object_movement_after_release_m": 0.0,
+      "object_yaw_movement_after_release_rad": 0.0,
+      "maximum_linear_velocity_m_s": 2.1721515911605977e-14,
+      "maximum_angular_velocity_rad_s": 1.1802060100384822e-15,
+      "stability_sample_count": 12,
+      "stability_duration_s": 1.0999999999999943,
+      "grasp_attempt_count": 24,
+      "successful_grasp_count": 0,
+      "failed_grasp_count": 24,
+      "retries": 23,
+      "recovered_after_failed_grasp": false,
+      "successful_recovery": false,
+      "controller_exceptions": [],
+      "control_steps": 1460,
+      "sim_time_s": 73.0,
+      "attempts": [
+        {
+          "start_step": 129,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 131
+        },
+        {
+          "start_step": 239,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 251
+        },
+        {
+          "start_step": 339,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 341
+        },
+        {
+          "start_step": 369,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 371
+        },
+        {
+          "start_step": 456,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 461
+        },
+        {
+          "start_step": 484,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 491
+        },
+        {
+          "start_step": 493,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 581
+        },
+        {
+          "start_step": 639,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 641
+        },
+        {
+          "start_step": 729,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 731
+        },
+        {
+          "start_step": 750,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 761
+        },
+        {
+          "start_step": 787,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 791
+        },
+        {
+          "start_step": 903,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 911
+        },
+        {
+          "start_step": 913,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 919
+        },
+        {
+          "start_step": 919,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 941
+        },
+        {
+          "start_step": 1035,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1039
+        },
+        {
+          "start_step": 1039,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1042
+        },
+        {
+          "start_step": 1058,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1061
+        },
+        {
+          "start_step": 1086,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1091
+        },
+        {
+          "start_step": 1112,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1121
+        },
+        {
+          "start_step": 1143,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1151
+        },
+        {
+          "start_step": 1263,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1271
+        },
+        {
+          "start_step": 1273,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1301
+        },
+        {
+          "start_step": 1359,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1361
+        },
+        {
+          "start_step": 1473,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1500
+        }
+      ]
+    },
+    "source_sha256": {
+      "episode.json": "839ef706e1e57c7729a7b471ea1458ebee8025e2acf943b3bcc367408df6f7d2",
+      "predictions.npz": "553c4d001ad6cd231f93840a70612f18dc9ca9211325b3104c1f092ae32b8a0b",
+      "controller_trace.jsonl.gz": "e1650e7e5fb3c81a8e0d06823e880f5bb7c4543ad013ebc175805b3fb8860c9c",
+      "policy_io.npz": "63f9afac849238cbda3c75a3e4dff1784c739b81b38fe15224af7667420971df"
+    }
+  },
+  {
+    "id": "BA-912172",
+    "cell": "BA",
+    "seed": 912172,
+    "directory": "/var/tmp/typhon-hier01-start-20261015/episodes/BA-912172",
+    "requested_success": false,
+    "position_error_mm": 386.18023755936576,
+    "yaw_error_deg": 1.4281506158481616,
+    "criteria": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "noise": {
+      "passed": true,
+      "seed": 912172,
+      "reference": "/var/tmp/typhon-hier01-start-20261015/episodes/REF-912172",
+      "query_noise_packets": 48,
+      "actual_rng_and_noise_arrays_exact": 144
+    },
+    "queries": 48,
+    "wall_seconds": 17.004377256002044,
+    "minimum_eef_object_distance_mm": 316.511611314817,
+    "maximum_lift_above_initial_mm": 0.0,
+    "supported_lift_10mm_bilateral_steps": 0,
+    "longest_supported_lift_s": 0.0,
+    "supported_lift_10mm_3steps": false,
+    "legacy_height_only_70mm": false,
+    "horizontal_transport_while_supported_mm": 0.0,
+    "object_path_m": 0.0,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "first_chunk_min_raw_target_distance_to_current_brick_mm": 370.2265912296275,
+    "min_raw_target_distance_to_current_brick_mm": 307.2221975014146,
+    "first_chunk_last_raw_target_xyz": [
+      -0.1974271535873413,
+      -0.1299191415309906,
+      0.9586619734764099
+    ],
+    "first_chunk_start_to_last_target_displacement_mm": [
+      52.637996070235005,
+      119.9603580523106,
+      -121.25199474599336
+    ],
+    "minimum_executed_eef_distance_to_current_brick_mm": 316.511611314817,
+    "first_chunk_min_actual_eef_distance_mm": 404.5297951652352,
+    "raw_gripper_probability_range": [
+      0.00024324559490196407,
+      0.9994595646858215
+    ],
+    "raw_close_proposals": 371,
+    "first_raw_close": {
+      "query": 2,
+      "action": 27,
+      "flat_index": 87,
+      "probability": 0.6652140021324158
+    },
+    "first_executed_close_index": 87,
+    "contact_steps": 0,
+    "bilateral_steps": 0,
+    "max_lift_mm": 0.0,
+    "max_object_displacement_mm": 0.0,
+    "executed_eef_path_length_mm": 10447.076531199282,
+    "min_raw_target_xy_to_displayed_marker_mm": 207.99481104912465,
+    "final_brick_distance_to_displayed_marker_mm": 116.13408469627048,
+    "final_brick_distance_to_loading_fixture_mm": 386.1802375593657,
+    "initial_truth": {
+      "object_position_m": [
+        0.1273654519351832,
+        -0.23610999209965894,
+        0.8147844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999223382540774,
+        4.663212600250298e-17,
+        -3.475584665818913e-18,
+        0.0124626425969174
+      ],
+      "object_yaw_rad": 0.02492593046093513,
+      "object_linear_velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "eef_position_m": [
+        -0.2500651496575763,
+        -0.2498794995833012,
+        1.0799139682224033
+      ],
+      "gripper_joint_position_m": [
+        0.03959546089013839,
+        -0.03976879892039342
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 40,
+      "sim_time_s": 2.0
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.1273654519351832,
+        -0.23610999209965894,
+        0.8147844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999223382540774,
+        4.173591942206765e-17,
+        2.3978713399686833e-18,
+        0.0124626425969174
+      ],
+      "object_yaw_rad": 0.02492593046093513,
+      "object_linear_velocity_m_s": [
+        -5.797516150174689e-19,
+        1.5736545020053097e-17,
+        -2.1724289034352796e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -6.945952789345794e-16,
+        1.3811822666451454e-16,
+        2.1452823924428554e-31
+      ],
+      "eef_position_m": [
+        -0.20246290866871583,
+        0.011546412032835289,
+        0.887551986407709
+      ],
+      "gripper_joint_position_m": [
+        0.039763700997746,
+        -0.039746554093601755
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1500,
+      "sim_time_s": 75.0
+    },
+    "evaluation": {
+      "task": "loading",
+      "success": false,
+      "criteria": {
+        "position": false,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": false,
+        "placement_height": false,
+        "released": true,
+        "stable": true,
+        "seated": false
+      },
+      "position_error_m": 0.38618023755936576,
+      "orientation_error_rad": 0.02492593046093513,
+      "orientation_error_deg": 1.4281506158481616,
+      "upright_error_rad": 0.0,
+      "height_error_m": 0.004215510840430592,
+      "target_height_m": 0.8190000000000001,
+      "footprint_inside_target": false,
+      "object_movement_after_release_m": 0.0,
+      "object_yaw_movement_after_release_rad": 0.0,
+      "maximum_linear_velocity_m_s": 2.1724294741672566e-14,
+      "maximum_angular_velocity_rad_s": 1.301555519357933e-15,
+      "stability_sample_count": 12,
+      "stability_duration_s": 1.0999999999999943,
+      "grasp_attempt_count": 28,
+      "successful_grasp_count": 0,
+      "failed_grasp_count": 28,
+      "retries": 27,
+      "recovered_after_failed_grasp": false,
+      "successful_recovery": false,
+      "controller_exceptions": [],
+      "control_steps": 1460,
+      "sim_time_s": 73.0,
+      "attempts": [
+        {
+          "start_step": 127,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 131
+        },
+        {
+          "start_step": 183,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 191
+        },
+        {
+          "start_step": 193,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 297
+        },
+        {
+          "start_step": 306,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 311
+        },
+        {
+          "start_step": 369,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 371
+        },
+        {
+          "start_step": 373,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 378
+        },
+        {
+          "start_step": 379,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 401
+        },
+        {
+          "start_step": 457,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 461
+        },
+        {
+          "start_step": 637,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 641
+        },
+        {
+          "start_step": 643,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 649
+        },
+        {
+          "start_step": 651,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 671
+        },
+        {
+          "start_step": 783,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 791
+        },
+        {
+          "start_step": 793,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 821
+        },
+        {
+          "start_step": 931,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 941
+        },
+        {
+          "start_step": 962,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 971
+        },
+        {
+          "start_step": 1049,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1061
+        },
+        {
+          "start_step": 1087,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1091
+        },
+        {
+          "start_step": 1116,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1121
+        },
+        {
+          "start_step": 1143,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1151
+        },
+        {
+          "start_step": 1166,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1181
+        },
+        {
+          "start_step": 1184,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1204
+        },
+        {
+          "start_step": 1207,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1241
+        },
+        {
+          "start_step": 1280,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1289
+        },
+        {
+          "start_step": 1289,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1301
+        },
+        {
+          "start_step": 1307,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1312
+        },
+        {
+          "start_step": 1328,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1331
+        },
+        {
+          "start_step": 1416,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1421
+        },
+        {
+          "start_step": 1423,
+          "initial_height_m": 0.8147844891595695,
+          "maximum_lift_m": 0.0,
+          "any_contact": false,
+          "verified_lift": false,
+          "end_step": 1451
+        }
+      ]
+    },
+    "source_sha256": {
+      "episode.json": "865b2fc6a0d9531e000350ef4bc7fdf188f9137c73a689c6e963c278d8b042a8",
+      "predictions.npz": "867877fba5695470912b0a125760c1e65bbd8691a7a519d0d13db280036aa423",
+      "controller_trace.jsonl.gz": "28493ab1a8ae73b31ff6848d35e5b3b0e3852ef30f4e9ea880a4c87a556abb85",
+      "policy_io.npz": "341a5f7cc4f8192f687e10bf3ce4030aab47b630404e98b687002455031ff29c"
+    }
+  },
+  {
+    "id": "BB-912171",
+    "cell": "BB",
+    "seed": 912171,
+    "directory": "/var/tmp/typhon-hier01-start-20261015/episodes/BB-912171",
+    "requested_success": false,
+    "position_error_mm": 386.18023755936576,
+    "yaw_error_deg": 1.4281506158481616,
+    "criteria": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "noise": {
+      "passed": true,
+      "seed": 912171,
+      "reference": "/var/tmp/typhon-hier01-start-20261015/episodes/REF-912171",
+      "query_noise_packets": 48,
+      "actual_rng_and_noise_arrays_exact": 144
+    },
+    "queries": 48,
+    "wall_seconds": 17.569012195977848,
+    "minimum_eef_object_distance_mm": 429.33143767716155,
+    "maximum_lift_above_initial_mm": 0.0,
+    "supported_lift_10mm_bilateral_steps": 0,
+    "longest_supported_lift_s": 0.0,
+    "supported_lift_10mm_3steps": false,
+    "legacy_height_only_70mm": false,
+    "horizontal_transport_while_supported_mm": 0.0,
+    "object_path_m": 0.0,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "first_chunk_min_raw_target_distance_to_current_brick_mm": 396.4861342699097,
+    "min_raw_target_distance_to_current_brick_mm": 396.4861342699097,
+    "first_chunk_last_raw_target_xyz": [
+      -0.2120755910873413,
+      -0.1855832040309906,
+      1.0133495330810547
+    ],
+    "first_chunk_start_to_last_target_displacement_mm": [
+      37.989558570235005,
+      64.2962955523106,
+      -66.56443514134858
+    ],
+    "minimum_executed_eef_distance_to_current_brick_mm": 429.33143767716155,
+    "first_chunk_min_actual_eef_distance_mm": 434.96568245468694,
+    "raw_gripper_probability_range": [
+      0.00025892953271977603,
+      0.0008484969730488956
+    ],
+    "raw_close_proposals": 0,
+    "first_raw_close": null,
+    "first_executed_close_index": null,
+    "contact_steps": 0,
+    "bilateral_steps": 0,
+    "max_lift_mm": 0.0,
+    "max_object_displacement_mm": 0.0,
+    "executed_eef_path_length_mm": 1945.8382524994065,
+    "min_raw_target_xy_to_displayed_marker_mm": 341.439806979815,
+    "final_brick_distance_to_displayed_marker_mm": 4.552749095038925,
+    "final_brick_distance_to_loading_fixture_mm": 386.1802375593657,
+    "initial_truth": {
+      "object_position_m": [
+        0.1273654519351832,
+        -0.23610999209965894,
+        0.8147844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999223382540774,
+        4.663212600250298e-17,
+        -3.475584665818913e-18,
+        0.0124626425969174
+      ],
+      "object_yaw_rad": 0.02492593046093513,
+      "object_linear_velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "eef_position_m": [
+        -0.2500651496575763,
+        -0.2498794995833012,
+        1.0799139682224033
+      ],
+      "gripper_joint_position_m": [
+        0.03959546089013839,
+        -0.03976879892039342
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 40,
+      "sim_time_s": 2.0
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.1273654519351832,
+        -0.23610999209965894,
+        0.8147844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999223382540774,
+        3.368250534535744e-17,
+        1.388442540138347e-18,
+        0.0124626425969174
+      ],
+      "object_yaw_rad": 0.02492593046093513,
+      "object_linear_velocity_m_s": [
+        -3.4968776885765693e-19,
+        1.401043967663085e-17,
+        -2.1707635688983364e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -9.637562318720003e-16,
+        -3.3047135025392005e-16,
+        -1.4828700958634083e-31
+      ],
+      "eef_position_m": [
+        -0.2452749413857113,
+        -0.24563416719693718,
+        1.0712854988097806
+      ],
+      "gripper_joint_position_m": [
+        0.04000013257253123,
+        -0.039996859762859764
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1500,
+      "sim_time_s": 75.0
+    },
+    "evaluation": {
+      "task": "loading",
+      "success": false,
+      "criteria": {
+        "position": false,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": false,
+        "placement_height": false,
+        "released": true,
+        "stable": true,
+        "seated": false
+      },
+      "position_error_m": 0.38618023755936576,
+      "orientation_error_rad": 0.02492593046093513,
+      "orientation_error_deg": 1.4281506158481616,
+      "upright_error_rad": 0.0,
+      "height_error_m": 0.004215510840430592,
+      "target_height_m": 0.8190000000000001,
+      "footprint_inside_target": false,
+      "object_movement_after_release_m": 0.0,
+      "object_yaw_movement_after_release_rad": 0.0,
+      "maximum_linear_velocity_m_s": 2.172151593614979e-14,
+      "maximum_angular_velocity_rad_s": 1.086865606461711e-15,
+      "stability_sample_count": 12,
+      "stability_duration_s": 1.0999999999999943,
+      "grasp_attempt_count": 0,
+      "successful_grasp_count": 0,
+      "failed_grasp_count": 0,
+      "retries": 0,
+      "recovered_after_failed_grasp": false,
+      "successful_recovery": false,
+      "controller_exceptions": [],
+      "control_steps": 1460,
+      "sim_time_s": 73.0,
+      "attempts": []
+    },
+    "source_sha256": {
+      "episode.json": "df209e1413b354fb38a6c80eacfc478753b33f1dde379891fba9cabaf708b8f6",
+      "predictions.npz": "aa5fcf73ed26be409df1546cc34348328569ff13ff420b0a84cf52abc80cd521",
+      "controller_trace.jsonl.gz": "a7f962e30ffef374ad56af1567c05496e7082ca22075f0c8270c62dca1ee247b",
+      "policy_io.npz": "40061b55176047af0ba5cf056edea461416730935945330066da983b3672137c"
+    }
+  },
+  {
+    "id": "BB-912172",
+    "cell": "BB",
+    "seed": 912172,
+    "directory": "/var/tmp/typhon-hier01-start-20261015/episodes/BB-912172",
+    "requested_success": false,
+    "position_error_mm": 386.18023755936576,
+    "yaw_error_deg": 1.4281506158481616,
+    "criteria": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "noise": {
+      "passed": true,
+      "seed": 912172,
+      "reference": "/var/tmp/typhon-hier01-start-20261015/episodes/REF-912172",
+      "query_noise_packets": 48,
+      "actual_rng_and_noise_arrays_exact": 144
+    },
+    "queries": 48,
+    "wall_seconds": 17.017451526975492,
+    "minimum_eef_object_distance_mm": 428.33776346612774,
+    "maximum_lift_above_initial_mm": 0.0,
+    "supported_lift_10mm_bilateral_steps": 0,
+    "longest_supported_lift_s": 0.0,
+    "supported_lift_10mm_3steps": false,
+    "legacy_height_only_70mm": false,
+    "horizontal_transport_while_supported_mm": 0.0,
+    "object_path_m": 0.0,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "first_chunk_min_raw_target_distance_to_current_brick_mm": 395.90295254524364,
+    "min_raw_target_distance_to_current_brick_mm": 395.90295254524364,
+    "first_chunk_last_raw_target_xyz": [
+      -0.2130521535873413,
+      -0.1816769540309906,
+      1.0094432830810547
+    ],
+    "first_chunk_start_to_last_target_displacement_mm": [
+      37.012996070235005,
+      68.2025455523106,
+      -70.47068514134858
+    ],
+    "minimum_executed_eef_distance_to_current_brick_mm": 428.33776346612774,
+    "first_chunk_min_actual_eef_distance_mm": 433.72948575676537,
+    "raw_gripper_probability_range": [
+      0.00025892953271977603,
+      0.0008754076552577317
+    ],
+    "raw_close_proposals": 0,
+    "first_raw_close": null,
+    "first_executed_close_index": null,
+    "contact_steps": 0,
+    "bilateral_steps": 0,
+    "max_lift_mm": 0.0,
+    "max_object_displacement_mm": 0.0,
+    "executed_eef_path_length_mm": 1931.849279750087,
+    "min_raw_target_xy_to_displayed_marker_mm": 343.04640536834455,
+    "final_brick_distance_to_displayed_marker_mm": 4.552749095038925,
+    "final_brick_distance_to_loading_fixture_mm": 386.1802375593657,
+    "initial_truth": {
+      "object_position_m": [
+        0.1273654519351832,
+        -0.23610999209965894,
+        0.8147844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999223382540774,
+        4.663212600250298e-17,
+        -3.475584665818913e-18,
+        0.0124626425969174
+      ],
+      "object_yaw_rad": 0.02492593046093513,
+      "object_linear_velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "eef_position_m": [
+        -0.2500651496575763,
+        -0.2498794995833012,
+        1.0799139682224033
+      ],
+      "gripper_joint_position_m": [
+        0.03959546089013839,
+        -0.03976879892039342
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 40,
+      "sim_time_s": 2.0
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.1273654519351832,
+        -0.23610999209965894,
+        0.8147844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999223382540774,
+        2.708521507741516e-17,
+        1.345329267684634e-19,
+        0.0124626425969174
+      ],
+      "object_yaw_rad": 0.02492593046093513,
+      "object_linear_velocity_m_s": [
+        -8.635689209050323e-19,
+        1.0643368804347989e-17,
+        -2.1715962361668042e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -7.972560225823203e-16,
+        -1.2237116997335307e-17,
+        -3.6469910106048196e-31
+      ],
+      "eef_position_m": [
+        -0.2452064830843423,
+        -0.24550917065683595,
+        1.072744536064012
+      ],
+      "gripper_joint_position_m": [
+        0.040000124113858754,
+        -0.039996979653291215
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1500,
+      "sim_time_s": 75.0
+    },
+    "evaluation": {
+      "task": "loading",
+      "success": false,
+      "criteria": {
+        "position": false,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": false,
+        "placement_height": false,
+        "released": true,
+        "stable": true,
+        "seated": false
+      },
+      "position_error_m": 0.38618023755936576,
+      "orientation_error_rad": 0.02492593046093513,
+      "orientation_error_deg": 1.4281506158481616,
+      "upright_error_rad": 0.0,
+      "height_error_m": 0.004215510840430592,
+      "target_height_m": 0.8190000000000001,
+      "footprint_inside_target": false,
+      "object_movement_after_release_m": 0.0,
+      "object_yaw_movement_after_release_rad": 0.0,
+      "maximum_linear_velocity_m_s": 2.1718744425525914e-14,
+      "maximum_angular_velocity_rad_s": 1.1603813485824206e-15,
+      "stability_sample_count": 12,
+      "stability_duration_s": 1.0999999999999943,
+      "grasp_attempt_count": 0,
+      "successful_grasp_count": 0,
+      "failed_grasp_count": 0,
+      "retries": 0,
+      "recovered_after_failed_grasp": false,
+      "successful_recovery": false,
+      "controller_exceptions": [],
+      "control_steps": 1460,
+      "sim_time_s": 73.0,
+      "attempts": []
+    },
+    "source_sha256": {
+      "episode.json": "d3ad9702a47a09abd8046176faba5d02ee8b8b69d8ab3c7daee5ead5f8ac518c",
+      "predictions.npz": "3c47d69072404cad9734bcb05a7a359618f07d83cdf244cfe725aa515932cf87",
+      "controller_trace.jsonl.gz": "b4d1508654a8a93bd29e042fd6260d8db45dc2c5222771b03e98ba146f172a60",
+      "policy_io.npz": "f94b7621ac39bc112c87c006b699a3b473f0f8b77902cc7b82f5392b1f8b94df"
+    }
+  }
+]
