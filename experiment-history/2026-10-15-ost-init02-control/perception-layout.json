@@ -1,0 +1,493 @@
+{
+  "nodes": [
+    {
+      "id": "T10959",
+      "type": "experiment",
+      "label": "R01e \u00b7 #10959\nMeasure numeral visibility through actual preprocessing",
+      "parent_id": "S_perception_0",
+      "x": 1220,
+      "y": 58.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R01e \u00b7 #10959",
+        "Measure numeral visibility through actual",
+        "preprocessing"
+      ]
+    },
+    {
+      "id": "R10959",
+      "type": "result",
+      "label": "Tiny blue fragment after resize visibility evidence, not recognition",
+      "parent_id": "T10959",
+      "x": 1620,
+      "y": 67.5,
+      "width": 350,
+      "height": 72,
+      "color": "#244a3d",
+      "lines": [
+        "Tiny blue fragment after resize visibility",
+        "evidence, not recognition"
+      ]
+    },
+    {
+      "id": "T10955",
+      "type": "experiment",
+      "label": "R01c \u00b7 #10955\nShow exactly what V4 sees: 512\u2192224 images, crop and six history frames",
+      "parent_id": "S_perception_0",
+      "x": 1220,
+      "y": 185.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R01c \u00b7 #10955",
+        "Show exactly what V4 sees: 512\u2192224 images,",
+        "crop and six history frames"
+      ]
+    },
+    {
+      "id": "R10955",
+      "type": "result",
+      "label": "512\u2192224; crop absent at release six history frames actually supplied",
+      "parent_id": "T10955",
+      "x": 1620,
+      "y": 194.5,
+      "width": 350,
+      "height": 72,
+      "color": "#244a3d",
+      "lines": [
+        "512\u2192224; crop absent at release six history",
+        "frames actually supplied"
+      ]
+    },
+    {
+      "id": "T10993",
+      "type": "experiment",
+      "label": "VIS01 \u00b7 #10993\nQualify a visibility fix if the causal image test supports it",
+      "parent_id": "S_perception_0",
+      "x": 1220,
+      "y": 312.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIS01 \u00b7 #10993",
+        "Qualify a visibility fix if the causal",
+        "image test supports it"
+      ]
+    },
+    {
+      "id": "R10993",
+      "type": "result",
+      "label": "Crop-only repair rejected: clearer features did not repair held orientation or release. Native production inputs retained.",
+      "parent_id": "T10993",
+      "x": 1620,
+      "y": 312.0,
+      "width": 350,
+      "height": 91,
+      "color": "#30445a",
+      "lines": [
+        "Crop-only repair rejected: clearer features",
+        "did not repair held orientation or release.",
+        "Native production inputs retained."
+      ]
+    },
+    {
+      "id": "T11011",
+      "type": "experiment",
+      "label": "R01f \u00b7 #11011\nSeparate lost visual detail from failure to use orientation in the action head",
+      "parent_id": "S_perception_0",
+      "x": 1220,
+      "y": 439.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R01f \u00b7 #11011",
+        "Separate lost visual detail from failure to",
+        "use orientation in the action head"
+      ]
+    },
+    {
+      "id": "R11011",
+      "type": "result",
+      "label": "108 paired predictions: cue sensitivity rises 0.0102 to 0.1887; wrist error remains about 80 degrees and opens at waypoint 11.",
+      "parent_id": "T11011",
+      "x": 1620,
+      "y": 439.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "108 paired predictions: cue sensitivity",
+        "rises 0.0102 to 0.1887; wrist error remains",
+        "about 80 degrees and opens at waypoint 11."
+      ]
+    },
+    {
+      "id": "S_perception_0",
+      "type": "solution",
+      "label": "Inspect the exact model inputs",
+      "parent_id": "O_perception",
+      "x": 820,
+      "y": 258.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Inspect the exact model inputs"
+      ]
+    },
+    {
+      "id": "T10954",
+      "type": "experiment",
+      "label": "R01b \u00b7 #10954\nMeasure V4's numeral sensitivity and grasp-relative orientation response",
+      "parent_id": "S_perception_1",
+      "x": 1220,
+      "y": 591.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R01b \u00b7 #10954",
+        "Measure V4's numeral sensitivity and",
+        "grasp-relative orientation response"
+      ]
+    },
+    {
+      "id": "R10954",
+      "type": "result",
+      "label": "87 queries; initial cue response held-state target stays ~94\u00b0",
+      "parent_id": "T10954",
+      "x": 1620,
+      "y": 600.5,
+      "width": 350,
+      "height": 72,
+      "color": "#574831",
+      "lines": [
+        "87 queries; initial cue response held-state",
+        "target stays ~94\u00b0"
+      ]
+    },
+    {
+      "id": "T10960",
+      "type": "experiment",
+      "label": "R02 \u00b7 #10960\nTest whether fixed-seed prompts command simple arm actions",
+      "parent_id": "S_perception_1",
+      "x": 1220,
+      "y": 718.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R02 \u00b7 #10960",
+        "Test whether fixed-seed prompts command",
+        "simple arm actions"
+      ]
+    },
+    {
+      "id": "R10960",
+      "type": "result",
+      "label": "36 predictions; directions not reliably commanded",
+      "parent_id": "T10960",
+      "x": 1620,
+      "y": 727.5,
+      "width": 350,
+      "height": 72,
+      "color": "#56343c",
+      "lines": [
+        "36 predictions; directions not reliably",
+        "commanded"
+      ]
+    },
+    {
+      "id": "T10961",
+      "type": "experiment",
+      "label": "R02b \u00b7 #10961\nCompare vanilla, V3 and V4 prompt response controls",
+      "parent_id": "S_perception_1",
+      "x": 1220,
+      "y": 845.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R02b \u00b7 #10961",
+        "Compare vanilla, V3 and V4 prompt response",
+        "controls"
+      ]
+    },
+    {
+      "id": "R10961",
+      "type": "result",
+      "label": "180 predictions; each model 0/18 paired axis reversals",
+      "parent_id": "T10961",
+      "x": 1620,
+      "y": 854.5,
+      "width": 350,
+      "height": 72,
+      "color": "#56343c",
+      "lines": [
+        "180 predictions; each model 0/18 paired",
+        "axis reversals"
+      ]
+    },
+    {
+      "id": "T10994",
+      "type": "experiment",
+      "label": "VIS02 \u00b7 #10994\nTest language/action grounding repair with matched input contracts",
+      "parent_id": "S_perception_1",
+      "x": 1220,
+      "y": 982.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIS02 \u00b7 #10994",
+        "Test language/action grounding repair with",
+        "matched input contracts"
+      ]
+    },
+    {
+      "id": "R10994",
+      "type": "result",
+      "label": "Matched 3k continuations: varied vs fixed goals 10/12 vs 0/12 novel-goal strict success. Loading 0/12 both; text-only goal response under 1.4 mm.",
+      "parent_id": "T10994",
+      "x": 1620,
+      "y": 972.0,
+      "width": 350,
+      "height": 112,
+      "color": "#30445a",
+      "lines": [
+        "Matched 3k continuations: varied vs fixed",
+        "goals 10/12 vs 0/12 novel-goal strict",
+        "success. Loading 0/12 both; text-only goal",
+        "response under 1.4 mm."
+      ]
+    },
+    {
+      "id": "S_perception_1",
+      "type": "solution",
+      "label": "Test instructions and goal diversity",
+      "parent_id": "O_perception",
+      "x": 820,
+      "y": 796.25,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Test instructions and goal diversity"
+      ]
+    },
+    {
+      "id": "T11005",
+      "type": "experiment",
+      "label": "LIVE02 \u00b7 #11005\nQualify the simple visual completion classifier across allowable variation",
+      "parent_id": "S_perception_2",
+      "x": 1220,
+      "y": 1145.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE02 \u00b7 #11005",
+        "Qualify the simple visual completion",
+        "classifier across allowable variation"
+      ]
+    },
+    {
+      "id": "R11005",
+      "type": "result",
+      "label": "Completion gate failed: classical recall below 80%; separate API diagnostic 2/22 recall. No completion authority granted.",
+      "parent_id": "T11005",
+      "x": 1620,
+      "y": 1145.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "Completion gate failed: classical recall",
+        "below 80%; separate API diagnostic 2/22",
+        "recall. No completion authority granted."
+      ]
+    },
+    {
+      "id": "T11006",
+      "type": "experiment",
+      "label": "LIVE03 \u00b7 #11006\nReconcile Qwen live planner, finished-reference image and veto behavior",
+      "parent_id": "S_perception_2",
+      "x": 1220,
+      "y": 1282.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE03 \u00b7 #11006",
+        "Reconcile Qwen live planner,",
+        "finished-reference image and veto behavior"
+      ]
+    },
+    {
+      "id": "R11006",
+      "type": "result",
+      "label": "Qwen's 180-degree false completion was vetoed by RGB reference. Historical TTC used smoothness, not learned value; no qualified Qwen control.",
+      "parent_id": "T11006",
+      "x": 1620,
+      "y": 1272.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Qwen's 180-degree false completion was",
+        "vetoed by RGB reference. Historical TTC",
+        "used smoothness, not learned value; no",
+        "qualified Qwen control."
+      ]
+    },
+    {
+      "id": "S_perception_2",
+      "type": "solution",
+      "label": "Qualify visual completion decisions",
+      "parent_id": "O_perception",
+      "x": 820,
+      "y": 1223.25,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Qualify visual completion decisions"
+      ]
+    },
+    {
+      "id": "O_perception",
+      "type": "opportunity",
+      "label": "Make relevant visual cues change the correct action",
+      "parent_id": "outcome",
+      "x": 420,
+      "y": 740.62,
+      "width": 350,
+      "height": 72,
+      "color": "#2d443b",
+      "lines": [
+        "Make relevant visual cues change the",
+        "correct action"
+      ]
+    },
+    {
+      "id": "outcome",
+      "type": "outcome",
+      "label": "Reliably complete the requested manipulation task using personal evidence",
+      "parent_id": "",
+      "x": 20,
+      "y": 94.0,
+      "width": 350,
+      "height": 72,
+      "color": "#263f60",
+      "lines": [
+        "Reliably complete the requested",
+        "manipulation task using personal evidence"
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "S_perception_0",
+      "T10959"
+    ],
+    [
+      "T10959",
+      "R10959"
+    ],
+    [
+      "S_perception_0",
+      "T10955"
+    ],
+    [
+      "T10955",
+      "R10955"
+    ],
+    [
+      "S_perception_0",
+      "T10993"
+    ],
+    [
+      "T10993",
+      "R10993"
+    ],
+    [
+      "S_perception_0",
+      "T11011"
+    ],
+    [
+      "T11011",
+      "R11011"
+    ],
+    [
+      "O_perception",
+      "S_perception_0"
+    ],
+    [
+      "S_perception_1",
+      "T10954"
+    ],
+    [
+      "T10954",
+      "R10954"
+    ],
+    [
+      "S_perception_1",
+      "T10960"
+    ],
+    [
+      "T10960",
+      "R10960"
+    ],
+    [
+      "S_perception_1",
+      "T10961"
+    ],
+    [
+      "T10961",
+      "R10961"
+    ],
+    [
+      "S_perception_1",
+      "T10994"
+    ],
+    [
+      "T10994",
+      "R10994"
+    ],
+    [
+      "O_perception",
+      "S_perception_1"
+    ],
+    [
+      "S_perception_2",
+      "T11005"
+    ],
+    [
+      "T11005",
+      "R11005"
+    ],
+    [
+      "S_perception_2",
+      "T11006"
+    ],
+    [
+      "T11006",
+      "R11006"
+    ],
+    [
+      "O_perception",
+      "S_perception_2"
+    ],
+    [
+      "outcome",
+      "O_perception"
+    ]
+  ],
+  "width": 2000,
+  "height": 1444.0
+}
