@@ -1,0 +1,5 @@
+{
+  "time": 1792067082.042094,
+  "error": "Traceback (most recent call last):\n  File \"/var/tmp/typhon-worktrees-20261015/eval02-spatial/scripts/eval02_spatial_qualify.py\", line 64, in <module>\n    try:main()\n        ^^^^^^\n  File \"/var/tmp/typhon-worktrees-20261015/eval02-spatial/scripts/eval02_spatial_qualify.py\", line 46, in main\n    fg=int(np.count_nonzero(diff&masks[cam]));assert fg==0,(pose,tag,cam,'protected foreground changed',fg)\n                                                     ^^^^^\nAssertionError: ('initial', 'Vminus', 'secondary', 'protected foreground changed', 29)\n",
+  "no_actor_rollouts": true
+}

@@ -1,0 +1,11 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Traceback (most recent call last):
+  File "/var/tmp/typhon-worktrees-20261015/eval02-spatial/scripts/eval02_spatial_qualify.py", line 64, in <module>
+    try:main()
+        ^^^^^^
+  File "/var/tmp/typhon-worktrees-20261015/eval02-spatial/scripts/eval02_spatial_qualify.py", line 46, in main
+    fg=int(np.count_nonzero(diff&masks[cam]));assert fg==0,(pose,tag,cam,'protected foreground changed',fg)
+                                                     ^^^^^
+AssertionError: ('initial', 'Vminus', 'secondary', 'protected foreground changed', 29)
