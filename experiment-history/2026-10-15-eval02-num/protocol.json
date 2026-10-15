@@ -1,0 +1,176 @@
+{
+  "experiment": "EVAL02-NUM",
+  "ticket": 11065,
+  "frozen_epoch": 1792071669.995646,
+  "clock": {
+    "start_epoch": 1792071562.7329583,
+    "execution_deadline": 1792072462.7329583,
+    "review_deadline": 1792072762.7329583,
+    "budget_minutes": 20
+  },
+  "model_order": [
+    "GOAL",
+    "B"
+  ],
+  "models": {
+    "GOAL": {
+      "checkpoint": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000.pt",
+      "probe": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000-probe.pt",
+      "sha256": "d5449244d96e55e60c3342af9fffe2ae64362b74cdf9c3d41e39b74995c9bcdb",
+      "probe_sha256": "6452eed3b6e9ab899685147ac39e1f1fd2558217b7978aa10a530321ddec8c01",
+      "step": 3000
+    },
+    "B": {
+      "checkpoint": "/var/tmp/typhon-load04-20261014/train-B/step3000.pt",
+      "probe": "/var/tmp/typhon-load04-20261014/train-B/step3000-probe.pt",
+      "sha256": "de861da493be2a851e2fae5289f798cd34ff714e120f974f9c2197847732e379",
+      "probe_sha256": "00d1aab54b000bb780bb1b34639bcf79f2baf7daf58a9b2b50a5481f978f0d09",
+      "step": 3000
+    }
+  },
+  "pair_selection": "Predefined RET-C mixed-result branch: GOAL-varied vs B",
+  "policy_seeds": [
+    912171,
+    912172
+  ],
+  "packet": {
+    "archive": "/var/tmp/typhon-eval02-fit-20261015/postlift.npz",
+    "sha256": "cfd9e3ed950599a31fec6c71ea522f0a4ca8992c66b9b716b9ba18ed27f34ee9",
+    "frame_index": 35,
+    "action_index": 140,
+    "pre_action_sim_step": 180,
+    "complete_targets": 30,
+    "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=0.030000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+    "source_episode_id": "personal_demo_0002-goal1",
+    "source_archive": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/data/personal_demo_0002-goal1.npz",
+    "source_archive_sha256": "1cbf243e24a0e7ad7d039a43a9f1525fc46a3e89b7dddc78915c1070a0533176",
+    "pre_action_truth_evaluator_only": {
+      "object_position_m": [
+        -0.18718409538732667,
+        -0.11992711702263663,
+        0.9640728212628116
+      ],
+      "object_quat_wxyz": [
+        0.9480163528939904,
+        0.0016048483156183952,
+        -0.016880608977321594,
+        0.3177695141891612
+      ],
+      "object_yaw_rad": 0.6469756822662065,
+      "object_linear_velocity_m_s": [
+        0.10407541809794386,
+        0.1054905479081998,
+        -0.05990075038343684
+      ],
+      "object_angular_velocity_rad_s": [
+        0.03095972049936025,
+        -0.17873129144003877,
+        -1.1548577629223726
+      ],
+      "eef_position_m": [
+        -0.18439195748286027,
+        -0.11766706411812451,
+        0.9693837213178647
+      ],
+      "gripper_joint_position_m": [
+        0.017317374751545708,
+        -0.017208834195593874
+      ],
+      "gripper_open": false,
+      "grasp_contact": true,
+      "bilateral_grasp_contact": true,
+      "control_steps": 180,
+      "sim_time_s": 9.0
+    },
+    "verified_lift_step": 177,
+    "history_contract": "first9 last commanded target except initial measured robot pose; gripper and dummy channels remain zero, native training/client contract"
+  },
+  "packet_copy": "/var/tmp/typhon-eval02-num-20261015/postlift.npz",
+  "instructions": {
+    "original": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=0.030000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+    "swapped": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y."
+  },
+  "expected_initial_nontext": {
+    "image_input": "66a70ac4e37ef4acb8c8c87ead7fe64acaf6fcb594d3b812433c5f54bf6089aa",
+    "image_mask": "cfdcfa2a1beb5ec14416cc2c1bc9ee7eb06de6b23a0e6296db5437f501cbb6a9",
+    "proprio": "00a0e573151e157cceca226032dfd5e61ddac01d70dff5987a8076b514d28f08",
+    "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+  },
+  "source_sha256": {
+    "scripts/load04_worker.py": "b15041a738bb398fc2c6ac00792d3af1fdb7672067d443aa6be0a1002fbf019e",
+    "scripts/eval02_goal_run.py": "3ca533e49c790c87b94c019e071ef1e063f45bf7db19a174bc56b8f78e8eec3e",
+    "scripts/eval02_num.py": "17f37f381e6b53cae989d6bc8ecbc1e398d224516199fb74913ca0f6b0918f8a",
+    "supervisor/adaptation/observations.py": "d98dc44dbe48462b73a2322b674f8cc801d4b4e52f4e5f89d42c22ea6aafee0f",
+    "supervisor/adaptation/m6_contract.py": "b9ddac725f2a7e60af6822a2bbb3f36794c3349aac28aa9844bc3a01a8826ede"
+  },
+  "controls": [
+    {
+      "model": "GOAL",
+      "seed": 912171,
+      "source": "/var/tmp/typhon-eval02-fit-20261015/GOAL/postlift-912171",
+      "copy": "/var/tmp/typhon-eval02-num-20261015/reused/GOAL/912171",
+      "hashes": {
+        "proposal.npz": "ae8d3fd6fd5244dcad3a325bf6c51868b0ef93b5ebe44c2e67de39bc748660a7",
+        "initial-prepared.npz": "563de6afbb37ceae58ed159dfae0aae153495febeec01ab6a38017dbc7c56a0a",
+        "noise-000.npz": "cd9ba73c3a52c4dcfd24039e43e142df30f0f0f3160909694d9d57c25b0bb530",
+        "input-000.json": "83f738a248eacb0e881649df9a5666bba15c82e02fbf859fd09ce055f10765ec",
+        "metrics.json": "57b9f3eacdc87380e054a7e5ada3bd9ff448f031766943e1b88282ce331da819"
+      }
+    },
+    {
+      "model": "GOAL",
+      "seed": 912172,
+      "source": "/var/tmp/typhon-eval02-fit-20261015/GOAL/postlift-912172",
+      "copy": "/var/tmp/typhon-eval02-num-20261015/reused/GOAL/912172",
+      "hashes": {
+        "proposal.npz": "a918b4e5cd9b9733c17247406548b185834a2c34c1afbe12aff212fd6fee5b1a",
+        "initial-prepared.npz": "563de6afbb37ceae58ed159dfae0aae153495febeec01ab6a38017dbc7c56a0a",
+        "noise-000.npz": "0e049adf404d8b0b7d54564f82070b93412b8d488fa70df0b529359f7490042f",
+        "input-000.json": "167c916edff0cc1b854945b7da60d713f1cbd15a01ed381e7d531af17b3dd90f",
+        "metrics.json": "b0d738dc9ee156f39289452cde7ddd1c0f6048247157760ccbdd260a1cd7354c"
+      }
+    },
+    {
+      "model": "B",
+      "seed": 912171,
+      "source": "/var/tmp/typhon-eval02-fit-20261015/B/postlift-912171",
+      "copy": "/var/tmp/typhon-eval02-num-20261015/reused/B/912171",
+      "hashes": {
+        "proposal.npz": "5a71f53797e8ac169fe18ec1a1a623fb1d0f4c8c7ec676c11db0eb01e8bbaffa",
+        "initial-prepared.npz": "563de6afbb37ceae58ed159dfae0aae153495febeec01ab6a38017dbc7c56a0a",
+        "noise-000.npz": "cd9ba73c3a52c4dcfd24039e43e142df30f0f0f3160909694d9d57c25b0bb530",
+        "input-000.json": "83f738a248eacb0e881649df9a5666bba15c82e02fbf859fd09ce055f10765ec",
+        "metrics.json": "4fcd1c531be624030ef7bc73cd14fd5845ac5cc0a18c1a0564819eb2aa77f76f"
+      }
+    },
+    {
+      "model": "B",
+      "seed": 912172,
+      "source": "/var/tmp/typhon-eval02-fit-20261015/B/postlift-912172",
+      "copy": "/var/tmp/typhon-eval02-num-20261015/reused/B/912172",
+      "hashes": {
+        "proposal.npz": "006da18e16d3139b313947a7e0831484ef0c5f75c7e9a1921049ddbb931e2ba3",
+        "initial-prepared.npz": "563de6afbb37ceae58ed159dfae0aae153495febeec01ab6a38017dbc7c56a0a",
+        "noise-000.npz": "0e049adf404d8b0b7d54564f82070b93412b8d488fa70df0b529359f7490042f",
+        "input-000.json": "167c916edff0cc1b854945b7da60d713f1cbd15a01ed381e7d531af17b3dd90f",
+        "metrics.json": "4abcf6c87030be5c3cc484f776f9b786be5201fdaea09fdcfed17e5584fc26ea"
+      }
+    }
+  ],
+  "actual_noise_matching": "Regenerate native noise after exact seed reset; compare all CPU/CUDA RNG and actual draw arrays to saved FIT packets. No literal noise-file override.",
+  "inference": {
+    "observation": "O2",
+    "domain": 29,
+    "H": 30,
+    "denoise_steps": 10,
+    "dtype": "bf16",
+    "language_max_length": 128
+  },
+  "evidence_chunks": 8,
+  "new_generations": 4,
+  "reused_generations": 4,
+  "physical_rollouts": 0,
+  "training": false,
+  "holdouts": false,
+  "interpretation": "Conflicting-cue numerical sensitivity; no swapped expert labels or task-success claims."
+}
