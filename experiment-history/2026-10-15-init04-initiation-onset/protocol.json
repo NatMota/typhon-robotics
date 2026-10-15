@@ -1,0 +1,187 @@
+{
+  "experiment": "INIT04",
+  "ticket": 11075,
+  "selected_parent": "demo_0001",
+  "selected_seed": 912171,
+  "selection": "lowest parent then lowest seed with verified supported lift; post-hoc mechanistic selection",
+  "selected_queries": [
+    0,
+    3,
+    4
+  ],
+  "q_e": 4,
+  "prompts": {
+    "F-original": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+    "L-original": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+    "H-explicit": "Maintain the currently supplied end-effector position and orientation. Keep the gripper open. Do not approach, touch, grasp or move the block."
+  },
+  "explicit_hold_framing": "supplied no-motion primitive; not autonomous task completion recognition; no elapsed duration field exists in original request",
+  "packets": [
+    {
+      "query": 0,
+      "hashes": {
+        "F-original": {
+          "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+          "image_input": "3d469ce55e246c6e45d80bca06a4f3ac58c30d3158f32f1a51fa9d7b31396885",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "b2594bef69fb2d740f19630069e5061e3e6e4ece5a1a1e14bd5312f90713a2ae",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        },
+        "L-original": {
+          "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+          "image_input": "3d469ce55e246c6e45d80bca06a4f3ac58c30d3158f32f1a51fa9d7b31396885",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "b2594bef69fb2d740f19630069e5061e3e6e4ece5a1a1e14bd5312f90713a2ae",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        },
+        "H-explicit": {
+          "input_ids": "0f7553cb50bf11630b0b26cd58cf5d78102d3e1e826342b0ce0b671e189c1fcb",
+          "image_input": "3d469ce55e246c6e45d80bca06a4f3ac58c30d3158f32f1a51fa9d7b31396885",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "b2594bef69fb2d740f19630069e5061e3e6e4ece5a1a1e14bd5312f90713a2ae",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        }
+      },
+      "noise_hashes": [
+        "23be921051f417815bef90ae4875485ad67226f3a1f099a070624aaa8ede453f",
+        "336ab168eb00315fdc0c73d223030a1b6b3703c5f1bafbdfa565f535c5622a08"
+      ],
+      "expected_action_sha256": "43ff3f525c415faf12d5215aba94033418ee47e3e1c55ad055fffc78060eb339"
+    },
+    {
+      "query": 3,
+      "hashes": {
+        "F-original": {
+          "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+          "image_input": "626c122b62c9a764be846e2e2140b4f38bbb058dbc6c96474dd50c3c814e82af",
+          "image_mask": "cfdcfa2a1beb5ec14416cc2c1bc9ee7eb06de6b23a0e6296db5437f501cbb6a9",
+          "proprio": "381b887855f5615430e3967ce7c7fe68fdf145368011a496d982eff8e22beba8",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        },
+        "L-original": {
+          "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+          "image_input": "626c122b62c9a764be846e2e2140b4f38bbb058dbc6c96474dd50c3c814e82af",
+          "image_mask": "cfdcfa2a1beb5ec14416cc2c1bc9ee7eb06de6b23a0e6296db5437f501cbb6a9",
+          "proprio": "381b887855f5615430e3967ce7c7fe68fdf145368011a496d982eff8e22beba8",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        },
+        "H-explicit": {
+          "input_ids": "0f7553cb50bf11630b0b26cd58cf5d78102d3e1e826342b0ce0b671e189c1fcb",
+          "image_input": "626c122b62c9a764be846e2e2140b4f38bbb058dbc6c96474dd50c3c814e82af",
+          "image_mask": "cfdcfa2a1beb5ec14416cc2c1bc9ee7eb06de6b23a0e6296db5437f501cbb6a9",
+          "proprio": "381b887855f5615430e3967ce7c7fe68fdf145368011a496d982eff8e22beba8",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        }
+      },
+      "noise_hashes": [
+        "2d7a2a7739b6734f740a503b38b52092d0358b48d9e0178e5d23eabe31a40856",
+        "288362420f2283a159cb2380d2097d84191df46c2449fa78126470bdd6b01de6"
+      ],
+      "expected_action_sha256": "84879d763d783ae2d3bf4a5074352f059b8c7cdd8ba094ba9d8f8f0af16fa54d"
+    },
+    {
+      "query": 4,
+      "hashes": {
+        "F-original": {
+          "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+          "image_input": "f2f2a507c318eda162c3bfa29ffed283c7acaf0ca4c552937591398cc5bf2dda",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "4a5883cc251b8f871fd454c234f71a5ba02228157f64810176b6f90c05a282e3",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        },
+        "L-original": {
+          "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+          "image_input": "f2f2a507c318eda162c3bfa29ffed283c7acaf0ca4c552937591398cc5bf2dda",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "4a5883cc251b8f871fd454c234f71a5ba02228157f64810176b6f90c05a282e3",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        },
+        "H-explicit": {
+          "input_ids": "0f7553cb50bf11630b0b26cd58cf5d78102d3e1e826342b0ce0b671e189c1fcb",
+          "image_input": "f2f2a507c318eda162c3bfa29ffed283c7acaf0ca4c552937591398cc5bf2dda",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "4a5883cc251b8f871fd454c234f71a5ba02228157f64810176b6f90c05a282e3",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        }
+      },
+      "noise_hashes": [
+        "9d9572280e731e8cecccbb714edd7839cd5168f7e9fbad25b8e41ac15d3c1e7d",
+        "7883a2dc74f219c7317a7ee270c389c0a52cc66d63c6638bf29ef8efa7e61da7"
+      ],
+      "expected_action_sha256": "e4675f14d2da51204b3459c22194169fe2583c1bacc10da22287e57c62e1623d"
+    }
+  ],
+  "max_distinct_outputs": 18,
+  "weight_sha256": "4d7a4a2547f084b6026164f27a6b7d43b5cb4d3b83ee4875343d108908f35636",
+  "weight_path": "/var/tmp/typhon-init02-20261015/train-T/step3000.pt",
+  "generation": {
+    "mode": "eval",
+    "precision": "bf16 autocast; float32 weights",
+    "requires_grad": "allTrue",
+    "horizon": 30,
+    "denoise_steps": 10,
+    "domain": 29,
+    "observation": "O2"
+  },
+  "source_sha256": {
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/episode.json": "ad3e6c682248e2fbaa882ff7a46d24fdccbb7a312ce0035ab431033a425536e5",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/summary.json": "2eb1b3bcdc72878606e4f18a09e7225fd594fc8e2757b5577fa5ff88e5d4a633",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/controller_trace.jsonl.gz": "f2a0e28f89120c162849f4c064c196f99183b80f86f4158a448c5d1695b8b5de",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/predictions.npz": "13f87239d3987d4a6adc77b4662aa9ca0125d227377cc7718c3ab859796bb355",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/policy_io.npz": "2d9fc0bae6d647d3a0ea43dffcad8805690d49b7f36bf491aeef22a430506fe3",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/inference.json": "15aa74a36e96edcffeb64f2defc1f4da3fc15e020830cfb83e6566a6789c53a9",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912172/episode.json": "82bf63c682018fb238aec304555b3c8858b8807056bb422932d385aec20052de",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912172/summary.json": "188495d9bf70e1da07cefd991499ac6a9d06a8135a18c75942d81a2729beec6e",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912172/controller_trace.jsonl.gz": "aa331ec2ed9b18ceb1256c298a522ab52b00063609f9df7aee66f8097582f9ef",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912172/predictions.npz": "d69ffab9bab48761c4aa653e5af0a5d30b82848d42689d7b1439881875a8b9e4",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912172/policy_io.npz": "ed9297d58c60d1e59094fdcb8e98397223c66c1b8c27831d387f8d8816d516cc",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912172/inference.json": "21a0618f932cf6c73ed1b85aea5117c8ec538d590617f1257e9d5992301d70a7",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/episode.json": "3f70f2b1cc5030ba49b9d5a1f3bc608a5005cda62c29e5053125e5429ca25485",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/summary.json": "2ee8c2d0d7a71a76f27b834b0a049edecf43f9fecc100541431d472c56835649",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/controller_trace.jsonl.gz": "ec1e546d6551359b2669c7164e10eff03408d0f85947ba2bbed858a2b1848708",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/predictions.npz": "fb481683857dc9907cc255bbeece92e28a3aca13fc951e50f2d864e7e85830b7",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/policy_io.npz": "a04114c779c7cb2702927f372a56802cb8ecee900cdfcd4e65133821a4ede000",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912171/inference.json": "ebadc73a6396f91d7238a13e5cbf11095e2a9335f678ac3b940e460d57a264b9",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912172/episode.json": "4d820305a4ccb13c380e02c30d5913c381abe34000a63ac56dda0f69daa7ec84",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912172/summary.json": "25782702194094c9160c7ed61cd65291e253b6182a99098ca2c0080015d49009",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912172/controller_trace.jsonl.gz": "8e682afa8ba7c0ae7a04205a512fd057590748a325f1686da9c8b6d22fa3975d",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912172/predictions.npz": "d247ade0a0d0995f308b46c2ccd0fc21e8b1e3586afa647c24583dc72051f52d",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912172/policy_io.npz": "622b67e2fb1a08069ce7819aacfc8ae0d5a822b47b9a93a942f8178e6af38d72",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0002-feeding-912172/inference.json": "b2d903b73a1137dc83c2e869f91411f1d1400ceec0e6f38c58cc9d5c081f47ca",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-feeding-912171/episode.json": "05e766ac739e9853e2340dae9bd5c806c152dc159bf5a996778e94ed84d31d9a",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-feeding-912171/summary.json": "8e74c43151c694ff84a0a21de98694f76e5c1657cdf6ed4e2d5822b9ef86ffda",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-feeding-912171/controller_trace.jsonl.gz": "2d47fd297ae300ac80b3d4a543ccf2bcb6e7dc9cf72285e633407899bc88d69a",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-feeding-912171/predictions.npz": "5ca5b98d5f0502bf221731a079293ad873fbf422e6ad754c06775c65d90f2d93",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-feeding-912171/policy_io.npz": "b9f98384cba65f367fe839dab46647257500831977128e028e4b879616131d20",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-feeding-912171/inference.json": "0a09f12d72e02d89c8f137002410aa029e4ab01739857e5f373aff543ce70a94",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-feeding-912172/episode.json": "9c7b61649616a79106b6bd2a25df5c71a3789d3aace2bb3a7abc46351f57000a",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-feeding-912172/summary.json": "e5196b408d3866e5911e581ad9fe344b3098b0082ca1d7c8e7e0a475c5fa352c",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-feeding-912172/controller_trace.jsonl.gz": "c9d5fd68b86f3d76a11e071e3191a0a6c301f22db313bbb25a29d5ea0e083028",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-feeding-912172/predictions.npz": "5b931d69a6227972e03d80dd83be98a7aad82611465b3130b1b2aeb8bce37560",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-feeding-912172/policy_io.npz": "9c2d7d1010220a90dcd8e8fe1527cac8e67b79ba539b4b102f235a08693e83dd",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0003-feeding-912172/inference.json": "40871d293fb00f8f4886d8726eb8c3437517c28fb03674e54e81e188788ecffc",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-feeding-912171/episode.json": "4f75275bef93d798507f38a6b35c64f73ada7fa5b1a79e4e2d30029bc3892a11",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-feeding-912171/summary.json": "7dd98c0fd7020a67d96fd8f924dedc3d7fd7f5bb4f7648ed0138b828c42d4b9b",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-feeding-912171/controller_trace.jsonl.gz": "a6271c1fa8474b7dab2e75e030b8bc9e4cd65a68b1b8078222fac81498c3dbf3",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-feeding-912171/predictions.npz": "7c70719f9c23899d4a8e681ab3032280c52699e8285581b54ea96c3dc2df0cce",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-feeding-912171/policy_io.npz": "584408eeb1e92f84de12ba86f15fdd67e7d386f614332a3322b890ce384b8883",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-feeding-912171/inference.json": "d3bc687f372eed3b82f17896d97019e49cc20c839edc27965dc76ad5a5985de8",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-feeding-912172/episode.json": "c5aeeb54ea6c68e8d8447c0de1f7f5cce5e5be2082cbf0c4d4dea3f81ffda1c5",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-feeding-912172/summary.json": "1f124e3ed47abb4025fe2dd52b952bef88b62a64d62762f15798be3c4eac62aa",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-feeding-912172/controller_trace.jsonl.gz": "34cf0dcec2b4b52469cd6fa5bbdf8315749559cdbc31c9d4aa6a35bf4590abd9",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-feeding-912172/predictions.npz": "1470315edd0ddd50cd0026219ea762f1fd7289a4bb88e6f3f87e5bebdb43c451",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-feeding-912172/policy_io.npz": "df6ec337aacb176896d93de05e551da6e7caaf8e4baf8275b3544a0b069ed14d",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0005-feeding-912172/inference.json": "e9e5fa4f94d29b16ad00ecd643426e7f78f9b5c3379dc6139713cc3eb40bf7a6",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/input-audit/noise-000.npz": "cd9ba73c3a52c4dcfd24039e43e142df30f0f0f3160909694d9d57c25b0bb530",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912172/input-audit/noise-000.npz": "0e049adf404d8b0b7d54564f82070b93412b8d488fa70df0b529359f7490042f",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/input-audit/noise-003.npz": "0a305d1e95eaf497e502932a451bc350f69cf0cc8c81653a27e4d6bd4d71cd3f",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912172/input-audit/noise-003.npz": "26504641f94799e1e4edb7022fcc360e11e6fc2a84ad68a6c7b276b09d847e26",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912171/input-audit/noise-004.npz": "8845e5183255993534bc0ec0c497b37a5ba6db0e5debddf1de68d16cd51969a6",
+    "/var/tmp/typhon-init02-20261015/episodes/T/init-demo_0001-feeding-912172/input-audit/noise-004.npz": "ff86805f44d8b8cb3108a09422ea273870619996fe4987fa2ba115ebd7e05ffe"
+  },
+  "new_rollouts": 0,
+  "new_training": 0,
+  "freeze_epoch": 1792094582.7563572,
+  "scratch_free_bytes": 2445737984,
+  "packets_sha256": "e074cfbf67358f53d6aad20b95207249f515c81272ea627f34994134572df8c7"
+}
