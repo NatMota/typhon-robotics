@@ -1,0 +1,33 @@
+{
+  "id": "perception",
+  "name": "02 \u00b7 Visual and language grounding",
+  "artboards": [
+    {
+      "id": "perception-tree",
+      "name": "perception-tree",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 1808,
+        "height": 3792
+      },
+      "layers": [
+        {
+          "id": "4a3dea25-a16c-47f1-9bf9-0aae04b5c1ab",
+          "type": "image",
+          "name": "TYPHON / Visual and language grounding",
+          "x": 0,
+          "y": 0,
+          "width": 1808.0,
+          "height": 3792.0,
+          "imageRef": "/llm-design-tool/designs/typhon-research/assets/perception.svg"
+        }
+      ],
+      "width": 2494,
+      "height": 3474,
+      "updatedAt": "2026-10-13T21:38:42Z",
+      "mermaidSource": "%%{init: {\"theme\": \"base\", \"securityLevel\": \"loose\", \"look\": \"classic\", \"htmlLabels\": false, \"fontFamily\": \"sans-serif\", \"fontSize\": 18, \"markdownAutoWrap\": false, \"flowchart\": {\"htmlLabels\": false, \"wrappingWidth\": 360, \"minNodeWidth\": 300, \"curve\": \"basis\", \"nodeSpacing\": 28, \"rankSpacing\": 80}, \"themeVariables\": {\"fontFamily\": \"Arial, sans-serif\", \"fontSize\": \"18px\", \"primaryTextColor\": \"#edf2f7\", \"lineColor\": \"#71849f\", \"background\": \"#0b1220\"}}}%%\nflowchart LR\nO_perception[\"Keep task orientation observable<br/>and actionable through occlusion\"]:::opportunity\nO_perception_S0[\"Preserve detail and actual<br/>temporal context\"]:::solution\nO_perception --> O_perception_S0\nT10959[\"ESTABLISHED / IMPLEMENTED<br/>Numeral visibility audit<br/>Tiny blue fragment after resize<br/>visibility evidence, not recognition<br/>R01e \u00b7 #10959\"]:::evidence\nO_perception_S0 --> T10959\nclick T10959 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10959\" \"Open research ticket 10959\" _blank\nT10955[\"ESTABLISHED / IMPLEMENTED<br/>Actual image and history audit<br/>512\u2192224; crop absent at release<br/>six history frames actually supplied<br/>R01c \u00b7 #10955\"]:::evidence\nO_perception_S0 --> T10955\nclick T10955 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10955\" \"Open research ticket 10955\" _blank\nT10993[\"BACKLOG \u00b7 NOT RUN<br/>Visibility remediation<br/>BACKLOG: qualify crop/detail change<br/>current crop can disappear<br/>VIS01 \u00b7 #10993\"]:::pending\nO_perception_S0 -.-> T10993\nclick T10993 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10993\" \"Open research ticket 10993\" _blank\nO_perception_S1[\"Test whether image and<br/>instruction changes control<br/>actions\"]:::solution\nO_perception --> O_perception_S1\nT10954[\"MIXED / LIMITED<br/>Numeral + coherent-goal probes<br/>87 queries; initial cue response<br/>held-state target stays ~94\u00b0<br/>R01b \u00b7 #10954\"]:::mixed\nO_perception_S1 --> T10954\nclick T10954 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10954\" \"Open research ticket 10954\" _blank\nT10960[\"NEGATIVE RESULT<br/>Simple-action prompt probes<br/>36 predictions; directions<br/>not reliably commanded<br/>R02 \u00b7 #10960\"]:::negative\nO_perception_S1 --> T10960\nclick T10960 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10960\" \"Open research ticket 10960\" _blank\nT10961[\"NEGATIVE RESULT<br/>Vanilla / V3 / V4 prompt controls<br/>180 predictions; each model<br/>0/18 paired axis reversals<br/>R02b \u00b7 #10961\"]:::negative\nO_perception_S1 --> T10961\nclick T10961 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10961\" \"Open research ticket 10961\" _blank\nT11011[\"NEXT \u00b7 NOT RUN<br/>Perception vs action mapping<br/>NEXT: isolate source of failure<br/>seeing cues \u2260 using them correctly<br/>R01f \u00b7 #11011\"]:::next\nO_perception_S1 -.-> T11011\nclick T11011 \"http://127.0.0.1:4001/?project=typhon-research#ticket=11011\" \"Open research ticket 11011\" _blank\nT10994[\"BACKLOG \u00b7 NOT RUN<br/>Language / action grounding<br/>repair<br/>BACKLOG: matched input contracts<br/>no unqualified prompt control<br/>VIS02 \u00b7 #10994\"]:::pending\nO_perception_S1 -.-> T10994\nclick T10994 \"http://127.0.0.1:4001/?project=typhon-research#ticket=10994\" \"Open research ticket 10994\" _blank\nO_perception_S2[\"Recognise completed work without<br/>unnecessary manipulation\"]:::solution\nO_perception --> O_perception_S2\nT11005[\"REVIEW EXISTING WORK<br/>Simple visual completion test<br/>REVIEW: allowed pose variation<br/>false positives and no-op cases<br/>LIVE02 \u00b7 #11005\"]:::review\nO_perception_S2 -.-> T11005\nclick T11005 \"http://127.0.0.1:4001/?project=typhon-research#ticket=11005\" \"Open research ticket 11005\" _blank\nT11006[\"REVIEW EXISTING WORK<br/>Qwen + finished-reference image<br/>REVIEW: existing service and veto<br/>no reliable Qwen-only result<br/>LIVE03 \u00b7 #11006\"]:::review\nO_perception_S2 -.-> T11006\nclick T11006 \"http://127.0.0.1:4001/?project=typhon-research#ticket=11006\" \"Open research ticket 11006\" _blank\nclassDef outcome fill:#162b50,stroke:#8ab7ff,stroke-width:3px,color:#f8fbff;\nclassDef opportunity fill:#143936,stroke:#55c9b5,stroke-width:2px,color:#ecfff9;\nclassDef solution fill:#222d45,stroke:#8395b8,color:#eef2ff;\nclassDef positive fill:#143e33,stroke:#57d9a3,stroke-width:2px,color:#effff6;\nclassDef evidence fill:#18344b,stroke:#67b5e8,color:#eff9ff;\nclassDef mixed fill:#48361e,stroke:#dfb265,color:#fff7df;\nclassDef negative fill:#452632,stroke:#e78298,color:#fff0f4;\nclassDef next fill:#223353,stroke:#92acff,stroke-width:2px,stroke-dasharray:5 3,color:#edf1ff;\nclassDef pending fill:#242b39,stroke:#718096,stroke-dasharray:5 3,color:#d5deed;\nclassDef review fill:#332c48,stroke:#b5a0da,stroke-dasharray:3 3,color:#f2edff;\nclassDef blocked fill:#412d4b,stroke:#d796db,stroke-dasharray:3 3,color:#fff0ff;\nclassDef parked fill:#2b3038,stroke:#68717e,stroke-dasharray:3 5,color:#aeb8c7;\n"
+    }
+  ],
+  "updatedAt": "2026-10-13T21:38:42Z"
+}
