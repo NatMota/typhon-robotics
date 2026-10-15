@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "episodes": 6,
+  "all_scores_recomputed_exact": true,
+  "initial_state_exact": true,
+  "initial_native_images_and_prepared_nontext_exact": true,
+  "paired_generation_noise_checks": [
+    {
+      "a": "C-912171",
+      "b": "Yminus-912171",
+      "packets": 48,
+      "arrays_equal": 144
+    },
+    {
+      "a": "C-912171",
+      "b": "Yplus-912171",
+      "packets": 48,
+      "arrays_equal": 144
+    },
+    {
+      "a": "C-912172",
+      "b": "Yminus-912172",
+      "packets": 48,
+      "arrays_equal": 144
+    },
+    {
+      "a": "C-912172",
+      "b": "Yplus-912172",
+      "packets": 48,
+      "arrays_equal": 144
+    }
+  ],
+  "physical_scene_and_square_unchanged": true,
+  "no_truth_for_control": true,
+  "no_execution_errors": true,
+  "native_reproduction": [
+    {
+      "seed": 912171,
+      "prior_FF_first_nontext_RGB_equal": true,
+      "prior_FF_all_actions_exact": false,
+      "prior_final_xy_delta_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "seed": 912172,
+      "prior_FF_first_nontext_RGB_equal": true,
+      "prior_FF_all_actions_exact": true,
+      "prior_final_xy_delta_mm": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "scorer_self_check": {
+    "passed": true,
+    "valid_offset_passes_requested_not_original_centre": true,
+    "outside_physical_square_fails_even_at_requested_point": true,
+    "opposite_extreme_fails_requested_tolerance": true,
+    "other_criteria_unchanged": true
+  },
+  "checkpoint_probe": {
+    "passed": true,
+    "fresh_process": true,
+    "checkpoint": "/var/tmp/typhon-load04-20261014/train-B/step3000.pt",
+    "step": 3000,
+    "probe": "/var/tmp/typhon-load04-20261014/train-B/step3000-probe.pt",
+    "action_max_error": 0.0,
+    "checkpoint_bytes": 3729342124,
+    "checkpoint_mtime_ns": 1791994548061975494,
+    "optimizer_restored_for_inference": false,
+    "rotation_contract": "generic_interleaved_v1",
+    "domain_id": 29,
+    "observation_version": "O2"
+  },
+  "checked_epoch": 1792066385.6631289
+}

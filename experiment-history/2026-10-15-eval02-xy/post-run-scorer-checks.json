@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "analysis_only_after_rollouts": true,
+  "tests": [
+    {
+      "test": "sideways",
+      "passed": true,
+      "criteria": {
+        "position": true,
+        "orientation": true,
+        "marked_face_up": false,
+        "footprint_inside_target": true,
+        "placement_height": true,
+        "released": true,
+        "stable": false
+      }
+    },
+    {
+      "test": "elevated",
+      "passed": true,
+      "criteria": {
+        "position": true,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": true,
+        "placement_height": false,
+        "released": true,
+        "stable": false
+      }
+    },
+    {
+      "test": "unreleased",
+      "passed": true,
+      "criteria": {
+        "position": true,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": true,
+        "placement_height": true,
+        "released": false,
+        "stable": false
+      }
+    },
+    {
+      "test": "requested_centre_equals_original_predicate_for_all6",
+      "passed": true
+    }
+  ]
+}
