@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "episodes": 16,
+  "all_task_scores_recomputed": true,
+  "all_routes_from_supplied_task_only": true,
+  "paired_initial_state_inputs_and_noise_exact": true,
+  "feeding_loading_requests_share_initial_full_state_per_family_seed": true,
+  "no_observer_expert_or_truth_for_control": true,
+  "native_videos": 16,
+  "comparison_videos": [
+    {
+      "path": "/var/tmp/typhon-hier01-dev-20261015/comparisons/demo_0012-loading-912171-B-v-router.mp4",
+      "frames": 367,
+      "fps": 5
+    },
+    {
+      "path": "/var/tmp/typhon-hier01-dev-20261015/comparisons/demo_0013-feeding-912171-B-v-router.mp4",
+      "frames": 367,
+      "fps": 5
+    }
+  ],
+  "all_last_frames_decoded": true,
+  "totals": {
+    "single": {
+      "feeding": {
+        "n": 4,
+        "requested_success": 4,
+        "opposite_success": 0,
+        "neither": 0,
+        "supported_lift": 4
+      },
+      "loading": {
+        "n": 4,
+        "requested_success": 2,
+        "opposite_success": 0,
+        "neither": 2,
+        "supported_lift": 4
+      }
+    },
+    "router": {
+      "feeding": {
+        "n": 4,
+        "requested_success": 4,
+        "opposite_success": 0,
+        "neither": 0,
+        "supported_lift": 4
+      },
+      "loading": {
+        "n": 4,
+        "requested_success": 4,
+        "opposite_success": 0,
+        "neither": 0,
+        "supported_lift": 4
+      }
+    }
+  },
+  "gains": 2,
+  "losses": 0,
+  "epoch": 1792075812.9176621
+}
