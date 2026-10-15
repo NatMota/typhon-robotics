@@ -1,29 +1,11 @@
-# INIT02 — matched transition supervision
+# INIT02: loading improved, instruction-dependent preservation failed
 
-Status: protocol and inputs qualified; no new model has trained at this freeze.
+Adding the new loading examples produced 5/8 strict loading successes, compared with 0/8 for the unchanged parent and matched control. The same model disturbed all 8 completed-feeding scenes, while parent/control preserved 8/8. The earlier five passing skill cases remained passing, but both continued models lost pickup on two cases whose final result already failed.
 
-P is unchanged FL. R and T start from the identical FL full weights with fresh AdamW, seed151901, exactly3000 updates and effectivebatch4. Both receive identical4500 priorfeeding,4500 priorloading and1500 preservation presentations. The remaining1500 are oldloading in R and newINIT01 loading suffixes in T. These are expert-generated robot actions at four closely spaced terminal states, not measured human motor commands.
+The added movement was useful, but it was not selected reliably by the requested task. This model does not pass the planned advancement gate. No optional development trials or extra training were run. See [full report](INIT02_report.md), [methods](METHODS.md), and comparisons.csv for every fixed case.
 
-69 fixed native-policy episodes,23/model:8 initiation,8 preservation,3 priorfeeding,4 priorloading. H30,O2,domain29,10 refinements,1436 actions+24settle. No harness,TTC,teacher,router or completion stop. Two evaluation workers maximum; training runs alone. Optional12 quarantined development episodes only under the exact predeclared joint gate. See PLANNER_PROTOCOL.md.
+Saved-packet diagnostics isolate instruction changes at identical initial image/mask/proprio/domain inputs and noise. All 24 first chunks change with text; T mean XYZ difference is 1.385 mm over the first 30 predicted commands. This shows text sensitivity, not correct task understanding. Under feeding requests T touched 8/8, lifted 7/8, and reached the opposite loading endpoint in 5/8; those remain feeding failures.
 
-## Commands
+This is local expert-generated robot supervision at personal-data-derived scenarios. It does not recover human motor commands, establish broad generalisation, or test numeral recognition. The programme remains active; the next experiment is being selected with the planner.
 
-From this private worktree, with original datasets and the documented environments available:
-
-```sh
-.venv-sim/bin/python scripts/init02_prepare.py freeze
-.venv-sim/bin/python scripts/init02_prepare.py prepare
-.venv-xvla/bin/python scripts/init02_train.py gate
-# Commit, verify private push, and seal execution-freeze.json before GPU work.
-.venv-sim/bin/python scripts/init02_eval.py --model P --lane 0
-.venv-sim/bin/python scripts/init02_eval.py --model P --lane 1
-.venv-xvla/bin/python scripts/init02_train.py train --variant R
-.venv-sim/bin/python scripts/init02_eval.py --model R --lane 0
-.venv-sim/bin/python scripts/init02_eval.py --model R --lane 1
-# SHA-verify R checkpoint on Mint and offload local copy before T.
-.venv-xvla/bin/python scripts/init02_train.py train --variant T
-.venv-sim/bin/python scripts/init02_eval.py --model T --lane 0
-.venv-sim/bin/python scripts/init02_eval.py --model T --lane 1
-```
-
-Paths are frozen to /var/tmp/typhon-init02-20261015. Reproduction must use a fresh output namespace; original outputs are never overwritten. Optimizer is not saved: a fresh full-recipe rerun from FL is required for interrupted training. Phase deadlines remain fixed review gates.
+Visual evidence: [loading outcomes](media-preview/initiation.jpg), [preservation failures](media-preview/preservation.jpg), [earlier feeding](media-preview/prior_feeding.jpg), [earlier loading](media-preview/prior_loading.jpg), and [matched motion](media-preview/matched-loading-filmstrip.jpg). Full73-second simulation videos are in the verified Mint archive; their nominal encoded durations include boundary capture frames.

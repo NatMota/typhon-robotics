@@ -50,3 +50,6 @@ A later one-level raw initial-pixel mismatch stopped an R case before inference.
 Two coordinator-interrupted policy attempts and a separate pre-action initialization failure are archived outside the 69 canonical core outcomes. Completed trials are retained. Backup-receipt quoting errors affected orchestration only and were repaired before offloading or starting T.
 
 The protocol, exact source hashes, full environment inventory, fixed schedules, per-case results, raw observations, predicted actions and executed controller traces accompany the report.
+
+
+O2 observation contract: two native 512x512 RGB views plus, when detected, a fixed96x96 crop around a single plausible orange image component. The crop uses current RGB only, preserves camera-axis orientation and falls back to the two views if detection is absent or ambiguous. Its confidence is an uncalibrated area/fill heuristic, not orientation confidence. The native processor resizes the views for the VLA. This experiment changes supervision, not observation processing, and does not test numeral recognition.
