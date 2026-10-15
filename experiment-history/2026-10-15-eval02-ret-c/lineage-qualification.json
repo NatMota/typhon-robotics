@@ -1,0 +1,173 @@
+{
+  "passed": true,
+  "C_model": {
+    "checkpoint": "/var/tmp/typhon-load04-20261014/train-C/step3000.pt",
+    "probe": "/var/tmp/typhon-load04-20261014/train-C/step3000-probe.pt",
+    "sha256": "6fbdaeaae3ff3510a4288cac1ad4e7f73989bd9ab948ed343d30c2b615426f94"
+  },
+  "same_exact_FL_parent": "76334b9a17ac5fc49f46c2cb850a3c39ef38e0f13b9cdadc324f760567c5f128",
+  "config_differences": [
+    "variant"
+  ],
+  "same_optimizer_recipe_budget_and_parameter_counts": true,
+  "actual_steps_each": 3000,
+  "presentations_each": 12000,
+  "same_underlying_sample_order_and_labels": true,
+  "each_actual_order_matches_frozen_plan": true,
+  "C_visibility": "feeding hidden, loading visible",
+  "B_visibility": "counterbalanced",
+  "counts": {
+    "B": {
+      "load04-demo_0001-loading:hidden": 750,
+      "load04-demo_0002-loading:hidden": 750,
+      "load04-demo_0001-feeding:hidden": 750,
+      "load04-demo_0005-feeding:hidden": 750,
+      "load04-demo_0002-feeding:hidden": 750,
+      "load04-demo_0005-loading:visible": 750,
+      "load04-demo_0003-loading:visible": 750,
+      "load04-demo_0003-feeding:hidden": 750,
+      "load04-demo_0003-feeding:visible": 750,
+      "load04-demo_0001-feeding:visible": 750,
+      "load04-demo_0005-loading:hidden": 750,
+      "load04-demo_0005-feeding:visible": 750,
+      "load04-demo_0003-loading:hidden": 750,
+      "load04-demo_0002-feeding:visible": 750,
+      "load04-demo_0001-loading:visible": 750,
+      "load04-demo_0002-loading:visible": 750
+    },
+    "C": {
+      "load04-demo_0001-loading:visible": 1500,
+      "load04-demo_0002-loading:visible": 1500,
+      "load04-demo_0001-feeding:hidden": 1500,
+      "load04-demo_0005-feeding:hidden": 1500,
+      "load04-demo_0002-feeding:hidden": 1500,
+      "load04-demo_0005-loading:visible": 1500,
+      "load04-demo_0003-loading:visible": 1500,
+      "load04-demo_0003-feeding:hidden": 1500
+    }
+  },
+  "latest_goals": [
+    {
+      "id": "load04-demo_0001-loading",
+      "task": {
+        "type": "loading",
+        "target_position_xy_m": [
+          0.12,
+          0.15
+        ],
+        "target_yaw_rad": 0.0,
+        "target_position_jitter_m": 0.0,
+        "target_region_size_m": 0.11,
+        "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture."
+      }
+    },
+    {
+      "id": "load04-demo_0001-feeding",
+      "task": {
+        "type": "feeding",
+        "target_position_xy_m": [
+          0.125,
+          -0.12
+        ],
+        "target_yaw_rad": 0.0,
+        "target_position_jitter_m": 0.0,
+        "target_region_size_m": 0.1,
+        "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square."
+      }
+    },
+    {
+      "id": "load04-demo_0002-loading",
+      "task": {
+        "type": "loading",
+        "target_position_xy_m": [
+          0.12,
+          0.15
+        ],
+        "target_yaw_rad": 0.0,
+        "target_position_jitter_m": 0.0,
+        "target_region_size_m": 0.11,
+        "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture."
+      }
+    },
+    {
+      "id": "load04-demo_0002-feeding",
+      "task": {
+        "type": "feeding",
+        "target_position_xy_m": [
+          0.125,
+          -0.12
+        ],
+        "target_yaw_rad": 0.0,
+        "target_position_jitter_m": 0.0,
+        "target_region_size_m": 0.1,
+        "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square."
+      }
+    },
+    {
+      "id": "load04-demo_0003-loading",
+      "task": {
+        "type": "loading",
+        "target_position_xy_m": [
+          0.12,
+          0.15
+        ],
+        "target_yaw_rad": 0.0,
+        "target_position_jitter_m": 0.0,
+        "target_region_size_m": 0.11,
+        "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture."
+      }
+    },
+    {
+      "id": "load04-demo_0003-feeding",
+      "task": {
+        "type": "feeding",
+        "target_position_xy_m": [
+          0.125,
+          -0.12
+        ],
+        "target_yaw_rad": 0.0,
+        "target_position_jitter_m": 0.0,
+        "target_region_size_m": 0.1,
+        "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square."
+      }
+    },
+    {
+      "id": "load04-demo_0005-loading",
+      "task": {
+        "type": "loading",
+        "target_position_xy_m": [
+          0.12,
+          0.15
+        ],
+        "target_yaw_rad": 0.0,
+        "target_position_jitter_m": 0.0,
+        "target_region_size_m": 0.11,
+        "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture."
+      }
+    },
+    {
+      "id": "load04-demo_0005-feeding",
+      "task": {
+        "type": "feeding",
+        "target_position_xy_m": [
+          0.125,
+          -0.12
+        ],
+        "target_yaw_rad": 0.0,
+        "target_position_jitter_m": 0.0,
+        "target_region_size_m": 0.1,
+        "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square."
+      }
+    }
+  ],
+  "C_weights_and_probe_fresh_hash_verified": true,
+  "training_source_hash_verified": true,
+  "seed_and_variant_code": [
+    " torch.set_num_threads(4);random.seed(141901);np.random.seed(141901);torch.manual_seed(141901);torch.cuda.manual_seed_all(141901)",
+    " cfg={\"schema\":\"load04-full-joint-v1\",\"variant\":name,\"parent_sha256\":BASE_SHA,\"protocol_sha256\":sha(OUT/\"protocol.json\"),\"data_gate\":gate,",
+    " dump(d/\"complete.json\",{\"step\":3000,\"variant\":name,\"checkpoint_sha256\":sha(target),\"probe_sha256\":sha(d/\"step3000-probe.pt\"),",
+    " p=argparse.ArgumentParser();p.add_argument(\"op\",choices=[\"gate\",\"train\"]);p.add_argument(\"--variant\",choices=[\"C\",\"B\"]);a=p.parse_args()",
+    " gate()if a.op==\"gate\"else train(a.variant)"
+  ],
+  "finished_epoch": 1792070754.3044815
+}
