@@ -1,0 +1,644 @@
+{
+  "passed": true,
+  "new_model_calls": 0,
+  "physics_steps": 0,
+  "checks": [
+    {
+      "parent": "demo_0001",
+      "branch": "L-policy",
+      "actual_native_initial_tensors_exact": true,
+      "task_text_matches": true,
+      "nontext_exact_for_preservation": false,
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "crop": {
+        "detected": true,
+        "component_bbox_xywh": [
+          320,
+          314,
+          29,
+          22
+        ],
+        "crop_xywh": [
+          286,
+          277,
+          96,
+          96
+        ],
+        "area_px": 490,
+        "component_fill": 0.768025078369906,
+        "confidence": 0.768025078369906,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "3d469ce55e246c6e45d80bca06a4f3ac58c30d3158f32f1a51fa9d7b31396885",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "b2594bef69fb2d740f19630069e5061e3e6e4ece5a1a1e14bd5312f90713a2ae",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "candidate": null
+    },
+    {
+      "parent": "demo_0001",
+      "branch": "L-teacher",
+      "actual_native_initial_tensors_exact": true,
+      "task_text_matches": true,
+      "nontext_exact_for_preservation": false,
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "crop": {
+        "detected": true,
+        "component_bbox_xywh": [
+          320,
+          314,
+          29,
+          22
+        ],
+        "crop_xywh": [
+          286,
+          277,
+          96,
+          96
+        ],
+        "area_px": 490,
+        "component_fill": 0.768025078369906,
+        "confidence": 0.768025078369906,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "3d469ce55e246c6e45d80bca06a4f3ac58c30d3158f32f1a51fa9d7b31396885",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "b2594bef69fb2d740f19630069e5061e3e6e4ece5a1a1e14bd5312f90713a2ae",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "candidate": {
+        "actions": 245,
+        "complete_windows": 54,
+        "real_timestamps_reconstructed_from_recorded_initial_and_post_time": true,
+        "unrounded_dt_max_error": 2.6176422140977706e-12,
+        "all_command_history_exact": true
+      }
+    },
+    {
+      "parent": "demo_0001",
+      "branch": "F-preserve",
+      "actual_native_initial_tensors_exact": true,
+      "task_text_matches": false,
+      "nontext_exact_for_preservation": true,
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "crop": {
+        "detected": true,
+        "component_bbox_xywh": [
+          320,
+          314,
+          29,
+          22
+        ],
+        "crop_xywh": [
+          286,
+          277,
+          96,
+          96
+        ],
+        "area_px": 490,
+        "component_fill": 0.768025078369906,
+        "confidence": 0.768025078369906,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "input_hashes": {
+        "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+        "image_input": "3d469ce55e246c6e45d80bca06a4f3ac58c30d3158f32f1a51fa9d7b31396885",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "b2594bef69fb2d740f19630069e5061e3e6e4ece5a1a1e14bd5312f90713a2ae",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "candidate": {
+        "actions": 60,
+        "complete_windows": 8,
+        "real_timestamps_reconstructed_from_recorded_initial_and_post_time": true,
+        "unrounded_dt_max_error": 2.6176422140977706e-12,
+        "all_command_history_exact": true
+      }
+    },
+    {
+      "parent": "demo_0002",
+      "branch": "L-policy",
+      "actual_native_initial_tensors_exact": true,
+      "task_text_matches": true,
+      "nontext_exact_for_preservation": false,
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "crop": {
+        "detected": true,
+        "component_bbox_xywh": [
+          314,
+          314,
+          29,
+          22
+        ],
+        "crop_xywh": [
+          280,
+          277,
+          96,
+          96
+        ],
+        "area_px": 483,
+        "component_fill": 0.7570532915360502,
+        "confidence": 0.7570532915360502,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "96df1bd38359b543f8ba2d15c8a97211e2f0d15f2cb56d425e3c86bfc0c278d8",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "50e455f44ce747138960e11f3234fbeb5d1df0c756ad3db8a4006cc9d84ff977",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "candidate": null
+    },
+    {
+      "parent": "demo_0002",
+      "branch": "L-teacher",
+      "actual_native_initial_tensors_exact": true,
+      "task_text_matches": true,
+      "nontext_exact_for_preservation": false,
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "crop": {
+        "detected": true,
+        "component_bbox_xywh": [
+          314,
+          314,
+          29,
+          22
+        ],
+        "crop_xywh": [
+          280,
+          277,
+          96,
+          96
+        ],
+        "area_px": 483,
+        "component_fill": 0.7570532915360502,
+        "confidence": 0.7570532915360502,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "96df1bd38359b543f8ba2d15c8a97211e2f0d15f2cb56d425e3c86bfc0c278d8",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "50e455f44ce747138960e11f3234fbeb5d1df0c756ad3db8a4006cc9d84ff977",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "candidate": {
+        "actions": 243,
+        "complete_windows": 54,
+        "real_timestamps_reconstructed_from_recorded_initial_and_post_time": true,
+        "unrounded_dt_max_error": 1.3471862514435884e-12,
+        "all_command_history_exact": true
+      }
+    },
+    {
+      "parent": "demo_0002",
+      "branch": "F-preserve",
+      "actual_native_initial_tensors_exact": true,
+      "task_text_matches": false,
+      "nontext_exact_for_preservation": true,
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "crop": {
+        "detected": true,
+        "component_bbox_xywh": [
+          314,
+          314,
+          29,
+          22
+        ],
+        "crop_xywh": [
+          280,
+          277,
+          96,
+          96
+        ],
+        "area_px": 483,
+        "component_fill": 0.7570532915360502,
+        "confidence": 0.7570532915360502,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "input_hashes": {
+        "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+        "image_input": "96df1bd38359b543f8ba2d15c8a97211e2f0d15f2cb56d425e3c86bfc0c278d8",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "50e455f44ce747138960e11f3234fbeb5d1df0c756ad3db8a4006cc9d84ff977",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "candidate": {
+        "actions": 60,
+        "complete_windows": 8,
+        "real_timestamps_reconstructed_from_recorded_initial_and_post_time": true,
+        "unrounded_dt_max_error": 1.3471862514435884e-12,
+        "all_command_history_exact": true
+      }
+    },
+    {
+      "parent": "demo_0003",
+      "branch": "L-policy",
+      "actual_native_initial_tensors_exact": true,
+      "task_text_matches": true,
+      "nontext_exact_for_preservation": false,
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "crop": {
+        "detected": true,
+        "component_bbox_xywh": [
+          315,
+          314,
+          29,
+          22
+        ],
+        "crop_xywh": [
+          282,
+          277,
+          96,
+          96
+        ],
+        "area_px": 479,
+        "component_fill": 0.7507836990595611,
+        "confidence": 0.7507836990595611,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "4722454671d2afe3bd0efe7a9624a797865cbd5aa02b0a6dba9b1b0c0ec521c5",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "f4ad6ed69d221c27525cbc0a7817fb984ff7925708684ffd1cb252bb7f1e2af5",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "candidate": null
+    },
+    {
+      "parent": "demo_0003",
+      "branch": "L-teacher",
+      "actual_native_initial_tensors_exact": true,
+      "task_text_matches": true,
+      "nontext_exact_for_preservation": false,
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "crop": {
+        "detected": true,
+        "component_bbox_xywh": [
+          315,
+          314,
+          29,
+          22
+        ],
+        "crop_xywh": [
+          282,
+          277,
+          96,
+          96
+        ],
+        "area_px": 479,
+        "component_fill": 0.7507836990595611,
+        "confidence": 0.7507836990595611,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "4722454671d2afe3bd0efe7a9624a797865cbd5aa02b0a6dba9b1b0c0ec521c5",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "f4ad6ed69d221c27525cbc0a7817fb984ff7925708684ffd1cb252bb7f1e2af5",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "candidate": {
+        "actions": 243,
+        "complete_windows": 54,
+        "real_timestamps_reconstructed_from_recorded_initial_and_post_time": true,
+        "unrounded_dt_max_error": 1.3471862514435884e-12,
+        "all_command_history_exact": true
+      }
+    },
+    {
+      "parent": "demo_0003",
+      "branch": "F-preserve",
+      "actual_native_initial_tensors_exact": true,
+      "task_text_matches": false,
+      "nontext_exact_for_preservation": true,
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "crop": {
+        "detected": true,
+        "component_bbox_xywh": [
+          315,
+          314,
+          29,
+          22
+        ],
+        "crop_xywh": [
+          282,
+          277,
+          96,
+          96
+        ],
+        "area_px": 479,
+        "component_fill": 0.7507836990595611,
+        "confidence": 0.7507836990595611,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "input_hashes": {
+        "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+        "image_input": "4722454671d2afe3bd0efe7a9624a797865cbd5aa02b0a6dba9b1b0c0ec521c5",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "f4ad6ed69d221c27525cbc0a7817fb984ff7925708684ffd1cb252bb7f1e2af5",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "candidate": {
+        "actions": 60,
+        "complete_windows": 8,
+        "real_timestamps_reconstructed_from_recorded_initial_and_post_time": true,
+        "unrounded_dt_max_error": 1.3471862514435884e-12,
+        "all_command_history_exact": true
+      }
+    },
+    {
+      "parent": "demo_0005",
+      "branch": "L-policy",
+      "actual_native_initial_tensors_exact": true,
+      "task_text_matches": true,
+      "nontext_exact_for_preservation": false,
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "crop": {
+        "detected": true,
+        "component_bbox_xywh": [
+          314,
+          314,
+          29,
+          22
+        ],
+        "crop_xywh": [
+          280,
+          277,
+          96,
+          96
+        ],
+        "area_px": 474,
+        "component_fill": 0.7429467084639498,
+        "confidence": 0.7429467084639498,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "b108bf317b9334f48173a14b19347a89a7197aef4cef80a1e1baecbcf7bae78b",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "ce40c1920d948fbb8ce8983f420a5285c7ef5397767c9848df6b44bfdca7b31c",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "candidate": null
+    },
+    {
+      "parent": "demo_0005",
+      "branch": "L-teacher",
+      "actual_native_initial_tensors_exact": true,
+      "task_text_matches": true,
+      "nontext_exact_for_preservation": false,
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "crop": {
+        "detected": true,
+        "component_bbox_xywh": [
+          314,
+          314,
+          29,
+          22
+        ],
+        "crop_xywh": [
+          280,
+          277,
+          96,
+          96
+        ],
+        "area_px": 474,
+        "component_fill": 0.7429467084639498,
+        "confidence": 0.7429467084639498,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "b108bf317b9334f48173a14b19347a89a7197aef4cef80a1e1baecbcf7bae78b",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "ce40c1920d948fbb8ce8983f420a5285c7ef5397767c9848df6b44bfdca7b31c",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "candidate": {
+        "actions": 243,
+        "complete_windows": 54,
+        "real_timestamps_reconstructed_from_recorded_initial_and_post_time": true,
+        "unrounded_dt_max_error": 1.5390327900988154e-12,
+        "all_command_history_exact": true
+      }
+    },
+    {
+      "parent": "demo_0005",
+      "branch": "F-preserve",
+      "actual_native_initial_tensors_exact": true,
+      "task_text_matches": false,
+      "nontext_exact_for_preservation": true,
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "crop": {
+        "detected": true,
+        "component_bbox_xywh": [
+          314,
+          314,
+          29,
+          22
+        ],
+        "crop_xywh": [
+          280,
+          277,
+          96,
+          96
+        ],
+        "area_px": 474,
+        "component_fill": 0.7429467084639498,
+        "confidence": 0.7429467084639498,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "input_hashes": {
+        "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+        "image_input": "b108bf317b9334f48173a14b19347a89a7197aef4cef80a1e1baecbcf7bae78b",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "ce40c1920d948fbb8ce8983f420a5285c7ef5397767c9848df6b44bfdca7b31c",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "candidate": {
+        "actions": 60,
+        "complete_windows": 8,
+        "real_timestamps_reconstructed_from_recorded_initial_and_post_time": true,
+        "unrounded_dt_max_error": 1.5390327900988154e-12,
+        "all_command_history_exact": true
+      }
+    }
+  ],
+  "epoch": 1792082907.67271
+}
