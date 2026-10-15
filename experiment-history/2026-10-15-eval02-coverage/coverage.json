@@ -1,0 +1,1705 @@
+{
+  "passed": true,
+  "read_only": true,
+  "rollouts": 0,
+  "training": false,
+  "no_holdout_actions_or_outcomes_read": true,
+  "lineage_metadata_verified": true,
+  "lineage_order": [
+    "broad-Pt12k",
+    "GOAL-varied3000",
+    "LOAD01-FL3000",
+    "LOAD04-B3000"
+  ],
+  "earlier_base": {
+    "path": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-harness-20261010/research-checkpoints/broad-pt-20261011/step12000.pt",
+    "recorded_sha256": "59eb9e502c057d639e278e7f84d06c8fa8e3e513e52522dae47089a97b5c3736",
+    "metadata_available_in_checkpoint_folder": false,
+    "scope": "Full earlier pretraining and broad-Pt data not re-audited here. No claim that model has never encountered other goals."
+  },
+  "goal_counts": [
+    {
+      "stage": "LOAD04-B",
+      "task": "feeding",
+      "goal_x_m": 0.125,
+      "goal_y_m": -0.12,
+      "goal_yaw_rad": 0.0,
+      "actual_presentations": 6000
+    },
+    {
+      "stage": "LOAD04-B",
+      "task": "loading",
+      "goal_x_m": 0.12,
+      "goal_y_m": 0.15,
+      "goal_yaw_rad": 0.0,
+      "actual_presentations": 6000
+    },
+    {
+      "stage": "LOAD01-FL",
+      "task": "feeding",
+      "goal_x_m": 0.0,
+      "goal_y_m": -0.25,
+      "goal_yaw_rad": 0.0,
+      "actual_presentations": 1500
+    },
+    {
+      "stage": "LOAD01-FL",
+      "task": "feeding",
+      "goal_x_m": 0.125,
+      "goal_y_m": -0.12,
+      "goal_yaw_rad": 0.0,
+      "actual_presentations": 3000
+    },
+    {
+      "stage": "LOAD01-FL",
+      "task": "feeding",
+      "goal_x_m": 0.125,
+      "goal_y_m": 0.03,
+      "goal_yaw_rad": 0.0,
+      "actual_presentations": 1500
+    },
+    {
+      "stage": "LOAD01-FL",
+      "task": "loading",
+      "goal_x_m": 0.12,
+      "goal_y_m": 0.15,
+      "goal_yaw_rad": 0.0,
+      "actual_presentations": 6000
+    },
+    {
+      "stage": "GOAL-varied",
+      "task": "feeding",
+      "goal_x_m": 0.0,
+      "goal_y_m": -0.25,
+      "goal_yaw_rad": 0.0,
+      "actual_presentations": 3000
+    },
+    {
+      "stage": "GOAL-varied",
+      "task": "feeding",
+      "goal_x_m": 0.125,
+      "goal_y_m": -0.12,
+      "goal_yaw_rad": 0.0,
+      "actual_presentations": 6000
+    },
+    {
+      "stage": "GOAL-varied",
+      "task": "feeding",
+      "goal_x_m": 0.125,
+      "goal_y_m": 0.03,
+      "goal_yaw_rad": 0.0,
+      "actual_presentations": 3000
+    }
+  ],
+  "stages": [
+    {
+      "stage": "LOAD04-B",
+      "steps": 3000,
+      "actual_presentations": 12000,
+      "unique_episode_count": 8,
+      "source_demo_ids": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005"
+      ],
+      "unique_actual_windows": 1238,
+      "available_windows": 1238,
+      "all_samples_resolve_to_manifest": true,
+      "actual_sample_order_matches_frozen_plan": true,
+      "episodes": [
+        {
+          "id": "load04-demo_0001-loading",
+          "actual_placement_xy_m": [
+            0.13042053685372315,
+            0.15115587937453234
+          ],
+          "actual_placement_yaw_rad": -0.0013741305127213852,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 10.484447789381745,
+          "source_episode_sha256_checked": "d0ebe2fb9b5b61b17d62a99f155b0243b6c604f6df45f7b86db5551366e360eb",
+          "source_demo_id": "demo_0001",
+          "task": "loading",
+          "goal_xy_m": [
+            0.12,
+            0.15
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "privileged geometric expert robot commands, not measured human actions",
+          "actions": 442,
+          "frames": 111,
+          "archive": "/var/tmp/typhon-load04-20261014/data/load04-demo_0001-loading.npz",
+          "archive_sha256_recorded": "3ec52845d53c3d4064cf8e9d9e656ad49021c900a725258ea4ba1f3357cae66f"
+        },
+        {
+          "id": "load04-demo_0001-feeding",
+          "actual_placement_xy_m": [
+            0.1370197361457189,
+            -0.12108319103228417
+          ],
+          "actual_placement_yaw_rad": -0.00589474614248014,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 12.068444797285299,
+          "source_episode_sha256_checked": "a709500325c85d73af20ece7a4923d5ce6b1b6e7c44fa0510956f00c55451524",
+          "source_demo_id": "demo_0001",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "privileged geometric expert robot commands, not measured human actions",
+          "actions": 446,
+          "frames": 112,
+          "archive": "/var/tmp/typhon-load04-20261014/data/load04-demo_0001-feeding.npz",
+          "archive_sha256_recorded": "49cc2b34b8695dd0085558de245ad7570e9fc3f13e3b44f7e308bc242bbb0f94"
+        },
+        {
+          "id": "load04-demo_0002-loading",
+          "actual_placement_xy_m": [
+            0.12198244993105059,
+            0.15101870393890482
+          ],
+          "actual_placement_yaw_rad": -0.009001313718215135,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 2.228870889994015,
+          "source_episode_sha256_checked": "38fb9e2b2f7ffc7ca5c6371907245ebca714da736f1d8b1cfc313dc318257298",
+          "source_demo_id": "demo_0002",
+          "task": "loading",
+          "goal_xy_m": [
+            0.12,
+            0.15
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "privileged geometric expert robot commands, not measured human actions",
+          "actions": 303,
+          "frames": 76,
+          "archive": "/var/tmp/typhon-load04-20261014/data/load04-demo_0002-loading.npz",
+          "archive_sha256_recorded": "95a5542ee6329e1981256d00b10db61de0ecd3d6ddeaf77ed7f3105092ab9613"
+        },
+        {
+          "id": "load04-demo_0002-feeding",
+          "actual_placement_xy_m": [
+            0.126477778611601,
+            -0.1210490209188937
+          ],
+          "actual_placement_yaw_rad": -0.00813310567315173,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 1.8122567459336427,
+          "source_episode_sha256_checked": "1132fb09c476353edecbe22a437fe6703b47b24541fdc6d890a2f8758dc65caa",
+          "source_demo_id": "demo_0002",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "privileged geometric expert robot commands, not measured human actions",
+          "actions": 303,
+          "frames": 76,
+          "archive": "/var/tmp/typhon-load04-20261014/data/load04-demo_0002-feeding.npz",
+          "archive_sha256_recorded": "4baea968cf4305d7a0855880fe65543a9e246c136131d6379197c7c6c9cfc9d0"
+        },
+        {
+          "id": "load04-demo_0003-loading",
+          "actual_placement_xy_m": [
+            0.12272253257679656,
+            0.15095867693703813
+          ],
+          "actual_placement_yaw_rad": -0.008494829723716997,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 2.8863896308931305,
+          "source_episode_sha256_checked": "21c002df0824d16c21e8eb68ad6b57caf75460e274c181ee0169d3c3d2cf59b7",
+          "source_demo_id": "demo_0003",
+          "task": "loading",
+          "goal_xy_m": [
+            0.12,
+            0.15
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "privileged geometric expert robot commands, not measured human actions",
+          "actions": 305,
+          "frames": 77,
+          "archive": "/var/tmp/typhon-load04-20261014/data/load04-demo_0003-loading.npz",
+          "archive_sha256_recorded": "694ad0d5a3ca289d91fccc21aad45415f4339b62d81152b83ed3fa1310eb3335"
+        },
+        {
+          "id": "load04-demo_0003-feeding",
+          "actual_placement_xy_m": [
+            0.12745471661680197,
+            -0.12087766989812622
+          ],
+          "actual_placement_yaw_rad": -0.007536467168467894,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 2.6069020155887306,
+          "source_episode_sha256_checked": "708c724439d99835352e7e707f28703a94bfa825db6f536917faba03fd3e2f4f",
+          "source_demo_id": "demo_0003",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "privileged geometric expert robot commands, not measured human actions",
+          "actions": 303,
+          "frames": 76,
+          "archive": "/var/tmp/typhon-load04-20261014/data/load04-demo_0003-feeding.npz",
+          "archive_sha256_recorded": "d543168388dee812461a83ee82e337a2aab754b4b43bbaed5ab781778c106830"
+        },
+        {
+          "id": "load04-demo_0005-loading",
+          "actual_placement_xy_m": [
+            0.12188469285298366,
+            0.15101460730565575
+          ],
+          "actual_placement_yaw_rad": -0.008650572762954374,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 2.140442742700146,
+          "source_episode_sha256_checked": "d21d2d96c5b5fdd5d2488c84f709db3c4362a68ae47a1b18820a62e1816b7e67",
+          "source_demo_id": "demo_0005",
+          "task": "loading",
+          "goal_xy_m": [
+            0.12,
+            0.15
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "privileged geometric expert robot commands, not measured human actions",
+          "actions": 295,
+          "frames": 74,
+          "archive": "/var/tmp/typhon-load04-20261014/data/load04-demo_0005-loading.npz",
+          "archive_sha256_recorded": "5ff6ab54a8a05e35165e631ad74ec12d59c0014867c469322990efba0a5f4758"
+        },
+        {
+          "id": "load04-demo_0005-feeding",
+          "actual_placement_xy_m": [
+            0.12705075770615454,
+            -0.12099368376034642
+          ],
+          "actual_placement_yaw_rad": -0.008712463805556018,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 2.2788186818894616,
+          "source_episode_sha256_checked": "1e21f35bffb86d30a7fd1d83e139acf0218921aa6ccf30264cc46b937e02881f",
+          "source_demo_id": "demo_0005",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "privileged geometric expert robot commands, not measured human actions",
+          "actions": 296,
+          "frames": 74,
+          "archive": "/var/tmp/typhon-load04-20261014/data/load04-demo_0005-feeding.npz",
+          "archive_sha256_recorded": "cf0abded4e6436f134f25a1b989afd3b15d87c87a6c2c1d3deacb49a6b76edf2"
+        }
+      ],
+      "cell_counts": [
+        {
+          "source": "demo_0001",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "hidden",
+          "presentations": 750
+        },
+        {
+          "source": "demo_0001",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "visible",
+          "presentations": 750
+        },
+        {
+          "source": "demo_0001",
+          "task": "loading",
+          "xy": [
+            0.12,
+            0.15
+          ],
+          "yaw": 0.0,
+          "visibility": "hidden",
+          "presentations": 750
+        },
+        {
+          "source": "demo_0001",
+          "task": "loading",
+          "xy": [
+            0.12,
+            0.15
+          ],
+          "yaw": 0.0,
+          "visibility": "visible",
+          "presentations": 750
+        },
+        {
+          "source": "demo_0002",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "hidden",
+          "presentations": 750
+        },
+        {
+          "source": "demo_0002",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "visible",
+          "presentations": 750
+        },
+        {
+          "source": "demo_0002",
+          "task": "loading",
+          "xy": [
+            0.12,
+            0.15
+          ],
+          "yaw": 0.0,
+          "visibility": "hidden",
+          "presentations": 750
+        },
+        {
+          "source": "demo_0002",
+          "task": "loading",
+          "xy": [
+            0.12,
+            0.15
+          ],
+          "yaw": 0.0,
+          "visibility": "visible",
+          "presentations": 750
+        },
+        {
+          "source": "demo_0003",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "hidden",
+          "presentations": 750
+        },
+        {
+          "source": "demo_0003",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "visible",
+          "presentations": 750
+        },
+        {
+          "source": "demo_0003",
+          "task": "loading",
+          "xy": [
+            0.12,
+            0.15
+          ],
+          "yaw": 0.0,
+          "visibility": "hidden",
+          "presentations": 750
+        },
+        {
+          "source": "demo_0003",
+          "task": "loading",
+          "xy": [
+            0.12,
+            0.15
+          ],
+          "yaw": 0.0,
+          "visibility": "visible",
+          "presentations": 750
+        },
+        {
+          "source": "demo_0005",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "hidden",
+          "presentations": 750
+        },
+        {
+          "source": "demo_0005",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "visible",
+          "presentations": 750
+        },
+        {
+          "source": "demo_0005",
+          "task": "loading",
+          "xy": [
+            0.12,
+            0.15
+          ],
+          "yaw": 0.0,
+          "visibility": "hidden",
+          "presentations": 750
+        },
+        {
+          "source": "demo_0005",
+          "task": "loading",
+          "xy": [
+            0.12,
+            0.15
+          ],
+          "yaw": 0.0,
+          "visibility": "visible",
+          "presentations": 750
+        }
+      ]
+    },
+    {
+      "stage": "LOAD01-FL",
+      "steps": 3000,
+      "actual_presentations": 12000,
+      "unique_episode_count": 16,
+      "source_demo_ids": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "unique_actual_windows": 1165,
+      "available_windows": 1165,
+      "all_samples_resolve_to_manifest": true,
+      "actual_sample_order_matches_frozen_plan": true,
+      "episodes": [
+        {
+          "id": "personal_demo_0001-goal0",
+          "actual_placement_xy_m": [
+            0.1370197361457189,
+            -0.12108319103228417
+          ],
+          "actual_placement_yaw_rad": -0.00589474614248014,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 12.068444797285299,
+          "source_episode_sha256_checked": "3f55ec2f282a36644a45fb39f4d8ec0d542b87c367ad813e6a0da1e4afa156f5",
+          "source_demo_id": "demo_0001",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 446,
+          "frames": 112,
+          "archive": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/data/personal_demo_0001-goal0.npz",
+          "archive_sha256_recorded": "05ec88ea7fb8d5112a8c219252b41519ef8c98035f83f7c943c7676371aac7ba"
+        },
+        {
+          "id": "personal_demo_0001-goal2",
+          "actual_placement_xy_m": [
+            0.008731651214815332,
+            -0.2510564000075992
+          ],
+          "actual_placement_yaw_rad": 0.00050858370132592,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 8.795323411520561,
+          "source_episode_sha256_checked": "282118af492de69df59eeef0294404a0bf0b6d62ad958c159d6b6774dc9f7eb4",
+          "source_demo_id": "demo_0001",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.0,
+            -0.25
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.000000, y=-0.250000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 424,
+          "frames": 106,
+          "archive": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/data/personal_demo_0001-goal2.npz",
+          "archive_sha256_recorded": "5ee53229f8d3b8e92bfeafad1f51e803b07290d0037394810cab30e5b314b54b"
+        },
+        {
+          "id": "personal_demo_0002-goal0",
+          "actual_placement_xy_m": [
+            0.126477778611601,
+            -0.1210490209188937
+          ],
+          "actual_placement_yaw_rad": -0.00813310567315173,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 1.8122567459336427,
+          "source_episode_sha256_checked": "40a07e53e84f4a9d84c27ea1eb9f39ee23d30926c73cd9e5baad980579512c89",
+          "source_demo_id": "demo_0002",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 303,
+          "frames": 76,
+          "archive": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/data/personal_demo_0002-goal0.npz",
+          "archive_sha256_recorded": "41f61023fcc4d0b0e312675ac90ea0e285a8efa6baf1f9ce3866544e237a8f35"
+        },
+        {
+          "id": "personal_demo_0002-goal1",
+          "actual_placement_xy_m": [
+            0.12340280938654338,
+            0.029681659720281858
+          ],
+          "actual_placement_yaw_rad": -0.0045232635830976,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 1.628606272063616,
+          "source_episode_sha256_checked": "fc41e9f41274be61f8531e851b8d500fe71bedd826fba0c34048443dd07de889",
+          "source_demo_id": "demo_0002",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            0.03
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=0.030000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 286,
+          "frames": 72,
+          "archive": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/data/personal_demo_0002-goal1.npz",
+          "archive_sha256_recorded": "1cbf243e24a0e7ad7d039a43a9f1525fc46a3e89b7dddc78915c1070a0533176"
+        },
+        {
+          "id": "personal_demo_0003-goal0",
+          "actual_placement_xy_m": [
+            0.12745471661680197,
+            -0.12087766989812622
+          ],
+          "actual_placement_yaw_rad": -0.007536467168467894,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 2.6069020155887306,
+          "source_episode_sha256_checked": "8086ba12e29a6497aba59f52bd20b813453973d324b2e3ee1cd8a7bbf186ddae",
+          "source_demo_id": "demo_0003",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 303,
+          "frames": 76,
+          "archive": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/data/personal_demo_0003-goal0.npz",
+          "archive_sha256_recorded": "66c1ccbb9e071fb6ca3e9b6dc00a93d4fc0c5b95188be8493f96de7f545fbf8d"
+        },
+        {
+          "id": "personal_demo_0003-goal2",
+          "actual_placement_xy_m": [
+            -0.0007057993212463075,
+            -0.25090683164101285
+          ],
+          "actual_placement_yaw_rad": -0.003584598507449927,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 1.149128498912897,
+          "source_episode_sha256_checked": "697a87f02cc9d260d0073fa4a51bb317f50fb49cf35fe047781b428fac251f41",
+          "source_demo_id": "demo_0003",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.0,
+            -0.25
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.000000, y=-0.250000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 304,
+          "frames": 76,
+          "archive": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/data/personal_demo_0003-goal2.npz",
+          "archive_sha256_recorded": "b5fc685b1b080e328aad4675fea417e4ed8836961a8313ad0ca8552a87b0a320"
+        },
+        {
+          "id": "personal_demo_0005-goal0",
+          "actual_placement_xy_m": [
+            0.12705075770615454,
+            -0.12099368376034642
+          ],
+          "actual_placement_yaw_rad": -0.008712463805556018,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 2.2788186818894616,
+          "source_episode_sha256_checked": "5c9c5c8416ae3c4dcc38c2133aa5ac66c91ee85bfb0163895a42a80c8ed30683",
+          "source_demo_id": "demo_0005",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 296,
+          "frames": 74,
+          "archive": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/data/personal_demo_0005-goal0.npz",
+          "archive_sha256_recorded": "af07d101cbd8fa95a86725f617a1c6f0b5c48832acee6036c74d1ce3cfe9d2a2"
+        },
+        {
+          "id": "personal_demo_0005-goal1",
+          "actual_placement_xy_m": [
+            0.12307029303176423,
+            0.030058866291558305
+          ],
+          "actual_placement_yaw_rad": -0.007112189703324347,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 1.9306046264161714,
+          "source_episode_sha256_checked": "d2330e5bc0323310f98b00f9a9baa553cdb196a7a23e48301c0bfd35ce886d8a",
+          "source_demo_id": "demo_0005",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            0.03
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=0.030000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 278,
+          "frames": 70,
+          "archive": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/data/personal_demo_0005-goal1.npz",
+          "archive_sha256_recorded": "181da5329eef774078bf31214ad1792954ddafc0d7c2c396c5b1b643b554622e"
+        },
+        {
+          "id": "personal_demo_0012-goal0",
+          "actual_placement_xy_m": [
+            0.12600568159408,
+            -0.12092684646117866
+          ],
+          "actual_placement_yaw_rad": -0.0039646096441592164,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 1.3676402419023324,
+          "source_episode_sha256_checked": "28ef6783236034410d5ccb76e2a79fad17bb767ff82e3506c1934ac1ad3ff177",
+          "source_demo_id": "demo_0012",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 278,
+          "frames": 70,
+          "archive": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/data/personal_demo_0012-goal0.npz",
+          "archive_sha256_recorded": "01bac6d5f076f699595fb933bd15038437d838039d8002c2904a2275cd206c45"
+        },
+        {
+          "id": "personal_demo_0012-goal2",
+          "actual_placement_xy_m": [
+            -0.002958042840972569,
+            -0.25122634950787054
+          ],
+          "actual_placement_yaw_rad": -0.006778393222289572,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 3.2021790337961087,
+          "source_episode_sha256_checked": "da84a8bbc0cfc9d8319972e9143867c5b769ae82ee3699331a1e7b1d66c736fc",
+          "source_demo_id": "demo_0012",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.0,
+            -0.25
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.000000, y=-0.250000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 255,
+          "frames": 64,
+          "archive": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/data/personal_demo_0012-goal2.npz",
+          "archive_sha256_recorded": "b974b4fb06ef661e123a3ddb0e008f77d4e8cdd2005b1b9b8e30cf6f71a87cfc"
+        },
+        {
+          "id": "personal_demo_0013-goal0",
+          "actual_placement_xy_m": [
+            0.128555468260612,
+            -0.12105119656068498
+          ],
+          "actual_placement_yaw_rad": -0.007615285131654551,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 3.707609575105683,
+          "source_episode_sha256_checked": "9448d6a8f7f6dc3e780949673499f8771c6c3017ab173f971114795c0fd415b1",
+          "source_demo_id": "demo_0013",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 292,
+          "frames": 73,
+          "archive": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/data/personal_demo_0013-goal0.npz",
+          "archive_sha256_recorded": "ebda32e8b5ac9b9c0baefcdac4996c9cd09a4c541b46a0a12078b0948107681a"
+        },
+        {
+          "id": "personal_demo_0013-goal1",
+          "actual_placement_xy_m": [
+            0.12787983368865477,
+            0.030323741901935285
+          ],
+          "actual_placement_yaw_rad": -0.008683024758616131,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 2.8979735839685663,
+          "source_episode_sha256_checked": "8a9c0d08b8dc477724ac8d89b083559bd9fa0a4727df6521b26032fd2aee0c14",
+          "source_demo_id": "demo_0013",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            0.03
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=0.030000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 284,
+          "frames": 71,
+          "archive": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/data/personal_demo_0013-goal1.npz",
+          "archive_sha256_recorded": "ad7fc0b5fe8c52a1d4738d7e4653bfc933ea9d5a039237eeab58513c3cd99860"
+        },
+        {
+          "id": "load01-training-demo_0001",
+          "actual_placement_xy_m": [
+            0.13042053685372315,
+            0.15115587937453234
+          ],
+          "actual_placement_yaw_rad": -0.0013741305127213852,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 10.484447789381745,
+          "source_episode_sha256_checked": "d0ebe2fb9b5b61b17d62a99f155b0243b6c604f6df45f7b86db5551366e360eb",
+          "source_demo_id": "demo_0001",
+          "task": "loading",
+          "goal_xy_m": [
+            0.12,
+            0.15
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 442,
+          "frames": 111,
+          "archive": "/var/tmp/typhon-load01-20261013/data/load01-training-demo_0001.npz",
+          "archive_sha256_recorded": "46b389727476d180e4dbe9c22547e7921ec083ab902a86a0830ac7e696a4105f"
+        },
+        {
+          "id": "load01-training-demo_0002",
+          "actual_placement_xy_m": [
+            0.12198244993105059,
+            0.15101870393890482
+          ],
+          "actual_placement_yaw_rad": -0.009001313718215135,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 2.228870889994015,
+          "source_episode_sha256_checked": "38fb9e2b2f7ffc7ca5c6371907245ebca714da736f1d8b1cfc313dc318257298",
+          "source_demo_id": "demo_0002",
+          "task": "loading",
+          "goal_xy_m": [
+            0.12,
+            0.15
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 303,
+          "frames": 76,
+          "archive": "/var/tmp/typhon-load01-20261013/data/load01-training-demo_0002.npz",
+          "archive_sha256_recorded": "37a5b8050fc64876167d5b86981d2b4f7ad63850c43bf11c6f9b3c247ecf557f"
+        },
+        {
+          "id": "load01-training-demo_0003",
+          "actual_placement_xy_m": [
+            0.12272253257679656,
+            0.15095867693703813
+          ],
+          "actual_placement_yaw_rad": -0.008494829723716997,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 2.8863896308931305,
+          "source_episode_sha256_checked": "21c002df0824d16c21e8eb68ad6b57caf75460e274c181ee0169d3c3d2cf59b7",
+          "source_demo_id": "demo_0003",
+          "task": "loading",
+          "goal_xy_m": [
+            0.12,
+            0.15
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 305,
+          "frames": 77,
+          "archive": "/var/tmp/typhon-load01-20261013/data/load01-training-demo_0003.npz",
+          "archive_sha256_recorded": "a75b16f3e1de48890ace6d44e774fb242ce1d7f72b84f7ec814aec25c8299a5c"
+        },
+        {
+          "id": "load01-training-demo_0005",
+          "actual_placement_xy_m": [
+            0.12188469285298366,
+            0.15101460730565575
+          ],
+          "actual_placement_yaw_rad": -0.008650572762954374,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 2.140442742700146,
+          "source_episode_sha256_checked": "d21d2d96c5b5fdd5d2488c84f709db3c4362a68ae47a1b18820a62e1816b7e67",
+          "source_demo_id": "demo_0005",
+          "task": "loading",
+          "goal_xy_m": [
+            0.12,
+            0.15
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 295,
+          "frames": 74,
+          "archive": "/var/tmp/typhon-load01-20261013/data/load01-training-demo_0005.npz",
+          "archive_sha256_recorded": "24c411f5b3b2c5c55b0dfffd8cbaf029ef2d770bef963cf39cdb1306335d97b1"
+        }
+      ],
+      "cell_counts": [
+        {
+          "source": "demo_0001",
+          "task": "feeding",
+          "xy": [
+            0.0,
+            -0.25
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 500
+        },
+        {
+          "source": "demo_0001",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 500
+        },
+        {
+          "source": "demo_0001",
+          "task": "loading",
+          "xy": [
+            0.12,
+            0.15
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 1500
+        },
+        {
+          "source": "demo_0002",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 500
+        },
+        {
+          "source": "demo_0002",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            0.03
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 500
+        },
+        {
+          "source": "demo_0002",
+          "task": "loading",
+          "xy": [
+            0.12,
+            0.15
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 1500
+        },
+        {
+          "source": "demo_0003",
+          "task": "feeding",
+          "xy": [
+            0.0,
+            -0.25
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 500
+        },
+        {
+          "source": "demo_0003",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 500
+        },
+        {
+          "source": "demo_0003",
+          "task": "loading",
+          "xy": [
+            0.12,
+            0.15
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 1500
+        },
+        {
+          "source": "demo_0005",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 500
+        },
+        {
+          "source": "demo_0005",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            0.03
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 500
+        },
+        {
+          "source": "demo_0005",
+          "task": "loading",
+          "xy": [
+            0.12,
+            0.15
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 1500
+        },
+        {
+          "source": "demo_0012",
+          "task": "feeding",
+          "xy": [
+            0.0,
+            -0.25
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 500
+        },
+        {
+          "source": "demo_0012",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 500
+        },
+        {
+          "source": "demo_0013",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 500
+        },
+        {
+          "source": "demo_0013",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            0.03
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 500
+        }
+      ]
+    },
+    {
+      "stage": "GOAL-varied",
+      "steps": 3000,
+      "actual_presentations": 12000,
+      "unique_episode_count": 12,
+      "source_demo_ids": [
+        "demo_0001",
+        "demo_0002",
+        "demo_0003",
+        "demo_0005",
+        "demo_0012",
+        "demo_0013"
+      ],
+      "unique_actual_windows": 856,
+      "available_windows": 856,
+      "all_samples_resolve_to_manifest": true,
+      "actual_sample_order_matches_frozen_plan": null,
+      "episodes": [
+        {
+          "id": "personal_demo_0001-goal0",
+          "actual_placement_xy_m": [
+            0.1370197361457189,
+            -0.12108319103228417
+          ],
+          "actual_placement_yaw_rad": -0.00589474614248014,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 12.068444797285299,
+          "source_episode_sha256_checked": "3f55ec2f282a36644a45fb39f4d8ec0d542b87c367ad813e6a0da1e4afa156f5",
+          "source_demo_id": "demo_0001",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 446,
+          "frames": 112,
+          "archive": "personal_demo_0001-goal0.npz",
+          "archive_sha256_recorded": "05ec88ea7fb8d5112a8c219252b41519ef8c98035f83f7c943c7676371aac7ba"
+        },
+        {
+          "id": "personal_demo_0001-goal2",
+          "actual_placement_xy_m": [
+            0.008731651214815332,
+            -0.2510564000075992
+          ],
+          "actual_placement_yaw_rad": 0.00050858370132592,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 8.795323411520561,
+          "source_episode_sha256_checked": "282118af492de69df59eeef0294404a0bf0b6d62ad958c159d6b6774dc9f7eb4",
+          "source_demo_id": "demo_0001",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.0,
+            -0.25
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.000000, y=-0.250000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 424,
+          "frames": 106,
+          "archive": "personal_demo_0001-goal2.npz",
+          "archive_sha256_recorded": "5ee53229f8d3b8e92bfeafad1f51e803b07290d0037394810cab30e5b314b54b"
+        },
+        {
+          "id": "personal_demo_0002-goal0",
+          "actual_placement_xy_m": [
+            0.126477778611601,
+            -0.1210490209188937
+          ],
+          "actual_placement_yaw_rad": -0.00813310567315173,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 1.8122567459336427,
+          "source_episode_sha256_checked": "40a07e53e84f4a9d84c27ea1eb9f39ee23d30926c73cd9e5baad980579512c89",
+          "source_demo_id": "demo_0002",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 303,
+          "frames": 76,
+          "archive": "personal_demo_0002-goal0.npz",
+          "archive_sha256_recorded": "41f61023fcc4d0b0e312675ac90ea0e285a8efa6baf1f9ce3866544e237a8f35"
+        },
+        {
+          "id": "personal_demo_0002-goal1",
+          "actual_placement_xy_m": [
+            0.12340280938654338,
+            0.029681659720281858
+          ],
+          "actual_placement_yaw_rad": -0.0045232635830976,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 1.628606272063616,
+          "source_episode_sha256_checked": "fc41e9f41274be61f8531e851b8d500fe71bedd826fba0c34048443dd07de889",
+          "source_demo_id": "demo_0002",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            0.03
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=0.030000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 286,
+          "frames": 72,
+          "archive": "personal_demo_0002-goal1.npz",
+          "archive_sha256_recorded": "1cbf243e24a0e7ad7d039a43a9f1525fc46a3e89b7dddc78915c1070a0533176"
+        },
+        {
+          "id": "personal_demo_0003-goal0",
+          "actual_placement_xy_m": [
+            0.12745471661680197,
+            -0.12087766989812622
+          ],
+          "actual_placement_yaw_rad": -0.007536467168467894,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 2.6069020155887306,
+          "source_episode_sha256_checked": "8086ba12e29a6497aba59f52bd20b813453973d324b2e3ee1cd8a7bbf186ddae",
+          "source_demo_id": "demo_0003",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 303,
+          "frames": 76,
+          "archive": "personal_demo_0003-goal0.npz",
+          "archive_sha256_recorded": "66c1ccbb9e071fb6ca3e9b6dc00a93d4fc0c5b95188be8493f96de7f545fbf8d"
+        },
+        {
+          "id": "personal_demo_0003-goal2",
+          "actual_placement_xy_m": [
+            -0.0007057993212463075,
+            -0.25090683164101285
+          ],
+          "actual_placement_yaw_rad": -0.003584598507449927,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 1.149128498912897,
+          "source_episode_sha256_checked": "697a87f02cc9d260d0073fa4a51bb317f50fb49cf35fe047781b428fac251f41",
+          "source_demo_id": "demo_0003",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.0,
+            -0.25
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.000000, y=-0.250000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 304,
+          "frames": 76,
+          "archive": "personal_demo_0003-goal2.npz",
+          "archive_sha256_recorded": "b5fc685b1b080e328aad4675fea417e4ed8836961a8313ad0ca8552a87b0a320"
+        },
+        {
+          "id": "personal_demo_0005-goal0",
+          "actual_placement_xy_m": [
+            0.12705075770615454,
+            -0.12099368376034642
+          ],
+          "actual_placement_yaw_rad": -0.008712463805556018,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 2.2788186818894616,
+          "source_episode_sha256_checked": "5c9c5c8416ae3c4dcc38c2133aa5ac66c91ee85bfb0163895a42a80c8ed30683",
+          "source_demo_id": "demo_0005",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 296,
+          "frames": 74,
+          "archive": "personal_demo_0005-goal0.npz",
+          "archive_sha256_recorded": "af07d101cbd8fa95a86725f617a1c6f0b5c48832acee6036c74d1ce3cfe9d2a2"
+        },
+        {
+          "id": "personal_demo_0005-goal1",
+          "actual_placement_xy_m": [
+            0.12307029303176423,
+            0.030058866291558305
+          ],
+          "actual_placement_yaw_rad": -0.007112189703324347,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 1.9306046264161714,
+          "source_episode_sha256_checked": "d2330e5bc0323310f98b00f9a9baa553cdb196a7a23e48301c0bfd35ce886d8a",
+          "source_demo_id": "demo_0005",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            0.03
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=0.030000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 278,
+          "frames": 70,
+          "archive": "personal_demo_0005-goal1.npz",
+          "archive_sha256_recorded": "181da5329eef774078bf31214ad1792954ddafc0d7c2c396c5b1b643b554622e"
+        },
+        {
+          "id": "personal_demo_0012-goal0",
+          "actual_placement_xy_m": [
+            0.12600568159408,
+            -0.12092684646117866
+          ],
+          "actual_placement_yaw_rad": -0.0039646096441592164,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 1.3676402419023324,
+          "source_episode_sha256_checked": "28ef6783236034410d5ccb76e2a79fad17bb767ff82e3506c1934ac1ad3ff177",
+          "source_demo_id": "demo_0012",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 278,
+          "frames": 70,
+          "archive": "personal_demo_0012-goal0.npz",
+          "archive_sha256_recorded": "01bac6d5f076f699595fb933bd15038437d838039d8002c2904a2275cd206c45"
+        },
+        {
+          "id": "personal_demo_0012-goal2",
+          "actual_placement_xy_m": [
+            -0.002958042840972569,
+            -0.25122634950787054
+          ],
+          "actual_placement_yaw_rad": -0.006778393222289572,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 3.2021790337961087,
+          "source_episode_sha256_checked": "da84a8bbc0cfc9d8319972e9143867c5b769ae82ee3699331a1e7b1d66c736fc",
+          "source_demo_id": "demo_0012",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.0,
+            -0.25
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.000000, y=-0.250000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 255,
+          "frames": 64,
+          "archive": "personal_demo_0012-goal2.npz",
+          "archive_sha256_recorded": "b974b4fb06ef661e123a3ddb0e008f77d4e8cdd2005b1b9b8e30cf6f71a87cfc"
+        },
+        {
+          "id": "personal_demo_0013-goal0",
+          "actual_placement_xy_m": [
+            0.128555468260612,
+            -0.12105119656068498
+          ],
+          "actual_placement_yaw_rad": -0.007615285131654551,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 3.707609575105683,
+          "source_episode_sha256_checked": "9448d6a8f7f6dc3e780949673499f8771c6c3017ab173f971114795c0fd415b1",
+          "source_demo_id": "demo_0013",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            -0.12
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 292,
+          "frames": 73,
+          "archive": "personal_demo_0013-goal0.npz",
+          "archive_sha256_recorded": "ebda32e8b5ac9b9c0baefcdac4996c9cd09a4c541b46a0a12078b0948107681a"
+        },
+        {
+          "id": "personal_demo_0013-goal1",
+          "actual_placement_xy_m": [
+            0.12787983368865477,
+            0.030323741901935285
+          ],
+          "actual_placement_yaw_rad": -0.008683024758616131,
+          "actual_goal_score_recomputed_strict": true,
+          "actual_position_error_mm": 2.8979735839685663,
+          "source_episode_sha256_checked": "8a9c0d08b8dc477724ac8d89b083559bd9fa0a4727df6521b26032fd2aee0c14",
+          "source_demo_id": "demo_0013",
+          "task": "feeding",
+          "goal_xy_m": [
+            0.125,
+            0.03
+          ],
+          "goal_yaw_rad": 0.0,
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=0.030000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "action_labels": "generated privileged-expert robot commands encoded using pre-action robot proprioception, not measured human actions",
+          "actions": 284,
+          "frames": 71,
+          "archive": "personal_demo_0013-goal1.npz",
+          "archive_sha256_recorded": "ad7fc0b5fe8c52a1d4738d7e4653bfc933ea9d5a039237eeab58513c3cd99860"
+        }
+      ],
+      "cell_counts": [
+        {
+          "source": "demo_0001",
+          "task": "feeding",
+          "xy": [
+            0.0,
+            -0.25
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 1000
+        },
+        {
+          "source": "demo_0001",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 1000
+        },
+        {
+          "source": "demo_0002",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 1000
+        },
+        {
+          "source": "demo_0002",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            0.03
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 1000
+        },
+        {
+          "source": "demo_0003",
+          "task": "feeding",
+          "xy": [
+            0.0,
+            -0.25
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 1000
+        },
+        {
+          "source": "demo_0003",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 1000
+        },
+        {
+          "source": "demo_0005",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 1000
+        },
+        {
+          "source": "demo_0005",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            0.03
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 1000
+        },
+        {
+          "source": "demo_0012",
+          "task": "feeding",
+          "xy": [
+            0.0,
+            -0.25
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 1000
+        },
+        {
+          "source": "demo_0012",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 1000
+        },
+        {
+          "source": "demo_0013",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            -0.12
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 1000
+        },
+        {
+          "source": "demo_0013",
+          "task": "feeding",
+          "xy": [
+            0.125,
+            0.03
+          ],
+          "yaw": 0.0,
+          "visibility": "native",
+          "presentations": 1000
+        }
+      ]
+    }
+  ],
+  "latest_action_archive_checks": [
+    {
+      "id": "load04-demo_0001-loading",
+      "archive_hash_matches": true,
+      "targets_shape": [
+        442,
+        20
+      ],
+      "proprio_shape": [
+        111,
+        20
+      ],
+      "frame_action_stride": 4,
+      "target_xyz_min_m": [
+        -0.3084651231765747,
+        -0.25,
+        0.8197844624519348
+      ],
+      "target_xyz_max_m": [
+        0.11999999731779099,
+        0.15000000596046448,
+        1.0800000429153442
+      ],
+      "target_semantics": "absolute EEF commands, not object-goal coordinates; array variation is motion-phase variation, not additional task goals"
+    },
+    {
+      "id": "load04-demo_0001-feeding",
+      "archive_hash_matches": true,
+      "targets_shape": [
+        446,
+        20
+      ],
+      "proprio_shape": [
+        112,
+        20
+      ],
+      "frame_action_stride": 4,
+      "target_xyz_min_m": [
+        -0.3084651231765747,
+        -0.25,
+        0.8197844624519348
+      ],
+      "target_xyz_max_m": [
+        0.125,
+        0.08221457153558731,
+        1.0800000429153442
+      ],
+      "target_semantics": "absolute EEF commands, not object-goal coordinates; array variation is motion-phase variation, not additional task goals"
+    },
+    {
+      "id": "load04-demo_0002-loading",
+      "archive_hash_matches": true,
+      "targets_shape": [
+        303,
+        20
+      ],
+      "proprio_shape": [
+        76,
+        20
+      ],
+      "frame_action_stride": 4,
+      "target_xyz_min_m": [
+        -0.25,
+        -0.25,
+        0.8197844624519348
+      ],
+      "target_xyz_max_m": [
+        0.11999999731779099,
+        0.15000000596046448,
+        1.0800000429153442
+      ],
+      "target_semantics": "absolute EEF commands, not object-goal coordinates; array variation is motion-phase variation, not additional task goals"
+    },
+    {
+      "id": "load04-demo_0002-feeding",
+      "archive_hash_matches": true,
+      "targets_shape": [
+        303,
+        20
+      ],
+      "proprio_shape": [
+        76,
+        20
+      ],
+      "frame_action_stride": 4,
+      "target_xyz_min_m": [
+        -0.25,
+        -0.25,
+        0.8197844624519348
+      ],
+      "target_xyz_max_m": [
+        0.125,
+        -0.11999999731779099,
+        1.0800000429153442
+      ],
+      "target_semantics": "absolute EEF commands, not object-goal coordinates; array variation is motion-phase variation, not additional task goals"
+    },
+    {
+      "id": "load04-demo_0003-loading",
+      "archive_hash_matches": true,
+      "targets_shape": [
+        305,
+        20
+      ],
+      "proprio_shape": [
+        77,
+        20
+      ],
+      "frame_action_stride": 4,
+      "target_xyz_min_m": [
+        -0.25,
+        -0.25,
+        0.8197844624519348
+      ],
+      "target_xyz_max_m": [
+        0.11999999731779099,
+        0.15000000596046448,
+        1.0800000429153442
+      ],
+      "target_semantics": "absolute EEF commands, not object-goal coordinates; array variation is motion-phase variation, not additional task goals"
+    },
+    {
+      "id": "load04-demo_0003-feeding",
+      "archive_hash_matches": true,
+      "targets_shape": [
+        303,
+        20
+      ],
+      "proprio_shape": [
+        76,
+        20
+      ],
+      "frame_action_stride": 4,
+      "target_xyz_min_m": [
+        -0.25,
+        -0.25,
+        0.8197844624519348
+      ],
+      "target_xyz_max_m": [
+        0.125,
+        0.10285598039627075,
+        1.0800000429153442
+      ],
+      "target_semantics": "absolute EEF commands, not object-goal coordinates; array variation is motion-phase variation, not additional task goals"
+    },
+    {
+      "id": "load04-demo_0005-loading",
+      "archive_hash_matches": true,
+      "targets_shape": [
+        295,
+        20
+      ],
+      "proprio_shape": [
+        74,
+        20
+      ],
+      "frame_action_stride": 4,
+      "target_xyz_min_m": [
+        -0.2513827383518219,
+        -0.25,
+        0.8197844624519348
+      ],
+      "target_xyz_max_m": [
+        0.11999999731779099,
+        0.15000000596046448,
+        1.0800000429153442
+      ],
+      "target_semantics": "absolute EEF commands, not object-goal coordinates; array variation is motion-phase variation, not additional task goals"
+    },
+    {
+      "id": "load04-demo_0005-feeding",
+      "archive_hash_matches": true,
+      "targets_shape": [
+        296,
+        20
+      ],
+      "proprio_shape": [
+        74,
+        20
+      ],
+      "frame_action_stride": 4,
+      "target_xyz_min_m": [
+        -0.2513827383518219,
+        -0.25,
+        0.8197844624519348
+      ],
+      "target_xyz_max_m": [
+        0.125,
+        -0.02340775914490223,
+        1.0800000429153442
+      ],
+      "target_semantics": "absolute EEF commands, not object-goal coordinates; array variation is motion-phase variation, not additional task goals"
+    }
+  ],
+  "latest_loader_source_hash_matches_training": true,
+  "limits": "Ancestry hash links verified from sealed metadata; this audit did not rehash all4GB historical checkpoints. Latest B bytes were verified in EVAL02-XY. Original broad/pretraining not exhaustively re-audited. Coverage is not a behavioural retention test.",
+  "finished_epoch": 1792067779.287244
+}

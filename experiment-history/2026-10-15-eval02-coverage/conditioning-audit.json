@@ -1,0 +1,25 @@
+{
+  "scene_builder_source": "supervisor/feeding_loading/environment.py:reset",
+  "source_sha256": "1f790260461ba79b03875602ecd7f17a4ca888596b8ed10772a2aefa90dd180c",
+  "feeding_rendered_stage_centre_uses_task_target": true,
+  "basis": "inspected native reset destinations: m1_stage = task target for feeding; explicit scene metadata, no new image generation",
+  "all_three_stages_goal_yaw_rad": [
+    0.0
+  ],
+  "physical_and_visual_goal_jointly_varied": true,
+  "independent_numeric_only_supervision_in_audited_continuations": false,
+  "camera_audit": [
+    {
+      "stage": "LOAD04-B",
+      "camera_configurations_in_relevant_combined_manifest": 1
+    },
+    {
+      "stage": "LOAD01-FL",
+      "camera_configurations_in_relevant_combined_manifest": 1
+    },
+    {
+      "stage": "GOAL-varied",
+      "camera_configurations_in_relevant_combined_manifest": 1
+    }
+  ]
+}
