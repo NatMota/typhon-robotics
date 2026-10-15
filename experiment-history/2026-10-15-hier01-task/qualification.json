@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "fixed_task_only_routing": true,
+  "unknown_task_rejected_before_worker": true,
+  "scenario_id_cannot_change_selection": true,
+  "new_packet_generations": 4,
+  "fresh_probes": 2,
+  "checks": [
+    {
+      "task": "feeding",
+      "model": "GOAL",
+      "direct_vs_dispatched_exact": true,
+      "archived_direct_FIT_exact": true,
+      "checkpoint": {
+        "checkpoint": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000.pt",
+        "probe": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000-probe.pt",
+        "sha256": "d5449244d96e55e60c3342af9fffe2ae64362b74cdf9c3d41e39b74995c9bcdb",
+        "probe_sha256": "6452eed3b6e9ab899685147ac39e1f1fd2558217b7978aa10a530321ddec8c01",
+        "step": 3000
+      },
+      "load": {
+        "ready": true,
+        "load_time_s": 2.704187620023731,
+        "checkpoint": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000.pt",
+        "verification": {
+          "passed": true,
+          "fresh_process": true,
+          "checkpoint": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000.pt",
+          "step": 3000,
+          "probe": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000-probe.pt",
+          "action_max_error": 0.0,
+          "checkpoint_bytes": 3729340908,
+          "checkpoint_mtime_ns": 1791797726771834339,
+          "optimizer_restored_for_inference": false,
+          "rotation_contract": "generic_interleaved_v1",
+          "domain_id": 29,
+          "observation_version": "O2"
+        },
+        "inference_configuration": {
+          "parameter_requires_grad": "allTrue",
+          "module_mode": "eval",
+          "execution": "torch.inference_mode",
+          "dtype": "bf16",
+          "H": 30,
+          "denoise_steps": 10
+        }
+      }
+    },
+    {
+      "task": "loading",
+      "model": "FL",
+      "direct_vs_dispatched_exact": true,
+      "archived_direct_FIT_exact": true,
+      "checkpoint": {
+        "checkpoint": "/var/tmp/typhon-load01-20261013/train-FL/step3000.pt",
+        "probe": "/var/tmp/typhon-load01-20261013/train-FL/step3000-probe.pt",
+        "sha256": "76334b9a17ac5fc49f46c2cb850a3c39ef38e0f13b9cdadc324f760567c5f128",
+        "probe_sha256": "621318035b71ad85f1f7aff4d6636a5023aea889a78454a18212c29eac0727f9",
+        "step": 3000
+      },
+      "load": {
+        "ready": true,
+        "load_time_s": 2.47760034998646,
+        "checkpoint": "/var/tmp/typhon-load01-20261013/train-FL/step3000.pt",
+        "verification": {
+          "passed": true,
+          "fresh_process": true,
+          "checkpoint": "/var/tmp/typhon-load01-20261013/train-FL/step3000.pt",
+          "step": 3000,
+          "probe": "/var/tmp/typhon-load01-20261013/train-FL/step3000-probe.pt",
+          "action_max_error": 0.0,
+          "checkpoint_bytes": 3729341420,
+          "checkpoint_mtime_ns": 1791921577941972287,
+          "optimizer_restored_for_inference": false,
+          "rotation_contract": "generic_interleaved_v1",
+          "domain_id": 29,
+          "observation_version": "O2"
+        },
+        "inference_configuration": {
+          "parameter_requires_grad": "allTrue",
+          "module_mode": "eval",
+          "execution": "torch.inference_mode",
+          "dtype": "bf16",
+          "H": 30,
+          "denoise_steps": 10
+        }
+      }
+    }
+  ],
+  "epoch": 1792073055.6050406
+}

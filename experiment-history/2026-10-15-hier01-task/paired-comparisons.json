@@ -1,0 +1,74 @@
+[
+  {
+    "stage": "main",
+    "context": "A",
+    "seed": 912171,
+    "B_success": true,
+    "router_success": true,
+    "B_position_error_mm": 7.918652371194583,
+    "router_position_error_mm": 3.1249306851460146,
+    "router_model": "GOAL",
+    "B_outcome": "requested",
+    "router_outcome": "requested"
+  },
+  {
+    "stage": "main",
+    "context": "B",
+    "seed": 912171,
+    "B_success": false,
+    "router_success": true,
+    "B_position_error_mm": 145.94811740679597,
+    "router_position_error_mm": 5.526461196739372,
+    "router_model": "GOAL",
+    "B_outcome": "neither",
+    "router_outcome": "requested"
+  },
+  {
+    "stage": "main",
+    "context": "C",
+    "seed": 912171,
+    "B_success": true,
+    "router_success": true,
+    "B_position_error_mm": 7.451108974852821,
+    "router_position_error_mm": 4.677773759961211,
+    "router_model": "GOAL",
+    "B_outcome": "requested",
+    "router_outcome": "requested"
+  },
+  {
+    "stage": "main",
+    "context": "D",
+    "seed": 912171,
+    "B_success": true,
+    "router_success": true,
+    "B_position_error_mm": 10.909314279974552,
+    "router_position_error_mm": 8.134365094039646,
+    "router_model": "FL",
+    "B_outcome": "requested",
+    "router_outcome": "requested"
+  },
+  {
+    "stage": "confirmation",
+    "context": "B",
+    "seed": 912172,
+    "B_success": false,
+    "router_success": true,
+    "B_position_error_mm": 138.75000039726876,
+    "router_position_error_mm": 7.106547432709025,
+    "router_model": "GOAL",
+    "B_outcome": "neither",
+    "router_outcome": "requested"
+  },
+  {
+    "stage": "confirmation",
+    "context": "D",
+    "seed": 912172,
+    "B_success": true,
+    "router_success": true,
+    "B_position_error_mm": 4.624317175745571,
+    "router_position_error_mm": 5.926860920977476,
+    "router_model": "FL",
+    "B_outcome": "requested",
+    "router_outcome": "requested"
+  }
+]

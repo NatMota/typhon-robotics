@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "main_episodes": 8,
+  "confirmation_episodes": 4,
+  "all_task_scores_recomputed": true,
+  "all_routes_from_supplied_task_only": true,
+  "paired_initial_state_inputs_and_noise_exact": true,
+  "shared_context_C_D_initial_state_identical": true,
+  "no_observer_expert_or_truth_for_control": true,
+  "native_videos": 12,
+  "comparison_videos": [
+    {
+      "path": "/var/tmp/typhon-hier01-task-20261015/comparisons/B-B-v-router.mp4",
+      "frames": 367,
+      "fps": 5
+    },
+    {
+      "path": "/var/tmp/typhon-hier01-task-20261015/comparisons/D-B-v-router.mp4",
+      "frames": 367,
+      "fps": 5
+    }
+  ],
+  "all_last_frames_decoded": true,
+  "epoch": 1792073459.5956385
+}
