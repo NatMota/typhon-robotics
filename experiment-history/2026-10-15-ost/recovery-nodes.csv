@@ -1,0 +1,80 @@
+id,type,label,parent_id,x,y,color
+T10969,experiment,"R06 · #10969
+Compare observable phase harness, unmodified V4 and deterministic skills",S_recovery_0,1220,58.0,#4a4428
+R10969,result,"Guard blocks valid grasps 1,126 close vetoes; reject",T10969,1620,67.5,#56343c
+T10970,experiment,"R06b · #10970
+Fix post-release observer projection in a training-only prototype",S_recovery_0,1220,185.0,#4a4428
+R10970,result,"Position error 16–19 mm → 0.44–0.66 mm, same images",T10970,1620,194.5,#574831
+T10984,experiment,"NEXT02 · #10984
+Repair observation hypotheses before granting the harness veto authority",S_recovery_0,1220,312.0,#4a4428
+R10984,result,"BLOCKED: observers remain below preregistered qualification. No veto, grasp or release authority.",T10984,1620,312.0,#4e374f
+T10999,experiment,"CTRL02 · #10999
+Specify and log hard workspace, no-go and joint-boundary policies",S_recovery_0,1220,449.5,#4a4428
+R10999,result,27 checks plus 36 successful expert episodes: zero guard rejections. Logging implemented; not full robot-safety validation.,T10999,1620,439.0,#574831
+T11004,experiment,"LIVE01 · #11004
+Verify the existing live harness and controller telemetry hookup",S_recovery_0,1220,597.5,#4a4428
+R11004,result,"REVIEW: original V4 shadow parity passed. New copy-safe lineage resolves timestamps, but LOAD04-B paired parity fails on raw camera variation. No control authority.",T11004,1620,587.0,#574831
+T11030,experiment,"OBS05 · #11030
+Test fresh glyph-motion evidence against the held-state latch",S_recovery_0,1220,735.0,#4a4428
+R11030,result,"Eight replay episodes / 1,219 observations. All four passive variants fail gates; glyph filtering loses too much recall.",T11030,1620,735.0,#574831
+T11031,experiment,"OBS06 · #11031
+Test aperture and release evidence on additional archived episodes",S_recovery_0,1220,862.0,#4a4428
+R11031,result,"24 episodes / 8,784 observations: contact false positives 108 to 20, precision 94.65%. Still below 95% gate; no authority.",T11031,1620,862.0,#574831
+T11054,experiment,"LIVE01-P · #11054
+Carry camera acquisition provenance across copies without changing robot execution",S_recovery_0,1220,1010.0,#4a4428
+R11054,result,"Review: capture provenance 6,365/6,365; offline tensors unchanged. Live pair differed by one background pixel, then actions diverged. Both tasks succeeded; exact live transparency failed.",T11054,1620,989.0,#574831
+S_recovery_0,solution,Qualify state estimates and safety checks,O_recovery,820,543.5,#343a46
+T10971,experiment,"R06c · #10971
+Qualify and reject a two-axis IK endpoint selector",S_recovery_1,1220,1183.0,#4a4428
+R10971,result,Six-take success 3/6 → 1/6 Feasible endpoint ≠ feasible path,T10971,1620,1192.5,#56343c
+T10973,experiment,"R08 · #10973
+Qualify geometric expert recovery from exact V4 failure states",S_recovery_1,1220,1310.0,#4a4428
+R10973,result,Nominal 2/6 → grasp-aware 3/6 recoveries quarantined from training,T10973,1620,1319.5,#574831
+T10976,experiment,"R11 · #10976
+Prototype a typed primitive interface and deterministic supervisor",S_recovery_1,1220,1437.0,#4a4428
+R10976,result,Interface works; skills limited 2/6 pickups; 0/6 completions,T10976,1620,1446.5,#574831
+T10977,experiment,"R12 · #10977
+Train and evaluate a causal phase predictor",S_recovery_1,1220,1563.0,#4a4428
+R10977,result,63.7% accuracy; early release confidence gate fails; disabled,T10977,1620,1563.0,#56343c
+T11000,experiment,"HIER01 · #11000
+Train a high-level skill selector only after primitives are reliable",S_recovery_1,1220,1670.0,#4a4428
+R11000,result,BLOCKED: reliable primitive transitions and observation authority are prerequisites. No high-level selector training.,T11000,1620,1670.0,#4e374f
+S_recovery_1,solution,Qualify skills and phase control,O_recovery,820,1436.0,#343a46
+T10978,experiment,"R13 · #10978
+Compare DAgger, options, residual RL, offline Q and PPO approaches",S_recovery_2,1220,1822.0,#4a4428
+R10978,result,"DAgger, residuals, Q, PPO reviewed no new RL training performed",T10978,1620,1831.5,#244a3d
+T11001,experiment,"REL01 · #11001
+Collect qualified learner-state corrections and run a separate DAgger experiment",S_recovery_2,1220,1949.0,#4a4428
+R11001,result,"One DAgger iteration, four corrections plus nominal data, 3k updates. Quarantine recovery 0/4; no benefit demonstrated.",T11001,1620,1949.0,#30445a
+T11002,experiment,"REL02 · #11002
+Compare supervised residual correction with bounded residual RL",S_recovery_2,1220,2076.0,#4a4428
+R11002,result,BLOCKED: reliable correction targets and action support required. Residual RL not run.,T11002,1620,2076.0,#4e374f
+T11003,experiment,"REL03 · #11003
+Evaluate offline value ranking or PPO/DPPO only with adequate action support",S_recovery_2,1220,2203.0,#4a4428
+R11003,result,BLOCKED: useful proposals and valid rewards required. Offline Q / PPO on X-VLA not run.,T11003,1620,2212.5,#4e374f
+S_recovery_2,solution,Test correction data and RL prerequisites,O_recovery,820,2022.0,#343a46
+T11041,experiment,"ALPHA01 · #11041
+AlphaNIST-inspired Panda PPO/reset-sampling pilot",S_recovery_3,1220,2365.5,#4a4428
+R11041,result,Small point-cloud PPO pilot: adaptive reset sampling has no demonstrated advantage. All five policies 0/4 full starts. Separate from X-VLA.,T11041,1620,2355.0,#574831
+T11043,experiment,"ALPHA02 · #11043
+frozen-policy 4s/15s reset qualification and release-only control",S_recovery_3,1220,2513.5,#4a4428
+R11043,result,Frozen 32-rollout follow-up: all four policies 0/4 full starts and zero new grasps. Release-only matches near-goal success; park further PPO.,T11043,1620,2503.0,#574831
+T11051,experiment,"ALPHA03 · #11051
+Fuller AlphaNIST implementation and visual-orientation extension — deferred",S_recovery_3,1220,2661.5,#4a4428
+R11051,result,PARKED by request. Fuller GPU-parallel/reset-bank implementation and visual orientation extension recorded; no implementation or training started.,T11051,1620,2651.0,#373b42
+S_recovery_3,solution,Separate AlphaNIST-style PPO from X-VLA,O_recovery,820,2523.0,#343a46
+T11050,experiment,"DATA07-R · #11050
+Qualify acquisition repairs on training families before admitting corrective data",S_recovery_4,1220,2876.5,#4a4428
+R11050,result,"Completed: native B loading3/4. Only0001 tipped pre-acquisition; one same-state C-pose/B-grip chunk still failed (0/1 conversions), with428.09mm final error. Full horizon and exact state/input/noise checks passed. Zero successful correction examples; no training. Raw809files SHA256-verified on Mint.",T11050,1620,2824.0,#574831
+T11052,experiment,"DATA07-GE · #11052
+Qualify one geometric-expert continuation from B's failed approach state",S_recovery_4,1220,3098.0,#4a4428
+R11052,result,"Completed: exact-state geometric teacher placed/released inside fixture (1.22 mm, 0.016 deg yaw) but brick lay sideways (90 deg tilt). Strict 0/1; no correction candidate. Open descent tipped before close. No training; stopped after one attempt.",T11052,1620,3056.0,#574831
+T11053,experiment,"CTRL03 · #11053
+Diagnose loading acquisition tipping before qualifying a controller repair",S_recovery_4,1220,3288.0,#4a4428
+R11053,result,Nominal sampled gripper corridor clears the brick; executed finger shell hits its top before closure. Proposed readiness gate failed: 11.85 mm minimum versus 3 mm. Zero repair rollouts.,T11053,1620,3267.0,#574831
+T11055,experiment,"CTRL04 · #11055
+Test one fixed pre-descent dwell from the failed acquisition state",S_recovery_4,1220,3446.5,#4a4428
+R11055,result,Completed: extra 4 s reduced entry error from 5.69 to 4.18 mm. Strict success 0/2; both tipped before grasp. Settling alone insufficient. Raw archive verified on Mint.,T11055,1620,3436.0,#574831
+S_recovery_4,solution,Qualify training-family corrective supervision,O_recovery,820,3171.0,#343a46
+O_recovery,opportunity,Advance phases only from trustworthy evidence,outcome,420,1857.25,#2d443b
+outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60

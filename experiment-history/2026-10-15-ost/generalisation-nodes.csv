@@ -1,0 +1,56 @@
+id,type,label,parent_id,x,y,color
+T10962,experiment,"R03 · #10962
+Train a new six-take full-weight X-VLA-Pt with fixed 3k/12k checkpoints",S_generalisation_0,1220,68.5,#4a4428
+R10962,result,"Six P_train takes, 439 windows. Fresh full-weight Pt reached 3k and 12k checkpoints in 64 minutes; performance tested separately.",T10962,1620,58.0,#244a3d
+T10963,experiment,"R03b · #10963
+Evaluate narrow M6, broad-Pt 3k and broad-Pt 12k on unchanged holdouts",S_generalisation_0,1220,206.0,#4a4428
+R10963,result,"Narrow M6, broad3k and broad12k each 0/6 development grasps. These starts lie outside the training position hull.",T10963,1620,206.0,#56343c
+T10964,experiment,"R03c · #10964
+Measure broad-Pt 12k competence on its six familiar starts",S_generalisation_0,1220,333.0,#4a4428
+R10964,result,"Broad12k on six familiar starts: 6/6 grasps, 5/6 stable square placements, 4/6 strict successes.",T10964,1620,333.0,#574831
+T10965,experiment,"R03d · #10965
+Audit source/holdout position and yaw coverage",S_generalisation_0,1220,460.0,#4a4428
+R10965,result,All three development starts lie outside the six training starts' XY convex hull. Coverage gap established.,T10965,1620,460.0,#244a3d
+T10983,experiment,"NEXT01 · #10983
+Measure local robustness around successful broad-Pt 12k starts",S_generalisation_0,1220,587.0,#4a4428
+R10983,result,"Selected familiar local variations: 14/16 grasps and 13/16 strict successes. Bounded local competence, not broad transfer.",T10983,1620,587.0,#574831
+S_generalisation_0,solution,Broader adaptation and coverage checks,O_generalisation,820,337.25,#343a46
+T10992,experiment,"DATA07 · #10992
+Add training-only failure and correction coverage after teacher qualification",S_generalisation_1,1220,749.5,#4a4428
+R10992,result,18 original episodes verified; original V4's three additions remain unverified. Four later corrections are separate data and gave 0/4 recoveries.,T10992,1620,739.0,#30445a
+S_generalisation_1,solution,Audit repair data,O_generalisation,820,759.0,#343a46
+T11013,experiment,"B01 · #11013
+Diagnose why task B loading does not generalise",S_generalisation_2,1220,912.0,#4a4428
+R11013,result,28 physical runs and 18 fixed-input goal probes separate grasp and destination failures; expert feasibility established.,T11013,1620,912.0,#574831
+T11037,experiment,"LOAD01 · #11037
+Test loading supervision while retaining feeding competence",S_generalisation_2,1220,1039.0,#4a4428
+R11037,result,New loading supervision: 3/4 taught and 2/2 development loading successes. Feeding 4/6 vs control 5/6; task selection tested next.,T11037,1620,1039.0,#574831
+S_generalisation_2,solution,Teach loading without losing feeding,O_generalisation,820,985.0,#343a46
+T11038,experiment,"LOAD02 · #11038
+Switch feeding/loading instruction in an identical scene",S_generalisation_3,1220,1201.5,#4a4428
+R11038,result,"Identical scene, different text: model loads under both instructions. Four wrong feeding destinations; zero two-way switches.",T11038,1620,1191.0,#574831
+T11039,experiment,"LOAD03 · #11039
+Test whether fixture appearance controls task choice",S_generalisation_3,1220,1339.0,#4a4428
+R11039,result,Visible fixture: loading 8/8. Hidden: feeding 8/8. Eight requested and eight wrong endpoints; zero instruction switches.,T11039,1620,1339.0,#574831
+T11040,experiment,"LOAD04 · #11040
+Counterbalanced task supervision in identical scenes",S_generalisation_3,1220,1476.5,#4a4428
+R11040,result,Balanced vs control: requested region 16/16 vs 8/16; strict 12/16 vs 8/16. Loading stays 4/8. Four cases tip before grasp. Archive verified.,T11040,1620,1466.0,#574831
+S_generalisation_3,solution,Separate task instruction from fixture appearance,O_generalisation,820,1348.5,#343a46
+T11044,experiment,"LOAD05 · #11044
+Pre-contact C/B acquisition crossover",S_generalisation_4,1220,1648.5,#4a4428
+R11044,result,Original restart qualification stopped. The causal comparison was completed separately in R2; no original crossover outcome.,T11044,1620,1639.0,#574831
+T11045,experiment,"LOAD05-Q · #11045
+Repair content signatures and qualify saved-action restart",S_generalisation_4,1220,1776.5,#4a4428
+R11045,result,Content checks pass; copied solver-constraint state mismatches. Stopped before model inference. Failed qualification preserved.,T11045,1620,1766.0,#574831
+T11046,experiment,"LOAD05-R · #11046
+Reconstruct pre-contact states and cross C/B acquisition policies",S_generalisation_4,1220,1924.5,#4a4428
+R11046,result,Both native controls reproduce. Crossed test stopped only on an XML visual statistic; controls subsequently reused in R2.,T11046,1620,1914.0,#574831
+T11047,experiment,"LOAD05-R2 · #11047
+Complete two crossed-policy acquisition branches",S_generalisation_4,1220,2072.5,#4a4428
+R11047,result,Only B from its own state tips. Crossed pickups are upright (0.86 and 1.62 degrees). State-policy interaction in one inspected case.,T11047,1620,2062.0,#574831
+T11048,experiment,"LOAD06 · #11048
+Separate pose sequence from gripper schedule at acquisition",S_generalisation_4,1220,2220.5,#4a4428
+R11048,result,Pose-only substitution fixes acquisition: 1.12 versus 62.76 degrees tilt. Grip-only does not. B resumes; no full-placement or training claim.,T11048,1620,2210.0,#574831
+S_generalisation_4,solution,Isolate approach state and acquisition policy,O_generalisation,820,1939.25,#343a46
+O_generalisation,opportunity,The model succeeds locally but follows scene cues,outcome,420,1138.25,#2d443b
+outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60
