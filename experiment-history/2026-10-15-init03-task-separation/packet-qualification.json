@@ -1,0 +1,787 @@
+{
+  "passed": true,
+  "epoch": 1792091694.547616,
+  "audit": [
+    {
+      "parent": "demo_0001",
+      "tasks": {
+        "loading": {
+          "episode": "demo_0001-L-teacher",
+          "source_sha256": "df3f94daf2c3bfa73e74f5e95591ab97d5de439553d1a5f32010a0e401fd6921",
+          "window": {
+            "id": "demo_0001-L-teacher:0",
+            "episode": "demo_0001-L-teacher",
+            "source": "demo_0001",
+            "component": "transition",
+            "task": "loading",
+            "frame": 0,
+            "start": 0,
+            "end": 30
+          },
+          "window_index": 1165,
+          "exposures": {
+            "R": 0,
+            "T": 7
+          },
+          "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "hashes": {
+            "input_ids": "6ca4d6129609e7a1598a43641ca6e8828e5f20b607aa487798d36464d4d296b5",
+            "image_input": "4476b7a0ab90e7aadcdacdc85c053728cbc8900918bba8d2bdde253dc230e737",
+            "image_mask": "7cf14546ccfbb8d99cad0d72d4d444d5b1bbc7cd0c768ce7384001fdf399c235",
+            "proprio": "7140229d7eedbc3adff94e034e0a6ebdae028ae07dfce04ef2f43796e4014e62",
+            "action": "37e4d0e43f90cbcd9dd76d92c1f4ac2f6936ea7c7ba9317facb890ba4b23d233",
+            "domain_id": "79b1c8c429ac953d27578ebb2a6e8f722820d33860b046a5254c627dd4c72f2d"
+          },
+          "initial_gripper_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_frame_action_index": 0
+        },
+        "feeding": {
+          "episode": "demo_0001-F-preserve",
+          "source_sha256": "a458f7e95670478ef7147a685a33363020d27cfc487f175f491dc4e80ca60187",
+          "window": {
+            "id": "demo_0001-F-preserve:0",
+            "episode": "demo_0001-F-preserve",
+            "source": "demo_0001",
+            "component": "preservation",
+            "task": "feeding",
+            "frame": 0,
+            "start": 0,
+            "end": 30
+          },
+          "window_index": 1219,
+          "exposures": {
+            "R": 47,
+            "T": 47
+          },
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "hashes": {
+            "input_ids": "f3b205c62a89e9a2bc212661393055f45bf30e6b9cafe9f898d8441c36cadb49",
+            "image_input": "4476b7a0ab90e7aadcdacdc85c053728cbc8900918bba8d2bdde253dc230e737",
+            "image_mask": "7cf14546ccfbb8d99cad0d72d4d444d5b1bbc7cd0c768ce7384001fdf399c235",
+            "proprio": "7140229d7eedbc3adff94e034e0a6ebdae028ae07dfce04ef2f43796e4014e62",
+            "action": "e0bbf4e29fe64a861e759a713263e60a05631437d621dbaf01e501ef51cda728",
+            "domain_id": "79b1c8c429ac953d27578ebb2a6e8f722820d33860b046a5254c627dd4c72f2d"
+          },
+          "initial_gripper_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_frame_action_index": 0
+        }
+      },
+      "effective_nontext_equal": {
+        "image_input": true,
+        "image_mask": true,
+        "proprio": true,
+        "domain_id": true
+      },
+      "same_action_instant": true,
+      "conflicting_inherited_grasp_verb_in_hold_instruction": true,
+      "runtime_matches": {
+        "R-feeding-912171": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "R-feeding-912172": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "R-loading-912171": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "R-loading-912172": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "T-feeding-912171": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "T-feeding-912172": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "T-loading-912171": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "T-loading-912172": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        }
+      }
+    },
+    {
+      "parent": "demo_0002",
+      "tasks": {
+        "loading": {
+          "episode": "demo_0002-L-teacher",
+          "source_sha256": "942b326ec3c2b1ec98fdb8bfa6d61c153b21b27c137f4f448dcf6beabb17efcc",
+          "window": {
+            "id": "demo_0002-L-teacher:0",
+            "episode": "demo_0002-L-teacher",
+            "source": "demo_0002",
+            "component": "transition",
+            "task": "loading",
+            "frame": 0,
+            "start": 0,
+            "end": 30
+          },
+          "window_index": 1227,
+          "exposures": {
+            "R": 0,
+            "T": 7
+          },
+          "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "hashes": {
+            "input_ids": "6ca4d6129609e7a1598a43641ca6e8828e5f20b607aa487798d36464d4d296b5",
+            "image_input": "89869787269c0b5d9f2c1b897715cb41c3b9cb175e02592dadfce067fdf63185",
+            "image_mask": "7cf14546ccfbb8d99cad0d72d4d444d5b1bbc7cd0c768ce7384001fdf399c235",
+            "proprio": "6311375e27fa21bcbd2edeadcd9b4543310bc59994de823725541ab5f52e5363",
+            "action": "30279fbfeae06fbc62883e01e813219ee2818a3c5122f873b4926885934e1725",
+            "domain_id": "79b1c8c429ac953d27578ebb2a6e8f722820d33860b046a5254c627dd4c72f2d"
+          },
+          "initial_gripper_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_frame_action_index": 0
+        },
+        "feeding": {
+          "episode": "demo_0002-F-preserve",
+          "source_sha256": "ef9fa961308e62bae02fd3efec5dfb7707d971e456dfa27451d798ef44c5a409",
+          "window": {
+            "id": "demo_0002-F-preserve:0",
+            "episode": "demo_0002-F-preserve",
+            "source": "demo_0002",
+            "component": "preservation",
+            "task": "feeding",
+            "frame": 0,
+            "start": 0,
+            "end": 30
+          },
+          "window_index": 1281,
+          "exposures": {
+            "R": 47,
+            "T": 47
+          },
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "hashes": {
+            "input_ids": "f3b205c62a89e9a2bc212661393055f45bf30e6b9cafe9f898d8441c36cadb49",
+            "image_input": "89869787269c0b5d9f2c1b897715cb41c3b9cb175e02592dadfce067fdf63185",
+            "image_mask": "7cf14546ccfbb8d99cad0d72d4d444d5b1bbc7cd0c768ce7384001fdf399c235",
+            "proprio": "6311375e27fa21bcbd2edeadcd9b4543310bc59994de823725541ab5f52e5363",
+            "action": "a96561901c68af3fabbdfb60559826dccc01a968a0ea23c5e09f0b98d9b1eb2f",
+            "domain_id": "79b1c8c429ac953d27578ebb2a6e8f722820d33860b046a5254c627dd4c72f2d"
+          },
+          "initial_gripper_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_frame_action_index": 0
+        }
+      },
+      "effective_nontext_equal": {
+        "image_input": true,
+        "image_mask": true,
+        "proprio": true,
+        "domain_id": true
+      },
+      "same_action_instant": true,
+      "conflicting_inherited_grasp_verb_in_hold_instruction": true,
+      "runtime_matches": {
+        "R-feeding-912171": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "R-feeding-912172": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "R-loading-912171": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "R-loading-912172": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "T-feeding-912171": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "T-feeding-912172": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "T-loading-912171": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "T-loading-912172": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        }
+      }
+    },
+    {
+      "parent": "demo_0003",
+      "tasks": {
+        "loading": {
+          "episode": "demo_0003-L-teacher",
+          "source_sha256": "5f58481c44195b44ff4d41b3c472b450c88ce8b3f80d2847ac112696b0c42ff9",
+          "window": {
+            "id": "demo_0003-L-teacher:0",
+            "episode": "demo_0003-L-teacher",
+            "source": "demo_0003",
+            "component": "transition",
+            "task": "loading",
+            "frame": 0,
+            "start": 0,
+            "end": 30
+          },
+          "window_index": 1289,
+          "exposures": {
+            "R": 0,
+            "T": 7
+          },
+          "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "hashes": {
+            "input_ids": "6ca4d6129609e7a1598a43641ca6e8828e5f20b607aa487798d36464d4d296b5",
+            "image_input": "76619d6308115ccc2302e5db6fa1968b211101eb6d2bd8154b45bd73fe7dea9e",
+            "image_mask": "7cf14546ccfbb8d99cad0d72d4d444d5b1bbc7cd0c768ce7384001fdf399c235",
+            "proprio": "82295ff15e966cef2816ea8d4effcee1fa537f0c707a99fd5111b075b90e0749",
+            "action": "d18303766097558f1580c698873f9bf60420e027d99ef78b6ad7eb1a73d0d17e",
+            "domain_id": "79b1c8c429ac953d27578ebb2a6e8f722820d33860b046a5254c627dd4c72f2d"
+          },
+          "initial_gripper_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_frame_action_index": 0
+        },
+        "feeding": {
+          "episode": "demo_0003-F-preserve",
+          "source_sha256": "03663f8c19914ca36ece3b4e3b554a91b8e564facaf532ef90766d2648e6a872",
+          "window": {
+            "id": "demo_0003-F-preserve:0",
+            "episode": "demo_0003-F-preserve",
+            "source": "demo_0003",
+            "component": "preservation",
+            "task": "feeding",
+            "frame": 0,
+            "start": 0,
+            "end": 30
+          },
+          "window_index": 1343,
+          "exposures": {
+            "R": 46,
+            "T": 46
+          },
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "hashes": {
+            "input_ids": "f3b205c62a89e9a2bc212661393055f45bf30e6b9cafe9f898d8441c36cadb49",
+            "image_input": "76619d6308115ccc2302e5db6fa1968b211101eb6d2bd8154b45bd73fe7dea9e",
+            "image_mask": "7cf14546ccfbb8d99cad0d72d4d444d5b1bbc7cd0c768ce7384001fdf399c235",
+            "proprio": "82295ff15e966cef2816ea8d4effcee1fa537f0c707a99fd5111b075b90e0749",
+            "action": "eca05189590f9ca6f8250df066e0ea54c8114dd41e1a01ebc7ed306fb0d280d4",
+            "domain_id": "79b1c8c429ac953d27578ebb2a6e8f722820d33860b046a5254c627dd4c72f2d"
+          },
+          "initial_gripper_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_frame_action_index": 0
+        }
+      },
+      "effective_nontext_equal": {
+        "image_input": true,
+        "image_mask": true,
+        "proprio": true,
+        "domain_id": true
+      },
+      "same_action_instant": true,
+      "conflicting_inherited_grasp_verb_in_hold_instruction": true,
+      "runtime_matches": {
+        "R-feeding-912171": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "R-feeding-912172": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "R-loading-912171": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "R-loading-912172": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "T-feeding-912171": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "T-feeding-912172": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "T-loading-912171": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "T-loading-912172": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        }
+      }
+    },
+    {
+      "parent": "demo_0005",
+      "tasks": {
+        "loading": {
+          "episode": "demo_0005-L-teacher",
+          "source_sha256": "714935f3babacd9f14328ccacbdd990fe067f4f245112d673f60f8b586d42796",
+          "window": {
+            "id": "demo_0005-L-teacher:0",
+            "episode": "demo_0005-L-teacher",
+            "source": "demo_0005",
+            "component": "transition",
+            "task": "loading",
+            "frame": 0,
+            "start": 0,
+            "end": 30
+          },
+          "window_index": 1351,
+          "exposures": {
+            "R": 0,
+            "T": 7
+          },
+          "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "hashes": {
+            "input_ids": "6ca4d6129609e7a1598a43641ca6e8828e5f20b607aa487798d36464d4d296b5",
+            "image_input": "3303b8c4deaf944b9db9855f532a09a2748a8949e59c94ed80166a9e970771d3",
+            "image_mask": "7cf14546ccfbb8d99cad0d72d4d444d5b1bbc7cd0c768ce7384001fdf399c235",
+            "proprio": "0ed3bfbf2ff54de7c236ac586b06f23d844833b908d99729b621d746e130171f",
+            "action": "5471afcb4693954fdfaedd8f55992e0e0bcada93bc0d7f0cd6babf5b817fee75",
+            "domain_id": "79b1c8c429ac953d27578ebb2a6e8f722820d33860b046a5254c627dd4c72f2d"
+          },
+          "initial_gripper_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_frame_action_index": 0
+        },
+        "feeding": {
+          "episode": "demo_0005-F-preserve",
+          "source_sha256": "df93b9a715bd701eac4734652ff9b0cc62f77ec9b1ce19c9e656fa3e0512e34c",
+          "window": {
+            "id": "demo_0005-F-preserve:0",
+            "episode": "demo_0005-F-preserve",
+            "source": "demo_0005",
+            "component": "preservation",
+            "task": "feeding",
+            "frame": 0,
+            "start": 0,
+            "end": 30
+          },
+          "window_index": 1405,
+          "exposures": {
+            "R": 47,
+            "T": 47
+          },
+          "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+          "hashes": {
+            "input_ids": "f3b205c62a89e9a2bc212661393055f45bf30e6b9cafe9f898d8441c36cadb49",
+            "image_input": "3303b8c4deaf944b9db9855f532a09a2748a8949e59c94ed80166a9e970771d3",
+            "image_mask": "7cf14546ccfbb8d99cad0d72d4d444d5b1bbc7cd0c768ce7384001fdf399c235",
+            "proprio": "0ed3bfbf2ff54de7c236ac586b06f23d844833b908d99729b621d746e130171f",
+            "action": "2d08ed1a3d5fbf5ab5ea75e2b0d85eea32b694e7a79c5ea95295c259cdddbc45",
+            "domain_id": "79b1c8c429ac953d27578ebb2a6e8f722820d33860b046a5254c627dd4c72f2d"
+          },
+          "initial_gripper_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_frame_action_index": 0
+        }
+      },
+      "effective_nontext_equal": {
+        "image_input": true,
+        "image_mask": true,
+        "proprio": true,
+        "domain_id": true
+      },
+      "same_action_instant": true,
+      "conflicting_inherited_grasp_verb_in_hold_instruction": true,
+      "runtime_matches": {
+        "R-feeding-912171": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "R-feeding-912172": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "R-loading-912171": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "R-loading-912172": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "T-feeding-912171": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "T-feeding-912172": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "T-loading-912171": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        },
+        "T-loading-912172": {
+          "input_ids": true,
+          "image_input": true,
+          "image_mask": true,
+          "proprio": true,
+          "domain_id": true
+        }
+      }
+    }
+  ],
+  "no_training": true,
+  "short_prefix": 10,
+  "model_dtype": "float32 weights; bf16 autocast",
+  "refinements": 10,
+  "pure_noise_time": 1.0,
+  "intermediate_times": [
+    0.5,
+    0.1
+  ]
+}
