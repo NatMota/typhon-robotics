@@ -1,0 +1,174 @@
+{
+  "experiment": "EVAL02-FIT",
+  "ticket": 11063,
+  "frozen_epoch": 1792069736.9007778,
+  "clock": {
+    "start_epoch": 1792069561.0993493,
+    "review_deadline": 1792071061.0993493,
+    "execution_deadline": 1792070761.0993493,
+    "minutes": 25
+  },
+  "models": {
+    "GOAL": {
+      "checkpoint": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000.pt",
+      "probe": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000-probe.pt",
+      "sha256": "d5449244d96e55e60c3342af9fffe2ae64362b74cdf9c3d41e39b74995c9bcdb",
+      "probe_sha256": "6452eed3b6e9ab899685147ac39e1f1fd2558217b7978aa10a530321ddec8c01",
+      "step": 3000
+    },
+    "FL": {
+      "checkpoint": "/var/tmp/typhon-load01-20261013/train-FL/step3000.pt",
+      "probe": "/var/tmp/typhon-load01-20261013/train-FL/step3000-probe.pt",
+      "sha256": "76334b9a17ac5fc49f46c2cb850a3c39ef38e0f13b9cdadc324f760567c5f128",
+      "probe_sha256": "621318035b71ad85f1f7aff4d6636a5023aea889a78454a18212c29eac0727f9",
+      "step": 3000
+    },
+    "B": {
+      "checkpoint": "/var/tmp/typhon-load04-20261014/train-B/step3000.pt",
+      "probe": "/var/tmp/typhon-load04-20261014/train-B/step3000-probe.pt",
+      "sha256": "de861da493be2a851e2fae5289f798cd34ff714e120f974f9c2197847732e379",
+      "probe_sha256": "00d1aab54b000bb780bb1b34639bcf79f2baf7daf58a9b2b50a5481f978f0d09",
+      "step": 3000
+    }
+  },
+  "model_order": [
+    "GOAL",
+    "FL",
+    "B"
+  ],
+  "packets": {
+    "approach": {
+      "archive": "/var/tmp/typhon-eval02-fit-20261015/approach.npz",
+      "sha256": "b70985624d74ae3f1c4f76b4240d87207ed31e1a20f0a06263d1d8b6de4c90c0",
+      "frame_index": 0,
+      "action_index": 0,
+      "pre_action_sim_step": 40,
+      "complete_targets": 30,
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=0.030000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "source_episode_id": "personal_demo_0002-goal1",
+      "source_archive": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/data/personal_demo_0002-goal1.npz",
+      "source_archive_sha256": "1cbf243e24a0e7ad7d039a43a9f1525fc46a3e89b7dddc78915c1070a0533176",
+      "pre_action_truth_evaluator_only": {
+        "bilateral_grasp_contact": false,
+        "control_steps": 40,
+        "eef_position_m": [
+          -0.25005520706281603,
+          -0.24988750754560166,
+          1.0799217278777893
+        ],
+        "grasp_contact": false,
+        "gripper_joint_position_m": [
+          0.03959546089013839,
+          -0.03976879892039342
+        ],
+        "gripper_open": true,
+        "object_angular_velocity_rad_s": [
+          -7.504691734491295e-16,
+          -4.821234562583584e-16,
+          -3.191667309877568e-30
+        ],
+        "object_linear_velocity_m_s": [
+          -6.329737337794107e-18,
+          8.463526622682374e-18,
+          2.1638891645016512e-14
+        ],
+        "object_position_m": [
+          -0.2007394761471165,
+          -0.12648037692132735,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9262092468377112,
+          2.317206911496797e-17,
+          8.572937041298502e-18,
+          0.3770098554047622
+        ],
+        "object_yaw_rad": 0.7731315970827427,
+        "sim_time_s": 2.0
+      },
+      "verified_lift_step": 177,
+      "history_contract": "first9 last commanded target except initial measured robot pose; gripper and dummy channels remain zero, native training/client contract"
+    },
+    "postlift": {
+      "archive": "/var/tmp/typhon-eval02-fit-20261015/postlift.npz",
+      "sha256": "cfd9e3ed950599a31fec6c71ea522f0a4ca8992c66b9b716b9ba18ed27f34ee9",
+      "frame_index": 35,
+      "action_index": 140,
+      "pre_action_sim_step": 180,
+      "complete_targets": 30,
+      "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=0.030000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+      "source_episode_id": "personal_demo_0002-goal1",
+      "source_archive": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/data/personal_demo_0002-goal1.npz",
+      "source_archive_sha256": "1cbf243e24a0e7ad7d039a43a9f1525fc46a3e89b7dddc78915c1070a0533176",
+      "pre_action_truth_evaluator_only": {
+        "object_position_m": [
+          -0.18718409538732667,
+          -0.11992711702263663,
+          0.9640728212628116
+        ],
+        "object_quat_wxyz": [
+          0.9480163528939904,
+          0.0016048483156183952,
+          -0.016880608977321594,
+          0.3177695141891612
+        ],
+        "object_yaw_rad": 0.6469756822662065,
+        "object_linear_velocity_m_s": [
+          0.10407541809794386,
+          0.1054905479081998,
+          -0.05990075038343684
+        ],
+        "object_angular_velocity_rad_s": [
+          0.03095972049936025,
+          -0.17873129144003877,
+          -1.1548577629223726
+        ],
+        "eef_position_m": [
+          -0.18439195748286027,
+          -0.11766706411812451,
+          0.9693837213178647
+        ],
+        "gripper_joint_position_m": [
+          0.017317374751545708,
+          -0.017208834195593874
+        ],
+        "gripper_open": false,
+        "grasp_contact": true,
+        "bilateral_grasp_contact": true,
+        "control_steps": 180,
+        "sim_time_s": 9.0
+      },
+      "verified_lift_step": 177,
+      "history_contract": "first9 last commanded target except initial measured robot pose; gripper and dummy channels remain zero, native training/client contract"
+    }
+  },
+  "packet_order": [
+    "approach",
+    "postlift"
+  ],
+  "policy_seeds": [
+    912171,
+    912172
+  ],
+  "script_sha256": "0bdc7b75c41547c77f4cf1436dbb42b45f0ab59a10e95df0aa073c77d64da707",
+  "worker_sha256": "b15041a738bb398fc2c6ac00792d3af1fdb7672067d443aa6be0a1002fbf019e",
+  "rotation_contract": "native contiguous first-two columns after worker reorder inverse",
+  "action_horizon": 30,
+  "control_hz": 20,
+  "experimental_proposals": 12,
+  "new_physical_rollouts": 0,
+  "new_training": false,
+  "holdouts": false,
+  "source_provenance": {
+    "training_manifest_sha256": "7077d5476423554a07ed97c9a0ef11360facfd7ad4e0f1d690c6513dfe699b4a",
+    "source_episode_sha256": "fc41e9f41274be61f8531e851b8d500fe71bedd826fba0c34048443dd07de889",
+    "source_actions_sha256": "c7692fe55cdbb6e68171c3f8d332f31bcb2b66baefb248554af5749713e0cd22",
+    "retention_protocol_sha256": "f75d132bb5be4e7d4f028dbe1227a70db938cf124e50a8959c8d22a4e6464993"
+  },
+  "metric_checks": {
+    "identity_pass": true,
+    "10mm_translation_pass": true,
+    "gripper_flip_pass": true
+  },
+  "interpretation": "Conditional action agreement on two archived teacher states. Not task success or a general fitting evaluation."
+}
