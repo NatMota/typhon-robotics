@@ -1,0 +1,259 @@
+{
+  "experiment": "INIT02",
+  "ticket": 11073,
+  "clock": {
+    "start": 1792084634.2025502,
+    "preparation_deadline": 1792086434.2025502,
+    "training_deadline": 1792090634.2025502,
+    "execution_deadline": 1792093934.2025502,
+    "archive_deadline": 1792095434.2025502,
+    "absolute_workstation_cutoff_utc": "2026-10-16T01:00:00Z",
+    "protected_archive_margin_seconds": 3600
+  },
+  "initializer": {
+    "checkpoint": "/var/tmp/typhon-load01-20261013/train-FL/step3000.pt",
+    "probe": "/var/tmp/typhon-load01-20261013/train-FL/step3000-probe.pt",
+    "sha256": "76334b9a17ac5fc49f46c2cb850a3c39ef38e0f13b9cdadc324f760567c5f128",
+    "probe_sha256": "621318035b71ad85f1f7aff4d6636a5023aea889a78454a18212c29eac0727f9"
+  },
+  "model_conditions": {
+    "P": "unchanged FL",
+    "R": "common rehearsal and preservation; comparison old loading",
+    "T": "identical common samples; comparison new loading suffixes"
+  },
+  "training": {
+    "updates": 3000,
+    "effective_batch": 4,
+    "microbatch": 1,
+    "seed": 151901,
+    "optimizer": "AdamW",
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-08,
+    "learning_rates": {
+      "prompt": 1e-05,
+      "heads": 0.0001,
+      "vlm": 1e-05,
+      "core": 0.0001
+    },
+    "weight_decay": 0.01,
+    "domain_table_decay": "active row29 only; inactive gradients masked",
+    "clip_norm": 1.0,
+    "precision": "bfloat16 autocast;float32weights",
+    "joint": "all shared VLM/core weights and active prompt/head row throughout;no reset/no warmup",
+    "observation": "O2",
+    "domain": 29,
+    "action": "generic_interleaved_v1",
+    "window": 30,
+    "control_hz": 20,
+    "inference_refinements": 10,
+    "recipe_sha256": "dfaad7fb1569a9ee4682b795bd72061e7786880d67d3edd4a36699f1274f0fbd",
+    "optimizer_source_sha256": "fc253ad03ae3921fc6b23781cc551a47b02ceccdb94c8fb9ab78b7e1c7016803",
+    "endpoint": "final3000 only",
+    "optimizer_saved": false,
+    "recovery": "rerun fixed recipe from initializer;no selectable partial checkpoints",
+    "prior_feeding_presentations": 4500,
+    "prior_loading_presentations": 4500,
+    "preservation_presentations": 1500,
+    "comparison_presentations": 1500,
+    "comparison_per_parent": 375
+  },
+  "prior_training_recipe": {
+    "updates": 3000,
+    "effective_batch": 4,
+    "microbatch": 1,
+    "seed": 131901,
+    "common_feeding_presentations": 6000,
+    "comparison_presentations": 6000,
+    "comparison_per_parent": 1500,
+    "optimizer": "AdamW",
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-08,
+    "learning_rates": {
+      "prompt": 1e-05,
+      "heads": 0.0001,
+      "vlm": 1e-05,
+      "core": 0.0001
+    },
+    "weight_decay": 0.01,
+    "domain_table_decay": "active row29 only; inactive gradients masked",
+    "clip_norm": 1.0,
+    "precision": "bfloat16 autocast;float32weights",
+    "joint": "all shared VLM/core weights and active prompt/head row throughout;no reset/no warmup",
+    "observation": "O2",
+    "domain": 29,
+    "action": "generic_interleaved_v1",
+    "window": 30,
+    "control_hz": 20,
+    "inference_refinements": 10,
+    "recipe_sha256": "dfaad7fb1569a9ee4682b795bd72061e7786880d67d3edd4a36699f1274f0fbd",
+    "optimizer_source_sha256": "fc253ad03ae3921fc6b23781cc551a47b02ceccdb94c8fb9ab78b7e1c7016803",
+    "endpoint": "final3000 only",
+    "optimizer_saved": false,
+    "recovery": "rerun fixed recipe from initializer;no selectable partial checkpoints"
+  },
+  "resolved_optimizer_reference": [
+    {
+      "lr": 1e-05,
+      "peak_lr": 1e-05,
+      "weight_decay": 0.0,
+      "name": "prompt",
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "eps": 1e-08,
+      "amsgrad": false,
+      "foreach": false,
+      "maximize": false,
+      "capturable": false,
+      "differentiable": false,
+      "fused": null
+    },
+    {
+      "lr": 0.0001,
+      "peak_lr": 0.0001,
+      "weight_decay": 0.0,
+      "name": "heads",
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "eps": 1e-08,
+      "amsgrad": false,
+      "foreach": false,
+      "maximize": false,
+      "capturable": false,
+      "differentiable": false,
+      "fused": null
+    },
+    {
+      "lr": 1e-05,
+      "peak_lr": 1e-05,
+      "weight_decay": 0.01,
+      "name": "vlm",
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "eps": 1e-08,
+      "amsgrad": false,
+      "foreach": false,
+      "maximize": false,
+      "capturable": false,
+      "differentiable": false,
+      "fused": null
+    },
+    {
+      "lr": 0.0001,
+      "peak_lr": 0.0001,
+      "weight_decay": 0.01,
+      "name": "core",
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "eps": 1e-08,
+      "amsgrad": false,
+      "foreach": false,
+      "maximize": false,
+      "capturable": false,
+      "differentiable": false,
+      "fused": null
+    }
+  ],
+  "prior_trainer_sha256": "0a39d9141bc1ad7e19dcf8e7ca72515a08fb9891f4ae1699413301528502f024",
+  "prior_training_config_sha256": "be540e1d9b3edcc889385f8ddaf90ef955d59b8cc40650c374dd90902b669856",
+  "init01_protocol_sha256": "1a6a01eb45d997f9b3fbb45af743b1efb1561bc470f195e509efbb4131f14ef3",
+  "candidate_manifest_sha256": "031b4348a072141f8a34a7ccd206a17406308861f558218bfa573f8ec0b82654",
+  "prior_dataset_sha256": "9466ac8c8c571edf619d453a9b1ef59ce56a059232f071f7e8e1b73e14d9fe1e",
+  "seed": 151901,
+  "mixture": {
+    "common_feeding": 4500,
+    "common_loading": 4500,
+    "preservation": 1500,
+    "comparison": 1500
+  },
+  "two_update_roles": [
+    "feeding",
+    "feeding",
+    "feeding",
+    "loading",
+    "loading",
+    "loading",
+    "preservation",
+    "comparison"
+  ],
+  "training_endpoint": 3000,
+  "optimizer_saved": false,
+  "recovery": "rerun from FL with frozen schedule; no outcome-selected endpoints",
+  "evaluation": {
+    "core_per_model": 23,
+    "models": [
+      "P",
+      "R",
+      "T"
+    ],
+    "policy_seeds": [
+      912171,
+      912172
+    ],
+    "policy_actions": 1436,
+    "settling_ticks": 24,
+    "horizon": 30,
+    "refinements": 10,
+    "domain": 29,
+    "observation": "O2",
+    "harness": false,
+    "TTC": false,
+    "max_parallel_eval_workers": 2,
+    "preservation_no_contact": true,
+    "preservation_max_object_displacement_m": 0.001,
+    "retention_feeding": [
+      "personal_demo_0002-goal0",
+      "personal_demo_0002-goal1",
+      "personal_demo_0001-goal2"
+    ],
+    "retention_loading": [
+      "demo_0001",
+      "demo_0002",
+      "demo_0003",
+      "demo_0005"
+    ],
+    "optional_development": {
+      "prefix_directory": "/var/tmp/typhon-hier01-chain-20261015/workers/F-L-stage1-feeding/episode",
+      "parent": "demo_0012",
+      "tasks": [
+        "loading",
+        "feeding"
+      ],
+      "policy_seeds": [
+        912171,
+        912172
+      ],
+      "episodes": 12,
+      "quarantined": true,
+      "gate": {
+        "T_loading_minimum": 6,
+        "T_loading_parent_minimum": 3,
+        "T_preservation": 8,
+        "net_loading_gain_over_R_positive": true,
+        "no_prior_strict_success_loss_vs_P_or_R": true
+      }
+    },
+    "maximum_policy_episodes": 81
+  },
+  "storage": {
+    "free_bytes_at_seal": 6304903168,
+    "sequential_checkpoint_offload": "R verified on Mint and locally offloaded before T final save; do not duplicate originalweights",
+    "training_source_datasets_stay_in_place": true
+  },
+  "new_holdouts": false,
+  "source_kind": "expert terminal-state supervision, not DAgger or measured human motor actions",
+  "only_new_examples": "INIT01 four loading suffixes and four preservation references; no quarantined suffixes"
+}
