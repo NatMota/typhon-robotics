@@ -1,0 +1,819 @@
+{
+  "id": "DATA07-GE",
+  "frozen_at": 1792015471.8371167,
+  "case": {
+    "id": "load04-demo_0001-loading",
+    "source_demo_id": "demo_0001",
+    "task": "loading",
+    "split": "load04_train",
+    "absolute_path": "/var/tmp/typhon-load04-20261014/data/load04-demo_0001-loading.npz",
+    "sha256": "3ec52845d53c3d4064cf8e9d9e656ad49021c900a725258ea4ba1f3357cae66f",
+    "config": {
+      "schema_version": 1,
+      "object": {
+        "width_m": 0.05,
+        "depth_m": 0.035,
+        "height_m": 0.03,
+        "mass_kg": 0.08,
+        "marked_face": "top",
+        "dimensions_status": "M2_provisional_canonical_geometry_retarged_not_measured",
+        "dimensions_source": {
+          "width_m": "user_confirmed_part_31110pb074_catalogue_envelope",
+          "depth_m": "user_confirmed_part_31110pb074_catalogue_envelope",
+          "height_m": "user_confirmed_part_31110pb074_catalogue_envelope"
+        },
+        "mass_status": "catalogue_value_not_weighed_user_piece",
+        "visual_version": "duplo_31110pb074_v2"
+      },
+      "workspace": {
+        "table_width_m": 0.8,
+        "table_depth_m": 0.8,
+        "table_thickness_m": 0.05,
+        "table_z_m": 0.8,
+        "staging_position_xy_m": [
+          0.125,
+          -0.12
+        ],
+        "staging_size_m": 0.1,
+        "fixture_position_xy_m": [
+          0.12,
+          0.15
+        ],
+        "fixture_inner_size_m": 0.11,
+        "fixture_wall_thickness_m": 0.008,
+        "fixture_wall_height_m": 0.02,
+        "fixture_floor_height_m": 0.004
+      },
+      "initial_state": {
+        "position_xy_m": [
+          -0.3084651105738172,
+          0.08221457497548734
+        ],
+        "yaw_rad": 0.9508729488309244,
+        "position_jitter_m": 0.0,
+        "yaw_choices_rad": [
+          0.9508729488309244
+        ]
+      },
+      "task": {
+        "type": "loading",
+        "target_position_xy_m": [
+          0.12,
+          0.15
+        ],
+        "target_yaw_rad": 0.0,
+        "target_position_jitter_m": 0.0,
+        "target_region_size_m": 0.11,
+        "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture."
+      },
+      "cameras": {
+        "overhead": {
+          "position_m": [
+            0.0,
+            0.0,
+            2.2
+          ],
+          "quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "width": 512,
+          "height": 512,
+          "fovy_deg": 36.0
+        },
+        "oblique": {
+          "position_m": [
+            0.65,
+            -0.65,
+            1.35
+          ],
+          "look_at_m": [
+            0.0,
+            0.0,
+            0.8
+          ],
+          "width": 512,
+          "height": 512,
+          "fovy_deg": 50.0
+        }
+      },
+      "control": {
+        "frequency_hz": 20,
+        "max_steps": 1500,
+        "translation_step_m": 0.05,
+        "rotation_step_rad": 0.5,
+        "workspace_bounds_m": [
+          [
+            -0.35,
+            0.35
+          ],
+          [
+            -0.35,
+            0.35
+          ],
+          [
+            0.805,
+            1.2
+          ]
+        ]
+      },
+      "evaluation": {
+        "position_tolerance_m": 0.015,
+        "yaw_tolerance_rad": 0.17453292519943295,
+        "upright_tolerance_rad": 0.17453292519943295,
+        "height_tolerance_m": 0.002,
+        "stability_position_tolerance_m": 0.002,
+        "stability_yaw_tolerance_rad": 0.03490658503988659,
+        "linear_velocity_tolerance_m_s": 0.01,
+        "angular_velocity_tolerance_rad_s": 0.1,
+        "minimum_stability_samples": 5,
+        "minimum_stability_duration_s": 0.4
+      },
+      "physical_to_sim": {
+        "rotation_rad": 0.0,
+        "translation_xy_m": [
+          0.0,
+          0.0
+        ],
+        "scale": 1.0,
+        "source_frame": "m15_virtual_tabletop_m",
+        "destination_frame": "mujoco_world_m",
+        "status": "declared_virtual_layout_mapping_not_physical_calibration"
+      },
+      "m0_import": {
+        "calibration_required": false,
+        "coordinate_transform": {
+          "destination_frame": "mujoco_world_m",
+          "rotation_rad": 0.0,
+          "scale": 1.0,
+          "source_frame": "m15_virtual_tabletop_m",
+          "status": "declared_virtual_layout_mapping_not_physical_calibration",
+          "translation_xy_m": [
+            0.0,
+            0.0
+          ]
+        },
+        "source_contract": {
+          "coordinate_frame": "m15_virtual_tabletop_m",
+          "initial_state": {
+            "position_xy_m": [
+              -0.3084651105738172,
+              0.08221457497548734
+            ],
+            "yaw_rad": 0.9508729488309244
+          },
+          "object": {
+            "depth_m": null,
+            "height_m": null,
+            "marked_face": "top",
+            "width_m": null
+          },
+          "schema_version": 1,
+          "source_demo_id": "demo_0001",
+          "task": {
+            "target_position_xy_m": [
+              0.125,
+              -0.12
+            ],
+            "target_yaw_rad": 0.0,
+            "type": "feeding"
+          }
+        }
+      },
+      "m15_mapping": {
+        "block": {
+          "catalogue_mass_kg": 0.0127,
+          "catalogue_upright_envelope_m": [
+            0.032,
+            0.032,
+            0.043
+          ],
+          "catalogue_url": "https://www.bricklink.com/v2/catalog/catalogitem.page?P=31110pb074",
+          "identity": "DUPLO31110pb074 orange brick with blue2",
+          "identity_confidence": "user_confirmed_catalogue_identification",
+          "limitations": [
+            "solid bounding-box collision/inertia surrogate",
+            "studs/hollows not modelled",
+            "catalogue packing envelope is not a precision CAD drawing",
+            "friction remains M1 supplied assumption"
+          ],
+          "m1_original_provisional_dimensions_m": [
+            0.05,
+            0.035,
+            0.03
+          ],
+          "m1_original_provisional_mass_kg": 0.08,
+          "measurement_status": "catalogue estimate, user piece not measured/weighed",
+          "orientation": "printed face upward; original upright brick height runs along local+y toward studs",
+          "sim_proxy_mass_kg": 0.0127,
+          "sim_proxy_width_depth_height_m": [
+            0.032,
+            0.043,
+            0.032
+          ],
+          "user_confirmation": "yeap thats he one"
+        },
+        "camera_adjustment": "M15 overhead raised to2.2m,36degree field of view; both views512px. Debug-run visual review found original overhead obscured. Common settings for both cohorts; M1 unchanged.",
+        "controller": "unchanged M1 privileged geometric expert; simulator truth used for execution and independent scoring",
+        "endpoint_rule": "two supported consecutive samples within first/last1.75s; dt0.3-0.75s, displacement<=0.12targetunits, yawchange<=10deg",
+        "frozen_before_execution": true,
+        "missing_observations": "reject missing initial/final position or yaw; never replace initial with later post-action pose",
+        "origin_status": "supplied translation chosen before execution to fit M1 workspace; common to all personal examples",
+        "physical_metric_calibration_available": false,
+        "physical_to_sim_transform": null,
+        "plane_assumption": "resting endpoint visible centroid approximates tabletop position; object top is elevated and centroid is not contact centre",
+        "position_equation": "sim_xy = origin + 0.1 * R(world_rotation) * [target_v - 0.5, target_u - 0.5]",
+        "scale_status": "engineering_layout_scale: one target-square unit represents M1 100mm staging square, not a measurement of real target",
+        "schema_version": 1,
+        "sim_target_side_m": 0.1,
+        "source_coordinate_schema": "raw pixels; normalized image; dimensionless target-unit homography",
+        "synthetic_control": {
+          "initial_xy_domain_m": [
+            [
+              -0.28,
+              0.28
+            ],
+            [
+              -0.28,
+              0.25
+            ]
+          ],
+          "matching": "one independent draw per usable personal episode, matched category and robot/settings",
+          "personal_pose_values_used_by_sampler": false,
+          "seed": 151509,
+          "target_xy_domain_m": [
+            [
+              0.1,
+              0.14
+            ],
+            [
+              -0.14,
+              -0.1
+            ]
+          ],
+          "yaw_domain_rad": [
+            -3.141592653589793,
+            3.141592653589793
+          ]
+        },
+        "target_origin_sim_xy_m": [
+          0.125,
+          -0.12
+        ],
+        "world_rotation_rad": 0.09786641047171031,
+        "yaw_equation": "project numeral-up vector through local homography; swap unit axes; yaw=atan2(-dx,dy)+world_rotation; retain directed 2pi angle"
+      }
+    },
+    "instruction": "Grasp the staged orange block, align its blue 2, and seat it inside the shallow fixture. Target centre in robot world metres: x=0.120000, y=0.150000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+    "actions": 442,
+    "frames": 111,
+    "initial_archive": "/var/tmp/typhon-load04-20261014/data/initial-load04-demo_0001-loading.npz",
+    "initial_fingerprint": "b7a1fdc4a4a164698127066803e539df0bd62501a554ecafcbbe91dfe260e75c",
+    "initial_truth": {
+      "object_position_m": [
+        -0.3084651105738172,
+        0.08221457497548734,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.8890930203885663,
+        3.79836844083831e-17,
+        1.9714857028539407e-17,
+        0.4577265571237225
+      ],
+      "object_yaw_rad": 0.9508729488309244,
+      "object_linear_velocity_m_s": [
+        -9.784221096161218e-18,
+        7.425924713856818e-18,
+        2.166855413601659e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -6.202923840616383e-16,
+        -1.2722661871742164e-15,
+        2.445827297894714e-31
+      ],
+      "eef_position_m": [
+        -0.25005520706281603,
+        -0.24988750754560166,
+        1.0799217278777893
+      ],
+      "gripper_joint_position_m": [
+        0.03959546089013839,
+        -0.03976879892039342
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 40,
+      "sim_time_s": 2.0
+    },
+    "success": true,
+    "source_path": "/var/tmp/typhon-load01-20261013/data/episode_artifacts/load01-training-demo_0001",
+    "action_labels": "privileged geometric expert robot commands, not measured human actions",
+    "views": "both renderings from identical pre-action physics; no visibility-specific execution",
+    "crop_audit": "/var/tmp/typhon-load04-20261014/data/crop-load04-demo_0001-loading.json",
+    "initial_canonical_fingerprint": "33ee46c089a22724f17d68c7e7ea04a63961f0f22f46a5962324983d6e1cbc43",
+    "initial_controller": {
+      "actuator_min": [
+        -80.0,
+        -80.0,
+        -80.0,
+        -80.0,
+        -80.0,
+        -12.0,
+        -12.0
+      ],
+      "actuator_max": [
+        80.0,
+        80.0,
+        80.0,
+        80.0,
+        80.0,
+        12.0,
+        12.0
+      ],
+      "action_scale": [
+        0.05,
+        0.05,
+        0.05,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "action_input_transform": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "action_output_transform": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "control_dim": 6,
+      "output_min": [
+        -0.05,
+        -0.05,
+        -0.05,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "output_max": [
+        0.05,
+        0.05,
+        0.05,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "input_min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "input_max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "model_timestep": 0.002,
+      "eef_name": "gripper0_grip_site",
+      "joint_index": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "ee_pos": [
+        -0.25005520706281603,
+        -0.24988750754560166,
+        1.0799217278777893
+      ],
+      "ee_ori_mat": [
+        [
+          -0.00042835089560888006,
+          0.9999998803775587,
+          0.00023613635608378037
+        ],
+        [
+          0.9999999081676776,
+          0.000428347714234396,
+          1.352302597902469e-05
+        ],
+        [
+          1.3421875892991172e-05,
+          0.00023614212699911983,
+          -0.9999999720283743
+        ]
+      ],
+      "ee_pos_vel": [
+        -0.005038209438634981,
+        0.0040606699340972295,
+        -0.003932087242973413
+      ],
+      "ee_ori_vel": [
+        -0.013092688347383013,
+        -0.015804155030497445,
+        -5.314066405752308e-05
+      ],
+      "joint_pos": [
+        -0.1774927163974282,
+        -0.14961021451760922,
+        -0.5257429893628285,
+        -2.7258768434227045,
+        -0.14334601043503373,
+        2.5918189716252322,
+        0.20952801290543696
+      ],
+      "joint_vel": [
+        -0.0036797759249995,
+        -0.014001369230726958,
+        -0.0028458693717080116,
+        -0.034997484303012104,
+        -0.023843825444638124,
+        0.042282826037132,
+        0.016499174529559835
+      ],
+      "J_pos": [
+        [
+          0.24988750754560166,
+          -0.1624848062601285,
+          0.24275169889985254,
+          0.3575136845590416,
+          0.01704385819931331,
+          0.17065133703517077,
+          0.0
+        ],
+        [
+          0.309944792937184,
+          0.02914658919090181,
+          0.28226367653220524,
+          -0.3350140374430898,
+          0.026246620453959313,
+          -0.11083113616575013,
+          0.0
+        ],
+        [
+          0.0,
+          -0.34919609599153334,
+          0.02850440818698525,
+          0.35610033148681836,
+          4.3796084215480535e-06,
+          0.08803880067514303,
+          0.0
+        ]
+      ],
+      "J_ori": [
+        [
+          0.0,
+          0.1765622381201321,
+          -0.14671101656763136,
+          -0.6411710848384011,
+          0.43840872993792346,
+          -0.544618882135795,
+          0.0002361363560837803
+        ],
+        [
+          0.0,
+          0.9842894777808047,
+          0.02631708052031949,
+          -0.7637435145810723,
+          -0.28454872635439876,
+          -0.838683643358038,
+          1.3523025979024676e-05
+        ],
+        [
+          1.0,
+          2.220446049250313e-16,
+          0.9888292516357813,
+          -0.07480296720384194,
+          -0.8525431413390803,
+          -0.0001399458628941197,
+          -0.9999999720283737
+        ]
+      ],
+      "J_full": [
+        [
+          0.24988750754560166,
+          -0.1624848062601285,
+          0.24275169889985254,
+          0.3575136845590416,
+          0.01704385819931331,
+          0.17065133703517077,
+          0.0
+        ],
+        [
+          0.309944792937184,
+          0.02914658919090181,
+          0.28226367653220524,
+          -0.3350140374430898,
+          0.026246620453959313,
+          -0.11083113616575013,
+          0.0
+        ],
+        [
+          0.0,
+          -0.34919609599153334,
+          0.02850440818698525,
+          0.35610033148681836,
+          4.3796084215480535e-06,
+          0.08803880067514303,
+          0.0
+        ],
+        [
+          0.0,
+          0.1765622381201321,
+          -0.14671101656763136,
+          -0.6411710848384011,
+          0.43840872993792346,
+          -0.544618882135795,
+          0.0002361363560837803
+        ],
+        [
+          0.0,
+          0.9842894777808047,
+          0.02631708052031949,
+          -0.7637435145810723,
+          -0.28454872635439876,
+          -0.838683643358038,
+          1.3523025979024676e-05
+        ],
+        [
+          1.0,
+          2.220446049250313e-16,
+          0.9888292516357813,
+          -0.07480296720384194,
+          -0.8525431413390803,
+          -0.0001399458628941197,
+          -0.9999999720283737
+        ]
+      ],
+      "mass_matrix": [
+        [
+          7.078664148999242,
+          0.07406856494651817,
+          1.4718683915319308,
+          -0.09200457514738777,
+          -0.4539882424529469,
+          0.00900563946512465,
+          -0.20035657548767755
+        ],
+        [
+          0.07406856494651817,
+          4.5987079705572125,
+          0.03714658702858062,
+          -1.059529734025927,
+          -0.11353931323812536,
+          -0.406482031305664,
+          7.804055162254429e-06
+        ],
+        [
+          1.4718683915319308,
+          0.03714658702858062,
+          3.1645330482706067,
+          -0.0043181731787003685,
+          -0.485505415118898,
+          0.032956891402042346,
+          -0.19812539861448186
+        ],
+        [
+          -0.09200457514738777,
+          -1.059529734025927,
+          -0.0043181731787003685,
+          2.8667441027895815,
+          0.013080490544817816,
+          0.49340394407680144,
+          0.014962132637437873
+        ],
+        [
+          -0.4539882424529469,
+          -0.11353931323812536,
+          -0.485505415118898,
+          0.013080490544817816,
+          1.5072188561397597,
+          0.009467202854101936,
+          0.17083702473709278
+        ],
+        [
+          0.00900563946512465,
+          -0.406482031305664,
+          0.032956891402042346,
+          0.49340394407680144,
+          0.009467202854101936,
+          1.2101876083891479,
+          3.3540665183663342e-06
+        ],
+        [
+          -0.20035657548767755,
+          7.804055162254429e-06,
+          -0.19812539861448186,
+          0.014962132637437873,
+          0.17083702473709278,
+          3.3540665183663342e-06,
+          0.9146473563678015
+        ]
+      ],
+      "joint_dim": 7,
+      "torques": [
+        -0.017362643786896975,
+        -14.56874325321153,
+        1.397205429200243,
+        15.404500319752547,
+        0.09023601686763144,
+        2.035660392933231,
+        0.018025773943370012
+      ],
+      "new_update": true,
+      "initial_joint": [
+        0.0,
+        0.19634954084936207,
+        0.0,
+        -2.617993877991494,
+        0.0,
+        2.941592653589793,
+        0.7853981633974483
+      ],
+      "initial_ee_pos": [
+        -0.10276829389898133,
+        1.3461454173580023e-18,
+        1.0110438715851877
+      ],
+      "initial_ee_ori_mat": [
+        [
+          -0.0004888575448386881,
+          0.9919146144670864,
+          0.12690610160631496
+        ],
+        [
+          0.9999998785532237,
+          0.0004928423055155459,
+          1.3877787807814457e-17
+        ],
+        [
+          -6.25446956996345e-05,
+          0.12690608619397803,
+          -0.9919147349319334
+        ]
+      ],
+      "use_ori": true,
+      "use_delta": true,
+      "name_suffix": "POSE",
+      "kp": [
+        150.0,
+        150.0,
+        150.0,
+        150.0,
+        150.0,
+        150.0
+      ],
+      "kd": [
+        24.49489742783178,
+        24.49489742783178,
+        24.49489742783178,
+        24.49489742783178,
+        24.49489742783178,
+        24.49489742783178
+      ],
+      "kp_min": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp_max": [
+        300.0,
+        300.0,
+        300.0,
+        300.0,
+        300.0,
+        300.0
+      ],
+      "damping_ratio_min": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "damping_ratio_max": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "impedance_mode": "fixed",
+      "position_limits": null,
+      "orientation_limits": null,
+      "control_freq": 20,
+      "interpolator_pos": null,
+      "interpolator_ori": null,
+      "uncoupling": true,
+      "goal_ori": [
+        [
+          2.7910297399609247e-07,
+          0.9999999991282279,
+          4.1754694466418806e-05
+        ],
+        [
+          0.9999999994004577,
+          -2.7766173600350064e-07,
+          -3.462649213150788e-05
+        ],
+        [
+          -3.46264626408876e-05,
+          4.175468242659383e-05,
+          -0.9999999985287471
+        ]
+      ],
+      "goal_pos": [
+        -0.2500132919325575,
+        -0.24998917007493726,
+        1.0799896217695224
+      ],
+      "relative_ori": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ori_ref": null
+    },
+    "initial_controller_provenance": "same-sequence reset reconstruction; original sim.data.ctrl proven by original composite fingerprint reconstruction",
+    "simulation_seed": 131902
+  },
+  "prefix_source": "/var/tmp/typhon-data07r-20261014/native/demo_0001",
+  "boundary_tick": 510,
+  "boundary_query": 14,
+  "new_expert_attempts": 1,
+  "expert": "unchanged supervisor.feeding_loading.runner.scripted_attempt",
+  "expert_sha256": "3e9138dee890bb9f6bafd45e5a56102e6a13e4521d86d491baca2b464da3fd58",
+  "original_benchmark_sha256": "5f5b89d83b65859b69bdc3337ddb44b279e350f3b96141e4ac826f29e97370a7",
+  "bounded_handoff_benchmark_sha256": "3987cd4a264f1a4fa9cd827e8790967958066328d7369a1dcd752a08d081cf3d",
+  "script_sha256": "8b1f7baebcb8da3321a316e2d2cb55fd8388a5115e07b3508d8e5c39fa1eb951",
+  "horizon": "Expert commands may execute only before tick1476, then original24 passive stability ticks; early completion retains original scorer and24 stability ticks. No fresh1500-step budget.",
+  "no_training": true,
+  "privileged_geometry_teacher": true,
+  "no_new_actor_truth_features": true,
+  "no_retries": true,
+  "no_holdouts": true,
+  "experiment": "CTRL04",
+  "frozen_epoch": 1792022651.1011693,
+  "eligibility_passed": true,
+  "conditions": [
+    "E0",
+    "E80"
+  ],
+  "max_new_expert_continuations": 2,
+  "new_model_queries": 0,
+  "pregrasp_xyz": [
+    -0.3084651105738172,
+    0.08221457497548734,
+    0.974784489159566
+  ],
+  "pregrasp_yaw": 0.9508729488309244,
+  "extra_hold_ticks": 80,
+  "control_hz": 20,
+  "hold_safety_rule": "actual_teacher_checks_contact_tip",
+  "hold_abort": "unintended gripper-block contact, tilt>15deg, active original runtime termination, nonfinite/numerical failure",
+  "separate_M7_guard_added": false,
+  "joint_range_tolerance_added": false,
+  "known_pregrasp_joint_margin_rad": -0.00010306278206950736,
+  "eligibility_evidence": "eligibility-preflight.json plus timestamped planner guard clarification",
+  "parity": "E0 complete original physical trace existing atol1e-6 and commands atol1e-12; exact event/outcome; E80 exact semantic boundary510",
+  "RGB": "diagnostic only for frozen prefix; no image-conditioned actor after handoff",
+  "unchanged": "geometry, gains, action interface, original move_to convergence, horizon1500 incl24passive, seeds, checkpoint, expert",
+  "source_sha256": {
+    "scripts/data07ge_analyse.py": "acfaa2f753deaac5200bd7ce956b4f50642bf7aa35d3d4eeb60f277f71421f53",
+    "scripts/data07ge_reproduce.py": "30dbd2ba3162aedaa899909eff0133623bacb9d2134fd38c5c092caad6936abc",
+    "scripts/data07ge_run.py": "8b1f7baebcb8da3321a316e2d2cb55fd8388a5115e07b3508d8e5c39fa1eb951",
+    "scripts/data07r_analyse.py": "361c06a3049073de426d4d023d068f54d0c124bd7d9690238148206f6dc03da0",
+    "scripts/data07r_reproduce.py": "02958fdf93d131e212123c133779a3997a54f614987beaf3f1dc883aacfc11d2",
+    "scripts/data07r_run.py": "e451a21335c88d3c8677ae05326958256972bf491b1196d356a157537671e0d1",
+    "scripts/ctrl04_run.py": "dde54288cc73c13f4300949db7932ccaed453abaf3264e423a8abce6a17f2216",
+    "supervisor/feeding_loading/runner.py": "3e9138dee890bb9f6bafd45e5a56102e6a13e4521d86d491baca2b464da3fd58",
+    "supervisor/feeding_loading/environment.py": "1f790260461ba79b03875602ecd7f17a4ca888596b8ed10772a2aefa90dd180c",
+    "supervisor/baseline/benchmark.py": "3987cd4a264f1a4fa9cd827e8790967958066328d7369a1dcd752a08d081cf3d"
+  }
+}

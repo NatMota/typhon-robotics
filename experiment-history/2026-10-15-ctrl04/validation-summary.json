@@ -1,0 +1,1469 @@
+{
+  "experiment": "CTRL04",
+  "new_expert_continuations": 2,
+  "new_VLA_queries": 0,
+  "training": false,
+  "E0_qualification": {
+    "passed": true,
+    "trace_rows": 753,
+    "physical_atol": 1e-06,
+    "command_atol": 1e-12,
+    "same_failure_events": true
+  },
+  "conditions": {
+    "E0": {
+      "source_demo_id": "demo_0001",
+      "strict_success": false,
+      "position_error_mm": 1.2167981225204432,
+      "yaw_error_deg": 0.015738059708621865,
+      "criteria": {
+        "position": true,
+        "orientation": true,
+        "marked_face_up": false,
+        "footprint_inside_target": true,
+        "placement_height": false,
+        "released": true,
+        "stable": true,
+        "seated": false
+      },
+      "first_contact": 527,
+      "first_tilt_over15": 530,
+      "first_supported_lift": 569,
+      "supported_lift_tilt_deg": 91.4286786475439,
+      "peak_tilt_deg": 93.18416159278351,
+      "expert_status": "returned",
+      "control_steps": 793,
+      "expert_final_tick": 769,
+      "24_passive_stability_steps": true,
+      "handoff_passed": true,
+      "errors": {},
+      "uses_privileged_object_state": true,
+      "training_eligible": false,
+      "correction_candidate_only": false,
+      "new_model_queries": 0,
+      "new_expert_attempts": 1,
+      "counterfactual_reference": "DATA07-R native and one-chunk C patch, no rerun",
+      "descent_entry": {
+        "tick": 510,
+        "signed_xyz_error_mm": [
+          -4.594947262805071,
+          -1.3828506316629352,
+          -3.054151203275235
+        ],
+        "position_error_mm": 5.688027407627178,
+        "rotation_error_deg": 1.2576062690811616,
+        "linear_speed_m_s": 0.012328798516435103,
+        "angular_speed_rad_s": 0.008367487643005631,
+        "joint_margin_rad": -0.00010306278206950736,
+        "aperture_mm": 79.98621180006715
+      },
+      "first_contact_detail": {
+        "tick": 527,
+        "ticks_after_descent_entry": 17,
+        "tilt_deg": 2.286534184394559,
+        "grip_command": -1.0,
+        "tracking_xyz_error_mm": [
+          40.11604407811603,
+          -0.18196138483014823,
+          13.930939080073369
+        ],
+        "tracking_xy_error_mm": 40.1164567530947,
+        "nearest_joint_limit_rad": 0.366346173684589,
+        "brick_contacts": [
+          {
+            "geom1": "cube_g0",
+            "geom2": "gripper0_finger2_collision",
+            "world_position": [
+              -0.3017415604274612,
+              0.10507444227401147,
+              0.8284216752249005
+            ],
+            "object_local_position": [
+              0.02359069114172872,
+              0.006442545709975681,
+              0.014154414685037168
+            ],
+            "normal_world": [
+              0.005974149727856432,
+              0.07580611907271285,
+              0.9971046794826324
+            ],
+            "distance": -0.002683839327019983
+          }
+        ]
+      },
+      "first_tilt_detail": {
+        "tick": 530,
+        "ticks_after_descent_entry": 20,
+        "tilt_deg": 18.92280928979958,
+        "grip_command": -1.0,
+        "tracking_xyz_error_mm": [
+          27.930509348045806,
+          3.9402462062917976,
+          9.319712870873076
+        ],
+        "tracking_xy_error_mm": 28.2070716772846,
+        "nearest_joint_limit_rad": 0.22000659845278614,
+        "brick_contacts": [
+          {
+            "geom1": "cube_g0",
+            "geom2": "gripper0_finger2_collision",
+            "world_position": [
+              -0.31053183269910645,
+              0.10735749433344176,
+              0.8238400665243567
+            ],
+            "object_local_position": [
+              0.02227854705271581,
+              0.006726182601767502,
+              0.013367128231629454
+            ],
+            "normal_world": [
+              -0.2490756514713708,
+              0.20490421330087455,
+              0.9465598677398392
+            ],
+            "distance": -0.005297242265372315
+          },
+          {
+            "geom1": "gripper0_finger2_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.30771483041372216,
+              0.10858884458307184,
+              0.825672212667615
+            ],
+            "object_local_position": [
+              0.024976119463216734,
+              0.004659740434401032,
+              0.014490250959747234
+            ],
+            "normal_world": [
+              0.2573109070390227,
+              -0.193629155320868,
+              -0.9467306096923678
+            ],
+            "distance": -0.0010206162140111695
+          },
+          {
+            "geom1": "gripper0_finger2_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.313875828709139,
+              0.09961986425437983,
+              0.825562988332639
+            ],
+            "object_local_position": [
+              0.01409957460156244,
+              0.0044396397191431534,
+              0.014744741893788193
+            ],
+            "normal_world": [
+              0.2573109070390227,
+              -0.193629155320868,
+              -0.9467306096923678
+            ],
+            "distance": -0.000511076120571761
+          }
+        ]
+      },
+      "first_close_detail": {
+        "tick": 550,
+        "ticks_after_descent_entry": 40,
+        "tilt_deg": 88.24231877676759,
+        "grip_command": 1.0,
+        "tracking_xyz_error_mm": [
+          1.9186096836975586,
+          -4.2011586056386605,
+          0.5510045539350861
+        ],
+        "tracking_xy_error_mm": 4.618527551948762,
+        "nearest_joint_limit_rad": 0.12232299200865215,
+        "brick_contacts": [
+          {
+            "geom1": "gripper0_finger2_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.34335805891642984,
+              0.09412190472137627,
+              0.8162704851086968
+            ],
+            "object_local_position": [
+              -0.002011147158608692,
+              0.0020947633682011635,
+              0.01495524347912251
+            ],
+            "normal_world": [
+              0.8171287882677094,
+              -0.5756385500709418,
+              -0.030672513042934668
+            ],
+            "distance": -4.4756520877489486e-05
+          },
+          {
+            "geom1": "gripper0_finger2_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.3341500780011463,
+              0.10720666032840967,
+              0.8163151582892183
+            ],
+            "object_local_position": [
+              0.013988789939437288,
+              0.002053984795324505,
+              0.014964597175802239
+            ],
+            "normal_world": [
+              0.8171287882677094,
+              -0.5756385500709418,
+              -0.030672513042934668
+            ],
+            "distance": -3.5402824197756496e-05
+          }
+        ]
+      },
+      "first_supported_lift_detail": {
+        "tick": 569,
+        "ticks_after_descent_entry": 59,
+        "tilt_deg": 91.4286786475439,
+        "grip_command": 1.0,
+        "tracking_xyz_error_mm": [
+          -4.502593098967555,
+          -0.27492699324646597,
+          -138.92522553081855
+        ],
+        "tracking_xy_error_mm": 4.510978770343062,
+        "nearest_joint_limit_rad": 0.08828931648075367,
+        "brick_contacts": [
+          {
+            "geom1": "cube_g0",
+            "geom2": "gripper0_finger1_collision",
+            "world_position": [
+              -0.29575016126482756,
+              0.08015269043797772,
+              0.8312441907324748
+            ],
+            "object_local_position": [
+              0.014614737639131029,
+              0.0024097182052673447,
+              -0.01466312562944527
+            ],
+            "normal_world": [
+              0.8123647357917141,
+              -0.5826164290253196,
+              0.02493256248048435
+            ],
+            "distance": -0.0006138956819027553
+          },
+          {
+            "geom1": "gripper0_finger1_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.296176826827805,
+              0.07983645439038319,
+              0.8318127085934129
+            ],
+            "object_local_position": [
+              0.01411844870542207,
+              0.0018292024228517142,
+              -0.014514936495973397
+            ],
+            "normal_world": [
+              -0.8123647357917149,
+              0.5826164290253187,
+              -0.024932562480477906
+            ],
+            "distance": -0.00048506350402659866
+          },
+          {
+            "geom1": "gripper0_finger1_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.3054895649920001,
+              0.0668278581157724,
+              0.8315910527372098
+            ],
+            "object_local_position": [
+              -0.0018814988790139112,
+              0.001791635757868122,
+              -0.014523091877381489
+            ],
+            "normal_world": [
+              -0.8123647357917149,
+              0.5826164290253187,
+              -0.024932562480477906
+            ],
+            "distance": -0.0004769081226185029
+          },
+          {
+            "geom1": "gripper0_finger1_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.2965722204425429,
+              0.07984711192015953,
+              0.8478073410531953
+            ],
+            "object_local_position": [
+              0.014156159415191065,
+              -0.014170116339471356,
+              -0.014586310587818398
+            ],
+            "normal_world": [
+              -0.8123647357917149,
+              0.5826164290253187,
+              -0.024932562480477906
+            ],
+            "distance": -0.0004136894121816291
+          },
+          {
+            "geom1": "gripper0_finger1_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.305884958606738,
+              0.06683851564554874,
+              0.8475856851969922
+            ],
+            "object_local_position": [
+              -0.0018437881692449161,
+              -0.014207683004454947,
+              -0.014594465969226488
+            ],
+            "normal_world": [
+              -0.8123647357917149,
+              0.5826164290253187,
+              -0.024932562480477906
+            ],
+            "distance": -0.0004055340307735334
+          },
+          {
+            "geom1": "cube_g0",
+            "geom2": "gripper0_finger2_collision",
+            "world_position": [
+              -0.3295805639166055,
+              0.08341134565690092,
+              0.8304033989171314
+            ],
+            "object_local_position": [
+              -0.0024530027877850778,
+              0.002240643153058745,
+              0.014739009644036537
+            ],
+            "normal_world": [
+              -0.812364735791718,
+              0.5826164290253141,
+              -0.024932562480493962
+            ],
+            "distance": -0.00046741856249603715
+          },
+          {
+            "geom1": "gripper0_finger2_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.32954934972913885,
+              0.08377060987486379,
+              0.8471112444023875
+            ],
+            "object_local_position": [
+              -0.0018719468006712346,
+              -0.014459369145619412,
+              0.014506396173153016
+            ],
+            "normal_world": [
+              0.8123647357917149,
+              -0.5826164290253187,
+              0.024932562480477906
+            ],
+            "distance": -0.0004936038268470041
+          },
+          {
+            "geom1": "gripper0_finger2_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.32023661156494376,
+              0.09677920614947458,
+              0.8473329002585908
+            ],
+            "object_local_position": [
+              0.01412800078376475,
+              -0.014421802480635931,
+              0.014514551554561102
+            ],
+            "normal_world": [
+              0.8123647357917149,
+              -0.5826164290253187,
+              0.024932562480477906
+            ],
+            "distance": -0.00048544844543890834
+          },
+          {
+            "geom1": "gripper0_finger2_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.3291539561144009,
+              0.08375995234508744,
+              0.8311166119426051
+            ],
+            "object_local_position": [
+              -0.0019096575104401985,
+              0.0015399496167036585,
+              0.014577770264997972
+            ],
+            "normal_world": [
+              0.8123647357917149,
+              -0.5826164290253187,
+              0.024932562480477906
+            ],
+            "distance": -0.00042222973500203454
+          },
+          {
+            "geom1": "gripper0_finger2_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.3198412179502058,
+              0.09676854861969823,
+              0.8313382677988084
+            ],
+            "object_local_position": [
+              0.014090290073995785,
+              0.00157751628168714,
+              0.014585925646406058
+            ],
+            "normal_world": [
+              0.8123647357917149,
+              -0.5826164290253187,
+              0.024932562480477906
+            ],
+            "distance": -0.0004140743535939388
+          }
+        ]
+      },
+      "upright_supported_lift_samples": 0,
+      "joint_limits": {
+        "entire_recorded_trace": {
+          "rows": 753,
+          "minimum_signed_margin_rad": -0.005036721595259586,
+          "maximum_excursion_rad": 0.005036721595259586,
+          "outside_ticks": 134,
+          "outside_control_sample_seconds": 6.7,
+          "first_outside_tick": 72,
+          "last_outside_tick": 667
+        },
+        "teacher_measurements": {
+          "rows": 309,
+          "minimum_signed_margin_rad": -0.0030245165580198297,
+          "maximum_excursion_rad": 0.0030245165580198297,
+          "outside_ticks": 97,
+          "outside_control_sample_seconds": 4.85,
+          "first_outside_tick": 505,
+          "last_outside_tick": 667
+        },
+        "added_hold": {
+          "rows": 0,
+          "minimum_signed_margin_rad": null,
+          "maximum_excursion_rad": 0,
+          "outside_ticks": 0,
+          "outside_control_sample_seconds": 0.0,
+          "first_outside_tick": null,
+          "last_outside_tick": null
+        }
+      },
+      "torque_diagnostics": {
+        "peak_abs_controller_torque": [
+          20.691551109369513,
+          85.33528921769374,
+          9.857110972722522,
+          35.312092448029595,
+          13.750804401087523,
+          11.97191811155166,
+          35.62502509607496
+        ],
+        "peak_abs_applied_actuator_ctrl": [
+          20.691551109369513,
+          80.0,
+          9.857110972722522,
+          35.312092448029595,
+          13.750804401087523,
+          11.97191811155166,
+          12.0,
+          0.04,
+          0.04
+        ],
+        "ctrl_ranges": [
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -12.0,
+            12.0
+          ],
+          [
+            -12.0,
+            12.0
+          ],
+          [
+            0.0,
+            0.04
+          ],
+          [
+            -0.04,
+            0.0
+          ]
+        ],
+        "recorded_ctrl_outside_range_samples": 0,
+        "controller_to_applied_first7_max_abs_difference": 23.625025096074957,
+        "note": "Recorded post-step values; channel comparison does not infer hidden substep clipping."
+      },
+      "phase_calls": [
+        {
+          "ordinal": 0,
+          "entry_tick": 460,
+          "target": [
+            -0.3084651105738172,
+            0.08221457497548734,
+            0.974784489159566
+          ],
+          "yaw": 0.9508729488309244,
+          "grip": -1.0,
+          "limit": 100,
+          "exit_tick": 510,
+          "converged": true
+        },
+        {
+          "ordinal": 1,
+          "entry_tick": 510,
+          "target": [
+            -0.3084651105738172,
+            0.08221457497548734,
+            0.8197844891595659
+          ],
+          "yaw": 0.9508729488309244,
+          "grip": -1.0,
+          "limit": 100,
+          "exit_tick": 549,
+          "converged": true
+        },
+        {
+          "ordinal": 2,
+          "entry_tick": 567,
+          "target": [
+            -0.3084651105738172,
+            0.08221457497548734,
+            0.974784489159566
+          ],
+          "yaw": 0.9508729488309244,
+          "grip": 1.0,
+          "limit": 100,
+          "exit_tick": 667,
+          "converged": false
+        },
+        {
+          "ordinal": 3,
+          "entry_tick": 667,
+          "target": [
+            0.12,
+            0.15,
+            0.9790000000000001
+          ],
+          "yaw": 0.0,
+          "grip": 1.0,
+          "limit": 100,
+          "exit_tick": 717,
+          "converged": true
+        },
+        {
+          "ordinal": 4,
+          "entry_tick": 717,
+          "target": [
+            0.12,
+            0.15,
+            0.8310000000000001
+          ],
+          "yaw": 0.0,
+          "grip": 1.0,
+          "limit": 100,
+          "exit_tick": 733,
+          "converged": true
+        },
+        {
+          "ordinal": 5,
+          "entry_tick": 753,
+          "target": [
+            0.12,
+            0.15,
+            0.9790000000000001
+          ],
+          "yaw": 0.0,
+          "grip": -1.0,
+          "limit": 100,
+          "exit_tick": 769,
+          "converged": true
+        }
+      ],
+      "dwell": {
+        "mode": "E0",
+        "requested_ticks": 0,
+        "executed_ticks": 0,
+        "stopped": false
+      },
+      "entry_finger_geoms": [
+        {
+          "name": "gripper0_hand_collision",
+          "world_position": [
+            -0.3151018071432807,
+            0.08073713411590577,
+            1.0447748172704598
+          ],
+          "object_relative_offset": [
+            -0.005058263233046445,
+            0.004543406862025454,
+            0.22999032811089393
+          ],
+          "body_velocity": [
+            0.012032725960157014,
+            0.002027188158264132,
+            0.0016163224571240683
+          ]
+        },
+        {
+          "name": "gripper0_finger1_collision",
+          "world_position": [
+            -0.27123140515284494,
+            0.050517702855296866,
+            0.9932484502623826
+          ],
+          "object_relative_offset": [
+            -0.004167042423146913,
+            -0.04872038874047641,
+            0.1784639611028167
+          ],
+          "body_velocity": [
+            0.012185811683936327,
+            0.001776200744494527,
+            0.001825837225419112
+          ]
+        },
+        {
+          "name": "gripper0_finger1_pad_collision",
+          "world_position": [
+            -0.2777396376734575,
+            0.05555560928310276,
+            0.9759197603280373
+          ],
+          "object_relative_offset": [
+            -0.00384768069510839,
+            -0.04049630217695149,
+            0.16113527116847137
+          ],
+          "body_velocity": [
+            0.01227273696798812,
+            0.0013979696901132216,
+            0.001869520669028556
+          ]
+        },
+        {
+          "name": "gripper0_finger2_collision",
+          "world_position": [
+            -0.3557778250226991,
+            0.11089807156956998,
+            0.9918388694434683
+          ],
+          "object_relative_offset": [
+            -0.004141243222027667,
+            0.055173236536931555,
+            0.1770543802839024
+          ],
+          "body_velocity": [
+            0.012007843470687656,
+            0.0015183304700797206,
+            0.0014047535942842393
+          ]
+        },
+        {
+          "name": "gripper0_finger2_pad_collision",
+          "world_position": [
+            -0.34854420935457303,
+            0.1060721327707354,
+            0.9747389803901991
+          ],
+          "object_relative_offset": [
+            -0.0038666517503303946,
+            0.046481891390872346,
+            0.1599544912306332
+          ],
+          "body_velocity": [
+            0.012057086111018026,
+            0.0010851911365163838,
+            0.00135894370973752
+          ]
+        }
+      ]
+    },
+    "E80": {
+      "source_demo_id": "demo_0001",
+      "strict_success": false,
+      "position_error_mm": 3.401891104849494,
+      "yaw_error_deg": 0.22304727545233635,
+      "criteria": {
+        "position": true,
+        "orientation": true,
+        "marked_face_up": false,
+        "footprint_inside_target": true,
+        "placement_height": false,
+        "released": true,
+        "stable": true,
+        "seated": false
+      },
+      "first_contact": 606,
+      "first_tilt_over15": 610,
+      "first_supported_lift": 648,
+      "supported_lift_tilt_deg": 90.66776711055421,
+      "peak_tilt_deg": 93.89039086587893,
+      "expert_status": "returned",
+      "control_steps": 872,
+      "expert_final_tick": 848,
+      "24_passive_stability_steps": true,
+      "handoff_passed": true,
+      "errors": {},
+      "uses_privileged_object_state": true,
+      "training_eligible": false,
+      "correction_candidate_only": false,
+      "new_model_queries": 0,
+      "new_expert_attempts": 1,
+      "counterfactual_reference": "DATA07-R native and one-chunk C patch, no rerun",
+      "descent_entry": {
+        "tick": 590,
+        "signed_xyz_error_mm": [
+          -2.9202321715573465,
+          -1.0289232553772065,
+          -2.805036906999625
+        ],
+        "position_error_mm": 4.177878774077174,
+        "rotation_error_deg": 1.2166389833451534,
+        "linear_speed_m_s": 7.304600935663934e-06,
+        "angular_speed_rad_s": 9.469481602414031e-05,
+        "joint_margin_rad": -0.00011079060520202688,
+        "aperture_mm": 79.98457777481738
+      },
+      "first_contact_detail": {
+        "tick": 606,
+        "ticks_after_descent_entry": 16,
+        "tilt_deg": 0.2128115070799924,
+        "grip_command": -1.0,
+        "tracking_xyz_error_mm": [
+          41.51972163807138,
+          0.49008877136215434,
+          16.137974762916564
+        ],
+        "tracking_xy_error_mm": 41.52261398210315,
+        "nearest_joint_limit_rad": 0.3878019289994916,
+        "brick_contacts": [
+          {
+            "geom1": "cube_g0",
+            "geom2": "gripper0_finger2_collision",
+            "world_position": [
+              -0.2999605339393222,
+              0.10618350074203514,
+              0.8295306746519786
+            ],
+            "object_local_position": [
+              0.024570776906193772,
+              0.006870792932901847,
+              0.014742466143716128
+            ],
+            "normal_world": [
+              0.03925729829947398,
+              0.06110604081113523,
+              0.9973589706352542
+            ],
+            "distance": -0.0008122687351621231
+          }
+        ]
+      },
+      "first_tilt_detail": {
+        "tick": 610,
+        "ticks_after_descent_entry": 20,
+        "tilt_deg": 25.660146419865093,
+        "grip_command": -1.0,
+        "tracking_xyz_error_mm": [
+          25.258065380164286,
+          5.1878755445464995,
+          9.014069456632301
+        ],
+        "tracking_xy_error_mm": 25.785343112209254,
+        "nearest_joint_limit_rad": 0.1996164173071504,
+        "brick_contacts": [
+          {
+            "geom1": "cube_g0",
+            "geom2": "gripper0_finger2_collision",
+            "world_position": [
+              -0.3137574419427262,
+              0.10955143142442653,
+              0.8231958928588915
+            ],
+            "object_local_position": [
+              0.02239409403536066,
+              0.007587197959312179,
+              0.013436456421216493
+            ],
+            "normal_world": [
+              -0.34030865063382604,
+              0.26379769585258683,
+              0.902552379624945
+            ],
+            "distance": -0.005073650777927514
+          },
+          {
+            "geom1": "gripper0_finger2_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.31111576781761646,
+              0.11074133195968464,
+              0.8251804510912857
+            ],
+            "object_local_position": [
+              0.024974209230523767,
+              0.005445777641184536,
+              0.01448053565462932
+            ],
+            "normal_world": [
+              0.3486356760977471,
+              -0.25249257424367844,
+              -0.9026077028829675
+            ],
+            "distance": -0.0010402083827802712
+          },
+          {
+            "geom1": "gripper0_finger2_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.31740652578116013,
+              0.10155145086627931,
+              0.8250152179785493
+            ],
+            "object_local_position": [
+              0.013842617094174682,
+              0.005188220606221099,
+              0.014756530459061152
+            ],
+            "normal_world": [
+              0.3486356760977471,
+              -0.25249257424367844,
+              -0.9026077028829675
+            ],
+            "distance": -0.00048753886516607136
+          }
+        ]
+      },
+      "first_close_detail": {
+        "tick": 629,
+        "ticks_after_descent_entry": 39,
+        "tilt_deg": 88.9857229096789,
+        "grip_command": 1.0,
+        "tracking_xyz_error_mm": [
+          1.6528154504146242,
+          -3.53294522443931,
+          0.45925396518931016
+        ],
+        "tracking_xy_error_mm": 3.9004488039221616,
+        "nearest_joint_limit_rad": 0.12007683097684296,
+        "brick_contacts": [
+          {
+            "geom1": "gripper0_finger2_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.3344318426052038,
+              0.10795375251016084,
+              0.8161480200030284
+            ],
+            "object_local_position": [
+              0.016366118566246837,
+              0.001956229606108406,
+              0.014904619407004788
+            ],
+            "normal_world": [
+              0.8226248392721226,
+              -0.568308920336395,
+              -0.017701550174926677
+            ],
+            "distance": -9.538059299520337e-05
+          },
+          {
+            "geom1": "gripper0_finger2_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.3435887231098028,
+              0.09483382744455714,
+              0.8161044539545204
+            ],
+            "object_local_position": [
+              0.00036685968964116604,
+              0.001984010958616905,
+              0.014980355124813341
+            ],
+            "normal_world": [
+              0.8226248392721226,
+              -0.568308920336395,
+              -0.017701550174926677
+            ],
+            "distance": -1.9644875186673123e-05
+          },
+          {
+            "geom1": "gripper0_finger2_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.33429301979769627,
+              0.10780520438370654,
+              0.8321460575562634
+            ],
+            "object_local_position": [
+              0.0163399388282825,
+              -0.014042854944305207,
+              0.0149891891563773
+            ],
+            "normal_world": [
+              0.8226248392721226,
+              -0.568308920336395,
+              -0.017701550174926677
+            ],
+            "distance": -1.0810843622685015e-05
+          }
+        ]
+      },
+      "first_supported_lift_detail": {
+        "tick": 648,
+        "ticks_after_descent_entry": 58,
+        "tilt_deg": 90.66776711055421,
+        "grip_command": 1.0,
+        "tracking_xyz_error_mm": [
+          -4.525695474746961,
+          -0.3037688588846815,
+          -138.91473932948196
+        ],
+        "tracking_xy_error_mm": 4.535878641429157,
+        "nearest_joint_limit_rad": 0.08776914017855741,
+        "brick_contacts": [
+          {
+            "geom1": "cube_g0",
+            "geom2": "gripper0_finger1_collision",
+            "world_position": [
+              -0.29569321566743795,
+              0.08004212186196188,
+              0.8313119045074917
+            ],
+            "object_local_position": [
+              0.01785552319089809,
+              0.0021068512132864643,
+              -0.014633921007867699
+            ],
+            "normal_world": [
+              0.7976191551836544,
+              -0.6030488011702667,
+              0.011654470868203004
+            ],
+            "distance": -0.0006639299000697405
+          },
+          {
+            "geom1": "gripper0_finger1_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.2964308733522721,
+              0.07967819604726824,
+              0.8478192710997815
+            ],
+            "object_local_position": [
+              0.017332682214632744,
+              -0.014411781011740378,
+              -0.014457400757802073
+            ],
+            "normal_world": [
+              -0.7976191551836549,
+              0.6030488011702662,
+              -0.011654470868203273
+            ],
+            "distance": -0.0005425992421979212
+          },
+          {
+            "geom1": "gripper0_finger1_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.30590663733503515,
+              0.06679305613182857,
+              0.8475930678948492
+            ],
+            "object_local_position": [
+              0.0013381955104779487,
+              -0.014388747981261297,
+              -0.014667081795405754
+            ],
+            "normal_world": [
+              -0.7976191551836549,
+              0.6030488011702662,
+              -0.011654470868203273
+            ],
+            "distance": -0.0003329182045942568
+          },
+          {
+            "geom1": "gripper0_finger1_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.2961162952742095,
+              0.07972932524392254,
+              0.8318225517449727
+            ],
+            "object_local_position": [
+              0.017357487335091674,
+              0.0015880582461173449,
+              -0.014491047558211016
+            ],
+            "normal_world": [
+              -0.7976191551836549,
+              0.6030488011702662,
+              -0.011654470868203273
+            ],
+            "distance": -0.0005089524417889988
+          },
+          {
+            "geom1": "gripper0_finger1_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.30559205925697264,
+              0.06684418532848287,
+              0.8315963485400403
+            ],
+            "object_local_position": [
+              0.0013630006309368462,
+              0.0016110912765965376,
+              -0.014700728595814653
+            ],
+            "normal_world": [
+              -0.7976191551836549,
+              0.6030488011702662,
+              -0.011654470868203273
+            ],
+            "distance": -0.00029927140418533444
+          },
+          {
+            "geom1": "cube_g0",
+            "geom2": "gripper0_finger2_collision",
+            "world_position": [
+              -0.32969763742927927,
+              0.08354365540155458,
+              0.8306383097085437
+            ],
+            "object_local_position": [
+              0.00013806976751025047,
+              0.0022118945203232782,
+              0.014608103144591027
+            ],
+            "normal_world": [
+              -0.7976191551836529,
+              0.6030488011702688,
+              -0.011654470868203948
+            ],
+            "distance": -0.0007165523167999425
+          },
+          {
+            "geom1": "gripper0_finger2_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.3293047610705585,
+              0.08384312287490796,
+              0.8311265012673816
+            ],
+            "object_local_position": [
+              0.0006201034271421126,
+              0.001731441116175949,
+              0.014469641321751209
+            ],
+            "normal_world": [
+              0.7976191551836549,
+              -0.6030488011702662,
+              0.011654470868203273
+            ],
+            "distance": -0.000530358678248794
+          },
+          {
+            "geom1": "gripper0_finger2_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.31982899708779544,
+              0.09672826279034763,
+              0.831352704472314
+            ],
+            "object_local_position": [
+              0.01661459013129691,
+              0.0017084080856967553,
+              0.014679322359354891
+            ],
+            "normal_world": [
+              0.7976191551836549,
+              -0.6030488011702662,
+              0.011654470868203273
+            ],
+            "distance": -0.00032067764064512967
+          },
+          {
+            "geom1": "gripper0_finger2_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.32961933914862107,
+              0.08379199367825366,
+              0.8471232206221906
+            ],
+            "object_local_position": [
+              0.0005952983066831811,
+              -0.014268398141681887,
+              0.014503288122160153
+            ],
+            "normal_world": [
+              0.7976191551836549,
+              -0.6030488011702662,
+              0.011654470868203273
+            ],
+            "distance": -0.0004967118778398717
+          },
+          {
+            "geom1": "gripper0_finger2_pad_collision",
+            "geom2": "cube_g0",
+            "world_position": [
+              -0.32014357516585795,
+              0.09667713359369332,
+              0.847349423827123
+            ],
+            "object_local_position": [
+              0.016589785010838,
+              -0.014291431172161079,
+              0.01471296915976378
+            ],
+            "normal_world": [
+              0.7976191551836549,
+              -0.6030488011702662,
+              0.011654470868203273
+            ],
+            "distance": -0.0002870308402362073
+          }
+        ]
+      },
+      "upright_supported_lift_samples": 0,
+      "joint_limits": {
+        "entire_recorded_trace": {
+          "rows": 832,
+          "minimum_signed_margin_rad": -0.005036721595259586,
+          "maximum_excursion_rad": 0.005036721595259586,
+          "outside_ticks": 215,
+          "outside_control_sample_seconds": 10.75,
+          "first_outside_tick": 72,
+          "last_outside_tick": 746
+        },
+        "teacher_measurements": {
+          "rows": 388,
+          "minimum_signed_margin_rad": -0.0030379402065134897,
+          "maximum_excursion_rad": 0.0030379402065134897,
+          "outside_ticks": 178,
+          "outside_control_sample_seconds": 8.9,
+          "first_outside_tick": 505,
+          "last_outside_tick": 746
+        },
+        "added_hold": {
+          "rows": 80,
+          "minimum_signed_margin_rad": -0.00016056075632331357,
+          "maximum_excursion_rad": 0.00016056075632331357,
+          "outside_ticks": 80,
+          "outside_control_sample_seconds": 4.0,
+          "first_outside_tick": 511,
+          "last_outside_tick": 590
+        }
+      },
+      "torque_diagnostics": {
+        "peak_abs_controller_torque": [
+          20.709115048813963,
+          85.33605968533519,
+          9.85449622311336,
+          35.359052663167716,
+          13.752496927510574,
+          11.991535628262897,
+          35.62918395311011
+        ],
+        "peak_abs_applied_actuator_ctrl": [
+          20.709115048813963,
+          80.0,
+          9.85449622311336,
+          35.359052663167716,
+          13.752496927510574,
+          11.991535628262897,
+          12.0,
+          0.04,
+          0.04
+        ],
+        "ctrl_ranges": [
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -80.0,
+            80.0
+          ],
+          [
+            -12.0,
+            12.0
+          ],
+          [
+            -12.0,
+            12.0
+          ],
+          [
+            0.0,
+            0.04
+          ],
+          [
+            -0.04,
+            0.0
+          ]
+        ],
+        "recorded_ctrl_outside_range_samples": 0,
+        "controller_to_applied_first7_max_abs_difference": 23.629183953110108,
+        "note": "Recorded post-step values; channel comparison does not infer hidden substep clipping."
+      },
+      "phase_calls": [
+        {
+          "ordinal": 0,
+          "entry_tick": 460,
+          "target": [
+            -0.3084651105738172,
+            0.08221457497548734,
+            0.974784489159566
+          ],
+          "yaw": 0.9508729488309244,
+          "grip": -1.0,
+          "limit": 100,
+          "exit_tick": 510,
+          "converged": true
+        },
+        {
+          "ordinal": 1,
+          "entry_tick": 510,
+          "target": [
+            -0.3084651105738172,
+            0.08221457497548734,
+            0.8197844891595659
+          ],
+          "yaw": 0.9508729488309244,
+          "grip": -1.0,
+          "limit": 100,
+          "exit_tick": 628,
+          "converged": true
+        },
+        {
+          "ordinal": 2,
+          "entry_tick": 646,
+          "target": [
+            -0.3084651105738172,
+            0.08221457497548734,
+            0.974784489159566
+          ],
+          "yaw": 0.9508729488309244,
+          "grip": 1.0,
+          "limit": 100,
+          "exit_tick": 746,
+          "converged": false
+        },
+        {
+          "ordinal": 3,
+          "entry_tick": 746,
+          "target": [
+            0.12,
+            0.15,
+            0.9790000000000001
+          ],
+          "yaw": 0.0,
+          "grip": 1.0,
+          "limit": 100,
+          "exit_tick": 796,
+          "converged": true
+        },
+        {
+          "ordinal": 4,
+          "entry_tick": 796,
+          "target": [
+            0.12,
+            0.15,
+            0.8310000000000001
+          ],
+          "yaw": 0.0,
+          "grip": 1.0,
+          "limit": 100,
+          "exit_tick": 812,
+          "converged": true
+        },
+        {
+          "ordinal": 5,
+          "entry_tick": 832,
+          "target": [
+            0.12,
+            0.15,
+            0.9790000000000001
+          ],
+          "yaw": 0.0,
+          "grip": -1.0,
+          "limit": 100,
+          "exit_tick": 848,
+          "converged": true
+        }
+      ],
+      "dwell": {
+        "mode": "E80",
+        "requested_ticks": 80,
+        "executed_ticks": 80,
+        "stopped": false
+      },
+      "entry_finger_geoms": [
+        {
+          "name": "gripper0_hand_collision",
+          "world_position": [
+            -0.3134118138307318,
+            0.08126302766191641,
+            1.0450243772900005
+          ],
+          "object_relative_offset": [
+            -0.0036483862508080874,
+            0.0034734123231842384,
+            0.2302398881304346
+          ],
+          "body_velocity": [
+            6.900284253777651e-07,
+            9.516499361825053e-07,
+            1.645934971454275e-06
+          ]
+        },
+        {
+          "name": "gripper0_finger1_collision",
+          "world_position": [
+            -0.269525174551551,
+            0.050963219026390616,
+            0.9935608430234646
+          ],
+          "object_relative_offset": [
+            -0.002813153009901968,
+            -0.04985029625005459,
+            0.17877635386389867
+          ],
+          "body_velocity": [
+            6.042373716748411e-07,
+            1.373359973910933e-06,
+            1.3465686409707168e-06
+          ]
+        },
+        {
+          "name": "gripper0_finger1_pad_collision",
+          "world_position": [
+            -0.27604173863632697,
+            0.05595374905524246,
+            0.9762215786469547
+          ],
+          "object_relative_offset": [
+            -0.0025371924335572137,
+            -0.041646952834095,
+            0.16143708948738877
+          ],
+          "body_velocity": [
+            1.8784626326041431e-06,
+            3.884641980119783e-06,
+            1.319074640945509e-06
+          ]
+        },
+        {
+          "name": "gripper0_finger2_collision",
+          "world_position": [
+            -0.3541272248846314,
+            0.11125972810498527,
+            0.992025335822784
+          ],
+          "object_relative_offset": [
+            -0.0028879288787475948,
+            0.05403988777228484,
+            0.17724084666321804
+          ],
+          "body_velocity": [
+            3.8853076287451815e-06,
+            6.124491350747146e-06,
+            2.031511291728738e-06
+          ]
+        },
+        {
+          "name": "gripper0_finger2_pad_collision",
+          "world_position": [
+            -0.3468926359348693,
+            0.10639988867573856,
+            0.9749354625052813
+          ],
+          "object_relative_offset": [
+            -0.0026403644588332774,
+            0.045328055105843576,
+            0.16015097334571538
+          ],
+          "body_velocity": [
+            5.869490031686281e-06,
+            9.636615555932829e-06,
+            2.1498243044211306e-06
+          ]
+        }
+      ],
+      "hold_error": {
+        "first_mm": 5.162977254105976,
+        "last_mm": 4.177878774077174,
+        "min_mm": 2.4598182636058032,
+        "max_mm": 5.162977254105976,
+        "last20_min_mm": 4.130554051970168,
+        "last20_max_mm": 4.181719748527803
+      }
+    }
+  },
+  "protocol_valid": true,
+  "strict_successes": 0,
+  "conclusion": "Four extra seconds improved entry pose and velocity but did not prevent premature open-finger shell contact, tipping, or sideways acquisition. Settling alone is insufficient for this training state.",
+  "no_training_eligible_correction": true,
+  "entry_position_error_reduction_percent": 26.549601915156373,
+  "shared_boundary": {
+    "passed": true,
+    "differences": [],
+    "old_meansize": [
+      "0.244334"
+    ],
+    "new_meansize": [
+      "0.244374"
+    ],
+    "only_new_exclusion": "xml statistic/meansize",
+    "atol": 0,
+    "rtol": 0
+  }
+}
