@@ -1,0 +1,36 @@
+id,type,label,parent_id,x,y,color
+T10959,experiment,"R01e · #10959
+Measure numeral visibility through actual preprocessing",S_perception_0,1220,58.0,#4a4428
+R10959,result,"Tiny blue fragment after resize visibility evidence, not recognition",T10959,1620,67.5,#244a3d
+T10955,experiment,"R01c · #10955
+Show exactly what V4 sees: 512→224 images, crop and six history frames",S_perception_0,1220,185.0,#4a4428
+R10955,result,512→224; crop absent at release six history frames actually supplied,T10955,1620,194.5,#244a3d
+T10993,experiment,"VIS01 · #10993
+Qualify a visibility fix if the causal image test supports it",S_perception_0,1220,312.0,#4a4428
+R10993,result,Crop-only repair rejected: clearer features did not repair held orientation or release. Native production inputs retained.,T10993,1620,312.0,#30445a
+T11011,experiment,"R01f · #11011
+Separate lost visual detail from failure to use orientation in the action head",S_perception_0,1220,439.0,#4a4428
+R11011,result,108 paired predictions: cue sensitivity rises 0.0102 to 0.1887; wrist error remains about 80 degrees and opens at waypoint 11.,T11011,1620,439.0,#574831
+S_perception_0,solution,Inspect the exact model inputs,O_perception,820,258.0,#343a46
+T10954,experiment,"R01b · #10954
+Measure V4's numeral sensitivity and grasp-relative orientation response",S_perception_1,1220,591.0,#4a4428
+R10954,result,87 queries; initial cue response held-state target stays ~94°,T10954,1620,600.5,#574831
+T10960,experiment,"R02 · #10960
+Test whether fixed-seed prompts command simple arm actions",S_perception_1,1220,718.0,#4a4428
+R10960,result,36 predictions; directions not reliably commanded,T10960,1620,727.5,#56343c
+T10961,experiment,"R02b · #10961
+Compare vanilla, V3 and V4 prompt response controls",S_perception_1,1220,845.0,#4a4428
+R10961,result,180 predictions; each model 0/18 paired axis reversals,T10961,1620,854.5,#56343c
+T10994,experiment,"VIS02 · #10994
+Test language/action grounding repair with matched input contracts",S_perception_1,1220,982.5,#4a4428
+R10994,result,Matched 3k continuations: varied vs fixed goals 10/12 vs 0/12 novel-goal strict success. Loading 0/12 both; text-only goal response under 1.4 mm.,T10994,1620,972.0,#30445a
+S_perception_1,solution,Test instructions and goal diversity,O_perception,820,796.25,#343a46
+T11005,experiment,"LIVE02 · #11005
+Qualify the simple visual completion classifier across allowable variation",S_perception_2,1220,1145.0,#4a4428
+R11005,result,Completion gate failed: classical recall below 80%; separate API diagnostic 2/22 recall. No completion authority granted.,T11005,1620,1145.0,#574831
+T11006,experiment,"LIVE03 · #11006
+Reconcile Qwen live planner, finished-reference image and veto behavior",S_perception_2,1220,1282.5,#4a4428
+R11006,result,"Qwen's 180-degree false completion was vetoed by RGB reference. Historical TTC used smoothness, not learned value; no qualified Qwen control.",T11006,1620,1272.0,#574831
+S_perception_2,solution,Qualify visual completion decisions,O_perception,820,1223.25,#343a46
+O_perception,opportunity,Make relevant visual cues change the correct action,outcome,420,740.62,#2d443b
+outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60

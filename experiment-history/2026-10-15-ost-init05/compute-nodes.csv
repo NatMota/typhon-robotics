@@ -1,0 +1,32 @@
+id,type,label,parent_id,x,y,color
+T10967,experiment,"R05 · #10967
+Measure eight-proposal availability using a privileged offline oracle",S_compute_0,1220,58.0,#4a4428
+R10967,result,48 proposals; approach improves graspable states stay 1/6,T10967,1620,67.5,#574831
+T10975,experiment,"R10a · #10975
+Prepare blue-ghost candidate cards and typed Luna requests",S_compute_0,1220,185.0,#4a4428
+R10975,result,64 candidates / 32 slates prepared simulator futures; no Luna calls,T10975,1620,194.5,#244a3d
+T10982,experiment,"R10 · #10982
+Run Decisions API visual ranking on frozen ghost/future slates",S_compute_0,1220,322.5,#4a4428
+R10982,result,"32 choices + 32 reasons. Future RGB: 5/5 selected adequate, 7 abstentions; held strict 0/8. Privileged lookahead; no qualified benefit.",T10982,1620,312.0,#4e374f
+T11029,experiment,"LIVE09 · #11029
+Repeat R10 and audit critic response consistency",S_compute_0,1220,470.5,#4a4428
+R11029,result,"Repeat of the same 32 slates, not new evidence. Future-image choices still poor across ordering; median/p95 1.094/2.338 seconds.",T11029,1620,460.0,#574831
+S_compute_0,solution,Measure candidate support and visual ranking,O_compute,820,273.75,#343a46
+T11014,experiment,"LIVE04 · #11014
+Integrate Decisions API candidate ranking with bounded asynchronous execution",S_compute_1,1220,633.0,#4a4428
+R11014,result,Nine live trials: 3 API choices executed 62 targets; 33/36 replies UNKNOWN. Reference pickup/place 1/2 vs 0/2 live variants.,T11014,1620,633.0,#574831
+T11025,experiment,"LIVE05 · #11025
+Separate waiting, sampling and guards after the live-ranking regression",S_compute_1,1220,760.0,#4a4428
+R11025,result,30 matched trials isolate guard regression: native pickup/place 1/2 even with waits; guard 0/2 at zero wait. Strict 0/2.,T11025,1620,760.0,#574831
+T11026,experiment,"LIVE06 · #11026
+Qualify motion guards against the executed controller contract",S_compute_1,1220,897.5,#4a4428
+R11026,result,"Executed-command check restores known pickup/place. Eight experts succeed, 1,714 ticks and zero new vetoes; 304 old false jump vetoes.",T11026,1620,887.0,#574831
+T11027,experiment,"LIVE07 · #11027
+Integrate the qualified execution check into the live candidate handoff",S_compute_1,1220,1045.5,#4a4428
+R11027,result,Nine live trials: native and first-admissible grasp/place; API misses grasp. All strict 0/2. Activation is not executed selection.,T11027,1620,1035.0,#574831
+T11028,experiment,"LIVE08 · #11028
+Isolate the first ranked candidate from boundary timing",S_compute_1,1220,1193.5,#4a4428
+R11028,result,"Four-run 2x2: candidate A grasps/places at both waits; C at neither. Candidate choice explains this failure, not one tick of delay.",T11028,1620,1183.0,#574831
+S_compute_1,solution,Integrate and isolate the live selection mechanism,O_compute,820,922.75,#343a46
+O_compute,opportunity,Choose useful candidates without blocking valid motion,outcome,420,598.25,#2d443b
+outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60
