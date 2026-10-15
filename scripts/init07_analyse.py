@@ -51,15 +51,18 @@ def main():
     for p in audit:
      assert read(p)['noise_hashes']==read(ref/'input-audit'/p.name)['noise_hashes']
      files[str(p)]=sha(p)
+   target_yaw=float(endpoint(case['config'],case['requested_task'])['task']['target_yaw_rad']);initial_delta=float(ep['initial_truth']['object_yaw_rad'])-target_yaw
+   initial_yaw_error=float(np.degrees(abs(np.arctan2(np.sin(initial_delta),np.cos(initial_delta)))))
+   placement_without_yaw=all(v for k,v in result['criteria'].items()if k!='orientation')
    wrist=np.asarray([s['eef_position_m']for s in states]);w0=np.asarray(ep['initial_truth']['eef_position_m'])
-   rows.append({'model':model,'case':case['id'],'parent':case.get('parent',case.get('source_episode_id')),'panel':case['panel'],'policy_seed':case['policy_seed'],'qualified':passed,'strict_endpoint_success':result['success'],'any_contact':touched,'supported_lift':extra['supported_lift_10mm_3steps'],'maximum_lift_mm':extra['maximum_lift_above_initial_mm'],'maximum_object_displacement_mm':maxdisp,'minimum_eef_object_distance_mm':extra['minimum_eef_object_distance_mm'],'position_error_mm':result['position_error_m']*1000,'yaw_error_deg':result['orientation_error_deg'],'tilt_deg':float(np.degrees(result['upright_error_rad'])),'criteria_failed':';'.join(k for k,v in result['criteria'].items()if not v),'failure_class':failure,'close_target_count':row['close_target_count'],'wrist_max_displacement_mm':float(np.linalg.norm(wrist-w0,axis=1).max()*1000),'wrist_path_m':float(np.linalg.norm(np.diff(np.vstack([w0,wrist]),axis=0),axis=1).sum()),'historical_reuse':model=='T','directory':str(d)})
+   rows.append({'model':model,'case':case['id'],'parent':case.get('parent',case.get('source_episode_id')),'panel':case['panel'],'policy_seed':case['policy_seed'],'qualified':passed,'strict_endpoint_success':result['success'],'any_contact':touched,'supported_lift':extra['supported_lift_10mm_3steps'],'maximum_lift_mm':extra['maximum_lift_above_initial_mm'],'maximum_object_displacement_mm':maxdisp,'minimum_eef_object_distance_mm':extra['minimum_eef_object_distance_mm'],'position_error_mm':result['position_error_m']*1000,'yaw_error_deg':result['orientation_error_deg'],'initial_yaw_error_deg':initial_yaw_error,'yaw_error_reduction_deg':initial_yaw_error-result['orientation_error_deg'],'stable_goal_placement_without_yaw':placement_without_yaw,'tilt_deg':float(np.degrees(result['upright_error_rad'])),'criteria_failed':';'.join(k for k,v in result['criteria'].items()if not v),'failure_class':failure,'close_target_count':row['close_target_count'],'wrist_max_displacement_mm':float(np.linalg.norm(wrist-w0,axis=1).max()*1000),'wrist_path_m':float(np.linalg.norm(np.diff(np.vstack([w0,wrist]),axis=0),axis=1).sum()),'historical_reuse':model=='T','directory':str(d)})
  with (DEST/'comparisons.csv').open('w')as f:
   writer=csv.DictWriter(f,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
  panels={m:{}for m in ['T','Q0','Q1']};by={(r['model'],r['case']):r for r in rows}
  for m in panels:
   for panel,n in [('initiation',8),('preservation',8),('prior_feeding',3),('prior_loading',4)]:
    a=[r for r in rows if r['model']==m and r['panel']==panel]
-   panels[m][panel]={'complete':len(a)==n,'completed':len(a),'planned':n,'qualified':sum(r['qualified']for r in a),'strict_endpoint':sum(r['strict_endpoint_success']for r in a),'supported_lift':sum(r['supported_lift']for r in a),'contact':sum(r['any_contact']for r in a)}
+   panels[m][panel]={'complete':len(a)==n,'completed':len(a),'planned':n,'qualified':sum(r['qualified']for r in a),'strict_endpoint':sum(r['strict_endpoint_success']for r in a),'supported_lift':sum(r['supported_lift']for r in a),'contact':sum(r['any_contact']for r in a),'goal_placement_without_yaw':sum(r['stable_goal_placement_without_yaw']for r in a),'mean_final_yaw_error_deg':float(np.mean([r['yaw_error_deg']for r in a]))if a else None}
  gates={}
  for m in ['Q0','Q1']:
   complete=sum(p['completed']for p in panels[m].values())==23
