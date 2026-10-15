@@ -83,6 +83,11 @@ O_recovery_S0 --> T11054
 R11054["Review: capture provenance 6,365/6,365;<br/>offline tensors unchanged. Live pair differed<br/>by one background pixel, then actions<br/>diverged. Both tasks succeeded; exact live<br/>transparency failed."]:::mixed
 T11054 --> R11054
 click T11054 "http://127.0.0.1:4001/?project=typhon-research#ticket=11054" "Open research ticket" _blank
+T11057["LIVE01-R · #11057<br/>Fixed-state camera repeatability with and<br/>without provenance"]:::experiment
+O_recovery_S0 --> T11057
+R11057["Completed: fixed-state 24 bundles / 48 images<br/>match exactly with and without provenance.<br/>Earlier live difference not reproduced; live<br/>parity remains failed. Cached observer output;<br/>no new policy runs."]:::mixed
+T11057 --> R11057
+click T11057 "http://127.0.0.1:4001/?project=typhon-research#ticket=11057" "Open research ticket" _blank
 O_recovery_S3["Solution: Separate AlphaNIST-style PPO from X-VLA"]:::solution
 O_recovery --> O_recovery_S3
 T11043["ALPHA02 · #11043<br/>frozen-policy 4s/15s reset qualification and<br/>release-only control"]:::experiment

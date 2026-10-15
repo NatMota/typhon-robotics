@@ -363,6 +363,11 @@ O_recovery_S0 --> T11054
 R11054["Review: capture provenance 6,365/6,365;<br/>offline tensors unchanged. Live pair differed<br/>by one background pixel, then actions<br/>diverged. Both tasks succeeded; exact live<br/>transparency failed."]:::mixed
 T11054 --> R11054
 click T11054 "http://127.0.0.1:4001/?project=typhon-research#ticket=11054" "Open research ticket" _blank
+T11057["LIVE01-R · #11057<br/>Fixed-state camera repeatability with and<br/>without provenance"]:::experiment
+O_recovery_S0 --> T11057
+R11057["Completed: fixed-state 24 bundles / 48 images<br/>match exactly with and without provenance.<br/>Earlier live difference not reproduced; live<br/>parity remains failed. Cached observer output;<br/>no new policy runs."]:::mixed
+T11057 --> R11057
+click T11057 "http://127.0.0.1:4001/?project=typhon-research#ticket=11057" "Open research ticket" _blank
 O_recovery_S1["Solution: Qualify skills and phase control"]:::solution
 O_recovery --> O_recovery_S1
 T10971["R06c · #10971<br/>Qualify and reject a two-axis IK endpoint<br/>selector"]:::experiment
@@ -559,7 +564,7 @@ T10986 --> R10986
 click T10986 "http://127.0.0.1:4001/?project=typhon-research#ticket=10986" "Open research ticket" _blank
 T11012["OPS05 · #11012<br/>Draw the opportunity solution tree and restore<br/>the Design viewer"]:::experiment
 O_evidence_S1 --> T11012
-R11012["Live OST: 103 work items across 10 views, each<br/>with a result box. Includes CTRL05&#x27;s unrun<br/>comparison, CTRL04&#x27;s negative result and<br/>LIVE01-P limits. AlphaNIST remains Parked."]:::mixed
+R11012["Live OST: 104 items across 10 views, aligned<br/>result boxes and complete ticket coverage.<br/>Current sources on Mint; private version<br/>history retained. Done denotes completed work,<br/>not a positive result."]:::mixed
 T11012 --> R11012
 click T11012 "http://127.0.0.1:4001/?project=typhon-research#ticket=11012" "Open research ticket" _blank
 T11042["OPS01 · #11042<br/>Verify Powerglide booking and full backup<br/>including lab recovery"]:::experiment

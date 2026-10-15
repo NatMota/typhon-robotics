@@ -74,7 +74,7 @@ receipts=[]
 for g in P['groups']:
  sv,w,h,n=draw(g[0],[g]);receipts.append(install_svg(g[0],sv,w,h,n))
 sv,w,h,n=draw('full-tree',P['groups']);assert n==len(tickets);receipts.append(install_svg('full-tree',sv,w,h,n))
-selected={11015,11034,11011,10994,11040,11047,11048,11050,11052,10985,11031,11043,11028,10996,11042,11049,11053,11054,11055,11056}
+selected={11015,11034,11011,10994,11040,11047,11048,11050,11052,10985,11031,11043,11028,10996,11042,11049,11053,11054,11055,11056,11057}
 sv,w,h,n=draw('overview',P['groups'],selected);receipts.append(install_svg('overview',sv,w,h,n))
 save('refresh-validation.json',{'passed':True,'time':time.time(),'tickets':len(tickets),'pages':receipts,'distinct_results_to_right':True,'aligned_result_centres':True,'zero_card_overlap':True,'source':'refresh-input-complete.json','layout':'stdlib SVG from exact CSV; hierarchy Mermaid also retained','historical_artboard_mermaidSource':'preserved as historical; current hierarchy is image-layer content and exported .mmd'})
 print('REFRESH_COMPLETE',flush=True)
