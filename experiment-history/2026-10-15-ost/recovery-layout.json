@@ -835,12 +835,46 @@
       ]
     },
     {
+      "id": "T11056",
+      "type": "experiment",
+      "label": "CTRL05 \u00b7 #11056\nCompare matched-time step and smooth descent from the settled state",
+      "parent_id": "S_recovery_4",
+      "x": 1220,
+      "y": 3605.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "CTRL05 \u00b7 #11056",
+        "Compare matched-time step and smooth",
+        "descent from the settled state"
+      ]
+    },
+    {
+      "id": "R11056",
+      "type": "result",
+      "label": "BLOCKED: reference audit completed; qualification stopped at tick 510 because wrapper code changed too early. No S/R descent runs or efficacy result. Approach-repair branch deferred tonight.",
+      "parent_id": "T11056",
+      "x": 1620,
+      "y": 3584.0,
+      "width": 350,
+      "height": 133,
+      "color": "#4e374f",
+      "lines": [
+        "BLOCKED: reference audit completed;",
+        "qualification stopped at tick 510 because",
+        "wrapper code changed too early. No S/R",
+        "descent runs or efficacy result.",
+        "Approach-repair branch deferred tonight."
+      ]
+    },
+    {
       "id": "S_recovery_4",
       "type": "solution",
       "label": "Qualify training-family corrective supervision",
       "parent_id": "O_recovery",
       "x": 820,
-      "y": 3171.0,
+      "y": 3250.25,
       "width": 350,
       "height": 72,
       "color": "#343a46",
@@ -855,7 +889,7 @@
       "label": "Advance phases only from trustworthy evidence",
       "parent_id": "outcome",
       "x": 420,
-      "y": 1857.25,
+      "y": 1896.88,
       "width": 350,
       "height": 72,
       "color": "#2d443b",
@@ -1090,6 +1124,14 @@
       "R11055"
     ],
     [
+      "S_recovery_4",
+      "T11056"
+    ],
+    [
+      "T11056",
+      "R11056"
+    ],
+    [
       "O_recovery",
       "S_recovery_4"
     ],
@@ -1099,5 +1141,5 @@
     ]
   ],
   "width": 2000,
-  "height": 3608.0
+  "height": 3777.0
 }

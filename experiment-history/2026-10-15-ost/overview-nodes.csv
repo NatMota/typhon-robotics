@@ -56,23 +56,26 @@ R11053,result,Nominal sampled gripper corridor clears the brick; executed finger
 T11055,experiment,"CTRL04 · #11055
 Test one fixed pre-descent dwell from the failed acquisition state",S_recovery_4,1220,2708.5,#4a4428
 R11055,result,Completed: extra 4 s reduced entry error from 5.69 to 4.18 mm. Strict success 0/2; both tipped before grasp. Settling alone insufficient. Raw archive verified on Mint.,T11055,1620,2698.0,#574831
-S_recovery_4,solution,Qualify training-family corrective supervision,O_recovery,820,2433.0,#343a46
-O_recovery,opportunity,Advance phases only from trustworthy evidence,outcome,420,2054.25,#2d443b
+T11056,experiment,"CTRL05 · #11056
+Compare matched-time step and smooth descent from the settled state",S_recovery_4,1220,2867.0,#4a4428
+R11056,result,BLOCKED: reference audit completed; qualification stopped at tick 510 because wrapper code changed too early. No S/R descent runs or efficacy result. Approach-repair branch deferred tonight.,T11056,1620,2846.0,#4e374f
+S_recovery_4,solution,Qualify training-family corrective supervision,O_recovery,820,2512.25,#343a46
+O_recovery,opportunity,Advance phases only from trustworthy evidence,outcome,420,2093.88,#2d443b
 T11028,experiment,"LIVE08 · #11028
-Isolate the first ranked candidate from boundary timing",S_compute_1,1220,2931.5,#4a4428
-R11028,result,"Four-run 2x2: candidate A grasps/places at both waits; C at neither. Candidate choice explains this failure, not one tick of delay.",T11028,1620,2921.0,#574831
-S_compute_1,solution,Integrate and isolate the live selection mechanism,O_compute,820,2941.0,#343a46
-O_compute,opportunity,Choose useful candidates without blocking valid motion,outcome,420,2941.0,#2d443b
+Isolate the first ranked candidate from boundary timing",S_compute_1,1220,3100.5,#4a4428
+R11028,result,"Four-run 2x2: candidate A grasps/places at both waits; C at neither. Candidate choice explains this failure, not one tick of delay.",T11028,1620,3090.0,#574831
+S_compute_1,solution,Integrate and isolate the live selection mechanism,O_compute,820,3110.0,#343a46
+O_compute,opportunity,Choose useful candidates without blocking valid motion,outcome,420,3110.0,#2d443b
 T10996,experiment,"EVAL02 · #10996
-Define the next confirmatory comparison with family-level uncertainty",S_evidence_0,1220,3154.5,#4a4428
-R10996,result,REVIEW: 136/204 planned completed. Broad vs vanilla near-layout strict 17/40 vs 0/40. Broader layouts 0/20 both; 68 interventions unrun.,T10996,1620,3144.0,#574831
-S_evidence_0,solution,Reconcile evaluation panels and uncertainty,O_evidence,820,3164.0,#343a46
+Define the next confirmatory comparison with family-level uncertainty",S_evidence_0,1220,3323.5,#4a4428
+R10996,result,REVIEW: 136/204 planned completed. Broad vs vanilla near-layout strict 17/40 vs 0/40. Broader layouts 0/20 both; 68 interventions unrun.,T10996,1620,3313.0,#574831
+S_evidence_0,solution,Reconcile evaluation panels and uncertainty,O_evidence,820,3333.0,#343a46
 T11042,experiment,"OPS01 · #11042
-Verify Powerglide booking and full backup including lab recovery",S_evidence_1,1220,3327.5,#4a4428
-R11042,result,"Full backup reconciled: 906,507 files, 299.6 GB, no integrity errors. Labs and checkpoint checks saved. Fresh-machine restore untested.",T11042,1620,3317.0,#574831
+Verify Powerglide booking and full backup including lab recovery",S_evidence_1,1220,3496.5,#4a4428
+R11042,result,"Full backup reconciled: 906,507 files, 299.6 GB, no integrity errors. Labs and checkpoint checks saved. Fresh-machine restore untested.",T11042,1620,3486.0,#574831
 T11049,experiment,"OPS07 · #11049
-Restore Mint access and mirror latest experiment evidence and OST",S_evidence_1,1220,3496.5,#4a4428
-R11049,result,"Recovered: Mint mirrors verified (45 older evidence files, 809 DATA07-R raw files). Interrupted work preserved; live OST installed and served bytes checked. DATA07-GE raw 223 files also verified. Fresh-machine restore untested.",T11049,1620,3465.0,#574831
-S_evidence_1,solution,Preserve the research record and compute environment,O_evidence,820,3421.5,#343a46
-O_evidence,opportunity,"Make results reproducible, recoverable and understandable",outcome,420,3292.75,#2d443b
+Restore Mint access and mirror latest experiment evidence and OST",S_evidence_1,1220,3665.5,#4a4428
+R11049,result,"Recovered: Mint mirrors verified (45 older evidence files, 809 DATA07-R raw files). Interrupted work preserved; live OST installed and served bytes checked. DATA07-GE raw 223 files also verified. Fresh-machine restore untested.",T11049,1620,3634.0,#574831
+S_evidence_1,solution,Preserve the research record and compute environment,O_evidence,820,3590.5,#343a46
+O_evidence,opportunity,"Make results reproducible, recoverable and understandable",outcome,420,3461.75,#2d443b
 outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60

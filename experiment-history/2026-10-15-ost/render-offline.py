@@ -17,7 +17,7 @@ for group in P["groups"]:
 sv,w,h,n=draw("full-tree",P["groups"])
 assert n==len(tickets)
 pages.append({"page":"full-tree","experiments":n,"width":w,"height":h})
-selected={11015,11034,11011,10994,11040,11047,11048,11050,11052,10985,11031,11043,11028,10996,11042,11049,11053,11054,11055}
+selected={11015,11034,11011,10994,11040,11047,11048,11050,11052,10985,11031,11043,11028,10996,11042,11049,11053,11054,11055,11056}
 sv,w,h,n=draw("overview",P["groups"],selected)
 pages.append({"page":"overview","experiments":n,"width":w,"height":h})
 covered=[]

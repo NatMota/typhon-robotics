@@ -112,6 +112,11 @@ O_recovery_S4 --> T11055
 R11055["Completed: extra 4 s reduced entry error from<br/>5.69 to 4.18 mm. Strict success 0/2; both<br/>tipped before grasp. Settling alone<br/>insufficient. Raw archive verified on Mint."]:::mixed
 T11055 --> R11055
 click T11055 "http://127.0.0.1:4001/?project=typhon-research#ticket=11055" "Open research ticket" _blank
+T11056["CTRL05 · #11056<br/>Compare matched-time step and smooth descent<br/>from the settled state"]:::experiment
+O_recovery_S4 --> T11056
+R11056["BLOCKED: reference audit completed;<br/>qualification stopped at tick 510 because<br/>wrapper code changed too early. No S/R descent<br/>runs or efficacy result. Approach-repair<br/>branch deferred tonight."]:::blocked
+T11056 --> R11056
+click T11056 "http://127.0.0.1:4001/?project=typhon-research#ticket=11056" "Open research ticket" _blank
 
 OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
 O_compute["Opportunity: Choose useful candidates without blocking<br/>valid motion"]:::opportunity

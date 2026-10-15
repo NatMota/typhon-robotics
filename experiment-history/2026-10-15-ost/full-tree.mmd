@@ -451,6 +451,11 @@ O_recovery_S4 --> T11055
 R11055["Completed: extra 4 s reduced entry error from<br/>5.69 to 4.18 mm. Strict success 0/2; both<br/>tipped before grasp. Settling alone<br/>insufficient. Raw archive verified on Mint."]:::mixed
 T11055 --> R11055
 click T11055 "http://127.0.0.1:4001/?project=typhon-research#ticket=11055" "Open research ticket" _blank
+T11056["CTRL05 · #11056<br/>Compare matched-time step and smooth descent<br/>from the settled state"]:::experiment
+O_recovery_S4 --> T11056
+R11056["BLOCKED: reference audit completed;<br/>qualification stopped at tick 510 because<br/>wrapper code changed too early. No S/R descent<br/>runs or efficacy result. Approach-repair<br/>branch deferred tonight."]:::blocked
+T11056 --> R11056
+click T11056 "http://127.0.0.1:4001/?project=typhon-research#ticket=11056" "Open research ticket" _blank
 
 OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
 O_compute["Opportunity: Choose useful candidates without blocking<br/>valid motion"]:::opportunity
@@ -554,7 +559,7 @@ T10986 --> R10986
 click T10986 "http://127.0.0.1:4001/?project=typhon-research#ticket=10986" "Open research ticket" _blank
 T11012["OPS05 · #11012<br/>Draw the opportunity solution tree and restore<br/>the Design viewer"]:::experiment
 O_evidence_S1 --> T11012
-R11012["Live OST: 102 work items across 10 views, each<br/>with a result box. All SVG bytes verified.<br/>Includes CTRL03, CTRL04 and LIVE01-P<br/>limitations. AlphaNIST remains Parked."]:::mixed
+R11012["Live OST: 103 work items across 10 views, each<br/>with a result box. Includes CTRL05&#x27;s unrun<br/>comparison, CTRL04&#x27;s negative result and<br/>LIVE01-P limits. AlphaNIST remains Parked."]:::mixed
 T11012 --> R11012
 click T11012 "http://127.0.0.1:4001/?project=typhon-research#ticket=11012" "Open research ticket" _blank
 T11042["OPS01 · #11042<br/>Verify Powerglide booking and full backup<br/>including lab recovery"]:::experiment

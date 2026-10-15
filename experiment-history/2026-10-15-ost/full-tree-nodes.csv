@@ -257,87 +257,90 @@ R11053,result,Nominal sampled gripper corridor clears the brick; executed finger
 T11055,experiment,"CTRL04 · #11055
 Test one fixed pre-descent dwell from the failed acquisition state",S_recovery_4,1220,11345.5,#4a4428
 R11055,result,Completed: extra 4 s reduced entry error from 5.69 to 4.18 mm. Strict success 0/2; both tipped before grasp. Settling alone insufficient. Raw archive verified on Mint.,T11055,1620,11335.0,#574831
-S_recovery_4,solution,Qualify training-family corrective supervision,O_recovery,820,11070.0,#343a46
-O_recovery,opportunity,Advance phases only from trustworthy evidence,outcome,420,9756.25,#2d443b
+T11056,experiment,"CTRL05 · #11056
+Compare matched-time step and smooth descent from the settled state",S_recovery_4,1220,11504.0,#4a4428
+R11056,result,BLOCKED: reference audit completed; qualification stopped at tick 510 because wrapper code changed too early. No S/R descent runs or efficacy result. Approach-repair branch deferred tonight.,T11056,1620,11483.0,#4e374f
+S_recovery_4,solution,Qualify training-family corrective supervision,O_recovery,820,11149.25,#343a46
+O_recovery,opportunity,Advance phases only from trustworthy evidence,outcome,420,9795.88,#2d443b
 T10967,experiment,"R05 · #10967
-Measure eight-proposal availability using a privileged offline oracle",S_compute_0,1220,11558.0,#4a4428
-R10967,result,48 proposals; approach improves graspable states stay 1/6,T10967,1620,11567.5,#574831
+Measure eight-proposal availability using a privileged offline oracle",S_compute_0,1220,11727.0,#4a4428
+R10967,result,48 proposals; approach improves graspable states stay 1/6,T10967,1620,11736.5,#574831
 T10975,experiment,"R10a · #10975
-Prepare blue-ghost candidate cards and typed Luna requests",S_compute_0,1220,11685.0,#4a4428
-R10975,result,64 candidates / 32 slates prepared simulator futures; no Luna calls,T10975,1620,11694.5,#244a3d
+Prepare blue-ghost candidate cards and typed Luna requests",S_compute_0,1220,11854.0,#4a4428
+R10975,result,64 candidates / 32 slates prepared simulator futures; no Luna calls,T10975,1620,11863.5,#244a3d
 T10982,experiment,"R10 · #10982
-Run Decisions API visual ranking on frozen ghost/future slates",S_compute_0,1220,11822.5,#4a4428
-R10982,result,"32 choices + 32 reasons. Future RGB: 5/5 selected adequate, 7 abstentions; held strict 0/8. Privileged lookahead; no qualified benefit.",T10982,1620,11812.0,#4e374f
+Run Decisions API visual ranking on frozen ghost/future slates",S_compute_0,1220,11991.5,#4a4428
+R10982,result,"32 choices + 32 reasons. Future RGB: 5/5 selected adequate, 7 abstentions; held strict 0/8. Privileged lookahead; no qualified benefit.",T10982,1620,11981.0,#4e374f
 T11029,experiment,"LIVE09 · #11029
-Repeat R10 and audit critic response consistency",S_compute_0,1220,11970.5,#4a4428
-R11029,result,"Repeat of the same 32 slates, not new evidence. Future-image choices still poor across ordering; median/p95 1.094/2.338 seconds.",T11029,1620,11960.0,#574831
-S_compute_0,solution,Measure candidate support and visual ranking,O_compute,820,11773.75,#343a46
+Repeat R10 and audit critic response consistency",S_compute_0,1220,12139.5,#4a4428
+R11029,result,"Repeat of the same 32 slates, not new evidence. Future-image choices still poor across ordering; median/p95 1.094/2.338 seconds.",T11029,1620,12129.0,#574831
+S_compute_0,solution,Measure candidate support and visual ranking,O_compute,820,11942.75,#343a46
 T11014,experiment,"LIVE04 · #11014
-Integrate Decisions API candidate ranking with bounded asynchronous execution",S_compute_1,1220,12133.0,#4a4428
-R11014,result,Nine live trials: 3 API choices executed 62 targets; 33/36 replies UNKNOWN. Reference pickup/place 1/2 vs 0/2 live variants.,T11014,1620,12133.0,#574831
+Integrate Decisions API candidate ranking with bounded asynchronous execution",S_compute_1,1220,12302.0,#4a4428
+R11014,result,Nine live trials: 3 API choices executed 62 targets; 33/36 replies UNKNOWN. Reference pickup/place 1/2 vs 0/2 live variants.,T11014,1620,12302.0,#574831
 T11025,experiment,"LIVE05 · #11025
-Separate waiting, sampling and guards after the live-ranking regression",S_compute_1,1220,12260.0,#4a4428
-R11025,result,30 matched trials isolate guard regression: native pickup/place 1/2 even with waits; guard 0/2 at zero wait. Strict 0/2.,T11025,1620,12260.0,#574831
+Separate waiting, sampling and guards after the live-ranking regression",S_compute_1,1220,12429.0,#4a4428
+R11025,result,30 matched trials isolate guard regression: native pickup/place 1/2 even with waits; guard 0/2 at zero wait. Strict 0/2.,T11025,1620,12429.0,#574831
 T11026,experiment,"LIVE06 · #11026
-Qualify motion guards against the executed controller contract",S_compute_1,1220,12397.5,#4a4428
-R11026,result,"Executed-command check restores known pickup/place. Eight experts succeed, 1,714 ticks and zero new vetoes; 304 old false jump vetoes.",T11026,1620,12387.0,#574831
+Qualify motion guards against the executed controller contract",S_compute_1,1220,12566.5,#4a4428
+R11026,result,"Executed-command check restores known pickup/place. Eight experts succeed, 1,714 ticks and zero new vetoes; 304 old false jump vetoes.",T11026,1620,12556.0,#574831
 T11027,experiment,"LIVE07 · #11027
-Integrate the qualified execution check into the live candidate handoff",S_compute_1,1220,12545.5,#4a4428
-R11027,result,Nine live trials: native and first-admissible grasp/place; API misses grasp. All strict 0/2. Activation is not executed selection.,T11027,1620,12535.0,#574831
+Integrate the qualified execution check into the live candidate handoff",S_compute_1,1220,12714.5,#4a4428
+R11027,result,Nine live trials: native and first-admissible grasp/place; API misses grasp. All strict 0/2. Activation is not executed selection.,T11027,1620,12704.0,#574831
 T11028,experiment,"LIVE08 · #11028
-Isolate the first ranked candidate from boundary timing",S_compute_1,1220,12693.5,#4a4428
-R11028,result,"Four-run 2x2: candidate A grasps/places at both waits; C at neither. Candidate choice explains this failure, not one tick of delay.",T11028,1620,12683.0,#574831
-S_compute_1,solution,Integrate and isolate the live selection mechanism,O_compute,820,12422.75,#343a46
-O_compute,opportunity,Choose useful candidates without blocking valid motion,outcome,420,12098.25,#2d443b
+Isolate the first ranked candidate from boundary timing",S_compute_1,1220,12862.5,#4a4428
+R11028,result,"Four-run 2x2: candidate A grasps/places at both waits; C at neither. Candidate choice explains this failure, not one tick of delay.",T11028,1620,12852.0,#574831
+S_compute_1,solution,Integrate and isolate the live selection mechanism,O_compute,820,12591.75,#343a46
+O_compute,opportunity,Choose useful candidates without blocking valid motion,outcome,420,12267.25,#2d443b
 T10995,experiment,"EVAL01 · #10995
-Reconcile the earlier 775-rollout feeding comparison and V4 grasp search",S_evidence_0,1220,12916.5,#4a4428
-R10995,result,775 matched feeding rollouts: vanilla/V1/V2/V3/V4 pickups 0/0/0/10/1 on 137 unfinished scenes. Stable square placements 0/0/0/5/1.,T10995,1620,12906.0,#574831
+Reconcile the earlier 775-rollout feeding comparison and V4 grasp search",S_evidence_0,1220,13085.5,#4a4428
+R10995,result,775 matched feeding rollouts: vanilla/V1/V2/V3/V4 pickups 0/0/0/10/1 on 137 unfinished scenes. Stable square placements 0/0/0/5/1.,T10995,1620,13075.0,#574831
 T10997,experiment,"EVAL03 · #10997
-Reconcile the 20 × A/B harness comparison and guard event logging",S_evidence_0,1220,13064.5,#4a4428
-R10997,result,"Historical 400 synthetic A/B rows: zero pickup/place/strict. One candidate, 30-second cap, no TTC. Distinct from film-derived evaluation.",T10997,1620,13054.0,#574831
+Reconcile the 20 × A/B harness comparison and guard event logging",S_evidence_0,1220,13233.5,#4a4428
+R10997,result,"Historical 400 synthetic A/B rows: zero pickup/place/strict. One candidate, 30-second cap, no TTC. Distinct from film-derived evaluation.",T10997,1620,13223.0,#574831
 T10996,experiment,"EVAL02 · #10996
-Define the next confirmatory comparison with family-level uncertainty",S_evidence_0,1220,13212.5,#4a4428
-R10996,result,REVIEW: 136/204 planned completed. Broad vs vanilla near-layout strict 17/40 vs 0/40. Broader layouts 0/20 both; 68 interventions unrun.,T10996,1620,13202.0,#574831
+Define the next confirmatory comparison with family-level uncertainty",S_evidence_0,1220,13381.5,#4a4428
+R10996,result,REVIEW: 136/204 planned completed. Broad vs vanilla near-layout strict 17/40 vs 0/40. Broader layouts 0/20 both; 68 interventions unrun.,T10996,1620,13371.0,#574831
 T11036,experiment,"EVAL02R · #11036
-Reconcile existing comparison claims and family-level uncertainty",S_evidence_0,1220,13360.5,#4a4428
-R11036,result,"Read-only review of 775 + 296 rollouts and 24 extracts. Family-aware intervals and 1,102 input hashes checked; no new experiments.",T11036,1620,13350.0,#574831
-S_evidence_0,solution,Reconcile evaluation panels and uncertainty,O_evidence,820,13148.0,#343a46
+Reconcile existing comparison claims and family-level uncertainty",S_evidence_0,1220,13529.5,#4a4428
+R11036,result,"Read-only review of 775 + 296 rollouts and 24 extracts. Family-aware intervals and 1,102 input hashes checked; no new experiments.",T11036,1620,13519.0,#574831
+S_evidence_0,solution,Reconcile evaluation panels and uncertainty,O_evidence,820,13317.0,#343a46
 T10980,experiment,"OPS03 · #10980
-Write a request-by-request report and obtain independent plus GPT Pro review",S_evidence_1,1220,13523.0,#4a4428
-R10980,result,review 13 requests reconciled limits and errata documented,T10980,1620,13532.5,#244a3d
+Write a request-by-request report and obtain independent plus GPT Pro review",S_evidence_1,1220,13692.0,#4a4428
+R10980,result,review 13 requests reconciled limits and errata documented,T10980,1620,13701.5,#244a3d
 T10979,experiment,"OPS02 · #10979
-Preserve and verify all research models, traces, videos and resume state",S_evidence_1,1220,13650.0,#4a4428
-R10979,result,backup Artifacts and checkpoints retained SHA-verified on Mint fast drive,T10979,1620,13659.5,#244a3d
+Preserve and verify all research models, traces, videos and resume state",S_evidence_1,1220,13819.0,#4a4428
+R10979,result,backup Artifacts and checkpoints retained SHA-verified on Mint fast drive,T10979,1620,13828.5,#244a3d
 T10956,experiment,"OPS01 · #10956
-Create and reconcile the research kanban ledger with evidence and honest statuses",S_evidence_1,1220,13787.5,#4a4428
-R10956,result,"Research ledger reconciled. Current tree covers every ticket with explicit evidence, limitations and status; creating a ticket is not executing it.",T10956,1620,13777.0,#244a3d
+Create and reconcile the research kanban ledger with evidence and honest statuses",S_evidence_1,1220,13956.5,#4a4428
+R10956,result,"Research ledger reconciled. Current tree covers every ticket with explicit evidence, limitations and status; creating a ticket is not executing it.",T10956,1620,13946.0,#244a3d
 T10986,experiment,"DATA01 · #10986
-Publish an internal model and dataset registry with unambiguous names",S_evidence_1,1220,13935.5,#4a4428
-R10986,result,19 checkpoint identities audited. M3–M6 are separate lineages; broad Pt starts fresh. Historical V4 recovery arrays remain partly unverified.,T10986,1620,13925.0,#574831
+Publish an internal model and dataset registry with unambiguous names",S_evidence_1,1220,14104.5,#4a4428
+R10986,result,19 checkpoint identities audited. M3–M6 are separate lineages; broad Pt starts fresh. Historical V4 recovery arrays remain partly unverified.,T10986,1620,14094.0,#574831
 T11012,experiment,"OPS05 · #11012
-Draw the opportunity solution tree and restore the Design viewer",S_evidence_1,1220,14094.0,#4a4428
-R11012,result,"Live OST: 102 work items across 10 views, each with a result box. All SVG bytes verified. Includes CTRL03, CTRL04 and LIVE01-P limitations. AlphaNIST remains Parked.",T11012,1620,14073.0,#574831
+Draw the opportunity solution tree and restore the Design viewer",S_evidence_1,1220,14263.0,#4a4428
+R11012,result,"Live OST: 103 work items across 10 views, each with a result box. Includes CTRL05's unrun comparison, CTRL04's negative result and LIVE01-P limits. AlphaNIST remains Parked.",T11012,1620,14242.0,#574831
 T11042,experiment,"OPS01 · #11042
-Verify Powerglide booking and full backup including lab recovery",S_evidence_1,1220,14252.5,#4a4428
-R11042,result,"Full backup reconciled: 906,507 files, 299.6 GB, no integrity errors. Labs and checkpoint checks saved. Fresh-machine restore untested.",T11042,1620,14242.0,#574831
+Verify Powerglide booking and full backup including lab recovery",S_evidence_1,1220,14421.5,#4a4428
+R11042,result,"Full backup reconciled: 906,507 files, 299.6 GB, no integrity errors. Labs and checkpoint checks saved. Fresh-machine restore untested.",T11042,1620,14411.0,#574831
 T11049,experiment,"OPS07 · #11049
-Restore Mint access and mirror latest experiment evidence and OST",S_evidence_1,1220,14421.5,#4a4428
-R11049,result,"Recovered: Mint mirrors verified (45 older evidence files, 809 DATA07-R raw files). Interrupted work preserved; live OST installed and served bytes checked. DATA07-GE raw 223 files also verified. Fresh-machine restore untested.",T11049,1620,14390.0,#574831
-S_evidence_1,solution,Preserve the research record and compute environment,O_evidence,820,13981.75,#343a46
+Restore Mint access and mirror latest experiment evidence and OST",S_evidence_1,1220,14590.5,#4a4428
+R11049,result,"Recovered: Mint mirrors verified (45 older evidence files, 809 DATA07-R raw files). Interrupted work preserved; live OST installed and served bytes checked. DATA07-GE raw 223 files also verified. Fresh-machine restore untested.",T11049,1620,14559.0,#574831
+S_evidence_1,solution,Preserve the research record and compute environment,O_evidence,820,14150.75,#343a46
 T11007,experiment,"DEL01 · #11007
-Reconcile dashboard, video hosting and research result provenance",S_evidence_2,1220,14615.5,#4a4428
-R11007,result,"Eight representative records, ten videos, exact models and hashes verified. Current selected files absent from hosted index; delivery repair separate.",T11007,1620,14605.0,#574831
+Reconcile dashboard, video hosting and research result provenance",S_evidence_2,1220,14784.5,#4a4428
+R11007,result,"Eight representative records, ten videos, exact models and hashes verified. Current selected files absent from hosted index; delivery repair separate.",T11007,1620,14774.0,#574831
 T11008,experiment,"DEL02 · #11008
-Prepare an accurate research write-up and submission package",S_evidence_2,1220,14774.0,#4a4428
-R11008,result,"REVIEW: private 1,777-word synthesis, 14 claim groups, 46 evidence files, 37 numerical checks. Hosting/publication/submission still pending.",T11008,1620,14753.0,#574831
-S_evidence_2,solution,Qualify media and the private report,O_evidence,820,14704.25,#343a46
-O_evidence,opportunity,"Make results reproducible, recoverable and understandable",outcome,420,13926.12,#2d443b
+Prepare an accurate research write-up and submission package",S_evidence_2,1220,14943.0,#4a4428
+R11008,result,"REVIEW: private 1,777-word synthesis, 14 claim groups, 46 evidence files, 37 numerical checks. Hosting/publication/submission still pending.",T11008,1620,14922.0,#574831
+S_evidence_2,solution,Qualify media and the private report,O_evidence,820,14873.25,#343a46
+O_evidence,opportunity,"Make results reproducible, recoverable and understandable",outcome,420,14095.12,#2d443b
 T11009,experiment,"PARK01 · #11009
-Set-of-Mark object/region labels — withdrawn",S_parked_0,1220,14997.0,#4a4428
-R11009,result,PARKED: Set-of-Mark withdrawn by the user.,T11009,1620,15006.5,#373b42
+Set-of-Mark object/region labels — withdrawn",S_parked_0,1220,15166.0,#4a4428
+R11009,result,PARKED: Set-of-Mark withdrawn by the user.,T11009,1620,15175.5,#373b42
 T11010,experiment,"PARK02 · #11010
-Broader platform and simulator changes — deferred",S_parked_0,1220,15124.0,#4a4428
-R11010,result,PARKED: broader platforms and simulator changes deferred.,T11010,1620,15133.5,#373b42
-S_parked_0,solution,Do not expand scope without a new reason,O_parked,820,15070.0,#343a46
-O_parked,opportunity,Keep deferred work distinct from evidence,outcome,420,15070.0,#2d443b
+Broader platform and simulator changes — deferred",S_parked_0,1220,15293.0,#4a4428
+R11010,result,PARKED: broader platforms and simulator changes deferred.,T11010,1620,15302.5,#373b42
+S_parked_0,solution,Do not expand scope without a new reason,O_parked,820,15239.0,#343a46
+O_parked,opportunity,Keep deferred work distinct from evidence,outcome,420,15239.0,#2d443b
 outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60
