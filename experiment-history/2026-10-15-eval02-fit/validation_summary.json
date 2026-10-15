@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "experimental_proposals": 12,
+  "fresh_checkpoint_probes": 3,
+  "physical_rollouts": 0,
+  "all_packet_inputs_including_text_exact_across_models_and_seeds": true,
+  "paired_actual_noise_arrays_exact": true,
+  "teacher_target_windows_complete_no_padding": true,
+  "all_metrics_finite": true,
+  "metric_self_checks": {
+    "identity_pass": true,
+    "10mm_translation_pass": true,
+    "gripper_flip_pass": true
+  },
+  "finished_epoch": 1792069812.7932012
+}
