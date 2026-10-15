@@ -1,0 +1,528 @@
+{
+  "passed": true,
+  "scene_receipt": "scene-qualification.json",
+  "inputs": [
+    {
+      "id": "REF-912171",
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "e83d8c22ecd9a501f177740ace6d924bd0db445db8ae26ac85637223d9f1e849",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "b1f5bb76793f89ec2d4545eb5bc5089dc9d88a08f2cef40d8efafdd2182ea3db",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "crop_metadata": {
+        "detected": true,
+        "component_bbox_xywh": [
+          143,
+          332,
+          32,
+          27
+        ],
+        "crop_xywh": [
+          111,
+          298,
+          96,
+          96
+        ],
+        "area_px": 472,
+        "component_fill": 0.5462962962962963,
+        "confidence": 0.5462962962962963,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "image_shape": [
+        1,
+        3,
+        3,
+        224,
+        224
+      ],
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "standalone_actor_input_exact": true
+    },
+    {
+      "id": "AA-912171",
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "f9f666d50f82476e066c2202ec8a865f024ca5e72edd0a8589a4839a7a5f6a43",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "5c3d375a1a7b10347f38bf762b59339033fd27a160828f7d6e814b50330b20de",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "crop_metadata": {
+        "detected": true,
+        "component_bbox_xywh": [
+          314,
+          312,
+          30,
+          21
+        ],
+        "crop_xywh": [
+          281,
+          274,
+          96,
+          96
+        ],
+        "area_px": 468,
+        "component_fill": 0.7428571428571429,
+        "confidence": 0.7428571428571429,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "image_shape": [
+        1,
+        3,
+        3,
+        224,
+        224
+      ],
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "standalone_actor_input_exact": false
+    },
+    {
+      "id": "AB-912171",
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "2d8f41a69b84479018c7094b0e278589dba761e5ba67ffa6e4624a7a6128d6f1",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "5c3d375a1a7b10347f38bf762b59339033fd27a160828f7d6e814b50330b20de",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "crop_metadata": {
+        "detected": true,
+        "component_bbox_xywh": [
+          314,
+          312,
+          30,
+          21
+        ],
+        "crop_xywh": [
+          281,
+          274,
+          96,
+          96
+        ],
+        "area_px": 468,
+        "component_fill": 0.7428571428571429,
+        "confidence": 0.7428571428571429,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "image_shape": [
+        1,
+        3,
+        3,
+        224,
+        224
+      ],
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "standalone_actor_input_exact": false
+    },
+    {
+      "id": "BA-912171",
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "1943d2d24754037462ef5eda5fba06447e32c55901e29764fac1461bebda442a",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "5c3d375a1a7b10347f38bf762b59339033fd27a160828f7d6e814b50330b20de",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "crop_metadata": {
+        "detected": true,
+        "component_bbox_xywh": [
+          314,
+          379,
+          30,
+          23
+        ],
+        "crop_xywh": [
+          281,
+          342,
+          96,
+          96
+        ],
+        "area_px": 479,
+        "component_fill": 0.6942028985507246,
+        "confidence": 0.6942028985507246,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "image_shape": [
+        1,
+        3,
+        3,
+        224,
+        224
+      ],
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "standalone_actor_input_exact": false
+    },
+    {
+      "id": "BB-912171",
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "a91a4c8ca447c19ee1d30833c7d22aa557adb5c217319c5a14eadb6b18ecd978",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "5c3d375a1a7b10347f38bf762b59339033fd27a160828f7d6e814b50330b20de",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "crop_metadata": {
+        "detected": true,
+        "component_bbox_xywh": [
+          314,
+          379,
+          30,
+          23
+        ],
+        "crop_xywh": [
+          281,
+          342,
+          96,
+          96
+        ],
+        "area_px": 479,
+        "component_fill": 0.6942028985507246,
+        "confidence": 0.6942028985507246,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "image_shape": [
+        1,
+        3,
+        3,
+        224,
+        224
+      ],
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "standalone_actor_input_exact": false
+    },
+    {
+      "id": "REF-912172",
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "e83d8c22ecd9a501f177740ace6d924bd0db445db8ae26ac85637223d9f1e849",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "b1f5bb76793f89ec2d4545eb5bc5089dc9d88a08f2cef40d8efafdd2182ea3db",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "crop_metadata": {
+        "detected": true,
+        "component_bbox_xywh": [
+          143,
+          332,
+          32,
+          27
+        ],
+        "crop_xywh": [
+          111,
+          298,
+          96,
+          96
+        ],
+        "area_px": 472,
+        "component_fill": 0.5462962962962963,
+        "confidence": 0.5462962962962963,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "image_shape": [
+        1,
+        3,
+        3,
+        224,
+        224
+      ],
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "standalone_actor_input_exact": true
+    },
+    {
+      "id": "AA-912172",
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "f9f666d50f82476e066c2202ec8a865f024ca5e72edd0a8589a4839a7a5f6a43",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "5c3d375a1a7b10347f38bf762b59339033fd27a160828f7d6e814b50330b20de",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "crop_metadata": {
+        "detected": true,
+        "component_bbox_xywh": [
+          314,
+          312,
+          30,
+          21
+        ],
+        "crop_xywh": [
+          281,
+          274,
+          96,
+          96
+        ],
+        "area_px": 468,
+        "component_fill": 0.7428571428571429,
+        "confidence": 0.7428571428571429,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "image_shape": [
+        1,
+        3,
+        3,
+        224,
+        224
+      ],
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "standalone_actor_input_exact": false
+    },
+    {
+      "id": "AB-912172",
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "2d8f41a69b84479018c7094b0e278589dba761e5ba67ffa6e4624a7a6128d6f1",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "5c3d375a1a7b10347f38bf762b59339033fd27a160828f7d6e814b50330b20de",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "crop_metadata": {
+        "detected": true,
+        "component_bbox_xywh": [
+          314,
+          312,
+          30,
+          21
+        ],
+        "crop_xywh": [
+          281,
+          274,
+          96,
+          96
+        ],
+        "area_px": 468,
+        "component_fill": 0.7428571428571429,
+        "confidence": 0.7428571428571429,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "image_shape": [
+        1,
+        3,
+        3,
+        224,
+        224
+      ],
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "standalone_actor_input_exact": false
+    },
+    {
+      "id": "BA-912172",
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "1943d2d24754037462ef5eda5fba06447e32c55901e29764fac1461bebda442a",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "5c3d375a1a7b10347f38bf762b59339033fd27a160828f7d6e814b50330b20de",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "crop_metadata": {
+        "detected": true,
+        "component_bbox_xywh": [
+          314,
+          379,
+          30,
+          23
+        ],
+        "crop_xywh": [
+          281,
+          342,
+          96,
+          96
+        ],
+        "area_px": 479,
+        "component_fill": 0.6942028985507246,
+        "confidence": 0.6942028985507246,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "image_shape": [
+        1,
+        3,
+        3,
+        224,
+        224
+      ],
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "standalone_actor_input_exact": false
+    },
+    {
+      "id": "BB-912172",
+      "input_hashes": {
+        "input_ids": "a200fa2090b1a68cf2ceb93a5b182ca8f9b6c44da4c488226f01a7fc058d2bcb",
+        "image_input": "a91a4c8ca447c19ee1d30833c7d22aa557adb5c217319c5a14eadb6b18ecd978",
+        "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+        "proprio": "5c3d375a1a7b10347f38bf762b59339033fd27a160828f7d6e814b50330b20de",
+        "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+      },
+      "crop_metadata": {
+        "detected": true,
+        "component_bbox_xywh": [
+          314,
+          379,
+          30,
+          23
+        ],
+        "crop_xywh": [
+          281,
+          342,
+          96,
+          96
+        ],
+        "area_px": 479,
+        "component_fill": 0.6942028985507246,
+        "confidence": 0.6942028985507246,
+        "confidence_type": "uncalibrated area/fill heuristic, not orientation confidence",
+        "padding_ltrb": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "source": "current RGB only",
+        "orientation_normalized": false
+      },
+      "image_shape": [
+        1,
+        3,
+        3,
+        224,
+        224
+      ],
+      "mask": [
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "standalone_actor_input_exact": false
+    }
+  ],
+  "policy_calls": 0,
+  "frozen_epoch": 1792080257.0408266
+}
