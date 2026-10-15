@@ -13,7 +13,7 @@ for packet in ['approach','postlift']:
    cols.append(np.load(Path(row['directory'])/'proposal.npz')['predicted'][:,:3]);names.append(model+' '+str(seed))
  data=O/(packet+'-plot.tsv');np.savetxt(data,np.column_stack(cols),delimiter='\t')
  specs.append((packet,data))
-base=["set encoding utf8","set grid lc rgb '#dddddd'","set border lc rgb '#555555'","set tics textcolor rgb '#333333'","set xlabel 'Future time within chunk (s)'","set ylabel 'World coordinate (m)'","set multiplot layout 2,3 title 'Same teacher input: predicted EEF targets (not executed)\\nTwo paired noise seeds; solid/dashed lines' font ',16'"]
+base=["set encoding utf8","set grid lc rgb '#dddddd'","set border lc rgb '#555555'","set tics textcolor rgb '#333333'","set xlabel 'Future time within chunk (s)'","set ylabel 'World coordinate (m)'","set multiplot layout 2,3 title 'Predicted EEF targets, not executed; solid/dashed lines show paired noise seeds' font ',16'"]
 colors=['#111111','#3366cc','#3366cc','#dd8800','#dd8800','#cc3344','#cc3344']
 for row,(packet,data) in enumerate(specs):
  for axis in range(3):
