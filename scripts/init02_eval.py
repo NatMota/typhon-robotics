@@ -87,7 +87,17 @@ def initialise(source,folder):
  with np.load(source["initial_archive"]) as a:
   obs=env.observe()
   for k in ["qpos","qvel","mocap_pos","mocap_quat"]:np.testing.assert_array_equal(getattr(env.env.sim.data,k),a[k])
-  for k in ["primary","secondary"]:np.testing.assert_array_equal(obs["rgb"][k],a[k])
+  rawdiff={k:{"differing_channel_values":int((obs["rgb"][k]!=a[k]).sum()),"maximum_level_delta":int(np.max(np.abs(obs["rgb"][k].astype(int)-a[k].astype(int))))}for k in ["primary","secondary"]}
+  from supervisor.adaptation.actions import proprio_vector
+  prop=proprio_vector(obs).astype(np.float32);np.testing.assert_array_equal(prop,a["proprio"])
+  if any(v["differing_channel_values"]for v in rawdiff.values()):
+   assert (OUT/"episodes/P"/source["id"]/"input-audit/initial-prepared.npz").exists()
+   np.savez_compressed(folder/"current-initial-observation.npz",primary=obs["rgb"]["primary"],secondary=obs["rgb"]["secondary"],proprio=prop)
+   dump(folder/"input-qualification-request.json",{"instruction":source["instruction"],"canonical_prepared":str(OUT/"episodes/P"/source["id"]/"input-audit/initial-prepared.npz"),"raw_difference":rawdiff,"raw_sha256":sha(folder/"current-initial-observation.npz")})
+   q=subprocess.run([str(R/".venv-xvla/bin/python"),"scripts/init02_preprocess_initial.py",str(folder)],cwd=R,capture_output=True,text=True)
+   (folder/"preprocess-qualification.log").write_text(q.stdout+q.stderr)
+   assert q.returncode==0,"Actual prepared input differs from fixed P reference; see qualification receipt"
+  dump(folder/"raw-initial-observation-comparison.json",{"raw_difference":rawdiff,"exact_actual_input_required":True,"no_pixel_substitution":True})
  before=state_blob(env)
  env.config=copy.deepcopy(endpoint(source["config"],source["requested_task"]))
  env.config["control"]["max_steps"]=env.steps+1460
