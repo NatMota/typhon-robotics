@@ -1,3 +1,3 @@
-# HIER01-CHAIN amendment1
+# HIER01-CHAIN completed under explicit amendment
 
-Single fresh L→F attempt under planner-approved effective-input equivalence gate. Original interrupted record retained. Results pending.
+See [REPORT.md](REPORT.md). Both task orders fail at stage2. Five total executed segments include one preserved interrupted duplicate.

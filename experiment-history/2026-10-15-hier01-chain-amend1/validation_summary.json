@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "canonical_segments": 4,
+  "total_physical_segments_including_interrupted_duplicate": 5,
+  "original_interrupted_second_segment_unexecuted": true,
+  "workflows": 2,
+  "all_strict_scores_recomputed": true,
+  "first_stage_native_trajectories_exact": 2,
+  "both_world_handover_states_unchanged": true,
+  "no_reset_home_object_injection_or_truth_switch": true,
+  "same_low_level_controller_retained": true,
+  "bookkeeping_only_lifetime_budget": 2960,
+  "canonical_native_videos": 4,
+  "additional_interrupted_first_stage_video_preserved": "/var/tmp/typhon-hier01-chain-20261015/workers/L-F-stage1-loading/episode/rollout.mp4",
+  "continuous_videos": [
+    {
+      "path": "/var/tmp/typhon-hier01-chain-amend1-20261015/videos/F-L-continuous.mp4",
+      "frames": 734,
+      "fps": 5
+    },
+    {
+      "path": "/var/tmp/typhon-hier01-chain-amend1-20261015/videos/L-F-continuous.mp4",
+      "frames": 734,
+      "fps": 5
+    }
+  ],
+  "proofs": [
+    {
+      "context": "F-L-stage1-feeding",
+      "initial_step": 40,
+      "final_step": 1500,
+      "boundary_physics_sha256": "63af46e700c71935c131e54ed6b7221789022d64a5d556f565ab8db47d42a691",
+      "fresh_measured_history_exact": true,
+      "prior_terminal_equals_current_initial": false,
+      "native_first_stage_exact": true,
+      "strict_success": true
+    },
+    {
+      "context": "F-L-stage2-loading",
+      "initial_step": 1500,
+      "final_step": 2960,
+      "boundary_physics_sha256": "a0c9ac191f07d2f3ed14de60eef5b4c77a7bdb35852765f8e8694d4c03d65656",
+      "fresh_measured_history_exact": true,
+      "prior_terminal_equals_current_initial": true,
+      "native_first_stage_exact": false,
+      "strict_success": false
+    },
+    {
+      "context": "L-F-stage1-loading",
+      "initial_step": 40,
+      "final_step": 1500,
+      "boundary_physics_sha256": "63af46e700c71935c131e54ed6b7221789022d64a5d556f565ab8db47d42a691",
+      "fresh_measured_history_exact": true,
+      "prior_terminal_equals_current_initial": false,
+      "native_first_stage_exact": true,
+      "strict_success": true
+    },
+    {
+      "context": "L-F-stage2-feeding",
+      "initial_step": 1500,
+      "final_step": 2960,
+      "boundary_physics_sha256": "9cb700b4a0d0a4b16b1f6755a64cfaa5a4cb940fc877bf50e588d594ae589c5a",
+      "fresh_measured_history_exact": true,
+      "prior_terminal_equals_current_initial": true,
+      "native_first_stage_exact": false,
+      "strict_success": false
+    }
+  ],
+  "workflow_results": [
+    {
+      "workflow": "F-L",
+      "success": false,
+      "segments": [
+        "F-L-stage1-feeding",
+        "F-L-stage2-loading"
+      ],
+      "same_simulator_retained": true
+    },
+    {
+      "workflow": "L-F",
+      "success": false,
+      "segments": [
+        "L-F-stage1-loading",
+        "L-F-stage2-feeding"
+      ],
+      "same_simulator_retained": true
+    }
+  ],
+  "epoch": 1792077752.430992
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "workflow": "F-L",
+    "success": false,
+    "segments": [
+      "F-L-stage1-feeding",
+      "F-L-stage2-loading"
+    ],
+    "same_simulator_retained": true
+  },
+  {
+    "workflow": "L-F",
+    "success": false,
+    "segments": [
+      "L-F-stage1-loading",
+      "L-F-stage2-feeding"
+    ],
+    "same_simulator_retained": true
+  }
+]

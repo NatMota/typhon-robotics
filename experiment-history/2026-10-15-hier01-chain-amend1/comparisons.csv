@@ -1,0 +1,5 @@
+context,workflow,stage,requested_task,model,requested_success,opposite_success,initial_pose_satisfied,initial_stability_evidence,interpretation,supported_lift_10mm_3steps,position_error_mm,yaw_error_deg,tilt_deg,failed_criteria,wall_seconds
+F-L-stage1-feeding,F-L,1,feeding,GOAL,True,False,False,False,new manipulation requested,True,4.552749095038912,1.4281506158481616,0.0,[],16.302479018981103
+F-L-stage2-loading,F-L,2,loading,FL,False,True,False,True,new manipulation requested,False,266.21190389892416,1.4281506158481616,0.0,"['position', 'footprint_inside_target', 'placement_height', 'seated']",15.738793105992954
+L-F-stage1-loading,L-F,1,loading,FL,True,False,False,False,new manipulation requested,True,5.353969185443213,0.09754757046241283,0.0,[],16.283768566994695
+L-F-stage2-feeding,L-F,2,feeding,GOAL,False,True,False,True,new manipulation requested,False,274.74440843829746,0.09754757046241283,0.0,"['position', 'footprint_inside_target', 'placement_height']",15.970972269016784
