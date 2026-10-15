@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "physical_controller_rng_before_after_pairs": 24,
+  "unique_common_audit_capture_ids": 48,
+  "unique_actual_P_capture_ids": 24,
+  "P_preprocessed_slots_resolved": 24,
+  "cached_observer_references_match_original_bundle": true,
+  "temporal_observer_updates_at_frozen_tick": 1,
+  "duplicate_timestamp_error_reproduced_offline": true,
+  "positive_delta_timestamp_unit_check_passed": true,
+  "exploratory_cross_attempt_comparison": {
+    "label": "separate failed-attempt first N vs corrected-attempt first N; not part of24-bundle matrix",
+    "camera_differences": {
+      "primary": {
+        "changed_pixels": 0,
+        "maximum_channel_difference": 0,
+        "changed_xy": []
+      },
+      "secondary": {
+        "changed_pixels": 1,
+        "maximum_channel_difference": 1,
+        "changed_xy": [
+          [
+            24,
+            417
+          ]
+        ]
+      }
+    },
+    "available_graphics_fields_equal": true,
+    "causal_attribution": null,
+    "different_processes_and_test_composition": true
+  },
+  "no_extra_rendering_physics_or_model_calls": true
+}

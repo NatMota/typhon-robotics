@@ -1,0 +1,33 @@
+{
+  "complete_preregistered_matrix": true,
+  "bundles": 24,
+  "native_images": 48,
+  "mode_counts": {
+    "N": 12,
+    "P": 12
+  },
+  "reconstruction_qualified": true,
+  "all_retained_physical_controller_states_exact": true,
+  "all_native_images_exact_first": true,
+  "all_prepared_tensors_exact_first": true,
+  "all_available_active_render_inputs_exact_first_per_camera": true,
+  "physics_steps_after_boundary": 0,
+  "model_inference_calls": 0,
+  "conclusion": "not reproduced: all24 capture bundles and processed inputs are exact",
+  "live01_p_parity_status": "still failed",
+  "historical_render_context_reconstructed": false,
+  "max_changed_pixels_vs_first": 0,
+  "max_channel_difference_vs_first": 0,
+  "secondary_pixel_24_417_values": [
+    [
+      195,
+      186,
+      177
+    ]
+  ],
+  "not_claimed": [
+    "live end-to-end transparency",
+    "absence of dynamic/context/timing effects",
+    "sidecar harmlessness in all executions"
+  ]
+}

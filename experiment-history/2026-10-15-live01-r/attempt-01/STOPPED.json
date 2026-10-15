@@ -1,0 +1,5 @@
+{
+  "epoch": 1792025159.429641,
+  "error": "Traceback (most recent call last):\n  File \"/var/tmp/typhon-worktrees-20261015/live01-r-fixed-capture/scripts/live01_r_capture.py\", line 192, in <module>\n    try:capture()\n        ^^^^^^^^^\n  File \"/var/tmp/typhon-worktrees-20261015/live01-r-fixed-capture/scripts/live01_r_capture.py\", line 164, in capture\n    evidence=motion.update(obs,env.steps);pred,rate=observer.update(evidence,env.steps)\n                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/tmp/typhon-worktrees-20261015/live01-r-fixed-capture/scripts/obs06_aperture.py\", line 11, in update\n    span=evidence[\"span_m\"];rate=0. if self.previous is None else (span-self.previous[1])/((step-self.previous[0])/20)\n                                                                  ~~~~~~~~~~~~~~~~~~~~~~~^^~~~~~~~~~~~~~~~~~~~~~~~~~~~\nZeroDivisionError: float division by zero\n",
+  "retry": false
+}

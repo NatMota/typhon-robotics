@@ -1,0 +1,16 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+{"passed": true, "label": "replay-reconstructed query5 state", "control_tick": 190, "query_index": 5, "archived_actions_replayed": 150, "all_150_available_state_snapshots_exact": true, "prefix_rgb_queries_compared": 5, "full_historical_graphics_context_reconstructed": false, "qualified_epoch": 1792025158.890782, "gate_seconds": 187.48998379707336}
+{"bundle": 0, "mode": "N", "tick": 190, "read_only": true, "secondary_pixel_24_417": [196, 187, 178]}
+Traceback (most recent call last):
+  File "/var/tmp/typhon-worktrees-20261015/live01-r-fixed-capture/scripts/live01_r_capture.py", line 192, in <module>
+    try:capture()
+        ^^^^^^^^^
+  File "/var/tmp/typhon-worktrees-20261015/live01-r-fixed-capture/scripts/live01_r_capture.py", line 164, in capture
+    evidence=motion.update(obs,env.steps);pred,rate=observer.update(evidence,env.steps)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/tmp/typhon-worktrees-20261015/live01-r-fixed-capture/scripts/obs06_aperture.py", line 11, in update
+    span=evidence["span_m"];rate=0. if self.previous is None else (span-self.previous[1])/((step-self.previous[0])/20)
+                                                                  ~~~~~~~~~~~~~~~~~~~~~~~^^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ZeroDivisionError: float division by zero

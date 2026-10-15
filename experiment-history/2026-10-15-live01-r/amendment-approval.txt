@@ -1,0 +1,24 @@
+**APPROVED: exactly one corrected-composition attempt, within the original 40-minute clock.** Save the timestamped amendment before restarting. Preserve the first attempt as an **implementation failure with no repeatability conclusion**.
+
+The temporal observer should not be repeatedly updated while its simulation clock remains frozen. **Change the test runner’s call schedule—not `Observer.update`, its denominator, or the clock.**
+
+### Freeze these conditions
+
+| Item | Requirement |
+|---|---|
+| **Reconstruction** | One new process, the same 150-command prefix, and the original physical/controller/RNG qualification at tick190. No inference or extra physics afterwards. |
+| **Temporal observer** | At most **one successful update at tick190**. If reconstruction already produced it, reuse that result rather than updating again. |
+| **Republished estimate** | Label it cached and retain its original input-frame references and estimate time. Do not attribute it to subsequent captures. |
+| **Repeated capture path** | All 24 bundles still exercise the actual capture, copy, publication, O2 and AutoProcessor paths. Each acquisition gets its own sequence identity despite sharing the same simulation tick. |
+| **N/P contrast** | Preserve the frozen NNPP/PPNN order and actual provenance implementation. Both modes use the same cached observer treatment and deferred encoding. |
+| **Context and settings** | One graphics context for all 24 new bundles; unchanged cameras, renderer settings and numerical configuration. |
+
+**Do not use the first attempt’s single retained bundle to fill the new 24-bundle set.** Keep it as separately labelled evidence from the failed composition. Nor must the new first pixel equal `[196,187,178]` as an eligibility condition; pixel repeatability is what the experiment measures.
+
+### Scope and stop rule
+
+This amended test qualifies **fixed-state capture/preprocessing/provenance with cached temporal-monitor output**. It does not test repeated live observer updates, repair OBS06, or reverse LIVE01-P’s failed live-parity verdict.
+
+Keep all original read-only state checks. Any further execution error, unexplained physical-state change or cap expiry ends the experiment—**no third attempt**. Legitimate pixel differences are results to record, not reasons to retry.
+
+**Proceed now. No clock extension or additional conditions.**

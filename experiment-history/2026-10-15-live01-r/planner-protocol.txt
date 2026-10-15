@@ -1,0 +1,100 @@
+## EXECUTE NEXT: LIVE01-R — fixed-state render repeatability, with and without provenance
+
+**Keep CTRL05 and the nominal approach-repair branch parked.** Its stop was an implementation-boundary failure, not a result about gradual descent. The offline audit also removes two unsupported explanations: no unexplained reference-frame shift was found, and the recorded precontact samples do **not** establish actuator clipping.
+
+Choose the remaining **LIVE01-P repeatability question**, not another orientation review. Numeral sensitivity and its limitations are already documented. The unresolved monitoring question has one concrete starting point: a one-level RGB difference appeared before the policy trajectories diverged.
+
+**Cap this at 40 minutes. No VLA inference, training, new task rollouts or renderer repairs.**
+
+## 1. Question
+
+> **At a fixed reconstructed simulation state, does ordinary capture reproduce identical pixels, and does enabling the provenance path change that behavior?**
+
+This can distinguish a capture problem reproducible without sidecars from a difference associated with the sidecar path. It cannot, by itself, qualify the entire live monitoring system.
+
+MuJoCo separates scene construction—geometry, cameras and lights—from OpenGL rendering and framebuffer readback. Identical recorded robot state therefore is not, by itself, a complete description of the rendering pipeline. [MuJoCo](https://mujoco.readthedocs.io/en/2.3.7/programming/visualization.html)
+
+## 2. Use one state, not another episode panel
+
+Use LIVE01-P’s existing **LOAD04-B demo0002 training configuration**, simulator seed **131902**, policy seed **912171**, at **tick190/query5**, where the first historical pixel difference appeared.
+
+Reconstruct it once using the original reset and **150 archived actions**, preserving the recorded observation order. Then leave the simulator in place.
+
+- No model is loaded and no new actions are generated.
+- No physics advances after reaching the capture boundary.
+- No state-copy restart, extra `forward()`, renderer-setting change or library upgrade.
+- Keep the actual cameras, resolutions, lighting and native image-production path.
+
+Compare the reconstructed physical/controller fields with the archived records using the existing semantic rules. **Do not require its first RGB capture to equal one particular historical RGB as an eligibility gate:** pixel repeatability is the question being tested.
+
+Call it a **replay-reconstructed query5 state**, not a proven reconstruction of every historical GPU/context detail.
+
+If reaching and retaining this state cannot be qualified within **15 minutes**, close with that blocker. Do not start another snapshot investigation.
+
+## 3. Twenty-four fixed-state capture bundles
+
+Each bundle contains the normal primary and secondary captures and their ordinary image-processing path.
+
+| Mode | Behavior |
+|---|---|
+| **N — ordinary** | Existing ordinary capture/monitoring path |
+| **P — provenance** | Same capture path with the actual qualified LIVE01-P sidecar processing |
+
+Use six four-bundle blocks:
+
+```text
+N N P P
+P P N N
+N N P P
+P P N N
+N N P P
+P P N N
+```
+
+That is **12 bundles per mode, 48 native camera images total**. Keep the same in-process graphics context. Do not rebuild it between modes.
+
+Use the real provenance implementation, not a mock. Do not give one mode additional captures, synchronization commands, overlays or different buffer handling. Save lossless array copies; defer image encoding and contact-sheet generation until capture finishes.
+
+The two paths intentionally have different code. **Record their source hashes; do not reject the experiment merely because their wrapper/function identities differ.** The gate concerns unchanged physical/controller state and the specified observation-path difference—not identical implementation metadata.
+
+## 4. Capture the evidence needed to localize a difference
+
+For each camera/bundle, retain:
+
+| Evidence | Purpose |
+|---|---|
+| Native RGB bytes and content hash | Detect exact pixel variation |
+| Available actual camera, scene, viewport and framebuffer settings | Check whether renderer inputs changed |
+| Before/after physical and controller fields | Confirm capture did not advance or alter dynamics |
+| Capture-event ID and sidecar lineage | Verify the metadata path is operating normally |
+| Native crop rectangle, validity mask and resulting processor tensors | Determine whether raw differences propagate into model inputs |
+
+Compare **active renderer contents**, where accessible—not unused buffer capacity or pointer addresses. Do not build a new deep renderer serializer within this cap; record unavailable graphics state as a limitation.
+
+MuJoCo’s `mjvScene` contains rendering geometry, lights and cameras, while the GPU context contains framebuffer and other rendering resources. Record what is available without mutating either to force equality. [MuJoCo](https://mujoco.readthedocs.io/en/2.3.7/programming/visualization.html)
+
+Any physical-state change during repeated capture is a failed read-only qualification. Preserve it and stop. Rendering may legitimately update graphics-side structures; that is not permission to advance or recompute the simulation. [MuJoCo](https://mujoco.readthedocs.io/en/2.3.7/programming/simulation.html)
+
+Report changed-pixel counts, maximum channel difference and locations—including whether the previously observed **secondary pixel (24,417)** changes. Do not widen the old parity tolerance or declare one intensity level harmless.
+
+## 5. Interpretation and stopping gate
+
+| Result | Supported conclusion |
+|---|---|
+| Consecutive **N** captures differ while the retained simulation/render inputs agree | Capture variation is reproducible without provenance processing; sidecars are not required for that variation |
+| Differences occur systematically with **P**, across both orderings | A mode-associated effect is reproduced under fixed-state testing; the precise cause still needs localization |
+| All 24 bundles are exact | The earlier live difference was **not reproduced** by this fixed-state test; dynamic sequence/context effects remain unresolved |
+| Raw images match but processed inputs differ | A downstream processing discrepancy is identified |
+| Physical/controller fields change | This capture composition is not read-only; stop before attributing the pixels to graphics nondeterminism |
+
+**A negative reproduction is a valid result. Do not add more states, fresh processes, GL flags, driver versions or repeated trials until a difference appears.**
+
+Even complete equality here does **not** convert LIVE01-P’s failed live paired test into a pass. Conversely, native capture variation would not prove the sidecar harmless in every execution.
+
+## 6. Closeout
+
+Allow **15 minutes for reconstruction and protocol, 15 for captures/comparisons, and 10 for the private report and verified archive**.
+
+Produce one capture matrix and one conclusion: *variation reproduced without sidecars; mode-associated variation; processing defect; or not reproduced*. Keep capture-lineage qualification, offline tensor parity and failed live parity as separate existing findings.
+
+**Execute LIVE01-R next, then close this repeatability investigation for the remainder of the overnight session.** This is a single test of an observed infrastructure failure—not a renderer-tuning programme, and not another obstacle to reporting the manipulation results already obtained.
