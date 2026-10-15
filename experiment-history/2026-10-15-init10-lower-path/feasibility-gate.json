@@ -1,0 +1,1114 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "init-demo_0003-loading-912172",
+      "targets_in_bounds": true,
+      "geometry": {
+        "passed": true,
+        "method": "Discrete conservative collision-geometry AABB screen at fixed branch aperture; meshes use compiled vertices. Actual dynamics and closing aperture may differ. Runtime contact abort remains active.",
+        "geometry": [
+          {
+            "id": 7,
+            "name": "table_collision",
+            "type": 6,
+            "size": [
+              0.4,
+              0.4,
+              0.025
+            ],
+            "world_min": [
+              -0.4,
+              -0.4,
+              0.75
+            ],
+            "world_max": [
+              0.4,
+              0.4,
+              0.8
+            ]
+          },
+          {
+            "id": 72,
+            "name": "gripper0_hand_collision",
+            "type": 7,
+            "size": [
+              0.031641411854156413,
+              0.048672013481209114,
+              0.10394595510084428
+            ],
+            "world_min": [
+              0.09683379297357339,
+              -0.2136821205201298,
+              0.8923813680687029
+            ],
+            "world_max": [
+              0.16012907976751628,
+              -0.008850506148591286,
+              0.9846617709041039
+            ]
+          },
+          {
+            "id": 74,
+            "name": "gripper0_finger1_collision",
+            "type": 7,
+            "size": [
+              0.010680919536942906,
+              0.013564666730856312,
+              0.03158571117336686
+            ],
+            "world_min": [
+              0.1192610483415043,
+              -0.17962879606902327,
+              0.8532536361504129
+            ],
+            "world_max": [
+              0.14063995776971633,
+              -0.15347415046202986,
+              0.9074326855378269
+            ]
+          },
+          {
+            "id": 75,
+            "name": "gripper0_finger1_pad_collision",
+            "type": 6,
+            "size": [
+              0.008,
+              0.004,
+              0.008
+            ],
+            "world_min": [
+              0.12254005669767062,
+              -0.16112227451286748,
+              0.8579098529832624
+            ],
+            "world_max": [
+              0.13896113690327963,
+              -0.15297271009047791,
+              0.8743844129985551
+            ]
+          },
+          {
+            "id": 77,
+            "name": "gripper0_finger2_collision",
+            "type": 7,
+            "size": [
+              0.010680919536942906,
+              0.013564666730856312,
+              0.03158571117336686
+            ],
+            "world_min": [
+              0.11936640247501511,
+              -0.07376247110730502,
+              0.8524014379694671
+            ],
+            "world_max": [
+              0.14079539616818543,
+              -0.04681229877934598,
+              0.9065701289651433
+            ]
+          },
+          {
+            "id": 78,
+            "name": "gripper0_finger2_pad_collision",
+            "type": 6,
+            "size": [
+              0.008,
+              0.004,
+              0.008
+            ],
+            "world_min": [
+              0.12266245755559568,
+              -0.07413574883504462,
+              0.8572021400748169
+            ],
+            "world_max": [
+              0.1390835377612047,
+              -0.06598618441265505,
+              0.8736767000901096
+            ]
+          },
+          {
+            "id": 152,
+            "name": "fixture_floor",
+            "type": 6,
+            "size": [
+              0.063,
+              0.063,
+              0.002
+            ],
+            "world_min": [
+              0.056999999999999995,
+              0.087,
+              0.8
+            ],
+            "world_max": [
+              0.183,
+              0.213,
+              0.804
+            ]
+          },
+          {
+            "id": 153,
+            "name": "fixture_wall_0",
+            "type": 6,
+            "size": [
+              0.063,
+              0.004,
+              0.01
+            ],
+            "world_min": [
+              0.056999999999999995,
+              0.087,
+              0.804
+            ],
+            "world_max": [
+              0.183,
+              0.095,
+              0.8240000000000001
+            ]
+          },
+          {
+            "id": 154,
+            "name": "fixture_wall_1",
+            "type": 6,
+            "size": [
+              0.063,
+              0.004,
+              0.01
+            ],
+            "world_min": [
+              0.056999999999999995,
+              0.205,
+              0.804
+            ],
+            "world_max": [
+              0.183,
+              0.213,
+              0.8240000000000001
+            ]
+          },
+          {
+            "id": 155,
+            "name": "fixture_wall_2",
+            "type": 6,
+            "size": [
+              0.004,
+              0.055,
+              0.01
+            ],
+            "world_min": [
+              0.056999999999999995,
+              0.095,
+              0.804
+            ],
+            "world_max": [
+              0.065,
+              0.205,
+              0.8240000000000001
+            ]
+          },
+          {
+            "id": 156,
+            "name": "fixture_wall_3",
+            "type": 6,
+            "size": [
+              0.004,
+              0.055,
+              0.01
+            ],
+            "world_min": [
+              0.175,
+              0.095,
+              0.804
+            ],
+            "world_max": [
+              0.183,
+              0.205,
+              0.8240000000000001
+            ]
+          }
+        ],
+        "intersections": [],
+        "minimum_gripper_table_vertical_clearance_m": 0.009929292225754227
+      },
+      "actuators": {
+        "joint_names": [
+          "gripper0_finger_joint1",
+          "gripper0_finger_joint2"
+        ],
+        "joint_ids": [
+          7,
+          8
+        ],
+        "actuator_names": [
+          "gripper0_gripper_finger_joint1",
+          "gripper0_gripper_finger_joint2"
+        ],
+        "actuator_ids": [
+          7,
+          8
+        ],
+        "qpos_ids": [
+          7,
+          8
+        ],
+        "dof_ids": [
+          7,
+          8
+        ],
+        "activation_count": 0,
+        "actuator_trnid": [
+          [
+            7,
+            -1
+          ],
+          [
+            8,
+            -1
+          ]
+        ],
+        "actuator_gear": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "mujoco_version": "2.3.7"
+      },
+      "read_only_force_sample": {
+        "ctrl": [
+          0.04,
+          -0.04
+        ],
+        "actuator_force": [
+          0.00428640019618598,
+          -0.006222918289047641
+        ],
+        "activation": [],
+        "finger_generalized_actuator_force": [
+          0.00428640019618598,
+          -0.006222918289047641
+        ],
+        "finger_qpos": [
+          0.03999569780606369,
+          -0.03999381129008681
+        ],
+        "finger_qvel": [
+          -7.89687005910732e-06,
+          -1.7104187930864414e-05
+        ],
+        "contacts": [
+          {
+            "index": 0,
+            "geom1": "table_collision",
+            "geom2": "cube_g0",
+            "geom_ids": [
+              7,
+              84
+            ],
+            "distance": -0.00010775542021705404,
+            "position_world": [
+              0.10232353966571188,
+              -0.13818876301938804,
+              0.7998922445797829
+            ],
+            "frame_rows_world": [
+              [
+                0.0,
+                0.0,
+                1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "wrench_contact": [
+              0.19620000000000018,
+              2.440754137214873e-18,
+              -2.1143078651818115e-19,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "force_world_contact_basis": [
+              2.1143078651818115e-19,
+              2.440754137214873e-18,
+              0.19620000000000018
+            ],
+            "torque_world_contact_basis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "dim": 3,
+            "efc_address": 9,
+            "friction": [
+              1.0,
+              1.0,
+              0.005,
+              0.0001,
+              0.0001
+            ]
+          },
+          {
+            "index": 1,
+            "geom1": "table_collision",
+            "geom2": "cube_g0",
+            "geom_ids": [
+              7,
+              84
+            ],
+            "distance": -0.00010775542021705403,
+            "position_world": [
+              0.15232211971399828,
+              -0.13856558281066486,
+              0.7998922445797829
+            ],
+            "frame_rows_world": [
+              [
+                0.0,
+                0.0,
+                1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "wrench_contact": [
+              0.19620000000000018,
+              2.440754137213968e-18,
+              -2.1143078651818396e-19,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "force_world_contact_basis": [
+              2.1143078651818396e-19,
+              2.440754137213968e-18,
+              0.19620000000000018
+            ],
+            "torque_world_contact_basis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "dim": 3,
+            "efc_address": 12,
+            "friction": [
+              1.0,
+              1.0,
+              0.005,
+              0.0001,
+              0.0001
+            ]
+          },
+          {
+            "index": 2,
+            "geom1": "table_collision",
+            "geom2": "cube_g0",
+            "geom_ids": [
+              7,
+              84
+            ],
+            "distance": -0.00010775542021705211,
+            "position_world": [
+              0.10258731351960565,
+              -0.10318975698558755,
+              0.7998922445797829
+            ],
+            "frame_rows_world": [
+              [
+                0.0,
+                0.0,
+                1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "wrench_contact": [
+              0.1961999999999999,
+              2.440754137214873e-18,
+              -2.1143078651690842e-19,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "force_world_contact_basis": [
+              2.1143078651690842e-19,
+              2.440754137214873e-18,
+              0.1961999999999999
+            ],
+            "torque_world_contact_basis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "dim": 3,
+            "efc_address": 15,
+            "friction": [
+              1.0,
+              1.0,
+              0.005,
+              0.0001,
+              0.0001
+            ]
+          },
+          {
+            "index": 3,
+            "geom1": "table_collision",
+            "geom2": "cube_g0",
+            "geom_ids": [
+              7,
+              84
+            ],
+            "distance": -0.0001077554202170521,
+            "position_world": [
+              0.15258589356789207,
+              -0.10356657677686437,
+              0.7998922445797829
+            ],
+            "frame_rows_world": [
+              [
+                0.0,
+                0.0,
+                1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "wrench_contact": [
+              0.19619999999999982,
+              2.440754137213968e-18,
+              -2.1143078651691124e-19,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "force_world_contact_basis": [
+              2.1143078651691124e-19,
+              2.440754137213968e-18,
+              0.19619999999999982
+            ],
+            "torque_world_contact_basis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "dim": 3,
+            "efc_address": 18,
+            "friction": [
+              1.0,
+              1.0,
+              0.005,
+              0.0001,
+              0.0001
+            ]
+          }
+        ],
+        "sample_time_s": 20.14999999999971,
+        "timing": "Natural post-control-step derived arrays; no forward call.20Hz, not physics-substep peak data.",
+        "wrench_convention": "contact-frame force:torque retained; world vectors rotate components only, not an asserted object-side net force"
+      },
+      "passed": true,
+      "epoch": 1792107787.846466
+    },
+    {
+      "case": "init-demo_0005-loading-912171",
+      "targets_in_bounds": true,
+      "geometry": {
+        "passed": true,
+        "method": "Discrete conservative collision-geometry AABB screen at fixed branch aperture; meshes use compiled vertices. Actual dynamics and closing aperture may differ. Runtime contact abort remains active.",
+        "geometry": [
+          {
+            "id": 7,
+            "name": "table_collision",
+            "type": 6,
+            "size": [
+              0.4,
+              0.4,
+              0.025
+            ],
+            "world_min": [
+              -0.4,
+              -0.4,
+              0.75
+            ],
+            "world_max": [
+              0.4,
+              0.4,
+              0.8
+            ]
+          },
+          {
+            "id": 72,
+            "name": "gripper0_hand_collision",
+            "type": 7,
+            "size": [
+              0.031641411854156413,
+              0.048672013481209114,
+              0.10394595510084428
+            ],
+            "world_min": [
+              0.0969205648811638,
+              -0.2135949003466977,
+              0.892538182527433
+            ],
+            "world_max": [
+              0.16021299322712204,
+              -0.008770611571975076,
+              0.9848070498530485
+            ]
+          },
+          {
+            "id": 74,
+            "name": "gripper0_finger1_collision",
+            "type": 7,
+            "size": [
+              0.010680919536942906,
+              0.013564666730856312,
+              0.03158571117336686
+            ],
+            "world_min": [
+              0.11928914563353094,
+              -0.1795475865342951,
+              0.8533871968286914
+            ],
+            "world_max": [
+              0.14066017069350417,
+              -0.15338195227987092,
+              0.9075553356814355
+            ]
+          },
+          {
+            "id": 75,
+            "name": "gripper0_finger1_pad_collision",
+            "type": 6,
+            "size": [
+              0.008,
+              0.004,
+              0.008
+            ],
+            "world_min": [
+              0.12255292140794102,
+              -0.1610348168360057,
+              0.8580470705938276
+            ],
+            "world_max": [
+              0.1389664063360053,
+              -0.1528811283554242,
+              0.8745102827332093
+            ]
+          },
+          {
+            "id": 77,
+            "name": "gripper0_finger2_collision",
+            "type": 7,
+            "size": [
+              0.010680919536942906,
+              0.013564666730856312,
+              0.03158571117336686
+            ],
+            "world_min": [
+              0.11943362480454744,
+              -0.07367358964736709,
+              0.8525482206488458
+            ],
+            "world_max": [
+              0.1408551810285872,
+              -0.04672347745678363,
+              0.9067056508650552
+            ]
+          },
+          {
+            "id": 78,
+            "name": "gripper0_finger2_pad_collision",
+            "type": 6,
+            "size": [
+              0.008,
+              0.004,
+              0.008
+            ],
+            "world_min": [
+              0.12270657056013995,
+              -0.07404831304422625,
+              0.8573496513949156
+            ],
+            "world_max": [
+              0.13912005548820422,
+              -0.06589462456364471,
+              0.8738128635342973
+            ]
+          },
+          {
+            "id": 152,
+            "name": "fixture_floor",
+            "type": 6,
+            "size": [
+              0.063,
+              0.063,
+              0.002
+            ],
+            "world_min": [
+              0.056999999999999995,
+              0.087,
+              0.8
+            ],
+            "world_max": [
+              0.183,
+              0.213,
+              0.804
+            ]
+          },
+          {
+            "id": 153,
+            "name": "fixture_wall_0",
+            "type": 6,
+            "size": [
+              0.063,
+              0.004,
+              0.01
+            ],
+            "world_min": [
+              0.056999999999999995,
+              0.087,
+              0.804
+            ],
+            "world_max": [
+              0.183,
+              0.095,
+              0.8240000000000001
+            ]
+          },
+          {
+            "id": 154,
+            "name": "fixture_wall_1",
+            "type": 6,
+            "size": [
+              0.063,
+              0.004,
+              0.01
+            ],
+            "world_min": [
+              0.056999999999999995,
+              0.205,
+              0.804
+            ],
+            "world_max": [
+              0.183,
+              0.213,
+              0.8240000000000001
+            ]
+          },
+          {
+            "id": 155,
+            "name": "fixture_wall_2",
+            "type": 6,
+            "size": [
+              0.004,
+              0.055,
+              0.01
+            ],
+            "world_min": [
+              0.056999999999999995,
+              0.095,
+              0.804
+            ],
+            "world_max": [
+              0.065,
+              0.205,
+              0.8240000000000001
+            ]
+          },
+          {
+            "id": 156,
+            "name": "fixture_wall_3",
+            "type": 6,
+            "size": [
+              0.004,
+              0.055,
+              0.01
+            ],
+            "world_min": [
+              0.175,
+              0.095,
+              0.804
+            ],
+            "world_max": [
+              0.183,
+              0.205,
+              0.8240000000000001
+            ]
+          }
+        ],
+        "intersections": [],
+        "minimum_gripper_table_vertical_clearance_m": 0.009932836879802731
+      },
+      "actuators": {
+        "joint_names": [
+          "gripper0_finger_joint1",
+          "gripper0_finger_joint2"
+        ],
+        "joint_ids": [
+          7,
+          8
+        ],
+        "actuator_names": [
+          "gripper0_gripper_finger_joint1",
+          "gripper0_gripper_finger_joint2"
+        ],
+        "actuator_ids": [
+          7,
+          8
+        ],
+        "qpos_ids": [
+          7,
+          8
+        ],
+        "dof_ids": [
+          7,
+          8
+        ],
+        "activation_count": 0,
+        "actuator_trnid": [
+          [
+            7,
+            -1
+          ],
+          [
+            8,
+            -1
+          ]
+        ],
+        "actuator_gear": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "mujoco_version": "2.3.7"
+      },
+      "read_only_force_sample": {
+        "ctrl": [
+          0.04,
+          -0.04
+        ],
+        "actuator_force": [
+          0.00433477792745407,
+          -0.006229981244366911
+        ],
+        "activation": [],
+        "finger_generalized_actuator_force": [
+          0.00433477792745407,
+          -0.006229981244366911
+        ],
+        "finger_qpos": [
+          0.039995646414643364,
+          -0.03999380733784117
+        ],
+        "finger_qvel": [
+          -9.403714591233662e-06,
+          -1.8659542768791147e-05
+        ],
+        "contacts": [
+          {
+            "index": 0,
+            "geom1": "table_collision",
+            "geom2": "cube_g0",
+            "geom_ids": [
+              7,
+              84
+            ],
+            "distance": -0.00010775542021705577,
+            "position_world": [
+              0.1518973426866326,
+              -0.13871082841765175,
+              0.7998922445797829
+            ],
+            "frame_rows_world": [
+              [
+                0.0,
+                0.0,
+                1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "wrench_contact": [
+              0.19619999999999985,
+              -1.4493531623119685e-18,
+              -3.047039251033927e-20,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "force_world_contact_basis": [
+              3.047039251033927e-20,
+              -1.4493531623119685e-18,
+              0.19619999999999985
+            ],
+            "torque_world_contact_basis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "dim": 3,
+            "efc_address": 9,
+            "friction": [
+              1.0,
+              1.0,
+              0.005,
+              0.0001,
+              0.0001
+            ]
+          },
+          {
+            "index": 1,
+            "geom1": "table_collision",
+            "geom2": "cube_g0",
+            "geom_ids": [
+              7,
+              84
+            ],
+            "distance": -0.00010775542021705557,
+            "position_world": [
+              0.10189924035026779,
+              -0.13827521073849647,
+              0.7998922445797829
+            ],
+            "frame_rows_world": [
+              [
+                0.0,
+                0.0,
+                1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "wrench_contact": [
+              0.1961999999999999,
+              -1.4493531623132273e-18,
+              -3.047039251033927e-20,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "force_world_contact_basis": [
+              3.047039251033927e-20,
+              -1.4493531623132273e-18,
+              0.1961999999999999
+            ],
+            "torque_world_contact_basis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "dim": 3,
+            "efc_address": 12,
+            "friction": [
+              1.0,
+              1.0,
+              0.005,
+              0.0001,
+              0.0001
+            ]
+          },
+          {
+            "index": 2,
+            "geom1": "table_collision",
+            "geom2": "cube_g0",
+            "geom_ids": [
+              7,
+              84
+            ],
+            "distance": -0.00010775542021705443,
+            "position_world": [
+              0.1522022750620413,
+              -0.10371215678219639,
+              0.7998922445797829
+            ],
+            "frame_rows_world": [
+              [
+                0.0,
+                0.0,
+                1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "wrench_contact": [
+              0.19620000000000012,
+              -1.4493531623119685e-18,
+              -3.0470392512168275e-20,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "force_world_contact_basis": [
+              3.0470392512168275e-20,
+              -1.4493531623119685e-18,
+              0.19620000000000012
+            ],
+            "torque_world_contact_basis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "dim": 3,
+            "efc_address": 15,
+            "friction": [
+              1.0,
+              1.0,
+              0.005,
+              0.0001,
+              0.0001
+            ]
+          },
+          {
+            "index": 3,
+            "geom1": "table_collision",
+            "geom2": "cube_g0",
+            "geom_ids": [
+              7,
+              84
+            ],
+            "distance": -0.00010775542021705423,
+            "position_world": [
+              0.10220417272567649,
+              -0.1032765391030411,
+              0.7998922445797829
+            ],
+            "frame_rows_world": [
+              [
+                0.0,
+                0.0,
+                1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "wrench_contact": [
+              0.19620000000000026,
+              -1.4493531623132273e-18,
+              -3.0470392512168275e-20,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "force_world_contact_basis": [
+              3.0470392512168275e-20,
+              -1.4493531623132273e-18,
+              0.19620000000000026
+            ],
+            "torque_world_contact_basis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "dim": 3,
+            "efc_address": 18,
+            "friction": [
+              1.0,
+              1.0,
+              0.005,
+              0.0001,
+              0.0001
+            ]
+          }
+        ],
+        "sample_time_s": 19.799999999999905,
+        "timing": "Natural post-control-step derived arrays; no forward call.20Hz, not physics-substep peak data.",
+        "wrench_convention": "contact-frame force:torque retained; world vectors rotate components only, not an asserted object-side net force"
+      },
+      "passed": true,
+      "epoch": 1792107790.858599
+    }
+  ],
+  "epoch": 1792107790.8588974
+}

@@ -1,0 +1,6 @@
+{
+  "physical": ".venv-sim/bin/python scripts/init10.py",
+  "analysis": "PYTHONPATH=/var/tmp/typhon-init08-analysis-deps .venv-sim/bin/python scripts/init10_analyse.py --source /var/tmp/typhon-init10-20261015 --output /var/tmp/typhon-init10-20261015/analysis-qualified",
+  "new_training": false,
+  "model_calls": 0
+}

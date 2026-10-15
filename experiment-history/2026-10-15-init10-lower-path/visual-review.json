@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "visual_inspection": {
+    "contact_lift_force": "Legible plots; D5 retains support and uprightness, native loses support.",
+    "actuator_forces": "Same control input; measured response changes. No force increase configured.",
+    "qualified_contact_sheet": "All four panels visually agree with their state traces; native explicitly labelled historical; matched capture ticks retained."
+  },
+  "rejected_media": "analysis/final-contact-sheet.png and original case0005 N new capture are unqualified; retained unchanged.",
+  "inspected_sha256": {
+    "contact-lift-force.png": "cc551282d81fb806053b551094b3494a8cc56f8ed83f02f7084c1150664e975c",
+    "actuator-forces.png": "2920dbedfe06282778488ab5d244dabf61130e55d147c7fa23c043b615ab0b03",
+    "final-contact-sheet.png": "f540bdb984c8fd74268832919648c76ab3522e39edd3a4cb3768e45dc58350c3"
+  },
+  "epoch": 1792108409.742591
+}
