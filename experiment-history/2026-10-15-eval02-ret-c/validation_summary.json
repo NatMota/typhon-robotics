@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "episodes": 4,
+  "strict_counts": [
+    {
+      "model": "C",
+      "goal": "G0",
+      "strict_successes": 2,
+      "trials": 2
+    },
+    {
+      "model": "C",
+      "goal": "G1",
+      "strict_successes": 1,
+      "trials": 2
+    }
+  ],
+  "all_scores_recomputed_exact": true,
+  "same_goal_initial_prepared_tensors_exact": true,
+  "same_goal_initial_available_state_exact": true,
+  "all_models_native_interfaces_verified": true,
+  "paired_noise_array_checks": 288,
+  "initial_images_match_training": true,
+  "original_physical_goal_scorers": true,
+  "no_truth_for_control": true,
+  "frozen_order_completed": true,
+  "checked_epoch": 1792071396.439043
+}

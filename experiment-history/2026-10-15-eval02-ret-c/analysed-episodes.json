@@ -1,0 +1,444 @@
+[
+  {
+    "id": "C-G0-912171",
+    "model": "C",
+    "goal": "G0",
+    "seed": 912171,
+    "directory": "/var/tmp/typhon-eval02-ret-c-20261015/workers/G0-C/G0-912171",
+    "source_episode_id": "personal_demo_0002-goal0",
+    "goal_xy_m": [
+      0.125,
+      -0.12
+    ],
+    "final_xy_m": [
+      0.1262949718578456,
+      -0.125969178896189
+    ],
+    "strict_success": true,
+    "position_error_mm": 6.108031500190571,
+    "yaw_error_deg": 0.7049229374293963,
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "physical_footprint": true,
+    "wall_seconds": 17.427780302998144,
+    "noise_qualification": {
+      "passed": true,
+      "within_C": {
+        "passed": true,
+        "reference": "/var/tmp/typhon-eval02-ret-c-20261015/workers/G0-C/G0-912171",
+        "comparisons": 0
+      },
+      "archived_RET_actual_arrays": {
+        "passed": true,
+        "seed": 912171,
+        "reference": "/var/tmp/typhon-eval02-retention-20261015/workers/G0-GOAL/G0-912171",
+        "query_noise_packets": 48,
+        "actual_rng_and_noise_arrays_exact": 144
+      }
+    },
+    "query_count": 48,
+    "executed_records": 1460,
+    "minimum_eef_object_distance_mm": 2.802442976966346,
+    "maximum_lift_above_initial_mm": 169.47954584057445,
+    "supported_lift_10mm_bilateral_steps": 104,
+    "longest_supported_lift_s": 5.2,
+    "supported_lift_10mm_3steps": true,
+    "legacy_height_only_70mm": true,
+    "horizontal_transport_while_supported_mm": 332.6110811119896,
+    "object_path_m": 0.7226478035713814,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "failed_criteria": [],
+    "distance_to_G0_mm": 6.10803150019057,
+    "distance_to_G1_mm": 155.9745547121838,
+    "final_marked_face_tilt_deg": 0.0,
+    "acquired_supported_grasp": {
+      "first_step_of_three": 153,
+      "object_yaw_deg": 44.20574674230502,
+      "object_tilt_deg": 1.3646665995884675,
+      "R_GO": [
+        [
+          0.005694242423409158,
+          0.9999835159870187,
+          -0.0007371278468180966
+        ],
+        [
+          0.9999184377641254,
+          -0.005702295961231315,
+          -0.011428107460155183
+        ],
+        [
+          -0.011432122400227285,
+          -0.0006719933107038887,
+          -0.9999344253511906
+        ]
+      ],
+      "p_GO": [
+        -7.784573361196466e-05,
+        0.004083247145038346,
+        0.0009046224202099643
+      ],
+      "eef_quat_xyzw": [
+        0.3917775459904196,
+        0.9200279215027666,
+        0.0020286505245072834,
+        0.0074069352686112625
+      ],
+      "object_quat_wxyz": [
+        0.9264665208362206,
+        -0.001360390634333605,
+        -0.011830723768047478,
+        0.3761887413015902
+      ]
+    },
+    "peak_tilt_deg": 3.018527568437512
+  },
+  {
+    "id": "C-G0-912172",
+    "model": "C",
+    "goal": "G0",
+    "seed": 912172,
+    "directory": "/var/tmp/typhon-eval02-ret-c-20261015/workers/G0-C/G0-912172",
+    "source_episode_id": "personal_demo_0002-goal0",
+    "goal_xy_m": [
+      0.125,
+      -0.12
+    ],
+    "final_xy_m": [
+      0.12712544737788928,
+      -0.12562229932965294
+    ],
+    "strict_success": true,
+    "position_error_mm": 6.010638594059063,
+    "yaw_error_deg": 0.8026452233710645,
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "physical_footprint": true,
+    "wall_seconds": 17.09874458098784,
+    "noise_qualification": {
+      "passed": true,
+      "within_C": {
+        "passed": true,
+        "reference": "/var/tmp/typhon-eval02-ret-c-20261015/workers/G0-C/G0-912172",
+        "comparisons": 0
+      },
+      "archived_RET_actual_arrays": {
+        "passed": true,
+        "seed": 912172,
+        "reference": "/var/tmp/typhon-eval02-retention-20261015/workers/G0-GOAL/G0-912172",
+        "query_noise_packets": 48,
+        "actual_rng_and_noise_arrays_exact": 144
+      }
+    },
+    "query_count": 48,
+    "executed_records": 1460,
+    "minimum_eef_object_distance_mm": 3.264677946524687,
+    "maximum_lift_above_initial_mm": 168.2146189966811,
+    "supported_lift_10mm_bilateral_steps": 103,
+    "longest_supported_lift_s": 5.15,
+    "supported_lift_10mm_3steps": true,
+    "legacy_height_only_70mm": true,
+    "horizontal_transport_while_supported_mm": 332.4273810078479,
+    "object_path_m": 0.7176589977783561,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "failed_criteria": [],
+    "distance_to_G0_mm": 6.010638594059063,
+    "distance_to_G1_mm": 155.63681304628503,
+    "final_marked_face_tilt_deg": 0.0,
+    "acquired_supported_grasp": {
+      "first_step_of_three": 153,
+      "object_yaw_deg": 44.26097421079548,
+      "object_tilt_deg": 1.3045403346211728,
+      "R_GO": [
+        [
+          0.0037181420245917095,
+          0.9999917237318194,
+          -0.0016516318446131927
+        ],
+        [
+          0.9999360303401762,
+          -0.003735568206970535,
+          -0.010676177110821484
+        ],
+        [
+          -0.010682258535324923,
+          -0.0016118306475082114,
+          -0.9999416439745614
+        ]
+      ],
+      "p_GO": [
+        9.951104710996526e-05,
+        0.00384209215294994,
+        0.0016415753306355007
+      ],
+      "eef_quat_xyzw": [
+        0.3904202701996731,
+        0.9206046557336476,
+        0.0020763313596015146,
+        0.007400628813240369
+      ],
+      "object_quat_wxyz": [
+        0.9262881656498906,
+        -0.0010190888917697577,
+        -0.011338310328269433,
+        0.37664391453160584
+      ]
+    },
+    "peak_tilt_deg": 3.073702816867758
+  },
+  {
+    "id": "C-G1-912171",
+    "model": "C",
+    "goal": "G1",
+    "seed": 912171,
+    "directory": "/var/tmp/typhon-eval02-ret-c-20261015/workers/G1-C/G1-912171",
+    "source_episode_id": "personal_demo_0002-goal1",
+    "goal_xy_m": [
+      0.125,
+      0.03
+    ],
+    "final_xy_m": [
+      0.1298493503522335,
+      0.03716528518477217
+    ],
+    "strict_success": true,
+    "position_error_mm": 8.6520234984553,
+    "yaw_error_deg": 0.9161251497511684,
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "physical_footprint": true,
+    "wall_seconds": 17.0973088539904,
+    "noise_qualification": {
+      "passed": true,
+      "within_C": {
+        "passed": true,
+        "seed": 912171,
+        "reference": "/var/tmp/typhon-eval02-ret-c-20261015/workers/G0-C/G0-912171",
+        "query_noise_packets": 48,
+        "actual_rng_and_noise_arrays_exact": 144
+      },
+      "archived_RET_actual_arrays": {
+        "passed": true,
+        "seed": 912171,
+        "reference": "/var/tmp/typhon-eval02-retention-20261015/workers/G0-GOAL/G0-912171",
+        "query_noise_packets": 48,
+        "actual_rng_and_noise_arrays_exact": 144
+      }
+    },
+    "query_count": 48,
+    "executed_records": 1460,
+    "minimum_eef_object_distance_mm": 2.4836512019936885,
+    "maximum_lift_above_initial_mm": 167.30889165158948,
+    "supported_lift_10mm_bilateral_steps": 91,
+    "longest_supported_lift_s": 4.55,
+    "supported_lift_10mm_3steps": true,
+    "legacy_height_only_70mm": true,
+    "horizontal_transport_while_supported_mm": 374.5873409157902,
+    "object_path_m": 0.7694241193618249,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "failed_criteria": [],
+    "distance_to_G0_mm": 157.24008097825907,
+    "distance_to_G1_mm": 8.6520234984553,
+    "final_marked_face_tilt_deg": 0.0,
+    "acquired_supported_grasp": {
+      "first_step_of_three": 153,
+      "object_yaw_deg": 44.11426765540631,
+      "object_tilt_deg": 1.3366470098930585,
+      "R_GO": [
+        [
+          0.005002489683780982,
+          0.9999870093519759,
+          -0.0009778671970563514
+        ],
+        [
+          0.999924866344907,
+          -0.005013117537229421,
+          -0.011186166353048659
+        ],
+        [
+          -0.01119092320069347,
+          -0.0009218350445374534,
+          -0.9999369547416813
+        ]
+      ],
+      "p_GO": [
+        -7.123578916120798e-05,
+        0.003213784204287388,
+        0.001069441556386417
+      ],
+      "eef_quat_xyzw": [
+        0.3921894704001964,
+        0.919853782179219,
+        0.0021544749106478687,
+        0.0071970101888821705
+      ],
+      "object_quat_wxyz": [
+        0.9267675895156878,
+        -0.0010541316758717625,
+        -0.011616450734272279,
+        0.37545410092583886
+      ]
+    },
+    "peak_tilt_deg": 3.0480586988052667
+  },
+  {
+    "id": "C-G1-912172",
+    "model": "C",
+    "goal": "G1",
+    "seed": 912172,
+    "directory": "/var/tmp/typhon-eval02-ret-c-20261015/workers/G1-C/G1-912172",
+    "source_episode_id": "personal_demo_0002-goal1",
+    "goal_xy_m": [
+      0.125,
+      0.03
+    ],
+    "final_xy_m": [
+      0.13040149325648365,
+      0.05308070669879845
+    ],
+    "strict_success": false,
+    "position_error_mm": 23.70432768748774,
+    "yaw_error_deg": 1.3425754807340249,
+    "criteria": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "physical_footprint": true,
+    "wall_seconds": 17.508856300002662,
+    "noise_qualification": {
+      "passed": true,
+      "within_C": {
+        "passed": true,
+        "seed": 912172,
+        "reference": "/var/tmp/typhon-eval02-ret-c-20261015/workers/G0-C/G0-912172",
+        "query_noise_packets": 48,
+        "actual_rng_and_noise_arrays_exact": 144
+      },
+      "archived_RET_actual_arrays": {
+        "passed": true,
+        "seed": 912172,
+        "reference": "/var/tmp/typhon-eval02-retention-20261015/workers/G0-GOAL/G0-912172",
+        "query_noise_packets": 48,
+        "actual_rng_and_noise_arrays_exact": 144
+      }
+    },
+    "query_count": 48,
+    "executed_records": 1460,
+    "minimum_eef_object_distance_mm": 2.629748563342254,
+    "maximum_lift_above_initial_mm": 167.25515671907576,
+    "supported_lift_10mm_bilateral_steps": 93,
+    "longest_supported_lift_s": 4.65,
+    "supported_lift_10mm_3steps": true,
+    "legacy_height_only_70mm": true,
+    "horizontal_transport_while_supported_mm": 377.49212840762743,
+    "object_path_m": 0.788668391500652,
+    "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+    "release_and_stability": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "failed_criteria": [
+      "position"
+    ],
+    "distance_to_G0_mm": 173.16497094030112,
+    "distance_to_G1_mm": 23.70432768748774,
+    "final_marked_face_tilt_deg": 0.0,
+    "acquired_supported_grasp": {
+      "first_step_of_three": 153,
+      "object_yaw_deg": 44.208804948574446,
+      "object_tilt_deg": 1.3444377863749064,
+      "R_GO": [
+        [
+          0.0058587810796136425,
+          0.9999827843834757,
+          -0.00032499374259556033
+        ],
+        [
+          0.9999218447370112,
+          -0.005862012911591592,
+          -0.011042699957770963
+        ],
+        [
+          -0.011044414968398381,
+          -0.0002602715810437007,
+          -0.9999389747163127
+        ]
+      ],
+      "p_GO": [
+        -0.00019266964811888126,
+        0.0034328326969418265,
+        0.0009464713523558026
+      ],
+      "eef_quat_xyzw": [
+        0.3918227320896159,
+        0.9200104628674409,
+        0.002209468493591256,
+        0.007128329484679061
+      ],
+      "object_quat_wxyz": [
+        0.9264576554523987,
+        -0.001299370791816789,
+        -0.011659987283766613,
+        0.37621612005034116
+      ]
+    },
+    "peak_tilt_deg": 9.354628525772096
+  }
+]
