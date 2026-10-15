@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "max_abs_action_error": 0.0,
+  "expected_sha256": "43ff3f525c415faf12d5215aba94033418ee47e3e1c55ad055fffc78060eb339",
+  "actual_sha256": "43ff3f525c415faf12d5215aba94033418ee47e3e1c55ad055fffc78060eb339",
+  "fresh_native_generation": true,
+  "epoch": 1792094781.925081,
+  "model_state_sha256_before": "afd5a41eda56c9c5385674eb0c3a7cc6f56a3331ad51f924f0883cd7bbf10e25",
+  "checkpoint_sha256": "4d7a4a2547f084b6026164f27a6b7d43b5cb4d3b83ee4875343d108908f35636",
+  "implementation": {
+    "generate_actions": "7ba495ce1f0e8af625be12e9aef953040276a1846ee08153132e67a97d0833dc",
+    "m6_contract": "b9ddac725f2a7e60af6822a2bbb3f36794c3349aac28aa9844bc3a01a8826ede",
+    "observations": "d98dc44dbe48462b73a2322b674f8cc801d4b4e52f4e5f89d42c22ea6aafee0f"
+  },
+  "native_gripper_input_preprocessing": "both channels zeroed by EE6D.preprocess; unchanged",
+  "source_configuration": {
+    "mode": "eval",
+    "precision": "bf16 autocast; float32 weights",
+    "requires_grad": "allTrue",
+    "horizon": 30,
+    "denoise_steps": 10,
+    "domain": 29,
+    "observation": "O2"
+  }
+}

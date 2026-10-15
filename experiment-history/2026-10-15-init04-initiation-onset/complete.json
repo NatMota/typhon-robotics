@@ -1,0 +1,127 @@
+{
+  "passed": true,
+  "epoch": 1792094786.132382,
+  "distinct_outputs": 18,
+  "fresh_calls": 16,
+  "archived_reuses": 2,
+  "optimizer_updates": 0,
+  "physical_rollouts": 0,
+  "model_state_sha256_before": "afd5a41eda56c9c5385674eb0c3a7cc6f56a3331ad51f924f0883cd7bbf10e25",
+  "model_state_sha256_after": "afd5a41eda56c9c5385674eb0c3a7cc6f56a3331ad51f924f0883cd7bbf10e25",
+  "weight_file_unchanged": true,
+  "calls": [
+    {
+      "query": 0,
+      "condition": "F-original",
+      "noise_index": 0,
+      "seconds": 0.19201289498596452,
+      "actual_noise_sha256": "23be921051f417815bef90ae4875485ad67226f3a1f099a070624aaa8ede453f"
+    },
+    {
+      "query": 0,
+      "condition": "F-original",
+      "noise_index": 1,
+      "seconds": 0.06108617299469188,
+      "actual_noise_sha256": "336ab168eb00315fdc0c73d223030a1b6b3703c5f1bafbdfa565f535c5622a08"
+    },
+    {
+      "query": 0,
+      "condition": "L-original",
+      "noise_index": 0,
+      "seconds": 0.060590120003325865,
+      "actual_noise_sha256": "23be921051f417815bef90ae4875485ad67226f3a1f099a070624aaa8ede453f"
+    },
+    {
+      "query": 0,
+      "condition": "L-original",
+      "noise_index": 1,
+      "seconds": 0.0597851519996766,
+      "actual_noise_sha256": "336ab168eb00315fdc0c73d223030a1b6b3703c5f1bafbdfa565f535c5622a08"
+    },
+    {
+      "query": 0,
+      "condition": "H-explicit",
+      "noise_index": 0,
+      "seconds": 0.05860785598633811,
+      "actual_noise_sha256": "23be921051f417815bef90ae4875485ad67226f3a1f099a070624aaa8ede453f"
+    },
+    {
+      "query": 0,
+      "condition": "H-explicit",
+      "noise_index": 1,
+      "seconds": 0.058142352994764224,
+      "actual_noise_sha256": "336ab168eb00315fdc0c73d223030a1b6b3703c5f1bafbdfa565f535c5622a08"
+    },
+    {
+      "query": 3,
+      "condition": "F-original",
+      "noise_index": 1,
+      "seconds": 0.05900176501017995,
+      "actual_noise_sha256": "288362420f2283a159cb2380d2097d84191df46c2449fa78126470bdd6b01de6"
+    },
+    {
+      "query": 3,
+      "condition": "L-original",
+      "noise_index": 0,
+      "seconds": 0.054729080002289265,
+      "actual_noise_sha256": "2d7a2a7739b6734f740a503b38b52092d0358b48d9e0178e5d23eabe31a40856"
+    },
+    {
+      "query": 3,
+      "condition": "L-original",
+      "noise_index": 1,
+      "seconds": 0.0562407510005869,
+      "actual_noise_sha256": "288362420f2283a159cb2380d2097d84191df46c2449fa78126470bdd6b01de6"
+    },
+    {
+      "query": 3,
+      "condition": "H-explicit",
+      "noise_index": 0,
+      "seconds": 0.0561730419867672,
+      "actual_noise_sha256": "2d7a2a7739b6734f740a503b38b52092d0358b48d9e0178e5d23eabe31a40856"
+    },
+    {
+      "query": 3,
+      "condition": "H-explicit",
+      "noise_index": 1,
+      "seconds": 0.056143294990761206,
+      "actual_noise_sha256": "288362420f2283a159cb2380d2097d84191df46c2449fa78126470bdd6b01de6"
+    },
+    {
+      "query": 4,
+      "condition": "F-original",
+      "noise_index": 1,
+      "seconds": 0.05826990501373075,
+      "actual_noise_sha256": "7883a2dc74f219c7317a7ee270c389c0a52cc66d63c6638bf29ef8efa7e61da7"
+    },
+    {
+      "query": 4,
+      "condition": "L-original",
+      "noise_index": 0,
+      "seconds": 0.05682495000655763,
+      "actual_noise_sha256": "9d9572280e731e8cecccbb714edd7839cd5168f7e9fbad25b8e41ac15d3c1e7d"
+    },
+    {
+      "query": 4,
+      "condition": "L-original",
+      "noise_index": 1,
+      "seconds": 0.056892358988989145,
+      "actual_noise_sha256": "7883a2dc74f219c7317a7ee270c389c0a52cc66d63c6638bf29ef8efa7e61da7"
+    },
+    {
+      "query": 4,
+      "condition": "H-explicit",
+      "noise_index": 0,
+      "seconds": 0.058847692009294406,
+      "actual_noise_sha256": "9d9572280e731e8cecccbb714edd7839cd5168f7e9fbad25b8e41ac15d3c1e7d"
+    },
+    {
+      "query": 4,
+      "condition": "H-explicit",
+      "noise_index": 1,
+      "seconds": 0.058670815982623026,
+      "actual_noise_sha256": "7883a2dc74f219c7317a7ee270c389c0a52cc66d63c6638bf29ef8efa7e61da7"
+    }
+  ],
+  "no_extra_holdout": true
+}
