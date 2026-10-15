@@ -1,0 +1,195 @@
+{
+  "Q0-T-initiation": {
+    "qualified": {
+      "gains": [
+        "init-demo_0002-loading-912171",
+        "init-demo_0003-loading-912171",
+        "init-demo_0005-loading-912172"
+      ],
+      "losses": []
+    },
+    "supported_lift": {
+      "gains": [
+        "init-demo_0002-loading-912171",
+        "init-demo_0003-loading-912171",
+        "init-demo_0005-loading-912172"
+      ],
+      "losses": []
+    }
+  },
+  "Q0-T-preservation": {
+    "qualified": {
+      "gains": [],
+      "losses": []
+    },
+    "supported_lift": {
+      "gains": [
+        "init-demo_0002-feeding-912171"
+      ],
+      "losses": []
+    }
+  },
+  "Q0-T-prior_feeding": {
+    "qualified": {
+      "gains": [],
+      "losses": []
+    },
+    "supported_lift": {
+      "gains": [],
+      "losses": []
+    }
+  },
+  "Q0-T-prior_loading": {
+    "qualified": {
+      "gains": [],
+      "losses": [
+        "retain-load01-training-demo_0005"
+      ]
+    },
+    "supported_lift": {
+      "gains": [
+        "retain-load01-training-demo_0001"
+      ],
+      "losses": []
+    }
+  },
+  "Q1-T-initiation": {
+    "qualified": {
+      "gains": [
+        "init-demo_0005-loading-912172"
+      ],
+      "losses": [
+        "init-demo_0003-loading-912172",
+        "init-demo_0005-loading-912171"
+      ]
+    },
+    "supported_lift": {
+      "gains": [
+        "init-demo_0005-loading-912172"
+      ],
+      "losses": [
+        "init-demo_0003-loading-912172",
+        "init-demo_0005-loading-912171"
+      ]
+    }
+  },
+  "Q1-T-preservation": {
+    "qualified": {
+      "gains": [
+        "init-demo_0001-feeding-912171",
+        "init-demo_0001-feeding-912172",
+        "init-demo_0002-feeding-912171",
+        "init-demo_0002-feeding-912172",
+        "init-demo_0003-feeding-912171",
+        "init-demo_0003-feeding-912172",
+        "init-demo_0005-feeding-912171",
+        "init-demo_0005-feeding-912172"
+      ],
+      "losses": []
+    },
+    "supported_lift": {
+      "gains": [],
+      "losses": [
+        "init-demo_0001-feeding-912171",
+        "init-demo_0001-feeding-912172",
+        "init-demo_0002-feeding-912172",
+        "init-demo_0003-feeding-912171",
+        "init-demo_0003-feeding-912172",
+        "init-demo_0005-feeding-912171",
+        "init-demo_0005-feeding-912172"
+      ]
+    }
+  },
+  "Q1-T-prior_feeding": {
+    "qualified": {
+      "gains": [],
+      "losses": []
+    },
+    "supported_lift": {
+      "gains": [],
+      "losses": []
+    }
+  },
+  "Q1-T-prior_loading": {
+    "qualified": {
+      "gains": [],
+      "losses": []
+    },
+    "supported_lift": {
+      "gains": [],
+      "losses": []
+    }
+  },
+  "Q1-Q0-initiation": {
+    "qualified": {
+      "gains": [],
+      "losses": [
+        "init-demo_0002-loading-912171",
+        "init-demo_0003-loading-912171",
+        "init-demo_0003-loading-912172",
+        "init-demo_0005-loading-912171"
+      ]
+    },
+    "supported_lift": {
+      "gains": [],
+      "losses": [
+        "init-demo_0002-loading-912171",
+        "init-demo_0003-loading-912171",
+        "init-demo_0003-loading-912172",
+        "init-demo_0005-loading-912171"
+      ]
+    }
+  },
+  "Q1-Q0-preservation": {
+    "qualified": {
+      "gains": [
+        "init-demo_0001-feeding-912171",
+        "init-demo_0001-feeding-912172",
+        "init-demo_0002-feeding-912171",
+        "init-demo_0002-feeding-912172",
+        "init-demo_0003-feeding-912171",
+        "init-demo_0003-feeding-912172",
+        "init-demo_0005-feeding-912171",
+        "init-demo_0005-feeding-912172"
+      ],
+      "losses": []
+    },
+    "supported_lift": {
+      "gains": [],
+      "losses": [
+        "init-demo_0001-feeding-912171",
+        "init-demo_0001-feeding-912172",
+        "init-demo_0002-feeding-912171",
+        "init-demo_0002-feeding-912172",
+        "init-demo_0003-feeding-912171",
+        "init-demo_0003-feeding-912172",
+        "init-demo_0005-feeding-912171",
+        "init-demo_0005-feeding-912172"
+      ]
+    }
+  },
+  "Q1-Q0-prior_feeding": {
+    "qualified": {
+      "gains": [],
+      "losses": []
+    },
+    "supported_lift": {
+      "gains": [],
+      "losses": []
+    }
+  },
+  "Q1-Q0-prior_loading": {
+    "qualified": {
+      "gains": [
+        "retain-load01-training-demo_0005"
+      ],
+      "losses": []
+    },
+    "supported_lift": {
+      "gains": [],
+      "losses": [
+        "retain-load01-training-demo_0001"
+      ]
+    }
+  }
+}

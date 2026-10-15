@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "epoch": 1792105426.1847763,
+  "reviewer": "Codex visual inspection",
+  "scope": "Representative static review only: first two cases per panel and start/middle/end frames from four prespecified comparison videos. Not a complete motion review of all rollouts.",
+  "artifacts": [
+    {
+      "path": "/tmp/typhon-init07-visual-qa-contact-sheet.png",
+      "bytes": 1424886,
+      "sha256": "7755277e967eae81a5cd1ca391508f224834feb15311726bfc2b73876b8badd3"
+    },
+    {
+      "path": "/tmp/typhon-init07-visual-qa-video-samples.png",
+      "bytes": 3497809,
+      "sha256": "928ff20e1234b9499a2dbf3e08f43fde86f225690f5dec38b9f7487b61283e1f"
+    }
+  ],
+  "observations": [
+    "Loading example 0001 ends in tray for T/Q0/Q1.",
+    "Completed feeding example 0001: T/Q0 move the block into tray, Q1 keeps it in the feeding square.",
+    "Selected prior feeding case finishes in square for all three.",
+    "Selected earlier loading failure stays outside tray; correctly labelled failed.",
+    "Column identities and comparison layouts are readable; camera viewpoints and panels are consistent."
+  ],
+  "limitations": [
+    "Sparse video samples cannot validate all intervening motion or every grasp. Quantitative supported-lift classification comes from independent traces.",
+    "Small numeral appearance in wide views is not proof of model recognition."
+  ]
+}
