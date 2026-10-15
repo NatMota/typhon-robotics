@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "epoch": 1792096015.7740602,
+  "max_abs_action_error": 0.0,
+  "expected_sha256": "e468b3a3369af021291927877cec3b99a97005b49f914bfd1844812d42732873",
+  "actual_sha256": "e468b3a3369af021291927877cec3b99a97005b49f914bfd1844812d42732873",
+  "first_cell": "11-F-original-n0",
+  "actual_native_inputs": {
+    "id": "11-F-original-n0",
+    "seconds": 0.19491234002634883,
+    "noise_sha256": "10f678c92f084ee06af47b9ddf97efc36218b1fa287ac4c3bd249d84d35046b0",
+    "actual_effective_input_hashes": {
+      "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+      "image_input": "ba98449f5d3ca4d24eb7703152e1f970dae2287cffb56af381281c01b47fa78b",
+      "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+      "proprio": "7dd42a67c998b171882532528f6a618b817da35b0aba3960ded951b3e9b62762",
+      "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+    },
+    "native_preprocess_calls": 10,
+    "transformer_calls": 10
+  },
+  "implementation_sha256": {
+    "model": "7ba495ce1f0e8af625be12e9aef953040276a1846ee08153132e67a97d0833dc",
+    "action_space": "3a166b9685194fd7beaa5375e506683a00992d31ca3494dcb4cfd01c356599ce",
+    "rotation_contract": "b9ddac725f2a7e60af6822a2bbb3f36794c3349aac28aa9844bc3a01a8826ede"
+  }
+}
