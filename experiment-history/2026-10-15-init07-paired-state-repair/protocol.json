@@ -1,0 +1,174 @@
+{
+  "experiment": "INIT07",
+  "ticket": 11078,
+  "clock": {
+    "t0": 1792099042.62568,
+    "preparation_deadline": 1792100242.62568,
+    "training_deadline": 1792104742.62568,
+    "execution_deadline": 1792107442.62568,
+    "archive_deadline": 1792108942.62568,
+    "absolute_vm_cutoff": 1792112400.0,
+    "ticket": 11078
+  },
+  "initializer": {
+    "checkpoint": "/var/tmp/typhon-init02-20261015/train-T/step3000.pt",
+    "sha256": "4d7a4a2547f084b6026164f27a6b7d43b5cb4d3b83ee4875343d108908f35636"
+  },
+  "training": {
+    "updates": 3000,
+    "effective_batch": 4,
+    "microbatch": 1,
+    "seed": 151902,
+    "optimizer": "AdamW",
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-08,
+    "learning_rates": {
+      "prompt": 1e-05,
+      "heads": 0.0001,
+      "vlm": 1e-05,
+      "core": 0.0001
+    },
+    "weight_decay": 0.01,
+    "domain_table_decay": "active row29 only; inactive gradients masked",
+    "clip_norm": 1.0,
+    "precision": "bfloat16 autocast;float32weights",
+    "joint": "all shared VLM/core weights and active prompt/head row throughout;no reset/no warmup",
+    "observation": "O2",
+    "domain": 29,
+    "action": "generic_interleaved_v1",
+    "window": 30,
+    "control_hz": 20,
+    "inference_refinements": 10,
+    "recipe_sha256": "dfaad7fb1569a9ee4682b795bd72061e7786880d67d3edd4a36699f1274f0fbd",
+    "optimizer_source_sha256": "fc253ad03ae3921fc6b23781cc551a47b02ceccdb94c8fb9ab78b7e1c7016803",
+    "endpoint": "final3000 only",
+    "optimizer_saved": false,
+    "recovery": "rerun fixed recipe from initializer;no selectable partial checkpoints",
+    "prior_feeding_presentations": 3000,
+    "prior_loading_presentations": 3000,
+    "preservation_presentations": 1000,
+    "comparison_presentations": 4000,
+    "comparison_per_parent": 2000,
+    "transition_presentations": 1000,
+    "comparison_per_parent_task": 1000
+  },
+  "resolved_optimizer_reference": [
+    {
+      "lr": 1e-05,
+      "peak_lr": 1e-05,
+      "weight_decay": 0.0,
+      "name": "prompt",
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "eps": 1e-08,
+      "amsgrad": false,
+      "foreach": false,
+      "maximize": false,
+      "capturable": false,
+      "differentiable": false,
+      "fused": null
+    },
+    {
+      "lr": 0.0001,
+      "peak_lr": 0.0001,
+      "weight_decay": 0.0,
+      "name": "heads",
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "eps": 1e-08,
+      "amsgrad": false,
+      "foreach": false,
+      "maximize": false,
+      "capturable": false,
+      "differentiable": false,
+      "fused": null
+    },
+    {
+      "lr": 1e-05,
+      "peak_lr": 1e-05,
+      "weight_decay": 0.01,
+      "name": "vlm",
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "eps": 1e-08,
+      "amsgrad": false,
+      "foreach": false,
+      "maximize": false,
+      "capturable": false,
+      "differentiable": false,
+      "fused": null
+    },
+    {
+      "lr": 0.0001,
+      "peak_lr": 0.0001,
+      "weight_decay": 0.01,
+      "name": "core",
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "eps": 1e-08,
+      "amsgrad": false,
+      "foreach": false,
+      "maximize": false,
+      "capturable": false,
+      "differentiable": false,
+      "fused": null
+    }
+  ],
+  "resolved_optimizer_sha256": "4cf69c66dcc928811ef444b4cd30d567027490d1e2fa3fae6c5e54e9fd91214f",
+  "seed": 151902,
+  "optimizer_initialization": "fresh zero moments and counters for both; Q1 starts immutable T, never Q0",
+  "selected_domain": 29,
+  "comparison": "4000 designated q0 versus q1 package presentations; 8000 identical common sample identities/order",
+  "comparison_first_window_per_parent_task": 250,
+  "comparison_other_windows_per_parent_task": 750,
+  "rehearsal_goal_presentations": {
+    "2": 750,
+    "1": 750,
+    "0": 1500
+  },
+  "repair_gate": {
+    "preservation": 8,
+    "retain_exact_T_loading_success_ids": [
+      "init-demo_0001-loading-912171",
+      "init-demo_0001-loading-912172",
+      "init-demo_0002-loading-912172",
+      "init-demo_0003-loading-912172",
+      "init-demo_0005-loading-912171"
+    ],
+    "retain_exact_T_prior_success_ids": [
+      "retain-personal_demo_0002-goal0",
+      "retain-personal_demo_0002-goal1",
+      "retain-load01-training-demo_0002",
+      "retain-load01-training-demo_0003",
+      "retain-load01-training-demo_0005"
+    ]
+  },
+  "runtime": {
+    "O": 2,
+    "H": 30,
+    "refinements": 10,
+    "native_actions": 1436,
+    "settle_ticks": 24,
+    "harness": false,
+    "TTC": false
+  },
+  "storage": "atomic checkpoint rename; optimizer moments not archived; older FL redundant local copy offloaded only after fresh SHA verification; T and R partial preserved",
+  "source_manifest_sha256": {
+    "INIT02": "bed1651c6fa4467bad8df6c421e6e87fd474528253ad42a5294c95cf6e86673a",
+    "INIT06": "3d206f4b69e914c9b081335e97fe0dc36abfdd48509e89a4e46abc35c87bac54"
+  },
+  "training_cases": "unchanged existing source families plus two qualified q1 states; no new quarantined handover data",
+  "freeze_epoch": 1792099405.1572752,
+  "executed_optimizer_groups_sha256": "0a79c4203c71d89766b6aeccfd7d354ac384875ac96434d60e43e6f78b56ae01"
+}

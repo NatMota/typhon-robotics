@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "dataset_sha256": "70a2c408999ef681ea7173fa9c276e6ad075dd2e8b182017c24b35301e012e0f",
+  "sampling_sha256": "c7ad8301b62a156d28d63427f698c89ee8c34a8be0889d87fc4558eaffa5c90e",
+  "common_identical_presentations": 8000,
+  "counts": {
+    "Q0": {
+      "tasks": {
+        "loading": 6000,
+        "feeding": 6000
+      },
+      "episodes": {
+        "load01-training-demo_0005": 750,
+        "demo_0001-L-teacher": 1250,
+        "demo_0002-L-teacher": 1250,
+        "load01-training-demo_0001": 750,
+        "personal_demo_0005-goal1": 250,
+        "personal_demo_0001-goal0": 250,
+        "demo_0002-F-preserve": 1250,
+        "personal_demo_0001-goal2": 250,
+        "demo_0001-F-preserve": 1250,
+        "load01-training-demo_0002": 750,
+        "personal_demo_0013-goal1": 250,
+        "personal_demo_0012-goal2": 250,
+        "demo_0003-F-preserve": 250,
+        "personal_demo_0012-goal0": 250,
+        "demo_0003-L-teacher": 250,
+        "personal_demo_0013-goal0": 250,
+        "personal_demo_0002-goal0": 250,
+        "load01-training-demo_0003": 750,
+        "personal_demo_0005-goal0": 250,
+        "personal_demo_0003-goal2": 250,
+        "personal_demo_0002-goal1": 250,
+        "demo_0005-L-teacher": 250,
+        "personal_demo_0003-goal0": 250,
+        "demo_0005-F-preserve": 250
+      }
+    },
+    "Q1": {
+      "tasks": {
+        "loading": 6000,
+        "feeding": 6000
+      },
+      "episodes": {
+        "load01-training-demo_0005": 750,
+        "demo_0001-q1-L-teacher": 1000,
+        "demo_0002-q1-L-teacher": 1000,
+        "load01-training-demo_0001": 750,
+        "personal_demo_0005-goal1": 250,
+        "personal_demo_0001-goal0": 250,
+        "demo_0002-q1-F-preserve": 1000,
+        "personal_demo_0001-goal2": 250,
+        "demo_0001-F-preserve": 250,
+        "demo_0001-q1-F-preserve": 1000,
+        "demo_0001-L-teacher": 250,
+        "load01-training-demo_0002": 750,
+        "personal_demo_0013-goal1": 250,
+        "personal_demo_0012-goal2": 250,
+        "demo_0003-F-preserve": 250,
+        "personal_demo_0012-goal0": 250,
+        "demo_0003-L-teacher": 250,
+        "personal_demo_0013-goal0": 250,
+        "personal_demo_0002-goal0": 250,
+        "demo_0002-F-preserve": 250,
+        "load01-training-demo_0003": 750,
+        "personal_demo_0005-goal0": 250,
+        "personal_demo_0003-goal2": 250,
+        "personal_demo_0002-goal1": 250,
+        "demo_0005-L-teacher": 250,
+        "personal_demo_0003-goal0": 250,
+        "demo_0002-L-teacher": 250,
+        "demo_0005-F-preserve": 250
+      }
+    }
+  },
+  "varied_feeding_goal_counts": {
+    "2": 750,
+    "1": 750,
+    "0": 1500
+  },
+  "first_window_count_per_designated_pair": 250,
+  "full_windows_only": true,
+  "original_bank_unchanged": true,
+  "epoch": 1792099405.1576986
+}
