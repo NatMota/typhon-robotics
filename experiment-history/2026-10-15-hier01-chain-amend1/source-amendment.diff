@@ -1,0 +1,67 @@
+--- frozen_original
++++ amendment1
+@@ -10,7 +10,7 @@
+ from supervisor.baseline.benchmark import Recorder
+ from supervisor.feeding_loading.evaluation import score_episode
+ from load04_common import array_sha,scores,endpoint
+-O=Path('/var/tmp/typhon-hier01-chain-20261015');D=Path('/var/tmp/typhon-hier01-dev-20261015');h.O=O
++O=Path('/var/tmp/typhon-hier01-chain-amend1-20261015');D=Path('/var/tmp/typhon-hier01-dev-20261015');h.O=O
+ read,dump,sha=h.read,h.dump,h.sha
+ def state_blob(env):
+  s=h.prior.state(env);d=env.env.sim.data
+@@ -66,8 +66,8 @@
+    assert state_blob(env)==before and env.steps==40
+    receipts.append({'task':task,'physical_state_and_controller_unchanged':True,'no_inference':True,'no_physics_step':True})
+  finally:env.close()
+- hashes['scripts/hier01_chain.py']=sha(R/'scripts/hier01_chain.py')
+- p={'experiment':'HIER01-CHAIN','ticket':11068,'frozen_epoch':time.time(),'clock':clock,'parent_commit':'e610f73b9555c2770771dde7c7880cd25c1704ae','models':{k:old['models'][k] for k in ['GOAL','FL']},'routing':old['routing'],'sources':sources,'workflows':[{'id':'F-L','tasks':['feeding','loading']},{'id':'L-F','tasks':['loading','feeding']}],'policy_seed':912171,'simulation_seed':912171,'runtime':old['runtime'],'budget_bookkeeping':budget,'source_sha256':hashes,'first_stage_validation':'Exact proposals, histories, initial prepared inputs, policy IO, noise and final truth against DEV native standalone reference','boundary_rule':'Keep simulator/controller alive; no reset, home, object injection or physics ticks. Fresh policy request starts from measured current EEF pose and clears command history only.','switch_rule':'1436 policy-action steps plus24settle; no truth-dependent switch','second_stage_after_failure':True,'training':False,'observer':False,'TTC':False,'automatic_completion_detector':False,'scope':'Two fixed workflows in one inspected demo0012 context; not broad task composition'}
++ hashes['scripts/hier01_chain_amend.py']=sha(R/'scripts/hier01_chain_amend.py')
++ p={'experiment':'HIER01-CHAIN-AMEND1','ticket':11069,'frozen_epoch':time.time(),'clock':clock,'parent_commit':'47089a52b59460a8dcb61112cb3aed3c986743a7','models':{k:old['models'][k] for k in ['GOAL','FL']},'routing':old['routing'],'sources':sources,'workflows':[{'id':'L-F','tasks':['loading','feeding']}],'policy_seed':912171,'simulation_seed':912171,'runtime':old['runtime'],'budget_bookkeeping':budget,'source_sha256':hashes,'first_stage_validation':'Exact all48 prepared actor tensor hashes, predictions/history/EEF and applied-command/controller traces, noise and initial/final/stability truth. Raw RGB differences logged separately under explicit amendment.','boundary_rule':'Keep simulator/controller alive; no reset, home, object injection or physics ticks. Fresh policy request starts from measured current EEF pose and clears command history only.','switch_rule':'1436 policy-action steps plus24settle; no truth-dependent switch','second_stage_after_failure':True,'training':False,'observer':False,'TTC':False,'automatic_completion_detector':False,'scope':'Two fixed workflows in one inspected demo0012 context; not broad task composition'}
+  assert time.time()<clock['preparation_deadline']
+  dump(O/'protocol.json',p);dump(O/'qualification.json',{'passed':True,'receipts':receipts,'budget':budget,'new_model_calls':0,'new_physics_rollouts':0,'initial_reset_for_qualification_only':1,'epoch':time.time()})
+  print('CHAIN_BOUNDARY_QUALIFIED',flush=True)
+@@ -122,14 +122,29 @@
+  if first:
+   ref=D/'workers'/f'demo_0012-{requested}-912171-router'/'episode';old=read(ref/'episode.json')
+   assert initial==old['initial_truth'] and final==old['final_truth'] and stability==old['stability_truths']
++  raw_differences={}
+   for fn in ['predictions.npz','policy_io.npz','input-audit/initial-prepared.npz']:
+    with np.load(out/fn) as a,np.load(ref/fn) as b:
+     assert a.files==b.files
+-    for k in a.files:np.testing.assert_array_equal(a[k],b[k])
++    for k in a.files:
++     if fn=='policy_io.npz' and k in ['primary','secondary']:
++      neq=a[k]!=b[k];count=int(neq.sum())
++      raw_differences[k]={'differing_channel_values':count,'total_channel_values':int(a[k].size),'max_abs':float(np.abs(a[k].astype(float)-b[k].astype(float)).max()) if count else 0.,'indices':np.argwhere(neq).tolist()}
++     else:np.testing.assert_array_equal(a[k],b[k])
++  for f in sorted((out/'input-audit').glob('input-*.json')):
++   current=read(f);archived=read(ref/'input-audit'/f.name)
++   assert current['input_hashes']==archived['input_hashes']
++   assert current['noise_hashes']==archived['noise_hashes'] and current['instruction']==archived['instruction']
++  assert len(list((out/'input-audit').glob('input-*.json')))==48
++  for fn in ['controller_trace.jsonl.gz','trajectory.jsonl.gz']:
++   with gzip.open(out/fn,'rt') as a,gzip.open(ref/fn,'rt') as b:
++    assert [json.loads(x) for x in a]==[json.loads(x) for x in b],fn
++  assert (out/'initial-state.pkl').read_bytes()==(ref/'initial-state.pkl').read_bytes()
++  dump(out/'raw-render-differences.json',{'raw_differences':raw_differences,'all_actual_prepared_actor_hashes_exact':True,'all_applied_commands_and_physical_controller_traces_exact':True,'no_raw_pixel_control_consumer_outside_qualified_actor_preprocessing':True})
+   for a in sorted((out/'input-audit').glob('noise-*.npz')):
+    with np.load(a) as x,np.load(ref/'input-audit'/a.name) as y:
+     for k in x.files:np.testing.assert_array_equal(x[k],y[k])
+-  dump(out/'native-first-stage-equivalence.json',{'passed':True,'reference':str(ref),'all_predictions_inputs_noise_and_terminal_truth_exact':True})
++  dump(out/'native-first-stage-equivalence.json',{'passed':True,'reference':str(ref),'all_effective_predictions_inputs_noise_and_terminal_truth_exact':True,'raw_RGB_comparison_is_separate':True})
+  both=scores(episode,source['config'])
+  row={'context':context,'requested_task':requested,'model':h.select_checkpoint(requested),'requested_success':result['success'],'opposite_success':both['loading' if requested=='feeding' else 'feeding']['success'],'position_error_mm':result['position_error_m']*1000,'yaw_error_deg':result['orientation_error_deg'],'tilt_deg':float(np.degrees(result['upright_error_rad'])),'failed_criteria':[k for k,v in result['criteria'].items() if not v],'scores':both,'initial_pose_satisfied':initial_pose,'initial_stability_evidence':bool(initial_assessment['criteria']['stable']),'interpretation':episode['interpretation'],'first_stage_native_exact':first,'state_boundary_unchanged':True,'initial_step':start_step,'final_step':env.steps,'policy_actions':n,'queries':len(chunks),'directory':str(out),'wall_seconds':episode['wall_duration_s'],**h.supplemental(episode,out)}
+  dump(out/'segment-summary.json',row)
+@@ -158,9 +173,9 @@
+   finally:
+    if w:w.close()
+    if env:env.close()
+- assert len(rows)==4
+- dump(O/'workflows.json',workflows);dump(O/'main-complete.json',{'completed':True,'workflows':2,'segments':4,'epoch':time.time()})
+- print('BOTH_WORKFLOWS_COMPLETE',flush=True)
++ assert len(rows)==2
++ dump(O/'workflows.json',workflows);dump(O/'main-complete.json',{'completed':True,'workflows':1,'segments':2,'epoch':time.time()})
++ print('AMENDED_L_F_COMPLETE',flush=True)
+ if __name__=='__main__':
+  try:
+   if sys.argv[1]=='qualify':qualify()

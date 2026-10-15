@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "receipts": [
+    {
+      "task": "feeding",
+      "physical_state_and_controller_unchanged": true,
+      "no_inference": true,
+      "no_physics_step": true
+    },
+    {
+      "task": "loading",
+      "physical_state_and_controller_unchanged": true,
+      "no_inference": true,
+      "no_physics_step": true
+    }
+  ],
+  "budget": {
+    "original_max_steps": 1500,
+    "workflow_max_steps": 2960,
+    "physics_unchanged": true,
+    "per_segment_policy_actions": 1436,
+    "per_segment_settle_steps": 24
+  },
+  "new_model_calls": 0,
+  "new_physics_rollouts": 0,
+  "initial_reset_for_qualification_only": 1,
+  "epoch": 1792077595.3296912
+}
