@@ -1,0 +1,115 @@
+{
+  "new": "/var/tmp/typhon-hier01-chain-20261015/workers/L-F-stage1-loading/episode",
+  "reference": "/var/tmp/typhon-hier01-dev-20261015/workers/demo_0012-loading-912171-router/episode",
+  "arrays": {
+    "predictions.npz": {
+      "chunks": {
+        "mismatched": 0,
+        "elements": 28800,
+        "max_abs": 0.0
+      },
+      "histories": {
+        "mismatched": 0,
+        "elements": 960,
+        "max_abs": 0.0
+      }
+    },
+    "policy_io.npz": {
+      "model_actions": {
+        "mismatched": 0,
+        "elements": 28800,
+        "max_abs": 0.0
+      },
+      "primary": {
+        "mismatched": 0,
+        "elements": 37748736,
+        "max_abs": 0.0
+      },
+      "secondary": {
+        "mismatched": 6,
+        "elements": 37748736,
+        "max_abs": 1.0,
+        "indices": [
+          [
+            46,
+            478,
+            168,
+            0
+          ],
+          [
+            46,
+            478,
+            168,
+            1
+          ],
+          [
+            46,
+            478,
+            168,
+            2
+          ],
+          [
+            46,
+            479,
+            167,
+            0
+          ],
+          [
+            46,
+            479,
+            167,
+            1
+          ],
+          [
+            46,
+            479,
+            167,
+            2
+          ]
+        ]
+      },
+      "eef_position_m": {
+        "mismatched": 0,
+        "elements": 144,
+        "max_abs": 0.0
+      },
+      "eef_quat_xyzw": {
+        "mismatched": 0,
+        "elements": 192,
+        "max_abs": 0.0
+      }
+    },
+    "input-audit/initial-prepared.npz": {
+      "input_ids": {
+        "mismatched": 0,
+        "elements": 128,
+        "max_abs": 0.0
+      },
+      "image_input": {
+        "mismatched": 0,
+        "elements": 451584,
+        "max_abs": 0.0
+      },
+      "image_mask": {
+        "mismatched": 0,
+        "elements": 3,
+        "max_abs": 0.0
+      },
+      "proprio": {
+        "mismatched": 0,
+        "elements": 20,
+        "max_abs": 0.0
+      },
+      "domain_id": {
+        "mismatched": 0,
+        "elements": 1,
+        "max_abs": 0.0
+      }
+    }
+  },
+  "prepared_query_differences": [],
+  "noise_exact": true,
+  "initial_final_stability_truth_exact": true,
+  "processed_all_queries_exact": true,
+  "epoch": 1792077226.9721332
+}

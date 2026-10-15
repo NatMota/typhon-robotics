@@ -1,3 +1,3 @@
-# HIER01-CHAIN frozen protocol
+# HIER01-CHAIN partial record
 
-Two fixed explicit-task workflows retain one simulator per workflow. No physics reset, home motion, object injection or repeated warmup. See protocol.json. Results pending.
+See [REPORT.md](REPORT.md). Three segments executed, one complete workflow, reverse second stage not executed. Original technical stop retained.

@@ -1,0 +1,579 @@
+{
+  "validated": true,
+  "planned_segments": 4,
+  "executed_segments": 3,
+  "complete_workflows": 1,
+  "complete_workflow_successes": 0,
+  "L_F_second_stage": "not executed after technical raw-image gate stop",
+  "no_frozen_gate_relaxation": true,
+  "audit_processed_inputs_and_outputs_exact": true,
+  "rows": [
+    {
+      "context": "F-L-stage1-feeding",
+      "task": "feeding",
+      "success": true,
+      "scores": {
+        "feeding": {
+          "task": "feeding",
+          "success": true,
+          "criteria": {
+            "position": true,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": true,
+            "placement_height": true,
+            "released": true,
+            "stable": true
+          },
+          "position_error_m": 0.0045527490950389125,
+          "orientation_error_rad": 0.02492593046093513,
+          "orientation_error_deg": 1.4281506158481616,
+          "upright_error_rad": 0.0,
+          "height_error_m": 0.00021551084043058832,
+          "target_height_m": 0.8150000000000001,
+          "footprint_inside_target": true,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "maximum_linear_velocity_m_s": 2.172771352752253e-14,
+          "maximum_angular_velocity_rad_s": 1.1617805971784428e-15,
+          "stability_sample_count": 12,
+          "stability_duration_s": 1.0999999999999943,
+          "grasp_attempt_count": 1,
+          "successful_grasp_count": 1,
+          "failed_grasp_count": 0,
+          "retries": 0,
+          "recovered_after_failed_grasp": false,
+          "successful_recovery": false,
+          "controller_exceptions": [],
+          "control_steps": 1460,
+          "sim_time_s": 73.0,
+          "attempts": [
+            {
+              "start_step": 123,
+              "initial_height_m": 0.8147844891595659,
+              "maximum_lift_m": 0.16540754442475925,
+              "any_contact": true,
+              "verified_lift": true,
+              "end_step": 217
+            }
+          ]
+        },
+        "loading": {
+          "task": "loading",
+          "success": false,
+          "criteria": {
+            "position": false,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": false,
+            "placement_height": false,
+            "released": true,
+            "stable": true,
+            "seated": false
+          },
+          "position_error_m": 0.2662119038989242,
+          "orientation_error_rad": 0.02492593046093513,
+          "orientation_error_deg": 1.4281506158481616,
+          "upright_error_rad": 0.0,
+          "height_error_m": 0.004215510840430592,
+          "target_height_m": 0.8190000000000001,
+          "footprint_inside_target": false,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "maximum_linear_velocity_m_s": 2.172771352752253e-14,
+          "maximum_angular_velocity_rad_s": 1.1617805971784428e-15,
+          "stability_sample_count": 12,
+          "stability_duration_s": 1.0999999999999943,
+          "grasp_attempt_count": 1,
+          "successful_grasp_count": 1,
+          "failed_grasp_count": 0,
+          "retries": 0,
+          "recovered_after_failed_grasp": false,
+          "successful_recovery": false,
+          "controller_exceptions": [],
+          "control_steps": 1460,
+          "sim_time_s": 73.0,
+          "attempts": [
+            {
+              "start_step": 123,
+              "initial_height_m": 0.8147844891595659,
+              "maximum_lift_m": 0.16540754442475925,
+              "any_contact": true,
+              "verified_lift": true,
+              "end_step": 217
+            }
+          ]
+        }
+      },
+      "initial_truth": {
+        "object_position_m": [
+          -0.16933751319902174,
+          -0.15580803088202866,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9871171157742684,
+          4.438168936477711e-17,
+          6.83715749969958e-18,
+          0.15999937420343133
+        ],
+        "object_yaw_rad": 0.3213800379760529,
+        "object_linear_velocity_m_s": [
+          -3.378565081687452e-18,
+          1.285924403629357e-17,
+          2.167433110549448e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -6.606070705442578e-16,
+          -2.312185408853623e-16,
+          7.598006523482491e-31
+        ],
+        "eef_position_m": [
+          -0.25005520706281603,
+          -0.24988750754560166,
+          1.0799217278777893
+        ],
+        "gripper_joint_position_m": [
+          0.03959546089013839,
+          -0.03976879892039342
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 40,
+        "sim_time_s": 2.0
+      },
+      "final_truth": {
+        "object_position_m": [
+          0.1273654519351832,
+          -0.11610999209965896,
+          0.8147844891595695
+        ],
+        "object_quat_wxyz": [
+          0.9999223382540774,
+          4.663212600250298e-17,
+          -3.475584665818913e-18,
+          0.0124626425969174
+        ],
+        "object_yaw_rad": 0.02492593046093513,
+        "object_linear_velocity_m_s": [
+          3.165220200139951e-19,
+          1.6777169509421303e-17,
+          -2.1724930998209264e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -1.1379724356896723e-15,
+          6.220357898484202e-17,
+          -5.6682078233757525e-31
+        ],
+        "eef_position_m": [
+          -0.24740743360325923,
+          -0.2452858094636376,
+          1.0769629111626249
+        ],
+        "gripper_joint_position_m": [
+          0.039997161547853745,
+          -0.04000011407659002
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 1500,
+        "sim_time_s": 75.0
+      },
+      "initial_pose_satisfied": false,
+      "native_render_gate_interrupted_after_this_stage": false,
+      "minimum_eef_object_distance_mm": 3.4019382619859004,
+      "maximum_lift_above_initial_mm": 165.40754442475924,
+      "supported_lift_10mm_bilateral_steps": 80,
+      "longest_supported_lift_s": 4.0,
+      "supported_lift_10mm_3steps": true,
+      "legacy_height_only_70mm": true,
+      "horizontal_transport_while_supported_mm": 302.9520517889339,
+      "object_path_m": 0.6685166377484161,
+      "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+      "release_and_stability": {
+        "position": true,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": true,
+        "placement_height": true,
+        "released": true,
+        "stable": true
+      }
+    },
+    {
+      "context": "F-L-stage2-loading",
+      "task": "loading",
+      "success": false,
+      "scores": {
+        "feeding": {
+          "task": "feeding",
+          "success": true,
+          "criteria": {
+            "position": true,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": true,
+            "placement_height": true,
+            "released": true,
+            "stable": true
+          },
+          "position_error_m": 0.0045527490950389125,
+          "orientation_error_rad": 0.02492593046093513,
+          "orientation_error_deg": 1.4281506158481616,
+          "upright_error_rad": 0.0,
+          "height_error_m": 0.00021551084043058832,
+          "target_height_m": 0.8150000000000001,
+          "footprint_inside_target": true,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "maximum_linear_velocity_m_s": 2.17249385978435e-14,
+          "maximum_angular_velocity_rad_s": 1.5171132023337587e-15,
+          "stability_sample_count": 12,
+          "stability_duration_s": 1.0999999999999943,
+          "grasp_attempt_count": 0,
+          "successful_grasp_count": 0,
+          "failed_grasp_count": 0,
+          "retries": 0,
+          "recovered_after_failed_grasp": false,
+          "successful_recovery": false,
+          "controller_exceptions": [],
+          "control_steps": 1460,
+          "sim_time_s": 73.0,
+          "attempts": []
+        },
+        "loading": {
+          "task": "loading",
+          "success": false,
+          "criteria": {
+            "position": false,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": false,
+            "placement_height": false,
+            "released": true,
+            "stable": true,
+            "seated": false
+          },
+          "position_error_m": 0.2662119038989242,
+          "orientation_error_rad": 0.02492593046093513,
+          "orientation_error_deg": 1.4281506158481616,
+          "upright_error_rad": 0.0,
+          "height_error_m": 0.004215510840430592,
+          "target_height_m": 0.8190000000000001,
+          "footprint_inside_target": false,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "maximum_linear_velocity_m_s": 2.17249385978435e-14,
+          "maximum_angular_velocity_rad_s": 1.5171132023337587e-15,
+          "stability_sample_count": 12,
+          "stability_duration_s": 1.0999999999999943,
+          "grasp_attempt_count": 0,
+          "successful_grasp_count": 0,
+          "failed_grasp_count": 0,
+          "retries": 0,
+          "recovered_after_failed_grasp": false,
+          "successful_recovery": false,
+          "controller_exceptions": [],
+          "control_steps": 1460,
+          "sim_time_s": 73.0,
+          "attempts": []
+        }
+      },
+      "initial_truth": {
+        "object_position_m": [
+          0.1273654519351832,
+          -0.11610999209965896,
+          0.8147844891595695
+        ],
+        "object_quat_wxyz": [
+          0.9999223382540774,
+          4.663212600250298e-17,
+          -3.475584665818913e-18,
+          0.0124626425969174
+        ],
+        "object_yaw_rad": 0.02492593046093513,
+        "object_linear_velocity_m_s": [
+          3.165220200139951e-19,
+          1.6777169509421303e-17,
+          -2.1724930998209264e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -1.1379724356896723e-15,
+          6.220357898484202e-17,
+          -5.6682078233757525e-31
+        ],
+        "eef_position_m": [
+          -0.24740743360325923,
+          -0.2452858094636376,
+          1.0769629111626249
+        ],
+        "gripper_joint_position_m": [
+          0.039997161547853745,
+          -0.04000011407659002
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 1500,
+        "sim_time_s": 75.0
+      },
+      "final_truth": {
+        "object_position_m": [
+          0.1273654519351832,
+          -0.11610999209965896,
+          0.8147844891595695
+        ],
+        "object_quat_wxyz": [
+          0.9999223382540774,
+          4.313606968818659e-17,
+          -4.23090050121373e-18,
+          0.0124626425969174
+        ],
+        "object_yaw_rad": 0.02492593046093513,
+        "object_linear_velocity_m_s": [
+          5.293666821398639e-19,
+          1.562121490042441e-17,
+          -2.1716604325524273e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -8.997457309899008e-16,
+          1.420411902257639e-16,
+          -1.5681745814083764e-31
+        ],
+        "eef_position_m": [
+          -0.2442189003407719,
+          -0.24600304987218183,
+          1.0731490804111001
+        ],
+        "gripper_joint_position_m": [
+          0.040000131031416884,
+          -0.03999689992627824
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 2960,
+        "sim_time_s": 148.0
+      },
+      "initial_pose_satisfied": false,
+      "native_render_gate_interrupted_after_this_stage": false,
+      "minimum_eef_object_distance_mm": 451.73231778738386,
+      "maximum_lift_above_initial_mm": 0.0,
+      "supported_lift_10mm_bilateral_steps": 0,
+      "longest_supported_lift_s": 0.0,
+      "supported_lift_10mm_3steps": false,
+      "legacy_height_only_70mm": false,
+      "horizontal_transport_while_supported_mm": 0.0,
+      "object_path_m": 0.0,
+      "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+      "release_and_stability": {
+        "position": false,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": false,
+        "placement_height": false,
+        "released": true,
+        "stable": true,
+        "seated": false
+      }
+    },
+    {
+      "context": "L-F-stage1-loading",
+      "task": "loading",
+      "success": true,
+      "scores": {
+        "feeding": {
+          "task": "feeding",
+          "success": false,
+          "criteria": {
+            "position": false,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": false,
+            "placement_height": false,
+            "released": true,
+            "stable": true
+          },
+          "position_error_m": 0.27474440843829745,
+          "orientation_error_rad": 0.0017025262818902713,
+          "orientation_error_deg": 0.09754757046241283,
+          "upright_error_rad": 0.0,
+          "height_error_m": 0.0037844891595694152,
+          "target_height_m": 0.8150000000000001,
+          "footprint_inside_target": false,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "maximum_linear_velocity_m_s": 2.1491924088357602e-14,
+          "maximum_angular_velocity_rad_s": 1.111912796471961e-15,
+          "stability_sample_count": 12,
+          "stability_duration_s": 1.0999999999999943,
+          "grasp_attempt_count": 1,
+          "successful_grasp_count": 1,
+          "failed_grasp_count": 0,
+          "retries": 0,
+          "recovered_after_failed_grasp": false,
+          "successful_recovery": false,
+          "controller_exceptions": [],
+          "control_steps": 1460,
+          "sim_time_s": 73.0,
+          "attempts": [
+            {
+              "start_step": 123,
+              "initial_height_m": 0.8147844891595659,
+              "maximum_lift_m": 0.16346107167732715,
+              "any_contact": true,
+              "verified_lift": true,
+              "end_step": 213
+            }
+          ]
+        },
+        "loading": {
+          "task": "loading",
+          "success": true,
+          "criteria": {
+            "position": true,
+            "orientation": true,
+            "marked_face_up": true,
+            "footprint_inside_target": true,
+            "placement_height": true,
+            "released": true,
+            "stable": true,
+            "seated": true
+          },
+          "position_error_m": 0.005353969185443213,
+          "orientation_error_rad": 0.0017025262818902713,
+          "orientation_error_deg": 0.09754757046241283,
+          "upright_error_rad": 0.0,
+          "height_error_m": 0.00021551084043058832,
+          "target_height_m": 0.8190000000000001,
+          "footprint_inside_target": true,
+          "object_movement_after_release_m": 0.0,
+          "object_yaw_movement_after_release_rad": 0.0,
+          "maximum_linear_velocity_m_s": 2.1491924088357602e-14,
+          "maximum_angular_velocity_rad_s": 1.111912796471961e-15,
+          "stability_sample_count": 12,
+          "stability_duration_s": 1.0999999999999943,
+          "grasp_attempt_count": 1,
+          "successful_grasp_count": 1,
+          "failed_grasp_count": 0,
+          "retries": 0,
+          "recovered_after_failed_grasp": false,
+          "successful_recovery": false,
+          "controller_exceptions": [],
+          "control_steps": 1460,
+          "sim_time_s": 73.0,
+          "attempts": [
+            {
+              "start_step": 123,
+              "initial_height_m": 0.8147844891595659,
+              "maximum_lift_m": 0.16346107167732715,
+              "any_contact": true,
+              "verified_lift": true,
+              "end_step": 213
+            }
+          ]
+        }
+      },
+      "initial_truth": {
+        "object_position_m": [
+          -0.16933751319902174,
+          -0.15580803088202866,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9871171157742684,
+          4.438168936477711e-17,
+          6.83715749969958e-18,
+          0.15999937420343133
+        ],
+        "object_yaw_rad": 0.3213800379760529,
+        "object_linear_velocity_m_s": [
+          -3.378565081687452e-18,
+          1.285924403629357e-17,
+          2.167433110549448e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -6.606070705442578e-16,
+          -2.312185408853623e-16,
+          7.598006523482491e-31
+        ],
+        "eef_position_m": [
+          -0.25005520706281603,
+          -0.24988750754560166,
+          1.0799217278777893
+        ],
+        "gripper_joint_position_m": [
+          0.03959546089013839,
+          -0.03976879892039342
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 40,
+        "sim_time_s": 2.0
+      },
+      "final_truth": {
+        "object_position_m": [
+          0.11732384913812345,
+          0.15463715458046773,
+          0.8187844891595695
+        ],
+        "object_quat_wxyz": [
+          0.9999996376755543,
+          4.1445337033463724e-17,
+          -5.960949998609501e-18,
+          0.0008512630381339845
+        ],
+        "object_yaw_rad": 0.0017025262818902713,
+        "object_linear_velocity_m_s": [
+          1.893714615850622e-18,
+          1.4028792290779098e-17,
+          -2.149191942629968e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -1.110525266285119e-15,
+          -5.553107148670742e-17,
+          8.600200574481266e-32
+        ],
+        "eef_position_m": [
+          -0.2492223824597134,
+          -0.2527595542576878,
+          1.08331600668923
+        ],
+        "gripper_joint_position_m": [
+          0.040000094340424196,
+          -0.039997445858422166
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 1500,
+        "sim_time_s": 75.0
+      },
+      "initial_pose_satisfied": false,
+      "native_render_gate_interrupted_after_this_stage": true,
+      "minimum_eef_object_distance_mm": 6.739413042178759,
+      "maximum_lift_above_initial_mm": 163.46107167732714,
+      "supported_lift_10mm_bilateral_steps": 71,
+      "longest_supported_lift_s": 3.45,
+      "supported_lift_10mm_3steps": true,
+      "legacy_height_only_70mm": true,
+      "horizontal_transport_while_supported_mm": 430.3191234274135,
+      "object_path_m": 0.8057998133994669,
+      "diagnostic_definition": "supported lift = >=10mm above initial resting centre with simultaneous bilateral contacts for >=3 consecutive20Hz steps; supplemental, strict score unchanged; visual inspection required",
+      "release_and_stability": {
+        "position": true,
+        "orientation": true,
+        "marked_face_up": true,
+        "footprint_inside_target": true,
+        "placement_height": true,
+        "released": true,
+        "stable": true,
+        "seated": true
+      }
+    }
+  ],
+  "epoch": 1792077227.2158666
+}
