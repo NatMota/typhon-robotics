@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "episodes": 12,
+  "strict_counts": [
+    {
+      "model": "GOAL",
+      "goal": "G0",
+      "strict_successes": 2,
+      "trials": 2
+    },
+    {
+      "model": "GOAL",
+      "goal": "G1",
+      "strict_successes": 2,
+      "trials": 2
+    },
+    {
+      "model": "FL",
+      "goal": "G0",
+      "strict_successes": 2,
+      "trials": 2
+    },
+    {
+      "model": "FL",
+      "goal": "G1",
+      "strict_successes": 2,
+      "trials": 2
+    },
+    {
+      "model": "B",
+      "goal": "G0",
+      "strict_successes": 2,
+      "trials": 2
+    },
+    {
+      "model": "B",
+      "goal": "G1",
+      "strict_successes": 0,
+      "trials": 2
+    }
+  ],
+  "all_scores_recomputed_exact": true,
+  "same_goal_initial_prepared_tensors_exact": true,
+  "same_goal_initial_available_state_exact": true,
+  "all_models_native_interfaces_verified": true,
+  "paired_noise_array_checks": 1440,
+  "initial_images_match_training": true,
+  "original_physical_goal_scorers": true,
+  "no_truth_for_control": true,
+  "frozen_order_completed": true,
+  "checked_epoch": 1792069265.6668408
+}
