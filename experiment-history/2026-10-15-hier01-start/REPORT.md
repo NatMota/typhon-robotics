@@ -80,6 +80,8 @@ TYPHON_START_ANALYSIS_COPY=/var/tmp/typhon-hier01-start-analysis-copy \
   .venv-sim/bin/python scripts/hier01_start_analyse.py --reproduce
 ```
 
+The analysis-only mode was tested in a separate temporary input tree: both CSV result tables reproduced byte-for-byte and all86 source inputs retained their original hashes. The initial packaging attempt omitted its control-gate input; that preparation error was preserved and corrected before the successful verification. No new inference or physics was used.
+
 The analysis-only mode rejects the original runtime directory. It reads the copied episode archives, writes recomputed results under that copy, and performs no simulation or inference. Paths/timestamps in receipts naturally differ.
 
 Main artifacts: comparisons.csv, paired-effects.csv, diagnostics.json, saved-trace-followup.json, scene/initial-final contact sheets, and two marker-pair videos in the separately verified runtime archive. Native videos and complete actor/controller traces for all ten trials are preserved there. Ticket#11071 follows#11070 and informs blocked hierarchy#11000; the overall research programme remains active.
