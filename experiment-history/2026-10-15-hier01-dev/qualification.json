@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "receipts": [
+    {
+      "family": "demo_0012",
+      "seed": 912171,
+      "LOAD02_LOAD03_visible_arrays_exact": true,
+      "current_reset_matches_archive_exact": true,
+      "full_state_sha256": "51e6739b00ceb17b184ff369419ea23e7c69b24ed2d6395484253a08c746848e"
+    },
+    {
+      "family": "demo_0012",
+      "seed": 912172,
+      "LOAD02_LOAD03_visible_arrays_exact": true,
+      "current_reset_matches_archive_exact": true,
+      "full_state_sha256": "33d72c44583be19d91c08f628b99ca35f754e8d29bcc7f00e93cdc545f0a4560"
+    },
+    {
+      "family": "demo_0013",
+      "seed": 912171,
+      "LOAD02_LOAD03_visible_arrays_exact": true,
+      "current_reset_matches_archive_exact": true,
+      "full_state_sha256": "9ed755c6d9b6eb72aab20b2c0e8bba99d136e7a9378464f56f430addb67597a7"
+    },
+    {
+      "family": "demo_0013",
+      "seed": 912172,
+      "LOAD02_LOAD03_visible_arrays_exact": true,
+      "current_reset_matches_archive_exact": true,
+      "full_state_sha256": "2908d2314c380fb0a00d5c0e259ed380c8c95dc63834eba3f2aa7a75668a0b65"
+    }
+  ],
+  "dispatcher_reuse": {
+    "source": "/var/tmp/typhon-hier01-task-20261015/qualification.json",
+    "source_sha256": "51ae15ce56447e94bbe71944bcc7a01fec9b751d125f2a7f03d23accbc3d7c0e",
+    "original_protocol_sha256": "54ee000ed8009365f2b606312296d0cd09645f140b2193a458940f1f4ed46b9b",
+    "executed_actor_dispatcher_physics_unchanged": true,
+    "model_and_native_configuration_hashes_unchanged": true,
+    "new_model_calls": 0
+  },
+  "fresh_model_calls": 0,
+  "physics_resets": 4,
+  "epoch": 1792075351.1492982
+}
