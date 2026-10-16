@@ -1,0 +1,429 @@
+{
+  "epoch": 1792120414.6376858,
+  "cases": [
+    {
+      "id": "init-demo_0001-loading-912171",
+      "threshold_after_action": 146,
+      "first_override_would_be_action": 147,
+      "target_pose": [
+        0.1285593516834088,
+        0.15216441357467267,
+        0.8534076712131248,
+        -0.014595874639436212,
+        0.9998906532876063,
+        -0.0023752708464548243,
+        0.999877678623912,
+        0.014582250200231317,
+        -0.005655596233389236
+      ],
+      "rise_m": 0.02256978349342631,
+      "wall_top_m": 0.8240000000000001,
+      "sampled_current_aperture_vertical_corridor_clear": true,
+      "intersections": [],
+      "fully_open_target_min_clearance_m": 0.020000000000000018,
+      "geometry": {
+        "wall_top_m": 0.8240000000000001,
+        "open_joint_positions_m": [
+          0.04,
+          -0.04
+        ],
+        "geoms": [
+          {
+            "name": "gripper0_hand_collision",
+            "vertices": 102,
+            "open_local_min": [
+              -0.10042587867547363,
+              -0.031635916683445675,
+              -0.12292480131995981
+            ],
+            "open_local_max": [
+              0.10398971979103337,
+              0.031615784150644505,
+              -0.03103784941140965
+            ]
+          },
+          {
+            "name": "gripper0_finger1_collision",
+            "vertices": 18,
+            "open_local_min": [
+              -0.06640338193318768,
+              -0.010479453077633148,
+              -0.044468304182396355
+            ],
+            "open_local_max": [
+              -0.039867357157797295,
+              0.01049481821573727,
+              0.009249034596525266
+            ]
+          },
+          {
+            "name": "gripper0_finger1_pad_collision",
+            "vertices": 8,
+            "open_local_min": [
+              -0.04750000000000005,
+              -0.007999999999999997,
+              -0.011599999999999838
+            ],
+            "open_local_max": [
+              -0.03950000000000001,
+              0.008000000000000042,
+              0.004400000000000183
+            ]
+          },
+          {
+            "name": "gripper0_finger2_collision",
+            "vertices": 18,
+            "open_local_min": [
+              0.039867357157797254,
+              -0.010494818215737186,
+              -0.044468304182396355
+            ],
+            "open_local_max": [
+              0.06640338193318768,
+              0.010479453077633224,
+              0.009249034596525266
+            ]
+          },
+          {
+            "name": "gripper0_finger2_pad_collision",
+            "vertices": 8,
+            "open_local_min": [
+              0.03949999999999997,
+              -0.008,
+              -0.011599999999999838
+            ],
+            "open_local_max": [
+              0.04750000000000001,
+              0.008000000000000035,
+              0.004400000000000183
+            ]
+          }
+        ],
+        "geometry_source": "existing compiled collision vertices and detached robot-only kinematics",
+        "no_live_forward": true,
+        "no_object_state_read": true
+      },
+      "FK_vs_logged_eef_mm": 0.02351516553669935
+    },
+    {
+      "id": "init-demo_0001-loading-912172",
+      "threshold_after_action": 146,
+      "first_override_would_be_action": 147,
+      "target_pose": [
+        0.12850887854300486,
+        0.1522996171421362,
+        0.8534035685011016,
+        -0.015630260697520864,
+        0.9998751603386804,
+        -0.002314884063115333,
+        0.9998629278032707,
+        0.015617341444523385,
+        -0.005497658672261931
+      ],
+      "rise_m": 0.02232373677911048,
+      "wall_top_m": 0.8240000000000001,
+      "sampled_current_aperture_vertical_corridor_clear": true,
+      "intersections": [],
+      "fully_open_target_min_clearance_m": 0.020000000000000018,
+      "geometry": {
+        "wall_top_m": 0.8240000000000001,
+        "open_joint_positions_m": [
+          0.04,
+          -0.04
+        ],
+        "geoms": [
+          {
+            "name": "gripper0_hand_collision",
+            "vertices": 102,
+            "open_local_min": [
+              -0.10042587867547363,
+              -0.031635916683445675,
+              -0.12292480131995981
+            ],
+            "open_local_max": [
+              0.10398971979103337,
+              0.031615784150644505,
+              -0.03103784941140965
+            ]
+          },
+          {
+            "name": "gripper0_finger1_collision",
+            "vertices": 18,
+            "open_local_min": [
+              -0.06640338193318768,
+              -0.010479453077633148,
+              -0.044468304182396355
+            ],
+            "open_local_max": [
+              -0.039867357157797295,
+              0.01049481821573727,
+              0.009249034596525266
+            ]
+          },
+          {
+            "name": "gripper0_finger1_pad_collision",
+            "vertices": 8,
+            "open_local_min": [
+              -0.04750000000000005,
+              -0.007999999999999997,
+              -0.011599999999999838
+            ],
+            "open_local_max": [
+              -0.03950000000000001,
+              0.008000000000000042,
+              0.004400000000000183
+            ]
+          },
+          {
+            "name": "gripper0_finger2_collision",
+            "vertices": 18,
+            "open_local_min": [
+              0.039867357157797254,
+              -0.010494818215737186,
+              -0.044468304182396355
+            ],
+            "open_local_max": [
+              0.06640338193318768,
+              0.010479453077633224,
+              0.009249034596525266
+            ]
+          },
+          {
+            "name": "gripper0_finger2_pad_collision",
+            "vertices": 8,
+            "open_local_min": [
+              0.03949999999999997,
+              -0.008,
+              -0.011599999999999838
+            ],
+            "open_local_max": [
+              0.04750000000000001,
+              0.008000000000000035,
+              0.004400000000000183
+            ]
+          }
+        ],
+        "geometry_source": "existing compiled collision vertices and detached robot-only kinematics",
+        "no_live_forward": true,
+        "no_object_state_read": true
+      },
+      "FK_vs_logged_eef_mm": 0.021430495975565858
+    },
+    {
+      "id": "init-demo_0003-loading-912172",
+      "threshold_after_action": 146,
+      "first_override_would_be_action": 147,
+      "target_pose": [
+        0.12638754498859175,
+        0.15483558131820402,
+        0.8533514864665169,
+        -0.015062642483554215,
+        0.9998850371479701,
+        -0.0017404852815494083,
+        0.9998854483497647,
+        0.015060016803015882,
+        -0.001511976283928074
+      ],
+      "rise_m": 0.016448272444230305,
+      "wall_top_m": 0.8240000000000001,
+      "sampled_current_aperture_vertical_corridor_clear": true,
+      "intersections": [],
+      "fully_open_target_min_clearance_m": 0.020000000000000018,
+      "geometry": {
+        "wall_top_m": 0.8240000000000001,
+        "open_joint_positions_m": [
+          0.04,
+          -0.04
+        ],
+        "geoms": [
+          {
+            "name": "gripper0_hand_collision",
+            "vertices": 102,
+            "open_local_min": [
+              -0.10042587867547363,
+              -0.031635916683445675,
+              -0.12292480131995981
+            ],
+            "open_local_max": [
+              0.10398971979103337,
+              0.031615784150644505,
+              -0.03103784941140965
+            ]
+          },
+          {
+            "name": "gripper0_finger1_collision",
+            "vertices": 18,
+            "open_local_min": [
+              -0.06640338193318768,
+              -0.010479453077633148,
+              -0.044468304182396355
+            ],
+            "open_local_max": [
+              -0.039867357157797295,
+              0.01049481821573727,
+              0.009249034596525266
+            ]
+          },
+          {
+            "name": "gripper0_finger1_pad_collision",
+            "vertices": 8,
+            "open_local_min": [
+              -0.04750000000000005,
+              -0.007999999999999997,
+              -0.011599999999999838
+            ],
+            "open_local_max": [
+              -0.03950000000000001,
+              0.008000000000000042,
+              0.004400000000000183
+            ]
+          },
+          {
+            "name": "gripper0_finger2_collision",
+            "vertices": 18,
+            "open_local_min": [
+              0.039867357157797254,
+              -0.010494818215737186,
+              -0.044468304182396355
+            ],
+            "open_local_max": [
+              0.06640338193318768,
+              0.010479453077633224,
+              0.009249034596525266
+            ]
+          },
+          {
+            "name": "gripper0_finger2_pad_collision",
+            "vertices": 8,
+            "open_local_min": [
+              0.03949999999999997,
+              -0.008,
+              -0.011599999999999838
+            ],
+            "open_local_max": [
+              0.04750000000000001,
+              0.008000000000000035,
+              0.004400000000000183
+            ]
+          }
+        ],
+        "geometry_source": "existing compiled collision vertices and detached robot-only kinematics",
+        "no_live_forward": true,
+        "no_object_state_read": true
+      },
+      "FK_vs_logged_eef_mm": 0.050566562731686866
+    },
+    {
+      "id": "init-demo_0005-loading-912172",
+      "threshold_after_action": 146,
+      "first_override_would_be_action": 147,
+      "target_pose": [
+        0.12624139961853093,
+        0.15374288073181683,
+        0.8533832156261157,
+        -0.01742967278119144,
+        0.9998456531350551,
+        -0.0022082603278407707,
+        0.9998445028555508,
+        0.017423650156992553,
+        -0.0027178161717120674
+      ],
+      "rise_m": 0.01873584981691878,
+      "wall_top_m": 0.8240000000000001,
+      "sampled_current_aperture_vertical_corridor_clear": true,
+      "intersections": [],
+      "fully_open_target_min_clearance_m": 0.020000000000000018,
+      "geometry": {
+        "wall_top_m": 0.8240000000000001,
+        "open_joint_positions_m": [
+          0.04,
+          -0.04
+        ],
+        "geoms": [
+          {
+            "name": "gripper0_hand_collision",
+            "vertices": 102,
+            "open_local_min": [
+              -0.10042587867547363,
+              -0.031635916683445675,
+              -0.12292480131995981
+            ],
+            "open_local_max": [
+              0.10398971979103337,
+              0.031615784150644505,
+              -0.03103784941140965
+            ]
+          },
+          {
+            "name": "gripper0_finger1_collision",
+            "vertices": 18,
+            "open_local_min": [
+              -0.06640338193318768,
+              -0.010479453077633148,
+              -0.044468304182396355
+            ],
+            "open_local_max": [
+              -0.039867357157797295,
+              0.01049481821573727,
+              0.009249034596525266
+            ]
+          },
+          {
+            "name": "gripper0_finger1_pad_collision",
+            "vertices": 8,
+            "open_local_min": [
+              -0.04750000000000005,
+              -0.007999999999999997,
+              -0.011599999999999838
+            ],
+            "open_local_max": [
+              -0.03950000000000001,
+              0.008000000000000042,
+              0.004400000000000183
+            ]
+          },
+          {
+            "name": "gripper0_finger2_collision",
+            "vertices": 18,
+            "open_local_min": [
+              0.039867357157797254,
+              -0.010494818215737186,
+              -0.044468304182396355
+            ],
+            "open_local_max": [
+              0.06640338193318768,
+              0.010479453077633224,
+              0.009249034596525266
+            ]
+          },
+          {
+            "name": "gripper0_finger2_pad_collision",
+            "vertices": 8,
+            "open_local_min": [
+              0.03949999999999997,
+              -0.008,
+              -0.011599999999999838
+            ],
+            "open_local_max": [
+              0.04750000000000001,
+              0.008000000000000035,
+              0.004400000000000183
+            ]
+          }
+        ],
+        "geometry_source": "existing compiled collision vertices and detached robot-only kinematics",
+        "no_live_forward": true,
+        "no_object_state_read": true
+      },
+      "FK_vs_logged_eef_mm": 0.03316600278012078
+    }
+  ],
+  "source_xml": "/var/tmp/typhon-data07r-20261014/native/demo_0001/boundaries/014/model.xml",
+  "source_xml_sha256": "d1e5a9fca6b8f8887d982adfcb68e6df6e853b4e0dab5a3f5d73c7241dcb7567",
+  "helper_sha256": "c994c610a5be4da76d8d09531895a6a69bcc3458d65ff62aab8ef83a5cbedd1e",
+  "steps": 0,
+  "inference_calls": 0,
+  "renderer_calls": 0,
+  "method": "Existing CTRL03 convex SAT reused on11 vertical samples at measured aperture; recorded geom centres and wrist orientation; detached FK supplies local geom rotations. Not continuous/opening-dynamics feasibility proof.",
+  "selected_eligibility_geometry_passed": true
+}
