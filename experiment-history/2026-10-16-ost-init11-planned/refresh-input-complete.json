@@ -523,16 +523,27 @@
       "projectId": 16,
       "columnId": 71,
       "title": "INIT11 \u2014 Planned only: hand back to Q1 after the fixed lower acquisition segment",
-      "description": "Prepared only. ZERO executions. Requires a verified future compute window and explicit protocol activation. Not authorized for tonight's preservation block.\n\nQuestion: Does the already-qualified 5 mm lower acquisition segment enable the unchanged Q1 policy to finish the original loading task after target modification stops?\n\nFixed future panel: init-demo_0003-loading seed 912172, original branch tick 403/query 2; init-demo_0005-loading seed 912171, original branch tick 396/query 2. Native versus D5, four executions total. Q1 SHA-256 26d573eb90f791d9af86bbff30e138f51c5aa658ac7abefe76787ba352363a7a.\n\nFirst 60 archived targets: N unchanged; D5 world-Z minus 0.005 m exactly as INIT10. Then resume native Q1 at the recorded next query index. No extra offset, taper, reset, expert correction, forced release, new guard or supplied settling. Preserve the same live state/controller, task, remaining horizon, native image/history contract and paired recorded query-noise sequence. D5 previous-target proprioception must reflect the last modified raw target actually sent to the converter. Simulator object truth is evaluation-only.\n\nBefore activation: resolve exact handback indices and file paths from saved records; verify checkpoint and dependencies. Qualify paired start state, exact INIT10 60-action physical/controller reproduction, correct target/query bookkeeping and one native fixed-input/noise reproduction. Serial execution with one live render context avoids concurrent presentation ambiguity. Post-handback N/D5 images should differ physically; do not require cross-branch image equality.\n\nOriginal strict loading scorer and remaining horizon; report supported pickup, transport/orientation, placement, seating, release, stability and failure stage. A 2/2 assisted success would be local assisted completion, not a new native Q1 score or permission to use these selected diagnostic trajectories as training labels.\n\nFuture cap 75 minutes: qualification 15, four continuations 40, analysis and verified preservation 20. No automatic retries or added cases. No physical work starts until activation. AlphaNIST stays parked and no paid pods are started.\n\nPrerequisites/evidence: INIT10 #11081 private commit276deeae2bfdc3773700e36b78e99047c7824237; INIT10-A #11082 private commitdcf9657b1726798b183f47550fbe1773c90f45bc; full source/receipt paths and protocol will be linked from the private consolidation package.",
+      "description": "Prepared only. ZERO executions. Requires a verified future compute window and explicit protocol activation. Not authorized for tonight's preservation block.\n\nQuestion: Does the already-qualified 5 mm lower acquisition segment enable the unchanged Q1 policy to finish the original loading task after target modification stops?\n\nFixed future panel: init-demo_0003-loading seed 912172, original branch tick 403/query 2; init-demo_0005-loading seed 912171, original branch tick 396/query 2. Native versus D5, four executions total. Q1 SHA-256 26d573eb90f791d9af86bbff30e138f51c5aa658ac7abefe76787ba352363a7a.\n\nFirst 60 archived targets: N unchanged; D5 world-Z minus 0.005 m exactly as INIT10. Then resume native Q1 at the recorded next query index. No extra offset, taper, reset, expert correction, forced release, new guard or supplied settling. Preserve the same live state/controller, task, remaining horizon, native image/history contract and paired recorded query-noise sequence. D5 previous-target proprioception must reflect the last modified raw target actually sent to the converter. Simulator object truth is evaluation-only.\n\nBefore activation: resolve exact handback indices and file paths from saved records; verify checkpoint and dependencies. Qualify paired start state, exact INIT10 60-action physical/controller reproduction, correct target/query bookkeeping and one native fixed-input/noise reproduction. Serial execution with one live render context avoids concurrent presentation ambiguity. Post-handback N/D5 images should differ physically; do not require cross-branch image equality.\n\nOriginal strict loading scorer and remaining horizon; report supported pickup, transport/orientation, placement, seating, release, stability and failure stage. A 2/2 assisted success would be local assisted completion, not a new native Q1 score or permission to use these selected diagnostic trajectories as training labels.\n\nFuture cap 75 minutes: qualification 15, four continuations 40, analysis and verified preservation 20. No automatic retries or added cases. No physical work starts until activation. AlphaNIST stays parked and no paid pods are started.\n\nPrerequisites/evidence: INIT10 #11081 private commit276deeae2bfdc3773700e36b78e99047c7824237; INIT10-A #11082 private commitdcf9657b1726798b183f47550fbe1773c90f45bc; full source/receipt paths and protocol will be linked from the private consolidation package.\n\nPrepared protocol sealed in private commit 982b13f470ff6b43358c9f4c137591f2f341c34b. Saved records resolve next query index 4 at state tick 463/456, before actions 464/457. There are 1,316 original policy targets plus 24 original passive scoring ticks remaining. Native previous-target proprioception keeps the first nine raw pose values as float32 and eleven zeros; D5 must preserve its actual modified Z through that same mask. Recorded query-4 noise hashes exist, but restoration/regeneration implementation must qualify at future activation. No future rollout has run. Small package SHA readback passed; see prepared protocol and boundary receipt.",
       "estimate": 3,
       "status": "Next",
       "progressState": "todo",
       "createdAt": "2026-10-16 00:18:38",
-      "updatedAt": "2026-10-16 00:18:38",
+      "updatedAt": "2026-10-16 00:30:21",
       "completedAt": null,
       "completionSummary": null,
       "deploymentProof": null,
-      "completionEvidence": [],
+      "completionEvidence": [
+        {
+          "label": "Prepared-only protocol and activation prerequisites",
+          "url": "https://github.com/NatMota/typhon-robotics/blob/982b13f470ff6b43358c9f4c137591f2f341c34b/experiment-history/2026-10-16-session-recovery/INIT11_PROTOCOL.md",
+          "type": "github"
+        },
+        {
+          "label": "Resolved recorded boundaries and native input convention",
+          "url": "https://github.com/NatMota/typhon-robotics/blob/982b13f470ff6b43358c9f4c137591f2f341c34b/experiment-history/2026-10-16-session-recovery/handback-boundaries.json",
+          "type": "github"
+        }
+      ],
       "epicId": null,
       "priority": 0,
       "workflow": {
@@ -542,7 +553,18 @@
         "completedAt": null,
         "completionSummary": null,
         "deploymentProof": null,
-        "completionEvidence": []
+        "completionEvidence": [
+          {
+            "label": "Prepared-only protocol and activation prerequisites",
+            "url": "https://github.com/NatMota/typhon-robotics/blob/982b13f470ff6b43358c9f4c137591f2f341c34b/experiment-history/2026-10-16-session-recovery/INIT11_PROTOCOL.md",
+            "type": "github"
+          },
+          {
+            "label": "Resolved recorded boundaries and native input convention",
+            "url": "https://github.com/NatMota/typhon-robotics/blob/982b13f470ff6b43358c9f4c137591f2f341c34b/experiment-history/2026-10-16-session-recovery/handback-boundaries.json",
+            "type": "github"
+          }
+        ]
       },
       "runs": {
         "current": null,
@@ -910,12 +932,12 @@
       "projectId": 16,
       "columnId": 74,
       "title": "DEL02 \u2014 Prepare an accurate research write-up and submission package",
-      "description": "Original request\nEarlier user requested experiment history, conclusions and a scientific-style repository.\n\nCurrent evidence / status\nNew results and limitations are documented internally; public publication is currently disabled by user's later instruction.\n\nBounded work and acceptance criteria\nBuild a concise model-by-model result narrative with actual personal-data contribution, unsuccessful approaches, reproducibility and immutable evidence. Verify challenge deadline/requirements when preparing submission. Obtain explicit publication/submission instruction before any new external posting.\n\nDependencies and exclusions\nDepends on resolved results/model registry. Do not claim learning directly from phone-action labels or reliable generalization.\n\n\n12 October execution plan\n24-hour plan reserves final five hours for: 60\u201390s matched human/baseline/intervention video; explicit phone-observations\u2192scene\u2192expert robot actions\u2192policy\u2192controller diagram; subgoal result table; release timeline; four case cards including already-complete and failure. Keep project private. Draft figure layout while GPU runs; preserve negative results. Do not claim a mechanism or improvement before measurement.\n\n12 October final OST sweep decision\nPrivate consolidated report and model registry prepared with296newscored episodes, training identities, negative results, matched-state checks, family uncertainty, reproduction and media limitations. Results/report live at /var/tmp/typhon-ost-sweep-20261012/report. Existing publication remains private; no submission. A polished new public demonstration/URL repair is separate from the internal scientific report.\n\n13 October planner-directed private synthesis\n45-minute cap: 05:17:37\u201306:02:37 UTC. Update the existing consolidated REPORT.md in place, 1,400\u20132,000 words, with claim-to-evidence index and package-status receipt. Pin DATA07, EVAL02R and DEL01; preserve all numerical/raw artifacts and old report through Git. No training, inference, physics, new media, uploads, deployment or publication. Complete only private-review component; actual hosting/submission remains pending. Branch research/del02-private-synthesis.\n\n13 October private-package result\nPrivate-review component complete at artifact commit d3da433054b435a9d1e99b8dc64fe0f516666e51. Existing experiment-history/2026-10-12-ost-sweep/REPORT.md revised in place to 1,777 words; original report preserved in Git. Fourteen claim groups link 46 evidence/protocol files and 12 exact model/controller identities. Thirty-seven numerical checks and 44 relative-link checks pass. DATA07, EVAL02R and DEL01 versions pinned. Canonical DEL01 media manifest reused; no bulk copy, new video, inference, physics, training, upload, deployment or publication.\n\nKept in Review for package disposition and remaining submission/delivery requirements. A private-review-ready package is not a submitted application, public reproducibility or completion of the OST. Final challenge/deadline/eligibility check, current representative-media hosting/importer integration and any publication/submission remain pending. EVAL02 68 interventions unexecuted; LIVE01 and all blocked/parked experiments retained. No unsupported quantitative or novelty claims added.\n\n15 October overnight addendum (private companion, original write-up unchanged): https://github.com/NatMota/typhon-robotics/blob/4550c7cbd6a57f3da1eee90fce2be5150345ee68/experiment-history/2026-10-15-overnight-synthesis/REPORT.md\nThe LOAD01\u201304 chain and EVAL02-GOAL now distinguish loading supervision, visual shortcut dependence, counterbalanced task selection and local wording precedence over contradictory coordinates. All four consistent controls and four wording-associated conflict endpoints passed in one familiar scene; no arbitrary-goal or numeral-recognition claim. Six overnight packages reverified on Mint (2232 files,833402029 bytes). Recovery and live observer prerequisites remain unresolved;68 EVAL02 interventions unexecuted. Planner directs consolidation, with same-task numerical steering proposed for a later session only. Publication/submission still pending.",
+      "description": "Original request\nEarlier user requested experiment history, conclusions and a scientific-style repository.\n\nCurrent evidence / status\nNew results and limitations are documented internally; public publication is currently disabled by user's later instruction.\n\nBounded work and acceptance criteria\nBuild a concise model-by-model result narrative with actual personal-data contribution, unsuccessful approaches, reproducibility and immutable evidence. Verify challenge deadline/requirements when preparing submission. Obtain explicit publication/submission instruction before any new external posting.\n\nDependencies and exclusions\nDepends on resolved results/model registry. Do not claim learning directly from phone-action labels or reliable generalization.\n\n\n12 October execution plan\n24-hour plan reserves final five hours for: 60\u201390s matched human/baseline/intervention video; explicit phone-observations\u2192scene\u2192expert robot actions\u2192policy\u2192controller diagram; subgoal result table; release timeline; four case cards including already-complete and failure. Keep project private. Draft figure layout while GPU runs; preserve negative results. Do not claim a mechanism or improvement before measurement.\n\n12 October final OST sweep decision\nPrivate consolidated report and model registry prepared with296newscored episodes, training identities, negative results, matched-state checks, family uncertainty, reproduction and media limitations. Results/report live at /var/tmp/typhon-ost-sweep-20261012/report. Existing publication remains private; no submission. A polished new public demonstration/URL repair is separate from the internal scientific report.\n\n13 October planner-directed private synthesis\n45-minute cap: 05:17:37\u201306:02:37 UTC. Update the existing consolidated REPORT.md in place, 1,400\u20132,000 words, with claim-to-evidence index and package-status receipt. Pin DATA07, EVAL02R and DEL01; preserve all numerical/raw artifacts and old report through Git. No training, inference, physics, new media, uploads, deployment or publication. Complete only private-review component; actual hosting/submission remains pending. Branch research/del02-private-synthesis.\n\n13 October private-package result\nPrivate-review component complete at artifact commit d3da433054b435a9d1e99b8dc64fe0f516666e51. Existing experiment-history/2026-10-12-ost-sweep/REPORT.md revised in place to 1,777 words; original report preserved in Git. Fourteen claim groups link 46 evidence/protocol files and 12 exact model/controller identities. Thirty-seven numerical checks and 44 relative-link checks pass. DATA07, EVAL02R and DEL01 versions pinned. Canonical DEL01 media manifest reused; no bulk copy, new video, inference, physics, training, upload, deployment or publication.\n\nKept in Review for package disposition and remaining submission/delivery requirements. A private-review-ready package is not a submitted application, public reproducibility or completion of the OST. Final challenge/deadline/eligibility check, current representative-media hosting/importer integration and any publication/submission remain pending. EVAL02 68 interventions unexecuted; LIVE01 and all blocked/parked experiments retained. No unsupported quantitative or novelty claims added.\n\n15 October overnight addendum (private companion, original write-up unchanged): https://github.com/NatMota/typhon-robotics/blob/4550c7cbd6a57f3da1eee90fce2be5150345ee68/experiment-history/2026-10-15-overnight-synthesis/REPORT.md\nThe LOAD01\u201304 chain and EVAL02-GOAL now distinguish loading supervision, visual shortcut dependence, counterbalanced task selection and local wording precedence over contradictory coordinates. All four consistent controls and four wording-associated conflict endpoints passed in one familiar scene; no arbitrary-goal or numeral-recognition claim. Six overnight packages reverified on Mint (2232 files,833402029 bytes). Recovery and live observer prerequisites remain unresolved;68 EVAL02 interventions unexecuted. Planner directs consolidation, with same-task numerical steering proposed for a later session only. Publication/submission still pending.\n\n16 October session preservation complete (private, no submission). Existing research report gained a dated INIT02\u2013INIT10-A section; existing claim index extended from 14 to 21 entries without changing prior claims. Verified 32 new source references, 18 numerical results and 64 relative links. INIT11 #11083 is prepared only, zero executions, with exact query-4 handback and native masked proprioception documented. No new physics, model calls, training or media. Private artifact commit 982b13f470ff6b43358c9f4c137591f2f341c34b; branch research/del02-session-recovery-20261016. Mint package verified 35 files / 245,654 bytes with zero SHA errors at epoch 1792110593.2693179, before the original block deadline. Archive /media/nm/Fast Drive/Typhon/research-20261015/session-closeout-20261016; manifest SHA b6993b84094e3069c83731b9c78a1f299eaee3d5f598016743a45e97d4e0bd71. Keep Review for submission/delivery disposition. Overall research programme remains active.",
       "estimate": null,
       "status": "Review",
       "progressState": "review",
       "createdAt": "2026-10-11 16:38:56",
-      "updatedAt": "2026-10-15 01:35:37",
+      "updatedAt": "2026-10-16 00:30:20",
       "completedAt": null,
       "completionSummary": null,
       "deploymentProof": null,
@@ -934,6 +956,21 @@
           "label": "Package scope, checks and remaining requirements",
           "url": "https://github.com/NatMota/typhon-robotics/blob/research/del02-private-synthesis/experiment-history/2026-10-13-del02-package/package_status.json",
           "type": "link"
+        },
+        {
+          "label": "Current research report with initiation and grasp-retention update",
+          "url": "https://github.com/NatMota/typhon-robotics/blob/982b13f470ff6b43358c9f4c137591f2f341c34b/experiment-history/2026-10-12-ost-sweep/REPORT.md",
+          "type": "github"
+        },
+        {
+          "label": "Updated decision/evidence index",
+          "url": "https://github.com/NatMota/typhon-robotics/blob/982b13f470ff6b43358c9f4c137591f2f341c34b/experiment-history/2026-10-13-del02-package/CLAIM_INDEX.md",
+          "type": "github"
+        },
+        {
+          "label": "Prepared INIT11 protocol; zero executions",
+          "url": "https://github.com/NatMota/typhon-robotics/blob/982b13f470ff6b43358c9f4c137591f2f341c34b/experiment-history/2026-10-16-session-recovery/INIT11_PROTOCOL.md",
+          "type": "github"
         }
       ],
       "epicId": 85,
@@ -960,6 +997,21 @@
             "label": "Package scope, checks and remaining requirements",
             "url": "https://github.com/NatMota/typhon-robotics/blob/research/del02-private-synthesis/experiment-history/2026-10-13-del02-package/package_status.json",
             "type": "link"
+          },
+          {
+            "label": "Current research report with initiation and grasp-retention update",
+            "url": "https://github.com/NatMota/typhon-robotics/blob/982b13f470ff6b43358c9f4c137591f2f341c34b/experiment-history/2026-10-12-ost-sweep/REPORT.md",
+            "type": "github"
+          },
+          {
+            "label": "Updated decision/evidence index",
+            "url": "https://github.com/NatMota/typhon-robotics/blob/982b13f470ff6b43358c9f4c137591f2f341c34b/experiment-history/2026-10-13-del02-package/CLAIM_INDEX.md",
+            "type": "github"
+          },
+          {
+            "label": "Prepared INIT11 protocol; zero executions",
+            "url": "https://github.com/NatMota/typhon-robotics/blob/982b13f470ff6b43358c9f4c137591f2f341c34b/experiment-history/2026-10-16-session-recovery/INIT11_PROTOCOL.md",
+            "type": "github"
           }
         ]
       },
