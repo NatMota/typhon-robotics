@@ -1,0 +1,76 @@
+{
+  "experiment": "INIT12",
+  "ticket": 11086,
+  "status": "prepared_not_activated",
+  "checkpoint_sha256": "26d573eb90f791d9af86bbff30e138f51c5aa658ac7abefe76787ba352363a7a",
+  "probe_sha256": "9ddf8971546fd494bfc56b53586e091e039a2c809e012931d21e5be519f552e5",
+  "restored_model_cache": {
+    "resolved_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/.cache-xvla-pt",
+    "source_sha256": {
+      "hub_manifest.json": "f21f2c7dae01f6a952ff4b7f58dc893ba6a5ea9f74b6ccea1a7582d61b00e86a",
+      "action_hub.py": "3a166b9685194fd7beaa5375e506683a00992d31ca3494dcb4cfd01c356599ce",
+      "config.json": "b267fac2e018e979088a65b11c62808c2549b9311ffa21db7c863e10af81d914",
+      "configuration_florence2.py": "de2e45a975b3582de05d2f4d963a3e9f9a3d20dccf78d28e0052932a0be93bdf",
+      "configuration_xvla.py": "7b65fea79c870a5c5c3741a2085def160541f4ba7c73dafbd9369e64620702fe",
+      "modeling_florence2.py": "ebed9223ee776c142de962ea71eaa30a0bf1f55e728de136dc7fe13ef830f4af",
+      "modeling_xvla.py": "7ba495ce1f0e8af625be12e9aef953040276a1846ee08153132e67a97d0833dc",
+      "preprocessor_config.json": "0a4e041cb57d07f735844a3d06a89bace2c9eb2a46eb6ddc2e6fbdae17504692",
+      "processing_xvla.py": "f75d213f3897d87a896ffdc014d4075d9bc374d67a38a098e4c007b3b884d1b6",
+      "tokenizer.json": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e",
+      "tokenizer_config.json": "79ffcf43af8ebda99d165f61d243180da2e2639952e41e71e11611c18770489c",
+      "transformer.py": "337f4c61a88d033da7e8cef6e6ae9efcd978d3540983c5de70a23f445141c308",
+      "vocab.json": "394fdc63c71aabe0a9b97117f5d62fb5fcc4d59b2b3ea929a3929e6a53217b3c"
+    },
+    "reference": "INIT11-Q C / original INIT07 context; original cache only"
+  },
+  "evaluation_sha256": "a437f72e9f28ed51448370e978b53470bb3f67efa967a32ab279e6a13e489850",
+  "condition_order": [
+    "N",
+    "D5"
+  ],
+  "main_physical_episodes": 32,
+  "conditional_retention_episodes": 14,
+  "rule": {
+    "inputs": [
+      "newly_predicted_30x20_actions",
+      "last_executed_gripper_command"
+    ],
+    "trigger": "first chunk with active channel9>0.5 while executed gripper command is -1/open",
+    "offset_world_z_m": -0.005,
+    "duration_actions": 60,
+    "repeat": false,
+    "replanning": "every30actions including second shifted chunk",
+    "command_history": "issued first9 float32, remaining11 zero",
+    "task_scene_truth_contact_not_used": true,
+    "targets_are_postprocessed_probabilities": true
+  },
+  "native_horizon": {
+    "actions": 1436,
+    "settle_ticks": 24,
+    "queries": 48,
+    "last_query_executed_actions": 26
+  },
+  "prior_gate": [
+    "both selected cases strict success",
+    "positive net loading gains",
+    "no lost native loading successes",
+    "8/8 preservation",
+    "no new forbidden geometry pair or increased forbidden-contact samples",
+    "no new joint-limit crossing"
+  ],
+  "runtime_guards": "Existing simulator/controller limits and time/storage caps only; contacts logged offline, no new truth-based stop.",
+  "prior_panel": "exact seven INIT07 standalone cases; no development handover additions",
+  "qualification": [
+    "pure-command unit tests",
+    "all23 offline trigger predictions",
+    "strict original fresh Q1 reload probe",
+    "3 direct vs3 disabled same-image queries with native generated command-history update",
+    "paired exact initial state/input/noise and pretrigger proposals"
+  ],
+  "serial_simulation": true,
+  "max_live_simulators": 1,
+  "training": false,
+  "quarantined": true,
+  "outcome_retries": 0,
+  "Mint_role": "storage/code/CPU artifact verification only"
+}
