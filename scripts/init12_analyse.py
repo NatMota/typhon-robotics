@@ -31,8 +31,19 @@ def stats(trace, initial_height):
             "max_tilt_during_supported_lift_deg": max([r["object_tilt_deg"] for r in held], default=None),
             "first_gripper_close_tick": next((r["step"] for r in trace if r["target"][9] > .5), None)}
 def main():
-    assert (O / "physical-complete.json").exists(), "Complete physical panel before final analysis"
-    rows = read(O / "results.json"); validations = []; brief = []; diagnostics = {}
+    partial = "--partial" in sys.argv
+    assert (O / ("STOPPED.json" if partial else "physical-complete.json")).exists()
+    rows = read(O / "results.json")
+    if partial:
+        # Include every physically completed episode, preserving its pairing failure as a separate field.
+        rows = []
+        for ep_path in sorted((O / "episodes").glob("*/*/episode.json")):
+            p = ep_path.parent
+            row = read(p / "summary.json")
+            row.update(condition=p.parent.name, rule=read(p / "rule-summary.json"),
+                       selected_previous_rescue=p.name in ["init-demo_0003-loading-912172", "init-demo_0005-loading-912171"])
+            rows.append(row)
+    validations = []; brief = []; diagnostics = {}
     sources = {s["id"]: s for s in read(O / "evaluation-cases.json")["core"]}
     for row in rows:
         p = O / "episodes" / row["condition"] / row["id"]; ep = read(p / "episode.json")
@@ -77,14 +88,18 @@ def main():
                         "during_offset": bool(f["policy_action"] and f["policy_action"]["offset_active"]),
                         "policy_action_index": f["policy_action"]["index_zero_based"] if f["policy_action"] else None})
         values["forbidden_events"] = forbidden_events
+        row["forbidden_contact_samples"] = len(forbidden_events)
+        row["workspace_clipped_steps"] = sum(bool(f["policy_action"] and f["policy_action"]["workspace_clipped"]) for f in fr)
+        pair = O / "episodes/D5" / row["id"] / "paired-gate.json"
+        row["pair_integrity_qualified"] = pair.exists() and read(pair)["passed"]
         key = row["id"] + "/" + row["condition"]; diagnostics[key] = values
-        validations.append({"id": row["id"], "condition": row["condition"], "strict_score_reproduced": True,
+        validations.append({"id": row["id"], "condition": row["condition"], "strict_score_reproduced": True, "pair_integrity_qualified": row["pair_integrity_qualified"],
             "raw_vs_issued_channels_validated": True, "issued_command_history_all47_transitions_exact": True,
             "original_horizon": True, "preservation_independently_checked": row["preservation_qualified"] is not None})
         brief.append({k: row[k] for k in ["id", "condition", "panel", "requested_task", "selected_previous_rescue",
             "requested_success", "preservation_qualified", "position_error_mm", "yaw_error_deg",
             "supported_lift_10mm_3steps", "bilateral_contact_steps", "minimum_joint_limit_margin_rad",
-            "forbidden_contact_samples", "workspace_clipped_steps", "wall_seconds"]} |
+            "forbidden_contact_samples", "workspace_clipped_steps", "wall_seconds", "pair_integrity_qualified"]} |
             {"trigger_query": None if row["rule"]["trigger"] is None else row["rule"]["trigger"]["query_zero_based"],
              "modified_actions": row["rule"]["modified_actions_executed"]})
     by = {(r["id"], r["condition"]): r for r in rows}
@@ -95,24 +110,24 @@ def main():
         wrapped = [by[(r["id"], "D5")] for r in native]
         key = "preservation_qualified" if panel == "preservation" else "requested_success"
         aggregate[panel] = {
-            "n_per_condition": len(native), "native_success": sum(bool(r[key]) for r in native),
+            "n_per_condition": len(native), "qualified_pairs": sum(bool(r["pair_integrity_qualified"]) for r in native), "native_success": sum(bool(r[key]) for r in native),
             "wrapped_success": sum(bool(r[key]) for r in wrapped),
             "paired_gains": [a["id"] for a, b in zip(native, wrapped) if not a[key] and b[key]],
             "paired_losses": [a["id"] for a, b in zip(native, wrapped) if a[key] and not b[key]],
             "native_trigger_count": sum(r["rule"]["trigger"] is not None for r in native),
             "wrapped_trigger_count": sum(r["rule"]["trigger"] is not None for r in wrapped),
             "wrapped_forbidden_contact_cases": [r["id"] for r in wrapped if r["forbidden_contact_samples"]]}
-    selected = {k: {"native": by[(k, "N")]["requested_success"], "wrapped": by[(k, "D5")]["requested_success"]} for k in
+    selected = {k: {"native": by.get((k, "N"), {}).get("requested_success"), "wrapped": by.get((k, "D5"), {}).get("requested_success")} for k in
                 ["init-demo_0003-loading-912172", "init-demo_0005-loading-912171"]}
     timing = {"median_episode_wall_s": float(np.median([r["wall_seconds"] for r in rows])),
               "sum_episode_wall_s": sum(r["wall_seconds"] for r in rows),
-              "physical_complete_s_since_activation": read(O / "physical-complete.json")["epoch"] - read(O / "clock.json")["activated_epoch"]}
-    dump(O / "independent-validation.json", {"passed": True, "episodes": len(rows), "checks": validations,
+              "physical_complete_s_since_activation": read(O / ("STOPPED.json" if partial else "physical-complete.json"))["epoch"] - read(O / "clock.json")["activated_epoch"]}
+    dump(O / (("partial-" if partial else "") + "independent-validation.json"), {"passed": True, "episodes": len(rows), "checks": validations,
          "score_numeric_comparison_absolute_tolerance": 1e-12, "scoring_thresholds_unchanged": True, "epoch": time.time()})
-    dump(O / "analysis-summary.json", {"aggregates": aggregate, "selected_previous_rescues": selected,
-         "main_gate": read(O / "main-gate.json"), "timing": timing, "count": len(rows),
-         "inspected_source_family_not_untouched_holdout": True, "training": False, "TTC": False})
-    dump(O / "contact-mechanism-diagnostics.json", diagnostics)
+    dump(O / (("partial-" if partial else "") + "analysis-summary.json"), {"aggregates": aggregate, "selected_previous_rescues": selected,
+         "main_gate": read(O / "main-gate.json") if (O / "main-gate.json").exists() else {"passed": False, "reason": "Technical pairing stop before completion"}, "timing": timing, "count": len(rows),
+         "partial_panel": partial, "main_episodes_not_run": 32 - sum(r["panel"] in ["initiation", "preservation"] for r in rows), "prior_episodes_not_run": 14 - sum(r["panel"] in ["prior_feeding", "prior_loading"] for r in rows), "inspected_source_family_not_untouched_holdout": True, "training": False, "TTC": False})
+    dump(O / (("partial-" if partial else "") + "contact-mechanism-diagnostics.json"), diagnostics)
     changed = []
     for row in rows:
         if row["condition"] != "D5" or row["rule"]["trigger"] is None: continue
@@ -131,8 +146,8 @@ def main():
               "fresh_actual_input_hashes": read(p / "input-audit" / f"input-{i:03d}.json")["input_hashes"]})
         changed.append({"id": row["id"], "trigger_query": q, "queries": records,
                         "second_chunk_recomputed_from_actual_branch": True})
-    dump(O / "online-replanning-comparison.json", changed)
-    with (O / "comparisons.csv").open("w") as f:
+    dump(O / (("partial-" if partial else "") + "online-replanning-comparison.json"), changed)
+    with (O / (("partial-" if partial else "") + "comparisons.csv")).open("w") as f:
         w = csv.DictWriter(f, fieldnames=list(brief[0])); w.writeheader(); w.writerows(brief)
-    print(json.dumps(read(O / "analysis-summary.json"), indent=2))
+    print(json.dumps(read(O / (("partial-" if partial else "") + "analysis-summary.json")), indent=2))
 if __name__ == "__main__": main()
