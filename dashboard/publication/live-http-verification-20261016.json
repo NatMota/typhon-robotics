@@ -1,0 +1,2943 @@
+{
+  "verified_at_utc": "2026-10-16T22:22:34.949272+00:00",
+  "deployment": "dpl_6M1VnzVnBVr9U8yRgyNufsCzwujb",
+  "method": "HTTP HEAD; status and byte size checked",
+  "passed": 419,
+  "total": 419,
+  "failures": [],
+  "results": [
+    {
+      "key": "eval/v1-m3-pilot-v1/m7-personal_demo_0001/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2261968",
+      "expected_bytes": 2261968
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/m7-personal_demo_0001/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500839",
+      "expected_bytes": 500839
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/m7-personal_demo_0001/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488264",
+      "expected_bytes": 488264
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/m7-personal_demo_0006/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2310618",
+      "expected_bytes": 2310618
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/m7-personal_demo_0006/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500909",
+      "expected_bytes": 500909
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/m7-personal_demo_0006/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488633",
+      "expected_bytes": 488633
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/recovery-wrong_orientation-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2271241",
+      "expected_bytes": 2271241
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/recovery-wrong_orientation-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500220",
+      "expected_bytes": 500220
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/recovery-wrong_orientation-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488405",
+      "expected_bytes": 488405
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/recovery-already_completed-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2266731",
+      "expected_bytes": 2266731
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/recovery-already_completed-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500332",
+      "expected_bytes": 500332
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/recovery-already_completed-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488188",
+      "expected_bytes": 488188
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/m7-personal_demo_0001/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2185284",
+      "expected_bytes": 2185284
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/m7-personal_demo_0001/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "498552",
+      "expected_bytes": 498552
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/m7-personal_demo_0001/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488264",
+      "expected_bytes": 488264
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/m7-personal_demo_0006/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2119998",
+      "expected_bytes": 2119998
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/m7-personal_demo_0006/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "496962",
+      "expected_bytes": 496962
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/m7-personal_demo_0006/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488633",
+      "expected_bytes": 488633
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/recovery-wrong_orientation-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2032716",
+      "expected_bytes": 2032716
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/recovery-wrong_orientation-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "497365",
+      "expected_bytes": 497365
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/recovery-wrong_orientation-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488405",
+      "expected_bytes": 488405
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/recovery-already_completed-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2030481",
+      "expected_bytes": 2030481
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/recovery-already_completed-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "496922",
+      "expected_bytes": 496922
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/recovery-already_completed-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488188",
+      "expected_bytes": 488188
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/m7-personal_demo_0001/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2183935",
+      "expected_bytes": 2183935
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/m7-personal_demo_0001/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "499982",
+      "expected_bytes": 499982
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/m7-personal_demo_0001/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488264",
+      "expected_bytes": 488264
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/m7-personal_demo_0006/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2229796",
+      "expected_bytes": 2229796
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/m7-personal_demo_0006/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "498949",
+      "expected_bytes": 498949
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/m7-personal_demo_0006/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488633",
+      "expected_bytes": 488633
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/recovery-wrong_orientation-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2188251",
+      "expected_bytes": 2188251
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/recovery-wrong_orientation-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "497810",
+      "expected_bytes": 497810
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/recovery-wrong_orientation-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488405",
+      "expected_bytes": 488405
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/recovery-already_completed-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2154761",
+      "expected_bytes": 2154761
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/recovery-already_completed-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "498853",
+      "expected_bytes": 498853
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/recovery-already_completed-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488188",
+      "expected_bytes": 488188
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/m7-personal_demo_0001/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2148553",
+      "expected_bytes": 2148553
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/m7-personal_demo_0001/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494742",
+      "expected_bytes": 494742
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/m7-personal_demo_0001/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488264",
+      "expected_bytes": 488264
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/m7-personal_demo_0006/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2115279",
+      "expected_bytes": 2115279
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/m7-personal_demo_0006/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494443",
+      "expected_bytes": 494443
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/m7-personal_demo_0006/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488633",
+      "expected_bytes": 488633
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/recovery-wrong_orientation-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2032721",
+      "expected_bytes": 2032721
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/recovery-wrong_orientation-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "493919",
+      "expected_bytes": 493919
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/recovery-wrong_orientation-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488405",
+      "expected_bytes": 488405
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/recovery-already_completed-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2038592",
+      "expected_bytes": 2038592
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/recovery-already_completed-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494617",
+      "expected_bytes": 494617
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/recovery-already_completed-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488188",
+      "expected_bytes": 488188
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/m7-personal_demo_0001/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2235460",
+      "expected_bytes": 2235460
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/m7-personal_demo_0001/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500106",
+      "expected_bytes": 500106
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/m7-personal_demo_0001/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488264",
+      "expected_bytes": 488264
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/m7-personal_demo_0006/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2273442",
+      "expected_bytes": 2273442
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/m7-personal_demo_0006/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "501119",
+      "expected_bytes": 501119
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/m7-personal_demo_0006/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488633",
+      "expected_bytes": 488633
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/recovery-wrong_orientation-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2404786",
+      "expected_bytes": 2404786
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/recovery-wrong_orientation-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500163",
+      "expected_bytes": 500163
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/recovery-wrong_orientation-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488405",
+      "expected_bytes": 488405
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/recovery-already_completed-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2331785",
+      "expected_bytes": 2331785
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/recovery-already_completed-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500198",
+      "expected_bytes": 500198
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/recovery-already_completed-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488188",
+      "expected_bytes": 488188
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/m7-personal_demo_0001/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2298202",
+      "expected_bytes": 2298202
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/m7-personal_demo_0001/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500967",
+      "expected_bytes": 500967
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/m7-personal_demo_0001/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488264",
+      "expected_bytes": 488264
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/m7-personal_demo_0006/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2282383",
+      "expected_bytes": 2282383
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/m7-personal_demo_0006/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500457",
+      "expected_bytes": 500457
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/m7-personal_demo_0006/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488633",
+      "expected_bytes": 488633
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/recovery-wrong_orientation-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2249786",
+      "expected_bytes": 2249786
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/recovery-wrong_orientation-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "499666",
+      "expected_bytes": 499666
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/recovery-wrong_orientation-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488405",
+      "expected_bytes": 488405
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/recovery-already_completed-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2286544",
+      "expected_bytes": 2286544
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/recovery-already_completed-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "499979",
+      "expected_bytes": 499979
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/recovery-already_completed-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488188",
+      "expected_bytes": 488188
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/m7-personal_demo_0001/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2027701",
+      "expected_bytes": 2027701
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/m7-personal_demo_0001/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "496058",
+      "expected_bytes": 496058
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/m7-personal_demo_0001/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488264",
+      "expected_bytes": 488264
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/m7-personal_demo_0006/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1986043",
+      "expected_bytes": 1986043
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/m7-personal_demo_0006/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495387",
+      "expected_bytes": 495387
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/m7-personal_demo_0006/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488633",
+      "expected_bytes": 488633
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/recovery-wrong_orientation-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1992429",
+      "expected_bytes": 1992429
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/recovery-wrong_orientation-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495649",
+      "expected_bytes": 495649
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/recovery-wrong_orientation-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488405",
+      "expected_bytes": 488405
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/recovery-already_completed-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2001797",
+      "expected_bytes": 2001797
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/recovery-already_completed-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495747",
+      "expected_bytes": 495747
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/recovery-already_completed-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488188",
+      "expected_bytes": 488188
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/m7-personal_demo_0001/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2137385",
+      "expected_bytes": 2137385
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/m7-personal_demo_0001/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495603",
+      "expected_bytes": 495603
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/m7-personal_demo_0001/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488264",
+      "expected_bytes": 488264
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/m7-personal_demo_0006/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2056854",
+      "expected_bytes": 2056854
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/m7-personal_demo_0006/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495598",
+      "expected_bytes": 495598
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/m7-personal_demo_0006/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488633",
+      "expected_bytes": 488633
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/recovery-wrong_orientation-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2016716",
+      "expected_bytes": 2016716
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/recovery-wrong_orientation-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495838",
+      "expected_bytes": 495838
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/recovery-wrong_orientation-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488405",
+      "expected_bytes": 488405
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/recovery-already_completed-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2065017",
+      "expected_bytes": 2065017
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/recovery-already_completed-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495576",
+      "expected_bytes": 495576
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/recovery-already_completed-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488188",
+      "expected_bytes": 488188
+    },
+    {
+      "key": "observer/observer.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "48487",
+      "expected_bytes": 48487
+    },
+    {
+      "key": "personal/plain/demo_0001/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1744140",
+      "expected_bytes": 1744140
+    },
+    {
+      "key": "personal/held-crosshair/demo_0001/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1776004",
+      "expected_bytes": 1776004
+    },
+    {
+      "key": "personal/plain/demo_0001/camera_a-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "44774",
+      "expected_bytes": 44774
+    },
+    {
+      "key": "personal/plain/demo_0001/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1334348",
+      "expected_bytes": 1334348
+    },
+    {
+      "key": "personal/held-crosshair/demo_0001/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1396926",
+      "expected_bytes": 1396926
+    },
+    {
+      "key": "personal/plain/demo_0001/camera_b-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "46029",
+      "expected_bytes": 46029
+    },
+    {
+      "key": "personal/plain/demo_0002/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1130982",
+      "expected_bytes": 1130982
+    },
+    {
+      "key": "personal/held-crosshair/demo_0002/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1144766",
+      "expected_bytes": 1144766
+    },
+    {
+      "key": "personal/plain/demo_0002/camera_a-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "46264",
+      "expected_bytes": 46264
+    },
+    {
+      "key": "personal/plain/demo_0002/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "811252",
+      "expected_bytes": 811252
+    },
+    {
+      "key": "personal/held-crosshair/demo_0002/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "877945",
+      "expected_bytes": 877945
+    },
+    {
+      "key": "personal/plain/demo_0002/camera_b-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "44551",
+      "expected_bytes": 44551
+    },
+    {
+      "key": "personal/plain/demo_0003/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1164974",
+      "expected_bytes": 1164974
+    },
+    {
+      "key": "personal/held-crosshair/demo_0003/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1199618",
+      "expected_bytes": 1199618
+    },
+    {
+      "key": "personal/plain/demo_0003/camera_a-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "43264",
+      "expected_bytes": 43264
+    },
+    {
+      "key": "personal/plain/demo_0003/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "852408",
+      "expected_bytes": 852408
+    },
+    {
+      "key": "personal/held-crosshair/demo_0003/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "910656",
+      "expected_bytes": 910656
+    },
+    {
+      "key": "personal/plain/demo_0003/camera_b-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "46485",
+      "expected_bytes": 46485
+    },
+    {
+      "key": "personal/plain/demo_0004/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1175755",
+      "expected_bytes": 1175755
+    },
+    {
+      "key": "personal/held-crosshair/demo_0004/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1204772",
+      "expected_bytes": 1204772
+    },
+    {
+      "key": "personal/plain/demo_0004/camera_a-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "44117",
+      "expected_bytes": 44117
+    },
+    {
+      "key": "personal/plain/demo_0004/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "899895",
+      "expected_bytes": 899895
+    },
+    {
+      "key": "personal/held-crosshair/demo_0004/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "955611",
+      "expected_bytes": 955611
+    },
+    {
+      "key": "personal/plain/demo_0004/camera_b-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "46921",
+      "expected_bytes": 46921
+    },
+    {
+      "key": "personal/plain/demo_0005/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1070865",
+      "expected_bytes": 1070865
+    },
+    {
+      "key": "personal/held-crosshair/demo_0005/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1100015",
+      "expected_bytes": 1100015
+    },
+    {
+      "key": "personal/plain/demo_0005/camera_a-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "46494",
+      "expected_bytes": 46494
+    },
+    {
+      "key": "personal/plain/demo_0005/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "813152",
+      "expected_bytes": 813152
+    },
+    {
+      "key": "personal/held-crosshair/demo_0005/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "873540",
+      "expected_bytes": 873540
+    },
+    {
+      "key": "personal/plain/demo_0005/camera_b-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "45963",
+      "expected_bytes": 45963
+    },
+    {
+      "key": "personal/plain/demo_0006/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1136527",
+      "expected_bytes": 1136527
+    },
+    {
+      "key": "personal/held-crosshair/demo_0006/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1164764",
+      "expected_bytes": 1164764
+    },
+    {
+      "key": "personal/plain/demo_0006/camera_a-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "56852",
+      "expected_bytes": 56852
+    },
+    {
+      "key": "personal/plain/demo_0006/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "875929",
+      "expected_bytes": 875929
+    },
+    {
+      "key": "personal/held-crosshair/demo_0006/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "941736",
+      "expected_bytes": 941736
+    },
+    {
+      "key": "personal/plain/demo_0006/camera_b-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "47638",
+      "expected_bytes": 47638
+    },
+    {
+      "key": "personal/plain/demo_0007/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1140638",
+      "expected_bytes": 1140638
+    },
+    {
+      "key": "personal/held-crosshair/demo_0007/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1158239",
+      "expected_bytes": 1158239
+    },
+    {
+      "key": "personal/plain/demo_0007/camera_a-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "49571",
+      "expected_bytes": 49571
+    },
+    {
+      "key": "personal/plain/demo_0007/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "850548",
+      "expected_bytes": 850548
+    },
+    {
+      "key": "personal/held-crosshair/demo_0007/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "888259",
+      "expected_bytes": 888259
+    },
+    {
+      "key": "personal/plain/demo_0007/camera_b-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "54036",
+      "expected_bytes": 54036
+    },
+    {
+      "key": "personal/plain/demo_0009/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1087285",
+      "expected_bytes": 1087285
+    },
+    {
+      "key": "personal/held-crosshair/demo_0009/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1110351",
+      "expected_bytes": 1110351
+    },
+    {
+      "key": "personal/plain/demo_0009/camera_a-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "48248",
+      "expected_bytes": 48248
+    },
+    {
+      "key": "personal/plain/demo_0009/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "849827",
+      "expected_bytes": 849827
+    },
+    {
+      "key": "personal/held-crosshair/demo_0009/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "886571",
+      "expected_bytes": 886571
+    },
+    {
+      "key": "personal/plain/demo_0009/camera_b-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "54090",
+      "expected_bytes": 54090
+    },
+    {
+      "key": "personal/plain/demo_0011/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "983154",
+      "expected_bytes": 983154
+    },
+    {
+      "key": "personal/held-crosshair/demo_0011/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1012164",
+      "expected_bytes": 1012164
+    },
+    {
+      "key": "personal/plain/demo_0011/camera_a-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "43639",
+      "expected_bytes": 43639
+    },
+    {
+      "key": "personal/plain/demo_0011/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "757737",
+      "expected_bytes": 757737
+    },
+    {
+      "key": "personal/held-crosshair/demo_0011/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "789105",
+      "expected_bytes": 789105
+    },
+    {
+      "key": "personal/plain/demo_0011/camera_b-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "53435",
+      "expected_bytes": 53435
+    },
+    {
+      "key": "personal/plain/demo_0012/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1500352",
+      "expected_bytes": 1500352
+    },
+    {
+      "key": "personal/held-crosshair/demo_0012/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1509241",
+      "expected_bytes": 1509241
+    },
+    {
+      "key": "personal/plain/demo_0012/camera_a-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "49763",
+      "expected_bytes": 49763
+    },
+    {
+      "key": "personal/plain/demo_0012/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "973932",
+      "expected_bytes": 973932
+    },
+    {
+      "key": "personal/held-crosshair/demo_0012/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1024866",
+      "expected_bytes": 1024866
+    },
+    {
+      "key": "personal/plain/demo_0012/camera_b-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "50574",
+      "expected_bytes": 50574
+    },
+    {
+      "key": "personal/plain/demo_0013/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1539736",
+      "expected_bytes": 1539736
+    },
+    {
+      "key": "personal/held-crosshair/demo_0013/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1557583",
+      "expected_bytes": 1557583
+    },
+    {
+      "key": "personal/plain/demo_0013/camera_a-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "44189",
+      "expected_bytes": 44189
+    },
+    {
+      "key": "personal/plain/demo_0013/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1052412",
+      "expected_bytes": 1052412
+    },
+    {
+      "key": "personal/held-crosshair/demo_0013/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1130757",
+      "expected_bytes": 1130757
+    },
+    {
+      "key": "personal/plain/demo_0013/camera_b-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "47668",
+      "expected_bytes": 47668
+    },
+    {
+      "key": "personal/plain/demo_0014/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1283151",
+      "expected_bytes": 1283151
+    },
+    {
+      "key": "personal/held-crosshair/demo_0014/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1300763",
+      "expected_bytes": 1300763
+    },
+    {
+      "key": "personal/plain/demo_0014/camera_a-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "47277",
+      "expected_bytes": 47277
+    },
+    {
+      "key": "personal/plain/demo_0014/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "849589",
+      "expected_bytes": 849589
+    },
+    {
+      "key": "personal/held-crosshair/demo_0014/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "888760",
+      "expected_bytes": 888760
+    },
+    {
+      "key": "personal/plain/demo_0014/camera_b-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "48591",
+      "expected_bytes": 48591
+    },
+    {
+      "key": "personal/plain/demo_0015/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1426754",
+      "expected_bytes": 1426754
+    },
+    {
+      "key": "personal/held-crosshair/demo_0015/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1454289",
+      "expected_bytes": 1454289
+    },
+    {
+      "key": "personal/plain/demo_0015/camera_a-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "42515",
+      "expected_bytes": 42515
+    },
+    {
+      "key": "personal/plain/demo_0015/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "960349",
+      "expected_bytes": 960349
+    },
+    {
+      "key": "personal/held-crosshair/demo_0015/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1020555",
+      "expected_bytes": 1020555
+    },
+    {
+      "key": "personal/plain/demo_0015/camera_b-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "47921",
+      "expected_bytes": 47921
+    },
+    {
+      "key": "personal/plain/demo_0016/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1040127",
+      "expected_bytes": 1040127
+    },
+    {
+      "key": "personal/held-crosshair/demo_0016/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1067161",
+      "expected_bytes": 1067161
+    },
+    {
+      "key": "personal/plain/demo_0016/camera_a-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "46684",
+      "expected_bytes": 46684
+    },
+    {
+      "key": "personal/plain/demo_0016/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "760539",
+      "expected_bytes": 760539
+    },
+    {
+      "key": "personal/held-crosshair/demo_0016/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "810868",
+      "expected_bytes": 810868
+    },
+    {
+      "key": "personal/plain/demo_0016/camera_b-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "44640",
+      "expected_bytes": 44640
+    },
+    {
+      "key": "personal/plain/demo_0018/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1163909",
+      "expected_bytes": 1163909
+    },
+    {
+      "key": "personal/held-crosshair/demo_0018/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1158790",
+      "expected_bytes": 1158790
+    },
+    {
+      "key": "personal/plain/demo_0018/camera_a-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "50066",
+      "expected_bytes": 50066
+    },
+    {
+      "key": "personal/plain/demo_0018/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1165126",
+      "expected_bytes": 1165126
+    },
+    {
+      "key": "personal/held-crosshair/demo_0018/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1154322",
+      "expected_bytes": 1154322
+    },
+    {
+      "key": "personal/plain/demo_0018/camera_b-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "56348",
+      "expected_bytes": 56348
+    },
+    {
+      "key": "personal/plain/demo_0019/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "463064",
+      "expected_bytes": 463064
+    },
+    {
+      "key": "personal/held-crosshair/demo_0019/camera_a.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "450989",
+      "expected_bytes": 450989
+    },
+    {
+      "key": "personal/plain/demo_0019/camera_a-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "50390",
+      "expected_bytes": 50390
+    },
+    {
+      "key": "personal/plain/demo_0019/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "453236",
+      "expected_bytes": 453236
+    },
+    {
+      "key": "personal/held-crosshair/demo_0019/camera_b.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "452818",
+      "expected_bytes": 452818
+    },
+    {
+      "key": "personal/plain/demo_0019/camera_b-final.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": "62948",
+      "expected_bytes": 62948
+    },
+    {
+      "key": "eval/m6-FT3000/m5-source-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "907279",
+      "expected_bytes": 907279
+    },
+    {
+      "key": "eval/m6-FT3000/m5-source-02/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1018458",
+      "expected_bytes": 1018458
+    },
+    {
+      "key": "eval/m6-FT3000/m5-source-03/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "924997",
+      "expected_bytes": 924997
+    },
+    {
+      "key": "eval/m6-FT3000/m5-validation-0006/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "975384",
+      "expected_bytes": 975384
+    },
+    {
+      "key": "eval/m6-FT3000/m5-validation-0014/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "975276",
+      "expected_bytes": 975276
+    },
+    {
+      "key": "eval/m6-FT3000/m5-validation-0016/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "961609",
+      "expected_bytes": 961609
+    },
+    {
+      "key": "eval/m6-FT3000/recovery-already_completed-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "827124",
+      "expected_bytes": 827124
+    },
+    {
+      "key": "eval/m6-FT3000/recovery-already_completed-03/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "887978",
+      "expected_bytes": 887978
+    },
+    {
+      "key": "eval/m6-custom-init/m5-source-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "3229937",
+      "expected_bytes": 3229937
+    },
+    {
+      "key": "eval/m6-custom-init/m5-source-02/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "3127850",
+      "expected_bytes": 3127850
+    },
+    {
+      "key": "eval/m6-custom-init/m5-source-03/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "3195735",
+      "expected_bytes": 3195735
+    },
+    {
+      "key": "eval/m6-custom-init/m5-validation-0006/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "3220641",
+      "expected_bytes": 3220641
+    },
+    {
+      "key": "eval/m6-custom-init/m5-validation-0014/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "3216817",
+      "expected_bytes": 3216817
+    },
+    {
+      "key": "eval/m6-custom-init/m5-validation-0016/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "3318331",
+      "expected_bytes": 3318331
+    },
+    {
+      "key": "eval/m6-custom-init/recovery-already_completed-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "3098321",
+      "expected_bytes": 3098321
+    },
+    {
+      "key": "eval/m6-custom-init/recovery-already_completed-03/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "3159094",
+      "expected_bytes": 3159094
+    },
+    {
+      "key": "eval/m6-vanilla-domain3/m5-source-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2093049",
+      "expected_bytes": 2093049
+    },
+    {
+      "key": "eval/m6-vanilla-domain3/m5-source-02/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2075368",
+      "expected_bytes": 2075368
+    },
+    {
+      "key": "eval/m6-vanilla-domain3/m5-source-03/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2087175",
+      "expected_bytes": 2087175
+    },
+    {
+      "key": "eval/m6-vanilla-domain3/m5-validation-0006/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2111263",
+      "expected_bytes": 2111263
+    },
+    {
+      "key": "eval/m6-vanilla-domain3/m5-validation-0014/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2109257",
+      "expected_bytes": 2109257
+    },
+    {
+      "key": "eval/m6-vanilla-domain3/m5-validation-0016/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2093615",
+      "expected_bytes": 2093615
+    },
+    {
+      "key": "eval/m6-vanilla-domain3/recovery-already_completed-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2118525",
+      "expected_bytes": 2118525
+    },
+    {
+      "key": "eval/m6-vanilla-domain3/recovery-already_completed-03/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2069868",
+      "expected_bytes": 2069868
+    },
+    {
+      "key": "ge/m7_completed_personal_0018.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "68164",
+      "expected_bytes": 68164
+    },
+    {
+      "key": "ge/m7_completed_personal_0019.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "68134",
+      "expected_bytes": 68134
+    },
+    {
+      "key": "ge/m7_completed_synthetic_001.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "68077",
+      "expected_bytes": 68077
+    },
+    {
+      "key": "ge/m7_completed_synthetic_002.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "67994",
+      "expected_bytes": 67994
+    },
+    {
+      "key": "ge/personal_demo_0001.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "348427",
+      "expected_bytes": 348427
+    },
+    {
+      "key": "ge/personal_demo_0002.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "345874",
+      "expected_bytes": 345874
+    },
+    {
+      "key": "ge/personal_demo_0003.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "355743",
+      "expected_bytes": 355743
+    },
+    {
+      "key": "ge/personal_demo_0005.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "327506",
+      "expected_bytes": 327506
+    },
+    {
+      "key": "ge/personal_demo_0007.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "370426",
+      "expected_bytes": 370426
+    },
+    {
+      "key": "ge/personal_demo_0009.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "379849",
+      "expected_bytes": 379849
+    },
+    {
+      "key": "ge/personal_demo_0012.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "330384",
+      "expected_bytes": 330384
+    },
+    {
+      "key": "ge/personal_demo_0013.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "339822",
+      "expected_bytes": 339822
+    },
+    {
+      "key": "ge/synthetic_generated_001.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "357768",
+      "expected_bytes": 357768
+    },
+    {
+      "key": "ge/synthetic_generated_002.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "370259",
+      "expected_bytes": 370259
+    },
+    {
+      "key": "ge/synthetic_generated_003.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "348404",
+      "expected_bytes": 348404
+    },
+    {
+      "key": "ge/synthetic_generated_004.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "318726",
+      "expected_bytes": 318726
+    },
+    {
+      "key": "ge/synthetic_generated_005.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "323220",
+      "expected_bytes": 323220
+    },
+    {
+      "key": "ge/synthetic_generated_006.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "360001",
+      "expected_bytes": 360001
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/m7-personal_demo_0014/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500888",
+      "expected_bytes": 500888
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/m7-personal_demo_0014/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488456",
+      "expected_bytes": 488456
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/m7-synthetic_generated_007/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500506",
+      "expected_bytes": 500506
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/m7-synthetic_generated_007/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "489187",
+      "expected_bytes": 489187
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/m7-synthetic_generated_009/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500080",
+      "expected_bytes": 500080
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/m7-synthetic_generated_009/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "490209",
+      "expected_bytes": 490209
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/recovery-already_completed-03/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500496",
+      "expected_bytes": 500496
+    },
+    {
+      "key": "eval/v1-m3-pilot-v1/recovery-already_completed-03/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488306",
+      "expected_bytes": 488306
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/m7-personal_demo_0014/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "496399",
+      "expected_bytes": 496399
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/m7-personal_demo_0014/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488456",
+      "expected_bytes": 488456
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/m7-synthetic_generated_007/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "497418",
+      "expected_bytes": 497418
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/m7-synthetic_generated_007/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "489187",
+      "expected_bytes": 489187
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/m7-synthetic_generated_009/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "496988",
+      "expected_bytes": 496988
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/m7-synthetic_generated_009/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "490209",
+      "expected_bytes": 490209
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/recovery-already_completed-03/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "496834",
+      "expected_bytes": 496834
+    },
+    {
+      "key": "eval/v1-m4-pilot-v1/recovery-already_completed-03/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488306",
+      "expected_bytes": 488306
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/m7-personal_demo_0014/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "499135",
+      "expected_bytes": 499135
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/m7-personal_demo_0014/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488456",
+      "expected_bytes": 488456
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/m7-synthetic_generated_007/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "499381",
+      "expected_bytes": 499381
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/m7-synthetic_generated_007/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "489187",
+      "expected_bytes": 489187
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/m7-synthetic_generated_009/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "499183",
+      "expected_bytes": 499183
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/m7-synthetic_generated_009/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "490209",
+      "expected_bytes": 490209
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/recovery-already_completed-03/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "498944",
+      "expected_bytes": 498944
+    },
+    {
+      "key": "eval/v2-m3-pilot-v1/recovery-already_completed-03/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488306",
+      "expected_bytes": 488306
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/m7-personal_demo_0014/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494715",
+      "expected_bytes": 494715
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/m7-personal_demo_0014/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488456",
+      "expected_bytes": 488456
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/m7-synthetic_generated_007/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495221",
+      "expected_bytes": 495221
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/m7-synthetic_generated_007/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "489187",
+      "expected_bytes": 489187
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/m7-synthetic_generated_009/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494591",
+      "expected_bytes": 494591
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/m7-synthetic_generated_009/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "490209",
+      "expected_bytes": 490209
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/recovery-already_completed-03/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494501",
+      "expected_bytes": 494501
+    },
+    {
+      "key": "eval/v2-m4-pilot-v1/recovery-already_completed-03/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488306",
+      "expected_bytes": 488306
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/m7-personal_demo_0014/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500536",
+      "expected_bytes": 500536
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/m7-personal_demo_0014/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488456",
+      "expected_bytes": 488456
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/m7-synthetic_generated_007/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500976",
+      "expected_bytes": 500976
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/m7-synthetic_generated_007/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "489187",
+      "expected_bytes": 489187
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/m7-synthetic_generated_009/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500791",
+      "expected_bytes": 500791
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/m7-synthetic_generated_009/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "490209",
+      "expected_bytes": 490209
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/recovery-already_completed-03/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500083",
+      "expected_bytes": 500083
+    },
+    {
+      "key": "eval/v3-m3-four-second-diagnostic-v1/recovery-already_completed-03/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488306",
+      "expected_bytes": 488306
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/m7-personal_demo_0014/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500115",
+      "expected_bytes": 500115
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/m7-personal_demo_0014/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488456",
+      "expected_bytes": 488456
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/m7-synthetic_generated_007/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500596",
+      "expected_bytes": 500596
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/m7-synthetic_generated_007/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "489187",
+      "expected_bytes": 489187
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/m7-synthetic_generated_009/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "500769",
+      "expected_bytes": 500769
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/m7-synthetic_generated_009/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "490209",
+      "expected_bytes": 490209
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/recovery-already_completed-03/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "499739",
+      "expected_bytes": 499739
+    },
+    {
+      "key": "eval/v3-m3-pilot-v1/recovery-already_completed-03/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488306",
+      "expected_bytes": 488306
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/m7-personal_demo_0014/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "496322",
+      "expected_bytes": 496322
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/m7-personal_demo_0014/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488456",
+      "expected_bytes": 488456
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/m7-synthetic_generated_007/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495589",
+      "expected_bytes": 495589
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/m7-synthetic_generated_007/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "489187",
+      "expected_bytes": 489187
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/m7-synthetic_generated_009/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495391",
+      "expected_bytes": 495391
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/m7-synthetic_generated_009/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "490209",
+      "expected_bytes": 490209
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/recovery-already_completed-03/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "496071",
+      "expected_bytes": 496071
+    },
+    {
+      "key": "eval/v3-m4-four-second-diagnostic-v1/recovery-already_completed-03/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488306",
+      "expected_bytes": 488306
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/m7-personal_demo_0014/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495918",
+      "expected_bytes": 495918
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/m7-personal_demo_0014/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488456",
+      "expected_bytes": 488456
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/m7-synthetic_generated_007/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495209",
+      "expected_bytes": 495209
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/m7-synthetic_generated_007/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "489187",
+      "expected_bytes": 489187
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/m7-synthetic_generated_009/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494981",
+      "expected_bytes": 494981
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/m7-synthetic_generated_009/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "490209",
+      "expected_bytes": 490209
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/recovery-already_completed-03/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494973",
+      "expected_bytes": 494973
+    },
+    {
+      "key": "eval/v3-m4-pilot-v1/recovery-already_completed-03/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488306",
+      "expected_bytes": 488306
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/m7-personal_demo_0001/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1061650",
+      "expected_bytes": 1061650
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/m7-personal_demo_0001/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488264",
+      "expected_bytes": 488264
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/m7-personal_demo_0001/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "491922",
+      "expected_bytes": 491922
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/m7-personal_demo_0006/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488633",
+      "expected_bytes": 488633
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/m7-personal_demo_0006/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495215",
+      "expected_bytes": 495215
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/m7-personal_demo_0014/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488456",
+      "expected_bytes": 488456
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/m7-personal_demo_0014/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495321",
+      "expected_bytes": 495321
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/m7-synthetic_generated_007/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "489187",
+      "expected_bytes": 489187
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/m7-synthetic_generated_007/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "490138",
+      "expected_bytes": 490138
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/m7-synthetic_generated_009/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "490209",
+      "expected_bytes": 490209
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/m7-synthetic_generated_009/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "498741",
+      "expected_bytes": 498741
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/recovery-wrong_orientation-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488405",
+      "expected_bytes": 488405
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/recovery-wrong_orientation-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494870",
+      "expected_bytes": 494870
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/recovery-already_completed-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488188",
+      "expected_bytes": 488188
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/recovery-already_completed-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495167",
+      "expected_bytes": 495167
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/recovery-already_completed-03/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488306",
+      "expected_bytes": 488306
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/recovery-already_completed-03/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495506",
+      "expected_bytes": 495506
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/m7-personal_demo_0006/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1916898",
+      "expected_bytes": 1916898
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/recovery-wrong_orientation-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1802935",
+      "expected_bytes": 1802935
+    },
+    {
+      "key": "eval/v3-m5-four-second-diagnostic-v1/recovery-already_completed-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2059191",
+      "expected_bytes": 2059191
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/m7-personal_demo_0001/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1134981",
+      "expected_bytes": 1134981
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/m7-personal_demo_0001/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "490650",
+      "expected_bytes": 490650
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/m7-personal_demo_0001/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488278",
+      "expected_bytes": 488278
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/m7-personal_demo_0006/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495433",
+      "expected_bytes": 495433
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/m7-personal_demo_0006/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488644",
+      "expected_bytes": 488644
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/m7-personal_demo_0014/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494583",
+      "expected_bytes": 494583
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/m7-personal_demo_0014/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488468",
+      "expected_bytes": 488468
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/m7-synthetic_generated_007/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "492251",
+      "expected_bytes": 492251
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/m7-synthetic_generated_007/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "489202",
+      "expected_bytes": 489202
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/m7-synthetic_generated_009/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494565",
+      "expected_bytes": 494565
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/m7-synthetic_generated_009/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "490212",
+      "expected_bytes": 490212
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/recovery-already_completed-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "493936",
+      "expected_bytes": 493936
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/recovery-already_completed-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488201",
+      "expected_bytes": 488201
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/recovery-already_completed-03/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "491590",
+      "expected_bytes": 491590
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/recovery-already_completed-03/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488319",
+      "expected_bytes": 488319
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/recovery-wrong_orientation-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494298",
+      "expected_bytes": 494298
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/recovery-wrong_orientation-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488417",
+      "expected_bytes": 488417
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/m7-personal_demo_0006/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1866704",
+      "expected_bytes": 1866704
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/recovery-wrong_orientation-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1904727",
+      "expected_bytes": 1904727
+    },
+    {
+      "key": "eval/v3-m5-pilot-v1/recovery-already_completed-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2028712",
+      "expected_bytes": 2028712
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/m7-personal_demo_0001/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "975468",
+      "expected_bytes": 975468
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/m7-personal_demo_0001/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488264",
+      "expected_bytes": 488264
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/m7-personal_demo_0001/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "491318",
+      "expected_bytes": 491318
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/m7-personal_demo_0006/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488633",
+      "expected_bytes": 488633
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/m7-personal_demo_0006/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "499239",
+      "expected_bytes": 499239
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/m7-personal_demo_0014/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488456",
+      "expected_bytes": 488456
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/m7-personal_demo_0014/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "497211",
+      "expected_bytes": 497211
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/m7-synthetic_generated_007/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "489187",
+      "expected_bytes": 489187
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/m7-synthetic_generated_007/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494302",
+      "expected_bytes": 494302
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/m7-synthetic_generated_009/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "490209",
+      "expected_bytes": 490209
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/m7-synthetic_generated_009/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "498347",
+      "expected_bytes": 498347
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/recovery-wrong_orientation-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488405",
+      "expected_bytes": 488405
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/recovery-wrong_orientation-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "492795",
+      "expected_bytes": 492795
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/recovery-already_completed-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488188",
+      "expected_bytes": 488188
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/recovery-already_completed-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "493334",
+      "expected_bytes": 493334
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/recovery-already_completed-03/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488306",
+      "expected_bytes": 488306
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/recovery-already_completed-03/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "490601",
+      "expected_bytes": 490601
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/m7-personal_demo_0006/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1665933",
+      "expected_bytes": 1665933
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/recovery-wrong_orientation-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2029446",
+      "expected_bytes": 2029446
+    },
+    {
+      "key": "eval/v3-m6-four-second-diagnostic-v1/recovery-already_completed-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2016824",
+      "expected_bytes": 2016824
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/m7-personal_demo_0001/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2110328",
+      "expected_bytes": 2110328
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/m7-personal_demo_0001/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488264",
+      "expected_bytes": 488264
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/m7-personal_demo_0001/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495954",
+      "expected_bytes": 495954
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/m7-personal_demo_0006/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488633",
+      "expected_bytes": 488633
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/m7-personal_demo_0006/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495860",
+      "expected_bytes": 495860
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/m7-personal_demo_0014/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488456",
+      "expected_bytes": 488456
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/m7-personal_demo_0014/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495519",
+      "expected_bytes": 495519
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/m7-synthetic_generated_007/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "489187",
+      "expected_bytes": 489187
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/m7-synthetic_generated_007/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495632",
+      "expected_bytes": 495632
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/m7-synthetic_generated_009/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "490209",
+      "expected_bytes": 490209
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/m7-synthetic_generated_009/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495201",
+      "expected_bytes": 495201
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/recovery-wrong_orientation-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488405",
+      "expected_bytes": 488405
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/recovery-wrong_orientation-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495411",
+      "expected_bytes": 495411
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/recovery-already_completed-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488188",
+      "expected_bytes": 488188
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/recovery-already_completed-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "496319",
+      "expected_bytes": 496319
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/recovery-already_completed-03/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488306",
+      "expected_bytes": 488306
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/recovery-already_completed-03/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495546",
+      "expected_bytes": 495546
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/m7-personal_demo_0006/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2070241",
+      "expected_bytes": 2070241
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/recovery-wrong_orientation-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2064294",
+      "expected_bytes": 2064294
+    },
+    {
+      "key": "eval/v4-m3-pilot-v1/recovery-already_completed-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2118925",
+      "expected_bytes": 2118925
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/m7-personal_demo_0001/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2298127",
+      "expected_bytes": 2298127
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/m7-personal_demo_0001/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488264",
+      "expected_bytes": 488264
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/m7-personal_demo_0001/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494764",
+      "expected_bytes": 494764
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/m7-personal_demo_0006/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488633",
+      "expected_bytes": 488633
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/m7-personal_demo_0006/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495409",
+      "expected_bytes": 495409
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/m7-personal_demo_0014/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488456",
+      "expected_bytes": 488456
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/m7-personal_demo_0014/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495083",
+      "expected_bytes": 495083
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/m7-synthetic_generated_007/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "489187",
+      "expected_bytes": 489187
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/m7-synthetic_generated_007/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495578",
+      "expected_bytes": 495578
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/m7-synthetic_generated_009/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "490209",
+      "expected_bytes": 490209
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/m7-synthetic_generated_009/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494274",
+      "expected_bytes": 494274
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/recovery-wrong_orientation-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488405",
+      "expected_bytes": 488405
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/recovery-wrong_orientation-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494790",
+      "expected_bytes": 494790
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/recovery-already_completed-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488188",
+      "expected_bytes": 488188
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/recovery-already_completed-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494884",
+      "expected_bytes": 494884
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/recovery-already_completed-03/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488306",
+      "expected_bytes": 488306
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/recovery-already_completed-03/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495237",
+      "expected_bytes": 495237
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/m7-personal_demo_0006/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2176810",
+      "expected_bytes": 2176810
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/recovery-wrong_orientation-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2177629",
+      "expected_bytes": 2177629
+    },
+    {
+      "key": "eval/v4-m4-pilot-v1/recovery-already_completed-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2160135",
+      "expected_bytes": 2160135
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/m7-personal_demo_0001/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1184452",
+      "expected_bytes": 1184452
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/m7-personal_demo_0001/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "489314",
+      "expected_bytes": 489314
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/m7-personal_demo_0001/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488278",
+      "expected_bytes": 488278
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/m7-personal_demo_0006/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494737",
+      "expected_bytes": 494737
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/m7-personal_demo_0006/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488644",
+      "expected_bytes": 488644
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/m7-personal_demo_0014/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "491694",
+      "expected_bytes": 491694
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/m7-personal_demo_0014/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488468",
+      "expected_bytes": 488468
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/m7-synthetic_generated_007/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "494440",
+      "expected_bytes": 494440
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/m7-synthetic_generated_007/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "489202",
+      "expected_bytes": 489202
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/m7-synthetic_generated_009/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "496334",
+      "expected_bytes": 496334
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/m7-synthetic_generated_009/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "490212",
+      "expected_bytes": 490212
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/recovery-already_completed-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "489124",
+      "expected_bytes": 489124
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/recovery-already_completed-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488201",
+      "expected_bytes": 488201
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/recovery-already_completed-03/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488619",
+      "expected_bytes": 488619
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/recovery-already_completed-03/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488319",
+      "expected_bytes": 488319
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/recovery-wrong_orientation-01/final.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "495523",
+      "expected_bytes": 495523
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/recovery-wrong_orientation-01/initial.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": "488417",
+      "expected_bytes": 488417
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/m7-personal_demo_0006/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1785431",
+      "expected_bytes": 1785431
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/recovery-wrong_orientation-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "2191881",
+      "expected_bytes": 2191881
+    },
+    {
+      "key": "eval/v4-m6-pilot-v1/recovery-already_completed-01/rollout.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": "1066804",
+      "expected_bytes": 1066804
+    }
+  ]
+}
