@@ -1,0 +1,107 @@
+%%{init: {"theme": "base", "securityLevel": "loose", "fontFamily": "Arial, sans-serif", "fontSize": 18, "markdownAutoWrap": false, "flowchart": {"htmlLabels": false, "curve": "basis", "nodeSpacing": 24, "rankSpacing": 70, "wrappingWidth": 360}, "themeVariables": {"primaryTextColor": "#edf2f7", "lineColor": "#71849f", "background": "#0b1220"}}}%%
+flowchart LR
+OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
+O_evidence["Opportunity: Make results reproducible, recoverable and<br/>understandable"]:::opportunity
+OUT --> O_evidence
+O_evidence_S0["Solution: Reconcile evaluation panels and uncertainty"]:::solution
+O_evidence --> O_evidence_S0
+T10995["EVAL01 · #10995<br/>Reconcile the earlier 775-rollout feeding<br/>comparison and V4 grasp search"]:::experiment
+O_evidence_S0 --> T10995
+R10995["775 matched feeding rollouts:<br/>vanilla/V1/V2/V3/V4 pickups 0/0/0/10/1 on 137<br/>unfinished scenes. Stable square placements<br/>0/0/0/5/1."]:::mixed
+T10995 --> R10995
+click T10995 "http://127.0.0.1:4001/?project=typhon-research#ticket=10995" "Open research ticket" _blank
+T10997["EVAL03 · #10997<br/>Reconcile the 20 × A/B harness comparison and<br/>guard event logging"]:::experiment
+O_evidence_S0 --> T10997
+R10997["Historical 400 synthetic A/B rows: zero<br/>pickup/place/strict. One candidate, 30-second<br/>cap, no TTC. Distinct from film-derived<br/>evaluation."]:::mixed
+T10997 --> R10997
+click T10997 "http://127.0.0.1:4001/?project=typhon-research#ticket=10997" "Open research ticket" _blank
+T10996["EVAL02 · #10996<br/>Define the next confirmatory comparison with<br/>family-level uncertainty"]:::experiment
+O_evidence_S0 --> T10996
+R10996["REVIEW: 136/204 planned completed. Broad vs<br/>vanilla near-layout strict 17/40 vs 0/40.<br/>Broader layouts 0/20 both; 68 interventions<br/>unrun."]:::mixed
+T10996 --> R10996
+click T10996 "http://127.0.0.1:4001/?project=typhon-research#ticket=10996" "Open research ticket" _blank
+T11036["EVAL02R · #11036<br/>Reconcile existing comparison claims and<br/>family-level uncertainty"]:::experiment
+O_evidence_S0 --> T11036
+R11036["Read-only review of 775 + 296 rollouts and 24<br/>extracts. Family-aware intervals and 1,102<br/>input hashes checked; no new experiments."]:::mixed
+T11036 --> R11036
+click T11036 "http://127.0.0.1:4001/?project=typhon-research#ticket=11036" "Open research ticket" _blank
+O_evidence_S1["Solution: Preserve the research record and compute<br/>environment"]:::solution
+O_evidence --> O_evidence_S1
+T10980["OPS03 · #10980<br/>Write a request-by-request report and obtain<br/>independent plus GPT Pro review"]:::experiment
+O_evidence_S1 --> T10980
+R10980["review 13 requests reconciled limits and<br/>errata documented"]:::evidence
+T10980 --> R10980
+click T10980 "http://127.0.0.1:4001/?project=typhon-research#ticket=10980" "Open research ticket" _blank
+T10979["OPS02 · #10979<br/>Preserve and verify all research models,<br/>traces, videos and resume state"]:::experiment
+O_evidence_S1 --> T10979
+R10979["backup Artifacts and checkpoints retained<br/>SHA-verified on Mint fast drive"]:::evidence
+T10979 --> R10979
+click T10979 "http://127.0.0.1:4001/?project=typhon-research#ticket=10979" "Open research ticket" _blank
+T10956["OPS01 · #10956<br/>Create and reconcile the research kanban<br/>ledger with evidence and honest statuses"]:::experiment
+O_evidence_S1 --> T10956
+R10956["Research ledger reconciled. Current tree<br/>covers every ticket with explicit evidence,<br/>limitations and status; creating a ticket is<br/>not executing it."]:::evidence
+T10956 --> R10956
+click T10956 "http://127.0.0.1:4001/?project=typhon-research#ticket=10956" "Open research ticket" _blank
+T10986["DATA01 · #10986<br/>Publish an internal model and dataset registry<br/>with unambiguous names"]:::experiment
+O_evidence_S1 --> T10986
+R10986["19 checkpoint identities audited. M3–M6 are<br/>separate lineages; broad Pt starts fresh.<br/>Historical V4 recovery arrays remain partly<br/>unverified."]:::mixed
+T10986 --> R10986
+click T10986 "http://127.0.0.1:4001/?project=typhon-research#ticket=10986" "Open research ticket" _blank
+T11012["OPS05 · #11012<br/>Draw the opportunity solution tree and restore<br/>the Design viewer"]:::experiment
+O_evidence_S1 --> T11012
+R11012["113 work items across 10 views. Each<br/>experiment has a result card. Live/offline SVG<br/>coverage verified; active research programme<br/>continues after bounded tickets."]:::mixed
+T11012 --> R11012
+click T11012 "http://127.0.0.1:4001/?project=typhon-research#ticket=11012" "Open research ticket" _blank
+T11042["OPS01 · #11042<br/>Verify Powerglide booking and full backup<br/>including lab recovery"]:::experiment
+O_evidence_S1 --> T11042
+R11042["Full backup reconciled: 906,507 files, 299.6<br/>GB, no integrity errors. Labs and checkpoint<br/>checks saved. Fresh-machine restore untested."]:::mixed
+T11042 --> R11042
+click T11042 "http://127.0.0.1:4001/?project=typhon-research#ticket=11042" "Open research ticket" _blank
+T11049["OPS07 · #11049<br/>Restore Mint access and mirror latest<br/>experiment evidence and OST"]:::experiment
+O_evidence_S1 --> T11049
+R11049["Recovered: Mint mirrors verified (45 older<br/>evidence files, 809 DATA07-R raw files).<br/>Interrupted work preserved; live OST installed<br/>and served bytes checked. DATA07-GE raw 223<br/>files also verified. Fresh-machine restore<br/>untested."]:::mixed
+T11049 --> R11049
+click T11049 "http://127.0.0.1:4001/?project=typhon-research#ticket=11049" "Open research ticket" _blank
+O_evidence_S2["Solution: Qualify media and the private report"]:::solution
+O_evidence --> O_evidence_S2
+T11007["DEL01 · #11007<br/>Reconcile dashboard, video hosting and<br/>research result provenance"]:::experiment
+O_evidence_S2 --> T11007
+R11007["Eight representative records, ten videos,<br/>exact models and hashes verified. Current<br/>selected files absent from hosted index;<br/>delivery repair separate."]:::mixed
+T11007 --> R11007
+click T11007 "http://127.0.0.1:4001/?project=typhon-research#ticket=11007" "Open research ticket" _blank
+T11008["DEL02 · #11008<br/>Prepare an accurate research write-up and<br/>submission package"]:::experiment
+O_evidence_S2 --> T11008
+R11008["REVIEW: private research write-up plus<br/>overnight synthesis. Local task-wording<br/>precedence demonstrated; numerical steering<br/>and recovery remain open.<br/>Publication/submission pending."]:::mixed
+T11008 --> R11008
+click T11008 "http://127.0.0.1:4001/?project=typhon-research#ticket=11008" "Open research ticket" _blank
+O_evidence_S3["Solution: Restore the exact archived model before<br/>continuous execution"]:::solution
+O_evidence --> O_evidence_S3
+T11091["RESTORE-GOAL · #11091<br/>Verify archived feeding weights before<br/>HIER02-LIVE-R1"]:::experiment
+O_evidence_S3 --> T11091
+R11091["Complete: exact 3.729GB GOAL checkpoint<br/>restored in46m55s; full destination SHA<br/>verified before atomic rename. Evidence<br/>storage qualified; original preparation<br/>failure retained."]:::mixed
+T11091 --> R11091
+click T11091 "http://127.0.0.1:4001/?project=typhon-research#ticket=11091" "Open research ticket" _blank
+O_evidence_S4["Solution: Keep verified results available when compute<br/>machines change"]:::solution
+O_evidence --> O_evidence_S4
+T11096["EVIDENCE23 · #11096<br/>Recover scratch space from verified historical<br/>frames"]:::experiment
+O_evidence_S4 --> T11096
+R11096["DONE: 64,784 historical frame copies<br/>offloaded; 17.812 GB logical data verified on<br/>Mint. All 5,570 remaining files unchanged.<br/>Freed local scratch, not HOME quota."]:::evidence
+T11096 --> R11096
+click T11096 "http://127.0.0.1:4001/?project=typhon-research#ticket=11096" "Open research ticket" _blank
+O_evidence_S5["Solution: Restore lab headroom without losing research<br/>evidence"]:::solution
+O_evidence --> O_evidence_S5
+T11099["EVIDENCE24 · #11099<br/>Restore HOME quota headroom with one verified<br/>redundant checkpoint"]:::experiment
+O_evidence_S5 --> T11099
+R11099["DONE: One authorized archived M3 probe<br/>removed. Both fresh hashes match;<br/>3,527,245,824 HOME quota bytes recovered. M4,<br/>labs and evidence preserved."]:::evidence
+T11099 --> R11099
+click T11099 "http://127.0.0.1:4001/?project=typhon-research#ticket=11099" "Open research ticket" _blank
+classDef outcome fill:#263f60,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef opportunity fill:#2d443b,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef solution fill:#343a46,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef experiment fill:#4a4428,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef evidence fill:#244a3d,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef mixed fill:#574831,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef negative fill:#56343c,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef pending fill:#30445a,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef blocked fill:#4e374f,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef parked fill:#373b42,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;

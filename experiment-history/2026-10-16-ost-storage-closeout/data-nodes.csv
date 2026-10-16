@@ -1,0 +1,78 @@
+id,type,label,parent_id,x,y,color
+T10981,experiment,"OPS04 · #10981
+Reconcile excluded human review candidate 6 with stable demo IDs",S_data_0,1220,58.0,#4a4428
+R10981,result,Review candidate 6 is demo0017; its source remains preserved. It is distinct from successful demo0006.,T10981,1620,58.0,#244a3d
+T10991,experiment,"DATA06 · #10991
+Version the physical-object and calibration assumptions consistently",S_data_0,1220,185.0,#4a4428
+R10991,result,BLOCKED: reliable physical measurements and camera calibration remain missing. Virtual scale stays explicit.,T10991,1620,185.0,#4e374f
+T10972,experiment,"R07 · #10972
+Align one human correction clip with the Panda-expert event timeline",S_data_0,1220,312.0,#4a4428
+R10972,result,One 7.6 s correction aligned event warp is not motor labels,T10972,1620,321.5,#574831
+T10974,experiment,"R09 · #10974
+Retarget one short human-observed correction into constrained Panda motion",S_data_0,1220,439.0,#4a4428
+R10974,result,One constrained Panda success generated path; virtual scale,T10974,1620,448.5,#574831
+T10989,experiment,"DATA04 · #10989
+Validate phone-video to Panda-action alignment beyond one event comparison",S_data_0,1220,566.0,#4a4428
+R10989,result,BLOCKED: no validated dense phone-frame to Panda-action alignment. One event comparison is not motor supervision.,T10989,1620,566.0,#4e374f
+S_data_0,solution,Preserve source evidence and physical assumptions,O_data,820,321.5,#343a46
+T10987,experiment,"DATA02 · #10987
+Reconcile prepared phase chunks and four-second intention targets with actual training",S_data_1,1220,718.0,#4a4428
+R10987,result,V2: 632 rows / 316 chunks. V3: 776 / 388. Broad Pt uses 30 actions over 1.5 s; four-second history is not a four-second action target.,T10987,1620,718.0,#574831
+T10988,experiment,"DATA03 · #10988
+Audit balanced sampling across takes, chunks, horizons and camera views",S_data_1,1220,866.0,#4a4428
+R10988,result,"Broad12k: 48,000 draws, 8,000 per source, all 439 windows. Historical V3 per-update sampling remains unverified.",T10988,1620,866.0,#574831
+T10990,experiment,"DATA05 · #10990
+Audit held-state crosshair in video and separate trajectory labels",S_data_1,1220,993.0,#4a4428
+R10990,result,"16 takes / 32 views / 7,904 frames: 1,024 held, 3,598 not held, 3,282 unknown. 768 marked frames; no direct Franka labels.",T10990,1620,993.0,#574831
+S_data_1,solution,"Audit training targets, mixing and held markers",O_data,820,870.25,#343a46
+T11016,experiment,"VIDEO01-A · #11016
+Observed 2D object paths and explicit orientation gaps",S_data_2,1220,1145.0,#4a4428
+R11016,result,Observed 2D object representation audited. Missing orientation and calibration stay explicit; no recovered human 3D actions.,T11016,1620,1145.0,#574831
+T11017,experiment,"VIDEO01-B · #11017
+Hand/pinch observations without fabricated grasp labels",S_data_2,1220,1272.0,#4a4428
+R11017,result,"526 sample identities, 175 hand detections. Unknown contact stays unknown; no autonomous grasp authority.",T11017,1620,1272.0,#574831
+T11018,experiment,"VIDEO01-C · #11018
+Frozen phone-frame features with temporal and cross-view controls",S_data_2,1220,1409.5,#4a4428
+R11018,result,112 paired instants / 224 views reviewed. Intermediate pickup/release matters; generic representation-to-action transfer remains unqualified.,T11018,1620,1399.0,#574831
+T11019,experiment,"VIDEO02 · #11019
+Dense phone observations, temporal controls and object-focused features",S_data_2,1220,1557.5,#4a4428
+R11019,result,"Corrected extraction: 2,644/2,644 frame hashes; 147 four-second windows. Failed 906-frame-mismatch export preserved. Offline features, no motor labels.",T11019,1620,1547.0,#574831
+S_data_2,solution,"Extract observed object, hand and temporal evidence",O_data,820,1360.75,#343a46
+T11020,experiment,"VIDEO03 · #11020
+Test causal held-state prediction from unmarked personal video",S_data_3,1220,1730.5,#4a4428
+R11020,result,35 probes: perfect labelled interiors but hand-present false-held errors remain. Primary-to-side recall 3/28 full vs 28/28 fused; no control authority.,T11020,1620,1720.0,#574831
+T11021,experiment,"VIDEO04 · #11021
+Test training-only hand-present negatives for held-state errors",S_data_3,1220,1878.5,#4a4428
+R11021,result,12 training negative views added. Transition errors 2/6 to 1/6 views; the same physical event still fails. 90/90 held positives retained.,T11021,1620,1868.0,#574831
+T11022,experiment,"VIDEO05 · #11022
+Test pre-contact negatives while preserving held-pause recognition",S_data_3,1220,2016.0,#4a4428
+R11022,result,13 pre-contact views added. New false-held errors 2/5 to 1/5; reused challenge 1/8 to 0/8. Held-pause qualification incomplete.,T11022,1620,2016.0,#574831
+S_data_3,solution,Test causal contact evidence and its failures,O_data,820,1882.75,#343a46
+T11023,experiment,"VIDEO06 · #11023
+Audit object motion through occlusion before video retargeting",S_data_4,1220,2178.5,#4a4428
+R11023,result,"342 frames: 194/222 held motion pairs supported, 28 unknown. Image motion is real; metric depth and grasp remain unresolved.",T11023,1620,2168.0,#574831
+T11024,experiment,"VIDEO07 · #11024
+Test native video cadence and phase timing before robot retargeting",S_data_4,1220,2316.0,#4a4428
+R11024,result,"Native cadence: 212/222 held pairs supported, up from 194. Ten unsupported pairs remain; no recovered robot actions.",T11024,1620,2316.0,#574831
+T11032,experiment,"VIDEO08 · #11032
+Test whether existing views identify camera geometry for a video-to-robot adapter",S_data_4,1220,2443.0,#4a4428
+R11032,result,297 camera fits per view fit within 5 px. Large depth/height ambiguity: planar corners do not identify 3D geometry.,T11032,1620,2443.0,#574831
+T11033,experiment,"VIDEO09 · #11033
+Execute full human correction sequence with a frozen RGB-to-Panda adapter",S_data_4,1220,2580.5,#4a4428
+R11033,result,"Five sequence/control executions all grasp, lift and release; strict 0/5. Goal error 33.7–35.5 mm. Endpoint registration is a confound.",T11033,1620,2570.0,#574831
+T11034,experiment,"VIDEO10 · #11034
+Register the complete video to the fixed task goal and rerun matched controls",S_data_4,1220,2728.5,#4a4428
+R11034,result,Goal registration: all five sequence/endpoint/shuffle/static/repeat conditions succeed. One inspected take; no advantage from full sequence.,T11034,1620,2718.0,#574831
+T11035,experiment,"VIDEO11 · #11035
+Audit glyph correspondence and the conflicting trajectory scores",S_data_4,1220,2866.0,#4a4428
+R11035,result,736-observation audit: plane-depth bias explains conflicting path scores. No new rollout; close full-path superiority claim.,T11035,1620,2866.0,#574831
+T11015,experiment,"VIDEO01 · #11015
+Compare video-derived representations and robot adapters without geometric-expert trajectories",S_data_4,1220,3003.5,#4a4428
+R11015,result,"Investigation concluded. Assisted correction works, but generic video-to-action transfer and extra benefit from intermediate video were not established.",T11015,1620,2993.0,#574831
+S_data_4,solution,"Qualify motion, camera geometry and transfer",O_data,820,2605.75,#343a46
+T11098,experiment,"DATA04-EVENT · #11098
+Test human/Panda semantic event alignment",S_data_5,1220,3207.0,#4a4428
+R11098,result,ON HOLD — NOT RUN. Original time window missed before extraction. Source inspection only; no alignment results. Storage-only instruction prevents new research jobs.,T11098,1620,3187.0,#4e374f
+S_data_5,solution,Test whether visual sequences align corresponding manipulation events,O_data,820,3207.0,#343a46
+O_data,opportunity,Turn personal observations into reliable robot practice,outcome,420,1764.25,#2d443b
+outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60
