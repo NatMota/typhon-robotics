@@ -1,0 +1,61 @@
+{
+  "epoch": 1792115588.3276885,
+  "processes": [
+    {
+      "id": "A",
+      "command": [
+        "/var/tmp/typhon-worktrees-20261016/init11/.venv-xvla/bin/python",
+        "/var/tmp/typhon-worktrees-20261016/init11q/scripts/init11q_probe.py",
+        "--worker",
+        "/var/tmp/typhon-worktrees-20261016/init11/scripts/load05_worker.py",
+        "--output",
+        "/var/tmp/typhon-init11q-20261016/A",
+        "--clock",
+        "/var/tmp/typhon-init11q-20261016/clock.json"
+      ],
+      "cwd": "/var/tmp/typhon-worktrees-20261016/init11",
+      "started_epoch": 1792115493.3447883,
+      "pid": 15977,
+      "returncode": 0,
+      "ended_epoch": 1792115530.058775
+    },
+    {
+      "id": "B",
+      "command": [
+        "/var/tmp/typhon-worktrees-20261016/init11/.venv-xvla/bin/python",
+        "/var/tmp/typhon-worktrees-20261016/init11q/scripts/init11q_probe.py",
+        "--worker",
+        "/var/tmp/typhon-worktrees-20261016/init11/scripts/load05_worker.py",
+        "--output",
+        "/var/tmp/typhon-init11q-20261016/B",
+        "--clock",
+        "/var/tmp/typhon-init11q-20261016/clock.json"
+      ],
+      "cwd": "/var/tmp/typhon-worktrees-20261016/init11",
+      "started_epoch": 1792115530.059221,
+      "pid": 16260,
+      "returncode": 0,
+      "ended_epoch": 1792115541.638779
+    },
+    {
+      "id": "C",
+      "command": [
+        "/var/tmp/typhon-worktrees-20261015/init07/.venv-xvla/bin/python",
+        "/var/tmp/typhon-worktrees-20261016/init11q/scripts/init11q_probe.py",
+        "--worker",
+        "/var/tmp/typhon-worktrees-20261015/init07/scripts/load04_worker.py",
+        "--output",
+        "/var/tmp/typhon-init11q-20261016/C",
+        "--clock",
+        "/var/tmp/typhon-init11q-20261016/clock.json"
+      ],
+      "cwd": "/var/tmp/typhon-worktrees-20261015/init07",
+      "started_epoch": 1792115541.6392612,
+      "pid": 16401,
+      "returncode": 0,
+      "ended_epoch": 1792115588.3273125
+    }
+  ],
+  "physical_rollouts": 0,
+  "no_extra_calls": true
+}

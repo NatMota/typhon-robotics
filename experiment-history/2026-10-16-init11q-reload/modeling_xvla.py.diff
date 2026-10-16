@@ -1,0 +1,39 @@
+--- failed-restoration/modeling_xvla.py
++++ original-Q1/modeling_xvla.py
+@@ -55,20 +55,23 @@
+         # Core settings
+         self.num_actions: int = config.num_actions
+         self.use_proprio: bool = config.use_proprio
+-        self.action_mode: str = config.action_mode.lower()
++
+         # Action space (dimensions + hooks)
+         self.action_space = build_action_space(config.action_mode.lower())
+         dim_action = self.action_space.dim_action
+         dim_proprio = getattr(self.action_space, "dim_proprio", dim_action)
+ 
+         # Florence2 backbone (encoder only)
+-        self.vlm = Florence2ForConditionalGeneration(config.florence_config).to(torch.float32)
++        self.vlm = Florence2ForConditionalGeneration(config.florence_config)
+         if hasattr(self.vlm, "language_model"):
+             lm = self.vlm.language_model
+             if hasattr(lm, "model") and hasattr(lm.model, "decoder"):
+                 del lm.model.decoder
+             if hasattr(lm, "lm_head"):
+                 del lm.lm_head
++        # ⚠️ VERY IMPORTANT: disable Florence2's tie_weights hooks to avoid decoder access
++        if hasattr(self.vlm, "tie_weights"):
++            self.vlm.tie_weights = lambda *a, **k: None
+ 
+         projection_dim = getattr(self.vlm.config, "projection_dim", None)
+         if projection_dim is None:
+@@ -92,6 +95,10 @@
+ 
+         # Deferred FastAPI app
+         self.app: FastAPI | None = None
++
++    def tie_weights(self):
++        """Disable automatic weight tying (Florence is encoder-only)."""
++        return
+ 
+     # ============================= Florence2 encoder =============================
+     def forward_vlm(
