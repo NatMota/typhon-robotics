@@ -19,6 +19,15 @@ The recordings comprise **eight videos, 16 curated examples and 15 reconstructab
 
 [Experiment dashboard](https://www.natslabs.com/typhon-robotics/) · [Video library](https://www.natslabs.com/typhon-robotics/media-library.html) · [Earlier verified results](evidence/m7/) · [Controller audit](evidence/harness/SERVICE_REPORT.txt) · [Dataset provenance](evidence/m0/) · [Experiment history](experiment-history/) · [Reproduction](#reproduce)
 
+### Placement examples
+
+| Correct placement: native loading policy Q1 | Wrong placement: early V4-M6 policy |
+|---|---|
+| ![Native loading policy picks up the block and releases it seated in the fixture](docs/research/media/qualified-native-loading.gif) | ![V4-M6 picks up the block but releases it with an incorrect yaw orientation](docs/research/media/wrong-yaw-v4-m6.gif) |
+| **Strict placement passed:** 6.10 mm position error, 1.03° yaw error. Unassisted development workflow. | **Strict placement failed:** 11.36 mm position error, 85.06° yaw error. |
+
+Recorded simulator footage, cropped to the oblique camera and replayed at **1.5× speed**. These illustrate different model versions and task configurations, not a matched comparison or the full 36-pair evaluation. [Clip provenance](docs/research/media/placement-gifs.json).
+
 ## Why feeding and loading
 
 The starting point was a customer problem: a robot becomes more useful if the next workstation can reuse what it has already learned. Repeating a successful motion at one station is only part of that job. The robot also needs to notice when a part has moved, a grasp has failed or someone has already completed a step.

@@ -1,0 +1,37 @@
+{
+  "presentation": "Recorded simulator video, oblique half only, 440 x 440, 8 fps, 1.5x speed, final-frame hold. No new simulation or generated motion.",
+  "correct": {
+    "gif": "qualified-native-loading.gif",
+    "workflow": "demo_0012-912171-N",
+    "stage": "loading",
+    "model_version": "Q1 loading-with-retention, step 3000",
+    "strict_stage_success": true,
+    "workflow_engineering_qualified": true,
+    "position_error_mm": 6.095520763724495,
+    "yaw_error_deg": 1.0320806937680391,
+    "source_video_sha256": "8d66e40796ecda7dd8bb9da2fcaada4df926fbf64e94c3b464ee27efb08a3104",
+    "excerpt_seconds": [
+      0,
+      10
+    ],
+    "scope": "Unassisted continuous-workflow development panel; not the final EVAL36 panel",
+    "gif_sha256": "85c25f28e1e7b7ff4f17f61bcd9d500eb67d6e09981654bc86c37ff44ff823ae"
+  },
+  "wrong": {
+    "gif": "wrong-yaw-v4-m6.gif",
+    "run": "v4-m6-pilot-v1",
+    "scenario": "m7-personal_demo_0006",
+    "model_version": "V4-M6, step 500",
+    "strict_stage_success": false,
+    "position_error_mm": 11.355455603569602,
+    "yaw_error_deg": 85.05810024705559,
+    "source_video_sha256": "4a977ed9cd1b2b533c6a4bc4927af4c4e42e2ffc47f836026db00ab81d13a965",
+    "excerpt_seconds": [
+      0,
+      8
+    ],
+    "source_url": "https://www.natslabs.com/typhon-robotics/media/eval/v4-m6-pilot-v1/m7-personal_demo_0006/rollout.mp4",
+    "scope": "Early annotated pilot, distinct from later native loading policy",
+    "gif_sha256": "59de0111e5db0eb3931a4eb46586c2e40bd19236eb30f5d411971f929b5aeb4d"
+  }
+}
