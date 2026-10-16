@@ -25,3 +25,5 @@ Current booking request A961B88F covers 16 October 01:30 UTC to 19 October 01:30
 No policy success or improved native Q1 score is claimed. Any later D5 success is assisted acquisition followed by native continuation in two selected diagnostic cases, not general recovery or automatically valid training data.
 
 The 88 noise files and their stored hashes pass the file-only inventory. The pure-stdlib contract test passes masking, float32 conversion, modified Z and exact horizon checks. GPU model/noise reproduction remains untested.
+
+Approval update: independent authenticated API readback at epoch 1792113684.8461518 shows requiresApproval=false for A961B88F. Start remains 2026-10-16 01:30 UTC. Approval is verified; no pre-start compute is authorized or running.
