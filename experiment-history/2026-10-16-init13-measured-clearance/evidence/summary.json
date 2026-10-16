@@ -1,0 +1,36 @@
+{
+  "episodes": 8,
+  "checks": {
+    "all3_loading_retained": true,
+    "preservation_retained": true,
+    "selected_baseline_contacts_reproduced": true,
+    "selected_contacts_removed": true,
+    "no_other_contact_or_primitive_failure": true,
+    "D5_unchanged_and_exact": true
+  },
+  "candidate_for_further_qualification": true,
+  "loading_success": {
+    "D5": 3,
+    "C": 3
+  },
+  "loading_total_per_condition": 3,
+  "preservation": {
+    "D5": true,
+    "C": true
+  },
+  "contact_cases": {
+    "D5": 2,
+    "C": 0
+  },
+  "exact_current_preclearance_pairs": 4,
+  "historical_D5_full_trajectory_exact": 4,
+  "measured_wrist_path_delta_m": {
+    "init-demo_0001-loading-912171": 0.006626995208426134,
+    "init-demo_0003-loading-912172": 0.007783931034802016,
+    "init-demo_0002-loading-912171": 0.0067392012240934385
+  },
+  "no_training": true,
+  "quarantined": true,
+  "scope": "Selected development contact cases and two regression controls; supplied robot/fixture-geometry primitive, not learned avoidance or generalisation",
+  "epoch": 1792121007.3874211
+}

@@ -1,0 +1,17 @@
+{
+  "worktree": "/var/tmp/typhon-worktrees-20261016/init13",
+  "resolved_cache": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/.cache-xvla-pt",
+  "source_commit": "f7e84b41d4c2acc2dfa72647af22b1e12f3886b8",
+  "unit_tests": {
+    "passed": true,
+    "disabled_exact_noop": true,
+    "no_D5_no_clearance": true,
+    "threshold55mm": true,
+    "three_consecutive_clearance_samples": true,
+    "one_shot": true,
+    "timeout60": true,
+    "premature_close_flagged_native_command_retained": true
+  },
+  "free_bytes": 1952219136,
+  "actual_rule": "measured aperture>=55mm and last+current command OPEN, after D5 and executed close"
+}
