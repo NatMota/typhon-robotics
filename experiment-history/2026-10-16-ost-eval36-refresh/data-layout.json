@@ -1,0 +1,1086 @@
+{
+  "nodes": [
+    {
+      "id": "T10981",
+      "type": "experiment",
+      "label": "OPS04 \u00b7 #10981\nReconcile excluded human review candidate 6 with stable demo IDs",
+      "parent_id": "S_data_0",
+      "x": 1220,
+      "y": 102.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "OPS04 \u00b7 #10981",
+        "Reconcile excluded human review candidate 6",
+        "with stable demo IDs"
+      ]
+    },
+    {
+      "id": "R10981",
+      "type": "result",
+      "label": "Review candidate 6 is demo0017; its source remains preserved. It is distinct from successful demo0006.",
+      "parent_id": "T10981",
+      "x": 1620,
+      "y": 102.0,
+      "width": 350,
+      "height": 91,
+      "color": "#244a3d",
+      "lines": [
+        "Review candidate 6 is demo0017; its source",
+        "remains preserved. It is distinct from",
+        "successful demo0006."
+      ]
+    },
+    {
+      "id": "T10991",
+      "type": "experiment",
+      "label": "DATA06 \u00b7 #10991\nVersion the physical-object and calibration assumptions consistently",
+      "parent_id": "S_data_0",
+      "x": 1220,
+      "y": 229.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DATA06 \u00b7 #10991",
+        "Version the physical-object and calibration",
+        "assumptions consistently"
+      ]
+    },
+    {
+      "id": "R10991",
+      "type": "result",
+      "label": "BLOCKED: reliable physical measurements and camera calibration remain missing. Virtual scale stays explicit.",
+      "parent_id": "T10991",
+      "x": 1620,
+      "y": 229.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4e374f",
+      "lines": [
+        "BLOCKED: reliable physical measurements and",
+        "camera calibration remain missing. Virtual",
+        "scale stays explicit."
+      ]
+    },
+    {
+      "id": "T10972",
+      "type": "experiment",
+      "label": "R07 \u00b7 #10972\nAlign one human correction clip with the Panda-expert event timeline",
+      "parent_id": "S_data_0",
+      "x": 1220,
+      "y": 356.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R07 \u00b7 #10972",
+        "Align one human correction clip with the",
+        "Panda-expert event timeline"
+      ]
+    },
+    {
+      "id": "R10972",
+      "type": "result",
+      "label": "One 7.6 s correction aligned event warp is not motor labels",
+      "parent_id": "T10972",
+      "x": 1620,
+      "y": 365.5,
+      "width": 350,
+      "height": 72,
+      "color": "#574831",
+      "lines": [
+        "One 7.6 s correction aligned event warp is",
+        "not motor labels"
+      ]
+    },
+    {
+      "id": "T10974",
+      "type": "experiment",
+      "label": "R09 \u00b7 #10974\nRetarget one short human-observed correction into constrained Panda motion",
+      "parent_id": "S_data_0",
+      "x": 1220,
+      "y": 483.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R09 \u00b7 #10974",
+        "Retarget one short human-observed",
+        "correction into constrained Panda motion"
+      ]
+    },
+    {
+      "id": "R10974",
+      "type": "result",
+      "label": "One constrained Panda success generated path; virtual scale",
+      "parent_id": "T10974",
+      "x": 1620,
+      "y": 492.5,
+      "width": 350,
+      "height": 72,
+      "color": "#574831",
+      "lines": [
+        "One constrained Panda success generated",
+        "path; virtual scale"
+      ]
+    },
+    {
+      "id": "T10989",
+      "type": "experiment",
+      "label": "DATA04 \u00b7 #10989\nValidate phone-video to Panda-action alignment beyond one event comparison",
+      "parent_id": "S_data_0",
+      "x": 1220,
+      "y": 610.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DATA04 \u00b7 #10989",
+        "Validate phone-video to Panda-action",
+        "alignment beyond one event comparison"
+      ]
+    },
+    {
+      "id": "R10989",
+      "type": "result",
+      "label": "BLOCKED: no validated dense phone-frame to Panda-action alignment. One event comparison is not motor supervision.",
+      "parent_id": "T10989",
+      "x": 1620,
+      "y": 610.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4e374f",
+      "lines": [
+        "BLOCKED: no validated dense phone-frame to",
+        "Panda-action alignment. One event",
+        "comparison is not motor supervision."
+      ]
+    },
+    {
+      "id": "S_data_0",
+      "type": "solution",
+      "label": "Preserve source evidence and physical assumptions",
+      "parent_id": "O_data",
+      "x": 820,
+      "y": 365.5,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Preserve source evidence and physical",
+        "assumptions"
+      ]
+    },
+    {
+      "id": "T10987",
+      "type": "experiment",
+      "label": "DATA02 \u00b7 #10987\nReconcile prepared phase chunks and four-second intention targets with actual training",
+      "parent_id": "S_data_1",
+      "x": 1220,
+      "y": 762.0,
+      "width": 350,
+      "height": 112,
+      "color": "#4a4428",
+      "lines": [
+        "DATA02 \u00b7 #10987",
+        "Reconcile prepared phase chunks and",
+        "four-second intention targets with actual",
+        "training"
+      ]
+    },
+    {
+      "id": "R10987",
+      "type": "result",
+      "label": "V2: 632 rows / 316 chunks. V3: 776 / 388. Broad Pt uses 30 actions over 1.5 s; four-second history is not a four-second action target.",
+      "parent_id": "T10987",
+      "x": 1620,
+      "y": 762.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "V2: 632 rows / 316 chunks. V3: 776 / 388.",
+        "Broad Pt uses 30 actions over 1.5 s;",
+        "four-second history is not a four-second",
+        "action target."
+      ]
+    },
+    {
+      "id": "T10988",
+      "type": "experiment",
+      "label": "DATA03 \u00b7 #10988\nAudit balanced sampling across takes, chunks, horizons and camera views",
+      "parent_id": "S_data_1",
+      "x": 1220,
+      "y": 910.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DATA03 \u00b7 #10988",
+        "Audit balanced sampling across takes,",
+        "chunks, horizons and camera views"
+      ]
+    },
+    {
+      "id": "R10988",
+      "type": "result",
+      "label": "Broad12k: 48,000 draws, 8,000 per source, all 439 windows. Historical V3 per-update sampling remains unverified.",
+      "parent_id": "T10988",
+      "x": 1620,
+      "y": 910.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "Broad12k: 48,000 draws, 8,000 per source,",
+        "all 439 windows. Historical V3 per-update",
+        "sampling remains unverified."
+      ]
+    },
+    {
+      "id": "T10990",
+      "type": "experiment",
+      "label": "DATA05 \u00b7 #10990\nAudit held-state crosshair in video and separate trajectory labels",
+      "parent_id": "S_data_1",
+      "x": 1220,
+      "y": 1037.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DATA05 \u00b7 #10990",
+        "Audit held-state crosshair in video and",
+        "separate trajectory labels"
+      ]
+    },
+    {
+      "id": "R10990",
+      "type": "result",
+      "label": "16 takes / 32 views / 7,904 frames: 1,024 held, 3,598 not held, 3,282 unknown. 768 marked frames; no direct Franka labels.",
+      "parent_id": "T10990",
+      "x": 1620,
+      "y": 1037.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "16 takes / 32 views / 7,904 frames: 1,024",
+        "held, 3,598 not held, 3,282 unknown. 768",
+        "marked frames; no direct Franka labels."
+      ]
+    },
+    {
+      "id": "S_data_1",
+      "type": "solution",
+      "label": "Audit training targets, mixing and held markers",
+      "parent_id": "O_data",
+      "x": 820,
+      "y": 914.25,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Audit training targets, mixing and held",
+        "markers"
+      ]
+    },
+    {
+      "id": "T11016",
+      "type": "experiment",
+      "label": "VIDEO01-A \u00b7 #11016\nObserved 2D object paths and explicit orientation gaps",
+      "parent_id": "S_data_2",
+      "x": 1220,
+      "y": 1189.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO01-A \u00b7 #11016",
+        "Observed 2D object paths and explicit",
+        "orientation gaps"
+      ]
+    },
+    {
+      "id": "R11016",
+      "type": "result",
+      "label": "Observed 2D object representation audited. Missing orientation and calibration stay explicit; no recovered human 3D actions.",
+      "parent_id": "T11016",
+      "x": 1620,
+      "y": 1189.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "Observed 2D object representation audited.",
+        "Missing orientation and calibration stay",
+        "explicit; no recovered human 3D actions."
+      ]
+    },
+    {
+      "id": "T11017",
+      "type": "experiment",
+      "label": "VIDEO01-B \u00b7 #11017\nHand/pinch observations without fabricated grasp labels",
+      "parent_id": "S_data_2",
+      "x": 1220,
+      "y": 1316.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO01-B \u00b7 #11017",
+        "Hand/pinch observations without fabricated",
+        "grasp labels"
+      ]
+    },
+    {
+      "id": "R11017",
+      "type": "result",
+      "label": "526 sample identities, 175 hand detections. Unknown contact stays unknown; no autonomous grasp authority.",
+      "parent_id": "T11017",
+      "x": 1620,
+      "y": 1316.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "526 sample identities, 175 hand detections.",
+        "Unknown contact stays unknown; no",
+        "autonomous grasp authority."
+      ]
+    },
+    {
+      "id": "T11018",
+      "type": "experiment",
+      "label": "VIDEO01-C \u00b7 #11018\nFrozen phone-frame features with temporal and cross-view controls",
+      "parent_id": "S_data_2",
+      "x": 1220,
+      "y": 1453.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO01-C \u00b7 #11018",
+        "Frozen phone-frame features with temporal",
+        "and cross-view controls"
+      ]
+    },
+    {
+      "id": "R11018",
+      "type": "result",
+      "label": "112 paired instants / 224 views reviewed. Intermediate pickup/release matters; generic representation-to-action transfer remains unqualified.",
+      "parent_id": "T11018",
+      "x": 1620,
+      "y": 1443.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "112 paired instants / 224 views reviewed.",
+        "Intermediate pickup/release matters;",
+        "generic representation-to-action transfer",
+        "remains unqualified."
+      ]
+    },
+    {
+      "id": "T11019",
+      "type": "experiment",
+      "label": "VIDEO02 \u00b7 #11019\nDense phone observations, temporal controls and object-focused features",
+      "parent_id": "S_data_2",
+      "x": 1220,
+      "y": 1601.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO02 \u00b7 #11019",
+        "Dense phone observations, temporal controls",
+        "and object-focused features"
+      ]
+    },
+    {
+      "id": "R11019",
+      "type": "result",
+      "label": "Corrected extraction: 2,644/2,644 frame hashes; 147 four-second windows. Failed 906-frame-mismatch export preserved. Offline features, no motor labels.",
+      "parent_id": "T11019",
+      "x": 1620,
+      "y": 1591.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Corrected extraction: 2,644/2,644 frame",
+        "hashes; 147 four-second windows. Failed",
+        "906-frame-mismatch export preserved.",
+        "Offline features, no motor labels."
+      ]
+    },
+    {
+      "id": "S_data_2",
+      "type": "solution",
+      "label": "Extract observed object, hand and temporal evidence",
+      "parent_id": "O_data",
+      "x": 820,
+      "y": 1404.75,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Extract observed object, hand and temporal",
+        "evidence"
+      ]
+    },
+    {
+      "id": "T11020",
+      "type": "experiment",
+      "label": "VIDEO03 \u00b7 #11020\nTest causal held-state prediction from unmarked personal video",
+      "parent_id": "S_data_3",
+      "x": 1220,
+      "y": 1774.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO03 \u00b7 #11020",
+        "Test causal held-state prediction from",
+        "unmarked personal video"
+      ]
+    },
+    {
+      "id": "R11020",
+      "type": "result",
+      "label": "35 probes: perfect labelled interiors but hand-present false-held errors remain. Primary-to-side recall 3/28 full vs 28/28 fused; no control authority.",
+      "parent_id": "T11020",
+      "x": 1620,
+      "y": 1764.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "35 probes: perfect labelled interiors but",
+        "hand-present false-held errors remain.",
+        "Primary-to-side recall 3/28 full vs 28/28",
+        "fused; no control authority."
+      ]
+    },
+    {
+      "id": "T11021",
+      "type": "experiment",
+      "label": "VIDEO04 \u00b7 #11021\nTest training-only hand-present negatives for held-state errors",
+      "parent_id": "S_data_3",
+      "x": 1220,
+      "y": 1922.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO04 \u00b7 #11021",
+        "Test training-only hand-present negatives",
+        "for held-state errors"
+      ]
+    },
+    {
+      "id": "R11021",
+      "type": "result",
+      "label": "12 training negative views added. Transition errors 2/6 to 1/6 views; the same physical event still fails. 90/90 held positives retained.",
+      "parent_id": "T11021",
+      "x": 1620,
+      "y": 1912.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "12 training negative views added.",
+        "Transition errors 2/6 to 1/6 views; the",
+        "same physical event still fails. 90/90 held",
+        "positives retained."
+      ]
+    },
+    {
+      "id": "T11022",
+      "type": "experiment",
+      "label": "VIDEO05 \u00b7 #11022\nTest pre-contact negatives while preserving held-pause recognition",
+      "parent_id": "S_data_3",
+      "x": 1220,
+      "y": 2060.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO05 \u00b7 #11022",
+        "Test pre-contact negatives while preserving",
+        "held-pause recognition"
+      ]
+    },
+    {
+      "id": "R11022",
+      "type": "result",
+      "label": "13 pre-contact views added. New false-held errors 2/5 to 1/5; reused challenge 1/8 to 0/8. Held-pause qualification incomplete.",
+      "parent_id": "T11022",
+      "x": 1620,
+      "y": 2060.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "13 pre-contact views added. New false-held",
+        "errors 2/5 to 1/5; reused challenge 1/8 to",
+        "0/8. Held-pause qualification incomplete."
+      ]
+    },
+    {
+      "id": "S_data_3",
+      "type": "solution",
+      "label": "Test causal contact evidence and its failures",
+      "parent_id": "O_data",
+      "x": 820,
+      "y": 1926.75,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Test causal contact evidence and its",
+        "failures"
+      ]
+    },
+    {
+      "id": "T11023",
+      "type": "experiment",
+      "label": "VIDEO06 \u00b7 #11023\nAudit object motion through occlusion before video retargeting",
+      "parent_id": "S_data_4",
+      "x": 1220,
+      "y": 2222.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO06 \u00b7 #11023",
+        "Audit object motion through occlusion",
+        "before video retargeting"
+      ]
+    },
+    {
+      "id": "R11023",
+      "type": "result",
+      "label": "342 frames: 194/222 held motion pairs supported, 28 unknown. Image motion is real; metric depth and grasp remain unresolved.",
+      "parent_id": "T11023",
+      "x": 1620,
+      "y": 2212.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "342 frames: 194/222 held motion pairs",
+        "supported, 28 unknown. Image motion is",
+        "real; metric depth and grasp remain",
+        "unresolved."
+      ]
+    },
+    {
+      "id": "T11024",
+      "type": "experiment",
+      "label": "VIDEO07 \u00b7 #11024\nTest native video cadence and phase timing before robot retargeting",
+      "parent_id": "S_data_4",
+      "x": 1220,
+      "y": 2360.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO07 \u00b7 #11024",
+        "Test native video cadence and phase timing",
+        "before robot retargeting"
+      ]
+    },
+    {
+      "id": "R11024",
+      "type": "result",
+      "label": "Native cadence: 212/222 held pairs supported, up from 194. Ten unsupported pairs remain; no recovered robot actions.",
+      "parent_id": "T11024",
+      "x": 1620,
+      "y": 2360.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "Native cadence: 212/222 held pairs",
+        "supported, up from 194. Ten unsupported",
+        "pairs remain; no recovered robot actions."
+      ]
+    },
+    {
+      "id": "T11032",
+      "type": "experiment",
+      "label": "VIDEO08 \u00b7 #11032\nTest whether existing views identify camera geometry for a video-to-robot adapter",
+      "parent_id": "S_data_4",
+      "x": 1220,
+      "y": 2487.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO08 \u00b7 #11032",
+        "Test whether existing views identify camera",
+        "geometry for a video-to-robot adapter"
+      ]
+    },
+    {
+      "id": "R11032",
+      "type": "result",
+      "label": "297 camera fits per view fit within 5 px. Large depth/height ambiguity: planar corners do not identify 3D geometry.",
+      "parent_id": "T11032",
+      "x": 1620,
+      "y": 2487.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "297 camera fits per view fit within 5 px.",
+        "Large depth/height ambiguity: planar",
+        "corners do not identify 3D geometry."
+      ]
+    },
+    {
+      "id": "T11033",
+      "type": "experiment",
+      "label": "VIDEO09 \u00b7 #11033\nExecute full human correction sequence with a frozen RGB-to-Panda adapter",
+      "parent_id": "S_data_4",
+      "x": 1220,
+      "y": 2624.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO09 \u00b7 #11033",
+        "Execute full human correction sequence with",
+        "a frozen RGB-to-Panda adapter"
+      ]
+    },
+    {
+      "id": "R11033",
+      "type": "result",
+      "label": "Five sequence/control executions all grasp, lift and release; strict 0/5. Goal error 33.7\u201335.5 mm. Endpoint registration is a confound.",
+      "parent_id": "T11033",
+      "x": 1620,
+      "y": 2614.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Five sequence/control executions all grasp,",
+        "lift and release; strict 0/5. Goal error",
+        "33.7\u201335.5 mm. Endpoint registration is a",
+        "confound."
+      ]
+    },
+    {
+      "id": "T11034",
+      "type": "experiment",
+      "label": "VIDEO10 \u00b7 #11034\nRegister the complete video to the fixed task goal and rerun matched controls",
+      "parent_id": "S_data_4",
+      "x": 1220,
+      "y": 2772.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO10 \u00b7 #11034",
+        "Register the complete video to the fixed",
+        "task goal and rerun matched controls"
+      ]
+    },
+    {
+      "id": "R11034",
+      "type": "result",
+      "label": "Goal registration: all five sequence/endpoint/shuffle/static/repeat conditions succeed. One inspected take; no advantage from full sequence.",
+      "parent_id": "T11034",
+      "x": 1620,
+      "y": 2762.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Goal registration: all five",
+        "sequence/endpoint/shuffle/static/repeat",
+        "conditions succeed. One inspected take; no",
+        "advantage from full sequence."
+      ]
+    },
+    {
+      "id": "T11035",
+      "type": "experiment",
+      "label": "VIDEO11 \u00b7 #11035\nAudit glyph correspondence and the conflicting trajectory scores",
+      "parent_id": "S_data_4",
+      "x": 1220,
+      "y": 2910.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO11 \u00b7 #11035",
+        "Audit glyph correspondence and the",
+        "conflicting trajectory scores"
+      ]
+    },
+    {
+      "id": "R11035",
+      "type": "result",
+      "label": "736-observation audit: plane-depth bias explains conflicting path scores. No new rollout; close full-path superiority claim.",
+      "parent_id": "T11035",
+      "x": 1620,
+      "y": 2910.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "736-observation audit: plane-depth bias",
+        "explains conflicting path scores. No new",
+        "rollout; close full-path superiority claim."
+      ]
+    },
+    {
+      "id": "T11015",
+      "type": "experiment",
+      "label": "VIDEO01 \u00b7 #11015\nCompare video-derived representations and robot adapters without geometric-expert trajectories",
+      "parent_id": "S_data_4",
+      "x": 1220,
+      "y": 3047.5,
+      "width": 350,
+      "height": 112,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO01 \u00b7 #11015",
+        "Compare video-derived representations and",
+        "robot adapters without geometric-expert",
+        "trajectories"
+      ]
+    },
+    {
+      "id": "R11015",
+      "type": "result",
+      "label": "Investigation concluded. Assisted correction works, but generic video-to-action transfer and extra benefit from intermediate video were not established.",
+      "parent_id": "T11015",
+      "x": 1620,
+      "y": 3037.0,
+      "width": 350,
+      "height": 133,
+      "color": "#574831",
+      "lines": [
+        "Investigation concluded. Assisted",
+        "correction works, but generic",
+        "video-to-action transfer and extra benefit",
+        "from intermediate video were not",
+        "established."
+      ]
+    },
+    {
+      "id": "S_data_4",
+      "type": "solution",
+      "label": "Qualify motion, camera geometry and transfer",
+      "parent_id": "O_data",
+      "x": 820,
+      "y": 2649.75,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Qualify motion, camera geometry and",
+        "transfer"
+      ]
+    },
+    {
+      "id": "T11098",
+      "type": "experiment",
+      "label": "DATA04-EVENT \u00b7 #11098\nTest human/Panda semantic event alignment",
+      "parent_id": "S_data_5",
+      "x": 1220,
+      "y": 3251.0,
+      "width": 350,
+      "height": 72,
+      "color": "#4a4428",
+      "lines": [
+        "DATA04-EVENT \u00b7 #11098",
+        "Test human/Panda semantic event alignment"
+      ]
+    },
+    {
+      "id": "R11098",
+      "type": "result",
+      "label": "ON HOLD / NOT RUN. Source inspection only; no labels, features or alignment scores. EVAL36 was a separate authorised panel. Wider research remains stalled.",
+      "parent_id": "T11098",
+      "x": 1620,
+      "y": 3231.0,
+      "width": 350,
+      "height": 112,
+      "color": "#4e374f",
+      "lines": [
+        "ON HOLD / NOT RUN. Source inspection only;",
+        "no labels, features or alignment scores.",
+        "EVAL36 was a separate authorised panel.",
+        "Wider research remains stalled."
+      ]
+    },
+    {
+      "id": "S_data_5",
+      "type": "solution",
+      "label": "Test whether visual sequences align corresponding manipulation events",
+      "parent_id": "O_data",
+      "x": 820,
+      "y": 3251.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Test whether visual sequences align",
+        "corresponding manipulation events"
+      ]
+    },
+    {
+      "id": "O_data",
+      "type": "opportunity",
+      "label": "Turn personal observations into reliable robot practice",
+      "parent_id": "outcome",
+      "x": 420,
+      "y": 1808.25,
+      "width": 350,
+      "height": 72,
+      "color": "#2d443b",
+      "lines": [
+        "Turn personal observations into reliable",
+        "robot practice"
+      ]
+    },
+    {
+      "id": "outcome",
+      "type": "outcome",
+      "label": "Reliably complete the requested manipulation task using personal evidence",
+      "parent_id": "",
+      "x": 20,
+      "y": 138.0,
+      "width": 350,
+      "height": 72,
+      "color": "#263f60",
+      "lines": [
+        "Reliably complete the requested",
+        "manipulation task using personal evidence"
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "S_data_0",
+      "T10981"
+    ],
+    [
+      "T10981",
+      "R10981"
+    ],
+    [
+      "S_data_0",
+      "T10991"
+    ],
+    [
+      "T10991",
+      "R10991"
+    ],
+    [
+      "S_data_0",
+      "T10972"
+    ],
+    [
+      "T10972",
+      "R10972"
+    ],
+    [
+      "S_data_0",
+      "T10974"
+    ],
+    [
+      "T10974",
+      "R10974"
+    ],
+    [
+      "S_data_0",
+      "T10989"
+    ],
+    [
+      "T10989",
+      "R10989"
+    ],
+    [
+      "O_data",
+      "S_data_0"
+    ],
+    [
+      "S_data_1",
+      "T10987"
+    ],
+    [
+      "T10987",
+      "R10987"
+    ],
+    [
+      "S_data_1",
+      "T10988"
+    ],
+    [
+      "T10988",
+      "R10988"
+    ],
+    [
+      "S_data_1",
+      "T10990"
+    ],
+    [
+      "T10990",
+      "R10990"
+    ],
+    [
+      "O_data",
+      "S_data_1"
+    ],
+    [
+      "S_data_2",
+      "T11016"
+    ],
+    [
+      "T11016",
+      "R11016"
+    ],
+    [
+      "S_data_2",
+      "T11017"
+    ],
+    [
+      "T11017",
+      "R11017"
+    ],
+    [
+      "S_data_2",
+      "T11018"
+    ],
+    [
+      "T11018",
+      "R11018"
+    ],
+    [
+      "S_data_2",
+      "T11019"
+    ],
+    [
+      "T11019",
+      "R11019"
+    ],
+    [
+      "O_data",
+      "S_data_2"
+    ],
+    [
+      "S_data_3",
+      "T11020"
+    ],
+    [
+      "T11020",
+      "R11020"
+    ],
+    [
+      "S_data_3",
+      "T11021"
+    ],
+    [
+      "T11021",
+      "R11021"
+    ],
+    [
+      "S_data_3",
+      "T11022"
+    ],
+    [
+      "T11022",
+      "R11022"
+    ],
+    [
+      "O_data",
+      "S_data_3"
+    ],
+    [
+      "S_data_4",
+      "T11023"
+    ],
+    [
+      "T11023",
+      "R11023"
+    ],
+    [
+      "S_data_4",
+      "T11024"
+    ],
+    [
+      "T11024",
+      "R11024"
+    ],
+    [
+      "S_data_4",
+      "T11032"
+    ],
+    [
+      "T11032",
+      "R11032"
+    ],
+    [
+      "S_data_4",
+      "T11033"
+    ],
+    [
+      "T11033",
+      "R11033"
+    ],
+    [
+      "S_data_4",
+      "T11034"
+    ],
+    [
+      "T11034",
+      "R11034"
+    ],
+    [
+      "S_data_4",
+      "T11035"
+    ],
+    [
+      "T11035",
+      "R11035"
+    ],
+    [
+      "S_data_4",
+      "T11015"
+    ],
+    [
+      "T11015",
+      "R11015"
+    ],
+    [
+      "O_data",
+      "S_data_4"
+    ],
+    [
+      "S_data_5",
+      "T11098"
+    ],
+    [
+      "T11098",
+      "R11098"
+    ],
+    [
+      "O_data",
+      "S_data_5"
+    ],
+    [
+      "outcome",
+      "O_data"
+    ]
+  ],
+  "width": 2000,
+  "height": 3403.0
+}
