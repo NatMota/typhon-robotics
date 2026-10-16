@@ -4,7 +4,9 @@ How can personal phone recordings contribute to robot learning when they do not 
 
 ## TL;DR
 
-**[Read the paper: working draft, 16 October 2026](docs/paper/Typhon_Manipulation_Preprint-draft-2026-10-16.pdf).** The manuscript is under active revision. The outcomes below summarise that draft; earlier pilot results remain documented separately.
+**[Read the seven-page manuscript, 16 October 2026](docs/paper/Typhon_Manipulation_Preprint.pdf)** · **[Download the LaTeX source and figure data](docs/paper/Typhon_Preprint_Source_2026-10-16.zip)**
+
+The outcomes below summarise the revised manuscript. Earlier pilot results remain documented separately.
 
 | Key outcome | Recorded result | What it supports |
 |---|---|---|
@@ -81,7 +83,7 @@ The proposed evaluation had 20 unfamiliar feeding layouts, 20 normal loading tri
 
 ### A deployment goal: NVIDIA Jetson Thor
 
-The goal was to keep the eventual inference system small enough to run on NVIDIA Jetson Thor. Humanoid reports using Thor in its HMND 01 alpha platforms, which made onboard compute a relevant constraint. Development and experiments used a Franka Panda simulation and an RTX 4090. [Humanoid's NVIDIA integration](https://thehumanoid.ai/humanoid-deploys-nvidia-technologies-to-power-advanced-humanoid-robots/)
+The goal was to keep the eventual inference system small enough to run on NVIDIA Jetson Thor. Humanoid reports using Thor in its HMND 01 alpha platforms, which made onboard compute a relevant constraint. Development and evaluation used a Franka Panda simulation and an RTX 4090. Expanded temporal-model training used four NVIDIA H100 80 GB GPUs. [Humanoid's NVIDIA integration](https://thehumanoid.ai/humanoid-deploys-nvidia-technologies-to-power-advanced-humanoid-robots/)
 
 Thor deployment remains a target. This repository does not establish a working Thor build, measured latency, power use or sustained control performance on that hardware. Model weights fitting in memory would be only the first check; camera processing, inference buffers, the controller and other onboard services also need room and time to run.
 
@@ -107,7 +109,7 @@ Feeding moves a loose block into a marked staging square. Loading moves it from 
 
 ## Earlier pilot evidence
 
-This table preserves the initial October 2026 pilot snapshot. Those models preceded the later source-adaptation, goal-diversity and continuous-workflow experiments reported in the working paper. Their negative results remain part of the record.
+This table preserves the initial October 2026 pilot snapshot. Those models preceded the later source-adaptation, goal-diversity and continuous-workflow experiments reported in the manuscript. Their negative results remain part of the record.
 
 | Experiment | Observed result | Interpretation |
 |---|---:|---|
@@ -146,7 +148,7 @@ This is bounded candidate selection, not learned-value search or simulator looka
 
 ## Training matrix
 
-These historical variants use the declared source mixture and sample across trajectories and camera views. Coverage manifests record exposure where available. The working paper explains incomplete historical exposure audits and distinguishes the later native-interface model families.
+These historical variants use the declared source mixture and sample across trajectories and camera views. Coverage manifests record exposure where available. The manuscript distinguishes the historical temporal models from the later native-interface model families.
 
 | Variant | Observation/action construction |
 |---|---|
@@ -157,7 +159,7 @@ These historical variants use the declared source mixture and sample across traj
 
 V4 is a DAgger-style continuation experiment, not PPO or Q-learning. A rollout budget expiry is not proof of irrecoverable failure. The simulator-derived held cue is privileged causal annotation and is explicitly declared; it must not be mistaken for a learned grasp detector.
 
-M3/M4 adapt prompts/action components; M5 uses LoRA joint adaptation; M6 uses full joint adaptation. Their configurations, optimiser schedules, mixture sizes and checkpoints differ. Read each experiment's manifests before comparing results. Training loss alone is not a robot success metric.
+In these historical branches, M3/M4 update the active soft prompts. M5 updates LoRA adapters, active prompts, action projections and temporal annotation projections. M6 jointly updates the shared vision-language/action weights and active adaptation parameters. Their configurations, optimiser schedules, mixture sizes and checkpoints differ. Read each experiment's manifests before comparing results. Training loss alone is not a robot success metric.
 
 ## Typhon: a product concept for managing robotics experiment runs
 
@@ -169,7 +171,7 @@ The implemented research harness and read-only dashboard provide parts of that w
 
 ![Typhon experiment dashboard](docs/dashboard.png)
 
-The dashboard shows recorded experiments and controller measurements. Successful completion recognition and successful manipulation are reported separately. Its published October 9 recordings are historical evidence; they are not the later 36-pair workflow panel in the draft paper.
+The dashboard shows recorded experiments and controller measurements. Successful completion recognition and successful manipulation are reported separately. Its published October 9 recordings are historical evidence; they are not the later 36-pair workflow panel in the manuscript.
 
 Watch the [privileged expert pick and place](https://www.natslabs.com/typhon-robotics/media-library.html?clip=ge/personal_demo_0001.mp4), [expert orientation-correction reference](https://www.natslabs.com/typhon-robotics/media-library.html?clip=ge/personal_demo_0007.mp4), or [V4-M6 learned pickup and placement attempt](https://www.natslabs.com/typhon-robotics/?run=v4-m6-pilot-v1&case=m7-personal_demo_0006). The V4-M6 attempt verified a lift and reached 11.36 mm position error, but its 85.06° yaw error failed the task. The video library identifies the model version, run, checkpoint update and checksum. [Logo concepts](docs/branding/) remain exploratory.
 

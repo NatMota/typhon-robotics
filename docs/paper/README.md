@@ -1,9 +1,9 @@
-# Working manuscript
+# Manuscript
 
-[Video-Informed Scenario Reconstruction for Continuous Robotic Manipulation](Typhon_Manipulation_Preprint-draft-2026-10-16.pdf), Natanael Mota, 16 October 2026.
+[Video-Informed Scenario Reconstruction for Continuous Robotic Manipulation](Typhon_Manipulation_Preprint.pdf), Natanael Mota, 16 October 2026. Seven pages including references.
 
-**Working draft under active revision.** This is a byte-for-byte snapshot of the author-provided PDF. The original manuscript and editable source were not changed. Results and wording may be revised; this copy is not a final or peer-reviewed publication.
+[Download the LaTeX source, figure inputs and plotting code](Typhon_Preprint_Source_2026-10-16.zip). Run `sh build.sh` in the extracted source directory. The package includes the two recording illustrations with provenance, model-family descriptions, training details and saved-data uncertainty analysis.
 
-The draft predates this repository becoming public. Its availability statement describes the manuscript package; this repository is a separate software/evidence export. Full policy weights and raw recordings are not bundled, and the export is not a complete training installation.
+The earlier draft remains archived as `Typhon_Manipulation_Preprint-draft-2026-10-16.pdf`.
 
-SHA-256: `2d7abb7b7b983a4141e02d407b365953a019baea8d6b4f5e82ad5f613fb88da7`.
+SHA-256 checksums are recorded in [SHA256SUMS](SHA256SUMS).
