@@ -128,7 +128,7 @@ PHASE='preparation'
 def limit(*args):
  key='preparation_deadline' if PHASE=='preparation' else 'execution_deadline'
  assert time.time()<read(O/'clock.json')[key],('RETURN01 frozen deadline',PHASE)
-h.limit=limit;h.base.native.OUT=O;chain.O=O
+h.limit=limit;h.O=O;h.base.native.OUT=O;chain.O=O
 def worker(dest,expected=None):
  dest.mkdir(parents=True);h.base.OUT=dest
  return h.base.Worker({'model':read(O/'protocol.json')['model'],'expected_initial_nontext':expected or {}})
