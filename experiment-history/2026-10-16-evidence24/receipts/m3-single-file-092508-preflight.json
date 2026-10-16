@@ -1,0 +1,69 @@
+{
+  "source_hash": {
+    "event": "hash_result",
+    "label": "powerglide_source",
+    "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/training-integration-v2/m3-dense-probe-01/m7-step000001.pt",
+    "read_bytes": 3527238808,
+    "total_bytes": 3527238808,
+    "complete": true,
+    "sha256": "8004ac5f60a9107c9d521368b6d17aa52eb2ef209be4cd44a5503dd5268c0835",
+    "matches_expected": true,
+    "stat_unchanged": true,
+    "allocated_bytes": 3527245824,
+    "elapsed_seconds": 1.4783849790001113
+  },
+  "destination_hash": {
+    "event": "hash_result",
+    "label": "mint_archive",
+    "path": "/media/nm/Fast Drive/Typhon/archives/powerglide-full-20261014/home/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/training-integration-v2/m3-dense-probe-01/m7-step000001.pt",
+    "read_bytes": 3527238808,
+    "total_bytes": 3527238808,
+    "complete": true,
+    "sha256": "8004ac5f60a9107c9d521368b6d17aa52eb2ef209be4cd44a5503dd5268c0835",
+    "matches_expected": true,
+    "stat_unchanged": true,
+    "allocated_bytes": 3527241728,
+    "elapsed_seconds": 35.2663113377057
+  },
+  "source_stat": {
+    "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/training-integration-v2/m3-dense-probe-01/m7-step000001.pt",
+    "realpath": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/training-integration-v2/m3-dense-probe-01/m7-step000001.pt",
+    "dev": 42,
+    "ino": 2708838567,
+    "bytes": 3527238808,
+    "allocated_bytes": 3527245824,
+    "mtime_ns": 1791575578322975651,
+    "ctime_ns": 1791575578325985534,
+    "uid": 19441,
+    "gid": 18002,
+    "mode": "0o600",
+    "nlink": 1,
+    "is_regular": true,
+    "is_symlink": false
+  },
+  "destination_stat": {
+    "path": "/media/nm/Fast Drive/Typhon/archives/powerglide-full-20261014/home/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/training-integration-v2/m3-dense-probe-01/m7-step000001.pt",
+    "dev": 2114,
+    "ino": 6746429,
+    "bytes": 3527238808,
+    "allocated_bytes": 3527241728,
+    "mtime_ns": 1791575578322975600,
+    "ctime_ns": 1791942482345389000,
+    "uid": 1000,
+    "gid": 1000,
+    "mode": "0o777",
+    "nlink": 1,
+    "is_regular": true,
+    "is_symlink": false
+  },
+  "archive_present_and_pinned": true,
+  "mount": {
+    "target": "/media/nm/Fast Drive",
+    "source": "/dev/sde2",
+    "fstype": "fuseblk",
+    "options": "rw,relatime,user_id=0,group_id=0,default_permissions,allow_other,blksize=4096"
+  },
+  "archive_manifest": "/media/nm/Fast Drive/Typhon/archives/powerglide-full-20261014/SHA256SUMS-reconciled.jsonl",
+  "archive_verification_receipt": "/media/nm/Fast Drive/Typhon/archives/powerglide-full-20261014/backup-reconciled-verification.json",
+  "authorized_scope": "Only the exact Powerglide M3 m7-step000001.pt; retained Mint archive, all manifests, M4, historical evidence and environments preserved."
+}

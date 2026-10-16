@@ -1,0 +1,181 @@
+{
+  "schema": "typhon-precise-home-cleanup-v1",
+  "deleted_at_epoch": 1792142853.328335,
+  "source_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/training-integration-v2/m3-dense-probe-01/m7-step000001.pt",
+  "source_stat_before": {
+    "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/training-integration-v2/m3-dense-probe-01/m7-step000001.pt",
+    "dev": 42,
+    "ino": 2708838567,
+    "bytes": 3527238808,
+    "allocated_bytes": 3527245824,
+    "mtime_ns": 1791575578322975651,
+    "ctime_ns": 1791575578325985534,
+    "uid": 19441,
+    "gid": 18002,
+    "mode": "0o600",
+    "nlink": 1,
+    "is_regular": true,
+    "is_symlink": false
+  },
+  "source_exists_after": false,
+  "source_hash": {
+    "event": "hash_result",
+    "label": "powerglide_source",
+    "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/training-integration-v2/m3-dense-probe-01/m7-step000001.pt",
+    "read_bytes": 3527238808,
+    "total_bytes": 3527238808,
+    "complete": true,
+    "sha256": "8004ac5f60a9107c9d521368b6d17aa52eb2ef209be4cd44a5503dd5268c0835",
+    "matches_expected": true,
+    "stat_unchanged": true,
+    "allocated_bytes": 3527245824,
+    "elapsed_seconds": 1.4783849790001113
+  },
+  "destination_hash": {
+    "event": "hash_result",
+    "label": "mint_archive",
+    "path": "/media/nm/Fast Drive/Typhon/archives/powerglide-full-20261014/home/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/training-integration-v2/m3-dense-probe-01/m7-step000001.pt",
+    "read_bytes": 3527238808,
+    "total_bytes": 3527238808,
+    "complete": true,
+    "sha256": "8004ac5f60a9107c9d521368b6d17aa52eb2ef209be4cd44a5503dd5268c0835",
+    "matches_expected": true,
+    "stat_unchanged": true,
+    "allocated_bytes": 3527241728,
+    "elapsed_seconds": 35.2663113377057
+  },
+  "source_identity_unchanged_since_post_hash_pin": true,
+  "process_audit": {
+    "scanned": 93,
+    "hits": [],
+    "unreadable_authentication_processes": [
+      {
+        "pid": "7150",
+        "comm": "ssh-agent",
+        "error": "PermissionError"
+      },
+      {
+        "pid": "7252",
+        "comm": "gnome-keyring-d",
+        "error": "PermissionError"
+      },
+      {
+        "pid": "160116",
+        "comm": "(sd-pam)",
+        "error": "PermissionError"
+      },
+      {
+        "pid": "160188",
+        "comm": "sshd-session",
+        "error": "PermissionError"
+      }
+    ]
+  },
+  "current_experiment_dependency_review": "Historical one-update M3 smoke checkpoint; current DATA04-EVENT uses separately pinned X-VLA-Pt backbone. No active experiment process references source. Historical M4 reproduction still references this checkpoint and retains the verified Mint archive. No research launched.",
+  "quota_before": {
+    "epoch": 1792142853.2300253,
+    "used_1k_blocks": 104857472,
+    "hard_limit_1k_blocks": 104857600,
+    "used_bytes": 107374051328,
+    "hard_limit_bytes": 107374182400,
+    "headroom_bytes": 131072,
+    "raw": "Disk quotas for user ndossant (uid 19441): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\nevs2:/cs/student/msc_rai/2026 104857472       0 104857600          414766       0 1000000        \n"
+  },
+  "quota_after": {
+    "epoch": 1792142853.3275561,
+    "used_1k_blocks": 101412896,
+    "hard_limit_1k_blocks": 104857600,
+    "used_bytes": 103846805504,
+    "hard_limit_bytes": 107374182400,
+    "headroom_bytes": 3527376896,
+    "raw": "Disk quotas for user ndossant (uid 19441): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\nevs2:/cs/student/msc_rai/2026 101412896       0 104857600          414765       0 1000000        \n"
+  },
+  "logical_source_bytes_removed": 3527238808,
+  "source_allocated_bytes_removed": 3527245824,
+  "observed_quota_reduction_bytes": 3527245824,
+  "m4_before": {
+    "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/training-integration-v2/m4-continuation-probe-01/m7-step000001.pt",
+    "dev": 42,
+    "ino": 2482013523,
+    "bytes": 3527238936,
+    "allocated_bytes": 3527245824,
+    "mtime_ns": 1791576778119412831,
+    "ctime_ns": 1791576778122423226,
+    "uid": 19441,
+    "gid": 18002,
+    "mode": "0o600",
+    "nlink": 1,
+    "is_regular": true,
+    "is_symlink": false
+  },
+  "m4_after": {
+    "path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/training-integration-v2/m4-continuation-probe-01/m7-step000001.pt",
+    "dev": 42,
+    "ino": 2482013523,
+    "bytes": 3527238936,
+    "allocated_bytes": 3527245824,
+    "mtime_ns": 1791576778119412831,
+    "ctime_ns": 1791576778122423226,
+    "uid": 19441,
+    "gid": 18002,
+    "mode": "0o600",
+    "nlink": 1,
+    "is_regular": true,
+    "is_symlink": false
+  },
+  "m4_unchanged": true,
+  "historical_sidecars_unchanged": true,
+  "preserved_sidecars": [
+    "candidate_manifest.csv",
+    "smoke_sampling.json",
+    "config.json",
+    "losses.jsonl",
+    "timed_prediction_inspection.json",
+    "training_report.json",
+    "augmentation_and_requests.json",
+    "requirements-observed.txt"
+  ],
+  "removed_paths": [
+    "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/training-integration-v2/m3-dense-probe-01/m7-step000001.pt"
+  ],
+  "destination_stat_before": {
+    "path": "/media/nm/Fast Drive/Typhon/archives/powerglide-full-20261014/home/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/training-integration-v2/m3-dense-probe-01/m7-step000001.pt",
+    "dev": 2114,
+    "ino": 6746429,
+    "bytes": 3527238808,
+    "allocated_bytes": 3527241728,
+    "mtime_ns": 1791575578322975600,
+    "ctime_ns": 1791942482345389000,
+    "uid": 1000,
+    "gid": 1000,
+    "mode": "0o777",
+    "nlink": 1,
+    "is_regular": true,
+    "is_symlink": false
+  },
+  "destination_stat_after": {
+    "path": "/media/nm/Fast Drive/Typhon/archives/powerglide-full-20261014/home/Projects/humanoid-m6-joint/results/personal-m7-data-prep-20261009/training-integration-v2/m3-dense-probe-01/m7-step000001.pt",
+    "dev": 2114,
+    "ino": 6746429,
+    "bytes": 3527238808,
+    "allocated_bytes": 3527241728,
+    "mtime_ns": 1791575578322975600,
+    "ctime_ns": 1791942482345389000,
+    "uid": 1000,
+    "gid": 1000,
+    "mode": "0o777",
+    "nlink": 1,
+    "is_regular": true,
+    "is_symlink": false
+  },
+  "destination_unchanged_after_removal": true,
+  "mount": {
+    "target": "/media/nm/Fast Drive",
+    "source": "/dev/sde2",
+    "fstype": "fuseblk",
+    "options": "rw,relatime,user_id=0,group_id=0,default_permissions,allow_other,blksize=4096"
+  },
+  "archive_manifest": "/media/nm/Fast Drive/Typhon/archives/powerglide-full-20261014/SHA256SUMS-reconciled.jsonl",
+  "archive_verification_receipt": "/media/nm/Fast Drive/Typhon/archives/powerglide-full-20261014/backup-reconciled-verification.json",
+  "preflight_receipt": "/media/nm/Fast Drive/Typhon/storage-cleanup-20261016/m3-single-file-092728-preflight.json"
+}

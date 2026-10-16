@@ -1,0 +1,6 @@
+{
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "VBoxManage: error: Failed to create the VirtualBox object!\nVBoxManage: error: Document is empty.\nVBoxManage: error: Location: '/cs/student/msc_rai/2026/ndossant/.config/VirtualBox/VirtualBox.xml', line 1 (0), column 1.\nVBoxManage: error: /home/vbox/tinderbox/build-VBox-7.2/svn/src/VBox/Main/src-server/VirtualBoxImpl.cpp[865] (nsresult VirtualBox::init())\nVBoxManage: error: Details: code NS_ERROR_FAILURE (0x80004005), component VirtualBoxWrap, interface IVirtualBox\nTraceback (most recent call last):\n  File \"<stdin>\", line 48, in <module>\n  File \"<stdin>\", line 17, in quota\nAssertionError\n",
+  "note": "Inspect source state; do not repeat removal automatically."
+}
