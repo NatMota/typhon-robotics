@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-10-16T00:42:21.320985+00:00",
+  "reservation_reference": "65CEFFC0",
+  "machine": "powerglide.cs.ucl.ac.uk",
+  "authenticated_dashboard": {
+    "title": "Robotics research and labs",
+    "owner": "Natanael DOS SANTOS MOTA",
+    "start_display": "Tuesday, 13/10 02:00",
+    "end_display": "Friday, 16/10 02:00",
+    "upcoming_reservations": 1
+  },
+  "conservative_cutoff_utc": "2026-10-16T01:00:00Z",
+  "booking_changed": false,
+  "extension_confirmed": false,
+  "blocker": "Existing reservation occupies the full three-day limit. Official UCL rule permits only one reservation at a time, including future non-overlapping reservations. No extension or replacement attempted.",
+  "next_eligible_action": "After the current reservation is no longer active, inspect availability and make one permitted new reservation starting at least five minutes ahead. Do not cancel or shorten the current reservation.",
+  "official_policy_url": "https://tsg.cs.ucl.ac.uk/remote-gpu-workstations/",
+  "access": {
+    "method": "Authenticated HTTPS read via SSH forwarding with curl --connect-to",
+    "certificate_verification": "Enabled for mydesk.cs.ucl.ac.uk; no TLS verification bypass",
+    "browser_limitation": "Existing Chrome loopback page cannot load because the certificate is for the server hostname, not 127.0.0.1."
+  },
+  "operational_state": {
+    "checked_epoch": 1792111249.9536743,
+    "gpu_compute_processes": [],
+    "user_workers_excluding_this_probe": [],
+    "pending_known_transfers": [],
+    "physics_jobs_started": 0,
+    "local_booking_tunnel_pid": 75350,
+    "local_booking_tunnel_session": 22563
+  },
+  "next_experiment": {
+    "ticket": 11083,
+    "status": "PREPARED ONLY",
+    "executions": 0,
+    "Q1_checkpoint": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/train-Q1/step3000.pt",
+    "Q1_sha256": "26d573eb90f791d9af86bbff30e138f51c5aa658ac7abefe76787ba352363a7a",
+    "archived_prefix": "/media/nm/Fast Drive/Typhon/research-20261015/init10-lower-path",
+    "prefix_receipt": "122 files / 29,103,906 bytes; zero SHA errors; existing verified archive, not newly rehashed.",
+    "handback": "query4 at state ticks463/456; next actions464/457; first9 raw pose values as float32 and remaining11 proprioception values zero; carry actual modified D5 target",
+    "outstanding_prerequisite": "Qualify restoration/regeneration of the complete required recorded query-noise sequence, plus new-window prerequisites; unimplemented/unexecuted during preservation.",
+    "protocol_commit": "982b13f470ff6b43358c9f4c137591f2f341c34b"
+  },
+  "ost_source_commit": "37cb11b1bb75cc0d20d7bb46c695c6f20419cc22",
+  "written_epoch": 1792111341.3209848
+}
