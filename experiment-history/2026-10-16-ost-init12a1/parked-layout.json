@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    {
+      "id": "T11009",
+      "type": "experiment",
+      "label": "PARK01 \u00b7 #11009\nSet-of-Mark object/region labels \u2014 withdrawn",
+      "parent_id": "S_parked_0",
+      "x": 1220,
+      "y": 58.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "PARK01 \u00b7 #11009",
+        "Set-of-Mark object/region labels \u2014",
+        "withdrawn"
+      ]
+    },
+    {
+      "id": "R11009",
+      "type": "result",
+      "label": "PARKED: Set-of-Mark withdrawn by the user.",
+      "parent_id": "T11009",
+      "x": 1620,
+      "y": 67.5,
+      "width": 350,
+      "height": 72,
+      "color": "#373b42",
+      "lines": [
+        "PARKED: Set-of-Mark withdrawn by the user."
+      ]
+    },
+    {
+      "id": "T11010",
+      "type": "experiment",
+      "label": "PARK02 \u00b7 #11010\nBroader platform and simulator changes \u2014 deferred",
+      "parent_id": "S_parked_0",
+      "x": 1220,
+      "y": 185.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "PARK02 \u00b7 #11010",
+        "Broader platform and simulator changes \u2014",
+        "deferred"
+      ]
+    },
+    {
+      "id": "R11010",
+      "type": "result",
+      "label": "PARKED: broader platforms and simulator changes deferred.",
+      "parent_id": "T11010",
+      "x": 1620,
+      "y": 194.5,
+      "width": 350,
+      "height": 72,
+      "color": "#373b42",
+      "lines": [
+        "PARKED: broader platforms and simulator",
+        "changes deferred."
+      ]
+    },
+    {
+      "id": "S_parked_0",
+      "type": "solution",
+      "label": "Do not expand scope without a new reason",
+      "parent_id": "O_parked",
+      "x": 820,
+      "y": 131.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Do not expand scope without a new reason"
+      ]
+    },
+    {
+      "id": "O_parked",
+      "type": "opportunity",
+      "label": "Keep deferred work distinct from evidence",
+      "parent_id": "outcome",
+      "x": 420,
+      "y": 131.0,
+      "width": 350,
+      "height": 72,
+      "color": "#2d443b",
+      "lines": [
+        "Keep deferred work distinct from evidence"
+      ]
+    },
+    {
+      "id": "outcome",
+      "type": "outcome",
+      "label": "Reliably complete the requested manipulation task using personal evidence",
+      "parent_id": "",
+      "x": 20,
+      "y": 94.0,
+      "width": 350,
+      "height": 72,
+      "color": "#263f60",
+      "lines": [
+        "Reliably complete the requested",
+        "manipulation task using personal evidence"
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "S_parked_0",
+      "T11009"
+    ],
+    [
+      "T11009",
+      "R11009"
+    ],
+    [
+      "S_parked_0",
+      "T11010"
+    ],
+    [
+      "T11010",
+      "R11010"
+    ],
+    [
+      "O_parked",
+      "S_parked_0"
+    ],
+    [
+      "outcome",
+      "O_parked"
+    ]
+  ],
+  "width": 2000,
+  "height": 336.0
+}

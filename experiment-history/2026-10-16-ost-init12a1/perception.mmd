@@ -1,0 +1,71 @@
+%%{init: {"theme": "base", "securityLevel": "loose", "fontFamily": "Arial, sans-serif", "fontSize": 18, "markdownAutoWrap": false, "flowchart": {"htmlLabels": false, "curve": "basis", "nodeSpacing": 24, "rankSpacing": 70, "wrappingWidth": 360}, "themeVariables": {"primaryTextColor": "#edf2f7", "lineColor": "#71849f", "background": "#0b1220"}}}%%
+flowchart LR
+OUT["Outcome: reliably complete the requested<br/>manipulation task from personal evidence"]:::outcome
+O_perception["Opportunity: Make relevant visual cues change the correct<br/>action"]:::opportunity
+OUT --> O_perception
+O_perception_S0["Solution: Inspect the exact model inputs"]:::solution
+O_perception --> O_perception_S0
+T10959["R01e · #10959<br/>Measure numeral visibility through actual<br/>preprocessing"]:::experiment
+O_perception_S0 --> T10959
+R10959["Tiny blue fragment after resize visibility<br/>evidence, not recognition"]:::evidence
+T10959 --> R10959
+click T10959 "http://127.0.0.1:4001/?project=typhon-research#ticket=10959" "Open research ticket" _blank
+T10955["R01c · #10955<br/>Show exactly what V4 sees: 512→224 images,<br/>crop and six history frames"]:::experiment
+O_perception_S0 --> T10955
+R10955["512→224; crop absent at release six history<br/>frames actually supplied"]:::evidence
+T10955 --> R10955
+click T10955 "http://127.0.0.1:4001/?project=typhon-research#ticket=10955" "Open research ticket" _blank
+T10993["VIS01 · #10993<br/>Qualify a visibility fix if the causal image<br/>test supports it"]:::experiment
+O_perception_S0 --> T10993
+R10993["Crop-only repair rejected: clearer features<br/>did not repair held orientation or release.<br/>Native production inputs retained."]:::pending
+T10993 --> R10993
+click T10993 "http://127.0.0.1:4001/?project=typhon-research#ticket=10993" "Open research ticket" _blank
+T11011["R01f · #11011<br/>Separate lost visual detail from failure to<br/>use orientation in the action head"]:::experiment
+O_perception_S0 --> T11011
+R11011["108 paired predictions: cue sensitivity rises<br/>0.0102 to 0.1887; wrist error remains about 80<br/>degrees and opens at waypoint 11."]:::mixed
+T11011 --> R11011
+click T11011 "http://127.0.0.1:4001/?project=typhon-research#ticket=11011" "Open research ticket" _blank
+O_perception_S1["Solution: Test instructions and goal diversity"]:::solution
+O_perception --> O_perception_S1
+T10954["R01b · #10954<br/>Measure V4&#x27;s numeral sensitivity and<br/>grasp-relative orientation response"]:::experiment
+O_perception_S1 --> T10954
+R10954["87 queries; initial cue response held-state<br/>target stays ~94°"]:::mixed
+T10954 --> R10954
+click T10954 "http://127.0.0.1:4001/?project=typhon-research#ticket=10954" "Open research ticket" _blank
+T10960["R02 · #10960<br/>Test whether fixed-seed prompts command simple<br/>arm actions"]:::experiment
+O_perception_S1 --> T10960
+R10960["36 predictions; directions not reliably<br/>commanded"]:::negative
+T10960 --> R10960
+click T10960 "http://127.0.0.1:4001/?project=typhon-research#ticket=10960" "Open research ticket" _blank
+T10961["R02b · #10961<br/>Compare vanilla, V3 and V4 prompt response<br/>controls"]:::experiment
+O_perception_S1 --> T10961
+R10961["180 predictions; each model 0/18 paired axis<br/>reversals"]:::negative
+T10961 --> R10961
+click T10961 "http://127.0.0.1:4001/?project=typhon-research#ticket=10961" "Open research ticket" _blank
+T10994["VIS02 · #10994<br/>Test language/action grounding repair with<br/>matched input contracts"]:::experiment
+O_perception_S1 --> T10994
+R10994["Matched 3k continuations: varied vs fixed<br/>goals 10/12 vs 0/12 novel-goal strict success.<br/>Loading 0/12 both; text-only goal response<br/>under 1.4 mm."]:::pending
+T10994 --> R10994
+click T10994 "http://127.0.0.1:4001/?project=typhon-research#ticket=10994" "Open research ticket" _blank
+O_perception_S2["Solution: Qualify visual completion decisions"]:::solution
+O_perception --> O_perception_S2
+T11005["LIVE02 · #11005<br/>Qualify the simple visual completion<br/>classifier across allowable variation"]:::experiment
+O_perception_S2 --> T11005
+R11005["Completion gate failed: classical recall below<br/>80%; separate API diagnostic 2/22 recall. No<br/>completion authority granted."]:::mixed
+T11005 --> R11005
+click T11005 "http://127.0.0.1:4001/?project=typhon-research#ticket=11005" "Open research ticket" _blank
+T11006["LIVE03 · #11006<br/>Reconcile Qwen live planner,<br/>finished-reference image and veto behavior"]:::experiment
+O_perception_S2 --> T11006
+R11006["Qwen&#x27;s 180-degree false completion was vetoed<br/>by RGB reference. Historical TTC used<br/>smoothness, not learned value; no qualified<br/>Qwen control."]:::mixed
+T11006 --> R11006
+click T11006 "http://127.0.0.1:4001/?project=typhon-research#ticket=11006" "Open research ticket" _blank
+classDef outcome fill:#263f60,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef opportunity fill:#2d443b,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef solution fill:#343a46,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef experiment fill:#4a4428,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef evidence fill:#244a3d,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef mixed fill:#574831,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef negative fill:#56343c,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef pending fill:#30445a,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef blocked fill:#4e374f,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
+classDef parked fill:#373b42,stroke:#64748b,color:#f1f5f9,rx:12,ry:12;
