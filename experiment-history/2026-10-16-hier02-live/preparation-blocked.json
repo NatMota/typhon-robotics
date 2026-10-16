@@ -1,0 +1,29 @@
+{
+  "status": "PREPARATION_BLOCKED",
+  "policy_rollouts": 0,
+  "task_outcomes": 0,
+  "model_calls": 0,
+  "qualification_initializations": 0,
+  "reason": "Exact GOAL-varied checkpoint absent locally; bounded restore missed original preparation gate",
+  "source_commit": "55ff6aeba5ff371d3df170aece2a431e9289b440",
+  "clock": {
+    "activated_epoch": 1792124088.0811062,
+    "preparation_deadline": 1792124988.0811062,
+    "physical_deadline": 1792127688.0811062,
+    "archive_deadline": 1792129488.0811062
+  },
+  "staging_receipt": {
+    "staged": true,
+    "no_model_calls": true,
+    "no_new_physics": true,
+    "source_commit": "55ff6aeba5ff371d3df170aece2a431e9289b440",
+    "epoch": 1792124915.5520554,
+    "worktree": "/var/tmp/typhon-worktrees-20261016/hier02-live"
+  },
+  "partial_bytes": 638189568,
+  "expected_bytes": 3729340908,
+  "original_clock_unchanged": true,
+  "recorded_epoch": 1792125290.0974183,
+  "next_dependency_ticket": 11091,
+  "separate_continuation": "HIER02-LIVE-R1 only after verified infrastructure restoration"
+}
