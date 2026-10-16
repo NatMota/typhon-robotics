@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "existing_saved_episodes_checked": 2,
+  "new_model_calls": 0,
+  "new_physics_ticks": 0,
+  "new_rendering": 0,
+  "not_HIER02_outcomes": true,
+  "results": [
+    {
+      "saved_source": "/var/tmp/typhon-init14-20261016/episodes/N/dev-demo_0012-loading-912172",
+      "source_episode_sha256": "e4f841d6215db6eea7451ddfc1a9c779cf82397d9cfa1876282c91eb37ce5555",
+      "mode": "N",
+      "strict_score_matches_existing": true,
+      "within_run_audit": {
+        "passed": true,
+        "policy_actions": 1436,
+        "D5_actions": 0,
+        "clearance_actions": 0,
+        "history_all47_transitions_exact": true,
+        "native_gripper_and_inactive_channels_exact": true,
+        "no_clearance_without_D5": true
+      },
+      "forbidden_contact_samples": 1,
+      "clearance_actions": 0
+    },
+    {
+      "saved_source": "/var/tmp/typhon-init14-20261016/episodes/C/dev-demo_0012-loading-912172",
+      "source_episode_sha256": "1edeb4bcb76da7bd762f939227ea0144adee47d83fb269a962a1c09fbda3e30a",
+      "mode": "A",
+      "strict_score_matches_existing": true,
+      "within_run_audit": {
+        "passed": true,
+        "policy_actions": 1436,
+        "D5_actions": 60,
+        "clearance_actions": 4,
+        "history_all47_transitions_exact": true,
+        "native_gripper_and_inactive_channels_exact": true,
+        "no_clearance_without_D5": true
+      },
+      "forbidden_contact_samples": 0,
+      "clearance_actions": 4
+    }
+  ],
+  "epoch": 1792126143.8111632
+}

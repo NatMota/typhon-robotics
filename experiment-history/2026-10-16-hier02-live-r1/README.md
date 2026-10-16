@@ -12,3 +12,5 @@ Then score saved outputs:
     .venv-sim/bin/python scripts/hier02_live_r1_analyse.py
 
 Frozen science: two original fixture-present configurations×two verifiedseeds×native/assistedloading. GOALfeeding first, Q1loading second, loading-onlyunchangedD5+C. Same live world/controller,1436actions+24scoringticks perstage,40resetinitialticks only. No success-triggeredswitch, homing, stateforcing, extra settlement, training, reverseworkflow or paidpods.
+
+Media: all four fixed pair contact sheets and fixed demo0012/912171 plus demo0013/912171 native-versus-assisted videos, made only from saved source pixels. Existing INIT14 N/C saved-trace scorer self-check passed, including the1versus0contact samples; those are not new HIER02 outcomes. Media command: .venv-sim/bin/python scripts/hier02_live_r1_media.py
