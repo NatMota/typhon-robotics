@@ -1,0 +1,42 @@
+{
+  "experiment": "INIT11-Q",
+  "ticket": 11084,
+  "mode": "qualification-only",
+  "calls": 6,
+  "processes": [
+    {
+      "id": "A",
+      "worker": "/var/tmp/typhon-worktrees-20261016/init11/scripts/load05_worker.py",
+      "calls": 2
+    },
+    {
+      "id": "B",
+      "worker": "/var/tmp/typhon-worktrees-20261016/init11/scripts/load05_worker.py",
+      "calls": 2
+    },
+    {
+      "id": "C",
+      "worker": "/var/tmp/typhon-worktrees-20261015/init07/scripts/load04_worker.py",
+      "calls": 2
+    }
+  ],
+  "same_checkpoint_sha256": "26d573eb90f791d9af86bbff30e138f51c5aa658ac7abefe76787ba352363a7a",
+  "same_probe_sha256": "9ddf8971546fd494bfc56b53586e091e039a2c809e012931d21e5be519f552e5",
+  "seed": 7381,
+  "precision": "bf16",
+  "denoise_steps": 10,
+  "physics": 0,
+  "training": 0,
+  "deadline_minutes": 50,
+  "calls_deadline_minutes": 35,
+  "comparison_deadline_minutes": 15,
+  "prohibited": [
+    "cache clearing",
+    "runtime upgrades",
+    "backend toggles",
+    "tolerance relaxation",
+    "expected probe regeneration",
+    "unplanned extra calls"
+  ],
+  "known_pretest_difference": "Original INIT07 cache points to humanoid-m6-joint/.cache-xvla-pt; restored INIT11 points to humanoid-task-supervisor-m2/.cache-xvla/checkpoint. Config and modeling_xvla.py differ. Preserve both until comparison completes."
+}
