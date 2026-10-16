@@ -1,0 +1,22 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /var/tmp/typhon-worktrees-20261016/init11/.venv-sim/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Traceback (most recent call last):
+  File "/var/tmp/typhon-worktrees-20261016/init11/scripts/init11.py", line 207, in <module>
+    try: main()
+         ^^^^^^
+  File "/var/tmp/typhon-worktrees-20261016/init11/scripts/init11.py", line 195, in main
+    worker = Worker(); results = []
+             ^^^^^^^^
+  File "/var/tmp/typhon-worktrees-20261016/init11/scripts/init11.py", line 32, in __init__
+    self.load_info = self._receive(360)
+                     ^^^^^^^^^^^^^^^^^^
+  File "/var/tmp/typhon-worktrees-20261016/init11/supervisor/baseline/xvla.py", line 88, in _receive
+    if 'error' in result: raise RuntimeError(result['error'])
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Traceback (most recent call last):
+  File "/var/tmp/typhon-worktrees-20261016/init11/scripts/load05_worker.py", line 23, in <module>
+    probe=torch.load(a.probe,map_location='cpu',weights_only=False);actual=inference(model,{k:v.cuda() for k,v in probe['inputs'].items()},'bf16');error=float((actual-probe['expected'].cpu()).abs().max());assert error==0.,('fresh reload mismatch',error)
+                                                                                                                                                                                                                    ^^^^^^^^^
+AssertionError: ('fresh reload mismatch', 0.00390625)
+

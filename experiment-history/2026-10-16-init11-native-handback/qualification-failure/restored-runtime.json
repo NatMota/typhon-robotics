@@ -1,0 +1,30 @@
+{
+  "source_commit": "c8e848e8691a88a17e1f00dd29012b59400db82b",
+  "worktree": "/var/tmp/typhon-worktrees-20261016/init11",
+  "runtime": {
+    ".venv-sim": {
+      "python": "3.11.12 (main, Apr  9 2025, 04:04:00) [Clang 20.1.0 ]",
+      "packages": {
+        "numpy": "1.26.4",
+        "mujoco": "2.3.7",
+        "robosuite": "1.4.1"
+      }
+    },
+    ".venv-xvla": {
+      "python": "3.11.12 (main, Apr  9 2025, 04:04:00) [Clang 20.1.0 ]",
+      "packages": {
+        "numpy": "1.26.3",
+        "torch": "2.5.1+cu121",
+        "transformers": "4.51.3"
+      }
+    }
+  },
+  "resolved": {
+    ".venv-sim": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor/.venv-sim",
+    ".venv-xvla": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m2/.venv-xvla",
+    ".cache-xvla": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-task-supervisor-m2/.cache-xvla"
+  },
+  "free_bytes": 3735392256,
+  "epoch": 1792114317.008999,
+  "model_or_simulator_calls": 0
+}
