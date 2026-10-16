@@ -1,0 +1,179 @@
+id,type,label,parent_id,x,y,color
+T11034,experiment,"VIDEO10 · #11034
+Register the complete video to the fixed task goal and rerun matched controls",S_data_4,1220,68.5,#4a4428
+R11034,result,Goal registration: all five sequence/endpoint/shuffle/static/repeat conditions succeed. One inspected take; no advantage from full sequence.,T11034,1620,58.0,#574831
+T11015,experiment,"VIDEO01 · #11015
+Compare video-derived representations and robot adapters without geometric-expert trajectories",S_data_4,1220,216.5,#4a4428
+R11015,result,"Investigation concluded. Assisted correction works, but generic video-to-action transfer and extra benefit from intermediate video were not established.",T11015,1620,206.0,#574831
+S_data_4,solution,"Qualify motion, camera geometry and transfer",O_data,820,157.25,#343a46
+O_data,opportunity,Turn personal observations into reliable robot practice,outcome,420,157.25,#2d443b
+T11011,experiment,"R01f · #11011
+Separate lost visual detail from failure to use orientation in the action head",S_perception_0,1220,450.0,#4a4428
+R11011,result,108 paired predictions: cue sensitivity rises 0.0102 to 0.1887; wrist error remains about 80 degrees and opens at waypoint 11.,T11011,1620,450.0,#574831
+S_perception_0,solution,Inspect the exact model inputs,O_perception,820,459.5,#343a46
+T10994,experiment,"VIS02 · #10994
+Test language/action grounding repair with matched input contracts",S_perception_1,1220,612.5,#4a4428
+R10994,result,Matched 3k continuations: varied vs fixed goals 10/12 vs 0/12 novel-goal strict success. Loading 0/12 both; text-only goal response under 1.4 mm.,T10994,1620,602.0,#30445a
+S_perception_1,solution,Test instructions and goal diversity,O_perception,820,622.0,#343a46
+O_perception,opportunity,Make relevant visual cues change the correct action,outcome,420,540.75,#2d443b
+T10985,experiment,"NEXT03 · #10985
+Separate grasp-estimation error from recovery-control error",S_execution_1,1220,835.5,#4a4428
+R10985,result,Four paired recovery executions: truth and RGB grasp transforms each 2/2 strict. Two inspected source states; no autonomous handoff qualification.,T10985,1620,825.0,#574831
+S_execution_1,solution,Estimate the actual grasp and qualify paths,O_execution,820,845.0,#343a46
+O_execution,opportunity,Make grasp-relative motion finish before release,outcome,420,845.0,#2d443b
+T11040,experiment,"LOAD04 · #11040
+Counterbalanced task supervision in identical scenes",S_generalisation_3,1220,1058.5,#4a4428
+R11040,result,Balanced vs control: requested region 16/16 vs 8/16; strict 12/16 vs 8/16. Loading stays 4/8. Four cases tip before grasp. Archive verified.,T11040,1620,1048.0,#574831
+S_generalisation_3,solution,Separate task instruction from fixture appearance,O_generalisation,820,1068.0,#343a46
+T11047,experiment,"LOAD05-R2 · #11047
+Complete two crossed-policy acquisition branches",S_generalisation_4,1220,1231.5,#4a4428
+R11047,result,Only B from its own state tips. Crossed pickups are upright (0.86 and 1.62 degrees). State-policy interaction in one inspected case.,T11047,1620,1221.0,#574831
+T11048,experiment,"LOAD06 · #11048
+Separate pose sequence from gripper schedule at acquisition",S_generalisation_4,1220,1379.5,#4a4428
+R11048,result,Pose-only substitution fixes acquisition: 1.12 versus 62.76 degrees tilt. Grip-only does not. B resumes; no full-placement or training claim.,T11048,1620,1369.0,#574831
+S_generalisation_4,solution,Isolate approach state and acquisition policy,O_generalisation,820,1315.0,#343a46
+T11058,experiment,"EVAL02-GOAL · #11058
+Separate task wording from numerical destination cues",S_generalisation_5,1220,1563.0,#4a4428
+R11058,result,"Completed: 4/4 consistent controls; all4 conflicts finish the wording-associated task. Numbers affect initial proposals but independent goal control is unproven. One scene, two seeds.",T11058,1620,1542.0,#574831
+T11059,experiment,"EVAL02-XY · #11059
+Test numerical placement steering within the feeding square",S_generalisation_5,1220,1721.5,#4a4428
+R11059,result,Centre 2/2; numerical offsets 0/4. All six inside the original square. Requested 20 mm shifts produced only 0.315-0.926 mm Y movement in this panel.,T11059,1620,1711.0,#574831
+T11060,experiment,"EVAL02-SPATIAL · #11060
+Separate numeric goal from visible marker location",S_generalisation_5,1220,1869.5,#4a4428
+R11060,result,BLOCKED before inference: marker shift changed 29 protected-foreground pixels in first QA frame. Zero model trials; cause unresolved. Renderer retry deferred.,T11060,1620,1859.0,#4e374f
+T11061,experiment,"EVAL02-COVERAGE · #11061
+Audit numerical goal variation in B training and ancestry",S_generalisation_5,1220,2017.5,#4a4428
+R11061,result,"Actual sample logs show three feeding goals earlier, only one in B. Teacher placement labels pass. Exposure narrowed; this audit alone does not prove forgetting.",T11061,1620,2007.0,#574831
+T11062,experiment,"EVAL02-RETENTION · #11062
+Compare ancestor checkpoints on the same trained feeding goals",S_generalisation_5,1220,2165.5,#4a4428
+R11062,result,"GOAL and FL: 2/2 at both goals. B: 2/2 at G0, 0/2 at G1; returns near old G0. All 12 grasp and transport. Local retention regression after B.",T11062,1620,2155.0,#574831
+T11063,experiment,"EVAL02-FIT · #11063
+Compare ancestor action predictions on identical G1 teacher observations",S_generalisation_5,1220,2324.0,#4a4428
+R11063,result,"Identical post-lift input: mean EEF error 21-27 mm in earlier checkpoints, 56 mm in B. Gripper matches; no transition tested. Prediction change exists before rollout divergence.",T11063,1620,2303.0,#574831
+T11064,experiment,"EVAL02-RET-C · #11064
+Test the matched visibility-control checkpoint for retained G1 behavior",S_generalisation_5,1220,2482.5,#4a4428
+R11064,result,Done: matched C control. G0 2/2; relocated G1 1/2. All four lift and transport. One centre overshoot; unlike B returning toward the old goal. Mixed result preserved.,T11064,1620,2472.0,#574831
+T11065,experiment,"EVAL02-NUM · #11065
+Isolate numerical goal sensitivity on an unchanged post-lift packet",S_generalisation_5,1220,2641.0,#4a4428
+R11065,result,Done: 150 mm numeric goal change barely alters predictions. GOAL final Y change 0; B +/-0.061 mm. Four new + four archived chunks. No useful coordinate steering shown.,T11065,1620,2620.0,#574831
+S_generalisation_5,solution,Separate task wording from numerical goals,O_generalisation,820,2111.5,#343a46
+O_generalisation,opportunity,The model succeeds locally but follows scene cues,outcome,420,1589.75,#2d443b
+T11031,experiment,"OBS06 · #11031
+Test aperture and release evidence on additional archived episodes",S_recovery_0,1220,2864.0,#4a4428
+R11031,result,"24 episodes / 8,784 observations: contact false positives 108 to 20, precision 94.65%. Still below 95% gate; no authority.",T11031,1620,2864.0,#574831
+T11054,experiment,"LIVE01-P · #11054
+Carry camera acquisition provenance across copies without changing robot execution",S_recovery_0,1220,3022.5,#4a4428
+R11054,result,"Review: 6,365/6,365 image references resolved; offline tensor parity passes. Live pair differs by one pixel at query 5, then actions diverge. Both tasks finish, but exact parity fails. Archive verified; no observer authority.",T11054,1620,2991.0,#574831
+T11057,experiment,"LIVE01-R · #11057
+Fixed-state camera repeatability with and without provenance",S_recovery_0,1220,3202.0,#4a4428
+R11057,result,Completed: fixed-state 24 bundles / 48 images match exactly with and without provenance. Earlier live difference not reproduced; live parity remains failed. Cached observer output; no new policy runs.,T11057,1620,3181.0,#574831
+S_recovery_0,solution,Qualify state estimates and safety checks,O_recovery,820,3042.5,#343a46
+T11043,experiment,"ALPHA02 · #11043
+frozen-policy 4s/15s reset qualification and release-only control",S_recovery_3,1220,3385.5,#4a4428
+R11043,result,Frozen 32-rollout follow-up: all four policies 0/4 full starts and zero new grasps. Release-only matches near-goal success; park further PPO.,T11043,1620,3375.0,#574831
+S_recovery_3,solution,Separate AlphaNIST-style PPO from X-VLA,O_recovery,820,3395.0,#343a46
+T11050,experiment,"DATA07-R · #11050
+Qualify acquisition repairs on training families before admitting corrective data",S_recovery_4,1220,3600.5,#4a4428
+R11050,result,"Completed: native B loading3/4. Only0001 tipped pre-acquisition; one same-state C-pose/B-grip chunk still failed (0/1 conversions), with428.09mm final error. Full horizon and exact state/input/noise checks passed. Zero successful correction examples; no training. Raw809files SHA256-verified on Mint.",T11050,1620,3548.0,#574831
+T11052,experiment,"DATA07-GE · #11052
+Qualify one geometric-expert continuation from B's failed approach state",S_recovery_4,1220,3822.0,#4a4428
+R11052,result,"Completed: exact-state geometric teacher placed/released inside fixture (1.22 mm, 0.016 deg yaw) but brick lay sideways (90 deg tilt). Strict 0/1; no correction candidate. Open descent tipped before close. No training; stopped after one attempt.",T11052,1620,3780.0,#574831
+T11053,experiment,"CTRL03 · #11053
+Diagnose loading acquisition tipping before qualifying a controller repair",S_recovery_4,1220,4012.0,#4a4428
+R11053,result,Nominal sampled gripper corridor clears the brick; executed finger shell hits its top before closure. Proposed readiness gate failed: 11.85 mm minimum versus 3 mm. Zero repair rollouts.,T11053,1620,3991.0,#574831
+T11055,experiment,"CTRL04 · #11055
+Test one fixed pre-descent dwell from the failed acquisition state",S_recovery_4,1220,4170.5,#4a4428
+R11055,result,Completed: extra 4 s reduced entry error from 5.69 to 4.18 mm. Strict success 0/2; both tipped before grasp. Settling alone insufficient. Raw archive verified on Mint.,T11055,1620,4160.0,#574831
+T11056,experiment,"CTRL05 · #11056
+Compare matched-time step and smooth descent from the settled state",S_recovery_4,1220,4329.0,#4a4428
+R11056,result,BLOCKED: reference audit completed; qualification stopped at tick 510 because wrapper code changed too early. No S/R descent runs or efficacy result. Approach-repair branch deferred tonight.,T11056,1620,4308.0,#4e374f
+S_recovery_4,solution,Qualify training-family corrective supervision,O_recovery,820,3974.25,#343a46
+T11066,experiment,"HIER01-TASK · #11066
+Test a fixed caller-task dispatcher across retained checkpoints",S_recovery_5,1220,4523.0,#4a4428
+R11066,result,Done: caller-task routing. Main 4/4 vs B 3/4; conditional confirmation 2/2 vs 1/2. All 12 lift. G1 recovered; feeding/loading retained. One training family; no learned hierarchy.,T11066,1620,4502.0,#574831
+S_recovery_5,solution,Dispatch an explicitly supplied task to a retained motor policy,O_recovery,820,4532.5,#343a46
+T11067,experiment,"HIER01-DEV · #11067
+Qualify fixed task routing on archived 0012/0013 development scenes",S_recovery_6,1220,4717.0,#4a4428
+R11067,result,"Done: router passed feeding 4/4 and loading 4/4; B passed feeding 4/4 and loading 2/4. All 16 lifted. B loading failures were tilted/unseated placements. Two visible families, not independent holdouts.",T11067,1620,4696.0,#574831
+S_recovery_6,solution,Qualify task routing across starting contexts,O_recovery,820,4726.5,#343a46
+T11068,experiment,"HIER01-CHAIN · #11068
+Test fixed-budget feed/load handovers without world reset",S_recovery_7,1220,4921.5,#4a4428
+R11068,result,Done: both continuous task orders failed on the second task. First tasks succeeded; the incoming policy never reacquired the brick. No world reset or hidden home motion. Original reverse order had a documented raw-RGB audit stop.,T11068,1620,4890.0,#574831
+T11069,experiment,"HIER01-CHAIN-AMEND1 · #11069
+Complete one fresh L→F workflow after raw-render gate interruption",S_recovery_7,1220,5122.0,#4a4428
+R11069,result,"Done: explicit audit amendment allowed the fresh reverse workflow. Six raw channel differences left all actual actor inputs, actions and controller traces exact. Loading passed; subsequent feeding did not approach or grasp. Original evidence retained.",T11069,1620,5080.0,#574831
+S_recovery_7,solution,Test uninterrupted task handovers,O_recovery,820,5031.25,#343a46
+T11070,experiment,"HIER01-HANDOFF · #11070
+Diagnose both skill transitions from saved evidence",S_recovery_8,1220,5368.5,#4a4428
+R11070,result,"Done: correct task, fresh history and visible blue 2 at both handovers. Policies proposed open-gripper near-home motions: zero contact or lift. New starts are 200–299 mm from training starts; robot posture is close to standalone. Coverage/conditioning is next; numeral recognition remains unproven.",T11070,1620,5316.0,#574831
+S_recovery_8,solution,Diagnose why the next task never starts,O_recovery,820,5378.0,#343a46
+T11071,experiment,"HIER01-START · #11071
+Separate right-side start position from the feeding-marker cue",S_recovery_9,1220,5615.0,#4a4428
+R11071,result,"Done: loading controls 2/2. All eight right-side starts: no contact or lift. Inside the feeding marker: no close proposals. Outside: 17–371 empty-space closes and an arm path 112–117 mm closer. The cue changes activity, but does not restore acquisition.",T11071,1620,5573.0,#574831
+S_recovery_9,solution,Separate unfamiliar starts from prior-task visual cues,O_recovery,820,5624.5,#343a46
+T11072,experiment,"INIT01 · #11072
+qualify task-start supervision from training-family handovers",S_recovery_10,1220,5840.5,#4a4428
+R11072,result,Done: native loading 0/4; unchanged teacher 4/4; completed-feeding holds 4/4. Teacher lifts were upright with bilateral support. Eight candidate recordings; no training. Starts span only 10.5 mm. Next: a matched adaptation and retention test.,T11072,1620,5809.0,#574831
+S_recovery_10,solution,Qualify task-start supervision after completed work,O_recovery,820,5850.0,#343a46
+T11073,experiment,"INIT02 · #11073
+matched initiation adaptation with preservation and rehearsal",S_recovery_11,1220,6066.0,#4a4428
+R11073,result,"Complete: T learned loading at shared post-feeding starts (5/8 vs R 0/8), but disturbed all eight completed feeding cases (0/8 preserved vs R 8/8). Prior strict passes unchanged; two pickup regressions. Optional gate failed. 69 canonical trials; full SHA-verified Mint archive.",T11073,1620,6024.0,#574831
+S_recovery_11,solution,Learn when to initiate loading while preserving completed feeding,O_recovery,820,6075.5,#343a46
+T11074,experiment,"INIT03 · #11074
+distinguish conditional fitting from noise-to-action generation",S_recovery_12,1220,6291.5,#4a4428
+R11074,result,"Review: saved-input and exposure audit complete; all first chunks are closer to hold. Native conditional loss remains unmeasured. Part A archive verified: 13 files, zero SHA errors. No new model or physics calls.",T11074,1620,6260.0,#574831
+S_recovery_12,solution,Separate initial action choice from later policy drift,O_recovery,820,6301.0,#343a46
+T11075,experiment,"INIT04 · #11075
+locate unwanted initiation and isolate instructions at later states",S_recovery_13,1220,6527.5,#4a4428
+R11075,result,"Complete: all eight feeding requests remain intact. At later fixed states, feeding/loading/explicit-hold prompts all approach and then close. 18 outputs; exact replay error 0. Stronger wording fails locally. No training/physics; image/history causes and native conditional fitting remain unresolved.",T11075,1620,6475.0,#574831
+S_recovery_13,solution,Locate when completed-task preservation becomes acquisition,O_recovery,820,6537.0,#343a46
+T11076,experiment,"INIT05 · #11076
+isolate images and effective proprioception at first unwanted approach",S_recovery_14,1220,6784.5,#4a4428
+R11076,result,"Complete: changing q0 to q1 images reproduces 125–143 mm approach; pose-only stays near 8 mm. Brick crop is exactly unchanged; wider views differ. 16 outputs, exact replay error 0. Local input dependence, not a physical repair. Next: qualify paired hold/load supervision at learner state.",T11076,1620,6732.0,#574831
+T11077,experiment,"INIT06 · #11077
+paired hold/loading references at actual learner q1 states",S_recovery_14,1220,7006.0,#4a4428
+R11077,result,"Complete: both q1 hold/loading pairs qualified. Holds: zero contact and brick movement. Loading:2/2 strict passes,45 sustained lift samples each, no joint excursions.124 full action windows; exact input/state pairing. Candidate-only bank; repair not trained. Mint archive verified.",T11077,1620,6964.0,#574831
+S_recovery_14,solution,Separate visual and pose cues at unwanted initiation,O_recovery,820,6904.75,#343a46
+T11078,experiment,"INIT07 · #11078
+matched q0 rehearsal versus q1 corrective supervision",S_recovery_15,1220,7210.5,#4a4428
+R11078,result,"Q0 loading 8/8, preservation 0/8; Q1 loading 4/8, preservation 8/8. Repair gate failed. INIT10 rescues two pickups only; no full-task repair.",T11078,1620,7200.0,#574831
+S_recovery_15,solution,Train task-conditioned actions at learner-reached states,O_recovery,820,7220.0,#343a46
+T11079,experiment,"INIT08 · #11079
+diagnose lost Q1 grasps with matched pre-contact inputs",S_recovery_16,1220,7415.0,#4a4428
+R11079,result,COMPLETE: two lost Q1 grasps lose bilateral support while CLOSE remains commanded; opening1.6s later. Q0 misses first pickup but retries.16 exact-qualified crossover proposals implicate both input state and policy. No new physics or training. Archive verified.,T11079,1620,7373.0,#574831
+S_recovery_16,solution,Separate reached state from conditional grasp output,O_recovery,820,7424.5,#343a46
+T11080,experiment,"INIT09 · #11080
+explain lost support and successful reacquisition from saved traces",S_recovery_17,1220,7619.5,#4a4428
+R11080,result,Six recorded episodes: shallow Q1 contact; support lost 1.6s before opening. Q0 later regrasp succeeds; recovery states differ. INIT10 adds prospective force logging.,T11080,1620,7609.0,#574831
+S_recovery_17,solution,Explain support loss and later reacquisition,O_recovery,820,7629.0,#343a46
+T11081,experiment,"INIT10 · #11081
+fixed 5 mm lower acquisition-path replay with force logging",S_recovery_18,1220,7803.0,#4a4428
+R11081,result,Fixed -5mm target Z: upright held lift 2/2 versus native 0/2; 142/140mm. Same grip commands; exact native traces. Placement untested. Media defect disclosed; archive verified.,T11081,1620,7782.0,#574831
+S_recovery_18,solution,Test a fixed deeper acquisition path without changing grip commands,O_recovery,820,7812.5,#343a46
+T11082,experiment,"INIT10-A · #11082
+audit recorded contact forces and enclosure at fixed intervals",S_recovery_19,1220,8018.0,#4a4428
+R11082,result,"Complete: all 240 samples and 1,835 contact records qualified. Lower path retains loaded pads; native loses enclosure. Initial force is downward in both; force magnitude alone does not explain failure. Two cases, 20 Hz; no placement claim. Verified archive.",T11082,1620,7976.0,#574831
+S_recovery_19,solution,Explain measured contact support after deeper acquisition,O_recovery,820,8027.5,#343a46
+T11083,experiment,"INIT11 · #11083
+Planned only: hand back to Q1 after the fixed lower acquisition segment",S_recovery_20,1220,8243.5,#4a4428
+R11083,result,"PLANNED ONLY: zero executions. Four future N/D5 continuations on the same two cases, then native Q1. Query-4 handback and original remaining budget resolved. Requires future compute and activation; no extra depth or training.",T11083,1620,8212.0,#30445a
+S_recovery_20,solution,Test whether assisted acquisition can return to the learned policy,O_recovery,820,8253.0,#343a46
+O_recovery,opportunity,Advance phases only from trustworthy evidence,outcome,420,5647.75,#2d443b
+T11028,experiment,"LIVE08 · #11028
+Isolate the first ranked candidate from boundary timing",S_compute_1,1220,8487.5,#4a4428
+R11028,result,"Four-run 2x2: candidate A grasps/places at both waits; C at neither. Candidate choice explains this failure, not one tick of delay.",T11028,1620,8477.0,#574831
+S_compute_1,solution,Integrate and isolate the live selection mechanism,O_compute,820,8497.0,#343a46
+O_compute,opportunity,Choose useful candidates without blocking valid motion,outcome,420,8497.0,#2d443b
+T10996,experiment,"EVAL02 · #10996
+Define the next confirmatory comparison with family-level uncertainty",S_evidence_0,1220,8710.5,#4a4428
+R10996,result,REVIEW: 136/204 planned completed. Broad vs vanilla near-layout strict 17/40 vs 0/40. Broader layouts 0/20 both; 68 interventions unrun.,T10996,1620,8700.0,#574831
+S_evidence_0,solution,Reconcile evaluation panels and uncertainty,O_evidence,820,8720.0,#343a46
+T11042,experiment,"OPS01 · #11042
+Verify Powerglide booking and full backup including lab recovery",S_evidence_1,1220,8883.5,#4a4428
+R11042,result,"Full backup reconciled: 906,507 files, 299.6 GB, no integrity errors. Labs and checkpoint checks saved. Fresh-machine restore untested.",T11042,1620,8873.0,#574831
+T11049,experiment,"OPS07 · #11049
+Restore Mint access and mirror latest experiment evidence and OST",S_evidence_1,1220,9052.5,#4a4428
+R11049,result,"Recovered: Mint mirrors verified (45 older evidence files, 809 DATA07-R raw files). Interrupted work preserved; live OST installed and served bytes checked. DATA07-GE raw 223 files also verified. Fresh-machine restore untested.",T11049,1620,9021.0,#574831
+S_evidence_1,solution,Preserve the research record and compute environment,O_evidence,820,8977.5,#343a46
+O_evidence,opportunity,"Make results reproducible, recoverable and understandable",outcome,420,8848.75,#2d443b
+outcome,outcome,Reliably complete the requested manipulation task using personal evidence,,20,94.0,#263f60

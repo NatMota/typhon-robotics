@@ -1,0 +1,6299 @@
+{
+  "nodes": [
+    {
+      "id": "T10981",
+      "type": "experiment",
+      "label": "OPS04 \u00b7 #10981\nReconcile excluded human review candidate 6 with stable demo IDs",
+      "parent_id": "S_data_0",
+      "x": 1220,
+      "y": 58.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "OPS04 \u00b7 #10981",
+        "Reconcile excluded human review candidate 6",
+        "with stable demo IDs"
+      ]
+    },
+    {
+      "id": "R10981",
+      "type": "result",
+      "label": "Review candidate 6 is demo0017; its source remains preserved. It is distinct from successful demo0006.",
+      "parent_id": "T10981",
+      "x": 1620,
+      "y": 58.0,
+      "width": 350,
+      "height": 91,
+      "color": "#244a3d",
+      "lines": [
+        "Review candidate 6 is demo0017; its source",
+        "remains preserved. It is distinct from",
+        "successful demo0006."
+      ]
+    },
+    {
+      "id": "T10991",
+      "type": "experiment",
+      "label": "DATA06 \u00b7 #10991\nVersion the physical-object and calibration assumptions consistently",
+      "parent_id": "S_data_0",
+      "x": 1220,
+      "y": 185.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DATA06 \u00b7 #10991",
+        "Version the physical-object and calibration",
+        "assumptions consistently"
+      ]
+    },
+    {
+      "id": "R10991",
+      "type": "result",
+      "label": "BLOCKED: reliable physical measurements and camera calibration remain missing. Virtual scale stays explicit.",
+      "parent_id": "T10991",
+      "x": 1620,
+      "y": 185.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4e374f",
+      "lines": [
+        "BLOCKED: reliable physical measurements and",
+        "camera calibration remain missing. Virtual",
+        "scale stays explicit."
+      ]
+    },
+    {
+      "id": "T10972",
+      "type": "experiment",
+      "label": "R07 \u00b7 #10972\nAlign one human correction clip with the Panda-expert event timeline",
+      "parent_id": "S_data_0",
+      "x": 1220,
+      "y": 312.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R07 \u00b7 #10972",
+        "Align one human correction clip with the",
+        "Panda-expert event timeline"
+      ]
+    },
+    {
+      "id": "R10972",
+      "type": "result",
+      "label": "One 7.6 s correction aligned event warp is not motor labels",
+      "parent_id": "T10972",
+      "x": 1620,
+      "y": 321.5,
+      "width": 350,
+      "height": 72,
+      "color": "#574831",
+      "lines": [
+        "One 7.6 s correction aligned event warp is",
+        "not motor labels"
+      ]
+    },
+    {
+      "id": "T10974",
+      "type": "experiment",
+      "label": "R09 \u00b7 #10974\nRetarget one short human-observed correction into constrained Panda motion",
+      "parent_id": "S_data_0",
+      "x": 1220,
+      "y": 439.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R09 \u00b7 #10974",
+        "Retarget one short human-observed",
+        "correction into constrained Panda motion"
+      ]
+    },
+    {
+      "id": "R10974",
+      "type": "result",
+      "label": "One constrained Panda success generated path; virtual scale",
+      "parent_id": "T10974",
+      "x": 1620,
+      "y": 448.5,
+      "width": 350,
+      "height": 72,
+      "color": "#574831",
+      "lines": [
+        "One constrained Panda success generated",
+        "path; virtual scale"
+      ]
+    },
+    {
+      "id": "T10989",
+      "type": "experiment",
+      "label": "DATA04 \u00b7 #10989\nValidate phone-video to Panda-action alignment beyond one event comparison",
+      "parent_id": "S_data_0",
+      "x": 1220,
+      "y": 566.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DATA04 \u00b7 #10989",
+        "Validate phone-video to Panda-action",
+        "alignment beyond one event comparison"
+      ]
+    },
+    {
+      "id": "R10989",
+      "type": "result",
+      "label": "BLOCKED: no validated dense phone-frame to Panda-action alignment. One event comparison is not motor supervision.",
+      "parent_id": "T10989",
+      "x": 1620,
+      "y": 566.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4e374f",
+      "lines": [
+        "BLOCKED: no validated dense phone-frame to",
+        "Panda-action alignment. One event",
+        "comparison is not motor supervision."
+      ]
+    },
+    {
+      "id": "S_data_0",
+      "type": "solution",
+      "label": "Preserve source evidence and physical assumptions",
+      "parent_id": "O_data",
+      "x": 820,
+      "y": 321.5,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Preserve source evidence and physical",
+        "assumptions"
+      ]
+    },
+    {
+      "id": "T10987",
+      "type": "experiment",
+      "label": "DATA02 \u00b7 #10987\nReconcile prepared phase chunks and four-second intention targets with actual training",
+      "parent_id": "S_data_1",
+      "x": 1220,
+      "y": 718.0,
+      "width": 350,
+      "height": 112,
+      "color": "#4a4428",
+      "lines": [
+        "DATA02 \u00b7 #10987",
+        "Reconcile prepared phase chunks and",
+        "four-second intention targets with actual",
+        "training"
+      ]
+    },
+    {
+      "id": "R10987",
+      "type": "result",
+      "label": "V2: 632 rows / 316 chunks. V3: 776 / 388. Broad Pt uses 30 actions over 1.5 s; four-second history is not a four-second action target.",
+      "parent_id": "T10987",
+      "x": 1620,
+      "y": 718.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "V2: 632 rows / 316 chunks. V3: 776 / 388.",
+        "Broad Pt uses 30 actions over 1.5 s;",
+        "four-second history is not a four-second",
+        "action target."
+      ]
+    },
+    {
+      "id": "T10988",
+      "type": "experiment",
+      "label": "DATA03 \u00b7 #10988\nAudit balanced sampling across takes, chunks, horizons and camera views",
+      "parent_id": "S_data_1",
+      "x": 1220,
+      "y": 866.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DATA03 \u00b7 #10988",
+        "Audit balanced sampling across takes,",
+        "chunks, horizons and camera views"
+      ]
+    },
+    {
+      "id": "R10988",
+      "type": "result",
+      "label": "Broad12k: 48,000 draws, 8,000 per source, all 439 windows. Historical V3 per-update sampling remains unverified.",
+      "parent_id": "T10988",
+      "x": 1620,
+      "y": 866.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "Broad12k: 48,000 draws, 8,000 per source,",
+        "all 439 windows. Historical V3 per-update",
+        "sampling remains unverified."
+      ]
+    },
+    {
+      "id": "T10990",
+      "type": "experiment",
+      "label": "DATA05 \u00b7 #10990\nAudit held-state crosshair in video and separate trajectory labels",
+      "parent_id": "S_data_1",
+      "x": 1220,
+      "y": 993.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DATA05 \u00b7 #10990",
+        "Audit held-state crosshair in video and",
+        "separate trajectory labels"
+      ]
+    },
+    {
+      "id": "R10990",
+      "type": "result",
+      "label": "16 takes / 32 views / 7,904 frames: 1,024 held, 3,598 not held, 3,282 unknown. 768 marked frames; no direct Franka labels.",
+      "parent_id": "T10990",
+      "x": 1620,
+      "y": 993.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "16 takes / 32 views / 7,904 frames: 1,024",
+        "held, 3,598 not held, 3,282 unknown. 768",
+        "marked frames; no direct Franka labels."
+      ]
+    },
+    {
+      "id": "S_data_1",
+      "type": "solution",
+      "label": "Audit training targets, mixing and held markers",
+      "parent_id": "O_data",
+      "x": 820,
+      "y": 870.25,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Audit training targets, mixing and held",
+        "markers"
+      ]
+    },
+    {
+      "id": "T11016",
+      "type": "experiment",
+      "label": "VIDEO01-A \u00b7 #11016\nObserved 2D object paths and explicit orientation gaps",
+      "parent_id": "S_data_2",
+      "x": 1220,
+      "y": 1145.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO01-A \u00b7 #11016",
+        "Observed 2D object paths and explicit",
+        "orientation gaps"
+      ]
+    },
+    {
+      "id": "R11016",
+      "type": "result",
+      "label": "Observed 2D object representation audited. Missing orientation and calibration stay explicit; no recovered human 3D actions.",
+      "parent_id": "T11016",
+      "x": 1620,
+      "y": 1145.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "Observed 2D object representation audited.",
+        "Missing orientation and calibration stay",
+        "explicit; no recovered human 3D actions."
+      ]
+    },
+    {
+      "id": "T11017",
+      "type": "experiment",
+      "label": "VIDEO01-B \u00b7 #11017\nHand/pinch observations without fabricated grasp labels",
+      "parent_id": "S_data_2",
+      "x": 1220,
+      "y": 1272.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO01-B \u00b7 #11017",
+        "Hand/pinch observations without fabricated",
+        "grasp labels"
+      ]
+    },
+    {
+      "id": "R11017",
+      "type": "result",
+      "label": "526 sample identities, 175 hand detections. Unknown contact stays unknown; no autonomous grasp authority.",
+      "parent_id": "T11017",
+      "x": 1620,
+      "y": 1272.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "526 sample identities, 175 hand detections.",
+        "Unknown contact stays unknown; no",
+        "autonomous grasp authority."
+      ]
+    },
+    {
+      "id": "T11018",
+      "type": "experiment",
+      "label": "VIDEO01-C \u00b7 #11018\nFrozen phone-frame features with temporal and cross-view controls",
+      "parent_id": "S_data_2",
+      "x": 1220,
+      "y": 1409.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO01-C \u00b7 #11018",
+        "Frozen phone-frame features with temporal",
+        "and cross-view controls"
+      ]
+    },
+    {
+      "id": "R11018",
+      "type": "result",
+      "label": "112 paired instants / 224 views reviewed. Intermediate pickup/release matters; generic representation-to-action transfer remains unqualified.",
+      "parent_id": "T11018",
+      "x": 1620,
+      "y": 1399.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "112 paired instants / 224 views reviewed.",
+        "Intermediate pickup/release matters;",
+        "generic representation-to-action transfer",
+        "remains unqualified."
+      ]
+    },
+    {
+      "id": "T11019",
+      "type": "experiment",
+      "label": "VIDEO02 \u00b7 #11019\nDense phone observations, temporal controls and object-focused features",
+      "parent_id": "S_data_2",
+      "x": 1220,
+      "y": 1557.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO02 \u00b7 #11019",
+        "Dense phone observations, temporal controls",
+        "and object-focused features"
+      ]
+    },
+    {
+      "id": "R11019",
+      "type": "result",
+      "label": "Corrected extraction: 2,644/2,644 frame hashes; 147 four-second windows. Failed 906-frame-mismatch export preserved. Offline features, no motor labels.",
+      "parent_id": "T11019",
+      "x": 1620,
+      "y": 1547.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Corrected extraction: 2,644/2,644 frame",
+        "hashes; 147 four-second windows. Failed",
+        "906-frame-mismatch export preserved.",
+        "Offline features, no motor labels."
+      ]
+    },
+    {
+      "id": "S_data_2",
+      "type": "solution",
+      "label": "Extract observed object, hand and temporal evidence",
+      "parent_id": "O_data",
+      "x": 820,
+      "y": 1360.75,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Extract observed object, hand and temporal",
+        "evidence"
+      ]
+    },
+    {
+      "id": "T11020",
+      "type": "experiment",
+      "label": "VIDEO03 \u00b7 #11020\nTest causal held-state prediction from unmarked personal video",
+      "parent_id": "S_data_3",
+      "x": 1220,
+      "y": 1730.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO03 \u00b7 #11020",
+        "Test causal held-state prediction from",
+        "unmarked personal video"
+      ]
+    },
+    {
+      "id": "R11020",
+      "type": "result",
+      "label": "35 probes: perfect labelled interiors but hand-present false-held errors remain. Primary-to-side recall 3/28 full vs 28/28 fused; no control authority.",
+      "parent_id": "T11020",
+      "x": 1620,
+      "y": 1720.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "35 probes: perfect labelled interiors but",
+        "hand-present false-held errors remain.",
+        "Primary-to-side recall 3/28 full vs 28/28",
+        "fused; no control authority."
+      ]
+    },
+    {
+      "id": "T11021",
+      "type": "experiment",
+      "label": "VIDEO04 \u00b7 #11021\nTest training-only hand-present negatives for held-state errors",
+      "parent_id": "S_data_3",
+      "x": 1220,
+      "y": 1878.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO04 \u00b7 #11021",
+        "Test training-only hand-present negatives",
+        "for held-state errors"
+      ]
+    },
+    {
+      "id": "R11021",
+      "type": "result",
+      "label": "12 training negative views added. Transition errors 2/6 to 1/6 views; the same physical event still fails. 90/90 held positives retained.",
+      "parent_id": "T11021",
+      "x": 1620,
+      "y": 1868.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "12 training negative views added.",
+        "Transition errors 2/6 to 1/6 views; the",
+        "same physical event still fails. 90/90 held",
+        "positives retained."
+      ]
+    },
+    {
+      "id": "T11022",
+      "type": "experiment",
+      "label": "VIDEO05 \u00b7 #11022\nTest pre-contact negatives while preserving held-pause recognition",
+      "parent_id": "S_data_3",
+      "x": 1220,
+      "y": 2016.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO05 \u00b7 #11022",
+        "Test pre-contact negatives while preserving",
+        "held-pause recognition"
+      ]
+    },
+    {
+      "id": "R11022",
+      "type": "result",
+      "label": "13 pre-contact views added. New false-held errors 2/5 to 1/5; reused challenge 1/8 to 0/8. Held-pause qualification incomplete.",
+      "parent_id": "T11022",
+      "x": 1620,
+      "y": 2016.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "13 pre-contact views added. New false-held",
+        "errors 2/5 to 1/5; reused challenge 1/8 to",
+        "0/8. Held-pause qualification incomplete."
+      ]
+    },
+    {
+      "id": "S_data_3",
+      "type": "solution",
+      "label": "Test causal contact evidence and its failures",
+      "parent_id": "O_data",
+      "x": 820,
+      "y": 1882.75,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Test causal contact evidence and its",
+        "failures"
+      ]
+    },
+    {
+      "id": "T11023",
+      "type": "experiment",
+      "label": "VIDEO06 \u00b7 #11023\nAudit object motion through occlusion before video retargeting",
+      "parent_id": "S_data_4",
+      "x": 1220,
+      "y": 2178.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO06 \u00b7 #11023",
+        "Audit object motion through occlusion",
+        "before video retargeting"
+      ]
+    },
+    {
+      "id": "R11023",
+      "type": "result",
+      "label": "342 frames: 194/222 held motion pairs supported, 28 unknown. Image motion is real; metric depth and grasp remain unresolved.",
+      "parent_id": "T11023",
+      "x": 1620,
+      "y": 2168.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "342 frames: 194/222 held motion pairs",
+        "supported, 28 unknown. Image motion is",
+        "real; metric depth and grasp remain",
+        "unresolved."
+      ]
+    },
+    {
+      "id": "T11024",
+      "type": "experiment",
+      "label": "VIDEO07 \u00b7 #11024\nTest native video cadence and phase timing before robot retargeting",
+      "parent_id": "S_data_4",
+      "x": 1220,
+      "y": 2316.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO07 \u00b7 #11024",
+        "Test native video cadence and phase timing",
+        "before robot retargeting"
+      ]
+    },
+    {
+      "id": "R11024",
+      "type": "result",
+      "label": "Native cadence: 212/222 held pairs supported, up from 194. Ten unsupported pairs remain; no recovered robot actions.",
+      "parent_id": "T11024",
+      "x": 1620,
+      "y": 2316.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "Native cadence: 212/222 held pairs",
+        "supported, up from 194. Ten unsupported",
+        "pairs remain; no recovered robot actions."
+      ]
+    },
+    {
+      "id": "T11032",
+      "type": "experiment",
+      "label": "VIDEO08 \u00b7 #11032\nTest whether existing views identify camera geometry for a video-to-robot adapter",
+      "parent_id": "S_data_4",
+      "x": 1220,
+      "y": 2443.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO08 \u00b7 #11032",
+        "Test whether existing views identify camera",
+        "geometry for a video-to-robot adapter"
+      ]
+    },
+    {
+      "id": "R11032",
+      "type": "result",
+      "label": "297 camera fits per view fit within 5 px. Large depth/height ambiguity: planar corners do not identify 3D geometry.",
+      "parent_id": "T11032",
+      "x": 1620,
+      "y": 2443.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "297 camera fits per view fit within 5 px.",
+        "Large depth/height ambiguity: planar",
+        "corners do not identify 3D geometry."
+      ]
+    },
+    {
+      "id": "T11033",
+      "type": "experiment",
+      "label": "VIDEO09 \u00b7 #11033\nExecute full human correction sequence with a frozen RGB-to-Panda adapter",
+      "parent_id": "S_data_4",
+      "x": 1220,
+      "y": 2580.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO09 \u00b7 #11033",
+        "Execute full human correction sequence with",
+        "a frozen RGB-to-Panda adapter"
+      ]
+    },
+    {
+      "id": "R11033",
+      "type": "result",
+      "label": "Five sequence/control executions all grasp, lift and release; strict 0/5. Goal error 33.7\u201335.5 mm. Endpoint registration is a confound.",
+      "parent_id": "T11033",
+      "x": 1620,
+      "y": 2570.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Five sequence/control executions all grasp,",
+        "lift and release; strict 0/5. Goal error",
+        "33.7\u201335.5 mm. Endpoint registration is a",
+        "confound."
+      ]
+    },
+    {
+      "id": "T11034",
+      "type": "experiment",
+      "label": "VIDEO10 \u00b7 #11034\nRegister the complete video to the fixed task goal and rerun matched controls",
+      "parent_id": "S_data_4",
+      "x": 1220,
+      "y": 2728.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO10 \u00b7 #11034",
+        "Register the complete video to the fixed",
+        "task goal and rerun matched controls"
+      ]
+    },
+    {
+      "id": "R11034",
+      "type": "result",
+      "label": "Goal registration: all five sequence/endpoint/shuffle/static/repeat conditions succeed. One inspected take; no advantage from full sequence.",
+      "parent_id": "T11034",
+      "x": 1620,
+      "y": 2718.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Goal registration: all five",
+        "sequence/endpoint/shuffle/static/repeat",
+        "conditions succeed. One inspected take; no",
+        "advantage from full sequence."
+      ]
+    },
+    {
+      "id": "T11035",
+      "type": "experiment",
+      "label": "VIDEO11 \u00b7 #11035\nAudit glyph correspondence and the conflicting trajectory scores",
+      "parent_id": "S_data_4",
+      "x": 1220,
+      "y": 2866.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO11 \u00b7 #11035",
+        "Audit glyph correspondence and the",
+        "conflicting trajectory scores"
+      ]
+    },
+    {
+      "id": "R11035",
+      "type": "result",
+      "label": "736-observation audit: plane-depth bias explains conflicting path scores. No new rollout; close full-path superiority claim.",
+      "parent_id": "T11035",
+      "x": 1620,
+      "y": 2866.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "736-observation audit: plane-depth bias",
+        "explains conflicting path scores. No new",
+        "rollout; close full-path superiority claim."
+      ]
+    },
+    {
+      "id": "T11015",
+      "type": "experiment",
+      "label": "VIDEO01 \u00b7 #11015\nCompare video-derived representations and robot adapters without geometric-expert trajectories",
+      "parent_id": "S_data_4",
+      "x": 1220,
+      "y": 3003.5,
+      "width": 350,
+      "height": 112,
+      "color": "#4a4428",
+      "lines": [
+        "VIDEO01 \u00b7 #11015",
+        "Compare video-derived representations and",
+        "robot adapters without geometric-expert",
+        "trajectories"
+      ]
+    },
+    {
+      "id": "R11015",
+      "type": "result",
+      "label": "Investigation concluded. Assisted correction works, but generic video-to-action transfer and extra benefit from intermediate video were not established.",
+      "parent_id": "T11015",
+      "x": 1620,
+      "y": 2993.0,
+      "width": 350,
+      "height": 133,
+      "color": "#574831",
+      "lines": [
+        "Investigation concluded. Assisted",
+        "correction works, but generic",
+        "video-to-action transfer and extra benefit",
+        "from intermediate video were not",
+        "established."
+      ]
+    },
+    {
+      "id": "S_data_4",
+      "type": "solution",
+      "label": "Qualify motion, camera geometry and transfer",
+      "parent_id": "O_data",
+      "x": 820,
+      "y": 2605.75,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Qualify motion, camera geometry and",
+        "transfer"
+      ]
+    },
+    {
+      "id": "O_data",
+      "type": "opportunity",
+      "label": "Turn personal observations into reliable robot practice",
+      "parent_id": "outcome",
+      "x": 420,
+      "y": 1463.62,
+      "width": 350,
+      "height": 72,
+      "color": "#2d443b",
+      "lines": [
+        "Turn personal observations into reliable",
+        "robot practice"
+      ]
+    },
+    {
+      "id": "T10959",
+      "type": "experiment",
+      "label": "R01e \u00b7 #10959\nMeasure numeral visibility through actual preprocessing",
+      "parent_id": "S_perception_0",
+      "x": 1220,
+      "y": 3237.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R01e \u00b7 #10959",
+        "Measure numeral visibility through actual",
+        "preprocessing"
+      ]
+    },
+    {
+      "id": "R10959",
+      "type": "result",
+      "label": "Tiny blue fragment after resize visibility evidence, not recognition",
+      "parent_id": "T10959",
+      "x": 1620,
+      "y": 3246.5,
+      "width": 350,
+      "height": 72,
+      "color": "#244a3d",
+      "lines": [
+        "Tiny blue fragment after resize visibility",
+        "evidence, not recognition"
+      ]
+    },
+    {
+      "id": "T10955",
+      "type": "experiment",
+      "label": "R01c \u00b7 #10955\nShow exactly what V4 sees: 512\u2192224 images, crop and six history frames",
+      "parent_id": "S_perception_0",
+      "x": 1220,
+      "y": 3364.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R01c \u00b7 #10955",
+        "Show exactly what V4 sees: 512\u2192224 images,",
+        "crop and six history frames"
+      ]
+    },
+    {
+      "id": "R10955",
+      "type": "result",
+      "label": "512\u2192224; crop absent at release six history frames actually supplied",
+      "parent_id": "T10955",
+      "x": 1620,
+      "y": 3373.5,
+      "width": 350,
+      "height": 72,
+      "color": "#244a3d",
+      "lines": [
+        "512\u2192224; crop absent at release six history",
+        "frames actually supplied"
+      ]
+    },
+    {
+      "id": "T10993",
+      "type": "experiment",
+      "label": "VIS01 \u00b7 #10993\nQualify a visibility fix if the causal image test supports it",
+      "parent_id": "S_perception_0",
+      "x": 1220,
+      "y": 3491.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIS01 \u00b7 #10993",
+        "Qualify a visibility fix if the causal",
+        "image test supports it"
+      ]
+    },
+    {
+      "id": "R10993",
+      "type": "result",
+      "label": "Crop-only repair rejected: clearer features did not repair held orientation or release. Native production inputs retained.",
+      "parent_id": "T10993",
+      "x": 1620,
+      "y": 3491.0,
+      "width": 350,
+      "height": 91,
+      "color": "#30445a",
+      "lines": [
+        "Crop-only repair rejected: clearer features",
+        "did not repair held orientation or release.",
+        "Native production inputs retained."
+      ]
+    },
+    {
+      "id": "T11011",
+      "type": "experiment",
+      "label": "R01f \u00b7 #11011\nSeparate lost visual detail from failure to use orientation in the action head",
+      "parent_id": "S_perception_0",
+      "x": 1220,
+      "y": 3618.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R01f \u00b7 #11011",
+        "Separate lost visual detail from failure to",
+        "use orientation in the action head"
+      ]
+    },
+    {
+      "id": "R11011",
+      "type": "result",
+      "label": "108 paired predictions: cue sensitivity rises 0.0102 to 0.1887; wrist error remains about 80 degrees and opens at waypoint 11.",
+      "parent_id": "T11011",
+      "x": 1620,
+      "y": 3618.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "108 paired predictions: cue sensitivity",
+        "rises 0.0102 to 0.1887; wrist error remains",
+        "about 80 degrees and opens at waypoint 11."
+      ]
+    },
+    {
+      "id": "S_perception_0",
+      "type": "solution",
+      "label": "Inspect the exact model inputs",
+      "parent_id": "O_perception",
+      "x": 820,
+      "y": 3437.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Inspect the exact model inputs"
+      ]
+    },
+    {
+      "id": "T10954",
+      "type": "experiment",
+      "label": "R01b \u00b7 #10954\nMeasure V4's numeral sensitivity and grasp-relative orientation response",
+      "parent_id": "S_perception_1",
+      "x": 1220,
+      "y": 3770.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R01b \u00b7 #10954",
+        "Measure V4's numeral sensitivity and",
+        "grasp-relative orientation response"
+      ]
+    },
+    {
+      "id": "R10954",
+      "type": "result",
+      "label": "87 queries; initial cue response held-state target stays ~94\u00b0",
+      "parent_id": "T10954",
+      "x": 1620,
+      "y": 3779.5,
+      "width": 350,
+      "height": 72,
+      "color": "#574831",
+      "lines": [
+        "87 queries; initial cue response held-state",
+        "target stays ~94\u00b0"
+      ]
+    },
+    {
+      "id": "T10960",
+      "type": "experiment",
+      "label": "R02 \u00b7 #10960\nTest whether fixed-seed prompts command simple arm actions",
+      "parent_id": "S_perception_1",
+      "x": 1220,
+      "y": 3897.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R02 \u00b7 #10960",
+        "Test whether fixed-seed prompts command",
+        "simple arm actions"
+      ]
+    },
+    {
+      "id": "R10960",
+      "type": "result",
+      "label": "36 predictions; directions not reliably commanded",
+      "parent_id": "T10960",
+      "x": 1620,
+      "y": 3906.5,
+      "width": 350,
+      "height": 72,
+      "color": "#56343c",
+      "lines": [
+        "36 predictions; directions not reliably",
+        "commanded"
+      ]
+    },
+    {
+      "id": "T10961",
+      "type": "experiment",
+      "label": "R02b \u00b7 #10961\nCompare vanilla, V3 and V4 prompt response controls",
+      "parent_id": "S_perception_1",
+      "x": 1220,
+      "y": 4024.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R02b \u00b7 #10961",
+        "Compare vanilla, V3 and V4 prompt response",
+        "controls"
+      ]
+    },
+    {
+      "id": "R10961",
+      "type": "result",
+      "label": "180 predictions; each model 0/18 paired axis reversals",
+      "parent_id": "T10961",
+      "x": 1620,
+      "y": 4033.5,
+      "width": 350,
+      "height": 72,
+      "color": "#56343c",
+      "lines": [
+        "180 predictions; each model 0/18 paired",
+        "axis reversals"
+      ]
+    },
+    {
+      "id": "T10994",
+      "type": "experiment",
+      "label": "VIS02 \u00b7 #10994\nTest language/action grounding repair with matched input contracts",
+      "parent_id": "S_perception_1",
+      "x": 1220,
+      "y": 4161.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "VIS02 \u00b7 #10994",
+        "Test language/action grounding repair with",
+        "matched input contracts"
+      ]
+    },
+    {
+      "id": "R10994",
+      "type": "result",
+      "label": "Matched 3k continuations: varied vs fixed goals 10/12 vs 0/12 novel-goal strict success. Loading 0/12 both; text-only goal response under 1.4 mm.",
+      "parent_id": "T10994",
+      "x": 1620,
+      "y": 4151.0,
+      "width": 350,
+      "height": 112,
+      "color": "#30445a",
+      "lines": [
+        "Matched 3k continuations: varied vs fixed",
+        "goals 10/12 vs 0/12 novel-goal strict",
+        "success. Loading 0/12 both; text-only goal",
+        "response under 1.4 mm."
+      ]
+    },
+    {
+      "id": "S_perception_1",
+      "type": "solution",
+      "label": "Test instructions and goal diversity",
+      "parent_id": "O_perception",
+      "x": 820,
+      "y": 3975.25,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Test instructions and goal diversity"
+      ]
+    },
+    {
+      "id": "T11005",
+      "type": "experiment",
+      "label": "LIVE02 \u00b7 #11005\nQualify the simple visual completion classifier across allowable variation",
+      "parent_id": "S_perception_2",
+      "x": 1220,
+      "y": 4324.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE02 \u00b7 #11005",
+        "Qualify the simple visual completion",
+        "classifier across allowable variation"
+      ]
+    },
+    {
+      "id": "R11005",
+      "type": "result",
+      "label": "Completion gate failed: classical recall below 80%; separate API diagnostic 2/22 recall. No completion authority granted.",
+      "parent_id": "T11005",
+      "x": 1620,
+      "y": 4324.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "Completion gate failed: classical recall",
+        "below 80%; separate API diagnostic 2/22",
+        "recall. No completion authority granted."
+      ]
+    },
+    {
+      "id": "T11006",
+      "type": "experiment",
+      "label": "LIVE03 \u00b7 #11006\nReconcile Qwen live planner, finished-reference image and veto behavior",
+      "parent_id": "S_perception_2",
+      "x": 1220,
+      "y": 4461.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE03 \u00b7 #11006",
+        "Reconcile Qwen live planner,",
+        "finished-reference image and veto behavior"
+      ]
+    },
+    {
+      "id": "R11006",
+      "type": "result",
+      "label": "Qwen's 180-degree false completion was vetoed by RGB reference. Historical TTC used smoothness, not learned value; no qualified Qwen control.",
+      "parent_id": "T11006",
+      "x": 1620,
+      "y": 4451.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Qwen's 180-degree false completion was",
+        "vetoed by RGB reference. Historical TTC",
+        "used smoothness, not learned value; no",
+        "qualified Qwen control."
+      ]
+    },
+    {
+      "id": "S_perception_2",
+      "type": "solution",
+      "label": "Qualify visual completion decisions",
+      "parent_id": "O_perception",
+      "x": 820,
+      "y": 4402.25,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Qualify visual completion decisions"
+      ]
+    },
+    {
+      "id": "O_perception",
+      "type": "opportunity",
+      "label": "Make relevant visual cues change the correct action",
+      "parent_id": "outcome",
+      "x": 420,
+      "y": 3919.62,
+      "width": 350,
+      "height": 72,
+      "color": "#2d443b",
+      "lines": [
+        "Make relevant visual cues change the",
+        "correct action"
+      ]
+    },
+    {
+      "id": "T10957",
+      "type": "experiment",
+      "label": "R01 \u00b7 #10957\nTrace V4 rotation, gripper command and actual motion around release",
+      "parent_id": "S_execution_0",
+      "x": 1220,
+      "y": 4674.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R01 \u00b7 #10957",
+        "Trace V4 rotation, gripper command and",
+        "actual motion around release"
+      ]
+    },
+    {
+      "id": "R10957",
+      "type": "result",
+      "label": "Policy opens before orientation keep-closed still ~80\u00b0 wrong",
+      "parent_id": "T10957",
+      "x": 1620,
+      "y": 4683.5,
+      "width": 350,
+      "height": 72,
+      "color": "#56343c",
+      "lines": [
+        "Policy opens before orientation keep-closed",
+        "still ~80\u00b0 wrong"
+      ]
+    },
+    {
+      "id": "T10958",
+      "type": "experiment",
+      "label": "R01d \u00b7 #10958\nAudit previous-command proprioception and test release-input alternatives",
+      "parent_id": "S_execution_0",
+      "x": 1220,
+      "y": 4801.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R01d \u00b7 #10958",
+        "Audit previous-command proprioception and",
+        "test release-input alternatives"
+      ]
+    },
+    {
+      "id": "R10958",
+      "type": "result",
+      "label": "Measured EEF delays opening 79\u201385\u00b0 error remains",
+      "parent_id": "T10958",
+      "x": 1620,
+      "y": 4810.5,
+      "width": 350,
+      "height": 72,
+      "color": "#56343c",
+      "lines": [
+        "Measured EEF delays opening 79\u201385\u00b0 error",
+        "remains"
+      ]
+    },
+    {
+      "id": "T10968",
+      "type": "experiment",
+      "label": "R05b \u00b7 #10968\nCompare V4 continuation from off-axis and near-expert held states",
+      "parent_id": "S_execution_0",
+      "x": 1220,
+      "y": 4928.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R05b \u00b7 #10968",
+        "Compare V4 continuation from off-axis and",
+        "near-expert held states"
+      ]
+    },
+    {
+      "id": "R10968",
+      "type": "result",
+      "label": "Same V4: off-axis ~85\u00b0 error near-expert <1\u00b0; strict 0/16",
+      "parent_id": "T10968",
+      "x": 1620,
+      "y": 4937.5,
+      "width": 350,
+      "height": 72,
+      "color": "#574831",
+      "lines": [
+        "Same V4: off-axis ~85\u00b0 error near-expert",
+        "<1\u00b0; strict 0/16"
+      ]
+    },
+    {
+      "id": "S_execution_0",
+      "type": "solution",
+      "label": "Trace commanded and executed motion",
+      "parent_id": "O_execution",
+      "x": 820,
+      "y": 4810.5,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Trace commanded and executed motion"
+      ]
+    },
+    {
+      "id": "T10985",
+      "type": "experiment",
+      "label": "NEXT03 \u00b7 #10985\nSeparate grasp-estimation error from recovery-control error",
+      "parent_id": "S_execution_1",
+      "x": 1220,
+      "y": 5090.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "NEXT03 \u00b7 #10985",
+        "Separate grasp-estimation error from",
+        "recovery-control error"
+      ]
+    },
+    {
+      "id": "R10985",
+      "type": "result",
+      "label": "Four paired recovery executions: truth and RGB grasp transforms each 2/2 strict. Two inspected source states; no autonomous handoff qualification.",
+      "parent_id": "T10985",
+      "x": 1620,
+      "y": 5080.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Four paired recovery executions: truth and",
+        "RGB grasp transforms each 2/2 strict. Two",
+        "inspected source states; no autonomous",
+        "handoff qualification."
+      ]
+    },
+    {
+      "id": "T10998",
+      "type": "experiment",
+      "label": "CTRL01 \u00b7 #10998\nQualify joint-aware recovery paths and staged regrasp",
+      "parent_id": "S_execution_1",
+      "x": 1220,
+      "y": 5228.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "CTRL01 \u00b7 #10998",
+        "Qualify joint-aware recovery paths and",
+        "staged regrasp"
+      ]
+    },
+    {
+      "id": "R10998",
+      "type": "result",
+      "label": "BLOCKED: set-down/regrasp strict 1/6. Five joint-limit stops; no full collision qualification. Failed paths are not labels.",
+      "parent_id": "T10998",
+      "x": 1620,
+      "y": 5228.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4e374f",
+      "lines": [
+        "BLOCKED: set-down/regrasp strict 1/6. Five",
+        "joint-limit stops; no full collision",
+        "qualification. Failed paths are not labels."
+      ]
+    },
+    {
+      "id": "S_execution_1",
+      "type": "solution",
+      "label": "Estimate the actual grasp and qualify paths",
+      "parent_id": "O_execution",
+      "x": 820,
+      "y": 5168.75,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Estimate the actual grasp and qualify paths"
+      ]
+    },
+    {
+      "id": "T10966",
+      "type": "experiment",
+      "label": "R04 \u00b7 #10966\nCompare 30-action execution with 10-action replanning on V4",
+      "parent_id": "S_execution_2",
+      "x": 1220,
+      "y": 5380.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R04 \u00b7 #10966",
+        "Compare 30-action execution with 10-action",
+        "replanning on V4"
+      ]
+    },
+    {
+      "id": "R10966",
+      "type": "result",
+      "label": "Grasps: 2/12 vs 0/12 H10 slower; strict 0 both",
+      "parent_id": "T10966",
+      "x": 1620,
+      "y": 5389.5,
+      "width": 350,
+      "height": 72,
+      "color": "#56343c",
+      "lines": [
+        "Grasps: 2/12 vs 0/12 H10 slower; strict 0",
+        "both"
+      ]
+    },
+    {
+      "id": "S_execution_2",
+      "type": "solution",
+      "label": "Test observation frequency",
+      "parent_id": "O_execution",
+      "x": 820,
+      "y": 5389.5,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Test observation frequency"
+      ]
+    },
+    {
+      "id": "O_execution",
+      "type": "opportunity",
+      "label": "Make grasp-relative motion finish before release",
+      "parent_id": "outcome",
+      "x": 420,
+      "y": 5100.0,
+      "width": 350,
+      "height": 72,
+      "color": "#2d443b",
+      "lines": [
+        "Make grasp-relative motion finish before",
+        "release"
+      ]
+    },
+    {
+      "id": "T10962",
+      "type": "experiment",
+      "label": "R03 \u00b7 #10962\nTrain a new six-take full-weight X-VLA-Pt with fixed 3k/12k checkpoints",
+      "parent_id": "S_generalisation_0",
+      "x": 1220,
+      "y": 5592.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R03 \u00b7 #10962",
+        "Train a new six-take full-weight X-VLA-Pt",
+        "with fixed 3k/12k checkpoints"
+      ]
+    },
+    {
+      "id": "R10962",
+      "type": "result",
+      "label": "Six P_train takes, 439 windows. Fresh full-weight Pt reached 3k and 12k checkpoints in 64 minutes; performance tested separately.",
+      "parent_id": "T10962",
+      "x": 1620,
+      "y": 5582.0,
+      "width": 350,
+      "height": 112,
+      "color": "#244a3d",
+      "lines": [
+        "Six P_train takes, 439 windows. Fresh",
+        "full-weight Pt reached 3k and 12k",
+        "checkpoints in 64 minutes; performance",
+        "tested separately."
+      ]
+    },
+    {
+      "id": "T10963",
+      "type": "experiment",
+      "label": "R03b \u00b7 #10963\nEvaluate narrow M6, broad-Pt 3k and broad-Pt 12k on unchanged holdouts",
+      "parent_id": "S_generalisation_0",
+      "x": 1220,
+      "y": 5730.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R03b \u00b7 #10963",
+        "Evaluate narrow M6, broad-Pt 3k and",
+        "broad-Pt 12k on unchanged holdouts"
+      ]
+    },
+    {
+      "id": "R10963",
+      "type": "result",
+      "label": "Narrow M6, broad3k and broad12k each 0/6 development grasps. These starts lie outside the training position hull.",
+      "parent_id": "T10963",
+      "x": 1620,
+      "y": 5730.0,
+      "width": 350,
+      "height": 91,
+      "color": "#56343c",
+      "lines": [
+        "Narrow M6, broad3k and broad12k each 0/6",
+        "development grasps. These starts lie",
+        "outside the training position hull."
+      ]
+    },
+    {
+      "id": "T10964",
+      "type": "experiment",
+      "label": "R03c \u00b7 #10964\nMeasure broad-Pt 12k competence on its six familiar starts",
+      "parent_id": "S_generalisation_0",
+      "x": 1220,
+      "y": 5857.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R03c \u00b7 #10964",
+        "Measure broad-Pt 12k competence on its six",
+        "familiar starts"
+      ]
+    },
+    {
+      "id": "R10964",
+      "type": "result",
+      "label": "Broad12k on six familiar starts: 6/6 grasps, 5/6 stable square placements, 4/6 strict successes.",
+      "parent_id": "T10964",
+      "x": 1620,
+      "y": 5857.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "Broad12k on six familiar starts: 6/6",
+        "grasps, 5/6 stable square placements, 4/6",
+        "strict successes."
+      ]
+    },
+    {
+      "id": "T10965",
+      "type": "experiment",
+      "label": "R03d \u00b7 #10965\nAudit source/holdout position and yaw coverage",
+      "parent_id": "S_generalisation_0",
+      "x": 1220,
+      "y": 5984.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R03d \u00b7 #10965",
+        "Audit source/holdout position and yaw",
+        "coverage"
+      ]
+    },
+    {
+      "id": "R10965",
+      "type": "result",
+      "label": "All three development starts lie outside the six training starts' XY convex hull. Coverage gap established.",
+      "parent_id": "T10965",
+      "x": 1620,
+      "y": 5984.0,
+      "width": 350,
+      "height": 91,
+      "color": "#244a3d",
+      "lines": [
+        "All three development starts lie outside",
+        "the six training starts' XY convex hull.",
+        "Coverage gap established."
+      ]
+    },
+    {
+      "id": "T10983",
+      "type": "experiment",
+      "label": "NEXT01 \u00b7 #10983\nMeasure local robustness around successful broad-Pt 12k starts",
+      "parent_id": "S_generalisation_0",
+      "x": 1220,
+      "y": 6111.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "NEXT01 \u00b7 #10983",
+        "Measure local robustness around successful",
+        "broad-Pt 12k starts"
+      ]
+    },
+    {
+      "id": "R10983",
+      "type": "result",
+      "label": "Selected familiar local variations: 14/16 grasps and 13/16 strict successes. Bounded local competence, not broad transfer.",
+      "parent_id": "T10983",
+      "x": 1620,
+      "y": 6111.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "Selected familiar local variations: 14/16",
+        "grasps and 13/16 strict successes. Bounded",
+        "local competence, not broad transfer."
+      ]
+    },
+    {
+      "id": "S_generalisation_0",
+      "type": "solution",
+      "label": "Broader adaptation and coverage checks",
+      "parent_id": "O_generalisation",
+      "x": 820,
+      "y": 5861.25,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Broader adaptation and coverage checks"
+      ]
+    },
+    {
+      "id": "T10992",
+      "type": "experiment",
+      "label": "DATA07 \u00b7 #10992\nAdd training-only failure and correction coverage after teacher qualification",
+      "parent_id": "S_generalisation_1",
+      "x": 1220,
+      "y": 6273.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DATA07 \u00b7 #10992",
+        "Add training-only failure and correction",
+        "coverage after teacher qualification"
+      ]
+    },
+    {
+      "id": "R10992",
+      "type": "result",
+      "label": "18 original episodes verified; original V4's three additions remain unverified. Four later corrections are separate data and gave 0/4 recoveries.",
+      "parent_id": "T10992",
+      "x": 1620,
+      "y": 6263.0,
+      "width": 350,
+      "height": 112,
+      "color": "#30445a",
+      "lines": [
+        "18 original episodes verified; original",
+        "V4's three additions remain unverified.",
+        "Four later corrections are separate data",
+        "and gave 0/4 recoveries."
+      ]
+    },
+    {
+      "id": "S_generalisation_1",
+      "type": "solution",
+      "label": "Audit repair data",
+      "parent_id": "O_generalisation",
+      "x": 820,
+      "y": 6283.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Audit repair data"
+      ]
+    },
+    {
+      "id": "T11013",
+      "type": "experiment",
+      "label": "B01 \u00b7 #11013\nDiagnose why task B loading does not generalise",
+      "parent_id": "S_generalisation_2",
+      "x": 1220,
+      "y": 6436.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "B01 \u00b7 #11013",
+        "Diagnose why task B loading does not",
+        "generalise"
+      ]
+    },
+    {
+      "id": "R11013",
+      "type": "result",
+      "label": "28 physical runs and 18 fixed-input goal probes separate grasp and destination failures; expert feasibility established.",
+      "parent_id": "T11013",
+      "x": 1620,
+      "y": 6436.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "28 physical runs and 18 fixed-input goal",
+        "probes separate grasp and destination",
+        "failures; expert feasibility established."
+      ]
+    },
+    {
+      "id": "T11037",
+      "type": "experiment",
+      "label": "LOAD01 \u00b7 #11037\nTest loading supervision while retaining feeding competence",
+      "parent_id": "S_generalisation_2",
+      "x": 1220,
+      "y": 6563.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LOAD01 \u00b7 #11037",
+        "Test loading supervision while retaining",
+        "feeding competence"
+      ]
+    },
+    {
+      "id": "R11037",
+      "type": "result",
+      "label": "New loading supervision: 3/4 taught and 2/2 development loading successes. Feeding 4/6 vs control 5/6; task selection tested next.",
+      "parent_id": "T11037",
+      "x": 1620,
+      "y": 6563.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "New loading supervision: 3/4 taught and 2/2",
+        "development loading successes. Feeding 4/6",
+        "vs control 5/6; task selection tested next."
+      ]
+    },
+    {
+      "id": "S_generalisation_2",
+      "type": "solution",
+      "label": "Teach loading without losing feeding",
+      "parent_id": "O_generalisation",
+      "x": 820,
+      "y": 6509.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Teach loading without losing feeding"
+      ]
+    },
+    {
+      "id": "T11038",
+      "type": "experiment",
+      "label": "LOAD02 \u00b7 #11038\nSwitch feeding/loading instruction in an identical scene",
+      "parent_id": "S_generalisation_3",
+      "x": 1220,
+      "y": 6725.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LOAD02 \u00b7 #11038",
+        "Switch feeding/loading instruction in an",
+        "identical scene"
+      ]
+    },
+    {
+      "id": "R11038",
+      "type": "result",
+      "label": "Identical scene, different text: model loads under both instructions. Four wrong feeding destinations; zero two-way switches.",
+      "parent_id": "T11038",
+      "x": 1620,
+      "y": 6715.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Identical scene, different text: model",
+        "loads under both instructions. Four wrong",
+        "feeding destinations; zero two-way",
+        "switches."
+      ]
+    },
+    {
+      "id": "T11039",
+      "type": "experiment",
+      "label": "LOAD03 \u00b7 #11039\nTest whether fixture appearance controls task choice",
+      "parent_id": "S_generalisation_3",
+      "x": 1220,
+      "y": 6863.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LOAD03 \u00b7 #11039",
+        "Test whether fixture appearance controls",
+        "task choice"
+      ]
+    },
+    {
+      "id": "R11039",
+      "type": "result",
+      "label": "Visible fixture: loading 8/8. Hidden: feeding 8/8. Eight requested and eight wrong endpoints; zero instruction switches.",
+      "parent_id": "T11039",
+      "x": 1620,
+      "y": 6863.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "Visible fixture: loading 8/8. Hidden:",
+        "feeding 8/8. Eight requested and eight",
+        "wrong endpoints; zero instruction switches."
+      ]
+    },
+    {
+      "id": "T11040",
+      "type": "experiment",
+      "label": "LOAD04 \u00b7 #11040\nCounterbalanced task supervision in identical scenes",
+      "parent_id": "S_generalisation_3",
+      "x": 1220,
+      "y": 7000.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LOAD04 \u00b7 #11040",
+        "Counterbalanced task supervision in",
+        "identical scenes"
+      ]
+    },
+    {
+      "id": "R11040",
+      "type": "result",
+      "label": "Balanced vs control: requested region 16/16 vs 8/16; strict 12/16 vs 8/16. Loading stays 4/8. Four cases tip before grasp. Archive verified.",
+      "parent_id": "T11040",
+      "x": 1620,
+      "y": 6990.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Balanced vs control: requested region 16/16",
+        "vs 8/16; strict 12/16 vs 8/16. Loading",
+        "stays 4/8. Four cases tip before grasp.",
+        "Archive verified."
+      ]
+    },
+    {
+      "id": "S_generalisation_3",
+      "type": "solution",
+      "label": "Separate task instruction from fixture appearance",
+      "parent_id": "O_generalisation",
+      "x": 820,
+      "y": 6872.5,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Separate task instruction from fixture",
+        "appearance"
+      ]
+    },
+    {
+      "id": "T11044",
+      "type": "experiment",
+      "label": "LOAD05 \u00b7 #11044\nPre-contact C/B acquisition crossover",
+      "parent_id": "S_generalisation_4",
+      "x": 1220,
+      "y": 7172.5,
+      "width": 350,
+      "height": 72,
+      "color": "#4a4428",
+      "lines": [
+        "LOAD05 \u00b7 #11044",
+        "Pre-contact C/B acquisition crossover"
+      ]
+    },
+    {
+      "id": "R11044",
+      "type": "result",
+      "label": "Original restart qualification stopped. The causal comparison was completed separately in R2; no original crossover outcome.",
+      "parent_id": "T11044",
+      "x": 1620,
+      "y": 7163.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "Original restart qualification stopped. The",
+        "causal comparison was completed separately",
+        "in R2; no original crossover outcome."
+      ]
+    },
+    {
+      "id": "T11045",
+      "type": "experiment",
+      "label": "LOAD05-Q \u00b7 #11045\nRepair content signatures and qualify saved-action restart",
+      "parent_id": "S_generalisation_4",
+      "x": 1220,
+      "y": 7300.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LOAD05-Q \u00b7 #11045",
+        "Repair content signatures and qualify",
+        "saved-action restart"
+      ]
+    },
+    {
+      "id": "R11045",
+      "type": "result",
+      "label": "Content checks pass; copied solver-constraint state mismatches. Stopped before model inference. Failed qualification preserved.",
+      "parent_id": "T11045",
+      "x": 1620,
+      "y": 7290.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Content checks pass; copied",
+        "solver-constraint state mismatches. Stopped",
+        "before model inference. Failed",
+        "qualification preserved."
+      ]
+    },
+    {
+      "id": "T11046",
+      "type": "experiment",
+      "label": "LOAD05-R \u00b7 #11046\nReconstruct pre-contact states and cross C/B acquisition policies",
+      "parent_id": "S_generalisation_4",
+      "x": 1220,
+      "y": 7448.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LOAD05-R \u00b7 #11046",
+        "Reconstruct pre-contact states and cross",
+        "C/B acquisition policies"
+      ]
+    },
+    {
+      "id": "R11046",
+      "type": "result",
+      "label": "Both native controls reproduce. Crossed test stopped only on an XML visual statistic; controls subsequently reused in R2.",
+      "parent_id": "T11046",
+      "x": 1620,
+      "y": 7438.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Both native controls reproduce. Crossed",
+        "test stopped only on an XML visual",
+        "statistic; controls subsequently reused in",
+        "R2."
+      ]
+    },
+    {
+      "id": "T11047",
+      "type": "experiment",
+      "label": "LOAD05-R2 \u00b7 #11047\nComplete two crossed-policy acquisition branches",
+      "parent_id": "S_generalisation_4",
+      "x": 1220,
+      "y": 7596.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LOAD05-R2 \u00b7 #11047",
+        "Complete two crossed-policy acquisition",
+        "branches"
+      ]
+    },
+    {
+      "id": "R11047",
+      "type": "result",
+      "label": "Only B from its own state tips. Crossed pickups are upright (0.86 and 1.62 degrees). State-policy interaction in one inspected case.",
+      "parent_id": "T11047",
+      "x": 1620,
+      "y": 7586.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Only B from its own state tips. Crossed",
+        "pickups are upright (0.86 and 1.62",
+        "degrees). State-policy interaction in one",
+        "inspected case."
+      ]
+    },
+    {
+      "id": "T11048",
+      "type": "experiment",
+      "label": "LOAD06 \u00b7 #11048\nSeparate pose sequence from gripper schedule at acquisition",
+      "parent_id": "S_generalisation_4",
+      "x": 1220,
+      "y": 7744.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LOAD06 \u00b7 #11048",
+        "Separate pose sequence from gripper",
+        "schedule at acquisition"
+      ]
+    },
+    {
+      "id": "R11048",
+      "type": "result",
+      "label": "Pose-only substitution fixes acquisition: 1.12 versus 62.76 degrees tilt. Grip-only does not. B resumes; no full-placement or training claim.",
+      "parent_id": "T11048",
+      "x": 1620,
+      "y": 7734.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Pose-only substitution fixes acquisition:",
+        "1.12 versus 62.76 degrees tilt. Grip-only",
+        "does not. B resumes; no full-placement or",
+        "training claim."
+      ]
+    },
+    {
+      "id": "S_generalisation_4",
+      "type": "solution",
+      "label": "Isolate approach state and acquisition policy",
+      "parent_id": "O_generalisation",
+      "x": 820,
+      "y": 7463.25,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Isolate approach state and acquisition",
+        "policy"
+      ]
+    },
+    {
+      "id": "T11058",
+      "type": "experiment",
+      "label": "EVAL02-GOAL \u00b7 #11058\nSeparate task wording from numerical destination cues",
+      "parent_id": "S_generalisation_5",
+      "x": 1220,
+      "y": 7928.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "EVAL02-GOAL \u00b7 #11058",
+        "Separate task wording from numerical",
+        "destination cues"
+      ]
+    },
+    {
+      "id": "R11058",
+      "type": "result",
+      "label": "Completed: 4/4 consistent controls; all4 conflicts finish the wording-associated task. Numbers affect initial proposals but independent goal control is unproven. One scene, two seeds.",
+      "parent_id": "T11058",
+      "x": 1620,
+      "y": 7907.0,
+      "width": 350,
+      "height": 133,
+      "color": "#574831",
+      "lines": [
+        "Completed: 4/4 consistent controls; all4",
+        "conflicts finish the wording-associated",
+        "task. Numbers affect initial proposals but",
+        "independent goal control is unproven. One",
+        "scene, two seeds."
+      ]
+    },
+    {
+      "id": "T11059",
+      "type": "experiment",
+      "label": "EVAL02-XY \u00b7 #11059\nTest numerical placement steering within the feeding square",
+      "parent_id": "S_generalisation_5",
+      "x": 1220,
+      "y": 8086.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "EVAL02-XY \u00b7 #11059",
+        "Test numerical placement steering within",
+        "the feeding square"
+      ]
+    },
+    {
+      "id": "R11059",
+      "type": "result",
+      "label": "Centre 2/2; numerical offsets 0/4. All six inside the original square. Requested 20 mm shifts produced only 0.315-0.926 mm Y movement in this panel.",
+      "parent_id": "T11059",
+      "x": 1620,
+      "y": 8076.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Centre 2/2; numerical offsets 0/4. All six",
+        "inside the original square. Requested 20 mm",
+        "shifts produced only 0.315-0.926 mm Y",
+        "movement in this panel."
+      ]
+    },
+    {
+      "id": "T11060",
+      "type": "experiment",
+      "label": "EVAL02-SPATIAL \u00b7 #11060\nSeparate numeric goal from visible marker location",
+      "parent_id": "S_generalisation_5",
+      "x": 1220,
+      "y": 8234.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "EVAL02-SPATIAL \u00b7 #11060",
+        "Separate numeric goal from visible marker",
+        "location"
+      ]
+    },
+    {
+      "id": "R11060",
+      "type": "result",
+      "label": "BLOCKED before inference: marker shift changed 29 protected-foreground pixels in first QA frame. Zero model trials; cause unresolved. Renderer retry deferred.",
+      "parent_id": "T11060",
+      "x": 1620,
+      "y": 8224.0,
+      "width": 350,
+      "height": 112,
+      "color": "#4e374f",
+      "lines": [
+        "BLOCKED before inference: marker shift",
+        "changed 29 protected-foreground pixels in",
+        "first QA frame. Zero model trials; cause",
+        "unresolved. Renderer retry deferred."
+      ]
+    },
+    {
+      "id": "T11061",
+      "type": "experiment",
+      "label": "EVAL02-COVERAGE \u00b7 #11061\nAudit numerical goal variation in B training and ancestry",
+      "parent_id": "S_generalisation_5",
+      "x": 1220,
+      "y": 8382.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "EVAL02-COVERAGE \u00b7 #11061",
+        "Audit numerical goal variation in B",
+        "training and ancestry"
+      ]
+    },
+    {
+      "id": "R11061",
+      "type": "result",
+      "label": "Actual sample logs show three feeding goals earlier, only one in B. Teacher placement labels pass. Exposure narrowed; this audit alone does not prove forgetting.",
+      "parent_id": "T11061",
+      "x": 1620,
+      "y": 8372.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Actual sample logs show three feeding goals",
+        "earlier, only one in B. Teacher placement",
+        "labels pass. Exposure narrowed; this audit",
+        "alone does not prove forgetting."
+      ]
+    },
+    {
+      "id": "T11062",
+      "type": "experiment",
+      "label": "EVAL02-RETENTION \u00b7 #11062\nCompare ancestor checkpoints on the same trained feeding goals",
+      "parent_id": "S_generalisation_5",
+      "x": 1220,
+      "y": 8530.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "EVAL02-RETENTION \u00b7 #11062",
+        "Compare ancestor checkpoints on the same",
+        "trained feeding goals"
+      ]
+    },
+    {
+      "id": "R11062",
+      "type": "result",
+      "label": "GOAL and FL: 2/2 at both goals. B: 2/2 at G0, 0/2 at G1; returns near old G0. All 12 grasp and transport. Local retention regression after B.",
+      "parent_id": "T11062",
+      "x": 1620,
+      "y": 8520.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "GOAL and FL: 2/2 at both goals. B: 2/2 at",
+        "G0, 0/2 at G1; returns near old G0. All 12",
+        "grasp and transport. Local retention",
+        "regression after B."
+      ]
+    },
+    {
+      "id": "T11063",
+      "type": "experiment",
+      "label": "EVAL02-FIT \u00b7 #11063\nCompare ancestor action predictions on identical G1 teacher observations",
+      "parent_id": "S_generalisation_5",
+      "x": 1220,
+      "y": 8689.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "EVAL02-FIT \u00b7 #11063",
+        "Compare ancestor action predictions on",
+        "identical G1 teacher observations"
+      ]
+    },
+    {
+      "id": "R11063",
+      "type": "result",
+      "label": "Identical post-lift input: mean EEF error 21-27 mm in earlier checkpoints, 56 mm in B. Gripper matches; no transition tested. Prediction change exists before rollout divergence.",
+      "parent_id": "T11063",
+      "x": 1620,
+      "y": 8668.0,
+      "width": 350,
+      "height": 133,
+      "color": "#574831",
+      "lines": [
+        "Identical post-lift input: mean EEF error",
+        "21-27 mm in earlier checkpoints, 56 mm in",
+        "B. Gripper matches; no transition tested.",
+        "Prediction change exists before rollout",
+        "divergence."
+      ]
+    },
+    {
+      "id": "T11064",
+      "type": "experiment",
+      "label": "EVAL02-RET-C \u00b7 #11064\nTest the matched visibility-control checkpoint for retained G1 behavior",
+      "parent_id": "S_generalisation_5",
+      "x": 1220,
+      "y": 8847.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "EVAL02-RET-C \u00b7 #11064",
+        "Test the matched visibility-control",
+        "checkpoint for retained G1 behavior"
+      ]
+    },
+    {
+      "id": "R11064",
+      "type": "result",
+      "label": "Done: matched C control. G0 2/2; relocated G1 1/2. All four lift and transport. One centre overshoot; unlike B returning toward the old goal. Mixed result preserved.",
+      "parent_id": "T11064",
+      "x": 1620,
+      "y": 8837.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Done: matched C control. G0 2/2; relocated",
+        "G1 1/2. All four lift and transport. One",
+        "centre overshoot; unlike B returning toward",
+        "the old goal. Mixed result preserved."
+      ]
+    },
+    {
+      "id": "T11065",
+      "type": "experiment",
+      "label": "EVAL02-NUM \u00b7 #11065\nIsolate numerical goal sensitivity on an unchanged post-lift packet",
+      "parent_id": "S_generalisation_5",
+      "x": 1220,
+      "y": 9006.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "EVAL02-NUM \u00b7 #11065",
+        "Isolate numerical goal sensitivity on an",
+        "unchanged post-lift packet"
+      ]
+    },
+    {
+      "id": "R11065",
+      "type": "result",
+      "label": "Done: 150 mm numeric goal change barely alters predictions. GOAL final Y change 0; B +/-0.061 mm. Four new + four archived chunks. No useful coordinate steering shown.",
+      "parent_id": "T11065",
+      "x": 1620,
+      "y": 8985.0,
+      "width": 350,
+      "height": 133,
+      "color": "#574831",
+      "lines": [
+        "Done: 150 mm numeric goal change barely",
+        "alters predictions. GOAL final Y change 0;",
+        "B +/-0.061 mm. Four new + four archived",
+        "chunks. No useful coordinate steering",
+        "shown."
+      ]
+    },
+    {
+      "id": "S_generalisation_5",
+      "type": "solution",
+      "label": "Separate task wording from numerical goals",
+      "parent_id": "O_generalisation",
+      "x": 820,
+      "y": 8476.5,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Separate task wording from numerical goals"
+      ]
+    },
+    {
+      "id": "O_generalisation",
+      "type": "opportunity",
+      "label": "The model succeeds locally but follows scene cues",
+      "parent_id": "outcome",
+      "x": 420,
+      "y": 7168.88,
+      "width": 350,
+      "height": 72,
+      "color": "#2d443b",
+      "lines": [
+        "The model succeeds locally but follows",
+        "scene cues"
+      ]
+    },
+    {
+      "id": "T10969",
+      "type": "experiment",
+      "label": "R06 \u00b7 #10969\nCompare observable phase harness, unmodified V4 and deterministic skills",
+      "parent_id": "S_recovery_0",
+      "x": 1220,
+      "y": 9229.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R06 \u00b7 #10969",
+        "Compare observable phase harness,",
+        "unmodified V4 and deterministic skills"
+      ]
+    },
+    {
+      "id": "R10969",
+      "type": "result",
+      "label": "Guard blocks valid grasps 1,126 close vetoes; reject",
+      "parent_id": "T10969",
+      "x": 1620,
+      "y": 9238.5,
+      "width": 350,
+      "height": 72,
+      "color": "#56343c",
+      "lines": [
+        "Guard blocks valid grasps 1,126 close",
+        "vetoes; reject"
+      ]
+    },
+    {
+      "id": "T10970",
+      "type": "experiment",
+      "label": "R06b \u00b7 #10970\nFix post-release observer projection in a training-only prototype",
+      "parent_id": "S_recovery_0",
+      "x": 1220,
+      "y": 9356.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R06b \u00b7 #10970",
+        "Fix post-release observer projection in a",
+        "training-only prototype"
+      ]
+    },
+    {
+      "id": "R10970",
+      "type": "result",
+      "label": "Position error 16\u201319 mm \u2192 0.44\u20130.66 mm, same images",
+      "parent_id": "T10970",
+      "x": 1620,
+      "y": 9365.5,
+      "width": 350,
+      "height": 72,
+      "color": "#574831",
+      "lines": [
+        "Position error 16\u201319 mm \u2192 0.44\u20130.66 mm,",
+        "same images"
+      ]
+    },
+    {
+      "id": "T10984",
+      "type": "experiment",
+      "label": "NEXT02 \u00b7 #10984\nRepair observation hypotheses before granting the harness veto authority",
+      "parent_id": "S_recovery_0",
+      "x": 1220,
+      "y": 9483.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "NEXT02 \u00b7 #10984",
+        "Repair observation hypotheses before",
+        "granting the harness veto authority"
+      ]
+    },
+    {
+      "id": "R10984",
+      "type": "result",
+      "label": "BLOCKED: observers remain below preregistered qualification. No veto, grasp or release authority.",
+      "parent_id": "T10984",
+      "x": 1620,
+      "y": 9483.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4e374f",
+      "lines": [
+        "BLOCKED: observers remain below",
+        "preregistered qualification. No veto, grasp",
+        "or release authority."
+      ]
+    },
+    {
+      "id": "T10999",
+      "type": "experiment",
+      "label": "CTRL02 \u00b7 #10999\nSpecify and log hard workspace, no-go and joint-boundary policies",
+      "parent_id": "S_recovery_0",
+      "x": 1220,
+      "y": 9620.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "CTRL02 \u00b7 #10999",
+        "Specify and log hard workspace, no-go and",
+        "joint-boundary policies"
+      ]
+    },
+    {
+      "id": "R10999",
+      "type": "result",
+      "label": "27 checks plus 36 successful expert episodes: zero guard rejections. Logging implemented; not full robot-safety validation.",
+      "parent_id": "T10999",
+      "x": 1620,
+      "y": 9610.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "27 checks plus 36 successful expert",
+        "episodes: zero guard rejections. Logging",
+        "implemented; not full robot-safety",
+        "validation."
+      ]
+    },
+    {
+      "id": "T11004",
+      "type": "experiment",
+      "label": "LIVE01 \u00b7 #11004\nVerify the existing live harness and controller telemetry hookup",
+      "parent_id": "S_recovery_0",
+      "x": 1220,
+      "y": 9768.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE01 \u00b7 #11004",
+        "Verify the existing live harness and",
+        "controller telemetry hookup"
+      ]
+    },
+    {
+      "id": "R11004",
+      "type": "result",
+      "label": "REVIEW: original V4 shadow parity passed. New copy-safe lineage resolves timestamps, but LOAD04-B paired parity fails on raw camera variation. No control authority.",
+      "parent_id": "T11004",
+      "x": 1620,
+      "y": 9758.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "REVIEW: original V4 shadow parity passed.",
+        "New copy-safe lineage resolves timestamps,",
+        "but LOAD04-B paired parity fails on raw",
+        "camera variation. No control authority."
+      ]
+    },
+    {
+      "id": "T11030",
+      "type": "experiment",
+      "label": "OBS05 \u00b7 #11030\nTest fresh glyph-motion evidence against the held-state latch",
+      "parent_id": "S_recovery_0",
+      "x": 1220,
+      "y": 9906.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "OBS05 \u00b7 #11030",
+        "Test fresh glyph-motion evidence against",
+        "the held-state latch"
+      ]
+    },
+    {
+      "id": "R11030",
+      "type": "result",
+      "label": "Eight replay episodes / 1,219 observations. All four passive variants fail gates; glyph filtering loses too much recall.",
+      "parent_id": "T11030",
+      "x": 1620,
+      "y": 9906.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "Eight replay episodes / 1,219 observations.",
+        "All four passive variants fail gates; glyph",
+        "filtering loses too much recall."
+      ]
+    },
+    {
+      "id": "T11031",
+      "type": "experiment",
+      "label": "OBS06 \u00b7 #11031\nTest aperture and release evidence on additional archived episodes",
+      "parent_id": "S_recovery_0",
+      "x": 1220,
+      "y": 10033.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "OBS06 \u00b7 #11031",
+        "Test aperture and release evidence on",
+        "additional archived episodes"
+      ]
+    },
+    {
+      "id": "R11031",
+      "type": "result",
+      "label": "24 episodes / 8,784 observations: contact false positives 108 to 20, precision 94.65%. Still below 95% gate; no authority.",
+      "parent_id": "T11031",
+      "x": 1620,
+      "y": 10033.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "24 episodes / 8,784 observations: contact",
+        "false positives 108 to 20, precision",
+        "94.65%. Still below 95% gate; no authority."
+      ]
+    },
+    {
+      "id": "T11054",
+      "type": "experiment",
+      "label": "LIVE01-P \u00b7 #11054\nCarry camera acquisition provenance across copies without changing robot execution",
+      "parent_id": "S_recovery_0",
+      "x": 1220,
+      "y": 10191.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE01-P \u00b7 #11054",
+        "Carry camera acquisition provenance across",
+        "copies without changing robot execution"
+      ]
+    },
+    {
+      "id": "R11054",
+      "type": "result",
+      "label": "Review: 6,365/6,365 image references resolved; offline tensor parity passes. Live pair differs by one pixel at query 5, then actions diverge. Both tasks finish, but exact parity fails. Archive verified; no observer authority.",
+      "parent_id": "T11054",
+      "x": 1620,
+      "y": 10160.0,
+      "width": 350,
+      "height": 154,
+      "color": "#574831",
+      "lines": [
+        "Review: 6,365/6,365 image references",
+        "resolved; offline tensor parity passes.",
+        "Live pair differs by one pixel at query 5,",
+        "then actions diverge. Both tasks finish,",
+        "but exact parity fails. Archive verified;",
+        "no observer authority."
+      ]
+    },
+    {
+      "id": "T11057",
+      "type": "experiment",
+      "label": "LIVE01-R \u00b7 #11057\nFixed-state camera repeatability with and without provenance",
+      "parent_id": "S_recovery_0",
+      "x": 1220,
+      "y": 10371.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE01-R \u00b7 #11057",
+        "Fixed-state camera repeatability with and",
+        "without provenance"
+      ]
+    },
+    {
+      "id": "R11057",
+      "type": "result",
+      "label": "Completed: fixed-state 24 bundles / 48 images match exactly with and without provenance. Earlier live difference not reproduced; live parity remains failed. Cached observer output; no new policy runs.",
+      "parent_id": "T11057",
+      "x": 1620,
+      "y": 10350.0,
+      "width": 350,
+      "height": 133,
+      "color": "#574831",
+      "lines": [
+        "Completed: fixed-state 24 bundles / 48",
+        "images match exactly with and without",
+        "provenance. Earlier live difference not",
+        "reproduced; live parity remains failed.",
+        "Cached observer output; no new policy runs."
+      ]
+    },
+    {
+      "id": "S_recovery_0",
+      "type": "solution",
+      "label": "Qualify state estimates and safety checks",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 9809.5,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Qualify state estimates and safety checks"
+      ]
+    },
+    {
+      "id": "T10971",
+      "type": "experiment",
+      "label": "R06c \u00b7 #10971\nQualify and reject a two-axis IK endpoint selector",
+      "parent_id": "S_recovery_1",
+      "x": 1220,
+      "y": 10544.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R06c \u00b7 #10971",
+        "Qualify and reject a two-axis IK endpoint",
+        "selector"
+      ]
+    },
+    {
+      "id": "R10971",
+      "type": "result",
+      "label": "Six-take success 3/6 \u2192 1/6 Feasible endpoint \u2260 feasible path",
+      "parent_id": "T10971",
+      "x": 1620,
+      "y": 10553.5,
+      "width": 350,
+      "height": 72,
+      "color": "#56343c",
+      "lines": [
+        "Six-take success 3/6 \u2192 1/6 Feasible",
+        "endpoint \u2260 feasible path"
+      ]
+    },
+    {
+      "id": "T10973",
+      "type": "experiment",
+      "label": "R08 \u00b7 #10973\nQualify geometric expert recovery from exact V4 failure states",
+      "parent_id": "S_recovery_1",
+      "x": 1220,
+      "y": 10671.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R08 \u00b7 #10973",
+        "Qualify geometric expert recovery from",
+        "exact V4 failure states"
+      ]
+    },
+    {
+      "id": "R10973",
+      "type": "result",
+      "label": "Nominal 2/6 \u2192 grasp-aware 3/6 recoveries quarantined from training",
+      "parent_id": "T10973",
+      "x": 1620,
+      "y": 10680.5,
+      "width": 350,
+      "height": 72,
+      "color": "#574831",
+      "lines": [
+        "Nominal 2/6 \u2192 grasp-aware 3/6 recoveries",
+        "quarantined from training"
+      ]
+    },
+    {
+      "id": "T10976",
+      "type": "experiment",
+      "label": "R11 \u00b7 #10976\nPrototype a typed primitive interface and deterministic supervisor",
+      "parent_id": "S_recovery_1",
+      "x": 1220,
+      "y": 10798.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R11 \u00b7 #10976",
+        "Prototype a typed primitive interface and",
+        "deterministic supervisor"
+      ]
+    },
+    {
+      "id": "R10976",
+      "type": "result",
+      "label": "Interface works; skills limited 2/6 pickups; 0/6 completions",
+      "parent_id": "T10976",
+      "x": 1620,
+      "y": 10807.5,
+      "width": 350,
+      "height": 72,
+      "color": "#574831",
+      "lines": [
+        "Interface works; skills limited 2/6",
+        "pickups; 0/6 completions"
+      ]
+    },
+    {
+      "id": "T10977",
+      "type": "experiment",
+      "label": "R12 \u00b7 #10977\nTrain and evaluate a causal phase predictor",
+      "parent_id": "S_recovery_1",
+      "x": 1220,
+      "y": 10924.0,
+      "width": 350,
+      "height": 72,
+      "color": "#4a4428",
+      "lines": [
+        "R12 \u00b7 #10977",
+        "Train and evaluate a causal phase predictor"
+      ]
+    },
+    {
+      "id": "R10977",
+      "type": "result",
+      "label": "63.7% accuracy; early release confidence gate fails; disabled",
+      "parent_id": "T10977",
+      "x": 1620,
+      "y": 10924.0,
+      "width": 350,
+      "height": 72,
+      "color": "#56343c",
+      "lines": [
+        "63.7% accuracy; early release confidence",
+        "gate fails; disabled"
+      ]
+    },
+    {
+      "id": "T11000",
+      "type": "experiment",
+      "label": "HIER01 \u00b7 #11000\nTrain a high-level skill selector only after primitives are reliable",
+      "parent_id": "S_recovery_1",
+      "x": 1220,
+      "y": 11031.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "HIER01 \u00b7 #11000",
+        "Train a high-level skill selector only",
+        "after primitives are reliable"
+      ]
+    },
+    {
+      "id": "R11000",
+      "type": "result",
+      "label": "BLOCKED: reliable primitive transitions and observation authority are prerequisites. No high-level selector training.",
+      "parent_id": "T11000",
+      "x": 1620,
+      "y": 11031.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4e374f",
+      "lines": [
+        "BLOCKED: reliable primitive transitions and",
+        "observation authority are prerequisites. No",
+        "high-level selector training."
+      ]
+    },
+    {
+      "id": "S_recovery_1",
+      "type": "solution",
+      "label": "Qualify skills and phase control",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 10797.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Qualify skills and phase control"
+      ]
+    },
+    {
+      "id": "T10978",
+      "type": "experiment",
+      "label": "R13 \u00b7 #10978\nCompare DAgger, options, residual RL, offline Q and PPO approaches",
+      "parent_id": "S_recovery_2",
+      "x": 1220,
+      "y": 11183.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R13 \u00b7 #10978",
+        "Compare DAgger, options, residual RL,",
+        "offline Q and PPO approaches"
+      ]
+    },
+    {
+      "id": "R10978",
+      "type": "result",
+      "label": "DAgger, residuals, Q, PPO reviewed no new RL training performed",
+      "parent_id": "T10978",
+      "x": 1620,
+      "y": 11192.5,
+      "width": 350,
+      "height": 72,
+      "color": "#244a3d",
+      "lines": [
+        "DAgger, residuals, Q, PPO reviewed no new",
+        "RL training performed"
+      ]
+    },
+    {
+      "id": "T11001",
+      "type": "experiment",
+      "label": "REL01 \u00b7 #11001\nCollect qualified learner-state corrections and run a separate DAgger experiment",
+      "parent_id": "S_recovery_2",
+      "x": 1220,
+      "y": 11310.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "REL01 \u00b7 #11001",
+        "Collect qualified learner-state corrections",
+        "and run a separate DAgger experiment"
+      ]
+    },
+    {
+      "id": "R11001",
+      "type": "result",
+      "label": "One DAgger iteration, four corrections plus nominal data, 3k updates. Quarantine recovery 0/4; no benefit demonstrated.",
+      "parent_id": "T11001",
+      "x": 1620,
+      "y": 11310.0,
+      "width": 350,
+      "height": 91,
+      "color": "#30445a",
+      "lines": [
+        "One DAgger iteration, four corrections plus",
+        "nominal data, 3k updates. Quarantine",
+        "recovery 0/4; no benefit demonstrated."
+      ]
+    },
+    {
+      "id": "T11002",
+      "type": "experiment",
+      "label": "REL02 \u00b7 #11002\nCompare supervised residual correction with bounded residual RL",
+      "parent_id": "S_recovery_2",
+      "x": 1220,
+      "y": 11437.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "REL02 \u00b7 #11002",
+        "Compare supervised residual correction with",
+        "bounded residual RL"
+      ]
+    },
+    {
+      "id": "R11002",
+      "type": "result",
+      "label": "BLOCKED: reliable correction targets and action support required. Residual RL not run.",
+      "parent_id": "T11002",
+      "x": 1620,
+      "y": 11437.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4e374f",
+      "lines": [
+        "BLOCKED: reliable correction targets and",
+        "action support required. Residual RL not",
+        "run."
+      ]
+    },
+    {
+      "id": "T11003",
+      "type": "experiment",
+      "label": "REL03 \u00b7 #11003\nEvaluate offline value ranking or PPO/DPPO only with adequate action support",
+      "parent_id": "S_recovery_2",
+      "x": 1220,
+      "y": 11564.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "REL03 \u00b7 #11003",
+        "Evaluate offline value ranking or PPO/DPPO",
+        "only with adequate action support"
+      ]
+    },
+    {
+      "id": "R11003",
+      "type": "result",
+      "label": "BLOCKED: useful proposals and valid rewards required. Offline Q / PPO on X-VLA not run.",
+      "parent_id": "T11003",
+      "x": 1620,
+      "y": 11573.5,
+      "width": 350,
+      "height": 72,
+      "color": "#4e374f",
+      "lines": [
+        "BLOCKED: useful proposals and valid rewards",
+        "required. Offline Q / PPO on X-VLA not run."
+      ]
+    },
+    {
+      "id": "S_recovery_2",
+      "type": "solution",
+      "label": "Test correction data and RL prerequisites",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 11383.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Test correction data and RL prerequisites"
+      ]
+    },
+    {
+      "id": "T11041",
+      "type": "experiment",
+      "label": "ALPHA01 \u00b7 #11041\nAlphaNIST-inspired Panda PPO/reset-sampling pilot",
+      "parent_id": "S_recovery_3",
+      "x": 1220,
+      "y": 11726.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "ALPHA01 \u00b7 #11041",
+        "AlphaNIST-inspired Panda PPO/reset-sampling",
+        "pilot"
+      ]
+    },
+    {
+      "id": "R11041",
+      "type": "result",
+      "label": "Small point-cloud PPO pilot: adaptive reset sampling has no demonstrated advantage. All five policies 0/4 full starts. Separate from X-VLA.",
+      "parent_id": "T11041",
+      "x": 1620,
+      "y": 11716.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Small point-cloud PPO pilot: adaptive reset",
+        "sampling has no demonstrated advantage. All",
+        "five policies 0/4 full starts. Separate",
+        "from X-VLA."
+      ]
+    },
+    {
+      "id": "T11043",
+      "type": "experiment",
+      "label": "ALPHA02 \u00b7 #11043\nfrozen-policy 4s/15s reset qualification and release-only control",
+      "parent_id": "S_recovery_3",
+      "x": 1220,
+      "y": 11874.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "ALPHA02 \u00b7 #11043",
+        "frozen-policy 4s/15s reset qualification",
+        "and release-only control"
+      ]
+    },
+    {
+      "id": "R11043",
+      "type": "result",
+      "label": "Frozen 32-rollout follow-up: all four policies 0/4 full starts and zero new grasps. Release-only matches near-goal success; park further PPO.",
+      "parent_id": "T11043",
+      "x": 1620,
+      "y": 11864.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Frozen 32-rollout follow-up: all four",
+        "policies 0/4 full starts and zero new",
+        "grasps. Release-only matches near-goal",
+        "success; park further PPO."
+      ]
+    },
+    {
+      "id": "T11051",
+      "type": "experiment",
+      "label": "ALPHA03 \u00b7 #11051\nFuller AlphaNIST implementation and visual-orientation extension \u2014 deferred",
+      "parent_id": "S_recovery_3",
+      "x": 1220,
+      "y": 12022.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "ALPHA03 \u00b7 #11051",
+        "Fuller AlphaNIST implementation and",
+        "visual-orientation extension \u2014 deferred"
+      ]
+    },
+    {
+      "id": "R11051",
+      "type": "result",
+      "label": "PARKED by request. Fuller GPU-parallel/reset-bank implementation and visual orientation extension recorded; no implementation or training started.",
+      "parent_id": "T11051",
+      "x": 1620,
+      "y": 12012.0,
+      "width": 350,
+      "height": 112,
+      "color": "#373b42",
+      "lines": [
+        "PARKED by request. Fuller",
+        "GPU-parallel/reset-bank implementation and",
+        "visual orientation extension recorded; no",
+        "implementation or training started."
+      ]
+    },
+    {
+      "id": "S_recovery_3",
+      "type": "solution",
+      "label": "Separate AlphaNIST-style PPO from X-VLA",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 11884.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Separate AlphaNIST-style PPO from X-VLA"
+      ]
+    },
+    {
+      "id": "T11050",
+      "type": "experiment",
+      "label": "DATA07-R \u00b7 #11050\nQualify acquisition repairs on training families before admitting corrective data",
+      "parent_id": "S_recovery_4",
+      "x": 1220,
+      "y": 12237.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DATA07-R \u00b7 #11050",
+        "Qualify acquisition repairs on training",
+        "families before admitting corrective data"
+      ]
+    },
+    {
+      "id": "R11050",
+      "type": "result",
+      "label": "Completed: native B loading3/4. Only0001 tipped pre-acquisition; one same-state C-pose/B-grip chunk still failed (0/1 conversions), with428.09mm final error. Full horizon and exact state/input/noise checks passed. Zero successful correction examples; no training. Raw809files SHA256-verified on Mint.",
+      "parent_id": "T11050",
+      "x": 1620,
+      "y": 12185.0,
+      "width": 350,
+      "height": 196,
+      "color": "#574831",
+      "lines": [
+        "Completed: native B loading3/4. Only0001",
+        "tipped pre-acquisition; one same-state",
+        "C-pose/B-grip chunk still failed (0/1",
+        "conversions), with428.09mm final error.",
+        "Full horizon and exact state/input/noise",
+        "checks passed. Zero successful correction",
+        "examples; no training. Raw809files",
+        "SHA256-verified on Mint."
+      ]
+    },
+    {
+      "id": "T11052",
+      "type": "experiment",
+      "label": "DATA07-GE \u00b7 #11052\nQualify one geometric-expert continuation from B's failed approach state",
+      "parent_id": "S_recovery_4",
+      "x": 1220,
+      "y": 12459.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DATA07-GE \u00b7 #11052",
+        "Qualify one geometric-expert continuation",
+        "from B's failed approach state"
+      ]
+    },
+    {
+      "id": "R11052",
+      "type": "result",
+      "label": "Completed: exact-state geometric teacher placed/released inside fixture (1.22 mm, 0.016 deg yaw) but brick lay sideways (90 deg tilt). Strict 0/1; no correction candidate. Open descent tipped before close. No training; stopped after one attempt.",
+      "parent_id": "T11052",
+      "x": 1620,
+      "y": 12417.0,
+      "width": 350,
+      "height": 175,
+      "color": "#574831",
+      "lines": [
+        "Completed: exact-state geometric teacher",
+        "placed/released inside fixture (1.22 mm,",
+        "0.016 deg yaw) but brick lay sideways (90",
+        "deg tilt). Strict 0/1; no correction",
+        "candidate. Open descent tipped before",
+        "close. No training; stopped after one",
+        "attempt."
+      ]
+    },
+    {
+      "id": "T11053",
+      "type": "experiment",
+      "label": "CTRL03 \u00b7 #11053\nDiagnose loading acquisition tipping before qualifying a controller repair",
+      "parent_id": "S_recovery_4",
+      "x": 1220,
+      "y": 12649.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "CTRL03 \u00b7 #11053",
+        "Diagnose loading acquisition tipping before",
+        "qualifying a controller repair"
+      ]
+    },
+    {
+      "id": "R11053",
+      "type": "result",
+      "label": "Nominal sampled gripper corridor clears the brick; executed finger shell hits its top before closure. Proposed readiness gate failed: 11.85 mm minimum versus 3 mm. Zero repair rollouts.",
+      "parent_id": "T11053",
+      "x": 1620,
+      "y": 12628.0,
+      "width": 350,
+      "height": 133,
+      "color": "#574831",
+      "lines": [
+        "Nominal sampled gripper corridor clears the",
+        "brick; executed finger shell hits its top",
+        "before closure. Proposed readiness gate",
+        "failed: 11.85 mm minimum versus 3 mm. Zero",
+        "repair rollouts."
+      ]
+    },
+    {
+      "id": "T11055",
+      "type": "experiment",
+      "label": "CTRL04 \u00b7 #11055\nTest one fixed pre-descent dwell from the failed acquisition state",
+      "parent_id": "S_recovery_4",
+      "x": 1220,
+      "y": 12807.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "CTRL04 \u00b7 #11055",
+        "Test one fixed pre-descent dwell from the",
+        "failed acquisition state"
+      ]
+    },
+    {
+      "id": "R11055",
+      "type": "result",
+      "label": "Completed: extra 4 s reduced entry error from 5.69 to 4.18 mm. Strict success 0/2; both tipped before grasp. Settling alone insufficient. Raw archive verified on Mint.",
+      "parent_id": "T11055",
+      "x": 1620,
+      "y": 12797.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Completed: extra 4 s reduced entry error",
+        "from 5.69 to 4.18 mm. Strict success 0/2;",
+        "both tipped before grasp. Settling alone",
+        "insufficient. Raw archive verified on Mint."
+      ]
+    },
+    {
+      "id": "T11056",
+      "type": "experiment",
+      "label": "CTRL05 \u00b7 #11056\nCompare matched-time step and smooth descent from the settled state",
+      "parent_id": "S_recovery_4",
+      "x": 1220,
+      "y": 12966.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "CTRL05 \u00b7 #11056",
+        "Compare matched-time step and smooth",
+        "descent from the settled state"
+      ]
+    },
+    {
+      "id": "R11056",
+      "type": "result",
+      "label": "BLOCKED: reference audit completed; qualification stopped at tick 510 because wrapper code changed too early. No S/R descent runs or efficacy result. Approach-repair branch deferred tonight.",
+      "parent_id": "T11056",
+      "x": 1620,
+      "y": 12945.0,
+      "width": 350,
+      "height": 133,
+      "color": "#4e374f",
+      "lines": [
+        "BLOCKED: reference audit completed;",
+        "qualification stopped at tick 510 because",
+        "wrapper code changed too early. No S/R",
+        "descent runs or efficacy result.",
+        "Approach-repair branch deferred tonight."
+      ]
+    },
+    {
+      "id": "S_recovery_4",
+      "type": "solution",
+      "label": "Qualify training-family corrective supervision",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 12611.25,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Qualify training-family corrective",
+        "supervision"
+      ]
+    },
+    {
+      "id": "T11066",
+      "type": "experiment",
+      "label": "HIER01-TASK \u00b7 #11066\nTest a fixed caller-task dispatcher across retained checkpoints",
+      "parent_id": "S_recovery_5",
+      "x": 1220,
+      "y": 13160.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "HIER01-TASK \u00b7 #11066",
+        "Test a fixed caller-task dispatcher across",
+        "retained checkpoints"
+      ]
+    },
+    {
+      "id": "R11066",
+      "type": "result",
+      "label": "Done: caller-task routing. Main 4/4 vs B 3/4; conditional confirmation 2/2 vs 1/2. All 12 lift. G1 recovered; feeding/loading retained. One training family; no learned hierarchy.",
+      "parent_id": "T11066",
+      "x": 1620,
+      "y": 13139.0,
+      "width": 350,
+      "height": 133,
+      "color": "#574831",
+      "lines": [
+        "Done: caller-task routing. Main 4/4 vs B",
+        "3/4; conditional confirmation 2/2 vs 1/2.",
+        "All 12 lift. G1 recovered; feeding/loading",
+        "retained. One training family; no learned",
+        "hierarchy."
+      ]
+    },
+    {
+      "id": "S_recovery_5",
+      "type": "solution",
+      "label": "Dispatch an explicitly supplied task to a retained motor policy",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 13169.5,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Dispatch an explicitly supplied task to a",
+        "retained motor policy"
+      ]
+    },
+    {
+      "id": "T11067",
+      "type": "experiment",
+      "label": "HIER01-DEV \u00b7 #11067\nQualify fixed task routing on archived 0012/0013 development scenes",
+      "parent_id": "S_recovery_6",
+      "x": 1220,
+      "y": 13354.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "HIER01-DEV \u00b7 #11067",
+        "Qualify fixed task routing on archived",
+        "0012/0013 development scenes"
+      ]
+    },
+    {
+      "id": "R11067",
+      "type": "result",
+      "label": "Done: router passed feeding 4/4 and loading 4/4; B passed feeding 4/4 and loading 2/4. All 16 lifted. B loading failures were tilted/unseated placements. Two visible families, not independent holdouts.",
+      "parent_id": "T11067",
+      "x": 1620,
+      "y": 13333.0,
+      "width": 350,
+      "height": 133,
+      "color": "#574831",
+      "lines": [
+        "Done: router passed feeding 4/4 and loading",
+        "4/4; B passed feeding 4/4 and loading 2/4.",
+        "All 16 lifted. B loading failures were",
+        "tilted/unseated placements. Two visible",
+        "families, not independent holdouts."
+      ]
+    },
+    {
+      "id": "S_recovery_6",
+      "type": "solution",
+      "label": "Qualify task routing across starting contexts",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 13363.5,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Qualify task routing across starting",
+        "contexts"
+      ]
+    },
+    {
+      "id": "T11068",
+      "type": "experiment",
+      "label": "HIER01-CHAIN \u00b7 #11068\nTest fixed-budget feed/load handovers without world reset",
+      "parent_id": "S_recovery_7",
+      "x": 1220,
+      "y": 13558.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "HIER01-CHAIN \u00b7 #11068",
+        "Test fixed-budget feed/load handovers",
+        "without world reset"
+      ]
+    },
+    {
+      "id": "R11068",
+      "type": "result",
+      "label": "Done: both continuous task orders failed on the second task. First tasks succeeded; the incoming policy never reacquired the brick. No world reset or hidden home motion. Original reverse order had a documented raw-RGB audit stop.",
+      "parent_id": "T11068",
+      "x": 1620,
+      "y": 13527.0,
+      "width": 350,
+      "height": 154,
+      "color": "#574831",
+      "lines": [
+        "Done: both continuous task orders failed on",
+        "the second task. First tasks succeeded; the",
+        "incoming policy never reacquired the brick.",
+        "No world reset or hidden home motion.",
+        "Original reverse order had a documented",
+        "raw-RGB audit stop."
+      ]
+    },
+    {
+      "id": "T11069",
+      "type": "experiment",
+      "label": "HIER01-CHAIN-AMEND1 \u00b7 #11069\nComplete one fresh L\u2192F workflow after raw-render gate interruption",
+      "parent_id": "S_recovery_7",
+      "x": 1220,
+      "y": 13759.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "HIER01-CHAIN-AMEND1 \u00b7 #11069",
+        "Complete one fresh L\u2192F workflow after",
+        "raw-render gate interruption"
+      ]
+    },
+    {
+      "id": "R11069",
+      "type": "result",
+      "label": "Done: explicit audit amendment allowed the fresh reverse workflow. Six raw channel differences left all actual actor inputs, actions and controller traces exact. Loading passed; subsequent feeding did not approach or grasp. Original evidence retained.",
+      "parent_id": "T11069",
+      "x": 1620,
+      "y": 13717.0,
+      "width": 350,
+      "height": 175,
+      "color": "#574831",
+      "lines": [
+        "Done: explicit audit amendment allowed the",
+        "fresh reverse workflow. Six raw channel",
+        "differences left all actual actor inputs,",
+        "actions and controller traces exact.",
+        "Loading passed; subsequent feeding did not",
+        "approach or grasp. Original evidence",
+        "retained."
+      ]
+    },
+    {
+      "id": "S_recovery_7",
+      "type": "solution",
+      "label": "Test uninterrupted task handovers",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 13668.25,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Test uninterrupted task handovers"
+      ]
+    },
+    {
+      "id": "T11070",
+      "type": "experiment",
+      "label": "HIER01-HANDOFF \u00b7 #11070\nDiagnose both skill transitions from saved evidence",
+      "parent_id": "S_recovery_8",
+      "x": 1220,
+      "y": 14005.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "HIER01-HANDOFF \u00b7 #11070",
+        "Diagnose both skill transitions from saved",
+        "evidence"
+      ]
+    },
+    {
+      "id": "R11070",
+      "type": "result",
+      "label": "Done: correct task, fresh history and visible blue 2 at both handovers. Policies proposed open-gripper near-home motions: zero contact or lift. New starts are 200\u2013299 mm from training starts; robot posture is close to standalone. Coverage/conditioning is next; numeral recognition remains unproven.",
+      "parent_id": "T11070",
+      "x": 1620,
+      "y": 13953.0,
+      "width": 350,
+      "height": 196,
+      "color": "#574831",
+      "lines": [
+        "Done: correct task, fresh history and",
+        "visible blue 2 at both handovers. Policies",
+        "proposed open-gripper near-home motions:",
+        "zero contact or lift. New starts are",
+        "200\u2013299 mm from training starts; robot",
+        "posture is close to standalone.",
+        "Coverage/conditioning is next; numeral",
+        "recognition remains unproven."
+      ]
+    },
+    {
+      "id": "S_recovery_8",
+      "type": "solution",
+      "label": "Diagnose why the next task never starts",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 14015.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Diagnose why the next task never starts"
+      ]
+    },
+    {
+      "id": "T11071",
+      "type": "experiment",
+      "label": "HIER01-START \u00b7 #11071\nSeparate right-side start position from the feeding-marker cue",
+      "parent_id": "S_recovery_9",
+      "x": 1220,
+      "y": 14252.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "HIER01-START \u00b7 #11071",
+        "Separate right-side start position from the",
+        "feeding-marker cue"
+      ]
+    },
+    {
+      "id": "R11071",
+      "type": "result",
+      "label": "Done: loading controls 2/2. All eight right-side starts: no contact or lift. Inside the feeding marker: no close proposals. Outside: 17\u2013371 empty-space closes and an arm path 112\u2013117 mm closer. The cue changes activity, but does not restore acquisition.",
+      "parent_id": "T11071",
+      "x": 1620,
+      "y": 14210.0,
+      "width": 350,
+      "height": 175,
+      "color": "#574831",
+      "lines": [
+        "Done: loading controls 2/2. All eight",
+        "right-side starts: no contact or lift.",
+        "Inside the feeding marker: no close",
+        "proposals. Outside: 17\u2013371 empty-space",
+        "closes and an arm path 112\u2013117 mm closer.",
+        "The cue changes activity, but does not",
+        "restore acquisition."
+      ]
+    },
+    {
+      "id": "S_recovery_9",
+      "type": "solution",
+      "label": "Separate unfamiliar starts from prior-task visual cues",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 14261.5,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Separate unfamiliar starts from prior-task",
+        "visual cues"
+      ]
+    },
+    {
+      "id": "T11072",
+      "type": "experiment",
+      "label": "INIT01 \u00b7 #11072\nqualify task-start supervision from training-family handovers",
+      "parent_id": "S_recovery_10",
+      "x": 1220,
+      "y": 14477.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "INIT01 \u00b7 #11072",
+        "qualify task-start supervision from",
+        "training-family handovers"
+      ]
+    },
+    {
+      "id": "R11072",
+      "type": "result",
+      "label": "Done: native loading 0/4; unchanged teacher 4/4; completed-feeding holds 4/4. Teacher lifts were upright with bilateral support. Eight candidate recordings; no training. Starts span only 10.5 mm. Next: a matched adaptation and retention test.",
+      "parent_id": "T11072",
+      "x": 1620,
+      "y": 14446.0,
+      "width": 350,
+      "height": 154,
+      "color": "#574831",
+      "lines": [
+        "Done: native loading 0/4; unchanged teacher",
+        "4/4; completed-feeding holds 4/4. Teacher",
+        "lifts were upright with bilateral support.",
+        "Eight candidate recordings; no training.",
+        "Starts span only 10.5 mm. Next: a matched",
+        "adaptation and retention test."
+      ]
+    },
+    {
+      "id": "S_recovery_10",
+      "type": "solution",
+      "label": "Qualify task-start supervision after completed work",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 14487.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Qualify task-start supervision after",
+        "completed work"
+      ]
+    },
+    {
+      "id": "T11073",
+      "type": "experiment",
+      "label": "INIT02 \u00b7 #11073\nmatched initiation adaptation with preservation and rehearsal",
+      "parent_id": "S_recovery_11",
+      "x": 1220,
+      "y": 14703.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "INIT02 \u00b7 #11073",
+        "matched initiation adaptation with",
+        "preservation and rehearsal"
+      ]
+    },
+    {
+      "id": "R11073",
+      "type": "result",
+      "label": "Complete: T learned loading at shared post-feeding starts (5/8 vs R 0/8), but disturbed all eight completed feeding cases (0/8 preserved vs R 8/8). Prior strict passes unchanged; two pickup regressions. Optional gate failed. 69 canonical trials; full SHA-verified Mint archive.",
+      "parent_id": "T11073",
+      "x": 1620,
+      "y": 14661.0,
+      "width": 350,
+      "height": 175,
+      "color": "#574831",
+      "lines": [
+        "Complete: T learned loading at shared",
+        "post-feeding starts (5/8 vs R 0/8), but",
+        "disturbed all eight completed feeding cases",
+        "(0/8 preserved vs R 8/8). Prior strict",
+        "passes unchanged; two pickup regressions.",
+        "Optional gate failed. 69 canonical trials;",
+        "full SHA-verified Mint archive."
+      ]
+    },
+    {
+      "id": "S_recovery_11",
+      "type": "solution",
+      "label": "Learn when to initiate loading while preserving completed feeding",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 14712.5,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Learn when to initiate loading while",
+        "preserving completed feeding"
+      ]
+    },
+    {
+      "id": "T11074",
+      "type": "experiment",
+      "label": "INIT03 \u00b7 #11074\ndistinguish conditional fitting from noise-to-action generation",
+      "parent_id": "S_recovery_12",
+      "x": 1220,
+      "y": 14928.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "INIT03 \u00b7 #11074",
+        "distinguish conditional fitting from",
+        "noise-to-action generation"
+      ]
+    },
+    {
+      "id": "R11074",
+      "type": "result",
+      "label": "Review: saved-input and exposure audit complete; all first chunks are closer to hold. Native conditional loss remains unmeasured. Part A archive verified: 13 files, zero SHA errors. No new model or physics calls.",
+      "parent_id": "T11074",
+      "x": 1620,
+      "y": 14897.0,
+      "width": 350,
+      "height": 154,
+      "color": "#574831",
+      "lines": [
+        "Review: saved-input and exposure audit",
+        "complete; all first chunks are closer to",
+        "hold. Native conditional loss remains",
+        "unmeasured. Part A archive verified: 13",
+        "files, zero SHA errors. No new model or",
+        "physics calls."
+      ]
+    },
+    {
+      "id": "S_recovery_12",
+      "type": "solution",
+      "label": "Separate initial action choice from later policy drift",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 14938.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Separate initial action choice from later",
+        "policy drift"
+      ]
+    },
+    {
+      "id": "T11075",
+      "type": "experiment",
+      "label": "INIT04 \u00b7 #11075\nlocate unwanted initiation and isolate instructions at later states",
+      "parent_id": "S_recovery_13",
+      "x": 1220,
+      "y": 15164.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "INIT04 \u00b7 #11075",
+        "locate unwanted initiation and isolate",
+        "instructions at later states"
+      ]
+    },
+    {
+      "id": "R11075",
+      "type": "result",
+      "label": "Complete: all eight feeding requests remain intact. At later fixed states, feeding/loading/explicit-hold prompts all approach and then close. 18 outputs; exact replay error 0. Stronger wording fails locally. No training/physics; image/history causes and native conditional fitting remain unresolved.",
+      "parent_id": "T11075",
+      "x": 1620,
+      "y": 15112.0,
+      "width": 350,
+      "height": 196,
+      "color": "#574831",
+      "lines": [
+        "Complete: all eight feeding requests remain",
+        "intact. At later fixed states,",
+        "feeding/loading/explicit-hold prompts all",
+        "approach and then close. 18 outputs; exact",
+        "replay error 0. Stronger wording fails",
+        "locally. No training/physics; image/history",
+        "causes and native conditional fitting",
+        "remain unresolved."
+      ]
+    },
+    {
+      "id": "S_recovery_13",
+      "type": "solution",
+      "label": "Locate when completed-task preservation becomes acquisition",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 15174.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Locate when completed-task preservation",
+        "becomes acquisition"
+      ]
+    },
+    {
+      "id": "T11076",
+      "type": "experiment",
+      "label": "INIT05 \u00b7 #11076\nisolate images and effective proprioception at first unwanted approach",
+      "parent_id": "S_recovery_14",
+      "x": 1220,
+      "y": 15421.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "INIT05 \u00b7 #11076",
+        "isolate images and effective proprioception",
+        "at first unwanted approach"
+      ]
+    },
+    {
+      "id": "R11076",
+      "type": "result",
+      "label": "Complete: changing q0 to q1 images reproduces 125\u2013143 mm approach; pose-only stays near 8 mm. Brick crop is exactly unchanged; wider views differ. 16 outputs, exact replay error 0. Local input dependence, not a physical repair. Next: qualify paired hold/load supervision at learner state.",
+      "parent_id": "T11076",
+      "x": 1620,
+      "y": 15369.0,
+      "width": 350,
+      "height": 196,
+      "color": "#574831",
+      "lines": [
+        "Complete: changing q0 to q1 images",
+        "reproduces 125\u2013143 mm approach; pose-only",
+        "stays near 8 mm. Brick crop is exactly",
+        "unchanged; wider views differ. 16 outputs,",
+        "exact replay error 0. Local input",
+        "dependence, not a physical repair. Next:",
+        "qualify paired hold/load supervision at",
+        "learner state."
+      ]
+    },
+    {
+      "id": "T11077",
+      "type": "experiment",
+      "label": "INIT06 \u00b7 #11077\npaired hold/loading references at actual learner q1 states",
+      "parent_id": "S_recovery_14",
+      "x": 1220,
+      "y": 15643.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "INIT06 \u00b7 #11077",
+        "paired hold/loading references at actual",
+        "learner q1 states"
+      ]
+    },
+    {
+      "id": "R11077",
+      "type": "result",
+      "label": "Complete: both q1 hold/loading pairs qualified. Holds: zero contact and brick movement. Loading:2/2 strict passes,45 sustained lift samples each, no joint excursions.124 full action windows; exact input/state pairing. Candidate-only bank; repair not trained. Mint archive verified.",
+      "parent_id": "T11077",
+      "x": 1620,
+      "y": 15601.0,
+      "width": 350,
+      "height": 175,
+      "color": "#574831",
+      "lines": [
+        "Complete: both q1 hold/loading pairs",
+        "qualified. Holds: zero contact and brick",
+        "movement. Loading:2/2 strict passes,45",
+        "sustained lift samples each, no joint",
+        "excursions.124 full action windows; exact",
+        "input/state pairing. Candidate-only bank;",
+        "repair not trained. Mint archive verified."
+      ]
+    },
+    {
+      "id": "S_recovery_14",
+      "type": "solution",
+      "label": "Separate visual and pose cues at unwanted initiation",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 15541.75,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Separate visual and pose cues at unwanted",
+        "initiation"
+      ]
+    },
+    {
+      "id": "T11078",
+      "type": "experiment",
+      "label": "INIT07 \u00b7 #11078\nmatched q0 rehearsal versus q1 corrective supervision",
+      "parent_id": "S_recovery_15",
+      "x": 1220,
+      "y": 15847.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "INIT07 \u00b7 #11078",
+        "matched q0 rehearsal versus q1 corrective",
+        "supervision"
+      ]
+    },
+    {
+      "id": "R11078",
+      "type": "result",
+      "label": "Q0 loading 8/8, preservation 0/8; Q1 loading 4/8, preservation 8/8. Repair gate failed. INIT10 rescues two pickups only; no full-task repair.",
+      "parent_id": "T11078",
+      "x": 1620,
+      "y": 15837.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Q0 loading 8/8, preservation 0/8; Q1",
+        "loading 4/8, preservation 8/8. Repair gate",
+        "failed. INIT10 rescues two pickups only; no",
+        "full-task repair."
+      ]
+    },
+    {
+      "id": "S_recovery_15",
+      "type": "solution",
+      "label": "Train task-conditioned actions at learner-reached states",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 15857.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Train task-conditioned actions at",
+        "learner-reached states"
+      ]
+    },
+    {
+      "id": "T11079",
+      "type": "experiment",
+      "label": "INIT08 \u00b7 #11079\ndiagnose lost Q1 grasps with matched pre-contact inputs",
+      "parent_id": "S_recovery_16",
+      "x": 1220,
+      "y": 16052.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "INIT08 \u00b7 #11079",
+        "diagnose lost Q1 grasps with matched",
+        "pre-contact inputs"
+      ]
+    },
+    {
+      "id": "R11079",
+      "type": "result",
+      "label": "COMPLETE: two lost Q1 grasps lose bilateral support while CLOSE remains commanded; opening1.6s later. Q0 misses first pickup but retries.16 exact-qualified crossover proposals implicate both input state and policy. No new physics or training. Archive verified.",
+      "parent_id": "T11079",
+      "x": 1620,
+      "y": 16010.0,
+      "width": 350,
+      "height": 175,
+      "color": "#574831",
+      "lines": [
+        "COMPLETE: two lost Q1 grasps lose bilateral",
+        "support while CLOSE remains commanded;",
+        "opening1.6s later. Q0 misses first pickup",
+        "but retries.16 exact-qualified crossover",
+        "proposals implicate both input state and",
+        "policy. No new physics or training. Archive",
+        "verified."
+      ]
+    },
+    {
+      "id": "S_recovery_16",
+      "type": "solution",
+      "label": "Separate reached state from conditional grasp output",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 16061.5,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Separate reached state from conditional",
+        "grasp output"
+      ]
+    },
+    {
+      "id": "T11080",
+      "type": "experiment",
+      "label": "INIT09 \u00b7 #11080\nexplain lost support and successful reacquisition from saved traces",
+      "parent_id": "S_recovery_17",
+      "x": 1220,
+      "y": 16256.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "INIT09 \u00b7 #11080",
+        "explain lost support and successful",
+        "reacquisition from saved traces"
+      ]
+    },
+    {
+      "id": "R11080",
+      "type": "result",
+      "label": "Six recorded episodes: shallow Q1 contact; support lost 1.6s before opening. Q0 later regrasp succeeds; recovery states differ. INIT10 adds prospective force logging.",
+      "parent_id": "T11080",
+      "x": 1620,
+      "y": 16246.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Six recorded episodes: shallow Q1 contact;",
+        "support lost 1.6s before opening. Q0 later",
+        "regrasp succeeds; recovery states differ.",
+        "INIT10 adds prospective force logging."
+      ]
+    },
+    {
+      "id": "S_recovery_17",
+      "type": "solution",
+      "label": "Explain support loss and later reacquisition",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 16266.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Explain support loss and later",
+        "reacquisition"
+      ]
+    },
+    {
+      "id": "T11081",
+      "type": "experiment",
+      "label": "INIT10 \u00b7 #11081\nfixed 5 mm lower acquisition-path replay with force logging",
+      "parent_id": "S_recovery_18",
+      "x": 1220,
+      "y": 16440.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "INIT10 \u00b7 #11081",
+        "fixed 5 mm lower acquisition-path replay",
+        "with force logging"
+      ]
+    },
+    {
+      "id": "R11081",
+      "type": "result",
+      "label": "Fixed -5mm target Z: upright held lift 2/2 versus native 0/2; 142/140mm. Same grip commands; exact native traces. Placement untested. Media defect disclosed; archive verified.",
+      "parent_id": "T11081",
+      "x": 1620,
+      "y": 16419.0,
+      "width": 350,
+      "height": 133,
+      "color": "#574831",
+      "lines": [
+        "Fixed -5mm target Z: upright held lift 2/2",
+        "versus native 0/2; 142/140mm. Same grip",
+        "commands; exact native traces. Placement",
+        "untested. Media defect disclosed; archive",
+        "verified."
+      ]
+    },
+    {
+      "id": "S_recovery_18",
+      "type": "solution",
+      "label": "Test a fixed deeper acquisition path without changing grip commands",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 16449.5,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Test a fixed deeper acquisition path",
+        "without changing grip commands"
+      ]
+    },
+    {
+      "id": "T11082",
+      "type": "experiment",
+      "label": "INIT10-A \u00b7 #11082\naudit recorded contact forces and enclosure at fixed intervals",
+      "parent_id": "S_recovery_19",
+      "x": 1220,
+      "y": 16655.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "INIT10-A \u00b7 #11082",
+        "audit recorded contact forces and enclosure",
+        "at fixed intervals"
+      ]
+    },
+    {
+      "id": "R11082",
+      "type": "result",
+      "label": "Complete: all 240 samples and 1,835 contact records qualified. Lower path retains loaded pads; native loses enclosure. Initial force is downward in both; force magnitude alone does not explain failure. Two cases, 20 Hz; no placement claim. Verified archive.",
+      "parent_id": "T11082",
+      "x": 1620,
+      "y": 16613.0,
+      "width": 350,
+      "height": 175,
+      "color": "#574831",
+      "lines": [
+        "Complete: all 240 samples and 1,835 contact",
+        "records qualified. Lower path retains",
+        "loaded pads; native loses enclosure.",
+        "Initial force is downward in both; force",
+        "magnitude alone does not explain failure.",
+        "Two cases, 20 Hz; no placement claim.",
+        "Verified archive."
+      ]
+    },
+    {
+      "id": "S_recovery_19",
+      "type": "solution",
+      "label": "Explain measured contact support after deeper acquisition",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 16664.5,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Explain measured contact support after",
+        "deeper acquisition"
+      ]
+    },
+    {
+      "id": "T11083",
+      "type": "experiment",
+      "label": "INIT11 \u00b7 #11083\nPlanned only: hand back to Q1 after the fixed lower acquisition segment",
+      "parent_id": "S_recovery_20",
+      "x": 1220,
+      "y": 16880.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "INIT11 \u00b7 #11083",
+        "Planned only: hand back to Q1 after the",
+        "fixed lower acquisition segment"
+      ]
+    },
+    {
+      "id": "R11083",
+      "type": "result",
+      "label": "PLANNED ONLY: zero executions. Four future N/D5 continuations on the same two cases, then native Q1. Query-4 handback and original remaining budget resolved. Requires future compute and activation; no extra depth or training.",
+      "parent_id": "T11083",
+      "x": 1620,
+      "y": 16849.0,
+      "width": 350,
+      "height": 154,
+      "color": "#30445a",
+      "lines": [
+        "PLANNED ONLY: zero executions. Four future",
+        "N/D5 continuations on the same two cases,",
+        "then native Q1. Query-4 handback and",
+        "original remaining budget resolved.",
+        "Requires future compute and activation; no",
+        "extra depth or training."
+      ]
+    },
+    {
+      "id": "S_recovery_20",
+      "type": "solution",
+      "label": "Test whether assisted acquisition can return to the learned policy",
+      "parent_id": "O_recovery",
+      "x": 820,
+      "y": 16890.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Test whether assisted acquisition can",
+        "return to the learned policy"
+      ]
+    },
+    {
+      "id": "O_recovery",
+      "type": "opportunity",
+      "label": "Advance phases only from trustworthy evidence",
+      "parent_id": "outcome",
+      "x": 420,
+      "y": 13349.75,
+      "width": 350,
+      "height": 72,
+      "color": "#2d443b",
+      "lines": [
+        "Advance phases only from trustworthy",
+        "evidence"
+      ]
+    },
+    {
+      "id": "T10967",
+      "type": "experiment",
+      "label": "R05 \u00b7 #10967\nMeasure eight-proposal availability using a privileged offline oracle",
+      "parent_id": "S_compute_0",
+      "x": 1220,
+      "y": 17114.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R05 \u00b7 #10967",
+        "Measure eight-proposal availability using a",
+        "privileged offline oracle"
+      ]
+    },
+    {
+      "id": "R10967",
+      "type": "result",
+      "label": "48 proposals; approach improves graspable states stay 1/6",
+      "parent_id": "T10967",
+      "x": 1620,
+      "y": 17123.5,
+      "width": 350,
+      "height": 72,
+      "color": "#574831",
+      "lines": [
+        "48 proposals; approach improves graspable",
+        "states stay 1/6"
+      ]
+    },
+    {
+      "id": "T10975",
+      "type": "experiment",
+      "label": "R10a \u00b7 #10975\nPrepare blue-ghost candidate cards and typed Luna requests",
+      "parent_id": "S_compute_0",
+      "x": 1220,
+      "y": 17241.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R10a \u00b7 #10975",
+        "Prepare blue-ghost candidate cards and",
+        "typed Luna requests"
+      ]
+    },
+    {
+      "id": "R10975",
+      "type": "result",
+      "label": "64 candidates / 32 slates prepared simulator futures; no Luna calls",
+      "parent_id": "T10975",
+      "x": 1620,
+      "y": 17250.5,
+      "width": 350,
+      "height": 72,
+      "color": "#244a3d",
+      "lines": [
+        "64 candidates / 32 slates prepared",
+        "simulator futures; no Luna calls"
+      ]
+    },
+    {
+      "id": "T10982",
+      "type": "experiment",
+      "label": "R10 \u00b7 #10982\nRun Decisions API visual ranking on frozen ghost/future slates",
+      "parent_id": "S_compute_0",
+      "x": 1220,
+      "y": 17378.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "R10 \u00b7 #10982",
+        "Run Decisions API visual ranking on frozen",
+        "ghost/future slates"
+      ]
+    },
+    {
+      "id": "R10982",
+      "type": "result",
+      "label": "32 choices + 32 reasons. Future RGB: 5/5 selected adequate, 7 abstentions; held strict 0/8. Privileged lookahead; no qualified benefit.",
+      "parent_id": "T10982",
+      "x": 1620,
+      "y": 17368.0,
+      "width": 350,
+      "height": 112,
+      "color": "#4e374f",
+      "lines": [
+        "32 choices + 32 reasons. Future RGB: 5/5",
+        "selected adequate, 7 abstentions; held",
+        "strict 0/8. Privileged lookahead; no",
+        "qualified benefit."
+      ]
+    },
+    {
+      "id": "T11029",
+      "type": "experiment",
+      "label": "LIVE09 \u00b7 #11029\nRepeat R10 and audit critic response consistency",
+      "parent_id": "S_compute_0",
+      "x": 1220,
+      "y": 17526.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE09 \u00b7 #11029",
+        "Repeat R10 and audit critic response",
+        "consistency"
+      ]
+    },
+    {
+      "id": "R11029",
+      "type": "result",
+      "label": "Repeat of the same 32 slates, not new evidence. Future-image choices still poor across ordering; median/p95 1.094/2.338 seconds.",
+      "parent_id": "T11029",
+      "x": 1620,
+      "y": 17516.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Repeat of the same 32 slates, not new",
+        "evidence. Future-image choices still poor",
+        "across ordering; median/p95 1.094/2.338",
+        "seconds."
+      ]
+    },
+    {
+      "id": "S_compute_0",
+      "type": "solution",
+      "label": "Measure candidate support and visual ranking",
+      "parent_id": "O_compute",
+      "x": 820,
+      "y": 17329.75,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Measure candidate support and visual",
+        "ranking"
+      ]
+    },
+    {
+      "id": "T11014",
+      "type": "experiment",
+      "label": "LIVE04 \u00b7 #11014\nIntegrate Decisions API candidate ranking with bounded asynchronous execution",
+      "parent_id": "S_compute_1",
+      "x": 1220,
+      "y": 17689.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE04 \u00b7 #11014",
+        "Integrate Decisions API candidate ranking",
+        "with bounded asynchronous execution"
+      ]
+    },
+    {
+      "id": "R11014",
+      "type": "result",
+      "label": "Nine live trials: 3 API choices executed 62 targets; 33/36 replies UNKNOWN. Reference pickup/place 1/2 vs 0/2 live variants.",
+      "parent_id": "T11014",
+      "x": 1620,
+      "y": 17689.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "Nine live trials: 3 API choices executed 62",
+        "targets; 33/36 replies UNKNOWN. Reference",
+        "pickup/place 1/2 vs 0/2 live variants."
+      ]
+    },
+    {
+      "id": "T11025",
+      "type": "experiment",
+      "label": "LIVE05 \u00b7 #11025\nSeparate waiting, sampling and guards after the live-ranking regression",
+      "parent_id": "S_compute_1",
+      "x": 1220,
+      "y": 17816.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE05 \u00b7 #11025",
+        "Separate waiting, sampling and guards after",
+        "the live-ranking regression"
+      ]
+    },
+    {
+      "id": "R11025",
+      "type": "result",
+      "label": "30 matched trials isolate guard regression: native pickup/place 1/2 even with waits; guard 0/2 at zero wait. Strict 0/2.",
+      "parent_id": "T11025",
+      "x": 1620,
+      "y": 17816.0,
+      "width": 350,
+      "height": 91,
+      "color": "#574831",
+      "lines": [
+        "30 matched trials isolate guard regression:",
+        "native pickup/place 1/2 even with waits;",
+        "guard 0/2 at zero wait. Strict 0/2."
+      ]
+    },
+    {
+      "id": "T11026",
+      "type": "experiment",
+      "label": "LIVE06 \u00b7 #11026\nQualify motion guards against the executed controller contract",
+      "parent_id": "S_compute_1",
+      "x": 1220,
+      "y": 17953.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE06 \u00b7 #11026",
+        "Qualify motion guards against the executed",
+        "controller contract"
+      ]
+    },
+    {
+      "id": "R11026",
+      "type": "result",
+      "label": "Executed-command check restores known pickup/place. Eight experts succeed, 1,714 ticks and zero new vetoes; 304 old false jump vetoes.",
+      "parent_id": "T11026",
+      "x": 1620,
+      "y": 17943.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Executed-command check restores known",
+        "pickup/place. Eight experts succeed, 1,714",
+        "ticks and zero new vetoes; 304 old false",
+        "jump vetoes."
+      ]
+    },
+    {
+      "id": "T11027",
+      "type": "experiment",
+      "label": "LIVE07 \u00b7 #11027\nIntegrate the qualified execution check into the live candidate handoff",
+      "parent_id": "S_compute_1",
+      "x": 1220,
+      "y": 18101.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE07 \u00b7 #11027",
+        "Integrate the qualified execution check",
+        "into the live candidate handoff"
+      ]
+    },
+    {
+      "id": "R11027",
+      "type": "result",
+      "label": "Nine live trials: native and first-admissible grasp/place; API misses grasp. All strict 0/2. Activation is not executed selection.",
+      "parent_id": "T11027",
+      "x": 1620,
+      "y": 18091.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Nine live trials: native and",
+        "first-admissible grasp/place; API misses",
+        "grasp. All strict 0/2. Activation is not",
+        "executed selection."
+      ]
+    },
+    {
+      "id": "T11028",
+      "type": "experiment",
+      "label": "LIVE08 \u00b7 #11028\nIsolate the first ranked candidate from boundary timing",
+      "parent_id": "S_compute_1",
+      "x": 1220,
+      "y": 18249.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "LIVE08 \u00b7 #11028",
+        "Isolate the first ranked candidate from",
+        "boundary timing"
+      ]
+    },
+    {
+      "id": "R11028",
+      "type": "result",
+      "label": "Four-run 2x2: candidate A grasps/places at both waits; C at neither. Candidate choice explains this failure, not one tick of delay.",
+      "parent_id": "T11028",
+      "x": 1620,
+      "y": 18239.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Four-run 2x2: candidate A grasps/places at",
+        "both waits; C at neither. Candidate choice",
+        "explains this failure, not one tick of",
+        "delay."
+      ]
+    },
+    {
+      "id": "S_compute_1",
+      "type": "solution",
+      "label": "Integrate and isolate the live selection mechanism",
+      "parent_id": "O_compute",
+      "x": 820,
+      "y": 17978.75,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Integrate and isolate the live selection",
+        "mechanism"
+      ]
+    },
+    {
+      "id": "O_compute",
+      "type": "opportunity",
+      "label": "Choose useful candidates without blocking valid motion",
+      "parent_id": "outcome",
+      "x": 420,
+      "y": 17654.25,
+      "width": 350,
+      "height": 72,
+      "color": "#2d443b",
+      "lines": [
+        "Choose useful candidates without blocking",
+        "valid motion"
+      ]
+    },
+    {
+      "id": "T10995",
+      "type": "experiment",
+      "label": "EVAL01 \u00b7 #10995\nReconcile the earlier 775-rollout feeding comparison and V4 grasp search",
+      "parent_id": "S_evidence_0",
+      "x": 1220,
+      "y": 18472.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "EVAL01 \u00b7 #10995",
+        "Reconcile the earlier 775-rollout feeding",
+        "comparison and V4 grasp search"
+      ]
+    },
+    {
+      "id": "R10995",
+      "type": "result",
+      "label": "775 matched feeding rollouts: vanilla/V1/V2/V3/V4 pickups 0/0/0/10/1 on 137 unfinished scenes. Stable square placements 0/0/0/5/1.",
+      "parent_id": "T10995",
+      "x": 1620,
+      "y": 18462.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "775 matched feeding rollouts:",
+        "vanilla/V1/V2/V3/V4 pickups 0/0/0/10/1 on",
+        "137 unfinished scenes. Stable square",
+        "placements 0/0/0/5/1."
+      ]
+    },
+    {
+      "id": "T10997",
+      "type": "experiment",
+      "label": "EVAL03 \u00b7 #10997\nReconcile the 20 \u00d7 A/B harness comparison and guard event logging",
+      "parent_id": "S_evidence_0",
+      "x": 1220,
+      "y": 18620.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "EVAL03 \u00b7 #10997",
+        "Reconcile the 20 \u00d7 A/B harness comparison",
+        "and guard event logging"
+      ]
+    },
+    {
+      "id": "R10997",
+      "type": "result",
+      "label": "Historical 400 synthetic A/B rows: zero pickup/place/strict. One candidate, 30-second cap, no TTC. Distinct from film-derived evaluation.",
+      "parent_id": "T10997",
+      "x": 1620,
+      "y": 18610.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Historical 400 synthetic A/B rows: zero",
+        "pickup/place/strict. One candidate,",
+        "30-second cap, no TTC. Distinct from",
+        "film-derived evaluation."
+      ]
+    },
+    {
+      "id": "T10996",
+      "type": "experiment",
+      "label": "EVAL02 \u00b7 #10996\nDefine the next confirmatory comparison with family-level uncertainty",
+      "parent_id": "S_evidence_0",
+      "x": 1220,
+      "y": 18768.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "EVAL02 \u00b7 #10996",
+        "Define the next confirmatory comparison",
+        "with family-level uncertainty"
+      ]
+    },
+    {
+      "id": "R10996",
+      "type": "result",
+      "label": "REVIEW: 136/204 planned completed. Broad vs vanilla near-layout strict 17/40 vs 0/40. Broader layouts 0/20 both; 68 interventions unrun.",
+      "parent_id": "T10996",
+      "x": 1620,
+      "y": 18758.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "REVIEW: 136/204 planned completed. Broad vs",
+        "vanilla near-layout strict 17/40 vs 0/40.",
+        "Broader layouts 0/20 both; 68 interventions",
+        "unrun."
+      ]
+    },
+    {
+      "id": "T11036",
+      "type": "experiment",
+      "label": "EVAL02R \u00b7 #11036\nReconcile existing comparison claims and family-level uncertainty",
+      "parent_id": "S_evidence_0",
+      "x": 1220,
+      "y": 18916.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "EVAL02R \u00b7 #11036",
+        "Reconcile existing comparison claims and",
+        "family-level uncertainty"
+      ]
+    },
+    {
+      "id": "R11036",
+      "type": "result",
+      "label": "Read-only review of 775 + 296 rollouts and 24 extracts. Family-aware intervals and 1,102 input hashes checked; no new experiments.",
+      "parent_id": "T11036",
+      "x": 1620,
+      "y": 18906.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Read-only review of 775 + 296 rollouts and",
+        "24 extracts. Family-aware intervals and",
+        "1,102 input hashes checked; no new",
+        "experiments."
+      ]
+    },
+    {
+      "id": "S_evidence_0",
+      "type": "solution",
+      "label": "Reconcile evaluation panels and uncertainty",
+      "parent_id": "O_evidence",
+      "x": 820,
+      "y": 18704.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Reconcile evaluation panels and uncertainty"
+      ]
+    },
+    {
+      "id": "T10980",
+      "type": "experiment",
+      "label": "OPS03 \u00b7 #10980\nWrite a request-by-request report and obtain independent plus GPT Pro review",
+      "parent_id": "S_evidence_1",
+      "x": 1220,
+      "y": 19079.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "OPS03 \u00b7 #10980",
+        "Write a request-by-request report and",
+        "obtain independent plus GPT Pro review"
+      ]
+    },
+    {
+      "id": "R10980",
+      "type": "result",
+      "label": "review 13 requests reconciled limits and errata documented",
+      "parent_id": "T10980",
+      "x": 1620,
+      "y": 19088.5,
+      "width": 350,
+      "height": 72,
+      "color": "#244a3d",
+      "lines": [
+        "review 13 requests reconciled limits and",
+        "errata documented"
+      ]
+    },
+    {
+      "id": "T10979",
+      "type": "experiment",
+      "label": "OPS02 \u00b7 #10979\nPreserve and verify all research models, traces, videos and resume state",
+      "parent_id": "S_evidence_1",
+      "x": 1220,
+      "y": 19206.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "OPS02 \u00b7 #10979",
+        "Preserve and verify all research models,",
+        "traces, videos and resume state"
+      ]
+    },
+    {
+      "id": "R10979",
+      "type": "result",
+      "label": "backup Artifacts and checkpoints retained SHA-verified on Mint fast drive",
+      "parent_id": "T10979",
+      "x": 1620,
+      "y": 19215.5,
+      "width": 350,
+      "height": 72,
+      "color": "#244a3d",
+      "lines": [
+        "backup Artifacts and checkpoints retained",
+        "SHA-verified on Mint fast drive"
+      ]
+    },
+    {
+      "id": "T10956",
+      "type": "experiment",
+      "label": "OPS01 \u00b7 #10956\nCreate and reconcile the research kanban ledger with evidence and honest statuses",
+      "parent_id": "S_evidence_1",
+      "x": 1220,
+      "y": 19343.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "OPS01 \u00b7 #10956",
+        "Create and reconcile the research kanban",
+        "ledger with evidence and honest statuses"
+      ]
+    },
+    {
+      "id": "R10956",
+      "type": "result",
+      "label": "Research ledger reconciled. Current tree covers every ticket with explicit evidence, limitations and status; creating a ticket is not executing it.",
+      "parent_id": "T10956",
+      "x": 1620,
+      "y": 19333.0,
+      "width": 350,
+      "height": 112,
+      "color": "#244a3d",
+      "lines": [
+        "Research ledger reconciled. Current tree",
+        "covers every ticket with explicit evidence,",
+        "limitations and status; creating a ticket",
+        "is not executing it."
+      ]
+    },
+    {
+      "id": "T10986",
+      "type": "experiment",
+      "label": "DATA01 \u00b7 #10986\nPublish an internal model and dataset registry with unambiguous names",
+      "parent_id": "S_evidence_1",
+      "x": 1220,
+      "y": 19491.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DATA01 \u00b7 #10986",
+        "Publish an internal model and dataset",
+        "registry with unambiguous names"
+      ]
+    },
+    {
+      "id": "R10986",
+      "type": "result",
+      "label": "19 checkpoint identities audited. M3\u2013M6 are separate lineages; broad Pt starts fresh. Historical V4 recovery arrays remain partly unverified.",
+      "parent_id": "T10986",
+      "x": 1620,
+      "y": 19481.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "19 checkpoint identities audited. M3\u2013M6 are",
+        "separate lineages; broad Pt starts fresh.",
+        "Historical V4 recovery arrays remain partly",
+        "unverified."
+      ]
+    },
+    {
+      "id": "T11012",
+      "type": "experiment",
+      "label": "OPS05 \u00b7 #11012\nDraw the opportunity solution tree and restore the Design viewer",
+      "parent_id": "S_evidence_1",
+      "x": 1220,
+      "y": 19639.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "OPS05 \u00b7 #11012",
+        "Draw the opportunity solution tree and",
+        "restore the Design viewer"
+      ]
+    },
+    {
+      "id": "R11012",
+      "type": "result",
+      "label": "113 work items across 10 views. Each experiment has a result card. Live/offline SVG coverage verified; active research programme continues after bounded tickets.",
+      "parent_id": "T11012",
+      "x": 1620,
+      "y": 19629.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "113 work items across 10 views. Each",
+        "experiment has a result card. Live/offline",
+        "SVG coverage verified; active research",
+        "programme continues after bounded tickets."
+      ]
+    },
+    {
+      "id": "T11042",
+      "type": "experiment",
+      "label": "OPS01 \u00b7 #11042\nVerify Powerglide booking and full backup including lab recovery",
+      "parent_id": "S_evidence_1",
+      "x": 1220,
+      "y": 19787.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "OPS01 \u00b7 #11042",
+        "Verify Powerglide booking and full backup",
+        "including lab recovery"
+      ]
+    },
+    {
+      "id": "R11042",
+      "type": "result",
+      "label": "Full backup reconciled: 906,507 files, 299.6 GB, no integrity errors. Labs and checkpoint checks saved. Fresh-machine restore untested.",
+      "parent_id": "T11042",
+      "x": 1620,
+      "y": 19777.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Full backup reconciled: 906,507 files,",
+        "299.6 GB, no integrity errors. Labs and",
+        "checkpoint checks saved. Fresh-machine",
+        "restore untested."
+      ]
+    },
+    {
+      "id": "T11049",
+      "type": "experiment",
+      "label": "OPS07 \u00b7 #11049\nRestore Mint access and mirror latest experiment evidence and OST",
+      "parent_id": "S_evidence_1",
+      "x": 1220,
+      "y": 19956.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "OPS07 \u00b7 #11049",
+        "Restore Mint access and mirror latest",
+        "experiment evidence and OST"
+      ]
+    },
+    {
+      "id": "R11049",
+      "type": "result",
+      "label": "Recovered: Mint mirrors verified (45 older evidence files, 809 DATA07-R raw files). Interrupted work preserved; live OST installed and served bytes checked. DATA07-GE raw 223 files also verified. Fresh-machine restore untested.",
+      "parent_id": "T11049",
+      "x": 1620,
+      "y": 19925.0,
+      "width": 350,
+      "height": 154,
+      "color": "#574831",
+      "lines": [
+        "Recovered: Mint mirrors verified (45 older",
+        "evidence files, 809 DATA07-R raw files).",
+        "Interrupted work preserved; live OST",
+        "installed and served bytes checked.",
+        "DATA07-GE raw 223 files also verified.",
+        "Fresh-machine restore untested."
+      ]
+    },
+    {
+      "id": "S_evidence_1",
+      "type": "solution",
+      "label": "Preserve the research record and compute environment",
+      "parent_id": "O_evidence",
+      "x": 820,
+      "y": 19527.25,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Preserve the research record and compute",
+        "environment"
+      ]
+    },
+    {
+      "id": "T11007",
+      "type": "experiment",
+      "label": "DEL01 \u00b7 #11007\nReconcile dashboard, video hosting and research result provenance",
+      "parent_id": "S_evidence_2",
+      "x": 1220,
+      "y": 20150.5,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DEL01 \u00b7 #11007",
+        "Reconcile dashboard, video hosting and",
+        "research result provenance"
+      ]
+    },
+    {
+      "id": "R11007",
+      "type": "result",
+      "label": "Eight representative records, ten videos, exact models and hashes verified. Current selected files absent from hosted index; delivery repair separate.",
+      "parent_id": "T11007",
+      "x": 1620,
+      "y": 20140.0,
+      "width": 350,
+      "height": 112,
+      "color": "#574831",
+      "lines": [
+        "Eight representative records, ten videos,",
+        "exact models and hashes verified. Current",
+        "selected files absent from hosted index;",
+        "delivery repair separate."
+      ]
+    },
+    {
+      "id": "T11008",
+      "type": "experiment",
+      "label": "DEL02 \u00b7 #11008\nPrepare an accurate research write-up and submission package",
+      "parent_id": "S_evidence_2",
+      "x": 1220,
+      "y": 20309.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "DEL02 \u00b7 #11008",
+        "Prepare an accurate research write-up and",
+        "submission package"
+      ]
+    },
+    {
+      "id": "R11008",
+      "type": "result",
+      "label": "REVIEW: private research write-up plus overnight synthesis. Local task-wording precedence demonstrated; numerical steering and recovery remain open. Publication/submission pending.",
+      "parent_id": "T11008",
+      "x": 1620,
+      "y": 20288.0,
+      "width": 350,
+      "height": 133,
+      "color": "#574831",
+      "lines": [
+        "REVIEW: private research write-up plus",
+        "overnight synthesis. Local task-wording",
+        "precedence demonstrated; numerical steering",
+        "and recovery remain open.",
+        "Publication/submission pending."
+      ]
+    },
+    {
+      "id": "S_evidence_2",
+      "type": "solution",
+      "label": "Qualify media and the private report",
+      "parent_id": "O_evidence",
+      "x": 820,
+      "y": 20239.25,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Qualify media and the private report"
+      ]
+    },
+    {
+      "id": "O_evidence",
+      "type": "opportunity",
+      "label": "Make results reproducible, recoverable and understandable",
+      "parent_id": "outcome",
+      "x": 420,
+      "y": 19471.62,
+      "width": 350,
+      "height": 72,
+      "color": "#2d443b",
+      "lines": [
+        "Make results reproducible, recoverable and",
+        "understandable"
+      ]
+    },
+    {
+      "id": "T11009",
+      "type": "experiment",
+      "label": "PARK01 \u00b7 #11009\nSet-of-Mark object/region labels \u2014 withdrawn",
+      "parent_id": "S_parked_0",
+      "x": 1220,
+      "y": 20532.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "PARK01 \u00b7 #11009",
+        "Set-of-Mark object/region labels \u2014",
+        "withdrawn"
+      ]
+    },
+    {
+      "id": "R11009",
+      "type": "result",
+      "label": "PARKED: Set-of-Mark withdrawn by the user.",
+      "parent_id": "T11009",
+      "x": 1620,
+      "y": 20541.5,
+      "width": 350,
+      "height": 72,
+      "color": "#373b42",
+      "lines": [
+        "PARKED: Set-of-Mark withdrawn by the user."
+      ]
+    },
+    {
+      "id": "T11010",
+      "type": "experiment",
+      "label": "PARK02 \u00b7 #11010\nBroader platform and simulator changes \u2014 deferred",
+      "parent_id": "S_parked_0",
+      "x": 1220,
+      "y": 20659.0,
+      "width": 350,
+      "height": 91,
+      "color": "#4a4428",
+      "lines": [
+        "PARK02 \u00b7 #11010",
+        "Broader platform and simulator changes \u2014",
+        "deferred"
+      ]
+    },
+    {
+      "id": "R11010",
+      "type": "result",
+      "label": "PARKED: broader platforms and simulator changes deferred.",
+      "parent_id": "T11010",
+      "x": 1620,
+      "y": 20668.5,
+      "width": 350,
+      "height": 72,
+      "color": "#373b42",
+      "lines": [
+        "PARKED: broader platforms and simulator",
+        "changes deferred."
+      ]
+    },
+    {
+      "id": "S_parked_0",
+      "type": "solution",
+      "label": "Do not expand scope without a new reason",
+      "parent_id": "O_parked",
+      "x": 820,
+      "y": 20605.0,
+      "width": 350,
+      "height": 72,
+      "color": "#343a46",
+      "lines": [
+        "Do not expand scope without a new reason"
+      ]
+    },
+    {
+      "id": "O_parked",
+      "type": "opportunity",
+      "label": "Keep deferred work distinct from evidence",
+      "parent_id": "outcome",
+      "x": 420,
+      "y": 20605.0,
+      "width": 350,
+      "height": 72,
+      "color": "#2d443b",
+      "lines": [
+        "Keep deferred work distinct from evidence"
+      ]
+    },
+    {
+      "id": "outcome",
+      "type": "outcome",
+      "label": "Reliably complete the requested manipulation task using personal evidence",
+      "parent_id": "",
+      "x": 20,
+      "y": 94.0,
+      "width": 350,
+      "height": 72,
+      "color": "#263f60",
+      "lines": [
+        "Reliably complete the requested",
+        "manipulation task using personal evidence"
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "S_data_0",
+      "T10981"
+    ],
+    [
+      "T10981",
+      "R10981"
+    ],
+    [
+      "S_data_0",
+      "T10991"
+    ],
+    [
+      "T10991",
+      "R10991"
+    ],
+    [
+      "S_data_0",
+      "T10972"
+    ],
+    [
+      "T10972",
+      "R10972"
+    ],
+    [
+      "S_data_0",
+      "T10974"
+    ],
+    [
+      "T10974",
+      "R10974"
+    ],
+    [
+      "S_data_0",
+      "T10989"
+    ],
+    [
+      "T10989",
+      "R10989"
+    ],
+    [
+      "O_data",
+      "S_data_0"
+    ],
+    [
+      "S_data_1",
+      "T10987"
+    ],
+    [
+      "T10987",
+      "R10987"
+    ],
+    [
+      "S_data_1",
+      "T10988"
+    ],
+    [
+      "T10988",
+      "R10988"
+    ],
+    [
+      "S_data_1",
+      "T10990"
+    ],
+    [
+      "T10990",
+      "R10990"
+    ],
+    [
+      "O_data",
+      "S_data_1"
+    ],
+    [
+      "S_data_2",
+      "T11016"
+    ],
+    [
+      "T11016",
+      "R11016"
+    ],
+    [
+      "S_data_2",
+      "T11017"
+    ],
+    [
+      "T11017",
+      "R11017"
+    ],
+    [
+      "S_data_2",
+      "T11018"
+    ],
+    [
+      "T11018",
+      "R11018"
+    ],
+    [
+      "S_data_2",
+      "T11019"
+    ],
+    [
+      "T11019",
+      "R11019"
+    ],
+    [
+      "O_data",
+      "S_data_2"
+    ],
+    [
+      "S_data_3",
+      "T11020"
+    ],
+    [
+      "T11020",
+      "R11020"
+    ],
+    [
+      "S_data_3",
+      "T11021"
+    ],
+    [
+      "T11021",
+      "R11021"
+    ],
+    [
+      "S_data_3",
+      "T11022"
+    ],
+    [
+      "T11022",
+      "R11022"
+    ],
+    [
+      "O_data",
+      "S_data_3"
+    ],
+    [
+      "S_data_4",
+      "T11023"
+    ],
+    [
+      "T11023",
+      "R11023"
+    ],
+    [
+      "S_data_4",
+      "T11024"
+    ],
+    [
+      "T11024",
+      "R11024"
+    ],
+    [
+      "S_data_4",
+      "T11032"
+    ],
+    [
+      "T11032",
+      "R11032"
+    ],
+    [
+      "S_data_4",
+      "T11033"
+    ],
+    [
+      "T11033",
+      "R11033"
+    ],
+    [
+      "S_data_4",
+      "T11034"
+    ],
+    [
+      "T11034",
+      "R11034"
+    ],
+    [
+      "S_data_4",
+      "T11035"
+    ],
+    [
+      "T11035",
+      "R11035"
+    ],
+    [
+      "S_data_4",
+      "T11015"
+    ],
+    [
+      "T11015",
+      "R11015"
+    ],
+    [
+      "O_data",
+      "S_data_4"
+    ],
+    [
+      "outcome",
+      "O_data"
+    ],
+    [
+      "S_perception_0",
+      "T10959"
+    ],
+    [
+      "T10959",
+      "R10959"
+    ],
+    [
+      "S_perception_0",
+      "T10955"
+    ],
+    [
+      "T10955",
+      "R10955"
+    ],
+    [
+      "S_perception_0",
+      "T10993"
+    ],
+    [
+      "T10993",
+      "R10993"
+    ],
+    [
+      "S_perception_0",
+      "T11011"
+    ],
+    [
+      "T11011",
+      "R11011"
+    ],
+    [
+      "O_perception",
+      "S_perception_0"
+    ],
+    [
+      "S_perception_1",
+      "T10954"
+    ],
+    [
+      "T10954",
+      "R10954"
+    ],
+    [
+      "S_perception_1",
+      "T10960"
+    ],
+    [
+      "T10960",
+      "R10960"
+    ],
+    [
+      "S_perception_1",
+      "T10961"
+    ],
+    [
+      "T10961",
+      "R10961"
+    ],
+    [
+      "S_perception_1",
+      "T10994"
+    ],
+    [
+      "T10994",
+      "R10994"
+    ],
+    [
+      "O_perception",
+      "S_perception_1"
+    ],
+    [
+      "S_perception_2",
+      "T11005"
+    ],
+    [
+      "T11005",
+      "R11005"
+    ],
+    [
+      "S_perception_2",
+      "T11006"
+    ],
+    [
+      "T11006",
+      "R11006"
+    ],
+    [
+      "O_perception",
+      "S_perception_2"
+    ],
+    [
+      "outcome",
+      "O_perception"
+    ],
+    [
+      "S_execution_0",
+      "T10957"
+    ],
+    [
+      "T10957",
+      "R10957"
+    ],
+    [
+      "S_execution_0",
+      "T10958"
+    ],
+    [
+      "T10958",
+      "R10958"
+    ],
+    [
+      "S_execution_0",
+      "T10968"
+    ],
+    [
+      "T10968",
+      "R10968"
+    ],
+    [
+      "O_execution",
+      "S_execution_0"
+    ],
+    [
+      "S_execution_1",
+      "T10985"
+    ],
+    [
+      "T10985",
+      "R10985"
+    ],
+    [
+      "S_execution_1",
+      "T10998"
+    ],
+    [
+      "T10998",
+      "R10998"
+    ],
+    [
+      "O_execution",
+      "S_execution_1"
+    ],
+    [
+      "S_execution_2",
+      "T10966"
+    ],
+    [
+      "T10966",
+      "R10966"
+    ],
+    [
+      "O_execution",
+      "S_execution_2"
+    ],
+    [
+      "outcome",
+      "O_execution"
+    ],
+    [
+      "S_generalisation_0",
+      "T10962"
+    ],
+    [
+      "T10962",
+      "R10962"
+    ],
+    [
+      "S_generalisation_0",
+      "T10963"
+    ],
+    [
+      "T10963",
+      "R10963"
+    ],
+    [
+      "S_generalisation_0",
+      "T10964"
+    ],
+    [
+      "T10964",
+      "R10964"
+    ],
+    [
+      "S_generalisation_0",
+      "T10965"
+    ],
+    [
+      "T10965",
+      "R10965"
+    ],
+    [
+      "S_generalisation_0",
+      "T10983"
+    ],
+    [
+      "T10983",
+      "R10983"
+    ],
+    [
+      "O_generalisation",
+      "S_generalisation_0"
+    ],
+    [
+      "S_generalisation_1",
+      "T10992"
+    ],
+    [
+      "T10992",
+      "R10992"
+    ],
+    [
+      "O_generalisation",
+      "S_generalisation_1"
+    ],
+    [
+      "S_generalisation_2",
+      "T11013"
+    ],
+    [
+      "T11013",
+      "R11013"
+    ],
+    [
+      "S_generalisation_2",
+      "T11037"
+    ],
+    [
+      "T11037",
+      "R11037"
+    ],
+    [
+      "O_generalisation",
+      "S_generalisation_2"
+    ],
+    [
+      "S_generalisation_3",
+      "T11038"
+    ],
+    [
+      "T11038",
+      "R11038"
+    ],
+    [
+      "S_generalisation_3",
+      "T11039"
+    ],
+    [
+      "T11039",
+      "R11039"
+    ],
+    [
+      "S_generalisation_3",
+      "T11040"
+    ],
+    [
+      "T11040",
+      "R11040"
+    ],
+    [
+      "O_generalisation",
+      "S_generalisation_3"
+    ],
+    [
+      "S_generalisation_4",
+      "T11044"
+    ],
+    [
+      "T11044",
+      "R11044"
+    ],
+    [
+      "S_generalisation_4",
+      "T11045"
+    ],
+    [
+      "T11045",
+      "R11045"
+    ],
+    [
+      "S_generalisation_4",
+      "T11046"
+    ],
+    [
+      "T11046",
+      "R11046"
+    ],
+    [
+      "S_generalisation_4",
+      "T11047"
+    ],
+    [
+      "T11047",
+      "R11047"
+    ],
+    [
+      "S_generalisation_4",
+      "T11048"
+    ],
+    [
+      "T11048",
+      "R11048"
+    ],
+    [
+      "O_generalisation",
+      "S_generalisation_4"
+    ],
+    [
+      "S_generalisation_5",
+      "T11058"
+    ],
+    [
+      "T11058",
+      "R11058"
+    ],
+    [
+      "S_generalisation_5",
+      "T11059"
+    ],
+    [
+      "T11059",
+      "R11059"
+    ],
+    [
+      "S_generalisation_5",
+      "T11060"
+    ],
+    [
+      "T11060",
+      "R11060"
+    ],
+    [
+      "S_generalisation_5",
+      "T11061"
+    ],
+    [
+      "T11061",
+      "R11061"
+    ],
+    [
+      "S_generalisation_5",
+      "T11062"
+    ],
+    [
+      "T11062",
+      "R11062"
+    ],
+    [
+      "S_generalisation_5",
+      "T11063"
+    ],
+    [
+      "T11063",
+      "R11063"
+    ],
+    [
+      "S_generalisation_5",
+      "T11064"
+    ],
+    [
+      "T11064",
+      "R11064"
+    ],
+    [
+      "S_generalisation_5",
+      "T11065"
+    ],
+    [
+      "T11065",
+      "R11065"
+    ],
+    [
+      "O_generalisation",
+      "S_generalisation_5"
+    ],
+    [
+      "outcome",
+      "O_generalisation"
+    ],
+    [
+      "S_recovery_0",
+      "T10969"
+    ],
+    [
+      "T10969",
+      "R10969"
+    ],
+    [
+      "S_recovery_0",
+      "T10970"
+    ],
+    [
+      "T10970",
+      "R10970"
+    ],
+    [
+      "S_recovery_0",
+      "T10984"
+    ],
+    [
+      "T10984",
+      "R10984"
+    ],
+    [
+      "S_recovery_0",
+      "T10999"
+    ],
+    [
+      "T10999",
+      "R10999"
+    ],
+    [
+      "S_recovery_0",
+      "T11004"
+    ],
+    [
+      "T11004",
+      "R11004"
+    ],
+    [
+      "S_recovery_0",
+      "T11030"
+    ],
+    [
+      "T11030",
+      "R11030"
+    ],
+    [
+      "S_recovery_0",
+      "T11031"
+    ],
+    [
+      "T11031",
+      "R11031"
+    ],
+    [
+      "S_recovery_0",
+      "T11054"
+    ],
+    [
+      "T11054",
+      "R11054"
+    ],
+    [
+      "S_recovery_0",
+      "T11057"
+    ],
+    [
+      "T11057",
+      "R11057"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_0"
+    ],
+    [
+      "S_recovery_1",
+      "T10971"
+    ],
+    [
+      "T10971",
+      "R10971"
+    ],
+    [
+      "S_recovery_1",
+      "T10973"
+    ],
+    [
+      "T10973",
+      "R10973"
+    ],
+    [
+      "S_recovery_1",
+      "T10976"
+    ],
+    [
+      "T10976",
+      "R10976"
+    ],
+    [
+      "S_recovery_1",
+      "T10977"
+    ],
+    [
+      "T10977",
+      "R10977"
+    ],
+    [
+      "S_recovery_1",
+      "T11000"
+    ],
+    [
+      "T11000",
+      "R11000"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_1"
+    ],
+    [
+      "S_recovery_2",
+      "T10978"
+    ],
+    [
+      "T10978",
+      "R10978"
+    ],
+    [
+      "S_recovery_2",
+      "T11001"
+    ],
+    [
+      "T11001",
+      "R11001"
+    ],
+    [
+      "S_recovery_2",
+      "T11002"
+    ],
+    [
+      "T11002",
+      "R11002"
+    ],
+    [
+      "S_recovery_2",
+      "T11003"
+    ],
+    [
+      "T11003",
+      "R11003"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_2"
+    ],
+    [
+      "S_recovery_3",
+      "T11041"
+    ],
+    [
+      "T11041",
+      "R11041"
+    ],
+    [
+      "S_recovery_3",
+      "T11043"
+    ],
+    [
+      "T11043",
+      "R11043"
+    ],
+    [
+      "S_recovery_3",
+      "T11051"
+    ],
+    [
+      "T11051",
+      "R11051"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_3"
+    ],
+    [
+      "S_recovery_4",
+      "T11050"
+    ],
+    [
+      "T11050",
+      "R11050"
+    ],
+    [
+      "S_recovery_4",
+      "T11052"
+    ],
+    [
+      "T11052",
+      "R11052"
+    ],
+    [
+      "S_recovery_4",
+      "T11053"
+    ],
+    [
+      "T11053",
+      "R11053"
+    ],
+    [
+      "S_recovery_4",
+      "T11055"
+    ],
+    [
+      "T11055",
+      "R11055"
+    ],
+    [
+      "S_recovery_4",
+      "T11056"
+    ],
+    [
+      "T11056",
+      "R11056"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_4"
+    ],
+    [
+      "S_recovery_5",
+      "T11066"
+    ],
+    [
+      "T11066",
+      "R11066"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_5"
+    ],
+    [
+      "S_recovery_6",
+      "T11067"
+    ],
+    [
+      "T11067",
+      "R11067"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_6"
+    ],
+    [
+      "S_recovery_7",
+      "T11068"
+    ],
+    [
+      "T11068",
+      "R11068"
+    ],
+    [
+      "S_recovery_7",
+      "T11069"
+    ],
+    [
+      "T11069",
+      "R11069"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_7"
+    ],
+    [
+      "S_recovery_8",
+      "T11070"
+    ],
+    [
+      "T11070",
+      "R11070"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_8"
+    ],
+    [
+      "S_recovery_9",
+      "T11071"
+    ],
+    [
+      "T11071",
+      "R11071"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_9"
+    ],
+    [
+      "S_recovery_10",
+      "T11072"
+    ],
+    [
+      "T11072",
+      "R11072"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_10"
+    ],
+    [
+      "S_recovery_11",
+      "T11073"
+    ],
+    [
+      "T11073",
+      "R11073"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_11"
+    ],
+    [
+      "S_recovery_12",
+      "T11074"
+    ],
+    [
+      "T11074",
+      "R11074"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_12"
+    ],
+    [
+      "S_recovery_13",
+      "T11075"
+    ],
+    [
+      "T11075",
+      "R11075"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_13"
+    ],
+    [
+      "S_recovery_14",
+      "T11076"
+    ],
+    [
+      "T11076",
+      "R11076"
+    ],
+    [
+      "S_recovery_14",
+      "T11077"
+    ],
+    [
+      "T11077",
+      "R11077"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_14"
+    ],
+    [
+      "S_recovery_15",
+      "T11078"
+    ],
+    [
+      "T11078",
+      "R11078"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_15"
+    ],
+    [
+      "S_recovery_16",
+      "T11079"
+    ],
+    [
+      "T11079",
+      "R11079"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_16"
+    ],
+    [
+      "S_recovery_17",
+      "T11080"
+    ],
+    [
+      "T11080",
+      "R11080"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_17"
+    ],
+    [
+      "S_recovery_18",
+      "T11081"
+    ],
+    [
+      "T11081",
+      "R11081"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_18"
+    ],
+    [
+      "S_recovery_19",
+      "T11082"
+    ],
+    [
+      "T11082",
+      "R11082"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_19"
+    ],
+    [
+      "S_recovery_20",
+      "T11083"
+    ],
+    [
+      "T11083",
+      "R11083"
+    ],
+    [
+      "O_recovery",
+      "S_recovery_20"
+    ],
+    [
+      "outcome",
+      "O_recovery"
+    ],
+    [
+      "S_compute_0",
+      "T10967"
+    ],
+    [
+      "T10967",
+      "R10967"
+    ],
+    [
+      "S_compute_0",
+      "T10975"
+    ],
+    [
+      "T10975",
+      "R10975"
+    ],
+    [
+      "S_compute_0",
+      "T10982"
+    ],
+    [
+      "T10982",
+      "R10982"
+    ],
+    [
+      "S_compute_0",
+      "T11029"
+    ],
+    [
+      "T11029",
+      "R11029"
+    ],
+    [
+      "O_compute",
+      "S_compute_0"
+    ],
+    [
+      "S_compute_1",
+      "T11014"
+    ],
+    [
+      "T11014",
+      "R11014"
+    ],
+    [
+      "S_compute_1",
+      "T11025"
+    ],
+    [
+      "T11025",
+      "R11025"
+    ],
+    [
+      "S_compute_1",
+      "T11026"
+    ],
+    [
+      "T11026",
+      "R11026"
+    ],
+    [
+      "S_compute_1",
+      "T11027"
+    ],
+    [
+      "T11027",
+      "R11027"
+    ],
+    [
+      "S_compute_1",
+      "T11028"
+    ],
+    [
+      "T11028",
+      "R11028"
+    ],
+    [
+      "O_compute",
+      "S_compute_1"
+    ],
+    [
+      "outcome",
+      "O_compute"
+    ],
+    [
+      "S_evidence_0",
+      "T10995"
+    ],
+    [
+      "T10995",
+      "R10995"
+    ],
+    [
+      "S_evidence_0",
+      "T10997"
+    ],
+    [
+      "T10997",
+      "R10997"
+    ],
+    [
+      "S_evidence_0",
+      "T10996"
+    ],
+    [
+      "T10996",
+      "R10996"
+    ],
+    [
+      "S_evidence_0",
+      "T11036"
+    ],
+    [
+      "T11036",
+      "R11036"
+    ],
+    [
+      "O_evidence",
+      "S_evidence_0"
+    ],
+    [
+      "S_evidence_1",
+      "T10980"
+    ],
+    [
+      "T10980",
+      "R10980"
+    ],
+    [
+      "S_evidence_1",
+      "T10979"
+    ],
+    [
+      "T10979",
+      "R10979"
+    ],
+    [
+      "S_evidence_1",
+      "T10956"
+    ],
+    [
+      "T10956",
+      "R10956"
+    ],
+    [
+      "S_evidence_1",
+      "T10986"
+    ],
+    [
+      "T10986",
+      "R10986"
+    ],
+    [
+      "S_evidence_1",
+      "T11012"
+    ],
+    [
+      "T11012",
+      "R11012"
+    ],
+    [
+      "S_evidence_1",
+      "T11042"
+    ],
+    [
+      "T11042",
+      "R11042"
+    ],
+    [
+      "S_evidence_1",
+      "T11049"
+    ],
+    [
+      "T11049",
+      "R11049"
+    ],
+    [
+      "O_evidence",
+      "S_evidence_1"
+    ],
+    [
+      "S_evidence_2",
+      "T11007"
+    ],
+    [
+      "T11007",
+      "R11007"
+    ],
+    [
+      "S_evidence_2",
+      "T11008"
+    ],
+    [
+      "T11008",
+      "R11008"
+    ],
+    [
+      "O_evidence",
+      "S_evidence_2"
+    ],
+    [
+      "outcome",
+      "O_evidence"
+    ],
+    [
+      "S_parked_0",
+      "T11009"
+    ],
+    [
+      "T11009",
+      "R11009"
+    ],
+    [
+      "S_parked_0",
+      "T11010"
+    ],
+    [
+      "T11010",
+      "R11010"
+    ],
+    [
+      "O_parked",
+      "S_parked_0"
+    ],
+    [
+      "outcome",
+      "O_parked"
+    ]
+  ],
+  "width": 2000,
+  "height": 20810.0
+}
