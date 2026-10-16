@@ -21,3 +21,7 @@ Representative links:
 - [V4-M6 learned pickup and placement attempt](https://www.natslabs.com/typhon-robotics/?run=v4-m6-pilot-v1&case=m7-personal_demo_0006): one verified lift, zero failed grasps, position error 11.355 mm, yaw error 85.058 degrees. Orientation failed; overall manipulation success remains false. This condition used a privileged causal held cue and is labelled accordingly.
 
 Original media bytes, execution timestamps, scenario definitions, success tolerances and experiment outcomes are unchanged. Publication availability and presentation metadata are separate from the frozen research results. The site remains a recorded snapshot, not a live robot controller.
+
+## New recordings, 17 October 2026
+
+Added four visually checked recordings: native feeding and loading successes from HIER02, plus a matched native loading failure and D5-assisted success from INIT12. The library reports checkpoint hashes, outcome metrics and assistance. These selected examples are separate from aggregate EVAL36 evidence. [Provenance and links](new-runs-20261017.json). The [existing-link audit](link-audit-20261017.json) passed 419/419 URLs before adding the four new files. The library now contains 166 videos and 423 media objects.
