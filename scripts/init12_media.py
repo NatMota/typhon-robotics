@@ -8,8 +8,10 @@ CASES=["init-demo_0003-loading-912172","init-demo_0005-loading-912171",
 def main():
     out=O/"visual-review";out.mkdir(exist_ok=True)
     font=ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",14)
-    provenance=[]
+    provenance=[];skipped=[]
     for case in CASES:
+        if not all((O/"episodes"/c/case/"episode.json").exists() for c in ["N","D5"]):
+            skipped.append(case);continue
         sheet=Image.new("RGB",(1536,572),(17,24,39));draw=ImageDraw.Draw(sheet)
         for row,condition in enumerate(["N","D5"]):
             d=O/"episodes"/condition/case;ep=json.loads((d/"episode.json").read_text())
@@ -31,5 +33,6 @@ def main():
                      "source_video":str(d/"rollout.mp4"),"strict_success":ep["success"]})
         sheet.save(out/(case+".png"))
     (out/"frame-provenance.json").write_text(json.dumps(provenance,indent=2)+"\n")
-    print(json.dumps({"contact_sheets":len(CASES),"source_videos":len(CASES)*2,"frames":len(provenance)}))
+    (out/"skipped-not-run.json").write_text(json.dumps(skipped,indent=2)+"\n")
+    print(json.dumps({"contact_sheets":len(CASES)-len(skipped),"source_videos":(len(CASES)-len(skipped))*2,"skipped_not_run":skipped,"frames":len(provenance)}))
 if __name__=="__main__":main()
