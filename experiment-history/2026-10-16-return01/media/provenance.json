@@ -1,0 +1,141 @@
+{
+  "artifacts": [
+    {
+      "file": "demo_0002-initial-final.png",
+      "sha256": "d635907758299ff55f1fa7c3b69191039afa56c46a0f5ca8b120f809f25d8cca",
+      "kind": "endpoint contact sheet",
+      "source_frames": [
+        "/var/tmp/typhon-return01-20261016/episodes/demo_0002/F-policy/rollout/initial.png",
+        "/var/tmp/typhon-return01-20261016/episodes/demo_0002/F-policy/rollout/final.png",
+        "/var/tmp/typhon-return01-20261016/episodes/demo_0002/F-teacher/rollout/initial.png",
+        "/var/tmp/typhon-return01-20261016/episodes/demo_0002/F-teacher/rollout/final.png",
+        "/var/tmp/typhon-return01-20261016/episodes/demo_0002/L-preserve/rollout/initial.png",
+        "/var/tmp/typhon-return01-20261016/episodes/demo_0002/L-preserve/rollout/final.png"
+      ]
+    },
+    {
+      "file": "demo_0002-policy-vs-expert.mp4",
+      "sha256": "536fbeeb13adb71077037f0428c7a5c998ca87ff28d148cdf011dc43956b88a6",
+      "kind": "native versus expert, simulation-time comparison",
+      "source_videos": [
+        {
+          "path": "/var/tmp/typhon-return01-20261016/episodes/demo_0002/F-policy/rollout/rollout.mp4",
+          "sha256": "839b728c2685a5060e43acc2faa3d7d2e05b21307644e6f383ca8fd9ed4ea569",
+          "duration_s": 73.4
+        },
+        {
+          "path": "/var/tmp/typhon-return01-20261016/episodes/demo_0002/F-teacher/rollout/rollout.mp4",
+          "sha256": "e3fbbd0ac32e944d8209446071a139284d9ebb4ebc3740b3ddbae4e8b4d48d10",
+          "duration_s": 12.8
+        }
+      ],
+      "duration_s": 73.4,
+      "shorter_clip_endpoint_frozen": true,
+      "model_load_pause_excluded": true,
+      "command": [
+        "/var/tmp/typhon-worktrees-20261016/return01/.venv-sim/lib/python3.11/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "/var/tmp/typhon-return01-20261016/episodes/demo_0002/F-policy/rollout/rollout.mp4",
+        "-i",
+        "/var/tmp/typhon-return01-20261016/episodes/demo_0002/F-teacher/rollout/rollout.mp4",
+        "-loop",
+        "1",
+        "-i",
+        "/var/tmp/typhon-return01-20261016/visual-review/demo_0002-caption.png",
+        "-filter_complex",
+        "[0:v]fps=5,scale=768:384,setsar=1,tpad=stop_mode=clone:stop_duration=0.000[n];[1:v]fps=5,scale=768:384,setsar=1,tpad=stop_mode=clone:stop_duration=60.600[t];[n][t]hstack=inputs=2,pad=1536:448:0:64:color=0x101827[base];[base][2:v]overlay=0:0:shortest=1[out]",
+        "-map",
+        "[out]",
+        "-t",
+        "73.4",
+        "-an",
+        "-r",
+        "5",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "veryfast",
+        "-crf",
+        "23",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/var/tmp/typhon-return01-20261016/visual-review/demo_0002-policy-vs-expert.mp4"
+      ]
+    },
+    {
+      "file": "demo_0005-initial-final.png",
+      "sha256": "8e0f54aceaab3b4ef9527f2f842a546801fd5471325cd6558c4e086d4e874f4d",
+      "kind": "endpoint contact sheet",
+      "source_frames": [
+        "/var/tmp/typhon-return01-20261016/episodes/demo_0005/F-policy/rollout/initial.png",
+        "/var/tmp/typhon-return01-20261016/episodes/demo_0005/F-policy/rollout/final.png",
+        "/var/tmp/typhon-return01-20261016/episodes/demo_0005/F-teacher/rollout/initial.png",
+        "/var/tmp/typhon-return01-20261016/episodes/demo_0005/F-teacher/rollout/final.png",
+        "/var/tmp/typhon-return01-20261016/episodes/demo_0005/L-preserve/rollout/initial.png",
+        "/var/tmp/typhon-return01-20261016/episodes/demo_0005/L-preserve/rollout/final.png"
+      ]
+    },
+    {
+      "file": "demo_0005-policy-vs-expert.mp4",
+      "sha256": "0990b91224e3f1c945012fcee1d180cabd4142e3ec6297281129a4f87c6ef8f5",
+      "kind": "native versus expert, simulation-time comparison",
+      "source_videos": [
+        {
+          "path": "/var/tmp/typhon-return01-20261016/episodes/demo_0005/F-policy/rollout/rollout.mp4",
+          "sha256": "b426497e42185963f35956d1006dd1bfc46c2b7ed5ac605b5534fad3d374a1fb",
+          "duration_s": 73.4
+        },
+        {
+          "path": "/var/tmp/typhon-return01-20261016/episodes/demo_0005/F-teacher/rollout/rollout.mp4",
+          "sha256": "5e0d71a4e9534eb4fcca5f4035ef4fa2e5a8b4302fc72d3580c07791f82bb279",
+          "duration_s": 12.8
+        }
+      ],
+      "duration_s": 73.4,
+      "shorter_clip_endpoint_frozen": true,
+      "model_load_pause_excluded": true,
+      "command": [
+        "/var/tmp/typhon-worktrees-20261016/return01/.venv-sim/lib/python3.11/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "/var/tmp/typhon-return01-20261016/episodes/demo_0005/F-policy/rollout/rollout.mp4",
+        "-i",
+        "/var/tmp/typhon-return01-20261016/episodes/demo_0005/F-teacher/rollout/rollout.mp4",
+        "-loop",
+        "1",
+        "-i",
+        "/var/tmp/typhon-return01-20261016/visual-review/demo_0005-caption.png",
+        "-filter_complex",
+        "[0:v]fps=5,scale=768:384,setsar=1,tpad=stop_mode=clone:stop_duration=0.000[n];[1:v]fps=5,scale=768:384,setsar=1,tpad=stop_mode=clone:stop_duration=60.600[t];[n][t]hstack=inputs=2,pad=1536:448:0:64:color=0x101827[base];[base][2:v]overlay=0:0:shortest=1[out]",
+        "-map",
+        "[out]",
+        "-t",
+        "73.4",
+        "-an",
+        "-r",
+        "5",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "veryfast",
+        "-crf",
+        "23",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/var/tmp/typhon-return01-20261016/visual-review/demo_0005-policy-vs-expert.mp4"
+      ]
+    }
+  ],
+  "new_physics": 0,
+  "new_model_inference": 0,
+  "epoch": 1792130357.8532372
+}
