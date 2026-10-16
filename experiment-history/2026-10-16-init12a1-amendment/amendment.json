@@ -1,0 +1,60 @@
+{
+  "experiment": "INIT12-A1",
+  "ticket": 11087,
+  "status": "prepared",
+  "after_outcomes_known": 22,
+  "original_execution_commit": "772652e11baff435745fe5c335e2e0509f80a392",
+  "original_failure_sha256": "430a750c40a3d528f9ed420afc2e59127d9e4db6058892275c420dbc34cd566d",
+  "original_archive_manifest_sha256": "634184fee07d883df6646cf8e028fb9f3acfdb67c897467124190685e94a9a8e",
+  "restored_model_cache": {
+    "resolved_path": "/cs/student/msc_rai/2026/ndossant/Projects/humanoid-m6-joint/.cache-xvla-pt",
+    "source_sha256": {
+      "hub_manifest.json": "f21f2c7dae01f6a952ff4b7f58dc893ba6a5ea9f74b6ccea1a7582d61b00e86a",
+      "action_hub.py": "3a166b9685194fd7beaa5375e506683a00992d31ca3494dcb4cfd01c356599ce",
+      "config.json": "b267fac2e018e979088a65b11c62808c2549b9311ffa21db7c863e10af81d914",
+      "configuration_florence2.py": "de2e45a975b3582de05d2f4d963a3e9f9a3d20dccf78d28e0052932a0be93bdf",
+      "configuration_xvla.py": "7b65fea79c870a5c5c3741a2085def160541f4ba7c73dafbd9369e64620702fe",
+      "modeling_florence2.py": "ebed9223ee776c142de962ea71eaa30a0bf1f55e728de136dc7fe13ef830f4af",
+      "modeling_xvla.py": "7ba495ce1f0e8af625be12e9aef953040276a1846ee08153132e67a97d0833dc",
+      "preprocessor_config.json": "0a4e041cb57d07f735844a3d06a89bace2c9eb2a46eb6ddc2e6fbdae17504692",
+      "processing_xvla.py": "f75d213f3897d87a896ffdc014d4075d9bc374d67a38a098e4c007b3b884d1b6",
+      "tokenizer.json": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e",
+      "tokenizer_config.json": "79ffcf43af8ebda99d165f61d243180da2e2639952e41e71e11611c18770489c",
+      "transformer.py": "337f4c61a88d033da7e8cef6e6ae9efcd978d3540983c5de70a23f445141c308",
+      "vocab.json": "394fdc63c71aabe0a9b97117f5d62fb5fcc4d59b2b3ea929a3929e6a53217b3c"
+    },
+    "reference": "INIT11-Q C / original INIT07 context; original cache only"
+  },
+  "remaining_cases_sha256": "549b394d94eb35d44fe527d2af9be89592c3a51331d80dc471a1cc8622f1f607",
+  "remaining_physical_episodes": 10,
+  "original_clock": {
+    "explicitly_activated": true,
+    "activated_epoch": 1792117438.5305805,
+    "reservation_reference": "A961B88F",
+    "reservation_approved": true,
+    "reservation_end_epoch": 1792373400.0,
+    "qualification_deadline": 1792118638.5305805,
+    "main_deadline": 1792120438.5305805,
+    "retention_deadline": 1792121638.5305805,
+    "archive_deadline": 1792122838.5305805
+  },
+  "only_changed_gate": "Later cross-run pretrigger equality is audited rather than aborting only when captured RGB first differs, prior state/history/predictions are exact and effective-input difference is image_input only. Same effective inputs/noise with different output, unexplained nonvisual-first drift, or within-run control/history modifications still stop.",
+  "unchanged_hard_gates": [
+    "checkpoint/cache/settings",
+    "initial state/controller and prepared inputs",
+    "task/masks/domain/initial proprio",
+    "all48 paired noise packets",
+    "command-only firstclose,5mm,60actions,one trigger",
+    "within-run raw=issued outside offset",
+    "first9float32+11zeros",
+    "native controller and1436+24 horizon",
+    "strictscore and original runtime constraints"
+  ],
+  "forbidden_contacts_waived": false,
+  "original_failed_gate_remains_failed": true,
+  "conditional_prior_episodes": 0,
+  "outcome_retries": 0,
+  "new_model_training": false,
+  "new_renderer_qualification": false,
+  "scheduling_amendment": "Use former conditional allocation to finish only unexecuted main cases. Main deadline03:33:58UTC; final closeout03:53:58UTC. Original activation epoch unchanged."
+}
