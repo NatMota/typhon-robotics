@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "hashes": {
+    "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+    "image_input": "8a14b2d21265c6d6ecb5d01795984e1ed9f51ddd542ac6a16a81b3d87b5511e4",
+    "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+    "proprio": "f68fb4ead734fb533e02b0f0b06f485021ad48b41704c74bf971909f3d4c9f8b",
+    "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+  },
+  "historical_matches": {
+    "image_input": true,
+    "image_mask": true,
+    "proprio": true,
+    "domain_id": true
+  },
+  "effective_proprio_sha256": "f68fb4ead734fb533e02b0f0b06f485021ad48b41704c74bf971909f3d4c9f8b",
+  "model_calls": 0,
+  "pixel_substitution": false,
+  "pose_normalization": false,
+  "task": "feeding"
+}

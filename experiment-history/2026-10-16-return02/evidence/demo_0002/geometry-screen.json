@@ -1,0 +1,365 @@
+{
+  "parent": "demo_0002",
+  "wall": "fixture_wall_1",
+  "wall_geom_id": 154,
+  "fixture_body_position": [
+    0.12,
+    0.15,
+    0.8
+  ],
+  "wall_position": [
+    0.12,
+    0.209,
+    0.8140000000000001
+  ],
+  "inward_normal_world": [
+    0.0,
+    -1.0,
+    0.0
+  ],
+  "delta_xyz_m": [
+    0.0,
+    -0.002,
+    0.0
+  ],
+  "sampled_references": [
+    {
+      "nominal_xyz": [
+        0.12198244993105059,
+        0.15101870393890482,
+        0.8237844891595659
+      ],
+      "shifted_xyz": [
+        0.12198244993105059,
+        0.14901870393890482,
+        0.8237844891595659
+      ],
+      "wrist_rotation": [
+        [
+          0.009001192165494214,
+          0.9999594884492071,
+          0.0
+        ],
+        [
+          0.9999594884492071,
+          -0.009001192165494214,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "finger2_wall_plane_clearance_E0_m": -0.01251019664727332,
+      "finger2_wall_plane_clearance_E2_m": -0.010510196647273318,
+      "intersections": [
+        {
+          "gripper": "gripper0_finger1_collision",
+          "obstacle": "fixture_wall_0",
+          "overlap_xyz_m": [
+            0.021062606641211665,
+            0.008000000000000007,
+            0.009464545436959293
+          ]
+        },
+        {
+          "gripper": "gripper0_finger2_collision",
+          "obstacle": "fixture_wall_1",
+          "overlap_xyz_m": [
+            0.021062606641211692,
+            0.008000000000000007,
+            0.009464545436959404
+          ]
+        }
+      ]
+    },
+    {
+      "nominal_xyz": [
+        0.12198244993105059,
+        0.15101870393890482,
+        0.8263292258743797
+      ],
+      "shifted_xyz": [
+        0.12198244993105059,
+        0.14901870393890482,
+        0.8263292258743797
+      ],
+      "wrist_rotation": [
+        [
+          0.009001192165494214,
+          0.9999594884492071,
+          0.0
+        ],
+        [
+          0.9999594884492071,
+          -0.009001192165494214,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "finger2_wall_plane_clearance_E0_m": -0.01251019664727332,
+      "finger2_wall_plane_clearance_E2_m": -0.010510196647273318,
+      "intersections": [
+        {
+          "gripper": "gripper0_finger1_collision",
+          "obstacle": "fixture_wall_0",
+          "overlap_xyz_m": [
+            0.021062606641211665,
+            0.008000000000000007,
+            0.006919808722145482
+          ]
+        },
+        {
+          "gripper": "gripper0_finger2_collision",
+          "obstacle": "fixture_wall_1",
+          "overlap_xyz_m": [
+            0.021062606641211692,
+            0.008000000000000007,
+            0.006919808722145593
+          ]
+        }
+      ]
+    },
+    {
+      "nominal_xyz": [
+        0.12198244993105059,
+        0.15101870393890482,
+        0.978784489159566
+      ],
+      "shifted_xyz": [
+        0.12198244993105059,
+        0.14901870393890482,
+        0.978784489159566
+      ],
+      "wrist_rotation": [
+        [
+          0.009001192165494214,
+          0.9999594884492071,
+          0.0
+        ],
+        [
+          0.9999594884492071,
+          -0.009001192165494214,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "finger2_wall_plane_clearance_E0_m": -0.01251019664727332,
+      "finger2_wall_plane_clearance_E2_m": -0.010510196647273318,
+      "intersections": []
+    }
+  ],
+  "all_references_within_workspace": true,
+  "finger_shell_away_by_exactly_2mm": true,
+  "shifted_intersections": [
+    {
+      "reference_z_m": 0.8237844891595659,
+      "gripper": "gripper0_finger1_collision",
+      "obstacle": "fixture_wall_0",
+      "overlap_xyz_m": [
+        0.021062606641211665,
+        0.008000000000000007,
+        0.009464545436959293
+      ]
+    },
+    {
+      "reference_z_m": 0.8237844891595659,
+      "gripper": "gripper0_finger2_collision",
+      "obstacle": "fixture_wall_1",
+      "overlap_xyz_m": [
+        0.021062606641211692,
+        0.008000000000000007,
+        0.009464545436959404
+      ]
+    },
+    {
+      "reference_z_m": 0.8263292258743797,
+      "gripper": "gripper0_finger1_collision",
+      "obstacle": "fixture_wall_0",
+      "overlap_xyz_m": [
+        0.021062606641211665,
+        0.008000000000000007,
+        0.006919808722145482
+      ]
+    },
+    {
+      "reference_z_m": 0.8263292258743797,
+      "gripper": "gripper0_finger2_collision",
+      "obstacle": "fixture_wall_1",
+      "overlap_xyz_m": [
+        0.021062606641211692,
+        0.008000000000000007,
+        0.006919808722145593
+      ]
+    }
+  ],
+  "open_aperture": {
+    "axis": [
+      0.02556778656063979,
+      0.9996730907103529,
+      -1.0751275572729037e-15
+    ],
+    "left_inner": 0.11243784511336839,
+    "right_inner": 0.19180421714191573,
+    "brick_min": 0.1361763454093552,
+    "brick_max": 0.1719999661219586,
+    "encloses_block": true
+  },
+  "collision_geometry": {
+    "table_collision": {
+      "world_min": [
+        -0.4,
+        -0.4,
+        0.75
+      ],
+      "world_max": [
+        0.4,
+        0.4,
+        0.8
+      ]
+    },
+    "gripper0_hand_collision": {
+      "world_min": [
+        -0.28167719382525497,
+        -0.35048855123355693,
+        1.1109920255449681
+      ],
+      "world_max": [
+        -0.21842622735546105,
+        -0.1460818332821076,
+        1.2029071626978471
+      ]
+    },
+    "gripper0_finger1_collision": {
+      "world_min": [
+        -0.2604947916587024,
+        -0.3163942157900539,
+        1.0707127798358125
+      ],
+      "world_max": [
+        -0.2395209541294168,
+        -0.2898486878726709,
+        1.1244322937718818
+      ]
+    },
+    "gripper0_finger1_pad_collision": {
+      "world_min": [
+        -0.2580215269394586,
+        -0.29749165086763685,
+        1.0755630814131032
+      ],
+      "world_max": [
+        -0.2420175739199663,
+        -0.289481851527959,
+        1.0915653957081406
+      ]
+    },
+    "gripper0_finger2_collision": {
+      "world_min": [
+        -0.2605556142751831,
+        -0.2101904436219243,
+        1.070735335090199
+      ],
+      "world_max": [
+        -0.23958172951226875,
+        -0.18366529064651815,
+        1.124450496384871
+      ]
+    },
+    "gripper0_finger2_pad_collision": {
+      "world_min": [
+        -0.258057065702084,
+        -0.21056101432699678,
+        1.075580787854285
+      ],
+      "world_max": [
+        -0.24205311268259166,
+        -0.2025512149873189,
+        1.0915831021493223
+      ]
+    },
+    "cube_g0": {
+      "world_min": [
+        0.09682594185692427,
+        0.13329438308690633,
+        0.8037844891595659
+      ],
+      "world_max": [
+        0.14713895800517693,
+        0.1687430247909033,
+        0.8337844891595659
+      ]
+    },
+    "fixture_floor": {
+      "world_min": [
+        0.056999999999999995,
+        0.087,
+        0.8
+      ],
+      "world_max": [
+        0.183,
+        0.213,
+        0.804
+      ]
+    },
+    "fixture_wall_0": {
+      "world_min": [
+        0.056999999999999995,
+        0.087,
+        0.804
+      ],
+      "world_max": [
+        0.183,
+        0.095,
+        0.8240000000000001
+      ]
+    },
+    "fixture_wall_1": {
+      "world_min": [
+        0.056999999999999995,
+        0.205,
+        0.804
+      ],
+      "world_max": [
+        0.183,
+        0.213,
+        0.8240000000000001
+      ]
+    },
+    "fixture_wall_2": {
+      "world_min": [
+        0.056999999999999995,
+        0.095,
+        0.804
+      ],
+      "world_max": [
+        0.065,
+        0.205,
+        0.8240000000000001
+      ]
+    },
+    "fixture_wall_3": {
+      "world_min": [
+        0.175,
+        0.095,
+        0.804
+      ],
+      "world_max": [
+        0.183,
+        0.205,
+        0.8240000000000001
+      ]
+    }
+  },
+  "method": "Existing detached compiled-vertex conservative AABB screen at nominal acquisition references and archived observed-contact heights; fixed open aperture; no continuous-collision guarantee",
+  "passed": false
+}
