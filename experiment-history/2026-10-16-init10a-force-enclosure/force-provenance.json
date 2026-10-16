@@ -1,0 +1,308 @@
+{
+  "passed": true,
+  "source_code_sha256": "5e91eb657744c5eb7fd2ce9c5a9362779112e3c4d9b7161413e35a520845ff9c",
+  "rich_code_sha256": "75ad9d6db1049ffe577023e1e49e8264fae53d47a4a37024adaf80497a71a715",
+  "mujoco_source_url": "https://github.com/google-deepmind/mujoco/blob/2.3.7/src/engine/engine_core_smooth.c",
+  "mujoco_source_sha256": "2b34a3efe31691ac93e7a9cc632d5340258290a533954be98d46248257ea9c0b",
+  "sign_rule": "F_object=frame.T@F_contact when cube is geom2; negative when cube is geom1. Confirmed by mj_rnePostConstraint body1 subtraction/body2 addition.",
+  "actuation_units": "ctrl metres for slide-joint position actuators; force N under recorded SI convention; force is not ctrl.",
+  "sample_timing": "20Hz natural post-control-step derived arrays; integrated state and derived-contact timing retained; no forward or replay.",
+  "branches": [
+    {
+      "case": "init-demo_0003-loading-912172",
+      "condition": "N",
+      "samples": 60,
+      "contact_records": 394,
+      "active_contact_records": 394,
+      "same_branch_model_data_source_verified": true,
+      "contacts_count_order_geoms_positions_distances_match": true,
+      "max_contact_difference": 0.0,
+      "max_contact_normal_difference": 0.0,
+      "max_time_vs_control_tick_s": 1.950439809661475e-12,
+      "finger_positions_match_physical_trace": true,
+      "ctrl_sequence_matches_native": true,
+      "compiled_mapping_verified": {
+        "joint_names": [
+          "gripper0_finger_joint1",
+          "gripper0_finger_joint2"
+        ],
+        "joint_ids": [
+          7,
+          8
+        ],
+        "actuator_names": [
+          "gripper0_gripper_finger_joint1",
+          "gripper0_gripper_finger_joint2"
+        ],
+        "actuator_ids": [
+          7,
+          8
+        ],
+        "qpos_ids": [
+          7,
+          8
+        ],
+        "dof_ids": [
+          7,
+          8
+        ],
+        "activation_count": 0,
+        "actuator_trnid": [
+          [
+            7,
+            -1
+          ],
+          [
+            8,
+            -1
+          ]
+        ],
+        "actuator_gear": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "mujoco_version": "2.3.7"
+      },
+      "source_trace_sha256": "6f1ff0eb6facdd08867a524da23fe1566208e911559631feddc9f89f70320ba8"
+    },
+    {
+      "case": "init-demo_0003-loading-912172",
+      "condition": "D5",
+      "samples": 60,
+      "contact_records": 526,
+      "active_contact_records": 526,
+      "same_branch_model_data_source_verified": true,
+      "contacts_count_order_geoms_positions_distances_match": true,
+      "max_contact_difference": 0.0,
+      "max_contact_normal_difference": 0.0,
+      "max_time_vs_control_tick_s": 1.950439809661475e-12,
+      "finger_positions_match_physical_trace": true,
+      "ctrl_sequence_matches_native": true,
+      "compiled_mapping_verified": {
+        "joint_names": [
+          "gripper0_finger_joint1",
+          "gripper0_finger_joint2"
+        ],
+        "joint_ids": [
+          7,
+          8
+        ],
+        "actuator_names": [
+          "gripper0_gripper_finger_joint1",
+          "gripper0_gripper_finger_joint2"
+        ],
+        "actuator_ids": [
+          7,
+          8
+        ],
+        "qpos_ids": [
+          7,
+          8
+        ],
+        "dof_ids": [
+          7,
+          8
+        ],
+        "activation_count": 0,
+        "actuator_trnid": [
+          [
+            7,
+            -1
+          ],
+          [
+            8,
+            -1
+          ]
+        ],
+        "actuator_gear": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "mujoco_version": "2.3.7"
+      },
+      "source_trace_sha256": "5a0220109f6cb686f4472b800e864ab5931a47c86d21a364519ea896793d0415"
+    },
+    {
+      "case": "init-demo_0005-loading-912171",
+      "condition": "N",
+      "samples": 60,
+      "contact_records": 389,
+      "active_contact_records": 389,
+      "same_branch_model_data_source_verified": true,
+      "contacts_count_order_geoms_positions_distances_match": true,
+      "max_contact_difference": 0.0,
+      "max_contact_normal_difference": 0.0,
+      "max_time_vs_control_tick_s": 1.758593271006248e-12,
+      "finger_positions_match_physical_trace": true,
+      "ctrl_sequence_matches_native": true,
+      "compiled_mapping_verified": {
+        "joint_names": [
+          "gripper0_finger_joint1",
+          "gripper0_finger_joint2"
+        ],
+        "joint_ids": [
+          7,
+          8
+        ],
+        "actuator_names": [
+          "gripper0_gripper_finger_joint1",
+          "gripper0_gripper_finger_joint2"
+        ],
+        "actuator_ids": [
+          7,
+          8
+        ],
+        "qpos_ids": [
+          7,
+          8
+        ],
+        "dof_ids": [
+          7,
+          8
+        ],
+        "activation_count": 0,
+        "actuator_trnid": [
+          [
+            7,
+            -1
+          ],
+          [
+            8,
+            -1
+          ]
+        ],
+        "actuator_gear": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "mujoco_version": "2.3.7"
+      },
+      "source_trace_sha256": "204a06d0b2c77c5917cc5cdcc8678b27ba0bad4a7283f1ca0a8a428c18aec1cf"
+    },
+    {
+      "case": "init-demo_0005-loading-912171",
+      "condition": "D5",
+      "samples": 60,
+      "contact_records": 526,
+      "active_contact_records": 526,
+      "same_branch_model_data_source_verified": true,
+      "contacts_count_order_geoms_positions_distances_match": true,
+      "max_contact_difference": 0.0,
+      "max_contact_normal_difference": 0.0,
+      "max_time_vs_control_tick_s": 1.758593271006248e-12,
+      "finger_positions_match_physical_trace": true,
+      "ctrl_sequence_matches_native": true,
+      "compiled_mapping_verified": {
+        "joint_names": [
+          "gripper0_finger_joint1",
+          "gripper0_finger_joint2"
+        ],
+        "joint_ids": [
+          7,
+          8
+        ],
+        "actuator_names": [
+          "gripper0_gripper_finger_joint1",
+          "gripper0_gripper_finger_joint2"
+        ],
+        "actuator_ids": [
+          7,
+          8
+        ],
+        "qpos_ids": [
+          7,
+          8
+        ],
+        "dof_ids": [
+          7,
+          8
+        ],
+        "activation_count": 0,
+        "actuator_trnid": [
+          [
+            7,
+            -1
+          ],
+          [
+            8,
+            -1
+          ]
+        ],
+        "actuator_gear": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "mujoco_version": "2.3.7"
+      },
+      "source_trace_sha256": "141d586dd87c2e6a05987e0e6d6afb9b910e8665e31a86f54b48654a567662cb"
+    }
+  ],
+  "geom_id_mapping": {
+    "table_collision": 7,
+    "cube_g0": 84,
+    "gripper0_finger1_collision": 74,
+    "gripper0_finger1_pad_collision": 75,
+    "gripper0_finger2_collision": 77,
+    "gripper0_finger2_pad_collision": 78
+  },
+  "new_simulation": false,
+  "new_model_calls": 0,
+  "new_fitting": false,
+  "new_videos": 0
+}

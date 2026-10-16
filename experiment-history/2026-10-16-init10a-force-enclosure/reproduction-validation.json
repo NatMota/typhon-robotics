@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "file": "paired-table.md",
+      "sha256": "93b544906bdeb06d778a9a78686711cb247f70c1f24539280919eb97b31c2ec4",
+      "byte_identical": true
+    },
+    {
+      "file": "paired-table.json",
+      "sha256": "27559e3a737c77a245e21a9a422a967879b3d750413ba33f9b0607398806f0dd",
+      "byte_identical": true
+    },
+    {
+      "file": "interval-selection.json",
+      "sha256": "95bf6cd24235a4521a06fde99ffdb00bde7d7d6173c70efe75539107ce32bf28",
+      "byte_identical": true
+    },
+    {
+      "file": "intervals.json",
+      "sha256": "a7f64bd5edf8080836bf18b18868e39f1664cb31a7a528b9db43c32931a63fee",
+      "byte_identical": true
+    },
+    {
+      "file": "full-timeseries.csv",
+      "sha256": "1d03dc66942ec2af23d3ae74c71b952e73197732e088ef2c841319c9e25c2d6f",
+      "byte_identical": true
+    },
+    {
+      "file": "contact-details.jsonl",
+      "sha256": "ee91466fee942cfe88a61f9d19524418bbe12ad2c1947773a5157b8db9d8988f",
+      "byte_identical": true
+    },
+    {
+      "file": "force-provenance.json",
+      "sha256": "6009d46da1676b677434b77a81ed072c8f642cb9efeac0923bc609eedad212c8",
+      "byte_identical": true
+    }
+  ],
+  "reproduction_receipt": {
+    "passed": true,
+    "samples": 240,
+    "contacts": 1170,
+    "intervals": 12,
+    "force_provenance_passed": true,
+    "original_clock": {
+      "t0": 1792108767.416738,
+      "analysis_deadline": 1792109967.416738,
+      "absolute_workstation_cutoff": 1792112400,
+      "ticket": 11082
+    },
+    "read_only_reproduction": true,
+    "elapsed_seconds": 0.1372237205505371,
+    "epoch": 1792109044.4945817,
+    "script_sha256": "7c1c817f5c51172ae6aca7b2b99505ca0631f4e100201c8e60070ea3fd9e9494"
+  },
+  "original_clock_unchanged": true,
+  "epoch": 1792109114.2263558
+}
