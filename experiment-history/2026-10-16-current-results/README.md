@@ -1,8 +1,22 @@
 # Current research results — 16 October 2026
 
-**The two policies now complete feeding then loading in the same live simulation on all four tested start/seed combinations, with or without assistance. Assistance helps some earlier loading cases but adds no successes on this continuous-workflow panel. Broader qualification still fails: a prior loading start remains unattempted with a joint-limit excursion, and fixture-free prior scenes are unsupported.**
+**Feeding→loading works on all four tested continuous workflows, with or without assistance. The reverse direction remains missing: the learned feeding policy attempted no pickup from either loaded state; the expert returned both bricks but touched the fixture, so neither qualifies as a clean training example. Broader loading qualification also remains incomplete.**
 
 This page separates model training from supplied controller assistance. It does not replace the frozen reports or combine different evaluation suites.
+
+## Reverse direction: loading followed by feeding
+
+RETURN01 replays two original loading trajectories from training parents0002/0005, then tests three continuations from each exact loaded state. Their final block positions differ by only0.098mm, so this is a narrow initiation diagnostic.
+
+| Continuation | Goal completion | Supported pickup | Clean candidate qualification |
+|---|---:|---:|---|
+| Native GOAL-varied feeding |0/2|0/2|No approach or object movement|
+| Unchanged geometric-expert feeding |2/2|2/2|0/2: open-finger fixture-wall contacts during descent|
+| Measured-pose/open loading preservation |2/2|Not required|2/2; no object movement or contact|
+
+The expert contacts are shallow simulator intersections (4–9micrometres); force severity is unmeasured. The original zero-contact criterion remains in force. No extraction example entered training. The next step is a bounded descent/contact investigation before deciding whether to teach reverse initiation.
+
+Source: [RETURN01 full report](https://github.com/NatMota/typhon-robotics/blob/bf1106f5363c419ffb0ea84b90f4e32e1231ce93/experiment-history/2026-10-16-return01/RETURN01_report.md).
 
 ## What the personal data contributes
 
