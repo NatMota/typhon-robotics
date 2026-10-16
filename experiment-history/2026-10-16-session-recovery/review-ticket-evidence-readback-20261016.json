@@ -1,0 +1,33 @@
+{
+  "purpose": "Read-only review of stale board descriptions",
+  "epoch": 1792109781.747714,
+  "files": [
+    {
+      "archive": "live01-p-copy-safe",
+      "path": "workspace/experiment-history/2026-10-15-live01-p/REPORT.md",
+      "sha256": "fd9de3afc396830492bf06c2c408331aada5cfb860454fb9438a2fe74420478f"
+    },
+    {
+      "archive": "live01-p-copy-safe",
+      "path": "runtime/validation-summary.json",
+      "sha256": "b51d1883dd44250e2aa9b6a3600a721428235f357b841c823701cb58c0f13e03"
+    },
+    {
+      "archive": "live01-p-copy-safe",
+      "path": "workspace/experiment-history/2026-10-15-live01-p/lineage-summary.json",
+      "sha256": "095895a2f7371269e0a56e9073735d2661e18ee907b140c3d8684855ddf83609"
+    },
+    {
+      "archive": "live01-r-fixed-capture",
+      "path": "workspace/experiment-history/2026-10-15-live01-r/REPORT.md",
+      "sha256": "1029ffcb8f6869bc173c0f6982ac9864326d470d10191c47e2a186150de83ca6"
+    },
+    {
+      "archive": "live01-r-fixed-capture",
+      "path": "runtime/attempt-02/validation-summary.json",
+      "sha256": "f694b97032a8be44aee2c0d959bb9ded06eeb7b6b206d2020388736d9e159f7d"
+    }
+  ],
+  "passed": true,
+  "path_correction": "First attempt expected lineage-summary.json under runtime; corrected to its manifest-listed workspace path. No source files changed."
+}

@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "finished_unix": 1791996470.4811988,
+  "home_reconciliation_exit": 0,
+  "permission_exceptions_preserved_in_separate_verified_archives": true,
+  "exception_receipt": "isaac-cache-exception-verification.json",
+  "source_permission_changes_restored": true,
+  "original_verification": {
+    "finished_unix": 1791986234.0710921,
+    "file_count": 906503,
+    "logical_bytes": 299635844582,
+    "unique_files_hashed": 843516,
+    "errors": [],
+    "all_transfer_stages_successful": false,
+    "complete": false,
+    "integrity_ledger": "SHA256SUMS.jsonl",
+    "scope": "All home files and inventoried user-owned local work; live filesystem copy rather than atomic snapshot; permission exception separately archived"
+  },
+  "original_stage_failures_retained": "full-backup-stages.json",
+  "files": 906507,
+  "logical_bytes": 299635881615,
+  "integrity_errors": [],
+  "ledger": "SHA256SUMS-reconciled.jsonl",
+  "scope": "Home plus inventoried user-owned local roots; live filesystem copy, not atomic OS snapshot; no fresh restore test"
+}

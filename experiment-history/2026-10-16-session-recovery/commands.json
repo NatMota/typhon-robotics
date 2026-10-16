@@ -1,0 +1,17 @@
+{
+  "worktree_base": "d3da433054b435a9d1e99b8dc64fe0f516666e51",
+  "branch": "research/del02-session-recovery-20261016",
+  "verification": [
+    "python3",
+    "scripts/verify_session_recovery_20261016.py",
+    "--repo",
+    ".",
+    "--output",
+    "/tmp/typhon-session-recovery-check.json"
+  ],
+  "physics": [],
+  "inference": [],
+  "training": [],
+  "source_review": "git show pinned commits; saved JSON/CSV/NPY reads only",
+  "epoch": 1792110516.1105208
+}

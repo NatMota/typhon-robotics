@@ -1,0 +1,70 @@
+{
+  "experiment": "INIT02",
+  "complete_verified_archive": true,
+  "canonical_core_episodes": 69,
+  "optional_episodes": 0,
+  "technical_interrupted_attempts": 2,
+  "pre_action_initialization_failures": 1,
+  "scientific_commit": "4b3b3f251796b9fac949d838d5df0c20310f65d7",
+  "execution_freeze": "17c13fc565efa3e38a02257024dd1857915cf69e",
+  "parts": [
+    {
+      "part": "initial-freeze",
+      "receipt_sha256": "80d41bd342472db400bbbbff18bf627954311acb3ee4d5c6831e847857ca5532",
+      "files": 61,
+      "bytes": 9892817,
+      "all_destinations_sha_verified": true
+    },
+    {
+      "part": "baseline-P",
+      "receipt_sha256": "f60ef6df7b135090ccf09d8823487bdc01c48eb2ee17e25ec85429baebde37e0",
+      "files": 2795,
+      "bytes": 701679939,
+      "all_destinations_sha_verified": true
+    },
+    {
+      "part": "control-R",
+      "receipt_sha256": "d04740bf85e6b4ffcf368a8834f7d9695974b9c1242314fc45ae4db4706905a9",
+      "files": 2813,
+      "bytes": 695405796,
+      "all_destinations_sha_verified": true
+    },
+    {
+      "part": "transition-T",
+      "receipt_sha256": "09b2f2bc2482b0378c2664b40979b6198ef2b80b945fa8edfd2cfafa81adaa4b",
+      "files": 2786,
+      "bytes": 705398482,
+      "all_destinations_sha_verified": true
+    },
+    {
+      "part": "checkpoints/R",
+      "receipt_sha256": "abb25cf4bb37f99dda984367b8d8f27274f9e59c3ac107b3c0f3b66c5c1461c2",
+      "files": 7,
+      "bytes": 3732394262,
+      "all_destinations_sha_verified": true
+    },
+    {
+      "part": "checkpoints/T",
+      "receipt_sha256": "66709560ac26619e738a0ce7a59bc5e853a26e6e927ac15c4733658b0927ca06",
+      "files": 7,
+      "bytes": 3732385988,
+      "all_destinations_sha_verified": true
+    },
+    {
+      "part": "final-package",
+      "receipt_sha256": "6d1ce7c65ecf3a968c6bbcc803118ad817005b9473b3143ad825df9ed5d10340",
+      "files": 540,
+      "bytes": 25869843,
+      "all_destinations_sha_verified": true
+    }
+  ],
+  "stored_file_count_including_duplicate_metadata": 9009,
+  "stored_bytes_including_duplicate_metadata": 9603027127,
+  "verification_epoch": 1792090468.5650566,
+  "weights": {
+    "R": "c6cdbd3eeddda9eb45e8e80d33c617581bbd08f3b5e614b8c06fbcb35bff1d21",
+    "T": "4d7a4a2547f084b6026164f27a6b7d43b5cb4d3b83ee4875343d108908f35636"
+  },
+  "optimizer_state_saved": false,
+  "local_T_checkpoint_retained_for_next_experiment": true
+}

@@ -98,6 +98,51 @@
         "runtime_depth": "supplied nominal marked-face plane",
         "prefix_sha256": "a95fd5c5018488f2b77d2ef48b4f7a068dde9366ae35de98835fee70d4b069ab"
       }
+    },
+    "init02-P": {
+      "identity_evidence": "init02_protocol.initializer",
+      "initializer": {
+        "checkpoint": "/var/tmp/typhon-load01-20261013/train-FL/step3000.pt",
+        "probe": "/var/tmp/typhon-load01-20261013/train-FL/step3000-probe.pt",
+        "sha256": "76334b9a17ac5fc49f46c2cb850a3c39ef38e0f13b9cdadc324f760567c5f128",
+        "probe_sha256": "621318035b71ad85f1f7aff4d6636a5023aea889a78454a18212c29eac0727f9"
+      },
+      "optimizer_moments_saved": null,
+      "checkpoint_sha256": "76334b9a17ac5fc49f46c2cb850a3c39ef38e0f13b9cdadc324f760567c5f128",
+      "archive_candidate_path": "/media/nm/Fast Drive/Typhon/archives/powerglide-full-20261014/var-tmp/typhon-load01-20261013/train-FL/step3000.pt",
+      "archive_candidate_exists": true
+    },
+    "init02-R": {
+      "checkpoint_sha256": "c6cdbd3eeddda9eb45e8e80d33c617581bbd08f3b5e614b8c06fbcb35bff1d21",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init02-matched-adaptation/checkpoints/R/step3000.pt",
+      "identity_evidence": "init02_archive.weights.R",
+      "present_bytes": 3729402732,
+      "fresh_full_weight_rehash": false,
+      "optimizer_moments_saved": false
+    },
+    "init02-T": {
+      "checkpoint_sha256": "4d7a4a2547f084b6026164f27a6b7d43b5cb4d3b83ee4875343d108908f35636",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init02-matched-adaptation/checkpoints/T/step3000.pt",
+      "identity_evidence": "init02_archive.weights.T",
+      "present_bytes": 3729403500,
+      "fresh_full_weight_rehash": false,
+      "optimizer_moments_saved": false
+    },
+    "init07-Q0": {
+      "checkpoint_sha256": "54c86e744e0c66cd5a55f81b56b949cd71000ed01726125550e878dcfaed081c",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/train-Q0/step3000.pt",
+      "identity_evidence": "init07_table.training.Q0",
+      "present_bytes": 3729401260,
+      "fresh_full_weight_rehash": false,
+      "optimizer_moments_saved": false
+    },
+    "init07-Q1": {
+      "checkpoint_sha256": "26d573eb90f791d9af86bbff30e138f51c5aa658ac7abefe76787ba352363a7a",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/train-Q1/step3000.pt",
+      "identity_evidence": "init07_table.training.Q1; q1_weight_receipt",
+      "present_bytes": 3729401260,
+      "fresh_full_weight_rehash": false,
+      "optimizer_moments_saved": false
     }
   },
   "claims": [
@@ -447,6 +492,157 @@
       ],
       "limit": "HostedOctober9snapshot is historical. No publication, upload or current hosted-video guarantee.",
       "media_manifest_source": "del01_manifest"
+    },
+    {
+      "id": "C15",
+      "claim": "INIT02 loading supervision produced 5/8 loading successes but 0/8 preservation; P/R each loaded 0/8 and preserved 8/8.",
+      "models": [
+        "init02-P",
+        "init02-R",
+        "init02-T"
+      ],
+      "sources": [
+        "init02_report",
+        "init02_protocol",
+        "init02_table",
+        "init02_archive"
+      ],
+      "locators": [
+        "INIT02 panels and exact mixture"
+      ],
+      "media": [],
+      "limit": "Matched bounded adaptation on four training-family starts, two seeds; no general task-conditioned preservation.",
+      "disposition": "Acquisition gain; preservation failed."
+    },
+    {
+      "id": "C16",
+      "claim": "INIT07 Q1 preserved 8/8 versus Q0 0/8, but loaded 4/8 versus Q0 8/8 and lost two exact T loading successes. Both failed the repair gate.",
+      "models": [
+        "init02-T",
+        "init07-Q0",
+        "init07-Q1"
+      ],
+      "sources": [
+        "init07_report",
+        "init07_protocol",
+        "init07_table",
+        "init07_pairs",
+        "init07_archive"
+      ],
+      "locators": [
+        "panels",
+        "gates",
+        "training"
+      ],
+      "media": [],
+      "limit": "Two matched 3,000-update continuations; 23 cases each, T historical reference; no replacement model accepted.",
+      "disposition": "Useful preservation repair with loading regression; retain separate models and original scores."
+    },
+    {
+      "id": "C17",
+      "claim": "The two selected Q1 cases lose bilateral support about 1.6 seconds before opening, while closure remains commanded.",
+      "models": [
+        "init02-T",
+        "init07-Q0",
+        "init07-Q1"
+      ],
+      "sources": [
+        "init08_report",
+        "init08_table",
+        "init08_archive",
+        "init09_report",
+        "init09_events",
+        "init09_archive"
+      ],
+      "locators": [
+        "two lost Q1 loading cases; event ledger and matched acquisition intervals"
+      ],
+      "media": [],
+      "limit": "Opening does not initiate these losses. Later Q0 retries reach different states; not a matched recovery comparison.",
+      "disposition": "Investigate acquisition/contact retention, not only release timing."
+    },
+    {
+      "id": "C18",
+      "claim": "The fixed 5 mm lower path rescues upright retained acquisition in both selected cases; both unchanged replays lose retention.",
+      "models": [
+        "init07-Q1"
+      ],
+      "sources": [
+        "init10_report",
+        "init10_protocol",
+        "init10_table",
+        "init10_media",
+        "init10_archive"
+      ],
+      "locators": [
+        "N versus D5; exact 60-action segments"
+      ],
+      "media": [
+        "init10_media"
+      ],
+      "limit": "No new model calls or training. No placement/release continuation. One native render invalidated; presentation uses explicitly sourced historical imagery.",
+      "disposition": "Local physical intervention succeeds; native Q1 scores remain unchanged."
+    },
+    {
+      "id": "C19",
+      "claim": "The saved-force audit supports retained lower, loaded bilateral enclosure under D5; all 240 samples and 1,835 contacts qualify.",
+      "models": [
+        "init07-Q1"
+      ],
+      "sources": [
+        "init10a_report",
+        "init10a_protocol",
+        "init10a_table",
+        "init10a_provenance",
+        "init10a_archive"
+      ],
+      "locators": [
+        "fixed acquisition, native-loss-boundary and terminal intervals"
+      ],
+      "media": [],
+      "limit": "20 Hz, two selected failures; initial force downward in both. No unique friction threshold or force-magnitude mechanism established.",
+      "disposition": "Mechanistically informative contact-support evidence."
+    },
+    {
+      "id": "C20",
+      "claim": "Full Q1 task completion after the D5 segment is planned, not executed.",
+      "models": [
+        "init07-Q1"
+      ],
+      "sources": [
+        "init11_protocol",
+        "init11_boundaries",
+        "native_actor",
+        "q1_weight_receipt"
+      ],
+      "locators": [
+        "INIT11; four future executions; query index 4 handback"
+      ],
+      "media": [],
+      "limit": "Requires verified future compute and protocol activation; noise resumption must qualify. No scores, labels or deployed repair.",
+      "disposition": "Next proposed falsifiable test; zero executions."
+    },
+    {
+      "id": "C21",
+      "claim": "INIT03 native conditional-loss Part B and INIT07's gated eight-case handover remain unexecuted.",
+      "models": [
+        "init02-R",
+        "init02-T",
+        "init07-Q0",
+        "init07-Q1"
+      ],
+      "sources": [
+        "init03_report",
+        "init03_archive",
+        "init07_optional",
+        "init07_table"
+      ],
+      "locators": [
+        "unmeasured native loss; failed Q1 repair gate"
+      ],
+      "media": [],
+      "limit": "Saved-analysis and preservation completion do not count as the missing executions.",
+      "disposition": "Remain explicitly unexecuted; no implicit closure."
     }
   ],
   "sources": {
@@ -771,8 +967,250 @@
       "sha256": "cd374441a0fc92b9304851a62144a2e085c75248c2d4a635069b531b4d50b792",
       "bytes": 14668,
       "public_url": null
+    },
+    "init02_report": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-15-init02-matched-adaptation/INIT02_report.md",
+      "sha256": "af6ff582d9328ef0418fca0556376e33fcaea2a03ee975004ccfe69a4085405e",
+      "pinned_commit": "4b3b3f251796b9fac949d838d5df0c20310f65d7",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/4b3b3f251796b9fac949d838d5df0c20310f65d7/experiment-history/2026-10-15-init02-matched-adaptation/INIT02_report.md"
+    },
+    "init02_protocol": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-15-init02-matched-adaptation/protocol.json",
+      "sha256": "9480a0571824bb7147eb72030a1eff887f759baa4cb0542ce8d6b9c7ea894690",
+      "pinned_commit": "4b3b3f251796b9fac949d838d5df0c20310f65d7",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/4b3b3f251796b9fac949d838d5df0c20310f65d7/experiment-history/2026-10-15-init02-matched-adaptation/protocol.json"
+    },
+    "init02_table": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-15-init02-matched-adaptation/comparisons.csv",
+      "sha256": "420550574653aa9ac145d2f199357ea88b037e5dcb079aa077d1d3991d069312",
+      "pinned_commit": "4b3b3f251796b9fac949d838d5df0c20310f65d7",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/4b3b3f251796b9fac949d838d5df0c20310f65d7/experiment-history/2026-10-15-init02-matched-adaptation/comparisons.csv"
+    },
+    "init07_report": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-15-init07-paired-state-repair/INIT07_report.md",
+      "sha256": "452037fcf8d3d7298ff4fcf525ed7e49c0d69dad1046d4274b5aad494b5c4949",
+      "pinned_commit": "c3e41920238b394c08d2a604b9df703c450a6484",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/c3e41920238b394c08d2a604b9df703c450a6484/experiment-history/2026-10-15-init07-paired-state-repair/INIT07_report.md"
+    },
+    "init07_protocol": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-15-init07-paired-state-repair/PLANNER_PROTOCOL.md",
+      "sha256": "e783cb3d96e0f1c073c2fb4a6ab376fb0e3c06010467c3c12fee98f4a2cad8d3",
+      "pinned_commit": "c3e41920238b394c08d2a604b9df703c450a6484",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/c3e41920238b394c08d2a604b9df703c450a6484/experiment-history/2026-10-15-init07-paired-state-repair/PLANNER_PROTOCOL.md"
+    },
+    "init07_table": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-15-init07-paired-state-repair/core-comparison.json",
+      "sha256": "6d74000d9505bcffd6aa40cc4e7be1e1603b55b646838d15b22d077fdc14444e",
+      "pinned_commit": "c3e41920238b394c08d2a604b9df703c450a6484",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/c3e41920238b394c08d2a604b9df703c450a6484/experiment-history/2026-10-15-init07-paired-state-repair/core-comparison.json"
+    },
+    "init07_pairs": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-15-init07-paired-state-repair/paired-changes.json",
+      "sha256": "f6c84c94207dac0c0c7d661e7a348706dec920e7b2d5511ea3f83d2ad7270665",
+      "pinned_commit": "c3e41920238b394c08d2a604b9df703c450a6484",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/c3e41920238b394c08d2a604b9df703c450a6484/experiment-history/2026-10-15-init07-paired-state-repair/paired-changes.json"
+    },
+    "init08_report": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-15-init08-acquisition-crossover/INIT08_report.md",
+      "sha256": "b9a3cbbe0a11622a988f00a36037e3f805e6b467f51eed337735c9f0a8cf3e47",
+      "pinned_commit": "dcd8793d0a16c231b537678d3afaaeba817341e4",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/dcd8793d0a16c231b537678d3afaaeba817341e4/experiment-history/2026-10-15-init08-acquisition-crossover/INIT08_report.md"
+    },
+    "init08_table": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-15-init08-acquisition-crossover/phase-table.csv",
+      "sha256": "90a0f121cee82d5af9e1b20edb6d070b8c2dfa13576f81ec9a758e3ba3eb37ec",
+      "pinned_commit": "dcd8793d0a16c231b537678d3afaaeba817341e4",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/dcd8793d0a16c231b537678d3afaaeba817341e4/experiment-history/2026-10-15-init08-acquisition-crossover/phase-table.csv"
+    },
+    "init09_report": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-15-init09-contact-retry/INIT09_report.md",
+      "sha256": "fd2dc9858536e8da3a9395a270736e323829600cab52c6d6e19897fdb3bc7d26",
+      "pinned_commit": "9124ce11186fe9ad889e712f0a5c267aa8bab07b",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/9124ce11186fe9ad889e712f0a5c267aa8bab07b/experiment-history/2026-10-15-init09-contact-retry/INIT09_report.md"
+    },
+    "init09_events": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-15-init09-contact-retry/episode-event-ledger.json",
+      "sha256": "4e9e2d5e0a96f259d76ab3b4e49f42748a361008c8a9f835339951161602c34f",
+      "pinned_commit": "9124ce11186fe9ad889e712f0a5c267aa8bab07b",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/9124ce11186fe9ad889e712f0a5c267aa8bab07b/experiment-history/2026-10-15-init09-contact-retry/episode-event-ledger.json"
+    },
+    "init10_report": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-15-init10-lower-path/INIT10_report.md",
+      "sha256": "7165b10a19e0f16da34d262281c0a94090b9038a3e1b04a8558219573d51c638",
+      "pinned_commit": "276deeae2bfdc3773700e36b78e99047c7824237",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/276deeae2bfdc3773700e36b78e99047c7824237/experiment-history/2026-10-15-init10-lower-path/INIT10_report.md"
+    },
+    "init10_protocol": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-15-init10-lower-path/execution-freeze.json",
+      "sha256": "bfc7cf95430f538f92bd34f74d2ca200b75d4a55f1feb26740e0250275f58e2b",
+      "pinned_commit": "276deeae2bfdc3773700e36b78e99047c7824237",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/276deeae2bfdc3773700e36b78e99047c7824237/experiment-history/2026-10-15-init10-lower-path/execution-freeze.json"
+    },
+    "init10_table": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-15-init10-lower-path/analysis-qualified/summary.csv",
+      "sha256": "9e41c677cd3815cc82729b2aa1d84d4c74967b14ed85103736e0811b3f11822b",
+      "pinned_commit": "276deeae2bfdc3773700e36b78e99047c7824237",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/276deeae2bfdc3773700e36b78e99047c7824237/experiment-history/2026-10-15-init10-lower-path/analysis-qualified/summary.csv"
+    },
+    "init10_media": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-15-init10-lower-path/analysis-qualified/media-provenance.json",
+      "sha256": "4621526aecaf40beae8fee0610bc8fc6331d2a9e1cb5cf9708f5dbe7a9f1e7c0",
+      "pinned_commit": "276deeae2bfdc3773700e36b78e99047c7824237",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/276deeae2bfdc3773700e36b78e99047c7824237/experiment-history/2026-10-15-init10-lower-path/analysis-qualified/media-provenance.json"
+    },
+    "init10a_report": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-16-init10a-force-enclosure/INIT10A_report.md",
+      "sha256": "d4f9165db9e3e87096c2f516817b32e5ceb696c6cdc05dc0eb5e086590c7787d",
+      "pinned_commit": "dcf9657b1726798b183f47550fbe1773c90f45bc",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/dcf9657b1726798b183f47550fbe1773c90f45bc/experiment-history/2026-10-16-init10a-force-enclosure/INIT10A_report.md"
+    },
+    "init10a_protocol": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-16-init10a-force-enclosure/PLANNER_PROTOCOL.md",
+      "sha256": "8c46a841b2c63b8c45d02ac3c532e58a65d5e41ba23fbef4247f8f1919e3e293",
+      "pinned_commit": "dcf9657b1726798b183f47550fbe1773c90f45bc",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/dcf9657b1726798b183f47550fbe1773c90f45bc/experiment-history/2026-10-16-init10a-force-enclosure/PLANNER_PROTOCOL.md"
+    },
+    "init10a_table": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-16-init10a-force-enclosure/paired-table.json",
+      "sha256": "27559e3a737c77a245e21a9a422a967879b3d750413ba33f9b0607398806f0dd",
+      "pinned_commit": "dcf9657b1726798b183f47550fbe1773c90f45bc",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/dcf9657b1726798b183f47550fbe1773c90f45bc/experiment-history/2026-10-16-init10a-force-enclosure/paired-table.json"
+    },
+    "init10a_provenance": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-16-init10a-force-enclosure/force-provenance.json",
+      "sha256": "6009d46da1676b677434b77a81ed072c8f642cb9efeac0923bc609eedad212c8",
+      "pinned_commit": "dcf9657b1726798b183f47550fbe1773c90f45bc",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/dcf9657b1726798b183f47550fbe1773c90f45bc/experiment-history/2026-10-16-init10a-force-enclosure/force-provenance.json"
+    },
+    "native_actor": {
+      "storage": "private_repository",
+      "path": "scripts/hier01_task.py",
+      "sha256": "c01971c0f86c780f0c8eac97053adb75812e3f55b7ecd33387442f8126f40ad6",
+      "pinned_commit": "c3e41920238b394c08d2a604b9df703c450a6484",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/c3e41920238b394c08d2a604b9df703c450a6484/scripts/hier01_task.py"
+    },
+    "init02_archive": {
+      "storage": "verified_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init02-matched-adaptation/ARCHIVE_INDEX.json",
+      "sha256": "5c3b798b960fb09471c8734a9aaa201874f29cc94b0502702cecdc9d18bb6b7a",
+      "package_copy": "experiment-history/2026-10-16-session-recovery/receipts/init02_archive.json",
+      "url": null
+    },
+    "init07_archive": {
+      "storage": "verified_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/raw-verification.json",
+      "sha256": "046516e0ce0f85a81e225134a81f85573f7ed82059c7db22ef6e5f4aaca1ca27",
+      "package_copy": "experiment-history/2026-10-16-session-recovery/receipts/init07_archive.json",
+      "url": null
+    },
+    "init08_archive": {
+      "storage": "verified_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init08-acquisition-crossover/raw-verification.json",
+      "sha256": "8007e50727adba6d0b3a23109858f5945ff41f71ae5b4c984042b0e542ecaaff",
+      "package_copy": "experiment-history/2026-10-16-session-recovery/receipts/init08_archive.json",
+      "url": null
+    },
+    "init09_archive": {
+      "storage": "verified_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init09-contact-retry/raw-verification.json",
+      "sha256": "ba95605daba4c8a1141b253926b22479762fd27790ef418fc669c5e36bc1fdee",
+      "package_copy": "experiment-history/2026-10-16-session-recovery/receipts/init09_archive.json",
+      "url": null
+    },
+    "init10_archive": {
+      "storage": "verified_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init10-lower-path/raw-verification.json",
+      "sha256": "a158021eb9887cdc12b15b44b517c6e4d1e77d01fcae012a7939005c930104e3",
+      "package_copy": "experiment-history/2026-10-16-session-recovery/receipts/init10_archive.json",
+      "url": null
+    },
+    "init10a_archive": {
+      "storage": "verified_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init10a-force-enclosure/raw-verification.json",
+      "sha256": "1f4fd83284616fbf9aa54a3ac9a2a2290ae03ee97f911412b0d2c33d19505dd2",
+      "package_copy": "experiment-history/2026-10-16-session-recovery/receipts/init10a_archive.json",
+      "url": null
+    },
+    "init03_report": {
+      "storage": "verified_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init03-task-separation/REPORT.md",
+      "sha256": "4b53a34184971f351f0c420e5be9b977efca1873391de7fe1c6d38d2387f91a1",
+      "package_copy": "experiment-history/2026-10-16-session-recovery/receipts/init03_report.md",
+      "url": null
+    },
+    "init03_archive": {
+      "storage": "verified_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init03-task-separation/verification.json",
+      "sha256": "40e46887a7f34c3c99ddc8476bb4ac62e08b91e91a9d7c14975095bf3795ab6c",
+      "package_copy": "experiment-history/2026-10-16-session-recovery/receipts/init03_archive.json",
+      "url": null
+    },
+    "init07_optional": {
+      "storage": "verified_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/optional-execution.json",
+      "sha256": "1f597bb647efbd8e401b5e01a8c8e265b8143023c7b88b691a7bf161c0fb862c",
+      "package_copy": "experiment-history/2026-10-16-session-recovery/receipts/init07_optional.json",
+      "url": null
+    },
+    "q1_weight_receipt": {
+      "storage": "verified_archive",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/checkpoint-archive-Q1-verification.json",
+      "sha256": "4e102397406dc3a0c7339ad555d0f1dab592d6d9a94149730edb88b0cdebfbd7",
+      "package_copy": "experiment-history/2026-10-16-session-recovery/receipts/q1_weight_receipt.json",
+      "url": null
+    },
+    "init11_protocol": {
+      "storage": "private_package",
+      "path": "experiment-history/2026-10-16-session-recovery/INIT11_PROTOCOL.md",
+      "sha256": "b6a901229b27585c8f06255dcad2cb6670bdfbf928116e9191d0b2023a38b4b7",
+      "status": "prepared_only",
+      "executions": 0
+    },
+    "init11_boundaries": {
+      "storage": "private_package",
+      "path": "experiment-history/2026-10-16-session-recovery/handback-boundaries.json",
+      "sha256": "dd42a284748624218d091c084514581619b72c6fe42d70cefc8608adc0cb0014",
+      "status": "prepared_only",
+      "executions": 0
     }
   },
   "fresh_checkpoint_rehash_performed": false,
-  "identity_scope": "Prior verified headers/weight hashes and episode provenance reused; DEL02 verifies these evidence files, not multi-GB weights."
+  "identity_scope": "Prior verified headers/weight hashes and episode provenance reused; DEL02 verifies these evidence files, not multi-GB weights.",
+  "session_addendum": {
+    "date": "2026-10-16",
+    "source_base_commit": "d3da433054b435a9d1e99b8dc64fe0f516666e51",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "programme_status": "active",
+    "new_physics": 0,
+    "new_inference": 0,
+    "new_training_updates": 0,
+    "planned_protocol_executions": 0
+  }
 }

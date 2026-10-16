@@ -1,0 +1,161 @@
+{
+  "programme_status": "active; current compute session being preserved",
+  "new_executions": 0,
+  "new_training_updates": 0,
+  "new_inference_calls": 0,
+  "init11_status": "prepared_only; zero executions; not authorized tonight",
+  "source_base_commit": "d3da433054b435a9d1e99b8dc64fe0f516666e51",
+  "archives": [
+    {
+      "archive": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair",
+      "manifest_sha256": "aacf56894dd463d9b56a5637c51eff8c682c7ddd3e94eac8b56af69d34ec906a",
+      "verification_receipt_sha256": "046516e0ce0f85a81e225134a81f85573f7ed82059c7db22ef6e5f4aaca1ca27",
+      "files": 6068,
+      "bytes": 8894923975,
+      "verification_epoch": 1792105919.459464,
+      "commit": "c3e41920238b394c08d2a604b9df703c450a6484",
+      "branch": "research/init07-paired-state-repair",
+      "verification_reused": true,
+      "current_manifest_hash_rechecked": true
+    },
+    {
+      "archive": "/media/nm/Fast Drive/Typhon/research-20261015/init08-acquisition-crossover",
+      "manifest_sha256": "34c5837522fb72a353f2f05ce8566ff504392847168962fc0dbaf12572db26e3",
+      "verification_receipt_sha256": "8007e50727adba6d0b3a23109858f5945ff41f71ae5b4c984042b0e542ecaaff",
+      "files": 56,
+      "bytes": 40288650,
+      "verification_epoch": 1792106050.5284495,
+      "commit": "dcd8793d0a16c231b537678d3afaaeba817341e4",
+      "branch": "research/init08-acquisition-crossover",
+      "verification_reused": true,
+      "current_manifest_hash_rechecked": true
+    },
+    {
+      "archive": "/media/nm/Fast Drive/Typhon/research-20261015/init09-contact-retry",
+      "manifest_sha256": "55b37048c4e34008b7fd96904829e28f52fb4ce591de3a8102d5bc2654a56479",
+      "verification_receipt_sha256": "ba95605daba4c8a1141b253926b22479762fd27790ef418fc669c5e36bc1fdee",
+      "files": 51,
+      "bytes": 17636798,
+      "verification_epoch": 1792107204.4189398,
+      "commit": "9124ce11186fe9ad889e712f0a5c267aa8bab07b",
+      "branch": "research/init09-contact-retry",
+      "verification_reused": true,
+      "current_manifest_hash_rechecked": true
+    },
+    {
+      "archive": "/media/nm/Fast Drive/Typhon/research-20261015/init10-lower-path",
+      "manifest_sha256": "71372669e2505d5b70037b08d5d48030ae6895766b5a64a8b2b57044322a5df2",
+      "verification_receipt_sha256": "a158021eb9887cdc12b15b44b517c6e4d1e77d01fcae012a7939005c930104e3",
+      "files": 122,
+      "bytes": 29103906,
+      "verification_epoch": 1792108528.8013453,
+      "commit": "276deeae2bfdc3773700e36b78e99047c7824237",
+      "branch": "research/init10-lower-path",
+      "verification_reused": true,
+      "current_manifest_hash_rechecked": true
+    },
+    {
+      "archive": "/media/nm/Fast Drive/Typhon/research-20261015/init10a-force-enclosure",
+      "manifest_sha256": "48a023dd8c10ff3c4c6ad948136cf8873acf9823f6817a42ac4671bec6718657",
+      "verification_receipt_sha256": "1f4fd83284616fbf9aa54a3ac9a2a2290ae03ee97f911412b0d2c33d19505dd2",
+      "files": 34,
+      "bytes": 2118953,
+      "verification_epoch": 1792109272.8849382,
+      "commit": "dcf9657b1726798b183f47550fbe1773c90f45bc",
+      "branch": "research/init10a-force-enclosure",
+      "verification_reused": true,
+      "current_manifest_hash_rechecked": true
+    }
+  ],
+  "models": {
+    "init02-P": {
+      "identity_evidence": "init02_protocol.initializer",
+      "initializer": {
+        "checkpoint": "/var/tmp/typhon-load01-20261013/train-FL/step3000.pt",
+        "probe": "/var/tmp/typhon-load01-20261013/train-FL/step3000-probe.pt",
+        "sha256": "76334b9a17ac5fc49f46c2cb850a3c39ef38e0f13b9cdadc324f760567c5f128",
+        "probe_sha256": "621318035b71ad85f1f7aff4d6636a5023aea889a78454a18212c29eac0727f9"
+      },
+      "optimizer_moments_saved": null,
+      "checkpoint_sha256": "76334b9a17ac5fc49f46c2cb850a3c39ef38e0f13b9cdadc324f760567c5f128",
+      "archive_candidate_path": "/media/nm/Fast Drive/Typhon/archives/powerglide-full-20261014/var-tmp/typhon-load01-20261013/train-FL/step3000.pt",
+      "archive_candidate_exists": true
+    },
+    "init02-R": {
+      "checkpoint_sha256": "c6cdbd3eeddda9eb45e8e80d33c617581bbd08f3b5e614b8c06fbcb35bff1d21",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init02-matched-adaptation/checkpoints/R/step3000.pt",
+      "identity_evidence": "init02_archive.weights.R",
+      "present_bytes": 3729402732,
+      "fresh_full_weight_rehash": false,
+      "optimizer_moments_saved": false
+    },
+    "init02-T": {
+      "checkpoint_sha256": "4d7a4a2547f084b6026164f27a6b7d43b5cb4d3b83ee4875343d108908f35636",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init02-matched-adaptation/checkpoints/T/step3000.pt",
+      "identity_evidence": "init02_archive.weights.T",
+      "present_bytes": 3729403500,
+      "fresh_full_weight_rehash": false,
+      "optimizer_moments_saved": false
+    },
+    "init07-Q0": {
+      "checkpoint_sha256": "54c86e744e0c66cd5a55f81b56b949cd71000ed01726125550e878dcfaed081c",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/train-Q0/step3000.pt",
+      "identity_evidence": "init07_table.training.Q0",
+      "present_bytes": 3729401260,
+      "fresh_full_weight_rehash": false,
+      "optimizer_moments_saved": false
+    },
+    "init07-Q1": {
+      "checkpoint_sha256": "26d573eb90f791d9af86bbff30e138f51c5aa658ac7abefe76787ba352363a7a",
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/train-Q1/step3000.pt",
+      "identity_evidence": "init07_table.training.Q1; q1_weight_receipt",
+      "present_bytes": 3729401260,
+      "fresh_full_weight_rehash": false,
+      "optimizer_moments_saved": false
+    }
+  },
+  "media": {
+    "valid_presentation_manifest": {
+      "storage": "private_repository",
+      "path": "experiment-history/2026-10-15-init10-lower-path/analysis-qualified/media-provenance.json",
+      "sha256": "4621526aecaf40beae8fee0610bc8fc6331d2a9e1cb5cf9708f5dbe7a9f1e7c0",
+      "pinned_commit": "276deeae2bfdc3773700e36b78e99047c7824237",
+      "url": "https://github.com/NatMota/typhon-robotics/blob/276deeae2bfdc3773700e36b78e99047c7824237/experiment-history/2026-10-15-init10-lower-path/analysis-qualified/media-provenance.json"
+    },
+    "invalidated": "INIT10 new native case0005 presentation; originals retained",
+    "replacement": "Explicit archived INIT07 native footage matched by physical trace and capture ticks; D5 imagery is new INIT10 footage",
+    "new_media_generated": false
+  },
+  "outstanding": {
+    "INIT11": "prepared only; future compute and activation required",
+    "INIT03_Part_B": "unmeasured",
+    "INIT07_optional_handover": "eight episodes unexecuted: gate failed",
+    "EVAL02": "68 intervention episodes unexecuted",
+    "AlphaNIST": "parked",
+    "LIVE01": "component lineage qualified; original live exact parity failed; observer has no authority"
+  },
+  "compute": {
+    "conservative_cutoff_utc": "2026-10-16T01:00:00Z",
+    "conservative_cutoff_bst": "2026-10-16T02:00:00+01:00",
+    "extension_verified": false,
+    "paid_pods_started": false
+  },
+  "full_backup_receipt": "/media/nm/Fast Drive/Typhon/archives/powerglide-full-20261014/backup-reconciled-verification.json",
+  "lab_source_receipt": "/media/nm/Fast Drive/Typhon/archives/powerglide-full-20261014/lab-source-verified.json",
+  "lab_runtime_receipt": "/media/nm/Fast Drive/Typhon/archives/powerglide-full-20261014/lab-runtimes-verified.json",
+  "fresh_restore_test": false,
+  "epoch": 1792110254.4976504,
+  "ost": {
+    "tickets": 130,
+    "commit": "6e6b50ceb977648b26726949d25fdbf497a85f6a",
+    "branch": "docs/ost-20261015-overnight",
+    "live_pages_verified": 10,
+    "status_counts": {
+      "Done": 112,
+      "Next": 1,
+      "Blocked": 9,
+      "Review": 5,
+      "Parked": 3
+    }
+  }
+}

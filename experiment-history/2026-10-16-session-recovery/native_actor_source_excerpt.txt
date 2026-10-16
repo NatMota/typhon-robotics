@@ -1,0 +1,22 @@
+    def predict(self, obs):
+        limit()
+        if self.proprio is None:
+            prop = obs['proprio']
+            rot = Rotation.from_quat(prop['eef_quat_xyzw']).as_matrix()
+            self.proprio = np.r_[prop['eef_position_m'], rot[:, 0], rot[:, 1], 0.0, np.zeros(10)].astype(np.float32)
+        history = self.proprio.copy()
+        self.histories.append(history)
+        if self.index == 0:
+            z = np.load(self.case['initial_archive'])
+            for k in ['primary', 'secondary']:
+                np.testing.assert_array_equal(obs['rgb'][k], z[k])
+            np.testing.assert_array_equal(history, z['proprio'].astype(np.float32))
+        result = base.native.request(self.w, obs, history, self.case, self.index, self.dest / 'input-audit')
+        chunk = result.pop('actions')
+        self.inferences.append(result.copy())
+        dump(self.dest / 'inference.json', self.inferences)
+        self.chunks.append(chunk.copy())
+        self.proprio[:9] = chunk[-1, :9]
+        self.index += 1
+        np.savez_compressed(self.dest / 'predictions.npz', chunks=np.asarray(self.chunks), histories=np.asarray(self.histories))
+        dump(self.dest / 'progress.json', {'queries': self.index, 'control_steps': self.env.steps, 'epoch': time.time()})
