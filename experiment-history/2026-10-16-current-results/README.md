@@ -1,6 +1,6 @@
 # Current research results — 16 October 2026
 
-**The latest native model preserves the tested completed source states but still misses some loading attempts. A fixed acquisition-and-withdrawal controller improves execution on inspected scenes and passes the remaining-source and archived-handover panels. Full qualification still fails: an ordinary loading start remains unattempted with a joint-limit excursion, and fixture-free prior scenes are unsupported.**
+**The two policies now complete feeding then loading in the same live simulation on all four tested start/seed combinations, with or without assistance. Assistance helps some earlier loading cases but adds no successes on this continuous-workflow panel. Broader qualification still fails: a prior loading start remains unattempted with a joint-limit excursion, and fixture-free prior scenes are unsupported.**
 
 This page separates model training from supplied controller assistance. It does not replace the frozen reports or combine different evaluation suites.
 
@@ -49,6 +49,19 @@ These experiments suggest that precise acquisition height is a local execution b
 
 Sources: [INIT12/A1](https://github.com/NatMota/typhon-robotics/blob/f7eb4fa40981d5c1cdcac61fb385bdd00dfbbf3b/experiment-history/2026-10-16-init12a1-amendment/INIT12A1_report.md), [INIT13](https://github.com/NatMota/typhon-robotics/blob/4851ef323e5484c3498cca335a5afc29f3c0eb5f/experiment-history/2026-10-16-init13-measured-clearance/INIT13_report.md).
 
+## Continuous feeding followed by loading
+
+HIER02-LIVE-R1 executes native GOAL-varied feeding and then Q1 loading without resetting the robot, brick, controller or simulator between tasks. The stage switch is supplied at a fixed horizon. Two inspected personal scenario families and two seeds give four matched cases per condition.
+
+| Condition | Feeding pickup / strict | Loading pickup / strict | Complete workflow | Forbidden contacts / joint violations |
+|---|---:|---:|---:|---:|
+| Native GOAL → native Q1 | 4/4 / 4/4 | 4/4 / 4/4 | 4/4 | 0 / 0 |
+| Native GOAL → Q1 with frozen D5+C | 4/4 / 4/4 | 4/4 / 4/4 | 4/4 | 0 / 0 |
+
+All sixteen scores and eight full-state handovers were independently verified. The four paired feeding executions and loading inputs before assistance were exact. D5 and clearance did activate in assisted loading, but added no successful workflows on this panel. This supports local policy composition; it does not demonstrate unseen-session generalisation, learned task switching or visual numeral recognition.
+
+[HIER02-LIVE-R1 report, per-stage subgoals and comparison images](https://github.com/NatMota/typhon-robotics/blob/ebf36e430bc22dc28f537bdaa0b8b0fe9a9846bb/experiment-history/2026-10-16-hier02-live-r1/HIER02_R1_report.md). Full archive: 2,184 files / 501,543,926 bytes, verified on Mint with zero SHA errors.
+
 ## What each score means
 
 - **Supported pickup:** bilateral contact and at least 10 mm lift with tilt ≤10° for three consecutive control samples. Closing the gripper alone is insufficient.
@@ -64,7 +77,7 @@ A wrong cached model implementation caused a reload mismatch and was corrected i
 
 One INIT12 feeding pair first differed in secondary-camera RGB before prediction/history diverged. Its original exact-parity failure remains failed. INIT12-A1 explicitly completed the remaining ten trials under an amended RGB-first handling rule; the report does not call all original pairs exact.
 
-INIT14 completed 40 eligible episodes without tuning or retries. All 40 scores and issued-history audits pass; 19/20 pairs have exact preintervention execution. Prior loading 0005 first diverges in secondary RGB at query 2, so that comparison remains descriptive under the existing rule. In failed prior loading 0001, neither condition issues a close command or activates assistance; both have a −0.0035295 rad joint margin. The controller therefore cannot be described as universally qualified. Continuous policy-driven task composition and the untreated initiation failure remain open. There is no genuinely independent recording-session panel in the supplied bank. Physical calibration, direct human-video action alignment and a generally qualified recovery/observation layer remain separate unfinished work.
+INIT14 completed 40 eligible episodes without tuning or retries. All 40 scores and issued-history audits pass; 19/20 pairs have exact preintervention execution. Prior loading 0005 first diverges in secondary RGB at query 2, so that comparison remains descriptive under the existing rule. In failed prior loading 0001, neither condition issues a close command or activates assistance; both have a −0.0035295 rad joint margin. The controller therefore cannot be described as universally qualified. Local continuous feeding→loading composition now passes the HIER02-LIVE-R1 panel above; the untreated prior-context initiation failure remains open. There is no genuinely independent recording-session panel in the supplied bank. Physical calibration, direct human-video action alignment and a generally qualified recovery/observation layer remain separate unfinished work.
 
 This is a private working synthesis. No repository publication or application submission is performed by this update.
 
