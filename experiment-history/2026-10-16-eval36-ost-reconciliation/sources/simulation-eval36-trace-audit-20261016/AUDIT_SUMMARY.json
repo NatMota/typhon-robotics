@@ -1,0 +1,21 @@
+{
+  "stages_audited": 144,
+  "workflows_audited": 72,
+  "discrepancy_count": 0,
+  "all_stage_comparisons_exact": true,
+  "all_workflow_flags_exact": true,
+  "engineering_workflows_by_mode": {
+    "N": 30,
+    "A": 35
+  },
+  "primary_workflows_by_mode": {
+    "N": 25,
+    "A": 31
+  },
+  "forbidden_contact_records": 185,
+  "stages_with_recorded_forbidden_contacts": 7,
+  "minimum_logged_joint_margin_rad": -0.031060351448643206,
+  "scope": "Exact reaggregation of saved20Hz post-control-step contact records and nearest-joint-limit margins, including24settle samples per stage. Joint margins are not independently reconstructed from model joint limits. Does not establish absence of physics-substep contacts, contact-force peaks, hardware safety, or a cause for draw024.",
+  "simulation_calls": 0,
+  "original_files_modified": false
+}

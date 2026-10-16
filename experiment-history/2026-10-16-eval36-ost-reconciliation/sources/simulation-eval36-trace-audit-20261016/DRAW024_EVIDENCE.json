@@ -1,0 +1,161 @@
+{
+  "pair_id": "eval36-draw024",
+  "original_pair_audit": {
+    "pair_id": "eval36-draw024",
+    "both_modes_terminal": true,
+    "feeding": {
+      "comparison_available": true,
+      "common_noise_hashes_all48": true,
+      "prepared_inputs_equal_all48": false,
+      "initial_physical_boundary_equal": true,
+      "raw_predictions_equal": false,
+      "handover_boundary_equal": false
+    },
+    "loading": {
+      "comparison_available": true,
+      "common_noise_hashes_all48": true,
+      "prepared_inputs_equal_all48": false,
+      "initial_physical_boundary_equal": false
+    }
+  },
+  "query_indexing": "zero-based; index35 is the36th query",
+  "stages": {
+    "feeding": {
+      "first_unequal_query_zero_based": {
+        "prepared_image_input": 35,
+        "raw_secondary": 35,
+        "prepared_proprio": 36,
+        "raw_primary": 36
+      },
+      "all48_noise_hashes_equal": true,
+      "initial_physical_boundary_equal": true,
+      "initial_boundary_sha256": [
+        "5096be99649af846394f73d51dd990bdb9e1bfbf2cb4c14cdd71bd4ff2db42e9",
+        "5096be99649af846394f73d51dd990bdb9e1bfbf2cb4c14cdd71bd4ff2db42e9"
+      ],
+      "final_physical_boundary_equal": false,
+      "final_boundary_sha256": [
+        "4b46f79f48c1a8501836cd1a18329afa6ac5098af6dc6cb80c615ea1204fd5b3",
+        "74f020777a1f8d0551accdafcf1bb6b6312485f1b5fa8272b07c978581d1d9d0"
+      ],
+      "first_controller_difference": {
+        "target": {
+          "index_zero_based": 1050,
+          "control_step": 1091,
+          "field": "target"
+        },
+        "command": {
+          "index_zero_based": 1050,
+          "control_step": 1091,
+          "field": "command"
+        },
+        "eef_xyz": {
+          "index_zero_based": 1050,
+          "control_step": 1091,
+          "field": "eef_xyz"
+        },
+        "joint_positions": {
+          "index_zero_based": 1050,
+          "control_step": 1091,
+          "field": "joint_positions"
+        },
+        "object_truth": {
+          "index_zero_based": 1050,
+          "control_step": 1091,
+          "field": "object_truth"
+        }
+      },
+      "first_trajectory_difference": {
+        "requested_action": {
+          "index_zero_based": 1050,
+          "control_step": 1091,
+          "field": "requested_action"
+        },
+        "applied_action": {
+          "index_zero_based": 1050,
+          "control_step": 1091,
+          "field": "applied_action"
+        },
+        "truth": {
+          "index_zero_based": 1050,
+          "control_step": 1091,
+          "field": "truth"
+        }
+      },
+      "final_object_position_distance_m": 0.0,
+      "recorded_strict_terminal_success": [
+        true,
+        true
+      ]
+    },
+    "loading": {
+      "first_unequal_query_zero_based": {
+        "prepared_image_input": 0,
+        "prepared_proprio": 0,
+        "raw_primary": 0,
+        "raw_secondary": 0
+      },
+      "all48_noise_hashes_equal": true,
+      "initial_physical_boundary_equal": false,
+      "initial_boundary_sha256": [
+        "4b46f79f48c1a8501836cd1a18329afa6ac5098af6dc6cb80c615ea1204fd5b3",
+        "74f020777a1f8d0551accdafcf1bb6b6312485f1b5fa8272b07c978581d1d9d0"
+      ],
+      "final_physical_boundary_equal": false,
+      "final_boundary_sha256": [
+        "d64cdf87f5a77a2e75c5c61949d1dba85b55072cd0cc35b4de10dca5ace5fd9c",
+        "708815d6db91db427b89405ed4acaa29ddb65b550f634726f162625a6f4a8c23"
+      ],
+      "first_controller_difference": {
+        "target": {
+          "index_zero_based": 0,
+          "control_step": 1501,
+          "field": "target"
+        },
+        "command": {
+          "index_zero_based": 0,
+          "control_step": 1501,
+          "field": "command"
+        },
+        "eef_xyz": {
+          "index_zero_based": 0,
+          "control_step": 1501,
+          "field": "eef_xyz"
+        },
+        "joint_positions": {
+          "index_zero_based": 0,
+          "control_step": 1501,
+          "field": "joint_positions"
+        },
+        "object_truth": {
+          "index_zero_based": 0,
+          "control_step": 1501,
+          "field": "object_truth"
+        }
+      },
+      "first_trajectory_difference": {
+        "requested_action": {
+          "index_zero_based": 0,
+          "control_step": 1501,
+          "field": "requested_action"
+        },
+        "applied_action": {
+          "index_zero_based": 0,
+          "control_step": 1501,
+          "field": "applied_action"
+        },
+        "truth": {
+          "index_zero_based": 0,
+          "control_step": 1501,
+          "field": "truth"
+        }
+      },
+      "final_object_position_distance_m": 0.005153970158673718,
+      "recorded_strict_terminal_success": [
+        true,
+        true
+      ]
+    }
+  },
+  "interpretation": "Saved feeding images first differ at the listed query indices; prepared proprioception and later commands/states also differ as listed. Common noise hashes do not establish identical effective actor inputs. Feeding starts match, but the loading physical boundaries do not. The saved evidence does not identify a cause. Draw024 remains in all36pairs; no exclusion or new simulation. Its loading comparison includes an unequal upstream state."
+}

@@ -1,0 +1,13 @@
+EVAL36 conditional simulator reliability — frozen before any new outcomes
+
+36 independent scenario–seed draws, paired across two fixed modes (72 workflow attempts). Uniform local perturbations: x and y +/-5mm, yaw +/-10degrees; base family mixture 50/50 demo0012/demo0013. Actual draw count22/14. Fixed target/fixture, cameras, materials, controller and scoring. These are new conditional simulator draws, not new recording sessions.
+
+Python stdlib MT19937 master seed20261016112036. Independent policy and simulation seed draws; exact roster and initial poses in seed_manifest.json/CSV. Mode-order RNG master+1 shuffles18NA and18AN. No draw replacement or resampling. All36starts receive policy-free qualification before the non-inferential pilot. An invalid start blocks this frozen protocol; it is not replaced after testing policy outcomes.
+
+Frozen GOAL and Q1 step3000 checkpoints from original HIER02. Feeding1436actions+24passive ticks; loading same; one40tick initial reset. Supplied fixed-horizon switch; no home, reset, state injection or success-triggered switch. Native N versus frozen D5+C assistance in loading only. Unsupported previous-gripper handovers count as workflow failures, without forcing the state or replacement.
+
+Primary outcome: strict scorer success in both stages plus zero forbidden gripper/table-or-fixture contacts, nonnegative joint margin and no failed/still-active assistance primitive. All failures retained. No outcome-based stopping, tuning or checkpoint selection. Original evaluator and helpers included with hashes. Final interval unit is36complete scenario–seed draws, not72mode observations,144stages or20Hz samples. Per-mode two-sided95%Clopper-Pearson CI conditional on iid target sampling.36/36would yield lower bound90.2606%; no success is assumed and this is not superiority power.
+
+Pilot: separate historical case in both modes, no inferential use. Qualify recording-only changes and project complete-panel cost. Main cap90minutes after pilot; overall preparation+pilot+main cap150minutes. Hard512MiB new output, no saved bulkRGB/video/tensors. Minimum2GiB homequota headroom. Use only existing booked hardware, fresh temporary namespace and verified durable archive. No historical outputs changed; no training, paidcompute or newbooking. Abort only for predeclared operational/resource gates, preserving an explicitly incomplete panel.
+
+Gates still pending: live booking verification; all36policy-free reset checks; compiled physics settings; runner/recorder hash freeze; non-inferential pilot; renewed idle-lab/GPU and storage checks. No new simulation/model call has run under this protocol yet.

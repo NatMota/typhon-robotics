@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-10-16T12:40:18.679025+00:00",
+  "complete_panel": true,
+  "fixed_draws_per_mode": 36,
+  "fixed_workflow_denominator": 72,
+  "statuses": {
+    "completed": 72
+  },
+  "episodes_exactly_rescored": 144,
+  "CI_allowed_only_for_complete_panel": true,
+  "modes": {
+    "N": {
+      "primary_successes": 25,
+      "fixed_denominator": 36,
+      "attempted": 36,
+      "null_or_unobserved_outcomes": 0,
+      "strict_terminal_successes": 30,
+      "engineering_qualified": 30,
+      "clopper_pearson_two_sided95": [
+        0.5189293699999202,
+        0.8365260153715064
+      ]
+    },
+    "A": {
+      "primary_successes": 31,
+      "fixed_denominator": 36,
+      "attempted": 36,
+      "null_or_unobserved_outcomes": 0,
+      "strict_terminal_successes": 31,
+      "engineering_qualified": 35,
+      "clopper_pearson_two_sided95": [
+        0.7050250518893684,
+        0.9533223393969097
+      ]
+    }
+  },
+  "scope": "Conditional simulator scenario/seed distribution; no new recording sessions or hardware claims.",
+  "contact_endpoint": "No recorded forbidden gripper/table-or-fixture contacts at logging resolution.",
+  "supported_pickup": "Secondary bilateral-contact10mm/3samples measure is separate from strict terminal primary success; archived verified_lift is70mm height only.",
+  "paired_outcome_counts": {
+    "N0-A1": 7,
+    "N1-A1": 24,
+    "N0-A0": 4,
+    "N1-A0": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "frozen_at_utc": "2026-10-16T11:52:51.314413+00:00",
+  "protocol_sha256": "7c80cc1bf1f16dbf2ed799a22cf8847ce0b3e2b5ae744e087134b8127931b5ec",
+  "runner_sha256": {
+    "eval36_runner.py": "51503f64c0e4eeb1d16cefd377404b6c3bf2cf2a02a180f767d742ff74a6b550",
+    "trace_segment.py": "cc1d2ccb3d1867c370b0d9fda7e7a0872fbb429c17a40e817e7d71eaab275735",
+    "trace_worker.py": "1b853790f444a3a4978c1f70836ebb492ab04835ada133b3983f9d178392f9e8",
+    "qualify_starts.py": "8524e2bacba5486f48a959fc7596ab360558c22f6e6d7131d81273d8c71f9f03",
+    "pilot-freeze.json": "e83e113d759ef6f5c55a239d2e5cd25157f4c83b1e3e9763722c7db48e5e5157",
+    "eligibility-geometry-audit.json": "48e2620d11fa40068c085491466395e24b0954be6864a5a7070406a0c7b14a29",
+    "test_runner_abort.py": "ac5b9135a475d92c157dd30a1d5e968f32dfcb6420a6cf6d12f05d31795f347e",
+    "pilot-profile.json": "fc3e45c2774f3b77a94808f2cc507f69744f159a5abbd9e9a9d9d44ad9660a3a"
+  },
+  "mapping_source_sha256": "cfe3923c7ccd8357dc3320eec0260233969631e467bfc42a9329035694082239",
+  "original_preparation_start_epoch": 1792149652.0,
+  "total_deadline_utc": "2026-10-16T13:50:52Z",
+  "runtime_source_sha256": {
+    "scripts/hier01_chain_amend.py": "3ffa94a244908ed8a5167cded25d3884771e041c66fe047afb6ee0f930a3bdbe",
+    "scripts/hier01_task.py": "c01971c0f86c780f0c8eac97053adb75812e3f55b7ecd33387442f8126f40ad6",
+    "scripts/hier02_live.py": "7220911cc4958db60858670ef1350b4e123741f045dbda4072d3926f44e123a7",
+    "scripts/init02_eval.py": "12a1c4ad3ce637b2460af8c2927a9a01b41efd9fdca887885e95104b4ad11a1a",
+    "scripts/init12.py": "3be886d4b27e0259314457b9126f8c9ddfce74aa603db26199433e2c1546b4d4",
+    "scripts/init13.py": "375a492714de2ac535cb4795d3f9a4d057092cac12314101b6206fd23c580f72",
+    "scripts/init13_clearance.py": "c994c610a5be4da76d8d09531895a6a69bcc3458d65ff62aab8ef83a5cbedd1e",
+    "supervisor/baseline/benchmark.py": "3987cd4a264f1a4fa9cd827e8790967958066328d7369a1dcd752a08d081cf3d",
+    "supervisor/feeding_loading/__init__.py": "9d35ef6b6f1fef070e29b64f5fd21fd1ad4f9ec411a19e7036c58c1a6f4297a1",
+    "supervisor/feeding_loading/config.py": "b9993796bb229749c78301c54b15cfcd67a682e790ace517e28aa392bec5d07d",
+    "supervisor/feeding_loading/environment.py": "1f790260461ba79b03875602ecd7f17a4ca888596b8ed10772a2aefa90dd180c",
+    "supervisor/feeding_loading/evaluation.py": "83dc6bbdf26d4591c86be492e649f7dff78bb846a31ed4eb6af911e103ac4de6",
+    "supervisor/feeding_loading/objects.py": "13a295c31a080a9f9d4dfbdd6da2d1dce619086b1a1696871c841d05e382d8e5",
+    "supervisor/feeding_loading/observations.py": "00d24cb266540e2a4e7787363413c55e17b2e4b813a7ef0b8525dfdd097d9831",
+    "supervisor/feeding_loading/runner.py": "3e9138dee890bb9f6bafd45e5a56102e6a13e4521d86d491baca2b464da3fd58",
+    "scripts/load04_worker.py": "b15041a738bb398fc2c6ac00792d3af1fdb7672067d443aa6be0a1002fbf019e",
+    "scripts/load04_common.py": "cfe3923c7ccd8357dc3320eec0260233969631e467bfc42a9329035694082239"
+  },
+  "changes_after_pilot": "No inference/control/recorder changes. OperationalAbort propagates; final completion guard; current storage projected against effective ceiling plus2MiB margin; source hash checks and archived-reference lookup."
+}
