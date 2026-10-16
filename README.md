@@ -10,6 +10,8 @@ Typhon is an experimental robotics harness built for the October 2026 Humanoid i
 
 The dashboard shows recorded experiments and controller measurements. Successful completion recognition and successful manipulation are reported separately.
 
+Watch the [privileged expert pick and place](https://www.natslabs.com/typhon-robotics/media-library.html?clip=ge/personal_demo_0001.mp4), [expert orientation-correction reference](https://www.natslabs.com/typhon-robotics/media-library.html?clip=ge/personal_demo_0007.mp4), or [V4-M6 learned pickup and placement attempt](https://www.natslabs.com/typhon-robotics/?run=v4-m6-pilot-v1&case=m7-personal_demo_0006). The V4-M6 attempt verified a lift and reached 11.36 mm position error, but its 85.06° yaw error failed the task. The video library exposes the model version, run, checkpoint update and checksum for each learned recording. [Logo concepts](docs/branding/) are exploratory, with no final mark selected.
+
 ## TL;DR
 
 We tested dense video, chopped trajectories, temporal abstraction and expert-guided corrections across 128 simulation episodes using scenarios derived from personally recorded demonstrations. The strongest rollout picked up the brick and released it inside the target, but left it rotated by 85°, so no unfinished task met every success criterion. A separate completion guard recognised all three tested correct configurations without moving the brick, showing that the harness can prevent unnecessary actions while learned orientation control still needs work.
@@ -193,4 +195,4 @@ The original simulation proxy and later catalogue-based DUPLO dimensions are dif
 
 Built on [X-VLA](https://github.com/2toinf/X-VLA), its [paper](https://arxiv.org/abs/2510.10274), [robosuite](https://robosuite.ai/) and MuJoCo. X-VLA base weights: [`2toINF/X-VLA-Pt`](https://huggingface.co/2toINF/X-VLA-Pt), revision `c1c4a64a7e03ac5b95c468bf1578f3d03651b53b`. Optional planner: [`Qwen/Qwen3-VL-2B-Instruct`](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct).
 
-This repository publishes the applicant's experimental implementation and results for inspection. A general reuse licence has not yet been selected; upstream software, model and asset licences continue to apply. No endorsement by UCL, Humanoid, NVIDIA, LEGO or the cited authors is implied. See `CITATION.cff` to cite this research software snapshot.
+Typhon's original software and written documentation are licensed under [Apache-2.0](LICENSE), allowing copying, modification and sharing for education, research and commercial use. Retain the licence and notices. X-VLA and all other upstream components keep their own terms; personal media and third-party artwork are excluded from the blanket grant. See [licence coverage](LICENSE-COVERAGE.md), [NOTICE](NOTICE) and `CITATION.cff`. No endorsement by UCL, Humanoid, NVIDIA, LEGO or the cited authors is implied.
