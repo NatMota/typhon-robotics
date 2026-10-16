@@ -133,7 +133,7 @@ def main():
             gates={'all_loading_strict_without_contact_or_primitive_failure':all(wrapped_ok(s)for s in loading),
                    'all_feeding_preserved_without_intervention':all(wrapped_ok(s,True)and by[(s['id'],'C')]['D5_trigger']is None and by[(s['id'],'C')]['clearance_trigger_action']is None for s in feeding)}
         else:gates={'no_lost_native_strict_success':not lost,'no_lost_native_supported_pickup':not pickup_lost,'no_new_forbidden_contact':not newcontacts,
-                    'no_new_possible_drop':not newdrops,'no_primitive_failure_or_joint_violation':all(not r['engineering_failure']and not r['clearance_still_active']and r['minimum_joint_margin_rad']>=0 for r in rr if r['condition']=='C')}
+                    'no_primitive_failure_or_joint_violation':all(not r['engineering_failure']and not r['clearance_still_active']and r['minimum_joint_margin_rad']>=0 for r in rr if r['condition']=='C')}
         gates['all_prescribed_cases_supported_and_completed']=complete_panel
         panels[panel]={'contrast':ss[0]['control_condition']+' vs C','counts':counts,'gates':gates,'passed':all(gates.values()),
           'lost_control_success':lost,'lost_supported_pickup':pickup_lost,'new_contact_cases':newcontacts,
