@@ -53,7 +53,9 @@ The orange DUPLO block and hand-drawn staging target made the task easy to recor
 |---|---|
 | ![Orange block with a blue 2 and two studs](docs/research/media/orange-block-reference.png) | ![Orange block beside a hand-drawn staging square and direction arrow](docs/research/media/feeding-workspace-reference.png) |
 
-![Two camera views of the tabletop recording setup](docs/research/media/recording-setup.png)
+![Two camera views of the tabletop recording setup](docs/research/media/recording-setup-cleaned-20261016.png)
+
+Background clutter was removed from this presentation image. The [original recording-setup photo](docs/research/media/recording-setup.png) is retained.
 
 The photos show the source setup. They do not provide a calibrated scale or measured material properties.
 
