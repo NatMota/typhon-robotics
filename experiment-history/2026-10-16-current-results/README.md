@@ -96,3 +96,16 @@ INIT14 completed 40 eligible episodes without tuning or retries. All 40 scores a
 This is a private working synthesis. No repository publication or application submission is performed by this update.
 
 Latest evidence: [INIT14 report and per-case evidence](https://github.com/NatMota/typhon-robotics/blob/d6b43bc529eb8fbf29e01a1f93d947b7d7e0028b/experiment-history/2026-10-16-init14-frozen-qualification/INIT14_report.md).
+
+
+## Storage and execution status after lab recovery
+
+On 16 October, EVIDENCE23 retained 17,812,317,101 bytes of historical observation frames on verified Mint storage and removed 64,784 redundant local scratch copies. All 5,570 remaining original files passed revalidation. This did not free persistent HOME quota.
+
+Under a separate exact-path authorization, EVIDENCE24 removed one archived M3 smoke checkpoint after fresh source/archive SHA-256 checks and unchanged identity checks. HOME quota use fell from 104,857,472 to 101,412,896 KiB, recovering exactly 3,527,245,824 quota bytes. The Mint archive, M4 checkpoint, historical sidecars and environments remain intact. Lab writes are for the supervisor to verify independently.
+
+[Scratch offload evidence](https://github.com/NatMota/typhon-robotics/blob/e780a1652b70cd32bb80d000ad9d2db0ccda58fe/experiment-history/2026-10-16-evidence23/REPORT.md) · [Exact HOME cleanup receipt](https://github.com/NatMota/typhon-robotics/blob/e780a1652b70cd32bb80d000ad9d2db0ccda58fe/experiment-history/2026-10-16-evidence24/REPORT.md).
+
+DATA04-EVENT was not executed. Its original wall-clock window expired before extraction; source inspection resumed but produced no event labels, features, alignments or new model results. Execution is operationally held under Nat's storage-only/no-new-research instruction. The earlier video-representation findings are not results of this planned test. [Preserved protocol and actual status](https://github.com/NatMota/typhon-robotics/blob/e780a1652b70cd32bb80d000ad9d2db0ccda58fe/experiment-history/2026-10-16-data04-event-status/STATUS.md).
+
+The OST records 146 work items: 125 Done, 13 Blocked, 5 Review and 3 Parked. Completion of individual investigations does not establish that the research programme or every tested method succeeded. No new research ran during storage closeout; AlphaNIST remains parked.
