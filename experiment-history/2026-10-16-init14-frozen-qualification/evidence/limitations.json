@@ -1,0 +1,145 @@
+{
+  "case": "retain-load01-training-demo_0001",
+  "conditions": {
+    "N": {
+      "closed_commands": 0,
+      "first_close": null,
+      "gripper_probability_range": [
+        0.0001662691356614232,
+        0.0008438117220066488
+      ],
+      "any_object_contact": false,
+      "D5_trigger": null,
+      "joint_violation_sample_count": 320,
+      "first_joint_violation": {
+        "record_index": 32,
+        "step": 73,
+        "margin_rad": -0.0035294979066158305
+      },
+      "minimum_joint_margin_rad": -0.0035294979066158305,
+      "strict_evaluation": {
+        "task": "loading",
+        "success": false,
+        "criteria": {
+          "position": false,
+          "orientation": false,
+          "marked_face_up": true,
+          "footprint_inside_target": false,
+          "placement_height": false,
+          "released": true,
+          "stable": true,
+          "seated": false
+        },
+        "position_error_m": 0.4337939773873398,
+        "orientation_error_rad": 0.9508729485498082,
+        "orientation_error_deg": 54.48100680506428,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.004215510840430592,
+        "target_height_m": 0.8190000000000001,
+        "footprint_inside_target": false,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.172174336742961e-14,
+        "maximum_angular_velocity_rad_s": 1.3151307801018179e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 0,
+        "successful_grasp_count": 0,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": []
+      }
+    },
+    "C": {
+      "closed_commands": 0,
+      "first_close": null,
+      "gripper_probability_range": [
+        0.0001662691356614232,
+        0.0008438117220066488
+      ],
+      "any_object_contact": false,
+      "D5_trigger": null,
+      "joint_violation_sample_count": 320,
+      "first_joint_violation": {
+        "record_index": 32,
+        "step": 73,
+        "margin_rad": -0.0035294979066158305
+      },
+      "minimum_joint_margin_rad": -0.0035294979066158305,
+      "strict_evaluation": {
+        "task": "loading",
+        "success": false,
+        "criteria": {
+          "position": false,
+          "orientation": false,
+          "marked_face_up": true,
+          "footprint_inside_target": false,
+          "placement_height": false,
+          "released": true,
+          "stable": true,
+          "seated": false
+        },
+        "position_error_m": 0.4337939773873398,
+        "orientation_error_rad": 0.9508729485498082,
+        "orientation_error_deg": 54.48100680506428,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.004215510840430592,
+        "target_height_m": 0.8190000000000001,
+        "footprint_inside_target": false,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.172174336742961e-14,
+        "maximum_angular_velocity_rad_s": 1.3151307801018179e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 0,
+        "successful_grasp_count": 0,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": []
+      }
+    }
+  },
+  "matching_summaries": true,
+  "interpretation": "No closure proposed or object contact; both primitives inactive. Same existing joint excursion in native and assisted runs. No causal benefit claimed.",
+  "nonexact_pairs": [
+    {
+      "id": "retain-load01-training-demo_0005",
+      "panel": "prior",
+      "control": "N",
+      "gate": {
+        "first_effective_input_difference_query": 2,
+        "first_action_difference_query": 2,
+        "first_history_difference_query": 3,
+        "first_raw_rgb_differences": {
+          "primary": 3,
+          "secondary": 2
+        },
+        "first_measured_robot_differences": {
+          "eef_position_m": 3,
+          "eef_quat_xyzw": 3
+        },
+        "first_control_trace_difference_index": 60,
+        "through_query": 3,
+        "through_policy_actions": 90,
+        "passed": true,
+        "exact_effective_pretrigger_equivalence": false,
+        "status": "captured_rgb_first_origin_unresolved",
+        "raw_rgb_exact": false,
+        "same_input_noise_output_check_all_queries": true,
+        "does_not_exonerate_complete_wrapper_execution_context": true
+      }
+    }
+  ],
+  "epoch": 1792123326.4783168
+}

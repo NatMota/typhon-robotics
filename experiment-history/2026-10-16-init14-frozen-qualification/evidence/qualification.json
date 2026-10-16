@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "fresh_worker_exact_probe": {
+    "ready": true,
+    "load_time_s": 2.6460881260009046,
+    "checkpoint": "/var/tmp/typhon-init07-20261015/train-Q1/step3000.pt",
+    "verification": {
+      "passed": true,
+      "fresh_process": true,
+      "checkpoint": "/var/tmp/typhon-init07-20261015/train-Q1/step3000.pt",
+      "step": 3000,
+      "probe": "/var/tmp/typhon-init07-20261015/train-Q1/step3000-probe.pt",
+      "action_max_error": 0.0,
+      "checkpoint_bytes": 3729401260,
+      "checkpoint_mtime_ns": 1792102409275838923,
+      "optimizer_restored_for_inference": false,
+      "rotation_contract": "generic_interleaved_v1",
+      "domain_id": 29,
+      "observation_version": "O2"
+    },
+    "inference_configuration": {
+      "parameter_requires_grad": "allTrue",
+      "module_mode": "eval",
+      "execution": "torch.inference_mode",
+      "dtype": "bf16",
+      "H": 30,
+      "denoise_steps": 10
+    }
+  },
+  "epoch": 1792122155.3432171,
+  "no_training": true
+}

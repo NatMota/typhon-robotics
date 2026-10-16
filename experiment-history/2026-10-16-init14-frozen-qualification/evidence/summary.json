@@ -1,0 +1,257 @@
+{
+  "episodes": 40,
+  "planned_maximum": 46,
+  "eligible": 40,
+  "panels": {
+    "source": {
+      "contrast": "D5 vs C",
+      "counts": {
+        "feeding_C": {
+          "executed": 7,
+          "strict_success": 7,
+          "supported_pickup": 0,
+          "contact_episodes": 0,
+          "preserved": 7,
+          "engineering_failure": 0
+        },
+        "feeding_D5": {
+          "executed": 7,
+          "strict_success": 7,
+          "supported_pickup": 0,
+          "contact_episodes": 0,
+          "preserved": 7,
+          "engineering_failure": 0
+        },
+        "loading_C": {
+          "executed": 5,
+          "strict_success": 5,
+          "supported_pickup": 5,
+          "contact_episodes": 0,
+          "preserved": 0,
+          "engineering_failure": 0
+        },
+        "loading_D5": {
+          "executed": 5,
+          "strict_success": 5,
+          "supported_pickup": 5,
+          "contact_episodes": 2,
+          "preserved": 0,
+          "engineering_failure": 0
+        }
+      },
+      "gates": {
+        "all_loading_strict_without_contact_or_primitive_failure": true,
+        "all_feeding_preserved_without_intervention": true,
+        "all_prescribed_cases_supported_and_completed": true
+      },
+      "passed": true,
+      "lost_control_success": [],
+      "lost_supported_pickup": [],
+      "new_contact_cases": [],
+      "new_possible_drop_cases": [],
+      "control_failures": [],
+      "wrist_path_deltas": [
+        {
+          "id": "init-demo_0001-loading-912172",
+          "delta_m": -0.00794409593935752
+        },
+        {
+          "id": "init-demo_0001-feeding-912172",
+          "delta_m": 0.0
+        },
+        {
+          "id": "init-demo_0002-loading-912172",
+          "delta_m": 0.022257860979443045
+        },
+        {
+          "id": "init-demo_0002-feeding-912171",
+          "delta_m": 0.0
+        },
+        {
+          "id": "init-demo_0002-feeding-912172",
+          "delta_m": 0.0
+        },
+        {
+          "id": "init-demo_0003-loading-912171",
+          "delta_m": 0.016001981800322973
+        },
+        {
+          "id": "init-demo_0003-feeding-912171",
+          "delta_m": 0.0
+        },
+        {
+          "id": "init-demo_0003-feeding-912172",
+          "delta_m": 0.0
+        },
+        {
+          "id": "init-demo_0005-loading-912171",
+          "delta_m": 0.018517008972571247
+        },
+        {
+          "id": "init-demo_0005-loading-912172",
+          "delta_m": 0.009503101557564175
+        },
+        {
+          "id": "init-demo_0005-feeding-912171",
+          "delta_m": 0.0
+        },
+        {
+          "id": "init-demo_0005-feeding-912172",
+          "delta_m": 0.0
+        }
+      ],
+      "unsupported_cases": []
+    },
+    "prior": {
+      "contrast": "N vs C",
+      "counts": {
+        "feeding_C": {
+          "executed": 0,
+          "strict_success": 0,
+          "supported_pickup": 0,
+          "contact_episodes": 0,
+          "preserved": 0,
+          "engineering_failure": 0
+        },
+        "feeding_N": {
+          "executed": 0,
+          "strict_success": 0,
+          "supported_pickup": 0,
+          "contact_episodes": 0,
+          "preserved": 0,
+          "engineering_failure": 0
+        },
+        "loading_C": {
+          "executed": 4,
+          "strict_success": 3,
+          "supported_pickup": 3,
+          "contact_episodes": 0,
+          "preserved": 0,
+          "engineering_failure": 0
+        },
+        "loading_N": {
+          "executed": 4,
+          "strict_success": 3,
+          "supported_pickup": 3,
+          "contact_episodes": 0,
+          "preserved": 0,
+          "engineering_failure": 0
+        }
+      },
+      "gates": {
+        "no_lost_native_strict_success": true,
+        "no_lost_native_supported_pickup": true,
+        "no_new_forbidden_contact": true,
+        "no_primitive_failure_or_joint_violation": false,
+        "all_prescribed_cases_supported_and_completed": false
+      },
+      "passed": false,
+      "lost_control_success": [],
+      "lost_supported_pickup": [],
+      "new_contact_cases": [],
+      "new_possible_drop_cases": [],
+      "control_failures": [
+        "retain-load01-training-demo_0001"
+      ],
+      "wrist_path_deltas": [
+        {
+          "id": "retain-load01-training-demo_0001",
+          "delta_m": 0.0
+        },
+        {
+          "id": "retain-load01-training-demo_0002",
+          "delta_m": 0.03051434812505871
+        },
+        {
+          "id": "retain-load01-training-demo_0003",
+          "delta_m": 0.041013042438897696
+        },
+        {
+          "id": "retain-load01-training-demo_0005",
+          "delta_m": 0.03595074490194161
+        }
+      ],
+      "unsupported_cases": [
+        "retain-personal_demo_0002-goal0",
+        "retain-personal_demo_0002-goal1",
+        "retain-personal_demo_0001-goal2"
+      ]
+    },
+    "handover": {
+      "contrast": "N vs C",
+      "counts": {
+        "feeding_C": {
+          "executed": 2,
+          "strict_success": 2,
+          "supported_pickup": 0,
+          "contact_episodes": 0,
+          "preserved": 2,
+          "engineering_failure": 0
+        },
+        "feeding_N": {
+          "executed": 2,
+          "strict_success": 2,
+          "supported_pickup": 0,
+          "contact_episodes": 0,
+          "preserved": 2,
+          "engineering_failure": 0
+        },
+        "loading_C": {
+          "executed": 2,
+          "strict_success": 2,
+          "supported_pickup": 2,
+          "contact_episodes": 0,
+          "preserved": 0,
+          "engineering_failure": 0
+        },
+        "loading_N": {
+          "executed": 2,
+          "strict_success": 2,
+          "supported_pickup": 2,
+          "contact_episodes": 1,
+          "preserved": 0,
+          "engineering_failure": 0
+        }
+      },
+      "gates": {
+        "all_loading_strict_without_contact_or_primitive_failure": true,
+        "all_feeding_preserved_without_intervention": true,
+        "all_prescribed_cases_supported_and_completed": true
+      },
+      "passed": true,
+      "lost_control_success": [],
+      "lost_supported_pickup": [],
+      "new_contact_cases": [],
+      "new_possible_drop_cases": [],
+      "control_failures": [],
+      "wrist_path_deltas": [
+        {
+          "id": "dev-demo_0012-loading-912171",
+          "delta_m": -0.03305834921549966
+        },
+        {
+          "id": "dev-demo_0012-loading-912172",
+          "delta_m": 0.022743114416952537
+        },
+        {
+          "id": "dev-demo_0012-feeding-912171",
+          "delta_m": 0.0
+        },
+        {
+          "id": "dev-demo_0012-feeding-912172",
+          "delta_m": 0.0
+        }
+      ],
+      "unsupported_cases": []
+    }
+  },
+  "all_prescribed_domains_qualified": false,
+  "exact_preintervention_pairs": 19,
+  "audited_pairs": 20,
+  "technical_failed_cases": 0,
+  "no_training": true,
+  "quarantined": true,
+  "no_independent_recording_session": true,
+  "interpretation": "Three separate contrasts; no pooled effect or statistical significance claim.",
+  "epoch": 1792123234.24678
+}

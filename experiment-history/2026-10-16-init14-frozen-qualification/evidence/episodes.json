@@ -1,0 +1,3617 @@
+[
+  {
+    "row": {
+      "id": "init-demo_0001-loading-912172",
+      "panel": "source",
+      "task": "loading",
+      "condition": "D5",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 56,
+      "footprint_inside_target": true,
+      "position_error_mm": 5.76222758125194,
+      "yaw_error_deg": 1.1916755636576424,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 1,
+      "first_contact_action": 149,
+      "forbidden_pairs": [
+        [
+          "fixture_wall_1",
+          "gripper0_finger2_collision"
+        ]
+      ],
+      "D5_trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "D5_modified_actions": 60,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.644428332738581,
+      "maximum_object_displacement_mm": 285.2678233039895,
+      "minimum_joint_margin_rad": 0.252447201295102,
+      "workspace_clipped_steps": 12,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.761938196999836,
+      "first_supported_index": 86,
+      "maximum_object_lift_mm": 145.59278644968742
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [
+      {
+        "action": 149,
+        "step": 636,
+        "geom1": "fixture_wall_1",
+        "geom2": "gripper0_finger2_collision",
+        "distance_m": -0.000172434026316831,
+        "wrench_contact": [
+          3.125903077337744,
+          -3.102625015156364,
+          -0.3707089286135033,
+          -0.00043482624350943725,
+          0.0,
+          0.0
+        ],
+        "force_norm_N": 4.419839040433189,
+        "eef_xyz": [
+          0.12928828198296308,
+          0.15313570839256993,
+          0.8314817244688186
+        ],
+        "object_truth": {
+          "object_position_m": [
+            0.12524040564727995,
+            0.15239585282344364,
+            0.8187485240037017
+          ],
+          "object_quat_wxyz": [
+            0.999945926205221,
+            4.712480533269508e-05,
+            1.67993801190704e-05,
+            0.010399142398113822
+          ],
+          "object_yaw_rad": 0.020798661245094004,
+          "object_linear_velocity_m_s": [
+            -7.047088326316636e-06,
+            1.9070772810331857e-05,
+            0.0004943072641984932
+          ],
+          "object_angular_velocity_rad_s": [
+            -0.0012820847115100535,
+            -0.0004737594049808042,
+            8.176961751922217e-09
+          ],
+          "eef_position_m": [
+            0.12928828198296308,
+            0.15313570839256993,
+            0.8314817244688186
+          ],
+          "gripper_joint_position_m": [
+            0.03738478432808145,
+            -0.03707779842707982
+          ],
+          "gripper_open": true,
+          "grasp_contact": false,
+          "bilateral_grasp_contact": false,
+          "control_steps": 636,
+          "sim_time_s": 31.8
+        },
+        "object_tilt_deg": 0.005732976241736925
+      }
+    ],
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 60,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0001-loading-912172",
+      "panel": "source",
+      "task": "loading",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 56,
+      "footprint_inside_target": true,
+      "position_error_mm": 5.76222758125194,
+      "yaw_error_deg": 1.1916755636576424,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "D5_modified_actions": 60,
+      "clearance_trigger_action": 147,
+      "clearance_actions": 5,
+      "clearance_seconds": 0.25,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.6364842367992236,
+      "maximum_object_displacement_mm": 285.2678233039895,
+      "minimum_joint_margin_rad": 0.2699129407729113,
+      "workspace_clipped_steps": 12,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.125542765999853,
+      "first_supported_index": 86,
+      "maximum_object_lift_mm": 145.59278644968742
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": {
+        "policy_action_zero_based": 147,
+        "measured_aperture_m": 0.060096551351918576,
+        "measured_xyz": [
+          0.12850887854300486,
+          0.1522996171421362,
+          0.8310798317219911
+        ],
+        "measured_quat_xyzw": [
+          0.7015580172427177,
+          0.7126060992080797,
+          -0.002770869936485329,
+          -0.0011036728256949484
+        ],
+        "target_pose": [
+          0.12850887854300486,
+          0.1522996171421362,
+          0.8534035685011016,
+          -0.015630260697520864,
+          0.9998751603386804,
+          -0.002314884063115333,
+          0.9998629278032707,
+          0.015617341444523385,
+          -0.005497658672261931
+        ]
+      },
+      "overridden_actions": 5,
+      "finished_before_action": 152,
+      "failure": null,
+      "used": true,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 60,
+      "clearance_actions": 5,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0001-feeding-912172",
+      "panel": "source",
+      "task": "feeding",
+      "condition": "D5",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 12.068444797285299,
+      "yaw_error_deg": 0.33774407526513467,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.22534851069426481,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.3504275255354181,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.516991087999486,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0001-feeding-912172",
+      "panel": "source",
+      "task": "feeding",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 12.068444797285299,
+      "yaw_error_deg": 0.33774407526513467,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.22534851069426481,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.3504275255354181,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.09521899899846,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0002-loading-912172",
+      "panel": "source",
+      "task": "loading",
+      "condition": "D5",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 57,
+      "footprint_inside_target": true,
+      "position_error_mm": 4.5675992776185295,
+      "yaw_error_deg": 0.8391480886716808,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "D5_modified_actions": 60,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.655733317887008,
+      "maximum_object_displacement_mm": 285.58349438043183,
+      "minimum_joint_margin_rad": 0.2501428701499995,
+      "workspace_clipped_steps": 14,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.79029290499966,
+      "first_supported_index": 86,
+      "maximum_object_lift_mm": 145.99270684595444
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 60,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0002-loading-912172",
+      "panel": "source",
+      "task": "loading",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 57,
+      "footprint_inside_target": true,
+      "position_error_mm": 4.5675992776185215,
+      "yaw_error_deg": 0.8391480886716808,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "D5_modified_actions": 60,
+      "clearance_trigger_action": 147,
+      "clearance_actions": 5,
+      "clearance_seconds": 0.25,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.677991178866451,
+      "maximum_object_displacement_mm": 285.58349438043183,
+      "minimum_joint_margin_rad": 0.2483541270773535,
+      "workspace_clipped_steps": 11,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.759915997999997,
+      "first_supported_index": 86,
+      "maximum_object_lift_mm": 145.99270684595444
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": {
+        "policy_action_zero_based": 147,
+        "measured_aperture_m": 0.06009525200764678,
+        "measured_xyz": [
+          0.12752559318613738,
+          0.15171965007676597,
+          0.8340442264510014
+        ],
+        "measured_quat_xyzw": [
+          0.7009102848750222,
+          0.7132444133168053,
+          -0.002519568983429242,
+          -0.0009117022097095075
+        ],
+        "target_pose": [
+          0.12752559318613738,
+          0.15171965007676597,
+          0.8533957691625734,
+          -0.017447882710992235,
+          0.9998452840400196,
+          -0.0022314506125075345,
+          0.9998360956535808,
+          0.017436848657106097,
+          -0.0048721799138517746
+        ]
+      },
+      "overridden_actions": 5,
+      "finished_before_action": 152,
+      "failure": null,
+      "used": true,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 60,
+      "clearance_actions": 5,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0002-feeding-912171",
+      "panel": "source",
+      "task": "feeding",
+      "condition": "D5",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 1.8122567459336427,
+      "yaw_error_deg": 0.4659926294055005,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.2178198276082636,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.3504326684146295,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.08227220199842,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0002-feeding-912171",
+      "panel": "source",
+      "task": "feeding",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 1.8122567459336427,
+      "yaw_error_deg": 0.4659926294055005,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.2178198276082636,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.3504326684146295,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.586414078001326,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0002-feeding-912172",
+      "panel": "source",
+      "task": "feeding",
+      "condition": "D5",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 1.8122567459336427,
+      "yaw_error_deg": 0.4659926294055005,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.21398842051574737,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.3504270139541932,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.248856891001196,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0002-feeding-912172",
+      "panel": "source",
+      "task": "feeding",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 1.8122567459336427,
+      "yaw_error_deg": 0.4659926294055005,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.21398842051574737,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.3504270139541932,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.821100158000263,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0003-loading-912171",
+      "panel": "source",
+      "task": "loading",
+      "condition": "D5",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 56,
+      "footprint_inside_target": true,
+      "position_error_mm": 4.4510127573789,
+      "yaw_error_deg": 0.5744848336374098,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "D5_modified_actions": 60,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.6685802029024535,
+      "maximum_object_displacement_mm": 283.83516602813296,
+      "minimum_joint_margin_rad": 0.24932836583892026,
+      "workspace_clipped_steps": 11,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.546463968999888,
+      "first_supported_index": 86,
+      "maximum_object_lift_mm": 144.89501184073495
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 60,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0003-loading-912171",
+      "panel": "source",
+      "task": "loading",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 56,
+      "footprint_inside_target": true,
+      "position_error_mm": 4.451012757378935,
+      "yaw_error_deg": 0.57448483363741,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "D5_modified_actions": 60,
+      "clearance_trigger_action": 147,
+      "clearance_actions": 5,
+      "clearance_seconds": 0.25,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.6845821847027764,
+      "maximum_object_displacement_mm": 283.83516602813296,
+      "minimum_joint_margin_rad": 0.24798985118795347,
+      "workspace_clipped_steps": 11,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.236801105000268,
+      "first_supported_index": 86,
+      "maximum_object_lift_mm": 144.89501184073495
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": {
+        "policy_action_zero_based": 147,
+        "measured_aperture_m": 0.06009640127300407,
+        "measured_xyz": [
+          0.12761101763827407,
+          0.1525452603657883,
+          0.8341067467820082
+        ],
+        "measured_quat_xyzw": [
+          0.7014217161308969,
+          0.7127387347547389,
+          -0.003057356586826677,
+          -0.0013132748768890715
+        ],
+        "target_pose": [
+          0.12761101763827407,
+          0.1525452603657883,
+          0.8534127792623097,
+          -0.016011702898170416,
+          0.9998688832684566,
+          -0.002416948859633934,
+          0.9998528226700758,
+          0.015996457421376925,
+          -0.006200511966576075
+        ]
+      },
+      "overridden_actions": 5,
+      "finished_before_action": 152,
+      "failure": null,
+      "used": true,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 60,
+      "clearance_actions": 5,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0003-feeding-912171",
+      "panel": "source",
+      "task": "feeding",
+      "condition": "D5",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 2.6069020155887306,
+      "yaw_error_deg": 0.4318077611921203,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.21113291395423672,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.3504365028372094,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.565410234999945,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0003-feeding-912171",
+      "panel": "source",
+      "task": "feeding",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 2.6069020155887306,
+      "yaw_error_deg": 0.4318077611921203,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.21113291395423672,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.3504365028372094,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.617876244999934,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0003-feeding-912172",
+      "panel": "source",
+      "task": "feeding",
+      "condition": "D5",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 2.6069020155887306,
+      "yaw_error_deg": 0.4318077611921203,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.20860969011861602,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.35032571081117814,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.829026105000594,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0003-feeding-912172",
+      "panel": "source",
+      "task": "feeding",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 2.6069020155887306,
+      "yaw_error_deg": 0.4318077611921203,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.20860969011861602,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.35032571081117814,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.525793318998694,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0005-loading-912171",
+      "panel": "source",
+      "task": "loading",
+      "condition": "D5",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 56,
+      "footprint_inside_target": true,
+      "position_error_mm": 4.723711288793051,
+      "yaw_error_deg": 0.5644534382291222,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "D5_modified_actions": 60,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.6563790656669592,
+      "maximum_object_displacement_mm": 284.46363669747785,
+      "minimum_joint_margin_rad": 0.24886956478893696,
+      "workspace_clipped_steps": 14,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.199589592999473,
+      "first_supported_index": 86,
+      "maximum_object_lift_mm": 144.38380997895928
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 60,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0005-loading-912171",
+      "panel": "source",
+      "task": "loading",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 56,
+      "footprint_inside_target": true,
+      "position_error_mm": 4.723711288793051,
+      "yaw_error_deg": 0.5644534382291222,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "D5_modified_actions": 60,
+      "clearance_trigger_action": 147,
+      "clearance_actions": 5,
+      "clearance_seconds": 0.25,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.6748960746395305,
+      "maximum_object_displacement_mm": 284.46363669747785,
+      "minimum_joint_margin_rad": 0.24586577071622218,
+      "workspace_clipped_steps": 17,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.90799411399894,
+      "first_supported_index": 86,
+      "maximum_object_lift_mm": 144.38380997895928
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": {
+        "policy_action_zero_based": 147,
+        "measured_aperture_m": 0.060096395080582204,
+        "measured_xyz": [
+          0.12773234398609068,
+          0.1529570800371784,
+          0.8341418191097593
+        ],
+        "measured_quat_xyzw": [
+          0.7016246194161295,
+          0.7125388407945836,
+          -0.003082299377314448,
+          -0.0013391112094803485
+        ],
+        "target_pose": [
+          0.12773234398609068,
+          0.1529570800371784,
+          0.8534131476505421,
+          -0.015442200420680433,
+          0.9998778410667136,
+          -0.002416896757273323,
+          0.9998613309001251,
+          0.015426785719440358,
+          -0.00627162283600205
+        ]
+      },
+      "overridden_actions": 5,
+      "finished_before_action": 152,
+      "failure": null,
+      "used": true,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 60,
+      "clearance_actions": 5,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0005-loading-912172",
+      "panel": "source",
+      "task": "loading",
+      "condition": "D5",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 57,
+      "footprint_inside_target": true,
+      "position_error_mm": 5.628070305659002,
+      "yaw_error_deg": 1.0850103346988393,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 2,
+      "first_contact_action": 149,
+      "forbidden_pairs": [
+        [
+          "fixture_wall_1",
+          "gripper0_finger2_collision"
+        ]
+      ],
+      "D5_trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "D5_modified_actions": 60,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.6782362284767025,
+      "maximum_object_displacement_mm": 289.6773602746709,
+      "minimum_joint_margin_rad": 0.2483456176284058,
+      "workspace_clipped_steps": 14,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.19274605099963,
+      "first_supported_index": 86,
+      "maximum_object_lift_mm": 145.10622374083314
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [
+      {
+        "action": 149,
+        "step": 486,
+        "geom1": "fixture_wall_1",
+        "geom2": "gripper0_finger2_collision",
+        "distance_m": -0.0001555844826865956,
+        "wrench_contact": [
+          4.328797391653646,
+          1.5937915353712493,
+          4.023190648060334,
+          0.0005534530044690793,
+          0.0,
+          0.0
+        ],
+        "force_norm_N": 6.120843185938404,
+        "eef_xyz": [
+          0.12708024768112225,
+          0.15423770281765306,
+          0.8327044386965128
+        ],
+        "object_truth": {
+          "object_position_m": [
+            0.11502341417619902,
+            0.15262608498860836,
+            0.8187245204018302
+          ],
+          "object_quat_wxyz": [
+            0.9999551625855518,
+            -0.00011145443566233219,
+            0.00010233804565977729,
+            0.009468364343215286
+          ],
+          "object_yaw_rad": 0.018936989015806382,
+          "object_linear_velocity_m_s": [
+            -4.146951190103205e-05,
+            -4.5867267734056435e-05,
+            0.0008263616709094187
+          ],
+          "object_angular_velocity_rad_s": [
+            0.0030863880645404583,
+            -0.0027904630610164874,
+            -1.2186167586586632e-07
+          ],
+          "eef_position_m": [
+            0.12708024768112225,
+            0.15423770281765306,
+            0.8327044386965128
+          ],
+          "gripper_joint_position_m": [
+            0.037381376772199465,
+            -0.03634293653049564
+          ],
+          "gripper_open": true,
+          "grasp_contact": false,
+          "bilateral_grasp_contact": false,
+          "control_steps": 486,
+          "sim_time_s": 24.3
+        },
+        "object_tilt_deg": 0.017339019532628366
+      },
+      {
+        "action": 150,
+        "step": 487,
+        "geom1": "fixture_wall_1",
+        "geom2": "gripper0_finger2_collision",
+        "distance_m": -1.9108339369036286e-06,
+        "wrench_contact": [
+          4.062357835927826,
+          -3.7106126324153363,
+          -1.652877150797347,
+          0.00022924897251575704,
+          0.0,
+          0.0
+        ],
+        "force_norm_N": 5.744858585778456,
+        "eef_xyz": [
+          0.12689643182277238,
+          0.15399497999327916,
+          0.8333346991709163
+        ],
+        "object_truth": {
+          "object_position_m": [
+            0.11502190391740949,
+            0.1526244128542058,
+            0.8187546332672023
+          ],
+          "object_quat_wxyz": [
+            0.999955171195327,
+            -5.571030381594741e-05,
+            5.102372822566395e-05,
+            0.009468362723611406
+          ],
+          "object_yaw_rad": 0.018937002765030166,
+          "object_linear_velocity_m_s": [
+            -2.0566206040282152e-05,
+            -2.2803103558552425e-05,
+            0.0004100936609152658
+          ],
+          "object_angular_velocity_rad_s": [
+            0.0015326425866177913,
+            -0.0013822951365506713,
+            -3.0130769528958427e-08
+          ],
+          "eef_position_m": [
+            0.12689643182277238,
+            0.15399497999327916,
+            0.8333346991709163
+          ],
+          "gripper_joint_position_m": [
+            0.03809183473421187,
+            -0.036634556048159725
+          ],
+          "gripper_open": true,
+          "grasp_contact": false,
+          "bilateral_grasp_contact": false,
+          "control_steps": 487,
+          "sim_time_s": 24.35
+        },
+        "object_tilt_deg": 0.008656828242658161
+      }
+    ],
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 60,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0005-loading-912172",
+      "panel": "source",
+      "task": "loading",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 57,
+      "footprint_inside_target": true,
+      "position_error_mm": 5.628070305659003,
+      "yaw_error_deg": 1.0850103346988402,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "D5_modified_actions": 60,
+      "clearance_trigger_action": 147,
+      "clearance_actions": 5,
+      "clearance_seconds": 0.25,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.6877393300342667,
+      "maximum_object_displacement_mm": 289.6773602746709,
+      "minimum_joint_margin_rad": 0.2530192735897332,
+      "workspace_clipped_steps": 10,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.237033404999238,
+      "first_supported_index": 86,
+      "maximum_object_lift_mm": 145.10622374083314
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": {
+        "policy_action_zero_based": 147,
+        "measured_aperture_m": 0.060095049849247406,
+        "measured_xyz": [
+          0.12624139961853093,
+          0.15374288073181683,
+          0.834647365809197
+        ],
+        "measured_quat_xyzw": [
+          0.7009173534686186,
+          0.7132403506971156,
+          -0.0017431374161141328,
+          -0.00016497257957917477
+        ],
+        "target_pose": [
+          0.12624139961853093,
+          0.15374288073181683,
+          0.8533832156261157,
+          -0.01742967278119144,
+          0.9998456531350551,
+          -0.0022082603278407707,
+          0.9998445028555508,
+          0.017423650156992553,
+          -0.0027178161717120674
+        ]
+      },
+      "overridden_actions": 5,
+      "finished_before_action": 152,
+      "failure": null,
+      "used": true,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 60,
+      "clearance_actions": 5,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0005-feeding-912171",
+      "panel": "source",
+      "task": "feeding",
+      "condition": "D5",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 2.2788186818894616,
+      "yaw_error_deg": 0.49918740521884775,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.21377308887967467,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.3504347309069198,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.722369436000008,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0005-feeding-912171",
+      "panel": "source",
+      "task": "feeding",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 2.2788186818894616,
+      "yaw_error_deg": 0.49918740521884775,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.21377308887967467,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.3504347309069198,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.051991741000165,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0005-feeding-912172",
+      "panel": "source",
+      "task": "feeding",
+      "condition": "D5",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 2.2788186818894616,
+      "yaw_error_deg": 0.49918740521884775,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.21485447870830174,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.3504288111976974,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.66210142899945,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0005-feeding-912172",
+      "panel": "source",
+      "task": "feeding",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 2.2788186818894616,
+      "yaw_error_deg": 0.49918740521884775,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.21485447870830174,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.3504288111976974,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.06215147600051,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "retain-load01-training-demo_0001",
+      "panel": "prior",
+      "task": "loading",
+      "condition": "N",
+      "strict_success": false,
+      "preservation": null,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": false,
+      "position_error_mm": 433.79397738733985,
+      "yaw_error_deg": 54.48100680506428,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 1.2410664042730484,
+      "maximum_object_displacement_mm": 0.00020222139145486626,
+      "minimum_joint_margin_rad": -0.0035294979066158305,
+      "workspace_clipped_steps": 5,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.945289723000315,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 1.4902300837782434e-05
+    },
+    "strict_criteria": {
+      "position": false,
+      "orientation": false,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "retain-load01-training-demo_0001",
+      "panel": "prior",
+      "task": "loading",
+      "condition": "C",
+      "strict_success": false,
+      "preservation": null,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": false,
+      "position_error_mm": 433.79397738733985,
+      "yaw_error_deg": 54.48100680506428,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 1.2410664042730484,
+      "maximum_object_displacement_mm": 0.00020222139145486626,
+      "minimum_joint_margin_rad": -0.0035294979066158305,
+      "workspace_clipped_steps": 5,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.370959456999117,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 1.4902300837782434e-05
+    },
+    "strict_criteria": {
+      "position": false,
+      "orientation": false,
+      "marked_face_up": true,
+      "footprint_inside_target": false,
+      "placement_height": false,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "retain-load01-training-demo_0002",
+      "panel": "prior",
+      "task": "loading",
+      "condition": "N",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 88,
+      "footprint_inside_target": true,
+      "position_error_mm": 1.6583729055911056,
+      "yaw_error_deg": 1.1822000223061013,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.6433255874538215,
+      "maximum_object_displacement_mm": 464.26235898353195,
+      "minimum_joint_margin_rad": 0.25004912984374883,
+      "workspace_clipped_steps": 6,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.82627628299997,
+      "first_supported_index": 108,
+      "maximum_object_lift_mm": 156.61614642728506
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "retain-load01-training-demo_0002",
+      "panel": "prior",
+      "task": "loading",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 96,
+      "footprint_inside_target": true,
+      "position_error_mm": 1.2877541950641713,
+      "yaw_error_deg": 0.10152965181203999,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 27
+      },
+      "D5_modified_actions": 60,
+      "clearance_trigger_action": 207,
+      "clearance_actions": 5,
+      "clearance_seconds": 0.25,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.6738399355788802,
+      "maximum_object_displacement_mm": 466.4204506477182,
+      "minimum_joint_margin_rad": 0.2649527286074105,
+      "workspace_clipped_steps": 6,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.22423573800006,
+      "first_supported_index": 107,
+      "maximum_object_lift_mm": 162.8613667499562
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 27
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": {
+        "policy_action_zero_based": 207,
+        "measured_aperture_m": 0.060099690985864304,
+        "measured_xyz": [
+          0.12767948202102875,
+          0.1513554344818531,
+          0.8334157241131764
+        ],
+        "measured_quat_xyzw": [
+          0.6996910626790512,
+          0.714425730380239,
+          -0.00493792850908392,
+          -0.0019772303257702163
+        ],
+        "target_pose": [
+          0.12767948202102875,
+          0.1513554344818531,
+          0.853522134301873,
+          -0.02085701473459766,
+          0.9997741238340029,
+          -0.004084880452671533,
+          0.9997350701460243,
+          0.020816067338198303,
+          -0.009822467138934188
+        ]
+      },
+      "overridden_actions": 5,
+      "finished_before_action": 212,
+      "failure": null,
+      "used": true,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 60,
+      "clearance_actions": 5,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "retain-load01-training-demo_0003",
+      "panel": "prior",
+      "task": "loading",
+      "condition": "N",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 70,
+      "footprint_inside_target": true,
+      "position_error_mm": 2.1272392907861417,
+      "yaw_error_deg": 0.8079097989615144,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.7150257126147066,
+      "maximum_object_displacement_mm": 265.968484531379,
+      "minimum_joint_margin_rad": 0.22746199004304257,
+      "workspace_clipped_steps": 24,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.785477684999933,
+      "first_supported_index": 127,
+      "maximum_object_lift_mm": 158.22290109983882
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "retain-load01-training-demo_0003",
+      "panel": "prior",
+      "task": "loading",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 74,
+      "footprint_inside_target": true,
+      "position_error_mm": 3.2179668153391185,
+      "yaw_error_deg": 0.5569002951325194,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": {
+        "query_zero_based": 3,
+        "policy_action_zero_based": 90,
+        "first_closing_waypoint_zero_based": 22
+      },
+      "D5_modified_actions": 60,
+      "clearance_trigger_action": 207,
+      "clearance_actions": 5,
+      "clearance_seconds": 0.25,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.7560387550536043,
+      "maximum_object_displacement_mm": 268.18135997952163,
+      "minimum_joint_margin_rad": 0.22746199004304257,
+      "workspace_clipped_steps": 22,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.228844698000103,
+      "first_supported_index": 129,
+      "maximum_object_lift_mm": 162.41435910266677
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 3,
+        "policy_action_zero_based": 90,
+        "first_closing_waypoint_zero_based": 22
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        90,
+        150
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": {
+        "policy_action_zero_based": 207,
+        "measured_aperture_m": 0.06009874599261037,
+        "measured_xyz": [
+          0.12785178536321443,
+          0.1515494178159808,
+          0.8316417832234101
+        ],
+        "measured_quat_xyzw": [
+          0.6999760140169392,
+          0.71415286388754,
+          -0.004129991048012005,
+          -0.0014865988449579955
+        ],
+        "target_pose": [
+          0.12785178536321443,
+          0.1515494178159808,
+          0.853489426110022,
+          -0.020062739649663732,
+          0.9997920294054072,
+          -0.003658471698268847,
+          0.9997674708457205,
+          0.020033045949802073,
+          -0.00798005693740712
+        ]
+      },
+      "overridden_actions": 5,
+      "finished_before_action": 212,
+      "failure": null,
+      "used": true,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 60,
+      "clearance_actions": 5,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "retain-load01-training-demo_0005",
+      "panel": "prior",
+      "task": "loading",
+      "condition": "N",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 70,
+      "footprint_inside_target": true,
+      "position_error_mm": 7.094308368836235,
+      "yaw_error_deg": 0.8990326874492695,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.7082686210672806,
+      "maximum_object_displacement_mm": 445.40049960514096,
+      "minimum_joint_margin_rad": 0.019517089646090557,
+      "workspace_clipped_steps": 8,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.24556092000057,
+      "first_supported_index": 126,
+      "maximum_object_lift_mm": 155.78738231270717
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "retain-load01-training-demo_0005",
+      "panel": "prior",
+      "task": "loading",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 73,
+      "footprint_inside_target": true,
+      "position_error_mm": 4.996080049345376,
+      "yaw_error_deg": 1.1003581031014062,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": {
+        "query_zero_based": 3,
+        "policy_action_zero_based": 90,
+        "first_closing_waypoint_zero_based": 15
+      },
+      "D5_modified_actions": 60,
+      "clearance_trigger_action": 207,
+      "clearance_actions": 5,
+      "clearance_seconds": 0.25,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.7442193659692222,
+      "maximum_object_displacement_mm": 450.06055617710564,
+      "minimum_joint_margin_rad": 0.019517089646090557,
+      "workspace_clipped_steps": 12,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.87647555699914,
+      "first_supported_index": 125,
+      "maximum_object_lift_mm": 161.2194195864879
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 3,
+        "policy_action_zero_based": 90,
+        "first_closing_waypoint_zero_based": 15
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        90,
+        150
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": {
+        "policy_action_zero_based": 207,
+        "measured_aperture_m": 0.06013356246689867,
+        "measured_xyz": [
+          0.12588333441259558,
+          0.14995589049727762,
+          0.8305376198044523
+        ],
+        "measured_quat_xyzw": [
+          0.6997029163703129,
+          0.7144331339185042,
+          -0.0009159765706113816,
+          0.000535695049331954
+        ],
+        "target_pose": [
+          0.12588333441259558,
+          0.14995589049727762,
+          0.8533631170245985,
+          -0.02083108370738622,
+          0.999780913340491,
+          -0.002047259541405034,
+          0.9997828760769477,
+          0.02082997961960216,
+          -0.0005591532472702132
+        ]
+      },
+      "overridden_actions": 5,
+      "finished_before_action": 212,
+      "failure": null,
+      "used": true,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 60,
+      "clearance_actions": 5,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "dev-demo_0012-loading-912171",
+      "panel": "handover",
+      "task": "loading",
+      "condition": "N",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 53,
+      "footprint_inside_target": true,
+      "position_error_mm": 6.095520763724495,
+      "yaw_error_deg": 1.0320806937680391,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.699012578377513,
+      "maximum_object_displacement_mm": 275.77220753201084,
+      "minimum_joint_margin_rad": 0.2491899205584116,
+      "workspace_clipped_steps": 16,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.828095746001054,
+      "first_supported_index": 86,
+      "maximum_object_lift_mm": 145.63606897400706
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "dev-demo_0012-loading-912171",
+      "panel": "handover",
+      "task": "loading",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 57,
+      "footprint_inside_target": true,
+      "position_error_mm": 5.207421284794646,
+      "yaw_error_deg": 0.17040859265067387,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "D5_modified_actions": 60,
+      "clearance_trigger_action": 147,
+      "clearance_actions": 5,
+      "clearance_seconds": 0.25,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.6659542291620135,
+      "maximum_object_displacement_mm": 284.8882985944904,
+      "minimum_joint_margin_rad": 0.2664135660233202,
+      "workspace_clipped_steps": 14,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.264852274000077,
+      "first_supported_index": 86,
+      "maximum_object_lift_mm": 144.42989644630234
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": {
+        "policy_action_zero_based": 147,
+        "measured_aperture_m": 0.06010091549289162,
+        "measured_xyz": [
+          0.1297428380640325,
+          0.15614721907817478,
+          0.8347390365553264
+        ],
+        "measured_quat_xyzw": [
+          0.7022034307274223,
+          0.7119727109414771,
+          -0.002094728883669342,
+          -0.0009015875922178517
+        ],
+        "target_pose": [
+          0.1297428380640325,
+          0.15614721907817478,
+          0.853361384299631,
+          -0.013819058028903937,
+          0.9999031375779579,
+          -0.0016580400927477844,
+          0.9998955832516756,
+          0.013811907971084662,
+          -0.004248975404700253
+        ]
+      },
+      "overridden_actions": 5,
+      "finished_before_action": 152,
+      "failure": null,
+      "used": true,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 60,
+      "clearance_actions": 5,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "dev-demo_0012-loading-912172",
+      "panel": "handover",
+      "task": "loading",
+      "condition": "N",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 54,
+      "footprint_inside_target": true,
+      "position_error_mm": 6.253933834659831,
+      "yaw_error_deg": 1.215184569620228,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 1,
+      "first_contact_action": 149,
+      "forbidden_pairs": [
+        [
+          "fixture_wall_1",
+          "gripper0_finger2_collision"
+        ]
+      ],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.693849259247541,
+      "maximum_object_displacement_mm": 277.58609786400075,
+      "minimum_joint_margin_rad": 0.24953998937900845,
+      "workspace_clipped_steps": 15,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.768977697000082,
+      "first_supported_index": 86,
+      "maximum_object_lift_mm": 142.9980265317744
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [
+      {
+        "action": 149,
+        "step": 1650,
+        "geom1": "fixture_wall_1",
+        "geom2": "gripper0_finger2_collision",
+        "distance_m": -8.372144986265209e-05,
+        "wrench_contact": [
+          3.5019360276569644,
+          -3.475978343218691,
+          0.4232528294118361,
+          -0.0002229092680532578,
+          0.0,
+          0.0
+        ],
+        "force_norm_N": 4.952284759778291,
+        "eef_xyz": [
+          0.12876751459488492,
+          0.15259207540314923,
+          0.8308880758191902
+        ],
+        "object_truth": {
+          "object_position_m": [
+            0.11398144812723128,
+            0.15169195188526835,
+            0.8187774745453685
+          ],
+          "object_quat_wxyz": [
+            0.9999437702773407,
+            -1.8246593242244814e-06,
+            7.331466152967118e-05,
+            0.010604287112665114
+          ],
+          "object_yaw_rad": 0.021208971636142236,
+          "object_linear_velocity_m_s": [
+            -2.973374239230339e-05,
+            -1.0540448916775257e-06,
+            9.614277357699896e-05
+          ],
+          "object_angular_velocity_rad_s": [
+            7.078266650218912e-05,
+            -0.001996720312811056,
+            -8.079721905424323e-10
+          ],
+          "eef_position_m": [
+            0.12876751459488492,
+            0.15259207540314923,
+            0.8308880758191902
+          ],
+          "gripper_joint_position_m": [
+            0.037392486440197596,
+            -0.037356735876278434
+          ],
+          "gripper_open": true,
+          "grasp_contact": false,
+          "bilateral_grasp_contact": false,
+          "control_steps": 1650,
+          "sim_time_s": 82.5
+        },
+        "object_tilt_deg": 0.008403842894053302
+      }
+    ],
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "dev-demo_0012-loading-912172",
+      "panel": "handover",
+      "task": "loading",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "upright_supported_10mm_3samples": true,
+      "supported_samples": 57,
+      "footprint_inside_target": true,
+      "position_error_mm": 6.723160253625497,
+      "yaw_error_deg": 0.5693851244366471,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "D5_modified_actions": 60,
+      "clearance_trigger_action": 147,
+      "clearance_actions": 4,
+      "clearance_seconds": 0.2,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 2.7165923736644935,
+      "maximum_object_displacement_mm": 289.94912293987306,
+      "minimum_joint_margin_rad": 0.2551466665838742,
+      "workspace_clipped_steps": 11,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.559311753999282,
+      "first_supported_index": 86,
+      "maximum_object_lift_mm": 144.26648946177335
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": {
+        "policy_action_zero_based": 147,
+        "measured_aperture_m": 0.06009775664362284,
+        "measured_xyz": [
+          0.1257711508689481,
+          0.15449120066242644,
+          0.838418924960022
+        ],
+        "measured_quat_xyzw": [
+          0.7015244469499187,
+          0.7126446064111762,
+          -0.001023461559832481,
+          0.0002604056566130563
+        ],
+        "target_pose": [
+          0.1257711508689481,
+          0.15449120066242644,
+          0.8533528988351919,
+          -0.015726765041009474,
+          0.9998746937385271,
+          -0.0018071199828004762,
+          0.999875759799245,
+          0.015724805716092558,
+          -0.0010933668524913647
+        ]
+      },
+      "overridden_actions": 4,
+      "finished_before_action": 151,
+      "failure": null,
+      "used": true,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 60,
+      "clearance_actions": 4,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "dev-demo_0012-feeding-912171",
+      "panel": "handover",
+      "task": "feeding",
+      "condition": "N",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 4.552749095038912,
+      "yaw_error_deg": 1.4281506158481616,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.20792604671834558,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.3450533327103358,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.62681866999992,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "dev-demo_0012-feeding-912171",
+      "panel": "handover",
+      "task": "feeding",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 4.552749095038912,
+      "yaw_error_deg": 1.4281506158481616,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.20792604671834558,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.3450533327103358,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.37507347599967,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "dev-demo_0012-feeding-912172",
+      "panel": "handover",
+      "task": "feeding",
+      "condition": "N",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 4.552749095038912,
+      "yaw_error_deg": 1.4281506158481616,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.21509484087350786,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.34504706355739545,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.06883110600029,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": false,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  },
+  {
+    "row": {
+      "id": "dev-demo_0012-feeding-912172",
+      "panel": "handover",
+      "task": "feeding",
+      "condition": "C",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "upright_supported_10mm_3samples": false,
+      "supported_samples": 0,
+      "footprint_inside_target": true,
+      "position_error_mm": 4.552749095038912,
+      "yaw_error_deg": 1.4281506158481616,
+      "released": true,
+      "stable": true,
+      "forbidden_contact_samples": 0,
+      "first_contact_action": null,
+      "forbidden_pairs": [],
+      "D5_trigger": null,
+      "D5_modified_actions": 0,
+      "clearance_trigger_action": null,
+      "clearance_actions": 0,
+      "clearance_seconds": 0.0,
+      "engineering_failure": null,
+      "clearance_still_active": false,
+      "measured_wrist_path_m": 0.21509484087350786,
+      "maximum_object_displacement_mm": 0.0,
+      "minimum_joint_margin_rad": 0.34504706355739545,
+      "workspace_clipped_steps": 0,
+      "possible_drop_events": 0,
+      "wall_seconds": 16.663123884000015,
+      "first_supported_index": null,
+      "maximum_object_lift_mm": 0.0
+    },
+    "strict_criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "contacts": [],
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "clearance": {
+      "enabled": true,
+      "trigger": null,
+      "overridden_actions": 0,
+      "finished_before_action": null,
+      "failure": null,
+      "used": false,
+      "active": false
+    },
+    "possible_drops": [],
+    "within_run": {
+      "passed": true,
+      "policy_actions": 1436,
+      "D5_actions": 0,
+      "clearance_actions": 0,
+      "history_all47_transitions_exact": true,
+      "native_gripper_and_inactive_channels_exact": true,
+      "no_clearance_without_D5": true
+    }
+  }
+]
