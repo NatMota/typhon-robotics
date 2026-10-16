@@ -25,3 +25,5 @@ Original media bytes, execution timestamps, scenario definitions, success tolera
 ## New recordings, 17 October 2026
 
 Added four visually checked recordings: native feeding and loading successes from HIER02, plus a matched native loading failure and D5-assisted success from INIT12. The library reports checkpoint hashes, outcome metrics and assistance. These selected examples are separate from aggregate EVAL36 evidence. [Provenance and links](new-runs-20261017.json). The [existing-link audit](link-audit-20261017.json) passed 419/419 URLs before adding the four new files. The library now contains 166 videos and 423 media objects.
+
+The four added videos passed public-download SHA-256 and 206 byte-range checks. [Live verification](new-runs-live-verification-20261017.json). Production deployment: `dpl_AvzyfUBxbSSTiPawLqT3xtPtA767`; presentation commit: `5c2635f`.
