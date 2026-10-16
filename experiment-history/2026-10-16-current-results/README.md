@@ -14,7 +14,7 @@ RETURN01 replays two original loading trajectories from training parents0002/000
 | Unchanged geometric-expert feeding |2/2|2/2|0/2: open-finger fixture-wall contacts during descent|
 | Measured-pose/open loading preservation |2/2|Not required|2/2; no object movement or contact|
 
-The expert contacts are shallow simulator intersections (4–9micrometres); force severity is unmeasured. The original zero-contact criterion remains in force. No extraction example entered training. The next step is a bounded descent/contact investigation before deciding whether to teach reverse initiation.
+The expert contacts are shallow simulator intersections (4–9micrometres); force severity is unmeasured. The original zero-contact criterion remains in force. No extraction example entered training. RETURN02 tested eligibility for one fixed2mm inward acquisition offset. A conservative bounding-box screen flagged both fixture walls, so no continuation ran. This does not establish actual shifted-motion failure; no new extraction labels were produced. [RETURN02 report](https://github.com/NatMota/typhon-robotics/blob/970d2431800952d71e32d81e048f3325919cd67d/experiment-history/2026-10-16-return02/RETURN02_report.md).
 
 Source: [RETURN01 full report](https://github.com/NatMota/typhon-robotics/blob/bf1106f5363c419ffb0ea84b90f4e32e1231ce93/experiment-history/2026-10-16-return01/RETURN01_report.md).
 
