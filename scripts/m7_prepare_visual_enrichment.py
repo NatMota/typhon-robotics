@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Optional causal M7 RGB/proprio features and segregated simulator-oracle labels.
 
-Run on Powerglide beside the frozen canonical NPZs. Never writes those inputs or
+Run on simulation host beside the frozen canonical NPZs. Never writes those inputs or
 changes actions. The default model loader does not consume this optional export.
 """
 import argparse
@@ -232,7 +232,7 @@ def main():
                                  frame_index=frame, pre_action_index=k, preceding_action_index=k-1,
                                  time_since_first_exported_action_s=k/hz, simulator_time_s=truths[k]['sim_time_s'],
                                  source_npz_sha256=before['npz'], source_actions_sha256=before['actions'],
-                                 source_npz_uri='ssh://powerglide'+str(npz_path.resolve()))
+                                 source_npz_uri='ssh://sim-host'+str(npz_path.resolve()))
                     rgbs = {}; crops = {}
                     for camera in ['primary', 'secondary']:
                         feat, crop = rgb_features(n[camera][frame], previous[camera], 0 if previous_k is None else (k-previous_k)/hz, frame, k-1)
@@ -305,7 +305,7 @@ def main():
                                                   all_source_hashes_unchanged=True, all_runtime_grasp_unknown=True,
                                                   representative_states=list(selected), missing_representative_states=[s for s in ['GRASP_LOST'] if s not in selected],
                                                   native224_probes=len(probe), training_started=False))
-    (out/'REPRODUCE.txt').write_text('Run from Powerglide humanoid-m6-joint; outputs must not exist:\n.venv-xvla/bin/python scripts/m7_prepare_visual_enrichment.py --out results/personal-m7-data-prep-20261009/visual-enrichment-v1\nNo model weights are loaded. Dependencies: existing numpy, OpenCV, Pillow, Transformers and pinned native processor. Copy this output directory to Mint Fast Drive. No original data or targets are altered.\n')
+    (out/'REPRODUCE.txt').write_text('Run from simulation host humanoid-m6-joint; outputs must not exist:\n.venv-xvla/bin/python scripts/m7_prepare_visual_enrichment.py --out results/personal-m7-data-prep-20261009/visual-enrichment-v1\nNo model weights are loaded. Dependencies: existing numpy, OpenCV, Pillow, Transformers and pinned native processor. Copy this output directory to durable output storage. No original data or targets are altered.\n')
     report = f'''M7 optional visual enrichment v1 — data preparation only\n\n{len(manifest)} existing canonical generated-expert episodes, {rows_total} synchronized source frames.\nOracle states: {dict(counts)}. RGB detections: {dict(coverage)}.\n\nThe runtime file and panels contain only current/past RGB and whitelisted measured EEF/gripper state. Closing is not grasping: runtime is_grasped is explicitly UNKNOWN in every row. Bilateral contact and object truth are kept only in oracle_annotations.jsonl and ORACLE ONLY review panels. Verified lift requires three consecutive bilateral-contact samples, >=20 mm lift above initial rest, and <=15 mm variation in object-to-EEF displacement. Contact without lift is distinct. Release and loss use only past/current state. No whole-episode max lift, eventual success or future phase is fed to earlier observations.\n\nMeasured EEF and finger opening come from archived trace fields that are also exposed by environment.observe().proprio. They do not come from the NPZ's previous-command history vector. Encoder-derived velocity/acceleration use backward differences and can be noisy. The orange bounding-box centre is an image observation, not a physical centre or depth estimate. Full visibility, yaw, force, mass, friction and runtime lift remain unknown. No hand or human physical quantities are invented.\n\nPanels are a separate optional third-view variant alongside unchanged primary and secondary RGB. This replaces the O2 crop slot with a panel containing that crop; it is not a fourth view or a change to the default loader. Labels are 17 px at native224. The exact frozen processor preserves panels within <=1 uint8 level. This validates formatting only, not model understanding or task improvement. Inspect review/contact_sheet.png.\n\nAll nine episodes are successful source-expert executions; transient close-without-contact frames are not a held-out failed-grasp episode. Grasp loss has no representative unless reported above, so no observed-loss capability is claimed. The scripted self-check tests loss-relevant temporal causality, but does not create training data. Future grasp-estimator training needs failed/occluded examples and validated runtime sensing. No training, controller changes or simulation runs occurred.\n\nAll source NPZ/action/episode hashes match the frozen manifest and match again after reading. Reproduction and field provenance are saved.\n'''
     (out/'REPORT.txt').write_text(report)
     files=[p for p in out.rglob('*') if p.is_file()]

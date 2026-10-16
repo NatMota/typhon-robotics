@@ -1,6 +1,6 @@
 M7 new checkpoint fixed-pilot evidence, 9 October 2026
 
-All four assigned M3/M4 checkpoints were copied directly from their training pods to Powerglide /var/tmp and SHA-256 verified. Each completed1000updates.32actual learned-policy episodes executed; no expert replay successes are counted. M0-M6 frozen artifacts and training files remain unchanged.
+All four assigned M3/M4 checkpoints were copied directly from their training pods to simulation host /var/tmp and SHA-256 verified. Each completed1000updates.32actual learned-policy episodes executed; no expert replay successes are counted. M0-M6 frozen artifacts and training files remain unchanged.
 
 Model | all-goal criteria | unfinished/correction success | completed-state preservation | mean inference s | p95 inference s
 v1-m3 | 0/8 | 0/6 | 0/2 | 0.246 | 0.255
@@ -20,7 +20,7 @@ This is a small frozen development pilot, not an unseen final test. Each scene h
 
 Evidence locations
 /var/tmp/humanoid-m7-live-evaluation-20261009
-Durable small summaries/diagnostics: $PROJECT/results/personal-m7-training-20261009/powerglide-pilots-20261009
+Durable small summaries/diagnostics: $PROJECT/results/personal-m7-training-20261009/sim-host-pilots-20261009
 Videos: videos.json; all per-episode raw predictions, RGB inputs, requested/applied actions, scores and failure traces remain in the /var/tmp run directories. Startup integration failures are retained separately as v1-m4, v1-m4-r2 and v1-m4-r3 and are not scored episodes.
 
 Reproduce (fresh output directory required):

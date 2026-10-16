@@ -19,7 +19,7 @@ def main():
  assert poses['passed'] and expert['passed'] and integrity['passed'] and all(r['exactly_matches_new_H30'] for r in repeats)
  text=f'''# Post-M4 motion diagnosis and bounded inference tuning
 
-Measured on Powerglide, 9 October 2026. New result directory; M0/M1/M1.5/M1.6/M3/M4 were not replaced. Bulk artifacts and source are backed up to Mint fast drive. Base source: b504eb0deda28f0efed773781c426c916af04cc5.
+Measured on simulation host, 9 October 2026. New result directory; M0/M1/M1.5/M1.6/M3/M4 were not replaced. Bulk artifacts and source are backed up to durable output storage. Base source: b504eb0deda28f0efed773781c426c916af04cc5.
 
 ## Recommendation
 
@@ -95,7 +95,7 @@ Two separate fresh-process repeats of the new P17 completed01 reference matched 
 - Inference pauses simulated time. Planning at4Hz simulated cadence is not proof of real-time4Hz processing or human-intervention reaction speed.
 - No fresh physical demonstrations, model training, publication or submission was performed. Task success still requires the original evaluator.
 
-The confirmation was interrupted once by a source-sync mistake that copied a Mint-specific input symlink onto Powerglide. Three P17 H30 cases completed; PR H30 stopped before checkpoint load or any episode. The link was restored, completed cases retained, and remaining panels resumed under the unchanged frozen protocol. The incident and empty pre-load directory are preserved in `confirmation/setup-failures/`. No failed setup is counted as a robot episode.
+The confirmation was interrupted once by a source-sync mistake that copied a host-specific input symlink onto simulation host. Three P17 H30 cases completed; PR H30 stopped before checkpoint load or any episode. The link was restored, completed cases retained, and remaining panels resumed under the unchanged frozen protocol. The incident and empty pre-load directory are preserved in `confirmation/setup-failures/`. No failed setup is counted as a robot episode.
 
 Reproduction commands and exact code versions are in `docs/motion-diagnostics/REPRODUCE.md`. Episode runners refuse to overwrite existing outputs.
 '''

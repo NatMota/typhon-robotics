@@ -3,7 +3,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 root="$PWD"
 [[ "$(uname -s)" == Linux && "$(uname -m)" == x86_64 ]] || {
- echo 'This frozen setup supports Linux x86_64 (Mint and UCL); macOS needs separate dependency locks.' >&2
+ echo 'This frozen setup supports Linux x86_64 (pilot); macOS needs separate dependency locks.' >&2
  exit 1
 }
 export UV_CACHE_DIR="$root/.cache/uv" UV_PYTHON_INSTALL_DIR="$root/.python" UV_LINK_MODE=copy UV_HTTP_TIMEOUT=300 CC=gcc

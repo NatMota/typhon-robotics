@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Reproduce M0 camera pairing evidence, audio offsets and unrotated previews.
 
-Run on Powerglide: .venv-sim/bin/python scripts/m0_sync.py
+Run on simulation host: .venv-sim/bin/python scripts/m0_sync.py
 Candidate pairs and visual event anchors are reviewed annotations, not learned
 matching. All 16 possible cross-camera audio matches are evaluated independently.
 Offset convention: secondary_time = primary_time + offset_s.

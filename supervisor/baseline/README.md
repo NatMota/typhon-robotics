@@ -81,7 +81,7 @@ rollouts establish actual grasp/placement performance.
 
 ## Reproduce the frozen primary suite
 
-From Powerglide, use fresh output paths. The protocol already exists; do not
+From simulation host, use fresh output paths. The protocol already exists; do not
 regenerate it after seeing results.
 
 ```bash

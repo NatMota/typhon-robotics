@@ -40,7 +40,7 @@
     {
       "id": "initial_ppo_scope",
       "status": "distinguished",
-      "finding": "The original small task selector did run behavioural cloning and PPO. Personal X-VLA adaptation and V4 aggregation did not run PPO or Q-learning.",
+      "finding": "The original small task selector used behavioural cloning and PPO. X-VLA adaptation and V4 aggregation used supervised imitation.",
       "claim_precluded": "Either a global claim that PPO was never run or a claim that V4 was reinforcement learning."
     },
     {

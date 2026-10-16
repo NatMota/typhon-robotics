@@ -37,7 +37,7 @@ def import_bundle(name, path):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--repo", type=Path, required=True, help="Read-only pinned Powerglide repository/base.")
+    parser.add_argument("--repo", type=Path, required=True, help="Read-only pinned simulation host repository/base.")
     parser.add_argument("--data-root", type=Path, required=True, help="Portable M7 prep directory.")
     parser.add_argument("--source-root", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)

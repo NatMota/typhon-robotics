@@ -1,6 +1,6 @@
 # Video-informed scenario reconstruction for continuous robotic manipulation
 
-How can personal phone recordings contribute to robot learning when they do not contain calibrated robot-action labels? This project reconstructs tabletop scenarios, generates robot supervision in simulation, and tests feeding, fixture loading and continuous execution with a Franka Panda and X-VLA.
+How can recorded phone footage contribute to robot learning when it does not contain calibrated robot-action labels? This project reconstructs tabletop scenarios, generates robot supervision in simulation, and tests feeding, fixture loading and continuous execution with a Franka Panda and X-VLA.
 
 ## TL;DR
 
@@ -15,9 +15,9 @@ The outcomes below summarise the revised manuscript. Earlier pilot results remai
 | Feeding then loading ran in one continuous world | **25/36 qualified workflows without assistance (69.4%)** and **31/36 with controller assistance (86.1%)** | Two frozen policies, an externally timed task switch, and no reset between stages. Exact 95% intervals: 51.9–83.7% and 70.5–95.3% |
 | Assistance had a trade-off | Forbidden-contact workflows fell from **6/36 to 1/36**, but one assisted workflow had a negative joint margin | Endpoint placement alone is not enough to qualify an execution |
 
-**The main finding:** video-informed scenarios and robot-specific supervision produced local manipulation and a bounded continuous workflow. Goal diversity, task teaching and grasp acquisition needed separate interventions. These results do not establish zero-shot feeding-to-loading transfer, general human-video-to-robot action translation, or a causal advantage over a fully matched synthetic dataset.
+**The main finding:** video-informed scenarios and robot-specific supervision produced local manipulation and a bounded continuous workflow. Goal diversity, task teaching and grasp acquisition needed separate interventions. Loading received task-specific supervision. Broader transfer and a matched comparison of recorded and synthetic data remain open questions.
 
-The recordings comprise **eight videos, 16 curated examples and 15 reconstructable scenarios**. The 36 paired workflow draws come from two previously inspected scenes with small pose perturbations, fixed cameras and frozen policies. They are simulation results, not physical-robot validation or independent retraining trials.
+The recordings comprise **eight videos, 16 curated examples and 15 reconstructable scenarios**. The 36 paired workflow draws come from two previously inspected scenes with small pose perturbations, fixed cameras and frozen policies. The evaluation uses simulated workflow draws with fixed checkpoints.
 
 [Experiment dashboard](https://www.natslabs.com/typhon-robotics/) · [Video library](https://www.natslabs.com/typhon-robotics/media-library.html) · [Earlier verified results](evidence/m7/) · [Controller audit](evidence/harness/SERVICE_REPORT.txt) · [Dataset provenance](evidence/m0/) · [Experiment history](experiment-history/) · [Reproduction](#reproduce)
 
@@ -28,7 +28,7 @@ The recordings comprise **eight videos, 16 curated examples and 15 reconstructab
 | ![Native loading policy picks up the block and releases it seated in the fixture](docs/research/media/qualified-native-loading.gif) | ![V4-M6 picks up the block but releases it with an incorrect yaw orientation](docs/research/media/wrong-yaw-v4-m6.gif) |
 | **Strict placement passed:** 6.10 mm position error, 1.03° yaw error. Unassisted development workflow. | **Strict placement failed:** 11.36 mm position error, 85.06° yaw error. |
 
-Recorded simulator footage, cropped to the oblique camera and replayed at **1.5× speed**. These illustrate different model versions and task configurations, not a matched comparison or the full 36-pair evaluation. [Clip provenance](docs/research/media/placement-gifs.json).
+Recorded simulator footage, cropped to the oblique camera and replayed at **1.5× speed**. The clips illustrate different model versions and task configurations. [Clip provenance](docs/research/media/placement-gifs.json).
 
 ## Why feeding and loading
 
@@ -73,13 +73,13 @@ The orange DUPLO block and hand-drawn staging target made the task easy to recor
 
 Background clutter was removed from this presentation image. The [original recording-setup photo](docs/research/media/recording-setup.png) is retained.
 
-The photos show the source setup. They do not provide a calibrated scale or measured material properties.
+The photos show the source setup; physical scale and material properties were unmeasured.
 
 ### The original study plan
 
 The initial collection target was 60 feeding demonstrations: 40 normal examples, 10 with human interference and 10 with other disturbances. The planned transfer test introduced machine loading with a new workstation specification, fixture state, available skills and readiness constraints. A QR code was one proposed way to supply the workstation specification. Loading demonstrations were to remain outside the training set.
 
-The proposed evaluation had 20 unfamiliar feeding layouts, 20 normal loading trials and 20 loading trials with human interference, with a rule-based baseline on the same cases. Those counts describe the plan, not the completed dataset or benchmark. The actual data, methods and results are reported below and in the versioned evidence. [Original collection and evaluation proposal](docs/research/schaeffler-motivation-and-study-plan.md)
+The proposed evaluation had 20 unfamiliar feeding layouts, 20 normal loading trials and 20 loading trials with human interference, with a rule-based baseline on the same cases. These are planned counts. Completed data, methods and results are reported below and in the versioned evidence. [Original collection and evaluation proposal](docs/research/schaeffler-motivation-and-study-plan.md)
 
 ### A deployment goal: NVIDIA Jetson Thor
 
@@ -93,7 +93,7 @@ The [VLA research shortlist](docs/research/pretrained-vla-extensions.md) covers 
 ## What was built
 
 ```text
-8 personal phone recordings → 16 curated manipulation examples
+8 phone recordings → 16 curated manipulation examples
    ↓ observed object state, target geometry, category and source timestamps
 15 reconstructable simulation scenarios + independent synthetic controls
    ↓ common Panda geometric controller → simulated RGB and robot actions
@@ -103,7 +103,7 @@ Execution service: visual completion → measured-state guards → bounded execu
    ↓ independent simulation scorer, trajectories, video and dashboard
 ```
 
-Human video contributes task-relevant starting states, goals, disturbance categories and the blue numeral appearance. The action-supervised policies train on **simulated robot camera sequences paired with geometric-expert robot actions**. Original phone frames do not have a validated frame-to-robot-action alignment; this is not direct human-video-to-robot imitation.
+Human video contributes task-relevant starting states, goals, disturbance categories and the blue numeral appearance. The action-supervised policies train on **simulated robot camera sequences paired with geometric-expert robot actions**. Phone footage specifies scenarios; the simulator expert supplies the robot-action labels.
 
 Feeding moves a loose block into a marked staging square. Loading moves it from staging into a shallow fixture. A correct outcome requires position, directed orientation, release and stability, rather than merely closing the gripper.
 
@@ -114,9 +114,9 @@ This table preserves the initial October 2026 pilot snapshot. Those models prece
 | Experiment | Observed result | Interpretation |
 |---|---:|---|
 | Source inventory | 8 recordings; 4 matched camera pairs | Originals preserved and checksummed |
-| Curated personal examples | 7 normal, 4 pause/resume, 3 correction, 2 already completed | 16 total; excluded example retained separately |
+| Curated recording examples | 7 normal, 4 pause/resume, 3 correction, 2 already completed | 16 total; excluded example retained separately |
 | Scenario reconstruction | 15/16 usable | One initial state insufficiently observable |
-| Geometric expert on reconstructed personal scenarios | 13/15 successful | Scenario feasibility, not learned imitation |
+| Geometric expert on reconstructed recording-derived scenarios | 13/15 successful | Scenario feasibility, not learned imitation |
 | Matched independent synthetic scenarios | 8/15 successful | Same geometric execution layer |
 | Common 1.5 s learned-policy pilot, V1/V2/V3 M3 | 0/8 for each | No unfinished manipulation solved |
 | Common 1.5 s learned-policy pilot, V1/V2/V3 M4 | 2/8 for each | Only the two already-completed states remained correct |
@@ -144,7 +144,7 @@ This is fixed-camera, coloured-brick, overhead **feeding** evidence. Loading ret
 
 The service can sample up to three X-VLA proposals, reject paths outside configured end-effector regions, check measured joint limits/speeds, rank remaining candidates by path length and second-difference cost, and execute a short prefix before observing again. It records measured joint position/velocity, gripper and end-effector state, simulated actuator torque, commands, rejections and image timestamps.
 
-This is bounded candidate selection, not learned-value search or simulator lookahead. End-effector zone checks are not whole-arm collision checking. The simulator pauses during inference. Qwen3-VL integration is available experimentally; the validated completion path uses the small classifier because Qwen produced contradictory outputs in these tests.
+Candidate selection uses bounded path costs. Checks cover end-effector zones; whole-arm collision checking remains unsupported. The simulator pauses during inference. Qwen3-VL integration is available experimentally; the validated completion path uses the small classifier because Qwen produced contradictory outputs in these tests.
 
 ## Training matrix
 
@@ -157,9 +157,9 @@ These historical variants use the declared source mixture and sample across traj
 | V3 | Semantic chunks, up to 4 s future action windows, up to 30 exact anchors, sparse causal visual history, held cue, expert actions |
 | V4 | V3 originals plus one round of successful same-state expert continuations after a matching student's rollout budget expires |
 
-V4 is a DAgger-style continuation experiment, not PPO or Q-learning. A rollout budget expiry is not proof of irrecoverable failure. The simulator-derived held cue is privileged causal annotation and is explicitly declared; it must not be mistaken for a learned grasp detector.
+V4 uses DAgger-style corrective imitation: successful expert continuations from states visited by the student policy. Rollout-budget expiry triggers a continuation review. The held-object cue is supplied by the simulator.
 
-In these historical branches, M3/M4 update the active soft prompts. M5 updates LoRA adapters, active prompts, action projections and temporal annotation projections. M6 jointly updates the shared vision-language/action weights and active adaptation parameters. Their configurations, optimiser schedules, mixture sizes and checkpoints differ. Read each experiment's manifests before comparing results. Training loss alone is not a robot success metric.
+In these historical branches, M3/M4 update the active soft prompts. M5 updates LoRA adapters, active prompts, action projections and temporal annotation projections. M6 jointly updates the shared vision-language/action weights and active adaptation parameters. Configurations, optimiser schedules, mixture sizes and checkpoints are recorded in each experiment manifest. Task success is scored from the resulting robot state.
 
 ## Typhon: a product concept for managing robotics experiment runs
 
@@ -173,7 +173,7 @@ The implemented research harness and read-only dashboard provide parts of that w
 
 The dashboard shows recorded experiments and controller measurements. Successful completion recognition and successful manipulation are reported separately. Its published October 9 recordings are historical evidence; they are not the later 36-pair workflow panel in the manuscript.
 
-Watch the [privileged expert pick and place](https://www.natslabs.com/typhon-robotics/media-library.html?clip=ge/personal_demo_0001.mp4), [expert orientation-correction reference](https://www.natslabs.com/typhon-robotics/media-library.html?clip=ge/personal_demo_0007.mp4), or [V4-M6 learned pickup and placement attempt](https://www.natslabs.com/typhon-robotics/?run=v4-m6-pilot-v1&case=m7-personal_demo_0006). The V4-M6 attempt verified a lift and reached 11.36 mm position error, but its 85.06° yaw error failed the task. The video library identifies the model version, run, checkpoint update and checksum. [Logo concepts](docs/branding/) remain exploratory.
+Watch the [privileged expert pick and place](https://www.natslabs.com/typhon-robotics/media-library.html?clip=ge/personal_demo_0001.mp4), [expert orientation-correction reference](https://www.natslabs.com/typhon-robotics/media-library.html?clip=ge/personal_demo_0007.mp4), or [V4-M6 learned pickup and placement attempt](https://www.natslabs.com/typhon-robotics/?run=v4-m6-pilot-v1&case=m7-personal_demo_0006). The V4-M6 attempt verified a lift and reached 11.36 mm position error, but its 85.06° yaw error failed the task. The video library identifies the model version, run, checkpoint update and checksum. The selected [jointed-vortex logo](docs/branding/) represents the experiment manager.
 
 ### Agentic research and the opportunity–solution tree
 
@@ -211,7 +211,7 @@ Full X-VLA checkpoints, raw phone videos and bulk training tensors are not bundl
 
 ## Data and geometry limitations
 
-Primary-camera image coordinates were mapped using a dimensionless target-square reference. The reconstruction used an explicit virtual scale; pixel distances were not asserted to be physical metres. The personal block is an orange DUPLO piece with a blue 2. A body-attached asymmetric numeral fixes the original 0°/180° ambiguity; the four-orientation check is saved below.
+Primary-camera image coordinates were mapped using a dimensionless target-square reference. The reconstruction used an explicit virtual scale; pixel distances were not asserted to be physical metres. The reference block is an orange DUPLO piece with a blue 2. A body-attached asymmetric numeral fixes the original 0°/180° ambiguity; the four-orientation check is saved below.
 
 ![Fixed-camera orientation check](docs/orientation-check.png)
 

@@ -169,7 +169,7 @@ Absolute world XYZ/6D rotation/gripper predictions are converted using live robo
 
 ## Computational performance
 
-Across {timing['inference_chunks']} primary inference chunks, mean synchronized GPU inference was **{timing['mean_gpu_inference_s']*1000:.2f} ms**, median **{timing['p50_gpu_inference_s']*1000:.2f} ms**, p95 **{timing['p95_gpu_inference_s']*1000:.2f} ms**. Peak PyTorch CUDA allocation was **{timing['peak_cuda_allocated_bytes']/2**30:.3f} GiB**, reserved **{timing['peak_cuda_reserved_bytes']/2**30:.3f} GiB**. These allocator statistics exclude EGL/context and other processes. Inference pauses simulation; wall time is not real robot throughput. Powerglide was available for parallel M1.5 work, so timing is descriptive rather than a controlled hardware benchmark.
+Across {timing['inference_chunks']} primary inference chunks, mean synchronized GPU inference was **{timing['mean_gpu_inference_s']*1000:.2f} ms**, median **{timing['p50_gpu_inference_s']*1000:.2f} ms**, p95 **{timing['p95_gpu_inference_s']*1000:.2f} ms**. Peak PyTorch CUDA allocation was **{timing['peak_cuda_allocated_bytes']/2**30:.3f} GiB**, reserved **{timing['peak_cuda_reserved_bytes']/2**30:.3f} GiB**. These allocator statistics exclude EGL/context and other processes. Inference pauses simulation; wall time is not real robot throughput. simulation host was available for parallel M1.5 work, so timing is descriptive rather than a controlled hardware benchmark.
 
 Expert batch wall time was {summaries['expert']['total_wall_duration_s']:.2f} s; pretrained batch wall time was {summaries['pretrained']['total_wall_duration_s']:.2f} s. Exact per-task/per-episode times, IPC-inclusive latencies and memory samples are in [computational performance](computational_performance.json) and `pretrained/evaluation/inference_measurements.json`.
 
@@ -183,7 +183,7 @@ Because this custom-domain policy baseline is weak, use independent development/
 
 ## Reproduction and artifacts
 
-From `~/Projects/humanoid-task-supervisor-m2` on Powerglide:
+From `~/Projects/humanoid-task-supervisor-m2` on simulation host:
 
 ```bash
 {command}

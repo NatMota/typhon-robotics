@@ -1,6 +1,6 @@
 # Personal manipulation dataset — M0, 9 October 2026
 
-This milestone inventories, synchronizes, segments and annotates the supplied phone recordings on Powerglide. It does not train a policy, change a simulator or publish the repository.
+This milestone inventories, synchronizes, segments and annotates the supplied phone recordings on simulation host. It does not train a policy, change a simulator or publish the repository.
 
 ## Measured milestone results
 
@@ -76,7 +76,7 @@ Recordings 0005/0001 provide paired ordinary feeding observations. Pair 0008/000
 
 ## Reproduction and checkpoints
 
-Use the existing `.venv-sim` on Powerglide and retained source files plus the saved review/configuration JSON inputs. Exact commands and runtime versions are in `finalization_commands.json`, `runtime_versions.json`, `commands.json`, tracker calibration/configuration, synchronization evidence and segmentation configuration. Source filenames and camera-pair offsets are not rediscovered from filenames. Reproduction requires the declared review inputs, including the clap-boundary audit. Finalization regenerates the review page before computing artifact hashes.
+Use the existing `.venv-sim` on simulation host and retained source files plus the saved review/configuration JSON inputs. Exact commands and runtime versions are in `finalization_commands.json`, `runtime_versions.json`, `commands.json`, tracker calibration/configuration, synchronization evidence and segmentation configuration. Source filenames and camera-pair offsets are not rediscovered from filenames. Reproduction requires the declared review inputs, including the clap-boundary audit. Finalization regenerates the review page before computing artifact hashes.
 
 ```bash
 .venv-sim/bin/python scripts/m0_prepare.py
@@ -88,4 +88,4 @@ Use the existing `.venv-sim` on Powerglide and retained source files plus the sa
 .venv-sim/bin/python scripts/m0_validate.py
 ```
 
-Checkpoint A: eight-source inventory and hashes saved. Checkpoint B: paired, clap-reviewed clips and source bounds saved. Checkpoint C: exact sampled tracking, annotations, quality rows and reviewed examples saved. Checkpoint D: final manifests and this report assembled; independent validation determines the final status in `validation_summary.json`. Frozen Mint and UCL evidence is checked against its Git HEAD content in `frozen_integrity.json`; it is not overwritten.
+Checkpoint A: eight-source inventory and hashes saved. Checkpoint B: paired, clap-reviewed clips and source bounds saved. Checkpoint C: exact sampled tracking, annotations, quality rows and reviewed examples saved. Checkpoint D: final manifests and this report assembled; independent validation determines the final status in `validation_summary.json`. Frozen pilot evidence is checked against its Git HEAD content in `frozen_integrity.json`; it is not overwritten.

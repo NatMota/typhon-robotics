@@ -13,7 +13,7 @@ from urllib.parse import parse_qs, unquote, urlsplit
 
 HERE = Path(__file__).resolve().parent
 EVIDENCE = Path(os.environ.get('M7_EVIDENCE_DIR', '/var/tmp/humanoid-m7-live-evaluation-20261009'))
-ARCHIVE = Path(os.environ.get('M7_TRAINING_DIR', '/var/tmp/humanoid-runpod-archive-20261009'))
+ARCHIVE = Path(os.environ.get('M7_TRAINING_DIR', '/var/tmp/training-archive'))
 LIVE = Path(os.environ.get('M7_LIVE_DIR', str(EVIDENCE / 'live')))
 SAFE = re.compile(r'^[A-Za-z0-9_.-]+$')
 
@@ -172,7 +172,7 @@ class Handler(BaseHTTPRequestHandler):
                 if len(parts) != 3 or parts[-1] not in ('rollout.mp4', 'initial.png', 'final.png', 'episode.json', 'scenario.json', 'trajectory.jsonl.gz'):
                     raise FileNotFoundError('Unknown evidence file')
                 return self.file(within(EVIDENCE, *parts))
-            if url.path in ('/', '/index.html', '/app.js', '/styles.css'):
+            if url.path in ('/', '/index.html', '/app.js', '/styles.css', '/logo-mark.png'):
                 return self.file(HERE / ('index.html' if url.path == '/' else url.path[1:]))
             raise FileNotFoundError('Unknown endpoint')
         except (BrokenPipeError, ConnectionResetError):

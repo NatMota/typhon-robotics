@@ -372,7 +372,7 @@ def main():
     write_json(out / 'frozen_integrity.json', {'tracked_frozen_file_count': len(frozen),
                                              'unchanged': frozen_ok, 'files': frozen})
     if not frozen_ok:
-        raise RuntimeError('Frozen Mint/UCL artifact changed; stop finalization')
+        raise RuntimeError('Frozen pilot artifact changed; stop finalization')
 
     required_review_types = {'correct_placement', 'tracking_or_annotation_limitation'}
     human_ok = required_review_types <= approved_types
@@ -451,7 +451,7 @@ def main():
     write_json(out / 'runtime_versions.json', runtime)
     report = f'''# Personal manipulation dataset — M0, 9 October 2026
 
-This milestone inventories, synchronizes, segments and annotates the supplied phone recordings on Powerglide. It does not train a policy, change a simulator or publish the repository.
+This milestone inventories, synchronizes, segments and annotates the supplied phone recordings on simulation host. It does not train a policy, change a simulator or publish the repository.
 
 ## Measured milestone results
 
@@ -527,13 +527,13 @@ Recordings 0005/0001 provide paired ordinary feeding observations. Pair 0008/000
 
 ## Reproduction and checkpoints
 
-Use the existing `.venv-sim` on Powerglide and retained source files plus the saved review/configuration JSON inputs. Exact commands and runtime versions are in `finalization_commands.json`, `runtime_versions.json`, `commands.json`, tracker calibration/configuration, synchronization evidence and segmentation configuration. Source filenames and camera-pair offsets are not rediscovered from filenames. Reproduction requires the declared review inputs, including the clap-boundary audit. Finalization regenerates the review page before computing artifact hashes.
+Use the existing `.venv-sim` on simulation host and retained source files plus the saved review/configuration JSON inputs. Exact commands and runtime versions are in `finalization_commands.json`, `runtime_versions.json`, `commands.json`, tracker calibration/configuration, synchronization evidence and segmentation configuration. Source filenames and camera-pair offsets are not rediscovered from filenames. Reproduction requires the declared review inputs, including the clap-boundary audit. Finalization regenerates the review page before computing artifact hashes.
 
 ```bash
 {chr(10).join(commands)}
 ```
 
-Checkpoint A: eight-source inventory and hashes saved. Checkpoint B: paired, clap-reviewed clips and source bounds saved. Checkpoint C: exact sampled tracking, annotations, quality rows and reviewed examples saved. Checkpoint D: final manifests and this report assembled; independent validation determines the final status in `validation_summary.json`. Frozen Mint and UCL evidence is checked against its Git HEAD content in `frozen_integrity.json`; it is not overwritten.
+Checkpoint A: eight-source inventory and hashes saved. Checkpoint B: paired, clap-reviewed clips and source bounds saved. Checkpoint C: exact sampled tracking, annotations, quality rows and reviewed examples saved. Checkpoint D: final manifests and this report assembled; independent validation determines the final status in `validation_summary.json`. Frozen pilot evidence is checked against its Git HEAD content in `frozen_integrity.json`; it is not overwritten.
 '''
     (out / 'M0_report.md').write_text(report)
     (out / 'checkpoint_C.md').write_text(f'# Checkpoint C\n\n{len(trajectories)} source-traceable per-trial observation rows; {len(quality)} source quality rows. Missing positions/orientations stay unknown; no interpolation. Specific required human examples confirmed: {human_ok}. Task semantics review status: {semantics.get("status")}; annotation acceptance: {semantic_ok}.\n')

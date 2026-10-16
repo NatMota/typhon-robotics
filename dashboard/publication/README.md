@@ -2,7 +2,7 @@
 
 The live page is https://www.natslabs.com/typhon-robotics/.
 
-Restored 38 previously pending files from Mint's existing Powerglide backup. All 38 match the SHA-256 values in the original public manifest. They are served as static files at the original media URLs; the other 381 files continue through the existing exact-key private-R2 proxy. No bucket-wide public access or new credentials were required.
+Restored 38 previously pending files from the verified source archive. All 38 match the SHA-256 values in the original public manifest. They are served as static files at the original media URLs; the other 381 files continue through the existing exact-key private-R2 proxy. No bucket-wide public access or new credentials were required.
 
 The publication has 419 files, including 162 videos. The [live HTTP check](live-http-verification-20261016.json) verified status 200 and exact byte size for 419/419 media URLs. Preview checks verified 206 byte-range responses for a restored learned rollout and an existing expert replay. Live Chrome playback was checked, as were the model filter and switching between V4-M6 and V4-M4. Camera and provenance labels changed together.
 

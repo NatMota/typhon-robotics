@@ -4,13 +4,11 @@ M1 adds a separate environment for an orange rectangular building block with a b
 
 Feeding moves the block from a sampled supply pose onto a flat marked staging square at the specified yaw. Loading starts from staging and moves the same block into a shallow fixture with a floor and surrounding walls. The fixture initially has generous clearance; this milestone does not establish precision insertion or force control.
 
-## Run on Powerglide
+## Run the simulation
 
-Use the existing remote helper on the Mac and the isolated M1 worktree. These are small scripted smoke tests, not the formal M2 baseline. Choose fresh output directories when rerunning to preserve evidence.
+Run from the repository root with the simulation environment installed. These are scripted smoke tests; the formal benchmark is separate. Choose fresh output directories.
 
 ```bash
-$HOME/.config/ucl-remote/powerglide-ssh 'bash -s' <<'SH'
-cd "$HOME/Projects/humanoid-task-supervisor-m1"
 export MUJOCO_GL=egl PYOPENGL_PLATFORM=egl
 .venv-sim/bin/python -m supervisor.feeding_loading.runner \
   --task feeding --seed 17 --config configs/feeding_loading/feeding.json \
@@ -18,7 +16,6 @@ export MUJOCO_GL=egl PYOPENGL_PLATFORM=egl
 .venv-sim/bin/python -m supervisor.feeding_loading.runner \
   --task loading --seed 17 --config configs/feeding_loading/loading.json \
   --output results/personal-m1-20261009/loading-your-new-run
-SH
 ```
 
 Run pure contract and scoring checks with:

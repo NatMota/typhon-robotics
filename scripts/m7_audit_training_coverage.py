@@ -93,7 +93,7 @@ def main(root,out,semantic):
   '','Completed evaluation independence: M4/M5/M6 used independent hand-declared completed states at[0.12,-0.10] and[0.13,-0.09],yaw0. Phone0018/0019 map to target[0.125,-0.12], observed starts near[0.1215,-0.1144], yaws0.07806/0.00391. They are different sources/configurations, although all have been inspected during development; no untouched-test claim is available.',
   '','No source files or frozen outputs were changed. No GPU job or training ran in this audit. source_assets.json records actual source paths, sizes and hashes; coverage.csv is the portable decision ledger.']
  (out/'REPORT.txt').write_text('\n'.join(lines)+'\n')
- (out/'REPRODUCE.txt').write_text('Run on Powerglide after copying the frozen Mint semantic-v1 index to coverage-input-semantic-v1.csv:\npython3 scripts/m7_audit_training_coverage.py --root . --output results/personal-m7-training-20261009/coverage-v1 --semantic-index coverage-input-semantic-v1.csv\nOutput must be new/nonexistent.\n')
+ (out/'REPRODUCE.txt').write_text('Run on simulation host after copying the frozen analysis host semantic-v1 index to coverage-input-semantic-v1.csv:\npython3 scripts/m7_audit_training_coverage.py --root . --output results/personal-m7-training-20261009/coverage-v1 --semantic-index coverage-input-semantic-v1.csv\nOutput must be new/nonexistent.\n')
  print(json.dumps(summary,indent=2))
 
 if __name__=='__main__':

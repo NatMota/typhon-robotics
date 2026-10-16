@@ -52,7 +52,7 @@ training_suitability.json identifies usable observation-level examples, failed g
 
 ## Reproduction
 
-Use the isolated m15-personal-reconstruction worktree and existing Powerglide .venv-sim. Choose a fresh output directory for preparation; execution resumes only fully saved episode records.
+Use the isolated m15-personal-reconstruction worktree and existing simulation host .venv-sim. Choose a fresh output directory for preparation; execution resumes only fully saved episode records.
 
 ```bash
 .venv-sim/bin/python scripts/m15_prepare.py --m0-root ../humanoid-task-supervisor --m1-root ../humanoid-task-supervisor-m1 --output results/personal-m15-reproduction
@@ -100,4 +100,4 @@ Personal goals share the observed layout and upright numeral convention. Synthet
 
 The inherited M1 seven-segment numeral 2 and rectangular box are symmetric under a180° yaw turn. Geometry signatures confirmed this during review; the M1 source comment describing the glyph as asymmetric is incorrect. Studs are not modelled. The privileged controller and evaluator retain directed yaw, but a180°-wrong block can look identical in RGB to a correct one. This does not invalidate the logged physical execution or source-state mapping; it prevents treating these renders as sufficient RGB-only supervision for full directed orientation. Add faithful asymmetric stud or numeral geometry in a separately versioned subsequent dataset before that training claim. M1 originals and this completed batch remain unchanged. See visual_review.json and training_suitability.json.
 
-The 56 frozen Mint/UCL pilot artifacts also match their saved baseline hashes. A source bundle, exact package inventory and commands.sh are included with this result.
+The 56 frozen pilot pilot artifacts also match their saved baseline hashes. A source bundle, exact package inventory and commands.sh are included with this result.

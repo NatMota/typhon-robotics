@@ -65,7 +65,7 @@ def main():
         'source_count':len(rows),'sources_preserved_and_transfer_verified':True,'original_input_directory':'input/humanoid',
         'sampling_hz':2,'sampling_timestamps':'decoded presentation timestamps, no time interpolation',
         'canonical_orientation':'blue number 2 upright, studs towards top of primary image','records':rows},indent=2))
-    (results/'checkpoint_A_inventory.md').write_text('# M0 source inventory\n\n'+f'{len(rows)} original recordings copied to Powerglide and verified byte-for-byte against local SHA-256 hashes. '+
+    (results/'checkpoint_A_inventory.md').write_text('# M0 source inventory\n\n'+f'{len(rows)} original recordings copied to simulation host and verified byte-for-byte against local SHA-256 hashes. '+
         'Camera identity, session pairing and trial counts remain pending visual inspection. WhatsApp exports are the supplied originals; original phone acquisition timestamps are not assumed from export filenames.\n')
     (results/'commands.json').write_text(json.dumps({'checkpoint_A':['.venv-sim/bin/python scripts/m0_prepare.py'],
         'libraries':{'opencv':cv2.__version__,'numpy':np.__version__},'source_manifest':'data/personal/m0/raw_manifest.csv'},indent=2))

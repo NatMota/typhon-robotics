@@ -48,7 +48,7 @@ def main():
     for run in runs:lines.append(f"{run['run_id']} | {run['recorded']}/{run['scheduled']} | {run['unfinished_successes']}/{run['unfinished_recorded']} | {run['completed_preserved']}/{run['completed_recorded']}"+(' (partial)' if not run['fully_recorded'] else ''))
     lines += ['', 'The four-second protocol was declared before Run3 outcomes. It uses the same eight scenes and full-intent instruction, 30 rounded native 20 Hz anchors and 80 reconstructed control targets. It does not use teacher phase labels or future timings at inference. It is a separate training-contract diagnostic, not a replacement for the common comparison.',
       'All V2/V3 runs consume an explicitly privileged causal held-state cue for trained green crosshairs. Simulation pauses during inference. No successful expert replay is counted as learned-policy performance.',
-      'Each run directory contains exact checkpoint/protocol hashes, copied protocol, run_scope.json, raw actor inputs/actions, simulator action traces, independent scores, and representative videos. Evidence remains in /var/tmp on Powerglide.']
+      'Each run directory contains exact checkpoint/protocol hashes, copied protocol, run_scope.json, raw actor inputs/actions, simulator action traces, independent scores, and representative videos. Evidence remains in /var/tmp on simulation host.']
     (args.output/'M7_followup_report.txt').write_text('\n'.join(lines)+'\n')
     print(json.dumps({'completed_runs':payload['completed_run_count'],'recorded_cases':len(cases),'videos':len(videos)}))
 

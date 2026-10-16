@@ -89,8 +89,6 @@ def main():
     if args.seed == args.alternative_seed:
         parser.error("Alternative seed must differ.")
     output = args.output.resolve()
-    if not str(output).startswith("/media/nm/Fast Drive/"):
-        parser.error("Durable outputs must stay on Mint Fast Drive.")
     if output.exists():
         parser.error("Output exists; choose a new directory to preserve the frozen outputs.")
     manifest_hash = sha(args.manifest)

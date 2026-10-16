@@ -104,7 +104,7 @@ def evaluate(root, trials=None):
     (out/'by_failure_mode.json').write_text(json.dumps(breakdown,indent=2))
     lines=['# Frozen pilot results','',
            'Backend: RGB macro-action surrogate. These are **not physical robot / Isaac results**.',
-           'Public demonstrations, not Nat’s personally recorded data. No industrial safety claim.',
+           'Public demonstrations, not the recorded task dataset. No industrial safety claim.',
            'Unavailability is an explicitly incomplete task, reported separately from success.',
            'One training seed: Wilson intervals reflect rollout uncertainty, not model-seed variability.',
            'Surrogate decision counts are not operational completion-time measurements.','',

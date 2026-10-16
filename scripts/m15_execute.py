@@ -279,7 +279,7 @@ def summarize(output, scenarios, rows, m0, m1):
         'Side-by-side videos show original canonical human footage left and generated Panda execution right at native timing; the shorter side holds its last frame. They are task comparisons, not matched human/robot motion imitation.','',
         'training_suitability.json identifies usable observation-level examples, failed generated trajectories and insufficient initial-state evidence. Successful expert trajectories may support subsequent simulated supervision under the declared proxy assumptions. These videos do not provide calibrated3D human motor trajectories or measured pause timing.','',
         '## Reproduction','',
-        'Use the isolated m15-personal-reconstruction worktree and existing Powerglide .venv-sim. Choose a fresh output directory for preparation; execution resumes only fully saved episode records.','',
+        'Use the isolated m15-personal-reconstruction worktree and existing simulation host .venv-sim. Choose a fresh output directory for preparation; execution resumes only fully saved episode records.','',
         '```bash',
         '.venv-sim/bin/python scripts/m15_prepare.py --m0-root ../humanoid-task-supervisor --m1-root ../humanoid-task-supervisor-m1 --output results/personal-m15-reproduction',
         'MUJOCO_GL=egl PYOPENGL_PLATFORM=egl .venv-sim/bin/python scripts/m15_execute.py --output results/personal-m15-reproduction',

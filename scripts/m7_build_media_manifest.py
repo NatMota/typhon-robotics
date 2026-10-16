@@ -11,7 +11,9 @@ def main():
   path=Path(video['path']);folder=path.parent;episode=json.loads((folder/'episode.json').read_text());manifest=json.loads((folder.parent/'manifest.json').read_text());loaded=json.loads((folder.parent/'checkpoint_load.json').read_text())
   with path.open('rb') as f:digest=hashlib.file_digest(f,'sha256').hexdigest()
   hardware_path=folder.parent/'hardware.json'
-  if not hardware_path.exists():hardware_path=a.root/'hardware-powerglide.json'
+  if not hardware_path.exists():
+   archived_hardware=list(a.root.glob('hardware-*.json'))
+   if len(archived_hardware)==1:hardware_path=archived_hardware[0]
   hardware=json.loads(hardware_path.read_text()) if hardware_path.exists() else {'status':'unavailable'}
   items.append({'local_path':str(path),'filename':f"{video['run_id']}__{video['scenario_id']}.mp4",'bytes':path.stat().st_size,'sha256':digest,
    'run_id':video['run_id'],'model':video['model'],'checkpoint_sha256':manifest['checkpoint_sha256'],'checkpoint_step':loaded['step'],'training_mode':loaded['config']['training_mode'],
