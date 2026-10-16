@@ -1,20 +1,23 @@
-# Typhon
+# Video-informed scenario reconstruction for continuous robotic manipulation
 
-**Inspect, constrain and evaluate robot policies in repeatable manipulation experiments.**
-
-Typhon is an experimental robotics harness built for the October 2026 Humanoid internship challenge. It connects personally recorded tabletop demonstrations, reproducible Franka Panda scenes, X-VLA adaptation, controller telemetry, explicit execution guards and independently scored rollouts.
-
-[Dashboard](https://natslabs.com/typhon-robotics) · [Video library](https://www.natslabs.com/typhon-robotics/media-library.html) · [Verified results](evidence/m7/) · [Controller/harness audit](evidence/harness/SERVICE_REPORT.txt) · [Dataset provenance](evidence/m0/) · [Experiment history](experiment-history/) · [Reproduction](#reproduce)
-
-![Typhon experiment dashboard](docs/dashboard.png)
-
-The dashboard shows recorded experiments and controller measurements. Successful completion recognition and successful manipulation are reported separately.
-
-Watch the [privileged expert pick and place](https://www.natslabs.com/typhon-robotics/media-library.html?clip=ge/personal_demo_0001.mp4), [expert orientation-correction reference](https://www.natslabs.com/typhon-robotics/media-library.html?clip=ge/personal_demo_0007.mp4), or [V4-M6 learned pickup and placement attempt](https://www.natslabs.com/typhon-robotics/?run=v4-m6-pilot-v1&case=m7-personal_demo_0006). The V4-M6 attempt verified a lift and reached 11.36 mm position error, but its 85.06° yaw error failed the task. The video library exposes the model version, run, checkpoint update and checksum for each learned recording. [Logo concepts](docs/branding/) are exploratory, with no final mark selected.
+How can personal phone recordings contribute to robot learning when they do not contain calibrated robot-action labels? This project reconstructs tabletop scenarios, generates robot supervision in simulation, and tests feeding, fixture loading and continuous execution with a Franka Panda and X-VLA.
 
 ## TL;DR
 
-We tested dense video, chopped trajectories, temporal abstraction and expert-guided corrections across 128 simulation episodes using scenarios derived from personally recorded demonstrations. The strongest rollout picked up the brick and released it inside the target, but left it rotated by 85°, so no unfinished task met every success criterion. A separate completion guard recognised all three tested correct configurations without moving the brick, showing that the harness can prevent unnecessary actions while learned orientation control still needs work.
+**[Read the paper: working draft, 16 October 2026](docs/paper/Typhon_Manipulation_Preprint-draft-2026-10-16.pdf).** The manuscript is under active revision. The outcomes below summarise that draft; earlier pilot results remain documented separately.
+
+| Key outcome | Recorded result | What it supports |
+|---|---|---|
+| Local manipulation improved after source adaptation | **31/40 pickups, 22/40 operational placements and 17/40 strict completions**, compared with 0/40 for the released native-interface baseline | Useful local adaptation. Both policies remained at 0/20 strict completions on broader starts |
+| Goal diversity improved familiar recombinations | **10/12 strict completions**, versus **0/12** with fixed-goal teaching | Better coverage of held-out combinations of familiar starts and destinations. Both remained at 0/12 fixture-loading successes without loading labels |
+| Feeding then loading ran in one continuous world | **25/36 qualified workflows without assistance (69.4%)** and **31/36 with controller assistance (86.1%)** | Two frozen policies, an externally timed task switch, and no reset between stages. Exact 95% intervals: 51.9–83.7% and 70.5–95.3% |
+| Assistance had a trade-off | Forbidden-contact workflows fell from **6/36 to 1/36**, but one assisted workflow had a negative joint margin | Endpoint placement alone is not enough to qualify an execution |
+
+**The main finding:** video-informed scenarios and robot-specific supervision produced local manipulation and a bounded continuous workflow. Goal diversity, task teaching and grasp acquisition needed separate interventions. These results do not establish zero-shot feeding-to-loading transfer, general human-video-to-robot action translation, or a causal advantage over a fully matched synthetic dataset.
+
+The recordings comprise **eight videos, 16 curated examples and 15 reconstructable scenarios**. The 36 paired workflow draws come from two previously inspected scenes with small pose perturbations, fixed cameras and frozen policies. They are simulation results, not physical-robot validation or independent retraining trials.
+
+[Experiment dashboard](https://www.natslabs.com/typhon-robotics/) · [Video library](https://www.natslabs.com/typhon-robotics/media-library.html) · [Earlier verified results](evidence/m7/) · [Controller audit](evidence/harness/SERVICE_REPORT.txt) · [Dataset provenance](evidence/m0/) · [Experiment history](experiment-history/) · [Reproduction](#reproduce)
 
 ## Why feeding and loading
 
@@ -85,7 +88,7 @@ The [VLA research shortlist](docs/research/pretrained-vla-extensions.md) covers 
    ↓ common Panda geometric controller → simulated RGB and robot actions
 X-VLA adaptation: dense video / semantic chunks / temporal abstraction / corrections
    ↓ proposed action chunks
-Typhon service: visual completion → measured-state guards → bounded execution
+Execution service: visual completion → measured-state guards → bounded execution
    ↓ independent simulation scorer, trajectories, video and dashboard
 ```
 
@@ -93,9 +96,9 @@ Human video contributes task-relevant starting states, goals, disturbance catego
 
 Feeding moves a loose block into a marked staging square. Loading moves it from staging into a shallow fixture. A correct outcome requires position, directed orientation, release and stability, rather than merely closing the gripper.
 
-## Evidence so far
+## Earlier pilot evidence
 
-This is a research/demo release with negative results retained. It is not a demonstrated general manipulation policy.
+This table preserves the initial October 2026 pilot snapshot. Those models preceded the later source-adaptation, goal-diversity and continuous-workflow experiments reported in the working paper. Their negative results remain part of the record.
 
 | Experiment | Observed result | Interpretation |
 |---|---:|---|
@@ -107,7 +110,7 @@ This is a research/demo release with negative results retained. It is not a demo
 | Common 1.5 s learned-policy pilot, V1/V2/V3 M3 | 0/8 for each | No unfinished manipulation solved |
 | Common 1.5 s learned-policy pilot, V1/V2/V3 M4 | 2/8 for each | Only the two already-completed states remained correct |
 | Separate 4 s V3 diagnostic | M3: 0/8; M4: 1/8 | Only already-completed preservation; different horizon |
-| Classifier-primary harness on today's frozen M6 | 3 valid goal cases recognised with zero policy actions | Completion guard working |
+| Early classifier-primary harness on frozen M6 | 3 valid goal cases recognised with zero policy actions | Completion guard working |
 | Same harness, unfinished source | Not completed within 500 decisions | Guards do not repair a failing policy |
 
 The six common pilots comprise 48 episodes; the separately labelled two longer-horizon diagnostics add 16. Later results are timestamped under `evidence/m7/`; this table is a frozen initial snapshot and does not imply that training completion means task success. Assisted diagnostics are not included in the unassisted policy results.
@@ -134,7 +137,7 @@ This is bounded candidate selection, not learned-value search or simulator looka
 
 ## Training matrix
 
-All variants retain the declared source mixture and randomise sampling across trajectories and camera views. Coverage manifests record actual exposure.
+These historical variants use the declared source mixture and sample across trajectories and camera views. Coverage manifests record exposure where available. The working paper explains incomplete historical exposure audits and distinguishes the later native-interface model families.
 
 | Variant | Observation/action construction |
 |---|---|
@@ -146,6 +149,28 @@ All variants retain the declared source mixture and randomise sampling across tr
 V4 is a DAgger-style continuation experiment, not PPO or Q-learning. A rollout budget expiry is not proof of irrecoverable failure. The simulator-derived held cue is privileged causal annotation and is explicitly declared; it must not be mistaken for a learned grasp detector.
 
 M3/M4 adapt prompts/action components; M5 uses LoRA joint adaptation; M6 uses full joint adaptation. Their configurations, optimiser schedules, mixture sizes and checkpoints differ. Read each experiment's manifests before comparing results. Training loss alone is not a robot success metric.
+
+## Typhon: a product concept for managing robotics experiment runs
+
+Typhon is a product concept for a **robotics experiment trial-run manager**. The intended user is a researcher or robotics engineer comparing policies, teaching strategies and controller interventions across repeatable scenarios.
+
+The concept grew out of the practical work in this study: keep model versions and scenario seeds together, run bounded trials, inspect camera footage alongside controller telemetry, and compare outcomes against declared success criteria. A failed grasp, a correctly preserved completed task and an unsafe endpoint placement need different labels.
+
+The implemented research harness and read-only dashboard provide parts of that workflow: recorded replays, model/checkpoint provenance, execution guards and independent scoring. A general platform for launching and managing experiments across robots is still a product concept.
+
+![Typhon experiment dashboard](docs/dashboard.png)
+
+The dashboard shows recorded experiments and controller measurements. Successful completion recognition and successful manipulation are reported separately. Its published October 9 recordings are historical evidence; they are not the later 36-pair workflow panel in the draft paper.
+
+Watch the [privileged expert pick and place](https://www.natslabs.com/typhon-robotics/media-library.html?clip=ge/personal_demo_0001.mp4), [expert orientation-correction reference](https://www.natslabs.com/typhon-robotics/media-library.html?clip=ge/personal_demo_0007.mp4), or [V4-M6 learned pickup and placement attempt](https://www.natslabs.com/typhon-robotics/?run=v4-m6-pilot-v1&case=m7-personal_demo_0006). The V4-M6 attempt verified a lift and reached 11.36 mm position error, but its 85.06° yaw error failed the task. The video library identifies the model version, run, checkpoint update and checksum. [Logo concepts](docs/branding/) remain exploratory.
+
+### Agentic research and the opportunity–solution tree
+
+Agent-assisted research helped turn questions into bounded experiments, inspect recorded outcomes and keep follow-up work connected to the evidence. An opportunity–solution tree tracked the desired outcome, candidate explanations, proposed interventions and their results. Completed work, blocked studies and negative findings remain distinct.
+
+![Stylised excerpt of the opportunity–solution tree, showing the path from research opportunities to experiments and recorded outcomes](docs/research/media/opportunity-solution-tree-excerpt-20261016.png)
+
+This is a cropped, stylised presentation of the research tree. The paper and saved experiment records provide the quantitative evidence; the tree shows how the investigation was organised.
 
 ## Reproduce
 
