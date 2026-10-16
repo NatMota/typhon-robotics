@@ -1,0 +1,472 @@
+[
+  {
+    "id": "init-demo_0001-loading-912171",
+    "condition": "D5",
+    "step": 636,
+    "policy_action_index": 149,
+    "during_offset": false,
+    "trigger": {
+      "query_zero_based": 2,
+      "policy_action_zero_based": 60,
+      "first_closing_waypoint_zero_based": 7
+    },
+    "offset_interval": [
+      60,
+      120
+    ],
+    "geom1": "fixture_wall_1",
+    "geom2": "gripper0_finger2_collision",
+    "position_world_m": [
+      0.13365655789946634,
+      0.2050318424066293,
+      0.8239203939834268
+    ],
+    "distance_m": -0.00014561169861761075,
+    "wrench_contact": [
+      3.3387137468504005,
+      -3.322752158453132,
+      -0.3175767381008413,
+      -0.000369884857763983,
+      0.0,
+      0.0
+    ],
+    "force_norm_N": 4.721074705455905,
+    "measured_eef_xyz": [
+      0.1291473168375844,
+      0.15296676766046688,
+      0.8314760671432242
+    ],
+    "measured_eef_quat_xyzw": [
+      0.7007933797573308,
+      0.7133600849878624,
+      -0.0022618613630910936,
+      -0.0009549961157702231
+    ],
+    "finger_qpos_m": [
+      0.03738814408965006,
+      -0.03722624956178096
+    ],
+    "aperture_proxy_sum_absolute_qpos_m": 0.07461439365143102,
+    "issued_grip_probability": 0.012642264366149902,
+    "gripper_actuator_ctrl": [
+      0.04,
+      -0.04
+    ],
+    "object_pose": {
+      "object_position_m": [
+        0.12513762478108378,
+        0.15233508376862745,
+        0.8187554756372469
+      ],
+      "object_quat_wxyz": [
+        0.9999744651378439,
+        -7.684224574418571e-05,
+        -3.171481083057726e-06,
+        0.007145848969428418
+      ],
+      "object_yaw_rad": 0.014291820016904457,
+      "object_linear_velocity_m_s": [
+        1.513400890413802e-06,
+        -3.116706449089502e-05,
+        0.0003984843439561187
+      ],
+      "object_angular_velocity_rad_s": [
+        0.002094733845262306,
+        0.00010171539796180737,
+        2.1328758383528806e-09
+      ],
+      "eef_position_m": [
+        0.1291473168375844,
+        0.15296676766046688,
+        0.8314760671432242
+      ],
+      "gripper_joint_position_m": [
+        0.03738814408965006,
+        -0.03722624956178096
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 636,
+      "sim_time_s": 31.8
+    },
+    "object_tilt_deg": 0.008812969325302292,
+    "sampling": "20Hz natural post-control-step; not duration, peak impulse or asserted object-side net wrench"
+  },
+  {
+    "id": "init-demo_0001-loading-912172",
+    "condition": "D5",
+    "step": 636,
+    "policy_action_index": 149,
+    "during_offset": false,
+    "trigger": {
+      "query_zero_based": 2,
+      "policy_action_zero_based": 60,
+      "first_closing_waypoint_zero_based": 7
+    },
+    "offset_interval": [
+      60,
+      120
+    ],
+    "geom1": "fixture_wall_1",
+    "geom2": "gripper0_finger2_collision",
+    "position_world_m": [
+      0.13372534374169687,
+      0.20503768442352183,
+      0.8239057889411954
+    ],
+    "distance_m": -0.000172434026316831,
+    "wrench_contact": [
+      3.125903077337744,
+      -3.102625015156364,
+      -0.3707089286135033,
+      -0.00043482624350943725,
+      0.0,
+      0.0
+    ],
+    "force_norm_N": 4.419839040433189,
+    "measured_eef_xyz": [
+      0.12928828198296308,
+      0.15313570839256993,
+      0.8314817244688186
+    ],
+    "measured_eef_quat_xyzw": [
+      0.7003932719878275,
+      0.7137528448176498,
+      -0.0022928559000548352,
+      -0.0009401493063864993
+    ],
+    "finger_qpos_m": [
+      0.03738478432808145,
+      -0.03707779842707982
+    ],
+    "aperture_proxy_sum_absolute_qpos_m": 0.07446258275516127,
+    "issued_grip_probability": 0.013446655124425888,
+    "gripper_actuator_ctrl": [
+      0.04,
+      -0.04
+    ],
+    "object_pose": {
+      "object_position_m": [
+        0.12524040564727995,
+        0.15239585282344364,
+        0.8187485240037017
+      ],
+      "object_quat_wxyz": [
+        0.999945926205221,
+        4.712480533269508e-05,
+        1.67993801190704e-05,
+        0.010399142398113822
+      ],
+      "object_yaw_rad": 0.020798661245094004,
+      "object_linear_velocity_m_s": [
+        -7.047088326316636e-06,
+        1.9070772810331857e-05,
+        0.0004943072641984932
+      ],
+      "object_angular_velocity_rad_s": [
+        -0.0012820847115100535,
+        -0.0004737594049808042,
+        8.176961751922217e-09
+      ],
+      "eef_position_m": [
+        0.12928828198296308,
+        0.15313570839256993,
+        0.8314817244688186
+      ],
+      "gripper_joint_position_m": [
+        0.03738478432808145,
+        -0.03707779842707982
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 636,
+      "sim_time_s": 31.8
+    },
+    "object_tilt_deg": 0.005732976241736925,
+    "sampling": "20Hz natural post-control-step; not duration, peak impulse or asserted object-side net wrench"
+  },
+  {
+    "id": "init-demo_0003-loading-912172",
+    "condition": "D5",
+    "step": 493,
+    "policy_action_index": 149,
+    "during_offset": false,
+    "trigger": {
+      "query_zero_based": 2,
+      "policy_action_zero_based": 60,
+      "first_closing_waypoint_zero_based": 7
+    },
+    "offset_interval": [
+      60,
+      120
+    ],
+    "geom1": "fixture_wall_1",
+    "geom2": "gripper0_finger2_collision",
+    "position_world_m": [
+      0.13134797058702596,
+      0.20618774490674782,
+      0.8239277664324671
+    ],
+    "distance_m": -0.0002895614477914643,
+    "wrench_contact": [
+      8.093030067227213,
+      -3.2141222676251724,
+      7.386437317717321,
+      -0.0038958229850465298,
+      0.0,
+      0.0
+    ],
+    "force_norm_N": 11.418720325362854,
+    "measured_eef_xyz": [
+      0.1269933679436226,
+      0.15554584552155856,
+      0.8330806115901676
+    ],
+    "measured_eef_quat_xyzw": [
+      0.7010711314071364,
+      0.7130892116684601,
+      -0.0017303647865910747,
+      -0.00022527156318903732
+    ],
+    "finger_qpos_m": [
+      0.03738625285184918,
+      -0.036302345577360735
+    ],
+    "aperture_proxy_sum_absolute_qpos_m": 0.07368859842920991,
+    "issued_grip_probability": 0.0213162899017334,
+    "gripper_actuator_ctrl": [
+      0.04,
+      -0.04
+    ],
+    "object_pose": {
+      "object_position_m": [
+        0.11529972165430935,
+        0.15347834801519472,
+        0.8187189739234921
+      ],
+      "object_quat_wxyz": [
+        0.9999613880483116,
+        2.6834683353788494e-05,
+        5.868174115211532e-05,
+        0.008787391470002088
+      ],
+      "object_yaw_rad": 0.017575012363567715,
+      "object_linear_velocity_m_s": [
+        -2.4145055278556916e-05,
+        1.0746569389792929e-05,
+        0.0009032574546187506
+      ],
+      "object_angular_velocity_rad_s": [
+        -0.0007232858833649946,
+        -0.0016250550168083393,
+        1.7077957761269692e-08
+      ],
+      "eef_position_m": [
+        0.1269933679436226,
+        0.15554584552155856,
+        0.8330806115901676
+      ],
+      "gripper_joint_position_m": [
+        0.03738625285184918,
+        -0.036302345577360735
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 493,
+      "sim_time_s": 24.65
+    },
+    "object_tilt_deg": 0.007394172508979773,
+    "sampling": "20Hz natural post-control-step; not duration, peak impulse or asserted object-side net wrench"
+  },
+  {
+    "id": "init-demo_0005-loading-912172",
+    "condition": "D5",
+    "step": 486,
+    "policy_action_index": 149,
+    "during_offset": false,
+    "trigger": {
+      "query_zero_based": 2,
+      "policy_action_zero_based": 60,
+      "first_closing_waypoint_zero_based": 7
+    },
+    "offset_interval": [
+      60,
+      120
+    ],
+    "geom1": "fixture_wall_1",
+    "geom2": "gripper0_finger2_collision",
+    "position_world_m": [
+      0.13137183823546528,
+      0.20503399955584017,
+      0.8239150011103996
+    ],
+    "distance_m": -0.0001555844826865956,
+    "wrench_contact": [
+      4.328797391653646,
+      1.5937915353712493,
+      4.023190648060334,
+      0.0005534530044690793,
+      0.0,
+      0.0
+    ],
+    "force_norm_N": 6.120843185938404,
+    "measured_eef_xyz": [
+      0.12708024768112225,
+      0.15423770281765306,
+      0.8327044386965128
+    ],
+    "measured_eef_quat_xyzw": [
+      0.7003627789799286,
+      0.7137840880245977,
+      -0.0020395974744404793,
+      -0.00030585053055399286
+    ],
+    "finger_qpos_m": [
+      0.037381376772199465,
+      -0.03634293653049564
+    ],
+    "aperture_proxy_sum_absolute_qpos_m": 0.0737243133026951,
+    "issued_grip_probability": 0.018571848049759865,
+    "gripper_actuator_ctrl": [
+      0.04,
+      -0.04
+    ],
+    "object_pose": {
+      "object_position_m": [
+        0.11502341417619902,
+        0.15262608498860836,
+        0.8187245204018302
+      ],
+      "object_quat_wxyz": [
+        0.9999551625855518,
+        -0.00011145443566233219,
+        0.00010233804565977729,
+        0.009468364343215286
+      ],
+      "object_yaw_rad": 0.018936989015806382,
+      "object_linear_velocity_m_s": [
+        -4.146951190103205e-05,
+        -4.5867267734056435e-05,
+        0.0008263616709094187
+      ],
+      "object_angular_velocity_rad_s": [
+        0.0030863880645404583,
+        -0.0027904630610164874,
+        -1.2186167586586632e-07
+      ],
+      "eef_position_m": [
+        0.12708024768112225,
+        0.15423770281765306,
+        0.8327044386965128
+      ],
+      "gripper_joint_position_m": [
+        0.037381376772199465,
+        -0.03634293653049564
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 486,
+      "sim_time_s": 24.3
+    },
+    "object_tilt_deg": 0.017339019532628366,
+    "sampling": "20Hz natural post-control-step; not duration, peak impulse or asserted object-side net wrench"
+  },
+  {
+    "id": "init-demo_0005-loading-912172",
+    "condition": "D5",
+    "step": 487,
+    "policy_action_index": 150,
+    "during_offset": false,
+    "trigger": {
+      "query_zero_based": 2,
+      "policy_action_zero_based": 60,
+      "first_closing_waypoint_zero_based": 7
+    },
+    "offset_interval": [
+      60,
+      120
+    ],
+    "geom1": "fixture_wall_1",
+    "geom2": "gripper0_finger2_collision",
+    "position_world_m": [
+      0.13113508061534834,
+      0.20500041713088177,
+      0.8239989571727956
+    ],
+    "distance_m": -1.9108339369036286e-06,
+    "wrench_contact": [
+      4.062357835927826,
+      -3.7106126324153363,
+      -1.652877150797347,
+      0.00022924897251575704,
+      0.0,
+      0.0
+    ],
+    "force_norm_N": 5.744858585778456,
+    "measured_eef_xyz": [
+      0.12689643182277238,
+      0.15399497999327916,
+      0.8333346991709163
+    ],
+    "measured_eef_quat_xyzw": [
+      0.7001004431849517,
+      0.7140377709343839,
+      -0.002984845988751662,
+      -0.0007223750508705067
+    ],
+    "finger_qpos_m": [
+      0.03809183473421187,
+      -0.036634556048159725
+    ],
+    "aperture_proxy_sum_absolute_qpos_m": 0.07472639078237159,
+    "issued_grip_probability": 0.0004244732845108956,
+    "gripper_actuator_ctrl": [
+      0.04,
+      -0.04
+    ],
+    "object_pose": {
+      "object_position_m": [
+        0.11502190391740949,
+        0.1526244128542058,
+        0.8187546332672023
+      ],
+      "object_quat_wxyz": [
+        0.999955171195327,
+        -5.571030381594741e-05,
+        5.102372822566395e-05,
+        0.009468362723611406
+      ],
+      "object_yaw_rad": 0.018937002765030166,
+      "object_linear_velocity_m_s": [
+        -2.0566206040282152e-05,
+        -2.2803103558552425e-05,
+        0.0004100936609152658
+      ],
+      "object_angular_velocity_rad_s": [
+        0.0015326425866177913,
+        -0.0013822951365506713,
+        -3.0130769528958427e-08
+      ],
+      "eef_position_m": [
+        0.12689643182277238,
+        0.15399497999327916,
+        0.8333346991709163
+      ],
+      "gripper_joint_position_m": [
+        0.03809183473421187,
+        -0.036634556048159725
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 487,
+      "sim_time_s": 24.35
+    },
+    "object_tilt_deg": 0.008656828242658161,
+    "sampling": "20Hz natural post-control-step; not duration, peak impulse or asserted object-side net wrench"
+  }
+]

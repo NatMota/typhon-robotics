@@ -1,0 +1,97 @@
+{
+  "physical_episodes": 32,
+  "original_protocol_episodes": 22,
+  "amendment_episodes": 10,
+  "original_qualification_failures_retained": 1,
+  "exact_pretrigger_pairs": 15,
+  "rgb_first_pairs": [
+    "init-demo_0003-feeding-912171"
+  ],
+  "all_initial_and_noise_pairing_gates_passed": true,
+  "all_within_run_arithmetic_and_history_checks_passed": true,
+  "all32_original_strict_scores_reproduced": true,
+  "aggregates": {
+    "loading": {
+      "n_per_condition": 8,
+      "native_success": 4,
+      "wrapped_success": 8,
+      "paired_gains": [
+        "init-demo_0002-loading-912171",
+        "init-demo_0003-loading-912171",
+        "init-demo_0003-loading-912172",
+        "init-demo_0005-loading-912171"
+      ],
+      "paired_losses": [],
+      "exact_pretrigger_pairs": 8,
+      "native_supported_lifts": 4,
+      "wrapped_supported_lifts": 8,
+      "native_forbidden_contact_cases": [],
+      "wrapped_forbidden_contact_cases": [
+        "init-demo_0001-loading-912171",
+        "init-demo_0001-loading-912172",
+        "init-demo_0003-loading-912172",
+        "init-demo_0005-loading-912172"
+      ],
+      "wrapped_trigger_count": 8
+    },
+    "feeding": {
+      "n_per_condition": 8,
+      "native_success": 8,
+      "wrapped_success": 8,
+      "paired_gains": [],
+      "paired_losses": [],
+      "exact_pretrigger_pairs": 7,
+      "native_supported_lifts": 0,
+      "wrapped_supported_lifts": 0,
+      "native_forbidden_contact_cases": [],
+      "wrapped_forbidden_contact_cases": [],
+      "wrapped_trigger_count": 0
+    }
+  },
+  "advancement_checks": {
+    "both_selected_rescues": true,
+    "positive_net_loading_gain": true,
+    "no_lost_native_success": true,
+    "all8_completed_feeding_preserved": true,
+    "no_new_forbidden_contact": false,
+    "no_new_joint_limit_excursion": true
+  },
+  "candidate_passes_advancement": false,
+  "prior_skill_trials_not_run": 14,
+  "selected_previous_rescues": {
+    "init-demo_0003-loading-912172": {
+      "native": false,
+      "D5": true
+    },
+    "init-demo_0005-loading-912171": {
+      "native": false,
+      "D5": true
+    }
+  },
+  "new_forbidden_contact_cases": [
+    "init-demo_0001-loading-912171",
+    "init-demo_0001-loading-912172",
+    "init-demo_0003-loading-912172",
+    "init-demo_0005-loading-912172"
+  ],
+  "training": false,
+  "TTC": false,
+  "quarantined": true,
+  "scope": "Exploratory amended comparison, four inspected source families and two fixed policy seeds; not independent unseen-workflow generalisation.",
+  "clock": {
+    "explicitly_activated": true,
+    "activated_epoch": 1792117438.5305805,
+    "reservation_reference": "A961B88F",
+    "reservation_approved": true,
+    "reservation_end_epoch": 1792373400.0,
+    "qualification_deadline": 1792118638.5305805,
+    "main_deadline": 1792121638.5305805,
+    "retention_deadline": 1792121638.5305805,
+    "archive_deadline": 1792122838.5305805,
+    "amendment_started_epoch": 1792118810.3494716,
+    "original_main_deadline": 1792120438.5305805,
+    "original_clock_not_reset": true
+  },
+  "physical_complete_epoch": 1792119018.5533097,
+  "analysis_epoch": 1792119163.8829212
+}

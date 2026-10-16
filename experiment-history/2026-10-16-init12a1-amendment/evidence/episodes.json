@@ -1,0 +1,4382 @@
+[
+  {
+    "row": {
+      "id": "init-demo_0001-loading-912171",
+      "parent": "demo_0001",
+      "task": "loading",
+      "policy_seed": 912171,
+      "condition": "N",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "supported_lift_10mm_3steps": true,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 4.959861679022274,
+      "yaw_error_deg": 1.0487506927321242,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 286.8421275039357,
+      "object_contact": true,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 11,
+      "minimum_joint_limit_margin_rad": 0.25151228749303867,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 15.996076274000188,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/N/init-demo_0001-loading-912171"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.1370197361457189,
+        -0.12108319103228417,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999956564991338,
+        3.589740094391126e-17,
+        -1.0687609073075146e-18,
+        -0.002947368803933005
+      ],
+      "object_yaw_rad": -0.00589474614248014,
+      "object_linear_velocity_m_s": [
+        -2.926812584835977e-19,
+        1.2323760359965286e-17,
+        2.1626708531318148e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.013291106967889e-15,
+        -1.178096442577531e-16,
+        3.2368485944850623e-31
+      ],
+      "eef_position_m": [
+        -0.24967384975924165,
+        -0.2503620208765294,
+        1.080255525752862
+      ],
+      "gripper_joint_position_m": [
+        0.039967975525509444,
+        -0.03998244092153352
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 486,
+      "sim_time_s": 24.3
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.12459456366958672,
+        0.1518682110590475,
+        0.8187844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999581200419296,
+        4.523681313005075e-17,
+        6.447786031474365e-18,
+        0.009151948547159368
+      ],
+      "object_yaw_rad": 0.01830415262074693,
+      "object_linear_velocity_m_s": [
+        -2.1481126361429014e-18,
+        1.4527706292224472e-17,
+        -2.148333878442984e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -9.542230938313373e-16,
+        2.6513714862769207e-16,
+        -1.1651392428185476e-31
+      ],
+      "eef_position_m": [
+        -0.24849130158103216,
+        -0.25517301331967734,
+        1.084786038534739
+      ],
+      "gripper_joint_position_m": [
+        0.039996709763437936,
+        -0.04000012816813379
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1946,
+      "sim_time_s": 97.3
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0001-loading-912171",
+      "parent": "demo_0001",
+      "task": "loading",
+      "policy_seed": 912171,
+      "condition": "D5",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "supported_lift_10mm_3steps": true,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 5.642540816678955,
+      "yaw_error_deg": 0.8188612073215129,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 284.4714795072609,
+      "object_contact": true,
+      "forbidden_contact_samples": 1,
+      "forbidden_contact_pairs": [
+        [
+          "fixture_wall_1",
+          "gripper0_finger2_collision"
+        ]
+      ],
+      "workspace_clipped_steps": 12,
+      "minimum_joint_limit_margin_rad": 0.2528056857616301,
+      "trigger_query": 2,
+      "modified_actions": 60,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.452676353999777,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/D5/init-demo_0001-loading-912171"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 60
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.1370197361457189,
+        -0.12108319103228417,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999956564991338,
+        3.589740094391126e-17,
+        -1.0687609073075146e-18,
+        -0.002947368803933005
+      ],
+      "object_yaw_rad": -0.00589474614248014,
+      "object_linear_velocity_m_s": [
+        -2.926812584835977e-19,
+        1.2323760359965286e-17,
+        2.1626708531318148e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.013291106967889e-15,
+        -1.178096442577531e-16,
+        3.2368485944850623e-31
+      ],
+      "eef_position_m": [
+        -0.24967384975924165,
+        -0.2503620208765294,
+        1.080255525752862
+      ],
+      "gripper_joint_position_m": [
+        0.039967975525509444,
+        -0.03998244092153352
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 486,
+      "sim_time_s": 24.3
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.12513773556679858,
+        0.15233279662927157,
+        0.8187844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999744680788317,
+        3.218442491635468e-17,
+        -3.773638168664915e-18,
+        0.007145851275916559
+      ],
+      "object_yaw_rad": 0.0142918241846163,
+      "object_linear_velocity_m_s": [
+        1.0605263482367239e-18,
+        1.1974094798128502e-17,
+        -2.148509010689571e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.0841881973723644e-15,
+        -2.710274495210981e-16,
+        -2.1887281570930068e-32
+      ],
+      "eef_position_m": [
+        -0.24861307684225722,
+        -0.2554057191816426,
+        1.0852871380508948
+      ],
+      "gripper_joint_position_m": [
+        0.0399967601312975,
+        -0.040000125163997494
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1946,
+      "sim_time_s": 97.3
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0001-loading-912172",
+      "parent": "demo_0001",
+      "task": "loading",
+      "policy_seed": 912172,
+      "condition": "N",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "supported_lift_10mm_3steps": true,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 3.9993025609035393,
+      "yaw_error_deg": 0.9447433295674345,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 284.29751680915473,
+      "object_contact": true,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 17,
+      "minimum_joint_limit_margin_rad": 0.25269972396607354,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.01876187200014,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/N/init-demo_0001-loading-912172"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.1370197361457189,
+        -0.12108319103228417,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999956564991338,
+        3.589740094391126e-17,
+        -1.0687609073075146e-18,
+        -0.002947368803933005
+      ],
+      "object_yaw_rad": -0.00589474614248014,
+      "object_linear_velocity_m_s": [
+        -2.926812584835977e-19,
+        1.2323760359965286e-17,
+        2.1626708531318148e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.013291106967889e-15,
+        -1.178096442577531e-16,
+        3.2368485944850623e-31
+      ],
+      "eef_position_m": [
+        -0.24967384975924165,
+        -0.2503620208765294,
+        1.080255525752862
+      ],
+      "gripper_joint_position_m": [
+        0.039967975525509444,
+        -0.03998244092153352
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 486,
+      "sim_time_s": 24.3
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.12397755797711484,
+        0.1504164775052025,
+        0.8187844891595659
+      ],
+      "object_quat_wxyz": [
+        0.999966014790089,
+        4.330546430494193e-17,
+        4.234944127482766e-18,
+        0.008244347447040315
+      ],
+      "object_yaw_rad": 0.016488881687205626,
+      "object_linear_velocity_m_s": [
+        -1.8682530577994007e-18,
+        1.4587875706187725e-17,
+        2.185372597945284e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -9.80484243169985e-16,
+        -1.459298935262009e-16,
+        -2.7153677095779544e-32
+      ],
+      "eef_position_m": [
+        -0.2485313668512901,
+        -0.2554552686548162,
+        1.0848934128444767
+      ],
+      "gripper_joint_position_m": [
+        0.03999679296506759,
+        -0.04000012635785033
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1946,
+      "sim_time_s": 97.3
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0001-loading-912172",
+      "parent": "demo_0001",
+      "task": "loading",
+      "policy_seed": 912172,
+      "condition": "D5",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "supported_lift_10mm_3steps": true,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 5.76222758125194,
+      "yaw_error_deg": 1.1916755636576424,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 285.2678233039895,
+      "object_contact": true,
+      "forbidden_contact_samples": 1,
+      "forbidden_contact_pairs": [
+        [
+          "fixture_wall_1",
+          "gripper0_finger2_collision"
+        ]
+      ],
+      "workspace_clipped_steps": 12,
+      "minimum_joint_limit_margin_rad": 0.252447201295102,
+      "trigger_query": 2,
+      "modified_actions": 60,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.125567514000068,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/D5/init-demo_0001-loading-912172"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 60
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.1370197361457189,
+        -0.12108319103228417,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999956564991338,
+        3.589740094391126e-17,
+        -1.0687609073075146e-18,
+        -0.002947368803933005
+      ],
+      "object_yaw_rad": -0.00589474614248014,
+      "object_linear_velocity_m_s": [
+        -2.926812584835977e-19,
+        1.2323760359965286e-17,
+        2.1626708531318148e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.013291106967889e-15,
+        -1.178096442577531e-16,
+        3.2368485944850623e-31
+      ],
+      "eef_position_m": [
+        -0.24967384975924165,
+        -0.2503620208765294,
+        1.080255525752862
+      ],
+      "gripper_joint_position_m": [
+        0.039967975525509444,
+        -0.03998244092153352
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 486,
+      "sim_time_s": 24.3
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.125239890862748,
+        0.15239725060113257,
+        0.8187844891595695
+      ],
+      "object_quat_wxyz": [
+        0.999945927443643,
+        3.36310482880676e-17,
+        9.380337159142461e-18,
+        0.010399143660544534
+      ],
+      "object_yaw_rad": 0.02079866220138514,
+      "object_linear_velocity_m_s": [
+        -3.1317643743143882e-18,
+        1.1905910886199048e-17,
+        -2.1482550889489595e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -6.869092638490776e-16,
+        -5.240810304069333e-17,
+        -1.3769742978180223e-31
+      ],
+      "eef_position_m": [
+        -0.24871197492984265,
+        -0.2555059295047031,
+        1.085135272799707
+      ],
+      "gripper_joint_position_m": [
+        0.03999682676848818,
+        -0.040000122388634284
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1946,
+      "sim_time_s": 97.3
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0001-feeding-912171",
+      "parent": "demo_0001",
+      "task": "feeding",
+      "policy_seed": 912171,
+      "condition": "N",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 12.068444797285299,
+      "yaw_error_deg": 0.33774407526513467,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 0.0,
+      "object_contact": false,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 0,
+      "minimum_joint_limit_margin_rad": 0.3504416617520554,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.60175896600049,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/N/init-demo_0001-feeding-912171"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.1370197361457189,
+        -0.12108319103228417,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999956564991338,
+        3.589740094391126e-17,
+        -1.0687609073075146e-18,
+        -0.002947368803933005
+      ],
+      "object_yaw_rad": -0.00589474614248014,
+      "object_linear_velocity_m_s": [
+        -2.926812584835977e-19,
+        1.2323760359965286e-17,
+        2.1626708531318148e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.013291106967889e-15,
+        -1.178096442577531e-16,
+        3.2368485944850623e-31
+      ],
+      "eef_position_m": [
+        -0.24967384975924165,
+        -0.2503620208765294,
+        1.080255525752862
+      ],
+      "gripper_joint_position_m": [
+        0.039967975525509444,
+        -0.03998244092153352
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 486,
+      "sim_time_s": 24.3
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.1370197361457189,
+        -0.12108319103228417,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999956564991338,
+        3.1231333183312264e-17,
+        2.519856332761469e-18,
+        -0.002947368803933005
+      ],
+      "object_yaw_rad": -0.00589474614248014,
+      "object_linear_velocity_m_s": [
+        -1.9645252386247164e-19,
+        1.3253986604954106e-17,
+        2.162948408887972e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.1585369856674683e-15,
+        -1.9472032469531276e-16,
+        8.562948370494498e-32
+      ],
+      "eef_position_m": [
+        -0.24793066404567712,
+        -0.26373189940773567,
+        1.0860930816498235
+      ],
+      "gripper_joint_position_m": [
+        0.039996475634433565,
+        -0.04000013609516177
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1946,
+      "sim_time_s": 97.3
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0001-feeding-912171",
+      "parent": "demo_0001",
+      "task": "feeding",
+      "policy_seed": 912171,
+      "condition": "D5",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 12.068444797285299,
+      "yaw_error_deg": 0.33774407526513467,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 0.0,
+      "object_contact": false,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 0,
+      "minimum_joint_limit_margin_rad": 0.3504416617520554,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.53564966399972,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/D5/init-demo_0001-feeding-912171"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.1370197361457189,
+        -0.12108319103228417,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999956564991338,
+        3.589740094391126e-17,
+        -1.0687609073075146e-18,
+        -0.002947368803933005
+      ],
+      "object_yaw_rad": -0.00589474614248014,
+      "object_linear_velocity_m_s": [
+        -2.926812584835977e-19,
+        1.2323760359965286e-17,
+        2.1626708531318148e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.013291106967889e-15,
+        -1.178096442577531e-16,
+        3.2368485944850623e-31
+      ],
+      "eef_position_m": [
+        -0.24967384975924165,
+        -0.2503620208765294,
+        1.080255525752862
+      ],
+      "gripper_joint_position_m": [
+        0.039967975525509444,
+        -0.03998244092153352
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 486,
+      "sim_time_s": 24.3
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.1370197361457189,
+        -0.12108319103228417,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999956564991338,
+        3.1231333183312264e-17,
+        2.519856332761469e-18,
+        -0.002947368803933005
+      ],
+      "object_yaw_rad": -0.00589474614248014,
+      "object_linear_velocity_m_s": [
+        -1.9645252386247164e-19,
+        1.3253986604954106e-17,
+        2.162948408887972e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.1585369856674683e-15,
+        -1.9472032469531276e-16,
+        8.562948370494498e-32
+      ],
+      "eef_position_m": [
+        -0.24793066404567712,
+        -0.26373189940773567,
+        1.0860930816498235
+      ],
+      "gripper_joint_position_m": [
+        0.039996475634433565,
+        -0.04000013609516177
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1946,
+      "sim_time_s": 97.3
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0001-feeding-912172",
+      "parent": "demo_0001",
+      "task": "feeding",
+      "policy_seed": 912172,
+      "condition": "N",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 12.068444797285299,
+      "yaw_error_deg": 0.33774407526513467,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 0.0,
+      "object_contact": false,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 0,
+      "minimum_joint_limit_margin_rad": 0.3504275255354181,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.00790313499965,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/N/init-demo_0001-feeding-912172"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.1370197361457189,
+        -0.12108319103228417,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999956564991338,
+        3.589740094391126e-17,
+        -1.0687609073075146e-18,
+        -0.002947368803933005
+      ],
+      "object_yaw_rad": -0.00589474614248014,
+      "object_linear_velocity_m_s": [
+        -2.926812584835977e-19,
+        1.2323760359965286e-17,
+        2.1626708531318148e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.013291106967889e-15,
+        -1.178096442577531e-16,
+        3.2368485944850623e-31
+      ],
+      "eef_position_m": [
+        -0.24967384975924165,
+        -0.2503620208765294,
+        1.080255525752862
+      ],
+      "gripper_joint_position_m": [
+        0.039967975525509444,
+        -0.03998244092153352
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 486,
+      "sim_time_s": 24.3
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.1370197361457189,
+        -0.12108319103228417,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999956564991338,
+        4.0951833714162217e-17,
+        -3.821890770619937e-18,
+        -0.002947368803933005
+      ],
+      "object_yaw_rad": -0.00589474614248014,
+      "object_linear_velocity_m_s": [
+        7.172583311897818e-19,
+        1.193478044482253e-17,
+        2.1618381858633454e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -7.567907569540194e-16,
+        -5.612962072269328e-17,
+        1.1266732898779773e-31
+      ],
+      "eef_position_m": [
+        -0.24785253296237023,
+        -0.263503237045902,
+        1.0862114677134715
+      ],
+      "gripper_joint_position_m": [
+        0.03999664631384943,
+        -0.040000124678129946
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1946,
+      "sim_time_s": 97.3
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0001-feeding-912172",
+      "parent": "demo_0001",
+      "task": "feeding",
+      "policy_seed": 912172,
+      "condition": "D5",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 12.068444797285299,
+      "yaw_error_deg": 0.33774407526513467,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 0.0,
+      "object_contact": false,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 0,
+      "minimum_joint_limit_margin_rad": 0.3504275255354181,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.28670063699974,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/D5/init-demo_0001-feeding-912172"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.1370197361457189,
+        -0.12108319103228417,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999956564991338,
+        3.589740094391126e-17,
+        -1.0687609073075146e-18,
+        -0.002947368803933005
+      ],
+      "object_yaw_rad": -0.00589474614248014,
+      "object_linear_velocity_m_s": [
+        -2.926812584835977e-19,
+        1.2323760359965286e-17,
+        2.1626708531318148e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.013291106967889e-15,
+        -1.178096442577531e-16,
+        3.2368485944850623e-31
+      ],
+      "eef_position_m": [
+        -0.24967384975924165,
+        -0.2503620208765294,
+        1.080255525752862
+      ],
+      "gripper_joint_position_m": [
+        0.039967975525509444,
+        -0.03998244092153352
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 486,
+      "sim_time_s": 24.3
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.1370197361457189,
+        -0.12108319103228417,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999956564991338,
+        4.0951833714162217e-17,
+        -3.821890770619937e-18,
+        -0.002947368803933005
+      ],
+      "object_yaw_rad": -0.00589474614248014,
+      "object_linear_velocity_m_s": [
+        7.172583311897818e-19,
+        1.193478044482253e-17,
+        2.1618381858633454e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -7.567907569540194e-16,
+        -5.612962072269328e-17,
+        1.1266732898779773e-31
+      ],
+      "eef_position_m": [
+        -0.24785253296237023,
+        -0.263503237045902,
+        1.0862114677134715
+      ],
+      "gripper_joint_position_m": [
+        0.03999664631384943,
+        -0.040000124678129946
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1946,
+      "sim_time_s": 97.3
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0002-loading-912171",
+      "parent": "demo_0002",
+      "task": "loading",
+      "policy_seed": 912171,
+      "condition": "N",
+      "protocol": "INIT12",
+      "strict_success": false,
+      "preservation": null,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": false,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 264.40637223304816,
+      "yaw_error_deg": 1.863689052937873,
+      "tilt_deg": 90.0000000000003,
+      "maximum_object_displacement_mm": 44.9687337380762,
+      "object_contact": true,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 10,
+      "minimum_joint_limit_margin_rad": 0.3493147706055191,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.48630797199985,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/N/init-demo_0002-loading-912171"
+    },
+    "criteria": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": false,
+      "footprint_inside_target": false,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.126477778611601,
+        -0.1210490209188937,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999917315854082,
+        4.381898384051642e-17,
+        9.544794250556899e-19,
+        -0.004066541628588083
+      ],
+      "object_yaw_rad": -0.00813310567315173,
+      "object_linear_velocity_m_s": [
+        -2.686183537861496e-20,
+        1.5116662203566335e-17,
+        2.1652836399662224e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.082312853752302e-15,
+        -1.3668352602819962e-17,
+        1.3393988884347078e-32
+      ],
+      "eef_position_m": [
+        -0.2496738505819921,
+        -0.25036202093803617,
+        1.0802555253171977
+      ],
+      "gripper_joint_position_m": [
+        0.03996797676145559,
+        -0.03998243958139431
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 343,
+      "sim_time_s": 17.15
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.12979053593187156,
+        -0.11422504628367071,
+        0.8172844891595659
+      ],
+      "object_quat_wxyz": [
+        0.707013264935992,
+        -0.7070132649359957,
+        -0.01149970454168951,
+        0.011499704541689488
+      ],
+      "object_yaw_rad": 0.03252751020714078,
+      "object_linear_velocity_m_s": [
+        2.3590975828725364e-17,
+        -1.0760590623421225e-15,
+        2.2270959558234378e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        6.188611763825187e-14,
+        1.3830414133267314e-15,
+        -3.405634054014125e-30
+      ],
+      "eef_position_m": [
+        0.08735012068378767,
+        0.07428803363030674,
+        0.9173615915687026
+      ],
+      "gripper_joint_position_m": [
+        0.03991421521889784,
+        -0.0399081978228793
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1803,
+      "sim_time_s": 90.15
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0002-loading-912171",
+      "parent": "demo_0002",
+      "task": "loading",
+      "policy_seed": 912171,
+      "condition": "D5",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "supported_lift_10mm_3steps": true,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 6.93637054726717,
+      "yaw_error_deg": 0.5568821311396215,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 291.1166432358442,
+      "object_contact": true,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 15,
+      "minimum_joint_limit_margin_rad": 0.24814086012379555,
+      "trigger_query": 2,
+      "modified_actions": 60,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.163706057000127,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/D5/init-demo_0002-loading-912171"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 60
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.126477778611601,
+        -0.1210490209188937,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999917315854082,
+        4.381898384051642e-17,
+        9.544794250556899e-19,
+        -0.004066541628588083
+      ],
+      "object_yaw_rad": -0.00813310567315173,
+      "object_linear_velocity_m_s": [
+        -2.686183537861496e-20,
+        1.5116662203566335e-17,
+        2.1652836399662224e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.082312853752302e-15,
+        -1.3668352602819962e-17,
+        1.3393988884347078e-32
+      ],
+      "eef_position_m": [
+        -0.2496738505819921,
+        -0.25036202093803617,
+        1.0802555253171977
+      ],
+      "gripper_joint_position_m": [
+        0.03996797676145559,
+        -0.03998243958139431
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 343,
+      "sim_time_s": 17.15
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.11391594362679171,
+        0.1533312902030023,
+        0.8187844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999881916162353,
+        4.281303649083696e-17,
+        7.33546474772183e-18,
+        0.004859694238486085
+      ],
+      "object_yaw_rad": 0.009719426733909237,
+      "object_linear_velocity_m_s": [
+        -2.4835274424641205e-18,
+        1.4226759814644092e-17,
+        -2.1481096420493564e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -6.476000132617705e-16,
+        -1.4517319092604815e-16,
+        2.429390037526905e-31
+      ],
+      "eef_position_m": [
+        -0.2488429259963737,
+        -0.2551777054291091,
+        1.084785373748558
+      ],
+      "gripper_joint_position_m": [
+        0.03999666823433869,
+        -0.04000013020341851
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1803,
+      "sim_time_s": 90.15
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0002-loading-912172",
+      "parent": "demo_0002",
+      "task": "loading",
+      "policy_seed": 912172,
+      "condition": "N",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "supported_lift_10mm_3steps": true,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 6.516308987550611,
+      "yaw_error_deg": 0.6514981308554187,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 281.81847702382197,
+      "object_contact": true,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 14,
+      "minimum_joint_limit_margin_rad": 0.24743742207158093,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.73860291299934,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/N/init-demo_0002-loading-912172"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.126477778611601,
+        -0.1210490209188937,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999917315854082,
+        4.381898384051642e-17,
+        9.544794250556899e-19,
+        -0.004066541628588083
+      ],
+      "object_yaw_rad": -0.00813310567315173,
+      "object_linear_velocity_m_s": [
+        -2.686183537861496e-20,
+        1.5116662203566335e-17,
+        2.1652836399662224e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.082312853752302e-15,
+        -1.3668352602819962e-17,
+        1.3393988884347078e-32
+      ],
+      "eef_position_m": [
+        -0.2496738505819921,
+        -0.25036202093803617,
+        1.0802555253171977
+      ],
+      "gripper_joint_position_m": [
+        0.03996797676145559,
+        -0.03998243958139431
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 343,
+      "sim_time_s": 17.15
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.11349542615801898,
+        0.15039089890694302,
+        0.8187844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999838381926186,
+        4.5249568250741316e-17,
+        -2.5450548252909565e-18,
+        0.005685363098228857
+      ],
+      "object_yaw_rad": 0.011370787454015919,
+      "object_linear_velocity_m_s": [
+        7.300856550913038e-19,
+        1.705507612543511e-17,
+        -2.1480419209157802e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.3309155473015174e-15,
+        -3.5953583095250335e-17,
+        4.0385241043265e-32
+      ],
+      "eef_position_m": [
+        -0.2482798136346645,
+        -0.2551655835692328,
+        1.084731031737762
+      ],
+      "gripper_joint_position_m": [
+        0.039996811029303574,
+        -0.0400001242501398
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1803,
+      "sim_time_s": 90.15
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0002-loading-912172",
+      "parent": "demo_0002",
+      "task": "loading",
+      "policy_seed": 912172,
+      "condition": "D5",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "supported_lift_10mm_3steps": true,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 4.5675992776185295,
+      "yaw_error_deg": 0.8391480886716808,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 285.58349438043183,
+      "object_contact": true,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 14,
+      "minimum_joint_limit_margin_rad": 0.2501428701499995,
+      "trigger_query": 2,
+      "modified_actions": 60,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.237464525999712,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/D5/init-demo_0002-loading-912172"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 60
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.126477778611601,
+        -0.1210490209188937,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999917315854082,
+        4.381898384051642e-17,
+        9.544794250556899e-19,
+        -0.004066541628588083
+      ],
+      "object_yaw_rad": -0.00813310567315173,
+      "object_linear_velocity_m_s": [
+        -2.686183537861496e-20,
+        1.5116662203566335e-17,
+        2.1652836399662224e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.082312853752302e-15,
+        -1.3668352602819962e-17,
+        1.3393988884347078e-32
+      ],
+      "eef_position_m": [
+        -0.2496738505819921,
+        -0.25036202093803617,
+        1.0802555253171977
+      ],
+      "gripper_joint_position_m": [
+        0.03996797676145559,
+        -0.03998243958139431
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 343,
+      "sim_time_s": 17.15
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.1156204288253117,
+        0.1512970425924929,
+        0.8187844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999731873322374,
+        3.2901511169453864e-17,
+        2.8994979574831286e-18,
+        0.007322883080190099
+      ],
+      "object_yaw_rad": 0.01464589705913816,
+      "object_linear_velocity_m_s": [
+        -9.788620586030358e-19,
+        1.2196163297257592e-17,
+        -2.147655088898431e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.0902036221549844e-15,
+        -1.48611092925455e-16,
+        7.795524237708893e-32
+      ],
+      "eef_position_m": [
+        -0.2485836823109832,
+        -0.25553666064340674,
+        1.085370183418873
+      ],
+      "gripper_joint_position_m": [
+        0.03999669217785114,
+        -0.04000012904366762
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1803,
+      "sim_time_s": 90.15
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0002-feeding-912171",
+      "parent": "demo_0002",
+      "task": "feeding",
+      "policy_seed": 912171,
+      "condition": "N",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 1.8122567459336427,
+      "yaw_error_deg": 0.4659926294055005,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 0.0,
+      "object_contact": false,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 0,
+      "minimum_joint_limit_margin_rad": 0.3504326684146295,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.44693390700013,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/N/init-demo_0002-feeding-912171"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.126477778611601,
+        -0.1210490209188937,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999917315854082,
+        4.381898384051642e-17,
+        9.544794250556899e-19,
+        -0.004066541628588083
+      ],
+      "object_yaw_rad": -0.00813310567315173,
+      "object_linear_velocity_m_s": [
+        -2.686183537861496e-20,
+        1.5116662203566335e-17,
+        2.1652836399662224e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.082312853752302e-15,
+        -1.3668352602819962e-17,
+        1.3393988884347078e-32
+      ],
+      "eef_position_m": [
+        -0.2496738505819921,
+        -0.25036202093803617,
+        1.0802555253171977
+      ],
+      "gripper_joint_position_m": [
+        0.03996797676145559,
+        -0.03998243958139431
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 343,
+      "sim_time_s": 17.15
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.126477778611601,
+        -0.1210490209188937,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999917315854082,
+        3.936986211589733e-17,
+        1.2530621304215724e-18,
+        -0.004066541628588083
+      ],
+      "object_yaw_rad": -0.00813310567315173,
+      "object_linear_velocity_m_s": [
+        -2.4219973168553374e-19,
+        1.4071725229990348e-17,
+        2.1661163072346927e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.0244941433633056e-15,
+        -1.6436052009720919e-16,
+        -5.9039550833299286e-33
+      ],
+      "eef_position_m": [
+        -0.24767828492729038,
+        -0.26304606258272284,
+        1.0861621046802066
+      ],
+      "gripper_joint_position_m": [
+        0.0399966282699083,
+        -0.040000126586496494
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1803,
+      "sim_time_s": 90.15
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0002-feeding-912171",
+      "parent": "demo_0002",
+      "task": "feeding",
+      "policy_seed": 912171,
+      "condition": "D5",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 1.8122567459336427,
+      "yaw_error_deg": 0.4659926294055005,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 0.0,
+      "object_contact": false,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 0,
+      "minimum_joint_limit_margin_rad": 0.3504326684146295,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 15.984195838000232,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/D5/init-demo_0002-feeding-912171"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.126477778611601,
+        -0.1210490209188937,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999917315854082,
+        4.381898384051642e-17,
+        9.544794250556899e-19,
+        -0.004066541628588083
+      ],
+      "object_yaw_rad": -0.00813310567315173,
+      "object_linear_velocity_m_s": [
+        -2.686183537861496e-20,
+        1.5116662203566335e-17,
+        2.1652836399662224e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.082312853752302e-15,
+        -1.3668352602819962e-17,
+        1.3393988884347078e-32
+      ],
+      "eef_position_m": [
+        -0.2496738505819921,
+        -0.25036202093803617,
+        1.0802555253171977
+      ],
+      "gripper_joint_position_m": [
+        0.03996797676145559,
+        -0.03998243958139431
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 343,
+      "sim_time_s": 17.15
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.126477778611601,
+        -0.1210490209188937,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999917315854082,
+        3.936986211589733e-17,
+        1.2530621304215724e-18,
+        -0.004066541628588083
+      ],
+      "object_yaw_rad": -0.00813310567315173,
+      "object_linear_velocity_m_s": [
+        -2.4219973168553374e-19,
+        1.4071725229990348e-17,
+        2.1661163072346927e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.0244941433633056e-15,
+        -1.6436052009720919e-16,
+        -5.9039550833299286e-33
+      ],
+      "eef_position_m": [
+        -0.24767828492729038,
+        -0.26304606258272284,
+        1.0861621046802066
+      ],
+      "gripper_joint_position_m": [
+        0.0399966282699083,
+        -0.040000126586496494
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1803,
+      "sim_time_s": 90.15
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0002-feeding-912172",
+      "parent": "demo_0002",
+      "task": "feeding",
+      "policy_seed": 912172,
+      "condition": "N",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 1.8122567459336427,
+      "yaw_error_deg": 0.4659926294055005,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 0.0,
+      "object_contact": false,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 0,
+      "minimum_joint_limit_margin_rad": 0.3504270139541932,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.64506883300055,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/N/init-demo_0002-feeding-912172"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.126477778611601,
+        -0.1210490209188937,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999917315854082,
+        4.381898384051642e-17,
+        9.544794250556899e-19,
+        -0.004066541628588083
+      ],
+      "object_yaw_rad": -0.00813310567315173,
+      "object_linear_velocity_m_s": [
+        -2.686183537861496e-20,
+        1.5116662203566335e-17,
+        2.1652836399662224e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.082312853752302e-15,
+        -1.3668352602819962e-17,
+        1.3393988884347078e-32
+      ],
+      "eef_position_m": [
+        -0.2496738505819921,
+        -0.25036202093803617,
+        1.0802555253171977
+      ],
+      "gripper_joint_position_m": [
+        0.03996797676145559,
+        -0.03998243958139431
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 343,
+      "sim_time_s": 17.15
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.126477778611601,
+        -0.1210490209188937,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999917315854082,
+        4.042614908693056e-17,
+        -4.646438749329348e-19,
+        -0.004066541628588083
+      ],
+      "object_yaw_rad": -0.00813310567315173,
+      "object_linear_velocity_m_s": [
+        4.415288762833722e-19,
+        1.3279868173764248e-17,
+        2.1663938629908497e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -7.949561769866197e-16,
+        -2.222988365567944e-17,
+        -2.194611121849065e-32
+      ],
+      "eef_position_m": [
+        -0.24780746708247953,
+        -0.2634332064718034,
+        1.0860936084492772
+      ],
+      "gripper_joint_position_m": [
+        0.039996454663700984,
+        -0.040000137312776
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1803,
+      "sim_time_s": 90.15
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0002-feeding-912172",
+      "parent": "demo_0002",
+      "task": "feeding",
+      "policy_seed": 912172,
+      "condition": "D5",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 1.8122567459336427,
+      "yaw_error_deg": 0.4659926294055005,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 0.0,
+      "object_contact": false,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 0,
+      "minimum_joint_limit_margin_rad": 0.3504270139541932,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.04194914099935,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/D5/init-demo_0002-feeding-912172"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.126477778611601,
+        -0.1210490209188937,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999917315854082,
+        4.381898384051642e-17,
+        9.544794250556899e-19,
+        -0.004066541628588083
+      ],
+      "object_yaw_rad": -0.00813310567315173,
+      "object_linear_velocity_m_s": [
+        -2.686183537861496e-20,
+        1.5116662203566335e-17,
+        2.1652836399662224e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.082312853752302e-15,
+        -1.3668352602819962e-17,
+        1.3393988884347078e-32
+      ],
+      "eef_position_m": [
+        -0.2496738505819921,
+        -0.25036202093803617,
+        1.0802555253171977
+      ],
+      "gripper_joint_position_m": [
+        0.03996797676145559,
+        -0.03998243958139431
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 343,
+      "sim_time_s": 17.15
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.126477778611601,
+        -0.1210490209188937,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999917315854082,
+        4.042614908693056e-17,
+        -4.646438749329348e-19,
+        -0.004066541628588083
+      ],
+      "object_yaw_rad": -0.00813310567315173,
+      "object_linear_velocity_m_s": [
+        4.415288762833722e-19,
+        1.3279868173764248e-17,
+        2.1663938629908497e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -7.949561769866197e-16,
+        -2.222988365567944e-17,
+        -2.194611121849065e-32
+      ],
+      "eef_position_m": [
+        -0.24780746708247953,
+        -0.2634332064718034,
+        1.0860936084492772
+      ],
+      "gripper_joint_position_m": [
+        0.039996454663700984,
+        -0.040000137312776
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1803,
+      "sim_time_s": 90.15
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0003-loading-912171",
+      "parent": "demo_0003",
+      "task": "loading",
+      "policy_seed": 912171,
+      "condition": "N",
+      "protocol": "INIT12",
+      "strict_success": false,
+      "preservation": null,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": false,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 263.37653677778434,
+      "yaw_error_deg": 2.505411333494386,
+      "tilt_deg": 90.00000000000031,
+      "maximum_object_displacement_mm": 38.47391727813853,
+      "object_contact": true,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 6,
+      "minimum_joint_limit_margin_rad": 0.34946687044669966,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.47820915000011,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/N/init-demo_0003-loading-912171"
+    },
+    "criteria": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": false,
+      "footprint_inside_target": false,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.12745471661680197,
+        -0.12087766989812622,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999929002162286,
+        4.291679065133147e-17,
+        -8.039685632389745e-19,
+        -0.00376822466634851
+      ],
+      "object_yaw_rad": -0.007536467168467894,
+      "object_linear_velocity_m_s": [
+        -2.747485057714528e-20,
+        1.2609261598371768e-17,
+        2.162008142672985e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -5.663236422273068e-16,
+        -3.588623089180214e-17,
+        1.4263127523849565e-31
+      ],
+      "eef_position_m": [
+        -0.24967404804468535,
+        -0.25036190375443085,
+        1.0802553837333309
+      ],
+      "gripper_joint_position_m": [
+        0.03996798284124309,
+        -0.03998243368355606
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 343,
+      "sim_time_s": 17.15
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.1307458132809473,
+        -0.11315722984936326,
+        0.8172844891595659
+      ],
+      "object_quat_wxyz": [
+        0.7069377796997938,
+        -0.7069377796997973,
+        -0.01545883673254342,
+        0.015458836732543451
+      ],
+      "object_yaw_rad": 0.043727676886258726,
+      "object_linear_velocity_m_s": [
+        1.4494631121446574e-17,
+        -1.0537268067658044e-15,
+        2.2323579382305174e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        6.044792919969862e-14,
+        1.0877102616583054e-15,
+        2.0805763549681947e-30
+      ],
+      "eef_position_m": [
+        0.0865743074796135,
+        0.07849874760663465,
+        0.9170946321896482
+      ],
+      "gripper_joint_position_m": [
+        0.03999539558436601,
+        -0.03999810548255872
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1803,
+      "sim_time_s": 90.15
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0003-loading-912171",
+      "parent": "demo_0003",
+      "task": "loading",
+      "policy_seed": 912171,
+      "condition": "D5",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "supported_lift_10mm_3steps": true,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 4.4510127573789,
+      "yaw_error_deg": 0.5744848336374098,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 283.83516602813296,
+      "object_contact": true,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 11,
+      "minimum_joint_limit_margin_rad": 0.24932836583892026,
+      "trigger_query": 2,
+      "modified_actions": 60,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.420101169999725,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/D5/init-demo_0003-loading-912171"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 60
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.12745471661680197,
+        -0.12087766989812622,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999929002162286,
+        4.291679065133147e-17,
+        -8.039685632389745e-19,
+        -0.00376822466634851
+      ],
+      "object_yaw_rad": -0.007536467168467894,
+      "object_linear_velocity_m_s": [
+        -2.747485057714528e-20,
+        1.2609261598371768e-17,
+        2.162008142672985e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -5.663236422273068e-16,
+        -3.588623089180214e-17,
+        1.4263127523849565e-31
+      ],
+      "eef_position_m": [
+        -0.24967404804468535,
+        -0.25036190375443085,
+        1.0802553837333309
+      ],
+      "gripper_joint_position_m": [
+        0.03996798284124309,
+        -0.03998243368355606
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 343,
+      "sim_time_s": 17.15
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.11622024192681353,
+        0.15235051983070372,
+        0.8187844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999874333079058,
+        5.1504007409713074e-17,
+        -4.465552029035393e-18,
+        0.005013304924546988
+      ],
+      "object_yaw_rad": 0.010026651849744673,
+      "object_linear_velocity_m_s": [
+        1.1823242693411643e-18,
+        1.6599570737426643e-17,
+        -2.148360260883415e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -9.1004373475737e-16,
+        3.807136710795392e-17,
+        2.0254535974397146e-31
+      ],
+      "eef_position_m": [
+        -0.24903213414923717,
+        -0.25515187379027804,
+        1.085139688547755
+      ],
+      "gripper_joint_position_m": [
+        0.039996678173219724,
+        -0.04000013328513971
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1803,
+      "sim_time_s": 90.15
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0003-loading-912172",
+      "parent": "demo_0003",
+      "task": "loading",
+      "policy_seed": 912172,
+      "condition": "N",
+      "protocol": "INIT12",
+      "strict_success": false,
+      "preservation": null,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": false,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 263.0721344135975,
+      "yaw_error_deg": 2.521182465417864,
+      "tilt_deg": 90.0000000000003,
+      "maximum_object_displacement_mm": 34.85223203775705,
+      "object_contact": true,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 9,
+      "minimum_joint_limit_margin_rad": 0.34930584287710076,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.420476503999453,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/N/init-demo_0003-loading-912172"
+    },
+    "criteria": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": false,
+      "footprint_inside_target": false,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.12745471661680197,
+        -0.12087766989812622,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999929002162286,
+        4.291679065133147e-17,
+        -8.039685632389745e-19,
+        -0.00376822466634851
+      ],
+      "object_yaw_rad": -0.007536467168467894,
+      "object_linear_velocity_m_s": [
+        -2.747485057714528e-20,
+        1.2609261598371768e-17,
+        2.162008142672985e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -5.663236422273068e-16,
+        -3.588623089180214e-17,
+        1.4263127523849565e-31
+      ],
+      "eef_position_m": [
+        -0.24967404804468535,
+        -0.25036190375443085,
+        1.0802553837333309
+      ],
+      "gripper_joint_position_m": [
+        0.03996798284124309,
+        -0.03998243368355606
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 343,
+      "sim_time_s": 17.15
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.13027448673529443,
+        -0.11287141881013268,
+        0.8172844891595659
+      ],
+      "object_quat_wxyz": [
+        0.7069356454188525,
+        -0.706935645418856,
+        -0.015556131788720947,
+        0.015556131788720997
+      ],
+      "object_yaw_rad": 0.0440029350650898,
+      "object_linear_velocity_m_s": [
+        8.80457965399283e-18,
+        -1.0558114632573069e-15,
+        2.2326909580435204e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        6.064118319914789e-14,
+        6.07673492298427e-16,
+        1.3193126280801067e-30
+      ],
+      "eef_position_m": [
+        0.08258761033908463,
+        0.06776745584869498,
+        0.9103830408897106
+      ],
+      "gripper_joint_position_m": [
+        0.03996629805941124,
+        -0.039962919522686956
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1803,
+      "sim_time_s": 90.15
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0003-loading-912172",
+      "parent": "demo_0003",
+      "task": "loading",
+      "policy_seed": 912172,
+      "condition": "D5",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "supported_lift_10mm_3steps": true,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 5.849226488648224,
+      "yaw_error_deg": 1.0069741452787384,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 289.71407139035654,
+      "object_contact": true,
+      "forbidden_contact_samples": 1,
+      "forbidden_contact_pairs": [
+        [
+          "fixture_wall_1",
+          "gripper0_finger2_collision"
+        ]
+      ],
+      "workspace_clipped_steps": 12,
+      "minimum_joint_limit_margin_rad": 0.2517561597623015,
+      "trigger_query": 2,
+      "modified_actions": 60,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.17300558200077,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/D5/init-demo_0003-loading-912172"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 60
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.12745471661680197,
+        -0.12087766989812622,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999929002162286,
+        4.291679065133147e-17,
+        -8.039685632389745e-19,
+        -0.00376822466634851
+      ],
+      "object_yaw_rad": -0.007536467168467894,
+      "object_linear_velocity_m_s": [
+        -2.747485057714528e-20,
+        1.2609261598371768e-17,
+        2.162008142672985e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -5.663236422273068e-16,
+        -3.588623089180214e-17,
+        1.4263127523849565e-31
+      ],
+      "eef_position_m": [
+        -0.24967404804468535,
+        -0.25036190375443085,
+        1.0802553837333309
+      ],
+      "gripper_joint_position_m": [
+        0.03996798284124309,
+        -0.03998243368355606
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 343,
+      "sim_time_s": 17.15
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.11529796876264277,
+        0.15347913103495986,
+        0.8187844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999613901074237,
+        3.8962406275567136e-17,
+        -1.963439578331634e-18,
+        0.00878739406359127
+      ],
+      "object_yaw_rad": 0.0175750143175697,
+      "object_linear_velocity_m_s": [
+        7.1852382533838825e-19,
+        1.4410843247251477e-17,
+        -2.147934485589445e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.1810519837574774e-15,
+        8.30657063884682e-17,
+        -2.859329093797513e-31
+      ],
+      "eef_position_m": [
+        -0.24847632433533678,
+        -0.2551776931553769,
+        1.0847907050224674
+      ],
+      "gripper_joint_position_m": [
+        0.03999661963135708,
+        -0.04000013180506681
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1803,
+      "sim_time_s": 90.15
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0003-feeding-912171",
+      "parent": "demo_0003",
+      "task": "feeding",
+      "policy_seed": 912171,
+      "condition": "N",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 2.6069020155887306,
+      "yaw_error_deg": 0.4318077611921203,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 0.0,
+      "object_contact": false,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 0,
+      "minimum_joint_limit_margin_rad": 0.3504365028372094,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "captured_rgb_first_origin_unresolved",
+      "exact_pretrigger": false,
+      "original_qualification": "passed",
+      "wall_seconds": 16.7733982689997,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/N/init-demo_0003-feeding-912171"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.12745471661680197,
+        -0.12087766989812622,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999929002162286,
+        4.291679065133147e-17,
+        -8.039685632389745e-19,
+        -0.00376822466634851
+      ],
+      "object_yaw_rad": -0.007536467168467894,
+      "object_linear_velocity_m_s": [
+        -2.747485057714528e-20,
+        1.2609261598371768e-17,
+        2.162008142672985e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -5.663236422273068e-16,
+        -3.588623089180214e-17,
+        1.4263127523849565e-31
+      ],
+      "eef_position_m": [
+        -0.24967404804468535,
+        -0.25036190375443085,
+        1.0802553837333309
+      ],
+      "gripper_joint_position_m": [
+        0.03996798284124309,
+        -0.03998243368355606
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 343,
+      "sim_time_s": 17.15
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.12745471661680197,
+        -0.12087766989812622,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999929002162286,
+        4.5177106414047205e-17,
+        -5.918488240330539e-19,
+        -0.00376822466634851
+      ],
+      "object_yaw_rad": -0.007536467168467894,
+      "object_linear_velocity_m_s": [
+        4.9184577876329416e-20,
+        1.389754483567567e-17,
+        2.1617305869168482e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.0091379850632957e-15,
+        4.3143602790310934e-17,
+        -3.849479504914601e-32
+      ],
+      "eef_position_m": [
+        -0.24769616100174735,
+        -0.2633348643479628,
+        1.0861870235796682
+      ],
+      "gripper_joint_position_m": [
+        0.03999651862932855,
+        -0.04000013121200565
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1803,
+      "sim_time_s": 90.15
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0003-feeding-912171",
+      "parent": "demo_0003",
+      "task": "feeding",
+      "policy_seed": 912171,
+      "condition": "D5",
+      "protocol": "INIT12",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 2.6069020155887306,
+      "yaw_error_deg": 0.4318077611921203,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 0.0,
+      "object_contact": false,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 0,
+      "minimum_joint_limit_margin_rad": 0.3504365028372094,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "captured_rgb_first_origin_unresolved",
+      "exact_pretrigger": false,
+      "original_qualification": "failed_exact_gate_preserved",
+      "wall_seconds": 16.149014954999984,
+      "directory": "/var/tmp/typhon-init12-20261016/episodes/D5/init-demo_0003-feeding-912171"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.12745471661680197,
+        -0.12087766989812622,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999929002162286,
+        4.291679065133147e-17,
+        -8.039685632389745e-19,
+        -0.00376822466634851
+      ],
+      "object_yaw_rad": -0.007536467168467894,
+      "object_linear_velocity_m_s": [
+        -2.747485057714528e-20,
+        1.2609261598371768e-17,
+        2.162008142672985e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -5.663236422273068e-16,
+        -3.588623089180214e-17,
+        1.4263127523849565e-31
+      ],
+      "eef_position_m": [
+        -0.24967404804468535,
+        -0.25036190375443085,
+        1.0802553837333309
+      ],
+      "gripper_joint_position_m": [
+        0.03996798284124309,
+        -0.03998243368355606
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 343,
+      "sim_time_s": 17.15
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.12745471661680197,
+        -0.12087766989812622,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999929002162286,
+        4.51816098264565e-17,
+        8.769441018878569e-19,
+        -0.00376822466634851
+      ],
+      "object_yaw_rad": -0.007536467168467894,
+      "object_linear_velocity_m_s": [
+        -8.832255799508974e-19,
+        1.3358655748674388e-17,
+        2.161175475404536e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.021178346055592e-15,
+        -2.107226227063066e-17,
+        -7.324409714926531e-31
+      ],
+      "eef_position_m": [
+        -0.2479180962656725,
+        -0.2630740694895803,
+        1.0862112188730175
+      ],
+      "gripper_joint_position_m": [
+        0.03999662480000993,
+        -0.04000012690009967
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1803,
+      "sim_time_s": 90.15
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0003-feeding-912172",
+      "parent": "demo_0003",
+      "task": "feeding",
+      "policy_seed": 912172,
+      "condition": "N",
+      "protocol": "INIT12-A1",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 2.6069020155887306,
+      "yaw_error_deg": 0.4318077611921203,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 0.0,
+      "object_contact": false,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 0,
+      "minimum_joint_limit_margin_rad": 0.35032571081117814,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 15.884495432999756,
+      "directory": "/var/tmp/typhon-init12-a1-20261016/episodes/N/init-demo_0003-feeding-912172"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.12745471661680197,
+        -0.12087766989812622,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999929002162286,
+        4.291679065133147e-17,
+        -8.039685632389745e-19,
+        -0.00376822466634851
+      ],
+      "object_yaw_rad": -0.007536467168467894,
+      "object_linear_velocity_m_s": [
+        -2.747485057714528e-20,
+        1.2609261598371768e-17,
+        2.162008142672985e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -5.663236422273068e-16,
+        -3.588623089180214e-17,
+        1.4263127523849565e-31
+      ],
+      "eef_position_m": [
+        -0.24967404804468535,
+        -0.25036190375443085,
+        1.0802553837333309
+      ],
+      "gripper_joint_position_m": [
+        0.03996798284124309,
+        -0.03998243368355606
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 343,
+      "sim_time_s": 17.15
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.12745471661680197,
+        -0.12087766989812622,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999929002162286,
+        4.585676038231639e-17,
+        -1.9251252737327896e-19,
+        -0.00376822466634851
+      ],
+      "object_yaw_rad": -0.007536467168467894,
+      "object_linear_velocity_m_s": [
+        -9.024192052618633e-20,
+        1.5551939722743464e-17,
+        2.161453031160693e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.1586337778692305e-15,
+        -3.027120825596111e-17,
+        -1.3820815617760773e-31
+      ],
+      "eef_position_m": [
+        -0.24774245095646932,
+        -0.2630893969910682,
+        1.0861906627177564
+      ],
+      "gripper_joint_position_m": [
+        0.03999664464245853,
+        -0.04000012640751371
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1803,
+      "sim_time_s": 90.15
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0003-feeding-912172",
+      "parent": "demo_0003",
+      "task": "feeding",
+      "policy_seed": 912172,
+      "condition": "D5",
+      "protocol": "INIT12-A1",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 2.6069020155887306,
+      "yaw_error_deg": 0.4318077611921203,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 0.0,
+      "object_contact": false,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 0,
+      "minimum_joint_limit_margin_rad": 0.35032571081117814,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.507438431999617,
+      "directory": "/var/tmp/typhon-init12-a1-20261016/episodes/D5/init-demo_0003-feeding-912172"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.12745471661680197,
+        -0.12087766989812622,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999929002162286,
+        4.291679065133147e-17,
+        -8.039685632389745e-19,
+        -0.00376822466634851
+      ],
+      "object_yaw_rad": -0.007536467168467894,
+      "object_linear_velocity_m_s": [
+        -2.747485057714528e-20,
+        1.2609261598371768e-17,
+        2.162008142672985e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -5.663236422273068e-16,
+        -3.588623089180214e-17,
+        1.4263127523849565e-31
+      ],
+      "eef_position_m": [
+        -0.24967404804468535,
+        -0.25036190375443085,
+        1.0802553837333309
+      ],
+      "gripper_joint_position_m": [
+        0.03996798284124309,
+        -0.03998243368355606
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 343,
+      "sim_time_s": 17.15
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.12745471661680197,
+        -0.12087766989812622,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999929002162286,
+        4.585676038231639e-17,
+        -1.9251252737327896e-19,
+        -0.00376822466634851
+      ],
+      "object_yaw_rad": -0.007536467168467894,
+      "object_linear_velocity_m_s": [
+        -9.024192052618633e-20,
+        1.5551939722743464e-17,
+        2.161453031160693e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.1586337778692305e-15,
+        -3.027120825596111e-17,
+        -1.3820815617760773e-31
+      ],
+      "eef_position_m": [
+        -0.24774245095646932,
+        -0.2630893969910682,
+        1.0861906627177564
+      ],
+      "gripper_joint_position_m": [
+        0.03999664464245853,
+        -0.04000012640751371
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1803,
+      "sim_time_s": 90.15
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0005-loading-912171",
+      "parent": "demo_0005",
+      "task": "loading",
+      "policy_seed": 912171,
+      "condition": "N",
+      "protocol": "INIT12-A1",
+      "strict_success": false,
+      "preservation": null,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": false,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 258.5292250386941,
+      "yaw_error_deg": 0.42357900011861316,
+      "tilt_deg": 90.00000000000031,
+      "maximum_object_displacement_mm": 30.664270006588524,
+      "object_contact": true,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 6,
+      "minimum_joint_limit_margin_rad": 0.3493153656584824,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 15.730933060999632,
+      "directory": "/var/tmp/typhon-init12-a1-20261016/episodes/N/init-demo_0005-loading-912171"
+    },
+    "criteria": {
+      "position": false,
+      "orientation": true,
+      "marked_face_up": false,
+      "footprint_inside_target": false,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": false
+    },
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.12705075770615454,
+        -0.12099368376034642,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999905116368096,
+        3.659066264493684e-17,
+        4.27645836495155e-18,
+        -0.004356218124932482
+      ],
+      "object_yaw_rad": -0.008712463805556018,
+      "object_linear_velocity_m_s": [
+        -1.6078822184107271e-18,
+        1.5860296783635155e-17,
+        2.1655107092039292e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.1249210971409807e-15,
+        -1.7819693938537581e-16,
+        5.79862573096884e-32
+      ],
+      "eef_position_m": [
+        -0.2496738487589997,
+        -0.25036202180800887,
+        1.080255526565341
+      ],
+      "gripper_joint_position_m": [
+        0.03996797692373631,
+        -0.03998243940091303
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 336,
+      "sim_time_s": 16.8
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.12840105974419974,
+        -0.1083926902880229,
+        0.8172844891595659
+      ],
+      "object_quat_wxyz": [
+        0.7071019503972251,
+        -0.7071019503972288,
+        -0.0026137605930446725,
+        0.0026137605930446678
+      ],
+      "object_yaw_rad": 0.007392848194375252,
+      "object_linear_velocity_m_s": [
+        5.868032186916282e-18,
+        -1.077100080840666e-15,
+        2.2332905875980604e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        6.20863993737251e-14,
+        3.289748104033417e-16,
+        -3.1495994965330812e-30
+      ],
+      "eef_position_m": [
+        0.0797238529571793,
+        0.08028410590208296,
+        0.9140302814907266
+      ],
+      "gripper_joint_position_m": [
+        0.03999601596112089,
+        -0.03999777423740444
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1796,
+      "sim_time_s": 89.8
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0005-loading-912171",
+      "parent": "demo_0005",
+      "task": "loading",
+      "policy_seed": 912171,
+      "condition": "D5",
+      "protocol": "INIT12-A1",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "supported_lift_10mm_3steps": true,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 4.723711288793051,
+      "yaw_error_deg": 0.5644534382291222,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 284.46363669747785,
+      "object_contact": true,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 14,
+      "minimum_joint_limit_margin_rad": 0.24886956478893696,
+      "trigger_query": 2,
+      "modified_actions": 60,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.687357576000068,
+      "directory": "/var/tmp/typhon-init12-a1-20261016/episodes/D5/init-demo_0005-loading-912171"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 60
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.12705075770615454,
+        -0.12099368376034642,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999905116368096,
+        3.659066264493684e-17,
+        4.27645836495155e-18,
+        -0.004356218124932482
+      ],
+      "object_yaw_rad": -0.008712463805556018,
+      "object_linear_velocity_m_s": [
+        -1.6078822184107271e-18,
+        1.5860296783635155e-17,
+        2.1655107092039292e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.1249210971409807e-15,
+        -1.7819693938537581e-16,
+        5.79862573096884e-32
+      ],
+      "eef_position_m": [
+        -0.2496738487589997,
+        -0.25036202180800887,
+        1.080255526565341
+      ],
+      "gripper_joint_position_m": [
+        0.03996797692373631,
+        -0.03998243940091303
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 336,
+      "sim_time_s": 16.8
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.11613719410086831,
+        0.15271885617962855,
+        0.8187844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999878683432043,
+        3.752607112772433e-17,
+        -2.143389229924943e-18,
+        0.00492576556632121
+      ],
+      "object_yaw_rad": 0.009851570971300613,
+      "object_linear_velocity_m_s": [
+        8.111428589147958e-19,
+        1.1594430397388639e-17,
+        2.1849544782722463e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -6.462028711942473e-16,
+        -7.655734020291566e-17,
+        -2.001811167126981e-31
+      ],
+      "eef_position_m": [
+        -0.24863510576414521,
+        -0.2553150959697357,
+        1.0852866698799501
+      ],
+      "gripper_joint_position_m": [
+        0.0399967273156178,
+        -0.04000013153030695
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1796,
+      "sim_time_s": 89.8
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0005-loading-912172",
+      "parent": "demo_0005",
+      "task": "loading",
+      "policy_seed": 912172,
+      "condition": "N",
+      "protocol": "INIT12-A1",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "supported_lift_10mm_3steps": true,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 7.912594416966848,
+      "yaw_error_deg": 0.9857133662736722,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 314.0908498821156,
+      "object_contact": true,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 13,
+      "minimum_joint_limit_margin_rad": 0.24530649970539065,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 15.96590765900055,
+      "directory": "/var/tmp/typhon-init12-a1-20261016/episodes/N/init-demo_0005-loading-912172"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.12705075770615454,
+        -0.12099368376034642,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999905116368096,
+        3.659066264493684e-17,
+        4.27645836495155e-18,
+        -0.004356218124932482
+      ],
+      "object_yaw_rad": -0.008712463805556018,
+      "object_linear_velocity_m_s": [
+        -1.6078822184107271e-18,
+        1.5860296783635155e-17,
+        2.1655107092039292e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.1249210971409807e-15,
+        -1.7819693938537581e-16,
+        5.79862573096884e-32
+      ],
+      "eef_position_m": [
+        -0.2496738487589997,
+        -0.25036202180800887,
+        1.080255526565341
+      ],
+      "gripper_joint_position_m": [
+        0.03996797692373631,
+        -0.03998243940091303
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 336,
+      "sim_time_s": 16.8
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.11671367408192858,
+        0.15719786165243727,
+        0.8187844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999630032681782,
+        3.7549374036422073e-17,
+        3.367766280668061e-19,
+        0.008601865779319194
+      ],
+      "object_yaw_rad": 0.01720394372239241,
+      "object_linear_velocity_m_s": [
+        -3.233889772034333e-19,
+        1.2452557271920453e-17,
+        -2.1484644234974363e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -7.220105539461738e-16,
+        -9.376365932226483e-17,
+        -1.333314969368031e-31
+      ],
+      "eef_position_m": [
+        -0.24808463572626996,
+        -0.2552406645303072,
+        1.08481865646403
+      ],
+      "gripper_joint_position_m": [
+        0.039996831763508885,
+        -0.0400001242629211
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1796,
+      "sim_time_s": 89.8
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0005-loading-912172",
+      "parent": "demo_0005",
+      "task": "loading",
+      "policy_seed": 912172,
+      "condition": "D5",
+      "protocol": "INIT12-A1",
+      "strict_success": true,
+      "preservation": null,
+      "verified_grasp_count": 1,
+      "supported_lift_10mm_3steps": true,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 5.628070305659002,
+      "yaw_error_deg": 1.0850103346988393,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 289.6773602746709,
+      "object_contact": true,
+      "forbidden_contact_samples": 2,
+      "forbidden_contact_pairs": [
+        [
+          "fixture_wall_1",
+          "gripper0_finger2_collision"
+        ]
+      ],
+      "workspace_clipped_steps": 14,
+      "minimum_joint_limit_margin_rad": 0.2483456176284058,
+      "trigger_query": 2,
+      "modified_actions": 60,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.668797593999443,
+      "directory": "/var/tmp/typhon-init12-a1-20261016/episodes/D5/init-demo_0005-loading-912172"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true,
+      "seated": true
+    },
+    "rule": {
+      "enabled": true,
+      "trigger": {
+        "query_zero_based": 2,
+        "policy_action_zero_based": 60,
+        "first_closing_waypoint_zero_based": 7
+      },
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 60,
+      "modified_action_interval_zero_based_half_open": [
+        60,
+        120
+      ],
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 60
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.12705075770615454,
+        -0.12099368376034642,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999905116368096,
+        3.659066264493684e-17,
+        4.27645836495155e-18,
+        -0.004356218124932482
+      ],
+      "object_yaw_rad": -0.008712463805556018,
+      "object_linear_velocity_m_s": [
+        -1.6078822184107271e-18,
+        1.5860296783635155e-17,
+        2.1655107092039292e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.1249210971409807e-15,
+        -1.7819693938537581e-16,
+        5.79862573096884e-32
+      ],
+      "eef_position_m": [
+        -0.2496738487589997,
+        -0.25036202180800887,
+        1.080255526565341
+      ],
+      "gripper_joint_position_m": [
+        0.03996797692373631,
+        -0.03998243940091303
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 336,
+      "sim_time_s": 16.8
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.11502040052874236,
+        0.1526227398786939,
+        0.8187844891595695
+      ],
+      "object_quat_wxyz": [
+        0.9999551740757128,
+        3.5725847603765844e-17,
+        -5.882923606410922e-19,
+        0.009468359900798768
+      ],
+      "object_yaw_rad": 0.018937002758660424,
+      "object_linear_velocity_m_s": [
+        1.3087950276835703e-19,
+        1.3872729465387677e-17,
+        -2.148158830437838e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.0608097017954403e-15,
+        4.789555755873975e-17,
+        6.542701128318973e-32
+      ],
+      "eef_position_m": [
+        -0.24794988774088075,
+        -0.2551881388190259,
+        1.0847680166365936
+      ],
+      "gripper_joint_position_m": [
+        0.03999671504789831,
+        -0.04000012807901496
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1796,
+      "sim_time_s": 89.8
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0005-feeding-912171",
+      "parent": "demo_0005",
+      "task": "feeding",
+      "policy_seed": 912171,
+      "condition": "N",
+      "protocol": "INIT12-A1",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 2.2788186818894616,
+      "yaw_error_deg": 0.49918740521884775,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 0.0,
+      "object_contact": false,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 0,
+      "minimum_joint_limit_margin_rad": 0.3504347309069198,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 15.905991464999715,
+      "directory": "/var/tmp/typhon-init12-a1-20261016/episodes/N/init-demo_0005-feeding-912171"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.12705075770615454,
+        -0.12099368376034642,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999905116368096,
+        3.659066264493684e-17,
+        4.27645836495155e-18,
+        -0.004356218124932482
+      ],
+      "object_yaw_rad": -0.008712463805556018,
+      "object_linear_velocity_m_s": [
+        -1.6078822184107271e-18,
+        1.5860296783635155e-17,
+        2.1655107092039292e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.1249210971409807e-15,
+        -1.7819693938537581e-16,
+        5.79862573096884e-32
+      ],
+      "eef_position_m": [
+        -0.2496738487589997,
+        -0.25036202180800887,
+        1.080255526565341
+      ],
+      "gripper_joint_position_m": [
+        0.03996797692373631,
+        -0.03998243940091303
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 336,
+      "sim_time_s": 16.8
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.12705075770615454,
+        -0.12099368376034642,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999905116368096,
+        4.1390643564378416e-17,
+        3.1270844024567366e-18,
+        -0.004356218124932482
+      ],
+      "object_yaw_rad": -0.008712463805556018,
+      "object_linear_velocity_m_s": [
+        -1.1918327916360877e-18,
+        1.637654600429882e-17,
+        2.166065820716242e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.092177802339884e-15,
+        4.5875586247415136e-17,
+        -2.1870717095692465e-31
+      ],
+      "eef_position_m": [
+        -0.24759326555669886,
+        -0.26299812985417104,
+        1.0861198939365018
+      ],
+      "gripper_joint_position_m": [
+        0.039996542657413446,
+        -0.04000013076944943
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1796,
+      "sim_time_s": 89.8
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0005-feeding-912171",
+      "parent": "demo_0005",
+      "task": "feeding",
+      "policy_seed": 912171,
+      "condition": "D5",
+      "protocol": "INIT12-A1",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 2.2788186818894616,
+      "yaw_error_deg": 0.49918740521884775,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 0.0,
+      "object_contact": false,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 0,
+      "minimum_joint_limit_margin_rad": 0.3504347309069198,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 15.929518284000551,
+      "directory": "/var/tmp/typhon-init12-a1-20261016/episodes/D5/init-demo_0005-feeding-912171"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.12705075770615454,
+        -0.12099368376034642,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999905116368096,
+        3.659066264493684e-17,
+        4.27645836495155e-18,
+        -0.004356218124932482
+      ],
+      "object_yaw_rad": -0.008712463805556018,
+      "object_linear_velocity_m_s": [
+        -1.6078822184107271e-18,
+        1.5860296783635155e-17,
+        2.1655107092039292e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.1249210971409807e-15,
+        -1.7819693938537581e-16,
+        5.79862573096884e-32
+      ],
+      "eef_position_m": [
+        -0.2496738487589997,
+        -0.25036202180800887,
+        1.080255526565341
+      ],
+      "gripper_joint_position_m": [
+        0.03996797692373631,
+        -0.03998243940091303
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 336,
+      "sim_time_s": 16.8
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.12705075770615454,
+        -0.12099368376034642,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999905116368096,
+        4.1390643564378416e-17,
+        3.1270844024567366e-18,
+        -0.004356218124932482
+      ],
+      "object_yaw_rad": -0.008712463805556018,
+      "object_linear_velocity_m_s": [
+        -1.1918327916360877e-18,
+        1.637654600429882e-17,
+        2.166065820716242e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.092177802339884e-15,
+        4.5875586247415136e-17,
+        -2.1870717095692465e-31
+      ],
+      "eef_position_m": [
+        -0.24759326555669886,
+        -0.26299812985417104,
+        1.0861198939365018
+      ],
+      "gripper_joint_position_m": [
+        0.039996542657413446,
+        -0.04000013076944943
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1796,
+      "sim_time_s": 89.8
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0005-feeding-912172",
+      "parent": "demo_0005",
+      "task": "feeding",
+      "policy_seed": 912172,
+      "condition": "N",
+      "protocol": "INIT12-A1",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 2.2788186818894616,
+      "yaw_error_deg": 0.49918740521884775,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 0.0,
+      "object_contact": false,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 0,
+      "minimum_joint_limit_margin_rad": 0.3504288111976974,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.547825143999944,
+      "directory": "/var/tmp/typhon-init12-a1-20261016/episodes/N/init-demo_0005-feeding-912172"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "rule": {
+      "enabled": false,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.12705075770615454,
+        -0.12099368376034642,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999905116368096,
+        3.659066264493684e-17,
+        4.27645836495155e-18,
+        -0.004356218124932482
+      ],
+      "object_yaw_rad": -0.008712463805556018,
+      "object_linear_velocity_m_s": [
+        -1.6078822184107271e-18,
+        1.5860296783635155e-17,
+        2.1655107092039292e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.1249210971409807e-15,
+        -1.7819693938537581e-16,
+        5.79862573096884e-32
+      ],
+      "eef_position_m": [
+        -0.2496738487589997,
+        -0.25036202180800887,
+        1.080255526565341
+      ],
+      "gripper_joint_position_m": [
+        0.03996797692373631,
+        -0.03998243940091303
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 336,
+      "sim_time_s": 16.8
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.12705075770615454,
+        -0.12099368376034642,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999905116368096,
+        3.9168837781566487e-17,
+        4.593049199812987e-18,
+        -0.004356218124932482
+      ],
+      "object_yaw_rad": -0.008712463805556018,
+      "object_linear_velocity_m_s": [
+        -1.872052564994568e-18,
+        1.5157752933977474e-17,
+        2.1652331534477732e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -8.123803989003145e-16,
+        -2.4294044198319595e-17,
+        4.7438301720663556e-32
+      ],
+      "eef_position_m": [
+        -0.2478073629541928,
+        -0.26365396909619193,
+        1.0860923628568127
+      ],
+      "gripper_joint_position_m": [
+        0.03999640988593306,
+        -0.04000013875922671
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1796,
+      "sim_time_s": 89.8
+    }
+  },
+  {
+    "row": {
+      "id": "init-demo_0005-feeding-912172",
+      "parent": "demo_0005",
+      "task": "feeding",
+      "policy_seed": 912172,
+      "condition": "D5",
+      "protocol": "INIT12-A1",
+      "strict_success": true,
+      "preservation": true,
+      "verified_grasp_count": 0,
+      "supported_lift_10mm_3steps": false,
+      "footprint_inside_target": true,
+      "released": true,
+      "stable": true,
+      "position_error_mm": 2.2788186818894616,
+      "yaw_error_deg": 0.49918740521884775,
+      "tilt_deg": 0.0,
+      "maximum_object_displacement_mm": 0.0,
+      "object_contact": false,
+      "forbidden_contact_samples": 0,
+      "forbidden_contact_pairs": [],
+      "workspace_clipped_steps": 0,
+      "minimum_joint_limit_margin_rad": 0.3504288111976974,
+      "trigger_query": null,
+      "modified_actions": 0,
+      "pretrigger_status": "exact_pretrigger",
+      "exact_pretrigger": true,
+      "original_qualification": "passed",
+      "wall_seconds": 16.303078226000252,
+      "directory": "/var/tmp/typhon-init12-a1-20261016/episodes/D5/init-demo_0005-feeding-912172"
+    },
+    "criteria": {
+      "position": true,
+      "orientation": true,
+      "marked_face_up": true,
+      "footprint_inside_target": true,
+      "placement_height": true,
+      "released": true,
+      "stable": true
+    },
+    "rule": {
+      "enabled": true,
+      "trigger": null,
+      "policy_actions_executed": 1436,
+      "modified_actions_executed": 0,
+      "modified_action_interval_zero_based_half_open": null,
+      "last_executed_gripper_command": -1.0
+    },
+    "within_run": {
+      "passed": true,
+      "unmodified_targets_exact": true,
+      "history_all47_transitions_exact": true,
+      "policy_actions": 1436,
+      "settle_actions": 24,
+      "modified_actions": 0
+    },
+    "initial_truth": {
+      "object_position_m": [
+        0.12705075770615454,
+        -0.12099368376034642,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999905116368096,
+        3.659066264493684e-17,
+        4.27645836495155e-18,
+        -0.004356218124932482
+      ],
+      "object_yaw_rad": -0.008712463805556018,
+      "object_linear_velocity_m_s": [
+        -1.6078822184107271e-18,
+        1.5860296783635155e-17,
+        2.1655107092039292e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -1.1249210971409807e-15,
+        -1.7819693938537581e-16,
+        5.79862573096884e-32
+      ],
+      "eef_position_m": [
+        -0.2496738487589997,
+        -0.25036202180800887,
+        1.080255526565341
+      ],
+      "gripper_joint_position_m": [
+        0.03996797692373631,
+        -0.03998243940091303
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 336,
+      "sim_time_s": 16.8
+    },
+    "final_truth": {
+      "object_position_m": [
+        0.12705075770615454,
+        -0.12099368376034642,
+        0.8147844891595659
+      ],
+      "object_quat_wxyz": [
+        0.9999905116368096,
+        3.9168837781566487e-17,
+        4.593049199812987e-18,
+        -0.004356218124932482
+      ],
+      "object_yaw_rad": -0.008712463805556018,
+      "object_linear_velocity_m_s": [
+        -1.872052564994568e-18,
+        1.5157752933977474e-17,
+        2.1652331534477732e-14
+      ],
+      "object_angular_velocity_rad_s": [
+        -8.123803989003145e-16,
+        -2.4294044198319595e-17,
+        4.7438301720663556e-32
+      ],
+      "eef_position_m": [
+        -0.2478073629541928,
+        -0.26365396909619193,
+        1.0860923628568127
+      ],
+      "gripper_joint_position_m": [
+        0.03999640988593306,
+        -0.04000013875922671
+      ],
+      "gripper_open": true,
+      "grasp_contact": false,
+      "bilateral_grasp_contact": false,
+      "control_steps": 1796,
+      "sim_time_s": 89.8
+    }
+  }
+]
