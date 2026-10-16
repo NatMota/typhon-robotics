@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "epoch": 1792132992.0292282,
+  "clock_not_reset": true,
+  "simulation_steps": 0,
+  "full_forward_calls": 0,
+  "source_model_sha256": "d1e5a9fca6b8f8887d982adfcb68e6df6e853b4e0dab5a3f5d73c7241dcb7567",
+  "helper_sha256": "aee5d12491ef7815e7e5463ee786e2c2ce3a33c32da7be5e237ca0d5cbd063f5",
+  "vertex_helper_sha256": "32ece64ce243bf8eececf1f0b0115a0153bfff2c8dbb7ab097f2ebe114876c77",
+  "analytic_controls_passed": 3,
+  "precision": "float64; existing SAT edge-cross cutoff1e-10 and exact gap algorithm preserved",
+  "classification_rule": "gap>contact_margin+1e-9: certified separation; gap<-1e-9: convex overlap; otherwise unresolved.1nm discrimination guard frozen before evaluations; not physical penetration",
+  "source_hashes": {
+    "/var/tmp/typhon-data07r-20261014/native/demo_0001/boundaries/014/model.xml": "d1e5a9fca6b8f8887d982adfcb68e6df6e853b4e0dab5a3f5d73c7241dcb7567",
+    "/var/tmp/typhon-return02-20261016/qualification/demo_0002/terminal-state.pkl": "87a736dabe0b5cb34db997be35029974c54475f50999033149541cbf82cfe9c4",
+    "/var/tmp/typhon-return02-20261016/qualification/demo_0002/geometry-screen.json": "92ea904a2ded82e19f83256b4de05a7d5e03c573f505b500cc51c3edaacb30ac",
+    "/var/tmp/typhon-return02-20261016/qualification/demo_0005/terminal-state.pkl": "ca483db0c14d5a6b0107c8c6883c727654d723a225569946808cd67f321dccd4",
+    "/var/tmp/typhon-return02-20261016/qualification/demo_0005/geometry-screen.json": "fba65f77bf0ba8704c3abd04909799be4ca61319e8fdab6c72d7d30be67e496b",
+    "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand.stl": "94493e94f30fe940f2c8ca2f155c3bbe67bbff406d3edf5e261670d2f0f6e2ed",
+    "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger.stl": "2d07a740392f3b9b0816f65d64fff9927d3d57c897870fc4b6ff9c56fff3a0c8"
+  },
+  "mesh_source_assets": [
+    {
+      "name": "gripper0_hand",
+      "file": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/hand.stl"
+    },
+    {
+      "name": "gripper0_finger",
+      "file": "/cs/student/msc_rai/2026/ndossant/Projects/typhon-experiments/data07r-training-repairs/.venv-sim/lib/python3.11/site-packages/robosuite/models/assets/grippers/meshes/panda_gripper/finger.stl"
+    }
+  ],
+  "compiled_mesh_transform": "Compiled mesh_vert @ geom_world_rotation.T + geom_world_position; effective compiled geom transforms recorded; separate mesh_pos/quat unavailable in2.3.7 and never double-applied",
+  "body_pose_source": "Exact archived RETURN02 body_xpos/body_xquat and site arrays, not recomputed FK; all original AABB bounds and hit pairs reproduced",
+  "contact_settings": "All included margins/gaps zero; no explicit pairs/exclusions; contype/conaffinity and body filters recorded per pair",
+  "capability": "Convex mesh against oriented box; no capsule/cylinder approximation"
+}

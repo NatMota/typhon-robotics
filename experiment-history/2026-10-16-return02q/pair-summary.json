@@ -1,0 +1,170 @@
+[
+  {
+    "parent": "demo_0002",
+    "condition": "nominal",
+    "gripper": "gripper0_finger1_collision",
+    "obstacle": "fixture_wall_0",
+    "classification": "convex_overlap",
+    "count": 2,
+    "reference_indices": [
+      0,
+      1
+    ],
+    "projection_gap_min_mm": -1.167263759221826,
+    "projection_gap_max_mm": -0.39838106975487175,
+    "all_collision_masks_allow": true,
+    "same_weld_body": false
+  },
+  {
+    "parent": "demo_0002",
+    "condition": "nominal",
+    "gripper": "gripper0_finger2_collision",
+    "obstacle": "fixture_wall_1",
+    "classification": "convex_overlap",
+    "count": 2,
+    "reference_indices": [
+      0,
+      1
+    ],
+    "projection_gap_min_mm": -3.1708834705203026,
+    "projection_gap_max_mm": -2.402000781053321,
+    "all_collision_masks_allow": true,
+    "same_weld_body": false
+  },
+  {
+    "parent": "demo_0002",
+    "condition": "inward",
+    "gripper": "gripper0_finger1_collision",
+    "obstacle": "fixture_wall_0",
+    "classification": "convex_overlap",
+    "count": 2,
+    "reference_indices": [
+      0,
+      1
+    ],
+    "projection_gap_min_mm": -3.073786914678356,
+    "projection_gap_max_mm": -2.3049042252114016,
+    "all_collision_masks_allow": true,
+    "same_weld_body": false
+  },
+  {
+    "parent": "demo_0002",
+    "condition": "inward",
+    "gripper": "gripper0_finger2_collision",
+    "obstacle": "fixture_wall_1",
+    "classification": "convex_overlap",
+    "count": 2,
+    "reference_indices": [
+      0,
+      1
+    ],
+    "projection_gap_min_mm": -1.2643603150637728,
+    "projection_gap_max_mm": -0.49547762559679076,
+    "all_collision_masks_allow": true,
+    "same_weld_body": false
+  },
+  {
+    "parent": "demo_0005",
+    "condition": "nominal",
+    "gripper": "gripper0_finger1_collision",
+    "obstacle": "fixture_wall_0",
+    "classification": "convex_overlap",
+    "count": 4,
+    "reference_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "projection_gap_min_mm": -1.168988368792645,
+    "projection_gap_max_mm": -0.20090060249983166,
+    "all_collision_masks_allow": true,
+    "same_weld_body": false
+  },
+  {
+    "parent": "demo_0005",
+    "condition": "nominal",
+    "gripper": "gripper0_finger2_collision",
+    "obstacle": "fixture_wall_1",
+    "classification": "convex_overlap",
+    "count": 5,
+    "reference_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "projection_gap_min_mm": -3.1648226452912627,
+    "projection_gap_max_mm": -1.7615510847852067,
+    "all_collision_masks_allow": true,
+    "same_weld_body": false
+  },
+  {
+    "parent": "demo_0005",
+    "condition": "inward",
+    "gripper": "gripper0_finger1_collision",
+    "obstacle": "fixture_wall_0",
+    "classification": "convex_overlap",
+    "count": 5,
+    "reference_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "projection_gap_min_mm": -3.0755362501410644,
+    "projection_gap_max_mm": -1.6722646896350501,
+    "all_collision_masks_allow": true,
+    "same_weld_body": false
+  },
+  {
+    "parent": "demo_0005",
+    "condition": "inward",
+    "gripper": "gripper0_finger2_collision",
+    "obstacle": "fixture_wall_1",
+    "classification": "convex_overlap",
+    "count": 4,
+    "reference_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "projection_gap_min_mm": -1.2582747639428153,
+    "projection_gap_max_mm": -0.29018699765004374,
+    "all_collision_masks_allow": true,
+    "same_weld_body": false
+  },
+  {
+    "parent": "demo_0005",
+    "condition": "nominal",
+    "gripper": "gripper0_finger1_collision",
+    "obstacle": "fixture_wall_0",
+    "classification": "certified_separation",
+    "count": 1,
+    "reference_indices": [
+      4
+    ],
+    "projection_gap_min_mm": 0.2342831917134247,
+    "projection_gap_max_mm": 0.2342831917134247,
+    "all_collision_masks_allow": true,
+    "same_weld_body": false
+  },
+  {
+    "parent": "demo_0005",
+    "condition": "inward",
+    "gripper": "gripper0_finger2_collision",
+    "obstacle": "fixture_wall_1",
+    "classification": "certified_separation",
+    "count": 1,
+    "reference_indices": [
+      4
+    ],
+    "projection_gap_min_mm": 0.14499679656324038,
+    "projection_gap_max_mm": 0.14499679656324038,
+    "all_collision_masks_allow": true,
+    "same_weld_body": false
+  }
+]
