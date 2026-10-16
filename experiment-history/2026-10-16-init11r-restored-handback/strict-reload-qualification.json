@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "required": 2,
+  "completed": 2,
+  "receipts": [
+    {
+      "process": 1,
+      "command": [
+        "/var/tmp/typhon-worktrees-20261016/init11r/.venv-xvla/bin/python",
+        "scripts/load05_worker.py",
+        "--checkpoint",
+        "/var/tmp/typhon-init07-20261015/train-Q1/step3000.pt",
+        "--probe",
+        "/var/tmp/typhon-init07-20261015/train-Q1/step3000-probe.pt",
+        "--verification",
+        "/var/tmp/typhon-init11r-20261016/fresh-probe-1/reload-verification.json"
+      ],
+      "verification": {
+        "passed": true,
+        "fresh_process": true,
+        "checkpoint": "/var/tmp/typhon-init07-20261015/train-Q1/step3000.pt",
+        "step": 3000,
+        "probe": "/var/tmp/typhon-init07-20261015/train-Q1/step3000-probe.pt",
+        "action_max_error": 0.0,
+        "checkpoint_bytes": 3729401260,
+        "checkpoint_mtime_ns": 1792102409275838923,
+        "optimizer_restored_for_inference": false,
+        "rotation_contract": "generic_interleaved_v1",
+        "domain_id": 29,
+        "observation_version": "O2"
+      },
+      "epoch": 1792115923.9550738
+    },
+    {
+      "process": 2,
+      "command": [
+        "/var/tmp/typhon-worktrees-20261016/init11r/.venv-xvla/bin/python",
+        "scripts/load05_worker.py",
+        "--checkpoint",
+        "/var/tmp/typhon-init07-20261015/train-Q1/step3000.pt",
+        "--probe",
+        "/var/tmp/typhon-init07-20261015/train-Q1/step3000-probe.pt",
+        "--verification",
+        "/var/tmp/typhon-init11r-20261016/fresh-probe-2/reload-verification.json"
+      ],
+      "verification": {
+        "passed": true,
+        "fresh_process": true,
+        "checkpoint": "/var/tmp/typhon-init07-20261015/train-Q1/step3000.pt",
+        "step": 3000,
+        "probe": "/var/tmp/typhon-init07-20261015/train-Q1/step3000-probe.pt",
+        "action_max_error": 0.0,
+        "checkpoint_bytes": 3729401260,
+        "checkpoint_mtime_ns": 1792102409275838923,
+        "optimizer_restored_for_inference": false,
+        "rotation_contract": "generic_interleaved_v1",
+        "domain_id": 29,
+        "observation_version": "O2"
+      },
+      "epoch": 1792115929.0826514
+    }
+  ]
+}

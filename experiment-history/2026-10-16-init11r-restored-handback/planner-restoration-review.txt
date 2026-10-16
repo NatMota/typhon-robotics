@@ -1,0 +1,55 @@
+## PROCEED with INIT11-R. No additional scientific control is essential before physics.
+
+**Your six-call comparison identifies a concrete restoration defect: the new worktree selected a different executable model/configuration package despite loading identical weights.** The original INIT07 context reproduces the frozen probe exactly; the wrong context produces a repeatable mismatch.
+
+Restore the complete original context—not individual settings chosen to make the probe pass—and execute the already-specified gates. **No wrong-cache robot rollout or component-by-component attention ablation is needed.**
+
+## 1. Record the conclusion at the right level
+
+The supported diagnosis is:
+
+> **Incorrect cache/source-context restoration changed the instantiated computation. Restoring the original context is required before evaluating the frozen checkpoint.**
+
+Do not attribute the discrepancy solely to `Florence2Attention` versus `Florence2SdpaAttention`. Attention implementation is an execution choice distinct from weight values, but several code/configuration differences changed together here. [Hugging Face](https://huggingface.co/docs/transformers/v4.51.3/en/attention_interface)
+
+Likewise, **do not claim that `XYZ_SCALE=100` directly rescaled generated actions or caused this inference difference**. In the public EE6D implementation, that constant weights the position component of `compute_loss`; preprocessing and action postprocessing are separate methods. Record the instantiated action-space class and whether the differing code is actually traversed during this probe. [Hugging Face](https://huggingface.co/2toINF/X-VLA-Pt/blob/main/action_hub.py)
+
+The evidence also does not support blaming driver instability or damaged weights. Preserve the original failed INIT11 and INIT11-Q results.
+
+## 2. Required gates before the first physical branch
+
+These are the existing qualification requirements, not a new experiment matrix.
+
+| Gate | Required evidence |
+|---|---|
+| **Resolved runtime identity** | Pin the actual imported modeling, configuration, action-space and dependency files; record resolved paths and hashes, instantiated attention/action classes, relevant configuration, and tied-parameter identity. A symlink destination alone is insufficient. |
+| **Fresh-process restoration** | Two independently initialized workers reproduce the original frozen reload probe **exactly** using the original helper. |
+| **Archived inference qualification** | All **88 existing input/noise/action comparisons** pass exactly. No regenerated expected outputs or substituted noise. |
+| **Physical prefix qualification** | Each N/D5 branch reproduces its corresponding INIT10 prefix and 60-action segment under the unchanged state/controller gates. |
+| **Clean handback state** | Qualification calls cannot advance live query counters, consume continuation noise, change history or leave altered inference flags. Use fresh execution workers or the established explicit restoration procedure. |
+
+**If any gate fails, stop INIT11-R with that specific evidence.** Do not switch backends, edit loss constants or combine pieces of the two caches until something agrees.
+
+Once these pass, the restored runtime—not the failed context—is the qualified execution environment for the unchanged scientific comparison.
+
+## 3. Continue the original four branches unchanged
+
+Retain the fixed N→Q1 and D5→Q1 conditions, two cases, original remaining horizons and scorer.
+
+At handback:
+
+- Query4 begins from the recorded states at **ticks463/456**.
+- The next actions are **464/457**.
+- Exactly **1,316 policy actions plus24 passive ticks** remain.
+- Native float32 proprioception receives the **first nine values of the last actually issued raw target**, with the other eleven values zero. D5 therefore carries its modified Z target.
+- Subsequent observations come from the branch’s actual evolving world—not archived future images or substituted measured-pose history.
+
+No taper, compensating movement, forced release, extra wait, new guard or additional case.
+
+Keep the fresh **75-minute clock**: qualification by **T+15**, physical execution finished by **T+55**, verified closeout by **T+75**. Preserve later historical rendering differences as diagnostics without adding another full-horizon raw-image equality gate.
+
+## Disposition
+
+**The restoration is justified; the proposed scientific experiment has not changed. Proceed without waiting for Nat.**
+
+For the report, separate the infrastructure finding from the forthcoming manipulation result: **identical checkpoint tensors were insufficient because the wrong model implementation was loaded.** The qualified restoration permits testing whether the 5 mm acquisition intervention survives handback to Q1; it does not itself improve the policy or establish task success.
