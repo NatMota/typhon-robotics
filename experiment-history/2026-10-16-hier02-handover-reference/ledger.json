@@ -1,0 +1,1270 @@
+{
+  "rows": [
+    {
+      "id": "demo_0012-feeding-912171-router",
+      "family": "demo_0012",
+      "policy_seed": 912171,
+      "model_sha256": "d5449244d96e55e60c3342af9fffe2ae64362b74cdf9c3d41e39b74995c9bcdb",
+      "physical_context": "original HIER01-DEV fixture-present scene, both stations visible",
+      "final_truth": {
+        "object_position_m": [
+          0.1273654519351832,
+          -0.11610999209965896,
+          0.8147844891595695
+        ],
+        "object_quat_wxyz": [
+          0.9999223382540774,
+          4.663212600250298e-17,
+          -3.475584665818913e-18,
+          0.0124626425969174
+        ],
+        "object_yaw_rad": 0.02492593046093513,
+        "object_linear_velocity_m_s": [
+          3.165220200139951e-19,
+          1.6777169509421303e-17,
+          -2.1724930998209264e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -1.1379724356896723e-15,
+          6.220357898484202e-17,
+          -5.6682078233757525e-31
+        ],
+        "eef_position_m": [
+          -0.24740743360325923,
+          -0.2452858094636376,
+          1.0769629111626249
+        ],
+        "gripper_joint_position_m": [
+          0.039997161547853745,
+          -0.04000011407659002
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 1500,
+        "sim_time_s": 75.0
+      },
+      "measured_wrist": {
+        "position_m": [
+          -0.24740743360325923,
+          -0.2452858094636376,
+          1.0769629111626249
+        ],
+        "quat_xyzw": [
+          0.7020680190311495,
+          0.7121078079067726,
+          -0.001706237201324861,
+          0.0002352158610173273
+        ]
+      },
+      "measured_gripper": {
+        "joint_positions_m": [
+          0.039997161547853745,
+          -0.04000011407659002
+        ],
+        "joint_separation_m": 0.07999727562444377,
+        "separation_definition": "difference of measured finger-joint travel coordinates; not calibrated distance between inner contact surfaces",
+        "last_executed_gripper_command": -1.0
+      },
+      "controller_reference": {
+        "goal_xyz_m": [
+          -0.24740836117711418,
+          -0.24528713629073035,
+          1.0769628801419369
+        ],
+        "goal_rotation_matrix": [
+          [
+            -0.014853477176144677,
+            0.9998876001726249,
+            -0.002039914294504482
+          ],
+          [
+            0.999885962412467,
+            0.014847826067882926,
+            -0.002757576221840744
+          ],
+          [
+            -0.002726977978989088,
+            -0.0020806412757474013,
+            -0.9999941172441918
+          ]
+        ],
+        "joint_positions_rad": [
+          -0.17314166005576587,
+          -0.14142425383896792,
+          -0.5155279024509417,
+          -2.7294309472069704,
+          -0.14237885116627463,
+          2.601864018915182,
+          0.20966179242037924
+        ],
+        "torques": [
+          0.09789192850884969,
+          -15.00078711349057,
+          1.3929036141550442,
+          14.946476493570616,
+          -0.021510010232615374,
+          2.195522335595067,
+          -0.07125128644263491
+        ],
+        "separate_from_measured_wrist": true
+      },
+      "feeding_score": {
+        "task": "feeding",
+        "success": true,
+        "criteria": {
+          "position": true,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true
+        },
+        "position_error_m": 0.0045527490950389125,
+        "orientation_error_rad": 0.02492593046093513,
+        "orientation_error_deg": 1.4281506158481616,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.00021551084043058832,
+        "target_height_m": 0.8150000000000001,
+        "footprint_inside_target": true,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.172771352752253e-14,
+        "maximum_angular_velocity_rad_s": 1.1617805971784428e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 123,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.16540754442475925,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 217
+          }
+        ]
+      },
+      "source_trace": "hier01-development-routing/runtime/workers/demo_0012-feeding-912171-router/episode/controller_trace.jsonl.gz",
+      "final_frame": {
+        "path": "hier01-development-routing/runtime/workers/demo_0012-feeding-912171-router/episode/final.png",
+        "sha256": "b59fe8ff120145da431a52fd0c75e6fc3f30ac935dc82089dc3dc4a02503b4d1"
+      },
+      "last_actor_query": {
+        "index": 47,
+        "input_hashes": {
+          "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+          "image_input": "b54c0e97ff4e5517be579b5289cd497ee4f78f210a5332dbfcffa73c7751de48",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "2c753efcc89c1ddad8aa59bbf2477f343fc51dec9a15f24c30bbe7cb9929819f",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        },
+        "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+        "not_claimed_same_time_as_postsettling_frame": true
+      },
+      "relationship": "Exact source-state linkage",
+      "existing_Q1_evaluation_ids": [
+        "dev-demo_0012-loading-912171-N",
+        "dev-demo_0012-loading-912171-C",
+        "dev-demo_0012-loading-912172-N",
+        "dev-demo_0012-loading-912172-C"
+      ],
+      "difference_from_existing_Q1_initial_state": {
+        "object_position_mm": 0.0,
+        "object_rotation_deg": 0.0,
+        "wrist_position_mm": 0.0,
+        "wrist_rotation_deg": 0.0,
+        "finger_joint_max_difference_m": 0.0
+      },
+      "full_state_equivalence_claimed": true,
+      "full_state_linkage_basis": "DEV/CHAIN all1460recorded rich traces exactly equal; existing firststage exactinput/prediction/noise/terminaltruth receipt; existing Q1 prefix fullstate boundary exact receipt"
+    },
+    {
+      "id": "demo_0012-feeding-912172-router",
+      "family": "demo_0012",
+      "policy_seed": 912172,
+      "model_sha256": "d5449244d96e55e60c3342af9fffe2ae64362b74cdf9c3d41e39b74995c9bcdb",
+      "physical_context": "original HIER01-DEV fixture-present scene, both stations visible",
+      "final_truth": {
+        "object_position_m": [
+          0.12795844158938505,
+          -0.11607182144611543,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9999395869799493,
+          4.935434763391459e-17,
+          5.6210072107663645e-18,
+          0.010991923870202851
+        ],
+        "object_yaw_rad": 0.02198429045464878,
+        "object_linear_velocity_m_s": [
+          -1.2813412982949341e-18,
+          1.6348066185181117e-17,
+          2.1611473357332343e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -8.651014484166389e-16,
+          3.3830555779975334e-18,
+          -6.924701036930365e-33
+        ],
+        "eef_position_m": [
+          -0.24746790304208918,
+          -0.24873006621797622,
+          1.0759893965898524
+        ],
+        "gripper_joint_position_m": [
+          0.03999732649635819,
+          -0.04000009830695161
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 1500,
+        "sim_time_s": 75.0
+      },
+      "measured_wrist": {
+        "position_m": [
+          -0.24746790304208918,
+          -0.24873006621797622,
+          1.0759893965898524
+        ],
+        "quat_xyzw": [
+          0.7043496981773233,
+          0.7098519109773387,
+          -0.001265346295547944,
+          0.0004075022531872018
+        ]
+      },
+      "measured_gripper": {
+        "joint_positions_m": [
+          0.03999732649635819,
+          -0.04000009830695161
+        ],
+        "joint_separation_m": 0.07999742480330979,
+        "separation_definition": "difference of measured finger-joint travel coordinates; not calibrated distance between inner contact surfaces",
+        "last_executed_gripper_command": -1.0
+      },
+      "controller_reference": {
+        "goal_xyz_m": [
+          -0.24746784060028412,
+          -0.24872998002161642,
+          1.075989576115398
+        ],
+        "goal_rotation_matrix": [
+          [
+            -0.007896142241724252,
+            0.9999678387712019,
+            -0.0014044076871921123
+          ],
+          [
+            0.9999655893227335,
+            0.007892536103976167,
+            -0.002555003774335574
+          ],
+          [
+            -0.002543837324020411,
+            -0.0014245340538090471,
+            -0.9999957497880954
+          ]
+        ],
+        "joint_positions_rad": [
+          -0.17363501666988962,
+          -0.1324191782381442,
+          -0.52071753677846,
+          -2.723732773513441,
+          -0.13403135641851027,
+          2.605332896642754,
+          0.20290110936525757
+        ],
+        "torques": [
+          0.06404174372938402,
+          -15.061794292276106,
+          1.2641612893914076,
+          14.950195138478229,
+          -0.08577484014130952,
+          2.1870173999846494,
+          0.017619359783906594
+        ],
+        "separate_from_measured_wrist": true
+      },
+      "feeding_score": {
+        "task": "feeding",
+        "success": true,
+        "criteria": {
+          "position": true,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true
+        },
+        "position_error_m": 0.004917617653803697,
+        "orientation_error_rad": 0.021984290454648777,
+        "orientation_error_deg": 1.2596070586411168,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.00021551084043414104,
+        "target_height_m": 0.8150000000000001,
+        "footprint_inside_target": true,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.1619805906179072e-14,
+        "maximum_angular_velocity_rad_s": 1.3049134424585502e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 1,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 0,
+        "retries": 0,
+        "recovered_after_failed_grasp": false,
+        "successful_recovery": false,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 123,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.16536885461651452,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 216
+          }
+        ]
+      },
+      "source_trace": "hier01-development-routing/runtime/workers/demo_0012-feeding-912172-router/episode/controller_trace.jsonl.gz",
+      "final_frame": {
+        "path": "hier01-development-routing/runtime/workers/demo_0012-feeding-912172-router/episode/final.png",
+        "sha256": "35d295122cdcc51a78c883f8475942d6c4af3189bcb15b89b88c14c37119589c"
+      },
+      "last_actor_query": {
+        "index": 47,
+        "input_hashes": {
+          "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+          "image_input": "54dac17d30eba2520de82d50c709de4eddc412e228339527b2d8cafc34838515",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "00cb451e3318e12d97e0dfe9ea079fb7c8a76fd8a1dab34c14baf3f37bf49463",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        },
+        "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+        "not_claimed_same_time_as_postsettling_frame": true
+      },
+      "relationship": "Related, not matched",
+      "existing_Q1_evaluation_ids": [
+        "dev-demo_0012-loading-912171-N",
+        "dev-demo_0012-loading-912171-C",
+        "dev-demo_0012-loading-912172-N",
+        "dev-demo_0012-loading-912172-C"
+      ],
+      "difference_from_existing_Q1_initial_state": {
+        "object_position_mm": 0.594216903817425,
+        "object_rotation_deg": 0.16854355720483716,
+        "wrist_position_mm": 3.579705541834424,
+        "wrist_rotation_deg": 0.3716585556951736,
+        "finger_joint_max_difference_m": 1.64948504445539e-07
+      },
+      "full_state_equivalence_claimed": false,
+      "full_state_linkage_basis": "No exact replay/boundary linkage; quantitative pose similarity does not establish full state equivalence"
+    },
+    {
+      "id": "demo_0013-feeding-912171-router",
+      "family": "demo_0013",
+      "policy_seed": 912171,
+      "model_sha256": "d5449244d96e55e60c3342af9fffe2ae64362b74cdf9c3d41e39b74995c9bcdb",
+      "physical_context": "original HIER01-DEV fixture-present scene, both stations visible",
+      "final_truth": {
+        "object_position_m": [
+          0.13581319228547098,
+          -0.11829335572624607,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9998820946050463,
+          4.5659941367963693e-17,
+          5.109654852247313e-19,
+          0.015355679347573243
+        ],
+        "object_yaw_rad": 0.030712565763700142,
+        "object_linear_velocity_m_s": [
+          -1.1443992983646244e-18,
+          1.553985380027634e-17,
+          2.1651688643696296e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -1.1686817446018834e-15,
+          -1.1164901463823527e-17,
+          1.5309091344909072e-31
+        ],
+        "eef_position_m": [
+          -0.24759452602849621,
+          -0.24772658432643624,
+          1.0760288654269645
+        ],
+        "gripper_joint_position_m": [
+          0.03999714623114485,
+          -0.04000010581235286
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 1500,
+        "sim_time_s": 75.0
+      },
+      "measured_wrist": {
+        "position_m": [
+          -0.24759452602849621,
+          -0.24772658432643624,
+          1.0760288654269645
+        ],
+        "quat_xyzw": [
+          0.7038986322660143,
+          0.7102989683625872,
+          -0.0013848462372338622,
+          0.00041621866611882383
+        ]
+      },
+      "measured_gripper": {
+        "joint_positions_m": [
+          0.03999714623114485,
+          -0.04000010581235286
+        ],
+        "joint_separation_m": 0.07999725204349771,
+        "separation_definition": "difference of measured finger-joint travel coordinates; not calibrated distance between inner contact surfaces",
+        "last_executed_gripper_command": -1.0
+      },
+      "controller_reference": {
+        "goal_xyz_m": [
+          -0.24759461105692168,
+          -0.24772677681587132,
+          1.0760290174071176
+        ],
+        "goal_rotation_matrix": [
+          [
+            -0.009406413316739188,
+            0.9999545957007051,
+            -0.0015250985487963605
+          ],
+          [
+            0.9999521429534297,
+            0.009402266878373831,
+            -0.0027035495857661417
+          ],
+          [
+            -0.00268908740199228,
+            -0.001550456283480473,
+            -0.999995182435553
+          ]
+        ],
+        "joint_positions_rad": [
+          -0.17350452260872923,
+          -0.13463988785017736,
+          -0.5194659669206914,
+          -2.72592501440732,
+          -0.1363853900198269,
+          2.605360481040761,
+          0.20517027008153965
+        ],
+        "torques": [
+          0.07981378848485532,
+          -15.036008753605811,
+          1.3070477314326916,
+          14.938450558184718,
+          -0.08047930384853413,
+          2.1875746600537678,
+          -0.013879560211066169
+        ],
+        "separate_from_measured_wrist": true
+      },
+      "feeding_score": {
+        "task": "feeding",
+        "success": true,
+        "criteria": {
+          "position": true,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true
+        },
+        "position_error_m": 0.010947043531461186,
+        "orientation_error_rad": 0.030712565763700142,
+        "orientation_error_deg": 1.7597003962780042,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.00021551084043414104,
+        "target_height_m": 0.8150000000000001,
+        "footprint_inside_target": true,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.166834544270574e-14,
+        "maximum_angular_velocity_rad_s": 1.1704446163549241e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 2,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 1,
+        "retries": 1,
+        "recovered_after_failed_grasp": true,
+        "successful_recovery": true,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 130,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.006435047218446788,
+            "any_contact": true,
+            "verified_lift": false,
+            "end_step": 161
+          },
+          {
+            "start_step": 181,
+            "initial_height_m": 0.8147793528335354,
+            "maximum_lift_m": 0.1658202398583778,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 280
+          }
+        ]
+      },
+      "source_trace": "hier01-development-routing/runtime/workers/demo_0013-feeding-912171-router/episode/controller_trace.jsonl.gz",
+      "final_frame": {
+        "path": "hier01-development-routing/runtime/workers/demo_0013-feeding-912171-router/episode/final.png",
+        "sha256": "c0b15b2fa5e738829509cfcd628c3a2cec8cc834e2e611641ef41f18f8ea2eb9"
+      },
+      "last_actor_query": {
+        "index": 47,
+        "input_hashes": {
+          "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+          "image_input": "48c261f6bc33473d4202dbdfa9eafec3ba25c3e4e04b05a01439c0f70014c58b",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "337e00bdbd6a015440a3f8927caad7d606129ac35b6a8c709ea263c04aaf6176",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        },
+        "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+        "not_claimed_same_time_as_postsettling_frame": true
+      },
+      "relationship": "Untested boundary in available evidence",
+      "existing_Q1_evaluation_ids": [],
+      "difference_from_existing_Q1_initial_state": {
+        "object_position_mm": 8.72533058123209,
+        "object_rotation_deg": 0.33154978042280014,
+        "wrist_position_mm": 2.620081476358341,
+        "wrist_rotation_deg": 0.2979182920887231,
+        "finger_joint_max_difference_m": 1.5316708894264064e-08
+      },
+      "full_state_equivalence_claimed": false,
+      "full_state_linkage_basis": "No exact replay/boundary linkage; quantitative pose similarity does not establish full state equivalence"
+    },
+    {
+      "id": "demo_0013-feeding-912172-router",
+      "family": "demo_0013",
+      "policy_seed": 912172,
+      "model_sha256": "d5449244d96e55e60c3342af9fffe2ae64362b74cdf9c3d41e39b74995c9bcdb",
+      "physical_context": "original HIER01-DEV fixture-present scene, both stations visible",
+      "final_truth": {
+        "object_position_m": [
+          0.13735861971291172,
+          -0.11779109769967824,
+          0.8147844891595659
+        ],
+        "object_quat_wxyz": [
+          0.9998730436397918,
+          3.151870049980755e-17,
+          -2.655232457014917e-18,
+          0.015934133252202873
+        ],
+        "object_yaw_rad": 0.03186961519927,
+        "object_linear_velocity_m_s": [
+          -5.015912257047042e-20,
+          1.2238410752382257e-17,
+          2.161587287609222e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -1.1970163310837008e-15,
+          -1.978974602719862e-16,
+          4.248347435730433e-31
+        ],
+        "eef_position_m": [
+          -0.2470562453759007,
+          -0.2452000297220425,
+          1.0777041387732011
+        ],
+        "gripper_joint_position_m": [
+          0.03999720115211706,
+          -0.04000011282838269
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 1500,
+        "sim_time_s": 75.0
+      },
+      "measured_wrist": {
+        "position_m": [
+          -0.2470562453759007,
+          -0.2452000297220425,
+          1.0777041387732011
+        ],
+        "quat_xyzw": [
+          0.7014901985436431,
+          0.7126772675271774,
+          -0.0015793197255908992,
+          0.0003456101854758622
+        ]
+      },
+      "measured_gripper": {
+        "joint_positions_m": [
+          0.03999720115211706,
+          -0.04000011282838269
+        ],
+        "joint_separation_m": 0.07999731398049975,
+        "separation_definition": "difference of measured finger-joint travel coordinates; not calibrated distance between inner contact surfaces",
+        "last_executed_gripper_command": -1.0
+      },
+      "controller_reference": {
+        "goal_xyz_m": [
+          -0.24705710476245246,
+          -0.24520047510429163,
+          1.0777036517278034
+        ],
+        "goal_rotation_matrix": [
+          [
+            -0.016441192065132417,
+            0.9998637788434256,
+            -0.0014529182865169502
+          ],
+          [
+            0.999861230016361,
+            0.016437213478255063,
+            -0.0027090092070445587
+          ],
+          [
+            -0.00268475823350938,
+            -0.001497256013925627,
+            -0.9999952751376691
+          ]
+        ],
+        "joint_positions_rad": [
+          -0.1725659615073225,
+          -0.14327370981911533,
+          -0.5155074742228515,
+          -2.728607404609496,
+          -0.14315006052851548,
+          2.5996071505544345,
+          0.2092309064842887
+        ],
+        "torques": [
+          0.07818376899637157,
+          -15.040820572889588,
+          1.424664808257245,
+          14.98638394975534,
+          0.02731565128291028,
+          2.2242458442829656,
+          -0.08538256384072038
+        ],
+        "separate_from_measured_wrist": true
+      },
+      "feeding_score": {
+        "task": "feeding",
+        "success": true,
+        "criteria": {
+          "position": true,
+          "orientation": true,
+          "marked_face_up": true,
+          "footprint_inside_target": true,
+          "placement_height": true,
+          "released": true,
+          "stable": true
+        },
+        "position_error_m": 0.01255447054163324,
+        "orientation_error_rad": 0.03186961519927,
+        "orientation_error_deg": 1.825994445624151,
+        "upright_error_rad": 0.0,
+        "height_error_m": 0.00021551084043414104,
+        "target_height_m": 0.8150000000000001,
+        "footprint_inside_target": true,
+        "object_movement_after_release_m": 0.0,
+        "object_yaw_movement_after_release_rad": 0.0,
+        "maximum_linear_velocity_m_s": 2.1624205391270437e-14,
+        "maximum_angular_velocity_rad_s": 1.2132648110215619e-15,
+        "stability_sample_count": 12,
+        "stability_duration_s": 1.0999999999999943,
+        "grasp_attempt_count": 2,
+        "successful_grasp_count": 1,
+        "failed_grasp_count": 1,
+        "retries": 1,
+        "recovered_after_failed_grasp": true,
+        "successful_recovery": true,
+        "controller_exceptions": [],
+        "control_steps": 1460,
+        "sim_time_s": 73.0,
+        "attempts": [
+          {
+            "start_step": 130,
+            "initial_height_m": 0.8147844891595659,
+            "maximum_lift_m": 0.006530750832133947,
+            "any_contact": true,
+            "verified_lift": false,
+            "end_step": 161
+          },
+          {
+            "start_step": 180,
+            "initial_height_m": 0.814762880636354,
+            "maximum_lift_m": 0.16415952373731302,
+            "any_contact": true,
+            "verified_lift": true,
+            "end_step": 280
+          }
+        ]
+      },
+      "source_trace": "hier01-development-routing/runtime/workers/demo_0013-feeding-912172-router/episode/controller_trace.jsonl.gz",
+      "final_frame": {
+        "path": "hier01-development-routing/runtime/workers/demo_0013-feeding-912172-router/episode/final.png",
+        "sha256": "65a4079d5afcbd1db9ceea2a81c1fde5272b31d955c0c5c63ad38e97dd71d535"
+      },
+      "last_actor_query": {
+        "index": 47,
+        "input_hashes": {
+          "input_ids": "bee05de35333dd3a238e2ee94dbbca8479a1395718b9c82041966d87a5e878ed",
+          "image_input": "24c4222d933b8b93d9f74a666a9a1bffbf74308f403a2555054099831f64233a",
+          "image_mask": "77cd8094d36c03de9f50414f27c9f85076947cf783c4df5c44d2448fd01d2824",
+          "proprio": "3ff31361af1c95e48eeda04e4a9611640e267a4dd85576305830b4a967397865",
+          "domain_id": "a4803d313b5fed0cbea70afb742c4f14c685484965e069f12964b775e9ceafd3"
+        },
+        "instruction": "Grasp the orange block, orient its blue 2, and place it in the staging square. Target centre in robot world metres: x=0.125000, y=-0.120000. Required block yaw: 0.000000 degrees about world +z; yaw 0 means the upper edge of blue 2 points world +y.",
+        "not_claimed_same_time_as_postsettling_frame": true
+      },
+      "relationship": "Untested boundary in available evidence",
+      "existing_Q1_evaluation_ids": [],
+      "difference_from_existing_Q1_initial_state": {
+        "object_position_mm": 10.13358368358636,
+        "object_rotation_deg": 0.39784382977920935,
+        "wrist_position_mm": 0.8246876413430397,
+        "wrist_rotation_deg": 0.09494211604404641,
+        "finger_joint_max_difference_m": 3.960426331328648e-08
+      },
+      "full_state_equivalence_claimed": false,
+      "full_state_linkage_basis": "No exact replay/boundary linkage; quantitative pose similarity does not establish full state equivalence"
+    }
+  ],
+  "existing_Q1_references": [
+    {
+      "case_id": "dev-demo_0012-loading-912171",
+      "condition": "N",
+      "policy_seed": 912171,
+      "simulation_seed": 912171,
+      "model_sha256": "26d573eb90f791d9af86bbff30e138f51c5aa658ac7abefe76787ba352363a7a",
+      "initial_truth": {
+        "object_position_m": [
+          0.1273654519351832,
+          -0.11610999209965896,
+          0.8147844891595695
+        ],
+        "object_quat_wxyz": [
+          0.9999223382540774,
+          4.663212600250298e-17,
+          -3.475584665818913e-18,
+          0.0124626425969174
+        ],
+        "object_yaw_rad": 0.02492593046093513,
+        "object_linear_velocity_m_s": [
+          3.165220200139951e-19,
+          1.6777169509421303e-17,
+          -2.1724930998209264e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -1.1379724356896723e-15,
+          6.220357898484202e-17,
+          -5.6682078233757525e-31
+        ],
+        "eef_position_m": [
+          -0.24740743360325923,
+          -0.2452858094636376,
+          1.0769629111626249
+        ],
+        "gripper_joint_position_m": [
+          0.039997161547853745,
+          -0.04000011407659002
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 1500,
+        "sim_time_s": 75.0
+      },
+      "strict_success": true,
+      "forbidden_contact_samples": 0,
+      "minimum_joint_limit_margin_rad": 0.2491899205584116,
+      "source": "init14-frozen-qualification/episodes/N/dev-demo_0012-loading-912171",
+      "config_sha256": "64f85c7fff4cd282923a752e4dadc65209081081d09e07308d6e199671e86fce",
+      "prefix_qualification": {
+        "passed": true,
+        "replayed_commands": 1460,
+        "maximum_rich_trace_error": 0.0,
+        "boundary_semantic_state_exact": true,
+        "source": "/var/tmp/typhon-hier01-chain-20261015/workers/F-L-stage2-loading/episode",
+        "epoch": 1792122958.255113
+      },
+      "request_initialization": {
+        "context": "dev-demo_0012-loading-912171",
+        "current_measured_proprio": true,
+        "first_query_gripper_and_dummy_channels_zero": true,
+        "previous_request_command_history_not_carried": true,
+        "physical_state_unchanged": true,
+        "controller_identity_unchanged": true,
+        "simulator_identity_unchanged": true,
+        "initial_steps": 1500,
+        "initial_sim_time_s": 75.00000000000661,
+        "initial_state_sha256": "a0c9ac191f07d2f3ed14de60eef5b4c77a7bdb35852765f8e8694d4c03d65656",
+        "first_stage_matches_DEV_archive": false
+      },
+      "initial_command": {
+        "last_executed_gripper_command": -1.0,
+        "source": "live environment command bookkeeping after qualified reset/prefix",
+        "not_inferred_from_proprio": true
+      }
+    },
+    {
+      "case_id": "dev-demo_0012-loading-912171",
+      "condition": "C",
+      "policy_seed": 912171,
+      "simulation_seed": 912171,
+      "model_sha256": "26d573eb90f791d9af86bbff30e138f51c5aa658ac7abefe76787ba352363a7a",
+      "initial_truth": {
+        "object_position_m": [
+          0.1273654519351832,
+          -0.11610999209965896,
+          0.8147844891595695
+        ],
+        "object_quat_wxyz": [
+          0.9999223382540774,
+          4.663212600250298e-17,
+          -3.475584665818913e-18,
+          0.0124626425969174
+        ],
+        "object_yaw_rad": 0.02492593046093513,
+        "object_linear_velocity_m_s": [
+          3.165220200139951e-19,
+          1.6777169509421303e-17,
+          -2.1724930998209264e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -1.1379724356896723e-15,
+          6.220357898484202e-17,
+          -5.6682078233757525e-31
+        ],
+        "eef_position_m": [
+          -0.24740743360325923,
+          -0.2452858094636376,
+          1.0769629111626249
+        ],
+        "gripper_joint_position_m": [
+          0.039997161547853745,
+          -0.04000011407659002
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 1500,
+        "sim_time_s": 75.0
+      },
+      "strict_success": true,
+      "forbidden_contact_samples": 0,
+      "minimum_joint_limit_margin_rad": 0.2664135660233202,
+      "source": "init14-frozen-qualification/episodes/C/dev-demo_0012-loading-912171",
+      "config_sha256": "64f85c7fff4cd282923a752e4dadc65209081081d09e07308d6e199671e86fce",
+      "prefix_qualification": {
+        "passed": true,
+        "replayed_commands": 1460,
+        "maximum_rich_trace_error": 0.0,
+        "boundary_semantic_state_exact": true,
+        "source": "/var/tmp/typhon-hier01-chain-20261015/workers/F-L-stage2-loading/episode",
+        "epoch": 1792122987.1634285
+      },
+      "request_initialization": {
+        "context": "dev-demo_0012-loading-912171",
+        "current_measured_proprio": true,
+        "first_query_gripper_and_dummy_channels_zero": true,
+        "previous_request_command_history_not_carried": true,
+        "physical_state_unchanged": true,
+        "controller_identity_unchanged": true,
+        "simulator_identity_unchanged": true,
+        "initial_steps": 1500,
+        "initial_sim_time_s": 75.00000000000661,
+        "initial_state_sha256": "a0c9ac191f07d2f3ed14de60eef5b4c77a7bdb35852765f8e8694d4c03d65656",
+        "first_stage_matches_DEV_archive": false
+      },
+      "initial_command": {
+        "last_executed_gripper_command": -1.0,
+        "source": "live environment command bookkeeping after qualified reset/prefix",
+        "not_inferred_from_proprio": true
+      }
+    },
+    {
+      "case_id": "dev-demo_0012-loading-912172",
+      "condition": "N",
+      "policy_seed": 912172,
+      "simulation_seed": 912171,
+      "model_sha256": "26d573eb90f791d9af86bbff30e138f51c5aa658ac7abefe76787ba352363a7a",
+      "initial_truth": {
+        "object_position_m": [
+          0.1273654519351832,
+          -0.11610999209965896,
+          0.8147844891595695
+        ],
+        "object_quat_wxyz": [
+          0.9999223382540774,
+          4.663212600250298e-17,
+          -3.475584665818913e-18,
+          0.0124626425969174
+        ],
+        "object_yaw_rad": 0.02492593046093513,
+        "object_linear_velocity_m_s": [
+          3.165220200139951e-19,
+          1.6777169509421303e-17,
+          -2.1724930998209264e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -1.1379724356896723e-15,
+          6.220357898484202e-17,
+          -5.6682078233757525e-31
+        ],
+        "eef_position_m": [
+          -0.24740743360325923,
+          -0.2452858094636376,
+          1.0769629111626249
+        ],
+        "gripper_joint_position_m": [
+          0.039997161547853745,
+          -0.04000011407659002
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 1500,
+        "sim_time_s": 75.0
+      },
+      "strict_success": true,
+      "forbidden_contact_samples": 1,
+      "minimum_joint_limit_margin_rad": 0.24953998937900845,
+      "source": "init14-frozen-qualification/episodes/N/dev-demo_0012-loading-912172",
+      "config_sha256": "64f85c7fff4cd282923a752e4dadc65209081081d09e07308d6e199671e86fce",
+      "prefix_qualification": {
+        "passed": true,
+        "replayed_commands": 1460,
+        "maximum_rich_trace_error": 0.0,
+        "boundary_semantic_state_exact": true,
+        "source": "/var/tmp/typhon-hier01-chain-20261015/workers/F-L-stage2-loading/episode",
+        "epoch": 1792123015.7452521
+      },
+      "request_initialization": {
+        "context": "dev-demo_0012-loading-912172",
+        "current_measured_proprio": true,
+        "first_query_gripper_and_dummy_channels_zero": true,
+        "previous_request_command_history_not_carried": true,
+        "physical_state_unchanged": true,
+        "controller_identity_unchanged": true,
+        "simulator_identity_unchanged": true,
+        "initial_steps": 1500,
+        "initial_sim_time_s": 75.00000000000661,
+        "initial_state_sha256": "a0c9ac191f07d2f3ed14de60eef5b4c77a7bdb35852765f8e8694d4c03d65656",
+        "first_stage_matches_DEV_archive": false
+      },
+      "initial_command": {
+        "last_executed_gripper_command": -1.0,
+        "source": "live environment command bookkeeping after qualified reset/prefix",
+        "not_inferred_from_proprio": true
+      }
+    },
+    {
+      "case_id": "dev-demo_0012-loading-912172",
+      "condition": "C",
+      "policy_seed": 912172,
+      "simulation_seed": 912171,
+      "model_sha256": "26d573eb90f791d9af86bbff30e138f51c5aa658ac7abefe76787ba352363a7a",
+      "initial_truth": {
+        "object_position_m": [
+          0.1273654519351832,
+          -0.11610999209965896,
+          0.8147844891595695
+        ],
+        "object_quat_wxyz": [
+          0.9999223382540774,
+          4.663212600250298e-17,
+          -3.475584665818913e-18,
+          0.0124626425969174
+        ],
+        "object_yaw_rad": 0.02492593046093513,
+        "object_linear_velocity_m_s": [
+          3.165220200139951e-19,
+          1.6777169509421303e-17,
+          -2.1724930998209264e-14
+        ],
+        "object_angular_velocity_rad_s": [
+          -1.1379724356896723e-15,
+          6.220357898484202e-17,
+          -5.6682078233757525e-31
+        ],
+        "eef_position_m": [
+          -0.24740743360325923,
+          -0.2452858094636376,
+          1.0769629111626249
+        ],
+        "gripper_joint_position_m": [
+          0.039997161547853745,
+          -0.04000011407659002
+        ],
+        "gripper_open": true,
+        "grasp_contact": false,
+        "bilateral_grasp_contact": false,
+        "control_steps": 1500,
+        "sim_time_s": 75.0
+      },
+      "strict_success": true,
+      "forbidden_contact_samples": 0,
+      "minimum_joint_limit_margin_rad": 0.2551466665838742,
+      "source": "init14-frozen-qualification/episodes/C/dev-demo_0012-loading-912172",
+      "config_sha256": "64f85c7fff4cd282923a752e4dadc65209081081d09e07308d6e199671e86fce",
+      "prefix_qualification": {
+        "passed": true,
+        "replayed_commands": 1460,
+        "maximum_rich_trace_error": 0.0,
+        "boundary_semantic_state_exact": true,
+        "source": "/var/tmp/typhon-hier01-chain-20261015/workers/F-L-stage2-loading/episode",
+        "epoch": 1792123044.5300477
+      },
+      "request_initialization": {
+        "context": "dev-demo_0012-loading-912172",
+        "current_measured_proprio": true,
+        "first_query_gripper_and_dummy_channels_zero": true,
+        "previous_request_command_history_not_carried": true,
+        "physical_state_unchanged": true,
+        "controller_identity_unchanged": true,
+        "simulator_identity_unchanged": true,
+        "initial_steps": 1500,
+        "initial_sim_time_s": 75.00000000000661,
+        "initial_state_sha256": "a0c9ac191f07d2f3ed14de60eef5b4c77a7bdb35852765f8e8694d4c03d65656",
+        "first_stage_matches_DEV_archive": false
+      },
+      "initial_command": {
+        "last_executed_gripper_command": -1.0,
+        "source": "live environment command bookkeeping after qualified reset/prefix",
+        "not_inferred_from_proprio": true
+      }
+    }
+  ],
+  "unique_existing_Q1_handover_states": 1,
+  "existing_Q1_loading_policy_seeds": [
+    912171,
+    912172
+  ],
+  "existing_Q1_source_feeding_seed": 912171,
+  "new_continuous_endpoint_contexts": 3,
+  "exact_linkages": 1,
+  "related_not_matched": 1,
+  "untested_boundaries": 2,
+  "new_model_calls": 0,
+  "new_physics_ticks": 0,
+  "new_rendering": 0,
+  "source_files_unchanged": true,
+  "source_provenance": {
+    "hier01-development-routing/runtime/protocol.json": {
+      "sha256": "4379fcff1a41d80b8bd138f7d52965ee9bf4987cee8b99bd7dce4106c9097a58",
+      "bytes": 190057
+    },
+    "init14-frozen-qualification/cases.json": {
+      "sha256": "881525d3c1434db8853ba12589946a3f70094f9a67f9d96c6b70b02e0982f58f",
+      "bytes": 291891
+    },
+    "init14-frozen-qualification/episodes/N/dev-demo_0012-loading-912171/episode.json": {
+      "sha256": "7cf5e81392f4019a71c89a38c390b93c96e80e2f386bfbb983a573769faf0e95",
+      "bytes": 26960
+    },
+    "init14-frozen-qualification/episodes/N/dev-demo_0012-loading-912171/summary.json": {
+      "sha256": "cfd04324f4aaeb2f57ef79baa7c690c2065c5c5010d1e62f92331fc14b6db738",
+      "bytes": 5475
+    },
+    "init14-frozen-qualification/episodes/N/dev-demo_0012-loading-912171/request-initialization.json": {
+      "sha256": "36ee944e50ba81fd7d73a57838d31b8bcee8408eaab1c24112434022c39e6d01",
+      "bytes": 518
+    },
+    "init14-frozen-qualification/episodes/N/dev-demo_0012-loading-912171/initial-command.json": {
+      "sha256": "4570c0bbe8c6254003153445859117aee2fc6e669457e4da36035d49cd28b080",
+      "bytes": 162
+    },
+    "init14-frozen-qualification/prefixes/N/dev-demo_0012-loading-912171/qualification.json": {
+      "sha256": "a74663a894d257af2aad870f335857ff80a52a16a40ad4d6e28d2f615c0944fb",
+      "bytes": 244
+    },
+    "init14-frozen-qualification/episodes/C/dev-demo_0012-loading-912171/episode.json": {
+      "sha256": "74bc2377fab02e4aac2ea0fec0f921662fbf3ae92ce1ed49414ee478e081dba3",
+      "bytes": 27080
+    },
+    "init14-frozen-qualification/episodes/C/dev-demo_0012-loading-912171/summary.json": {
+      "sha256": "9fd505696c6f29ec37b299e56cadd2eddf1135694b31180f7d0f5a72909015f6",
+      "bytes": 7064
+    },
+    "init14-frozen-qualification/episodes/C/dev-demo_0012-loading-912171/request-initialization.json": {
+      "sha256": "36ee944e50ba81fd7d73a57838d31b8bcee8408eaab1c24112434022c39e6d01",
+      "bytes": 518
+    },
+    "init14-frozen-qualification/episodes/C/dev-demo_0012-loading-912171/initial-command.json": {
+      "sha256": "4570c0bbe8c6254003153445859117aee2fc6e669457e4da36035d49cd28b080",
+      "bytes": 162
+    },
+    "init14-frozen-qualification/prefixes/C/dev-demo_0012-loading-912171/qualification.json": {
+      "sha256": "d4fa06f4202893c67a46b2dcf419aba82893476d3e197c4665ecd94f302362c5",
+      "bytes": 245
+    },
+    "init14-frozen-qualification/episodes/N/dev-demo_0012-loading-912172/episode.json": {
+      "sha256": "e4f841d6215db6eea7451ddfc1a9c779cf82397d9cfa1876282c91eb37ce5555",
+      "bytes": 26966
+    },
+    "init14-frozen-qualification/episodes/N/dev-demo_0012-loading-912172/summary.json": {
+      "sha256": "8b187369f51d2e594d147c23b7ba4ebed4fe726413f6c441b419bf4d46126fb1",
+      "bytes": 5822
+    },
+    "init14-frozen-qualification/episodes/N/dev-demo_0012-loading-912172/request-initialization.json": {
+      "sha256": "3cb7c206dbfebc5764a3931f6b318c05d27c3b23ab288ecd657fe0f0e24738b8",
+      "bytes": 518
+    },
+    "init14-frozen-qualification/episodes/N/dev-demo_0012-loading-912172/initial-command.json": {
+      "sha256": "4570c0bbe8c6254003153445859117aee2fc6e669457e4da36035d49cd28b080",
+      "bytes": 162
+    },
+    "init14-frozen-qualification/prefixes/N/dev-demo_0012-loading-912172/qualification.json": {
+      "sha256": "6011de6040d1c3b7322116d93cbb0e3c77aad7fd7bad9d30632866b86d3d0d98",
+      "bytes": 245
+    },
+    "init14-frozen-qualification/episodes/C/dev-demo_0012-loading-912172/episode.json": {
+      "sha256": "1edeb4bcb76da7bd762f939227ea0144adee47d83fb269a962a1c09fbda3e30a",
+      "bytes": 27032
+    },
+    "init14-frozen-qualification/episodes/C/dev-demo_0012-loading-912172/summary.json": {
+      "sha256": "337a9be404ee860860080cc932ea4cc376356ceb54b2cbceefe69268ba25cd90",
+      "bytes": 7061
+    },
+    "init14-frozen-qualification/episodes/C/dev-demo_0012-loading-912172/request-initialization.json": {
+      "sha256": "3cb7c206dbfebc5764a3931f6b318c05d27c3b23ab288ecd657fe0f0e24738b8",
+      "bytes": 518
+    },
+    "init14-frozen-qualification/episodes/C/dev-demo_0012-loading-912172/initial-command.json": {
+      "sha256": "4570c0bbe8c6254003153445859117aee2fc6e669457e4da36035d49cd28b080",
+      "bytes": 162
+    },
+    "init14-frozen-qualification/prefixes/C/dev-demo_0012-loading-912172/qualification.json": {
+      "sha256": "720cc1966658324fa897e731376bbfd61f4eec190f9e25a57126e9b1dbb55852",
+      "bytes": 245
+    },
+    "hier01-continuous-handover/runtime/workers/F-L-stage1-feeding/episode/controller_trace.jsonl.gz": {
+      "sha256": "94beae2c10c20c276ead592a256ccc333ca1b11ffeb0f099dc33428ff095cbca",
+      "bytes": 1980729
+    },
+    "hier01-continuous-handover/runtime/workers/F-L-stage1-feeding/episode/native-first-stage-equivalence.json": {
+      "sha256": "bb8c22e3d1947d8ee5e15d58cce0d8954571634691395004631d1bee83f45d60",
+      "bytes": 188
+    },
+    "hier01-continuous-handover/runtime/workers/F-L-stage2-loading/episode/episode.json": {
+      "sha256": "cd43b272ec57987894c10c19514b87962f260af4dccd62b31e086d7d79391b55",
+      "bytes": 26092
+    },
+    "hier01-continuous-handover/runtime/workers/F-L-stage2-loading/episode/boundary-before.pkl": {
+      "sha256": "a0c9ac191f07d2f3ed14de60eef5b4c77a7bdb35852765f8e8694d4c03d65656",
+      "bytes": 16395
+    },
+    "hier01-development-routing/runtime/workers/demo_0012-feeding-912171-router/episode/episode.json": {
+      "sha256": "b2723f4ff4f5922c010373ab1ceb0a6cc8bbd72a6c9a0611015e4b6964cc8f44",
+      "bytes": 76908
+    },
+    "hier01-development-routing/runtime/workers/demo_0012-feeding-912171-router/episode/dispatch-summary.json": {
+      "sha256": "a077df37e8e63ffb5ef124d355efa4d14f31ec958a17ff1043af114e379fc5e8",
+      "bytes": 5175
+    },
+    "hier01-development-routing/runtime/workers/demo_0012-feeding-912171-router/episode/controller_trace.jsonl.gz": {
+      "sha256": "95a5e0f61979cd4931d1a7fb7f58bd6cd4625aca3f98e34351bd08a279fe1cee",
+      "bytes": 1980729
+    },
+    "hier01-development-routing/runtime/workers/demo_0012-feeding-912171-router/episode/input-audit/input-047.json": {
+      "sha256": "82d2a3479c29e1d7406d74eca672aed3a256baf7e0523d2f4b76776fb2ecc301",
+      "bytes": 855
+    },
+    "hier01-development-routing/runtime/workers/demo_0012-feeding-912171-router/episode/final.png": {
+      "sha256": "b59fe8ff120145da431a52fd0c75e6fc3f30ac935dc82089dc3dc4a02503b4d1",
+      "bytes": 485611
+    },
+    "hier01-development-routing/runtime/workers/demo_0012-feeding-912172-router/episode/episode.json": {
+      "sha256": "70b7c4a13428e7c70ce8cf1a0acfcdc29e678ecb4fd02d6d8fd65f369b3bf6d8",
+      "bytes": 76954
+    },
+    "hier01-development-routing/runtime/workers/demo_0012-feeding-912172-router/episode/dispatch-summary.json": {
+      "sha256": "aed7d34c7fa6a8fb28b52205d0ea5d17f7fceab9723c1b61781193b42bc8ff5f",
+      "bytes": 5178
+    },
+    "hier01-development-routing/runtime/workers/demo_0012-feeding-912172-router/episode/controller_trace.jsonl.gz": {
+      "sha256": "5e12c6088a81ea95c2dbbd47648ed3fb371aac3f29cc090c3d4d7dfa053c6bbc",
+      "bytes": 1970205
+    },
+    "hier01-development-routing/runtime/workers/demo_0012-feeding-912172-router/episode/input-audit/input-047.json": {
+      "sha256": "79cc8eb0c3e95cac1350f2e66dbc54489e0437656f7cf673f48c3f99783aea7f",
+      "bytes": 855
+    },
+    "hier01-development-routing/runtime/workers/demo_0012-feeding-912172-router/episode/final.png": {
+      "sha256": "35d295122cdcc51a78c883f8475942d6c4af3189bcb15b89b88c14c37119589c",
+      "bytes": 484745
+    },
+    "hier01-development-routing/runtime/workers/demo_0013-feeding-912171-router/episode/episode.json": {
+      "sha256": "6c4f8b3c37b64285515da35d92bf87849e025297c8182ec74fefa7741a63c6b8",
+      "bytes": 77101
+    },
+    "hier01-development-routing/runtime/workers/demo_0013-feeding-912171-router/episode/dispatch-summary.json": {
+      "sha256": "45aef0a279a3a3006565dbc2dccec1cad56dbfb915b5a69621e232414bb9edde",
+      "bytes": 5657
+    },
+    "hier01-development-routing/runtime/workers/demo_0013-feeding-912171-router/episode/controller_trace.jsonl.gz": {
+      "sha256": "21623476ed8ba24a6f74bc894ed8c39d3c3887b712f6282e419bf1a79aa97dda",
+      "bytes": 1993417
+    },
+    "hier01-development-routing/runtime/workers/demo_0013-feeding-912171-router/episode/input-audit/input-047.json": {
+      "sha256": "1a11b202c26eb8ef9f53683ce2bccd2f4096fc5d5edeec124b7ed7c2ba38c123",
+      "bytes": 855
+    },
+    "hier01-development-routing/runtime/workers/demo_0013-feeding-912171-router/episode/final.png": {
+      "sha256": "c0b15b2fa5e738829509cfcd628c3a2cec8cc834e2e611641ef41f18f8ea2eb9",
+      "bytes": 485342
+    },
+    "hier01-development-routing/runtime/workers/demo_0013-feeding-912172-router/episode/episode.json": {
+      "sha256": "5064bbb48d90cc917a39641390d2d558432a881306795ccab4fd141f8fe89174",
+      "bytes": 77048
+    },
+    "hier01-development-routing/runtime/workers/demo_0013-feeding-912172-router/episode/dispatch-summary.json": {
+      "sha256": "29452247b0bf68a242d8ce5bc4bff1459b1c44cbf26ae27b2d0c1a1800487dc8",
+      "bytes": 5646
+    },
+    "hier01-development-routing/runtime/workers/demo_0013-feeding-912172-router/episode/controller_trace.jsonl.gz": {
+      "sha256": "2c8006901b4c0098dd37c9b1b1a5b2511e2a7855f32816cd4d050253471f47d0",
+      "bytes": 1995866
+    },
+    "hier01-development-routing/runtime/workers/demo_0013-feeding-912172-router/episode/input-audit/input-047.json": {
+      "sha256": "ae463489b9a0c4141027a4f6a8a53c427fe63d4ed9f6099400a9fbcb6cc51088",
+      "bytes": 855
+    },
+    "hier01-development-routing/runtime/workers/demo_0013-feeding-912172-router/episode/final.png": {
+      "sha256": "65a4079d5afcbd1db9ceea2a81c1fde5272b31d955c0c5c63ad38e97dd71d535",
+      "bytes": 485564
+    }
+  },
+  "scope": "four fixed GOAL endpoints and compact existing INIT14 Q1 handover records; no claim about uninspected archives",
+  "epoch": 1792125531.4471114
+}
