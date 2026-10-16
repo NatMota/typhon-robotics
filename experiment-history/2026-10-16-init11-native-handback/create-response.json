@@ -1,0 +1,74 @@
+{
+  "attempt_epoch": 1792112453.7159848,
+  "mutation_attempts": 1,
+  "previous_reference": "65CEFFC0",
+  "previous_reservation_rows": [],
+  "request": {
+    "referenceNumber": null,
+    "ownerId": 389,
+    "resourceIds": [
+      25
+    ],
+    "accessories": [],
+    "title": "Typhon robotics research and labs",
+    "description": "Continuation of personal robotics research, controlled simulation evaluations, and coursework labs.",
+    "start": "2026-10-16T01:30:00.000Z",
+    "end": "2026-10-19T01:30:00.000Z",
+    "recurrence": {
+      "type": "none",
+      "interval": 1,
+      "weekdays": null,
+      "monthlyType": null,
+      "weekOfMonth": null,
+      "terminationDate": null,
+      "repeatDates": []
+    },
+    "startReminder": {
+      "value": 60,
+      "interval": "minutes"
+    },
+    "endReminder": {
+      "value": 10,
+      "interval": "minutes"
+    },
+    "inviteeIds": [],
+    "coOwnerIds": [],
+    "participantIds": [],
+    "guestEmails": [],
+    "participantEmails": [],
+    "allowSelfJoin": false,
+    "attachments": [],
+    "requiresApproval": false,
+    "checkinDate": 0,
+    "checkoutDate": 0,
+    "termsAcceptedDate": null,
+    "attributeValues": [],
+    "meetingLink": null,
+    "displayColor": null
+  },
+  "http_status": "200",
+  "curl_exit_code": 0,
+  "error": "",
+  "result": {
+    "success": true,
+    "data": {
+      "referenceNumber": "A961B88F",
+      "success": true,
+      "canBeRetried": false,
+      "canJoinWaitlist": false,
+      "errors": [],
+      "warnings": [],
+      "retryMessages": [],
+      "retryParameters": [],
+      "requiresApproval": true,
+      "showDetails": false,
+      "dates": [],
+      "payment": {
+        "stripe": {},
+        "paypal": null
+      }
+    },
+    "error": null
+  },
+  "retries": 0
+}

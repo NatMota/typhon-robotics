@@ -1,0 +1,1394 @@
+{
+  "status": "prepared_only_no_compute",
+  "file_count": 231,
+  "bytes": 3789099325,
+  "files": [
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/evaluation-cases.json",
+      "destination": "/var/tmp/typhon-init07-20261015/evaluation-cases.json",
+      "bytes": 268895,
+      "sha256": "a437f72e9f28ed51448370e978b53470bb3f67efa967a32ab279e6a13e489850"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/train-Q1/step3000.pt",
+      "destination": "/var/tmp/typhon-init07-20261015/train-Q1/step3000.pt",
+      "bytes": 3729401260,
+      "sha256": "26d573eb90f791d9af86bbff30e138f51c5aa658ac7abefe76787ba352363a7a"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/train-Q1/step3000-probe.pt",
+      "destination": "/var/tmp/typhon-init07-20261015/train-Q1/step3000-probe.pt",
+      "bytes": 1812430,
+      "sha256": "9ddf8971546fd494bfc56b53586e091e039a2c809e012931d21e5be519f552e5"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/train-Q1/complete.json",
+      "destination": "/var/tmp/typhon-init07-20261015/train-Q1/complete.json",
+      "bytes": 633,
+      "sha256": "b395f2ec7c8b09604c84473b81f7252aeab20673a08233d94b03b4f1acd0c68d"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/episode.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/episode.json",
+      "bytes": 28375,
+      "sha256": "b640a56f5d201e50402300a0c2139212189795e66517f1a1694d326573d6299b"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/predictions.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/predictions.npz",
+      "bytes": 53495,
+      "sha256": "4f12d9fce5846b40dbe348c33cc8cd365114b3b573f3657949def7121f1c1450"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/policy_io.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/policy_io.npz",
+      "bytes": 24619073,
+      "sha256": "361536f40b2f2b36ca76cb005c8c646d358f3a2bb0832f434f2a71f2a1672ba0"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/controller_trace.jsonl.gz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/controller_trace.jsonl.gz",
+      "bytes": 1911722,
+      "sha256": "44cc5a8e476265c8e42864292ccf5cc78903c3444b529c634b8989979c3fc3a3"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/boundary-before.pkl",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/boundary-before.pkl",
+      "bytes": 16409,
+      "sha256": "5fca80e6664cf07504f6ccfa51a67db598010184252143f318077455646b4fe3"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/initial-prepared.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/initial-prepared.npz",
+      "bytes": 242400,
+      "sha256": "e4dcd219a87a312c2f276a89e39d3b280be7e21654e3cfcc1549f36bf9a53823"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-000.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-000.json",
+      "bytes": 863,
+      "sha256": "b0056e9ca234b5884c3eb13d70a93f5a10a896393462a035a8e196d3bf8cfcf1"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-001.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-001.json",
+      "bytes": 864,
+      "sha256": "e184d011d9e688cb2dcd13e8e8a6acc410951b1d2f94e758b2c85bb531d178b3"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-002.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-002.json",
+      "bytes": 864,
+      "sha256": "468e9b436e96627b431aee79bf10adeea87b99c749dfa583aac9eb0c852d1854"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-003.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-003.json",
+      "bytes": 864,
+      "sha256": "0acea807b0f4c20caa6540672654667810474bc498222c10515176ccfb96eb9f"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-004.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-004.json",
+      "bytes": 864,
+      "sha256": "5880ff86f55d3c2109c0f7385866059ab1ebce23fab458cddf8e5675994f8cb2"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-005.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-005.json",
+      "bytes": 864,
+      "sha256": "43aa2d06c5175c99597450a42950f98dfb04e6797d0d084c918905d5e1bb61d8"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-006.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-006.json",
+      "bytes": 864,
+      "sha256": "1b398140980ef83cdbb6cc4c31053cc498d3dca7e2715905d576046b39b914c5"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-007.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-007.json",
+      "bytes": 864,
+      "sha256": "2dc3b382c433a81e72869ce93749578d543b2fde2ce02a960448ae75143411e1"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-008.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-008.json",
+      "bytes": 864,
+      "sha256": "d8dbe71e46103b1181a2853c1ec613f88109e583c2f27d89cc61de9d0c867483"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-009.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-009.json",
+      "bytes": 864,
+      "sha256": "008bdfc60f5a3e4250b4156ed81e863a849cf7c03adb9ff13114cd62fc1e7c33"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-010.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-010.json",
+      "bytes": 864,
+      "sha256": "02097bcec9536592c36a2d34e2fb983666460c87c8761681d0c94b321d16d81c"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-011.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-011.json",
+      "bytes": 864,
+      "sha256": "7648403ef5083aed0af956ffdb1bffd1649313d3ca270bdae71ff69a8384cd39"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-012.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-012.json",
+      "bytes": 864,
+      "sha256": "f28cf9861d784dca9f60796b968a604cd4bd8dc55601b298be102c3e189677da"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-013.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-013.json",
+      "bytes": 864,
+      "sha256": "da98e3b931d8d8448b47d13bcc515ce8fa57c91c939cd6db009cbc35cb0ad633"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-014.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-014.json",
+      "bytes": 864,
+      "sha256": "a952bb5f87c09802b5e9e37b3d176b64ad334b024d3fe1a4eff2e5e45f900d96"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-016.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-016.json",
+      "bytes": 864,
+      "sha256": "0b95a427bcbfce2706d16d1fd5d9ddf11a21723aed952b8cbbb5d008fceb7865"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-017.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-017.json",
+      "bytes": 864,
+      "sha256": "1a6465609a6360ffcd91c38cd36fb255082ff839cda4356d0d9f532916929489"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-018.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-018.json",
+      "bytes": 864,
+      "sha256": "7d35a7d7119bafdd2c3a2fde44367c576fb5a40b1abb6edfd875ad57c7876d5d"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-019.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-019.json",
+      "bytes": 864,
+      "sha256": "f6008b84b36925f8906b32c85e0e95bed55154fa81df1f56f87091f437dbb24e"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-020.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-020.json",
+      "bytes": 864,
+      "sha256": "7e73d9796df7c1bb255cfefdd66db6b3bd619c2d43a40871dde4297a98f1c310"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-021.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-021.json",
+      "bytes": 864,
+      "sha256": "7885937d3a987ffa1df59a3330acbe272d4e3725111f3997d697012ec1cf8789"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-022.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-022.json",
+      "bytes": 864,
+      "sha256": "4030c94cff876b7f87023be22c9e3e8f9321b7ed7d712a659e96f55b2dca1038"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-023.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-023.json",
+      "bytes": 864,
+      "sha256": "83d20bd670abd980c876131aa9ba83c17e81819512f36726d422cfd1564065f6"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-024.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-024.json",
+      "bytes": 864,
+      "sha256": "7000c7a601c63dbc03dc2c9daf5fbac5486bb267c263a31c405cc7de528312df"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-025.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-025.json",
+      "bytes": 864,
+      "sha256": "7ce81a5c1ab81246b7d151e80e172a4c63b46f899205c15c73fd00c5c4d8ed18"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-026.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-026.json",
+      "bytes": 864,
+      "sha256": "a886bb6fa962297f35b88c2b55188910b2f1f3d89dbb3eb73dc9bf86860a0ffa"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-027.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-027.json",
+      "bytes": 864,
+      "sha256": "fe0b304ea8afc751e44c5b629c6a0d9ea1d1a1d3e65b2e03d66edf3823eb0282"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-028.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-028.json",
+      "bytes": 864,
+      "sha256": "e14a1bdc76647f4a7a0e7583f2270b3978a2b755d83a25c81bf3e9ba36d6b7e4"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-029.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-029.json",
+      "bytes": 864,
+      "sha256": "903317f6c652cc01487440a1209f5fb4298bb8dc7cc5b7c3394b9821c9867d01"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-030.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-030.json",
+      "bytes": 864,
+      "sha256": "ac6b1523a2929ec06a7417deffbef914f13167e7a5cdca7447782e12594b1b2b"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-031.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-031.json",
+      "bytes": 864,
+      "sha256": "09c06aaad26712afb070cf4a88b61358f9e35f40ad9fb668a73c9fa5743260bb"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-032.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-032.json",
+      "bytes": 864,
+      "sha256": "1f74c7165607843487beab83e62ff55fb2a63314e4bb78308d8213414faaeb05"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-034.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-034.json",
+      "bytes": 864,
+      "sha256": "55fdba8cba69a7c4247c587fe5a68a189e27a284daebfb81a987bf09ca99266a"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-035.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-035.json",
+      "bytes": 864,
+      "sha256": "619f8cb2286ec4c8d338a1c930cf14f31c29ae021457fe6b7d9a705d4790a1a0"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-036.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-036.json",
+      "bytes": 864,
+      "sha256": "ba31c31d198a588a528272f52de0922405d3c46fc5d605eb044b71f7739c2336"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-037.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-037.json",
+      "bytes": 864,
+      "sha256": "87fa8dee8c97b1a3e28ec9ae8d776605ebbdc90d259e1f744b8a743fa5482adb"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-038.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-038.json",
+      "bytes": 864,
+      "sha256": "58aa938d16466e6bb0abc77833031d66cfac4d50503f93312ac43d2f5c4427ee"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-039.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-039.json",
+      "bytes": 864,
+      "sha256": "05f74c8c102462854750477aa1b986a2985b6ffee679f5187c796ff2d168c97d"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-040.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-040.json",
+      "bytes": 864,
+      "sha256": "f68cb97e8447360baea9cebcf072919a8da2003bffc66e80abd0f901ef3d2bd7"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-041.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-041.json",
+      "bytes": 864,
+      "sha256": "3a9112233cf7ab5ac0f33ccbeee6ecbbe62d920e07d9fd68bcc6fb0f13ebe32e"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-042.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-042.json",
+      "bytes": 864,
+      "sha256": "3fe513e35015ce0606c9471ce81bc1a088cac04754ac565a3bf545c0488c745c"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-043.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-043.json",
+      "bytes": 864,
+      "sha256": "373c6c827ee9296c488a9cbb6a5eb48d757d18411dae97261a7c5b246c773933"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-044.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-044.json",
+      "bytes": 864,
+      "sha256": "b38481e238a3f1ca73dc77dbfc2a6a42a6e3c1b70400a39589daf99f2bf9d496"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-045.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-045.json",
+      "bytes": 864,
+      "sha256": "3ecb088a9f80080ae9585b8f893ba917d77907ae333208b6619fcef7960e91ef"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-046.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-046.json",
+      "bytes": 864,
+      "sha256": "3966dcd5bd7da70d1788563ad91e087b537299f3ce30c548cc083809b997abf2"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-047.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-047.json",
+      "bytes": 864,
+      "sha256": "06abef28b6ebe8085791f13944972bfdd7d50ab913449991b42e470f273c0842"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-000.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-000.npz",
+      "bytes": 6057,
+      "sha256": "0e049adf404d8b0b7d54564f82070b93412b8d488fa70df0b529359f7490042f"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-001.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-001.npz",
+      "bytes": 6060,
+      "sha256": "c31abd1dd250dea96a7e3a5eb2cb23601f62191577644160579266868119b546"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-002.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-002.npz",
+      "bytes": 6057,
+      "sha256": "2dc9ced1dd629609d787afb15040e77e55a8cb2eac3ad16acf8e010058aa9830"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-004.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-004.npz",
+      "bytes": 6072,
+      "sha256": "ff86805f44d8b8cb3108a09422ea273870619996fe4987fa2ba115ebd7e05ffe"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-005.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-005.npz",
+      "bytes": 6056,
+      "sha256": "a8c636bea45093ca84e79245dceb5510d1b8b36428eae12afd3029a7dde5c382"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-006.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-006.npz",
+      "bytes": 6070,
+      "sha256": "24b49c7f989105571c82ac5ba081576ffc20baae14bcdebb6b176932f77a691c"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-007.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-007.npz",
+      "bytes": 6061,
+      "sha256": "6ea9eb7b0e5ea8769b12a371eea6ae9a84a764dbdd084529dbc86da21192142e"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-008.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-008.npz",
+      "bytes": 6067,
+      "sha256": "a0d40599ec6493d80721a29ffb4437529dcfce42d038b00a5eed0e804cf24771"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-009.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-009.npz",
+      "bytes": 6062,
+      "sha256": "687f71e5b26ad4f138e31b9bcf63a7bcb02c1928d0a82e0bf62833d3e3903b2f"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-010.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-010.npz",
+      "bytes": 6060,
+      "sha256": "cfe6dc5ae8f8e0746b8b56e35132b23ca86ad29c42f35ea34b63bd995baa9d8c"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-011.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-011.npz",
+      "bytes": 6059,
+      "sha256": "8c0e4aba39f52a3b1865bd19d51671c47b01cd9d040ad2c473658b09d73dd035"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-012.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-012.npz",
+      "bytes": 6056,
+      "sha256": "e0d862f28eb9019487fea51709d895e4bc586406c982f1b707e7ac43753571f1"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-013.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-013.npz",
+      "bytes": 6071,
+      "sha256": "f03013f2f1850c75c07e730ae309b23a1c16e00855ddfbdf725954ecf8f12742"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-014.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-014.npz",
+      "bytes": 6057,
+      "sha256": "83c9420288ea7514547959e0bcca472a9e82e999ca6ab8d22491e83b2afefce4"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-015.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-015.npz",
+      "bytes": 6066,
+      "sha256": "175e78d548655690fd52fd00ea01c8eace86754b9883c9d1e76ebaa977c039a4"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-016.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-016.npz",
+      "bytes": 6067,
+      "sha256": "43ce96032fdee80f17b7f31e0c213d5ff123ecd5427e41768e18ec20b25d7c15"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-017.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-017.npz",
+      "bytes": 6068,
+      "sha256": "2a2cfc44e9979bf516306f39ce2f321e23da582486cec259c18fd03339e02c52"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-018.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-018.npz",
+      "bytes": 6066,
+      "sha256": "a9053e8f565ab6aacc4a1aff692ecef0089a373b2c94036020cdf8aeb90c3261"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-019.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-019.npz",
+      "bytes": 6062,
+      "sha256": "eb91b02533e89190546d4a49ad0d705d3f0bc894773a09b10d603ef475d40612"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-020.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-020.npz",
+      "bytes": 6067,
+      "sha256": "2ad40d292179a2b89569057ce0a07e2adf69853099bc2872c3a1e0134b58fdc6"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-015.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-015.json",
+      "bytes": 864,
+      "sha256": "0fe4e1c24d03cba487db358903b58f5b60acb5128964d1d475b2981d23647e21"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-033.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/input-033.json",
+      "bytes": 864,
+      "sha256": "f7db2a24e16435929e5cdc8790f476dd9fdfa924c095a3bef9fd500bdc1b644a"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-003.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-003.npz",
+      "bytes": 6059,
+      "sha256": "26504641f94799e1e4edb7022fcc360e11e6fc2a84ad68a6c7b276b09d847e26"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-021.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-021.npz",
+      "bytes": 6061,
+      "sha256": "76c5c6323a6342b4bed3444f8a37ba994645883500cf8b25486b0d86b14aaca4"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-022.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-022.npz",
+      "bytes": 6058,
+      "sha256": "70cafb1dc6be71e5e7dfec8ddaeff514d4df5522847da8378905a54442762109"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-023.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-023.npz",
+      "bytes": 6061,
+      "sha256": "bd4c037356c11c64c826d0f66ba6b6e2db52e191995fbd85843022b67a227c35"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-024.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-024.npz",
+      "bytes": 6064,
+      "sha256": "46e6beb0772d882b52156584bb7ece2cbdcabfc72586ef5a562d02ac31533f43"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-025.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-025.npz",
+      "bytes": 6062,
+      "sha256": "a4ec958442e2ee92e207277f88319e9c8feadff73650805b3d3f6289ecddf78a"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-026.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-026.npz",
+      "bytes": 6064,
+      "sha256": "6e183d0679a9e2215fae6001328ef2bb5c331110ded7c2c773acdcd3a18744ec"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-027.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-027.npz",
+      "bytes": 6067,
+      "sha256": "00378502eb0c5d945a49dffcaffd1db30adbb1fd75585019ca6c4681c8b0ff97"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-028.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-028.npz",
+      "bytes": 6069,
+      "sha256": "99791eb704e8a4f42f0c6432683e5f34e209f09b7155ab1832160785fa958481"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-029.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-029.npz",
+      "bytes": 6063,
+      "sha256": "01e7820254f3e4b9845816081090eab56512db58b1fa180373405b03cda196f9"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-030.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-030.npz",
+      "bytes": 6072,
+      "sha256": "947a7c6513ad1a3775a8571da663ec4ee25b4961c7858f68f4826bf760b6668f"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-031.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-031.npz",
+      "bytes": 6066,
+      "sha256": "f6c269444bfbee3f7733673dbda1fe95b6c19afc7981bd96529e66c104a1a268"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-032.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-032.npz",
+      "bytes": 6043,
+      "sha256": "e03de8213d972170eea68959c3c2e55b37dd6cf09994b2af10c3da8331b10968"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-033.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-033.npz",
+      "bytes": 6065,
+      "sha256": "5f147e152fdb142ccb9e9589c846580f87d874361aaca3253502f85974c92f16"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-034.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-034.npz",
+      "bytes": 6067,
+      "sha256": "cfa012d1504996d285533e7234a72c1bd69bcaca4897cc21a1eac9fd6cf4682b"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-035.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-035.npz",
+      "bytes": 6062,
+      "sha256": "beba3bc63ec9a8ed65e36f1c78d53905069c3b0f054ad543ab326b27f2dac27d"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-036.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-036.npz",
+      "bytes": 6060,
+      "sha256": "987d45be188286d6233b5574dc5aa3f483c8b7ce4494c4436b9d9c768de01c4c"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-037.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-037.npz",
+      "bytes": 6061,
+      "sha256": "1bf730b2c56102ca196286e50bae1c74ce29c90478a4d93a578a93df7402ad95"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-038.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-038.npz",
+      "bytes": 6062,
+      "sha256": "27555a63a6eba8dafcbb5024af5c0aab928ce11a9c77f29b96285df09d0ed00b"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-039.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-039.npz",
+      "bytes": 6065,
+      "sha256": "7cab0e093e54ede1a2005403e7bc1a434524d113b6538e3c560a41d76b994129"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-040.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-040.npz",
+      "bytes": 6054,
+      "sha256": "208e363030e551bb4e5e1e7c8d329a78f988c937f2563ae7b9de6f744c51b78d"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-041.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-041.npz",
+      "bytes": 6053,
+      "sha256": "284d96b600ee05c67cbbdaa0780f8d72519160ee858953d98391101ddb4f1354"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-042.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-042.npz",
+      "bytes": 6067,
+      "sha256": "9d94f0f2cefd540012b60126eb3af4882e72c1c4f60c6f0f0e2a1d18508502c6"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-043.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-043.npz",
+      "bytes": 6068,
+      "sha256": "8c4414b51f484b2a914706f01132fe273a30443f04d235737c96d4ec22c17329"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-044.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-044.npz",
+      "bytes": 6055,
+      "sha256": "b300c72c7873b419929df6af3b1b8c81ad09c51797e7b7985eb71d9bb30b9c50"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-045.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-045.npz",
+      "bytes": 6062,
+      "sha256": "3b09b1ebd5e6f9a5ed116ec3213cdbb67e193e61eb98c5e674a8199804e46fb8"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-046.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-046.npz",
+      "bytes": 6067,
+      "sha256": "f1d68bca020a8d15536b623d4e4ad9263aa7c543beeb562f0b6e6c4e0816f12d"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-047.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0003-loading-912172/input-audit/noise-047.npz",
+      "bytes": 6064,
+      "sha256": "e9b82fbd4bdb67d1ee7e2554d040bca0bdcca6bc045e2de9547e9e712410c0d0"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init10-lower-path/branches/init-demo_0003-loading-912172/N/branch-state.pkl",
+      "destination": "/var/tmp/typhon-init10-20261015/branches/init-demo_0003-loading-912172/N/branch-state.pkl",
+      "bytes": 16409,
+      "sha256": "f2e1afef166c3a77109449dbd5e9f4426d44b98d699ed4be8a245273a58d5ee1"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init10-lower-path/branches/init-demo_0003-loading-912172/N/controller-force-trace.jsonl.gz",
+      "destination": "/var/tmp/typhon-init10-20261015/branches/init-demo_0003-loading-912172/N/controller-force-trace.jsonl.gz",
+      "bytes": 145470,
+      "sha256": "6f1ff0eb6facdd08867a524da23fe1566208e911559631feddc9f89f70320ba8"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init10-lower-path/branches/init-demo_0003-loading-912172/N/summary.json",
+      "destination": "/var/tmp/typhon-init10-20261015/branches/init-demo_0003-loading-912172/N/summary.json",
+      "bytes": 450,
+      "sha256": "8eed90d65c4d2b250d6c6b27783a8965634aa2d430efb971616713d6a57eeccc"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init10-lower-path/branches/init-demo_0003-loading-912172/D5/branch-state.pkl",
+      "destination": "/var/tmp/typhon-init10-20261015/branches/init-demo_0003-loading-912172/D5/branch-state.pkl",
+      "bytes": 16409,
+      "sha256": "f2e1afef166c3a77109449dbd5e9f4426d44b98d699ed4be8a245273a58d5ee1"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init10-lower-path/branches/init-demo_0003-loading-912172/D5/controller-force-trace.jsonl.gz",
+      "destination": "/var/tmp/typhon-init10-20261015/branches/init-demo_0003-loading-912172/D5/controller-force-trace.jsonl.gz",
+      "bytes": 184180,
+      "sha256": "5a0220109f6cb686f4472b800e864ab5931a47c86d21a364519ea896793d0415"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init10-lower-path/branches/init-demo_0003-loading-912172/D5/summary.json",
+      "destination": "/var/tmp/typhon-init10-20261015/branches/init-demo_0003-loading-912172/D5/summary.json",
+      "bytes": 448,
+      "sha256": "3bc00e6f208c5a5a34935f3443dc6b5bcbc63226d90be5cbbd194e8ea2c50fcb"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init02-matched-adaptation/baseline-P/runtime/episodes/P/init-demo_0003-loading-912172/input-audit/initial-prepared.npz",
+      "destination": "/var/tmp/typhon-init02-20261015/episodes/P/init-demo_0003-loading-912172/input-audit/initial-prepared.npz",
+      "bytes": 242400,
+      "sha256": "e4dcd219a87a312c2f276a89e39d3b280be7e21654e3cfcc1549f36bf9a53823"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/episode.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/episode.json",
+      "bytes": 28446,
+      "sha256": "feb7e521eb77ad0493f3a446fb6247c458be13a8756c6d21c373fe221629f87a"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/predictions.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/predictions.npz",
+      "bytes": 54036,
+      "sha256": "61338f74afd44b1929039ba39d65a7e4082fb1e27bc006593398d46c5b27f1f0"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/policy_io.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/policy_io.npz",
+      "bytes": 24635137,
+      "sha256": "d165c27de5482600f934400dd4a012949e8895172aae3c41cac39e06b8030030"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/controller_trace.jsonl.gz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/controller_trace.jsonl.gz",
+      "bytes": 1924019,
+      "sha256": "d967495876f8e30ee9f8a9c5db9e0664da650a74596b91a3e1d7a8b1b3550f1a"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/boundary-before.pkl",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/boundary-before.pkl",
+      "bytes": 16409,
+      "sha256": "61efd44b8f8a2feb2221d26eac2830d5d7512969573ed1d8336aabd376d1cef8"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/initial-prepared.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/initial-prepared.npz",
+      "bytes": 242219,
+      "sha256": "06ef04ff30e0b7d83f2fcc0cdb3479d92a003a4ff2a3974697d582f6d3fea467"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-000.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-000.json",
+      "bytes": 863,
+      "sha256": "6f4e74c4b454de576bbaf08024a7c5352299ef610d8f044fab4dcf904b9e9afe"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-001.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-001.json",
+      "bytes": 864,
+      "sha256": "cd189a72766b7143796ead4adbd2f69c695284cfa3e8932fb25363c94284da32"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-002.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-002.json",
+      "bytes": 864,
+      "sha256": "50bc977df52885f478eee889aba2254a0032ae306af0172744c16f2a25caf256"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-003.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-003.json",
+      "bytes": 864,
+      "sha256": "4753d5ff3c675840dd128530cc1281c0e24ef180993970d0459af33844f1d3cc"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-004.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-004.json",
+      "bytes": 864,
+      "sha256": "6156cd6bb0708a8085ea7c65182807df8f09c7aeeb402b8d64bcd42e9bbb4f18"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-005.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-005.json",
+      "bytes": 864,
+      "sha256": "a5fa10be5f2a0a872f4125a1f869a918b5cd4bcd182393e392d9da5570f7243f"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-006.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-006.json",
+      "bytes": 864,
+      "sha256": "0b9147e70a250a999e1b9b2598a58ec424d4b1f7e2250b14e5766660ce641e14"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-007.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-007.json",
+      "bytes": 864,
+      "sha256": "c18be4be36d5c6d8e25517426c1f1823a767fbd163683a753eaab7a0d913b217"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-008.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-008.json",
+      "bytes": 864,
+      "sha256": "e0ca66f5318e4536e5c8ad26c07bde75ebb9a5b175ac6f4622a6c1cb9b5673e8"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-009.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-009.json",
+      "bytes": 864,
+      "sha256": "7996e86ed2d50a07972ef5f7838350bbe043aab773e0199b4b1e14d4d9c7c7b0"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-010.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-010.json",
+      "bytes": 864,
+      "sha256": "bcc7aac098cac9da5de946e47c19963378db3b39918838eb601b768a589b4c33"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-011.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-011.json",
+      "bytes": 864,
+      "sha256": "3d4979a39d382f6fc4a48e2cfbc0f29b0de2f44efc519ab251e0717b319d583b"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-012.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-012.json",
+      "bytes": 864,
+      "sha256": "b48286dd77948a327f42812563e6b478acc646b8d0a0f0363e328f9c5341d242"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-013.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-013.json",
+      "bytes": 864,
+      "sha256": "7bee9e1ccd75cabd4e926a6ec771f50f6f624ba8525afed4b2591b171b41d1cc"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-014.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-014.json",
+      "bytes": 864,
+      "sha256": "a1e4eb7e920092edf122aaef3e1dcf032023623e5cb8718e93f6633d07e6c038"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-016.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-016.json",
+      "bytes": 864,
+      "sha256": "f3d0824e0e108903fe66506447debb286ba856bef6e50c8a7360d2b7faa0de60"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-017.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-017.json",
+      "bytes": 864,
+      "sha256": "88ca07e24a88520f3120af1e51c17595a5c230648aaf3c7fd2991c2351aaa23a"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-018.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-018.json",
+      "bytes": 864,
+      "sha256": "f1d3ec8cd6fdc231a8727da1c0fc1129a653199415554d1ee80ecfaddd1fd41f"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-019.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-019.json",
+      "bytes": 864,
+      "sha256": "9303cf36abdf475a83a7ac1aae675c09ffa20cd1918bc8accf5318f7e8692345"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-020.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-020.json",
+      "bytes": 864,
+      "sha256": "0c9c79bedc0a0f21c246bfc5d5a0f1e2c525235753cdd7ba0221ff80e6be5917"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-021.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-021.json",
+      "bytes": 864,
+      "sha256": "d755becb85680eb78ff41c0f4e41007f59da535df84dcfb04228e677e3b422c8"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-022.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-022.json",
+      "bytes": 864,
+      "sha256": "931d94da87961d2e1910a3d791b7284db7d4c27c56e84c11e45fa339374e18b4"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-023.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-023.json",
+      "bytes": 864,
+      "sha256": "1f71f323b1201233f5a39beb66e37051c6625b74660b5a19ef86c38c2ae6193e"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-024.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-024.json",
+      "bytes": 864,
+      "sha256": "dfdc20e7df0656e362fec6426c7014972f798a25d9f47927c6acc77548a5bace"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-025.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-025.json",
+      "bytes": 864,
+      "sha256": "1ccb5813f02cba740868870307e330bcb127be65a2e1416d76f45882c4f147ba"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-026.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-026.json",
+      "bytes": 864,
+      "sha256": "de0f15297193f34498f0f53513ddbe9392bfc631152c4798115644552cb137f7"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-027.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-027.json",
+      "bytes": 864,
+      "sha256": "2de2338ab5344d307eaf8cf8c191bd58ebad4152cdc5c534269b4759a9a2400f"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-028.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-028.json",
+      "bytes": 864,
+      "sha256": "6e5f5e88610c617fd74e5dea1ee6463a78fc847133c6683d36acf70bc795934a"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-029.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-029.json",
+      "bytes": 864,
+      "sha256": "14a402a1f6f0e073d2cbb0088983f64d1ddf084e568f5ef2b01c96c7bc124448"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-030.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-030.json",
+      "bytes": 864,
+      "sha256": "d4419162232f66c78ee5d0cc0940cab9cb5c90365cd1ef0fe1678f3c208e9a3f"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-031.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-031.json",
+      "bytes": 864,
+      "sha256": "40c7d05e1dcb52d42d49ab43785dc24d1938427a6fdef5e3e91de6c23e732118"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-032.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-032.json",
+      "bytes": 864,
+      "sha256": "217ad4da5e3de05e457c8242d3772d3a970e63585bd64bb947d2ecfc9ec99e00"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-034.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-034.json",
+      "bytes": 864,
+      "sha256": "d45f795bb9405e11616deb50b215bde86d512f754f55b460cec8c73d095af975"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-035.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-035.json",
+      "bytes": 864,
+      "sha256": "5d7e0c0fade1d98e63f2c37b264ec1a0cd214cce2bbfca191d344d7ce36898b8"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-036.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-036.json",
+      "bytes": 864,
+      "sha256": "2bab49f4ea07d472f8274b445b5a849be817d080a11b6209dfcff2a580208c2e"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-037.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-037.json",
+      "bytes": 864,
+      "sha256": "96f4f71c547d48f66201ea204e6f76b1d2ac10c10209b16bd0de24996138550a"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-038.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-038.json",
+      "bytes": 864,
+      "sha256": "e9915a9f95caf203c0c558f21ba66a64cd2259409dbaf6fb53ada19e8b30843e"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-039.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-039.json",
+      "bytes": 864,
+      "sha256": "2acde36e632a59e1c86987595ea0aa81a6fcd5a2fab3c98d63d550bbafe912db"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-040.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-040.json",
+      "bytes": 864,
+      "sha256": "8afa10f17f8fe67f61fbc94e19244ad5d20f4a3636a448509da918354ec25b38"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-041.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-041.json",
+      "bytes": 864,
+      "sha256": "b531961620ad9e76f7e5def622d96c136d5c41a07edb157721c8a97fa1331a92"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-042.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-042.json",
+      "bytes": 864,
+      "sha256": "478bffbfe753549e9096dccb6a06978b98e9d2aed7e8b262f5adce7d5e5ff09f"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-043.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-043.json",
+      "bytes": 864,
+      "sha256": "0d6e56a22410bdda7395d93306d38796a26f0c3c2c5963c467534d54c33818f1"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-044.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-044.json",
+      "bytes": 864,
+      "sha256": "b16fa7f37e6d9c6f91df8981123d399f6c98fd37cc395f0dc187157682fe0bc8"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-045.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-045.json",
+      "bytes": 864,
+      "sha256": "1300dafbcee96df20f6ded159ee1d50dfbf3abf4021edd2639c32b0ce1748973"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-046.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-046.json",
+      "bytes": 864,
+      "sha256": "0d309c3934e24c95c0511aed0d05c2ebf6505a3e1b382dbb9f90dbae5ea1fcd7"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-047.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-047.json",
+      "bytes": 864,
+      "sha256": "7a33fee77625463cf3efe2f40f14870fac3bd67f32de355733fefa79d64192c8"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-000.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-000.npz",
+      "bytes": 6060,
+      "sha256": "cd9ba73c3a52c4dcfd24039e43e142df30f0f0f3160909694d9d57c25b0bb530"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-001.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-001.npz",
+      "bytes": 6067,
+      "sha256": "26d485ff54c04400eee165fee54191787a95dd22a6ef37c916ab03d43fe96883"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-002.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-002.npz",
+      "bytes": 6064,
+      "sha256": "b0bcba6c57f22c1b6b6c71a67deaf66c01b8939659953588f1b4ff1f97870c0e"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-004.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-004.npz",
+      "bytes": 6060,
+      "sha256": "8845e5183255993534bc0ec0c497b37a5ba6db0e5debddf1de68d16cd51969a6"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-005.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-005.npz",
+      "bytes": 6054,
+      "sha256": "469afd156e2c85f877e61edcb5bc0d68376b1f0cff433c5bcd638804e278ff7c"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-006.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-006.npz",
+      "bytes": 6064,
+      "sha256": "4b8adf8b4493b4d7a318cb79bda1bba6fc553d66629170573ec561319f2d2d45"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-007.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-007.npz",
+      "bytes": 6056,
+      "sha256": "1ef245513ee078a0535203b0f18e335833e1117e0c2602024d8b1753e53bd3f3"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-008.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-008.npz",
+      "bytes": 6057,
+      "sha256": "a6f3be37f9f6ac467874acd527aea58e450bd1a805b1e1d6bb269faf532e534a"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-009.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-009.npz",
+      "bytes": 6065,
+      "sha256": "be480791eb2c9606c181d9a523e270ff2337377b959bb593570482a76603206f"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-010.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-010.npz",
+      "bytes": 6068,
+      "sha256": "600610f7cfa239c4db0215c7f90220ccd854ec494597a6a5de3da5c1f8bbb538"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-011.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-011.npz",
+      "bytes": 6065,
+      "sha256": "955bd5e07c9bfb40634ca49936b913897dc5dd8abbf342473fc1f35009b0fc64"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-012.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-012.npz",
+      "bytes": 6060,
+      "sha256": "8dd6bebbc55ce18438bc93bbaf6793e448e2c689ee040e21575f7c7da5460e8c"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-013.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-013.npz",
+      "bytes": 6062,
+      "sha256": "ee3190708c9d990dbbd4c12c031eb4399aee175482c8bef800ebf384c97d7422"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-014.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-014.npz",
+      "bytes": 6066,
+      "sha256": "ed368db7171c933fc76ad319f2b5cc0b88167b61b752e3301de631682c838423"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-015.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-015.npz",
+      "bytes": 6065,
+      "sha256": "748e435a2f8d2eaf2abec33809b1267f8d79f0b42516627ecab5070c94996c7f"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-016.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-016.npz",
+      "bytes": 6061,
+      "sha256": "f72bd455721faed54fcf57c20b069320041589ba1fe9594af65b15549b18151d"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-017.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-017.npz",
+      "bytes": 6064,
+      "sha256": "3132ce51e5c28350d485a38098da1b1f27e688f4bbe1f474f3cffa6f4f40cea8"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-018.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-018.npz",
+      "bytes": 6056,
+      "sha256": "32a3ec154b45f514d7ba64e566593606346452dcd22804e0686e9278a92cf75b"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-019.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-019.npz",
+      "bytes": 6057,
+      "sha256": "6e910c0444b1b3d3f5ac9fa9aac4d8a4b43f52006da107eb5c3d22e0216ece27"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-020.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-020.npz",
+      "bytes": 6066,
+      "sha256": "d0984350e1864dd503aae1be52db19c5bdcc9ef6312a030847d224a970b1ed6e"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-015.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-015.json",
+      "bytes": 864,
+      "sha256": "704d5001518ccb7f1eb66e925c3893043e86e4fd312aefdd1fb2cfc14fc26d28"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-033.json",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/input-033.json",
+      "bytes": 864,
+      "sha256": "1fa81842861e6c6a2a8b45e5d14214682b09ff54539c1e19aa015cafb66ddfd1"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-003.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-003.npz",
+      "bytes": 6063,
+      "sha256": "0a305d1e95eaf497e502932a451bc350f69cf0cc8c81653a27e4d6bd4d71cd3f"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-021.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-021.npz",
+      "bytes": 6061,
+      "sha256": "6dba6a29ca7aae20a17bbb208c6f103ab9ce5a7b7f95d112113239016b3deae0"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-022.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-022.npz",
+      "bytes": 6068,
+      "sha256": "9ffdf42c6eb85a6b4f8d30bd2f9bdbebad2177f61a3bb545bd2ce6e5e13afb2b"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-023.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-023.npz",
+      "bytes": 6065,
+      "sha256": "23e76ea32b7740ee9e6d90c77bf6d6a218802158c4ae708cc1c970b116a34892"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-024.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-024.npz",
+      "bytes": 6064,
+      "sha256": "5ee93c3159371e2e7197bcd2c6256fd69244db23234261eee58d10214b671ca0"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-025.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-025.npz",
+      "bytes": 6070,
+      "sha256": "8c5dd2af62bbaa9ed7c45cdc4acf507dac45d66c17e4a1d92cff717c7820ff7b"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-026.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-026.npz",
+      "bytes": 6060,
+      "sha256": "bd290beafa0ba6a4bbfb39ed96285a097659ea95581e80a1bc453c51be6e005d"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-027.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-027.npz",
+      "bytes": 6072,
+      "sha256": "8b5727bca98df502d86b205e4e3c4f7b17c54c79875a529180d7f5880bf0a08f"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-028.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-028.npz",
+      "bytes": 6059,
+      "sha256": "7489127a85d67de76e84d43d9e0dc216ea773d0e0155d0423486c61a76904a96"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-029.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-029.npz",
+      "bytes": 6064,
+      "sha256": "c44d281fb236dc8ed0a83a3558eb9a8527e0595f86dfe1ff1d5d2bc4bdf68c44"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-030.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-030.npz",
+      "bytes": 6072,
+      "sha256": "33c7909fac3da44e114b1c79f0ab3413299614fcbc2e992a5b7594308ae3389d"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-031.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-031.npz",
+      "bytes": 6061,
+      "sha256": "a4ecf12527dc785bc8881089864c5d08189462ad00b1cd757b617cb7ab8705d0"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-032.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-032.npz",
+      "bytes": 6059,
+      "sha256": "987a84507f16a93ec087660ab67de2de15e28bb2feaa1787226d9c6abb67c21f"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-033.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-033.npz",
+      "bytes": 6058,
+      "sha256": "d85d5e96c1f1e0def3e1db5450a0a35d60789ac4d8bc1e4b1ed6e649fcb3c9e7"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-034.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-034.npz",
+      "bytes": 6064,
+      "sha256": "28bcf5f3beed6b62d51c06e10e775acc7ad13be081fc43d7539e448d04dc29b7"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-035.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-035.npz",
+      "bytes": 6063,
+      "sha256": "bee28193d78c6de732d84d18b6322d401fc88afca307137523f5aa01936fe724"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-036.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-036.npz",
+      "bytes": 6060,
+      "sha256": "d59f886024bc60bda89d93c9fc82324c5380e65eb64875b3bd0ac521d319c7cc"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-037.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-037.npz",
+      "bytes": 6064,
+      "sha256": "259852764dde4ba05af7c8f3c6ad144f8e8fb686c3ecb541bae96b8f309abb8e"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-038.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-038.npz",
+      "bytes": 6055,
+      "sha256": "a300e5da1cf35b42a2fee9413d775df69c682fb770b450d0bb92508f24070e83"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-039.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-039.npz",
+      "bytes": 6073,
+      "sha256": "29e3e973b5d7e3010c710c11c346b5d37d3c5f5ee13ff7c1b0b5a51b9640c9ff"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-040.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-040.npz",
+      "bytes": 6070,
+      "sha256": "c7c18a72b9dab7a33b78263cab3ee98a890d079e5d2d27c71fdd26f00e9b01a5"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-041.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-041.npz",
+      "bytes": 6059,
+      "sha256": "384af107f18daea86ca762813f00d3f53c24024cb1f362ee9c1f440c4e1a3846"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-042.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-042.npz",
+      "bytes": 6070,
+      "sha256": "dd9fb7571782bbe1ab756279661ce655652f9f0680ad12cb93f54af863ef1508"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-043.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-043.npz",
+      "bytes": 6067,
+      "sha256": "627a0c6fc07239fa7694257e22987df55a00fd0e1b94e23ae1ebd4b6bc32c3b5"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-044.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-044.npz",
+      "bytes": 6062,
+      "sha256": "29308b5070c3c2cd63cf17235fe47737d6ae28fb33aeee45554fe7e95d1edf7e"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-045.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-045.npz",
+      "bytes": 6064,
+      "sha256": "f9f4054e14e4cc31f6afdab1d5bfb210c2d3745bd7634fb24e2e114f95af7060"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-046.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-046.npz",
+      "bytes": 6073,
+      "sha256": "40d35421e21afe102a6fe31b416779fe56e63f07ede2385682240ca214ec6885"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init07-paired-state-repair/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-047.npz",
+      "destination": "/var/tmp/typhon-init07-20261015/episodes/Q1/init-demo_0005-loading-912171/input-audit/noise-047.npz",
+      "bytes": 6061,
+      "sha256": "4b5f838f8b2f948e04ef7a7e50f6c8b8c44883c167059ed7807c3a55af158b40"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init10-lower-path/branches/init-demo_0005-loading-912171/N/branch-state.pkl",
+      "destination": "/var/tmp/typhon-init10-20261015/branches/init-demo_0005-loading-912171/N/branch-state.pkl",
+      "bytes": 16409,
+      "sha256": "bdf841d477766042da905387b24c4af2476c21fab8b63abd951477f3d1bcd1f9"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init10-lower-path/branches/init-demo_0005-loading-912171/N/controller-force-trace.jsonl.gz",
+      "destination": "/var/tmp/typhon-init10-20261015/branches/init-demo_0005-loading-912171/N/controller-force-trace.jsonl.gz",
+      "bytes": 143569,
+      "sha256": "204a06d0b2c77c5917cc5cdcc8678b27ba0bad4a7283f1ca0a8a428c18aec1cf"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init10-lower-path/branches/init-demo_0005-loading-912171/N/summary.json",
+      "destination": "/var/tmp/typhon-init10-20261015/branches/init-demo_0005-loading-912171/N/summary.json",
+      "bytes": 449,
+      "sha256": "cbc35373b549e84bdd9762af33e0143dce4260dc4a42e816246e9428d076d7b0"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init10-lower-path/branches/init-demo_0005-loading-912171/D5/branch-state.pkl",
+      "destination": "/var/tmp/typhon-init10-20261015/branches/init-demo_0005-loading-912171/D5/branch-state.pkl",
+      "bytes": 16409,
+      "sha256": "bdf841d477766042da905387b24c4af2476c21fab8b63abd951477f3d1bcd1f9"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init10-lower-path/branches/init-demo_0005-loading-912171/D5/controller-force-trace.jsonl.gz",
+      "destination": "/var/tmp/typhon-init10-20261015/branches/init-demo_0005-loading-912171/D5/controller-force-trace.jsonl.gz",
+      "bytes": 183949,
+      "sha256": "141d586dd87c2e6a05987e0e6d6afb9b910e8665e31a86f54b48654a567662cb"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init10-lower-path/branches/init-demo_0005-loading-912171/D5/summary.json",
+      "destination": "/var/tmp/typhon-init10-20261015/branches/init-demo_0005-loading-912171/D5/summary.json",
+      "bytes": 447,
+      "sha256": "6790d6283aafd86c77f73f5970a60618e3848944a0d6c4a524d6e0bd526012f5"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init02-matched-adaptation/baseline-P/runtime/episodes/P/init-demo_0005-loading-912171/input-audit/initial-prepared.npz",
+      "destination": "/var/tmp/typhon-init02-20261015/episodes/P/init-demo_0005-loading-912171/input-audit/initial-prepared.npz",
+      "bytes": 242219,
+      "sha256": "06ef04ff30e0b7d83f2fcc0cdb3479d92a003a4ff2a3974697d582f6d3fea467"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init01-task-start/runtime/protocol.json",
+      "destination": "/var/tmp/typhon-init01-20261015/protocol.json",
+      "bytes": 133824,
+      "sha256": "1a6a01eb45d997f9b3fbb45af743b1efb1561bc470f195e509efbb4131f14ef3"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init01-task-start/runtime/qualification/demo_0003/terminal-state.pkl",
+      "destination": "/var/tmp/typhon-init01-20261015/qualification/demo_0003/terminal-state.pkl",
+      "bytes": 16409,
+      "sha256": "5fca80e6664cf07504f6ccfa51a67db598010184252143f318077455646b4fe3"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init02-matched-adaptation/initial-freeze/runtime/qualification/demo_0003/initial-live.npz",
+      "destination": "/var/tmp/typhon-init02-20261015/qualification/demo_0003/initial-live.npz",
+      "bytes": 501085,
+      "sha256": "fc4c89440b92b27bc844287b5945dad1038eb8839d313f0bc06c7b79cecc6ddc"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261014/load04-counterbalanced/data/episode_artifacts/load04-demo_0003-feeding/robot_actions.jsonl",
+      "destination": "/var/tmp/typhon-load04-20261014/data/episode_artifacts/load04-demo_0003-feeding/robot_actions.jsonl",
+      "bytes": 376107,
+      "sha256": "67e15f55d2dcbff9a8869b15dce0b681c378cf04ed256c030320ce65123ce155"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261014/load04-counterbalanced/data/episode_artifacts/load04-demo_0003-feeding/episode.json",
+      "destination": "/var/tmp/typhon-load04-20261014/data/episode_artifacts/load04-demo_0003-feeding/episode.json",
+      "bytes": 26819,
+      "sha256": "708c724439d99835352e7e707f28703a94bfa825db6f536917faba03fd3e2f4f"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init01-task-start/runtime/qualification/demo_0005/terminal-state.pkl",
+      "destination": "/var/tmp/typhon-init01-20261015/qualification/demo_0005/terminal-state.pkl",
+      "bytes": 16409,
+      "sha256": "61efd44b8f8a2feb2221d26eac2830d5d7512969573ed1d8336aabd376d1cef8"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261015/init02-matched-adaptation/initial-freeze/runtime/qualification/demo_0005/initial-live.npz",
+      "destination": "/var/tmp/typhon-init02-20261015/qualification/demo_0005/initial-live.npz",
+      "bytes": 501053,
+      "sha256": "531d9ac4902c2de06f04ab6e25277ca360a2eb1ca9ef4d2f28fa39e51b2ec59a"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261014/load04-counterbalanced/data/episode_artifacts/load04-demo_0005-feeding/robot_actions.jsonl",
+      "destination": "/var/tmp/typhon-load04-20261014/data/episode_artifacts/load04-demo_0005-feeding/robot_actions.jsonl",
+      "bytes": 371682,
+      "sha256": "be77c1c4a0d9d008382dc3b133e540a6b0c3b9de0c27969ae9feaeba0c3d9081"
+    },
+    {
+      "source": "/media/nm/Fast Drive/Typhon/research-20261014/load04-counterbalanced/data/episode_artifacts/load04-demo_0005-feeding/episode.json",
+      "destination": "/var/tmp/typhon-load04-20261014/data/episode_artifacts/load04-demo_0005-feeding/episode.json",
+      "bytes": 26780,
+      "sha256": "1e21f35bffb86d30a7fd1d83e139acf0218921aa6ccf30264cc46b937e02881f"
+    }
+  ],
+  "epoch": 1792113473.1696806
+}

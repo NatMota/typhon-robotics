@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "command": "python3 scripts/init11_contract.py",
+  "stdout": "INIT11 contract self-check passed: masking, float32, modified Z, exact horizon.\n",
+  "source_only_AST_checks": [
+    "scripts/init11.py",
+    "scripts/init11_contract.py"
+  ],
+  "new_GPU_calls": 0,
+  "new_simulations": 0,
+  "epoch": 1792113528.474133
+}
