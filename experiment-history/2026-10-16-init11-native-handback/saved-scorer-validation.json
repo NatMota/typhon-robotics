@@ -1,0 +1,19 @@
+{
+  "saved_native_reference_only": true,
+  "new_simulations": 0,
+  "checks": [
+    {
+      "case": "init-demo_0003-loading-912172",
+      "saved_criteria_exact": true,
+      "maximum_scalar_abs_difference": 0.0,
+      "strict_success": false
+    },
+    {
+      "case": "init-demo_0005-loading-912171",
+      "saved_criteria_exact": true,
+      "maximum_scalar_abs_difference": 4.440892098500626e-16,
+      "strict_success": false
+    }
+  ],
+  "note": "CPU libm rounding only; comparison tolerance 1e-12 does not modify any endpoint criterion or physical qualification tolerance."
+}
