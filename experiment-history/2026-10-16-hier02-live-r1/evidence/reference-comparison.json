@@ -1,0 +1,144 @@
+{
+  "rows": [
+    {
+      "pair_id": "demo_0012-912171",
+      "status": "posthoc_descriptive_endpoint_comparison",
+      "old_reference_relationship": "Exact source-state linkage",
+      "object_position_difference_mm": 0.0,
+      "object_rotation_difference_deg": 0.0,
+      "wrist_position_difference_mm": 0.0,
+      "wrist_rotation_difference_deg": 0.0,
+      "finger_joint_max_difference_m": 0.0,
+      "actual_last_gripper_command": -1.0,
+      "old_last_gripper_command": -1.0,
+      "strict_feeding_success": true,
+      "new_final_frame_sha256": "b59fe8ff120145da431a52fd0c75e6fc3f30ac935dc82089dc3dc4a02503b4d1",
+      "old_final_frame_sha256": "b59fe8ff120145da431a52fd0c75e6fc3f30ac935dc82089dc3dc4a02503b4d1",
+      "no_full_state_equivalence_claim": true
+    },
+    {
+      "pair_id": "demo_0012-912172",
+      "status": "posthoc_descriptive_endpoint_comparison",
+      "old_reference_relationship": "Related, not matched",
+      "object_position_difference_mm": 0.0,
+      "object_rotation_difference_deg": 0.0,
+      "wrist_position_difference_mm": 0.0,
+      "wrist_rotation_difference_deg": 0.0,
+      "finger_joint_max_difference_m": 0.0,
+      "actual_last_gripper_command": -1.0,
+      "old_last_gripper_command": -1.0,
+      "strict_feeding_success": true,
+      "new_final_frame_sha256": "35d295122cdcc51a78c883f8475942d6c4af3189bcb15b89b88c14c37119589c",
+      "old_final_frame_sha256": "35d295122cdcc51a78c883f8475942d6c4af3189bcb15b89b88c14c37119589c",
+      "no_full_state_equivalence_claim": true
+    },
+    {
+      "pair_id": "demo_0013-912171",
+      "status": "posthoc_descriptive_endpoint_comparison",
+      "old_reference_relationship": "Untested boundary in available evidence",
+      "object_position_difference_mm": 0.0,
+      "object_rotation_difference_deg": 0.0,
+      "wrist_position_difference_mm": 0.0,
+      "wrist_rotation_difference_deg": 0.0,
+      "finger_joint_max_difference_m": 0.0,
+      "actual_last_gripper_command": -1.0,
+      "old_last_gripper_command": -1.0,
+      "strict_feeding_success": true,
+      "new_final_frame_sha256": "c0b15b2fa5e738829509cfcd628c3a2cec8cc834e2e611641ef41f18f8ea2eb9",
+      "old_final_frame_sha256": "c0b15b2fa5e738829509cfcd628c3a2cec8cc834e2e611641ef41f18f8ea2eb9",
+      "no_full_state_equivalence_claim": true
+    },
+    {
+      "pair_id": "demo_0013-912172",
+      "status": "posthoc_descriptive_endpoint_comparison",
+      "old_reference_relationship": "Untested boundary in available evidence",
+      "object_position_difference_mm": 0.0,
+      "object_rotation_difference_deg": 0.0,
+      "wrist_position_difference_mm": 0.0,
+      "wrist_rotation_difference_deg": 0.0,
+      "finger_joint_max_difference_m": 0.0,
+      "actual_last_gripper_command": -1.0,
+      "old_last_gripper_command": -1.0,
+      "strict_feeding_success": true,
+      "new_final_frame_sha256": "65a4079d5afcbd1db9ceea2a81c1fde5272b31d955c0c5c63ad38e97dd71d535",
+      "old_final_frame_sha256": "65a4079d5afcbd1db9ceea2a81c1fde5272b31d955c0c5c63ad38e97dd71d535",
+      "no_full_state_equivalence_claim": true
+    }
+  ],
+  "new_model_calls": 0,
+  "new_physics_ticks": 0,
+  "new_rendering": 0,
+  "no_protocol_changes": true,
+  "scope": "Descriptive comparison of saved native first-stage endpoints with pre-existing ledger; not a matched historical intervention contrast. Old endpoints never forced into new simulation.",
+  "sources": [
+    {
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/hier02-handover-ledger-20261016/ledger.json",
+      "sha256": "6529b6e1e74f5a9262d98f37670f41e05d503018d869502efb3c77a0ecae86a8"
+    },
+    {
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/hier02-live-r1-20261016/workflows/demo_0012-912171-N/feeding/episode.json",
+      "sha256": "e40004df97ba29c72ca3d55f2889b0e475c57d7c487a3aae3eeae3b1f130c0df"
+    },
+    {
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/hier02-live-r1-20261016/workflows/demo_0012-912171-N/feeding/summary.json",
+      "sha256": "d15b24c3cd4600211aee29e08b6dd0a275af2265e49d4c2fb05c74fddccc3bf6"
+    },
+    {
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/hier02-live-r1-20261016/workflows/demo_0012-912171-N/feeding/controller_trace.jsonl.gz",
+      "sha256": "3249deeba8025e151c092199863ce8522089cb7c5eb4fed5ec4d88cbe6d37db6"
+    },
+    {
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/hier02-live-r1-20261016/workflows/demo_0012-912171-N/feeding/final.png",
+      "sha256": "b59fe8ff120145da431a52fd0c75e6fc3f30ac935dc82089dc3dc4a02503b4d1"
+    },
+    {
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/hier02-live-r1-20261016/workflows/demo_0012-912172-N/feeding/episode.json",
+      "sha256": "6101646fb2f22afb405b1f91acae4d17ef4bf5734da41627f61bf55b6db2d676"
+    },
+    {
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/hier02-live-r1-20261016/workflows/demo_0012-912172-N/feeding/summary.json",
+      "sha256": "9b3488764387911f9e1109da5953d5129b19f9121ac216d10d747858687fb579"
+    },
+    {
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/hier02-live-r1-20261016/workflows/demo_0012-912172-N/feeding/controller_trace.jsonl.gz",
+      "sha256": "e4492653ba5e6bf1fbcbbfeff89a3491ae427cb56f91fcece56abe72b70bdbcc"
+    },
+    {
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/hier02-live-r1-20261016/workflows/demo_0012-912172-N/feeding/final.png",
+      "sha256": "35d295122cdcc51a78c883f8475942d6c4af3189bcb15b89b88c14c37119589c"
+    },
+    {
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/hier02-live-r1-20261016/workflows/demo_0013-912171-N/feeding/episode.json",
+      "sha256": "fd6d424c671225317fdcaca5fc124f0dc3f2e0d538efe3e3cd4d354c096dcfc3"
+    },
+    {
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/hier02-live-r1-20261016/workflows/demo_0013-912171-N/feeding/summary.json",
+      "sha256": "66c05fa5ec30683291ac5953d94b9209d5797695871547da047ff7c7da0ea383"
+    },
+    {
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/hier02-live-r1-20261016/workflows/demo_0013-912171-N/feeding/controller_trace.jsonl.gz",
+      "sha256": "f55e2669b0df5efd16baab4daeb4664a5a29cb2c26f697034b3b3283e17b0709"
+    },
+    {
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/hier02-live-r1-20261016/workflows/demo_0013-912171-N/feeding/final.png",
+      "sha256": "c0b15b2fa5e738829509cfcd628c3a2cec8cc834e2e611641ef41f18f8ea2eb9"
+    },
+    {
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/hier02-live-r1-20261016/workflows/demo_0013-912172-N/feeding/episode.json",
+      "sha256": "9ff1b931955a97e3d21c1482c47cff7f768d89c01390f0f0ff5ae48060a16552"
+    },
+    {
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/hier02-live-r1-20261016/workflows/demo_0013-912172-N/feeding/summary.json",
+      "sha256": "b5ce5f3941eb917e5c30bd4f392580ea1a152fce6868e06140a04c0c1457d62a"
+    },
+    {
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/hier02-live-r1-20261016/workflows/demo_0013-912172-N/feeding/controller_trace.jsonl.gz",
+      "sha256": "28595f4336103dd1bba7439c64149aaffc456e5d3a95bbb7ae94e529b81e8765"
+    },
+    {
+      "path": "/media/nm/Fast Drive/Typhon/research-20261015/hier02-live-r1-20261016/workflows/demo_0013-912172-N/feeding/final.png",
+      "sha256": "65a4079d5afcbd1db9ceea2a81c1fde5272b31d955c0c5c63ad38e97dd71d535"
+    }
+  ],
+  "epoch": 1792128893.0240207
+}

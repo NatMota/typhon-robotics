@@ -1,0 +1,95 @@
+{
+  "activation": "HIER02-LIVE-R1",
+  "segments": 16,
+  "complete_workflows": 8,
+  "maximum_workflows": 8,
+  "maximum_segments": 16,
+  "totals": {
+    "N": {
+      "complete_workflows": 4,
+      "strict_workflow_success": 4,
+      "engineering_qualified": 4,
+      "both_task_and_engineering_pass": 4,
+      "stages": {
+        "feeding": {
+          "episodes": 4,
+          "strict_success": 4,
+          "supported_pickup": 4,
+          "contact_episodes": 0,
+          "joint_violation_episodes": 0,
+          "primitive_failures": 0
+        },
+        "loading": {
+          "episodes": 4,
+          "strict_success": 4,
+          "supported_pickup": 4,
+          "contact_episodes": 0,
+          "joint_violation_episodes": 0,
+          "primitive_failures": 0
+        }
+      }
+    },
+    "A": {
+      "complete_workflows": 4,
+      "strict_workflow_success": 4,
+      "engineering_qualified": 4,
+      "both_task_and_engineering_pass": 4,
+      "stages": {
+        "feeding": {
+          "episodes": 4,
+          "strict_success": 4,
+          "supported_pickup": 4,
+          "contact_episodes": 0,
+          "joint_violation_episodes": 0,
+          "primitive_failures": 0
+        },
+        "loading": {
+          "episodes": 4,
+          "strict_success": 4,
+          "supported_pickup": 4,
+          "contact_episodes": 0,
+          "joint_violation_episodes": 0,
+          "primitive_failures": 0
+        }
+      }
+    }
+  },
+  "pairs": [
+    {
+      "pair_id": "demo_0012-912171",
+      "native_success": true,
+      "assisted_success": true,
+      "gained": false,
+      "lost": false
+    },
+    {
+      "pair_id": "demo_0012-912172",
+      "native_success": true,
+      "assisted_success": true,
+      "gained": false,
+      "lost": false
+    },
+    {
+      "pair_id": "demo_0013-912171",
+      "native_success": true,
+      "assisted_success": true,
+      "gained": false,
+      "lost": false
+    },
+    {
+      "pair_id": "demo_0013-912172",
+      "native_success": true,
+      "assisted_success": true,
+      "gained": false,
+      "lost": false
+    }
+  ],
+  "common_feeding_exact_pairs": 4,
+  "audited_pairs": 4,
+  "technical_failures": 0,
+  "new_training": false,
+  "quarantined": true,
+  "independent_human_families": 2,
+  "unseen_session_benchmark": false,
+  "epoch": 1792128621.327969
+}

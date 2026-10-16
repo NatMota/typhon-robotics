@@ -1,0 +1,155 @@
+{
+  "passed": true,
+  "probes": {
+    "GOAL": {
+      "ready": true,
+      "load_time_s": 2.7584661380005855,
+      "checkpoint": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000.pt",
+      "verification": {
+        "passed": true,
+        "fresh_process": true,
+        "checkpoint": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000.pt",
+        "step": 3000,
+        "probe": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000-probe.pt",
+        "action_max_error": 0.0,
+        "checkpoint_bytes": 3729340908,
+        "checkpoint_mtime_ns": 1791797726771834300,
+        "optimizer_restored_for_inference": false,
+        "rotation_contract": "generic_interleaved_v1",
+        "domain_id": 29,
+        "observation_version": "O2"
+      },
+      "inference_configuration": {
+        "parameter_requires_grad": "allTrue",
+        "module_mode": "eval",
+        "execution": "torch.inference_mode",
+        "dtype": "bf16",
+        "H": 30,
+        "denoise_steps": 10
+      }
+    },
+    "Q1": {
+      "ready": true,
+      "load_time_s": 2.244949642999927,
+      "checkpoint": "/var/tmp/typhon-init07-20261015/train-Q1/step3000.pt",
+      "verification": {
+        "passed": true,
+        "fresh_process": true,
+        "checkpoint": "/var/tmp/typhon-init07-20261015/train-Q1/step3000.pt",
+        "step": 3000,
+        "probe": "/var/tmp/typhon-init07-20261015/train-Q1/step3000-probe.pt",
+        "action_max_error": 0.0,
+        "checkpoint_bytes": 3729401260,
+        "checkpoint_mtime_ns": 1792102409275838923,
+        "optimizer_restored_for_inference": false,
+        "rotation_contract": "generic_interleaved_v1",
+        "domain_id": 29,
+        "observation_version": "O2"
+      },
+      "inference_configuration": {
+        "parameter_requires_grad": "allTrue",
+        "module_mode": "eval",
+        "execution": "torch.inference_mode",
+        "dtype": "bf16",
+        "H": 30,
+        "denoise_steps": 10
+      }
+    }
+  },
+  "scenes": [
+    {
+      "pair": "demo_0012-912171",
+      "simulation_seed": 912171,
+      "policy_seed": 912171,
+      "reset_ticks": 40,
+      "no_policy_rollout": true,
+      "request_state_unchanged": true,
+      "budget": {
+        "original_max_steps": 1500,
+        "workflow_max_steps": 2960,
+        "physics_unchanged": true,
+        "per_segment_policy_actions": 1436,
+        "per_segment_settle_steps": 24
+      },
+      "fixture_present": true
+    },
+    {
+      "pair": "demo_0012-912172",
+      "simulation_seed": 912172,
+      "policy_seed": 912172,
+      "reset_ticks": 40,
+      "no_policy_rollout": true,
+      "request_state_unchanged": true,
+      "budget": {
+        "original_max_steps": 1500,
+        "workflow_max_steps": 2960,
+        "physics_unchanged": true,
+        "per_segment_policy_actions": 1436,
+        "per_segment_settle_steps": 24
+      },
+      "fixture_present": true
+    },
+    {
+      "pair": "demo_0013-912171",
+      "simulation_seed": 912171,
+      "policy_seed": 912171,
+      "reset_ticks": 40,
+      "no_policy_rollout": true,
+      "request_state_unchanged": true,
+      "budget": {
+        "original_max_steps": 1500,
+        "workflow_max_steps": 2960,
+        "physics_unchanged": true,
+        "per_segment_policy_actions": 1436,
+        "per_segment_settle_steps": 24
+      },
+      "fixture_present": true
+    },
+    {
+      "pair": "demo_0013-912172",
+      "simulation_seed": 912172,
+      "policy_seed": 912172,
+      "reset_ticks": 40,
+      "no_policy_rollout": true,
+      "request_state_unchanged": true,
+      "budget": {
+        "original_max_steps": 1500,
+        "workflow_max_steps": 2960,
+        "physics_unchanged": true,
+        "per_segment_policy_actions": 1436,
+        "per_segment_settle_steps": 24
+      },
+      "fixture_present": true
+    }
+  ],
+  "qualification_initializations": 4,
+  "qualification_reset_ticks": 160,
+  "no_policy_rollouts_during_qualification": true,
+  "clock_not_reset": true,
+  "epoch": 1792128118.8550222,
+  "clearance_fixtures": {
+    "passed": true,
+    "disabled_exact_noop": true,
+    "no_D5_no_clearance": true,
+    "threshold55mm": true,
+    "three_consecutive_clearance_samples": true,
+    "one_shot": true,
+    "timeout60": true,
+    "premature_close_flagged_native_command_retained": true
+  },
+  "acquisition_fixtures": {
+    "passed": true,
+    "checks": [
+      "no-closing pass-through",
+      "first close threshold >0.5",
+      "pre-close waypoints included",
+      "two chunks/60 actions",
+      "no retrigger",
+      "active Z only",
+      "issued float32 first-nine/eleven-zero history",
+      "disabled exact pass-through",
+      "early horizon duration",
+      "explicit open initialization"
+    ]
+  }
+}

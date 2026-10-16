@@ -1,0 +1,36 @@
+{
+  "reviewer": "Codex visual inspection",
+  "epoch": 1792128873.9978547,
+  "contact_sheets": [
+    {
+      "file": "demo_0012-912171.png",
+      "sha256": "af0a8a01eb2a7d71383d19bcd64953321ab475dcf0fb878bc1f3743778c4ff77"
+    },
+    {
+      "file": "demo_0012-912172.png",
+      "sha256": "553cbed724971327b93e1555b157dead5383f1a8a39446f8e295bf4b6d8fc31d"
+    },
+    {
+      "file": "demo_0013-912171.png",
+      "sha256": "a47e7d30eed658eae2a0af5fe06bf3774950ebb463229f403f2ec7180762c5fa"
+    },
+    {
+      "file": "demo_0013-912172.png",
+      "sha256": "bc71b8fdbbc4877e912ef749a7b41d47117f0ef5a1ff47ef7d52da642536e92b"
+    }
+  ],
+  "passed": true,
+  "observations": [
+    "All four sheets show the two requested stages and native/assisted rows with readable labels.",
+    "Both rows begin with the same brick scene; feeding ends with the brick in the green outlined staging square.",
+    "Loading starts visually match feeding ends; loading ends place the brick in the shallow gray fixture.",
+    "Demo0012 and demo0013 show distinguishable initial positions/orientations.",
+    "No blank panels or missing views."
+  ],
+  "limits": [
+    "Endpoint visual check only; dynamic grasp evidence comes from saved traces.",
+    "Readable numeral in gallery does not establish model numeral recognition.",
+    "No human-review claim.",
+    "Gallery resizing is presentation only; model inputs unchanged."
+  ]
+}

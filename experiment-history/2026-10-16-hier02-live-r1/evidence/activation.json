@@ -1,0 +1,86 @@
+{
+  "name": "HIER02-LIVE-R1",
+  "scientific_parent_commit": "55ff6aeba5ff371d3df170aece2a431e9289b440",
+  "source_commit": "5abad631234fb28d15deb7111d94b0aedc4963bb",
+  "private_push_verified": true,
+  "restoration_verified": true,
+  "restore_receipt": {
+    "bytes": 3729340908,
+    "sha256": "d5449244d96e55e60c3342af9fffe2ae64362b74cdf9c3d41e39b74995c9bcdb",
+    "epoch": 1792128056.303403,
+    "free_bytes": 1276448768,
+    "finalized": true,
+    "path": "/var/tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000.pt"
+  },
+  "original_attempt_policy_outcomes": 0,
+  "original_clock": {
+    "activated_epoch": 1792124088.0811062,
+    "preparation_deadline": 1792124988.0811062,
+    "physical_deadline": 1792127688.0811062,
+    "archive_deadline": 1792129488.0811062
+  },
+  "allowed_changes": [
+    "output namespace",
+    "activation clock and absolute deadlines",
+    "restoration provenance",
+    "analysis/media-only additions"
+  ],
+  "scientific_runner_unchanged": true,
+  "space_preflight": {
+    "free_bytes": 1276444672,
+    "based_on_existing_full_horizon_episodes": [
+      {
+        "source": "init14-frozen-qualification/episodes/N/dev-demo_0012-feeding-912171",
+        "bytes": 29850632
+      },
+      {
+        "source": "init14-frozen-qualification/episodes/N/dev-demo_0012-feeding-912172",
+        "bytes": 29856558
+      },
+      {
+        "source": "init14-frozen-qualification/episodes/N/dev-demo_0012-loading-912171",
+        "bytes": 30628594
+      },
+      {
+        "source": "init14-frozen-qualification/episodes/N/dev-demo_0012-loading-912172",
+        "bytes": 30606373
+      },
+      {
+        "source": "init14-frozen-qualification/episodes/C/dev-demo_0012-feeding-912171",
+        "bytes": 29852469
+      },
+      {
+        "source": "init14-frozen-qualification/episodes/C/dev-demo_0012-feeding-912172",
+        "bytes": 29858396
+      },
+      {
+        "source": "init14-frozen-qualification/episodes/C/dev-demo_0012-loading-912171",
+        "bytes": 30686012
+      },
+      {
+        "source": "init14-frozen-qualification/episodes/C/dev-demo_0012-loading-912172",
+        "bytes": 30665658
+      }
+    ],
+    "maximum_measured_episode_bytes": 30686012,
+    "planned_segments": 16,
+    "multiplier": 1.3,
+    "extra_metadata_media_and_probe_bytes": 60000000,
+    "projected_result_bytes": 698269050,
+    "minimum_remaining_reserve_bytes": 400000000,
+    "required_postrestore_free_bytes": 1098269050,
+    "physical_outcomes_so_far": 0
+  },
+  "clock": {
+    "experiment": "HIER02-LIVE-R1",
+    "ticket": 11093,
+    "activated_epoch": 1792128093.5022032,
+    "preparation_deadline": 1792128993.5022032,
+    "physical_deadline": 1792131693.5022032,
+    "archive_deadline": 1792133493.5022032,
+    "maximum_workflows": 8,
+    "maximum_segments": 16
+  },
+  "activated_at_utc": "2026-10-16T05:21:33.502203+00:00",
+  "no_other_compute_processes": true
+}

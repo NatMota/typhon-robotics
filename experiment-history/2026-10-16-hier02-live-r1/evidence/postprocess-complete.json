@@ -1,0 +1,30 @@
+{
+  "started_epoch": 1792128274.121323,
+  "new_inference": false,
+  "new_simulation": false,
+  "commands": [
+    {
+      "command": [
+        "/var/tmp/typhon-worktrees-20261016/hier02-live-r1/.venv-sim/bin/python",
+        "-u",
+        "scripts/hier02_live_r1_analyse.py"
+      ],
+      "start_epoch": 1792128609.4579463,
+      "returncode": 0,
+      "end_epoch": 1792128621.3918116
+    },
+    {
+      "command": [
+        "/var/tmp/typhon-worktrees-20261016/hier02-live-r1/.venv-sim/bin/python",
+        "-u",
+        "scripts/hier02_live_r1_media.py"
+      ],
+      "start_epoch": 1792128621.3918574,
+      "returncode": 1,
+      "end_epoch": 1792128624.259079
+    }
+  ],
+  "passed": false,
+  "error": "Traceback (most recent call last):\n  File \"/var/tmp/typhon-hier02-live-r1-20261016/postprocess.py\", line 17, in <module>\n    assert r.returncode==0,script\nAssertionError: scripts/hier02_live_r1_media.py\n",
+  "completed_epoch": 1792128624.259422
+}

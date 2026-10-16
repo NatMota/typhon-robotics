@@ -1,0 +1,13 @@
+[
+  "rsync",
+  "-a",
+  "--append-verify",
+  "--inplace",
+  "--partial",
+  "--info=progress2",
+  "-e",
+  "ssh -F /var/tmp/typhon-ucl-archive-pull/ssh_config",
+  "--",
+  "/media/nm/Fast Drive/Typhon/archives/powerglide-full-20261014/var-tmp/typhon-ost-sweep-20261012/goal-grounding/train-varied/step3000.pt",
+  "ucl-powerglide-transfer:/var/tmp/typhon-restore-goal-20261016/step3000.pt.partial"
+]
