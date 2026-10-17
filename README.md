@@ -4,7 +4,7 @@ How can recorded phone footage contribute to robot learning when it does not con
 
 ## TL;DR
 
-**[Read the seven-page manuscript, 17 October 2026](docs/paper/Typhon_Manipulation_Preprint.pdf)** · **[Download the LaTeX source and figure data](docs/paper/Typhon_Preprint_Source_2026-10-17.zip)**
+**[Read the seven-page manuscript, 17 October 2026](docs/paper/Typhon_Manipulation_Preprint.pdf)**
 
 The outcomes below summarise the revised manuscript. Earlier pilot results remain documented separately.
 
